@@ -280,13 +280,14 @@ function buildHero(data, game) {
     const outs = typeof linescore.outs === "number" ? `${linescore.outs} out${linescore.outs === 1 ? "" : "s"}` : "In progress";
     const batter = linescore.offense?.batter?.fullName ?? "Current batter pending";
     const pitcher = linescore.defense?.pitcher?.fullName ?? data.sections.game_status.content.starters.home.name;
+    const seriesContext = buildSeriesContext(data.sections.game_status.content.series.label);
 
     return {
       mode,
       label: "Live",
       headline: `${philliesSide.team.abbreviation} ${philliesSide.score ?? 0}, ${opponentSide.team.abbreviation} ${opponentSide.score ?? 0}`,
       dek: `${inning} · ${outs}`,
-      summary: `${batter} is up against ${pitcher}. ${data.sections.game_status.content.series.label}.`,
+      summary: `${batter} is up against ${pitcher}.${seriesContext ? ` ${seriesContext}` : ""}`,
       cards: [
         { label: "Matchup", value: data.sections.game_status.content.matchup },
         { label: "Broadcast", value: buildBroadcastLine(data.sections.game_status.content.broadcast) },
@@ -596,6 +597,14 @@ function buildWindSummary(weather) {
 
 function buildBroadcastLine(broadcast) {
   return [broadcast.tv, broadcast.stream, broadcast.radio].filter(Boolean).join(" · ");
+}
+
+function buildSeriesContext(seriesLabel) {
+  if (!seriesLabel) {
+    return "";
+  }
+
+  return `Series: ${seriesLabel}.`;
 }
 
 function deriveMode(game) {
