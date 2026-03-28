@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{meta.publication}} - {{meta.date}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="phillies-wire.css">
+</head>
+<body>
+<div class="pw-page">
+
+  <div class="pw-masthead">
+    <div class="pw-mast-top">
+      <div class="pw-mast-wordmark">
+        <span class="pw-mast-pub">{{meta.publication}}</span>
+        <span class="pw-mast-sub">Vol. {{meta.volume}} &middot; No. {{meta.edition}} &middot; {{meta.date}}</span>
+      </div>
+      <div class="pw-mast-record">
+        <div class="pw-record-num">{{record.wins}}-{{record.losses}}</div>
+        <div class="pw-record-label">Season</div>
+      </div>
+    </div>
+
+    <div class="pw-ticker">
+      <div class="pw-ticker-inner">
+        {{#each ticker}}
+        <span class="pw-ticker-item{{#if this.highlight}} pw-ticker-item--highlight{{/if}}">{{this.text}}</span>
+        <span class="pw-ticker-sep">&#9632;</span>
+        {{/each}}
+        {{#each ticker}}
+        <span class="pw-ticker-item{{#if this.highlight}} pw-ticker-item--highlight{{/if}}">{{this.text}}</span>
+        <span class="pw-ticker-sep">&#9632;</span>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="pw-red-rule"></div>
+
+  <div class="pw-accordion">
+    <div class="pw-acc-row pw-acc-row--open" data-row="game">
+      <button class="pw-acc-header" onclick="toggle('game')" aria-expanded="true">
+        <div class="pw-acc-header-left">
+          <div class="pw-acc-title">
+            <span class="pw-acc-dot"></span>
+            Game Status
+          </div>
+          <div class="pw-acc-preview">{{sections.game_status.preview}}</div>
+        </div>
+        <span class="pw-acc-chevron">&#9650;</span>
+      </button>
+      <div class="pw-acc-body" role="region">
+        <div class="pw-acc-body-inner">
+          <div class="pw-info-row">
+            <span class="pw-info-label">Matchup</span>
+            <span class="pw-info-value">{{sections.game_status.content.matchup}}</span>
+          </div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">First Pitch</span>
+            <span class="pw-info-value">{{sections.game_status.content.first_pitch}}</span>
+          </div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">Venue</span>
+            <span class="pw-info-value">{{sections.game_status.content.venue}}</span>
+          </div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">Starters</span>
+            <span class="pw-info-value">{{sections.game_status.content.starters.home.name}} vs {{sections.game_status.content.starters.away.name}}</span>
+          </div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">Series</span>
+            <span class="pw-info-value">{{sections.game_status.content.series.label}}</span>
+          </div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">Broadcast</span>
+            <span class="pw-info-value">{{sections.game_status.content.broadcast.tv}} &middot; {{sections.game_status.content.broadcast.stream}} &middot; {{sections.game_status.content.broadcast.radio}}</span>
+          </div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">Weather</span>
+            <span class="pw-info-value">{{sections.game_status.content.weather.temp_f}}&deg; &middot; {{sections.game_status.content.weather.condition}} &middot; {{sections.game_status.content.weather.wind}}</span>
+          </div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">Giveaway</span>
+            <span class="pw-info-value">{{sections.game_status.content.giveaway}}</span>
+          </div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">SEPTA</span>
+            <span class="pw-info-value">{{sections.game_status.content.transit}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pw-acc-row" data-row="recap">
+      <button class="pw-acc-header" onclick="toggle('recap')" aria-expanded="false">
+        <div class="pw-acc-header-left">
+          <div class="pw-acc-title">
+            <span class="pw-acc-dot"></span>
+            {{sections.recap.title}}
+          </div>
+          <div class="pw-acc-preview">{{sections.recap.preview}}</div>
+        </div>
+        <span class="pw-acc-chevron">&#9660;</span>
+      </button>
+      <div class="pw-acc-body" role="region">
+        <div class="pw-acc-body-inner">
+          <p class="pw-body"><span class="pw-body--strong">{{sections.recap.content.result.summary_line}}</span> Key performers from the latest result:</p>
+          {{#each sections.recap.content.key_performers}}
+          <div class="pw-player-row">
+            <div>
+              <div class="pw-player-name">{{this.name}} &middot; {{this.position}}</div>
+              <div class="pw-player-detail">{{this.line}} &middot; {{this.note}}</div>
+            </div>
+          </div>
+          {{/each}}
+          <div class="pw-pull">{{sections.recap.content.pull_quote}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pw-acc-row" data-row="roster">
+      <button class="pw-acc-header" onclick="toggle('roster')" aria-expanded="false">
+        <div class="pw-acc-header-left">
+          <div class="pw-acc-title">
+            <span class="pw-acc-dot"></span>
+            Roster &amp; Lineup
+          </div>
+          <div class="pw-acc-preview">{{sections.roster.preview}}</div>
+        </div>
+        <span class="pw-acc-chevron">&#9660;</span>
+      </button>
+      <div class="pw-acc-body" role="region">
+        <div class="pw-acc-body-inner">
+          <div class="pw-section-label">Starting Rotation</div>
+          <div class="pw-rotation-grid">
+            {{#each sections.roster.content.rotation}}
+            <div class="pw-rot-card">
+              <div class="pw-rot-date">{{this.date}}</div>
+              <div class="pw-rot-pitcher">{{this.pitcher}}</div>
+              <div class="pw-rot-opp">vs {{this.opponent}}</div>
+            </div>
+            {{/each}}
+          </div>
+
+          <div class="pw-section-label pw-section-label--spaced">26-Man Roster Highlights</div>
+          {{#each sections.roster.content.highlights}}
+          <div class="pw-player-row">
+            <div>
+              <div class="pw-player-name">{{this.name}}</div>
+              <div class="pw-player-detail">{{this.position}} &middot; {{this.note}}</div>
+            </div>
+            <span class="pw-badge pw-badge--{{this.status}}">{{this.status}}</span>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="pw-acc-row" data-row="injury">
+      <button class="pw-acc-header" onclick="toggle('injury')" aria-expanded="false">
+        <div class="pw-acc-header-left">
+          <div class="pw-acc-title">
+            <span class="pw-acc-dot"></span>
+            Injury Report
+          </div>
+          <div class="pw-acc-preview">{{sections.injury_report.preview}}</div>
+        </div>
+        <span class="pw-acc-chevron">&#9660;</span>
+      </button>
+      <div class="pw-acc-body" role="region">
+        <div class="pw-acc-body-inner">
+          {{#each sections.injury_report.content.il_entries}}
+          <div class="pw-player-row">
+            <div>
+              <div class="pw-player-name">{{this.name}} &middot; {{this.position}}</div>
+              <div class="pw-player-detail">{{this.injury}}. {{this.status_note}}{{#if this.target_return}}. Target return: {{this.target_return}}{{/if}}{{#if this.first_eligible}}. First eligible: {{this.first_eligible}}{{/if}}</div>
+            </div>
+            <span class="pw-badge pw-badge--{{this.badge}}">{{this.il_type}} IL</span>
+          </div>
+          {{/each}}
+          <p class="pw-body pw-body--spaced">{{sections.injury_report.content.footer_note}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pw-acc-row" data-row="farm">
+      <button class="pw-acc-header" onclick="toggle('farm')" aria-expanded="false">
+        <div class="pw-acc-header-left">
+          <div class="pw-acc-title">
+            <span class="pw-acc-dot"></span>
+            Farm System
+          </div>
+          <div class="pw-acc-preview">{{sections.farm_system.preview}}</div>
+        </div>
+        <span class="pw-acc-chevron">&#9660;</span>
+      </button>
+      <div class="pw-acc-body" role="region">
+        <div class="pw-acc-body-inner">
+          <div class="pw-section-label">{{sections.farm_system.content.affiliate.level}} {{sections.farm_system.content.affiliate.name}}</div>
+          <p class="pw-body">{{sections.farm_system.content.affiliate.name}} open against {{sections.farm_system.content.affiliate.opponent}} at {{sections.farm_system.content.affiliate.venue}}. Game {{sections.farm_system.content.affiliate.game_number}} of {{sections.farm_system.content.affiliate.series_games}} runs {{sections.farm_system.content.affiliate.series_dates}}. Stream on {{sections.farm_system.content.affiliate.stream}}. Manager {{sections.farm_system.content.affiliate.manager}} returns for {{sections.farm_system.content.affiliate.manager_note}}.</p>
+
+          <div class="pw-section-label pw-section-label--spaced">Names to Watch</div>
+          {{#each sections.farm_system.content.names_to_watch}}
+          <div class="pw-player-row">
+            <div>
+              <div class="pw-player-name">{{this.name}} &middot; {{this.position}}</div>
+              <div class="pw-player-detail">{{this.note}}</div>
+            </div>
+            <span class="pw-badge pw-badge--{{this.badge}}">{{this.badge}}</span>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="pw-acc-row" data-row="preview">
+      <button class="pw-acc-header" onclick="toggle('preview')" aria-expanded="false">
+        <div class="pw-acc-header-left">
+          <div class="pw-acc-title">
+            <span class="pw-acc-dot"></span>
+            Preview
+          </div>
+          <div class="pw-acc-preview">{{sections.preview.preview}}</div>
+        </div>
+        <span class="pw-acc-chevron">&#9660;</span>
+      </button>
+      <div class="pw-acc-body" role="region">
+        <div class="pw-acc-body-inner">
+          {{#each sections.preview.content.narrative}}
+          <p class="pw-body">{{this}}</p>
+          {{/each}}
+          <div class="pw-pull">{{sections.preview.content.pull_quote}}</div>
+
+          <div class="pw-section-label pw-section-label--spaced">Up Next</div>
+          {{#each sections.preview.content.up_next}}
+          <div class="pw-info-row">
+            <span class="pw-info-label">{{this.date}}</span>
+            <span class="pw-info-value">{{this.matchup}} &middot; {{this.time}} &middot; {{this.broadcast}}</span>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pw-next-game">
+    <div>
+      <div class="pw-next-label">{{next_game.label}}</div>
+      <div class="pw-next-matchup">{{next_game.matchup}}</div>
+    </div>
+    <div class="pw-next-detail">
+      <div>{{next_game.date}} &middot; {{next_game.time}}</div>
+      <div>{{next_game.broadcast}} &middot; {{next_game.venue}}</div>
+    </div>
+  </div>
+
+  <div class="pw-footer">
+    <div>
+      <span class="pw-footer-pub">{{meta.publication}}</span>
+      <span class="pw-footer-meta">Vol. {{meta.volume}} &middot; No. {{meta.edition}} &middot; {{meta.date}}</span>
+    </div>
+    <button class="pw-theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+      Dark
+    </button>
+  </div>
+</div>
+
+<script>
+  function toggle(id) {
+    const row = document.querySelector('[data-row="' + id + '"]');
+    const isOpen = row.classList.contains('pw-acc-row--open');
+    const chevron = row.querySelector('.pw-acc-chevron');
+    const btn = row.querySelector('.pw-acc-header');
+
+    document.querySelectorAll('.pw-acc-row--open').forEach(function(r) {
+      r.classList.remove('pw-acc-row--open');
+      r.querySelector('.pw-acc-chevron').innerHTML = '&#9660;';
+      r.querySelector('.pw-acc-header').setAttribute('aria-expanded', 'false');
+    });
+
+    if (!isOpen) {
+      row.classList.add('pw-acc-row--open');
+      chevron.innerHTML = '&#9650;';
+      btn.setAttribute('aria-expanded', 'true');
+      row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    html.dataset.theme = html.dataset.theme === 'dark' ? '' : 'dark';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* ============================================================
+   PHILLIES WIRE — DESIGN TOKENS
+   tokens.css
+   Source of truth. Do not apply styles here — tokens only.
+   Import this before any other stylesheet.
+   ============================================================ */
+
+
+/* ── PRIMITIVE PALETTE ──────────────────────────────────────
+   Raw brand values. Never reference these directly in
+   component styles — always go through the semantic layer.
+   ---------------------------------------------------------- */
+:root {
+  /* Red */
+  --primitive-red-900: #4a0009;
+  --primitive-red-800: #7a0012;
+  --primitive-red-700: #a8001a;
+  --primitive-red-600: #c8001f;
+  --primitive-red-500: #e81828;   /* Phillies red — primary brand */
+  --primitive-red-400: #ee4455;
+  --primitive-red-300: #f47f8a;
+  --primitive-red-200: #f9b3bb;
+  --primitive-red-100: #fde8ea;
+  --primitive-red-50:  #fff5f6;
+
+  /* Navy */
+  --primitive-navy-900: #000d22;
+  --primitive-navy-800: #001440;
+  --primitive-navy-700: #001d5a;
+  --primitive-navy-600: #002368;
+  --primitive-navy-500: #002d72;  /* Phillies navy — primary brand */
+  --primitive-navy-400: #1a4a96;
+  --primitive-navy-300: #3a6abf;
+  --primitive-navy-200: #7aa0d8;
+  --primitive-navy-100: #c0d4f0;
+  --primitive-navy-50:  #eaf0fa;
+
+  /* Cream */
+  --primitive-cream-900: #1a150d;
+  --primitive-cream-800: #2e2618;
+  --primitive-cream-700: #4a3e2c;
+  --primitive-cream-600: #6b5e46;
+  --primitive-cream-500: #9b9184;  /* mid-tone utility */
+  --primitive-cream-400: #b8b0a4;
+  --primitive-cream-300: #d0cac0;
+  --primitive-cream-200: #e4dfd6;
+  --primitive-cream-100: #f0ebe2;
+  --primitive-cream-50:  #fff9f0;  /* Phillies cream — light bg */
+
+  /* Gold */
+  --primitive-gold-900: #2a1a00;
+  --primitive-gold-800: #4a3000;
+  --primitive-gold-700: #7a5000;
+  --primitive-gold-600: #a87010;
+  --primitive-gold-500: #c4973a;  /* Phillies gold — accent */
+  --primitive-gold-400: #d4ac58;
+  --primitive-gold-300: #e2c47c;
+  --primitive-gold-200: #eedcaa;
+  --primitive-gold-100: #f8f0d8;
+  --primitive-gold-50:  #fdfaf0;
+
+  /* Neutral (ink) */
+  --primitive-ink-900: #0d0f12;
+  --primitive-ink-800: #17120a;
+  --primitive-ink-700: #262018;
+  --primitive-ink-600: #3d3528;
+  --primitive-ink-500: #5c5446;
+  --primitive-ink-400: #7a7264;
+  --primitive-ink-300: #9b9184;
+  --primitive-ink-200: #b8b0a4;
+  --primitive-ink-100: #d8d4cc;
+  --primitive-ink-50:  #f0ede8;
+
+  /* Status */
+  --primitive-green-500: #1f6e1f;
+  --primitive-green-100: #e4f2e4;
+  --primitive-amber-500: #7a4a08;
+  --primitive-amber-100: #fef3e2;
+  --primitive-blue-500:  #0c3270;
+  --primitive-blue-100:  #e8eef8;
+}
+
+
+/* ── SEMANTIC LAYER — LIGHT MODE ────────────────────────────
+   Default (light). Override in [data-theme="dark"] or
+   @media (prefers-color-scheme: dark).
+   ---------------------------------------------------------- */
+:root {
+  /* Surfaces */
+  --color-bg:           var(--primitive-cream-50);
+  --color-bg-subtle:    var(--primitive-cream-100);
+  --color-bg-raised:    #ffffff;
+
+  /* Borders */
+  --color-border:       rgba(0, 45, 114, 0.10);
+  --color-border-mid:   rgba(0, 45, 114, 0.18);
+  --color-border-strong:rgba(0, 45, 114, 0.30);
+
+  /* Text */
+  --color-text:         var(--primitive-ink-800);
+  --color-text-muted:   var(--primitive-ink-500);
+  --color-text-faint:   var(--primitive-ink-300);
+  --color-text-inverse: #ffffff;
+
+  /* Brand */
+  --color-brand-red:    var(--primitive-red-500);
+  --color-brand-navy:   var(--primitive-navy-500);
+  --color-brand-cream:  var(--primitive-cream-50);
+  --color-brand-gold:   var(--primitive-gold-500);
+
+  /* Interactive */
+  --color-accent:       var(--primitive-red-500);
+  --color-accent-hover: var(--primitive-red-600);
+  --color-link:         var(--primitive-navy-400);
+
+  /* Status — IL / DTD / Active / New */
+  --color-il-bg:        var(--primitive-red-100);
+  --color-il-text:      var(--primitive-red-800);
+  --color-dtd-bg:       var(--primitive-amber-100);
+  --color-dtd-text:     var(--primitive-amber-500);
+  --color-active-bg:    var(--primitive-green-100);
+  --color-active-text:  var(--primitive-green-500);
+  --color-new-bg:       var(--primitive-blue-100);
+  --color-new-text:     var(--primitive-blue-500);
+
+  /* Masthead surfaces */
+  --color-mast-bg:      var(--primitive-navy-500);
+  --color-mast-record:  var(--primitive-red-500);
+  --color-ticker-bg:    #001a52;
+  --color-ticker-text:  rgba(255, 255, 255, 0.75);
+  --color-ticker-hi:    #ffffff;
+  --color-ticker-sep:   var(--primitive-red-500);
+
+  /* Pull quote */
+  --color-pull-border:  var(--primitive-red-500);
+  --color-pull-text:    var(--primitive-navy-500);
+
+  /* Next game strip */
+  --color-strip-bg:     var(--primitive-navy-500);
+  --color-strip-text:   #ffffff;
+  --color-strip-sub:    rgba(255, 255, 255, 0.50);
+}
+
+
+/* ── SEMANTIC LAYER — DARK MODE ─────────────────────────────
+   Activated by OS preference. Override manually with
+   [data-theme="dark"] on <html> for user toggle support.
+   ---------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:           var(--primitive-ink-900);
+    --color-bg-subtle:    var(--primitive-ink-800);
+    --color-bg-raised:    var(--primitive-ink-700);
+
+    --color-border:       rgba(255, 255, 255, 0.08);
+    --color-border-mid:   rgba(255, 255, 255, 0.14);
+    --color-border-strong:rgba(255, 255, 255, 0.24);
+
+    --color-text:         var(--primitive-cream-100);
+    --color-text-muted:   var(--primitive-ink-300);
+    --color-text-faint:   var(--primitive-ink-400);
+
+    --color-il-bg:        #3d1010;
+    --color-il-text:      var(--primitive-red-300);
+    --color-dtd-bg:       #3d2a08;
+    --color-dtd-text:     var(--primitive-gold-300);
+    --color-active-bg:    #0d2e0d;
+    --color-active-text:  #7dc97d;
+    --color-new-bg:       #0c1e3d;
+    --color-new-text:     var(--primitive-navy-200);
+
+    --color-pull-text:    var(--primitive-navy-100);
+  }
+}
+
+[data-theme="dark"] {
+  --color-bg:           var(--primitive-ink-900);
+  --color-bg-subtle:    var(--primitive-ink-800);
+  --color-bg-raised:    var(--primitive-ink-700);
+
+  --color-border:       rgba(255, 255, 255, 0.08);
+  --color-border-mid:   rgba(255, 255, 255, 0.14);
+  --color-border-strong:rgba(255, 255, 255, 0.24);
+
+  --color-text:         var(--primitive-cream-100);
+  --color-text-muted:   var(--primitive-ink-300);
+  --color-text-faint:   var(--primitive-ink-400);
+
+  --color-il-bg:        #3d1010;
+  --color-il-text:      var(--primitive-red-300);
+  --color-dtd-bg:       #3d2a08;
+  --color-dtd-text:     var(--primitive-gold-300);
+  --color-active-bg:    #0d2e0d;
+  --color-active-text:  #7dc97d;
+  --color-new-bg:       #0c1e3d;
+  --color-new-text:     var(--primitive-navy-200);
+
+  --color-pull-text:    var(--primitive-navy-100);
+}
+
+
+/* ── TYPOGRAPHY ─────────────────────────────────────────────
+   Two families: Barlow Condensed (display/UI) + Inter (body)
+   ---------------------------------------------------------- */
+:root {
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  --text-2xl: 32px;
+  --text-xl:  24px;
+  --text-lg:  18px;
+  --text-md:  15px;
+  --text-base:13px;
+  --text-sm:  12px;
+  --text-xs:  11px;
+  --text-2xs: 10px;
+
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+  --weight-black:   800;
+
+  --leading-tight:  1.15;
+  --leading-snug:   1.35;
+  --leading-base:   1.60;
+  --leading-relaxed:1.75;
+
+  --tracking-tight:  -0.01em;
+  --tracking-normal:  0em;
+  --tracking-wide:    0.06em;
+  --tracking-wider:   0.10em;
+  --tracking-widest:  0.16em;
+}
+
+
+/* ── SPACING ────────────────────────────────────────────────
+   4px base unit. Compact system for dense UI.
+   ---------------------------------------------------------- */
+:root {
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+}
+
+
+/* ── RADIUS ─────────────────────────────────────────────────*/
+:root {
+  --radius-sm:   3px;
+  --radius-md:   6px;
+  --radius-lg:  12px;
+  --radius-pill: 999px;
+}
+
+
+/* ── MOTION ─────────────────────────────────────────────────
+   Use --duration-fast for micro-interactions.
+   Use --duration-base for layout transitions.
+   ---------------------------------------------------------- */
+:root {
+  --duration-fast:  120ms;
+  --duration-base:  200ms;
+  --duration-slow:  350ms;
+  --ease-default:   ease;
+  --ease-out:       cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-in-out:    cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+
+/* ── Z-INDEX ────────────────────────────────────────────────*/
+:root {
+  --z-base:    0;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-sticky:  200;
+  --z-toast:   300;
+}
