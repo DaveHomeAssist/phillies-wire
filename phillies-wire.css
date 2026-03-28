@@ -159,6 +159,55 @@ a:hover { text-decoration: underline; }
   flex-shrink: 0;
 }
 
+.pw-status-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: var(--space-2) var(--space-4) var(--space-3);
+}
+
+.pw-status-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.pw-status-chip {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  padding: 3px var(--space-2) 2px;
+  border-radius: var(--radius-sm);
+}
+
+.pw-status-chip--pending,
+.pw-status-chip--skipped {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-text-inverse);
+}
+
+.pw-status-chip--enriched {
+  background: var(--color-active-bg);
+  color: var(--color-active-text);
+}
+
+.pw-status-chip--fallback {
+  background: var(--color-dtd-bg);
+  color: var(--color-dtd-text);
+}
+
+.pw-status-text {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.pw-status-note {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: var(--space-1);
+}
+
 
 /* ── RED RULE ───────────────────────────────────────────────*/
 .pw-red-rule {

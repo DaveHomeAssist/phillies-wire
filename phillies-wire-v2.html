@@ -37,6 +37,17 @@
         {{/each}}
       </div>
     </div>
+
+    <div class="pw-status-bar">
+      <div class="pw-status-row">
+        <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}">{{meta.status.mode_label}}</span>
+        <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}">{{meta.status.enrich_state}}</span>
+        <span class="pw-status-text">Updated {{meta.status.generated_at_et}}</span>
+      </div>
+      {{#each meta.status.source_notes}}
+      <div class="pw-status-note">{{this}}</div>
+      {{/each}}
+    </div>
   </div>
 
   <div class="pw-red-rule"></div>
@@ -261,7 +272,7 @@
   <div class="pw-footer">
     <div>
       <span class="pw-footer-pub">{{meta.publication}}</span>
-      <span class="pw-footer-meta">Vol. {{meta.volume}} &middot; No. {{meta.edition}} &middot; {{meta.date}}</span>
+      <span class="pw-footer-meta">Vol. {{meta.volume}} &middot; No. {{meta.edition}} &middot; {{meta.date}} &middot; {{meta.status.enrich_label}}</span>
     </div>
     <button class="pw-theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
       Dark

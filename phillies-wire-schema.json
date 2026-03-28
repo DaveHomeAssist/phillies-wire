@@ -1,10 +1,22 @@
 {
   "meta": {
+    "schema_version": "1.1.0",
     "date": "2026-03-28",
     "edition": 2,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-03-28T14:00:00Z"
+    "generated_at": "2026-03-28T14:00:00Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "pending",
+      "enrich_label": "Awaiting editorial pass",
+      "generated_at_et": "Mar 28, 2026, 10:00 AM ET",
+      "source_notes": [
+        "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
+      ]
+    }
   },
   "record": {
     "wins": 1,

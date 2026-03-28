@@ -2,49 +2,63 @@ import { readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
 
 const MODEL = "claude-sonnet-4-20250514";
-const MAX_TOKENS = 2000;
+const MAX_TOKENS = 4000;
 const ERROR_LOG = "./enrich-error.log";
 const DATA_FILE = "./phillies-wire-data.json";
+const STRICT_MODE = process.env.ENRICH_STRICT === "true";
 
 const SYSTEM = `You are a beat reporter for the Philadelphia Phillies.
 Write in a clear, confident, non-academic voice.
 No hyphens in prose. No em dashes under any circumstances.
 Imperative mood in section previews.
 
-Return ONLY valid JSON matching the exact input schema.
+Return ONLY valid JSON matching the exact editorial schema you are given.
 Do not add keys. Do not wrap in markdown. Do not include preamble.`;
 
-main().catch((error) => fail(error));
+main().catch((error) => handleFatal(error));
 
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
+  const input = JSON.parse(readFileSync(DATA_FILE, "utf8"));
+  const editorialRequest = buildEditorialRequest(input);
+
   if (!apiKey) {
-    throw new Error("ANTHROPIC_API_KEY is required to run enrich.mjs.");
+    const skipped = markEnrichmentStatus(input, "skipped", "Structured fallback published. ANTHROPIC_API_KEY was not set.");
+    writeData(skipped);
+    console.log("phillies-wire-data.json published without enrichment");
+    return;
   }
 
-  const input = JSON.parse(readFileSync(DATA_FILE, "utf8"));
-  const original = cloneJson(input);
-  const responseText = await requestEnrichment(apiKey, input);
-  const enriched = parseJson(responseText);
+  try {
+    const responseText = await requestEnrichment(apiKey, editorialRequest);
+    const editorialDelta = await parseWithRepair(apiKey, responseText, editorialRequest);
+    validateShape(editorialRequest, editorialDelta);
 
-  validateShape(original, enriched);
-  validateEditorialFields(original, enriched);
+    const enriched = mergeEditorial(input, editorialDelta);
+    validateEditorialFields(enriched);
+    markEnrichmentStatus(enriched, "enriched", "Editorial copy enriched via Claude.");
+    writeData(enriched);
+    console.log("phillies-wire-data.json enriched");
+  } catch (error) {
+    const fallback = markEnrichmentStatus(input, "fallback", `Structured fallback published after enrich failure: ${error.message}`);
+    writeError(error);
+    writeData(fallback);
 
-  writeFileSync(DATA_FILE, `${JSON.stringify(enriched, null, 2)}\n`, "utf8");
-  console.log("phillies-wire-data.json enriched");
+    if (STRICT_MODE) {
+      throw error;
+    }
+
+    console.log("phillies-wire-data.json published with structured fallback");
+  }
 }
 
-async function requestEnrichment(apiKey, data) {
+async function requestEnrichment(apiKey, editorialRequest) {
   const userPrompt = `Enrich the following fields with editorial copy.
-Leave all structured fields (scores, times, names, badge values) exactly as provided.
-Write only to these targets:
-- sections.recap.content.pull_quote
-- sections.preview.content.narrative (array of 2-3 paragraphs)
-- sections.preview.content.pull_quote
-- ticker (reorder or rewrite highlight items for editorial punch)
+Keep the same JSON shape and write stronger editorial copy into the provided values only.
+Do not edit any keys.
 
-Raw payload:
-${JSON.stringify(data, null, 2)}`;
+Editorial payload:
+${JSON.stringify(editorialRequest, null, 2)}`;
 
   const payload = await postJson("https://api.anthropic.com/v1/messages", {
     headers: {
@@ -68,12 +82,19 @@ ${JSON.stringify(data, null, 2)}`;
   return text;
 }
 
-function parseJson(responseText) {
+async function parseWithRepair(apiKey, responseText, editorialRequest) {
   try {
     return JSON.parse(responseText);
   } catch (error) {
-    writeFileSync(ERROR_LOG, responseText, "utf8");
-    throw new Error(`Claude response did not parse as JSON: ${error.message}`);
+    writeError(responseText);
+    const repairedText = await requestRepair(apiKey, responseText, editorialRequest);
+
+    try {
+      return JSON.parse(repairedText);
+    } catch (repairError) {
+      writeError(repairedText);
+      throw new Error(`Claude response did not parse as JSON after repair: ${repairError.message}`);
+    }
   }
 }
 
@@ -85,7 +106,7 @@ function validateShape(original, enriched) {
   }
 }
 
-function validateEditorialFields(original, enriched) {
+function validateEditorialFields(enriched) {
   const recapQuote = enriched.sections?.recap?.content?.pull_quote;
   const previewQuote = enriched.sections?.preview?.content?.pull_quote;
   const narrative = enriched.sections?.preview?.content?.narrative;
@@ -100,26 +121,8 @@ function validateEditorialFields(original, enriched) {
 
   const allStrings = [];
   collectStrings(enriched, allStrings);
-  if (allStrings.some((value) => /—/g.test(value))) {
+  if (allStrings.some((value) => /\u2014/g.test(value))) {
     throw new Error("Enriched payload contains an em dash.");
-  }
-
-  const immutablePaths = [
-    "sections.recap.content.result",
-    "sections.game_status.content.starters",
-    "sections.roster.content.rotation",
-    "sections.roster.content.highlights",
-    "sections.injury_report.content.il_entries",
-    "sections.preview.content.up_next",
-    "next_game",
-  ];
-
-  for (const path of immutablePaths) {
-    const before = JSON.stringify(resolvePath(original, path));
-    const after = JSON.stringify(resolvePath(enriched, path));
-    if (before !== after) {
-      throw new Error(`Structured data changed at ${path}.`);
-    }
   }
 }
 
@@ -174,19 +177,82 @@ function collectStrings(value, output) {
   }
 }
 
-function resolvePath(value, path) {
-  return path.split(".").reduce((current, part) => current?.[part], value);
-}
-
 function isNonEmptyString(value) {
   return typeof value === "string" && value.trim().length > 0;
 }
 
-function fail(error) {
-  const message = `[${new Date().toISOString()}] ${error.stack ?? error.message}\n`;
-  writeFileSync(ERROR_LOG, message, "utf8");
+function buildEditorialRequest(data) {
+  return {
+    ticker: cloneJson(data.ticker),
+    sections: {
+      recap: {
+        content: {
+          pull_quote: data.sections.recap.content.pull_quote,
+        },
+      },
+      preview: {
+        content: {
+          narrative: cloneJson(data.sections.preview.content.narrative),
+          pull_quote: data.sections.preview.content.pull_quote,
+        },
+      },
+    },
+  };
+}
+
+function mergeEditorial(data, editorialDelta) {
+  const merged = cloneJson(data);
+  merged.ticker = cloneJson(editorialDelta.ticker);
+  merged.sections.recap.content.pull_quote = editorialDelta.sections.recap.content.pull_quote;
+  merged.sections.preview.content.narrative = cloneJson(editorialDelta.sections.preview.content.narrative);
+  merged.sections.preview.content.pull_quote = editorialDelta.sections.preview.content.pull_quote;
+  return merged;
+}
+
+function markEnrichmentStatus(data, state, label) {
+  data.meta = data.meta ?? {};
+  data.meta.status = data.meta.status ?? {};
+  data.meta.status.enrich_state = state;
+  data.meta.status.enrich_label = label;
+  return data;
+}
+
+function writeData(data) {
+  writeFileSync(DATA_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+}
+
+async function requestRepair(apiKey, badResponse, editorialRequest) {
+  const payload = await postJson("https://api.anthropic.com/v1/messages", {
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+    },
+    body: {
+      model: MODEL,
+      max_tokens: 2000,
+      system: "Return only valid JSON. Repair the malformed JSON while preserving the same editorial schema and intended copy.",
+      messages: [
+        {
+          role: "user",
+          content: `Repair this malformed JSON so it matches this schema exactly.\n\nSchema:\n${JSON.stringify(editorialRequest, null, 2)}\n\nMalformed response:\n${badResponse}`,
+        },
+      ],
+    },
+  });
+
+  return (payload.content ?? []).filter((item) => item.type === "text").map((item) => item.text).join("");
+}
+
+function handleFatal(error) {
+  writeError(error);
   console.error(error.message);
   process.exit(1);
+}
+
+function writeError(error) {
+  const message = typeof error === "string" ? error : `[${new Date().toISOString()}] ${error.stack ?? error.message}\n`;
+  writeFileSync(ERROR_LOG, message, "utf8");
 }
 
 function postJson(url, { headers, body }) {

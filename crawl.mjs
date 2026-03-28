@@ -27,7 +27,8 @@ async function main() {
 
   const game = scheduleResponse?.dates?.[0]?.games?.[0];
   if (!game) {
-    throw new Error(`No Phillies game found for ${TODAY}.`);
+    console.log(`No Phillies game scheduled for ${TODAY}. Nothing to do.`);
+    process.exit(0);
   }
 
   const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
@@ -39,10 +40,11 @@ async function main() {
 
   data.meta.date = TODAY;
   data.meta.generated_at = new Date().toISOString();
+  data.meta.schema_version = fixture.meta.schema_version ?? "1.1.0";
   data.record = {
     ...data.record,
-    wins: game.teams?.home?.team?.id === TEAM_ID ? game.teams.home.leagueRecord.wins : game.teams.away.leagueRecord.wins,
-    losses: game.teams?.home?.team?.id === TEAM_ID ? game.teams.home.leagueRecord.losses : game.teams.away.leagueRecord.losses,
+    wins: game.teams?.home?.team?.id === TEAM_ID ? (game.teams.home.leagueRecord?.wins ?? 0) : (game.teams.away.leagueRecord?.wins ?? 0),
+    losses: game.teams?.home?.team?.id === TEAM_ID ? (game.teams.home.leagueRecord?.losses ?? 0) : (game.teams.away.leagueRecord?.losses ?? 0),
   };
 
   const homeTeam = game.teams.home.team;
@@ -50,6 +52,7 @@ async function main() {
   const philliesSide = homeTeam.id === TEAM_ID ? game.teams.home : game.teams.away;
   const opponentSide = homeTeam.id === TEAM_ID ? game.teams.away : game.teams.home;
   const weather = weatherResponse?.current ?? {};
+  const fallbackNotes = buildSourceNotes(transactionResponse, fixture);
   const starters = {
     home: {
       name: philliesSide.probablePitcher?.fullName ?? fixture.sections.game_status.content.starters.home.name,
@@ -59,6 +62,17 @@ async function main() {
       name: opponentSide.probablePitcher?.fullName ?? fixture.sections.game_status.content.starters.away.name,
       hand: fixture.sections.game_status.content.starters.away.hand,
     },
+  };
+
+  data.meta.status = {
+    ...fixture.meta.status,
+    mode: deriveMode(game),
+    mode_label: deriveModeLabel(game),
+    crawl_state: "ok",
+    enrich_state: "pending",
+    enrich_label: "Awaiting editorial pass",
+    generated_at_et: formatGeneratedAtEt(data.meta.generated_at),
+    source_notes: fallbackNotes,
   };
 
   data.sections.game_status.preview = `${homeTeam.abbreviation} vs ${awayTeam.abbreviation} · ${formatGameTime(game.gameDate)} · ${game.venue.name}`;
@@ -159,6 +173,20 @@ function buildTicker(data, transactionResponse, weather) {
   }
 
   return items.slice(0, 9);
+}
+
+function buildSourceNotes(transactionResponse, fixture) {
+  const notes = [];
+
+  for (const note of fixture?.meta?.status?.source_notes ?? []) {
+    notes.push(note);
+  }
+
+  if (transactionResponse?.transactions?.some((transaction) => /rehab assignment/i.test(transaction.description))) {
+    notes.push("Rehab assignment notes are refreshed from the MLB transactions feed.");
+  }
+
+  return dedupeStrings(notes);
 }
 
 function buildRotation(nextGames, fallback) {
@@ -334,6 +362,10 @@ function validateCrawlPayload(data) {
     throw new Error("Missing one of the required top-level keys: meta, record, ticker, sections.");
   }
 
+  if (!data.meta.status || !Array.isArray(data.meta.status.source_notes)) {
+    throw new Error("Missing meta.status or source notes.");
+  }
+
   for (const sectionKey of requiredSections) {
     if (!data.sections[sectionKey]) {
       throw new Error(`Missing section: ${sectionKey}`);
@@ -369,6 +401,32 @@ function buildWindSummary(weather) {
   const speed = Math.round(weather.wind_speed_10m ?? 0);
   const gusts = Math.round(weather.wind_gusts_10m ?? 0);
   return gusts ? `${speed} mph · gusts ${gusts}` : `${speed} mph`;
+}
+
+function deriveMode(game) {
+  const state = game?.status?.abstractGameState;
+  if (state === "Final") {
+    return "final";
+  }
+
+  if (state === "Live") {
+    return "live";
+  }
+
+  return "pregame";
+}
+
+function deriveModeLabel(game) {
+  const mode = deriveMode(game);
+  if (mode === "final") {
+    return "Final";
+  }
+
+  if (mode === "live") {
+    return "Live";
+  }
+
+  return "Pregame";
 }
 
 function weatherCodeToText(code) {
@@ -410,8 +468,8 @@ function extractBroadcast(game, mediaType) {
 
 async function fetchJson(url) {
   return new Promise((resolve, reject) => {
-    https
-      .get(url, (response) => {
+    const req = https
+      .get(url, { timeout: 30000 }, (response) => {
         let raw = "";
         response.setEncoding("utf8");
         response.on("data", (chunk) => {
@@ -429,6 +487,9 @@ async function fetchJson(url) {
             reject(error);
           }
         });
+      })
+      .on("timeout", () => {
+        req.destroy(new Error(`Request timed out after 30s: ${url}`));
       })
       .on("error", reject);
   });
@@ -485,6 +546,17 @@ function formatWeekday(isoString) {
   }).format(new Date(isoString));
 }
 
+function formatGeneratedAtEt(isoString) {
+  return `${new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(new Date(isoString))} ET`;
+}
+
 function fail(error) {
   const message = `[${new Date().toISOString()}] ${error.stack ?? error.message}\n`;
   writeFileSync(ERROR_LOG, message, "utf8");
@@ -494,4 +566,8 @@ function fail(error) {
 
 function cloneJson(value) {
   return JSON.parse(JSON.stringify(value));
+}
+
+function dedupeStrings(values) {
+  return Array.from(new Set(values.filter(Boolean)));
 }

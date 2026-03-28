@@ -4,7 +4,9 @@ const data = JSON.parse(readFileSync("./phillies-wire-data.json", "utf8"));
 const template = readFileSync("./phillies-wire-v2.html", "utf8");
 
 const output = populate(template, data);
+assertNoUnresolvedTokens(output);
 writeFileSync("./phillies-wire-output.html", output, "utf8");
+writeFileSync("./status.json", `${JSON.stringify(buildStatusPayload(data), null, 2)}\n`, "utf8");
 console.log("phillies-wire-output.html written");
 
 export function populate(templateString, dataRoot) {
@@ -66,4 +68,20 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function assertNoUnresolvedTokens(html) {
+  const unresolved = html.match(/{{[^}]+}}/g) ?? [];
+  if (unresolved.length) {
+    throw new Error(`Unresolved template tokens remain: ${unresolved.slice(0, 10).join(", ")}`);
+  }
+}
+
+function buildStatusPayload(data) {
+  return {
+    publication: data.meta.publication,
+    date: data.meta.date,
+    generated_at: data.meta.generated_at,
+    status: data.meta.status ?? {},
+  };
 }
