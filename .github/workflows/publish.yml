@@ -6,7 +6,7 @@ on:
     - cron: "0 13 * * *"
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -45,13 +47,17 @@ jobs:
       - name: Verify render
         run: node verify.mjs
 
-      - name: Assemble site artifact
+      - name: Persist archive snapshot
         run: |
-          mkdir -p site
-          cp phillies-wire-output.html site/index.html
-          cp phillies-wire.css site/phillies-wire.css
-          cp tokens.css site/tokens.css
-          cp status.json site/status.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html archive.json archive issues
+          if git diff --cached --quiet; then
+            echo "No archive snapshot changes to commit."
+          else
+            git commit -m "Update published issue for $(date -u '+%Y-%m-%d')"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
 
       - name: Upload diagnostics
         if: always()
@@ -62,6 +68,8 @@ jobs:
           path: |
             phillies-wire-data.json
             phillies-wire-output.html
+            archive.json
+            archive/index.html
             status.json
             crawl-error.log
             enrich-error.log

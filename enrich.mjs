@@ -20,6 +20,12 @@ main().catch((error) => handleFatal(error));
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   const input = JSON.parse(readFileSync(DATA_FILE, "utf8"));
+
+  if (input.meta?.off_day) {
+    console.log("Off-day — skipping enrichment.");
+    process.exit(0);
+  }
+
   const editorialRequest = buildEditorialRequest(input);
 
   if (!apiKey) {

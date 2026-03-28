@@ -7,11 +7,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="tokens.css">
-<link rel="stylesheet" href="phillies-wire.css">
+<link rel="stylesheet" href="{{meta.assets_prefix}}tokens.css">
+<link rel="stylesheet" href="{{meta.assets_prefix}}phillies-wire.css">
 </head>
 <body>
 <div class="pw-page">
+
+  <div class="pw-shell-nav">
+    <a class="pw-shell-link" href="{{meta.latest_href}}">Latest</a>
+    <a class="pw-shell-link" href="{{meta.archive_href}}">Archive</a>
+  </div>
 
   <div class="pw-masthead">
     <div class="pw-mast-top">
@@ -50,8 +55,38 @@
     </div>
   </div>
 
+  <section class="pw-hero pw-hero--{{hero.mode}}">
+    <div class="pw-hero-copy">
+      <div class="pw-hero-label">{{hero.label}}</div>
+      <h1 class="pw-hero-headline">{{hero.headline}}</h1>
+      <div class="pw-hero-dek">{{hero.dek}}</div>
+      <p class="pw-hero-summary">{{hero.summary}}</p>
+    </div>
+
+    <div class="pw-hero-grid">
+      {{#each hero.cards}}
+      <div class="pw-hero-card">
+        <div class="pw-hero-card-label">{{this.label}}</div>
+        <div class="pw-hero-card-value">{{this.value}}</div>
+      </div>
+      {{/each}}
+    </div>
+
+    <div class="pw-hero-next">
+      <div class="pw-hero-next-label">{{hero.next_label}}</div>
+      <div class="pw-hero-next-value">{{hero.next_value}}</div>
+    </div>
+
+    <div class="pw-hero-bullets">
+      {{#each hero.bullets}}
+      <div class="pw-hero-bullet">{{this}}</div>
+      {{/each}}
+    </div>
+  </section>
+
   <div class="pw-red-rule"></div>
 
+  {{#if meta.show_sections}}
   <div class="pw-accordion">
     <div class="pw-acc-row pw-acc-row--open" data-row="game">
       <button class="pw-acc-header" onclick="toggle('game')" aria-expanded="true">
@@ -257,6 +292,7 @@
       </div>
     </div>
   </div>
+  {{/if}}
 
   <div class="pw-next-game">
     <div>
@@ -283,6 +319,10 @@
 <script>
   function toggle(id) {
     const row = document.querySelector('[data-row="' + id + '"]');
+    if (!row) {
+      return;
+    }
+
     const isOpen = row.classList.contains('pw-acc-row--open');
     const chevron = row.querySelector('.pw-acc-chevron');
     const btn = row.querySelector('.pw-acc-header');

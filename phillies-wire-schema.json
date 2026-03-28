@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "1.1.0",
+    "schema_version": "1.2.0",
     "date": "2026-03-28",
     "edition": 2,
     "volume": 1,
@@ -24,6 +24,25 @@
     "streak": "W1",
     "division_rank": 1,
     "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Phillies vs Rangers",
+    "dek": "Aaron Nola vs Jacob deGrom",
+    "summary": "Game 2 at Citizens Bank Park with first pitch at 4:05 PM ET.",
+    "cards": [
+      { "label": "First Pitch", "value": "4:05 PM ET" },
+      { "label": "Series", "value": "PHI leads 1â€“0" },
+      { "label": "Watch", "value": "NBCSP+ Â· 94.1 WIP" }
+    ],
+    "bullets": [
+      "48Â° Â· Mostly sunny Â· NNW 15â€“20 mph",
+      "Opening Night T-shirt (fans 15+)",
+      "Sports Trippers from Fern Rock every 10 min from 2:40 PM"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "Luzardo vs Gore Â· Sun Mar 29 Â· 1:35 PM ET"
   },
   "ticker": [
     { "text": "PHI 1–0", "highlight": true },

@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
 
 const MLB_API_BASE = "https://statsapi.mlb.com/api/v1";
@@ -14,54 +14,78 @@ main().catch((error) => fail(error));
 
 async function main() {
   const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
+  const overrides = loadOverrides(TODAY);
   const [scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, weatherResponse] =
     await Promise.all([
       fetchJson(`${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&date=${TODAY}&hydrate=linescore,probablePitcher,seriesStatus,team,game(content(summary,media(epg)))`),
       fetchJson(
-        `${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&startDate=${TODAY}&endDate=${getRelativeIsoDate(4)}&hydrate=probablePitcher,seriesStatus,team`,
+        `${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&startDate=${TODAY}&endDate=${getRelativeIsoDate(4)}&hydrate=linescore,probablePitcher,seriesStatus,team`,
       ),
       fetchJson(`${MLB_API_BASE}/teams/${TEAM_ID}/roster?rosterType=active`),
       fetchJson(`${MLB_API_BASE}/transactions?teamId=${TEAM_ID}&startDate=${YESTERDAY}&endDate=${TODAY}`),
       fetchJson(WEATHER_URL),
     ]);
 
+  const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
   const game = scheduleResponse?.dates?.[0]?.games?.[0];
+
   if (!game) {
-    console.log(`No Phillies game scheduled for ${TODAY}. Nothing to do.`);
-    process.exit(0);
+    const offDay = buildOffDayPayload(fixture, nextGames, overrides);
+    validateCrawlPayload(offDay);
+    writePayload(offDay);
+    console.log(`No game scheduled for ${TODAY}. Off-day payload written.`);
+    return;
   }
 
-  const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
   const boxscore = isFinalGame(game)
     ? await fetchJson(`${MLB_API_BASE}/game/${game.gamePk}/boxscore`)
     : null;
 
+  const data = buildLivePayload({
+    fixture,
+    overrides,
+    game,
+    boxscore,
+    nextGames,
+    rosterResponse,
+    transactionResponse,
+    weatherResponse,
+  });
+
+  validateCrawlPayload(data);
+  writePayload(data);
+  console.log("phillies-wire-data.json written");
+}
+
+function buildLivePayload(context) {
+  const {
+    fixture,
+    overrides,
+    game,
+    boxscore,
+    nextGames,
+    rosterResponse,
+    transactionResponse,
+    weatherResponse,
+  } = context;
+
   const data = cloneJson(fixture);
-
-  data.meta.date = TODAY;
-  data.meta.generated_at = new Date().toISOString();
-  data.meta.schema_version = fixture.meta.schema_version ?? "1.1.0";
-  data.record = {
-    ...data.record,
-    wins: game.teams?.home?.team?.id === TEAM_ID ? (game.teams.home.leagueRecord?.wins ?? 0) : (game.teams.away.leagueRecord?.wins ?? 0),
-    losses: game.teams?.home?.team?.id === TEAM_ID ? (game.teams.home.leagueRecord?.losses ?? 0) : (game.teams.away.leagueRecord?.losses ?? 0),
-  };
-
   const homeTeam = game.teams.home.team;
   const awayTeam = game.teams.away.team;
-  const philliesSide = homeTeam.id === TEAM_ID ? game.teams.home : game.teams.away;
-  const opponentSide = homeTeam.id === TEAM_ID ? game.teams.away : game.teams.home;
+  const philliesAreHome = homeTeam.id === TEAM_ID;
+  const philliesSide = philliesAreHome ? game.teams.home : game.teams.away;
+  const opponentSide = philliesAreHome ? game.teams.away : game.teams.home;
   const weather = weatherResponse?.current ?? {};
-  const fallbackNotes = buildSourceNotes(transactionResponse, fixture);
-  const starters = {
-    home: {
-      name: philliesSide.probablePitcher?.fullName ?? fixture.sections.game_status.content.starters.home.name,
-      hand: fixture.sections.game_status.content.starters.home.hand,
-    },
-    away: {
-      name: opponentSide.probablePitcher?.fullName ?? fixture.sections.game_status.content.starters.away.name,
-      hand: fixture.sections.game_status.content.starters.away.hand,
-    },
+
+  data.meta.schema_version = fixture.meta.schema_version ?? "1.2.0";
+  data.meta.date = TODAY;
+  data.meta.generated_at = new Date().toISOString();
+  data.meta.off_day = false;
+  data.meta.show_sections = true;
+  data.record = {
+    ...data.record,
+    wins: philliesSide.leagueRecord?.wins ?? data.record.wins,
+    losses: philliesSide.leagueRecord?.losses ?? data.record.losses,
   };
 
   data.meta.status = {
@@ -72,7 +96,7 @@ async function main() {
     enrich_state: "pending",
     enrich_label: "Awaiting editorial pass",
     generated_at_et: formatGeneratedAtEt(data.meta.generated_at),
-    source_notes: fallbackNotes,
+    source_notes: buildSourceNotes(transactionResponse, fixture, overrides),
   };
 
   data.sections.game_status.preview = `${homeTeam.abbreviation} vs ${awayTeam.abbreviation} · ${formatGameTime(game.gameDate)} · ${game.venue.name}`;
@@ -81,7 +105,16 @@ async function main() {
     matchup: `${homeTeam.teamName} vs ${awayTeam.teamName} - Game ${game.seriesGameNumber ?? 1}`,
     first_pitch: formatGameTime(game.gameDate),
     venue: `${game.venue.name}, ${homeTeam.locationName}`,
-    starters,
+    starters: {
+      home: {
+        name: philliesSide.probablePitcher?.fullName ?? fixture.sections.game_status.content.starters.home.name,
+        hand: fixture.sections.game_status.content.starters.home.hand,
+      },
+      away: {
+        name: opponentSide.probablePitcher?.fullName ?? fixture.sections.game_status.content.starters.away.name,
+        hand: fixture.sections.game_status.content.starters.away.hand,
+      },
+    },
     series: {
       ...data.sections.game_status.content.series,
       home_wins: game.seriesStatus?.wins ?? fixture.sections.game_status.content.series.home_wins,
@@ -135,13 +168,159 @@ async function main() {
       broadcast: nextGame.broadcast ?? fixture.next_game.broadcast,
       venue: nextGame.venue,
     };
+  } else if (nextGames.length) {
+    const nextGame = nextGames[0];
+    data.next_game = {
+      ...data.next_game,
+      label: "Next Game",
+      matchup: `${nextGame.homePitcher} vs ${nextGame.awayPitcher} · ${nextGame.matchup}`,
+      date: nextGame.dateLabel,
+      time: nextGame.timeLabel,
+      broadcast: nextGame.broadcast ?? fixture.next_game.broadcast,
+      venue: nextGame.venue,
+    };
   }
 
   data.ticker = buildTicker(data, transactionResponse, weather);
 
-  validateCrawlPayload(data);
-  writeFileSync(OUTPUT_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
-  console.log("phillies-wire-data.json written");
+  const overrideHero = overrides?.hero ? cloneJson(overrides.hero) : null;
+  applyOverrides(data, stripHeroOverride(overrides));
+  data.hero = buildHero(data, game);
+  if (overrideHero) {
+    data.hero = deepMerge(data.hero, overrideHero);
+  }
+
+  return data;
+}
+
+function buildOffDayPayload(fixture, nextGames, overrides) {
+  const data = cloneJson(fixture);
+  const nextGame = nextGames[0] ?? null;
+
+  data.meta.schema_version = fixture.meta.schema_version ?? "1.2.0";
+  data.meta.date = TODAY;
+  data.meta.generated_at = new Date().toISOString();
+  data.meta.off_day = true;
+  data.meta.show_sections = false;
+  data.meta.status = {
+    ...fixture.meta.status,
+    mode: "off_day",
+    mode_label: "Off Day",
+    crawl_state: "ok",
+    enrich_state: "skipped",
+    enrich_label: "No game today. Archive and next-game mode published.",
+    generated_at_et: formatGeneratedAtEt(data.meta.generated_at),
+    source_notes: buildSourceNotes(null, fixture, overrides),
+  };
+
+  if (nextGame) {
+    data.next_game = {
+      ...data.next_game,
+      label: "Next Game",
+      matchup: `${nextGame.homePitcher} vs ${nextGame.awayPitcher} · ${nextGame.matchup}`,
+      date: nextGame.dateLabel,
+      time: nextGame.timeLabel,
+      broadcast: nextGame.broadcast ?? fixture.next_game.broadcast,
+      venue: nextGame.venue,
+    };
+  }
+
+  data.hero = {
+    mode: "off_day",
+    label: "Off Day",
+    headline: "No Phillies game today",
+    dek: nextGame ? `Next up: ${data.next_game.matchup}` : "Next matchup pending",
+    summary: "Use the archive to catch up or check the next scheduled game window.",
+    cards: [
+      { label: "Next Game", value: data.next_game.date },
+      { label: "First Pitch", value: data.next_game.time },
+      { label: "Watch", value: data.next_game.broadcast },
+    ],
+    bullets: [
+      nextGame ? data.next_game.matchup : "Schedule update pending",
+      nextGame ? data.next_game.venue : "Venue update pending",
+      "Archive mode is active until the next issue is generated.",
+    ],
+    next_label: data.next_game.label,
+    next_value: `${data.next_game.matchup} · ${data.next_game.date} · ${data.next_game.time}`,
+  };
+
+  data.sections.preview.content.up_next = buildUpNext(nextGames, fixture.sections.preview.content.up_next);
+  applyOverrides(data, overrides);
+  return data;
+}
+
+function buildHero(data, game) {
+  const mode = data.meta.status.mode;
+  const linescore = game.linescore ?? {};
+  const philliesAreHome = game.teams.home.team.id === TEAM_ID;
+  const philliesSide = philliesAreHome ? game.teams.home : game.teams.away;
+  const opponentSide = philliesAreHome ? game.teams.away : game.teams.home;
+
+  if (mode === "final") {
+    return {
+      mode,
+      label: "Final",
+      headline: data.sections.recap.content.result.summary_line,
+      dek: data.sections.recap.preview,
+      summary: data.sections.recap.content.pull_quote,
+      cards: [
+        { label: "Winning Pitcher", value: data.sections.recap.content.key_performers[0]?.name ?? "TBD" },
+        { label: "Series", value: data.sections.game_status.content.series.label },
+        { label: data.next_game.label, value: `${data.next_game.date} · ${data.next_game.time}` },
+      ],
+      bullets: data.sections.recap.content.key_performers.slice(0, 3).map((performer) => `${performer.name}: ${performer.line}`),
+      next_label: data.next_game.label,
+      next_value: `${data.next_game.matchup} · ${data.next_game.date} · ${data.next_game.time}`,
+    };
+  }
+
+  if (mode === "live") {
+    const inning = linescore.currentInningOrdinal ? `${linescore.inningState} ${linescore.currentInningOrdinal}` : game.status?.detailedState;
+    const outs = typeof linescore.outs === "number" ? `${linescore.outs} out${linescore.outs === 1 ? "" : "s"}` : "In progress";
+    const batter = linescore.offense?.batter?.fullName ?? "Current batter pending";
+    const pitcher = linescore.defense?.pitcher?.fullName ?? data.sections.game_status.content.starters.home.name;
+
+    return {
+      mode,
+      label: "Live",
+      headline: `${philliesSide.team.abbreviation} ${philliesSide.score ?? 0}, ${opponentSide.team.abbreviation} ${opponentSide.score ?? 0}`,
+      dek: `${inning} · ${outs}`,
+      summary: `${batter} is up against ${pitcher}. ${data.sections.game_status.content.series.label}.`,
+      cards: [
+        { label: "Matchup", value: data.sections.game_status.content.matchup },
+        { label: "Broadcast", value: buildBroadcastLine(data.sections.game_status.content.broadcast) },
+        { label: "Weather", value: `${data.sections.game_status.content.weather.temp_f}° · ${data.sections.game_status.content.weather.condition}` },
+      ],
+      bullets: [
+        `${batter} at the plate`,
+        `${pitcher} on the mound`,
+        `${data.sections.game_status.content.venue}`,
+      ],
+      next_label: data.next_game.label,
+      next_value: `${data.next_game.matchup} · ${data.next_game.date} · ${data.next_game.time}`,
+    };
+  }
+
+  return {
+    mode: "pregame",
+    label: "Pregame",
+    headline: data.sections.game_status.content.matchup,
+    dek: `${data.sections.game_status.content.starters.home.name} vs ${data.sections.game_status.content.starters.away.name}`,
+    summary: data.sections.preview.preview,
+    cards: [
+      { label: "First Pitch", value: data.sections.game_status.content.first_pitch },
+      { label: "Venue", value: data.sections.game_status.content.venue },
+      { label: "Watch", value: buildBroadcastLine(data.sections.game_status.content.broadcast) },
+    ],
+    bullets: [
+      `${data.sections.game_status.content.weather.temp_f}° · ${data.sections.game_status.content.weather.condition} · ${data.sections.game_status.content.weather.wind}`,
+      data.sections.game_status.content.giveaway,
+      data.sections.game_status.content.transit,
+    ],
+    next_label: data.next_game.label,
+    next_value: `${data.next_game.matchup} · ${data.next_game.date} · ${data.next_game.time}`,
+  };
 }
 
 function buildTicker(data, transactionResponse, weather) {
@@ -175,7 +354,7 @@ function buildTicker(data, transactionResponse, weather) {
   return items.slice(0, 9);
 }
 
-function buildSourceNotes(transactionResponse, fixture) {
+function buildSourceNotes(transactionResponse, fixture, overrides) {
   const notes = [];
 
   for (const note of fixture?.meta?.status?.source_notes ?? []) {
@@ -184,6 +363,10 @@ function buildSourceNotes(transactionResponse, fixture) {
 
   if (transactionResponse?.transactions?.some((transaction) => /rehab assignment/i.test(transaction.description))) {
     notes.push("Rehab assignment notes are refreshed from the MLB transactions feed.");
+  }
+
+  if (overrides) {
+    notes.push(`Editorial overrides applied from overrides/${TODAY}.json.`);
   }
 
   return dedupeStrings(notes);
@@ -358,12 +541,20 @@ function validateCrawlPayload(data) {
     "preview",
   ];
 
-  if (!data.meta || !data.record || !data.ticker || !data.sections) {
-    throw new Error("Missing one of the required top-level keys: meta, record, ticker, sections.");
+  if (!data.meta || !data.record || !data.ticker || !data.sections || !data.hero) {
+    throw new Error("Missing one of the required top-level keys: meta, record, hero, ticker, sections.");
   }
 
   if (!data.meta.status || !Array.isArray(data.meta.status.source_notes)) {
     throw new Error("Missing meta.status or source notes.");
+  }
+
+  if (!Array.isArray(data.hero.cards) || !Array.isArray(data.hero.bullets)) {
+    throw new Error("Hero cards and bullets must be arrays.");
+  }
+
+  if (!data.hero.headline || !data.hero.label) {
+    throw new Error("Hero headline and label are required.");
   }
 
   for (const sectionKey of requiredSections) {
@@ -372,7 +563,7 @@ function validateCrawlPayload(data) {
     }
   }
 
-  if (!data.sections.game_status.content.starters.home.name || !data.sections.game_status.content.starters.away.name) {
+  if (!data.meta.off_day && (!data.sections.game_status.content.starters.home.name || !data.sections.game_status.content.starters.away.name)) {
     throw new Error("Both starters must be non-null.");
   }
 
@@ -401,6 +592,10 @@ function buildWindSummary(weather) {
   const speed = Math.round(weather.wind_speed_10m ?? 0);
   const gusts = Math.round(weather.wind_gusts_10m ?? 0);
   return gusts ? `${speed} mph · gusts ${gusts}` : `${speed} mph`;
+}
+
+function buildBroadcastLine(broadcast) {
+  return [broadcast.tv, broadcast.stream, broadcast.radio].filter(Boolean).join(" · ");
 }
 
 function deriveMode(game) {
@@ -555,6 +750,63 @@ function formatGeneratedAtEt(isoString) {
     hour: "numeric",
     minute: "2-digit",
   }).format(new Date(isoString))} ET`;
+}
+
+function writePayload(data) {
+  writeFileSync(OUTPUT_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+}
+
+function loadOverrides(date) {
+  const path = `./overrides/${date}.json`;
+  if (!existsSync(path)) {
+    return null;
+  }
+
+  return JSON.parse(readFileSync(path, "utf8"));
+}
+
+function stripHeroOverride(overrides) {
+  if (!overrides) {
+    return null;
+  }
+
+  const clone = cloneJson(overrides);
+  delete clone.hero;
+  return clone;
+}
+
+function applyOverrides(target, overrides) {
+  if (!overrides) {
+    return target;
+  }
+
+  return deepMerge(target, overrides);
+}
+
+function deepMerge(target, source) {
+  if (!source || typeof source !== "object" || Array.isArray(source)) {
+    return source == null ? target : source;
+  }
+
+  const output = target && typeof target === "object" && !Array.isArray(target) ? target : {};
+  for (const key of Object.keys(source)) {
+    const sourceValue = source[key];
+    const targetValue = output[key];
+
+    if (Array.isArray(sourceValue)) {
+      output[key] = cloneJson(sourceValue);
+      continue;
+    }
+
+    if (sourceValue && typeof sourceValue === "object") {
+      output[key] = deepMerge(targetValue, sourceValue);
+      continue;
+    }
+
+    output[key] = sourceValue;
+  }
+
+  return output;
 }
 
 function fail(error) {

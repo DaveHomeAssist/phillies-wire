@@ -3,7 +3,7 @@
 A daily Philadelphia Phillies newsletter site built as a static page, a lightweight JSON pipeline, and a GitHub Pages deployment target.
 
 **Built:** March 28, 2026  
-**Version:** 1.1.0  
+**Version:** 1.2.0  
 **Stack:** Vanilla HTML, CSS custom properties, Node scripts, GitHub Pages
 
 ## Project structure
@@ -18,6 +18,10 @@ phillies-wire/
 |-- enrich.mjs
 |-- render.mjs
 |-- verify.mjs
+|-- archive.json
+|-- archive/
+|-- issues/
+|-- overrides/
 |-- .github/workflows/publish.yml
 |-- README.md
 `-- HANDOFF.md
@@ -26,7 +30,8 @@ phillies-wire/
 ## Pipeline
 
 ```text
-crawl.mjs -> phillies-wire-data.json -> enrich.mjs -> editorial merge or fallback -> render.mjs -> phillies-wire-output.html
+crawl.mjs -> phillies-wire-data.json -> enrich.mjs -> editorial merge or fallback -> render.mjs
+          -> latest index + dated issue + archive.json + archive/index.html + site/
 ```
 
 Run locally:
@@ -41,16 +46,26 @@ node verify.mjs
 ## Fallback behavior
 
 - `crawl.mjs` still publishes when the MLB injuries endpoint is unavailable by using the fixture baseline plus live transactions.
+- `crawl.mjs` also supports same-day payload overrides from [`overrides/`](C:/Users/Dave%20RambleOn/Desktop/00-Inbox/Vivaldi%20Downloads/phillies-wire/overrides/README.md).
 - `enrich.mjs` now uses an editorial-only payload instead of sending the full issue JSON to Claude.
 - If `ANTHROPIC_API_KEY` is missing, or if enrich fails, the site publishes a structured fallback instead of failing the issue.
-- `render.mjs` also writes `status.json`, and the site surfaces freshness plus fallback notes from `meta.status`.
+- `render.mjs` writes the latest issue, dated issue pages, `archive.json`, `archive/index.html`, and `status.json`, and the site surfaces freshness plus fallback notes from `meta.status`.
 
 ## Automated publish
 
 - Workflow: [`.github/workflows/publish.yml`](C:/Users/Dave%20RambleOn/Desktop/00-Inbox/Vivaldi%20Downloads/phillies-wire/.github/workflows/publish.yml)
 - Triggers: `workflow_dispatch` and daily cron
-- Output: GitHub Pages artifact, not a committed generated file
-- Diagnostics: each run uploads the rendered HTML, data JSON, `status.json`, and any stage error logs
+- Output: GitHub Pages artifact plus committed archive snapshots on `main`
+- Diagnostics: each run uploads the rendered HTML, archive manifest/page, data JSON, `status.json`, and any stage error logs
+
+## Phase 2 additions
+
+- State-aware hero block for `pregame`, `live`, `final`, and `off_day`
+- Stable latest page plus dated issues under `issues/YYYY-MM-DD/`
+- Archive index at `archive/index.html`
+- `archive.json` manifest for downstream automation or QA
+- Override directory for same-day editorial corrections
+- Broader contract verification across latest, dated, archive, and `site/` outputs
 
 ## Data sources
 
