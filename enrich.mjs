@@ -18,7 +18,7 @@ Do not add keys. Do not wrap in markdown. Do not include preamble.`;
 main().catch((error) => handleFatal(error));
 
 async function main() {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
   const input = JSON.parse(readFileSync(DATA_FILE, "utf8"));
 
   if (input.meta?.off_day) {
@@ -37,11 +37,11 @@ async function main() {
 
   try {
     const responseText = await requestEnrichment(apiKey, editorialRequest);
-    const editorialDelta = await parseWithRepair(apiKey, responseText, editorialRequest);
+    const editorialDelta = normalizeEditorialDelta(await parseWithRepair(apiKey, responseText, editorialRequest));
     validateShape(editorialRequest, editorialDelta);
 
     const enriched = mergeEditorial(input, editorialDelta);
-    validateEditorialFields(enriched);
+    validateEditorialFields(editorialDelta);
     markEnrichmentStatus(enriched, "enriched", "Editorial copy enriched via Claude.");
     writeData(enriched);
     console.log("phillies-wire-data.json enriched");
@@ -112,10 +112,10 @@ function validateShape(original, enriched) {
   }
 }
 
-function validateEditorialFields(enriched) {
-  const recapQuote = enriched.sections?.recap?.content?.pull_quote;
-  const previewQuote = enriched.sections?.preview?.content?.pull_quote;
-  const narrative = enriched.sections?.preview?.content?.narrative;
+function validateEditorialFields(editorialDelta) {
+  const recapQuote = editorialDelta.sections?.recap?.content?.pull_quote;
+  const previewQuote = editorialDelta.sections?.preview?.content?.pull_quote;
+  const narrative = editorialDelta.sections?.preview?.content?.narrative;
 
   if (!isNonEmptyString(recapQuote) || !isNonEmptyString(previewQuote)) {
     throw new Error("Both pull_quote fields must be non-empty strings.");
@@ -126,7 +126,7 @@ function validateEditorialFields(enriched) {
   }
 
   const allStrings = [];
-  collectStrings(enriched, allStrings);
+  collectStrings(editorialDelta, allStrings);
   if (allStrings.some((value) => /\u2014/g.test(value))) {
     throw new Error("Enriched payload contains an em dash.");
   }
@@ -213,6 +213,10 @@ function mergeEditorial(data, editorialDelta) {
   merged.sections.preview.content.narrative = cloneJson(editorialDelta.sections.preview.content.narrative);
   merged.sections.preview.content.pull_quote = editorialDelta.sections.preview.content.pull_quote;
   return merged;
+}
+
+function normalizeEditorialDelta(editorialDelta) {
+  return rewriteStrings(editorialDelta, normalizeEditorialString);
 }
 
 function markEnrichmentStatus(data, state, label) {
@@ -310,4 +314,31 @@ function postJson(url, { headers, body }) {
 
 function cloneJson(value) {
   return JSON.parse(JSON.stringify(value));
+}
+
+function rewriteStrings(value, transformer) {
+  if (typeof value === "string") {
+    return transformer(value);
+  }
+
+  if (Array.isArray(value)) {
+    return value.map((item) => rewriteStrings(item, transformer));
+  }
+
+  if (value && typeof value === "object") {
+    const output = {};
+    for (const [key, item] of Object.entries(value)) {
+      output[key] = rewriteStrings(item, transformer);
+    }
+    return output;
+  }
+
+  return value;
+}
+
+function normalizeEditorialString(value) {
+  return value
+    .replace(/\s*\u2014\s*/g, "; ")
+    .replace(/[ \t]{2,}/g, " ")
+    .trim();
 }
