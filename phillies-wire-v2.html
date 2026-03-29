@@ -317,6 +317,8 @@
 </div>
 
 <script>
+  const pageMode = '{{meta.status.mode}}';
+
   function toggle(id) {
     const row = document.querySelector('[data-row="' + id + '"]');
     if (!row) {
@@ -344,6 +346,12 @@
   function toggleTheme() {
     const html = document.documentElement;
     html.dataset.theme = html.dataset.theme === 'dark' ? '' : 'dark';
+  }
+
+  if (pageMode === 'live') {
+    window.setTimeout(function() {
+      window.location.reload();
+    }, 300000);
   }
 </script>
 
