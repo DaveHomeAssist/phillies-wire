@@ -18,6 +18,8 @@ const requiredFiles = [
   "./site/archive.json",
   "./site/status.json",
   siteIssuePath,
+  "./live-feed.js",
+  "./site/live-feed.js",
 ];
 
 for (const file of requiredFiles) {
@@ -82,6 +84,10 @@ if (currentEntry.issue_path !== `issues/${data.meta.date}/`) {
   fail("archive.json current entry has the wrong issue path.");
 }
 
+if (currentEntry.edition !== data.meta.edition || currentEntry.volume !== data.meta.volume) {
+  fail("archive.json current entry edition metadata does not match the rendered issue.");
+}
+
 if (currentEntry.headline !== data.hero.headline) {
   fail("archive.json current entry headline does not match the hero headline.");
 }
@@ -123,6 +129,30 @@ if (!/pw-hero/.test(latestHtml)) {
 
 if (!data.meta.off_day && !/pw-accordion/.test(latestHtml)) {
   fail("Latest issue page is missing the accordion sections.");
+}
+
+if (!/live-feed\.js/.test(latestHtml)) {
+  fail("Latest issue page is missing the live-feed module.");
+}
+
+if (!data.meta.off_day) {
+  const requiredHooks = [
+    "pw-status-mode-chip",
+    "pw-status-text",
+    "pw-hero-section",
+    "pw-hero-label",
+    "pw-hero-headline",
+    "pw-hero-dek",
+    "pw-hero-summary",
+    "pw-game-status-preview",
+    "pw-live-score",
+  ];
+
+  for (const hook of requiredHooks) {
+    if (!latestHtml.includes(`id="${hook}"`)) {
+      fail(`Latest issue page is missing live hook ${hook}.`);
+    }
+  }
 }
 
 console.log("Rendered issue, archive, and site artifact verified");

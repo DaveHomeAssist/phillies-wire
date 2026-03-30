@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../../tokens.css">
 <link rel="stylesheet" href="../../phillies-wire.css">
 </head>
-<body>
+<body data-page-mode="final">
 <div class="pw-page">
 
   <div class="pw-shell-nav">
@@ -45,13 +45,13 @@
         <span class="pw-ticker-item">NBCSP+ · 94.1 WIP</span>
         <span class="pw-ticker-sep">&#9632;</span>
         
-        <span class="pw-ticker-item">50° · Overcast · gusts 14 mph</span>
+        <span class="pw-ticker-item">50° · Overcast · gusts 16 mph</span>
         <span class="pw-ticker-sep">&#9632;</span>
         
-        <span class="pw-ticker-item pw-ticker-item--highlight">Wheeler begins minor league rehab stint after elbow inflammation sidelined him for three weeks</span>
+        <span class="pw-ticker-item pw-ticker-item--highlight">Wheeler begins rehab stint with IronPigs as return timeline takes shape</span>
         <span class="pw-ticker-sep">&#9632;</span>
         
-        <span class="pw-ticker-item">Stubbs designated for assignment, clears waivers and accepts Triple-A option</span>
+        <span class="pw-ticker-item">sent C Garrett Stubbs outright to Lehigh Valley IronPigs.</span>
         <span class="pw-ticker-sep">&#9632;</span>
         
         
@@ -67,13 +67,13 @@
         <span class="pw-ticker-item">NBCSP+ · 94.1 WIP</span>
         <span class="pw-ticker-sep">&#9632;</span>
         
-        <span class="pw-ticker-item">50° · Overcast · gusts 14 mph</span>
+        <span class="pw-ticker-item">50° · Overcast · gusts 16 mph</span>
         <span class="pw-ticker-sep">&#9632;</span>
         
-        <span class="pw-ticker-item pw-ticker-item--highlight">Wheeler begins minor league rehab stint after elbow inflammation sidelined him for three weeks</span>
+        <span class="pw-ticker-item pw-ticker-item--highlight">Wheeler begins rehab stint with IronPigs as return timeline takes shape</span>
         <span class="pw-ticker-sep">&#9632;</span>
         
-        <span class="pw-ticker-item">Stubbs designated for assignment, clears waivers and accepts Triple-A option</span>
+        <span class="pw-ticker-item">sent C Garrett Stubbs outright to Lehigh Valley IronPigs.</span>
         <span class="pw-ticker-sep">&#9632;</span>
         
       </div>
@@ -81,24 +81,26 @@
 
     <div class="pw-status-bar">
       <div class="pw-status-row">
-        <span class="pw-status-chip pw-status-chip--enriched">Final</span>
+        <span class="pw-status-chip pw-status-chip--enriched" id="pw-status-mode-chip">Final</span>
         <span class="pw-status-chip pw-status-chip--enriched">enriched</span>
-        <span class="pw-status-text">Updated Mar 29, 2026, 9:12 PM ET</span>
+        <span class="pw-status-text" id="pw-status-text">Updated Mar 29, 2026, 9:30 PM ET</span>
       </div>
       
       <div class="pw-status-note">Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.</div>
       
       <div class="pw-status-note">Rehab assignment notes are refreshed from the MLB transactions feed.</div>
       
+      <div class="pw-status-note">Daily Prophet notes injected into ticker.</div>
+      
     </div>
   </div>
 
-  <section class="pw-hero pw-hero--final">
+  <section class="pw-hero pw-hero--final" id="pw-hero-section" data-live-mode="final">
     <div class="pw-hero-copy">
-      <div class="pw-hero-label">Final</div>
-      <h1 class="pw-hero-headline">PHI 3, TEX 8.</h1>
-      <div class="pw-hero-dek">TEX 8, PHI 3 · Brandon Marsh · 0-for-1</div>
-      <p class="pw-hero-summary">Sánchez retired 19 of the final 20 batters. His changeup had a 54% whiff rate.</p>
+      <div class="pw-hero-label" id="pw-hero-label">Final</div>
+      <h1 class="pw-hero-headline" id="pw-hero-headline">PHI 3, TEX 8.</h1>
+      <div class="pw-hero-dek" id="pw-hero-dek">TEX 8, PHI 3 · Brandon Marsh · 0-for-1</div>
+      <p class="pw-hero-summary" id="pw-hero-summary">PHI 3, TEX 8. Final at Citizens Bank Park, Philadelphia. TEX wins 2-1.</p>
     </div>
 
     <div class="pw-hero-grid">
@@ -147,7 +149,7 @@
             <span class="pw-acc-dot"></span>
             Game Status
           </div>
-          <div class="pw-acc-preview">PHI vs TEX · 1:35 PM · Citizens Bank Park</div>
+          <div class="pw-acc-preview" id="pw-game-status-preview">PHI vs TEX · 1:35 PM · Citizens Bank Park</div>
         </div>
         <span class="pw-acc-chevron">&#9650;</span>
       </button>
@@ -179,7 +181,7 @@
           </div>
           <div class="pw-info-row">
             <span class="pw-info-label">Weather</span>
-            <span class="pw-info-value">50&deg; &middot; Overcast &middot; 6 mph · gusts 14</span>
+            <span class="pw-info-value">50&deg; &middot; Overcast &middot; 6 mph · gusts 16</span>
           </div>
           <div class="pw-info-row">
             <span class="pw-info-label">Giveaway</span>
@@ -188,6 +190,11 @@
           <div class="pw-info-row">
             <span class="pw-info-label">SEPTA</span>
             <span class="pw-info-value">Sports Trippers from Fern Rock every 10 min from 2:40 PM</span>
+          </div>
+          <div class="pw-live-score" id="pw-live-score" data-game-pk="823487" data-first-pitch="2026-03-29T17:35:00Z" data-venue="Citizens Bank Park, Philadelphia">
+            <span class="pw-live-badge">Live</span>
+            <span class="pw-live-line" id="pw-live-line"></span>
+            <div class="pw-live-detail" id="pw-live-detail"></div>
           </div>
         </div>
       </div>
@@ -243,7 +250,7 @@
             </div>
           </div>
           
-          <div class="pw-pull">Sánchez dominated with surgical precision after the first inning meltdown, retiring 19 of 20 batters while his changeup fooled Rangers hitters 54% of the time.</div>
+          <div class="pw-pull">Rangers explode for eight runs as Phillies fall behind 2-1 in series at Citizens Bank Park</div>
         </div>
       </div>
     </div>
@@ -268,24 +275,28 @@
               <div class="pw-rot-date">Mar 29</div>
               <div class="pw-rot-pitcher">Jesús Luzardo</div>
               <div class="pw-rot-opp">vs TEX</div>
+              <div class="pw-rot-stat">9.00 ERA &middot; 0-1</div>
             </div>
             
             <div class="pw-rot-card">
               <div class="pw-rot-date">Mar 30</div>
               <div class="pw-rot-pitcher">Taijuan Walker</div>
               <div class="pw-rot-opp">vs WSH</div>
+              
             </div>
             
             <div class="pw-rot-card">
               <div class="pw-rot-date">Mar 31</div>
               <div class="pw-rot-pitcher">Andrew Painter</div>
               <div class="pw-rot-opp">vs WSH</div>
+              
             </div>
             
             <div class="pw-rot-card">
               <div class="pw-rot-date">Apr 1</div>
               <div class="pw-rot-pitcher">Cristopher Sánchez</div>
               <div class="pw-rot-opp">vs WSH</div>
+              <div class="pw-rot-stat">0.00 ERA &middot; 1-0</div>
             </div>
             
           </div>
@@ -311,6 +322,78 @@
         </div>
       </div>
     </div>
+
+    
+    <div class="pw-acc-row" data-row="standings">
+      <button class="pw-acc-header" onclick="toggle('standings')" aria-expanded="false">
+        <div class="pw-acc-header-left">
+          <div class="pw-acc-title">
+            <span class="pw-acc-dot"></span>
+            NL East Standings
+          </div>
+          <div class="pw-acc-preview">PHI 1-2 · 2.0 GB · L2</div>
+        </div>
+        <span class="pw-acc-chevron">&#9660;</span>
+      </button>
+      <div class="pw-acc-body" role="region">
+        <div class="pw-acc-body-inner">
+          <table class="pw-standings-table">
+            <thead>
+              <tr><th>Team</th><th>W</th><th>L</th><th>Pct</th><th>GB</th><th>Strk</th></tr>
+            </thead>
+            <tbody>
+              
+              <tr class="">
+                <td>Marlins</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1.000</td>
+                <td>—</td>
+                <td>W3</td>
+              </tr>
+              
+              <tr class="">
+                <td>Mets</td>
+                <td>2</td>
+                <td>1</td>
+                <td>.667</td>
+                <td>1.0</td>
+                <td>L1</td>
+              </tr>
+              
+              <tr class="">
+                <td>Nationals</td>
+                <td>2</td>
+                <td>1</td>
+                <td>.667</td>
+                <td>1.0</td>
+                <td>W1</td>
+              </tr>
+              
+              <tr class="">
+                <td>Braves</td>
+                <td>2</td>
+                <td>1</td>
+                <td>.667</td>
+                <td>1.0</td>
+                <td>L1</td>
+              </tr>
+              
+              <tr class="pw-standings-row--phi">
+                <td>Phillies</td>
+                <td>1</td>
+                <td>2</td>
+                <td>.333</td>
+                <td>2.0</td>
+                <td>L2</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
 
     <div class="pw-acc-row" data-row="injury">
       <button class="pw-acc-header" onclick="toggle('injury')" aria-expanded="false">
@@ -424,18 +507,18 @@
             <span class="pw-acc-dot"></span>
             Preview
           </div>
-          <div class="pw-acc-preview">Nola&#39;s redemption bid · deGrom&#39;s first start at CBP</div>
+          <div class="pw-acc-preview">Jesús Luzardo vs MacKenzie Gore · Phillies vs Rangers - Game 3</div>
         </div>
         <span class="pw-acc-chevron">&#9660;</span>
       </button>
       <div class="pw-acc-body" role="region">
         <div class="pw-acc-body-inner">
           
-          <p class="pw-body">Aaron Nola makes his season debut carrying questions about whether last year&#39;s career-worst 6.01 ERA was an aberration or a warning sign. The encouraging news: Nola touched 94.5 mph this spring and carved up a loaded Venezuela lineup in the World Baseball Classic. He gets a Rangers offense that managed just three hits against Cristopher Sánchez on Thursday.</p>
+          <p class="pw-body">Find your footing after yesterday&#39;s offensive struggles as Luzardo takes the mound needing to silence a Rangers lineup that erupted for eight runs.</p>
           
-          <p class="pw-body">Jacob deGrom returns to Citizens Bank Park wearing the wrong uniform after going 12-8 with a 2.97 ERA in his Rangers debut season. Kyle Schwarber and Alec Bohm are swinging hot bats early. Win today and the Phillies wrap up the series before Sunday&#39;s rubber match even matters.</p>
+          <p class="pw-body">Watch for adjustments from Rob Thomson&#39;s club facing elimination pressure with the series shifting decidedly toward Texas after two games at home.</p>
           
-          <div class="pw-pull">The Phillies don&#39;t need vintage Cy Young Nola. They need 20 quality starts from their veteran ace to anchor this rotation.</div>
+          <div class="pw-pull">Luzardo must deliver length and precision against Gore in must-win territory for Philadelphia</div>
 
           <div class="pw-section-label pw-section-label--spaced">Up Next</div>
           
@@ -483,8 +566,6 @@
 </div>
 
 <script>
-  const pageMode = 'final';
-
   function toggle(id) {
     const row = document.querySelector('[data-row="' + id + '"]');
     if (!row) {
@@ -514,12 +595,32 @@
     html.dataset.theme = html.dataset.theme === 'dark' ? '' : 'dark';
   }
 
-  if (pageMode === 'live') {
-    window.setTimeout(function() {
-      window.location.reload();
-    }, 300000);
-  }
+  /* Legacy inline live polling kept commented while the shared live-feed.js module handles updates.
+
+          if (isFinal) {
+            clearPollTimer();
+            detailEl.textContent = 'Final';
+          } else if (inning === 0) {
+            detailEl.textContent = 'Pregame';
+            scheduleNextPoll(previewPollMs);
+          } else {
+            detailEl.textContent = half + ' ' + inning + ' · ' + outs + ' out' + (outs !== 1 ? 's' : '');
+          }
+          if (!isFinal && inning > 0) {
+            scheduleNextPoll(isLive ? livePollMs : previewPollMs);
+          }
+          container.classList.add('pw-live-score--active');
+        })
+        .catch(function() {
+          scheduleNextPoll(previewPollMs);
+        });
+    }
+
+    poll();
+  })();
+  */
 </script>
+<script type="module" src="../../live-feed.js"></script>
 
 </body>
 </html>

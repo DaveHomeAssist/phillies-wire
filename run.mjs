@@ -1,0 +1,138 @@
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { spawnSync } from "node:child_process";
+import { pathToFileURL } from "node:url";
+
+const DATA_FILE = "./phillies-wire-data.json";
+const ARCHIVE_FILE = "./archive.json";
+const DEFAULT_VOLUME = 1;
+const PIPELINE_STAGES = ["crawl.mjs", "enrich.mjs", "render.mjs", "verify.mjs"];
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main();
+}
+
+export function main() {
+  for (const stage of PIPELINE_STAGES) {
+    runNodeStage(stage);
+
+    if (stage === "crawl.mjs") {
+      const editionMeta = syncEditionMetadata();
+      const editionAction = editionMeta.reused ? "reused" : "assigned";
+      console.log(
+        `Edition ${editionAction}: Vol. ${editionMeta.volume} No. ${editionMeta.edition} for ${editionMeta.date}`,
+      );
+    }
+  }
+
+  if (process.env.DELIVERY_RECIPIENTS) {
+    runNodeStage("deliver.mjs");
+  } else {
+    console.log("Delivery skipped: DELIVERY_RECIPIENTS not set.");
+  }
+}
+
+export function runNodeStage(scriptName) {
+  console.log(`\n==> Running ${scriptName}`);
+  const result = spawnSync(process.execPath, [scriptName], {
+    stdio: "inherit",
+    env: process.env,
+  });
+
+  if (result.error) {
+    throw result.error;
+  }
+
+  if (typeof result.status === "number" && result.status !== 0) {
+    process.exit(result.status);
+  }
+
+  if (result.signal) {
+    console.error(`${scriptName} terminated with signal ${result.signal}`);
+    process.exit(1);
+  }
+}
+
+export function syncEditionMetadata() {
+  const data = readJson(DATA_FILE);
+  const archive = readJson(ARCHIVE_FILE, {
+    schema_version: null,
+    publication: "",
+    updated_at: null,
+    latest_date: null,
+    entries: [],
+  });
+
+  const issueDate = data.meta?.date;
+  if (!issueDate) {
+    throw new Error("Cannot assign edition metadata without meta.date in phillies-wire-data.json.");
+  }
+
+  const editionMeta = resolveEditionMetadata(issueDate, data, archive.entries ?? []);
+  data.meta = data.meta ?? {};
+  data.meta.volume = editionMeta.volume;
+  data.meta.edition = editionMeta.edition;
+
+  writeFileSync(DATA_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  return editionMeta;
+}
+
+export function resolveEditionMetadata(issueDate, data, entries) {
+  const currentEntry = entries.find((entry) => entry.date === issueDate);
+  if (currentEntry) {
+    return {
+      date: issueDate,
+      volume: Number(currentEntry.volume) || Number(data.meta?.volume) || DEFAULT_VOLUME,
+      edition: Number(currentEntry.edition) || 1,
+      reused: true,
+    };
+  }
+
+  const latestEntry = [...entries]
+    .filter((entry) => entry?.date)
+    .sort((left, right) => right.date.localeCompare(left.date))[0];
+
+  if (!latestEntry) {
+    return {
+      date: issueDate,
+      volume: Number(data.meta?.volume) || DEFAULT_VOLUME,
+      edition: 1,
+      reused: false,
+    };
+  }
+
+  const issueYear = issueDate.slice(0, 4);
+  const latestYear = latestEntry.date.slice(0, 4);
+
+  if (issueYear > latestYear) {
+    return {
+      date: issueDate,
+      volume: (Number(latestEntry.volume) || Number(data.meta?.volume) || DEFAULT_VOLUME) + 1,
+      edition: 1,
+      reused: false,
+    };
+  }
+
+  if (issueYear === latestYear && issueDate > latestEntry.date) {
+    return {
+      date: issueDate,
+      volume: Number(latestEntry.volume) || Number(data.meta?.volume) || DEFAULT_VOLUME,
+      edition: (Number(latestEntry.edition) || 0) + 1,
+      reused: false,
+    };
+  }
+
+  return {
+    date: issueDate,
+    volume: Number(latestEntry.volume) || Number(data.meta?.volume) || DEFAULT_VOLUME,
+    edition: Number(data.meta?.edition) || 1,
+    reused: false,
+  };
+}
+
+function readJson(path, fallback = null) {
+  if (!existsSync(path)) {
+    return fallback;
+  }
+
+  return JSON.parse(readFileSync(path, "utf8"));
+}

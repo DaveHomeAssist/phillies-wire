@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
+import { buildPregamePreviewContent, buildRecapPullQuote } from "./pregame-preview.js";
 
 const MLB_API_BASE = "https://statsapi.mlb.com/api/v1";
 const WEATHER_URL =
@@ -41,7 +42,7 @@ async function main() {
     ? await fetchJson(`${MLB_API_BASE}/game/${game.gamePk}/boxscore`)
     : null;
 
-  const data = buildLivePayload({
+  const data = await buildLivePayload({
     fixture,
     overrides,
     game,
@@ -57,7 +58,7 @@ async function main() {
   console.log("phillies-wire-data.json written");
 }
 
-function buildLivePayload(context) {
+async function buildLivePayload(context) {
   const {
     fixture,
     overrides,
@@ -137,6 +138,17 @@ function buildLivePayload(context) {
     transit: fixture.sections.game_status.content.transit,
   };
 
+  const pregamePreview = buildPregamePreviewContent({
+    matchup: data.sections.game_status.content.matchup,
+    firstPitch: data.sections.game_status.content.first_pitch,
+    venue: data.sections.game_status.content.venue,
+    seriesLabel: data.sections.game_status.content.series.label,
+    starters: data.sections.game_status.content.starters,
+  });
+  data.sections.preview.preview = pregamePreview.preview;
+  data.sections.preview.content.narrative = pregamePreview.content.narrative;
+  data.sections.preview.content.pull_quote = pregamePreview.content.pull_quote;
+
   if (isFinalGame(game)) {
     data.sections.recap.preview = buildRecapPreview(game, boxscore, fixture.sections.recap.preview);
     data.sections.recap.title = `${formatWeekday(game.gameDate)} Recap`;
@@ -147,14 +159,32 @@ function buildLivePayload(context) {
       summary_line: buildRecapSummaryLine(game, TEAM_ID),
     };
     data.sections.recap.content.key_performers = extractKeyPerformers(boxscore, fixture.sections.recap.content.key_performers);
+    data.sections.recap.content.pull_quote = buildRecapPullQuote({
+      summaryLine: data.sections.recap.content.result.summary_line,
+      venue: data.sections.game_status.content.venue,
+      seriesLabel: data.sections.game_status.content.series.label,
+    });
   }
 
-  data.sections.roster.content.rotation = buildRotation(nextGames, fixture.sections.roster.content.rotation);
+  const [rotation, standings] = await Promise.all([
+    buildRotation(nextGames, fixture.sections.roster.content.rotation),
+    fetchStandings(),
+  ]);
+
+  data.meta.game_pk = game.gamePk;
+  data.meta.first_pitch_iso = game.gameDate;
+
+  data.sections.roster.content.rotation = rotation;
   data.sections.roster.content.highlights = buildRosterHighlights(rosterResponse, transactionResponse, fixture.sections.roster.content.highlights);
   data.sections.injury_report.content.il_entries = mergeInjuryEntriesFromTransactions(
     fixture.sections.injury_report.content.il_entries,
     transactionResponse,
   );
+  data.sections.standings = {
+    title: "NL East Standings",
+    preview: buildStandingsPreview(standings),
+    content: { teams: standings },
+  };
   data.sections.preview.content.up_next = buildUpNext(nextGames, fixture.sections.preview.content.up_next);
 
   if (nextGames.length > 1) {
@@ -352,6 +382,10 @@ function buildTicker(data, transactionResponse, weather) {
     });
   }
 
+  for (const item of loadDailyProphet()) {
+    items.push(item);
+  }
+
   return items.slice(0, 9);
 }
 
@@ -370,20 +404,100 @@ function buildSourceNotes(transactionResponse, fixture, overrides) {
     notes.push(`Editorial overrides applied from overrides/${TODAY}.json.`);
   }
 
+  if (existsSync("./daily-prophet.json")) {
+    notes.push("Daily Prophet notes injected into ticker.");
+  }
+
   return dedupeStrings(notes);
 }
 
-function buildRotation(nextGames, fallback) {
+async function buildRotation(nextGames, fallback) {
   if (!nextGames.length) {
     return fallback;
   }
 
-  return nextGames.slice(0, 5).map((game, index) => ({
-    date: game.shortDate,
-    pitcher: game.homePitcher,
-    opponent: game.opponentAbbr,
-    hand: fallback[index]?.hand ?? "R",
-  }));
+  const pitcherIds = nextGames
+    .slice(0, 5)
+    .map((game) => game.homePitcherId)
+    .filter(Boolean);
+
+  const statsMap = await fetchPitcherStats(pitcherIds);
+
+  return nextGames.slice(0, 5).map((game, index) => {
+    const stats = statsMap.get(game.homePitcherId) ?? {};
+    return {
+      date: game.shortDate,
+      pitcher: game.homePitcher,
+      opponent: game.opponentAbbr,
+      hand: fallback[index]?.hand ?? "R",
+      era: stats.era ?? "",
+      record: stats.wins != null ? `${stats.wins}-${stats.losses}` : "",
+    };
+  });
+}
+
+async function fetchPitcherStats(pitcherIds) {
+  const statsMap = new Map();
+  if (!pitcherIds.length) {
+    return statsMap;
+  }
+
+  const results = await Promise.all(
+    pitcherIds.map((id) =>
+      fetchJson(`${MLB_API_BASE}/people/${id}/stats?stats=season&group=pitching&season=${new Date().getFullYear()}`)
+        .catch(() => null),
+    ),
+  );
+
+  for (let i = 0; i < pitcherIds.length; i++) {
+    const splits = results[i]?.stats?.[0]?.splits?.[0]?.stat;
+    if (splits) {
+      statsMap.set(pitcherIds[i], {
+        era: splits.era ?? "",
+        wins: splits.wins ?? 0,
+        losses: splits.losses ?? 0,
+      });
+    }
+  }
+
+  return statsMap;
+}
+
+async function fetchStandings() {
+  const year = new Date().getFullYear();
+  const response = await fetchJson(
+    `${MLB_API_BASE}/standings?leagueId=104&season=${year}&standingsTypes=regularSeason`,
+  ).catch(() => null);
+
+  if (!response?.records) {
+    return [];
+  }
+
+  for (const division of response.records) {
+    if (division.division?.id === 204) {
+      return division.teamRecords.map((team) => ({
+        name: team.team.name,
+        abbr: team.team.abbreviation ?? team.team.name.split(" ").pop(),
+        wins: team.wins,
+        losses: team.losses,
+        pct: team.winningPercentage,
+        gb: team.gamesBack === "-" ? "—" : team.gamesBack,
+        streak: team.streak?.streakCode ?? "",
+        is_phi: team.team.id === TEAM_ID,
+      }));
+    }
+  }
+
+  return [];
+}
+
+function buildStandingsPreview(teams) {
+  const phi = teams.find((t) => t.is_phi);
+  if (!phi) {
+    return "NL East standings unavailable";
+  }
+
+  return `PHI ${phi.wins}-${phi.losses} · ${phi.gb === "\u2014" ? "1st" : `${phi.gb} GB`} · ${phi.streak}`;
 }
 
 function buildUpNext(nextGames, fallback) {
@@ -469,6 +583,7 @@ function collectUpcomingGames(scheduleResponse, teamId) {
         matchup: `${homeTeam.abbreviation} vs ${awayTeam.abbreviation}`,
         opponentAbbr: opponentSide.team.abbreviation,
         homePitcher: philliesSide.probablePitcher?.fullName ?? "TBD",
+        homePitcherId: philliesSide.probablePitcher?.id ?? null,
         awayPitcher: opponentSide.probablePitcher?.fullName ?? "TBD",
         broadcast: extractBroadcast(game, "TV"),
         venue: game.venue?.name ?? "TBD",
@@ -763,6 +878,26 @@ function formatGeneratedAtEt(isoString) {
 
 function writePayload(data) {
   writeFileSync(OUTPUT_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+}
+
+function loadDailyProphet() {
+  const path = "./daily-prophet.json";
+  if (!existsSync(path)) {
+    return [];
+  }
+
+  try {
+    const items = JSON.parse(readFileSync(path, "utf8"));
+    if (!Array.isArray(items)) {
+      return [];
+    }
+
+    return items
+      .filter((item) => item && typeof item.text === "string")
+      .map((item) => ({ text: item.text, highlight: item.highlight ?? false }));
+  } catch {
+    return [];
+  }
 }
 
 function loadOverrides(date) {

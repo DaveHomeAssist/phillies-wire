@@ -755,6 +755,110 @@ a:hover { text-decoration: underline; }
   margin-top: var(--space-1);
 }
 
+.pw-rot-stat {
+  font-size:   var(--text-2xs);
+  color:       var(--color-text-faint);
+  margin-top:  var(--space-1);
+}
+
+
+/* ── STANDINGS ─────────────────────────────────────────────*/
+.pw-standings-table {
+  width:           100%;
+  border-collapse: collapse;
+  font-size:       var(--text-sm);
+}
+
+.pw-standings-table th {
+  font-family:    var(--font-display);
+  font-weight:    var(--weight-bold);
+  font-size:      var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color:          var(--color-text-faint);
+  text-align:     left;
+  padding:        var(--space-2) var(--space-2);
+  border-bottom:  1px solid var(--color-border);
+}
+
+.pw-standings-table th:not(:first-child) {
+  text-align: center;
+}
+
+.pw-standings-table td {
+  padding:       var(--space-2) var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  color:         var(--color-text);
+}
+
+.pw-standings-table td:not(:first-child) {
+  text-align:  center;
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+}
+
+.pw-standings-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pw-standings-row--phi td {
+  font-weight: var(--weight-bold);
+  color:       var(--color-brand-navy);
+}
+
+@media (prefers-color-scheme: dark) {
+  .pw-standings-row--phi td { color: var(--primitive-navy-100); }
+}
+
+[data-theme="dark"] .pw-standings-row--phi td { color: var(--primitive-navy-100); }
+
+
+/* ── LIVE SCORE ────────────────────────────────────────────*/
+.pw-live-score {
+  display:     none;
+  padding:     var(--space-3) 0;
+  border-top:  1px solid var(--color-border);
+  margin-top:  var(--space-2);
+}
+
+.pw-live-score--active {
+  display: block;
+}
+
+.pw-live-badge {
+  display:        inline-block;
+  font-family:    var(--font-display);
+  font-weight:    var(--weight-bold);
+  font-size:      var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color:          var(--color-il-text);
+  background:     var(--color-brand-red);
+  padding:        2px var(--space-2);
+  border-radius:  var(--radius-sm);
+  margin-right:   var(--space-2);
+  animation:      pw-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pw-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.5; }
+}
+
+.pw-live-line {
+  font-family:    var(--font-display);
+  font-weight:    var(--weight-bold);
+  font-size:      var(--text-lg);
+  color:          var(--color-text);
+  display:        inline;
+}
+
+.pw-live-detail {
+  font-size:  var(--text-xs);
+  color:      var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+
 
 /* ── NEXT GAME STRIP ────────────────────────────────────────*/
 .pw-next-game {

@@ -18,6 +18,7 @@ const ARCHIVE_FILE = "./archive.json";
 const ARCHIVE_DIR = "./archive";
 const ISSUES_DIR = "./issues";
 const SITE_DIR = "./site";
+const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./live-feed.js"];
 
 main();
 
@@ -72,8 +73,9 @@ function buildSiteArtifact({ latestHtml, archive, archiveHtml, status }) {
   writeFileSync(`${SITE_DIR}/archive.json`, `${JSON.stringify(archive, null, 2)}\n`, "utf8");
   writeFileSync(`${SITE_DIR}/status.json`, `${JSON.stringify(status, null, 2)}\n`, "utf8");
 
-  copyFileSync("./tokens.css", `${SITE_DIR}/tokens.css`);
-  copyFileSync("./phillies-wire.css", `${SITE_DIR}/phillies-wire.css`);
+  for (const asset of STATIC_ASSET_FILES) {
+    copyFileSync(asset, `${SITE_DIR}/${asset.replace("./", "")}`);
+  }
 
   if (existsSync(ISSUES_DIR)) {
     copyDirectory(ISSUES_DIR, `${SITE_DIR}/issues`);

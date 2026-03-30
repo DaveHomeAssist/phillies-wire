@@ -18,6 +18,7 @@ phillies-wire/
 |-- enrich.mjs
 |-- render.mjs
 |-- verify.mjs
+|-- run.mjs
 |-- archive.json
 |-- archive/
 |-- issues/
@@ -30,11 +31,17 @@ phillies-wire/
 ## Pipeline
 
 ```text
-crawl.mjs -> phillies-wire-data.json -> enrich.mjs -> editorial merge or fallback -> render.mjs
-          -> latest index + dated issue + archive.json + archive/index.html + site/
+run.mjs -> crawl.mjs -> edition sync -> enrich.mjs -> render.mjs -> verify.mjs -> deliver.mjs?
+        -> latest index + dated issue + archive.json + archive/index.html + site/
 ```
 
 Run locally:
+
+```bash
+node run.mjs
+```
+
+Or stage-by-stage:
 
 ```bash
 node crawl.mjs
@@ -50,11 +57,12 @@ node verify.mjs
 - `enrich.mjs` now uses an editorial-only payload instead of sending the full issue JSON to Claude.
 - If `ANTHROPIC_API_KEY` is missing, or if enrich fails, the site publishes a structured fallback instead of failing the issue.
 - `render.mjs` writes the latest issue, dated issue pages, `archive.json`, `archive/index.html`, and `status.json`, and the site surfaces freshness plus fallback notes from `meta.status`.
+- `run.mjs` orchestrates the full pipeline, reuses the current day's edition number on reruns, and increments the issue number only when a new publication date is crawled.
 
 ## Automated publish
 
 - Workflow: [`.github/workflows/publish.yml`](C:/Users/Dave%20RambleOn/Desktop/00-Inbox/Vivaldi%20Downloads/phillies-wire/.github/workflows/publish.yml)
-- Triggers: `workflow_dispatch` and daily cron
+- Triggers: `workflow_dispatch`, daily cron, and game-window refresh cron
 - Output: GitHub Pages artifact plus committed archive snapshots on `main`
 - Diagnostics: each run uploads the rendered HTML, archive manifest/page, data JSON, `status.json`, and any stage error logs
 
@@ -75,10 +83,10 @@ node verify.mjs
 
 ## Next likely upgrades
 
-- State-aware hero for pregame, live, and final modes
-- Archive pages and issue navigation
-- Editorial override files for same-day fixes
-- Schema contract tests across crawl, enrich, and render
+- Rotation card stat polish and current-year fallbacks once starters accumulate innings
+- Stronger live polling guards for delayed and final-state games
+- Email template hardening for Outlook and Gmail rendering quirks
+- Template and JSON contract coverage for newer standings/live modules
 
 ## Notion references
 

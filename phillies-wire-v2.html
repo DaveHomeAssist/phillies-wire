@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{{meta.assets_prefix}}tokens.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}phillies-wire.css">
 </head>
-<body>
+<body data-page-mode="{{meta.status.mode}}">
 <div class="pw-page">
 
   <div class="pw-shell-nav">
@@ -45,9 +45,9 @@
 
     <div class="pw-status-bar">
       <div class="pw-status-row">
-        <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}">{{meta.status.mode_label}}</span>
+        <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}" id="pw-status-mode-chip">{{meta.status.mode_label}}</span>
         <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}">{{meta.status.enrich_state}}</span>
-        <span class="pw-status-text">Updated {{meta.status.generated_at_et}}</span>
+        <span class="pw-status-text" id="pw-status-text">Updated {{meta.status.generated_at_et}}</span>
       </div>
       {{#each meta.status.source_notes}}
       <div class="pw-status-note">{{this}}</div>
@@ -55,12 +55,12 @@
     </div>
   </div>
 
-  <section class="pw-hero pw-hero--{{hero.mode}}">
+  <section class="pw-hero pw-hero--{{hero.mode}}" id="pw-hero-section" data-live-mode="{{hero.mode}}">
     <div class="pw-hero-copy">
-      <div class="pw-hero-label">{{hero.label}}</div>
-      <h1 class="pw-hero-headline">{{hero.headline}}</h1>
-      <div class="pw-hero-dek">{{hero.dek}}</div>
-      <p class="pw-hero-summary">{{hero.summary}}</p>
+      <div class="pw-hero-label" id="pw-hero-label">{{hero.label}}</div>
+      <h1 class="pw-hero-headline" id="pw-hero-headline">{{hero.headline}}</h1>
+      <div class="pw-hero-dek" id="pw-hero-dek">{{hero.dek}}</div>
+      <p class="pw-hero-summary" id="pw-hero-summary">{{hero.summary}}</p>
     </div>
 
     <div class="pw-hero-grid">
@@ -95,7 +95,7 @@
             <span class="pw-acc-dot"></span>
             Game Status
           </div>
-          <div class="pw-acc-preview">{{sections.game_status.preview}}</div>
+          <div class="pw-acc-preview" id="pw-game-status-preview">{{sections.game_status.preview}}</div>
         </div>
         <span class="pw-acc-chevron">&#9650;</span>
       </button>
@@ -136,6 +136,11 @@
           <div class="pw-info-row">
             <span class="pw-info-label">SEPTA</span>
             <span class="pw-info-value">{{sections.game_status.content.transit}}</span>
+          </div>
+          <div class="pw-live-score" id="pw-live-score" data-game-pk="{{meta.game_pk}}" data-first-pitch="{{meta.first_pitch_iso}}" data-venue="{{sections.game_status.content.venue}}">
+            <span class="pw-live-badge">Live</span>
+            <span class="pw-live-line" id="pw-live-line"></span>
+            <div class="pw-live-detail" id="pw-live-detail"></div>
           </div>
         </div>
       </div>
@@ -188,6 +193,7 @@
               <div class="pw-rot-date">{{this.date}}</div>
               <div class="pw-rot-pitcher">{{this.pitcher}}</div>
               <div class="pw-rot-opp">vs {{this.opponent}}</div>
+              {{#if this.era}}<div class="pw-rot-stat">{{this.era}} ERA &middot; {{this.record}}</div>{{/if}}
             </div>
             {{/each}}
           </div>
@@ -205,6 +211,42 @@
         </div>
       </div>
     </div>
+
+    {{#if sections.standings}}
+    <div class="pw-acc-row" data-row="standings">
+      <button class="pw-acc-header" onclick="toggle('standings')" aria-expanded="false">
+        <div class="pw-acc-header-left">
+          <div class="pw-acc-title">
+            <span class="pw-acc-dot"></span>
+            {{sections.standings.title}}
+          </div>
+          <div class="pw-acc-preview">{{sections.standings.preview}}</div>
+        </div>
+        <span class="pw-acc-chevron">&#9660;</span>
+      </button>
+      <div class="pw-acc-body" role="region">
+        <div class="pw-acc-body-inner">
+          <table class="pw-standings-table">
+            <thead>
+              <tr><th>Team</th><th>W</th><th>L</th><th>Pct</th><th>GB</th><th>Strk</th></tr>
+            </thead>
+            <tbody>
+              {{#each sections.standings.content.teams}}
+              <tr class="{{#if this.is_phi}}pw-standings-row--phi{{/if}}">
+                <td>{{this.abbr}}</td>
+                <td>{{this.wins}}</td>
+                <td>{{this.losses}}</td>
+                <td>{{this.pct}}</td>
+                <td>{{this.gb}}</td>
+                <td>{{this.streak}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    {{/if}}
 
     <div class="pw-acc-row" data-row="injury">
       <button class="pw-acc-header" onclick="toggle('injury')" aria-expanded="false">
@@ -317,8 +359,6 @@
 </div>
 
 <script>
-  const pageMode = '{{meta.status.mode}}';
-
   function toggle(id) {
     const row = document.querySelector('[data-row="' + id + '"]');
     if (!row) {
@@ -348,12 +388,32 @@
     html.dataset.theme = html.dataset.theme === 'dark' ? '' : 'dark';
   }
 
-  if (pageMode === 'live') {
-    window.setTimeout(function() {
-      window.location.reload();
-    }, 300000);
-  }
+  /* Legacy inline live polling kept commented while the shared live-feed.js module handles updates.
+
+          if (isFinal) {
+            clearPollTimer();
+            detailEl.textContent = 'Final';
+          } else if (inning === 0) {
+            detailEl.textContent = 'Pregame';
+            scheduleNextPoll(previewPollMs);
+          } else {
+            detailEl.textContent = half + ' ' + inning + ' · ' + outs + ' out' + (outs !== 1 ? 's' : '');
+          }
+          if (!isFinal && inning > 0) {
+            scheduleNextPoll(isLive ? livePollMs : previewPollMs);
+          }
+          container.classList.add('pw-live-score--active');
+        })
+        .catch(function() {
+          scheduleNextPoll(previewPollMs);
+        });
+    }
+
+    poll();
+  })();
+  */
 </script>
+<script type="module" src="{{meta.assets_prefix}}live-feed.js"></script>
 
 </body>
 </html>
