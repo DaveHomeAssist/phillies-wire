@@ -20,6 +20,10 @@ runTest("buildGameSnapshot maps an in-progress game to live shell copy", () => {
         status: {
           detailedState: "In Progress",
         },
+        teams: {
+          away: { teamName: "Rangers", abbreviation: "TEX" },
+          home: { teamName: "Phillies", abbreviation: "PHI" },
+        },
       },
     },
     venue: "Citizens Bank Park",
@@ -31,9 +35,9 @@ runTest("buildGameSnapshot maps an in-progress game to live shell copy", () => {
   assert.strictEqual(snapshot.lineText, "TEX 2, PHI 3");
   assert.strictEqual(snapshot.detailText, "Top 7" + SEP + "1 out");
   assert.strictEqual(snapshot.heroLabel, "Live");
-  assert.strictEqual(snapshot.heroHeadline, "TEX 2, PHI 3");
+  assert.strictEqual(snapshot.heroHeadline, "Rangers 2, Phillies 3");
   assert.strictEqual(snapshot.heroDek, "Top 7" + SEP + "1 out");
-  assert.strictEqual(snapshot.previewText, "TEX 2, PHI 3" + SEP + "Top 7" + SEP + "1 out");
+  assert.strictEqual(snapshot.previewText, "Rangers 2, Phillies 3" + SEP + "Top 7" + SEP + "1 out");
   assert.ok(/Citizens Bank Park/.test(snapshot.heroSummary));
 });
 
@@ -53,6 +57,10 @@ runTest("buildGameSnapshot maps a final game to final shell copy", () => {
         status: {
           detailedState: "Final",
         },
+        teams: {
+          away: { teamName: "Rangers", abbreviation: "TEX" },
+          home: { teamName: "Phillies", abbreviation: "PHI" },
+        },
       },
     },
     venue: "Citizens Bank Park",
@@ -63,9 +71,39 @@ runTest("buildGameSnapshot maps a final game to final shell copy", () => {
   assert.strictEqual(snapshot.isFinal, true);
   assert.strictEqual(snapshot.detailText, "Final");
   assert.strictEqual(snapshot.heroLabel, "Final");
-  assert.strictEqual(snapshot.heroHeadline, "TEX 2, PHI 5");
+  assert.strictEqual(snapshot.heroHeadline, "Rangers 2, Phillies 5");
   assert.strictEqual(snapshot.heroDek, "Final");
-  assert.strictEqual(snapshot.previewText, "TEX 2, PHI 5" + SEP + "Final");
+  assert.strictEqual(snapshot.previewText, "Rangers 2, Phillies 5" + SEP + "Final");
+});
+
+runTest("buildGameSnapshot uses feed team abbreviations when linescore omits them", () => {
+  const snapshot = buildGameSnapshot({
+    linescore: {
+      currentInning: 2,
+      isTopInning: false,
+      outs: 2,
+      teams: {
+        away: { runs: 5 },
+        home: { runs: 0 },
+      },
+    },
+    feed: {
+      gameData: {
+        status: {
+          detailedState: "In Progress",
+        },
+        teams: {
+          away: { teamName: "Nationals", abbreviation: "WSH" },
+          home: { teamName: "Phillies", abbreviation: "PHI" },
+        },
+      },
+    },
+    venue: "Citizens Bank Park",
+  });
+
+  assert.strictEqual(snapshot.lineText, "WSH 5, PHI 0");
+  assert.strictEqual(snapshot.heroHeadline, "Nationals 5, Phillies 0");
+  assert.strictEqual(snapshot.previewText, "Nationals 5, Phillies 0" + SEP + "Bot 2" + SEP + "2 outs");
 });
 
 runTest("syncLiveShell promotes a stale pregame shell to live", () => {
@@ -85,6 +123,10 @@ runTest("syncLiveShell promotes a stale pregame shell to live", () => {
         status: {
           detailedState: "In Progress",
         },
+        teams: {
+          away: { teamName: "Rangers", abbreviation: "TEX" },
+          home: { teamName: "Phillies", abbreviation: "PHI" },
+        },
       },
     },
     venue: "Citizens Bank Park",
@@ -95,10 +137,10 @@ runTest("syncLiveShell promotes a stale pregame shell to live", () => {
   assert.strictEqual(doc.getElementById("pw-status-mode-chip").textContent, "Live");
   assert.strictEqual(doc.getElementById("pw-status-text").textContent, "Updated live" + SEP + "Bot 4" + SEP + "2 outs");
   assert.strictEqual(doc.getElementById("pw-hero-label").textContent, "Live");
-  assert.strictEqual(doc.getElementById("pw-hero-headline").textContent, "TEX 1, PHI 4");
+  assert.strictEqual(doc.getElementById("pw-hero-headline").textContent, "Rangers 1, Phillies 4");
   assert.strictEqual(doc.getElementById("pw-hero-dek").textContent, "Bot 4" + SEP + "2 outs");
   assert.strictEqual(doc.getElementById("pw-hero-summary").textContent, "Live from Citizens Bank Park.");
-  assert.strictEqual(doc.getElementById("pw-game-status-preview").textContent, "TEX 1, PHI 4" + SEP + "Bot 4" + SEP + "2 outs");
+  assert.strictEqual(doc.getElementById("pw-game-status-preview").textContent, "Rangers 1, Phillies 4" + SEP + "Bot 4" + SEP + "2 outs");
   assert.strictEqual(doc.getElementById("pw-live-line").textContent, "TEX 1, PHI 4");
   assert.strictEqual(doc.getElementById("pw-live-detail").textContent, "Bot 4" + SEP + "2 outs");
   assert.strictEqual(doc.body.dataset.pageMode, "live");

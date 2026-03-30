@@ -9,8 +9,11 @@ export function buildGameSnapshot(input) {
   const source = input || {};
   const linescore = source.linescore || {};
   const feed = source.feed || {};
+  const gameDataTeams = feed.gameData && feed.gameData.teams ? feed.gameData.teams : {};
   const home = linescore.teams && linescore.teams.home ? linescore.teams.home : {};
   const away = linescore.teams && linescore.teams.away ? linescore.teams.away : {};
+  const homeMeta = gameDataTeams.home || {};
+  const awayMeta = gameDataTeams.away || {};
   const inning = Number(linescore.currentInning || 0);
   const outs = typeof linescore.outs === "number" ? linescore.outs : 0;
   const half = linescore.isTopInning ? "Top" : "Bot";
@@ -21,11 +24,19 @@ export function buildGameSnapshot(input) {
   const isFinal = /final|game over|completed/i.test(detailedState);
   const isLive = !isFinal && inning > 0;
   const lineText =
-    getTeamAbbreviation(away, "AWAY") +
+    getTeamAbbreviation(away, awayMeta, "AWAY") +
     " " +
     getTeamRuns(away) +
     ", " +
-    getTeamAbbreviation(home, "HOME") +
+    getTeamAbbreviation(home, homeMeta, "HOME") +
+    " " +
+    getTeamRuns(home);
+  const heroLineText =
+    getTeamDisplayName(awayMeta, getTeamAbbreviation(away, awayMeta, "Away")) +
+    " " +
+    getTeamRuns(away) +
+    ", " +
+    getTeamDisplayName(homeMeta, getTeamAbbreviation(home, homeMeta, "Home")) +
     " " +
     getTeamRuns(home);
   const detailText = isFinal ? "Final" : inning === 0 ? "Pregame" : half + " " + inning + SEPARATOR + formatOuts(outs);
@@ -40,10 +51,10 @@ export function buildGameSnapshot(input) {
     lineText,
     detailText,
     heroLabel,
-    heroHeadline: lineText,
+    heroHeadline: heroLineText,
     heroDek: detailText,
     heroSummary: isFinal ? buildFinalSummary(venue) : isLive ? buildLiveSummary(venue) : "",
-    previewText: lineText + SEPARATOR + detailText,
+    previewText: heroLineText + SEPARATOR + detailText,
     statusText: "Updated live" + SEPARATOR + detailText,
   };
 }
@@ -146,7 +157,7 @@ export function initLiveFeed(doc, win, fetchImpl) {
   function poll() {
     Promise.all([
       fetchJson(activeFetch, "https://statsapi.mlb.com/api/v1/game/" + gamePk + "/linescore"),
-      fetchJson(activeFetch, "https://statsapi.mlb.com/api/v1.1/game/" + gamePk + "/feed/live?fields=gameData,status,detailedState"),
+      fetchJson(activeFetch, "https://statsapi.mlb.com/api/v1.1/game/" + gamePk + "/feed/live?fields=gameData,status,detailedState,teams,away,abbreviation,teamName,name,clubName,home"),
     ])
       .then(function(results) {
         const snapshot = buildGameSnapshot({
@@ -179,8 +190,32 @@ export function fetchJson(fetchImpl, url) {
   });
 }
 
-function getTeamAbbreviation(team, fallback) {
-  return team && team.abbreviation ? team.abbreviation : fallback;
+function getTeamAbbreviation(team, metadata, fallback) {
+  if (team && team.abbreviation) {
+    return team.abbreviation;
+  }
+
+  if (metadata && metadata.abbreviation) {
+    return metadata.abbreviation;
+  }
+
+  return fallback;
+}
+
+function getTeamDisplayName(metadata, fallback) {
+  if (metadata && metadata.teamName) {
+    return metadata.teamName;
+  }
+
+  if (metadata && metadata.clubName) {
+    return metadata.clubName;
+  }
+
+  if (metadata && metadata.name) {
+    return metadata.name;
+  }
+
+  return fallback;
 }
 
 function getTeamRuns(team) {
