@@ -169,8 +169,12 @@ export function initLiveFeed(doc, win, fetchImpl) {
   poll();
 }
 
-function fetchJson(fetchImpl, url) {
+export function fetchJson(fetchImpl, url) {
   return fetchImpl(url, { cache: "no-store" }).then(function(response) {
+    if (!response || response.ok === false) {
+      const status = response && typeof response.status !== "undefined" ? response.status : "unknown";
+      throw new Error("Live feed request failed with status " + status + ".");
+    }
     return response.json();
   });
 }

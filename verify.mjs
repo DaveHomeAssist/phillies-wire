@@ -5,6 +5,7 @@ const status = readJson("./status.json");
 const archive = readJson("./archive.json");
 const issuePath = `./issues/${data.meta.date}/index.html`;
 const siteIssuePath = `./site/issues/${data.meta.date}/index.html`;
+const mojibakePattern = /Â·|Â°|â€“|â€”/;
 
 const requiredFiles = [
   "./phillies-wire-output.html",
@@ -112,6 +113,17 @@ const htmlFiles = [
   siteIssuePath,
   "./site/archive/index.html",
 ];
+const textIntegrityFiles = [
+  "./phillies-wire-schema.json",
+  "./phillies-wire-data.json",
+  "./status.json",
+  "./archive.json",
+  ...htmlFiles,
+];
+
+for (const file of textIntegrityFiles) {
+  assertNoMojibake(readFileSync(file, "utf8"), file);
+}
 
 for (const file of htmlFiles) {
   const html = readFileSync(file, "utf8");
@@ -169,6 +181,12 @@ function assertNoUnresolvedTokens(html, file) {
   const unresolved = html.match(/{{[^}]+}}/g) ?? [];
   if (unresolved.length) {
     fail(`Unresolved template tokens remain in ${file}: ${unresolved.slice(0, 10).join(", ")}`);
+  }
+}
+
+function assertNoMojibake(text, file) {
+  if (mojibakePattern.test(text)) {
+    fail(`Mojibake detected in ${file}.`);
   }
 }
 
