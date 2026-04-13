@@ -143,6 +143,23 @@ if (!data.meta.off_day && !/pw-accordion/.test(latestHtml)) {
   fail("Latest issue page is missing the accordion sections.");
 }
 
+if (!data.meta.off_day) {
+  const lineup = data.sections?.lineup?.content;
+  if (!lineup?.starters?.home?.name || !lineup?.starters?.away?.name) {
+    fail("Lineup section is missing starter names.");
+  }
+
+  const homeOrder = lineup?.batting_order?.home;
+  const awayOrder = lineup?.batting_order?.away;
+  if (!Array.isArray(homeOrder) || homeOrder.length !== 9 || !Array.isArray(awayOrder) || awayOrder.length !== 9) {
+    fail("Lineup batting_order must contain nine entries for each side.");
+  }
+
+  if (!/data-row="lineup"/.test(latestHtml)) {
+    fail("Latest issue page is missing the lineup accordion row.");
+  }
+}
+
 if (!/live-feed\.js/.test(latestHtml)) {
   fail("Latest issue page is missing the live-feed module.");
 }
