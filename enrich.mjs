@@ -1,8 +1,10 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
 
-const MODEL = "claude-sonnet-4-20250514";
+const MODEL = process.env.ENRICH_MODEL?.trim() || "claude-sonnet-4-5";
 const MAX_TOKENS = 4000;
+const REQUEST_TIMEOUT_MS = 60 * 1000;
+const MAX_ATTEMPTS = 4;
 const ERROR_LOG = "./enrich-error.log";
 const DATA_FILE = "./phillies-wire-data.json";
 const STRICT_MODE = process.env.ENRICH_STRICT === "true";
@@ -66,7 +68,7 @@ Do not edit any keys.
 Editorial payload:
 ${JSON.stringify(editorialRequest, null, 2)}`;
 
-  const payload = await postJson("https://api.anthropic.com/v1/messages", {
+  const payload = await postJsonWithRetry("https://api.anthropic.com/v1/messages", {
     headers: {
       "content-type": "application/json",
       "x-api-key": apiKey,
@@ -75,7 +77,15 @@ ${JSON.stringify(editorialRequest, null, 2)}`;
     body: {
       model: MODEL,
       max_tokens: MAX_TOKENS,
-      system: SYSTEM,
+      // Cache the long-lived system prompt so subsequent runs within the
+      // cache TTL (5 minutes) pay only for the user delta.
+      system: [
+        {
+          type: "text",
+          text: SYSTEM,
+          cache_control: { type: "ephemeral" },
+        },
+      ],
       messages: [{ role: "user", content: userPrompt }],
     },
   });
@@ -232,7 +242,7 @@ function writeData(data) {
 }
 
 async function requestRepair(apiKey, badResponse, editorialRequest) {
-  const payload = await postJson("https://api.anthropic.com/v1/messages", {
+  const payload = await postJsonWithRetry("https://api.anthropic.com/v1/messages", {
     headers: {
       "content-type": "application/json",
       "x-api-key": apiKey,
@@ -265,6 +275,31 @@ function writeError(error) {
   writeFileSync(ERROR_LOG, message, "utf8");
 }
 
+async function postJsonWithRetry(url, options) {
+  let lastError;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
+    try {
+      return await postJson(url, options);
+    } catch (error) {
+      lastError = error;
+      if (!isRetryable(error) || attempt === MAX_ATTEMPTS) {
+        throw error;
+      }
+      const backoffMs = Math.min(30000, 1000 * 2 ** (attempt - 1)) + Math.floor(Math.random() * 500);
+      await new Promise((resolve) => setTimeout(resolve, backoffMs));
+    }
+  }
+  throw lastError;
+}
+
+function isRetryable(error) {
+  if (!error) return false;
+  if (error.code === "ECONNRESET" || error.code === "ETIMEDOUT") return true;
+  if (typeof error.statusCode === "number" && (error.statusCode === 429 || error.statusCode >= 500)) return true;
+  if (/timed out/i.test(error.message ?? "")) return true;
+  return false;
+}
+
 function postJson(url, { headers, body }) {
   const parsed = new URL(url);
   const payload = JSON.stringify(body);
@@ -280,6 +315,7 @@ function postJson(url, { headers, body }) {
           ...headers,
           "content-length": Buffer.byteLength(payload),
         },
+        timeout: REQUEST_TIMEOUT_MS,
       },
       (response) => {
         let raw = "";
@@ -292,12 +328,15 @@ function postJson(url, { headers, body }) {
           try {
             parsedBody = JSON.parse(raw);
           } catch (error) {
+            error.statusCode = response.statusCode;
             reject(error);
             return;
           }
 
           if (response.statusCode < 200 || response.statusCode >= 300) {
-            reject(new Error(parsedBody?.error?.message ?? `Anthropic request failed with status ${response.statusCode}.`));
+            const failure = new Error(parsedBody?.error?.message ?? `Anthropic request failed with status ${response.statusCode}.`);
+            failure.statusCode = response.statusCode;
+            reject(failure);
             return;
           }
 
@@ -306,6 +345,9 @@ function postJson(url, { headers, body }) {
       },
     );
 
+    request.on("timeout", () => {
+      request.destroy(new Error(`Anthropic request timed out after ${REQUEST_TIMEOUT_MS}ms`));
+    });
     request.on("error", reject);
     request.write(payload);
     request.end();

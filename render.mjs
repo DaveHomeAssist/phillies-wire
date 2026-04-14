@@ -429,23 +429,137 @@ function upsertArchive(archive, entry, data) {
 }
 
 function renderArchivePage(archive) {
-  const latestEntry = archive.entries[0];
+  const entries = archive.entries ?? [];
+  const latestEntry = entries[0];
   const latestSummary = latestEntry
     ? `${formatArchiveDate(latestEntry.date)} · ${latestEntry.hero_label} · ${latestEntry.headline}`
     : "No issues published yet.";
 
-  const archiveItems = archive.entries
-    .map((entry) => {
-      const meta = [
-        `Vol. ${entry.volume}`,
-        `No. ${entry.edition}`,
-        entry.mode_label,
-        entry.enrich_state,
-      ]
-        .filter(Boolean)
-        .join(" · ");
+  const groups = groupEntriesByMonth(entries);
+  const groupHtml = groups
+    .map((group) => {
+      const itemsHtml = group.entries
+        .map((entry) => renderArchiveEntry(entry))
+        .join("\n");
+      return `<section class="pw-archive-group" data-month="${escapeHtml(group.monthKey)}">
+  <h2 class="pw-archive-group-title">${escapeHtml(group.monthLabel)} <span class="pw-archive-group-count">${group.entries.length}</span></h2>
+  <div class="pw-archive-list">
+${itemsHtml}
+  </div>
+</section>`;
+    })
+    .join("\n");
 
-      return `<a class="pw-archive-item" href="../${escapeHtml(entry.issue_path)}">
+  const canonicalUrl = `${SITE_URL}/archive/`;
+  const description = `Phillies Wire issue archive. ${entries.length} published issue${entries.length === 1 ? "" : "s"}.`;
+  return `<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#e81828">
+<title>${escapeHtml(archive.publication)} Archive · ${entries.length} issue${entries.length === 1 ? "" : "s"}</title>
+<meta name="description" content="${escapeHtml(description)}">
+<link rel="canonical" href="${escapeHtml(canonicalUrl)}">
+<link rel="alternate" type="application/rss+xml" title="${escapeHtml(archive.publication)} RSS" href="../feed.xml">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="${escapeHtml(archive.publication)} Archive">
+<meta property="og:description" content="${escapeHtml(description)}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="${escapeHtml(canonicalUrl)}">
+<meta property="og:image" content="${escapeHtml(SITE_URL + "/" + DEFAULT_OG_IMAGE_PATH)}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../phillies-wire.css">
+</head>
+<body>
+<a class="pw-skip-link" href="#pw-archive-main">Skip to archive content</a>
+<div class="pw-page">
+  <nav class="pw-shell-nav" aria-label="Primary">
+    <a class="pw-shell-link" href="../">Latest</a>
+    <a class="pw-shell-link" href="./">Archive</a>
+    <a class="pw-shell-link" href="../feed.xml" rel="alternate">RSS</a>
+  </nav>
+
+  <main id="pw-archive-main" class="pw-main">
+  <section class="pw-archive-page">
+    <div class="pw-archive-kicker">Issue Archive</div>
+    <h1 class="pw-archive-title">${escapeHtml(archive.publication)}</h1>
+    <p class="pw-archive-summary">${escapeHtml(latestSummary)}</p>
+    <div class="pw-archive-meta">${escapeHtml(String(entries.length))} published issue${entries.length === 1 ? "" : "s"} · Updated ${escapeHtml(formatTimestamp(archive.updated_at))}</div>
+  </section>
+
+  <div class="pw-red-rule"></div>
+
+  <div class="pw-archive-controls">
+    <label class="pw-archive-search-label" for="pw-archive-search">
+      <span class="pw-archive-search-label-text">Search issues</span>
+      <input type="search" id="pw-archive-search" class="pw-archive-search" placeholder="Search by date, headline, or matchup" autocomplete="off">
+    </label>
+    <p class="pw-archive-empty" id="pw-archive-empty" hidden>No issues match that query.</p>
+  </div>
+
+${groupHtml}
+  </main>
+</div>
+<script>
+  (function () {
+    var input = document.getElementById('pw-archive-search');
+    if (!input) return;
+    var empty = document.getElementById('pw-archive-empty');
+    var items = Array.prototype.slice.call(document.querySelectorAll('.pw-archive-item'));
+    var groups = Array.prototype.slice.call(document.querySelectorAll('.pw-archive-group'));
+    input.addEventListener('input', function () {
+      var query = input.value.trim().toLowerCase();
+      var totalVisible = 0;
+      items.forEach(function (item) {
+        var text = (item.getAttribute('data-search-text') || '').toLowerCase();
+        var match = !query || text.indexOf(query) !== -1;
+        item.hidden = !match;
+        if (match) totalVisible += 1;
+      });
+      groups.forEach(function (group) {
+        var anyVisible = Array.prototype.some.call(group.querySelectorAll('.pw-archive-item'), function (item) {
+          return !item.hidden;
+        });
+        group.hidden = !anyVisible;
+      });
+      if (empty) empty.hidden = totalVisible > 0;
+    });
+  })();
+</script>
+</body>
+</html>`;
+}
+
+function renderArchiveEntry(entry) {
+  const meta = [
+    `Vol. ${entry.volume}`,
+    `No. ${entry.edition}`,
+    entry.mode_label,
+    entry.enrich_state,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  const searchText = [
+    entry.date,
+    formatArchiveDate(entry.date),
+    entry.headline,
+    entry.dek,
+    entry.summary,
+    entry.hero_label,
+    entry.mode_label,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  return `<a class="pw-archive-item" href="../${escapeHtml(entry.issue_path)}" data-search-text="${escapeHtml(searchText)}">
   <div class="pw-archive-item-top">
     <div class="pw-archive-item-date">${escapeHtml(formatArchiveDate(entry.date))}</div>
     <div class="pw-archive-item-badge pw-archive-item-badge--${escapeHtml(entry.mode)}">${escapeHtml(entry.hero_label)}</div>
@@ -454,43 +568,34 @@ function renderArchivePage(archive) {
   <div class="pw-archive-item-dek">${escapeHtml(entry.dek || entry.summary)}</div>
   <div class="pw-archive-item-meta">${escapeHtml(meta)}</div>
 </a>`;
-    })
-    .join("\n");
+}
 
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${escapeHtml(archive.publication)} Archive</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../tokens.css">
-<link rel="stylesheet" href="../phillies-wire.css">
-</head>
-<body>
-<div class="pw-page">
-  <div class="pw-shell-nav">
-    <a class="pw-shell-link" href="../">Latest</a>
-    <a class="pw-shell-link" href="./">Archive</a>
-  </div>
+function groupEntriesByMonth(entries) {
+  const groups = new Map();
+  for (const entry of entries) {
+    const monthKey = (entry.date ?? "").slice(0, 7);
+    if (!groups.has(monthKey)) {
+      groups.set(monthKey, { monthKey, monthLabel: formatMonthLabel(monthKey), entries: [] });
+    }
+    groups.get(monthKey).entries.push(entry);
+  }
+  // Entries are already sorted newest-first at the archive level.
+  return Array.from(groups.values());
+}
 
-  <section class="pw-archive-page">
-    <div class="pw-archive-kicker">Issue Archive</div>
-    <h1 class="pw-archive-title">${escapeHtml(archive.publication)}</h1>
-    <p class="pw-archive-summary">${escapeHtml(latestSummary)}</p>
-    <div class="pw-archive-meta">${escapeHtml(String(archive.entries.length))} published issue${archive.entries.length === 1 ? "" : "s"} · Updated ${escapeHtml(formatTimestamp(archive.updated_at))}</div>
-  </section>
-
-  <div class="pw-red-rule"></div>
-
-  <div class="pw-archive-list">
-${archiveItems}
-  </div>
-</div>
-</body>
-</html>`;
+function formatMonthLabel(monthKey) {
+  if (!monthKey || monthKey.length < 7) {
+    return "Undated";
+  }
+  try {
+    return new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(`${monthKey}-15T12:00:00Z`));
+  } catch {
+    return monthKey;
+  }
 }
 
 export function populate(templateString, dataRoot) {
