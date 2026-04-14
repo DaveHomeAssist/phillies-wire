@@ -35,18 +35,30 @@ export {
 async function main() {
   const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
   const overrides = loadOverrides(TODAY);
-  const [scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, weatherResponse] =
+  // Every upstream dependency is wrapped in a soft catch so that a
+  // single flaky endpoint cannot take the whole publish offline. The
+  // fixture fallback kicks in wherever a response is missing.
+  const fetchSoft = (label, url) =>
+    fetchJson(url).catch((error) => {
+      console.warn(`[crawl] ${label} fetch failed: ${error.message}`);
+      return null;
+    });
+
+  const [scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, weatherResponse, injuryResponse] =
     await Promise.all([
-      fetchJson(`${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&date=${TODAY}&hydrate=linescore,probablePitcher,seriesStatus,team,broadcasts(all),game(content(summary,media(epg)))`),
-      fetchJson(
+      fetchSoft(
+        "schedule",
+        `${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&date=${TODAY}&hydrate=linescore,probablePitcher,seriesStatus,team,broadcasts(all),game(content(summary,media(epg)))`,
+      ),
+      fetchSoft(
+        "next-schedule",
         `${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&startDate=${TODAY}&endDate=${getRelativeIsoDate(4)}&hydrate=linescore,probablePitcher,seriesStatus,team,broadcasts(all)`,
       ),
-      fetchJson(`${MLB_API_BASE}/teams/${TEAM_ID}/roster?rosterType=active`),
-      fetchJson(`${MLB_API_BASE}/transactions?teamId=${TEAM_ID}&startDate=${YESTERDAY}&endDate=${TODAY}`),
-      fetchJson(WEATHER_URL),
+      fetchSoft("roster", `${MLB_API_BASE}/teams/${TEAM_ID}/roster?rosterType=active`),
+      fetchSoft("transactions", `${MLB_API_BASE}/transactions?teamId=${TEAM_ID}&startDate=${YESTERDAY}&endDate=${TODAY}`),
+      fetchSoft("weather", WEATHER_URL),
+      fetchSoft("injuries", `${MLB_API_BASE}/teams/${TEAM_ID}/injuries`),
     ]);
-
-  const injuryResponse = await fetchJson(`${MLB_API_BASE}/teams/${TEAM_ID}/injuries`).catch(() => null);
 
   const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
   const game = pickActiveGame(scheduleResponse?.dates?.[0]?.games ?? []);
