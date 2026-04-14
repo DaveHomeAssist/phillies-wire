@@ -6,9 +6,25 @@ const DATA_FILE = "./phillies-wire-data.json";
 const CSS_FILES = ["./tokens.css", "./phillies-wire.css"];
 
 main().catch((error) => {
-  console.error(error.message);
+  console.error(redactSmtp(error.message));
   process.exit(1);
 });
+
+function redactSmtp(message) {
+  if (!message) {
+    return message;
+  }
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  let redacted = String(message);
+  if (user) {
+    redacted = redacted.split(user).join("[smtp_user]");
+  }
+  if (pass) {
+    redacted = redacted.split(pass).join("[smtp_pass]");
+  }
+  return redacted;
+}
 
 async function main() {
   const recipients = process.env.DELIVERY_RECIPIENTS;
@@ -30,12 +46,23 @@ async function main() {
   const subject = `${data.meta.publication} · ${data.meta.date} · PHI ${data.record.wins}-${data.record.losses}`;
   const plainText = buildPlainText(data);
 
+  const smtpPort = Number(process.env.SMTP_PORT ?? 587);
   const transport = createTransport({
     host: process.env.SMTP_HOST ?? "smtp.gmail.com",
-    port: Number(process.env.SMTP_PORT ?? 587),
-    secure: false,
+    port: smtpPort,
+    secure: smtpPort === 465,
+    requireTLS: true,
     auth: { user: smtpUser, pass: smtpPass },
+    tls: {
+      minVersion: "TLSv1.2",
+    },
   });
+
+  try {
+    await transport.verify();
+  } catch (error) {
+    throw new Error(`SMTP verification failed: ${redactSmtp(error.message)}`);
+  }
 
   await transport.sendMail({
     from: `"${data.meta.publication}" <${smtpUser}>`,

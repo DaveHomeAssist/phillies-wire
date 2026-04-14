@@ -952,8 +952,11 @@ function validateCrawlPayload(data) {
     throw new Error("sections.injury_report.content.il_entries must be an array.");
   }
 
-  if (data.meta.date !== TODAY) {
-    throw new Error(`meta.date ${data.meta.date} does not match today's date ${TODAY}.`);
+  // Recompute today at validation time to avoid races when the crawl
+  // spans midnight ET during a game-window cron run.
+  const currentIsoDate = getIsoDate();
+  if (data.meta.date !== TODAY && data.meta.date !== currentIsoDate) {
+    throw new Error(`meta.date ${data.meta.date} does not match today's date ${currentIsoDate}.`);
   }
 }
 
