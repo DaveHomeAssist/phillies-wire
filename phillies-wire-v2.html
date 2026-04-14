@@ -146,6 +146,54 @@
       </div>
     </div>
 
+    <div class="pw-acc-row" data-row="lineup">
+      <button class="pw-acc-header" onclick="toggle('lineup')" aria-expanded="false">
+        <div class="pw-acc-header-left">
+          <div class="pw-acc-title">
+            <span class="pw-acc-dot"></span>
+            Game-Day Lineup
+          </div>
+          <div class="pw-acc-preview">{{sections.lineup.preview}}</div>
+        </div>
+        <span class="pw-acc-chevron">&#9660;</span>
+      </button>
+      <div class="pw-acc-body" role="region">
+        <div class="pw-acc-body-inner">
+          <div class="pw-section-label">Starting Pitchers</div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">{{sections.lineup.content.starters.home.team}}</span>
+            <span class="pw-info-value">{{sections.lineup.content.starters.home.name}} ({{sections.lineup.content.starters.home.hand}}HP)</span>
+          </div>
+          <div class="pw-info-row">
+            <span class="pw-info-label">{{sections.lineup.content.starters.away.team}}</span>
+            <span class="pw-info-value">{{sections.lineup.content.starters.away.name}} ({{sections.lineup.content.starters.away.hand}}HP)</span>
+          </div>
+
+          <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.home.team}} Batting Order</div>
+          {{#each sections.lineup.content.batting_order.home}}
+          <div class="pw-player-row">
+            <div>
+              <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
+              <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
+            </div>
+          </div>
+          {{/each}}
+
+          <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.away.team}} Batting Order</div>
+          {{#each sections.lineup.content.batting_order.away}}
+          <div class="pw-player-row">
+            <div>
+              <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
+              <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
+            </div>
+          </div>
+          {{/each}}
+
+          <p class="pw-body pw-body--spaced">{{sections.lineup.content.status_note}}</p>
+        </div>
+      </div>
+    </div>
+
     <div class="pw-acc-row" data-row="recap">
       <button class="pw-acc-header" onclick="toggle('recap')" aria-expanded="false">
         <div class="pw-acc-header-left">

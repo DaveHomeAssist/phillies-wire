@@ -38,9 +38,7 @@ async function main() {
     return;
   }
 
-  const boxscore = isFinalGame(game)
-    ? await fetchJson(`${MLB_API_BASE}/game/${game.gamePk}/boxscore`)
-    : null;
+  const boxscore = await fetchJson(`${MLB_API_BASE}/game/${game.gamePk}/boxscore`).catch(() => null);
 
   const data = await buildLivePayload({
     fixture,
@@ -138,6 +136,16 @@ async function buildLivePayload(context) {
     transit: fixture.sections.game_status.content.transit,
   };
 
+  data.sections.lineup = buildLineupSection({
+    fixture,
+    boxscore,
+    philliesAreHome,
+    homeTeam,
+    awayTeam,
+    starters: data.sections.game_status.content.starters,
+    firstPitch: data.sections.game_status.content.first_pitch,
+  });
+
   const pregamePreview = buildPregamePreviewContent({
     matchup: data.sections.game_status.content.matchup,
     firstPitch: data.sections.game_status.content.first_pitch,
@@ -221,6 +229,93 @@ async function buildLivePayload(context) {
   }
 
   return data;
+}
+
+function buildLineupSection(context) {
+  const { fixture, boxscore, philliesAreHome, homeTeam, awayTeam, starters, firstPitch } = context;
+  const fixtureLineup = fixture.sections.lineup;
+  const homeAbbr = homeTeam.abbreviation;
+  const awayAbbr = awayTeam.abbreviation;
+
+  const homeBox = boxscore?.teams?.home ?? null;
+  const awayBox = boxscore?.teams?.away ?? null;
+
+  const homeOrder = extractBattingOrder(homeBox);
+  const awayOrder = extractBattingOrder(awayBox);
+
+  const announced = homeOrder.length === 9 && awayOrder.length === 9;
+
+  const fallbackHomeOrder = philliesAreHome
+    ? fixtureLineup.content.batting_order.home
+    : fixtureLineup.content.batting_order.away;
+  const fallbackAwayOrder = philliesAreHome
+    ? fixtureLineup.content.batting_order.away
+    : fixtureLineup.content.batting_order.home;
+
+  const homeStarter = {
+    team: homeAbbr,
+    name: philliesAreHome ? starters.home.name : starters.away.name,
+    hand: philliesAreHome ? starters.home.hand : starters.away.hand,
+  };
+  const awayStarter = {
+    team: awayAbbr,
+    name: philliesAreHome ? starters.away.name : starters.home.name,
+    hand: philliesAreHome ? starters.away.hand : starters.home.hand,
+  };
+
+  const statusNote = announced
+    ? `Official batting orders confirmed for today's ${homeAbbr} vs ${awayAbbr} game.`
+    : "Official lineups typically post roughly two hours before first pitch. Holding baseline order until MLB confirms.";
+
+  const preview = announced
+    ? `${homeAbbr} order set · ${homeStarter.name} vs ${awayStarter.name}`
+    : `Lineups pending · ${homeStarter.name} vs ${awayStarter.name}`;
+
+  return {
+    preview,
+    content: {
+      status_note: statusNote,
+      announced,
+      first_pitch: firstPitch,
+      starters: {
+        home: homeStarter,
+        away: awayStarter,
+      },
+      batting_order: {
+        home: homeOrder.length === 9 ? homeOrder : fallbackHomeOrder,
+        away: awayOrder.length === 9 ? awayOrder : fallbackAwayOrder,
+      },
+    },
+  };
+}
+
+function extractBattingOrder(teamBox) {
+  if (!teamBox?.players) {
+    return [];
+  }
+
+  const entries = Object.values(teamBox.players)
+    .filter((player) => typeof player?.battingOrder === "string" && player.battingOrder.endsWith("00"))
+    .map((player) => ({
+      slot: Number(player.battingOrder) / 100,
+      name: player.person?.fullName ?? "TBD",
+      position: player.position?.abbreviation ?? "",
+      bats: player.person?.batSide?.code ?? player.batSide?.code ?? "R",
+    }))
+    .filter((entry) => entry.slot >= 1 && entry.slot <= 9)
+    .sort((left, right) => left.slot - right.slot);
+
+  const seen = new Set();
+  const deduped = [];
+  for (const entry of entries) {
+    if (seen.has(entry.slot)) {
+      continue;
+    }
+    seen.add(entry.slot);
+    deduped.push(entry);
+  }
+
+  return deduped.length === 9 ? deduped : [];
 }
 
 function buildOffDayPayload(fixture, nextGames, overrides) {
@@ -650,6 +745,7 @@ function buildRecapSummaryLine(game, teamId) {
 function validateCrawlPayload(data) {
   const requiredSections = [
     "game_status",
+    "lineup",
     "recap",
     "roster",
     "injury_report",
@@ -681,6 +777,19 @@ function validateCrawlPayload(data) {
 
   if (!data.meta.off_day && (!data.sections.game_status.content.starters.home.name || !data.sections.game_status.content.starters.away.name)) {
     throw new Error("Both starters must be non-null.");
+  }
+
+  if (!data.meta.off_day) {
+    const lineupContent = data.sections.lineup?.content;
+    if (!lineupContent?.starters?.home?.name || !lineupContent?.starters?.away?.name) {
+      throw new Error("Lineup starters must be non-null.");
+    }
+
+    const homeOrder = lineupContent.batting_order?.home;
+    const awayOrder = lineupContent.batting_order?.away;
+    if (!Array.isArray(homeOrder) || homeOrder.length !== 9 || !Array.isArray(awayOrder) || awayOrder.length !== 9) {
+      throw new Error("Lineup batting_order must contain nine entries for each side.");
+    }
   }
 
   if (!Array.isArray(data.sections.injury_report.content.il_entries)) {
