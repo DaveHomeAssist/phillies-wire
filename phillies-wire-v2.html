@@ -132,7 +132,8 @@
   <div class="pw-red-rule"></div>
 
   {{#if meta.show_sections}}
-  <div class="pw-accordion">
+  <h2 class="pw-visually-hidden" id="pw-accordion-heading">Issue sections</h2>
+  <div class="pw-accordion" role="list" aria-labelledby="pw-accordion-heading">
     <div class="pw-acc-row pw-acc-row--open" data-row="game">
       <button class="pw-acc-header" data-pw-toggle="game" aria-expanded="true">
         <div class="pw-acc-header-left">
