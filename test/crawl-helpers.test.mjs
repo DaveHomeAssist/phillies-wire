@@ -12,6 +12,7 @@ import {
   mergeInjuryEntries,
   normalizeGamesBack,
   normalizeLiveInjuries,
+  pickActiveGame,
   resolvePitcher,
   resolveSeriesLabel,
 } from "../crawl.mjs";
@@ -268,6 +269,21 @@ runTest("buildWindSummary returns calm when weather is missing", () => {
   assert.equal(buildWindSummary({}), "Calm");
   assert.equal(buildWindSummary({ wind_speed_10m: 12 }), "12 mph");
   assert.equal(buildWindSummary({ wind_speed_10m: 12, wind_gusts_10m: 22 }), "12 mph · gusts 22");
+});
+
+runTest("pickActiveGame prefers live, then upcoming, then last final", () => {
+  assert.equal(pickActiveGame([]), null);
+
+  const preview1 = { gameDate: "2026-05-04T17:00:00Z", status: { abstractGameState: "Preview" } };
+  const preview2 = { gameDate: "2026-05-04T20:05:00Z", status: { abstractGameState: "Preview" } };
+  assert.strictEqual(pickActiveGame([preview2, preview1]), preview1);
+
+  const live = { gameDate: "2026-05-04T20:05:00Z", status: { abstractGameState: "Live" } };
+  assert.strictEqual(pickActiveGame([preview1, live, preview2]), live);
+
+  const final1 = { gameDate: "2026-05-04T17:00:00Z", status: { abstractGameState: "Final" } };
+  const final2 = { gameDate: "2026-05-04T20:05:00Z", status: { abstractGameState: "Final" } };
+  assert.strictEqual(pickActiveGame([final1, final2]), final2);
 });
 
 function runTest(name, fn) {

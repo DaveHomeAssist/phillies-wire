@@ -29,6 +29,7 @@ export {
   normalizeGamesBack,
   clampOverride,
   buildWindSummary,
+  pickActiveGame,
 };
 
 async function main() {
@@ -48,7 +49,7 @@ async function main() {
   const injuryResponse = await fetchJson(`${MLB_API_BASE}/teams/${TEAM_ID}/injuries`).catch(() => null);
 
   const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
-  const game = scheduleResponse?.dates?.[0]?.games?.[0];
+  const game = pickActiveGame(scheduleResponse?.dates?.[0]?.games ?? []);
 
   if (!game) {
     const offDay = buildOffDayPayload(fixture, nextGames, overrides);
@@ -254,6 +255,30 @@ async function buildLivePayload(context) {
   }
 
   return data;
+}
+
+function pickActiveGame(games) {
+  if (!games.length) {
+    return null;
+  }
+
+  // Doubleheader handling: prefer the game that is currently in
+  // progress; otherwise return the next unfinished game by startTime;
+  // otherwise the last final game of the day.
+  const byStart = [...games].sort((left, right) =>
+    String(left.gameDate ?? "").localeCompare(String(right.gameDate ?? "")),
+  );
+
+  const live = byStart.find((game) => game?.status?.abstractGameState === "Live");
+  if (live) return live;
+
+  const upcoming = byStart.find((game) => game?.status?.abstractGameState === "Preview");
+  if (upcoming) return upcoming;
+
+  const finals = byStart.filter((game) => game?.status?.abstractGameState === "Final");
+  if (finals.length) return finals[finals.length - 1];
+
+  return byStart[0];
 }
 
 function resolvePitcher(side, fixture, role) {
