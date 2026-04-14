@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
+import { pathToFileURL } from "node:url";
 import { buildPregamePreviewContent, buildRecapPullQuote } from "./pregame-preview.js";
 
 const MLB_API_BASE = "https://statsapi.mlb.com/api/v1";
@@ -11,7 +12,20 @@ const YESTERDAY = getRelativeIsoDate(-1);
 const OUTPUT_FILE = "./phillies-wire-data.json";
 const ERROR_LOG = "./crawl-error.log";
 
-main().catch((error) => fail(error));
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => fail(error));
+}
+
+export {
+  resolvePitcher,
+  resolveSeriesLabel,
+  extractDecisions,
+  extractBattingOrder,
+  buildLineupSection,
+  mergeInjuryEntries,
+  normalizeLiveInjuries,
+  buildTbdBattingOrder,
+};
 
 async function main() {
   const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));

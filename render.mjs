@@ -8,6 +8,7 @@ import {
   statSync,
   writeFileSync,
 } from "node:fs";
+import { pathToFileURL } from "node:url";
 
 const DATA_FILE = "./phillies-wire-data.json";
 const TEMPLATE_FILE = "./phillies-wire-v2.html";
@@ -22,7 +23,9 @@ const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./live-feed.
 const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
 const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
 
-main();
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main();
+}
 
 function main() {
   const data = JSON.parse(readFileSync(DATA_FILE, "utf8"));
