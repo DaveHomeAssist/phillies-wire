@@ -61,7 +61,10 @@ async function main() {
   try {
     await transport.verify();
   } catch (error) {
-    throw new Error(`SMTP verification failed: ${redactSmtp(error.message)}`);
+    // Some SMTP servers block VRFY / EHLO introspection even when
+    // the underlying connection works for sendMail. Log the warning
+    // so it surfaces in CI and move on.
+    console.warn(`SMTP verification warning: ${redactSmtp(error.message)}`);
   }
 
   await transport.sendMail({
