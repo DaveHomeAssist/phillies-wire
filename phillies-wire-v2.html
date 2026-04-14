@@ -134,7 +134,7 @@
   {{#if meta.show_sections}}
   <div class="pw-accordion">
     <div class="pw-acc-row pw-acc-row--open" data-row="game">
-      <button class="pw-acc-header" onclick="toggle('game')" aria-expanded="true">
+      <button class="pw-acc-header" data-pw-toggle="game" aria-expanded="true">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -192,7 +192,7 @@
     </div>
 
     <div class="pw-acc-row" data-row="lineup">
-      <button class="pw-acc-header" onclick="toggle('lineup')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="lineup" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -245,7 +245,7 @@
     </div>
 
     <div class="pw-acc-row" data-row="recap">
-      <button class="pw-acc-header" onclick="toggle('recap')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="recap" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -272,7 +272,7 @@
     </div>
 
     <div class="pw-acc-row" data-row="roster">
-      <button class="pw-acc-header" onclick="toggle('roster')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="roster" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -313,7 +313,7 @@
 
     {{#if sections.standings}}
     <div class="pw-acc-row" data-row="standings">
-      <button class="pw-acc-header" onclick="toggle('standings')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="standings" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -349,7 +349,7 @@
     {{/if}}
 
     <div class="pw-acc-row" data-row="injury">
-      <button class="pw-acc-header" onclick="toggle('injury')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="injury" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -376,7 +376,7 @@
     </div>
 
     <div class="pw-acc-row" data-row="farm">
-      <button class="pw-acc-header" onclick="toggle('farm')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="farm" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -406,7 +406,7 @@
     </div>
 
     <div class="pw-acc-row" data-row="preview">
-      <button class="pw-acc-header" onclick="toggle('preview')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="preview" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -471,7 +471,7 @@
     <a class="pw-share-link" href="{{meta.share.twitter_url}}" rel="noopener" target="_blank">X / Twitter</a>
     <a class="pw-share-link" href="{{meta.share.bluesky_url}}" rel="noopener" target="_blank">Bluesky</a>
     <a class="pw-share-link" href="{{meta.share.mailto_url}}">Email</a>
-    <button type="button" class="pw-share-link pw-share-copy" onclick="pwCopyLink(this)" data-copy-url="{{meta.canonical_url}}">Copy link</button>
+    <button type="button" class="pw-share-link pw-share-copy" data-pw-copy data-copy-url="{{meta.canonical_url}}">Copy link</button>
   </nav>
   </main>
 
@@ -480,7 +480,7 @@
       <span class="pw-footer-pub">{{meta.publication}}</span>
       <span class="pw-footer-meta">Vol. {{meta.volume}} &middot; No. {{meta.edition}} &middot; {{meta.date}} &middot; {{meta.status.enrich_label}}</span>
     </div>
-    <button class="pw-theme-toggle" type="button" onclick="toggleTheme(this)" aria-pressed="false" aria-label="Toggle dark mode">
+    <button class="pw-theme-toggle" type="button" data-pw-theme aria-pressed="false" aria-label="Toggle dark mode">
       <span class="pw-theme-toggle-label">Dark</span>
     </button>
   </footer>
@@ -605,6 +605,33 @@
       if (hash && document.querySelector('[data-row="' + CSS.escape(hash) + '"]')) {
         window.toggle(hash, { silent: false });
       }
+
+      // Delegated click handler so the template can drop inline onclick
+      // attributes entirely (friendlier to a strict script-src CSP).
+      document.addEventListener('click', function (event) {
+        var target = event.target;
+        while (target && target !== document) {
+          if (target.hasAttribute && target.hasAttribute('data-pw-toggle')) {
+            var rowKey = target.getAttribute('data-pw-toggle');
+            if (rowKey) {
+              event.preventDefault();
+              window.toggle(rowKey);
+            }
+            return;
+          }
+          if (target.hasAttribute && target.hasAttribute('data-pw-theme')) {
+            event.preventDefault();
+            window.toggleTheme(target);
+            return;
+          }
+          if (target.hasAttribute && target.hasAttribute('data-pw-copy')) {
+            event.preventDefault();
+            window.pwCopyLink(target);
+            return;
+          }
+          target = target.parentNode;
+        }
+      });
     });
 
     window.addEventListener('hashchange', function () {
