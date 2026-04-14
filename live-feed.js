@@ -22,7 +22,8 @@ export function buildGameSnapshot(input) {
       ? feed.gameData.status.detailedState
       : "";
   const isFinal = /final|game over|completed/i.test(detailedState);
-  const isLive = !isFinal && inning > 0;
+  const isPaused = /delayed|suspended|postponed/i.test(detailedState);
+  const isLive = !isFinal && !isPaused && inning > 0;
   const lineText =
     getTeamAbbreviation(away, awayMeta, "AWAY") +
     " " +
@@ -39,9 +40,21 @@ export function buildGameSnapshot(input) {
     getTeamDisplayName(homeMeta, getTeamAbbreviation(home, homeMeta, "Home")) +
     " " +
     getTeamRuns(home);
-  const detailText = isFinal ? "Final" : inning === 0 ? "Pregame" : half + " " + inning + SEPARATOR + formatOuts(outs);
+  const detailText = isFinal
+    ? "Final"
+    : isPaused
+    ? pickPausedLabel(detailedState)
+    : inning === 0
+    ? "Pregame"
+    : half + " " + inning + SEPARATOR + formatOuts(outs);
   const mode = isFinal ? "final" : isLive ? "live" : "pregame";
-  const heroLabel = isFinal ? "Final" : isLive ? "Live" : "Pregame";
+  const heroLabel = isFinal
+    ? "Final"
+    : isPaused
+    ? pickPausedLabel(detailedState)
+    : isLive
+    ? "Live"
+    : "Pregame";
   const venue = source.venue || "";
 
   return {
@@ -238,6 +251,14 @@ function getTeamRuns(team) {
 
 function formatOuts(outs) {
   return String(outs) + " out" + (outs === 1 ? "" : "s");
+}
+
+function pickPausedLabel(detailedState) {
+  if (!detailedState) return "Paused";
+  if (/postponed/i.test(detailedState)) return "Postponed";
+  if (/suspended/i.test(detailedState)) return "Suspended";
+  if (/delayed/i.test(detailedState)) return "Delayed";
+  return detailedState;
 }
 
 function buildLiveSummary(venue) {

@@ -150,6 +150,35 @@ runTest("syncLiveShell promotes a stale pregame shell to live", () => {
   assert.ok(doc.getElementById("pw-live-score").classList.contains("pw-live-score--active"));
 });
 
+runTest("buildGameSnapshot treats Delayed state as paused", () => {
+  const snapshot = buildGameSnapshot({
+    linescore: {
+      currentInning: 4,
+      isTopInning: true,
+      outs: 2,
+      teams: {
+        away: { abbreviation: "TEX", runs: 1 },
+        home: { abbreviation: "PHI", runs: 0 },
+      },
+    },
+    feed: {
+      gameData: {
+        status: { detailedState: "Delayed: Rain" },
+        teams: {
+          away: { teamName: "Rangers", abbreviation: "TEX" },
+          home: { teamName: "Phillies", abbreviation: "PHI" },
+        },
+      },
+    },
+    venue: "Citizens Bank Park",
+  });
+
+  assert.strictEqual(snapshot.isLive, false);
+  assert.strictEqual(snapshot.isFinal, false);
+  assert.strictEqual(snapshot.heroLabel, "Delayed");
+  assert.strictEqual(snapshot.detailText, "Delayed");
+});
+
 runTest("shouldPoll keeps a pregame tab eligible for live updates", () => {
   const firstPitch = "2026-03-29T17:35:00Z";
   const ninetyMinutesEarly = Date.parse("2026-03-29T16:05:00Z");
