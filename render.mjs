@@ -19,6 +19,8 @@ const ARCHIVE_DIR = "./archive";
 const ISSUES_DIR = "./issues";
 const SITE_DIR = "./site";
 const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./live-feed.js"];
+const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
+const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
 
 main();
 
@@ -55,23 +57,60 @@ function main() {
   writeFileSync(ARCHIVE_FILE, `${JSON.stringify(archive, null, 2)}\n`, "utf8");
   writeFileSync(STATUS_FILE, `${JSON.stringify(status, null, 2)}\n`, "utf8");
 
+  const robotsTxt = buildRobotsTxt();
+  const sitemapXml = buildSitemapXml(archive);
+  const feedXml = buildFeedXml(archive, data);
+  const manifest = buildManifest(data);
+  const faviconSvg = buildFaviconSvg();
+  const ogSvg = buildOgDefaultSvg(data);
+
+  writeFileSync("./robots.txt", robotsTxt, "utf8");
+  writeFileSync("./sitemap.xml", sitemapXml, "utf8");
+  writeFileSync("./feed.xml", feedXml, "utf8");
+  writeFileSync("./manifest.webmanifest", `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  writeFileSync("./favicon.svg", faviconSvg, "utf8");
+  writeFileSync(`./${DEFAULT_OG_IMAGE_PATH}`, ogSvg, "utf8");
+
   buildSiteArtifact({
     latestHtml,
     archive,
     archiveHtml,
     status,
+    robotsTxt,
+    sitemapXml,
+    feedXml,
+    manifest,
+    faviconSvg,
+    ogSvg,
   });
 
-  console.log("Rendered latest issue, dated issue page, archive, and site artifact");
+  console.log("Rendered latest issue, dated issue page, archive, RSS, sitemap, and site artifact");
 }
 
-function buildSiteArtifact({ latestHtml, archive, archiveHtml, status }) {
+function buildSiteArtifact({
+  latestHtml,
+  archive,
+  archiveHtml,
+  status,
+  robotsTxt,
+  sitemapXml,
+  feedXml,
+  manifest,
+  faviconSvg,
+  ogSvg,
+}) {
   rmSync(SITE_DIR, { recursive: true, force: true });
   mkdirSync(SITE_DIR, { recursive: true });
 
   writeFileSync(`${SITE_DIR}/index.html`, latestHtml, "utf8");
   writeFileSync(`${SITE_DIR}/archive.json`, `${JSON.stringify(archive, null, 2)}\n`, "utf8");
   writeFileSync(`${SITE_DIR}/status.json`, `${JSON.stringify(status, null, 2)}\n`, "utf8");
+  writeFileSync(`${SITE_DIR}/robots.txt`, robotsTxt, "utf8");
+  writeFileSync(`${SITE_DIR}/sitemap.xml`, sitemapXml, "utf8");
+  writeFileSync(`${SITE_DIR}/feed.xml`, feedXml, "utf8");
+  writeFileSync(`${SITE_DIR}/manifest.webmanifest`, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  writeFileSync(`${SITE_DIR}/favicon.svg`, faviconSvg, "utf8");
+  writeFileSync(`${SITE_DIR}/${DEFAULT_OG_IMAGE_PATH}`, ogSvg, "utf8");
 
   for (const asset of STATIC_ASSET_FILES) {
     copyFileSync(asset, `${SITE_DIR}/${asset.replace("./", "")}`);
@@ -85,13 +124,255 @@ function buildSiteArtifact({ latestHtml, archive, archiveHtml, status }) {
   writeFileSync(`${SITE_DIR}/archive/index.html`, archiveHtml, "utf8");
 }
 
+function buildRobotsTxt() {
+  return `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`;
+}
+
+function buildSitemapXml(archive) {
+  const urls = [];
+  urls.push({ loc: `${SITE_URL}/`, changefreq: "hourly", priority: "1.0", lastmod: archive.updated_at });
+  urls.push({ loc: `${SITE_URL}/archive/`, changefreq: "daily", priority: "0.6", lastmod: archive.updated_at });
+  for (const entry of archive.entries ?? []) {
+    urls.push({
+      loc: `${SITE_URL}/issues/${entry.date}/`,
+      changefreq: "weekly",
+      priority: "0.8",
+      lastmod: entry.generated_at ?? `${entry.date}T12:00:00Z`,
+    });
+  }
+
+  const lines = ['<?xml version="1.0" encoding="UTF-8"?>'];
+  lines.push('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+  for (const url of urls) {
+    lines.push("  <url>");
+    lines.push(`    <loc>${escapeXml(url.loc)}</loc>`);
+    if (url.lastmod) {
+      lines.push(`    <lastmod>${escapeXml(url.lastmod)}</lastmod>`);
+    }
+    lines.push(`    <changefreq>${url.changefreq}</changefreq>`);
+    lines.push(`    <priority>${url.priority}</priority>`);
+    lines.push("  </url>");
+  }
+  lines.push("</urlset>");
+  return `${lines.join("\n")}\n`;
+}
+
+function buildFeedXml(archive, data) {
+  const publication = data.meta?.publication ?? "Phillies Wire";
+  const updated = archive.updated_at ?? new Date().toISOString();
+  const entries = (archive.entries ?? []).slice(0, 30);
+
+  const items = entries
+    .map((entry) => {
+      const url = `${SITE_URL}/issues/${entry.date}/`;
+      const title = `${publication}: ${entry.headline ?? entry.hero_label}`;
+      const description = entry.dek || entry.summary || "";
+      return `  <entry>
+    <title>${escapeXml(title)}</title>
+    <link href="${escapeXml(url)}"/>
+    <id>${escapeXml(url)}</id>
+    <updated>${escapeXml(entry.generated_at ?? `${entry.date}T12:00:00Z`)}</updated>
+    <summary>${escapeXml(description)}</summary>
+    <author><name>${escapeXml(publication)}</name></author>
+  </entry>`;
+    })
+    .join("\n");
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>${escapeXml(publication)}</title>
+  <link href="${escapeXml(SITE_URL + "/")}"/>
+  <link rel="self" href="${escapeXml(SITE_URL + "/feed.xml")}"/>
+  <updated>${escapeXml(updated)}</updated>
+  <id>${escapeXml(SITE_URL + "/")}</id>
+  <generator>phillies-wire/render.mjs</generator>
+${items}
+</feed>
+`;
+}
+
+function buildManifest(data) {
+  return {
+    name: data.meta?.publication ?? "Phillies Wire",
+    short_name: "PhilliesWire",
+    description: "Daily Philadelphia Phillies newsletter.",
+    start_url: "/",
+    scope: "/",
+    display: "standalone",
+    background_color: "#fffbf3",
+    theme_color: "#e81828",
+    icons: [
+      { src: "favicon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
+    ],
+  };
+}
+
+function buildFaviconSvg() {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#002d72"/>
+  <path d="M7 24L7 8h8.2c3.2 0 5.3 1.9 5.3 5 0 3.2-2.1 5.1-5.3 5.1H11v5.9z" fill="#e81828"/>
+</svg>
+`;
+}
+
+function buildOgDefaultSvg(data) {
+  const publication = data.meta?.publication ?? "Phillies Wire";
+  const headline = data.hero?.headline ?? "";
+  const dek = data.hero?.dek ?? "";
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#002d72"/>
+  <rect y="480" width="1200" height="6" fill="#e81828"/>
+  <text x="72" y="180" font-family="Barlow Condensed, Impact, sans-serif" font-size="120" font-weight="900" fill="#fffbf3" letter-spacing="-2">${escapeXml(publication.toUpperCase())}</text>
+  <text x="72" y="320" font-family="Inter, Helvetica, sans-serif" font-size="56" fill="#fffbf3">${escapeXml(headline.slice(0, 40))}</text>
+  <text x="72" y="400" font-family="Inter, Helvetica, sans-serif" font-size="36" fill="rgba(255,255,255,0.7)">${escapeXml(dek.slice(0, 60))}</text>
+  <text x="72" y="560" font-family="Inter, Helvetica, sans-serif" font-size="28" fill="#e81828" font-weight="600">${escapeXml((data.meta?.date ?? "").toString())}</text>
+</svg>
+`;
+}
+
+function escapeXml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 function renderIssue(templateString, data, links) {
   const renderData = cloneJson(data);
   renderData.meta = renderData.meta ?? {};
   renderData.meta.assets_prefix = links.assetsPrefix;
   renderData.meta.latest_href = links.latestHref;
   renderData.meta.archive_href = links.archiveHref;
+  enrichMetaForSeo(renderData, links);
   return populate(templateString, renderData);
+}
+
+function enrichMetaForSeo(data, links) {
+  const meta = data.meta;
+  const hero = data.hero ?? {};
+  const publication = meta.publication ?? "Phillies Wire";
+  const issueDate = meta.date ?? "";
+  const headline = hero.headline ?? publication;
+  const dek = hero.dek ?? "";
+  const summary = (hero.summary ?? "").toString();
+  const description = truncate(
+    [dek, summary].filter(Boolean).join(" ").replace(/\s+/g, " "),
+    200,
+  ) || `${publication} daily Phillies newsletter.`;
+
+  const isLatest = links.latestHref === "./";
+  const canonicalPath = isLatest ? "/" : `/issues/${issueDate}/`;
+  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+  const ogImageUrl = `${SITE_URL}/${DEFAULT_OG_IMAGE_PATH}`;
+
+  const formattedDate = formatIssueDateLong(issueDate);
+
+  meta.page_title = `${publication} · ${headline}${formattedDate ? ` · ${formattedDate}` : ""}`;
+  meta.page_description = description;
+  meta.canonical_url = canonicalUrl;
+  meta.og_title = `${publication}: ${headline}`;
+  meta.og_description = description;
+  meta.og_image = ogImageUrl;
+  meta.og_image_alt = `${publication} masthead`;
+  meta.json_ld = buildJsonLd(data, {
+    canonicalUrl,
+    ogImageUrl,
+    description,
+    formattedDate,
+  });
+}
+
+function buildJsonLd(data, context) {
+  const publication = data.meta?.publication ?? "Phillies Wire";
+  const issueDate = data.meta?.date ?? "";
+  const hero = data.hero ?? {};
+  const gameStatus = data.sections?.game_status?.content ?? {};
+  const firstPitchIso = data.meta?.first_pitch_iso ?? null;
+
+  const articleNode = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: `${publication}: ${hero.headline ?? publication}`,
+    description: context.description,
+    datePublished: data.meta?.generated_at ?? `${issueDate}T12:00:00Z`,
+    dateModified: data.meta?.generated_at ?? `${issueDate}T12:00:00Z`,
+    mainEntityOfPage: context.canonicalUrl,
+    url: context.canonicalUrl,
+    image: [context.ogImageUrl],
+    author: { "@type": "Organization", name: publication },
+    publisher: {
+      "@type": "Organization",
+      name: publication,
+      logo: { "@type": "ImageObject", url: context.ogImageUrl },
+    },
+    isPartOf: { "@type": "PublicationIssue", issueNumber: data.meta?.edition, datePublished: issueDate },
+    articleSection: "Sports",
+    keywords: ["Philadelphia Phillies", "MLB", "baseball", publication],
+  };
+
+  const nodes = [articleNode];
+
+  if (!data.meta?.off_day && firstPitchIso) {
+    const homeStarter = gameStatus.starters?.home?.name;
+    const awayStarter = gameStatus.starters?.away?.name;
+    const venue = gameStatus.venue ?? "Citizens Bank Park, Philadelphia";
+    const sportsEventNode = {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      name: hero.headline ?? "Philadelphia Phillies game",
+      startDate: firstPitchIso,
+      sport: "Baseball",
+      location: {
+        "@type": "Place",
+        name: venue.split(",")[0] ?? venue,
+        address: { "@type": "PostalAddress", addressLocality: "Philadelphia", addressRegion: "PA" },
+      },
+      description: homeStarter && awayStarter ? `Probable starters: ${homeStarter} vs ${awayStarter}.` : hero.dek ?? "",
+    };
+    nodes.push(sportsEventNode);
+  }
+
+  const json = JSON.stringify(nodes.length === 1 ? nodes[0] : nodes, null, 2);
+  // Harden against stray `</script>` sequences and HTML entity breakage
+  // inside the embedded JSON-LD block. Triple-brace rendering emits raw
+  // output, so any <, >, or & must be replaced with unicode escapes.
+  return json
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
+}
+
+function formatIssueDateLong(dateString) {
+  if (!dateString) {
+    return "";
+  }
+  try {
+    return new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York",
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    }).format(new Date(`${dateString}T12:00:00Z`));
+  } catch {
+    return dateString;
+  }
+}
+
+function truncate(text, max) {
+  if (!text) {
+    return "";
+  }
+  if (text.length <= max) {
+    return text;
+  }
+  return `${text.slice(0, max - 1).trimEnd()}\u2026`;
 }
 
 function loadArchive() {
@@ -229,6 +510,14 @@ function renderTemplate(templateString, scope, root) {
   output = renderBlocks(output, "if", scope, root, (path, inner, currentScope, currentRoot) => {
     const value = resolvePath(path, currentScope, currentRoot);
     return value ? renderTemplate(inner, currentScope, currentRoot) : "";
+  });
+
+  // Triple-brace tokens emit raw (unescaped) output, used for pre-sanitized
+  // JSON-LD blocks and inline SVG. Callers are responsible for escaping any
+  // content that could terminate the surrounding element.
+  output = output.replace(/{{{\s*([^}]+)\s*}}}/g, (_match, path) => {
+    const value = resolvePath(path.trim(), scope, root);
+    return value == null ? "" : String(value);
   });
 
   return output.replace(/{{\s*([^#\/][^}]*)\s*}}/g, (_match, path) => {

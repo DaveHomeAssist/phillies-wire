@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{meta.publication}} - {{meta.date}}</title>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#e81828">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://statsapi.mlb.com https://api.open-meteo.com">
+<title>{{meta.page_title}}</title>
+<meta name="description" content="{{meta.page_description}}">
+<link rel="canonical" href="{{meta.canonical_url}}">
+<link rel="alternate" type="application/rss+xml" title="{{meta.publication}} RSS" href="{{meta.assets_prefix}}feed.xml">
+<link rel="icon" href="{{meta.assets_prefix}}favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{meta.assets_prefix}}apple-touch-icon.png">
+<link rel="manifest" href="{{meta.assets_prefix}}manifest.webmanifest">
+<meta property="og:site_name" content="{{meta.publication}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{meta.og_title}}">
+<meta property="og:description" content="{{meta.og_description}}">
+<meta property="og:url" content="{{meta.canonical_url}}">
+<meta property="og:image" content="{{meta.og_image}}">
+<meta property="og:image:alt" content="{{meta.og_image_alt}}">
+<meta property="article:published_time" content="{{meta.generated_at}}">
+<meta property="article:section" content="Sports">
+<meta property="article:tag" content="Philadelphia Phillies">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{meta.og_title}}">
+<meta name="twitter:description" content="{{meta.og_description}}">
+<meta name="twitter:image" content="{{meta.og_image}}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{meta.assets_prefix}}tokens.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}phillies-wire.css">
+<link rel="modulepreload" href="{{meta.assets_prefix}}live-feed.js">
+<script type="application/ld+json">{{{meta.json_ld}}}</script>
 </head>
 <body data-page-mode="{{meta.status.mode}}">
+<a class="pw-skip-link" href="#pw-main">Skip to main content</a>
 <div class="pw-page">
 
-  <div class="pw-shell-nav">
+  <nav class="pw-shell-nav" aria-label="Primary">
     <a class="pw-shell-link" href="{{meta.latest_href}}">Latest</a>
     <a class="pw-shell-link" href="{{meta.archive_href}}">Archive</a>
-  </div>
+    <a class="pw-shell-link" href="{{meta.assets_prefix}}feed.xml" rel="alternate">RSS</a>
+  </nav>
 
   <div class="pw-masthead">
     <div class="pw-mast-top">
@@ -55,6 +83,7 @@
     </div>
   </div>
 
+  <main id="pw-main" class="pw-main">
   <section class="pw-hero pw-hero--{{hero.mode}}" id="pw-hero-section" data-live-mode="{{hero.mode}}">
     <div class="pw-hero-copy">
       <div class="pw-hero-label" id="pw-hero-label">{{hero.label}}</div>
@@ -384,7 +413,7 @@
   </div>
   {{/if}}
 
-  <div class="pw-next-game">
+  <aside class="pw-next-game" aria-label="Next scheduled game">
     <div>
       <div class="pw-next-label">{{next_game.label}}</div>
       <div class="pw-next-matchup">{{next_game.matchup}}</div>
@@ -393,17 +422,18 @@
       <div>{{next_game.date}} &middot; {{next_game.time}}</div>
       <div>{{next_game.broadcast}} &middot; {{next_game.venue}}</div>
     </div>
-  </div>
+  </aside>
+  </main>
 
-  <div class="pw-footer">
+  <footer class="pw-footer">
     <div>
       <span class="pw-footer-pub">{{meta.publication}}</span>
       <span class="pw-footer-meta">Vol. {{meta.volume}} &middot; No. {{meta.edition}} &middot; {{meta.date}} &middot; {{meta.status.enrich_label}}</span>
     </div>
-    <button class="pw-theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-      Dark
+    <button class="pw-theme-toggle" type="button" onclick="toggleTheme(this)" aria-pressed="false" aria-label="Toggle dark mode">
+      <span class="pw-theme-toggle-label">Dark</span>
     </button>
-  </div>
+  </footer>
 </div>
 
 <script>
