@@ -686,7 +686,7 @@ async function fetchStandings() {
         wins: team.wins,
         losses: team.losses,
         pct: team.winningPercentage,
-        gb: team.gamesBack === "-" ? "—" : team.gamesBack,
+        gb: normalizeGamesBack(team.gamesBack),
         streak: team.streak?.streakCode ?? "",
         is_phi: team.team.id === TEAM_ID,
       }));
@@ -694,6 +694,20 @@ async function fetchStandings() {
   }
 
   return [];
+}
+
+function normalizeGamesBack(value) {
+  if (value == null) {
+    return "\u2014";
+  }
+  const trimmed = String(value).trim();
+  // MLB returns "-" for the division leader; Open-endpoint sometimes
+  // returns "—" or an empty string. Normalize all of them to an em dash
+  // so the standings table renders consistently.
+  if (trimmed === "" || trimmed === "-" || trimmed === "\u2013" || trimmed === "\u2014" || trimmed === "0.0") {
+    return "\u2014";
+  }
+  return trimmed;
 }
 
 function buildStandingsPreview(teams) {
@@ -862,34 +876,79 @@ function collectUpcomingGames(scheduleResponse, teamId) {
 }
 
 function extractKeyPerformers(boxscore, fallback) {
-  const players = Object.values(boxscore?.teams?.home?.players ?? {}).concat(Object.values(boxscore?.teams?.away?.players ?? {}));
+  const players = Object.values(boxscore?.teams?.home?.players ?? {})
+    .concat(Object.values(boxscore?.teams?.away?.players ?? {}));
+
   const performers = players
-    .filter((player) => player?.stats?.batting || player?.stats?.pitching)
-    .map((player) => {
-      const batting = player.stats.batting ?? {};
-      const pitching = player.stats.pitching ?? {};
-      const battingParts = [];
-      const pitchingParts = [];
+    .map((player) => buildPerformerLine(player))
+    .filter(Boolean);
 
-      if (batting.atBats) battingParts.push(`${batting.hits ?? 0}-for-${batting.atBats}`);
-      if (batting.homeRuns) battingParts.push(`${batting.homeRuns} HR`);
-      if (batting.rbi) battingParts.push(`${batting.rbi} RBI`);
-      if (pitching.inningsPitched) pitchingParts.push(`${pitching.inningsPitched} IP`);
-      if (pitching.hits) pitchingParts.push(`${pitching.hits} H`);
-      if (pitching.runs) pitchingParts.push(`${pitching.runs} R`);
-      if (pitching.strikeOuts) pitchingParts.push(`${pitching.strikeOuts} K`);
+  // Prefer the best two hitters and two pitchers so the recap card
+  // shows a balanced view instead of five batters or five arms.
+  const hitters = performers
+    .filter((performer) => performer.role === "hitter")
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 3);
+  const pitchers = performers
+    .filter((performer) => performer.role === "pitcher")
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 2);
 
-      return {
-        name: player.person.fullName,
-        position: player.position?.abbreviation ?? "P",
-        line: battingParts.concat(pitchingParts).join(", "),
-        note: player.seasonStats?.pitching?.era ? `ERA ${player.seasonStats.pitching.era}` : "Live boxscore performer",
-      };
-    })
-    .filter((player) => player.line)
-    .slice(0, 5);
+  const chosen = pitchers.concat(hitters).slice(0, 5);
+  if (!chosen.length) {
+    return fallback;
+  }
 
-  return performers.length ? performers : fallback;
+  return chosen.map(({ score: _score, role: _role, ...performer }) => performer);
+}
+
+function buildPerformerLine(player) {
+  if (!player?.person?.fullName) {
+    return null;
+  }
+
+  const batting = player.stats?.batting ?? {};
+  const pitching = player.stats?.pitching ?? {};
+  const position = player.position?.abbreviation ?? "";
+  const isPitcher = Boolean(pitching.inningsPitched) || position === "P";
+
+  if (isPitcher) {
+    if (!pitching.inningsPitched) {
+      return null;
+    }
+    const parts = [`${pitching.inningsPitched} IP`];
+    if (pitching.hits != null) parts.push(`${pitching.hits} H`);
+    if (pitching.earnedRuns != null) parts.push(`${pitching.earnedRuns} ER`);
+    if (pitching.strikeOuts != null) parts.push(`${pitching.strikeOuts} K`);
+    return {
+      role: "pitcher",
+      score: (Number(pitching.strikeOuts) || 0) + (Number(pitching.inningsPitched) || 0) * 2 - (Number(pitching.earnedRuns) || 0),
+      name: player.person.fullName,
+      position: position || "P",
+      line: parts.join(", "),
+      note: player.seasonStats?.pitching?.era ? `ERA ${player.seasonStats.pitching.era}` : "Live boxscore performer",
+    };
+  }
+
+  if (!batting.atBats && !batting.homeRuns && !batting.rbi) {
+    return null;
+  }
+
+  const parts = [];
+  if (batting.atBats) parts.push(`${batting.hits ?? 0}-for-${batting.atBats}`);
+  if (batting.homeRuns) parts.push(`${batting.homeRuns} HR`);
+  if (batting.rbi) parts.push(`${batting.rbi} RBI`);
+  if (batting.runs) parts.push(`${batting.runs} R`);
+  if (batting.stolenBases) parts.push(`${batting.stolenBases} SB`);
+
+  return {
+    role: "hitter",
+    score: (Number(batting.hits) || 0) * 2 + (Number(batting.homeRuns) || 0) * 5 + (Number(batting.rbi) || 0),
+    name: player.person.fullName,
+    position: position || "DH",
+    line: parts.join(", "),
+    note: player.seasonStats?.batting?.avg ? `AVG ${player.seasonStats.batting.avg}` : "Live boxscore performer",
+  };
 }
 
 function buildRecapPreview(game, boxscore, fallback) {
@@ -989,8 +1048,15 @@ function shortTransactionNote(description) {
 }
 
 function buildWindSummary(weather) {
-  const speed = Math.round(weather.wind_speed_10m ?? 0);
+  const rawSpeed = weather?.wind_speed_10m;
+  if (rawSpeed == null) {
+    return "Calm";
+  }
+  const speed = Math.round(rawSpeed);
   const gusts = Math.round(weather.wind_gusts_10m ?? 0);
+  if (!speed && !gusts) {
+    return "Calm";
+  }
   return gusts ? `${speed} mph · gusts ${gusts}` : `${speed} mph`;
 }
 
@@ -1184,13 +1250,39 @@ function loadDailyProphet() {
   }
 }
 
+const OVERRIDE_MAX_FIELD_LENGTH = 400;
+
 function loadOverrides(date) {
   const path = `./overrides/${date}.json`;
   if (!existsSync(path)) {
     return null;
   }
 
-  return JSON.parse(readFileSync(path, "utf8"));
+  const raw = readFileSync(path, "utf8");
+  if (raw.length > 50_000) {
+    throw new Error(`Override file ${path} is suspiciously large (${raw.length} bytes). Aborting.`);
+  }
+  const parsed = JSON.parse(raw);
+  return clampOverride(parsed);
+}
+
+function clampOverride(value) {
+  if (typeof value === "string") {
+    return value.length > OVERRIDE_MAX_FIELD_LENGTH
+      ? `${value.slice(0, OVERRIDE_MAX_FIELD_LENGTH - 1)}\u2026`
+      : value;
+  }
+  if (Array.isArray(value)) {
+    return value.map((item) => clampOverride(item));
+  }
+  if (value && typeof value === "object") {
+    const output = {};
+    for (const [key, item] of Object.entries(value)) {
+      output[key] = clampOverride(item);
+    }
+    return output;
+  }
+  return value;
 }
 
 function stripHeroOverride(overrides) {

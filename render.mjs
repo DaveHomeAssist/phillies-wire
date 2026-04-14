@@ -613,14 +613,15 @@ function renderArchiveEntry(entry) {
     .filter(Boolean)
     .join(" ");
 
-  return `<a class="pw-archive-item" href="../${escapeHtml(entry.issue_path)}" data-search-text="${escapeHtml(searchText)}">
+  const ariaLabel = `${formatArchiveDate(entry.date)}: ${entry.headline ?? entry.hero_label ?? "Issue"}`;
+  return `<a class="pw-archive-item" href="../${escapeHtml(entry.issue_path)}" data-search-text="${escapeHtml(searchText)}" aria-label="${escapeHtml(ariaLabel)}">
   <div class="pw-archive-item-top">
-    <div class="pw-archive-item-date">${escapeHtml(formatArchiveDate(entry.date))}</div>
-    <div class="pw-archive-item-badge pw-archive-item-badge--${escapeHtml(entry.mode)}">${escapeHtml(entry.hero_label)}</div>
+    <div class="pw-archive-item-date" aria-hidden="true">${escapeHtml(formatArchiveDate(entry.date))}</div>
+    <div class="pw-archive-item-badge pw-archive-item-badge--${escapeHtml(entry.mode)}" aria-hidden="true">${escapeHtml(entry.hero_label)}</div>
   </div>
-  <div class="pw-archive-item-headline">${escapeHtml(entry.headline)}</div>
-  <div class="pw-archive-item-dek">${escapeHtml(entry.dek || entry.summary)}</div>
-  <div class="pw-archive-item-meta">${escapeHtml(meta)}</div>
+  <div class="pw-archive-item-headline" aria-hidden="true">${escapeHtml(entry.headline)}</div>
+  <div class="pw-archive-item-dek" aria-hidden="true">${escapeHtml(entry.dek || entry.summary)}</div>
+  <div class="pw-archive-item-meta" aria-hidden="true">${escapeHtml(meta)}</div>
 </a>`;
 }
 

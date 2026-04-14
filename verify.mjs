@@ -5,7 +5,9 @@ const status = readJson("./status.json");
 const archive = readJson("./archive.json");
 const issuePath = `./issues/${data.meta.date}/index.html`;
 const siteIssuePath = `./site/issues/${data.meta.date}/index.html`;
-const mojibakePattern = /Â·|Â°|â€“|â€”/;
+// Covers the CP1252-in-UTF-8 sequences we've seen in the wild: punctuation
+// and accented characters passed through a double-encoding pipeline.
+const mojibakePattern = /Â·|Â°|â€“|â€”|â€œ|â€\u009d|Ã[\u0080-\u00BF]/;
 
 const requiredFiles = [
   "./phillies-wire-output.html",

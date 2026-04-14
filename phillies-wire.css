@@ -239,6 +239,10 @@ a:hover { text-decoration: underline; }
 
 .pw-ticker-item--highlight {
   color: var(--color-ticker-hi);
+  font-weight: var(--weight-bold);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .pw-ticker-sep {
