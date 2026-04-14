@@ -1,6 +1,6 @@
 import assert from "assert";
 
-import { buildGameSnapshot, shouldPoll, syncLiveShell } from "../live-feed.js";
+import { buildGameSnapshot, getNextPollDelay, shouldPoll, syncLiveShell } from "../live-feed.js";
 
 const SEP = " \u00b7 ";
 
@@ -184,6 +184,13 @@ runTest("shouldPoll keeps a pregame tab eligible for live updates", () => {
   const ninetyMinutesEarly = Date.parse("2026-03-29T16:05:00Z");
 
   assert.strictEqual(shouldPoll(firstPitch, ninetyMinutesEarly), true);
+});
+
+runTest("getNextPollDelay returns null for final, 15s for live, 60s for preview", () => {
+  assert.strictEqual(getNextPollDelay({ isFinal: true, isLive: false }), null);
+  assert.strictEqual(getNextPollDelay({ isFinal: false, isLive: true }), 15000);
+  assert.strictEqual(getNextPollDelay({ isFinal: false, isLive: false }), 60000);
+  assert.strictEqual(getNextPollDelay(null), null);
 });
 
 function createFakeDocument() {
