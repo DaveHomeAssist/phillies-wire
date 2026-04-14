@@ -169,8 +169,8 @@
           </div>
           <div class="pw-live-score" id="pw-live-score" data-game-pk="{{meta.game_pk}}" data-first-pitch="{{meta.first_pitch_iso}}" data-venue="{{sections.game_status.content.venue}}" aria-live="polite" aria-atomic="true">
             <span class="pw-live-badge">Live</span>
-            <span class="pw-live-line" id="pw-live-line"></span>
-            <div class="pw-live-detail" id="pw-live-detail"></div>
+            <span class="pw-live-line" id="pw-live-line"><span class="pw-skeleton">Loading score...</span></span>
+            <div class="pw-live-detail" id="pw-live-detail"><span class="pw-skeleton">Pregame</span></div>
           </div>
         </div>
       </div>
@@ -199,25 +199,30 @@
             <span class="pw-info-value">{{sections.lineup.content.starters.away.name}} ({{sections.lineup.content.starters.away.hand}}HP)</span>
           </div>
 
-          <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.home.team}} Batting Order</div>
-          {{#each sections.lineup.content.batting_order.home}}
-          <div class="pw-player-row">
-            <div>
-              <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
-              <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
+          <div class="pw-lineup-columns">
+            <div class="pw-lineup-column">
+              <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.home.team}} Batting Order</div>
+              {{#each sections.lineup.content.batting_order.home}}
+              <div class="pw-player-row">
+                <div>
+                  <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
+                  <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+            <div class="pw-lineup-column">
+              <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.away.team}} Batting Order</div>
+              {{#each sections.lineup.content.batting_order.away}}
+              <div class="pw-player-row">
+                <div>
+                  <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
+                  <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
+                </div>
+              </div>
+              {{/each}}
             </div>
           </div>
-          {{/each}}
-
-          <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.away.team}} Batting Order</div>
-          {{#each sections.lineup.content.batting_order.away}}
-          <div class="pw-player-row">
-            <div>
-              <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
-              <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
-            </div>
-          </div>
-          {{/each}}
 
           <p class="pw-body pw-body--spaced">{{sections.lineup.content.status_note}}</p>
         </div>
@@ -534,6 +539,22 @@
           label.textContent = isDark ? 'Light' : 'Dark';
         }
       }
+
+      // Wire aria-controls between each accordion header and its body
+      // for assistive tech. Also gives bodies unique ids the script can
+      // reference via location.hash.
+      document.querySelectorAll('.pw-acc-row').forEach(function (row) {
+        var rowKey = row.getAttribute('data-row');
+        if (!rowKey) return;
+        var body = row.querySelector('.pw-acc-body');
+        var btn = row.querySelector('.pw-acc-header');
+        if (body && !body.id) {
+          body.id = 'pw-acc-body-' + rowKey;
+        }
+        if (btn && body) {
+          btn.setAttribute('aria-controls', body.id);
+        }
+      });
 
       // Hash-driven accordion deep linking: /#lineup opens the lineup row.
       var hash = (window.location.hash || '').replace(/^#/, '');
