@@ -75,7 +75,8 @@
       <div class="pw-status-row">
         <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}" id="pw-status-mode-chip">{{meta.status.mode_label}}</span>
         <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}">{{meta.status.enrich_state}}</span>
-        <span class="pw-status-text" id="pw-status-text">Updated {{meta.status.generated_at_et}}</span>
+        <span class="pw-status-text" id="pw-status-text" data-generated-at="{{meta.generated_at}}">Updated {{meta.status.generated_at_et}}</span>
+        <span class="pw-status-freshness" id="pw-status-freshness" hidden></span>
       </div>
       {{#each meta.status.source_notes}}
       <div class="pw-status-note">{{this}}</div>
@@ -166,7 +167,7 @@
             <span class="pw-info-label">SEPTA</span>
             <span class="pw-info-value">{{sections.game_status.content.transit}}</span>
           </div>
-          <div class="pw-live-score" id="pw-live-score" data-game-pk="{{meta.game_pk}}" data-first-pitch="{{meta.first_pitch_iso}}" data-venue="{{sections.game_status.content.venue}}">
+          <div class="pw-live-score" id="pw-live-score" data-game-pk="{{meta.game_pk}}" data-first-pitch="{{meta.first_pitch_iso}}" data-venue="{{sections.game_status.content.venue}}" aria-live="polite" aria-atomic="true">
             <span class="pw-live-badge">Live</span>
             <span class="pw-live-line" id="pw-live-line"></span>
             <div class="pw-live-detail" id="pw-live-detail"></div>
@@ -437,59 +438,159 @@
 </div>
 
 <script>
-  function toggle(id) {
-    const row = document.querySelector('[data-row="' + id + '"]');
-    if (!row) {
-      return;
+  (function () {
+    var THEME_KEY = 'pw-theme';
+    var html = document.documentElement;
+
+    function applyStoredTheme() {
+      try {
+        var stored = localStorage.getItem(THEME_KEY);
+        if (stored === 'dark' || stored === 'light') {
+          html.dataset.theme = stored === 'dark' ? 'dark' : '';
+          return;
+        }
+      } catch (_err) {}
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        html.dataset.theme = 'dark';
+      }
     }
 
-    const isOpen = row.classList.contains('pw-acc-row--open');
-    const chevron = row.querySelector('.pw-acc-chevron');
-    const btn = row.querySelector('.pw-acc-header');
+    applyStoredTheme();
 
-    document.querySelectorAll('.pw-acc-row--open').forEach(function(r) {
-      r.classList.remove('pw-acc-row--open');
-      r.querySelector('.pw-acc-chevron').innerHTML = '&#9660;';
-      r.querySelector('.pw-acc-header').setAttribute('aria-expanded', 'false');
+    window.toggle = function (id, options) {
+      var opts = options || {};
+      var row = document.querySelector('[data-row="' + id + '"]');
+      if (!row) {
+        return;
+      }
+
+      var allowMulti = window.matchMedia && window.matchMedia('(min-width: 900px)').matches;
+      var isOpen = row.classList.contains('pw-acc-row--open');
+      var chevron = row.querySelector('.pw-acc-chevron');
+      var btn = row.querySelector('.pw-acc-header');
+
+      if (!allowMulti) {
+        document.querySelectorAll('.pw-acc-row--open').forEach(function (r) {
+          if (r !== row) {
+            r.classList.remove('pw-acc-row--open');
+            var otherChevron = r.querySelector('.pw-acc-chevron');
+            if (otherChevron) {
+              otherChevron.innerHTML = '&#9660;';
+            }
+            var otherBtn = r.querySelector('.pw-acc-header');
+            if (otherBtn) {
+              otherBtn.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      }
+
+      if (!isOpen) {
+        row.classList.add('pw-acc-row--open');
+        if (chevron) {
+          chevron.innerHTML = '&#9650;';
+        }
+        if (btn) {
+          btn.setAttribute('aria-expanded', 'true');
+        }
+        if (!opts.silent) {
+          row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      } else if (allowMulti) {
+        row.classList.remove('pw-acc-row--open');
+        if (chevron) {
+          chevron.innerHTML = '&#9660;';
+        }
+        if (btn) {
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      }
+    };
+
+    window.toggleTheme = function (button) {
+      var next = html.dataset.theme === 'dark' ? '' : 'dark';
+      html.dataset.theme = next;
+      try {
+        localStorage.setItem(THEME_KEY, next === 'dark' ? 'dark' : 'light');
+      } catch (_err) {}
+      if (button) {
+        var isDark = next === 'dark';
+        button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        var label = button.querySelector('.pw-theme-toggle-label');
+        if (label) {
+          label.textContent = isDark ? 'Light' : 'Dark';
+        }
+      }
+    };
+
+    // Initialize theme toggle state on load.
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.querySelector('.pw-theme-toggle');
+      if (button) {
+        var isDark = html.dataset.theme === 'dark';
+        button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        var label = button.querySelector('.pw-theme-toggle-label');
+        if (label) {
+          label.textContent = isDark ? 'Light' : 'Dark';
+        }
+      }
+
+      // Hash-driven accordion deep linking: /#lineup opens the lineup row.
+      var hash = (window.location.hash || '').replace(/^#/, '');
+      if (hash && document.querySelector('[data-row="' + CSS.escape(hash) + '"]')) {
+        window.toggle(hash, { silent: false });
+      }
     });
 
-    if (!isOpen) {
-      row.classList.add('pw-acc-row--open');
-      chevron.innerHTML = '&#9650;';
-      btn.setAttribute('aria-expanded', 'true');
-      row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    window.addEventListener('hashchange', function () {
+      var hash = (window.location.hash || '').replace(/^#/, '');
+      if (hash && document.querySelector('[data-row="' + CSS.escape(hash) + '"]')) {
+        window.toggle(hash);
+      }
+    });
+
+    function updateFreshness() {
+      var el = document.getElementById('pw-status-freshness');
+      if (!el) {
+        return;
+      }
+      var generated = document.getElementById('pw-status-text');
+      if (!generated) {
+        return;
+      }
+      var iso = generated.getAttribute('data-generated-at');
+      if (!iso) {
+        return;
+      }
+      var generatedMs = Date.parse(iso);
+      if (!Number.isFinite(generatedMs)) {
+        return;
+      }
+      var ageMs = Date.now() - generatedMs;
+      var ageMin = Math.max(0, Math.round(ageMs / 60000));
+      var label;
+      var level;
+      if (ageMin < 2) {
+        label = 'Live';
+        level = 'fresh';
+      } else if (ageMin < 60) {
+        label = ageMin + 'm ago';
+        level = ageMin >= 20 ? 'aging' : 'fresh';
+      } else if (ageMin < 60 * 24) {
+        label = Math.round(ageMin / 60) + 'h ago';
+        level = 'stale';
+      } else {
+        label = Math.round(ageMin / (60 * 24)) + 'd ago';
+        level = 'stale';
+      }
+      el.textContent = label;
+      el.dataset.level = level;
+      el.hidden = false;
     }
-  }
 
-  function toggleTheme() {
-    const html = document.documentElement;
-    html.dataset.theme = html.dataset.theme === 'dark' ? '' : 'dark';
-  }
-
-  /* Legacy inline live polling kept commented while the shared live-feed.js module handles updates.
-
-          if (isFinal) {
-            clearPollTimer();
-            detailEl.textContent = 'Final';
-          } else if (inning === 0) {
-            detailEl.textContent = 'Pregame';
-            scheduleNextPoll(previewPollMs);
-          } else {
-            detailEl.textContent = half + ' ' + inning + ' · ' + outs + ' out' + (outs !== 1 ? 's' : '');
-          }
-          if (!isFinal && inning > 0) {
-            scheduleNextPoll(isLive ? livePollMs : previewPollMs);
-          }
-          container.classList.add('pw-live-score--active');
-        })
-        .catch(function() {
-          scheduleNextPoll(previewPollMs);
-        });
-    }
-
-    poll();
+    document.addEventListener('DOMContentLoaded', updateFreshness);
+    setInterval(updateFreshness, 60 * 1000);
   })();
-  */
 </script>
 <script type="module" src="{{meta.assets_prefix}}live-feed.js"></script>
 
