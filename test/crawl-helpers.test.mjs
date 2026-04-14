@@ -4,13 +4,18 @@ import { readFileSync } from "node:fs";
 import {
   buildLineupSection,
   buildTbdBattingOrder,
+  buildWindSummary,
+  clampOverride,
   extractBattingOrder,
   extractDecisions,
+  extractKeyPerformers,
   mergeInjuryEntries,
+  normalizeGamesBack,
   normalizeLiveInjuries,
   resolvePitcher,
   resolveSeriesLabel,
 } from "../crawl.mjs";
+
 
 const fixture = JSON.parse(readFileSync(new URL("../phillies-wire-schema.json", import.meta.url), "utf8"));
 
@@ -202,6 +207,61 @@ runTest("buildTbdBattingOrder returns nine labelled placeholder slots", () => {
   assert.equal(order[0].slot, 1);
   assert.equal(order[8].slot, 9);
   assert.match(order[0].name, /WSH hitter 1/);
+});
+
+runTest("normalizeGamesBack coerces leader markers to an em dash", () => {
+  assert.equal(normalizeGamesBack("-"), "\u2014");
+  assert.equal(normalizeGamesBack(""), "\u2014");
+  assert.equal(normalizeGamesBack(null), "\u2014");
+  assert.equal(normalizeGamesBack("0.0"), "\u2014");
+  assert.equal(normalizeGamesBack("\u2013"), "\u2014");
+  assert.equal(normalizeGamesBack("\u2014"), "\u2014");
+  assert.equal(normalizeGamesBack("1.5"), "1.5");
+  assert.equal(normalizeGamesBack(3), "3");
+});
+
+runTest("clampOverride truncates strings and walks nested shapes", () => {
+  const long = "x".repeat(5000);
+  const clamped = clampOverride({ list: [long], hero: { summary: long } });
+  assert.ok(clamped.list[0].length < 5000);
+  assert.ok(clamped.hero.summary.length < 5000);
+});
+
+runTest("extractKeyPerformers balances hitters and pitchers", () => {
+  const boxscore = {
+    teams: {
+      home: {
+        players: {
+          p1: {
+            person: { fullName: "Starter" },
+            position: { abbreviation: "P" },
+            stats: { pitching: { inningsPitched: "7.0", strikeOuts: 9, earnedRuns: 1, hits: 4 } },
+          },
+          h1: {
+            person: { fullName: "Masher" },
+            position: { abbreviation: "DH" },
+            stats: { batting: { atBats: 4, hits: 3, homeRuns: 2, rbi: 5, runs: 2 } },
+          },
+          h2: {
+            person: { fullName: "Slapper" },
+            position: { abbreviation: "2B" },
+            stats: { batting: { atBats: 5, hits: 2, runs: 1 } },
+          },
+        },
+      },
+      away: { players: {} },
+    },
+  };
+  const performers = extractKeyPerformers(boxscore, []);
+  assert.ok(performers.some((performer) => performer.name === "Starter"));
+  assert.ok(performers.some((performer) => performer.name === "Masher"));
+  assert.ok(performers.every((performer) => typeof performer.line === "string" && performer.line.length > 0));
+});
+
+runTest("buildWindSummary returns calm when weather is missing", () => {
+  assert.equal(buildWindSummary({}), "Calm");
+  assert.equal(buildWindSummary({ wind_speed_10m: 12 }), "12 mph");
+  assert.equal(buildWindSummary({ wind_speed_10m: 12, wind_gusts_10m: 22 }), "12 mph · gusts 22");
 });
 
 function runTest(name, fn) {

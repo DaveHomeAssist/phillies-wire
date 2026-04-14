@@ -25,6 +25,10 @@ export {
   mergeInjuryEntries,
   normalizeLiveInjuries,
   buildTbdBattingOrder,
+  extractKeyPerformers,
+  normalizeGamesBack,
+  clampOverride,
+  buildWindSummary,
 };
 
 async function main() {
@@ -1250,7 +1254,10 @@ function loadDailyProphet() {
   }
 }
 
-const OVERRIDE_MAX_FIELD_LENGTH = 400;
+// Overrides are editorial copy, so the per-string cap needs to fit a
+// short paragraph. 2000 characters covers the longest legitimate
+// narrative block we've shipped and still clamps runaway payloads.
+const OVERRIDE_MAX_FIELD_LENGTH = 2000;
 
 function loadOverrides(date) {
   const path = `./overrides/${date}.json`;
