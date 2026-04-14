@@ -100,7 +100,9 @@
         "venue": "Citizens Bank Park, Philadelphia",
         "starters": {
           "home": { "name": "Aaron Nola", "hand": "R" },
-          "away": { "name": "Jacob deGrom", "hand": "R" }
+          "away": { "name": "Jacob deGrom", "hand": "R" },
+          "phi": { "name": "Aaron Nola", "hand": "R" },
+          "opp": { "name": "Jacob deGrom", "hand": "R" }
         },
         "series": { "home_wins": 1, "away_wins": 0, "label": "PHI leads 1–0" },
         "broadcast": {
@@ -123,6 +125,11 @@
       "preview": "PHI 5, TEX 3 · Sánchez 10 K · Schwarber + Bohm HR",
       "content": {
         "result": { "home_score": 5, "away_score": 3, "winner": "PHI", "summary_line": "PHI 5, TEX 3." },
+        "decisions": {
+          "winner": { "id": null, "fullName": "Cristopher Sánchez", "link": null },
+          "loser": { "id": null, "fullName": "Nathan Eovaldi", "link": null },
+          "save": { "id": null, "fullName": "Jhoan Durán", "link": null }
+        },
         "date": "2026-03-26",
         "key_performers": [
           {

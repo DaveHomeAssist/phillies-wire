@@ -19,10 +19,17 @@ phillies-wire/
 |-- render.mjs
 |-- verify.mjs
 |-- run.mjs
+|-- deliver.mjs
+|-- live-feed.js
+|-- pregame-preview.js
 |-- archive.json
 |-- archive/
 |-- issues/
 |-- overrides/
+|-- scripts/
+|   |-- lint.mjs           # node --check syntax scan
+|   `-- health-check.mjs   # cron-friendly staleness probe
+|-- test/
 |-- .github/workflows/publish.yml
 |-- README.md
 `-- HANDOFF.md
@@ -81,12 +88,28 @@ node verify.mjs
 - `open-meteo.com`
 - MLB transactions feed for injury/rehab freshness
 
+## What's new
+
+- Per-issue SEO metadata: canonical URL, Open Graph, Twitter Card, and JSON-LD NewsArticle + SportsEvent blocks; robots.txt, sitemap.xml, Atom feed.xml, manifest.webmanifest, and a generated og-default.svg are produced on every run.
+- Game-day lineup section with both starting pitchers (including pitching hand) and the announced 1–9 batting order, sourced from the MLB boxscore endpoint with a PHI-first fallback.
+- Live injury report merging the MLB /injuries endpoint with the transactions feed; the fallback baseline is preserved for editorial context.
+- Archive page with month grouping, client-side search, canonical URL, and share-ready metadata.
+- Prev/Next navigation on dated issue pages plus a share bar (X / Bluesky / email / copy link) on every page.
+- Accessibility: semantic landmarks (`<main>`, `<nav>`, `<footer>`, `<aside>`), skip link, live regions, reduced-motion support, theme persistence via localStorage, visually-hidden accordion heading, WCAG AA contrast on the masthead subheader.
+- Live polling no longer reloads the page; it refreshes in place, pauses on hidden tabs, backs off after consecutive failures, and pauses cleanly on rain delays / postponements.
+- Enrich stage uses prompt caching on the system block, honours a 60-second timeout, and retries 429 / 5xx / network resets up to four times with jittered backoff.
+- CSP-friendly event delegation: inline `onclick` handlers replaced with `data-pw-*` attributes and a single delegated listener, so the script-src CSP can be tightened in the future.
+- Override merge supports a `"__delete__"` sentinel to retract generated fields, and every override value is length-capped as a defense-in-depth measure.
+- `node scripts/lint.mjs` syntax-checks every tracked `.mjs` / `.js` file and runs as the first step of `npm test`.
+- `node scripts/health-check.mjs` probes the deployed `status.json` and posts to an optional webhook when the site goes stale.
+
 ## Next likely upgrades
 
-- Rotation card stat polish and current-year fallbacks once starters accumulate innings
-- Stronger live polling guards for delayed and final-state games
-- Email template hardening for Outlook and Gmail rendering quirks
-- Template and JSON contract coverage for newer standings/live modules
+- Critical CSS inlining and self-hosted fonts for faster first paint.
+- Bullpen availability card driven by rolling reliever usage.
+- Head-to-head season history and umpire crew mini-block.
+- Playwright end-to-end smoke test for the live-feed pipeline.
+- Progressive enhancement to a typed template engine once section density grows.
 
 ## Notion references
 

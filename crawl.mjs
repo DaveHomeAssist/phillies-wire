@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
+import { pathToFileURL } from "node:url";
 import { buildPregamePreviewContent, buildRecapPullQuote } from "./pregame-preview.js";
 
 const MLB_API_BASE = "https://statsapi.mlb.com/api/v1";
@@ -11,24 +12,56 @@ const YESTERDAY = getRelativeIsoDate(-1);
 const OUTPUT_FILE = "./phillies-wire-data.json";
 const ERROR_LOG = "./crawl-error.log";
 
-main().catch((error) => fail(error));
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => fail(error));
+}
+
+export {
+  resolvePitcher,
+  resolveSeriesLabel,
+  extractDecisions,
+  extractBattingOrder,
+  buildLineupSection,
+  mergeInjuryEntries,
+  normalizeLiveInjuries,
+  buildTbdBattingOrder,
+  extractKeyPerformers,
+  normalizeGamesBack,
+  clampOverride,
+  buildWindSummary,
+  pickActiveGame,
+};
 
 async function main() {
   const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
   const overrides = loadOverrides(TODAY);
-  const [scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, weatherResponse] =
+  // Every upstream dependency is wrapped in a soft catch so that a
+  // single flaky endpoint cannot take the whole publish offline. The
+  // fixture fallback kicks in wherever a response is missing.
+  const fetchSoft = (label, url) =>
+    fetchJson(url).catch((error) => {
+      console.warn(`[crawl] ${label} fetch failed: ${error.message}`);
+      return null;
+    });
+
+  const [scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, weatherResponse, injuryResponse] =
     await Promise.all([
-      fetchJson(`${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&date=${TODAY}&hydrate=linescore,probablePitcher,seriesStatus,team,game(content(summary,media(epg)))`),
-      fetchJson(
-        `${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&startDate=${TODAY}&endDate=${getRelativeIsoDate(4)}&hydrate=linescore,probablePitcher,seriesStatus,team`,
+      fetchSoft(
+        "schedule",
+        `${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&date=${TODAY}&hydrate=linescore,probablePitcher,seriesStatus,team,broadcasts(all),game(content(summary,media(epg)))`,
       ),
-      fetchJson(`${MLB_API_BASE}/teams/${TEAM_ID}/roster?rosterType=active`),
-      fetchJson(`${MLB_API_BASE}/transactions?teamId=${TEAM_ID}&startDate=${YESTERDAY}&endDate=${TODAY}`),
-      fetchJson(WEATHER_URL),
+      fetchSoft(
+        "next-schedule",
+        `${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&startDate=${TODAY}&endDate=${getRelativeIsoDate(4)}&hydrate=linescore,probablePitcher,seriesStatus,team,broadcasts(all)`,
+      ),
+      fetchSoft("roster", `${MLB_API_BASE}/teams/${TEAM_ID}/roster?rosterType=active`),
+      fetchSoft("transactions", `${MLB_API_BASE}/transactions?teamId=${TEAM_ID}&startDate=${YESTERDAY}&endDate=${TODAY}`),
+      fetchSoft("weather", WEATHER_URL),
+      fetchSoft("injuries", `${MLB_API_BASE}/teams/${TEAM_ID}/injuries`),
     ]);
 
   const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
-  const game = scheduleResponse?.dates?.[0]?.games?.[0];
+  const game = pickActiveGame(scheduleResponse?.dates?.[0]?.games ?? []);
 
   if (!game) {
     const offDay = buildOffDayPayload(fixture, nextGames, overrides);
@@ -48,6 +81,7 @@ async function main() {
     nextGames,
     rosterResponse,
     transactionResponse,
+    injuryResponse,
     weatherResponse,
   });
 
@@ -65,6 +99,7 @@ async function buildLivePayload(context) {
     nextGames,
     rosterResponse,
     transactionResponse,
+    injuryResponse,
     weatherResponse,
   } = context;
 
@@ -98,27 +133,27 @@ async function buildLivePayload(context) {
     source_notes: buildSourceNotes(transactionResponse, fixture, overrides),
   };
 
-  data.sections.game_status.preview = `${homeTeam.abbreviation} vs ${awayTeam.abbreviation} · ${formatGameTime(game.gameDate)} · ${game.venue.name}`;
+  data.sections.game_status.preview = `${awayTeam.abbreviation} @ ${homeTeam.abbreviation} · ${formatGameTime(game.gameDate)} · ${game.venue.name}`;
+
+  const philliesPitcher = resolvePitcher(philliesSide, fixture, "phi");
+  const opponentPitcher = resolvePitcher(opponentSide, fixture, "opp");
+  const homePitcher = philliesAreHome ? philliesPitcher : opponentPitcher;
+  const awayPitcher = philliesAreHome ? opponentPitcher : philliesPitcher;
+
   data.sections.game_status.content = {
     ...data.sections.game_status.content,
-    matchup: `${homeTeam.teamName} vs ${awayTeam.teamName} - Game ${game.seriesGameNumber ?? 1}`,
+    matchup: `${awayTeam.teamName} @ ${homeTeam.teamName} · Game ${game.seriesGameNumber ?? 1}`,
     first_pitch: formatGameTime(game.gameDate),
     venue: `${game.venue.name}, ${homeTeam.locationName}`,
     starters: {
-      home: {
-        name: philliesSide.probablePitcher?.fullName ?? fixture.sections.game_status.content.starters.home.name,
-        hand: fixture.sections.game_status.content.starters.home.hand,
-      },
-      away: {
-        name: opponentSide.probablePitcher?.fullName ?? fixture.sections.game_status.content.starters.away.name,
-        hand: fixture.sections.game_status.content.starters.away.hand,
-      },
+      home: homePitcher,
+      away: awayPitcher,
+      phi: philliesPitcher,
+      opp: opponentPitcher,
     },
     series: {
       ...data.sections.game_status.content.series,
-      home_wins: game.seriesStatus?.wins ?? fixture.sections.game_status.content.series.home_wins,
-      away_wins: game.seriesStatus?.losses ?? fixture.sections.game_status.content.series.away_wins,
-      label: game.seriesStatus?.result ?? fixture.sections.game_status.content.series.label,
+      label: resolveSeriesLabel(game, fixture.sections.game_status.content.series.label),
     },
     broadcast: {
       ...data.sections.game_status.content.broadcast,
@@ -144,6 +179,7 @@ async function buildLivePayload(context) {
     awayTeam,
     starters: data.sections.game_status.content.starters,
     firstPitch: data.sections.game_status.content.first_pitch,
+    opponentAbbr: opponentSide.team.abbreviation,
   });
 
   const pregamePreview = buildPregamePreviewContent({
@@ -167,6 +203,7 @@ async function buildLivePayload(context) {
       summary_line: buildRecapSummaryLine(game, TEAM_ID),
     };
     data.sections.recap.content.key_performers = extractKeyPerformers(boxscore, fixture.sections.recap.content.key_performers);
+    data.sections.recap.content.decisions = extractDecisions(boxscore);
     data.sections.recap.content.pull_quote = buildRecapPullQuote({
       summaryLine: data.sections.recap.content.result.summary_line,
       venue: data.sections.game_status.content.venue,
@@ -184,8 +221,9 @@ async function buildLivePayload(context) {
 
   data.sections.roster.content.rotation = rotation;
   data.sections.roster.content.highlights = buildRosterHighlights(rosterResponse, transactionResponse, fixture.sections.roster.content.highlights);
-  data.sections.injury_report.content.il_entries = mergeInjuryEntriesFromTransactions(
+  data.sections.injury_report.content.il_entries = mergeInjuryEntries(
     fixture.sections.injury_report.content.il_entries,
+    injuryResponse,
     transactionResponse,
   );
   data.sections.standings = {
@@ -231,8 +269,91 @@ async function buildLivePayload(context) {
   return data;
 }
 
+function pickActiveGame(games) {
+  if (!games.length) {
+    return null;
+  }
+
+  // Doubleheader handling: prefer the game that is currently in
+  // progress; otherwise return the next unfinished game by startTime;
+  // otherwise the last final game of the day.
+  const byStart = [...games].sort((left, right) =>
+    String(left.gameDate ?? "").localeCompare(String(right.gameDate ?? "")),
+  );
+
+  const live = byStart.find((game) => game?.status?.abstractGameState === "Live");
+  if (live) return live;
+
+  const upcoming = byStart.find((game) => game?.status?.abstractGameState === "Preview");
+  if (upcoming) return upcoming;
+
+  const finals = byStart.filter((game) => game?.status?.abstractGameState === "Final");
+  if (finals.length) return finals[finals.length - 1];
+
+  return byStart[0];
+}
+
+function resolvePitcher(side, fixture, role) {
+  const probable = side?.probablePitcher;
+  if (probable?.fullName) {
+    return {
+      name: probable.fullName,
+      hand: probable.pitchHand?.code ?? "R",
+    };
+  }
+
+  // Only the Phillies fallback is reliable — the fixture's opponent
+  // starter is Rangers-specific and would leak into, say, a Nationals
+  // preview. Leave the opponent as TBD instead of lying to the reader.
+  if (role === "phi") {
+    const fallback = fixture.sections.game_status.content.starters?.phi
+      ?? fixture.sections.game_status.content.starters?.home
+      ?? { name: "TBD", hand: "R" };
+    return { name: fallback.name ?? "TBD", hand: fallback.hand ?? "R" };
+  }
+
+  return { name: "TBD", hand: "R" };
+}
+
+function resolveSeriesLabel(game, fallbackLabel) {
+  const seriesStatus = game?.seriesStatus;
+  if (seriesStatus?.result && typeof seriesStatus.result === "string" && seriesStatus.result.trim()) {
+    return seriesStatus.result.trim();
+  }
+
+  if (seriesStatus?.description && typeof seriesStatus.description === "string") {
+    return seriesStatus.description;
+  }
+
+  const gameNumber = game?.seriesGameNumber;
+  const gamesInSeries = game?.gamesInSeries ?? seriesStatus?.gamesInSeries;
+  if (gameNumber && gamesInSeries) {
+    return `Game ${gameNumber} of ${gamesInSeries}`;
+  }
+
+  return fallbackLabel;
+}
+
+function extractDecisions(boxscore) {
+  const decisions = boxscore?.decisions ?? {};
+  const normalize = (entry) => {
+    if (!entry) return null;
+    return {
+      id: entry.id ?? null,
+      fullName: entry.fullName ?? entry.name ?? "TBD",
+      link: entry.link ?? null,
+    };
+  };
+
+  return {
+    winner: normalize(decisions.winner),
+    loser: normalize(decisions.loser),
+    save: normalize(decisions.save),
+  };
+}
+
 function buildLineupSection(context) {
-  const { fixture, boxscore, philliesAreHome, homeTeam, awayTeam, starters, firstPitch } = context;
+  const { fixture, boxscore, philliesAreHome, homeTeam, awayTeam, starters, firstPitch, opponentAbbr } = context;
   const fixtureLineup = fixture.sections.lineup;
   const homeAbbr = homeTeam.abbreviation;
   const awayAbbr = awayTeam.abbreviation;
@@ -243,33 +364,44 @@ function buildLineupSection(context) {
   const homeOrder = extractBattingOrder(homeBox);
   const awayOrder = extractBattingOrder(awayBox);
 
-  const announced = homeOrder.length === 9 && awayOrder.length === 9;
+  const homeAnnounced = homeOrder.length === 9;
+  const awayAnnounced = awayOrder.length === 9;
+  const announced = homeAnnounced && awayAnnounced;
 
-  const fallbackHomeOrder = philliesAreHome
-    ? fixtureLineup.content.batting_order.home
-    : fixtureLineup.content.batting_order.away;
-  const fallbackAwayOrder = philliesAreHome
-    ? fixtureLineup.content.batting_order.away
-    : fixtureLineup.content.batting_order.home;
+  // Phillies fallback is the only reliable baseline; opponent fallback in
+  // the fixture is Rangers-specific. Only reuse the opponent fallback when
+  // today's opponent actually is Texas — otherwise leave a TBD placeholder.
+  const fixturePhiOrder = fixtureLineup.content.batting_order.home;
+  const fixtureOppOrder = opponentAbbr === "TEX" ? fixtureLineup.content.batting_order.away : buildTbdBattingOrder(opponentAbbr);
+
+  const phiFallbackOrder = fixturePhiOrder;
+  const oppFallbackOrder = fixtureOppOrder;
+
+  const phiOrder = homeAnnounced && philliesAreHome ? homeOrder
+    : awayAnnounced && !philliesAreHome ? awayOrder
+    : phiFallbackOrder;
+  const oppOrder = homeAnnounced && !philliesAreHome ? homeOrder
+    : awayAnnounced && philliesAreHome ? awayOrder
+    : oppFallbackOrder;
 
   const homeStarter = {
     team: homeAbbr,
-    name: philliesAreHome ? starters.home.name : starters.away.name,
-    hand: philliesAreHome ? starters.home.hand : starters.away.hand,
+    name: starters.home?.name ?? "TBD",
+    hand: starters.home?.hand ?? "R",
   };
   const awayStarter = {
     team: awayAbbr,
-    name: philliesAreHome ? starters.away.name : starters.home.name,
-    hand: philliesAreHome ? starters.away.hand : starters.home.hand,
+    name: starters.away?.name ?? "TBD",
+    hand: starters.away?.hand ?? "R",
   };
 
   const statusNote = announced
-    ? `Official batting orders confirmed for today's ${homeAbbr} vs ${awayAbbr} game.`
+    ? `Official batting orders confirmed for today's ${awayAbbr} at ${homeAbbr} game.`
     : "Official lineups typically post roughly two hours before first pitch. Holding baseline order until MLB confirms.";
 
   const preview = announced
-    ? `${homeAbbr} order set · ${homeStarter.name} vs ${awayStarter.name}`
-    : `Lineups pending · ${homeStarter.name} vs ${awayStarter.name}`;
+    ? `${homeAbbr} order set · ${starters.phi?.name ?? "TBD"} vs ${starters.opp?.name ?? "TBD"}`
+    : `Lineups pending · ${starters.phi?.name ?? "TBD"} vs ${starters.opp?.name ?? "TBD"}`;
 
   return {
     preview,
@@ -280,13 +412,26 @@ function buildLineupSection(context) {
       starters: {
         home: homeStarter,
         away: awayStarter,
+        phi: { team: "PHI", name: starters.phi?.name ?? "TBD", hand: starters.phi?.hand ?? "R" },
+        opp: { team: opponentAbbr, name: starters.opp?.name ?? "TBD", hand: starters.opp?.hand ?? "R" },
       },
       batting_order: {
-        home: homeOrder.length === 9 ? homeOrder : fallbackHomeOrder,
-        away: awayOrder.length === 9 ? awayOrder : fallbackAwayOrder,
+        home: philliesAreHome ? phiOrder : oppOrder,
+        away: philliesAreHome ? oppOrder : phiOrder,
+        phi: phiOrder,
+        opp: oppOrder,
       },
     },
   };
+}
+
+function buildTbdBattingOrder(teamAbbr) {
+  return Array.from({ length: 9 }, (_, index) => ({
+    slot: index + 1,
+    name: `${teamAbbr} hitter ${index + 1}`,
+    position: "TBD",
+    bats: "R",
+  }));
 }
 
 function extractBattingOrder(teamBox) {
@@ -383,6 +528,13 @@ function buildHero(data, game) {
   const opponentSide = philliesAreHome ? game.teams.away : game.teams.home;
 
   if (mode === "final") {
+    const decisions = data.sections.recap.content.decisions ?? {};
+    const winnerName = decisions.winner?.fullName ?? "TBD";
+    const saveName = decisions.save?.fullName;
+    const winCard = saveName
+      ? { label: "WP / SV", value: `${winnerName} / ${saveName}` }
+      : { label: "Winning Pitcher", value: winnerName };
+
     return {
       mode,
       label: "Final",
@@ -390,7 +542,7 @@ function buildHero(data, game) {
       dek: data.sections.recap.preview,
       summary: data.sections.recap.content.pull_quote,
       cards: [
-        { label: "Winning Pitcher", value: data.sections.recap.content.key_performers[0]?.name ?? "TBD" },
+        winCard,
         { label: "Series", value: data.sections.game_status.content.series.label },
         { label: data.next_game.label, value: `${data.next_game.date} · ${data.next_game.time}` },
       ],
@@ -404,7 +556,10 @@ function buildHero(data, game) {
     const inning = linescore.currentInningOrdinal ? `${linescore.inningState} ${linescore.currentInningOrdinal}` : game.status?.detailedState;
     const outs = typeof linescore.outs === "number" ? `${linescore.outs} out${linescore.outs === 1 ? "" : "s"}` : "In progress";
     const batter = linescore.offense?.batter?.fullName ?? "Current batter pending";
-    const pitcher = linescore.defense?.pitcher?.fullName ?? data.sections.game_status.content.starters.home.name;
+    const defaultPitcher = linescore.isTopInning
+      ? data.sections.game_status.content.starters.home.name
+      : data.sections.game_status.content.starters.away.name;
+    const pitcher = linescore.defense?.pitcher?.fullName ?? defaultPitcher;
     const seriesContext = buildSeriesContext(data.sections.game_status.content.series.label);
 
     return {
@@ -428,11 +583,12 @@ function buildHero(data, game) {
     };
   }
 
+  const starters = data.sections.game_status.content.starters;
   return {
     mode: "pregame",
     label: "Pregame",
     headline: data.sections.game_status.content.matchup,
-    dek: `${data.sections.game_status.content.starters.home.name} vs ${data.sections.game_status.content.starters.away.name}`,
+    dek: `${starters.phi.name} vs ${starters.opp.name}`,
     summary: data.sections.preview.preview,
     cards: [
       { label: "First Pitch", value: data.sections.game_status.content.first_pitch },
@@ -457,7 +613,7 @@ function buildTicker(data, transactionResponse, weather) {
       highlight: false,
     },
     {
-      text: `${data.sections.game_status.content.starters.home.name} vs ${data.sections.game_status.content.starters.away.name}`,
+      text: `${data.sections.game_status.content.starters.phi.name} vs ${data.sections.game_status.content.starters.opp.name}`,
       highlight: true,
     },
     {
@@ -508,7 +664,7 @@ function buildSourceNotes(transactionResponse, fixture, overrides) {
 
 async function buildRotation(nextGames, fallback) {
   if (!nextGames.length) {
-    return fallback;
+    return (fallback ?? []).map((entry) => ({ ...entry, source: "fallback" }));
   }
 
   const pitcherIds = nextGames
@@ -520,6 +676,7 @@ async function buildRotation(nextGames, fallback) {
 
   return nextGames.slice(0, 5).map((game, index) => {
     const stats = statsMap.get(game.homePitcherId) ?? {};
+    const hasLiveProbable = Boolean(game.homePitcherId) && game.homePitcher && game.homePitcher !== "TBD";
     return {
       date: game.shortDate,
       pitcher: game.homePitcher,
@@ -527,6 +684,7 @@ async function buildRotation(nextGames, fallback) {
       hand: fallback[index]?.hand ?? "R",
       era: stats.era ?? "",
       record: stats.wins != null ? `${stats.wins}-${stats.losses}` : "",
+      source: hasLiveProbable ? "live" : "fallback",
     };
   });
 }
@@ -576,7 +734,7 @@ async function fetchStandings() {
         wins: team.wins,
         losses: team.losses,
         pct: team.winningPercentage,
-        gb: team.gamesBack === "-" ? "—" : team.gamesBack,
+        gb: normalizeGamesBack(team.gamesBack),
         streak: team.streak?.streakCode ?? "",
         is_phi: team.team.id === TEAM_ID,
       }));
@@ -584,6 +742,20 @@ async function fetchStandings() {
   }
 
   return [];
+}
+
+function normalizeGamesBack(value) {
+  if (value == null) {
+    return "\u2014";
+  }
+  const trimmed = String(value).trim();
+  // MLB returns "-" for the division leader; Open-endpoint sometimes
+  // returns "—" or an empty string. Normalize all of them to an em dash
+  // so the standings table renders consistently.
+  if (trimmed === "" || trimmed === "-" || trimmed === "\u2013" || trimmed === "\u2014" || trimmed === "0.0") {
+    return "\u2014";
+  }
+  return trimmed;
 }
 
 function buildStandingsPreview(teams) {
@@ -637,26 +809,88 @@ function buildRosterHighlights(rosterResponse, transactionResponse, fallback) {
   return deduped.slice(0, 5);
 }
 
-function mergeInjuryEntriesFromTransactions(fallbackEntries, transactionResponse) {
-  const descriptions = new Map(
-    (transactionResponse?.transactions ?? []).map((transaction) => [transaction.person?.fullName, transaction.description]),
+function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse) {
+  const transactions = transactionResponse?.transactions ?? [];
+  const transactionDescriptions = new Map(
+    transactions.map((transaction) => [transaction.person?.fullName, transaction.description]),
   );
 
-  return fallbackEntries.map((entry) => {
-    const description = descriptions.get(entry.name);
-    if (!description) {
-      return entry;
+  const liveInjuries = normalizeLiveInjuries(injuryResponse);
+  const byName = new Map();
+
+  // Seed with fixture baseline so we retain editorial-quality context notes
+  // for known long-term IL entries.
+  for (const entry of fallbackEntries) {
+    byName.set(entry.name, { ...entry });
+  }
+
+  // Overlay live MLB data. New entries are appended; known entries get
+  // fresher injury + status text pulled from the feed.
+  for (const injury of liveInjuries) {
+    const existing = byName.get(injury.name);
+    if (existing) {
+      byName.set(injury.name, {
+        ...existing,
+        injury: injury.injury ?? existing.injury,
+        status_note: injury.status_note ?? existing.status_note,
+        il_type: injury.il_type ?? existing.il_type,
+        badge: injury.badge ?? existing.badge,
+        position: injury.position ?? existing.position,
+        retroactive_to: injury.retroactive_to ?? existing.retroactive_to,
+        first_eligible: injury.first_eligible ?? existing.first_eligible,
+        source: "live",
+      });
+      continue;
     }
 
-    if (/rehab assignment/i.test(description)) {
+    byName.set(injury.name, { ...injury, source: "live" });
+  }
+
+  // Overlay rehab assignment notes from the transactions feed, which update
+  // faster than the injuries feed for in-progress rehab outings.
+  for (const [name, description] of transactionDescriptions.entries()) {
+    if (!name || !description) {
+      continue;
+    }
+    if (!/rehab assignment/i.test(description)) {
+      continue;
+    }
+    const existing = byName.get(name);
+    if (existing) {
+      byName.set(name, { ...existing, status_note: shortTransactionNote(description), badge: existing.badge ?? "rehab" });
+    }
+  }
+
+  return Array.from(byName.values());
+}
+
+function normalizeLiveInjuries(injuryResponse) {
+  const entries = injuryResponse?.injuries ?? injuryResponse?.roster ?? [];
+  return entries
+    .map((entry) => {
+      const name = entry?.person?.fullName ?? entry?.playerName ?? entry?.name;
+      if (!name) {
+        return null;
+      }
+
+      const ilType = entry?.status?.description?.match(/\d+[- ]?day/i)?.[0]
+        ?? entry?.injuryListType
+        ?? entry?.ilType
+        ?? entry?.status?.code
+        ?? "15-Day";
+
       return {
-        ...entry,
-        status_note: shortTransactionNote(description),
+        name,
+        position: entry?.position?.abbreviation ?? entry?.positionAbbreviation ?? "",
+        il_type: ilType.replace(/\s+/g, "-"),
+        badge: /day/i.test(String(ilType)) ? "il" : "dtd",
+        injury: entry?.injuryDescription ?? entry?.comment ?? entry?.note ?? "",
+        status_note: entry?.statusNote ?? entry?.description ?? "",
+        retroactive_to: entry?.retroActiveDate ?? entry?.retroactiveDate ?? null,
+        first_eligible: entry?.dateEligibleToReturn ?? entry?.firstEligibleDate ?? null,
       };
-    }
-
-    return entry;
-  });
+    })
+    .filter(Boolean);
 }
 
 function collectUpcomingGames(scheduleResponse, teamId) {
@@ -690,34 +924,79 @@ function collectUpcomingGames(scheduleResponse, teamId) {
 }
 
 function extractKeyPerformers(boxscore, fallback) {
-  const players = Object.values(boxscore?.teams?.home?.players ?? {}).concat(Object.values(boxscore?.teams?.away?.players ?? {}));
+  const players = Object.values(boxscore?.teams?.home?.players ?? {})
+    .concat(Object.values(boxscore?.teams?.away?.players ?? {}));
+
   const performers = players
-    .filter((player) => player?.stats?.batting || player?.stats?.pitching)
-    .map((player) => {
-      const batting = player.stats.batting ?? {};
-      const pitching = player.stats.pitching ?? {};
-      const battingParts = [];
-      const pitchingParts = [];
+    .map((player) => buildPerformerLine(player))
+    .filter(Boolean);
 
-      if (batting.atBats) battingParts.push(`${batting.hits ?? 0}-for-${batting.atBats}`);
-      if (batting.homeRuns) battingParts.push(`${batting.homeRuns} HR`);
-      if (batting.rbi) battingParts.push(`${batting.rbi} RBI`);
-      if (pitching.inningsPitched) pitchingParts.push(`${pitching.inningsPitched} IP`);
-      if (pitching.hits) pitchingParts.push(`${pitching.hits} H`);
-      if (pitching.runs) pitchingParts.push(`${pitching.runs} R`);
-      if (pitching.strikeOuts) pitchingParts.push(`${pitching.strikeOuts} K`);
+  // Prefer the best two hitters and two pitchers so the recap card
+  // shows a balanced view instead of five batters or five arms.
+  const hitters = performers
+    .filter((performer) => performer.role === "hitter")
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 3);
+  const pitchers = performers
+    .filter((performer) => performer.role === "pitcher")
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 2);
 
-      return {
-        name: player.person.fullName,
-        position: player.position?.abbreviation ?? "P",
-        line: battingParts.concat(pitchingParts).join(", "),
-        note: player.seasonStats?.pitching?.era ? `ERA ${player.seasonStats.pitching.era}` : "Live boxscore performer",
-      };
-    })
-    .filter((player) => player.line)
-    .slice(0, 5);
+  const chosen = pitchers.concat(hitters).slice(0, 5);
+  if (!chosen.length) {
+    return fallback;
+  }
 
-  return performers.length ? performers : fallback;
+  return chosen.map(({ score: _score, role: _role, ...performer }) => performer);
+}
+
+function buildPerformerLine(player) {
+  if (!player?.person?.fullName) {
+    return null;
+  }
+
+  const batting = player.stats?.batting ?? {};
+  const pitching = player.stats?.pitching ?? {};
+  const position = player.position?.abbreviation ?? "";
+  const isPitcher = Boolean(pitching.inningsPitched) || position === "P";
+
+  if (isPitcher) {
+    if (!pitching.inningsPitched) {
+      return null;
+    }
+    const parts = [`${pitching.inningsPitched} IP`];
+    if (pitching.hits != null) parts.push(`${pitching.hits} H`);
+    if (pitching.earnedRuns != null) parts.push(`${pitching.earnedRuns} ER`);
+    if (pitching.strikeOuts != null) parts.push(`${pitching.strikeOuts} K`);
+    return {
+      role: "pitcher",
+      score: (Number(pitching.strikeOuts) || 0) + (Number(pitching.inningsPitched) || 0) * 2 - (Number(pitching.earnedRuns) || 0),
+      name: player.person.fullName,
+      position: position || "P",
+      line: parts.join(", "),
+      note: player.seasonStats?.pitching?.era ? `ERA ${player.seasonStats.pitching.era}` : "Live boxscore performer",
+    };
+  }
+
+  if (!batting.atBats && !batting.homeRuns && !batting.rbi) {
+    return null;
+  }
+
+  const parts = [];
+  if (batting.atBats) parts.push(`${batting.hits ?? 0}-for-${batting.atBats}`);
+  if (batting.homeRuns) parts.push(`${batting.homeRuns} HR`);
+  if (batting.rbi) parts.push(`${batting.rbi} RBI`);
+  if (batting.runs) parts.push(`${batting.runs} R`);
+  if (batting.stolenBases) parts.push(`${batting.stolenBases} SB`);
+
+  return {
+    role: "hitter",
+    score: (Number(batting.hits) || 0) * 2 + (Number(batting.homeRuns) || 0) * 5 + (Number(batting.rbi) || 0),
+    name: player.person.fullName,
+    position: position || "DH",
+    line: parts.join(", "),
+    note: player.seasonStats?.batting?.avg ? `AVG ${player.seasonStats.batting.avg}` : "Live boxscore performer",
+  };
 }
 
 function buildRecapPreview(game, boxscore, fallback) {
@@ -796,8 +1075,11 @@ function validateCrawlPayload(data) {
     throw new Error("sections.injury_report.content.il_entries must be an array.");
   }
 
-  if (data.meta.date !== TODAY) {
-    throw new Error(`meta.date ${data.meta.date} does not match today's date ${TODAY}.`);
+  // Recompute today at validation time to avoid races when the crawl
+  // spans midnight ET during a game-window cron run.
+  const currentIsoDate = getIsoDate();
+  if (data.meta.date !== TODAY && data.meta.date !== currentIsoDate) {
+    throw new Error(`meta.date ${data.meta.date} does not match today's date ${currentIsoDate}.`);
   }
 }
 
@@ -814,8 +1096,15 @@ function shortTransactionNote(description) {
 }
 
 function buildWindSummary(weather) {
-  const speed = Math.round(weather.wind_speed_10m ?? 0);
+  const rawSpeed = weather?.wind_speed_10m;
+  if (rawSpeed == null) {
+    return "Calm";
+  }
+  const speed = Math.round(rawSpeed);
   const gusts = Math.round(weather.wind_gusts_10m ?? 0);
+  if (!speed && !gusts) {
+    return "Calm";
+  }
   return gusts ? `${speed} mph · gusts ${gusts}` : `${speed} mph`;
 }
 
@@ -1009,13 +1298,42 @@ function loadDailyProphet() {
   }
 }
 
+// Overrides are editorial copy, so the per-string cap needs to fit a
+// short paragraph. 2000 characters covers the longest legitimate
+// narrative block we've shipped and still clamps runaway payloads.
+const OVERRIDE_MAX_FIELD_LENGTH = 2000;
+
 function loadOverrides(date) {
   const path = `./overrides/${date}.json`;
   if (!existsSync(path)) {
     return null;
   }
 
-  return JSON.parse(readFileSync(path, "utf8"));
+  const raw = readFileSync(path, "utf8");
+  if (raw.length > 50_000) {
+    throw new Error(`Override file ${path} is suspiciously large (${raw.length} bytes). Aborting.`);
+  }
+  const parsed = JSON.parse(raw);
+  return clampOverride(parsed);
+}
+
+function clampOverride(value) {
+  if (typeof value === "string") {
+    return value.length > OVERRIDE_MAX_FIELD_LENGTH
+      ? `${value.slice(0, OVERRIDE_MAX_FIELD_LENGTH - 1)}\u2026`
+      : value;
+  }
+  if (Array.isArray(value)) {
+    return value.map((item) => clampOverride(item));
+  }
+  if (value && typeof value === "object") {
+    const output = {};
+    for (const [key, item] of Object.entries(value)) {
+      output[key] = clampOverride(item);
+    }
+    return output;
+  }
+  return value;
 }
 
 function stripHeroOverride(overrides) {
@@ -1036,6 +1354,8 @@ function applyOverrides(target, overrides) {
   return deepMerge(target, overrides);
 }
 
+const DELETE_SENTINEL = "__delete__";
+
 function deepMerge(target, source) {
   if (!source || typeof source !== "object" || Array.isArray(source)) {
     return source == null ? target : source;
@@ -1044,7 +1364,13 @@ function deepMerge(target, source) {
   const output = target && typeof target === "object" && !Array.isArray(target) ? target : {};
   for (const key of Object.keys(source)) {
     const sourceValue = source[key];
-    const targetValue = output[key];
+
+    // Sentinel string "__delete__" removes the key entirely from the
+    // merged output — use for retracting fixture fields via overrides.
+    if (sourceValue === DELETE_SENTINEL) {
+      delete output[key];
+      continue;
+    }
 
     if (Array.isArray(sourceValue)) {
       output[key] = cloneJson(sourceValue);
@@ -1052,7 +1378,7 @@ function deepMerge(target, source) {
     }
 
     if (sourceValue && typeof sourceValue === "object") {
-      output[key] = deepMerge(targetValue, sourceValue);
+      output[key] = deepMerge(output[key], sourceValue);
       continue;
     }
 

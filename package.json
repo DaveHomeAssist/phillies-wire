@@ -9,7 +9,9 @@
     "render": "node render.mjs",
     "verify": "node verify.mjs",
     "deliver": "node deliver.mjs",
-    "test": "node test/live-feed.test.mjs && node test/pregame-preview.test.mjs && node test/live-feed-fetch.test.mjs && node test/schema-text-integrity.test.mjs",
+    "test": "node scripts/lint.mjs && node test/live-feed.test.mjs && node test/pregame-preview.test.mjs && node test/live-feed-fetch.test.mjs && node test/schema-text-integrity.test.mjs && node test/render-fixture.test.mjs && node test/crawl-helpers.test.mjs",
+    "lint": "node scripts/lint.mjs",
+    "health-check": "node scripts/health-check.mjs",
     "run": "node run.mjs",
     "pipeline": "node run.mjs"
   },

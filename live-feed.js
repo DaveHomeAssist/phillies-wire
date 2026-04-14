@@ -1,7 +1,7 @@
 const PREVIEW_POLL_MS = 60 * 1000;
 const LIVE_POLL_MS = 15 * 1000;
-const LIVE_PAGE_RELOAD_MS = 5 * 60 * 1000;
 const GAME_WINDOW_MS = 6 * 60 * 60 * 1000;
+const MAX_CONSECUTIVE_FAILURES = 4;
 const HERO_MODES = ["pregame", "live", "final", "off_day"];
 const SEPARATOR = " \u00b7 ";
 
@@ -22,7 +22,8 @@ export function buildGameSnapshot(input) {
       ? feed.gameData.status.detailedState
       : "";
   const isFinal = /final|game over|completed/i.test(detailedState);
-  const isLive = !isFinal && inning > 0;
+  const isPaused = /delayed|suspended|postponed/i.test(detailedState);
+  const isLive = !isFinal && !isPaused && inning > 0;
   const lineText =
     getTeamAbbreviation(away, awayMeta, "AWAY") +
     " " +
@@ -39,9 +40,21 @@ export function buildGameSnapshot(input) {
     getTeamDisplayName(homeMeta, getTeamAbbreviation(home, homeMeta, "Home")) +
     " " +
     getTeamRuns(home);
-  const detailText = isFinal ? "Final" : inning === 0 ? "Pregame" : half + " " + inning + SEPARATOR + formatOuts(outs);
+  const detailText = isFinal
+    ? "Final"
+    : isPaused
+    ? pickPausedLabel(detailedState)
+    : inning === 0
+    ? "Pregame"
+    : half + " " + inning + SEPARATOR + formatOuts(outs);
   const mode = isFinal ? "final" : isLive ? "live" : "pregame";
-  const heroLabel = isFinal ? "Final" : isLive ? "Live" : "Pregame";
+  const heroLabel = isFinal
+    ? "Final"
+    : isPaused
+    ? pickPausedLabel(detailedState)
+    : isLive
+    ? "Live"
+    : "Pregame";
   const venue = source.venue || "";
 
   return {
@@ -133,11 +146,7 @@ export function initLiveFeed(doc, win, fetchImpl) {
   }
 
   let pollTimer = null;
-  let reloadTimer = null;
-
-  if (activeDoc.body && activeDoc.body.dataset && activeDoc.body.dataset.pageMode === "live") {
-    reloadTimer = scheduleReload(activeWin, reloadTimer);
-  }
+  let consecutiveFailures = 0;
 
   function clearPollTimer() {
     if (pollTimer) {
@@ -155,11 +164,18 @@ export function initLiveFeed(doc, win, fetchImpl) {
   }
 
   function poll() {
+    if (activeDoc.visibilityState === "hidden") {
+      // Back off while the tab is hidden; the polling resumes via the
+      // visibilitychange listener below.
+      return;
+    }
+
     Promise.all([
       fetchJson(activeFetch, "https://statsapi.mlb.com/api/v1/game/" + gamePk + "/linescore"),
-      fetchJson(activeFetch, "https://statsapi.mlb.com/api/v1.1/game/" + gamePk + "/feed/live?fields=gameData,status,detailedState,teams,away,abbreviation,teamName,name,clubName,home"),
+      fetchJson(activeFetch, "https://statsapi.mlb.com/api/v1.1/game/" + gamePk + "/feed/live?fields=gameData,status,detailedState,teams,home,away,abbreviation,teamName,clubName,name"),
     ])
-      .then(function(results) {
+      .then(function (results) {
+        consecutiveFailures = 0;
         const snapshot = buildGameSnapshot({
           linescore: results[0],
           feed: results[1],
@@ -167,15 +183,26 @@ export function initLiveFeed(doc, win, fetchImpl) {
         });
 
         syncLiveShell(activeDoc, snapshot);
-        if (snapshot.isLive) {
-          reloadTimer = scheduleReload(activeWin, reloadTimer);
-        }
         scheduleNextPoll(getNextPollDelay(snapshot));
       })
-      .catch(function() {
+      .catch(function () {
+        consecutiveFailures += 1;
+        if (consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
+          // Give the API a minute to recover instead of hammering it.
+          scheduleNextPoll(PREVIEW_POLL_MS * 4);
+          return;
+        }
         scheduleNextPoll(PREVIEW_POLL_MS);
       });
   }
+
+  activeDoc.addEventListener("visibilitychange", function () {
+    if (activeDoc.visibilityState === "visible") {
+      poll();
+    } else {
+      clearPollTimer();
+    }
+  });
 
   poll();
 }
@@ -226,6 +253,14 @@ function formatOuts(outs) {
   return String(outs) + " out" + (outs === 1 ? "" : "s");
 }
 
+function pickPausedLabel(detailedState) {
+  if (!detailedState) return "Paused";
+  if (/postponed/i.test(detailedState)) return "Postponed";
+  if (/suspended/i.test(detailedState)) return "Suspended";
+  if (/delayed/i.test(detailedState)) return "Delayed";
+  return detailedState;
+}
+
 function buildLiveSummary(venue) {
   return venue ? "Live from " + venue + "." : "Game in progress.";
 }
@@ -259,18 +294,6 @@ function updateHeroMode(element, mode) {
   if (element.dataset) {
     element.dataset.liveMode = mode;
   }
-}
-
-function scheduleReload(win, currentTimer) {
-  if (currentTimer) {
-    return currentTimer;
-  }
-
-  return win.setTimeout(function() {
-    if (win.location && typeof win.location.reload === "function") {
-      win.location.reload();
-    }
-  }, LIVE_PAGE_RELOAD_MS);
 }
 
 if (typeof window !== "undefined" && typeof document !== "undefined") {

@@ -1,6 +1,6 @@
 import assert from "assert";
 
-import { buildGameSnapshot, shouldPoll, syncLiveShell } from "../live-feed.js";
+import { buildGameSnapshot, getNextPollDelay, shouldPoll, syncLiveShell } from "../live-feed.js";
 
 const SEP = " \u00b7 ";
 
@@ -150,11 +150,47 @@ runTest("syncLiveShell promotes a stale pregame shell to live", () => {
   assert.ok(doc.getElementById("pw-live-score").classList.contains("pw-live-score--active"));
 });
 
+runTest("buildGameSnapshot treats Delayed state as paused", () => {
+  const snapshot = buildGameSnapshot({
+    linescore: {
+      currentInning: 4,
+      isTopInning: true,
+      outs: 2,
+      teams: {
+        away: { abbreviation: "TEX", runs: 1 },
+        home: { abbreviation: "PHI", runs: 0 },
+      },
+    },
+    feed: {
+      gameData: {
+        status: { detailedState: "Delayed: Rain" },
+        teams: {
+          away: { teamName: "Rangers", abbreviation: "TEX" },
+          home: { teamName: "Phillies", abbreviation: "PHI" },
+        },
+      },
+    },
+    venue: "Citizens Bank Park",
+  });
+
+  assert.strictEqual(snapshot.isLive, false);
+  assert.strictEqual(snapshot.isFinal, false);
+  assert.strictEqual(snapshot.heroLabel, "Delayed");
+  assert.strictEqual(snapshot.detailText, "Delayed");
+});
+
 runTest("shouldPoll keeps a pregame tab eligible for live updates", () => {
   const firstPitch = "2026-03-29T17:35:00Z";
   const ninetyMinutesEarly = Date.parse("2026-03-29T16:05:00Z");
 
   assert.strictEqual(shouldPoll(firstPitch, ninetyMinutesEarly), true);
+});
+
+runTest("getNextPollDelay returns null for final, 15s for live, 60s for preview", () => {
+  assert.strictEqual(getNextPollDelay({ isFinal: true, isLive: false }), null);
+  assert.strictEqual(getNextPollDelay({ isFinal: false, isLive: true }), 15000);
+  assert.strictEqual(getNextPollDelay({ isFinal: false, isLive: false }), 60000);
+  assert.strictEqual(getNextPollDelay(null), null);
 });
 
 function createFakeDocument() {

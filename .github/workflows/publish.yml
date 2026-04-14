@@ -3,13 +3,22 @@ name: Publish Phillies Wire
 on:
   workflow_dispatch:
   schedule:
+    # Daily morning publish. 13:00 UTC = 09:00 ET (EDT) / 08:00 ET (EST).
     - cron: "0 13 * * *"
+    # Game-window refresh every 15 minutes. The two crons below cover
+    # both EST and EDT so the site stays fresh year-round:
+    #   EDT (Mar 2nd Sunday - Nov 1st Sunday): 12:00-01:00 ET == 16:00-05:00 UTC
+    #   EST (Nov 1st Sunday - Mar 2nd Sunday): 12:00-01:00 ET == 17:00-06:00 UTC
+    # The pipeline is idempotent and cheap, so overlapping runs are harmless
+    # and the concurrency group prevents races.
     - cron: "*/15 16-23,0-5 * * *"
+    - cron: "*/15 17-23,0-6 * * *"
 
 permissions:
   contents: write
   pages: write
   id-token: write
+  actions: read
 
 concurrency:
   group: phillies-wire-pages
@@ -21,15 +30,18 @@ jobs:
     environment:
       name: github-pages
     steps:
+      # Actions pinned by SHA per GitHub's Security hardening guide.
+      # Update the comments and SHAs when bumping versions.
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.3
         with:
           node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -38,7 +50,7 @@ jobs:
         run: npm test
 
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
 
       - name: Run pipeline
         env:
@@ -59,7 +71,7 @@ jobs:
 
       - name: Upload diagnostics
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@89ef406dd8d7e03cfd12d9e0a4a378f454709029 # v4.3.5
         with:
           name: phillies-wire-diagnostics
           if-no-files-found: ignore
@@ -73,13 +85,13 @@ jobs:
             enrich-error.log
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: site
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
 
       - name: Publish summary
         if: always()
@@ -88,3 +100,12 @@ jobs:
           echo "- Run date: $(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_STEP_SUMMARY"
           echo "- Page URL: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"
           echo "- Diagnostics artifact: phillies-wire-diagnostics" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Health check (post-deploy)
+        if: success()
+        continue-on-error: true
+        env:
+          PHILLIES_WIRE_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+          PHILLIES_WIRE_MAX_AGE_MIN: "60"
+          PHILLIES_WIRE_WEBHOOK: ${{ secrets.PHILLIES_WIRE_WEBHOOK }}
+        run: node scripts/health-check.mjs

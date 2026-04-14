@@ -7,3 +7,10 @@ enrich-error.log
 .claude/
 status.json
 site/
+# Render-generated SEO/static artifacts (republished by CI every run).
+robots.txt
+sitemap.xml
+feed.xml
+manifest.webmanifest
+favicon.svg
+og-default.svg

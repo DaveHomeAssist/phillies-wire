@@ -1,0 +1,108 @@
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+
+import { populate } from "../render.mjs";
+
+const template = readFileSync(new URL("../phillies-wire-v2.html", import.meta.url), "utf8");
+const fixture = JSON.parse(readFileSync(new URL("../phillies-wire-schema.json", import.meta.url), "utf8"));
+
+runTest("fixture render resolves every token and includes required landmarks", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.assets_prefix = "./";
+  data.meta.latest_href = "./";
+  data.meta.archive_href = "./archive/";
+  data.meta.show_sections = true;
+  data.meta.off_day = false;
+  data.meta.game_pk = "0";
+  data.meta.first_pitch_iso = "2026-03-28T20:05:00Z";
+  data.meta.page_title = "Phillies Wire · Phillies vs Rangers · Mar 28, 2026";
+  data.meta.page_description = "Game 2 at CBP.";
+  data.meta.canonical_url = "https://example.com/";
+  data.meta.og_title = "Phillies Wire: Phillies vs Rangers";
+  data.meta.og_description = "Game 2 at CBP.";
+  data.meta.og_image = "https://example.com/og.svg";
+  data.meta.og_image_alt = "Phillies Wire";
+  data.meta.json_ld = "{\\u0026\"ok\":true}";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
+
+  const html = populate(template, data);
+  const unresolved = html.match(/{{[^}]+}}/g) ?? [];
+  assert.equal(unresolved.length, 0, `Unresolved tokens: ${unresolved.slice(0, 5).join(", ")}`);
+
+  assert.match(html, /<main id="pw-main"/);
+  assert.match(html, /<nav class="pw-shell-nav"/);
+  assert.match(html, /aria-live="polite"/);
+  assert.match(html, /data-row="lineup"/);
+  assert.match(html, /<a class="pw-skip-link"/);
+  assert.match(html, /Trea Turner/);
+});
+
+runTest("fixture render populates Open Graph and JSON-LD", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.assets_prefix = "./";
+  data.meta.latest_href = "./";
+  data.meta.archive_href = "./archive/";
+  data.meta.show_sections = true;
+  data.meta.off_day = false;
+  data.meta.game_pk = "0";
+  data.meta.first_pitch_iso = "2026-03-28T20:05:00Z";
+  data.meta.page_title = "T";
+  data.meta.page_description = "D";
+  data.meta.canonical_url = "https://example.com/";
+  data.meta.og_title = "OGT";
+  data.meta.og_description = "OGD";
+  data.meta.og_image = "https://example.com/og.svg";
+  data.meta.og_image_alt = "alt";
+  data.meta.json_ld = "[\"safe\"]";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
+
+  const html = populate(template, data);
+  assert.match(html, /property="og:title"[^>]+content="OGT"/);
+  assert.match(html, /property="og:image"[^>]+content="https:\/\/example\.com\/og\.svg"/);
+  const jsonLdMatch = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+  assert.ok(jsonLdMatch, "Expected JSON-LD script tag");
+  assert.equal(jsonLdMatch[1].trim(), "[\"safe\"]");
+});
+
+runTest("triple-brace token emits raw HTML without escaping", () => {
+  const html = populate("{{{meta.raw}}}", { meta: { raw: "<em>ok</em>" } });
+  assert.equal(html, "<em>ok</em>");
+});
+
+runTest("double-brace token HTML-escapes user input", () => {
+  const html = populate("<span>{{meta.text}}</span>", { meta: { text: "<script>alert(1)</script>" } });
+  assert.equal(html, "<span>&lt;script&gt;alert(1)&lt;/script&gt;</span>");
+});
+
+runTest("nested {{#if}} blocks resolve correctly", () => {
+  const tpl = "{{#if outer}}OUT {{#if inner}}IN{{/if}}{{/if}}";
+  assert.equal(populate(tpl, { outer: true, inner: true }), "OUT IN");
+  assert.equal(populate(tpl, { outer: true, inner: false }), "OUT ");
+  assert.equal(populate(tpl, { outer: false, inner: true }), "");
+});
+
+runTest("nested {{#each}} inside {{#if}} resolves correctly", () => {
+  const tpl = "{{#if show}}<ul>{{#each items}}<li>{{this}}</li>{{/each}}</ul>{{/if}}";
+  assert.equal(populate(tpl, { show: true, items: ["a", "b"] }), "<ul><li>a</li><li>b</li></ul>");
+  assert.equal(populate(tpl, { show: false, items: ["a"] }), "");
+});
+
+function runTest(name, fn) {
+  try {
+    fn();
+    console.log("PASS", name);
+  } catch (error) {
+    console.error("FAIL", name);
+    throw error;
+  }
+}

@@ -5,7 +5,9 @@ const status = readJson("./status.json");
 const archive = readJson("./archive.json");
 const issuePath = `./issues/${data.meta.date}/index.html`;
 const siteIssuePath = `./site/issues/${data.meta.date}/index.html`;
-const mojibakePattern = /Â·|Â°|â€“|â€”/;
+// Covers the CP1252-in-UTF-8 sequences we've seen in the wild: punctuation
+// and accented characters passed through a double-encoding pipeline.
+const mojibakePattern = /Â·|Â°|â€“|â€”|â€œ|â€\u009d|Ã[\u0080-\u00BF]/;
 
 const requiredFiles = [
   "./phillies-wire-output.html",
@@ -21,6 +23,18 @@ const requiredFiles = [
   siteIssuePath,
   "./live-feed.js",
   "./site/live-feed.js",
+  "./robots.txt",
+  "./sitemap.xml",
+  "./feed.xml",
+  "./manifest.webmanifest",
+  "./favicon.svg",
+  "./og-default.svg",
+  "./site/robots.txt",
+  "./site/sitemap.xml",
+  "./site/feed.xml",
+  "./site/manifest.webmanifest",
+  "./site/favicon.svg",
+  "./site/og-default.svg",
 ];
 
 for (const file of requiredFiles) {
@@ -162,6 +176,37 @@ if (!data.meta.off_day) {
 
 if (!/live-feed\.js/.test(latestHtml)) {
   fail("Latest issue page is missing the live-feed module.");
+}
+
+const requiredMeta = [
+  /<meta name="description"[^>]+content="[^"]+"/,
+  /<link rel="canonical"[^>]+href="[^"]+"/,
+  /<meta property="og:title"[^>]+content="[^"]+"/,
+  /<meta property="og:image"[^>]+content="[^"]+"/,
+  /<meta name="twitter:card"[^>]+content="summary_large_image"/,
+  /<script type="application\/ld\+json"/,
+  /<link rel="alternate"[^>]+type="application\/rss\+xml"/,
+  /<a class="pw-skip-link"/,
+];
+
+for (const pattern of requiredMeta) {
+  if (!pattern.test(latestHtml)) {
+    fail(`Latest issue page is missing SEO/accessibility tag: ${pattern}`);
+  }
+}
+
+const latestJsonLdMatch = latestHtml.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+if (!latestJsonLdMatch) {
+  fail("Latest issue page is missing JSON-LD block.");
+}
+try {
+  const jsonLdText = latestJsonLdMatch[1]
+    .replace(/\\u003c/g, "<")
+    .replace(/\\u003e/g, ">")
+    .replace(/\\u0026/g, "&");
+  JSON.parse(jsonLdText);
+} catch (error) {
+  fail(`Latest issue JSON-LD block did not parse: ${error.message}`);
 }
 
 if (!data.meta.off_day) {

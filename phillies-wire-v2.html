@@ -1,22 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{meta.publication}} - {{meta.date}}</title>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#e81828">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://statsapi.mlb.com https://api.open-meteo.com">
+<title>{{meta.page_title}}</title>
+<meta name="description" content="{{meta.page_description}}">
+<link rel="canonical" href="{{meta.canonical_url}}">
+<link rel="alternate" type="application/rss+xml" title="{{meta.publication}} RSS" href="{{meta.assets_prefix}}feed.xml">
+<link rel="icon" href="{{meta.assets_prefix}}favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="{{meta.assets_prefix}}favicon.svg" color="#e81828">
+<link rel="manifest" href="{{meta.assets_prefix}}manifest.webmanifest">
+<meta property="og:site_name" content="{{meta.publication}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{meta.og_title}}">
+<meta property="og:description" content="{{meta.og_description}}">
+<meta property="og:url" content="{{meta.canonical_url}}">
+<meta property="og:image" content="{{meta.og_image}}">
+<meta property="og:image:alt" content="{{meta.og_image_alt}}">
+<meta property="article:published_time" content="{{meta.generated_at}}">
+<meta property="article:section" content="Sports">
+<meta property="article:tag" content="Philadelphia Phillies">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{meta.og_title}}">
+<meta name="twitter:description" content="{{meta.og_description}}">
+<meta name="twitter:image" content="{{meta.og_image}}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" onload="this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="{{meta.assets_prefix}}tokens.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}phillies-wire.css">
+<link rel="modulepreload" href="{{meta.assets_prefix}}live-feed.js">
+<script type="application/ld+json">{{{meta.json_ld}}}</script>
+<script>
+  // Bootstrap the theme before the body renders so users don't see a
+  // flash of the wrong color mode. Runs synchronously in <head>.
+  (function () {
+    try {
+      var stored = localStorage.getItem('pw-theme');
+      if (stored === 'dark') {
+        document.documentElement.dataset.theme = 'dark';
+      } else if (stored !== 'light' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    } catch (_err) {}
+  })();
+</script>
 </head>
 <body data-page-mode="{{meta.status.mode}}">
+<a class="pw-skip-link" href="#pw-main">Skip to main content</a>
 <div class="pw-page">
 
-  <div class="pw-shell-nav">
+  <nav class="pw-shell-nav" aria-label="Primary">
     <a class="pw-shell-link" href="{{meta.latest_href}}">Latest</a>
     <a class="pw-shell-link" href="{{meta.archive_href}}">Archive</a>
-  </div>
+    <a class="pw-shell-link" href="{{meta.assets_prefix}}feed.xml" rel="alternate">RSS</a>
+  </nav>
 
   <div class="pw-masthead">
     <div class="pw-mast-top">
@@ -47,7 +90,8 @@
       <div class="pw-status-row">
         <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}" id="pw-status-mode-chip">{{meta.status.mode_label}}</span>
         <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}">{{meta.status.enrich_state}}</span>
-        <span class="pw-status-text" id="pw-status-text">Updated {{meta.status.generated_at_et}}</span>
+        <span class="pw-status-text" id="pw-status-text" data-generated-at="{{meta.generated_at}}">Updated {{meta.status.generated_at_et}}</span>
+        <span class="pw-status-freshness" id="pw-status-freshness" hidden></span>
       </div>
       {{#each meta.status.source_notes}}
       <div class="pw-status-note">{{this}}</div>
@@ -55,6 +99,7 @@
     </div>
   </div>
 
+  <main id="pw-main" class="pw-main">
   <section class="pw-hero pw-hero--{{hero.mode}}" id="pw-hero-section" data-live-mode="{{hero.mode}}">
     <div class="pw-hero-copy">
       <div class="pw-hero-label" id="pw-hero-label">{{hero.label}}</div>
@@ -87,9 +132,11 @@
   <div class="pw-red-rule"></div>
 
   {{#if meta.show_sections}}
+  <section class="pw-accordion-wrapper" aria-labelledby="pw-accordion-heading">
+  <h2 class="pw-visually-hidden" id="pw-accordion-heading">Issue sections</h2>
   <div class="pw-accordion">
     <div class="pw-acc-row pw-acc-row--open" data-row="game">
-      <button class="pw-acc-header" onclick="toggle('game')" aria-expanded="true">
+      <button class="pw-acc-header" data-pw-toggle="game" aria-expanded="true">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -115,7 +162,7 @@
           </div>
           <div class="pw-info-row">
             <span class="pw-info-label">Starters</span>
-            <span class="pw-info-value">{{sections.game_status.content.starters.home.name}} vs {{sections.game_status.content.starters.away.name}}</span>
+            <span class="pw-info-value">{{sections.game_status.content.starters.phi.name}} ({{sections.game_status.content.starters.phi.hand}}HP) vs {{sections.game_status.content.starters.opp.name}} ({{sections.game_status.content.starters.opp.hand}}HP)</span>
           </div>
           <div class="pw-info-row">
             <span class="pw-info-label">Series</span>
@@ -137,17 +184,17 @@
             <span class="pw-info-label">SEPTA</span>
             <span class="pw-info-value">{{sections.game_status.content.transit}}</span>
           </div>
-          <div class="pw-live-score" id="pw-live-score" data-game-pk="{{meta.game_pk}}" data-first-pitch="{{meta.first_pitch_iso}}" data-venue="{{sections.game_status.content.venue}}">
+          <div class="pw-live-score" id="pw-live-score" data-game-pk="{{meta.game_pk}}" data-first-pitch="{{meta.first_pitch_iso}}" data-venue="{{sections.game_status.content.venue}}" aria-live="polite" aria-atomic="true">
             <span class="pw-live-badge">Live</span>
-            <span class="pw-live-line" id="pw-live-line"></span>
-            <div class="pw-live-detail" id="pw-live-detail"></div>
+            <span class="pw-live-line" id="pw-live-line"><span class="pw-skeleton">Loading score...</span></span>
+            <div class="pw-live-detail" id="pw-live-detail"><span class="pw-skeleton">Pregame</span></div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="pw-acc-row" data-row="lineup">
-      <button class="pw-acc-header" onclick="toggle('lineup')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="lineup" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -169,25 +216,30 @@
             <span class="pw-info-value">{{sections.lineup.content.starters.away.name}} ({{sections.lineup.content.starters.away.hand}}HP)</span>
           </div>
 
-          <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.home.team}} Batting Order</div>
-          {{#each sections.lineup.content.batting_order.home}}
-          <div class="pw-player-row">
-            <div>
-              <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
-              <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
+          <div class="pw-lineup-columns">
+            <div class="pw-lineup-column">
+              <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.home.team}} Batting Order</div>
+              {{#each sections.lineup.content.batting_order.home}}
+              <div class="pw-player-row">
+                <div>
+                  <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
+                  <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+            <div class="pw-lineup-column">
+              <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.away.team}} Batting Order</div>
+              {{#each sections.lineup.content.batting_order.away}}
+              <div class="pw-player-row">
+                <div>
+                  <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
+                  <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
+                </div>
+              </div>
+              {{/each}}
             </div>
           </div>
-          {{/each}}
-
-          <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.away.team}} Batting Order</div>
-          {{#each sections.lineup.content.batting_order.away}}
-          <div class="pw-player-row">
-            <div>
-              <div class="pw-player-name">{{this.slot}}. {{this.name}}</div>
-              <div class="pw-player-detail">{{this.position}} &middot; Bats {{this.bats}}</div>
-            </div>
-          </div>
-          {{/each}}
 
           <p class="pw-body pw-body--spaced">{{sections.lineup.content.status_note}}</p>
         </div>
@@ -195,7 +247,7 @@
     </div>
 
     <div class="pw-acc-row" data-row="recap">
-      <button class="pw-acc-header" onclick="toggle('recap')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="recap" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -222,7 +274,7 @@
     </div>
 
     <div class="pw-acc-row" data-row="roster">
-      <button class="pw-acc-header" onclick="toggle('roster')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="roster" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -237,11 +289,12 @@
           <div class="pw-section-label">Starting Rotation</div>
           <div class="pw-rotation-grid">
             {{#each sections.roster.content.rotation}}
-            <div class="pw-rot-card">
+            <div class="pw-rot-card" data-source="{{this.source}}">
               <div class="pw-rot-date">{{this.date}}</div>
               <div class="pw-rot-pitcher">{{this.pitcher}}</div>
               <div class="pw-rot-opp">vs {{this.opponent}}</div>
               {{#if this.era}}<div class="pw-rot-stat">{{this.era}} ERA &middot; {{this.record}}</div>{{/if}}
+              {{#if this.source}}<div class="pw-rot-source">{{this.source}}</div>{{/if}}
             </div>
             {{/each}}
           </div>
@@ -262,7 +315,7 @@
 
     {{#if sections.standings}}
     <div class="pw-acc-row" data-row="standings">
-      <button class="pw-acc-header" onclick="toggle('standings')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="standings" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -275,8 +328,9 @@
       <div class="pw-acc-body" role="region">
         <div class="pw-acc-body-inner">
           <table class="pw-standings-table">
+            <caption class="pw-visually-hidden">NL East standings</caption>
             <thead>
-              <tr><th>Team</th><th>W</th><th>L</th><th>Pct</th><th>GB</th><th>Strk</th></tr>
+              <tr><th scope="col">Team</th><th scope="col">W</th><th scope="col">L</th><th scope="col">Pct</th><th scope="col">GB</th><th scope="col">Strk</th></tr>
             </thead>
             <tbody>
               {{#each sections.standings.content.teams}}
@@ -297,7 +351,7 @@
     {{/if}}
 
     <div class="pw-acc-row" data-row="injury">
-      <button class="pw-acc-header" onclick="toggle('injury')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="injury" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -324,7 +378,7 @@
     </div>
 
     <div class="pw-acc-row" data-row="farm">
-      <button class="pw-acc-header" onclick="toggle('farm')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="farm" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -354,7 +408,7 @@
     </div>
 
     <div class="pw-acc-row" data-row="preview">
-      <button class="pw-acc-header" onclick="toggle('preview')" aria-expanded="false">
+      <button class="pw-acc-header" data-pw-toggle="preview" aria-expanded="false">
         <div class="pw-acc-header-left">
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
@@ -382,9 +436,10 @@
       </div>
     </div>
   </div>
+  </section>
   {{/if}}
 
-  <div class="pw-next-game">
+  <aside class="pw-next-game" aria-label="Next scheduled game">
     <div>
       <div class="pw-next-label">{{next_game.label}}</div>
       <div class="pw-next-matchup">{{next_game.matchup}}</div>
@@ -393,73 +448,274 @@
       <div>{{next_game.date}} &middot; {{next_game.time}}</div>
       <div>{{next_game.broadcast}} &middot; {{next_game.venue}}</div>
     </div>
-  </div>
+  </aside>
 
-  <div class="pw-footer">
+  {{#if meta.issue_nav.show}}
+  <nav class="pw-issue-nav" aria-label="Issue navigation">
+    {{#if meta.issue_nav.prev}}
+    <a class="pw-issue-nav-link pw-issue-nav-link--prev" href="{{meta.issue_nav.prev.href}}" rel="prev">
+      <span class="pw-issue-nav-direction">&larr; Previous</span>
+      <span class="pw-issue-nav-date">{{meta.issue_nav.prev.label}}</span>
+      <span class="pw-issue-nav-title">{{meta.issue_nav.prev.headline}}</span>
+    </a>
+    {{/if}}
+    {{#if meta.issue_nav.next}}
+    <a class="pw-issue-nav-link pw-issue-nav-link--next" href="{{meta.issue_nav.next.href}}" rel="next">
+      <span class="pw-issue-nav-direction">Next &rarr;</span>
+      <span class="pw-issue-nav-date">{{meta.issue_nav.next.label}}</span>
+      <span class="pw-issue-nav-title">{{meta.issue_nav.next.headline}}</span>
+    </a>
+    {{/if}}
+  </nav>
+  {{/if}}
+
+  <nav class="pw-share" aria-label="Share">
+    <span class="pw-share-label">Share</span>
+    <a class="pw-share-link" href="{{meta.share.twitter_url}}" rel="noopener" target="_blank">X / Twitter</a>
+    <a class="pw-share-link" href="{{meta.share.bluesky_url}}" rel="noopener" target="_blank">Bluesky</a>
+    <a class="pw-share-link" href="{{meta.share.mailto_url}}">Email</a>
+    <button type="button" class="pw-share-link pw-share-copy" data-pw-copy data-copy-url="{{meta.canonical_url}}">Copy link</button>
+  </nav>
+  </main>
+
+  <footer class="pw-footer">
     <div>
       <span class="pw-footer-pub">{{meta.publication}}</span>
       <span class="pw-footer-meta">Vol. {{meta.volume}} &middot; No. {{meta.edition}} &middot; {{meta.date}} &middot; {{meta.status.enrich_label}}</span>
     </div>
-    <button class="pw-theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-      Dark
+    <button class="pw-theme-toggle" type="button" data-pw-theme aria-pressed="false" aria-label="Toggle dark mode">
+      <span class="pw-theme-toggle-label">Dark</span>
     </button>
-  </div>
+  </footer>
 </div>
 
 <script>
-  function toggle(id) {
-    const row = document.querySelector('[data-row="' + id + '"]');
-    if (!row) {
-      return;
+  (function () {
+    var THEME_KEY = 'pw-theme';
+    var html = document.documentElement;
+
+    function applyStoredTheme() {
+      try {
+        var stored = localStorage.getItem(THEME_KEY);
+        if (stored === 'dark' || stored === 'light') {
+          html.dataset.theme = stored === 'dark' ? 'dark' : '';
+          return;
+        }
+      } catch (_err) {}
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        html.dataset.theme = 'dark';
+      }
     }
 
-    const isOpen = row.classList.contains('pw-acc-row--open');
-    const chevron = row.querySelector('.pw-acc-chevron');
-    const btn = row.querySelector('.pw-acc-header');
+    applyStoredTheme();
 
-    document.querySelectorAll('.pw-acc-row--open').forEach(function(r) {
-      r.classList.remove('pw-acc-row--open');
-      r.querySelector('.pw-acc-chevron').innerHTML = '&#9660;';
-      r.querySelector('.pw-acc-header').setAttribute('aria-expanded', 'false');
+    window.toggle = function (id, options) {
+      var opts = options || {};
+      var row = document.querySelector('[data-row="' + id + '"]');
+      if (!row) {
+        return;
+      }
+
+      var allowMulti = window.matchMedia && window.matchMedia('(min-width: 900px)').matches;
+      var isOpen = row.classList.contains('pw-acc-row--open');
+      var chevron = row.querySelector('.pw-acc-chevron');
+      var btn = row.querySelector('.pw-acc-header');
+
+      if (!allowMulti) {
+        document.querySelectorAll('.pw-acc-row--open').forEach(function (r) {
+          if (r !== row) {
+            r.classList.remove('pw-acc-row--open');
+            var otherChevron = r.querySelector('.pw-acc-chevron');
+            if (otherChevron) {
+              otherChevron.innerHTML = '&#9660;';
+            }
+            var otherBtn = r.querySelector('.pw-acc-header');
+            if (otherBtn) {
+              otherBtn.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      }
+
+      if (!isOpen) {
+        row.classList.add('pw-acc-row--open');
+        if (chevron) {
+          chevron.innerHTML = '&#9650;';
+        }
+        if (btn) {
+          btn.setAttribute('aria-expanded', 'true');
+        }
+        if (!opts.silent) {
+          row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      } else if (allowMulti) {
+        row.classList.remove('pw-acc-row--open');
+        if (chevron) {
+          chevron.innerHTML = '&#9660;';
+        }
+        if (btn) {
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      }
+    };
+
+    window.toggleTheme = function (button) {
+      var next = html.dataset.theme === 'dark' ? '' : 'dark';
+      html.dataset.theme = next;
+      try {
+        localStorage.setItem(THEME_KEY, next === 'dark' ? 'dark' : 'light');
+      } catch (_err) {}
+      if (button) {
+        var isDark = next === 'dark';
+        button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        var label = button.querySelector('.pw-theme-toggle-label');
+        if (label) {
+          label.textContent = isDark ? 'Light' : 'Dark';
+        }
+      }
+    };
+
+    // Initialize theme toggle state on load.
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.querySelector('.pw-theme-toggle');
+      if (button) {
+        var isDark = html.dataset.theme === 'dark';
+        button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        var label = button.querySelector('.pw-theme-toggle-label');
+        if (label) {
+          label.textContent = isDark ? 'Light' : 'Dark';
+        }
+      }
+
+      // Wire aria-controls between each accordion header and its body
+      // for assistive tech. Also gives bodies unique ids the script can
+      // reference via location.hash.
+      document.querySelectorAll('.pw-acc-row').forEach(function (row) {
+        var rowKey = row.getAttribute('data-row');
+        if (!rowKey) return;
+        var body = row.querySelector('.pw-acc-body');
+        var btn = row.querySelector('.pw-acc-header');
+        if (body && !body.id) {
+          body.id = 'pw-acc-body-' + rowKey;
+        }
+        if (btn && body) {
+          btn.setAttribute('aria-controls', body.id);
+        }
+      });
+
+      // Hash-driven accordion deep linking: /#lineup opens the lineup row.
+      var hash = (window.location.hash || '').replace(/^#/, '');
+      if (hash && document.querySelector('[data-row="' + CSS.escape(hash) + '"]')) {
+        window.toggle(hash, { silent: false });
+      }
+
+      // Delegated click handler so the template can drop inline onclick
+      // attributes entirely (friendlier to a strict script-src CSP).
+      document.addEventListener('click', function (event) {
+        var target = event.target;
+        while (target && target !== document) {
+          if (target.hasAttribute && target.hasAttribute('data-pw-toggle')) {
+            var rowKey = target.getAttribute('data-pw-toggle');
+            if (rowKey) {
+              event.preventDefault();
+              window.toggle(rowKey);
+            }
+            return;
+          }
+          if (target.hasAttribute && target.hasAttribute('data-pw-theme')) {
+            event.preventDefault();
+            window.toggleTheme(target);
+            return;
+          }
+          if (target.hasAttribute && target.hasAttribute('data-pw-copy')) {
+            event.preventDefault();
+            window.pwCopyLink(target);
+            return;
+          }
+          target = target.parentNode;
+        }
+      });
     });
 
-    if (!isOpen) {
-      row.classList.add('pw-acc-row--open');
-      chevron.innerHTML = '&#9650;';
-      btn.setAttribute('aria-expanded', 'true');
-      row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    window.addEventListener('hashchange', function () {
+      var hash = (window.location.hash || '').replace(/^#/, '');
+      if (hash && document.querySelector('[data-row="' + CSS.escape(hash) + '"]')) {
+        window.toggle(hash);
+      }
+    });
+
+    function updateFreshness() {
+      var el = document.getElementById('pw-status-freshness');
+      if (!el) {
+        return;
+      }
+      var generated = document.getElementById('pw-status-text');
+      if (!generated) {
+        return;
+      }
+      var iso = generated.getAttribute('data-generated-at');
+      if (!iso) {
+        return;
+      }
+      var generatedMs = Date.parse(iso);
+      if (!Number.isFinite(generatedMs)) {
+        return;
+      }
+      var ageMs = Date.now() - generatedMs;
+      var ageMin = Math.max(0, Math.round(ageMs / 60000));
+      var label;
+      var level;
+      if (ageMin < 2) {
+        label = 'Live';
+        level = 'fresh';
+      } else if (ageMin < 60) {
+        label = ageMin + 'm ago';
+        level = ageMin >= 20 ? 'aging' : 'fresh';
+      } else if (ageMin < 60 * 24) {
+        label = Math.round(ageMin / 60) + 'h ago';
+        level = 'stale';
+      } else {
+        label = Math.round(ageMin / (60 * 24)) + 'd ago';
+        level = 'stale';
+      }
+      el.textContent = label;
+      el.dataset.level = level;
+      el.hidden = false;
     }
-  }
 
-  function toggleTheme() {
-    const html = document.documentElement;
-    html.dataset.theme = html.dataset.theme === 'dark' ? '' : 'dark';
-  }
+    document.addEventListener('DOMContentLoaded', updateFreshness);
+    setInterval(updateFreshness, 60 * 1000);
 
-  /* Legacy inline live polling kept commented while the shared live-feed.js module handles updates.
-
-          if (isFinal) {
-            clearPollTimer();
-            detailEl.textContent = 'Final';
-          } else if (inning === 0) {
-            detailEl.textContent = 'Pregame';
-            scheduleNextPoll(previewPollMs);
-          } else {
-            detailEl.textContent = half + ' ' + inning + ' · ' + outs + ' out' + (outs !== 1 ? 's' : '');
-          }
-          if (!isFinal && inning > 0) {
-            scheduleNextPoll(isLive ? livePollMs : previewPollMs);
-          }
-          container.classList.add('pw-live-score--active');
-        })
-        .catch(function() {
-          scheduleNextPoll(previewPollMs);
+    window.pwCopyLink = function (button) {
+      if (!button) return;
+      var url = button.getAttribute('data-copy-url') || window.location.href;
+      var restore = function (text) {
+        button.textContent = text;
+        setTimeout(function () {
+          button.textContent = 'Copy link';
+        }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () {
+          restore('Copied!');
+        }).catch(function () {
+          restore('Copy failed');
         });
-    }
-
-    poll();
+      } else {
+        try {
+          var input = document.createElement('input');
+          input.value = url;
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand('copy');
+          document.body.removeChild(input);
+          restore('Copied!');
+        } catch (_err) {
+          restore('Copy failed');
+        }
+      }
+    };
   })();
-  */
 </script>
 <script type="module" src="{{meta.assets_prefix}}live-feed.js"></script>
 

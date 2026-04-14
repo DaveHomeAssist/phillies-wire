@@ -13,7 +13,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 
 export function main() {
   for (const stage of PIPELINE_STAGES) {
-    runNodeStage(stage);
+    const stageEnv = buildStageEnv(stage);
+    runNodeStage(stage, stageEnv);
 
     if (stage === "crawl.mjs") {
       const editionMeta = syncEditionMetadata();
@@ -25,17 +26,32 @@ export function main() {
   }
 
   if (process.env.DELIVERY_RECIPIENTS) {
-    runNodeStage("deliver.mjs");
+    runNodeStage("deliver.mjs", buildStageEnv("deliver.mjs"));
   } else {
     console.log("Delivery skipped: DELIVERY_RECIPIENTS not set.");
   }
 }
 
-export function runNodeStage(scriptName) {
+function buildStageEnv(stage) {
+  const env = { ...process.env };
+  // Scope the Anthropic key to the stage that needs it so a buggy downstream
+  // stage cannot exfiltrate it.
+  if (stage !== "enrich.mjs") {
+    delete env.ANTHROPIC_API_KEY;
+  }
+  // SMTP credentials only need to reach the delivery stage.
+  if (stage !== "deliver.mjs") {
+    delete env.SMTP_USER;
+    delete env.SMTP_PASS;
+  }
+  return env;
+}
+
+export function runNodeStage(scriptName, stageEnv = process.env) {
   console.log(`\n==> Running ${scriptName}`);
   const result = spawnSync(process.execPath, [scriptName], {
     stdio: "inherit",
-    env: process.env,
+    env: stageEnv,
   });
 
   if (result.error) {
