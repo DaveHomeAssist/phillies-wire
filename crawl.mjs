@@ -257,18 +257,25 @@ async function buildLivePayload(context) {
 }
 
 function resolvePitcher(side, fixture, role) {
-  const fallback = fixture.sections.game_status.content.starters?.[role === "phi" ? "phi" : "opp"]
-    ?? fixture.sections.game_status.content.starters?.[role === "phi" ? "home" : "away"]
-    ?? { name: "TBD", hand: "R" };
   const probable = side?.probablePitcher;
-  if (!probable?.fullName) {
+  if (probable?.fullName) {
+    return {
+      name: probable.fullName,
+      hand: probable.pitchHand?.code ?? "R",
+    };
+  }
+
+  // Only the Phillies fallback is reliable — the fixture's opponent
+  // starter is Rangers-specific and would leak into, say, a Nationals
+  // preview. Leave the opponent as TBD instead of lying to the reader.
+  if (role === "phi") {
+    const fallback = fixture.sections.game_status.content.starters?.phi
+      ?? fixture.sections.game_status.content.starters?.home
+      ?? { name: "TBD", hand: "R" };
     return { name: fallback.name ?? "TBD", hand: fallback.hand ?? "R" };
   }
 
-  return {
-    name: probable.fullName,
-    hand: probable.pitchHand?.code ?? fallback.hand ?? "R",
-  };
+  return { name: "TBD", hand: "R" };
 }
 
 function resolveSeriesLabel(game, fallbackLabel) {

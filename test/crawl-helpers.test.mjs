@@ -28,10 +28,16 @@ runTest("resolvePitcher prefers MLB probable data including pitchHand", () => {
   assert.equal(pitcher.hand, "L");
 });
 
-runTest("resolvePitcher falls back to fixture when MLB data is missing", () => {
-  const pitcher = resolvePitcher({}, fixture, "opp");
-  assert.equal(pitcher.name, "Jacob deGrom");
-  assert.equal(pitcher.hand, "R");
+runTest("resolvePitcher falls back to PHI fixture only for the phi role", () => {
+  const phi = resolvePitcher({}, fixture, "phi");
+  assert.equal(phi.name, "Aaron Nola");
+  assert.equal(phi.hand, "R");
+
+  // Opponent fallback must not leak the fixture's TEX starter into a
+  // non-Texas matchup — we emit TBD until MLB confirms.
+  const opp = resolvePitcher({}, fixture, "opp");
+  assert.equal(opp.name, "TBD");
+  assert.equal(opp.hand, "R");
 });
 
 runTest("resolveSeriesLabel prefers seriesStatus.result, then description, then Game-of-series", () => {
