@@ -30,8 +30,11 @@
 <meta name="twitter:image" content="{{meta.og_image}}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="{{meta.assets_prefix}}tokens.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}tokens.css">
+<link rel="preload" as="style" href="{{meta.assets_prefix}}phillies-wire.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}phillies-wire.css">
 <link rel="modulepreload" href="{{meta.assets_prefix}}live-feed.js">
 <script type="application/ld+json">{{{meta.json_ld}}}</script>
@@ -272,11 +275,12 @@
           <div class="pw-section-label">Starting Rotation</div>
           <div class="pw-rotation-grid">
             {{#each sections.roster.content.rotation}}
-            <div class="pw-rot-card">
+            <div class="pw-rot-card" data-source="{{this.source}}">
               <div class="pw-rot-date">{{this.date}}</div>
               <div class="pw-rot-pitcher">{{this.pitcher}}</div>
               <div class="pw-rot-opp">vs {{this.opponent}}</div>
               {{#if this.era}}<div class="pw-rot-stat">{{this.era}} ERA &middot; {{this.record}}</div>{{/if}}
+              {{#if this.source}}<div class="pw-rot-source">{{this.source}}</div>{{/if}}
             </div>
             {{/each}}
           </div>

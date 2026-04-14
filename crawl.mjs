@@ -616,7 +616,7 @@ function buildSourceNotes(transactionResponse, fixture, overrides) {
 
 async function buildRotation(nextGames, fallback) {
   if (!nextGames.length) {
-    return fallback;
+    return (fallback ?? []).map((entry) => ({ ...entry, source: "fallback" }));
   }
 
   const pitcherIds = nextGames
@@ -628,6 +628,7 @@ async function buildRotation(nextGames, fallback) {
 
   return nextGames.slice(0, 5).map((game, index) => {
     const stats = statsMap.get(game.homePitcherId) ?? {};
+    const hasLiveProbable = Boolean(game.homePitcherId) && game.homePitcher && game.homePitcher !== "TBD";
     return {
       date: game.shortDate,
       pitcher: game.homePitcher,
@@ -635,6 +636,7 @@ async function buildRotation(nextGames, fallback) {
       hand: fallback[index]?.hand ?? "R",
       era: stats.era ?? "",
       record: stats.wins != null ? `${stats.wins}-${stats.losses}` : "",
+      source: hasLiveProbable ? "live" : "fallback",
     };
   });
 }

@@ -845,6 +845,25 @@ a:hover { text-decoration: underline; }
   margin-top:  var(--space-1);
 }
 
+.pw-rot-source {
+  font-family:    var(--font-display);
+  font-size:      9px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color:          var(--color-text-faint);
+  margin-top:     var(--space-1);
+  opacity:        0.55;
+}
+
+.pw-rot-card[data-source="fallback"] {
+  border-style: dashed;
+}
+
+.pw-rot-card[data-source="fallback"] .pw-rot-source {
+  color: var(--color-brand-red, #e81828);
+  opacity: 0.85;
+}
+
 
 /* ── STANDINGS ─────────────────────────────────────────────*/
 .pw-standings-table {
