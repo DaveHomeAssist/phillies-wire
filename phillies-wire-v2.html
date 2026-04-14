@@ -38,6 +38,20 @@
 <link rel="stylesheet" href="{{meta.assets_prefix}}phillies-wire.css">
 <link rel="modulepreload" href="{{meta.assets_prefix}}live-feed.js">
 <script type="application/ld+json">{{{meta.json_ld}}}</script>
+<script>
+  // Bootstrap the theme before the body renders so users don't see a
+  // flash of the wrong color mode. Runs synchronously in <head>.
+  (function () {
+    try {
+      var stored = localStorage.getItem('pw-theme');
+      if (stored === 'dark') {
+        document.documentElement.dataset.theme = 'dark';
+      } else if (stored !== 'light' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    } catch (_err) {}
+  })();
+</script>
 </head>
 <body data-page-mode="{{meta.status.mode}}">
 <a class="pw-skip-link" href="#pw-main">Skip to main content</a>
@@ -314,8 +328,9 @@
       <div class="pw-acc-body" role="region">
         <div class="pw-acc-body-inner">
           <table class="pw-standings-table">
+            <caption class="pw-visually-hidden">NL East standings</caption>
             <thead>
-              <tr><th>Team</th><th>W</th><th>L</th><th>Pct</th><th>GB</th><th>Strk</th></tr>
+              <tr><th scope="col">Team</th><th scope="col">W</th><th scope="col">L</th><th scope="col">Pct</th><th scope="col">GB</th><th scope="col">Strk</th></tr>
             </thead>
             <tbody>
               {{#each sections.standings.content.teams}}
