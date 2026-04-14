@@ -100,3 +100,12 @@ jobs:
           echo "- Run date: $(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_STEP_SUMMARY"
           echo "- Page URL: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"
           echo "- Diagnostics artifact: phillies-wire-diagnostics" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Health check (post-deploy)
+        if: success()
+        continue-on-error: true
+        env:
+          PHILLIES_WIRE_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+          PHILLIES_WIRE_MAX_AGE_MIN: "60"
+          PHILLIES_WIRE_WEBHOOK: ${{ secrets.PHILLIES_WIRE_WEBHOOK }}
+        run: node scripts/health-check.mjs
