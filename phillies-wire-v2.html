@@ -12,7 +12,7 @@
 <link rel="canonical" href="{{meta.canonical_url}}">
 <link rel="alternate" type="application/rss+xml" title="{{meta.publication}} RSS" href="{{meta.assets_prefix}}feed.xml">
 <link rel="icon" href="{{meta.assets_prefix}}favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="{{meta.assets_prefix}}apple-touch-icon.png">
+<link rel="mask-icon" href="{{meta.assets_prefix}}favicon.svg" color="#e81828">
 <link rel="manifest" href="{{meta.assets_prefix}}manifest.webmanifest">
 <meta property="og:site_name" content="{{meta.publication}}">
 <meta property="og:type" content="article">
@@ -30,11 +30,9 @@
 <meta name="twitter:image" content="{{meta.og_image}}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="style" href="{{meta.assets_prefix}}tokens.css">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" onload="this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="{{meta.assets_prefix}}tokens.css">
-<link rel="preload" as="style" href="{{meta.assets_prefix}}phillies-wire.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}phillies-wire.css">
 <link rel="modulepreload" href="{{meta.assets_prefix}}live-feed.js">
 <script type="application/ld+json">{{{meta.json_ld}}}</script>
