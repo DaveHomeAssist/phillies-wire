@@ -1317,6 +1317,8 @@ function applyOverrides(target, overrides) {
   return deepMerge(target, overrides);
 }
 
+const DELETE_SENTINEL = "__delete__";
+
 function deepMerge(target, source) {
   if (!source || typeof source !== "object" || Array.isArray(source)) {
     return source == null ? target : source;
@@ -1325,7 +1327,13 @@ function deepMerge(target, source) {
   const output = target && typeof target === "object" && !Array.isArray(target) ? target : {};
   for (const key of Object.keys(source)) {
     const sourceValue = source[key];
-    const targetValue = output[key];
+
+    // Sentinel string "__delete__" removes the key entirely from the
+    // merged output — use for retracting fixture fields via overrides.
+    if (sourceValue === DELETE_SENTINEL) {
+      delete output[key];
+      continue;
+    }
 
     if (Array.isArray(sourceValue)) {
       output[key] = cloneJson(sourceValue);
@@ -1333,7 +1341,7 @@ function deepMerge(target, source) {
     }
 
     if (sourceValue && typeof sourceValue === "object") {
-      output[key] = deepMerge(targetValue, sourceValue);
+      output[key] = deepMerge(output[key], sourceValue);
       continue;
     }
 
