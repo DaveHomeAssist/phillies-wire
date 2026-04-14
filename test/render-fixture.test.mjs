@@ -23,6 +23,12 @@ runTest("fixture render resolves every token and includes required landmarks", (
   data.meta.og_image = "https://example.com/og.svg";
   data.meta.og_image_alt = "Phillies Wire";
   data.meta.json_ld = "{\\u0026\"ok\":true}";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
 
   const html = populate(template, data);
   const unresolved = html.match(/{{[^}]+}}/g) ?? [];
@@ -53,6 +59,12 @@ runTest("fixture render populates Open Graph and JSON-LD", () => {
   data.meta.og_image = "https://example.com/og.svg";
   data.meta.og_image_alt = "alt";
   data.meta.json_ld = "[\"safe\"]";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
 
   const html = populate(template, data);
   assert.match(html, /property="og:title"[^>]+content="OGT"/);
@@ -70,6 +82,19 @@ runTest("triple-brace token emits raw HTML without escaping", () => {
 runTest("double-brace token HTML-escapes user input", () => {
   const html = populate("<span>{{meta.text}}</span>", { meta: { text: "<script>alert(1)</script>" } });
   assert.equal(html, "<span>&lt;script&gt;alert(1)&lt;/script&gt;</span>");
+});
+
+runTest("nested {{#if}} blocks resolve correctly", () => {
+  const tpl = "{{#if outer}}OUT {{#if inner}}IN{{/if}}{{/if}}";
+  assert.equal(populate(tpl, { outer: true, inner: true }), "OUT IN");
+  assert.equal(populate(tpl, { outer: true, inner: false }), "OUT ");
+  assert.equal(populate(tpl, { outer: false, inner: true }), "");
+});
+
+runTest("nested {{#each}} inside {{#if}} resolves correctly", () => {
+  const tpl = "{{#if show}}<ul>{{#each items}}<li>{{this}}</li>{{/each}}</ul>{{/if}}";
+  assert.equal(populate(tpl, { show: true, items: ["a", "b"] }), "<ul><li>a</li><li>b</li></ul>");
+  assert.equal(populate(tpl, { show: false, items: ["a"] }), "");
 });
 
 function runTest(name, fn) {

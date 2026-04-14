@@ -429,6 +429,33 @@
       <div>{{next_game.broadcast}} &middot; {{next_game.venue}}</div>
     </div>
   </aside>
+
+  {{#if meta.issue_nav.show}}
+  <nav class="pw-issue-nav" aria-label="Issue navigation">
+    {{#if meta.issue_nav.prev}}
+    <a class="pw-issue-nav-link pw-issue-nav-link--prev" href="{{meta.issue_nav.prev.href}}" rel="prev">
+      <span class="pw-issue-nav-direction">&larr; Previous</span>
+      <span class="pw-issue-nav-date">{{meta.issue_nav.prev.label}}</span>
+      <span class="pw-issue-nav-title">{{meta.issue_nav.prev.headline}}</span>
+    </a>
+    {{/if}}
+    {{#if meta.issue_nav.next}}
+    <a class="pw-issue-nav-link pw-issue-nav-link--next" href="{{meta.issue_nav.next.href}}" rel="next">
+      <span class="pw-issue-nav-direction">Next &rarr;</span>
+      <span class="pw-issue-nav-date">{{meta.issue_nav.next.label}}</span>
+      <span class="pw-issue-nav-title">{{meta.issue_nav.next.headline}}</span>
+    </a>
+    {{/if}}
+  </nav>
+  {{/if}}
+
+  <nav class="pw-share" aria-label="Share">
+    <span class="pw-share-label">Share</span>
+    <a class="pw-share-link" href="{{meta.share.twitter_url}}" rel="noopener" target="_blank">X / Twitter</a>
+    <a class="pw-share-link" href="{{meta.share.bluesky_url}}" rel="noopener" target="_blank">Bluesky</a>
+    <a class="pw-share-link" href="{{meta.share.mailto_url}}">Email</a>
+    <button type="button" class="pw-share-link pw-share-copy" onclick="pwCopyLink(this)" data-copy-url="{{meta.canonical_url}}">Copy link</button>
+  </nav>
   </main>
 
   <footer class="pw-footer">
@@ -611,6 +638,36 @@
 
     document.addEventListener('DOMContentLoaded', updateFreshness);
     setInterval(updateFreshness, 60 * 1000);
+
+    window.pwCopyLink = function (button) {
+      if (!button) return;
+      var url = button.getAttribute('data-copy-url') || window.location.href;
+      var restore = function (text) {
+        button.textContent = text;
+        setTimeout(function () {
+          button.textContent = 'Copy link';
+        }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () {
+          restore('Copied!');
+        }).catch(function () {
+          restore('Copy failed');
+        });
+      } else {
+        try {
+          var input = document.createElement('input');
+          input.value = url;
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand('copy');
+          document.body.removeChild(input);
+          restore('Copied!');
+        } catch (_err) {
+          restore('Copy failed');
+        }
+      }
+    };
   })();
 </script>
 <script type="module" src="{{meta.assets_prefix}}live-feed.js"></script>

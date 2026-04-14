@@ -32,21 +32,23 @@ function main() {
   const template = readFileSync(TEMPLATE_FILE, "utf8");
   const issueDate = data.meta.date;
 
+  // Compute the archive first so renderIssue can wire prev/next links
+  // into the dated issue page based on surrounding entries.
+  const archive = upsertArchive(loadArchive(), buildArchiveEntry(data), data);
+
   const latestHtml = renderIssue(template, data, {
     assetsPrefix: "./",
     latestHref: "./",
     archiveHref: "./archive/",
-  });
+  }, { archive });
   const issueHtml = renderIssue(template, data, {
     assetsPrefix: "../../",
     latestHref: "../../",
     archiveHref: "../../archive/",
-  });
+  }, { archive });
 
   assertNoUnresolvedTokens(latestHtml);
   assertNoUnresolvedTokens(issueHtml);
-
-  const archive = upsertArchive(loadArchive(), buildArchiveEntry(data), data);
   const archiveHtml = renderArchivePage(archive);
   const status = buildStatusPayload(data, archive);
 
@@ -244,14 +246,63 @@ function escapeXml(value) {
     .replace(/'/g, "&apos;");
 }
 
-function renderIssue(templateString, data, links) {
+function renderIssue(templateString, data, links, context = {}) {
   const renderData = cloneJson(data);
   renderData.meta = renderData.meta ?? {};
   renderData.meta.assets_prefix = links.assetsPrefix;
   renderData.meta.latest_href = links.latestHref;
   renderData.meta.archive_href = links.archiveHref;
   enrichMetaForSeo(renderData, links);
+  enrichMetaForNavigation(renderData, links, context);
+  enrichMetaForSharing(renderData);
   return populate(templateString, renderData);
+}
+
+function enrichMetaForNavigation(data, links, context) {
+  const currentDate = data.meta?.date;
+  const entries = context.archive?.entries ?? [];
+  const isLatest = links.latestHref === "./";
+  const index = entries.findIndex((entry) => entry.date === currentDate);
+
+  // On the latest page we do not surface prev/next — the dated issue
+  // pages are the linkable destinations for adjacent issues.
+  if (isLatest || index === -1) {
+    data.meta.issue_nav = { show: false };
+    return;
+  }
+
+  const newer = entries[index - 1] ?? null;
+  const older = entries[index + 1] ?? null;
+
+  data.meta.issue_nav = {
+    show: Boolean(newer || older),
+    prev: older
+      ? {
+          href: `../${older.date}/`,
+          label: formatIssueDateLong(older.date),
+          headline: older.headline ?? "Previous issue",
+        }
+      : null,
+    next: newer
+      ? {
+          href: `../${newer.date}/`,
+          label: formatIssueDateLong(newer.date),
+          headline: newer.headline ?? "Next issue",
+        }
+      : null,
+  };
+}
+
+function enrichMetaForSharing(data) {
+  const url = data.meta?.canonical_url ?? SITE_URL;
+  const headline = data.meta?.og_title ?? data.meta?.publication ?? "Phillies Wire";
+  const encodedUrl = encodeURIComponent(url);
+  const encodedText = encodeURIComponent(headline);
+  data.meta.share = {
+    twitter_url: `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`,
+    bluesky_url: `https://bsky.app/intent/compose?text=${encodedText}%20${encodedUrl}`,
+    mailto_url: `mailto:?subject=${encodedText}&body=${encodedUrl}`,
+  };
 }
 
 function enrichMetaForSeo(data, links) {
@@ -635,16 +686,64 @@ function renderTemplate(templateString, scope, root) {
 }
 
 function renderBlocks(templateString, blockName, scope, root, replacer) {
-  const pattern = new RegExp(`{{#${blockName}\\s+([^}]+)}}([\\s\\S]*?){{\\/${blockName}}}`, "g");
-  let previous = "";
-  let current = templateString;
+  // Hand-rolled balanced matcher so nested {{#if}} / {{#each}} blocks
+  // expand correctly. A lazy regex would pair the outer open with the
+  // first inner close, which produces "Unresolved template tokens".
+  const openPattern = new RegExp(`{{#${blockName}\\s+([^}]+)}}`, "g");
+  const closeTag = `{{/${blockName}}}`;
 
-  while (current !== previous) {
-    previous = current;
-    current = current.replace(pattern, (_match, path, inner) => replacer(path.trim(), inner, scope, root));
+  let output = "";
+  let cursor = 0;
+
+  while (cursor < templateString.length) {
+    openPattern.lastIndex = cursor;
+    const openMatch = openPattern.exec(templateString);
+    if (!openMatch) {
+      output += templateString.slice(cursor);
+      break;
+    }
+
+    output += templateString.slice(cursor, openMatch.index);
+    const innerStart = openMatch.index + openMatch[0].length;
+    const closeIndex = findMatchingClose(templateString, innerStart, `{{#${blockName}`, closeTag);
+    if (closeIndex === -1) {
+      // Unbalanced; bail out and surface an unresolved token so tests
+      // fail loudly instead of silently swallowing the rest of the page.
+      output += templateString.slice(openMatch.index);
+      break;
+    }
+
+    const inner = templateString.slice(innerStart, closeIndex);
+    output += replacer(openMatch[1].trim(), inner, scope, root);
+    cursor = closeIndex + closeTag.length;
   }
 
-  return current;
+  return output;
+}
+
+function findMatchingClose(text, startIndex, openPrefix, closeTag) {
+  let depth = 1;
+  let index = startIndex;
+  while (index < text.length) {
+    const nextOpen = text.indexOf(openPrefix, index);
+    const nextClose = text.indexOf(closeTag, index);
+    if (nextClose === -1) {
+      return -1;
+    }
+    if (nextOpen !== -1 && nextOpen < nextClose) {
+      depth += 1;
+      // Advance past the full open tag so we don't count it again.
+      const openEnd = text.indexOf("}}", nextOpen);
+      index = openEnd === -1 ? nextOpen + openPrefix.length : openEnd + 2;
+      continue;
+    }
+    depth -= 1;
+    if (depth === 0) {
+      return nextClose;
+    }
+    index = nextClose + closeTag.length;
+  }
+  return -1;
 }
 
 function resolvePath(path, scope, root) {
