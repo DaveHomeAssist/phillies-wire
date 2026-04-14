@@ -5,6 +5,8 @@
 **Handed to:** Codex (or next Claude session)  
 **Notion pipeline spec:** https://www.notion.so/331255fc8f44818ea2baf23a71c91645
 
+**Latest changes:** See the README "What's new" section and the commit log on branch `claude/add-phillies-lineup-*`. This handoff document reflects the initial architecture; the current pipeline ships SEO metadata, a game-day lineup section, live-injury merging, archive search, prev/next navigation, a share bar, theme persistence, reduced-motion support, and an accessibility pass that wraps content in semantic landmarks.
+
 ---
 
 ## What exists right now
