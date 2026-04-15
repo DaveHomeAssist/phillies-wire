@@ -1,0 +1,448 @@
+================================================================================
+  PHILLIES WIRE — crawl.mjs DECOMPOSITION PLAN
+  Author: Claude Code review session (2026-04-15)
+  Target: split the 1,400-line crawl.mjs monolith into focused modules
+================================================================================
+
+CONTEXT
+-------
+crawl.mjs is the heart of the Phillies Wire pipeline. It fetches MLB + weather
+data, merges with the fixture baseline, and writes phillies-wire-data.json for
+the enrich/render/verify stages to consume.
+
+Current state: 1,404 lines in a single file, 46 functions, covering:
+  - HTTP fetching (fetchJson, fetchSoft)
+  - Payload building (buildLivePayload, buildOffDayPayload)
+  - Section builders (buildHero, buildTicker, buildLineupSection, buildRotation,
+    buildStandingsPreview, buildRecapPreview, buildSourceNotes, etc.)
+  - Data extraction (extractKeyPerformers, extractDecisions, extractBattingOrder,
+    resolvePitcher, resolveSeriesLabel)
+  - Formatting helpers (formatGameTime, formatShortDate, formatWeekday, ...)
+  - Validation (validateCrawlPayload)
+  - Overrides + deep merge
+  - Schema application
+
+The file works. 33 unit tests + 1 integration smoke test cover it. The goal of
+this refactor is NOT to change behavior but to make future changes safer and
+reviews easier.
+
+GOAL
+----
+Split crawl.mjs into a crawl/ subdirectory with one module per concern. After
+the split:
+  - crawl.mjs becomes a thin orchestrator (~150 lines)
+  - Each extracted module has a focused responsibility and explicit exports
+  - All 34 existing tests pass unchanged
+  - Any test importing helpers from crawl.mjs updates its import path
+  - Build artifact (phillies-wire-data.json) is byte-identical for a fixed input
+
+ASSUMPTIONS
+-----------
+- Node 20+ with ESM ("type": "module" already set)
+- Tests are the safety net. Every extraction must keep them green.
+- The schema fixture (phillies-wire-schema.json) is representative enough to
+  smoke-test the full pipeline after each phase.
+- crawl.mjs is the only file importing these internals. Verified via grep:
+  only test/crawl-helpers.test.mjs imports helpers directly.
+- No consumers outside the repo depend on crawl.mjs's internal exports.
+
+PROPOSED STRUCTURE
+------------------
+crawl/
+  index.mjs                 entry point, orchestrates the pipeline
+  api/
+    mlb.mjs                 all MLB Stats API calls + url builders
+    weather.mjs             Open-Meteo fetch
+    http.mjs                fetchJson (with FETCH_TIMEOUT_MS), fetchSoft
+  build/
+    hero.mjs                buildHero + mode derivation
+    ticker.mjs              buildTicker + daily prophet integration
+    lineup.mjs              buildLineupSection, extractBattingOrder, buildTbdBattingOrder
+    rotation.mjs            buildRotation, fetchPitcherStats
+    recap.mjs               buildRecapPreview, buildRecapSummaryLine, extractKeyPerformers, extractDecisions
+    roster.mjs              buildRosterHighlights, mergeInjuryEntries, normalizeLiveInjuries
+    standings.mjs           fetchStandings, buildStandingsPreview, normalizeGamesBack
+    game-status.mjs         build the game_status section incl. starters/series/broadcast/weather
+    preview.mjs             buildUpNext + preview section wiring
+    source-notes.mjs        buildSourceNotes
+  resolve/
+    pitcher.mjs             resolvePitcher
+    series.mjs              resolveSeriesLabel
+  payload/
+    live.mjs                buildLivePayload (composes all section builders)
+    off-day.mjs             buildOffDayPayload
+    game-picker.mjs         pickActiveGame, collectUpcomingGames, isFinalGame
+  validate.mjs              validateCrawlPayload, assertNoMojibake
+  overrides.mjs             loadOverrides, applyOverrides, stripHeroOverride,
+                            clampOverride, deepMerge (with __delete__ sentinel)
+  format.mjs                formatGameTime, formatShortDate, formatMonthDay,
+                            formatWeekday, formatGeneratedAtEt, buildWindSummary,
+                            weatherCodeToText, getIsoDate, getRelativeIsoDate
+  util.mjs                  cloneJson, dedupeStrings, shortTransactionNote,
+                            inferPositionFromDescription
+
+crawl.mjs (at repo root) remains as a compatibility shim that re-exports from
+crawl/index.mjs so existing imports keep working until the test file is moved.
+
+ASSUMPTIONS STATED:
+- Tests currently import from ../crawl.mjs via scripts/lint.mjs and
+  test/crawl-helpers.test.mjs. These imports must keep working until Phase 7.
+- `resolvePitcher` and `resolveSeriesLabel` already live in their own helper
+  form and are exported; other helpers need to be promoted to named exports.
+
+
+================================================================================
+PHASES
+================================================================================
+
+PHASE 0 — PREP (0.5 day)                               BLOCKING FOR ALL PHASES
+--------------------------------------------------------------------------------
+Milestones:
+  - Create a tracking issue or PR draft
+  - Confirm baseline: `npm test` = 34 passing, `npm audit` = 0 vulns
+  - Tag the current main commit so we can diff behavior at the end
+  - Build a payload snapshot test: run crawl against a network-mocked fixture,
+    capture phillies-wire-data.json as a JSON snapshot file under
+    test/fixtures/expected-payload.json. This is the "nothing behavior-changed"
+    smoke oracle.
+
+Resources:
+  - 1 engineer (Dave / Claude Code)
+  - Existing schema fixture + live-feed-fetch mocks
+  - No new dependencies
+
+Exit criteria:
+  - Snapshot test committed and green on main
+  - Plan reviewed
+
+Owner: Dave / Claude Code
+
+
+PHASE 1 — EXTRACT format.mjs + util.mjs (0.5 day)      LOW RISK
+--------------------------------------------------------------------------------
+Start with the safest extraction: pure functions with no dependencies.
+
+Milestones:
+  - Create crawl/format.mjs with: formatGameTime, formatShortDate, formatMonthDay,
+    formatWeekday, formatGeneratedAtEt, buildWindSummary, weatherCodeToText,
+    getIsoDate, getRelativeIsoDate
+  - Create crawl/util.mjs with: cloneJson, dedupeStrings, shortTransactionNote,
+    inferPositionFromDescription
+  - crawl.mjs imports from these new modules instead of defining inline
+  - Run full test suite + snapshot oracle after each file move
+
+Resources:
+  - 1 engineer
+  - git mv / rewrite, no dependency changes
+
+Exit criteria:
+  - `npm test` passes (34 tests)
+  - `test/fixtures/expected-payload.json` still matches (byte-identical)
+  - `node scripts/lint.mjs` clean
+
+Owner: Dave / Claude Code
+
+
+PHASE 2 — EXTRACT api/http.mjs + api/weather.mjs (0.5 day)   LOW RISK
+--------------------------------------------------------------------------------
+Move the HTTP primitives out before moving anything that depends on them.
+
+Milestones:
+  - crawl/api/http.mjs: fetchJson (imports FETCH_TIMEOUT_MS from ../../config.mjs),
+    fetchSoft
+  - crawl/api/weather.mjs: weather fetch wrapper (thin — just fetchSoft(WEATHER_URL))
+  - crawl.mjs imports fetchJson and fetchSoft from the new module
+  - Re-run tests + snapshot
+
+Resources:
+  - 1 engineer
+  - Tests already cover the rejection path in test/live-feed-fetch.test.mjs
+
+Exit criteria:
+  - Tests pass, snapshot matches, lint clean
+  - fetchJson still honors FETCH_TIMEOUT_MS
+
+Owner: Dave / Claude Code
+
+
+PHASE 3 — EXTRACT api/mlb.mjs (0.5-1 day)              MEDIUM RISK
+--------------------------------------------------------------------------------
+Consolidate every MLB Stats API URL in one place so future endpoint changes
+touch one file.
+
+Milestones:
+  - crawl/api/mlb.mjs exports:
+      fetchSchedule({ teamId, date })
+      fetchNextSchedule({ teamId, startDate, endDate })
+      fetchBoxscore({ gamePk })
+      fetchRoster({ teamId })
+      fetchTransactions({ teamId, startDate, endDate })
+      fetchInjuries({ teamId })
+      fetchPitcherStats({ pitcherId, year })
+      fetchStandings({ season })
+  - Each function imports MLB_API_BASE from config.mjs and uses fetchJson
+  - crawl.mjs's main() switches to calling these named functions
+  - Hydrate strings (?hydrate=linescore,probablePitcher,...) stay as constants
+    inside mlb.mjs so the callers don't need to know them
+
+Resources:
+  - 1 engineer
+  - Snapshot oracle confirms hydrate params unchanged
+
+Risk: hydrate parameter ordering matters for cache keys. Keep them identical.
+
+Exit criteria:
+  - Tests pass
+  - Snapshot byte-identical (URLs preserved exactly)
+  - crawl.mjs no longer contains any `statsapi.mlb.com` string literals
+
+Owner: Dave / Claude Code
+
+
+PHASE 4 — EXTRACT resolve/ + validate.mjs + overrides.mjs (0.5 day)  LOW RISK
+--------------------------------------------------------------------------------
+Pure logic with clear inputs and outputs — the easiest wins.
+
+Milestones:
+  - crawl/resolve/pitcher.mjs: resolvePitcher (already a helper function)
+  - crawl/resolve/series.mjs: resolveSeriesLabel
+  - crawl/validate.mjs: validateCrawlPayload (imports TODAY recomputed at call
+    time, not at module load)
+  - crawl/overrides.mjs: loadOverrides, applyOverrides, stripHeroOverride,
+    clampOverride, deepMerge (with __delete__ sentinel)
+  - Unit tests for these already exist in test/crawl-helpers.test.mjs — update
+    import paths
+
+Resources:
+  - 1 engineer
+
+Exit criteria:
+  - All 34 tests still pass with updated imports
+  - Snapshot matches
+  - validateCrawlPayload still errors on missing sections (add a negative test
+    if one doesn't already exist)
+
+Owner: Dave / Claude Code
+
+
+PHASE 5 — EXTRACT build/ section builders (1-2 days)   MEDIUM-HIGH RISK
+--------------------------------------------------------------------------------
+This is the main structural work. Each section builder is a pure function that
+takes a fixture + live data and returns a section object. Extract one at a time
+and verify the snapshot after each.
+
+Order (easiest first):
+  1. crawl/build/source-notes.mjs     (no dependencies on other sections)
+  2. crawl/build/ticker.mjs           (depends on resolvePitcher + format.mjs)
+  3. crawl/build/roster.mjs           (injury merge, roster highlights)
+  4. crawl/build/rotation.mjs         (depends on fetchPitcherStats, format)
+  5. crawl/build/standings.mjs        (depends on fetchStandings, normalizeGamesBack)
+  6. crawl/build/recap.mjs            (depends on resolvePitcher, extractDecisions, extractKeyPerformers)
+  7. crawl/build/lineup.mjs           (depends on extractBattingOrder, buildTbdBattingOrder)
+  8. crawl/build/game-status.mjs      (depends on many — hand this one last)
+  9. crawl/build/preview.mjs          (depends on buildUpNext + pregame-preview.js)
+  10. crawl/build/hero.mjs            (depends on everything — extract last)
+
+For each extraction:
+  - Create the new file with named exports
+  - Update crawl.mjs import
+  - Remove the original function from crawl.mjs
+  - Run `npm test` and the snapshot oracle
+  - Commit the single extraction
+
+Milestones:
+  - 10 focused commits, one per section
+  - Each commit is individually revertable
+  - After Phase 5, crawl.mjs no longer contains any function named `build*`
+
+Resources:
+  - 1 engineer
+  - Snapshot oracle is the single source of truth — if it diverges, revert
+    and investigate before continuing
+
+Risk: side effects / shared state. Some builders mutate the data object in
+place rather than returning a new section. These must keep doing exactly that
+or the payload will drift. Snapshot catches it.
+
+Exit criteria:
+  - All section builders live under crawl/build/
+  - Tests pass, snapshot matches
+  - crawl.mjs is < 400 lines
+
+Owner: Dave
+
+
+PHASE 6 — EXTRACT payload/ + crawl/index.mjs (0.5 day)   MEDIUM RISK
+--------------------------------------------------------------------------------
+Final decomposition of the orchestrator itself.
+
+Milestones:
+  - crawl/payload/live.mjs: buildLivePayload composes section builders
+  - crawl/payload/off-day.mjs: buildOffDayPayload
+  - crawl/payload/game-picker.mjs: pickActiveGame, collectUpcomingGames, isFinalGame
+  - crawl/index.mjs: new entry point. main() reads fixture, fetches from mlb.mjs
+    and weather.mjs, picks active game, calls buildLivePayload or buildOffDayPayload,
+    validates, writes output
+  - crawl.mjs at repo root becomes a 3-line compat shim:
+      import { main } from "./crawl/index.mjs";
+      main().catch((e) => { ... });
+
+Resources:
+  - 1 engineer
+
+Exit criteria:
+  - `node crawl.mjs` runs the full pipeline unchanged
+  - Snapshot matches
+  - Tests pass
+
+Owner: Dave
+
+
+PHASE 7 — UPDATE IMPORT PATHS + REMOVE SHIM (0.5 day)   LOW RISK
+--------------------------------------------------------------------------------
+Clean up the compat shim and retarget all internal imports.
+
+Milestones:
+  - test/crawl-helpers.test.mjs imports from the specific new modules instead
+    of from ../crawl.mjs
+  - scripts/lint.mjs (if it imports anything from crawl.mjs) points at
+    the new entry
+  - Delete crawl.mjs at repo root; rename crawl/index.mjs to crawl/main.mjs
+    OR keep crawl.mjs as a 1-line re-export. Preference: keep the shim for
+    backward compat so future tests don't need to know about the directory.
+  - Update package.json scripts if they reference the inner path
+
+Resources:
+  - 1 engineer
+
+Exit criteria:
+  - `npm test` passes
+  - Snapshot matches
+  - `node run.mjs` completes the full pipeline successfully
+  - `wc -l crawl.mjs` is either removed or < 20 lines
+
+Owner: Dave
+
+
+PHASE 8 — CI + RUNTIME VERIFICATION (0.5 day)
+--------------------------------------------------------------------------------
+Prove the refactor didn't break production publishing.
+
+Milestones:
+  - Open PR against main with all phase commits
+  - CI runs the full test suite (34 tests)
+  - Manual review of the PR diff
+  - Merge
+  - Watch the next scheduled cron run (daily 13:00 UTC or 15-min game-window
+    refresh) — it should succeed and produce a phillies-wire-data.json shaped
+    exactly like the previous run
+  - If anything breaks, the rollback is a single git revert since the refactor
+    is one PR
+
+Resources:
+  - 1 engineer for the review
+  - 1 scheduled cron run for runtime verification
+
+Exit criteria:
+  - PR merged to main
+  - 2 consecutive cron runs succeed with no regressions
+  - status.json generated_at within 1 hour of expected
+
+Owner: Dave
+
+
+================================================================================
+TOTAL TIMELINE
+================================================================================
+
+Phase  Description                          Duration    Parallelizable?
+------+------------------------------------+-----------+----------------
+  0     Prep + snapshot oracle              0.5 day     no (blocking)
+  1     format.mjs + util.mjs               0.5 day     no
+  2     api/http + api/weather              0.5 day     no
+  3     api/mlb.mjs                         0.5-1 day   no
+  4     resolve/ + validate + overrides     0.5 day     no
+  5     build/ (10 section builders)        1-2 days    no
+  6     payload/ + crawl/index.mjs          0.5 day     no
+  7     Import paths + shim cleanup         0.5 day     no
+  8     CI + runtime verification           0.5 day     passive wait
+
+Total active work: ~5-6 days
+Wall clock (with CI + cron waits): ~6-7 days
+
+================================================================================
+RESOURCES
+================================================================================
+
+Personnel:
+  - 1 engineer (Dave or Claude Code pair-work session)
+
+Tooling:
+  - Existing repo + test harness
+  - Node.js 20+ (matches CI)
+  - No new dependencies
+  - The pipeline smoke test (test/pipeline-smoke.test.mjs, added in PR #5) is
+    the primary behavioral oracle
+
+Infrastructure:
+  - GitHub Actions CI (free tier is fine)
+  - The scheduled cron runs for runtime verification
+
+================================================================================
+RISK REGISTER
+================================================================================
+
+R1. Silent payload drift
+    Likelihood: Medium. Some builders mutate the data object in place.
+    Mitigation: snapshot oracle compares byte-for-byte after every extraction.
+
+R2. Import cycle between build modules
+    Likelihood: Low. Dependencies flow one way (util -> format -> api ->
+    resolve -> build -> payload).
+    Mitigation: strict layer ordering. If a build module needs another build
+    module, the shared logic belongs in util.mjs or resolve/.
+
+R3. Production cron runs during the refactor
+    Likelihood: Medium. The 15-min game-window cron fires frequently.
+    Mitigation: do the refactor on a feature branch, never push to main mid-
+    phase. Schedule the final PR merge during a no-game window.
+
+R4. Hydrate parameter ordering in URL changes
+    Likelihood: Low but high impact.
+    Mitigation: snapshot the exact URL strings in the http layer. Freeze them
+    as string constants, not template-concatenation.
+
+R5. Test file import paths break
+    Likelihood: Medium. test/crawl-helpers.test.mjs imports from ../crawl.mjs.
+    Mitigation: keep crawl.mjs as a compatibility shim until Phase 7.
+
+================================================================================
+EXIT CRITERIA (WHOLE PROJECT)
+================================================================================
+
+- [ ] All 34+ existing tests pass on the final branch
+- [ ] test/fixtures/expected-payload.json matches the pre-refactor snapshot
+  (byte-identical)
+- [ ] crawl.mjs at repo root is < 20 lines (shim only)
+- [ ] No file under crawl/ exceeds 300 lines
+- [ ] `npm run pipeline` completes successfully end-to-end
+- [ ] CI passes
+- [ ] 2 scheduled cron runs after merge produce valid output
+- [ ] implementation_plan.txt marked complete and archived
+
+================================================================================
+OUT OF SCOPE
+================================================================================
+
+These belong to separate follow-up sessions:
+
+- Switching from node:https to native fetch (API Design skill recommends it)
+- Replacing the custom template engine in render.mjs with Handlebars
+- Adding retry logic with exponential backoff to MLB fetches (partial
+  coverage exists via fetchSoft)
+- Additional integration tests beyond the smoke test (e.g. snapshot-based
+  tests per section)
+- Documentation generation from JSDoc
+- TypeScript migration or progressive JSDoc typing
+
+================================================================================
