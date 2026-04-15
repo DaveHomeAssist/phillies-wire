@@ -6,7 +6,7 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#e81828">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://statsapi.mlb.com https://api.open-meteo.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://statsapi.mlb.com https://api.open-meteo.com">
 <title>{{meta.page_title}}</title>
 <meta name="description" content="{{meta.page_description}}">
 <link rel="canonical" href="{{meta.canonical_url}}">
@@ -28,10 +28,7 @@
 <meta name="twitter:title" content="{{meta.og_title}}">
 <meta name="twitter:description" content="{{meta.og_description}}">
 <meta name="twitter:image" content="{{meta.og_image}}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" onload="this.rel='stylesheet'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="{{meta.assets_prefix}}fonts.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}tokens.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}phillies-wire.css">
 <link rel="modulepreload" href="{{meta.assets_prefix}}live-feed.js">
