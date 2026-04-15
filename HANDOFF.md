@@ -1,278 +1,109 @@
 # HANDOFF.md — Phillies Wire
 
-**Date:** 2026-03-28  
-**Phase complete:** CSS design system + JSON schema + pipeline spec  
-**Handed to:** Codex (or next Claude session)  
-**Notion pipeline spec:** https://www.notion.so/331255fc8f44818ea2baf23a71c91645
-
-**Latest changes:** See the README "What's new" section and the commit log on branch `claude/add-phillies-lineup-*`. This handoff document reflects the initial architecture; the current pipeline ships SEO metadata, a game-day lineup section, live-injury merging, archive search, prev/next navigation, a share bar, theme persistence, reduced-motion support, and an accessibility pass that wraps content in semantic landmarks.
+**Last updated:** 2026-04-14
+**Status:** Production. 33 tests passing, 0 vulnerabilities, publishing on cron.
+**Branch:** `main`
 
 ---
 
-## What exists right now
+## Current state
 
-| File | Status | Notes |
+Phillies Wire is a daily static newsletter that:
+
+1. Crawls MLB Stats API + Open-Meteo every day and every 15 minutes during the game window
+2. Enriches editorial copy via Claude (pull quote + preview narrative) with a structured fallback
+3. Renders into a static HTML template stamped with a custom `{{...}}` engine
+4. Verifies the output contract (hero shape, lineup shape, required files)
+5. Deploys to GitHub Pages and (optionally) emails subscribers
+
+The original HANDOFF claimed `crawl.mjs`, `enrich.mjs`, `render.mjs` were "not built". That's obsolete — all five pipeline stages are complete and shipping.
+
+## Pipeline files
+
+| File | Lines | Role |
 |---|---|---|
-| `tokens.css` | ✅ Complete | Do not edit manually. Brand primitives → semantic layer → both modes. |
-| `phillies-wire.css` | ✅ Complete | One cleanup item: inline `style="margin-top:16px"` on some section labels. |
-| `phillies-wire-v2.html` | ✅ Complete (static) | Has real data hardcoded. Needs `{{token}}` placeholders for pipeline. |
-| `phillies-wire-schema.json` | ✅ Complete | Today's full data payload. Use as schema reference and test fixture. |
-| `crawl.mjs` | ❌ Not built | Stage 1 — see spec below. |
-| `enrich.mjs` | ❌ Not built | Stage 2 — see spec below. |
-| `render.mjs` | ❌ Not built | Stage 3 — see spec below. |
+| `run.mjs` | ~150 | Orchestrator, child-process spawn, edition number sync |
+| `crawl.mjs` | ~1400 | MLB + weather + fixture merge → `phillies-wire-data.json` |
+| `enrich.mjs` | ~400 | Claude editorial pass (pull quote + preview narrative), retries + fallback |
+| `render.mjs` | ~840 | Template engine + latest/issue/archive/site output |
+| `verify.mjs` | ~260 | Output contract assertions |
+| `deliver.mjs` | ~100 | Optional SMTP delivery (nodemailer) |
+| `live-feed.js` | ~280 | Browser-side live score polling |
+| `config.mjs` | ~30 | Centralized constants (TEAM_ID, VENUE, API base, schema version, timeouts) |
 
----
+## Template engine syntax
 
-## Immediate next tasks — in order
+`render.mjs` implements a minimal Handlebars-like engine. Supported syntax:
 
-### Task 1 — Add `{{token}}` placeholders to `phillies-wire-v2.html`
-
-Replace all hardcoded data values in the HTML with `{{json.path}}` tokens. The render script will do a find-and-replace pass on these. Example:
-
-```html
-<!-- Before -->
-<div class="pw-record-num">1–0</div>
-
-<!-- After -->
-<div class="pw-record-num">{{record.wins}}–{{record.losses}}</div>
-```
-
-Dynamic list sections (ticker, IL entries, rotation cards, player rows, up-next rows) need fragment templates — a single repeated block stamped per array item. Mark these with `{{#each sections.injury_report.content.il_entries}}...{{/each}}` or equivalent syntax you prefer.
-
-Full token map is at the bottom of this file.
-
----
-
-### Task 2 — Write `crawl.mjs`
-
-Fetches from MLB Stats API and Open-Meteo. Writes `phillies-wire-data.json`.
-
-**MLB Stats API base:** `https://statsapi.mlb.com/api/v1`  
-**PHI team ID:** 143  
-**CBP coords:** lat 39.906, lon -75.166
-
-```js
-// Endpoints needed
-const SCHEDULE     = `/schedule?sportId=1&teamId=143&date=${TODAY}`;
-const GAME_BOXSCORE = `/game/${gamePk}/boxscore`;   // run post-game only
-const INJURIES     = `/injuries?teamId=143`;
-const ROSTER       = `/teams/143/roster?rosterType=active`;
-const TRANSACTIONS = `/transactions?teamId=143&startDate=${YESTERDAY}&endDate=${TODAY}`;
-const WEATHER      = `https://api.open-meteo.com/v1/forecast?latitude=39.906&longitude=-75.166&current=temperature_2m,wind_speed_10m,wind_gusts_10m,weather_code&temperature_unit=fahrenheit&wind_speed_unit=mph`;
-```
-
-**QA checkpoint A** (before writing output):
-- Required keys present: `meta`, `record`, `ticker`, `sections` (all 6 keys)
-- `sections.game_status.content.starters` both non-null
-- `sections.injury_report.content.il_entries` is an array (can be empty)
-- `meta.date` matches today's date (ISO format)
-- If validation fails: write error to `crawl-error.log`, exit with code 1
-
----
-
-### Task 3 — Write `enrich.mjs`
-
-Reads `phillies-wire-data.json`, sends editorial fields to Claude API, writes enriched JSON back to `phillies-wire-data.json`.
-
-**Model:** `claude-sonnet-4-20250514`  
-**Max tokens:** 2000
-
-```js
-const SYSTEM = `You are a beat reporter for the Philadelphia Phillies. 
-Write in a clear, confident, non-academic voice. 
-No hyphens in prose. No em dashes under any circumstances. 
-Imperative mood in section previews.
-
-Return ONLY valid JSON matching the exact input schema. 
-Do not add keys. Do not wrap in markdown. Do not include preamble.`;
-
-const USER = `Enrich the following fields with editorial copy. 
-Leave all structured fields (scores, times, names, badge values) exactly as provided.
-Write only to these targets:
-- sections.recap.content.pull_quote
-- sections.preview.content.narrative (array of 2–3 paragraphs)  
-- sections.preview.content.pull_quote
-- ticker (reorder or rewrite highlight items for editorial punch)
-
-Raw payload:
-${JSON.stringify(data, null, 2)}`;
-```
-
-**QA checkpoint B** (before writing output):
-- Response parses as valid JSON — if not, log raw response and exit code 1
-- Schema keys unchanged — no additions or deletions from the input shape
-- `pull_quote` fields are non-empty strings
-- `narrative` is array of 2–3 non-empty strings
-- Zero em dashes in any string value (regex: `/—/g`)
-- Player names and scores match Stage 1 payload (cross-reference before writing)
-
----
-
-### Task 4 — Write `render.mjs`
-
-Reads enriched `phillies-wire-data.json`, stamps into `phillies-wire-v2.html` template, writes `phillies-wire-output.html`.
-
-```js
-import { readFileSync, writeFileSync } from 'fs';
-
-const data     = JSON.parse(readFileSync('./phillies-wire-data.json', 'utf8'));
-const template = readFileSync('./phillies-wire-v2.html', 'utf8');
-
-const output = populate(template, data);
-writeFileSync('./phillies-wire-output.html', output);
-console.log('✅ phillies-wire-output.html written');
-```
-
-`populate(template, data)`:
-1. Replace all `{{dot.path}}` tokens with resolved values from data object.
-2. For each `{{#each array}}...{{/each}}` block, stamp one copy of the inner fragment per array item, substituting `{{this.field}}` within each copy.
-3. Return the rendered string.
-
-`phillies-wire-output.html` should be gitignored — it is regenerated daily.
-
----
-
-### Task 5 — Add `.pw-section-label--spaced` to `phillies-wire.css`
-
-One inline style remains in the HTML:
-
-```html
-<div class="pw-section-label" style="margin-top:16px;">
-```
-
-Add to `phillies-wire.css`:
-
-```css
-.pw-section-label--spaced {
-  margin-top: var(--space-4);
-}
-```
-
-Then replace all instances in the HTML with `class="pw-section-label pw-section-label--spaced"`.
-
----
-
-### Task 6 — Add dark mode toggle
-
-Add to `phillies-wire-v2.html` near the footer:
-
-```html
-<button class="pw-theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-  Dark
-</button>
-```
-
-Add to `phillies-wire.css`:
-
-```css
-.pw-theme-toggle {
-  font-family:    var(--font-display);
-  font-weight:    var(--weight-bold);
-  font-size:      var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: var(--tracking-wider);
-  padding:        var(--space-1) var(--space-3);
-  border:         1px solid var(--color-border-mid);
-  border-radius:  var(--radius-md);
-  background:     transparent;
-  color:          var(--color-text-muted);
-  cursor:         pointer;
-}
-```
-
-Add to script block:
-
-```js
-function toggleTheme() {
-  const html = document.documentElement;
-  html.dataset.theme = html.dataset.theme === 'dark' ? '' : 'dark';
-}
-```
-
----
-
-## Token map — `phillies-wire-v2.html` placeholder targets
-
-| HTML location | Token | JSON path |
-|---|---|---|
-| Masthead pub date | `{{meta.date}}` | `meta.date` |
-| Masthead edition | `Vol. {{meta.volume}} · No. {{meta.edition}}` | `meta.volume`, `meta.edition` |
-| Record block | `{{record.wins}}–{{record.losses}}` | `record.wins`, `record.losses` |
-| Ticker items | `{{#each ticker}}` | `ticker[]` |
-| Game Status — matchup | `{{sections.game_status.content.matchup}}` | |
-| Game Status — first pitch | `{{sections.game_status.content.first_pitch}}` | |
-| Game Status — venue | `{{sections.game_status.content.venue}}` | |
-| Game Status — starters | `{{sections.game_status.content.starters.home.name}} vs {{...away.name}}` | |
-| Game Status — series | `{{sections.game_status.content.series.label}}` | |
-| Game Status — broadcast | `{{...broadcast.tv}} · {{...broadcast.stream}} · {{...broadcast.radio}}` | |
-| Game Status — weather | `{{...weather.temp_f}}° · {{...weather.condition}} · {{...weather.wind}}` | |
-| Game Status — giveaway | `{{sections.game_status.content.giveaway}}` | |
-| Game Status — transit | `{{sections.game_status.content.transit}}` | |
-| Recap — result | `{{sections.recap.content.result.home_score}}, TEX {{...away_score}}` | |
-| Recap — performers | `{{#each sections.recap.content.key_performers}}` | |
-| Recap — pull quote | `{{sections.recap.content.pull_quote}}` | ← Claude writes this |
-| Roster — rotation | `{{#each sections.roster.content.rotation}}` | |
-| Roster — highlights | `{{#each sections.roster.content.highlights}}` | |
-| Injury — entries | `{{#each sections.injury_report.content.il_entries}}` | |
-| Injury — footer | `{{sections.injury_report.content.footer_note}}` | |
-| Farm — affiliate | `{{sections.farm_system.content.affiliate.name}}` etc | |
-| Farm — names | `{{#each sections.farm_system.content.names_to_watch}}` | |
-| Preview — narrative | `{{#each sections.preview.content.narrative}}` | ← Claude writes this |
-| Preview — pull quote | `{{sections.preview.content.pull_quote}}` | ← Claude writes this |
-| Preview — up next | `{{#each sections.preview.content.up_next}}` | |
-| Next game strip | `{{next_game.matchup}}`, `{{next_game.date}}`, `{{next_game.time}}`, `{{next_game.broadcast}}` | |
-| Footer | `Vol. {{meta.volume}} · No. {{meta.edition}} · {{meta.date}}` | |
-
----
-
-## CSS class reference — `pw-` prefix
-
-| Class | Role |
+| Syntax | Meaning |
 |---|---|
-| `pw-page` | Outer wrapper, max-width 640px |
-| `pw-masthead` | Navy header block |
-| `pw-mast-pub` | Publication name (Barlow Condensed 32px) |
-| `pw-mast-sub` | Edition/date sub-label |
-| `pw-mast-record` | Red record block (top-right) |
-| `pw-ticker` | Scrolling ticker bar |
-| `pw-ticker-item` | Individual ticker item |
-| `pw-ticker-item--highlight` | White-colored ticker emphasis |
-| `pw-ticker-sep` | Red diamond separator |
-| `pw-red-rule` | 3px red horizontal rule |
-| `pw-accordion` | Accordion container |
-| `pw-acc-row` | Single accordion section |
-| `pw-acc-row--open` | Open state modifier |
-| `pw-acc-header` | `<button>` click target |
-| `pw-acc-title` | Section label (Barlow Condensed) |
-| `pw-acc-dot` | Red dot, visible when open |
-| `pw-acc-preview` | One-line preview, hidden when open |
-| `pw-acc-chevron` | Arrow, rotates 180° when open |
-| `pw-acc-body` | Expandable content area |
-| `pw-section-label` | Red all-caps category label |
-| `pw-body` | Body paragraph |
-| `pw-body--strong` | Bold inline span |
-| `pw-pull` | Pull quote (red left border) |
-| `pw-info-row` | Key-value row |
-| `pw-info-label` | Left label (Barlow Condensed, faint) |
-| `pw-info-value` | Right value (Inter, medium) |
-| `pw-player-row` | Player entry row |
-| `pw-player-name` | Player name (semibold) |
-| `pw-player-detail` | Sub-detail (small, muted) |
-| `pw-badge` | Base badge class |
-| `pw-badge--il` | Red — IL |
-| `pw-badge--dtd` | Amber — DTD / minor |
-| `pw-badge--active` | Green — active |
-| `pw-badge--new` | Blue — new/MiLB |
-| `pw-badge--rehab` | Amber — rehab |
-| `pw-rotation-grid` | 3-col CSS grid for rotation cards |
-| `pw-rot-card` | Single rotation card |
-| `pw-next-game` | Navy footer strip |
-| `pw-footer` | Bottom meta bar |
+| `{{meta.date}}` | Dot-path interpolation. Values are HTML-escaped. |
+| `{{{meta.json_ld}}}` | Triple-brace. Raw HTML output, no escaping. Use only for trusted computed markup (JSON-LD, preformatted snippets). |
+| `{{#each items}}...{{/each}}` | Iterate an array. Inside the block, `{{this.field}}` refers to the current item and `{{root.path}}` still resolves from the top. |
+| `{{#if flag}}...{{/if}}` | Conditional block. Rendered if the path resolves to a truthy value. |
+| Nested blocks | `{{#each ...}}` and `{{#if ...}}` can be nested. Tested in `test/render.test.mjs`. |
 
----
+### Gotchas
+
+- The engine walks `scope` first, then `root` — `{{this.field}}` inside `{{#each}}` is scoped to the current item.
+- `{{undefined.path}}` resolves to an empty string, not an error. Use `{{#if}}` for guarded sections.
+- Unresolved `{{tokens}}` in the final output trigger `assertNoUnresolvedTokens` in `verify.mjs` and break the pipeline on purpose.
+
+## Recent work
+
+Three major batches on top of the original pipeline (all merged):
+
+1. **PR #1** — CI lockfile upgrade (v1 → v3) so GitHub Actions' `npm ci` stops failing
+2. **PR #2** — Game-day lineup section (starters + 1-9 batting order) with boxscore lineup fetch + schema validation
+3. **PR #3** — Review follow-ups: 27 commits, +2,709/-254 lines. Highlights:
+   - Correctness: `decisions.winner` for WP/LP, `/injuries` merge, pitchHand from MLB, series label resolution, non-TEX opponent lineup fallback
+   - Security: SMTP requireTLS, GitHub Actions pinning, `ANTHROPIC_API_KEY` unset after enrich
+   - SEO: meta description, Open Graph, Twitter Card, JSON-LD NewsArticle, canonical URLs, sitemap.xml, robots.txt, RSS feed
+   - A11y: aria-live score, skip link, landmarks, aria-controls, reduced-motion, theme persistence
+   - Resilience: soft-catch every MLB/weather fetch, doubleheader-aware game picker, enrich retries + timeout + prompt caching
+   - Tests: 9 → 33 (render engine, crawl helpers, lineup builder, injury merge, game picker, live feed polling)
+
+## What to run locally
+
+```bash
+npm ci
+npm test                           # 33 tests, should all pass
+npm audit                          # should say 0 vulnerabilities
+ANTHROPIC_API_KEY=sk-... node run.mjs   # full pipeline end-to-end
+```
+
+Without an `ANTHROPIC_API_KEY`, enrich falls back to a structured message and the pipeline still publishes.
+
+## Environment variables
+
+| Variable | Stage | Required? | Purpose |
+|---|---|---|---|
+| `ANTHROPIC_API_KEY` | enrich | optional | Editorial copy via Claude. Omit → structured fallback. |
+| `ENRICH_MODEL` | enrich | optional | Override model name (default `claude-sonnet-4-5`) |
+| `ENRICH_MAX_TOKENS` | enrich | optional | Override max tokens (default 4000) |
+| `ENRICH_STRICT` | enrich | optional | `"true"` → fail pipeline on enrich error instead of falling back |
+| `DELIVERY_RECIPIENTS` | deliver | optional | Comma-separated emails. Omit → skip delivery. |
+| `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` | deliver | if delivering | SMTP transport |
+
+## CI workflow
+
+Triggered by:
+
+- Daily cron at 13:00 UTC (~9 AM ET)
+- Game-window cron every 15 minutes, 16:00-23:00 UTC and 00:00-05:00 UTC
+- Manual `workflow_dispatch`
+
+Job shape: `npm ci` → `npm test` → `node run.mjs` → commit archive snapshot → upload Pages artifact → deploy. Diagnostics (data JSON, output HTML, status.json, error logs) upload on every run.
+
+## Open follow-ups
+
+- **Split `crawl.mjs`** into `crawl/` subdirectory (api/mlb.mjs, api/weather.mjs, build/sections.mjs, build/lineup.mjs, validate.mjs, format.mjs) — it's ~1,400 lines and the next decomposition target
+- **Self-host Google Fonts** — template currently loads Barlow Condensed + Inter from fonts.googleapis.com
+- **Integration test** — mock MLB fixture + assert full pipeline output shape (smoke coverage beyond the unit tests)
+- **Email template hardening** — Outlook and Gmail rendering quirks (from original handoff, still open)
 
 ## Notion references
 
-- **LLM Conversation Log:** https://www.notion.so/331255fc8f44814483d4d11fd2703f68
-- **Pipeline Spec (Notion):** https://www.notion.so/331255fc8f44818ea2baf23a71c91645
-- **Code Dashboard — LIVE:** https://www.notion.so/331255fc8f44819d9d88c8ef21105082
+- LLM Conversation Log: https://www.notion.so/331255fc8f44814483d4d11fd2703f68
+- Pipeline Spec page: https://www.notion.so/331255fc8f44818ea2baf23a71c91645
+- Code Dashboard LIVE: https://www.notion.so/331255fc8f44819d9d88c8ef21105082

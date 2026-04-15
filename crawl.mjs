@@ -2,11 +2,13 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
 import { pathToFileURL } from "node:url";
 import { buildPregamePreviewContent, buildRecapPullQuote } from "./pregame-preview.js";
-
-const MLB_API_BASE = "https://statsapi.mlb.com/api/v1";
-const WEATHER_URL =
-  "https://api.open-meteo.com/v1/forecast?latitude=39.906&longitude=-75.166&current=temperature_2m,wind_speed_10m,wind_gusts_10m,weather_code&temperature_unit=fahrenheit&wind_speed_unit=mph";
-const TEAM_ID = 143;
+import {
+  MLB_API_BASE,
+  WEATHER_URL,
+  TEAM_ID,
+  SCHEMA_VERSION,
+  FETCH_TIMEOUT_MS,
+} from "./config.mjs";
 const TODAY = getIsoDate();
 const YESTERDAY = getRelativeIsoDate(-1);
 const OUTPUT_FILE = "./phillies-wire-data.json";
@@ -111,7 +113,7 @@ async function buildLivePayload(context) {
   const opponentSide = philliesAreHome ? game.teams.away : game.teams.home;
   const weather = weatherResponse?.current ?? {};
 
-  data.meta.schema_version = fixture.meta.schema_version ?? "1.2.0";
+  data.meta.schema_version = fixture.meta.schema_version ?? SCHEMA_VERSION;
   data.meta.date = TODAY;
   data.meta.generated_at = new Date().toISOString();
   data.meta.off_day = false;
@@ -467,7 +469,7 @@ function buildOffDayPayload(fixture, nextGames, overrides) {
   const data = cloneJson(fixture);
   const nextGame = nextGames[0] ?? null;
 
-  data.meta.schema_version = fixture.meta.schema_version ?? "1.2.0";
+  data.meta.schema_version = fixture.meta.schema_version ?? SCHEMA_VERSION;
   data.meta.date = TODAY;
   data.meta.generated_at = new Date().toISOString();
   data.meta.off_day = true;
@@ -1186,7 +1188,7 @@ function extractBroadcast(game, mediaType) {
 async function fetchJson(url) {
   return new Promise((resolve, reject) => {
     const req = https
-      .get(url, { timeout: 30000 }, (response) => {
+      .get(url, { timeout: FETCH_TIMEOUT_MS }, (response) => {
         let raw = "";
         response.setEncoding("utf8");
         response.on("data", (chunk) => {
@@ -1206,7 +1208,7 @@ async function fetchJson(url) {
         });
       })
       .on("timeout", () => {
-        req.destroy(new Error(`Request timed out after 30s: ${url}`));
+        req.destroy(new Error(`Request timed out after ${FETCH_TIMEOUT_MS}ms: ${url}`));
       })
       .on("error", reject);
   });
