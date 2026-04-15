@@ -1,8 +1,9 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
+import { CLAUDE_MODEL, CLAUDE_MAX_TOKENS } from "./config.mjs";
 
-const MODEL = process.env.ENRICH_MODEL?.trim() || "claude-sonnet-4-5";
-const MAX_TOKENS = 4000;
+const MODEL = CLAUDE_MODEL;
+const MAX_TOKENS = CLAUDE_MAX_TOKENS;
 const REQUEST_TIMEOUT_MS = 60 * 1000;
 const MAX_ATTEMPTS = 4;
 const ERROR_LOG = "./enrich-error.log";
