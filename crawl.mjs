@@ -89,13 +89,22 @@ async function main() {
     return;
   }
 
-  const boxscore = await fetchJson(`${MLB_API_BASE}/game/${game.gamePk}/boxscore`).catch(() => null);
+  // Fetch boxscore (for batting order, stats) AND feed/live (for full
+  // person records including batSide). The boxscore's person object is
+  // thinned to {id, fullName, link} — batSide lives in feed/live only.
+  const [boxscore, gameFeed] = await Promise.all([
+    fetchJson(`${MLB_API_BASE}/game/${game.gamePk}/boxscore`).catch(() => null),
+    fetchJson(
+      `https://statsapi.mlb.com/api/v1.1/game/${game.gamePk}/feed/live?fields=gameData,players`,
+    ).catch(() => null),
+  ]);
 
   const data = await buildLivePayload({
     fixture,
     overrides,
     game,
     boxscore,
+    gameFeed,
     nextGames,
     rosterResponse,
     transactionResponse,
@@ -154,12 +163,18 @@ async function buildLivePayload(context) {
     overrides,
     game,
     boxscore,
+    gameFeed,
     nextGames,
     rosterResponse,
     transactionResponse,
     injuryResponse,
     weatherResponse,
   } = context;
+
+  // Build a player-id -> batSide.code map once. Used by extractBattingOrder
+  // because the boxscore endpoint thins person to {id, fullName, link} and
+  // does NOT carry batSide. feed/live is the canonical source.
+  const handednessByPlayerId = buildHandednessIndex(gameFeed);
 
   const data = cloneJson(fixture);
   const homeTeam = game.teams.home.team;
@@ -232,6 +247,7 @@ async function buildLivePayload(context) {
   data.sections.lineup = buildLineupSection({
     fixture,
     boxscore,
+    handednessByPlayerId,
     philliesAreHome,
     homeTeam,
     awayTeam,
@@ -411,7 +427,7 @@ function extractDecisions(boxscore) {
 }
 
 function buildLineupSection(context) {
-  const { fixture, boxscore, philliesAreHome, homeTeam, awayTeam, starters, firstPitch, opponentAbbr } = context;
+  const { fixture, boxscore, handednessByPlayerId, philliesAreHome, homeTeam, awayTeam, starters, firstPitch, opponentAbbr } = context;
   const fixtureLineup = fixture.sections.lineup;
   const homeAbbr = homeTeam.abbreviation;
   const awayAbbr = awayTeam.abbreviation;
@@ -419,8 +435,8 @@ function buildLineupSection(context) {
   const homeBox = boxscore?.teams?.home ?? null;
   const awayBox = boxscore?.teams?.away ?? null;
 
-  const homeOrder = extractBattingOrder(homeBox);
-  const awayOrder = extractBattingOrder(awayBox);
+  const homeOrder = extractBattingOrder(homeBox, handednessByPlayerId);
+  const awayOrder = extractBattingOrder(awayBox, handednessByPlayerId);
 
   const homeAnnounced = homeOrder.length === 9;
   const awayAnnounced = awayOrder.length === 9;
@@ -492,19 +508,47 @@ function buildTbdBattingOrder(teamAbbr) {
   }));
 }
 
-function extractBattingOrder(teamBox) {
+// Build a Map from numeric player id -> batSide.code ("L" | "R" | "S")
+// using the feed/live response's gameData.players. The boxscore endpoint
+// thins `person` to {id, fullName, link} and drops batSide, so this is
+// the canonical source for server-side handedness.
+function buildHandednessIndex(gameFeed) {
+  const index = new Map();
+  const players = gameFeed?.gameData?.players;
+  if (!players || typeof players !== "object") return index;
+  for (const record of Object.values(players)) {
+    const id = Number(record?.id);
+    const code = record?.batSide?.code;
+    if (Number.isFinite(id) && typeof code === "string" && code.length > 0) {
+      index.set(id, code);
+    }
+  }
+  return index;
+}
+
+function extractBattingOrder(teamBox, handednessByPlayerId = null) {
   if (!teamBox?.players) {
     return [];
   }
 
   const entries = Object.values(teamBox.players)
     .filter((player) => typeof player?.battingOrder === "string" && player.battingOrder.endsWith("00"))
-    .map((player) => ({
-      slot: Number(player.battingOrder) / 100,
-      name: player.person?.fullName ?? "TBD",
-      position: player.position?.abbreviation ?? "",
-      bats: player.person?.batSide?.code ?? player.batSide?.code ?? "R",
-    }))
+    .map((player) => {
+      // Priority for bats: feed/live gameData (canonical, has batSide) >
+      // any fallback the boxscore happened to carry > "R" last resort.
+      // Pre-fix: boxscore's thin `person` never had batSide, so every
+      // batter defaulted to "R".
+      const playerId = player.person?.id ?? player.personId;
+      const feedBatSide = handednessByPlayerId && playerId != null
+        ? handednessByPlayerId.get(Number(playerId))
+        : undefined;
+      return {
+        slot: Number(player.battingOrder) / 100,
+        name: player.person?.fullName ?? "TBD",
+        position: player.position?.abbreviation ?? "",
+        bats: feedBatSide ?? player.person?.batSide?.code ?? player.batSide?.code ?? "R",
+      };
+    })
     .filter((entry) => entry.slot >= 1 && entry.slot <= 9)
     .sort((left, right) => left.slot - right.slot);
 

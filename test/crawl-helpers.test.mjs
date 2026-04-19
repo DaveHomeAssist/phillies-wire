@@ -101,6 +101,49 @@ runTest("extractBattingOrder returns [] when the lineup is not fully posted", ()
   assert.deepEqual(extractBattingOrder(teamBox), []);
 });
 
+runTest("extractBattingOrder pulls bats from handedness map when boxscore person is thin", () => {
+  // Real MLB /boxscore response thins person to { id, fullName, link }; no
+  // batSide. The feed/live gameData.players map is the canonical source.
+  const teamBox = {
+    players: Object.fromEntries(
+      Array.from({ length: 9 }, (_, i) => [
+        `ID${i + 1}`,
+        {
+          person: { id: 100 + i, fullName: `Hitter${i + 1}` },
+          position: { abbreviation: "RF" },
+          battingOrder: String((i + 1) * 100),
+        },
+      ]),
+    ),
+  };
+  const handedness = new Map([
+    [100, "L"], [101, "R"], [102, "S"], [103, "L"], [104, "R"],
+    [105, "L"], [106, "R"], [107, "S"], [108, "L"],
+  ]);
+  const order = extractBattingOrder(teamBox, handedness);
+  assert.deepEqual(
+    order.map((slot) => slot.bats),
+    ["L", "R", "S", "L", "R", "L", "R", "S", "L"],
+  );
+});
+
+runTest("extractBattingOrder still falls back to 'R' when no feed map and no batSide", () => {
+  const teamBox = {
+    players: Object.fromEntries(
+      Array.from({ length: 9 }, (_, i) => [
+        `ID${i + 1}`,
+        {
+          person: { id: 200 + i, fullName: `NoSide${i + 1}` },
+          position: { abbreviation: "1B" },
+          battingOrder: String((i + 1) * 100),
+        },
+      ]),
+    ),
+  };
+  const order = extractBattingOrder(teamBox);
+  assert.ok(order.every((slot) => slot.bats === "R"));
+});
+
 runTest("buildLineupSection keeps PHI fallback when opponent is not TEX", () => {
   const starters = {
     home: { team: "WSH", name: "MacKenzie Gore", hand: "L" },
