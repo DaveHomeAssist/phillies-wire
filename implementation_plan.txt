@@ -1,448 +1,367 @@
 ================================================================================
-  PHILLIES WIRE — crawl.mjs DECOMPOSITION PLAN
-  Author: Claude Code review session (2026-04-15)
-  Target: split the 1,400-line crawl.mjs monolith into focused modules
+  PHILLIES WIRE — CONSOLIDATED IMPLEMENTATION PLAN
+  Author: Claude senior-engineer code review session (2026-04-18)
+  Scope: all follow-up work surfaced by the code review + HANDOFF.md open items
+  Supersedes: the previous crawl.mjs-only decomposition plan (its scope
+              preserved below as Phase 3)
 ================================================================================
 
-CONTEXT
--------
-crawl.mjs is the heart of the Phillies Wire pipeline. It fetches MLB + weather
-data, merges with the fixture baseline, and writes phillies-wire-data.json for
-the enrich/render/verify stages to consume.
-
-Current state: 1,404 lines in a single file, 46 functions, covering:
-  - HTTP fetching (fetchJson, fetchSoft)
-  - Payload building (buildLivePayload, buildOffDayPayload)
-  - Section builders (buildHero, buildTicker, buildLineupSection, buildRotation,
-    buildStandingsPreview, buildRecapPreview, buildSourceNotes, etc.)
-  - Data extraction (extractKeyPerformers, extractDecisions, extractBattingOrder,
-    resolvePitcher, resolveSeriesLabel)
-  - Formatting helpers (formatGameTime, formatShortDate, formatWeekday, ...)
-  - Validation (validateCrawlPayload)
-  - Overrides + deep merge
-  - Schema application
-
-The file works. 33 unit tests + 1 integration smoke test cover it. The goal of
-this refactor is NOT to change behavior but to make future changes safer and
-reviews easier.
-
-GOAL
-----
-Split crawl.mjs into a crawl/ subdirectory with one module per concern. After
-the split:
-  - crawl.mjs becomes a thin orchestrator (~150 lines)
-  - Each extracted module has a focused responsibility and explicit exports
-  - All 34 existing tests pass unchanged
-  - Any test importing helpers from crawl.mjs updates its import path
-  - Build artifact (phillies-wire-data.json) is byte-identical for a fixed input
-
-ASSUMPTIONS
------------
-- Node 20+ with ESM ("type": "module" already set)
-- Tests are the safety net. Every extraction must keep them green.
-- The schema fixture (phillies-wire-schema.json) is representative enough to
-  smoke-test the full pipeline after each phase.
-- crawl.mjs is the only file importing these internals. Verified via grep:
-  only test/crawl-helpers.test.mjs imports helpers directly.
-- No consumers outside the repo depend on crawl.mjs's internal exports.
-
-PROPOSED STRUCTURE
-------------------
-crawl/
-  index.mjs                 entry point, orchestrates the pipeline
-  api/
-    mlb.mjs                 all MLB Stats API calls + url builders
-    weather.mjs             Open-Meteo fetch
-    http.mjs                fetchJson (with FETCH_TIMEOUT_MS), fetchSoft
-  build/
-    hero.mjs                buildHero + mode derivation
-    ticker.mjs              buildTicker + daily prophet integration
-    lineup.mjs              buildLineupSection, extractBattingOrder, buildTbdBattingOrder
-    rotation.mjs            buildRotation, fetchPitcherStats
-    recap.mjs               buildRecapPreview, buildRecapSummaryLine, extractKeyPerformers, extractDecisions
-    roster.mjs              buildRosterHighlights, mergeInjuryEntries, normalizeLiveInjuries
-    standings.mjs           fetchStandings, buildStandingsPreview, normalizeGamesBack
-    game-status.mjs         build the game_status section incl. starters/series/broadcast/weather
-    preview.mjs             buildUpNext + preview section wiring
-    source-notes.mjs        buildSourceNotes
-  resolve/
-    pitcher.mjs             resolvePitcher
-    series.mjs              resolveSeriesLabel
-  payload/
-    live.mjs                buildLivePayload (composes all section builders)
-    off-day.mjs             buildOffDayPayload
-    game-picker.mjs         pickActiveGame, collectUpcomingGames, isFinalGame
-  validate.mjs              validateCrawlPayload, assertNoMojibake
-  overrides.mjs             loadOverrides, applyOverrides, stripHeroOverride,
-                            clampOverride, deepMerge (with __delete__ sentinel)
-  format.mjs                formatGameTime, formatShortDate, formatMonthDay,
-                            formatWeekday, formatGeneratedAtEt, buildWindSummary,
-                            weatherCodeToText, getIsoDate, getRelativeIsoDate
-  util.mjs                  cloneJson, dedupeStrings, shortTransactionNote,
-                            inferPositionFromDescription
-
-crawl.mjs (at repo root) remains as a compatibility shim that re-exports from
-crawl/index.mjs so existing imports keep working until the test file is moved.
-
-ASSUMPTIONS STATED:
-- Tests currently import from ../crawl.mjs via scripts/lint.mjs and
-  test/crawl-helpers.test.mjs. These imports must keep working until Phase 7.
-- `resolvePitcher` and `resolveSeriesLabel` already live in their own helper
-  form and are exported; other helpers need to be promoted to named exports.
-
+ASSUMPTIONS (state up front so the plan is readable without full context)
+-----------------------------------------------------------------------
+- Single human owner (Dave) with Codex-style assistance available for
+  deterministic, spec-driven work. No paid team.
+- Free-tier GitHub Actions; no self-hosted runners.
+- Anthropic API key already provisioned; no new paid services required
+  for Phase 1–4. Phase 5F may require a transactional-email provider
+  (Resend / Postmark) if the subscription webhook ships.
+- No existing issue tracker; this text file IS the tracker. Status is
+  tracked with [ ] / [~] / [x] markers when work begins.
+- Effort estimates are wall-clock for a focused single-developer day
+  (~4 productive hours). Double for interrupted days.
+- Every phase preserves the existing 33/33 test suite as green at each
+  commit; CI success rate stays at ≥85%.
+- No PR/issue tracker integration — this file is the source of truth.
 
 ================================================================================
-PHASES
+  PHASE 1 — Critical bug fixes
+  Duration: 1 focused day · Owner: Dave · Priority: highest
 ================================================================================
 
-PHASE 0 — PREP (0.5 day)                               BLOCKING FOR ALL PHASES
---------------------------------------------------------------------------------
-Milestones:
-  - Create a tracking issue or PR draft
-  - Confirm baseline: `npm test` = 34 passing, `npm audit` = 0 vulns
-  - Tag the current main commit so we can diff behavior at the end
-  - Build a payload snapshot test: run crawl against a network-mocked fixture,
-    capture phillies-wire-data.json as a JSON snapshot file under
-    test/fixtures/expected-payload.json. This is the "nothing behavior-changed"
-    smoke oracle.
+Purpose: close the most dangerous bugs before any other work. All are
+single-commit, single-file, low-risk changes with obvious test coverage
+increases.
 
-Resources:
-  - 1 engineer (Dave / Claude Code)
-  - Existing schema fixture + live-feed-fetch mocks
-  - No new dependencies
+Key milestones
+  [ ] 1.1  writeError: switch writeFileSync → appendFileSync (or
+           writeFileSync with { flag: "a" }) in both crawl.mjs:1394 and
+           enrich.mjs:276. Add a unit test that asserts two consecutive
+           writeError calls both survive in the log.
+  [ ] 1.2  getRelativeIsoDate: recompute the ET-localized date before
+           applying the offset, so "yesterday" means yesterday-in-ET
+           regardless of local machine TZ or 00:00–05:00 UTC cron fires.
+  [ ] 1.3  render.mjs renderTemplate: reject empty {{}} expressions
+           with a clear error instead of silently returning the whole
+           scope. Add a render-fixture test case.
+  [ ] 1.4  verify.mjs live-headline regex: tighten to require both team
+           abbreviations (2-3 alpha chars each, not any {A-Z}{2,3}) AND
+           a numeric score. Add a negative test for 0-0 placeholders.
+  [ ] 1.5  live-feed.js consecutiveFailures: reset on visibilitychange
+           → visible so re-entry does not start "one failure from
+           backoff".
 
-Exit criteria:
-  - Snapshot test committed and green on main
-  - Plan reviewed
+Required resources
+  - No new deps. Existing test harness covers all four files.
 
-Owner: Dave / Claude Code
-
-
-PHASE 1 — EXTRACT format.mjs + util.mjs (0.5 day)      LOW RISK
---------------------------------------------------------------------------------
-Start with the safest extraction: pure functions with no dependencies.
-
-Milestones:
-  - Create crawl/format.mjs with: formatGameTime, formatShortDate, formatMonthDay,
-    formatWeekday, formatGeneratedAtEt, buildWindSummary, weatherCodeToText,
-    getIsoDate, getRelativeIsoDate
-  - Create crawl/util.mjs with: cloneJson, dedupeStrings, shortTransactionNote,
-    inferPositionFromDescription
-  - crawl.mjs imports from these new modules instead of defining inline
-  - Run full test suite + snapshot oracle after each file move
-
-Resources:
-  - 1 engineer
-  - git mv / rewrite, no dependency changes
-
-Exit criteria:
-  - `npm test` passes (34 tests)
-  - `test/fixtures/expected-payload.json` still matches (byte-identical)
-  - `node scripts/lint.mjs` clean
-
-Owner: Dave / Claude Code
-
-
-PHASE 2 — EXTRACT api/http.mjs + api/weather.mjs (0.5 day)   LOW RISK
---------------------------------------------------------------------------------
-Move the HTTP primitives out before moving anything that depends on them.
-
-Milestones:
-  - crawl/api/http.mjs: fetchJson (imports FETCH_TIMEOUT_MS from ../../config.mjs),
-    fetchSoft
-  - crawl/api/weather.mjs: weather fetch wrapper (thin — just fetchSoft(WEATHER_URL))
-  - crawl.mjs imports fetchJson and fetchSoft from the new module
-  - Re-run tests + snapshot
-
-Resources:
-  - 1 engineer
-  - Tests already cover the rejection path in test/live-feed-fetch.test.mjs
-
-Exit criteria:
-  - Tests pass, snapshot matches, lint clean
-  - fetchJson still honors FETCH_TIMEOUT_MS
-
-Owner: Dave / Claude Code
-
-
-PHASE 3 — EXTRACT api/mlb.mjs (0.5-1 day)              MEDIUM RISK
---------------------------------------------------------------------------------
-Consolidate every MLB Stats API URL in one place so future endpoint changes
-touch one file.
-
-Milestones:
-  - crawl/api/mlb.mjs exports:
-      fetchSchedule({ teamId, date })
-      fetchNextSchedule({ teamId, startDate, endDate })
-      fetchBoxscore({ gamePk })
-      fetchRoster({ teamId })
-      fetchTransactions({ teamId, startDate, endDate })
-      fetchInjuries({ teamId })
-      fetchPitcherStats({ pitcherId, year })
-      fetchStandings({ season })
-  - Each function imports MLB_API_BASE from config.mjs and uses fetchJson
-  - crawl.mjs's main() switches to calling these named functions
-  - Hydrate strings (?hydrate=linescore,probablePitcher,...) stay as constants
-    inside mlb.mjs so the callers don't need to know them
-
-Resources:
-  - 1 engineer
-  - Snapshot oracle confirms hydrate params unchanged
-
-Risk: hydrate parameter ordering matters for cache keys. Keep them identical.
-
-Exit criteria:
-  - Tests pass
-  - Snapshot byte-identical (URLs preserved exactly)
-  - crawl.mjs no longer contains any `statsapi.mlb.com` string literals
-
-Owner: Dave / Claude Code
-
-
-PHASE 4 — EXTRACT resolve/ + validate.mjs + overrides.mjs (0.5 day)  LOW RISK
---------------------------------------------------------------------------------
-Pure logic with clear inputs and outputs — the easiest wins.
-
-Milestones:
-  - crawl/resolve/pitcher.mjs: resolvePitcher (already a helper function)
-  - crawl/resolve/series.mjs: resolveSeriesLabel
-  - crawl/validate.mjs: validateCrawlPayload (imports TODAY recomputed at call
-    time, not at module load)
-  - crawl/overrides.mjs: loadOverrides, applyOverrides, stripHeroOverride,
-    clampOverride, deepMerge (with __delete__ sentinel)
-  - Unit tests for these already exist in test/crawl-helpers.test.mjs — update
-    import paths
-
-Resources:
-  - 1 engineer
-
-Exit criteria:
-  - All 34 tests still pass with updated imports
-  - Snapshot matches
-  - validateCrawlPayload still errors on missing sections (add a negative test
-    if one doesn't already exist)
-
-Owner: Dave / Claude Code
-
-
-PHASE 5 — EXTRACT build/ section builders (1-2 days)   MEDIUM-HIGH RISK
---------------------------------------------------------------------------------
-This is the main structural work. Each section builder is a pure function that
-takes a fixture + live data and returns a section object. Extract one at a time
-and verify the snapshot after each.
-
-Order (easiest first):
-  1. crawl/build/source-notes.mjs     (no dependencies on other sections)
-  2. crawl/build/ticker.mjs           (depends on resolvePitcher + format.mjs)
-  3. crawl/build/roster.mjs           (injury merge, roster highlights)
-  4. crawl/build/rotation.mjs         (depends on fetchPitcherStats, format)
-  5. crawl/build/standings.mjs        (depends on fetchStandings, normalizeGamesBack)
-  6. crawl/build/recap.mjs            (depends on resolvePitcher, extractDecisions, extractKeyPerformers)
-  7. crawl/build/lineup.mjs           (depends on extractBattingOrder, buildTbdBattingOrder)
-  8. crawl/build/game-status.mjs      (depends on many — hand this one last)
-  9. crawl/build/preview.mjs          (depends on buildUpNext + pregame-preview.js)
-  10. crawl/build/hero.mjs            (depends on everything — extract last)
-
-For each extraction:
-  - Create the new file with named exports
-  - Update crawl.mjs import
-  - Remove the original function from crawl.mjs
-  - Run `npm test` and the snapshot oracle
-  - Commit the single extraction
-
-Milestones:
-  - 10 focused commits, one per section
-  - Each commit is individually revertable
-  - After Phase 5, crawl.mjs no longer contains any function named `build*`
-
-Resources:
-  - 1 engineer
-  - Snapshot oracle is the single source of truth — if it diverges, revert
-    and investigate before continuing
-
-Risk: side effects / shared state. Some builders mutate the data object in
-place rather than returning a new section. These must keep doing exactly that
-or the payload will drift. Snapshot catches it.
-
-Exit criteria:
-  - All section builders live under crawl/build/
-  - Tests pass, snapshot matches
-  - crawl.mjs is < 400 lines
-
-Owner: Dave
-
-
-PHASE 6 — EXTRACT payload/ + crawl/index.mjs (0.5 day)   MEDIUM RISK
---------------------------------------------------------------------------------
-Final decomposition of the orchestrator itself.
-
-Milestones:
-  - crawl/payload/live.mjs: buildLivePayload composes section builders
-  - crawl/payload/off-day.mjs: buildOffDayPayload
-  - crawl/payload/game-picker.mjs: pickActiveGame, collectUpcomingGames, isFinalGame
-  - crawl/index.mjs: new entry point. main() reads fixture, fetches from mlb.mjs
-    and weather.mjs, picks active game, calls buildLivePayload or buildOffDayPayload,
-    validates, writes output
-  - crawl.mjs at repo root becomes a 3-line compat shim:
-      import { main } from "./crawl/index.mjs";
-      main().catch((e) => { ... });
-
-Resources:
-  - 1 engineer
-
-Exit criteria:
-  - `node crawl.mjs` runs the full pipeline unchanged
-  - Snapshot matches
-  - Tests pass
-
-Owner: Dave
-
-
-PHASE 7 — UPDATE IMPORT PATHS + REMOVE SHIM (0.5 day)   LOW RISK
---------------------------------------------------------------------------------
-Clean up the compat shim and retarget all internal imports.
-
-Milestones:
-  - test/crawl-helpers.test.mjs imports from the specific new modules instead
-    of from ../crawl.mjs
-  - scripts/lint.mjs (if it imports anything from crawl.mjs) points at
-    the new entry
-  - Delete crawl.mjs at repo root; rename crawl/index.mjs to crawl/main.mjs
-    OR keep crawl.mjs as a 1-line re-export. Preference: keep the shim for
-    backward compat so future tests don't need to know about the directory.
-  - Update package.json scripts if they reference the inner path
-
-Resources:
-  - 1 engineer
-
-Exit criteria:
-  - `npm test` passes
-  - Snapshot matches
-  - `node run.mjs` completes the full pipeline successfully
-  - `wc -l crawl.mjs` is either removed or < 20 lines
-
-Owner: Dave
-
-
-PHASE 8 — CI + RUNTIME VERIFICATION (0.5 day)
---------------------------------------------------------------------------------
-Prove the refactor didn't break production publishing.
-
-Milestones:
-  - Open PR against main with all phase commits
-  - CI runs the full test suite (34 tests)
-  - Manual review of the PR diff
-  - Merge
-  - Watch the next scheduled cron run (daily 13:00 UTC or 15-min game-window
-    refresh) — it should succeed and produce a phillies-wire-data.json shaped
-    exactly like the previous run
-  - If anything breaks, the rollback is a single git revert since the refactor
-    is one PR
-
-Resources:
-  - 1 engineer for the review
-  - 1 scheduled cron run for runtime verification
-
-Exit criteria:
-  - PR merged to main
-  - 2 consecutive cron runs succeed with no regressions
-  - status.json generated_at within 1 hour of expected
-
-Owner: Dave
-
+Acceptance criteria
+  - Two failing runs in a row leave two entries in the error log.
+  - Full vitest + existing pipeline-smoke test green.
+  - No new 4xx / 5xx regressions in the next 48h of cron runs.
 
 ================================================================================
-TOTAL TIMELINE
+  PHASE 2 — Security hardening
+  Duration: 1.5 days · Owner: Dave (design) + Codex (impl) · Priority: high
 ================================================================================
 
-Phase  Description                          Duration    Parallelizable?
-------+------------------------------------+-----------+----------------
-  0     Prep + snapshot oracle              0.5 day     no (blocking)
-  1     format.mjs + util.mjs               0.5 day     no
-  2     api/http + api/weather              0.5 day     no
-  3     api/mlb.mjs                         0.5-1 day   no
-  4     resolve/ + validate + overrides     0.5 day     no
-  5     build/ (10 section builders)        1-2 days    no
-  6     payload/ + crawl/index.mjs          0.5 day     no
-  7     Import paths + shim cleanup         0.5 day     no
-  8     CI + runtime verification           0.5 day     passive wait
+Purpose: close the low-probability, high-impact issues the review flagged.
+None are active vulnerabilities today; this raises defense-in-depth floor.
 
-Total active work: ~5-6 days
-Wall clock (with CI + cron waits): ~6-7 days
+Key milestones
+  [ ] 2.1  enrich.mjs prompt-injection wrapper: wrap user-supplied content
+           in <user_data>...</user_data> delimiters Claude respects.
+           Update the system prompt to ignore instructions inside that
+           block. Post-validate the response for leakage ("As an AI
+           assistant..." etc.).
+  [ ] 2.2  Override file size gate: statSync before readFileSync in
+           crawl.mjs:1297 so a 50 MB crafted override cannot exhaust
+           heap before the existing 50 KB check fires.
+  [ ] 2.3  Content-Security-Policy meta tag in phillies-wire-v2.html:
+             default-src 'self';
+             img-src 'self' https: data:;
+             style-src 'self' 'unsafe-inline';
+             script-src 'self';
+             connect-src 'self' https://statsapi.mlb.com
+                              https://api.open-meteo.com;
+             font-src 'self' https://fonts.gstatic.com;
+             frame-ancestors 'none';
+           Verify no console errors on load (Playwright smoke test).
+  [ ] 2.4  live-feed.js shape validation: check the MLB API response
+           has expected nested structure in buildGameSnapshot before
+           reading deep paths. Fail soft (return previous snapshot).
+  [ ] 2.5  deliver.mjs log privacy: replace "Delivered to ${recipients}"
+           with "Delivered to N recipients" so Actions logs don't leak
+           personal email addresses.
 
-================================================================================
-RESOURCES
-================================================================================
+Required resources
+  - No new deps.
+  - ~30 min for CSP validation via Playwright in the browser.
 
-Personnel:
-  - 1 engineer (Dave or Claude Code pair-work session)
-
-Tooling:
-  - Existing repo + test harness
-  - Node.js 20+ (matches CI)
-  - No new dependencies
-  - The pipeline smoke test (test/pipeline-smoke.test.mjs, added in PR #5) is
-    the primary behavioral oracle
-
-Infrastructure:
-  - GitHub Actions CI (free tier is fine)
-  - The scheduled cron runs for runtime verification
-
-================================================================================
-RISK REGISTER
-================================================================================
-
-R1. Silent payload drift
-    Likelihood: Medium. Some builders mutate the data object in place.
-    Mitigation: snapshot oracle compares byte-for-byte after every extraction.
-
-R2. Import cycle between build modules
-    Likelihood: Low. Dependencies flow one way (util -> format -> api ->
-    resolve -> build -> payload).
-    Mitigation: strict layer ordering. If a build module needs another build
-    module, the shared logic belongs in util.mjs or resolve/.
-
-R3. Production cron runs during the refactor
-    Likelihood: Medium. The 15-min game-window cron fires frequently.
-    Mitigation: do the refactor on a feature branch, never push to main mid-
-    phase. Schedule the final PR merge during a no-game window.
-
-R4. Hydrate parameter ordering in URL changes
-    Likelihood: Low but high impact.
-    Mitigation: snapshot the exact URL strings in the http layer. Freeze them
-    as string constants, not template-concatenation.
-
-R5. Test file import paths break
-    Likelihood: Medium. test/crawl-helpers.test.mjs imports from ../crawl.mjs.
-    Mitigation: keep crawl.mjs as a compatibility shim until Phase 7.
+Acceptance criteria
+  - New unit tests cover 2.1, 2.2, 2.4.
+  - CSP meta tag does not break the live page (verified via CI artifact).
+  - deliver.mjs test covers the log-redaction behavior.
 
 ================================================================================
-EXIT CRITERIA (WHOLE PROJECT)
+  PHASE 3 — crawl.mjs decomposition
+  Duration: 3–5 days · Owner: Codex (impl) + Dave (review) · Priority: medium
 ================================================================================
 
-- [ ] All 34+ existing tests pass on the final branch
-- [ ] test/fixtures/expected-payload.json matches the pre-refactor snapshot
-  (byte-identical)
-- [ ] crawl.mjs at repo root is < 20 lines (shim only)
-- [ ] No file under crawl/ exceeds 300 lines
-- [ ] `npm run pipeline` completes successfully end-to-end
-- [ ] CI passes
-- [ ] 2 scheduled cron runs after merge produce valid output
-- [ ] implementation_plan.txt marked complete and archived
+Purpose: retire the 1,406-line crawl.mjs monolith in favor of focused
+modules under crawl/. Preserves the scope of the previous implementation
+plan (see git history before this commit for the 448-line sub-plan).
+
+Key milestones
+  [ ] 3.1  Create crawl/ subdirectory skeleton:
+             crawl/api/mlb.mjs        (fetchJson, fetchSoft, MLB endpoints)
+             crawl/api/weather.mjs    (Open-Meteo fetch + buildWindSummary)
+             crawl/build/sections.mjs (hero, ticker, source-notes)
+             crawl/build/lineup.mjs   (lineup + rotation + batting order)
+             crawl/build/recap.mjs    (recap + key performers + decisions)
+             crawl/format.mjs         (date/time/shortDate formatters)
+             crawl/validate.mjs       (validateCrawlPayload + schema apply)
+             crawl/overrides.mjs      (loadOverrides + clampOverride + deepMerge)
+  [ ] 3.2  Extract api/* first (lowest churn, pure-I/O seams). Rewire
+           crawl.mjs imports. Test suite must stay green.
+  [ ] 3.3  Extract format.mjs (pure functions, zero state). Update
+           crawl-helpers.test.mjs imports.
+  [ ] 3.4  Extract build/* (pure transforms on fetched payloads). Each
+           extraction is its own commit; each commit leaves tests green.
+  [ ] 3.5  Extract validate.mjs + overrides.mjs.
+  [ ] 3.6  crawl.mjs at repo root reduces to a thin orchestrator
+           (<50 lines). Each crawl/ file stays < 300 lines.
+  [ ] 3.7  Add a snapshot test that serializes the full data payload
+           for a fixture input, so any future extraction regression is
+           caught byte-exactly.
+
+Required resources
+  - No new deps. Existing test harness.
+  - Est. ~3 days of Codex implementation + 1–2 days of Dave review.
+
+Acceptance criteria
+  - All tests green on every commit, not just at the end.
+  - No file under crawl/ exceeds 300 lines.
+  - 2 scheduled cron runs post-merge produce valid output.
+  - Pre- and post-refactor phillies-wire-data.json byte-identical for
+    fixture-driven test input.
 
 ================================================================================
-OUT OF SCOPE
+  PHASE 4 — Module modernization + testability
+  Duration: 2 days · Owner: Dave (design) + Codex (impl) · Priority: medium
 ================================================================================
 
-These belong to separate follow-up sessions:
+Purpose: pay down the readability debt flagged by the review. Each item
+is a small, self-contained refactor.
 
-- Switching from node:https to native fetch (API Design skill recommends it)
-- Replacing the custom template engine in render.mjs with Handlebars
-- Adding retry logic with exponential backoff to MLB fetches (partial
-  coverage exists via fetchSoft)
-- Additional integration tests beyond the smoke test (e.g. snapshot-based
-  tests per section)
-- Documentation generation from JSDoc
-- TypeScript migration or progressive JSDoc typing
+Key milestones
+  [ ] 4.1  enrich.mjs: split main() into runEnrichment(apiKey, input)
+           returning {status, data, error}. main() reduces to I/O +
+           exit-code handling. New unit tests exercise success, skipped,
+           and fallback branches without mocking https.
+  [ ] 4.2  live-feed.js: modernize from ES5 function callbacks to
+           async/await + arrows. Target ~40 fewer lines. Add a
+           browser-stub integration test covering live / final /
+           paused / pregame state transitions.
+  [ ] 4.3  render.mjs renderTemplate: one-line header comment
+           documenting the three-pass order (blocks → triple → double)
+           and why it matters. Rename fetchSoft → fetchJsonOrNull in
+           crawl/ modules.
+  [ ] 4.4  pregame-preview.js: header comment flagging the file as
+           a pure generator (no I/O, no side effects).
+  [ ] 4.5  Extract render.mjs template engine into render/template.mjs
+           (~120 lines) and render/html-builders.mjs (everything else).
+           render.mjs root becomes the orchestrator.
+
+Required resources
+  - No new deps.
+
+Acceptance criteria
+  - Test count grows by ≥5 with new enrich branch tests.
+  - live-feed.js line count drops ≥30.
+  - CI still green; no new lint warnings.
+
+================================================================================
+  PHASE 5 — Feature additions
+  Duration: 2–4 weeks elapsed (parallel work) · Owner: Dave · Priority: growth
+================================================================================
+
+Purpose: grow reader value. Features are independent — ship in any order.
+
+Feature 5A — Bullpen + probable-pitcher head-to-head card
+  Effort: ~3 days
+  Why: highest-leverage per the review. What fans look up during games.
+  Scope:
+    [ ] Fetch last-3-starts line per pitcher via
+        /people/{id}/stats?statGroup=pitching&split=byDateRange
+    [ ] Fetch bullpen availability via /teams/{id}/roster cross-
+        referenced with transactions feed
+    [ ] New template section with pitcher cards + bullpen blurb
+    [ ] verify.mjs contract update
+    [ ] 3+ new test cases
+
+Feature 5B — Standings + wildcard context box
+  Effort: ~1.5 days
+  Why: 30-second "where do we sit" view.
+  Scope:
+    [ ] Fetch /standings?leagueId=104&season=Y once per day
+    [ ] Derive NL East rank + GB + wildcard standing
+    [ ] Compact template block above hero bullets
+    [ ] Fixture + test coverage
+
+Feature 5C — Shareable per-issue OG image
+  Effort: ~2 days
+  Why: every issue becomes a first-class share target.
+  Scope:
+    [ ] Extend buildOgDefaultSvg to per-issue 1200×630 SVG
+        (score + headline + pitcher matchup)
+    [ ] Emit /og/{YYYY-MM-DD}.svg alongside each dated issue
+    [ ] Per-issue meta og:image points at the per-issue path
+    [ ] Playwright visual-snapshot test
+
+Feature 5D — Archive tagging + filterable UI
+  Effort: ~2 days
+  Why: "show me every Phillies–Mets home series" vs. full-text only.
+  Scope:
+    [ ] Extend archive entry schema: opponent, home/away, win/loss,
+        series_name, run_differential
+    [ ] Migrate archive.json on first post-deploy run (backward compat)
+    [ ] Vanilla-JS filter controls on archive/index.html
+    [ ] Unit tests on derivation + integration test on filter UX
+
+Feature 5E — Weekly series digest email
+  Effort: ~2 days
+  Why: reuses the SMTP stack already wired up.
+  Scope:
+    [ ] scripts/series-digest.mjs reads last-7-days archive entries
+    [ ] Separate weekly cron (Sunday AM ET)
+    [ ] Template: series recap, best performer, injury delta
+    [ ] DELIVERY_RECIPIENTS gate shared with daily edition
+
+Feature 5F — (Optional) RSS → email subscription webhook
+  Effort: ~1 day
+  Scope:
+    [ ] Static /subscribe form POSTing to Resend/Postmark
+    [ ] Replace manual DELIVERY_RECIPIENTS list management
+    [ ] One-line fetch; no new runtime deps
+
+Required resources
+  - MLB Stats API (existing).
+  - 5F only: Resend free tier or equivalent.
+
+Acceptance criteria per feature
+  - verify.mjs contract updated to require new sections/data.
+  - Test suite grows per feature.
+  - 3 scheduled cron runs post-feature produce valid output.
+
+================================================================================
+  PHASE 6 — Operational polish
+  Duration: 1.5 days · Owner: Codex (impl) + Dave (review) · Priority: low
+================================================================================
+
+Purpose: close remaining HANDOFF.md follow-ups and the performance
+items the review noted.
+
+Key milestones
+  [ ] 6.1  Self-host fonts: download Barlow Condensed + Inter subsets,
+           bundle under /fonts/, replace Google Fonts preconnect links.
+           Trims 2–3 third-party requests per page load.
+  [ ] 6.2  Email template hardening: dedicated email-safe variant in
+           deliver.mjs with inlined styles + Outlook-compatible table
+           layouts. Manual preview in Litmus / free alternative. Test
+           against Gmail + Outlook Web.
+  [ ] 6.3  Integration test: mocked-MLB fixture exercises the full
+           crawl → enrich (mocked Claude) → render → verify chain and
+           asserts the full output payload.
+  [ ] 6.4  Performance: parallelize per-pitcher stats fetches in
+           crawl.mjs (or crawl/api/mlb.mjs post-Phase-3) with bounded
+           concurrency.
+  [ ] 6.5  render.mjs: replace hand-rolled findMatchingClose with a
+           one-pass tokenizer if the template engine gets extracted
+           in Phase 4.
+
+Required resources
+  - Font subsetting: one-time tool run (pyftsubset or similar).
+  - ~1 hr for Litmus trial account if hardening 6.2 in a real inbox.
+
+Acceptance criteria
+  - First-paint waterfall has zero fonts.googleapis.com /
+    fonts.gstatic.com entries.
+  - Pipeline-smoke test count grows by ≥1 (integration test 6.3).
+
+================================================================================
+  PHASE ORDER + DEPENDENCIES
+================================================================================
+
+  Phase 1 ─ critical bugs ───────────────── unblocked, do first
+              │
+              ▼
+  Phase 2 ─ security hardening ─────────── depends on Phase 1 test baseline
+              │
+              ▼
+  Phase 3 ─ crawl.mjs decomposition ────── depends on Phases 1–2
+              │
+              ▼
+  Phase 4 ─ modernization + testability ── depends on Phase 3 modules
+              │
+              ├────► Phase 5 ─ features (parallelizable across 5A–5F)
+              │
+              ▼
+  Phase 6 ─ operational polish ─────────── can run in parallel with Phase 5
+
+Phases 1 and 2 must land before 3. Phases 4, 5, and 6 can run in
+parallel after 3 merges. Feature sub-items in Phase 5 are independent.
+
+================================================================================
+  OWNERSHIP + CADENCE
+================================================================================
+
+  Dave:
+    - All design decisions (1.2, 2.1, 2.3, 4.1, 5 feature scoping)
+    - All merges to main
+    - Security review on Phase 2 completion
+    - Review of Codex PRs before merge
+
+  Codex:
+    - Deterministic implementation for items Dave has specced
+      (1.1, 1.3, 1.4, 1.5; Phase 3 entirely; Phase 4 mechanical;
+      6.1, 6.4)
+    - Test authorship where the assertion is clear
+
+  Cron:
+    - Daily Phillies Wire edition publish (unchanged)
+    - Game-window refreshes every 15 min (unchanged)
+    - Phase 6.3 integration test runs in CI on every PR
+
+================================================================================
+  ACCEPTANCE CRITERIA — WHOLE PROGRAM
+================================================================================
+
+  [ ] 33/33 existing tests remain green at every commit
+  [ ] Test count grows by ≥15 across Phases 1, 2, 4, and 6
+  [ ] CI success rate stays ≥85% over the next 100 runs
+  [ ] 0 new npm audit vulnerabilities introduced
+  [ ] crawl.mjs at repo root < 50 lines after Phase 3
+  [ ] ≥2 of the 6 Phase 5 features shipped and live
+  [ ] HANDOFF.md follow-ups all closed or explicitly deferred
+  [ ] CHANGELOG.md reflects every user-visible change per phase
+
+================================================================================
+  OUT OF SCOPE (intentionally excluded)
+================================================================================
+
+  - Switching node:https to native fetch globally (works; not urgent).
+  - Replacing the custom template engine with Handlebars.
+  - TypeScript migration or progressive JSDoc typing.
+  - Multi-team / multi-publication support (Phillies-only by design).
+  - Non-free external services (paid CDN, CI tier, monitoring).
+  - Mobile app; web is the only target.
+
+================================================================================
+  CHANGE LOG FOR THIS PLAN
+================================================================================
+
+  2026-04-18  Dave + Claude code review
+              - Supersedes the previous crawl.mjs-only 448-line plan.
+              - Scope expanded to cover all code-review follow-ups
+                (bugs, security, features, performance, readability).
+              - Crawl decomposition retained as Phase 3.
 
 ================================================================================

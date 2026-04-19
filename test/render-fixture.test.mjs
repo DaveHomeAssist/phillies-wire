@@ -97,6 +97,22 @@ runTest("nested {{#each}} inside {{#if}} resolves correctly", () => {
   assert.equal(populate(tpl, { show: false, items: ["a"] }), "");
 });
 
+runTest("whitespace-only {{ }} expression throws instead of stringifying the scope", () => {
+  assert.throws(() => populate("<span>{{ }}</span>", { foo: "bar" }), /Empty/);
+  assert.throws(() => populate("<span>{{   }}</span>", { foo: "bar" }), /Empty/);
+});
+
+runTest("whitespace-only {{{ }}} expression also throws", () => {
+  assert.throws(() => populate("<span>{{{ }}}</span>", { foo: "bar" }), /Empty/);
+});
+
+runTest("completely empty {{}} stays literal (regex never matches)", () => {
+  // No path characters between the braces → the regex doesn't fire,
+  // the substring passes through as inert text. Not a security issue
+  // because the page won't render the token in any meaningful way.
+  assert.equal(populate("<span>{{}}</span>", {}), "<span>{{}}</span>");
+});
+
 function runTest(name, fn) {
   try {
     fn();

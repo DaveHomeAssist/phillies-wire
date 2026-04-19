@@ -198,6 +198,9 @@ export function initLiveFeed(doc, win, fetchImpl) {
 
   activeDoc.addEventListener("visibilitychange", function () {
     if (activeDoc.visibilityState === "visible") {
+      // Reset the failure counter on re-entry so a tab that was hidden
+      // for an hour doesn't resume "one failure away from backoff".
+      consecutiveFailures = 0;
       poll();
     } else {
       clearPollTimer();

@@ -78,8 +78,22 @@ if (data.hero.mode === "final" && data.hero.headline !== data.sections?.recap?.c
   fail("Final hero headline must match the recap summary line.");
 }
 
-if (data.hero.mode === "live" && !/[A-Z]{2,3}\s+\d+,\s+[A-Z]{2,3}\s+\d+/.test(data.hero.headline)) {
+// Live headline must have both team abbreviations (2-3 uppercase letters
+// each) AND numeric scores. Anchor to the whole string so trailing cruft
+// doesn't accidentally satisfy the pattern. Placeholder "AWAY 0, HOME 0"
+// previously slipped through because the fallback abbreviation happened
+// to satisfy {A-Z}{2,3}.
+if (
+  data.hero.mode === "live" &&
+  !/^[A-Z]{2,3}\s+\d+,\s+[A-Z]{2,3}\s+\d+/.test(data.hero.headline)
+) {
   fail("Live hero headline must include both team abbreviations and scores.");
+}
+if (
+  data.hero.mode === "live" &&
+  /^(AWAY|HOME)\s+\d+,\s+(AWAY|HOME)\s+\d+/.test(data.hero.headline)
+) {
+  fail("Live hero headline is using the AWAY/HOME fallback placeholders.");
 }
 
 if (status.date !== data.meta.date || status.publication !== data.meta.publication) {

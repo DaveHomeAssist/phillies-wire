@@ -685,12 +685,18 @@ function renderTemplate(templateString, scope, root) {
   // JSON-LD blocks and inline SVG. Callers are responsible for escaping any
   // content that could terminate the surrounding element.
   output = output.replace(/{{{\s*([^}]+)\s*}}}/g, (_match, path) => {
-    const value = resolvePath(path.trim(), scope, root);
+    const trimmed = path.trim();
+    if (!trimmed) throw new Error("Empty {{{ }}} expression in template.");
+    const value = resolvePath(trimmed, scope, root);
     return value == null ? "" : String(value);
   });
 
   return output.replace(/{{\s*([^#\/][^}]*)\s*}}/g, (_match, path) => {
-    const value = resolvePath(path.trim(), scope, root);
+    const trimmed = path.trim();
+    // Reject empty expressions — resolvePath("", ...) used to return the
+    // whole scope object and silently stringify to "[object Object]".
+    if (!trimmed) throw new Error("Empty {{ }} expression in template.");
+    const value = resolvePath(trimmed, scope, root);
     return escapeHtml(value == null ? "" : String(value));
   });
 }

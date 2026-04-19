@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { appendFileSync, readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
 import { CLAUDE_MODEL, CLAUDE_MAX_TOKENS } from "./config.mjs";
 
@@ -272,8 +272,12 @@ function handleFatal(error) {
 }
 
 function writeError(error) {
-  const message = typeof error === "string" ? error : `[${new Date().toISOString()}] ${error.stack ?? error.message}\n`;
-  writeFileSync(ERROR_LOG, message, "utf8");
+  // Append rather than overwrite. A run that fails twice in a row used to
+  // destroy the first failure's evidence; now both entries survive.
+  const message = typeof error === "string"
+    ? `[${new Date().toISOString()}] ${error}\n`
+    : `[${new Date().toISOString()}] ${error.stack ?? error.message}\n`;
+  appendFileSync(ERROR_LOG, message, "utf8");
 }
 
 async function postJsonWithRetry(url, options) {

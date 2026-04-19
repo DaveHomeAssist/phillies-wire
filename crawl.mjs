@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { appendFileSync, existsSync, readFileSync, writeFileSync } from "node:fs";
 import https from "node:https";
 import { pathToFileURL } from "node:url";
 import { buildPregamePreviewContent, buildRecapPullQuote } from "./pregame-preview.js";
@@ -1228,9 +1228,17 @@ function getIsoDate(date = new Date()) {
 }
 
 function getRelativeIsoDate(offsetDays) {
-  const date = new Date();
-  date.setDate(date.getDate() + offsetDays);
-  return getIsoDate(date);
+  // Anchor the offset on today-in-ET, not today-in-the-runner's-TZ.
+  // Before: date.setDate() operated in the runner's local timezone, which
+  // meant that between 00:00 and 05:00 UTC, "yesterday" was actually
+  // today in America/New_York, and the transactions feed silently missed
+  // the prior day's activity.
+  const todayEt = getIsoDate(new Date());
+  const [year, month, day] = todayEt.split("-").map(Number);
+  // Construct a UTC noon date so arithmetic doesn't straddle DST.
+  const anchor = new Date(Date.UTC(year, month - 1, day, 12, 0, 0));
+  anchor.setUTCDate(anchor.getUTCDate() + offsetDays);
+  return getIsoDate(anchor);
 }
 
 function formatGameTime(isoString) {
@@ -1391,8 +1399,10 @@ function deepMerge(target, source) {
 }
 
 function fail(error) {
+  // Append rather than overwrite so a second failure keeps the first's
+  // evidence available to the diagnostics artifact.
   const message = `[${new Date().toISOString()}] ${error.stack ?? error.message}\n`;
-  writeFileSync(ERROR_LOG, message, "utf8");
+  appendFileSync(ERROR_LOG, message, "utf8");
   console.error(error.message);
   process.exit(1);
 }
