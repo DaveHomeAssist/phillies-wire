@@ -1,4 +1,4 @@
-import { appendFileSync, existsSync, readFileSync, writeFileSync } from "node:fs";
+import { appendFileSync, existsSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import https from "node:https";
 import { pathToFileURL } from "node:url";
 import { buildPregamePreviewContent, buildRecapPullQuote } from "./pregame-preview.js";
@@ -1313,16 +1313,23 @@ function loadDailyProphet() {
 // narrative block we've shipped and still clamps runaway payloads.
 const OVERRIDE_MAX_FIELD_LENGTH = 2000;
 
+const OVERRIDE_MAX_FILE_BYTES = 50_000;
+
 function loadOverrides(date) {
   const path = `./overrides/${date}.json`;
   if (!existsSync(path)) {
     return null;
   }
 
-  const raw = readFileSync(path, "utf8");
-  if (raw.length > 50_000) {
-    throw new Error(`Override file ${path} is suspiciously large (${raw.length} bytes). Aborting.`);
+  // Check file size BEFORE reading. A 50 MB crafted override would
+  // exhaust heap during readFileSync before the existing post-read
+  // length check could fire. statSync is O(1) and doesn't touch data.
+  const { size } = statSync(path);
+  if (size > OVERRIDE_MAX_FILE_BYTES) {
+    throw new Error(`Override file ${path} is suspiciously large (${size} bytes). Aborting.`);
   }
+
+  const raw = readFileSync(path, "utf8");
   const parsed = JSON.parse(raw);
   return clampOverride(parsed);
 }

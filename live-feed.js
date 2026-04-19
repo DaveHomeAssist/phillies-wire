@@ -5,6 +5,22 @@ const MAX_CONSECUTIVE_FAILURES = 4;
 const HERO_MODES = ["pregame", "live", "final", "off_day"];
 const SEPARATOR = " \u00b7 ";
 
+// Shape guards for the two MLB Stats API responses we consume.
+// Return false for anything that doesn't look like the expected
+// structure so the caller can hold the previous snapshot instead
+// of rendering garbage text into the live shell.
+export function isValidLinescore(value) {
+  if (!value || typeof value !== "object") return false;
+  if (value.teams && typeof value.teams !== "object") return false;
+  return true;
+}
+
+export function isValidFeed(value) {
+  if (!value || typeof value !== "object") return false;
+  if (value.gameData && typeof value.gameData !== "object") return false;
+  return true;
+}
+
 export function buildGameSnapshot(input) {
   const source = input || {};
   const linescore = source.linescore || {};
@@ -175,6 +191,13 @@ export function initLiveFeed(doc, win, fetchImpl) {
       fetchJson(activeFetch, "https://statsapi.mlb.com/api/v1.1/game/" + gamePk + "/feed/live?fields=gameData,status,detailedState,teams,home,away,abbreviation,teamName,clubName,name"),
     ])
       .then(function (results) {
+        if (!isValidLinescore(results[0]) || !isValidFeed(results[1])) {
+          // Hold the last good snapshot rather than rendering garbage.
+          // Treat like a transient failure for backoff purposes.
+          consecutiveFailures += 1;
+          scheduleNextPoll(PREVIEW_POLL_MS);
+          return;
+        }
         consecutiveFailures = 0;
         const snapshot = buildGameSnapshot({
           linescore: results[0],

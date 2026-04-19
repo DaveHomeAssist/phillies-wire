@@ -75,7 +75,14 @@ async function main() {
     html: inlinedHtml,
   });
 
-  console.log(`Delivered to ${recipients}`);
+  // Log the count, not the list. Action logs are retained and emails
+  // are PII — a recipient list dumped to stdout ends up searchable in
+  // CI history indefinitely.
+  const count = String(recipients)
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean).length;
+  console.log(`Delivered to ${count} recipient${count === 1 ? "" : "s"}`);
 }
 
 function inlineStyles(html, cssFiles) {
