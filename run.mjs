@@ -5,13 +5,28 @@ import { pathToFileURL } from "node:url";
 const DATA_FILE = "./phillies-wire-data.json";
 const ARCHIVE_FILE = "./archive.json";
 const DEFAULT_VOLUME = 1;
-const PIPELINE_STAGES = ["crawl.mjs", "enrich.mjs", "render.mjs", "verify.mjs"];
+
+// Two operating modes:
+//   daily — the morning publish. Full pipeline: crawl, enrich with Claude,
+//           render, verify, deliver emails. Runs once per day.
+//   live  — game-window refresh. Crawl (preserving morning editorial),
+//           render, verify. No enrich (would burn Anthropic tokens
+//           regenerating the same morning copy). No deliver (would spam
+//           subscribers every 15 minutes during a game).
+const ISSUE_MODE = (process.env.ISSUE_MODE || "daily").toLowerCase();
+const IS_LIVE_REFRESH = ISSUE_MODE === "live";
+
+const DAILY_STAGES = ["crawl.mjs", "enrich.mjs", "render.mjs", "verify.mjs"];
+const LIVE_STAGES  = ["crawl.mjs", "render.mjs", "verify.mjs"];
+const PIPELINE_STAGES = IS_LIVE_REFRESH ? LIVE_STAGES : DAILY_STAGES;
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main();
 }
 
 export function main() {
+  console.log(`Pipeline mode: ${ISSUE_MODE}${IS_LIVE_REFRESH ? " (skipping enrich + deliver)" : ""}`);
+
   for (const stage of PIPELINE_STAGES) {
     const stageEnv = buildStageEnv(stage);
     runNodeStage(stage, stageEnv);
@@ -23,6 +38,11 @@ export function main() {
         `Edition ${editionAction}: Vol. ${editionMeta.volume} No. ${editionMeta.edition} for ${editionMeta.date}`,
       );
     }
+  }
+
+  if (IS_LIVE_REFRESH) {
+    console.log("Delivery skipped: game-window refresh does not send email.");
+    return;
   }
 
   if (process.env.DELIVERY_RECIPIENTS) {

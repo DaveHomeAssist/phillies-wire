@@ -52,8 +52,24 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
 
+      # The 13:00 UTC schedule AND manual workflow_dispatch get the full
+      # pipeline (crawl + enrich + render + verify + deliver). Every other
+      # schedule (the game-window */15 crons) gets the live-refresh path:
+      # crawl preserves the morning's editorial copy, enrich + deliver are
+      # skipped. This stops the refresh from burning Anthropic tokens and
+      # spamming email recipients every 15 minutes during a game.
+      - name: Determine issue mode
+        id: mode
+        run: |
+          if [ "${{ github.event.schedule }}" = "0 13 * * *" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=daily" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=live" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Run pipeline
         env:
+          ISSUE_MODE: ${{ steps.mode.outputs.mode }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}

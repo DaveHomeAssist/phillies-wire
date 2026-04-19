@@ -14,6 +14,22 @@ const YESTERDAY = getRelativeIsoDate(-1);
 const OUTPUT_FILE = "./phillies-wire-data.json";
 const ERROR_LOG = "./crawl-error.log";
 
+// Live-refresh mode: the game-window cron re-crawls every 15 min to update
+// scores, inning, and hero card values. It must NOT overwrite the morning's
+// Claude-enriched editorial copy (pull quotes, preview narrative, ticker
+// items) — enrich.mjs does not run on live refreshes, so a fresh overwrite
+// here would replace good copy with the structured fallback and never
+// regenerate it. When ISSUE_MODE=live, we merge live MLB updates back into
+// the previous payload instead of starting from fixture.
+const IS_LIVE_REFRESH = (process.env.ISSUE_MODE || "").toLowerCase() === "live";
+const EDITORIAL_FIELDS_TO_PRESERVE = [
+  ["ticker"],
+  ["sections", "preview", "content", "narrative"],
+  ["sections", "preview", "content", "pull_quote"],
+  ["sections", "recap", "content", "pull_quote"],
+  ["sections", "game_status", "content", "giveaway"],
+];
+
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((error) => fail(error));
 }
@@ -87,9 +103,49 @@ async function main() {
     weatherResponse,
   });
 
-  validateCrawlPayload(data);
-  writePayload(data);
-  console.log("phillies-wire-data.json written");
+  const finalData = IS_LIVE_REFRESH ? preserveEditorialFromPrevious(data) : data;
+  validateCrawlPayload(finalData);
+  writePayload(finalData);
+  console.log(
+    IS_LIVE_REFRESH
+      ? "phillies-wire-data.json refreshed (editorial preserved)"
+      : "phillies-wire-data.json written",
+  );
+}
+
+function preserveEditorialFromPrevious(freshData) {
+  if (!existsSync(OUTPUT_FILE)) return freshData;
+  let previous;
+  try {
+    previous = JSON.parse(readFileSync(OUTPUT_FILE, "utf8"));
+  } catch {
+    return freshData;
+  }
+  // Only preserve editorial if the previous payload is from the same ET day.
+  // If date rolled over (midnight ET), treat as a fresh crawl.
+  if (!previous?.meta?.date || previous.meta.date !== freshData.meta.date) {
+    return freshData;
+  }
+  for (const path of EDITORIAL_FIELDS_TO_PRESERVE) {
+    const previousValue = getPath(previous, path);
+    if (previousValue !== undefined && previousValue !== null && previousValue !== "") {
+      setPath(freshData, path, previousValue);
+    }
+  }
+  return freshData;
+}
+
+function getPath(obj, path) {
+  return path.reduce((cur, key) => (cur == null ? cur : cur[key]), obj);
+}
+
+function setPath(obj, path, value) {
+  const last = path[path.length - 1];
+  const parent = path.slice(0, -1).reduce((cur, key) => {
+    if (cur[key] == null || typeof cur[key] !== "object") cur[key] = {};
+    return cur[key];
+  }, obj);
+  parent[last] = value;
 }
 
 async function buildLivePayload(context) {
