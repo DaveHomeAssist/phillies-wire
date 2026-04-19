@@ -55,6 +55,12 @@ jobs:
       - name: Run pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASSWORD }}
+          DELIVERY_RECIPIENTS: ${{ secrets.DELIVERY_RECIPIENTS }}
+
         run: node run.mjs
 
       - name: Persist archive snapshot
