@@ -601,7 +601,7 @@ function buildHero(data, game) {
       `${data.sections.game_status.content.weather.temp_f}° · ${data.sections.game_status.content.weather.condition} · ${data.sections.game_status.content.weather.wind}`,
       data.sections.game_status.content.giveaway,
       data.sections.game_status.content.transit,
-    ],
+    ].filter((line) => typeof line === "string" && line.trim().length > 0),
     next_label: data.next_game.label,
     next_value: `${data.next_game.matchup} · ${data.next_game.date} · ${data.next_game.time}`,
   };
