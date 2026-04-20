@@ -74,6 +74,77 @@ runTest("fixture render populates Open Graph and JSON-LD", () => {
   assert.equal(jsonLdMatch[1].trim(), "[\"safe\"]");
 });
 
+runTest("fixture render surfaces freshness labels when provided", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.assets_prefix = "./";
+  data.meta.latest_href = "./";
+  data.meta.archive_href = "./archive/";
+  data.meta.show_sections = true;
+  data.meta.off_day = false;
+  data.meta.game_pk = "0";
+  data.meta.first_pitch_iso = "2026-03-28T20:05:00Z";
+  data.meta.page_title = "T";
+  data.meta.page_description = "D";
+  data.meta.canonical_url = "https://example.com/";
+  data.meta.og_title = "OGT";
+  data.meta.og_description = "OGD";
+  data.meta.og_image = "https://example.com/og.svg";
+  data.meta.og_image_alt = "alt";
+  data.meta.json_ld = "[\"safe\"]";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
+  data.sections.roster.content.as_of_label = "As of Apr 20, 2026, 1:05 PM ET";
+  data.sections.injury_report.content.il_entries[0].freshness_label = "Last confirmed Mar 28, 2026, 10:00 AM ET";
+  data.sections.farm_system.content.last_confirmed_label = "Last confirmed Mar 28, 2026, 10:00 AM ET";
+
+  const html = populate(template, data);
+  assert.match(html, /As of Apr 20, 2026, 1:05 PM ET/);
+  assert.match(html, /Last confirmed Mar 28, 2026, 10:00 AM ET/);
+});
+
+runTest("fixture render surfaces section chips when provided", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.assets_prefix = "./";
+  data.meta.latest_href = "./";
+  data.meta.archive_href = "./archive/";
+  data.meta.show_sections = true;
+  data.meta.off_day = false;
+  data.meta.game_pk = "0";
+  data.meta.first_pitch_iso = "2026-03-28T20:05:00Z";
+  data.meta.page_title = "T";
+  data.meta.page_description = "D";
+  data.meta.canonical_url = "https://example.com/";
+  data.meta.og_title = "OGT";
+  data.meta.og_description = "OGD";
+  data.meta.og_image = "https://example.com/og.svg";
+  data.meta.og_image_alt = "alt";
+  data.meta.json_ld = "[\"safe\"]";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
+  data.sections.recap.chip_label = "Final";
+  data.sections.recap.chip_tone = "final";
+  data.sections.roster.chip_label = "Confirmed";
+  data.sections.roster.chip_tone = "confirmed";
+  data.sections.injury_report.chip_label = "Live";
+  data.sections.injury_report.chip_tone = "live";
+  data.sections.farm_system.chip_label = "Editorial";
+  data.sections.farm_system.chip_tone = "editorial";
+
+  const html = populate(template, data);
+  assert.match(html, /pw-section-chip--final">Final/);
+  assert.match(html, /pw-section-chip--confirmed">Confirmed/);
+  assert.match(html, /pw-section-chip--live">Live/);
+  assert.match(html, /pw-section-chip--editorial">Editorial/);
+});
+
 runTest("triple-brace token emits raw HTML without escaping", () => {
   const html = populate("{{{meta.raw}}}", { meta: { raw: "<em>ok</em>" } });
   assert.equal(html, "<em>ok</em>");

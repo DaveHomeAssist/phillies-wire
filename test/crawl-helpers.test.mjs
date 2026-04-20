@@ -249,6 +249,8 @@ runTest("buildLineupSection uses live boxscore order when both lineups post", ()
 });
 
 runTest("mergeInjuryEntries overlays live injuries onto the fixture baseline", () => {
+  const generatedAt = "2026-04-20T17:05:00Z";
+  const fallbackGeneratedAt = "2026-03-28T14:00:00Z";
   const baseline = [
     { name: "Zack Wheeler", position: "RHP", il_type: "15-Day", badge: "il", injury: "Old note", status_note: "" },
   ];
@@ -269,12 +271,33 @@ runTest("mergeInjuryEntries overlays live injuries onto the fixture baseline", (
       },
     ],
   };
-  const merged = mergeInjuryEntries(baseline, injuryResponse, { transactions: [] });
+  const merged = mergeInjuryEntries(baseline, injuryResponse, { transactions: [] }, generatedAt, fallbackGeneratedAt);
   const byName = Object.fromEntries(merged.map((entry) => [entry.name, entry]));
   assert.equal(byName["Zack Wheeler"].injury, "Thoracic outlet recovery");
   assert.equal(byName["Zack Wheeler"].source, "live");
+  assert.equal(byName["Zack Wheeler"].last_confirmed, generatedAt);
+  assert.match(byName["Zack Wheeler"].freshness_label, /^As of /);
   assert.ok(byName["Ranger Suarez"], "New live-only IL entry should be appended");
   assert.equal(byName["Ranger Suarez"].source, "live");
+  assert.equal(byName["Ranger Suarez"].last_confirmed, generatedAt);
+});
+
+runTest("mergeInjuryEntries preserves fallback freshness when no live injury data arrives", () => {
+  const baseline = [
+    {
+      name: "Max Lazar",
+      position: "RHP",
+      il_type: "15-Day",
+      badge: "dtd",
+      injury: "Left oblique strain",
+      status_note: "Minor per Thomson",
+      last_confirmed: "2026-03-28T14:00:00Z",
+    },
+  ];
+  const merged = mergeInjuryEntries(baseline, null, { transactions: [] }, "2026-04-20T17:05:00Z", "2026-03-28T14:00:00Z");
+  assert.equal(merged[0].source, "fallback");
+  assert.equal(merged[0].last_confirmed, "2026-03-28T14:00:00Z");
+  assert.match(merged[0].freshness_label, /^Last confirmed /);
 });
 
 runTest("normalizeLiveInjuries is resilient to missing optional fields", () => {

@@ -384,10 +384,12 @@ Shipped in 7A (commit pending at bottom of CHANGE LOG)
            pending, live, confirmed, fallback, editorial states.
 
 Key milestones (deferred)
-  [ ] 7B  "As of" and "Last confirmed" timestamps on injuries, roster
-          notes, and farm system blurbs. Needs per-entry last_confirmed
-          ISO timestamp threaded through mergeInjuryEntries and surfaced
-          in the template under each row.
+  [x] 7B  "As of" and "Last confirmed" timestamps on injuries, roster
+          notes, and farm system blurbs. Shipped 2026-04-20. Injuries
+          now carry per-entry last_confirmed + freshness_label via
+          mergeInjuryEntries; roster highlights surface a section-level
+          "As of" label; farm system surfaces a section-level
+          "Last confirmed" label.
   [ ] 7C  "What changed since last issue" module. Diffs the current
           phillies-wire-data.json against the last archive entry, emits
           a compact block listing lineup, injuries, standings, and
@@ -399,10 +401,10 @@ Key milestones (deferred)
           rendered output for duplicates (matchup string appears in
           the hero headline, the hero dek, the game_status preview,
           and the game_status matchup row) and consolidate.
-  [ ] 7F  Generalize the section chip rollout across modules: recap
+  [x] 7F  Generalize the section chip rollout across modules: recap
           gets a "Final" chip, roster gets "Confirmed" / "Fallback",
           injuries get "Live" / "Fallback", farm system gets "Editorial".
-          Drives section-level trust.
+          Shipped 2026-04-20.
 
 Required resources
   - No new deps for 7B, 7E, 7F.
@@ -433,5 +435,20 @@ Acceptance criteria
               - 7A (items 1 through 5 and a partial chip for the
                 lineup accordion) shipped in one commit.
               - 7B through 7F added to the plan as deferred scope.
+
+  2026-04-20  UI governance pass (Phase 7B)
+              - Freshness labels added to roster, injury, and farm
+                modules.
+              - mergeInjuryEntries now stamps last_confirmed and
+                freshness_label, distinguishing live rows ("As of")
+                from fallback rows ("Last confirmed").
+              - Template now renders the freshness metadata; tests
+                updated to cover both the data merge and DOM output.
+
+  2026-04-20  UI governance pass (Phase 7F)
+              - Section chips rolled out across recap, roster,
+                injuries, and farm system.
+              - New chip tones: final, confirmed, live, fallback,
+                editorial. Template and render tests updated.
 
 ================================================================================

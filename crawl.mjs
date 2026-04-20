@@ -299,12 +299,29 @@ async function buildLivePayload(context) {
   data.meta.game_pk = game.gamePk;
   data.meta.first_pitch_iso = game.gameDate;
 
+  const fallbackGeneratedAt = fixture.meta.generated_at ?? data.meta.generated_at;
   data.sections.roster.content.rotation = rotation;
+  data.sections.roster.content.as_of_label = buildFreshnessLabel("As of", data.meta.generated_at);
   data.sections.roster.content.highlights = buildRosterHighlights(rosterResponse, transactionResponse, fixture.sections.roster.content.highlights);
+  data.sections.recap.chip_label = "Final";
+  data.sections.recap.chip_tone = "final";
+  data.sections.roster.chip_label = rosterResponse?.roster ? "Confirmed" : "Fallback";
+  data.sections.roster.chip_tone = rosterResponse?.roster ? "confirmed" : "fallback";
   data.sections.injury_report.content.il_entries = mergeInjuryEntries(
     fixture.sections.injury_report.content.il_entries,
     injuryResponse,
     transactionResponse,
+    data.meta.generated_at,
+    fallbackGeneratedAt,
+  );
+  const hasLiveInjuryFeed = Array.isArray(injuryResponse?.injuries) || Array.isArray(injuryResponse?.roster);
+  data.sections.injury_report.chip_label = hasLiveInjuryFeed ? "Live" : "Fallback";
+  data.sections.injury_report.chip_tone = hasLiveInjuryFeed ? "live" : "fallback";
+  data.sections.farm_system.chip_label = "Editorial";
+  data.sections.farm_system.chip_tone = "editorial";
+  data.sections.farm_system.content.last_confirmed_label = buildFreshnessLabel(
+    "Last confirmed",
+    data.sections.farm_system.content.last_confirmed ?? fallbackGeneratedAt,
   );
   data.sections.standings = {
     title: "NL East Standings",
@@ -945,7 +962,7 @@ function buildRosterHighlights(rosterResponse, transactionResponse, fallback) {
   return deduped.slice(0, 5);
 }
 
-function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse) {
+function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse, generatedAtIso = null, fallbackGeneratedAtIso = null) {
   const transactions = transactionResponse?.transactions ?? [];
   const transactionDescriptions = new Map(
     transactions.map((transaction) => [transaction.person?.fullName, transaction.description]),
@@ -957,7 +974,11 @@ function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse
   // Seed with fixture baseline so we retain editorial-quality context notes
   // for known long-term IL entries.
   for (const entry of fallbackEntries) {
-    byName.set(entry.name, { ...entry });
+    byName.set(entry.name, {
+      ...entry,
+      source: entry.source ?? "fallback",
+      last_confirmed: entry.last_confirmed ?? fallbackGeneratedAtIso ?? null,
+    });
   }
 
   // Overlay live MLB data. New entries are appended; known entries get
@@ -975,11 +996,16 @@ function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse
         retroactive_to: injury.retroactive_to ?? existing.retroactive_to,
         first_eligible: injury.first_eligible ?? existing.first_eligible,
         source: "live",
+        last_confirmed: generatedAtIso ?? existing.last_confirmed ?? fallbackGeneratedAtIso ?? null,
       });
       continue;
     }
 
-    byName.set(injury.name, { ...injury, source: "live" });
+    byName.set(injury.name, {
+      ...injury,
+      source: "live",
+      last_confirmed: generatedAtIso ?? fallbackGeneratedAtIso ?? null,
+    });
   }
 
   // Overlay rehab assignment notes from the transactions feed, which update
@@ -993,11 +1019,17 @@ function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse
     }
     const existing = byName.get(name);
     if (existing) {
-      byName.set(name, { ...existing, status_note: shortTransactionNote(description), badge: existing.badge ?? "rehab" });
+      byName.set(name, {
+        ...existing,
+        status_note: shortTransactionNote(description),
+        badge: existing.badge ?? "rehab",
+        source: "live",
+        last_confirmed: generatedAtIso ?? existing.last_confirmed ?? fallbackGeneratedAtIso ?? null,
+      });
     }
   }
 
-  return Array.from(byName.values());
+  return Array.from(byName.values()).map((entry) => annotateFreshness(entry, fallbackGeneratedAtIso));
 }
 
 function normalizeLiveInjuries(injuryResponse) {
@@ -1416,6 +1448,25 @@ function formatGeneratedAtEt(isoString) {
     hour: "numeric",
     minute: "2-digit",
   }).format(new Date(isoString))} ET`;
+}
+
+function buildFreshnessLabel(prefix, isoString) {
+  if (!prefix || !isoString) {
+    return "";
+  }
+  return `${prefix} ${formatGeneratedAtEt(isoString)}`;
+}
+
+function annotateFreshness(entry, fallbackGeneratedAtIso = null) {
+  const source = entry.source === "live" ? "live" : "fallback";
+  const lastConfirmed = entry.last_confirmed ?? fallbackGeneratedAtIso ?? null;
+  const prefix = source === "live" ? "As of" : "Last confirmed";
+  return {
+    ...entry,
+    source,
+    last_confirmed: lastConfirmed,
+    freshness_label: buildFreshnessLabel(prefix, lastConfirmed),
+  };
 }
 
 function writePayload(data) {

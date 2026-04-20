@@ -256,6 +256,9 @@
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
             {{sections.recap.title}}
+            {{#if sections.recap.chip_label}}
+            <span class="pw-section-chip pw-section-chip--{{sections.recap.chip_tone}}">{{sections.recap.chip_label}}</span>
+            {{/if}}
           </div>
           <div class="pw-acc-preview">{{sections.recap.preview}}</div>
         </div>
@@ -283,6 +286,9 @@
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
             Roster &amp; Lineup
+            {{#if sections.roster.chip_label}}
+            <span class="pw-section-chip pw-section-chip--{{sections.roster.chip_tone}}">{{sections.roster.chip_label}}</span>
+            {{/if}}
           </div>
           <div class="pw-acc-preview">{{sections.roster.preview}}</div>
         </div>
@@ -304,6 +310,9 @@
           </div>
 
           <div class="pw-section-label pw-section-label--spaced">26-Man Roster Highlights</div>
+          {{#if sections.roster.content.as_of_label}}
+          <div class="pw-freshness">{{sections.roster.content.as_of_label}}</div>
+          {{/if}}
           {{#each sections.roster.content.highlights}}
           <div class="pw-player-row">
             <div>
@@ -360,6 +369,9 @@
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
             Injury Report
+            {{#if sections.injury_report.chip_label}}
+            <span class="pw-section-chip pw-section-chip--{{sections.injury_report.chip_tone}}">{{sections.injury_report.chip_label}}</span>
+            {{/if}}
           </div>
           <div class="pw-acc-preview">{{sections.injury_report.preview}}</div>
         </div>
@@ -372,6 +384,7 @@
             <div>
               <div class="pw-player-name">{{this.name}} &middot; {{this.position}}</div>
               <div class="pw-player-detail">{{this.injury}}. {{this.status_note}}{{#if this.target_return}}. Target return: {{this.target_return}}{{/if}}{{#if this.first_eligible}}. First eligible: {{this.first_eligible}}{{/if}}</div>
+              {{#if this.freshness_label}}<div class="pw-player-meta">{{this.freshness_label}}</div>{{/if}}
             </div>
             <span class="pw-badge pw-badge--{{this.badge}}">{{this.il_type}} IL</span>
           </div>
@@ -387,6 +400,9 @@
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
             Farm System
+            {{#if sections.farm_system.chip_label}}
+            <span class="pw-section-chip pw-section-chip--{{sections.farm_system.chip_tone}}">{{sections.farm_system.chip_label}}</span>
+            {{/if}}
           </div>
           <div class="pw-acc-preview">{{sections.farm_system.preview}}</div>
         </div>
@@ -396,6 +412,9 @@
         <div class="pw-acc-body-inner">
           <div class="pw-section-label">{{sections.farm_system.content.affiliate.level}} {{sections.farm_system.content.affiliate.name}}</div>
           <p class="pw-body">{{sections.farm_system.content.affiliate.name}} open against {{sections.farm_system.content.affiliate.opponent}} at {{sections.farm_system.content.affiliate.venue}}. Game {{sections.farm_system.content.affiliate.game_number}} of {{sections.farm_system.content.affiliate.series_games}} runs {{sections.farm_system.content.affiliate.series_dates}}. Stream on {{sections.farm_system.content.affiliate.stream}}. Manager {{sections.farm_system.content.affiliate.manager}} returns for {{sections.farm_system.content.affiliate.manager_note}}.</p>
+          {{#if sections.farm_system.content.last_confirmed_label}}
+          <div class="pw-freshness">{{sections.farm_system.content.last_confirmed_label}}</div>
+          {{/if}}
 
           <div class="pw-section-label pw-section-label--spaced">Names to Watch</div>
           {{#each sections.farm_system.content.names_to_watch}}

@@ -322,6 +322,7 @@ a:hover { text-decoration: underline; }
 .pw-section-chip--official { background: var(--color-active-bg); color: var(--color-active-text); }
 .pw-section-chip--projected { background: var(--color-dtd-bg); color: var(--color-dtd-text); }
 .pw-section-chip--pending { background: rgba(0, 0, 0, 0.08); color: currentColor; }
+.pw-section-chip--final { background: var(--primitive-navy-600, #26355d); color: #fff; }
 .pw-section-chip--live { background: var(--primitive-red-600, #c00); color: #fff; }
 .pw-section-chip--confirmed { background: var(--color-active-bg); color: var(--color-active-text); }
 .pw-section-chip--fallback { background: var(--color-dtd-bg); color: var(--color-dtd-text); }
@@ -710,6 +711,22 @@ a:hover { text-decoration: underline; }
 .pw-body--strong {
   font-weight: var(--weight-semibold);
   color:       var(--color-text);
+}
+
+.pw-freshness,
+.pw-player-meta {
+  color:          var(--color-text-faint);
+  font-size:      var(--text-2xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.pw-freshness {
+  margin-top: var(--space-1);
+}
+
+.pw-player-meta {
+  margin-top: var(--space-1);
 }
 
 
