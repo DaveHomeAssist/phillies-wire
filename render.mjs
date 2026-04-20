@@ -21,6 +21,7 @@ const ISSUES_DIR = "./issues";
 const SITE_DIR = "./site";
 const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./live-feed.js", "./fonts.css"];
 const STATIC_ASSET_DIRS = ["./fonts", "./dashboard"];
+const ISSUE_DATA_SCHEMA_VERSION = "1.3.0";
 const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
 const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
 
@@ -59,6 +60,7 @@ function main() {
   writeFileSync(OUTPUT_FILE, latestHtml, "utf8");
   writeFileSync(INDEX_FILE, latestHtml, "utf8");
   writeFileSync(`${ISSUES_DIR}/${issueDate}/index.html`, issueHtml, "utf8");
+  writeFileSync(`${ISSUES_DIR}/${issueDate}/data.json`, buildIssueDataJson(data), "utf8");
   writeFileSync(`${ARCHIVE_DIR}/index.html`, archiveHtml, "utf8");
   writeFileSync(ARCHIVE_FILE, `${JSON.stringify(archive, null, 2)}\n`, "utf8");
   writeFileSync(STATUS_FILE, `${JSON.stringify(status, null, 2)}\n`, "utf8");
@@ -136,6 +138,34 @@ function buildSiteArtifact({
 
   mkdirSync(`${SITE_DIR}/archive`, { recursive: true });
   writeFileSync(`${SITE_DIR}/archive/index.html`, archiveHtml, "utf8");
+}
+
+// Per-issue machine-readable payload. A minimal, stable subset of the full
+// editorial data suitable for the /dashboard/ surface + any future consumer.
+// See docs/SPEC.md §3.2 for the contract.
+// The ISSUE_DATA_SCHEMA_VERSION constant is declared at the top of the file
+// so it's available when main() runs at module load.
+function buildIssueDataJson(data) {
+  const payload = {
+    schema_version: ISSUE_DATA_SCHEMA_VERSION,
+    meta: {
+      date: data.meta?.date ?? null,
+      edition: data.meta?.edition ?? null,
+      volume: data.meta?.volume ?? null,
+      publication: data.meta?.publication ?? null,
+      generated_at: data.meta?.generated_at ?? null,
+      status: data.meta?.status ?? null,
+    },
+    record: data.record ?? null,
+    hero: data.hero ?? null,
+    sections: {
+      lineup: data.sections?.lineup?.content ? { content: data.sections.lineup.content } : null,
+      game_status: data.sections?.game_status?.content ? { content: data.sections.game_status.content } : null,
+      injury_report: data.sections?.injury_report?.content ? { content: data.sections.injury_report.content } : null,
+    },
+    next_game: data.next_game ?? null,
+  };
+  return `${JSON.stringify(payload, null, 2)}\n`;
 }
 
 function buildRobotsTxt() {

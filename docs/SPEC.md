@@ -1,9 +1,9 @@
 # Phillies Wire — Site Specification
 
-**Version:** 1.3.0 (proposed)
+**Version:** 1.4.0
 **Owner:** Dave Robertson
 **Last revised:** 2026-04-20
-**Status:** Active. v1.2.0 in production; v1.3.0 adds `/dashboard/` surface + per-issue JSON contract.
+**Status:** Active. v1.4.0 ships per-issue `data.json` contract + live Team Health / Lineup / Player Focus panels on `/dashboard/`.
 
 ---
 
@@ -59,16 +59,16 @@ phillies-wire/                                 → GitHub Pages root
 | **RSS** | `/feed.xml` | Standard feed | RSS clients | Every crawl |
 | **JSON archive** | `/archive.json` | Machine-readable index of all editions | Dashboards, scripts | Every crawl |
 
-### 2.2 Proposed future surfaces (v1.4+)
+### 2.2 Proposed future surfaces
 
 | Surface | Path | Status | Notes |
 |---|---|---|---|
-| **Per-issue JSON** | `/issues/<date>/data.json` | v1.3 target | Unlocks Lineup / Injuries / Player Focus on dashboard |
-| **Innings timeline** | `/dashboard/innings/` | v1.4 | Visualizes per-play timeline for live/final editions |
-| **Broadcast view** | `/broadcast/` | v1.5 | Heavy-chart aesthetic (Gemini mockup #2), for large displays |
-| **Editorial view** | `/editorial/` | v1.5 | Magazine-layout weekly recap (Gemini mockup #3) |
+| **Per-issue JSON** | `/issues/<date>/data.json` | ✅ shipped v1.4.0 | Unlocks Lineup / Injuries / Player Focus on dashboard |
+| **Innings timeline** | `/dashboard/innings/` | v1.5 (planned) | Visualizes per-play timeline for live/final editions |
+| **Broadcast view** | `/broadcast/` | v1.6 | Heavy-chart aesthetic (Gemini mockup #2), for large displays |
+| **Editorial view** | `/editorial/` | v1.6 | Magazine-layout weekly recap (Gemini mockup #3) |
 | **Live API proxy** | `/api/now.json` | deferred | Cached live snapshot; only if GitHub Pages latency becomes an issue |
-| **Weekly recap** | `/recaps/<week>/` | v1.6 | Aggregated 7-day narrative |
+| **Weekly recap** | `/recaps/<week>/` | v1.7 | Aggregated 7-day narrative |
 
 ---
 
@@ -102,18 +102,19 @@ phillies-wire/                                 → GitHub Pages root
 }
 ```
 
-### 3.2 Per-issue data (proposed v1.3)
+### 3.2 Per-issue data (schema_version 1.3.0 — shipped v1.4.0)
 
-Write to `site/issues/<date>/data.json` alongside each `index.html`. Subset of the full `phillies-wire-schema.json` that the dashboard actually consumes:
+Written to `site/issues/<date>/data.json` alongside each `index.html` by `render.mjs::buildIssueDataJson()`. Asserted by `verify.mjs` against a 20 KB budget. Fetched by `/dashboard/` at runtime.
 
 ```json
 {
-  "meta": { "date", "edition", "volume", "generated_at", "mode", "mode_label" },
+  "schema_version": "1.3.0",
+  "meta":  { "date", "edition", "volume", "publication", "generated_at", "status" },
   "record": { "wins", "losses", "streak", "division_rank", "division" },
-  "hero": { "mode", "label", "headline", "dek", "summary", "cards", "bullets", "next_label", "next_value" },
+  "hero":   { "mode", "label", "headline", "dek", "summary", "cards", "bullets", "next_label", "next_value" },
   "sections": {
-    "lineup": { "content": { "starters", "batting_order", "first_pitch" } },
-    "game_status": { "content": { "matchup", "first_pitch", "venue", "series", "linescore" } },
+    "lineup":        { "content": { "starters", "batting_order", "first_pitch", "mode_label" } },
+    "game_status":   { "content": { "matchup", "first_pitch", "venue", "series", "linescore", "starters" } },
     "injury_report": { "content": { "il_entries": [...] } }
   },
   "next_game": { "label", "matchup", "date", "time", "broadcast", "venue" }
@@ -121,6 +122,12 @@ Write to `site/issues/<date>/data.json` alongside each `index.html`. Subset of t
 ```
 
 Fields omitted intentionally: `recap.content` (only needed in HTML render), `roster.content` (too big), `farm_system.content` (low-value for dashboard), `preview.content` (only needed in HTML), `ticker` (derivable from hero).
+
+**Budget**: each `data.json` ≤ 20 KB. Current payload ≈ 7–8 KB on typical game days.
+
+**Consumers**:
+- `/dashboard/` — `fetchIssueData(date)` reads this, hydrates Team Health (from `injury_report.il_entries`), Lineup card (from `lineup.batting_order.home`), Player Focus (from `lineup.starters.home` / `next_game`).
+- Future `/dashboard/innings/` will consume the same file for the timeline viz (planned v1.5).
 
 ### 3.3 Live snapshot (from `live-feed.js`)
 

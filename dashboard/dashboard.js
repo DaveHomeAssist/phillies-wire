@@ -284,6 +284,116 @@ function renderEmptyState(error) {
   setText("updated", "—");
 }
 
+async function fetchIssueData(date) {
+  if (!date) return null;
+  try {
+    const r = await fetch(`../issues/${date}/data.json`, { cache: "no-store" });
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+function renderInjuryReport(issueData) {
+  const host = slot("il-entries");
+  if (!host) return;
+  const entries = issueData?.sections?.injury_report?.content?.il_entries;
+  if (!Array.isArray(entries) || !entries.length) {
+    host.innerHTML = '<li class="il-empty">No active IL entries.</li>';
+    return;
+  }
+  host.innerHTML = "";
+  for (const e of entries.slice(0, 5)) {
+    const li = document.createElement("li");
+    li.className = "il-row";
+    li.innerHTML = `
+      <div class="il-head">
+        <div><span class="il-name">${escapeHtml(e.name || "Unknown")}</span> <span class="il-pos">${escapeHtml(e.position || "")}</span></div>
+        <span class="il-badge">${escapeHtml(e.il_type || "IL")}</span>
+      </div>
+      <div class="il-meta">${escapeHtml(e.injury || "")}</div>
+      ${e.status_note ? `<div class="il-meta">${escapeHtml(e.status_note)}</div>` : ""}
+      ${e.target_return ? `<div class="il-return">Target return: ${escapeHtml(e.target_return)}</div>` : ""}
+    `;
+    host.appendChild(li);
+  }
+  const statusPill = el('[data-slot="health-status"]');
+  if (statusPill) statusPill.textContent = `${entries.length} on IL`;
+}
+
+function renderLineup(issueData) {
+  const card = el('[data-card="lineup"]');
+  if (!card) return;
+  const mode = issueData?.meta?.status?.mode || issueData?.hero?.mode;
+  const content = issueData?.sections?.lineup?.content;
+  const order = content?.batting_order?.home;
+  const starter = content?.starters?.home;
+
+  // Show only when lineup is relevant (pregame + live) and we have data.
+  if (!content || !Array.isArray(order) || !order.length || (mode !== "pregame" && mode !== "live")) {
+    card.hidden = true;
+    return;
+  }
+  card.hidden = false;
+
+  setText("lineup-status", content.mode_label || "Posted");
+
+  const starterHost = slot("lineup-starter");
+  if (starterHost) {
+    starterHost.innerHTML = starter
+      ? `
+        <div>
+          <div class="lineup-starter-label">Starter</div>
+          <div class="lineup-starter-name">${escapeHtml(starter.name || "TBD")}</div>
+        </div>
+        <div class="lineup-starter-hand">${escapeHtml(starter.hand ? `Throws ${starter.hand}HP` : "")}</div>
+      `
+      : "";
+  }
+
+  const orderHost = slot("lineup-order");
+  if (orderHost) {
+    orderHost.innerHTML = "";
+    for (const p of order) {
+      const li = document.createElement("li");
+      li.className = "lineup-row";
+      li.innerHTML = `
+        <div class="lineup-slot">${Number.isFinite(p.slot) ? p.slot : "·"}</div>
+        <div class="lineup-name">${escapeHtml(p.name || "TBD")}</div>
+        <div class="lineup-pos">${escapeHtml(p.position || "")} ${p.bats ? `· ${escapeHtml(p.bats)}` : ""}</div>
+      `;
+      orderHost.appendChild(li);
+    }
+  }
+}
+
+function renderPlayerFocus(issueData) {
+  const card = el('[data-card="focus"]');
+  if (!card) return;
+  const next = issueData?.next_game;
+  const starter = issueData?.sections?.lineup?.content?.starters?.home || issueData?.sections?.game_status?.content?.starters?.home;
+
+  if (!starter?.name && !next?.matchup) {
+    card.hidden = true;
+    return;
+  }
+  card.hidden = false;
+
+  const host = slot("focus");
+  if (!host) return;
+  const matchup = next?.matchup || issueData?.sections?.game_status?.content?.matchup || "";
+  const firstPitch = next?.time || issueData?.sections?.game_status?.content?.first_pitch || "";
+  const venue = next?.venue || issueData?.sections?.game_status?.content?.venue || "";
+
+  host.innerHTML = `
+    <div class="focus-role">PHI Starter</div>
+    <div class="focus-name">${escapeHtml(starter?.name || "TBD")}</div>
+    <div class="focus-matchup">${escapeHtml(matchup)}</div>
+    ${firstPitch ? `<div class="focus-line"><span class="focus-label">First Pitch</span><span class="focus-value">${escapeHtml(firstPitch)}</span></div>` : ""}
+    ${venue      ? `<div class="focus-line"><span class="focus-label">Venue</span><span class="focus-value">${escapeHtml(venue)}</span></div>` : ""}
+    ${starter?.hand ? `<div class="focus-line"><span class="focus-label">Handedness</span><span class="focus-value">${escapeHtml(starter.hand + "HP")}</span></div>` : ""}
+  `;
+}
+
 async function init() {
   try {
     const res = await fetch(ARCHIVE_URL, { cache: "no-store" });
@@ -299,6 +409,14 @@ async function init() {
     renderRecord(entries);
     renderActivity(entries);
     renderKeyEvents(entries);
+
+    // Per-issue data.json (schema 1.3.0) — graceful fallback if not yet deployed.
+    const issueData = await fetchIssueData(entries[0].date);
+    if (issueData) {
+      renderInjuryReport(issueData);
+      renderLineup(issueData);
+      renderPlayerFocus(issueData);
+    }
   } catch (e) {
     console.error(e);
     renderEmptyState(e);

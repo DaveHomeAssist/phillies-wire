@@ -4,7 +4,9 @@ const data = readJson("./phillies-wire-data.json");
 const status = readJson("./status.json");
 const archive = readJson("./archive.json");
 const issuePath = `./issues/${data.meta.date}/index.html`;
+const issueDataPath = `./issues/${data.meta.date}/data.json`;
 const siteIssuePath = `./site/issues/${data.meta.date}/index.html`;
+const siteIssueDataPath = `./site/issues/${data.meta.date}/data.json`;
 // Covers the CP1252-in-UTF-8 sequences we've seen in the wild: punctuation
 // and accented characters passed through a double-encoding pipeline.
 const mojibakePattern = /Â·|Â°|â€“|â€”|â€œ|â€\u009d|Ã[\u0080-\u00BF]/;
@@ -16,11 +18,13 @@ const requiredFiles = [
   "./archive.json",
   "./archive/index.html",
   issuePath,
+  issueDataPath,
   "./site/index.html",
   "./site/archive/index.html",
   "./site/archive.json",
   "./site/status.json",
   siteIssuePath,
+  siteIssueDataPath,
   "./live-feed.js",
   "./site/live-feed.js",
   "./robots.txt",
@@ -240,6 +244,30 @@ if (!data.meta.off_day) {
     if (!latestHtml.includes(`id="${hook}"`)) {
       fail(`Latest issue page is missing live hook ${hook}.`);
     }
+  }
+}
+
+// Per-issue data.json contract (schema_version 1.3.0+).
+// Added Sprint 2026-W17 Day 2.2 — unlocks the dashboard's live Team Health,
+// Lineup, and Player Focus panels.
+{
+  const issueData = readJson(issueDataPath);
+  const siteIssueData = readJson(siteIssueDataPath);
+  const required = ["schema_version", "meta", "record", "hero", "sections", "next_game"];
+  for (const key of required) {
+    if (!(key in issueData)) {
+      fail(`Issue data.json is missing required key: ${key}`);
+    }
+  }
+  if (!issueData.schema_version || !/^\d+\.\d+\.\d+$/.test(issueData.schema_version)) {
+    fail(`Issue data.json schema_version must be semver; got "${issueData.schema_version}"`);
+  }
+  if (JSON.stringify(issueData) !== JSON.stringify(siteIssueData)) {
+    fail("Issue data.json and site/ copy differ — site artifact copy broke.");
+  }
+  const issueDataBytes = Buffer.byteLength(JSON.stringify(issueData), "utf8");
+  if (issueDataBytes > 20 * 1024) {
+    fail(`Issue data.json exceeds 20 KB budget (${issueDataBytes} bytes). Strip heavier sections.`);
   }
 }
 

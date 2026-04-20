@@ -148,12 +148,30 @@
       <article class="card card-health" data-card="health">
         <header class="card-head">
           <span class="card-eyebrow">Team Health</span>
-          <span class="card-status" data-slot="health-status">Pending integration</span>
+          <span class="card-status" data-slot="health-status">—</span>
         </header>
-        <div class="health-body">
-          <p class="health-note">Injury details live in each dated edition's HTML. Per-issue JSON is planned for v1.3 so this panel can show the IL list directly.</p>
-          <p class="health-note"><a href="../" class="inline-link">Open today's issue →</a></p>
+        <ul class="il-list" data-slot="il-entries" role="list">
+          <li class="il-empty">Loading injury list…</li>
+        </ul>
+      </article>
+
+      <article class="card card-lineup" data-card="lineup" hidden>
+        <header class="card-head">
+          <span class="card-eyebrow">Lineup</span>
+          <span class="card-status" data-slot="lineup-status">—</span>
+        </header>
+        <div class="lineup-body">
+          <div class="lineup-starter" data-slot="lineup-starter"></div>
+          <ol class="lineup-list" data-slot="lineup-order" role="list" start="1"></ol>
         </div>
+      </article>
+
+      <article class="card card-focus" data-card="focus" hidden>
+        <header class="card-head">
+          <span class="card-eyebrow">Player Focus</span>
+          <span class="card-status">Next start</span>
+        </header>
+        <div class="focus-body" data-slot="focus"></div>
       </article>
 
       <article class="card card-key" data-card="key">
