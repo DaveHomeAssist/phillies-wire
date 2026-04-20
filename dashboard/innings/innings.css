@@ -1,0 +1,236 @@
+/* ============================================
+   PHILLIES WIRE — INNINGS TIMELINE
+   Extends ../dashboard.css — reuses layout shell + motion tokens.
+   ============================================ */
+
+.stage { gap: 18px; }
+
+/* Filter toggle in topbar */
+.filter-group {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--dash-border);
+  border-radius: 10px;
+  padding: 3px;
+  gap: 2px;
+}
+.filter-btn {
+  appearance: none;
+  border: 0; background: transparent;
+  color: var(--dash-ink-dim);
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition:
+    color      var(--t-hover) var(--ease-out-spring),
+    background var(--t-hover) var(--ease-out-spring),
+    transform  var(--t-press) var(--ease-snappy);
+}
+.filter-btn:hover  { color: var(--dash-ink); }
+.filter-btn:active { transform: scale(0.94); }
+.filter-btn[aria-pressed="true"] {
+  background: var(--dash-brand);
+  color: #fff;
+}
+
+/* Matchup card */
+.innings-matchup {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+  padding: 18px 22px;
+  background: linear-gradient(160deg, var(--dash-surface) 0%, var(--dash-surface-raise) 100%);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--dash-radius-lg);
+  box-shadow: var(--dash-shadow);
+  animation: card-enter var(--t-entry) var(--ease-out-spring) both;
+}
+.matchup-head {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: clamp(20px, 2.2vw, 26px);
+  color: var(--dash-ink);
+  line-height: 1.3;
+}
+.matchup-detail {
+  color: var(--dash-ink-dim);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Linescore card */
+.linescore-card {
+  padding: 18px 22px;
+  background: linear-gradient(160deg, var(--dash-surface) 0%, var(--dash-surface-raise) 100%);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--dash-radius-lg);
+  box-shadow: var(--dash-shadow);
+  display: flex; flex-direction: column; gap: 14px;
+  animation: card-enter var(--t-entry) var(--ease-out-spring) 80ms both;
+  overflow: hidden;
+}
+.linescore-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.linescore-note { font-size: 11px; color: var(--dash-ink-quiet); font-style: italic; }
+
+.linescore-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.linescore {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 6px;
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: 14px;
+  min-width: 560px;
+}
+.linescore thead th {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dash-ink-quiet);
+  padding: 6px 0;
+  text-align: center;
+}
+.linescore thead th.team-col  { text-align: left; padding-left: 8px; }
+.linescore thead th.total-col { color: var(--dash-ink-dim); }
+.linescore tbody td,
+.linescore tbody th {
+  padding: 10px 4px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+  color: var(--dash-ink-dim);
+  min-width: 34px;
+}
+.linescore tbody .team-col {
+  text-align: left;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  color: var(--dash-ink);
+  font-family: var(--font-display, "Bangers", sans-serif);
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  min-width: 58px;
+}
+.linescore tbody .total-col {
+  color: var(--dash-ink);
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.04);
+}
+.linescore tbody tr[data-slot="line-home"] th.team-col { color: var(--dash-brand); }
+.linescore td.has-run {
+  color: var(--dash-ink);
+  background: rgba(232, 24, 40, 0.10);
+  border-color: rgba(232, 24, 40, 0.30);
+}
+.linescore td.high-run {
+  background: rgba(232, 24, 40, 0.22);
+  border-color: rgba(232, 24, 40, 0.50);
+  color: #fff;
+}
+.linescore td.current-inning {
+  outline: 2px solid var(--dash-brand);
+  outline-offset: -2px;
+}
+
+/* Plays card */
+.plays-card {
+  padding: 18px 22px;
+  background: linear-gradient(160deg, var(--dash-surface) 0%, var(--dash-surface-raise) 100%);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--dash-radius-lg);
+  box-shadow: var(--dash-shadow);
+  display: flex; flex-direction: column; gap: 14px;
+  animation: card-enter var(--t-entry) var(--ease-out-spring) 160ms both;
+}
+.plays-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.plays-count {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dash-ink-dim);
+}
+
+.plays-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.plays-empty {
+  color: var(--dash-ink-quiet);
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+}
+.plays-empty code {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 12px;
+  color: var(--dash-ink-dim);
+  padding: 1px 4px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
+}
+
+.play-row {
+  display: grid;
+  grid-template-columns: 48px 24px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  animation: row-slide-in var(--t-entry) var(--ease-out-spring) both;
+  transition: background var(--t-hover) var(--ease-out-spring);
+}
+.play-row:hover { background: rgba(255, 255, 255, 0.04); }
+.play-inning {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--dash-ink-quiet);
+  text-align: center;
+}
+.play-marker {
+  width: 20px; height: 20px;
+  display: grid; place-items: center;
+}
+.play-text { color: var(--dash-ink); font-size: 13px; }
+.play-actor { color: var(--dash-ink-quiet); font-size: 11px; font-style: italic; }
+
+.plays-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 11px;
+  color: var(--dash-ink-quiet);
+  font-family: var(--font-mono, ui-monospace, monospace);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+
+/* Event markers */
+.marker {
+  width: 12px; height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.marker-score { background: var(--dash-brand); }
+.marker-hr    { background: var(--dash-gold); clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); border-radius: 0; }
+.marker-key   { background: transparent; border: 2px solid var(--dash-navy-soft); border-radius: 0; transform: rotate(45deg); width: 10px; height: 10px; }
+.marker-k     { background: transparent; color: var(--dash-bad); font-family: var(--font-mono, ui-monospace, monospace); font-weight: 700; font-size: 13px; line-height: 1; border-radius: 0; }
+.marker-k::before { content: "\00d7"; }
+
+/* Mobile — stack nav, compact linescore */
+@media (max-width: 768px) {
+  .innings-matchup { flex-direction: column; gap: 8px; }
+  .linescore { font-size: 12px; min-width: 440px; }
+  .filter-group { align-self: stretch; justify-content: stretch; }
+  .filter-btn { flex: 1; }
+}

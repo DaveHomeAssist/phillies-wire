@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#e81828" />
+<title>Phillies Wire · Innings Timeline</title>
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../../fonts.css" />
+<link rel="stylesheet" href="../../tokens.css" />
+<link rel="stylesheet" href="../dashboard.css" />
+<link rel="stylesheet" href="./innings.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="sidebar-brand" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 4h12"/><path d="M12 4v16"/><path d="M7 20h10"/>
+      </svg>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-item" href="../" data-nav="command" title="Command Center">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+      </a>
+      <a class="nav-item" href="../../" data-nav="issues" title="Issues">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+      </a>
+      <a class="nav-item is-active" href="#" data-nav="analytics" title="Analytics" aria-current="page">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-6M22 20H2"/></svg>
+      </a>
+      <a class="nav-item" href="#" data-nav="live" title="Live Feed">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M8 8a5.66 5.66 0 000 8M16 16a5.66 5.66 0 000-8M5 5a9.9 9.9 0 000 14M19 19a9.9 9.9 0 000-14"/></svg>
+      </a>
+      <a class="nav-item" href="#" data-nav="profile" title="Profile">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a class="nav-item" href="#" data-nav="settings" title="Settings">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33h.01a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v.01a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <main class="stage">
+    <header class="topbar">
+      <div class="topbar-title">
+        <span class="eyebrow">Insights &amp; Reports</span>
+        <h1>Innings Progression</h1>
+        <span class="crumbs">Live Data · Analytics · Reports</span>
+      </div>
+      <div class="topbar-meta">
+        <div class="filter-group" role="group" aria-label="Timeline filter">
+          <button class="filter-btn" data-filter="all" aria-pressed="true">All Plays</button>
+          <button class="filter-btn" data-filter="scoring" aria-pressed="false">Score Changes</button>
+        </div>
+        <a class="icon-btn" href="../" aria-label="Back to Command Center" title="Command Center">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <section class="innings-matchup" data-slot="matchup-card">
+      <div class="matchup-inner">
+        <div class="matchup-head" data-slot="matchup-head">Loading latest edition…</div>
+        <div class="matchup-detail" data-slot="matchup-detail"></div>
+      </div>
+      <div class="matchup-status">
+        <span class="card-status" data-slot="matchup-mode">—</span>
+      </div>
+    </section>
+
+    <section class="linescore-card" aria-label="Linescore">
+      <header class="linescore-head">
+        <span class="card-eyebrow">Linescore</span>
+        <span class="linescore-note" data-slot="linescore-note">Data loaded from each edition's data.json</span>
+      </header>
+      <div class="linescore-wrap">
+        <table class="linescore" aria-live="polite" data-slot="linescore">
+          <thead>
+            <tr>
+              <th scope="col" class="team-col">Team</th>
+              <th scope="col">1</th><th scope="col">2</th><th scope="col">3</th>
+              <th scope="col">4</th><th scope="col">5</th><th scope="col">6</th>
+              <th scope="col">7</th><th scope="col">8</th><th scope="col">9</th>
+              <th scope="col" class="total-col">R</th>
+              <th scope="col" class="total-col">H</th>
+              <th scope="col" class="total-col">E</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-slot="line-away">
+              <th scope="row" class="team-col"><span data-slot="line-away-abbr">—</span></th>
+              <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+              <td class="total-col">—</td><td class="total-col">—</td><td class="total-col">—</td>
+            </tr>
+            <tr data-slot="line-home">
+              <th scope="row" class="team-col"><span data-slot="line-home-abbr">PHI</span></th>
+              <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+              <td class="total-col">—</td><td class="total-col">—</td><td class="total-col">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="plays-card" aria-label="Notable plays">
+      <header class="plays-head">
+        <span class="card-eyebrow">Notable Plays</span>
+        <span class="plays-count" data-slot="plays-count">—</span>
+      </header>
+      <ol class="plays-list" data-slot="plays" role="list">
+        <li class="plays-empty">Per-play feed isn't yet populated by the crawler. Notable plays will appear here once <code>sections.game_status.content.plays</code> lands in the data.json contract (v1.5 target).</li>
+      </ol>
+      <footer class="plays-legend" aria-label="Event legend">
+        <span class="legend-item"><span class="marker marker-score"></span> Score change</span>
+        <span class="legend-item"><span class="marker marker-hr"></span> Home run</span>
+        <span class="legend-item"><span class="marker marker-key"></span> Key play</span>
+        <span class="legend-item"><span class="marker marker-k"></span> Strikeout</span>
+      </footer>
+    </section>
+
+    <footer class="stage-foot">
+      <span>Phillies Wire · Innings Timeline</span>
+      <span class="foot-sep">·</span>
+      <span data-slot="edition">—</span>
+      <span class="foot-sep">·</span>
+      <a href="../" class="foot-link">← Command Center</a>
+    </footer>
+  </main>
+
+  <script type="module" src="./innings.js"></script>
+</body>
+</html>
