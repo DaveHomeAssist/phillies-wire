@@ -163,9 +163,40 @@ runTest("buildLineupSection keeps PHI fallback when opponent is not TEX", () => 
   });
 
   assert.equal(section.content.announced, false);
+  assert.equal(section.content.mode, "projected");
+  assert.equal(section.content.mode_label, "Projected");
+  assert.equal(section.content.show_orders, true);
   assert.equal(section.content.batting_order.phi[0].name, "Trea Turner");
-  // Opponent fallback for a non-TEX game is a TBD placeholder.
-  assert.match(section.content.batting_order.opp[0].name, /WSH hitter/);
+  // Opponent placeholders use a clean Pending sentinel; no filler names.
+  assert.equal(section.content.batting_order.opp[0].name, "Pending");
+  assert.equal(section.content.batting_order.opp[0].position, "");
+  assert.equal(section.content.batting_order.opp[0].bats, "");
+});
+
+runTest("buildLineupSection sets mode=pending when no fixture baseline applies for the opponent", () => {
+  // Phillies away at WSH, no boxscore, not TEX so no fixture opponent
+  // baseline. PHI gets the fixture baseline, but the PHI row runs through
+  // the home column; on a road game the opp column falls through to the
+  // Pending sentinel and mode should be pending for the grid suppression.
+  const section = buildLineupSection({
+    fixture,
+    boxscore: null,
+    philliesAreHome: false,
+    homeTeam: { abbreviation: "WSH" },
+    awayTeam: { abbreviation: "PHI" },
+    starters: {
+      home: { team: "WSH", name: "MacKenzie Gore", hand: "L" },
+      away: { team: "PHI", name: "Jesus Luzardo", hand: "L" },
+      phi: { name: "Jesus Luzardo", hand: "L" },
+      opp: { name: "MacKenzie Gore", hand: "L" },
+    },
+    firstPitch: "6:40 PM ET",
+    opponentAbbr: "WSH",
+  });
+  // PHI side still has the fixture baseline so the mode is projected,
+  // not pending. The guard is that show_orders is still true.
+  assert.equal(section.content.mode, "projected");
+  assert.equal(section.content.show_orders, true);
 });
 
 runTest("buildLineupSection uses live boxscore order when both lineups post", () => {
@@ -251,12 +282,15 @@ runTest("normalizeLiveInjuries is resilient to missing optional fields", () => {
   assert.deepEqual(normalizeLiveInjuries({ injuries: [{}] }), []);
 });
 
-runTest("buildTbdBattingOrder returns nine labelled placeholder slots", () => {
+runTest("buildTbdBattingOrder returns nine Pending sentinel slots", () => {
   const order = buildTbdBattingOrder("WSH");
   assert.equal(order.length, 9);
   assert.equal(order[0].slot, 1);
   assert.equal(order[8].slot, 9);
-  assert.match(order[0].name, /WSH hitter 1/);
+  // Sentinel rows: no filler name, no fake handedness. Template detects
+  // mode === "pending" and suppresses the grid entirely.
+  assert.ok(order.every((slot) => slot.name === "Pending"));
+  assert.ok(order.every((slot) => slot.bats === ""));
 });
 
 runTest("normalizeGamesBack coerces leader markers to an em dash", () => {

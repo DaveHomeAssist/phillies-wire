@@ -304,6 +304,29 @@ a:hover { text-decoration: underline; }
   color: var(--color-dtd-text);
 }
 
+/* Section-level chip shown next to an accordion title. Distinct from
+   pw-status-chip (which sits on the dark masthead) because this one
+   renders on a light body surface. */
+.pw-section-chip {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  margin-left: var(--space-2);
+  background: var(--color-surface-muted, rgba(0, 0, 0, 0.06));
+  color: var(--color-text-strong, currentColor);
+}
+.pw-section-chip--official { background: var(--color-active-bg); color: var(--color-active-text); }
+.pw-section-chip--projected { background: var(--color-dtd-bg); color: var(--color-dtd-text); }
+.pw-section-chip--pending { background: rgba(0, 0, 0, 0.08); color: currentColor; }
+.pw-section-chip--live { background: var(--primitive-red-600, #c00); color: #fff; }
+.pw-section-chip--confirmed { background: var(--color-active-bg); color: var(--color-active-text); }
+.pw-section-chip--fallback { background: var(--color-dtd-bg); color: var(--color-dtd-text); }
+.pw-section-chip--editorial { background: var(--primitive-navy-100, #e6e8ef); color: var(--primitive-navy-600, #26355d); }
+
 .pw-status-text {
   font-size: var(--text-xs);
   color: rgba(255, 255, 255, 0.8);

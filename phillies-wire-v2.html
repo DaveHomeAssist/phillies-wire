@@ -179,13 +179,15 @@
             <span class="pw-info-value">{{sections.game_status.content.giveaway}}</span>
           </div>
           {{/if}}
+          {{#if sections.game_status.content.venue_is_home}}
           <div class="pw-info-row">
             <span class="pw-info-label">SEPTA</span>
             <span class="pw-info-value">{{sections.game_status.content.transit}}</span>
           </div>
+          {{/if}}
           <div class="pw-live-score" id="pw-live-score" data-game-pk="{{meta.game_pk}}" data-first-pitch="{{meta.first_pitch_iso}}" data-venue="{{sections.game_status.content.venue}}" aria-live="polite" aria-atomic="true">
             <span class="pw-live-badge">Live</span>
-            <span class="pw-live-line" id="pw-live-line"><span class="pw-skeleton">Loading score...</span></span>
+            <span class="pw-live-line" id="pw-live-line"><span class="pw-skeleton">Live score starts at first pitch</span></span>
             <div class="pw-live-detail" id="pw-live-detail"><span class="pw-skeleton">Pregame</span></div>
           </div>
         </div>
@@ -198,6 +200,7 @@
           <div class="pw-acc-title">
             <span class="pw-acc-dot"></span>
             Game-Day Lineup
+            <span class="pw-section-chip pw-section-chip--{{sections.lineup.content.mode}}">{{sections.lineup.content.mode_label}}</span>
           </div>
           <div class="pw-acc-preview">{{sections.lineup.preview}}</div>
         </div>
@@ -215,6 +218,7 @@
             <span class="pw-info-value">{{sections.lineup.content.starters.away.name}} ({{sections.lineup.content.starters.away.hand}}HP)</span>
           </div>
 
+          {{#if sections.lineup.content.show_orders}}
           <div class="pw-lineup-columns">
             <div class="pw-lineup-column">
               <div class="pw-section-label pw-section-label--spaced">{{sections.lineup.content.starters.home.team}} Batting Order</div>
@@ -239,6 +243,7 @@
               {{/each}}
             </div>
           </div>
+          {{/if}}
 
           <p class="pw-body pw-body--spaced">{{sections.lineup.content.status_note}}</p>
         </div>

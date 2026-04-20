@@ -355,6 +355,70 @@ parallel after 3 merges. Feature sub-items in Phase 5 are independent.
   - Mobile app; web is the only target.
 
 ================================================================================
+  PHASE 7 — Reader-facing UI governance
+  Duration: 2 to 3 days elapsed · Owner: Dave + Codex · Priority: medium
+================================================================================
+
+Purpose: tighten the reader-facing surface. Replace dummy/placeholder
+content with explicit states, normalize freshness signalling, and
+reduce duplication. Phase 7A landed on 2026-04-20; items 7B to 7E are
+pending.
+
+Shipped in 7A (commit pending at bottom of CHANGE LOG)
+  [x] 7A.1  Opponent lineup placeholders are now a Pending sentinel
+           (name Pending, empty position/bats) and the template suppresses
+           the 9x2 grid when mode is pending. buildTbdBattingOrder rewritten.
+  [x] 7A.2  Three-state lineup mode: official / projected / pending with
+           distinct UI copy and a section chip next to the accordion title.
+           buildLineupSection emits mode + mode_label + show_orders.
+  [x] 7A.3  Live score skeleton copy "Loading score..." replaced with
+           "Live score starts at first pitch" to stop looking like
+           pseudo-data.
+  [x] 7A.4  Transit row is now gated on venue_is_home. SEPTA block hides
+           on road games. crawl.mjs emits venue_is_home derived from
+           philliesAreHome.
+  [x] 7A.5  meta.status.enrich_label flipped from "Awaiting editorial
+           pass" to "Draft edition" for public safety. Internal workflow
+           state no longer leaks to readers.
+  [x] 7A.6  New CSS: .pw-section-chip variants for official, projected,
+           pending, live, confirmed, fallback, editorial states.
+
+Key milestones (deferred)
+  [ ] 7B  "As of" and "Last confirmed" timestamps on injuries, roster
+          notes, and farm system blurbs. Needs per-entry last_confirmed
+          ISO timestamp threaded through mergeInjuryEntries and surfaced
+          in the template under each row.
+  [ ] 7C  "What changed since last issue" module. Diffs the current
+          phillies-wire-data.json against the last archive entry, emits
+          a compact block listing lineup, injuries, standings, and
+          roster-move deltas. Gate behind a data.meta.show_delta flag.
+  [ ] 7D  Tighten standings to a small table emphasizing GB / Last 10 /
+          Streak. De-emphasize W-L% and noisier columns. Depends on
+          Phase 5B landing first (standings fetch + schema).
+  [ ] 7E  Single top-of-page Hero for matchup metadata. Audit the
+          rendered output for duplicates (matchup string appears in
+          the hero headline, the hero dek, the game_status preview,
+          and the game_status matchup row) and consolidate.
+  [ ] 7F  Generalize the section chip rollout across modules: recap
+          gets a "Final" chip, roster gets "Confirmed" / "Fallback",
+          injuries get "Live" / "Fallback", farm system gets "Editorial".
+          Drives section-level trust.
+
+Required resources
+  - No new deps for 7B, 7E, 7F.
+  - 7C depends on archive.json containing enough prior-issue detail;
+    may need a schema bump to store per-section hashes.
+  - 7D blocked on Phase 5B.
+
+Acceptance criteria
+  - No rendered page shows dummy numbered hitter filler.
+  - Road games hide SEPTA. Home games show it.
+  - No public copy contains "Awaiting editorial pass".
+  - Section chips render on every accordion title with a consistent
+    color mapping per the CSS variants.
+  - Test count grows by >= 3 across 7B to 7F.
+
+================================================================================
   CHANGE LOG FOR THIS PLAN
 ================================================================================
 
@@ -363,5 +427,11 @@ parallel after 3 merges. Feature sub-items in Phase 5 are independent.
               - Scope expanded to cover all code-review follow-ups
                 (bugs, security, features, performance, readability).
               - Crawl decomposition retained as Phase 3.
+
+  2026-04-20  UI governance pass (Phase 7A)
+              - 10-item reader-facing checklist accepted from Dave.
+              - 7A (items 1 through 5 and a partial chip for the
+                lineup accordion) shipped in one commit.
+              - 7B through 7F added to the plan as deferred scope.
 
 ================================================================================

@@ -11,7 +11,7 @@
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
-      "enrich_label": "Awaiting editorial pass",
+      "enrich_label": "Draft edition",
       "generated_at_et": "Mar 28, 2026, 10:00 AM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
@@ -60,6 +60,9 @@
       "content": {
         "status_note": "Official lineups typically post roughly two hours before first pitch.",
         "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
+        "show_orders": true,
         "first_pitch": "4:05 PM ET",
         "starters": {
           "home": { "team": "PHI", "name": "Aaron Nola", "hand": "R" },
@@ -116,7 +119,8 @@
           "gusts_mph": 30
         },
         "giveaway": "",
-        "transit": "Broad Street Line to AT&T Station"
+        "transit": "Broad Street Line to AT&T Station",
+        "venue_is_home": true
       }
     },
     "recap": {

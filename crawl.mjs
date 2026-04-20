@@ -201,7 +201,10 @@ async function buildLivePayload(context) {
     mode_label: deriveModeLabel(game),
     crawl_state: "ok",
     enrich_state: "pending",
-    enrich_label: "Awaiting editorial pass",
+    // Public-safe label. Internal "awaiting editorial pass" wording was
+    // being shown to readers; "Draft edition" tells a subscriber the
+    // same thing without exposing workflow state.
+    enrich_label: "Draft edition",
     generated_at_et: formatGeneratedAtEt(data.meta.generated_at),
     source_notes: buildSourceNotes(transactionResponse, fixture, overrides),
   };
@@ -242,6 +245,9 @@ async function buildLivePayload(context) {
     },
     giveaway: fixture.sections.game_status.content.giveaway,
     transit: fixture.sections.game_status.content.transit,
+    // Transit block is Citizens Bank Park / SEPTA specific. Only show it
+    // for home games. Away games hide the transit row entirely.
+    venue_is_home: philliesAreHome,
   };
 
   data.sections.lineup = buildLineupSection({
@@ -469,12 +475,30 @@ function buildLineupSection(context) {
     hand: starters.away?.hand ?? "R",
   };
 
-  const statusNote = announced
-    ? `Official batting orders confirmed for today's ${awayAbbr} at ${homeAbbr} game.`
-    : "Official lineups typically post roughly two hours before first pitch. Holding baseline order until MLB confirms.";
+  // Three-state mode drives template rendering:
+  //   official  both boxscore orders posted
+  //   projected PHI side is a fixture baseline, opponent is pending
+  //   pending   both sides pending (road game, no baseline)
+  let mode;
+  if (announced) {
+    mode = "official";
+  } else if (phiOrder !== oppFallbackOrder && phiOrder.length === 9) {
+    mode = "projected";
+  } else {
+    mode = "pending";
+  }
+  const modeLabel = mode === "official" ? "Official" : mode === "projected" ? "Projected" : "Pending";
 
-  const preview = announced
+  const statusNote = mode === "official"
+    ? `Official batting orders confirmed for today's ${awayAbbr} at ${homeAbbr} game.`
+    : mode === "projected"
+    ? `PHI order is a projected baseline. ${opponentAbbr} lineup posts about two hours before first pitch.`
+    : "Lineups post about two hours before first pitch. Holding until MLB confirms.";
+
+  const preview = mode === "official"
     ? `${homeAbbr} order set · ${starters.phi?.name ?? "TBD"} vs ${starters.opp?.name ?? "TBD"}`
+    : mode === "projected"
+    ? `Projected · ${starters.phi?.name ?? "TBD"} vs ${starters.opp?.name ?? "TBD"}`
     : `Lineups pending · ${starters.phi?.name ?? "TBD"} vs ${starters.opp?.name ?? "TBD"}`;
 
   return {
@@ -482,6 +506,12 @@ function buildLineupSection(context) {
     content: {
       status_note: statusNote,
       announced,
+      mode,
+      mode_label: modeLabel,
+      // Template toggle: render the 9x2 batting order grid only when we
+      // have either confirmed lineups or a projected PHI baseline.
+      // Pending mode suppresses the grid so readers don't see filler rows.
+      show_orders: mode !== "pending",
       first_pitch: firstPitch,
       starters: {
         home: homeStarter,
@@ -499,12 +529,16 @@ function buildLineupSection(context) {
   };
 }
 
-function buildTbdBattingOrder(teamAbbr) {
+// Sentinel row used when a full lineup is not yet posted. The template
+// detects these rows via mode === "pending" and renders a single
+// "lineup pending" message instead of nine numbered filler names.
+// The unused teamAbbr is preserved for callers still labelling by team.
+function buildTbdBattingOrder(_teamAbbr) {
   return Array.from({ length: 9 }, (_, index) => ({
     slot: index + 1,
-    name: `${teamAbbr} hitter ${index + 1}`,
-    position: "TBD",
-    bats: "R",
+    name: "Pending",
+    position: "",
+    bats: "",
   }));
 }
 
