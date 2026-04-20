@@ -344,6 +344,20 @@ body {
   color: var(--dash-ink);
   line-height: 1;
 }
+.streak-strip {
+  display: flex; gap: 4px;
+  margin-top: 8px;
+}
+.streak-dot {
+  flex: 1;
+  height: 10px;
+  min-width: 14px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.streak-dot[data-result="W"] { background: var(--dash-good); }
+.streak-dot[data-result="L"] { background: var(--dash-bad); }
+.streak-dot[title] { cursor: help; }
 
 /* Health */
 .health-body { padding-top: 6px; }
@@ -364,8 +378,21 @@ body {
 }
 .key-row:nth-child(odd) { background: rgba(255, 255, 255, 0.02); }
 .key-date { color: var(--dash-ink-quiet); font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace); font-size: 11px; letter-spacing: 0.08em; }
-.key-text { color: var(--dash-ink-dim); }
-.key-text strong { color: var(--dash-ink); font-weight: 600; }
+.key-text { color: var(--dash-ink-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.key-badge {
+  display: inline-grid; place-items: center;
+  min-width: 22px; height: 22px;
+  padding: 0 6px;
+  border-radius: 6px;
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: 11px; font-weight: 700;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--dash-ink);
+  letter-spacing: 0.08em;
+}
+.key-badge.key-win  { background: rgba(47, 191, 113, 0.18); color: var(--dash-good); }
+.key-badge.key-loss { background: rgba(239, 95, 95, 0.18);  color: var(--dash-bad); }
+.key-dek { color: var(--dash-ink-quiet); font-size: 12px; }
 
 /* Stage footer */
 .stage-foot {

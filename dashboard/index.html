@@ -139,7 +139,8 @@
             <span class="stat-value" data-slot="streak">—</span>
           </div>
           <div class="record-stat record-stat-full">
-            <span class="stat-label">Computed from recent finals</span>
+            <span class="stat-label">Last 10</span>
+            <div class="streak-strip" data-slot="streak-strip" aria-label="Win-loss result for each of the last 10 finals, newest first"></div>
           </div>
         </div>
       </article>
@@ -147,10 +148,11 @@
       <article class="card card-health" data-card="health">
         <header class="card-head">
           <span class="card-eyebrow">Team Health</span>
-          <span class="card-status" data-slot="health-status">—</span>
+          <span class="card-status" data-slot="health-status">Pending integration</span>
         </header>
         <div class="health-body">
-          <p class="health-note">Injury feed comes from the crawler's enrichment pass. Latest <a href="../" class="inline-link">edition</a>.</p>
+          <p class="health-note">Injury details live in each dated edition's HTML. Per-issue JSON is planned for v1.3 so this panel can show the IL list directly.</p>
+          <p class="health-note"><a href="../" class="inline-link">Open today's issue →</a></p>
         </div>
       </article>
 

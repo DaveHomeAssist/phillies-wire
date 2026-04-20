@@ -122,6 +122,25 @@ function renderRecord(entries) {
   setText("streak", rec.streakKind ? `${rec.streakKind}${rec.streak}` : "—");
   const status = el('[data-card="record"] .card-status');
   if (status) status.textContent = `${rec.finalsCount} finals`;
+
+  // Streak strip — last 10 finals, newest → oldest (left → right).
+  const strip = slot("streak-strip");
+  if (strip) {
+    strip.innerHTML = "";
+    const finals = entries
+      .filter(e => e.mode === "final" && typeof e.headline === "string")
+      .map(e => ({ ...e, _score: parseScore(e.headline) }))
+      .filter(e => e._score)
+      .slice(0, 10);
+    for (const g of finals) {
+      const won = g._score.phi > g._score.opp;
+      const dot = document.createElement("div");
+      dot.className = "streak-dot";
+      dot.setAttribute("data-result", won ? "W" : "L");
+      dot.setAttribute("title", `${fmtDateShort(g.date)}: PHI ${g._score.phi} – ${g._score.oppAbbr} ${g._score.opp}`);
+      strip.appendChild(dot);
+    }
+  }
 }
 
 function renderActivity(entries) {
@@ -147,7 +166,8 @@ function renderActivity(entries) {
 }
 
 function renderKeyEvents(entries) {
-  // Until the crawler exposes per-issue highlights, surface a digest of the last 5 finals.
+  // Until per-issue highlight data is exposed, surface a digest of the last 5 finals
+  // with W/L colour so mixed stretches read at a glance.
   const host = slot("key");
   if (!host) return;
   const finals = entries.filter(e => e.mode === "final").slice(0, 5);
@@ -160,13 +180,22 @@ function renderKeyEvents(entries) {
     const li = document.createElement("li");
     li.className = "key-row";
     const score = parseScore(e.headline);
-    const result = score ? (score.phi > score.opp ? "W" : "L") : "·";
+    const won = score && score.phi > score.opp;
+    const result = score ? (won ? "W" : "L") : "·";
+    const cls = score ? (won ? "key-win" : "key-loss") : "";
     li.innerHTML = `
       <div class="key-date">${fmtDateShort(e.date)}</div>
-      <div class="key-text"><strong>${result}</strong> &middot; ${escapeHtml(e.headline || "")} &middot; ${escapeHtml(e.dek || "")}</div>
+      <div class="key-text"><span class="key-badge ${cls}">${result}</span> ${escapeHtml(e.headline || "")} <span class="key-dek">${escapeHtml(e.dek || "")}</span></div>
     `;
     host.appendChild(li);
   }
+
+  // Update the key-status pill with the W/L breakdown so it's obvious when
+  // a stretch is lopsided — prevents "filter defaulting to losses" confusion.
+  const wins   = finals.filter(e => { const s = parseScore(e.headline); return s && s.phi > s.opp; }).length;
+  const losses = finals.length - wins;
+  const statusPill = el('[data-slot="key-status"]');
+  if (statusPill) statusPill.textContent = `${wins}W · ${losses}L (last ${finals.length})`;
 }
 
 function escapeHtml(s) {
