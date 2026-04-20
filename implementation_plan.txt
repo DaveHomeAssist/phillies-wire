@@ -397,10 +397,13 @@ Key milestones (deferred)
   [ ] 7D  Tighten standings to a small table emphasizing GB / Last 10 /
           Streak. De-emphasize W-L% and noisier columns. Depends on
           Phase 5B landing first (standings fetch + schema).
-  [ ] 7E  Single top-of-page Hero for matchup metadata. Audit the
+  [x] 7E  Single top-of-page Hero for matchup metadata. Audit the
           rendered output for duplicates (matchup string appears in
           the hero headline, the hero dek, the game_status preview,
-          and the game_status matchup row) and consolidate.
+          and the game_status matchup row) and consolidate. Shipped
+          2026-04-20. Hero now owns matchup/time/venue/broadcast/
+          series metadata; Game Status keeps only starters, live
+          tracker, and park-note rows.
   [x] 7F  Generalize the section chip rollout across modules: recap
           gets a "Final" chip, roster gets "Confirmed" / "Fallback",
           injuries get "Live" / "Fallback", farm system gets "Editorial".

@@ -146,32 +146,8 @@
       <div class="pw-acc-body" role="region">
         <div class="pw-acc-body-inner">
           <div class="pw-info-row">
-            <span class="pw-info-label">Matchup</span>
-            <span class="pw-info-value">{{sections.game_status.content.matchup}}</span>
-          </div>
-          <div class="pw-info-row">
-            <span class="pw-info-label">First Pitch</span>
-            <span class="pw-info-value">{{sections.game_status.content.first_pitch}}</span>
-          </div>
-          <div class="pw-info-row">
-            <span class="pw-info-label">Venue</span>
-            <span class="pw-info-value">{{sections.game_status.content.venue}}</span>
-          </div>
-          <div class="pw-info-row">
             <span class="pw-info-label">Starters</span>
             <span class="pw-info-value">{{sections.game_status.content.starters.phi.name}} ({{sections.game_status.content.starters.phi.hand}}HP) vs {{sections.game_status.content.starters.opp.name}} ({{sections.game_status.content.starters.opp.hand}}HP)</span>
-          </div>
-          <div class="pw-info-row">
-            <span class="pw-info-label">Series</span>
-            <span class="pw-info-value">{{sections.game_status.content.series.label}}</span>
-          </div>
-          <div class="pw-info-row">
-            <span class="pw-info-label">Broadcast</span>
-            <span class="pw-info-value">{{sections.game_status.content.broadcast.tv}} &middot; {{sections.game_status.content.broadcast.stream}} &middot; {{sections.game_status.content.broadcast.radio}}</span>
-          </div>
-          <div class="pw-info-row">
-            <span class="pw-info-label">Weather</span>
-            <span class="pw-info-value">{{sections.game_status.content.weather.temp_f}}&deg; &middot; {{sections.game_status.content.weather.condition}} &middot; {{sections.game_status.content.weather.wind}}</span>
           </div>
           {{#if sections.game_status.content.giveaway}}
           <div class="pw-info-row">

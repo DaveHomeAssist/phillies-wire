@@ -145,6 +145,47 @@ runTest("fixture render surfaces section chips when provided", () => {
   assert.match(html, /pw-section-chip--editorial">Editorial/);
 });
 
+runTest("fixture render keeps matchup metadata in the hero instead of duplicating Game Status rows", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.assets_prefix = "./";
+  data.meta.latest_href = "./";
+  data.meta.archive_href = "./archive/";
+  data.meta.show_sections = true;
+  data.meta.off_day = false;
+  data.meta.game_pk = "0";
+  data.meta.first_pitch_iso = "2026-03-28T20:05:00Z";
+  data.meta.page_title = "T";
+  data.meta.page_description = "D";
+  data.meta.canonical_url = "https://example.com/";
+  data.meta.og_title = "OGT";
+  data.meta.og_description = "OGD";
+  data.meta.og_image = "https://example.com/og.svg";
+  data.meta.og_image_alt = "alt";
+  data.meta.json_ld = "[\"safe\"]";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
+
+  const html = populate(template, data);
+  const gameStatus = html.match(/<div class="pw-acc-row(?: pw-acc-row--open)?" data-row="game">([\s\S]*?)data-row="lineup"/);
+  assert.ok(gameStatus, "Expected to capture the Game Status accordion block");
+  const gameStatusHtml = gameStatus[1];
+
+  assert.match(html, /pw-hero-card-label">First Pitch/);
+  assert.match(html, /pw-hero-card-label">Venue/);
+  assert.match(gameStatusHtml, /Starters, live tracker, and park notes/);
+  assert.match(gameStatusHtml, /pw-info-label">Starters<\/span>/);
+  assert.doesNotMatch(gameStatusHtml, /pw-info-label">Matchup<\/span>/);
+  assert.doesNotMatch(gameStatusHtml, /pw-info-label">First Pitch<\/span>/);
+  assert.doesNotMatch(gameStatusHtml, /pw-info-label">Venue<\/span>/);
+  assert.doesNotMatch(gameStatusHtml, /pw-info-label">Series<\/span>/);
+  assert.doesNotMatch(gameStatusHtml, /pw-info-label">Broadcast<\/span>/);
+  assert.doesNotMatch(gameStatusHtml, /pw-info-label">Weather<\/span>/);
+});
+
 runTest("triple-brace token emits raw HTML without escaping", () => {
   const html = populate("{{{meta.raw}}}", { meta: { raw: "<em>ok</em>" } });
   assert.equal(html, "<em>ok</em>");

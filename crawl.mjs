@@ -209,7 +209,7 @@ async function buildLivePayload(context) {
     source_notes: buildSourceNotes(transactionResponse, fixture, overrides),
   };
 
-  data.sections.game_status.preview = `${awayTeam.abbreviation} @ ${homeTeam.abbreviation} · ${formatGameTime(game.gameDate)} · ${game.venue.name}`;
+  data.sections.game_status.preview = buildGameStatusPreview(data.meta.status.mode);
 
   const philliesPitcher = resolvePitcher(philliesSide, fixture, "phi");
   const opponentPitcher = resolvePitcher(opponentSide, fixture, "opp");
@@ -696,8 +696,8 @@ function buildHero(data, game) {
       summary: data.sections.recap.content.pull_quote,
       cards: [
         winCard,
+        { label: "Venue", value: data.sections.game_status.content.venue },
         { label: "Series", value: data.sections.game_status.content.series.label },
-        { label: data.next_game.label, value: `${data.next_game.date} · ${data.next_game.time}` },
       ],
       bullets: data.sections.recap.content.key_performers.slice(0, 3).map((performer) => `${performer.name}: ${performer.line}`),
       next_label: data.next_game.label,
@@ -722,7 +722,7 @@ function buildHero(data, game) {
       dek: `${inning} · ${outs}`,
       summary: `${batter} is up against ${pitcher}.${seriesContext ? ` ${seriesContext}` : ""}`,
       cards: [
-        { label: "Matchup", value: data.sections.game_status.content.matchup },
+        { label: "Venue", value: data.sections.game_status.content.venue },
         { label: "Broadcast", value: buildBroadcastLine(data.sections.game_status.content.broadcast) },
         { label: "Weather", value: `${data.sections.game_status.content.weather.temp_f}° · ${data.sections.game_status.content.weather.condition}` },
       ],
@@ -750,12 +750,21 @@ function buildHero(data, game) {
     ],
     bullets: [
       `${data.sections.game_status.content.weather.temp_f}° · ${data.sections.game_status.content.weather.condition} · ${data.sections.game_status.content.weather.wind}`,
-      data.sections.game_status.content.giveaway,
-      data.sections.game_status.content.transit,
+      data.sections.game_status.content.series.label,
     ].filter((line) => typeof line === "string" && line.trim().length > 0),
     next_label: data.next_game.label,
     next_value: `${data.next_game.matchup} · ${data.next_game.date} · ${data.next_game.time}`,
   };
+}
+
+function buildGameStatusPreview(mode) {
+  if (mode === "live") {
+    return "Live tracker, starters, and park notes";
+  }
+  if (mode === "final") {
+    return "Final line, starters, and park notes";
+  }
+  return "Starters, live tracker, and park notes";
 }
 
 function buildTicker(data, transactionResponse, weather) {
