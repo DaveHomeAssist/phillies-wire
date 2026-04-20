@@ -39,6 +39,10 @@ const requiredFiles = [
   "./site/manifest.webmanifest",
   "./site/favicon.svg",
   "./site/og-default.svg",
+  "./latest.json",
+  "./site/latest.json",
+  "./embed/ticker.html",
+  "./site/embed/ticker.html",
 ];
 
 for (const file of requiredFiles) {
@@ -271,7 +275,107 @@ if (!data.meta.off_day) {
   }
 }
 
-console.log("Rendered issue, archive, and site artifact verified");
+// Guard against injected system instructions leaking into rendered output.
+// Incident context: 2026-04-20 session observed an external fetch that
+// returned content containing a fake <system-reminder> block. Not our
+// content, but good hygiene to block it at publish time.
+for (const file of htmlFiles) {
+  const content = readFileSync(file, "utf8");
+  if (/<system-reminder[^>]*>/i.test(content)) {
+    fail(`Rendered HTML contains a system-reminder marker, possible prompt injection: ${file}`);
+  }
+}
+
+// latest.json consumer contract (Upgrade 1).
+// Rule 2 instantiation of the portfolio Definition of Done contract.
+{
+  const latest = readJson("./latest.json");
+  const siteLatest = readJson("./site/latest.json");
+
+  const topRequired = [
+    "schema_version",
+    "publication",
+    "edition_date",
+    "generated_at",
+    "mode",
+    "mode_label",
+    "off_day",
+    "record",
+    "hero",
+    "game",
+    "ticker",
+  ];
+  for (const key of topRequired) {
+    if (!(key in latest)) {
+      fail(`latest.json is missing required key: ${key}`);
+    }
+  }
+
+  if (!latest.schema_version || !/^[a-z-]+\d+\.\d+\.\d+$/.test(latest.schema_version)) {
+    fail(`latest.json schema_version must look like "latest-1.0.0"; got "${latest.schema_version}"`);
+  }
+
+  if (latest.publication !== data.meta.publication) {
+    fail("latest.json publication does not match rendered data.");
+  }
+
+  if (latest.edition_date !== data.meta.date) {
+    fail("latest.json edition_date does not match rendered data.");
+  }
+
+  if (JSON.stringify(latest) !== JSON.stringify(siteLatest)) {
+    fail("latest.json and site/latest.json differ, site artifact copy broke.");
+  }
+
+  if (!latest.off_day) {
+    const gameRequired = ["matchup", "first_pitch", "venue", "starters"];
+    for (const key of gameRequired) {
+      if (latest.game?.[key] == null) {
+        fail(`latest.json game.${key} is required when off_day is false.`);
+      }
+    }
+  }
+
+  if (!Array.isArray(latest.ticker)) {
+    fail("latest.json ticker must be an array.");
+  }
+
+  // Freshness: generated_at must be a valid ISO timestamp within the last 26 hours.
+  // 26 = cron cadence (daily) + 2 hour grace for delivery lag.
+  const generatedAt = Date.parse(latest.generated_at);
+  if (Number.isNaN(generatedAt)) {
+    fail(`latest.json generated_at is not a valid ISO timestamp: ${latest.generated_at}`);
+  }
+  const ageHours = (Date.now() - generatedAt) / (1000 * 60 * 60);
+  if (ageHours > 26) {
+    fail(`latest.json generated_at is stale by ${ageHours.toFixed(1)} hours.`);
+  }
+}
+
+// Ticker embed scaffold (Upgrade 4). Must render all four states and stay
+// self contained so third parties can iframe it safely.
+{
+  const tickerHtml = readFileSync("./embed/ticker.html", "utf8");
+  const siteTicker = readFileSync("./site/embed/ticker.html", "utf8");
+  const requiredFns = ["renderPregame", "renderLive", "renderFinal", "renderOffDay"];
+  for (const fn of requiredFns) {
+    if (!tickerHtml.includes(fn)) {
+      fail(`embed/ticker.html is missing render function: ${fn}`);
+    }
+  }
+  if (tickerHtml !== siteTicker) {
+    fail("embed/ticker.html and site/embed/ticker.html differ.");
+  }
+  // Iframe safety: no external script src or stylesheet href.
+  if (/<script\s+[^>]*src=/i.test(tickerHtml)) {
+    fail("embed/ticker.html must be inline; no external <script src=>.");
+  }
+  if (/<link\s+[^>]*href=/i.test(tickerHtml)) {
+    fail("embed/ticker.html must be inline; no external <link href=>.");
+  }
+}
+
+console.log("Rendered issue, archive, data.json, latest.json, ticker, and site artifact verified");
 
 function readJson(path) {
   if (!existsSync(path)) {
