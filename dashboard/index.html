@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#e81828" />
+<title>Phillies Wire · Command Center</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../fonts.css" />
+<link rel="stylesheet" href="../tokens.css" />
+<link rel="stylesheet" href="./dashboard.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="sidebar-brand" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 4h12" />
+        <path d="M12 4v16" />
+        <path d="M7 20h10" />
+      </svg>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-item is-active" href="#" data-nav="command" aria-current="page" title="Command Center">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+      </a>
+      <a class="nav-item" href="../" data-nav="issues" title="Issues">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+      </a>
+      <a class="nav-item" href="#" data-nav="analytics" title="Analytics">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-6M22 20H2"/></svg>
+      </a>
+      <a class="nav-item" href="#" data-nav="live" title="Live Feed">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M8 8a5.66 5.66 0 000 8M16 16a5.66 5.66 0 000-8M5 5a9.9 9.9 0 000 14M19 19a9.9 9.9 0 000-14"/></svg>
+      </a>
+      <a class="nav-item" href="#" data-nav="profile" title="Profile">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a class="nav-item" href="#" data-nav="settings" title="Settings">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33h.01a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v.01a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <main class="stage">
+    <header class="topbar">
+      <div class="topbar-title">
+        <span class="eyebrow">Insights &amp; Reports</span>
+        <h1>Command Center</h1>
+        <span class="crumbs">Live Data · Analytics · Reports</span>
+      </div>
+      <div class="topbar-meta">
+        <button class="icon-btn" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16V11a6 6 0 00-12 0v5l-2 2v1h16v-1l-2-2z"/><path d="M10 20a2 2 0 004 0"/></svg>
+        </button>
+        <div class="user-chip">
+          <div class="user-avatar" aria-hidden="true">DR</div>
+          <div class="user-meta">
+            <span class="user-name">Dave R.</span>
+            <span class="user-role">Analyst</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid" id="dash-grid">
+
+      <article class="card card-hero" data-card="hero">
+        <header class="card-head">
+          <span class="card-eyebrow">Live Score</span>
+          <span class="card-status" data-slot="mode">—</span>
+        </header>
+        <div class="hero-body">
+          <div class="hero-score">
+            <div class="team team-phi">
+              <div class="team-logo" aria-hidden="true">P</div>
+              <div class="team-detail">
+                <span class="team-abbr">PHI</span>
+                <span class="team-name">Phillies</span>
+              </div>
+              <span class="team-runs" data-slot="phi-runs">—</span>
+            </div>
+            <div class="hero-divider" aria-hidden="true">·</div>
+            <div class="team team-opp">
+              <span class="team-runs" data-slot="opp-runs">—</span>
+              <div class="team-detail">
+                <span class="team-abbr" data-slot="opp-abbr">—</span>
+                <span class="team-name" data-slot="opp-name">Opponent</span>
+              </div>
+              <div class="team-logo team-logo-opp" aria-hidden="true" data-slot="opp-initial">—</div>
+            </div>
+          </div>
+          <p class="hero-headline" data-slot="headline">Loading latest edition…</p>
+          <p class="hero-dek" data-slot="dek">Pulling from archive.json</p>
+        </div>
+        <footer class="card-foot">
+          <span class="foot-label">Last Update</span>
+          <span class="foot-value" data-slot="updated">—</span>
+        </footer>
+      </article>
+
+      <article class="card card-next" data-card="next">
+        <header class="card-head">
+          <span class="card-eyebrow">Next Game</span>
+          <span class="card-status">Scheduled</span>
+        </header>
+        <div class="next-body" data-slot="next">
+          <p class="next-empty">Next game details appear after the crawler fetches tomorrow's schedule.</p>
+        </div>
+      </article>
+
+      <article class="card card-activity" data-card="activity">
+        <header class="card-head">
+          <span class="card-eyebrow">Activity Feed</span>
+          <span class="card-status">Last 10</span>
+        </header>
+        <ul class="activity-list" data-slot="activity" role="list">
+          <li class="activity-empty">No entries yet.</li>
+        </ul>
+      </article>
+
+      <article class="card card-record" data-card="record">
+        <header class="card-head">
+          <span class="card-eyebrow">Record Watch</span>
+          <span class="card-status" data-slot="record-status">—</span>
+        </header>
+        <div class="record-body">
+          <div class="record-stat">
+            <span class="stat-label">Wins</span>
+            <span class="stat-value" data-slot="wins">—</span>
+          </div>
+          <div class="record-stat">
+            <span class="stat-label">Losses</span>
+            <span class="stat-value" data-slot="losses">—</span>
+          </div>
+          <div class="record-stat">
+            <span class="stat-label">Streak</span>
+            <span class="stat-value" data-slot="streak">—</span>
+          </div>
+          <div class="record-stat record-stat-full">
+            <span class="stat-label">Computed from recent finals</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card-health" data-card="health">
+        <header class="card-head">
+          <span class="card-eyebrow">Team Health</span>
+          <span class="card-status" data-slot="health-status">—</span>
+        </header>
+        <div class="health-body">
+          <p class="health-note">Injury feed comes from the crawler's enrichment pass. Latest <a href="../" class="inline-link">edition</a>.</p>
+        </div>
+      </article>
+
+      <article class="card card-key" data-card="key">
+        <header class="card-head">
+          <span class="card-eyebrow">Key Events</span>
+          <span class="card-status" data-slot="key-status">Season</span>
+        </header>
+        <ul class="key-list" data-slot="key" role="list">
+          <li class="key-empty">Pulled from recent editions.</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <footer class="stage-foot">
+      <span>Phillies Wire · Command Center</span>
+      <span class="foot-sep">·</span>
+      <span>Edition <span data-slot="edition">—</span></span>
+      <span class="foot-sep">·</span>
+      <a href="../" class="foot-link">View latest issue →</a>
+    </footer>
+  </main>
+
+  <script type="module" src="./dashboard.js"></script>
+</body>
+</html>

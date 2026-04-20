@@ -20,7 +20,7 @@ const ARCHIVE_DIR = "./archive";
 const ISSUES_DIR = "./issues";
 const SITE_DIR = "./site";
 const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./live-feed.js", "./fonts.css"];
-const STATIC_ASSET_DIRS = ["./fonts"];
+const STATIC_ASSET_DIRS = ["./fonts", "./dashboard"];
 const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
 const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
 
