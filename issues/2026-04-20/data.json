@@ -5,14 +5,14 @@
     "edition": 22,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-20T23:18:32.529Z",
+    "generated_at": "2026-04-20T23:46:13.600Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 20, 2026, 7:18 PM ET",
+      "generated_at_et": "Apr 20, 2026, 7:46 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, CHC 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Colin Rea. Series: Regular Season.",
+    "dek": "Bottom 1st · 0 outs",
+    "summary": "Nico Hoerner is up against Aaron Nola. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "49° · Partly cloudy"
+        "value": "48° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Colin Rea on the mound",
+      "Nico Hoerner at the plate",
+      "Aaron Nola on the mound",
       "Wrigley Field, Chicago"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 49,
-          "condition": "Partly cloudy",
-          "wind": "13 mph · gusts 22",
+          "temp_f": 48,
+          "condition": "Mostly sunny",
+          "wind": "12 mph · gusts 22",
           "gusts_mph": 22
         },
         "giveaway": "",
