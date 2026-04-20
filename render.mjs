@@ -15,12 +15,13 @@ const TEMPLATE_FILE = "./phillies-wire-v2.html";
 const OUTPUT_FILE = "./phillies-wire-output.html";
 const INDEX_FILE = "./index.html";
 const STATUS_FILE = "./status.json";
+const LATEST_FILE = "./latest.json";
 const ARCHIVE_FILE = "./archive.json";
 const ARCHIVE_DIR = "./archive";
 const ISSUES_DIR = "./issues";
 const SITE_DIR = "./site";
 const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./live-feed.js", "./fonts.css"];
-const STATIC_ASSET_DIRS = ["./fonts", "./dashboard"];
+const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed"];
 const ISSUE_DATA_SCHEMA_VERSION = "1.3.0";
 const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
 const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
@@ -53,6 +54,7 @@ function main() {
   assertNoUnresolvedTokens(issueHtml);
   const archiveHtml = renderArchivePage(archive);
   const status = buildStatusPayload(data, archive);
+  const latest = buildLatestPayload(data);
 
   mkdirSync(`${ISSUES_DIR}/${issueDate}`, { recursive: true });
   mkdirSync(ARCHIVE_DIR, { recursive: true });
@@ -64,6 +66,7 @@ function main() {
   writeFileSync(`${ARCHIVE_DIR}/index.html`, archiveHtml, "utf8");
   writeFileSync(ARCHIVE_FILE, `${JSON.stringify(archive, null, 2)}\n`, "utf8");
   writeFileSync(STATUS_FILE, `${JSON.stringify(status, null, 2)}\n`, "utf8");
+  writeFileSync(LATEST_FILE, `${JSON.stringify(latest, null, 2)}\n`, "utf8");
 
   const robotsTxt = buildRobotsTxt();
   const sitemapXml = buildSitemapXml(archive);
@@ -84,6 +87,7 @@ function main() {
     archive,
     archiveHtml,
     status,
+    latest,
     robotsTxt,
     sitemapXml,
     feedXml,
@@ -92,7 +96,7 @@ function main() {
     ogSvg,
   });
 
-  console.log("Rendered latest issue, dated issue page, archive, RSS, sitemap, and site artifact");
+  console.log("Rendered latest issue, dated issue page, archive, RSS, sitemap, latest.json, and site artifact");
 }
 
 function buildSiteArtifact({
@@ -100,6 +104,7 @@ function buildSiteArtifact({
   archive,
   archiveHtml,
   status,
+  latest,
   robotsTxt,
   sitemapXml,
   feedXml,
@@ -113,6 +118,7 @@ function buildSiteArtifact({
   writeFileSync(`${SITE_DIR}/index.html`, latestHtml, "utf8");
   writeFileSync(`${SITE_DIR}/archive.json`, `${JSON.stringify(archive, null, 2)}\n`, "utf8");
   writeFileSync(`${SITE_DIR}/status.json`, `${JSON.stringify(status, null, 2)}\n`, "utf8");
+  writeFileSync(`${SITE_DIR}/latest.json`, `${JSON.stringify(latest, null, 2)}\n`, "utf8");
   writeFileSync(`${SITE_DIR}/robots.txt`, robotsTxt, "utf8");
   writeFileSync(`${SITE_DIR}/sitemap.xml`, sitemapXml, "utf8");
   writeFileSync(`${SITE_DIR}/feed.xml`, feedXml, "utf8");
@@ -832,6 +838,48 @@ function buildStatusPayload(data, archive) {
     archive_path: "archive/",
     archive_entries: archive.entries.length,
     status: data.meta.status ?? {},
+  };
+}
+
+// Consumer-facing payload for external embeds (ticker widget, calendar feeds,
+// Ballparks Quest integration, etc.). Curated subset of the canonical data
+// file. Upgrade 1 of the Wire + Schedule + Quest unification plan.
+function buildLatestPayload(data) {
+  const meta = data.meta ?? {};
+  const gameStatus = data.sections?.game_status?.content ?? {};
+  const hero = data.hero ?? {};
+  return {
+    schema_version: "latest-1.0.0",
+    publication: meta.publication,
+    edition_date: meta.date,
+    volume: meta.volume ?? null,
+    edition: meta.edition ?? null,
+    generated_at: meta.generated_at,
+    mode: meta.status?.mode ?? hero.mode ?? null,
+    mode_label: meta.status?.mode_label ?? hero.label ?? null,
+    off_day: meta.off_day ?? false,
+    record: data.record ?? null,
+    hero: {
+      headline: hero.headline ?? null,
+      dek: hero.dek ?? null,
+      summary: hero.summary ?? null,
+      next_label: hero.next_label ?? null,
+      next_value: hero.next_value ?? null,
+    },
+    game: {
+      matchup: gameStatus.matchup ?? null,
+      first_pitch: gameStatus.first_pitch ?? null,
+      venue: gameStatus.venue ?? null,
+      starters: gameStatus.starters ?? null,
+      series: gameStatus.series ?? null,
+      broadcast: gameStatus.broadcast ?? null,
+      weather: gameStatus.weather ?? null,
+      score: gameStatus.score ?? null,
+      inning: gameStatus.inning ?? null,
+      situation: gameStatus.situation ?? null,
+      recap_line: gameStatus.recap_line ?? null,
+    },
+    ticker: Array.isArray(data.ticker) ? data.ticker : [],
   };
 }
 
