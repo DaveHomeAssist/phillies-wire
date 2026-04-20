@@ -123,6 +123,13 @@ function renderRecord(entries) {
   const status = el('[data-card="record"] .card-status');
   if (status) status.textContent = `${rec.finalsCount} finals`;
 
+  // L3+ streak alert — one-time pulse on mount
+  const recordCard = el('[data-card="record"]');
+  if (recordCard) {
+    const isLosingStreak = rec.streakKind === "L" && rec.streak >= 3;
+    recordCard.dataset.streakAlert = isLosingStreak ? "true" : "false";
+  }
+
   // Streak strip — last 10 finals, newest → oldest (left → right).
   const strip = slot("streak-strip");
   if (strip) {
