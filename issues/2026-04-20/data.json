@@ -5,14 +5,14 @@
     "edition": 22,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-20T22:46:59.947Z",
+    "generated_at": "2026-04-20T23:17:02.373Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 20, 2026, 6:46 PM ET",
+      "generated_at_et": "Apr 20, 2026, 7:17 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Cubs · Game 1",
-    "dek": "Aaron Nola vs Colin Rea",
-    "summary": "Aaron Nola vs Colin Rea · Phillies @ Cubs · Game 1",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, CHC 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Colin Rea. Series: Regular Season.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "7:40 PM"
-      },
       {
         "label": "Venue",
         "value": "Wrigley Field, Chicago"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP+ · MLB.TV · 94.1 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "49° · Partly cloudy"
       }
     ],
     "bullets": [
-      "50° · Overcast · 13 mph · gusts 21",
-      "Regular Season"
+      "Trea Turner at the plate",
+      "Colin Rea on the mound",
+      "Wrigley Field, Chicago"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Shota Imanaga · CHC vs PHI · Tue, Apr 21 · 7:40 PM"
@@ -345,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 50,
-          "condition": "Overcast",
-          "wind": "13 mph · gusts 21",
-          "gusts_mph": 21
+          "temp_f": 49,
+          "condition": "Partly cloudy",
+          "wind": "13 mph · gusts 22",
+          "gusts_mph": 22
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
