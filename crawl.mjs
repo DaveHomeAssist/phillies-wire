@@ -1,13 +1,34 @@
 import { appendFileSync, existsSync, readFileSync, statSync, writeFileSync } from "node:fs";
-import https from "node:https";
 import { pathToFileURL } from "node:url";
 import { buildPregamePreviewContent, buildRecapPullQuote } from "./pregame-preview.js";
 import {
-  MLB_API_BASE,
-  WEATHER_URL,
+  createFetchSoft,
+  fetchDailyMlbData,
+  fetchGameDetail,
+  fetchPitcherStats,
+  fetchStandings,
+} from "./crawl/api/mlb.mjs";
+import { fetchWeatherData } from "./crawl/api/weather.mjs";
+import {
+  buildBroadcastLine,
+  buildFreshnessLabel,
+  buildSeriesContext,
+  buildWindSummary,
+  deriveMode,
+  deriveModeLabel,
+  formatGameTime,
+  formatGeneratedAtEt,
+  formatMonthDay,
+  formatShortDate,
+  formatWeekday,
+  getIsoDate,
+  getRelativeIsoDate,
+  isFinalGame,
+  weatherCodeToText,
+} from "./crawl/format.mjs";
+import {
   TEAM_ID,
   SCHEMA_VERSION,
-  FETCH_TIMEOUT_MS,
 } from "./config.mjs";
 const TODAY = getIsoDate();
 const YESTERDAY = getRelativeIsoDate(-1);
@@ -44,38 +65,24 @@ export {
   normalizeLiveInjuries,
   buildTbdBattingOrder,
   extractKeyPerformers,
-  normalizeGamesBack,
-  clampOverride,
-  buildWindSummary,
   pickActiveGame,
+  clampOverride,
 };
 
 async function main() {
   const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
   const overrides = loadOverrides(TODAY);
-  // Every upstream dependency is wrapped in a soft catch so that a
-  // single flaky endpoint cannot take the whole publish offline. The
-  // fixture fallback kicks in wherever a response is missing.
-  const fetchSoft = (label, url) =>
-    fetchJson(url).catch((error) => {
-      console.warn(`[crawl] ${label} fetch failed: ${error.message}`);
-      return null;
-    });
-
-  const [scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, weatherResponse, injuryResponse] =
+  const fetchSoft = createFetchSoft();
+  const [{ scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, injuryResponse }, weatherResponse] =
     await Promise.all([
-      fetchSoft(
-        "schedule",
-        `${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&date=${TODAY}&hydrate=linescore,probablePitcher,seriesStatus,team,broadcasts(all),game(content(summary,media(epg)))`,
-      ),
-      fetchSoft(
-        "next-schedule",
-        `${MLB_API_BASE}/schedule?sportId=1&teamId=${TEAM_ID}&startDate=${TODAY}&endDate=${getRelativeIsoDate(4)}&hydrate=linescore,probablePitcher,seriesStatus,team,broadcasts(all)`,
-      ),
-      fetchSoft("roster", `${MLB_API_BASE}/teams/${TEAM_ID}/roster?rosterType=active`),
-      fetchSoft("transactions", `${MLB_API_BASE}/transactions?teamId=${TEAM_ID}&startDate=${YESTERDAY}&endDate=${TODAY}`),
-      fetchSoft("weather", WEATHER_URL),
-      fetchSoft("injuries", `${MLB_API_BASE}/teams/${TEAM_ID}/injuries`),
+      fetchDailyMlbData({
+        today: TODAY,
+        yesterday: YESTERDAY,
+        endDate: getRelativeIsoDate(4),
+        teamId: TEAM_ID,
+        fetchSoft,
+      }),
+      fetchWeatherData(fetchSoft),
     ]);
 
   const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
@@ -92,12 +99,7 @@ async function main() {
   // Fetch boxscore (for batting order, stats) AND feed/live (for full
   // person records including batSide). The boxscore's person object is
   // thinned to {id, fullName, link} — batSide lives in feed/live only.
-  const [boxscore, gameFeed] = await Promise.all([
-    fetchJson(`${MLB_API_BASE}/game/${game.gamePk}/boxscore`).catch(() => null),
-    fetchJson(
-      `https://statsapi.mlb.com/api/v1.1/game/${game.gamePk}/feed/live?fields=gameData,players`,
-    ).catch(() => null),
-  ]);
+  const { boxscore, gameFeed } = await fetchGameDetail(game.gamePk);
 
   const data = await buildLivePayload({
     fixture,
@@ -851,75 +853,6 @@ async function buildRotation(nextGames, fallback) {
   });
 }
 
-async function fetchPitcherStats(pitcherIds) {
-  const statsMap = new Map();
-  if (!pitcherIds.length) {
-    return statsMap;
-  }
-
-  const results = await Promise.all(
-    pitcherIds.map((id) =>
-      fetchJson(`${MLB_API_BASE}/people/${id}/stats?stats=season&group=pitching&season=${new Date().getFullYear()}`)
-        .catch(() => null),
-    ),
-  );
-
-  for (let i = 0; i < pitcherIds.length; i++) {
-    const splits = results[i]?.stats?.[0]?.splits?.[0]?.stat;
-    if (splits) {
-      statsMap.set(pitcherIds[i], {
-        era: splits.era ?? "",
-        wins: splits.wins ?? 0,
-        losses: splits.losses ?? 0,
-      });
-    }
-  }
-
-  return statsMap;
-}
-
-async function fetchStandings() {
-  const year = new Date().getFullYear();
-  const response = await fetchJson(
-    `${MLB_API_BASE}/standings?leagueId=104&season=${year}&standingsTypes=regularSeason`,
-  ).catch(() => null);
-
-  if (!response?.records) {
-    return [];
-  }
-
-  for (const division of response.records) {
-    if (division.division?.id === 204) {
-      return division.teamRecords.map((team) => ({
-        name: team.team.name,
-        abbr: team.team.abbreviation ?? team.team.name.split(" ").pop(),
-        wins: team.wins,
-        losses: team.losses,
-        pct: team.winningPercentage,
-        gb: normalizeGamesBack(team.gamesBack),
-        streak: team.streak?.streakCode ?? "",
-        is_phi: team.team.id === TEAM_ID,
-      }));
-    }
-  }
-
-  return [];
-}
-
-function normalizeGamesBack(value) {
-  if (value == null) {
-    return "\u2014";
-  }
-  const trimmed = String(value).trim();
-  // MLB returns "-" for the division leader; Open-endpoint sometimes
-  // returns "—" or an empty string. Normalize all of them to an em dash
-  // so the standings table renders consistently.
-  if (trimmed === "" || trimmed === "-" || trimmed === "\u2013" || trimmed === "\u2014" || trimmed === "0.0") {
-    return "\u2014";
-  }
-  return trimmed;
-}
-
 function buildStandingsPreview(teams) {
   const phi = teams.find((t) => t.is_phi);
   if (!phi) {
@@ -1272,81 +1205,6 @@ function shortTransactionNote(description) {
     .replace(/\.$/, "");
 }
 
-function buildWindSummary(weather) {
-  const rawSpeed = weather?.wind_speed_10m;
-  if (rawSpeed == null) {
-    return "Calm";
-  }
-  const speed = Math.round(rawSpeed);
-  const gusts = Math.round(weather.wind_gusts_10m ?? 0);
-  if (!speed && !gusts) {
-    return "Calm";
-  }
-  return gusts ? `${speed} mph · gusts ${gusts}` : `${speed} mph`;
-}
-
-function buildBroadcastLine(broadcast) {
-  return [broadcast.tv, broadcast.stream, broadcast.radio].filter(Boolean).join(" · ");
-}
-
-function buildSeriesContext(seriesLabel) {
-  if (!seriesLabel) {
-    return "";
-  }
-
-  return `Series: ${seriesLabel}.`;
-}
-
-function deriveMode(game) {
-  const state = game?.status?.abstractGameState;
-  if (state === "Final") {
-    return "final";
-  }
-
-  if (state === "Live") {
-    return "live";
-  }
-
-  return "pregame";
-}
-
-function deriveModeLabel(game) {
-  const mode = deriveMode(game);
-  if (mode === "final") {
-    return "Final";
-  }
-
-  if (mode === "live") {
-    return "Live";
-  }
-
-  return "Pregame";
-}
-
-function weatherCodeToText(code) {
-  const map = new Map([
-    [0, "Clear"],
-    [1, "Mostly sunny"],
-    [2, "Partly cloudy"],
-    [3, "Overcast"],
-    [45, "Fog"],
-    [48, "Freezing fog"],
-    [51, "Light drizzle"],
-    [53, "Drizzle"],
-    [55, "Heavy drizzle"],
-    [61, "Light rain"],
-    [63, "Rain"],
-    [65, "Heavy rain"],
-    [71, "Light snow"],
-    [73, "Snow"],
-    [75, "Heavy snow"],
-    [80, "Rain showers"],
-    [81, "Heavy showers"],
-    [95, "Thunderstorms"],
-  ]);
-  return map.get(code);
-}
-
 function extractBroadcast(game, mediaType) {
   const epg = game?.broadcasts ?? game?.content?.media?.epg ?? [];
   for (const item of epg) {
@@ -1358,112 +1216,6 @@ function extractBroadcast(game, mediaType) {
   }
 
   return null;
-}
-
-async function fetchJson(url) {
-  return new Promise((resolve, reject) => {
-    const req = https
-      .get(url, { timeout: FETCH_TIMEOUT_MS }, (response) => {
-        let raw = "";
-        response.setEncoding("utf8");
-        response.on("data", (chunk) => {
-          raw += chunk;
-        });
-        response.on("end", () => {
-          if (response.statusCode < 200 || response.statusCode >= 300) {
-            reject(new Error(`Request failed (${response.statusCode}) for ${url}`));
-            return;
-          }
-
-          try {
-            resolve(JSON.parse(raw));
-          } catch (error) {
-            reject(error);
-          }
-        });
-      })
-      .on("timeout", () => {
-        req.destroy(new Error(`Request timed out after ${FETCH_TIMEOUT_MS}ms: ${url}`));
-      })
-      .on("error", reject);
-  });
-}
-
-function isFinalGame(game) {
-  return ["Final", "Game Over"].includes(game?.status?.detailedState);
-}
-
-function getIsoDate(date = new Date()) {
-  return new Intl.DateTimeFormat("en-CA", {
-    timeZone: "America/New_York",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(date);
-}
-
-function getRelativeIsoDate(offsetDays) {
-  // Anchor the offset on today-in-ET, not today-in-the-runner's-TZ.
-  // Before: date.setDate() operated in the runner's local timezone, which
-  // meant that between 00:00 and 05:00 UTC, "yesterday" was actually
-  // today in America/New_York, and the transactions feed silently missed
-  // the prior day's activity.
-  const todayEt = getIsoDate(new Date());
-  const [year, month, day] = todayEt.split("-").map(Number);
-  // Construct a UTC noon date so arithmetic doesn't straddle DST.
-  const anchor = new Date(Date.UTC(year, month - 1, day, 12, 0, 0));
-  anchor.setUTCDate(anchor.getUTCDate() + offsetDays);
-  return getIsoDate(anchor);
-}
-
-function formatGameTime(isoString) {
-  return new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/New_York",
-    hour: "numeric",
-    minute: "2-digit",
-  }).format(new Date(isoString));
-}
-
-function formatShortDate(isoString) {
-  return new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/New_York",
-    weekday: "short",
-    month: "short",
-    day: "numeric",
-  }).format(new Date(isoString));
-}
-
-function formatMonthDay(isoString) {
-  return new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/New_York",
-    month: "short",
-    day: "numeric",
-  }).format(new Date(isoString));
-}
-
-function formatWeekday(isoString) {
-  return new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/New_York",
-    weekday: "long",
-  }).format(new Date(isoString));
-}
-
-function formatGeneratedAtEt(isoString) {
-  return `${new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/New_York",
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-  }).format(new Date(isoString))} ET`;
-}
-
-function buildFreshnessLabel(prefix, isoString) {
-  if (!prefix || !isoString) {
-    return "";
-  }
-  return `${prefix} ${formatGeneratedAtEt(isoString)}`;
 }
 
 function annotateFreshness(entry, fallbackGeneratedAtIso = null) {

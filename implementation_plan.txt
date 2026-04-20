@@ -119,10 +119,11 @@ Key milestones
              crawl/format.mjs         (date/time/shortDate formatters)
              crawl/validate.mjs       (validateCrawlPayload + schema apply)
              crawl/overrides.mjs      (loadOverrides + clampOverride + deepMerge)
-  [ ] 3.2  Extract api/* first (lowest churn, pure-I/O seams). Rewire
-           crawl.mjs imports. Test suite must stay green.
-  [ ] 3.3  Extract format.mjs (pure functions, zero state). Update
-           crawl-helpers.test.mjs imports.
+  [x] 3.2  Extract api/* first (lowest churn, pure-I/O seams). Rewire
+           crawl.mjs imports. Test suite must stay green. Shipped
+           2026-04-20 via crawl/api/mlb.mjs + crawl/api/weather.mjs.
+  [x] 3.3  Extract format.mjs (pure functions, zero state). Update
+           crawl-helpers.test.mjs imports. Shipped 2026-04-20.
   [ ] 3.4  Extract build/* (pure transforms on fetched payloads). Each
            extraction is its own commit; each commit leaves tests green.
   [ ] 3.5  Extract validate.mjs + overrides.mjs.

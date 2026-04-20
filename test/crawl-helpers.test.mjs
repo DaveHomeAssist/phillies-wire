@@ -4,18 +4,20 @@ import { readFileSync } from "node:fs";
 import {
   buildLineupSection,
   buildTbdBattingOrder,
-  buildWindSummary,
   clampOverride,
   extractBattingOrder,
   extractDecisions,
   extractKeyPerformers,
   mergeInjuryEntries,
-  normalizeGamesBack,
   normalizeLiveInjuries,
   pickActiveGame,
   resolvePitcher,
   resolveSeriesLabel,
 } from "../crawl.mjs";
+import {
+  buildWindSummary,
+  normalizeGamesBack,
+} from "../crawl/format.mjs";
 
 
 const fixture = JSON.parse(readFileSync(new URL("../phillies-wire-schema.json", import.meta.url), "utf8"));
