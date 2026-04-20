@@ -79,17 +79,18 @@ jobs:
 
         run: node run.mjs
 
-      - name: Persist archive snapshot
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A index.html archive.json archive issues
-          if git diff --cached --quiet; then
-            echo "No archive snapshot changes to commit."
-          else
-            git commit -m "Update published issue for $(date -u '+%Y-%m-%d')"
-            git push origin HEAD:${GITHUB_REF_NAME}
-          fi
+      # Deploy FIRST so Pages publishes every successful build, even if the
+      # commit-back step loses a race with another concurrent run.
+      # Prior bug: Persist archive snapshot would fail on a rejected push and
+      # gate Deploy behind it, dropping deploys entirely. See Sprint 2026-W17.
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
 
       - name: Upload diagnostics
         if: always()
@@ -106,14 +107,31 @@ jobs:
             crawl-error.log
             enrich-error.log
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
-        with:
-          path: site
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
+      # Commit-back is best-effort — if it races, the deploy already shipped
+      # and the next cron picks up the changes. continue-on-error makes the
+      # whole workflow still report success when the archive push is rejected.
+      - name: Persist archive snapshot
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A index.html archive.json archive issues
+          if git diff --cached --quiet; then
+            echo "No archive snapshot changes to commit."
+            exit 0
+          fi
+          git commit -m "Update published issue for $(date -u '+%Y-%m-%d')"
+          # Retry-with-rebase: handle race with a concurrent push.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:${GITHUB_REF_NAME}; then
+              echo "Pushed archive snapshot on attempt $attempt."
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; rebasing on latest remote and retrying."
+            git pull --rebase --autostash origin ${GITHUB_REF_NAME} || true
+          done
+          echo "::warning::Persist archive snapshot could not push after 3 attempts; deploy already shipped. Next cron will catch up."
+          exit 0
 
       - name: Publish summary
         if: always()
