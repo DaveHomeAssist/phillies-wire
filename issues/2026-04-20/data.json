@@ -5,14 +5,14 @@
     "edition": 22,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-20T20:47:22.921Z",
+    "generated_at": "2026-04-20T21:18:03.576Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 20, 2026, 4:47 PM ET",
+      "generated_at_et": "Apr 20, 2026, 5:18 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "52° · Overcast · 14 mph · gusts 20",
+      "53° · Overcast · 13 mph · gusts 19",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -55,10 +55,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. CHC lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at CHC game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "7:40 PM",
         "starters": {
@@ -87,57 +87,57 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nico Hoerner",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Busch",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alex Bregman",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ian Happ",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Moisés Ballesteros",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Conforto",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Amaya",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Pete Crow-Armstrong",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Dansby Swanson",
+              "position": "SS",
+              "bats": "R"
             }
           ],
           "away": [
@@ -255,57 +255,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nico Hoerner",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Busch",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alex Bregman",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ian Happ",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Moisés Ballesteros",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Conforto",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Amaya",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Pete Crow-Armstrong",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Dansby Swanson",
+              "position": "SS",
+              "bats": "R"
             }
           ]
         }
@@ -345,10 +345,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 52,
+          "temp_f": 53,
           "condition": "Overcast",
-          "wind": "14 mph · gusts 20",
-          "gusts_mph": 20
+          "wind": "13 mph · gusts 19",
+          "gusts_mph": 19
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
