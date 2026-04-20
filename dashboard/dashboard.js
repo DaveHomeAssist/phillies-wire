@@ -2,9 +2,67 @@
    PHILLIES WIRE — COMMAND CENTER (client)
    Reads archive.json from the repo root.
    Hydrates hero, activity feed, record, next, key events.
+   Anticipates user intent via localStorage + save-data detection.
    ============================================ */
 
 const ARCHIVE_URL = "../archive.json";
+
+// ── Preferences & session signals (zero-backend, zero tracking) ──
+const LS_PREFS = "philliesWire_prefs";
+const LS_SIGNALS = "philliesWire_sessionSignals";
+
+const Prefs = {
+  read(key, fallback) {
+    try {
+      const raw = localStorage.getItem(key);
+      return raw ? { ...fallback, ...JSON.parse(raw) } : fallback;
+    } catch { return fallback; }
+  },
+  write(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch {}
+  },
+};
+
+const defaultPrefs = {
+  theme: "dark",
+  lastVisit: null,
+  streakAlertThreshold: 3,
+  reducedData: false,
+};
+const defaultSignals = {
+  visitCount: 0,
+  mostViewedPanel: null,
+  lastMode: null,
+};
+
+let prefs = Prefs.read(LS_PREFS, defaultPrefs);
+let signals = Prefs.read(LS_SIGNALS, defaultSignals);
+
+// Save-data detection — honour slow connections / user intent
+const saveDataActive =
+  prefs.reducedData === true ||
+  (navigator.connection && (
+    navigator.connection.saveData === true ||
+    ["slow-2g", "2g"].includes(navigator.connection.effectiveType)
+  ));
+if (saveDataActive) document.documentElement.dataset.saveData = "true";
+
+// First-visit + return-visit signals
+signals.visitCount = (signals.visitCount || 0) + 1;
+document.documentElement.dataset.visitKind =
+  signals.visitCount === 1 ? "first" : "return";
+
+// Persist on unload, not on every tick
+window.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") persist();
+});
+window.addEventListener("beforeunload", persist);
+
+function persist() {
+  prefs.lastVisit = new Date().toISOString();
+  Prefs.write(LS_PREFS, prefs);
+  Prefs.write(LS_SIGNALS, signals);
+}
 
 const el = (sel, scope = document) => scope.querySelector(sel);
 const els = (sel, scope = document) => [...scope.querySelectorAll(sel)];
@@ -57,6 +115,12 @@ function renderHero(latest) {
   const status = el(".card-status", heroCard);
   status.textContent = (latest.mode_label || latest.mode || "—");
   status.setAttribute("data-mode", latest.mode || "");
+
+  // Time-aware emphasis — pregame and live get visual weight on hero.
+  const stage = heroCard.closest(".stage") || document.body;
+  stage.dataset.mode = latest.mode || "unknown";
+  heroCard.dataset.emphasis = (latest.mode === "pregame" || latest.mode === "live") ? "true" : "false";
+  signals.lastMode = latest.mode;
 
   const score = parseScore(latest.headline);
   if (score) {

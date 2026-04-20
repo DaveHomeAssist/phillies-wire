@@ -557,3 +557,72 @@ body {
   .card-status[data-mode="live"] { animation: none; }
   .card-record[data-streak-alert="true"] .stat-value { animation: none; }
 }
+
+/* ── Save-data mode ─────────────────────────
+   User opted out of animations (Data Saver on, slow conn, or prefs). */
+:root[data-save-data="true"] *,
+:root[data-save-data="true"] *::before,
+:root[data-save-data="true"] *::after {
+  animation: none !important;
+  transition-duration: 0.01ms !important;
+}
+
+/* ── Time-aware hero emphasis ───────────────
+   Pregame + live modes push the hero forward visually. */
+.card-hero[data-emphasis="true"] {
+  border-color: rgba(232, 24, 40, 0.35);
+  box-shadow:
+    0 12px 40px -18px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(232, 24, 40, 0.18) inset;
+}
+.stage[data-mode="off_day"] .card-hero { opacity: 0.85; }
+.stage[data-mode="final"]   .card-hero { border-color: rgba(196, 151, 58, 0.25); }
+
+/* ── Mobile bottom-tab nav ──────────────────
+   Sidebar collapses to a bottom tab bar under 768px. */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding-bottom: 70px; /* leave room for the tab bar */
+  }
+  .sidebar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    width: 100%;
+    min-height: 0;
+    height: 58px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 10px;
+    border-right: none;
+    border-top: 1px solid var(--dash-border);
+    backdrop-filter: blur(12px);
+    z-index: 80;
+  }
+  .sidebar-brand { display: none; }
+  .sidebar-nav { flex-direction: row; gap: 4px; flex: 1; justify-content: space-around; }
+  .sidebar-footer { margin: 0; }
+  .nav-item {
+    width: 44px; height: 44px; /* meet 44px touch target */
+  }
+  .stage {
+    padding: 18px 16px 24px;
+  }
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .topbar-meta { align-self: stretch; justify-content: space-between; }
+}
+
+/* ── First-visit hint (only shows once until user acts) ─
+   Tiny label under the Command Center eyebrow for first-time visitors. */
+:root[data-visit-kind="first"] .topbar-title::after {
+  content: "· Welcome — explore the cards";
+  font-size: 11px;
+  color: var(--dash-ink-quiet);
+  font-style: italic;
+  margin-left: 6px;
+}
