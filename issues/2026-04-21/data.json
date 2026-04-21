@@ -5,14 +5,14 @@
     "edition": 23,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-21T22:48:57.649Z",
+    "generated_at": "2026-04-21T23:15:13.624Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 21, 2026, 6:48 PM ET",
+      "generated_at_et": "Apr 21, 2026, 7:15 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Cubs · Game 2",
-    "dek": "Jesús Luzardo vs Shota Imanaga",
-    "summary": "Jesús Luzardo vs Shota Imanaga · Phillies @ Cubs · Game 2",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, CHC 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Shota Imanaga. Series: CHC leads 1-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "7:40 PM"
-      },
       {
         "label": "Venue",
         "value": "Wrigley Field, Chicago"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP+ · MLB.TV · 94.1 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "55° · Mostly sunny"
       }
     ],
     "bullets": [
-      "55° · Clear · 7 mph · gusts 10",
-      "CHC leads 1-0"
+      "Trea Turner at the plate",
+      "Shota Imanaga on the mound",
+      "Wrigley Field, Chicago"
     ],
     "next_label": "Tomorrow",
     "next_value": "TBD vs Matthew Boyd · CHC vs PHI · Wed, Apr 22 · 7:40 PM"
@@ -346,9 +347,9 @@
         },
         "weather": {
           "temp_f": 55,
-          "condition": "Clear",
-          "wind": "7 mph · gusts 10",
-          "gusts_mph": 10
+          "condition": "Mostly sunny",
+          "wind": "6 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
