@@ -5,14 +5,14 @@
     "edition": 22,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-21T01:59:11.502Z",
+    "generated_at": "2026-04-21T03:14:11.482Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 20, 2026, 9:59 PM ET",
+      "generated_at_et": "Apr 20, 2026, 11:14 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -20,35 +20,35 @@
   },
   "record": {
     "wins": 8,
-    "losses": 13,
+    "losses": 14,
     "streak": "W1",
     "division_rank": 1,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, CHC 5",
-    "dek": "Bottom 8th · 0 outs",
-    "summary": "Matt Shaw is up against Seth Johnson. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 1, CHC 5.",
+    "dek": "CHC 5, PHI 1 · Colin Rea · 6.2 IP, 6 H, 1 ER, 5 K",
+    "summary": "PHI 1, CHC 5. Final at Wrigley Field, Chicago. CHC leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Wrigley Field, Chicago"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP+ · MLB.TV · 94.1 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "44° · Clear"
+        "label": "Series",
+        "value": "CHC leads 1-0"
       }
     ],
     "bullets": [
-      "Matt Shaw at the plate",
-      "Seth Johnson on the mound",
-      "Wrigley Field, Chicago"
+      "Colin Rea: 6.2 IP, 6 H, 1 ER, 5 K",
+      "Aaron Nola: 4.1 IP, 6 H, 5 ER, 5 K",
+      "Dansby Swanson: 1-for-4, 1 HR, 3 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Shota Imanaga · CHC vs PHI · Tue, Apr 21 · 7:40 PM"
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "CHC leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP+",
@@ -346,7 +346,7 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 44,
+          "temp_f": 42,
           "condition": "Clear",
           "wind": "7 mph · gusts 14",
           "gusts_mph": 14
