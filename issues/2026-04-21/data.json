@@ -5,14 +5,14 @@
     "edition": 23,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-21T20:08:43.260Z",
+    "generated_at": "2026-04-21T20:21:46.239Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 21, 2026, 4:08 PM ET",
+      "generated_at_et": "Apr 21, 2026, 4:21 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -47,7 +47,7 @@
     ],
     "bullets": [
       "57° · Clear · 3 mph · gusts 11",
-      "Regular Season"
+      "CHC leads 1-0"
     ],
     "next_label": "Tomorrow",
     "next_value": "TBD vs Matthew Boyd · CHC vs PHI · Wed, Apr 22 · 7:40 PM"
@@ -161,13 +161,13 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
+              "name": "Felix Reyes",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
@@ -179,21 +179,21 @@
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
+              "name": "Brandon Marsh",
+              "position": "CF",
               "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
+              "name": "Edmundo Sosa",
+              "position": "2B",
+              "bats": "R"
             }
           ],
           "phi": [
@@ -217,13 +217,13 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
+              "name": "Felix Reyes",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
@@ -235,21 +235,21 @@
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
+              "name": "Brandon Marsh",
+              "position": "CF",
               "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
+              "name": "Edmundo Sosa",
+              "position": "2B",
+              "bats": "R"
             }
           ],
           "opp": [
@@ -337,7 +337,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "CHC leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP+",
