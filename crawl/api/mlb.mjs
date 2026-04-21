@@ -49,10 +49,15 @@ async function fetchDailyMlbData({ today, yesterday, endDate, teamId = TEAM_ID, 
 }
 
 async function fetchGameDetail(gamePk) {
+  // feed/live payload: we rely on gameData.players[].batSide.code for
+  // batting handedness. A prior fields=gameData,players filter silently
+  // stripped every nested key from the player records (server returned
+  // 52 empty objects), which collapsed every batter to the "R" default.
+  // Fetching the full payload is the reliable shape.
   const [boxscore, gameFeed] = await Promise.all([
     fetchJson(`${MLB_API_BASE}/game/${gamePk}/boxscore`).catch(() => null),
     fetchJson(
-      `https://statsapi.mlb.com/api/v1.1/game/${gamePk}/feed/live?fields=gameData,players`,
+      `https://statsapi.mlb.com/api/v1.1/game/${gamePk}/feed/live`,
     ).catch(() => null),
   ]);
 
