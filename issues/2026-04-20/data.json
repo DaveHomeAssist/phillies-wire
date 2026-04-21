@@ -5,14 +5,14 @@
     "edition": 22,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-21T00:32:18.981Z",
+    "generated_at": "2026-04-21T00:39:33.050Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 20, 2026, 8:32 PM ET",
+      "generated_at_et": "Apr 20, 2026, 8:39 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, CHC 4",
-    "dek": "Bottom 3rd · 0 outs",
-    "summary": "Ian Happ is up against Aaron Nola. Series: Regular Season.",
+    "headline": "PHI 0, CHC 5",
+    "dek": "End 3rd · 3 outs",
+    "summary": "Brandon Marsh is up against Colin Rea. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "46° · Clear"
+        "value": "47° · Clear"
       }
     ],
     "bullets": [
-      "Ian Happ at the plate",
-      "Aaron Nola on the mound",
+      "Brandon Marsh at the plate",
+      "Colin Rea on the mound",
       "Wrigley Field, Chicago"
     ],
     "next_label": "Tomorrow",
@@ -96,7 +96,7 @@
               "slot": 2,
               "name": "Michael Busch",
               "position": "1B",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 3,
@@ -108,19 +108,19 @@
               "slot": 4,
               "name": "Ian Happ",
               "position": "LF",
-              "bats": "R"
+              "bats": "S"
             },
             {
               "slot": 5,
               "name": "Moisés Ballesteros",
               "position": "DH",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 6,
               "name": "Michael Conforto",
               "position": "RF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 7,
@@ -132,7 +132,7 @@
               "slot": 8,
               "name": "Pete Crow-Armstrong",
               "position": "CF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 9,
@@ -152,13 +152,13 @@
               "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 3,
               "name": "Bryce Harper",
               "position": "1B",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 4,
@@ -170,7 +170,7 @@
               "slot": 5,
               "name": "Brandon Marsh",
               "position": "LF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 6,
@@ -182,19 +182,19 @@
               "slot": 7,
               "name": "Bryson Stott",
               "position": "2B",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 9,
               "name": "Rafael Marchán",
               "position": "C",
-              "bats": "R"
+              "bats": "S"
             }
           ],
           "phi": [
@@ -208,13 +208,13 @@
               "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 3,
               "name": "Bryce Harper",
               "position": "1B",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 4,
@@ -226,7 +226,7 @@
               "slot": 5,
               "name": "Brandon Marsh",
               "position": "LF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 6,
@@ -238,19 +238,19 @@
               "slot": 7,
               "name": "Bryson Stott",
               "position": "2B",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 9,
               "name": "Rafael Marchán",
               "position": "C",
-              "bats": "R"
+              "bats": "S"
             }
           ],
           "opp": [
@@ -264,7 +264,7 @@
               "slot": 2,
               "name": "Michael Busch",
               "position": "1B",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 3,
@@ -276,19 +276,19 @@
               "slot": 4,
               "name": "Ian Happ",
               "position": "LF",
-              "bats": "R"
+              "bats": "S"
             },
             {
               "slot": 5,
               "name": "Moisés Ballesteros",
               "position": "DH",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 6,
               "name": "Michael Conforto",
               "position": "RF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 7,
@@ -300,7 +300,7 @@
               "slot": 8,
               "name": "Pete Crow-Armstrong",
               "position": "CF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 9,
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 46,
+          "temp_f": 47,
           "condition": "Clear",
-          "wind": "11 mph · gusts 23",
-          "gusts_mph": 23
+          "wind": "10 mph · gusts 22",
+          "gusts_mph": 22
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
