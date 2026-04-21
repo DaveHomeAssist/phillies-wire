@@ -5,14 +5,14 @@
     "edition": 23,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-21T23:32:16.292Z",
+    "generated_at": "2026-04-21T23:45:46.717Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 21, 2026, 7:32 PM ET",
+      "generated_at_et": "Apr 21, 2026, 7:45 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, CHC 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Shota Imanaga. Series: CHC leads 1-0.",
+    "dek": "Top 1st · 2 outs",
+    "summary": "Felix Reyes is up against Shota Imanaga. Series: CHC leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "54° · Partly cloudy"
+        "value": "53° · Clear"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
+      "Felix Reyes at the plate",
       "Shota Imanaga on the mound",
       "Wrigley Field, Chicago"
     ],
@@ -346,8 +346,8 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 54,
-          "condition": "Partly cloudy",
+          "temp_f": 53,
+          "condition": "Clear",
           "wind": "4 mph · gusts 9",
           "gusts_mph": 9
         },
