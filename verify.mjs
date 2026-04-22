@@ -46,13 +46,21 @@ const requiredFiles = [
   "./latest.json",
   "./site/latest.json",
   "./schedule/index.html",
+  "./dashboard/preferences/index.html",
+  "./dashboard/preferences/preferences.css",
+  "./dashboard/preferences/preferences.js",
   "./site/schedule/index.html",
+  "./site/dashboard/preferences/index.html",
+  "./site/dashboard/preferences/preferences.css",
+  "./site/dashboard/preferences/preferences.js",
   schedulePath,
   siteSchedulePath,
   calendarPath,
   siteCalendarPath,
   "./embed/ticker.html",
   "./site/embed/ticker.html",
+  "./shared/phillies-prefs.mjs",
+  "./site/shared/phillies-prefs.mjs",
 ];
 
 for (const file of requiredFiles) {
@@ -428,6 +436,87 @@ for (const file of htmlFiles) {
   }
   if (/<link\s+[^>]*href=/i.test(tickerHtml)) {
     fail("embed/ticker.html must be inline; no external <link href=>.");
+  }
+}
+
+// Streak sign must agree with the most recent completed final in archive.json.
+// Missing this check on 2026-04-22 allowed a payload with record.streak="W1"
+// to ship while the archive showed seven consecutive losses.
+{
+  const recordStreak = (data.record?.streak ?? "").trim();
+  const finals = (archive.entries ?? []).filter(
+    (entry) => entry.mode === "final" && typeof entry.headline === "string",
+  );
+  if (recordStreak && finals.length) {
+    const latest = finals[0]; // archive.json is newest-first
+    const match = latest.headline.match(/PHI\s+(\d+)\s*,\s*[A-Z]{2,4}\s+(\d+)/i);
+    if (match) {
+      const phi = parseInt(match[1], 10);
+      const opp = parseInt(match[2], 10);
+      const lastOutcome = phi > opp ? "W" : "L";
+      const streakSign = recordStreak[0]?.toUpperCase();
+      if (streakSign !== "W" && streakSign !== "L") {
+        fail(`record.streak must start with "W" or "L"; got "${recordStreak}"`);
+      }
+      if (streakSign !== lastOutcome) {
+        fail(
+          `record.streak "${recordStreak}" disagrees with the most recent final (${latest.date}: "${latest.headline}" → ${lastOutcome}).`,
+        );
+      }
+    }
+  }
+}
+
+// Probable pitcher handedness sanity: if overrides/pitchers.json exists and
+// declares a hand for a named probable pitcher, the rendered payload must
+// not contradict it. This is the 2026-04-22 Matthew Boyd regression guard.
+{
+  const overridesPath = "./overrides/pitchers.json";
+  if (existsSync(overridesPath)) {
+    let overrides = {};
+    try {
+      overrides = JSON.parse(readFileSync(overridesPath, "utf8"))?.handedness ?? {};
+    } catch {
+      overrides = {};
+    }
+    const starters = [
+      data.sections?.game_status?.content?.starters,
+      data.sections?.lineup?.content?.starters,
+    ].filter(Boolean);
+    for (const group of starters) {
+      for (const [role, entry] of Object.entries(group)) {
+        if (!entry?.name || !entry?.hand) continue;
+        const expected = overrides[entry.name.toLowerCase().trim()];
+        if (expected && expected !== entry.hand) {
+          fail(
+            `Pitcher handedness override conflict: ${entry.name} (${role}) rendered as "${entry.hand}" but overrides/pitchers.json declares "${expected}".`,
+          );
+        }
+      }
+    }
+  }
+}
+
+// Dashboard ES-module integrity: every `import ... from "../path"` in
+// dashboard.js must resolve to a file present in both the root checkout
+// and the site/ mirror. The 2026-04-22 "empty dashboard" outage happened
+// because shared/phillies-prefs.mjs was untracked — verify listed it in
+// requiredFiles (pass in working tree), but CI deployed from HEAD, so
+// production returned 404 and every dashboard widget stayed as placeholder.
+{
+  const dashboardJs = readFileSync("./dashboard/dashboard.js", "utf8");
+  const importRe = /from\s+["']\.\.\/([^"']+)["']/g;
+  let match;
+  while ((match = importRe.exec(dashboardJs)) !== null) {
+    const rel = match[1];
+    const root = `./${rel}`;
+    const site = `./site/${rel}`;
+    if (!existsSync(root)) {
+      fail(`Dashboard imports ${rel} but ${root} is missing.`);
+    }
+    if (!existsSync(site)) {
+      fail(`Dashboard imports ${rel} but ${site} is missing (render did not mirror it).`);
+    }
   }
 }
 

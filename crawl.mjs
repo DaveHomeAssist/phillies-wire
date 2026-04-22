@@ -34,6 +34,38 @@ const TODAY = getIsoDate();
 const YESTERDAY = getRelativeIsoDate(-1);
 const OUTPUT_FILE = "./phillies-wire-data.json";
 const ERROR_LOG = "./crawl-error.log";
+const PITCHER_OVERRIDES_PATH = "./overrides/pitchers.json";
+
+// Static handedness overrides applied when the MLB Stats API probable-pitcher
+// payload omits pitchHand.code. Without this, resolvePitcher would silently
+// default to "R", which produced the Matthew Boyd = RHP bug on 2026-04-22.
+let PITCHER_HANDEDNESS = null;
+function loadPitcherOverrides() {
+  if (PITCHER_HANDEDNESS) return PITCHER_HANDEDNESS;
+  try {
+    if (!existsSync(PITCHER_OVERRIDES_PATH)) {
+      PITCHER_HANDEDNESS = new Map();
+      return PITCHER_HANDEDNESS;
+    }
+    const raw = JSON.parse(readFileSync(PITCHER_OVERRIDES_PATH, "utf8"));
+    const map = new Map();
+    for (const [name, hand] of Object.entries(raw?.handedness ?? {})) {
+      if (typeof name === "string" && (hand === "L" || hand === "R" || hand === "S")) {
+        map.set(name.toLowerCase().trim(), hand);
+      }
+    }
+    PITCHER_HANDEDNESS = map;
+  } catch {
+    PITCHER_HANDEDNESS = new Map();
+  }
+  return PITCHER_HANDEDNESS;
+}
+
+export function lookupPitcherHand(fullName) {
+  if (!fullName || typeof fullName !== "string") return null;
+  const map = loadPitcherOverrides();
+  return map.get(fullName.toLowerCase().trim()) ?? null;
+}
 
 // Live-refresh mode: the game-window cron re-crawls every 15 min to update
 // scores, inning, and hero card values. It must NOT overwrite the morning's
@@ -397,7 +429,7 @@ function resolvePitcher(side, fixture, role) {
   if (probable?.fullName) {
     return {
       name: probable.fullName,
-      hand: probable.pitchHand?.code ?? "R",
+      hand: probable.pitchHand?.code ?? lookupPitcherHand(probable.fullName) ?? "R",
     };
   }
 

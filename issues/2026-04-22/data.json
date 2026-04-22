@@ -5,14 +5,14 @@
     "edition": 24,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-22T13:48:51.358Z",
+    "generated_at": "2026-04-22T14:06:57.720Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 22, 2026, 9:48 AM ET",
+      "generated_at_et": "Apr 22, 2026, 10:06 AM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -20,9 +20,9 @@
   },
   "record": {
     "wins": 8,
-    "losses": 15,
-    "streak": "W1",
-    "division_rank": 1,
+    "losses": 14,
+    "streak": "L7",
+    "division_rank": 4,
     "division": "NL East"
   },
   "hero": {
@@ -46,11 +46,11 @@
       }
     ],
     "bullets": [
-      "56° · Overcast · 7 mph · gusts 11",
+      "57° · Overcast · 6 mph · gusts 9",
       "CHC leads 2-0"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Edward Cabrera · CHC vs PHI · Thu, Apr 23 · 2:20 PM"
+    "next_value": "Cristopher Sánchez vs TBD · CHC vs PHI · Thu, Apr 23 · 2:20 PM"
   },
   "sections": {
     "lineup": {
@@ -65,7 +65,7 @@
           "home": {
             "team": "CHC",
             "name": "Matthew Boyd",
-            "hand": "R"
+            "hand": "L"
           },
           "away": {
             "team": "PHI",
@@ -80,7 +80,7 @@
           "opp": {
             "team": "CHC",
             "name": "Matthew Boyd",
-            "hand": "R"
+            "hand": "L"
           }
         },
         "batting_order": {
@@ -319,7 +319,7 @@
         "starters": {
           "home": {
             "name": "Matthew Boyd",
-            "hand": "R"
+            "hand": "L"
           },
           "away": {
             "name": "Kyle Backhus",
@@ -331,7 +331,7 @@
           },
           "opp": {
             "name": "Matthew Boyd",
-            "hand": "R"
+            "hand": "L"
           }
         },
         "series": {
@@ -345,13 +345,13 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 56,
+          "temp_f": 57,
           "condition": "Overcast",
-          "wind": "7 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "6 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
-        "transit": "Broad Street Line to AT&T Station",
+        "transit": "Road game — no Citizens Bank Park transit note.",
         "venue_is_home": false
       }
     },
@@ -364,8 +364,8 @@
             "il_type": "15-Day",
             "badge": "il",
             "injury": "Thoracic outlet decompression surgery (Sep 23)",
-            "status_note": "Rehab start today at LV — 3 IP / ~50 pitches",
-            "target_return": "Mid-April",
+            "status_note": "Rehab ramp-up continuing; projected season debut April 25 vs ATL",
+            "target_return": "Late April",
             "retroactive_to": "2026-03-22",
             "source": "fallback",
             "last_confirmed": "2026-03-28T14:00:00Z",
@@ -387,24 +387,37 @@
           {
             "name": "Max Lazar",
             "position": "RHP",
-            "il_type": "15-Day",
-            "badge": "dtd",
+            "il_type": "60-Day",
+            "badge": "il",
             "injury": "Left oblique strain (WBC)",
-            "status_note": "Minor per Thomson",
-            "first_eligible": "2026-04-06",
+            "status_note": "Transferred to 60-day IL on Apr 22 to open a 40-man spot for Stubbs",
+            "first_eligible": "2026-05-21",
             "retroactive_to": "2026-03-22",
             "source": "fallback",
-            "last_confirmed": "2026-03-28T14:00:00Z",
-            "freshness_label": "Last confirmed Mar 28, 2026, 10:00 AM ET"
+            "last_confirmed": "2026-04-22T14:00:00Z",
+            "freshness_label": "Last confirmed Apr 22, 2026"
+          },
+          {
+            "name": "J.T. Realmuto",
+            "position": "C",
+            "il_type": "10-Day",
+            "badge": "il",
+            "injury": "Lower back spasms",
+            "status_note": "Placed on 10-day IL Apr 22 after jamming back vs ATL on Apr 17",
+            "first_eligible": "2026-05-02",
+            "retroactive_to": "2026-04-20",
+            "source": "fallback",
+            "last_confirmed": "2026-04-22T14:00:00Z",
+            "freshness_label": "Last confirmed Apr 22, 2026"
           }
         ],
-        "footer_note": "All three IL stints retroactive to March 22. No 40-man pressure until Wheeler is activation-ready."
+        "footer_note": "Lazar moved to 60-day IL (40-man spot went to C Garrett Stubbs). Wheeler/Kerkering IL retroactive to March 22; Realmuto IL retroactive to April 20."
       }
     }
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Cristopher Sánchez vs Edward Cabrera · CHC vs PHI",
+    "matchup": "Cristopher Sánchez vs TBD · CHC vs PHI",
     "date": "Thu, Apr 23",
     "time": "2:20 PM",
     "broadcast": "NBCSP",

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#e81828" />
+<title>Phillies Wire · Local Preferences</title>
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../../fonts.css" />
+<link rel="stylesheet" href="../../tokens.css" />
+<link rel="stylesheet" href="../dashboard.css" />
+<link rel="stylesheet" href="./preferences.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="sidebar-brand" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 4h12" />
+        <path d="M12 4v16" />
+        <path d="M7 20h10" />
+      </svg>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-item" href="../" data-nav="command" title="Command Center">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+      </a>
+      <a class="nav-item" href="../../schedule/" data-nav="schedule" title="Schedule">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      </a>
+      <a class="nav-item" href="../innings/" data-nav="analytics" title="Innings">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-6M22 20H2"/></svg>
+      </a>
+      <a class="nav-item" href="../../" data-nav="issues" title="Latest Issue">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a class="nav-item is-active" href="./" data-nav="preferences" aria-current="page" title="Preferences">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <main class="stage preferences-stage">
+    <header class="topbar">
+      <div class="topbar-title">
+        <span class="eyebrow">This browser only</span>
+        <h1>Local Preferences</h1>
+        <span class="crumbs">Theme, live behavior, and local export tools</span>
+      </div>
+      <div class="topbar-meta">
+        <a class="icon-btn" href="../" aria-label="Back to Command Center" title="Command Center">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <section class="preferences-grid" aria-label="Preferences panels">
+      <article class="card pref-card">
+        <header class="card-head">
+          <span class="card-eyebrow">Appearance</span>
+          <span class="card-status">Issue pages</span>
+        </header>
+        <div class="pref-stack">
+          <label class="pref-field" for="pref-theme">
+            <span class="pref-label">Issue theme</span>
+            <span class="pref-copy">Applies to the latest issue and archive style toggle.</span>
+          </label>
+          <select id="pref-theme" class="pref-select">
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+          </select>
+        </div>
+      </article>
+
+      <article class="card pref-card">
+        <header class="card-head">
+          <span class="card-eyebrow">Live behavior</span>
+          <span class="card-status">Dashboard</span>
+        </header>
+        <div class="pref-stack">
+          <label class="pref-toggle" for="pref-reduced-data">
+            <span>
+              <span class="pref-label">Reduced data mode</span>
+              <span class="pref-copy">Disables extra motion and honors slow connection behavior.</span>
+            </span>
+            <input id="pref-reduced-data" type="checkbox" />
+          </label>
+
+          <label class="pref-field" for="pref-streak-threshold">
+            <span class="pref-label">Losing streak alert threshold</span>
+            <span class="pref-copy">Controls when the record card starts pulsing.</span>
+          </label>
+          <input id="pref-streak-threshold" class="pref-range" type="range" min="2" max="6" step="1" value="3" />
+          <div class="pref-inline-value" data-slot="streak-threshold-value">L3</div>
+
+          <label class="pref-field" for="pref-innings-filter">
+            <span class="pref-label">Default innings filter</span>
+            <span class="pref-copy">Sets the first view on the innings timeline.</span>
+          </label>
+          <select id="pref-innings-filter" class="pref-select">
+            <option value="all">All plays</option>
+            <option value="scoring">Score changes only</option>
+          </select>
+        </div>
+      </article>
+
+      <article class="card pref-card">
+        <header class="card-head">
+          <span class="card-eyebrow">Local summary</span>
+          <span class="card-status">Saved keys</span>
+        </header>
+        <dl class="pref-summary">
+          <div><dt>Visits</dt><dd data-slot="visit-count">0</dd></div>
+          <div><dt>Last mode</dt><dd data-slot="last-mode">—</dd></div>
+          <div><dt>Last visit</dt><dd data-slot="last-visit">—</dd></div>
+          <div><dt>Attended</dt><dd data-slot="attended-count">0</dd></div>
+          <div><dt>Planned</dt><dd data-slot="planned-count">0</dd></div>
+          <div><dt>Skipped</dt><dd data-slot="skipped-count">0</dd></div>
+          <div><dt>Imported from Quest</dt><dd data-slot="imported-at">No</dd></div>
+        </dl>
+      </article>
+
+      <article class="card pref-card">
+        <header class="card-head">
+          <span class="card-eyebrow">Local tools</span>
+          <span class="card-status">Backup</span>
+        </header>
+        <div class="pref-stack">
+          <p class="pref-copy">Exports and imports include Wire preferences, session signals, and schedule attendance state for this browser.</p>
+          <div class="pref-actions">
+            <button class="pref-button" id="pref-export" type="button">Export local bundle</button>
+            <button class="pref-button" id="pref-import" type="button">Import local bundle</button>
+            <button class="pref-button pref-button-danger" id="pref-reset" type="button">Reset local Wire data</button>
+          </div>
+          <input id="pref-import-file" type="file" accept="application/json" hidden />
+          <p class="pref-status" data-slot="status-copy">No changes yet.</p>
+        </div>
+      </article>
+
+      <article class="card pref-card pref-card-full">
+        <header class="card-head">
+          <span class="card-eyebrow">Route map</span>
+          <span class="card-status">Current system</span>
+        </header>
+        <div class="pref-links">
+          <a class="pref-link-card" href="../">
+            <strong>Command Center</strong>
+            <span>Live score, activity feed, record, injuries, and key events.</span>
+          </a>
+          <a class="pref-link-card" href="../../schedule/">
+            <strong>Schedule</strong>
+            <span>Season tracker, attendance state, notes, and game links.</span>
+          </a>
+          <a class="pref-link-card" href="../innings/">
+            <strong>Innings</strong>
+            <span>Linescore and play progression for the active or latest game.</span>
+          </a>
+          <a class="pref-link-card" href="../../">
+            <strong>Latest Issue</strong>
+            <span>The full editorial edition and archive entry point.</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="stage-foot">
+      <span>Phillies Wire · Local Preferences</span>
+      <span class="foot-sep">·</span>
+      <a href="../../schedule/" class="foot-link">Open schedule tracker →</a>
+    </footer>
+  </main>
+
+  <script type="module" src="./preferences.js"></script>
+</body>
+</html>
