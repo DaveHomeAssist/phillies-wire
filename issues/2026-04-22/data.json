@@ -5,14 +5,14 @@
     "edition": 24,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-22T23:04:11.469Z",
+    "generated_at": "2026-04-22T23:32:01.280Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 22, 2026, 7:04 PM ET",
+      "generated_at_et": "Apr 22, 2026, 7:32 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Cubs · Game 3",
-    "dek": "Kyle Backhus vs Matthew Boyd",
-    "summary": "Kyle Backhus vs Matthew Boyd · Phillies @ Cubs · Game 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, CHC 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Matthew Boyd. Series: CHC leads 2-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "7:40 PM"
-      },
       {
         "label": "Venue",
         "value": "Wrigley Field, Chicago"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP+ · MLB.TV · 94.1 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "60° · Clear"
       }
     ],
     "bullets": [
-      "61° · Clear · 3 mph · gusts 7",
-      "CHC leads 2-0"
+      "Kyle Schwarber at the plate",
+      "Matthew Boyd on the mound",
+      "Wrigley Field, Chicago"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Edward Cabrera · CHC vs PHI · Thu, Apr 23 · 2:20 PM"
@@ -345,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 61,
+          "temp_f": 60,
           "condition": "Clear",
-          "wind": "3 mph · gusts 7",
-          "gusts_mph": 7
+          "wind": "3 mph · gusts 5",
+          "gusts_mph": 5
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
