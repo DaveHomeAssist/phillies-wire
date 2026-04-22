@@ -5,14 +5,14 @@
     "edition": 24,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-22T20:08:53.430Z",
+    "generated_at": "2026-04-22T20:33:24.194Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 22, 2026, 4:08 PM ET",
+      "generated_at_et": "Apr 22, 2026, 4:33 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "60° · Partly cloudy · 3 mph · gusts 7",
+      "61° · Partly cloudy · 2 mph · gusts 6",
       "CHC leads 2-0"
     ],
     "next_label": "Tomorrow",
@@ -143,113 +143,113 @@
           "away": [
             {
               "slot": 1,
+              "name": "Kyle Schwarber",
+              "position": "LF",
+              "bats": "L"
+            },
+            {
+              "slot": 2,
               "name": "Trea Turner",
               "position": "SS",
               "bats": "R"
             },
             {
-              "slot": 2,
-              "name": "Kyle Schwarber",
+              "slot": 3,
+              "name": "Bryce Harper",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
+              "name": "Felix Reyes",
+              "position": "1B",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
               "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
+              "name": "Alec Bohm",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
+              "name": "Edmundo Sosa",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
+              "name": "Justin Crawford",
+              "position": "CF",
               "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "phi": [
             {
               "slot": 1,
+              "name": "Kyle Schwarber",
+              "position": "LF",
+              "bats": "L"
+            },
+            {
+              "slot": 2,
               "name": "Trea Turner",
               "position": "SS",
               "bats": "R"
             },
             {
-              "slot": 2,
-              "name": "Kyle Schwarber",
+              "slot": 3,
+              "name": "Bryce Harper",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
+              "name": "Felix Reyes",
+              "position": "1B",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
               "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
+              "name": "Alec Bohm",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
+              "name": "Edmundo Sosa",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
+              "name": "Justin Crawford",
+              "position": "CF",
               "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "opp": [
@@ -345,10 +345,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 60,
+          "temp_f": 61,
           "condition": "Partly cloudy",
-          "wind": "3 mph · gusts 7",
-          "gusts_mph": 7
+          "wind": "2 mph · gusts 6",
+          "gusts_mph": 6
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
