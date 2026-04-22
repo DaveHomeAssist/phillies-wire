@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#e81828" />
+<title>Phillies Wire · Schedule Tracker</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../fonts.css" />
+<link rel="stylesheet" href="../tokens.css" />
+<link rel="stylesheet" href="../dashboard/dashboard.css" />
+<link rel="stylesheet" href="./schedule.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="sidebar-brand" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 4h12" />
+        <path d="M12 4v16" />
+        <path d="M7 20h10" />
+      </svg>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-item" href="../dashboard/" data-nav="command" title="Command Center">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+      </a>
+      <a class="nav-item is-active" href="./" data-nav="schedule" aria-current="page" title="Schedule">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      </a>
+      <a class="nav-item" href="../dashboard/innings/" data-nav="analytics" title="Innings">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-6M22 20H2"/></svg>
+      </a>
+      <a class="nav-item" href="../" data-nav="issues" title="Latest Issue">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="stage schedule-stage">
+    <header class="topbar">
+      <div class="topbar-title">
+        <span class="eyebrow">Schedule · Attendance · Links</span>
+        <h1>Phillies Schedule Tracker</h1>
+        <span class="crumbs">Merged Wire view for schedule, attendance, and game routing</span>
+      </div>
+      <div class="topbar-meta">
+        <button class="icon-btn" id="export-state" aria-label="Export schedule state" title="Export schedule state">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        </button>
+        <button class="icon-btn" id="import-state" aria-label="Import schedule state" title="Import schedule state">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+        </button>
+        <input id="import-file" type="file" accept="application/json" hidden />
+      </div>
+    </header>
+
+    <section class="schedule-spotlight" id="schedule-spotlight" hidden></section>
+
+    <section class="schedule-toolbar" aria-label="Schedule filters">
+      <div class="schedule-search-wrap">
+        <label class="schedule-search-label" for="schedule-search">Search</label>
+        <input id="schedule-search" class="schedule-search" type="search" placeholder="Search opponent, month, or tag" autocomplete="off" />
+      </div>
+      <div class="schedule-filters" role="group" aria-label="Schedule filter">
+        <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="upcoming" aria-pressed="false">Upcoming</button>
+        <button class="filter-btn" data-filter="attended" aria-pressed="false">Attended</button>
+        <button class="filter-btn" data-filter="planned" aria-pressed="false">Planned</button>
+        <button class="filter-btn" data-filter="home" aria-pressed="false">Home</button>
+        <button class="filter-btn" data-filter="road" aria-pressed="false">Road</button>
+        <button class="filter-btn" data-filter="rivalry" aria-pressed="false">Rivalry</button>
+      </div>
+    </section>
+
+    <section class="schedule-stats" aria-label="Schedule summary">
+      <article class="schedule-stat">
+        <span class="schedule-stat-label">Games</span>
+        <span class="schedule-stat-value" data-slot="total-games">—</span>
+      </article>
+      <article class="schedule-stat">
+        <span class="schedule-stat-label">Attended</span>
+        <span class="schedule-stat-value" data-slot="attended-games">—</span>
+      </article>
+      <article class="schedule-stat">
+        <span class="schedule-stat-label">Planned</span>
+        <span class="schedule-stat-value" data-slot="planned-games">—</span>
+      </article>
+      <article class="schedule-stat">
+        <span class="schedule-stat-label">Remaining</span>
+        <span class="schedule-stat-value" data-slot="remaining-games">—</span>
+      </article>
+    </section>
+
+    <section class="migration-banner" id="migration-banner" hidden>
+      <div>
+        <div class="migration-title">Plan D state imported</div>
+        <p class="migration-copy" id="migration-copy">Legacy Phillies schedule notes were mapped into this tracker.</p>
+      </div>
+      <a class="migration-link" href="https://davehomeassist.github.io/mlb-ballparks-quest/phillies-2026-schedule.html">Old URL</a>
+    </section>
+
+    <section class="schedule-months" id="schedule-months" aria-live="polite">
+      <p class="schedule-empty">Loading schedule…</p>
+    </section>
+
+    <footer class="stage-foot">
+      <span>Phillies Wire · Schedule Tracker</span>
+      <span class="foot-sep">·</span>
+      <a href="../calendar/phillies-2026-all.ics" class="foot-link">Download season calendar</a>
+      <span class="foot-sep">·</span>
+      <a href="../dashboard/" class="foot-link">Open command center →</a>
+    </footer>
+  </main>
+
+  <script type="module" src="./schedule.js"></script>
+</body>
+</html>

@@ -76,6 +76,7 @@
 
   function teams(data) {
     if (data.game && data.game.matchup) return data.game.matchup;
+    if (data.schedule && data.schedule.next_game && data.schedule.next_game.title) return data.schedule.next_game.title;
     if (data.hero && data.hero.headline) return data.hero.headline;
     return "";
   }
@@ -92,6 +93,10 @@
     if (g.venue) bits.push(g.venue);
     if (g.starters && g.starters.away && g.starters.home) {
       bits.push(g.starters.away.name + " vs " + g.starters.home.name);
+    } else if (data.schedule && data.schedule.next_game) {
+      if (data.schedule.next_game.date_label) bits.push(data.schedule.next_game.date_label);
+      if (data.schedule.next_game.time_label) bits.push(data.schedule.next_game.time_label);
+      if (data.schedule.next_game.venue) bits.push(data.schedule.next_game.venue);
     }
     elMeta.textContent = bits.join(" \u00b7 ");
   }
@@ -138,6 +143,9 @@
     if (hero.next_label || hero.next_value) {
       elMatch.textContent = hero.next_label ? (hero.next_label + ": " + (hero.next_value || "")) : (hero.next_value || "");
       elMeta.textContent = "";
+    } else if (data.schedule && data.schedule.next_game) {
+      elMatch.textContent = data.schedule.next_game.title || "Next scheduled game";
+      elMeta.textContent = [data.schedule.next_game.date_label, data.schedule.next_game.time_label, data.schedule.next_game.venue].filter(Boolean).join(" \u00b7 ");
     } else {
       elMatch.textContent = "No upcoming game scheduled";
       elMeta.textContent = "";

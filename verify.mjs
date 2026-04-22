@@ -7,6 +7,10 @@ const issuePath = `./issues/${data.meta.date}/index.html`;
 const issueDataPath = `./issues/${data.meta.date}/data.json`;
 const siteIssuePath = `./site/issues/${data.meta.date}/index.html`;
 const siteIssueDataPath = `./site/issues/${data.meta.date}/data.json`;
+const schedulePath = "./data/phillies-2026.json";
+const siteSchedulePath = "./site/data/phillies-2026.json";
+const calendarPath = "./calendar/phillies-2026-all.ics";
+const siteCalendarPath = "./site/calendar/phillies-2026-all.ics";
 // Covers the CP1252-in-UTF-8 sequences we've seen in the wild: punctuation
 // and accented characters passed through a double-encoding pipeline.
 const mojibakePattern = /Â·|Â°|â€“|â€”|â€œ|â€\u009d|Ã[\u0080-\u00BF]/;
@@ -41,6 +45,12 @@ const requiredFiles = [
   "./site/og-default.svg",
   "./latest.json",
   "./site/latest.json",
+  "./schedule/index.html",
+  "./site/schedule/index.html",
+  schedulePath,
+  siteSchedulePath,
+  calendarPath,
+  siteCalendarPath,
   "./embed/ticker.html",
   "./site/embed/ticker.html",
 ];
@@ -154,6 +164,7 @@ const textIntegrityFiles = [
   "./phillies-wire-data.json",
   "./status.json",
   "./archive.json",
+  schedulePath,
   ...htmlFiles,
 ];
 
@@ -286,6 +297,46 @@ for (const file of htmlFiles) {
   }
 }
 
+{
+  const schedule = readJson(schedulePath);
+  const siteSchedule = readJson(siteSchedulePath);
+
+  if (JSON.stringify(schedule) !== JSON.stringify(siteSchedule)) {
+    fail("Canonical schedule JSON and site copy differ.");
+  }
+
+  if (!schedule.schema_version || !/^\d+\.\d+\.\d+$/.test(schedule.schema_version)) {
+    fail(`Canonical schedule schema_version must be semver; got "${schedule.schema_version}"`);
+  }
+
+  if (!Array.isArray(schedule.games) || schedule.games.length < 1) {
+    fail("Canonical schedule must include at least one game.");
+  }
+
+  if (!schedule.summary || typeof schedule.summary.total_games !== "number") {
+    fail("Canonical schedule is missing summary metadata.");
+  }
+
+  const firstGame = schedule.games[0];
+  const requiredGameKeys = ["game_pk", "official_date", "game_date", "title", "matchup", "venue", "status", "opponent", "attendance_key"];
+  for (const key of requiredGameKeys) {
+    if (!(key in firstGame)) {
+      fail(`Canonical schedule game is missing key: ${key}`);
+    }
+  }
+}
+
+{
+  const calendarText = readFileSync(calendarPath, "utf8");
+  const siteCalendarText = readFileSync(siteCalendarPath, "utf8");
+  if (calendarText !== siteCalendarText) {
+    fail("Calendar artifact and site copy differ.");
+  }
+  if (!calendarText.startsWith("BEGIN:VCALENDAR")) {
+    fail("Calendar artifact is not a valid VCALENDAR payload.");
+  }
+}
+
 // latest.json consumer contract (Upgrade 1).
 // Rule 2 instantiation of the portfolio Definition of Done contract.
 {
@@ -303,6 +354,7 @@ for (const file of htmlFiles) {
     "record",
     "hero",
     "game",
+    "schedule",
     "ticker",
   ];
   for (const key of topRequired) {
@@ -340,6 +392,10 @@ for (const file of htmlFiles) {
     fail("latest.json ticker must be an array.");
   }
 
+  if (latest.schedule?.path !== "data/phillies-2026.json") {
+    fail("latest.json schedule.path must point at the canonical schedule artifact.");
+  }
+
   // Freshness: generated_at must be a valid ISO timestamp within the last 26 hours.
   // 26 = cron cadence (daily) + 2 hour grace for delivery lag.
   const generatedAt = Date.parse(latest.generated_at);
@@ -375,7 +431,7 @@ for (const file of htmlFiles) {
   }
 }
 
-console.log("Rendered issue, archive, data.json, latest.json, ticker, and site artifact verified");
+console.log("Rendered issue, archive, schedule, calendar, latest.json, ticker, and site artifact verified");
 
 function readJson(path) {
   if (!existsSync(path)) {

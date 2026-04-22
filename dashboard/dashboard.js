@@ -5,7 +5,10 @@
    Anticipates user intent via localStorage + save-data detection.
    ============================================ */
 
+import { findCurrentOrNextGame } from "../shared/phillies-schedule.mjs";
+
 const ARCHIVE_URL = "../archive.json";
+const SCHEDULE_URL = "../data/phillies-2026.json";
 
 // ── Preferences & session signals (zero-backend, zero tracking) ──
 const LS_PREFS = "philliesWire_prefs";
@@ -145,16 +148,26 @@ function renderHero(latest) {
   setText("edition", latest.edition != null ? `Vol. ${latest.volume} Ed. ${latest.edition}` : "—");
 }
 
-function renderNextGame(entries) {
-  // Look for the most recent pregame entry to populate next-game-ish info.
-  const pregame = entries.find(e => e.mode === "pregame");
+function renderNextGame(entries, schedulePayload) {
   const host = slot("next");
   if (!host) return;
+  const pointer = schedulePayload?.games ? findCurrentOrNextGame(schedulePayload.games, new Date()) : null;
+  const scheduleGame = pointer?.current_game || pointer?.next_game;
+  if (scheduleGame) {
+    host.innerHTML = `
+      <p class="next-matchup">${escapeHtml(scheduleGame.title || "Upcoming")}</p>
+      <p class="next-meta">${escapeHtml(scheduleGame.date_label || "—")} · ${escapeHtml(scheduleGame.time_label || "—")}</p>
+      <p class="next-meta">${escapeHtml(scheduleGame.venue?.name || "")}</p>
+      <p class="next-meta"><a href="../schedule/">Open full schedule →</a></p>
+    `;
+    return;
+  }
+  const pregame = entries.find((entry) => entry.mode === "pregame");
   if (!pregame) return;
   host.innerHTML = `
-    <p class="next-matchup">${pregame.headline || "Upcoming"}</p>
-    <p class="next-meta">${pregame.dek || ""}</p>
-    <p class="next-meta">${fmtDateShort(pregame.date)}</p>
+    <p class="next-matchup">${escapeHtml(pregame.headline || "Upcoming")}</p>
+    <p class="next-meta">${escapeHtml(pregame.dek || "")}</p>
+    <p class="next-meta">${escapeHtml(fmtDateShort(pregame.date))}</p>
   `;
 }
 
@@ -293,6 +306,16 @@ async function fetchIssueData(date) {
   } catch { return null; }
 }
 
+async function fetchSchedule() {
+  try {
+    const response = await fetch(SCHEDULE_URL, { cache: "no-store" });
+    if (!response.ok) return null;
+    return await response.json();
+  } catch {
+    return null;
+  }
+}
+
 function renderInjuryReport(issueData) {
   const host = slot("il-entries");
   if (!host) return;
@@ -396,7 +419,10 @@ function renderPlayerFocus(issueData) {
 
 async function init() {
   try {
-    const res = await fetch(ARCHIVE_URL, { cache: "no-store" });
+    const [res, schedulePayload] = await Promise.all([
+      fetch(ARCHIVE_URL, { cache: "no-store" }),
+      fetchSchedule(),
+    ]);
     if (!res.ok) throw new Error(`archive.json HTTP ${res.status}`);
     const archive = await res.json();
     const entries = Array.isArray(archive.entries) ? archive.entries : [];
@@ -405,7 +431,7 @@ async function init() {
       return;
     }
     renderHero(entries[0]);
-    renderNextGame(entries);
+    renderNextGame(entries, schedulePayload);
     renderRecord(entries);
     renderActivity(entries);
     renderKeyEvents(entries);

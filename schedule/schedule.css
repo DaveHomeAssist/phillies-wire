@@ -1,0 +1,332 @@
+:root {
+  --schedule-border: rgba(255, 255, 255, 0.08);
+  --schedule-surface: rgba(255, 255, 255, 0.05);
+  --schedule-surface-strong: rgba(255, 255, 255, 0.08);
+  --schedule-copy: rgba(255, 255, 255, 0.76);
+  --schedule-copy-quiet: rgba(255, 255, 255, 0.56);
+  --schedule-accent: #e81828;
+  --schedule-good: #2da44e;
+  --schedule-warn: #c4973a;
+  --schedule-bad: #9aa7b8;
+}
+
+.schedule-stage {
+  gap: 20px;
+}
+
+.schedule-spotlight,
+.migration-banner,
+.schedule-stat,
+.schedule-month-group,
+.schedule-card {
+  border: 1px solid var(--schedule-border);
+  background: linear-gradient(180deg, rgba(5, 11, 24, 0.92), rgba(8, 15, 28, 0.84));
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.24);
+}
+
+.schedule-spotlight {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(220px, 1fr);
+  gap: 18px;
+  border-radius: 28px;
+  padding: 22px 24px;
+}
+
+.spotlight-kicker,
+.month-eyebrow,
+.migration-title {
+  font: 700 0.72rem/1.1 "IBM Plex Mono", monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--schedule-copy-quiet);
+}
+
+.spotlight-title {
+  margin-top: 8px;
+  font: 700 clamp(1.6rem, 3vw, 2.6rem)/0.98 "Barlow Condensed", sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.spotlight-copy {
+  margin: 10px 0 0;
+  color: var(--schedule-copy);
+  max-width: 58ch;
+}
+
+.spotlight-links {
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+  align-content: center;
+}
+
+.spotlight-link,
+.migration-link,
+.schedule-inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.schedule-toolbar {
+  display: grid;
+  gap: 14px;
+}
+
+.schedule-search-wrap {
+  display: grid;
+  gap: 6px;
+}
+
+.schedule-search-label {
+  font: 600 0.82rem/1.2 "IBM Plex Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--schedule-copy-quiet);
+}
+
+.schedule-search {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid var(--schedule-border);
+  background: var(--schedule-surface);
+  color: #fff;
+  padding: 14px 16px;
+  font: 500 0.98rem/1.2 "Inter", sans-serif;
+}
+
+.schedule-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.schedule-filters .filter-btn {
+  border: 1px solid var(--schedule-border);
+  background: var(--schedule-surface);
+  color: #fff;
+}
+
+.schedule-filters .filter-btn[aria-pressed="true"] {
+  background: rgba(232, 24, 40, 0.2);
+  border-color: rgba(232, 24, 40, 0.44);
+}
+
+.schedule-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.schedule-stat {
+  border-radius: 22px;
+  padding: 18px;
+}
+
+.schedule-stat-label {
+  display: block;
+  color: var(--schedule-copy-quiet);
+  font: 700 0.72rem/1.1 "IBM Plex Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.schedule-stat-value {
+  display: block;
+  margin-top: 10px;
+  font: 700 clamp(1.8rem, 3vw, 2.5rem)/0.94 "Barlow Condensed", sans-serif;
+}
+
+.migration-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  border-radius: 22px;
+}
+
+.migration-copy {
+  margin: 8px 0 0;
+  color: var(--schedule-copy);
+}
+
+.schedule-months {
+  display: grid;
+  gap: 18px;
+}
+
+.schedule-month-group {
+  border-radius: 30px;
+  padding: 18px;
+}
+
+.schedule-month-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 4px 6px 18px;
+}
+
+.month-title {
+  margin-top: 8px;
+  font: 700 clamp(1.4rem, 2.4vw, 2rem)/0.98 "Barlow Condensed", sans-serif;
+}
+
+.month-count {
+  color: var(--schedule-copy-quiet);
+}
+
+.schedule-card-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.schedule-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 18px;
+  border-radius: 24px;
+  padding: 18px;
+}
+
+.schedule-card-title {
+  font: 700 1.35rem/1.02 "Barlow Condensed", sans-serif;
+}
+
+.schedule-card-meta {
+  margin-top: 8px;
+  color: var(--schedule-copy);
+}
+
+.schedule-card-statuses,
+.schedule-card-tags,
+.schedule-card-links,
+.schedule-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.schedule-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font: 600 0.72rem/1 "IBM Plex Mono", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+.schedule-pill[data-tone="attended"] {
+  background: rgba(45, 164, 78, 0.2);
+  color: #b9f3c6;
+}
+
+.schedule-pill[data-tone="planned"] {
+  background: rgba(196, 151, 58, 0.22);
+  color: #ffe2a1;
+}
+
+.schedule-pill[data-tone="skipped"] {
+  background: rgba(154, 167, 184, 0.18);
+  color: #d5dfeb;
+}
+
+.schedule-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: var(--schedule-surface);
+  color: var(--schedule-copy);
+}
+
+.schedule-note textarea {
+  width: 100%;
+  min-height: 92px;
+  resize: vertical;
+  margin-top: 8px;
+  border-radius: 14px;
+  border: 1px solid var(--schedule-border);
+  background: rgba(0, 0, 0, 0.18);
+  color: #fff;
+  padding: 12px;
+  font: 500 0.94rem/1.45 "Inter", sans-serif;
+}
+
+.schedule-card-side {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.schedule-detail-block {
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: var(--schedule-surface);
+}
+
+.schedule-detail-label {
+  display: block;
+  color: var(--schedule-copy-quiet);
+  font: 700 0.68rem/1.1 "IBM Plex Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.schedule-detail-value {
+  display: block;
+  margin-top: 6px;
+}
+
+.schedule-action-btn {
+  border: 1px solid var(--schedule-border);
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: var(--schedule-surface);
+  color: #fff;
+  font: 600 0.88rem/1 "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.schedule-action-btn.is-active {
+  border-color: rgba(232, 24, 40, 0.4);
+  background: rgba(232, 24, 40, 0.16);
+}
+
+.schedule-empty {
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--schedule-surface);
+  color: var(--schedule-copy);
+}
+
+@media (max-width: 1080px) {
+  .schedule-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .schedule-card,
+  .schedule-spotlight {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .schedule-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .migration-banner {
+    flex-direction: column;
+    align-items: start;
+  }
+}

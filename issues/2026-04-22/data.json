@@ -5,14 +5,14 @@
     "edition": 24,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-22T13:31:28.310Z",
+    "generated_at": "2026-04-22T13:48:51.358Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "fallback",
-      "enrich_label": "Structured fallback published after enrich failure: Claude response did not parse as JSON after repair: Unexpected token '`', \"```json\n{\n\"... is not valid JSON",
-      "generated_at_et": "Apr 22, 2026, 9:31 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "Apr 22, 2026, 9:48 AM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "55° · Overcast · 8 mph · gusts 12",
+      "56° · Overcast · 7 mph · gusts 11",
       "CHC leads 2-0"
     ],
     "next_label": "Tomorrow",
@@ -345,10 +345,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 55,
+          "temp_f": 56,
           "condition": "Overcast",
-          "wind": "8 mph · gusts 12",
-          "gusts_mph": 12
+          "wind": "7 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",

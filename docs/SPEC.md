@@ -1,9 +1,9 @@
 # Phillies Wire — Site Specification
 
-**Version:** 1.4.0
+**Version:** 1.6.0
 **Owner:** Dave Robertson
-**Last revised:** 2026-04-20
-**Status:** Active. v1.4.0 ships per-issue `data.json` contract + live Team Health / Lineup / Player Focus panels on `/dashboard/`.
+**Last revised:** 2026-04-22
+**Status:** Active. v1.6.0 ships the merged dashboard system: per-issue `data.json`, innings timeline, canonical schedule JSON, schedule tracker, season ICS, and Ballparks Quest schedule cutover.
 
 ---
 
@@ -35,7 +35,11 @@ phillies-wire/                                 → GitHub Pages root
 ├── /                                          → Current issue (today's edition)
 ├── /archive/                                  → Full archive index
 ├── /issues/<YYYY-MM-DD>/                      → Permalinks per day
-├── /dashboard/                                → NEW — live command center
+├── /dashboard/                                → live command center
+├── /dashboard/innings/                        → innings timeline view
+├── /schedule/                                 → Phillies schedule + attendance tracker
+├── /data/phillies-2026.json                   → canonical season schedule
+├── /calendar/phillies-2026-all.ics            → season calendar feed
 │
 ├── /archive.json                              → Machine-readable archive manifest
 ├── /feed.xml                                  → RSS 2.0 for readers
@@ -56,6 +60,10 @@ phillies-wire/                                 → GitHub Pages root
 | **Archive index** | `/archive/` | List of all issues, filterable | Everyone | Every crawl |
 | **Dated issue** | `/issues/<date>/` | Permanent per-day record | Search / RSS readers | Immutable after day closes |
 | **Dashboard** | `/dashboard/` | Live command center view: hero, activity feed, record, key events | Dave + household | Client-side poll of `archive.json` + `live-feed` data during games |
+| **Innings timeline** | `/dashboard/innings/` | Linescore and play progression view | Dave + household | Client-side read of per-issue `data.json` + canonical schedule |
+| **Schedule tracker** | `/schedule/` | Season schedule, attendance state, notes, and cross-links | Dave + household | Generated schedule JSON + local-first state |
+| **Canonical schedule** | `/data/phillies-2026.json` | Machine-readable Phillies season source of truth | Dashboards, scripts, calendar, Quest cutover | Every render |
+| **Season calendar** | `/calendar/phillies-2026-all.ics` | Importable season feed | Calendar apps | Every render |
 | **RSS** | `/feed.xml` | Standard feed | RSS clients | Every crawl |
 | **JSON archive** | `/archive.json` | Machine-readable index of all editions | Dashboards, scripts | Every crawl |
 
@@ -64,7 +72,6 @@ phillies-wire/                                 → GitHub Pages root
 | Surface | Path | Status | Notes |
 |---|---|---|---|
 | **Per-issue JSON** | `/issues/<date>/data.json` | ✅ shipped v1.4.0 | Unlocks Lineup / Injuries / Player Focus on dashboard |
-| **Innings timeline** | `/dashboard/innings/` | v1.5 (planned) | Visualizes per-play timeline for live/final editions |
 | **Broadcast view** | `/broadcast/` | v1.6 | Heavy-chart aesthetic (Gemini mockup #2), for large displays |
 | **Editorial view** | `/editorial/` | v1.6 | Magazine-layout weekly recap (Gemini mockup #3) |
 | **Live API proxy** | `/api/now.json` | deferred | Cached live snapshot; only if GitHub Pages latency becomes an issue |
@@ -127,9 +134,54 @@ Fields omitted intentionally: `recap.content` (only needed in HTML render), `ros
 
 **Consumers**:
 - `/dashboard/` — `fetchIssueData(date)` reads this, hydrates Team Health (from `injury_report.il_entries`), Lineup card (from `lineup.batting_order.home`), Player Focus (from `lineup.starters.home` / `next_game`).
-- Future `/dashboard/innings/` will consume the same file for the timeline viz (planned v1.5).
+- `/dashboard/innings/` reads the same file for the linescore and play progression surface.
 
-### 3.3 Live snapshot (from `live-feed.js`)
+### 3.3 Canonical schedule (schema_version 1.0.0 — shipped v1.6.0)
+
+Written to `/data/phillies-2026.json` during `render.mjs` via `canonical-schedule.mjs`. This is the repo-owned Phillies season source of truth used by `/schedule/`, `latest.json`, the innings and dashboard nav pointers, the season ICS feed, and the Ballparks Quest cutover.
+
+```json
+{
+  "schema_version": "1.0.0",
+  "publication": "Phillies Wire",
+  "season": 2026,
+  "generated_at": "ISO-8601",
+  "source": { "provider": "MLB Stats API", "fetched_at": "ISO-8601", "query": { "teamId": "143", "gameType": "R" } },
+  "summary": {
+    "total_games": 162,
+    "home_games": 81,
+    "away_games": 81,
+    "completed_games": 20,
+    "current_game_pk": 824692,
+    "next_game_pk": 824700,
+    "latest_completed_game_pk": 824688
+  },
+  "games": [
+    {
+      "game_pk": 824692,
+      "official_date": "YYYY-MM-DD",
+      "game_date": "ISO-8601",
+      "title": "Phillies at Cubs",
+      "matchup": "PHI at CHC",
+      "date_label": "Wed, Apr 22, 2026",
+      "time_label": "7:40 PM",
+      "home_game": false,
+      "phillies_side": "away",
+      "opponent": { "team_id": 112, "name": "Chicago Cubs", "abbr": "CHC" },
+      "venue": { "id": 17, "name": "Wrigley Field" },
+      "status": { "abstract": "Preview|Live|Final", "detailed": "Scheduled|In Progress|Final", "code": "S|I|F" },
+      "score": { "phillies": 0, "opponent": 4, "home": 4, "away": 0 },
+      "result": "W|L|null",
+      "series": { "game_number": 1, "total_games": 3, "label": "PHI leads 1-0" },
+      "attendance_key": "pw-game:824692",
+      "legacy_match_key": "YYYY-MM-DD:OPP:H|A",
+      "tags": ["home|road", "division|interleague", "rivalry", "weekend"]
+    }
+  ]
+}
+```
+
+### 3.4 Live snapshot (from `live-feed.js`)
 
 Browser-side polling of MLB Stats API directly:
 - `https://statsapi.mlb.com/api/v1/game/<pk>/feed/live`
@@ -145,7 +197,7 @@ Shape documented in `live-feed.js::buildGameSnapshot()`. Returned object:
 }
 ```
 
-### 3.4 Schema stability rules
+### 3.5 Schema stability rules
 
 - `archive.json` `schema_version` bumps only on breaking changes.
 - New fields are additive; consumers must ignore unknown keys.
@@ -333,16 +385,17 @@ Strictly zero third-party tracking beyond Plausible if adopted. No GA, no Facebo
 
 | Version | Surfaces / features | Blocker |
 |---|---|---|
-| **1.2.0** (current) | Latest issue, archive, dated issues, RSS, email | — |
-| **1.3.0** (this sprint) | `/dashboard/` + per-issue `data.json` | ✅ dashboard shipped; data.json next |
-| **1.4.0** | Innings timeline view on `/dashboard/innings/` | Needs per-play data from boxscore |
-| **1.5.0** | `/broadcast/` (large-display) + `/editorial/` (weekly recap) | Design iteration |
-| **1.6.0** | Weekly recap aggregator at `/recaps/<week>/` | Aggregation script |
-| **1.7.0** | Custom domain + Plausible | Optional |
+| **1.2.0** | Latest issue, archive, dated issues, RSS, email | shipped |
+| **1.3.0** | `/dashboard/` + per-issue `data.json` | shipped |
+| **1.4.0** | `/dashboard/innings/` | shipped |
+| **1.5.0** | Canonical schedule JSON + season ICS + `/schedule/` tracker | shipped |
+| **1.6.0** (current) | Ballparks Quest Phillies cutover + merged dashboard navigation + latest feed schedule pointers | shipped |
+| **1.7.0** | `/broadcast/` large-display + `/editorial/` weekly recap | Design iteration |
+| **1.8.0** | Weekly recap aggregator at `/recaps/<week>/` + custom domain | Aggregation and ops work |
 
 ---
 
-## 13. File map (v1.3.0)
+## 13. File map (v1.6.0)
 
 ```
 phillies-wire/
@@ -351,6 +404,8 @@ phillies-wire/
 ├── archive/index.html          ← public archive page (generated)
 ├── issues/<date>/index.html    ← dated issue permalinks (generated)
 ├── issues/<date>/data.json     ← per-issue machine-readable (v1.3 target, generated)
+├── data/phillies-2026.json     ← canonical season schedule (generated)
+├── calendar/phillies-2026-all.ics ← season calendar (generated)
 ├── feed.xml                    ← RSS (generated)
 ├── sitemap.xml                 ← (generated)
 ├── robots.txt                  ← (generated)
@@ -367,7 +422,14 @@ phillies-wire/
 ├── dashboard/
 │   ├── index.html              ← Clean SaaS command center
 │   ├── dashboard.css           ← dashboard styles (reuses tokens.css)
-│   └── dashboard.js            ← reads ../archive.json
+│   ├── dashboard.js            ← reads archive + canonical schedule
+│   └── innings/                ← linescore + play progression surface
+├── schedule/
+│   ├── index.html              ← season tracker + attendance UI
+│   ├── schedule.css            ← tracker styles
+│   └── schedule.js             ← canonical schedule reader + legacy import
+├── shared/
+│   └── phillies-schedule.mjs   ← schedule helpers shared by render + browser
 ├── docs/
 │   └── SPEC.md                 ← this file
 ├── scripts/
@@ -394,10 +456,10 @@ phillies-wire/
 
 ## 14. Open questions / decisions pending
 
-1. **Per-issue `data.json` — include `recap.content` and `preview.content`?** Leaning no (kept in HTML only, not dashboard-useful) but open.
-2. **Dashboard polling cadence** — currently none (loads once). Should it poll `archive.json` every 60s + MLB live-feed during game windows?
-3. **Custom domain** — `wire.daverobertson.net` vs stay on `*.github.io`?
-4. **Plausible** — adopt or stay zero-analytics?
+1. **Per-issue `data.json` — include richer play arrays now or keep the lighter linescore-first contract?**
+2. **Canonical schedule storage** — stay repo JSON only or add a local SQLite authoring layer later for overrides and audits?
+3. **Dashboard polling cadence** — keep manual refresh for schedule surfaces or poll `archive.json` and schedule JSON every 60s during game windows?
+4. **Custom domain** — `wire.daverobertson.net` vs stay on `*.github.io`?
 5. **Broadcast view** — real need or nice-to-have? Only build if a tablet or TV display is actually being set up.
 
 Close these in the next planning pass, not now.

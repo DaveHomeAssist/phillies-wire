@@ -1,458 +1,305 @@
-================================================================================
-  PHILLIES WIRE — CONSOLIDATED IMPLEMENTATION PLAN
-  Author: Claude senior-engineer code review session (2026-04-18)
-  Scope: all follow-up work surfaced by the code review + HANDOFF.md open items
-  Supersedes: the previous crawl.mjs-only decomposition plan (its scope
-              preserved below as Phase 3)
-================================================================================
+1. PROJECT SUMMARY
 
-ASSUMPTIONS (state up front so the plan is readable without full context)
------------------------------------------------------------------------
-- Single human owner (Dave) with Codex-style assistance available for
-  deterministic, spec-driven work. No paid team.
-- Free-tier GitHub Actions; no self-hosted runners.
-- Anthropic API key already provisioned; no new paid services required
-  for Phase 1–4. Phase 5F may require a transactional-email provider
-  (Resend / Postmark) if the subscription webhook ships.
-- No existing issue tracker; this text file IS the tracker. Status is
-  tracked with [ ] / [~] / [x] markers when work begins.
-- Effort estimates are wall-clock for a focused single-developer day
-  (~4 productive hours). Double for interrupted days.
-- Every phase preserves the existing 33/33 test suite as green at each
-  commit; CI success rate stays at ≥85%.
-- No PR/issue tracker integration — this file is the source of truth.
+Objective
+- Complete the merged Phillies dashboard by unifying the live Wire dashboard, innings view, schedule tracker, attendance state, and shared feeds into one repo owned Phillies command center inside `phillies-wire`.
 
-================================================================================
-  PHASE 1 — Critical bug fixes
-  Duration: 1 focused day · Owner: Dave · Priority: highest
-================================================================================
+Key outcomes
+- `phillies-wire` becomes the canonical Phillies surface for dashboard, schedule, archive, ticker, and calendar outputs.
+- A repo owned canonical schedule data layer is introduced and used by the dashboard, schedule view, JSON feeds, and ICS export.
+- A new `/schedule/` surface ships inside `phillies-wire` with attendance tracking, notes, and clear links back to the main dashboard.
+- `/dashboard/` and `/dashboard/innings/` read the same canonical game and schedule data as the schedule surface.
+- External consumer outputs stay stable or gain versioned replacements, including `latest.json`, per issue `data.json`, ticker embed, archive JSON, and calendar feed.
+- Phillies specific schedule ownership is removed from Ballparks Quest, leaving a clean handoff path or stub link.
+- Verification, deploy, and smoke checks cover the merged system before cutover.
 
-Purpose: close the most dangerous bugs before any other work. All are
-single-commit, single-file, low-risk changes with obvious test coverage
-increases.
+Assumptions
+- `phillies-wire` remains a zero backend static site deployed by GitHub Pages through GitHub Actions.
+- MLB Stats API remains the authoritative upstream for schedule and live game data.
+- Manual schedule overrides are allowed, but they are file based, deterministic, and checked into the repo.
+- Notion is planning and mirror context only, not a runtime data source.
+- The current dashboard, innings view, `latest.json`, ticker embed, and `data.json` contract remain valid starting points and should be extended, not replaced.
+- The canonical schedule store for this implementation is a repo owned JSON layer, not Postgres or SQLite, because the active repo contract is static and zero backend.
+- Ballparks Quest changes are limited to migration, link cleanup, and Phillies schedule retirement, not a redesign of that product.
 
-Key milestones
-  [ ] 1.1  writeError: switch writeFileSync → appendFileSync (or
-           writeFileSync with { flag: "a" }) in both crawl.mjs:1394 and
-           enrich.mjs:276. Add a unit test that asserts two consecutive
-           writeError calls both survive in the log.
-  [ ] 1.2  getRelativeIsoDate: recompute the ET-localized date before
-           applying the offset, so "yesterday" means yesterday-in-ET
-           regardless of local machine TZ or 00:00–05:00 UTC cron fires.
-  [ ] 1.3  render.mjs renderTemplate: reject empty {{}} expressions
-           with a clear error instead of silently returning the whole
-           scope. Add a render-fixture test case.
-  [ ] 1.4  verify.mjs live-headline regex: tighten to require both team
-           abbreviations (2-3 alpha chars each, not any {A-Z}{2,3}) AND
-           a numeric score. Add a negative test for 0-0 placeholders.
-  [ ] 1.5  live-feed.js consecutiveFailures: reset on visibilitychange
-           → visible so re-entry does not start "one failure from
-           backoff".
+2. PHASED IMPLEMENTATION PLAN
 
-Required resources
-  - No new deps. Existing test harness covers all four files.
+Phase Name
+- Phase 1. Merge Scope Audit and Contract Freeze
 
-Acceptance criteria
-  - Two failing runs in a row leave two entries in the error log.
-  - Full vitest + existing pipeline-smoke test green.
-  - No new 4xx / 5xx regressions in the next 48h of cron runs.
+Goal
+- Lock the exact merged dashboard scope before code changes so the schedule, dashboard, feeds, and migration work all target the same contract.
 
-================================================================================
-  PHASE 2 — Security hardening
-  Duration: 1.5 days · Owner: Dave (design) + Codex (impl) · Priority: high
-================================================================================
+Key Milestones
+- Audit the current `dashboard/`, `dashboard/innings/`, `latest.json`, `archive.json`, `calendar/`, and `embed/` surfaces against the combination plan and dashboard audit notes.
+- Create a field map showing which current data comes from `archive.json`, per issue `data.json`, live MLB endpoints, and the future canonical schedule layer.
+- Freeze the merged route map for `/`, `/dashboard/`, `/dashboard/innings/`, `/schedule/`, `/embed/ticker.html`, and `calendar/phillies-2026-all.ics`.
+- Define the canonical schedule schema, override file schema, and attendance state shape.
+- Record cutover rules for Ballparks Quest Phillies schedule pages and links.
 
-Purpose: close the low-probability, high-impact issues the review flagged.
-None are active vulnerabilities today; this raises defense-in-depth floor.
+Dependencies
+- Current repo spec and sprint docs present
+- Access to Ballparks Quest migration notes
 
-Key milestones
-  [ ] 2.1  enrich.mjs prompt-injection wrapper: wrap user-supplied content
-           in <user_data>...</user_data> delimiters Claude respects.
-           Update the system prompt to ignore instructions inside that
-           block. Post-validate the response for leakage ("As an AI
-           assistant..." etc.).
-  [ ] 2.2  Override file size gate: statSync before readFileSync in
-           crawl.mjs:1297 so a 50 MB crafted override cannot exhaust
-           heap before the existing 50 KB check fires.
-  [ ] 2.3  Content-Security-Policy meta tag in phillies-wire-v2.html:
-             default-src 'self';
-             img-src 'self' https: data:;
-             style-src 'self' 'unsafe-inline';
-             script-src 'self';
-             connect-src 'self' https://statsapi.mlb.com
-                              https://api.open-meteo.com;
-             font-src 'self' https://fonts.gstatic.com;
-             frame-ancestors 'none';
-           Verify no console errors on load (Playwright smoke test).
-  [ ] 2.4  live-feed.js shape validation: check the MLB API response
-           has expected nested structure in buildGameSnapshot before
-           reading deep paths. Fail soft (return previous snapshot).
-  [ ] 2.5  deliver.mjs log privacy: replace "Delivered to ${recipients}"
-           with "Delivered to N recipients" so Actions logs don't leak
-           personal email addresses.
+Required Resources
+- `docs/SPEC.md`
+- `docs/SPRINT_2026-W17.md`
+- Combination plan notes
+- Phillies Wire repo
 
-Required resources
-  - No new deps.
-  - ~30 min for CSP validation via Playwright in the browser.
+Estimated Timeline
+- 0.5 to 1 day
 
-Acceptance criteria
-  - New unit tests cover 2.1, 2.2, 2.4.
-  - CSP meta tag does not break the live page (verified via CI artifact).
-  - deliver.mjs test covers the log-redaction behavior.
+Owner / Responsible Party
+- Dave with Codex support
 
-================================================================================
-  PHASE 3 — crawl.mjs decomposition
-  Duration: 3–5 days · Owner: Codex (impl) + Dave (review) · Priority: medium
-================================================================================
+Risks / Failure Points
+- Scope drift between dashboard work and schedule migration
+- Data contracts frozen too late, causing duplicate rewrites
+- Ballparks Quest dependencies discovered after build work starts
 
-Purpose: retire the 1,406-line crawl.mjs monolith in favor of focused
-modules under crawl/. Preserves the scope of the previous implementation
-plan (see git history before this commit for the 448-line sub-plan).
+Phase Name
+- Phase 2. Canonical Schedule Data Layer
 
-Key milestones
-  [ ] 3.1  Create crawl/ subdirectory skeleton:
-             crawl/api/mlb.mjs        (fetchJson, fetchSoft, MLB endpoints)
-             crawl/api/weather.mjs    (Open-Meteo fetch + buildWindSummary)
-             crawl/build/sections.mjs (hero, ticker, source-notes)
-             crawl/build/lineup.mjs   (lineup + rotation + batting order)
-             crawl/build/recap.mjs    (recap + key performers + decisions)
-             crawl/format.mjs         (date/time/shortDate formatters)
-             crawl/validate.mjs       (validateCrawlPayload + schema apply)
-             crawl/overrides.mjs      (loadOverrides + clampOverride + deepMerge)
-  [x] 3.2  Extract api/* first (lowest churn, pure-I/O seams). Rewire
-           crawl.mjs imports. Test suite must stay green. Shipped
-           2026-04-20 via crawl/api/mlb.mjs + crawl/api/weather.mjs.
-  [x] 3.3  Extract format.mjs (pure functions, zero state). Update
-           crawl-helpers.test.mjs imports. Shipped 2026-04-20.
-  [ ] 3.4  Extract build/* (pure transforms on fetched payloads). Each
-           extraction is its own commit; each commit leaves tests green.
-  [ ] 3.5  Extract validate.mjs + overrides.mjs.
-  [ ] 3.6  crawl.mjs at repo root reduces to a thin orchestrator
-           (<50 lines). Each crawl/ file stays < 300 lines.
-  [ ] 3.7  Add a snapshot test that serializes the full data payload
-           for a fixture input, so any future extraction regression is
-           caught byte-exactly.
+Goal
+- Create one repo owned schedule source of truth that powers every Phillies surface without adding a backend.
 
-Required resources
-  - No new deps. Existing test harness.
-  - Est. ~3 days of Codex implementation + 1–2 days of Dave review.
+Key Milestones
+- Add a canonical schedule builder that fetches MLB Stats API schedule data and writes a normalized Phillies schedule artifact under a stable repo path such as `data/phillies-2026.json`.
+- Define deterministic merge rules for upstream schedule data plus checked in manual overrides.
+- Include attendance fields, game status, venue, broadcast, probable pitchers, series metadata, and stable game identifiers.
+- Update the pipeline so schedule generation runs before render and verification.
+- Add a machine readable audit output showing upstream fetch time, override application, and row counts.
+- Add schema validation for the canonical schedule artifact in `verify.mjs`.
 
-Acceptance criteria
-  - All tests green on every commit, not just at the end.
-  - No file under crawl/ exceeds 300 lines.
-  - 2 scheduled cron runs post-merge produce valid output.
-  - Pre- and post-refactor phillies-wire-data.json byte-identical for
-    fixture-driven test input.
+Dependencies
+- Phase 1 field map and schema decisions
+- MLB Stats API availability
 
-================================================================================
-  PHASE 4 — Module modernization + testability
-  Duration: 2 days · Owner: Dave (design) + Codex (impl) · Priority: medium
-================================================================================
+Required Resources
+- `crawl.mjs`
+- `render.mjs`
+- `verify.mjs`
+- MLB Stats API
+- Test fixtures for schedule days, off days, postponements, and doubleheaders
 
-Purpose: pay down the readability debt flagged by the review. Each item
-is a small, self-contained refactor.
+Estimated Timeline
+- 1.5 to 2.5 days
 
-Key milestones
-  [ ] 4.1  enrich.mjs: split main() into runEnrichment(apiKey, input)
-           returning {status, data, error}. main() reduces to I/O +
-           exit-code handling. New unit tests exercise success, skipped,
-           and fallback branches without mocking https.
-  [ ] 4.2  live-feed.js: modernize from ES5 function callbacks to
-           async/await + arrows. Target ~40 fewer lines. Add a
-           browser-stub integration test covering live / final /
-           paused / pregame state transitions.
-  [ ] 4.3  render.mjs renderTemplate: one-line header comment
-           documenting the three-pass order (blocks → triple → double)
-           and why it matters. Rename fetchSoft → fetchJsonOrNull in
-           crawl/ modules.
-  [ ] 4.4  pregame-preview.js: header comment flagging the file as
-           a pure generator (no I/O, no side effects).
-  [ ] 4.5  Extract render.mjs template engine into render/template.mjs
-           (~120 lines) and render/html-builders.mjs (everything else).
-           render.mjs root becomes the orchestrator.
+Owner / Responsible Party
+- Dave with Codex support
 
-Required resources
-  - No new deps.
+Risks / Failure Points
+- Doubleheaders, postponements, and makeup games can break naive schedule normalization
+- Manual overrides can drift from upstream if the merge rules are not explicit
+- If game IDs are unstable in the local model, attendance and dashboard linking will break
 
-Acceptance criteria
-  - Test count grows by ≥5 with new enrich branch tests.
-  - live-feed.js line count drops ≥30.
-  - CI still green; no new lint warnings.
+Phase Name
+- Phase 3. Schedule Surface and Attendance Tracker
 
-================================================================================
-  PHASE 5 — Feature additions
-  Duration: 2–4 weeks elapsed (parallel work) · Owner: Dave · Priority: growth
-================================================================================
+Goal
+- Ship the Phillies schedule experience inside `phillies-wire` so attendance tracking and game planning live next to the dashboard.
 
-Purpose: grow reader value. Features are independent — ship in any order.
+Key Milestones
+- Create `/schedule/` as a static route inside `phillies-wire` with month and series aware schedule views.
+- Port or rebuild the attendance tracker state using the canonical schedule IDs and local first persistence.
+- Support attended, planned, skipped, and note states with export and import safety if needed.
+- Add contextual links from schedule items to the issue archive, live dashboard, and innings page when available.
+- Expose clear next game, homestand, road trip, and attended game summaries.
+- Apply the existing design tokens, motion guards, and mobile navigation patterns already used by `/dashboard/`.
 
-Feature 5A — Bullpen + probable-pitcher head-to-head card
-  Effort: ~3 days
-  Why: highest-leverage per the review. What fans look up during games.
-  Scope:
-    [ ] Fetch last-3-starts line per pitcher via
-        /people/{id}/stats?statGroup=pitching&split=byDateRange
-    [ ] Fetch bullpen availability via /teams/{id}/roster cross-
-        referenced with transactions feed
-    [ ] New template section with pitcher cards + bullpen blurb
-    [ ] verify.mjs contract update
-    [ ] 3+ new test cases
+Dependencies
+- Phase 2 canonical schedule artifact
+- Existing local storage patterns
 
-Feature 5B — Standings + wildcard context box
-  Effort: ~1.5 days
-  Why: 30-second "where do we sit" view.
-  Scope:
-    [ ] Fetch /standings?leagueId=104&season=Y once per day
-    [ ] Derive NL East rank + GB + wildcard standing
-    [ ] Compact template block above hero bullets
-    [ ] Fixture + test coverage
+Required Resources
+- `dashboard/` design system
+- Shared standards for local first storage
+- Browser testing on desktop and mobile widths
 
-Feature 5C — Shareable per-issue OG image
-  Effort: ~2 days
-  Why: every issue becomes a first-class share target.
-  Scope:
-    [ ] Extend buildOgDefaultSvg to per-issue 1200×630 SVG
-        (score + headline + pitcher matchup)
-    [ ] Emit /og/{YYYY-MM-DD}.svg alongside each dated issue
-    [ ] Per-issue meta og:image points at the per-issue path
-    [ ] Playwright visual-snapshot test
+Estimated Timeline
+- 2 to 3 days
 
-Feature 5D — Archive tagging + filterable UI
-  Effort: ~2 days
-  Why: "show me every Phillies–Mets home series" vs. full-text only.
-  Scope:
-    [ ] Extend archive entry schema: opponent, home/away, win/loss,
-        series_name, run_differential
-    [ ] Migrate archive.json on first post-deploy run (backward compat)
-    [ ] Vanilla-JS filter controls on archive/index.html
-    [ ] Unit tests on derivation + integration test on filter UX
+Owner / Responsible Party
+- Dave with Codex support
 
-Feature 5E — Weekly series digest email
-  Effort: ~2 days
-  Why: reuses the SMTP stack already wired up.
-  Scope:
-    [ ] scripts/series-digest.mjs reads last-7-days archive entries
-    [ ] Separate weekly cron (Sunday AM ET)
-    [ ] Template: series recap, best performer, injury delta
-    [ ] DELIVERY_RECIPIENTS gate shared with daily edition
+Risks / Failure Points
+- Attendance state migration can break if prior Ballparks Quest keys are not mapped cleanly
+- Schedule density on mobile can create unusable layouts
+- Game state badges can diverge from dashboard labels if not centralized
 
-Feature 5F — (Optional) RSS → email subscription webhook
-  Effort: ~1 day
-  Scope:
-    [ ] Static /subscribe form POSTing to Resend/Postmark
-    [ ] Replace manual DELIVERY_RECIPIENTS list management
-    [ ] One-line fetch; no new runtime deps
+Phase Name
+- Phase 4. Dashboard and Innings Merge
 
-Required resources
-  - MLB Stats API (existing).
-  - 5F only: Resend free tier or equivalent.
+Goal
+- Make the main dashboard and innings view consume the canonical schedule layer so all Phillies surfaces agree on game context, next game, and navigation.
 
-Acceptance criteria per feature
-  - verify.mjs contract updated to require new sections/data.
-  - Test suite grows per feature.
-  - 3 scheduled cron runs post-feature produce valid output.
+Key Milestones
+- Refactor `dashboard/dashboard.js` to use the canonical schedule artifact for next game, series, venue, and schedule aware context while keeping per issue `data.json` for richer issue detail.
+- Update `/dashboard/` panels so record, hero, next game, activity feed, and schedule links stay aligned with the canonical schedule layer.
+- Update `/dashboard/innings/` routing and state so it resolves the active game from the canonical schedule IDs and per issue data.
+- Add shared helpers for game lookup, date resolution, and route linking across dashboard and schedule pages.
+- Replace placeholder or duplicate nav items with a stable merged navigation model across dashboard, innings, and schedule.
+- Ensure all surfaces degrade cleanly on off days, pregame windows, and archive only dates.
 
-================================================================================
-  PHASE 6 — Operational polish
-  Duration: 1.5 days · Owner: Codex (impl) + Dave (review) · Priority: low
-================================================================================
+Dependencies
+- Phase 2 canonical schedule layer
+- Phase 3 route and navigation decisions
+- Existing per issue `data.json` contract
 
-Purpose: close remaining HANDOFF.md follow-ups and the performance
-items the review noted.
+Required Resources
+- `dashboard/index.html`
+- `dashboard/dashboard.js`
+- `dashboard/innings/`
+- `latest.json`
+- `archive.json`
 
-Key milestones
-  [ ] 6.1  Self-host fonts: download Barlow Condensed + Inter subsets,
-           bundle under /fonts/, replace Google Fonts preconnect links.
-           Trims 2–3 third-party requests per page load.
-  [ ] 6.2  Email template hardening: dedicated email-safe variant in
-           deliver.mjs with inlined styles + Outlook-compatible table
-           layouts. Manual preview in Litmus / free alternative. Test
-           against Gmail + Outlook Web.
-  [ ] 6.3  Integration test: mocked-MLB fixture exercises the full
-           crawl → enrich (mocked Claude) → render → verify chain and
-           asserts the full output payload.
-  [ ] 6.4  Performance: parallelize per-pitcher stats fetches in
-           crawl.mjs (or crawl/api/mlb.mjs post-Phase-3) with bounded
-           concurrency.
-  [ ] 6.5  render.mjs: replace hand-rolled findMatchingClose with a
-           one-pass tokenizer if the template engine gets extracted
-           in Phase 4.
+Estimated Timeline
+- 1.5 to 2.5 days
 
-Required resources
-  - Font subsetting: one-time tool run (pyftsubset or similar).
-  - ~1 hr for Litmus trial account if hardening 6.2 in a real inbox.
+Owner / Responsible Party
+- Dave with Codex support
 
-Acceptance criteria
-  - First-paint waterfall has zero fonts.googleapis.com /
-    fonts.gstatic.com entries.
-  - Pipeline-smoke test count grows by ≥1 (integration test 6.3).
+Risks / Failure Points
+- Dashboard can show conflicting states if archive data and schedule data are not reconciled in one helper layer
+- Innings view can fail for live or final games if the play data is keyed differently than the schedule model
+- Navigation changes can break saved links or kiosk usage if route names move
 
-================================================================================
-  PHASE ORDER + DEPENDENCIES
-================================================================================
+Phase Name
+- Phase 5. Feed, Calendar, and Embed Unification
 
-  Phase 1 ─ critical bugs ───────────────── unblocked, do first
-              │
-              ▼
-  Phase 2 ─ security hardening ─────────── depends on Phase 1 test baseline
-              │
-              ▼
-  Phase 3 ─ crawl.mjs decomposition ────── depends on Phases 1–2
-              │
-              ▼
-  Phase 4 ─ modernization + testability ── depends on Phase 3 modules
-              │
-              ├────► Phase 5 ─ features (parallelizable across 5A–5F)
-              │
-              ▼
-  Phase 6 ─ operational polish ─────────── can run in parallel with Phase 5
+Goal
+- Ensure every machine readable output reflects the merged Phillies model and remains stable for downstream consumers.
 
-Phases 1 and 2 must land before 3. Phases 4, 5, and 6 can run in
-parallel after 3 merges. Feature sub-items in Phase 5 are independent.
+Key Milestones
+- Update `latest.json` so it includes schedule aware fields needed by dashboard, embeds, and future consumers without breaking the current contract.
+- Add or confirm a stable `wire-latest` style consumer payload if the current `latest.json` contract should remain minimal.
+- Regenerate `calendar/phillies-2026-all.ics` from the canonical schedule layer and define refresh expectations.
+- Update `embed/ticker.html` so it resolves current game and next game context from the merged data model.
+- Add stable per date archive JSON or expand per issue `data.json` references so other surfaces can deep link reliably.
+- Extend `verify.mjs` to validate these shared outputs together, not as isolated files.
 
-================================================================================
-  OWNERSHIP + CADENCE
-================================================================================
+Dependencies
+- Phase 2 canonical schedule layer
+- Phase 4 shared game lookup helpers
 
-  Dave:
-    - All design decisions (1.2, 2.1, 2.3, 4.1, 5 feature scoping)
-    - All merges to main
-    - Security review on Phase 2 completion
-    - Review of Codex PRs before merge
+Required Resources
+- `render.mjs`
+- `verify.mjs`
+- `embed/ticker.html`
+- `calendar/phillies-2026-all.ics`
 
-  Codex:
-    - Deterministic implementation for items Dave has specced
-      (1.1, 1.3, 1.4, 1.5; Phase 3 entirely; Phase 4 mechanical;
-      6.1, 6.4)
-    - Test authorship where the assertion is clear
+Estimated Timeline
+- 1 to 2 days
 
-  Cron:
-    - Daily Phillies Wire edition publish (unchanged)
-    - Game-window refreshes every 15 min (unchanged)
-    - Phase 6.3 integration test runs in CI on every PR
+Owner / Responsible Party
+- Dave with Codex support
 
-================================================================================
-  ACCEPTANCE CRITERIA — WHOLE PROGRAM
-================================================================================
+Risks / Failure Points
+- Consumer contract changes can break existing Home Assistant, Stream Deck, or Notion style uses
+- ICS timezone handling can drift from schedule JSON if both are not generated from the same normalized fields
+- Ticker embed can become brittle if it relies on more data than an iframe safe surface should carry
 
-  [ ] 33/33 existing tests remain green at every commit
-  [ ] Test count grows by ≥15 across Phases 1, 2, 4, and 6
-  [ ] CI success rate stays ≥85% over the next 100 runs
-  [ ] 0 new npm audit vulnerabilities introduced
-  [ ] crawl.mjs at repo root < 50 lines after Phase 3
-  [ ] ≥2 of the 6 Phase 5 features shipped and live
-  [ ] HANDOFF.md follow-ups all closed or explicitly deferred
-  [ ] CHANGELOG.md reflects every user-visible change per phase
+Phase Name
+- Phase 6. Ballparks Quest Cutover
 
-================================================================================
-  OUT OF SCOPE (intentionally excluded)
-================================================================================
+Goal
+- Retire Phillies specific schedule ownership from Ballparks Quest and leave a clean handoff into `phillies-wire`.
 
-  - Switching node:https to native fetch globally (works; not urgent).
-  - Replacing the custom template engine with Handlebars.
-  - TypeScript migration or progressive JSDoc typing.
-  - Multi-team / multi-publication support (Phillies-only by design).
-  - Non-free external services (paid CDN, CI tier, monitoring).
-  - Mobile app; web is the only target.
+Key Milestones
+- Identify every Phillies specific route, nav item, data file, and attendance storage key in Ballparks Quest that must be retired or redirected.
+- Replace those surfaces with a clear stub or handoff message pointing to the new Phillies Wire schedule home.
+- Add migration logic so existing attendance state can be imported or remapped into the new `phillies-wire` schedule tracker.
+- Remove duplicate Phillies schedule references from Ballparks Quest navigation and docs.
+- Verify cross links between the two repos so users can move between general ballpark tracking and Phillies specific surfaces without confusion.
 
-================================================================================
-  PHASE 7 — Reader-facing UI governance
-  Duration: 2 to 3 days elapsed · Owner: Dave + Codex · Priority: medium
-================================================================================
+Dependencies
+- Phase 3 schedule tracker complete
+- Access to Ballparks Quest repo and current Phillies surfaces
 
-Purpose: tighten the reader-facing surface. Replace dummy/placeholder
-content with explicit states, normalize freshness signalling, and
-reduce duplication. Phase 7A landed on 2026-04-20; items 7B to 7E are
-pending.
+Required Resources
+- `mlb-ballparks-quest` repo
+- Local storage key audit
+- Browser smoke checks across both sites
 
-Shipped in 7A (commit pending at bottom of CHANGE LOG)
-  [x] 7A.1  Opponent lineup placeholders are now a Pending sentinel
-           (name Pending, empty position/bats) and the template suppresses
-           the 9x2 grid when mode is pending. buildTbdBattingOrder rewritten.
-  [x] 7A.2  Three-state lineup mode: official / projected / pending with
-           distinct UI copy and a section chip next to the accordion title.
-           buildLineupSection emits mode + mode_label + show_orders.
-  [x] 7A.3  Live score skeleton copy "Loading score..." replaced with
-           "Live score starts at first pitch" to stop looking like
-           pseudo-data.
-  [x] 7A.4  Transit row is now gated on venue_is_home. SEPTA block hides
-           on road games. crawl.mjs emits venue_is_home derived from
-           philliesAreHome.
-  [x] 7A.5  meta.status.enrich_label flipped from "Awaiting editorial
-           pass" to "Draft edition" for public safety. Internal workflow
-           state no longer leaks to readers.
-  [x] 7A.6  New CSS: .pw-section-chip variants for official, projected,
-           pending, live, confirmed, fallback, editorial states.
+Estimated Timeline
+- 1 to 2 days
 
-Key milestones (deferred)
-  [x] 7B  "As of" and "Last confirmed" timestamps on injuries, roster
-          notes, and farm system blurbs. Shipped 2026-04-20. Injuries
-          now carry per-entry last_confirmed + freshness_label via
-          mergeInjuryEntries; roster highlights surface a section-level
-          "As of" label; farm system surfaces a section-level
-          "Last confirmed" label.
-  [ ] 7C  "What changed since last issue" module. Diffs the current
-          phillies-wire-data.json against the last archive entry, emits
-          a compact block listing lineup, injuries, standings, and
-          roster-move deltas. Gate behind a data.meta.show_delta flag.
-  [ ] 7D  Tighten standings to a small table emphasizing GB / Last 10 /
-          Streak. De-emphasize W-L% and noisier columns. Depends on
-          Phase 5B landing first (standings fetch + schema).
-  [x] 7E  Single top-of-page Hero for matchup metadata. Audit the
-          rendered output for duplicates (matchup string appears in
-          the hero headline, the hero dek, the game_status preview,
-          and the game_status matchup row) and consolidate. Shipped
-          2026-04-20. Hero now owns matchup/time/venue/broadcast/
-          series metadata; Game Status keeps only starters, live
-          tracker, and park-note rows.
-  [x] 7F  Generalize the section chip rollout across modules: recap
-          gets a "Final" chip, roster gets "Confirmed" / "Fallback",
-          injuries get "Live" / "Fallback", farm system gets "Editorial".
-          Shipped 2026-04-20.
+Owner / Responsible Party
+- Dave with Codex support
 
-Required resources
-  - No new deps for 7B, 7E, 7F.
-  - 7C depends on archive.json containing enough prior-issue detail;
-    may need a schema bump to store per-section hashes.
-  - 7D blocked on Phase 5B.
+Risks / Failure Points
+- Old bookmarks can break if the stub route is not clear
+- Local storage migration can duplicate or lose attendance notes
+- Quest cleanup can lag behind Wire cutover and leave conflicting Phillies entry points live
 
-Acceptance criteria
-  - No rendered page shows dummy numbered hitter filler.
-  - Road games hide SEPTA. Home games show it.
-  - No public copy contains "Awaiting editorial pass".
-  - Section chips render on every accordion title with a consistent
-    color mapping per the CSS variants.
-  - Test count grows by >= 3 across 7B to 7F.
+Phase Name
+- Phase 7. Verification, Cutover, and Documentation
 
-================================================================================
-  CHANGE LOG FOR THIS PLAN
-================================================================================
+Goal
+- Publish the merged dashboard safely, verify real user flows, and leave the repo docs aligned with the shipped system.
 
-  2026-04-18  Dave + Claude code review
-              - Supersedes the previous crawl.mjs-only 448-line plan.
-              - Scope expanded to cover all code-review follow-ups
-                (bugs, security, features, performance, readability).
-              - Crawl decomposition retained as Phase 3.
+Key Milestones
+- Extend `verify.mjs` with merged contract checks for canonical schedule JSON, schedule page outputs, dashboard links, attendance state assumptions, ticker, ICS, and archive consistency.
+- Add or update tests for canonical schedule normalization, override handling, attendance state mapping, and dashboard route helpers.
+- Run end to end smoke tests for latest issue, dashboard, innings, schedule, archive links, ticker embed, and calendar output.
+- Update `docs/SPEC.md`, `CLAUDE.md`, and sprint docs so the merged dashboard becomes the current documented architecture.
+- Deploy through GitHub Actions, confirm GitHub Pages artifacts, and monitor at least one live game window plus one off day state.
+- Log the cutover and unresolved follow ups in `today.csv` and the issue tracker.
 
-  2026-04-20  UI governance pass (Phase 7A)
-              - 10-item reader-facing checklist accepted from Dave.
-              - 7A (items 1 through 5 and a partial chip for the
-                lineup accordion) shipped in one commit.
-              - 7B through 7F added to the plan as deferred scope.
+Dependencies
+- Phases 1 through 6 complete
+- GitHub Actions pipeline green
 
-  2026-04-20  UI governance pass (Phase 7B)
-              - Freshness labels added to roster, injury, and farm
-                modules.
-              - mergeInjuryEntries now stamps last_confirmed and
-                freshness_label, distinguishing live rows ("As of")
-                from fallback rows ("Last confirmed").
-              - Template now renders the freshness metadata; tests
-                updated to cover both the data merge and DOM output.
+Required Resources
+- `verify.mjs`
+- test suite
+- GitHub Actions
+- GitHub Pages deploy
+- Browser verification
 
-  2026-04-20  UI governance pass (Phase 7F)
-              - Section chips rolled out across recap, roster,
-                injuries, and farm system.
-              - New chip tones: final, confirmed, live, fallback,
-                editorial. Template and render tests updated.
+Estimated Timeline
+- 1 to 2 days
 
-================================================================================
+Owner / Responsible Party
+- Dave with Codex support
+
+Risks / Failure Points
+- Static deploy artifacts can contain stale copies if the build order is wrong
+- Off day or postponed game states can pass local checks but fail on published pages
+- Documentation drift can leave future sessions building against the old dashboard contract
+
+3. EXECUTION NOTES
+
+Critical sequencing constraints
+- Freeze the merged route and data contract before touching dashboard UI code.
+- Build the canonical schedule layer before schedule UI, dashboard merge work, or ICS changes.
+- Complete attendance state mapping before Ballparks Quest cutover.
+- Keep `latest.json`, `archive.json`, and per issue `data.json` backward compatible until the merged dashboard is fully verified.
+- Do not remove Phillies schedule ownership from Ballparks Quest until `/schedule/` is live in `phillies-wire` and migration checks pass.
+- Verification updates must land in the same phase as the corresponding contract change, not at the end.
+
+Parallelizable work
+- Schedule schema design and Ballparks Quest route inventory can run in parallel during Phase 1.
+- UI layout work for `/schedule/` can begin while the canonical schedule builder is being finalized, as long as the field map is frozen.
+- Feed and ICS template work can run in parallel with dashboard merge work after the canonical schedule artifact is stable.
+- Documentation updates can start during verification once route names and contracts stop moving.
+
+Quick wins vs long lead tasks
+- Quick wins:
+- Freeze the route map and canonical field list.
+- Add the canonical schedule artifact path and override file contract.
+- Reuse the existing dashboard tokens, motion guards, and navigation shell for `/schedule/`.
+- Add verification stubs for the new schedule artifact early.
+- Long lead tasks:
+- Attendance state migration from Ballparks Quest.
+- Canonical schedule normalization for postponements and doubleheaders.
+- Cross surface verification across dashboard, innings, schedule, ticker, and ICS.
+- Ballparks Quest cutover and bookmark safe stubs.
+
+4. NEXT ACTIONS
+
+1. Open `dashboard/dashboard.js`, `dashboard/innings/innings.js`, and the combination plan notes and write a field map of every data dependency by source file.
+2. Create the canonical schedule schema and override schema in repo docs, including stable game ID, attendance fields, and merge rules.
+3. Add a new canonical schedule artifact path under `data/` and scaffold the builder plus verification stub in `crawl.mjs`, `render.mjs`, and `verify.mjs`.
+4. Scaffold `/schedule/` inside `phillies-wire` with shared navigation, token imports, and placeholder data wiring to the new canonical schedule artifact.
+5. Inventory Phillies specific routes, local storage keys, and nav links inside Ballparks Quest and record the exact cutover items required for migration.

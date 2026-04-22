@@ -10,6 +10,9 @@ import {
 } from "node:fs";
 import { pathToFileURL } from "node:url";
 
+import { ensureCanonicalScheduleArtifacts } from "./canonical-schedule.mjs";
+import { CANONICAL_SCHEDULE_PATH } from "./shared/phillies-schedule.mjs";
+
 const DATA_FILE = "./phillies-wire-data.json";
 const TEMPLATE_FILE = "./phillies-wire-v2.html";
 const OUTPUT_FILE = "./phillies-wire-output.html";
@@ -21,19 +24,23 @@ const ARCHIVE_DIR = "./archive";
 const ISSUES_DIR = "./issues";
 const SITE_DIR = "./site";
 const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./live-feed.js", "./fonts.css"];
-const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed"];
+const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed", "./schedule", "./shared", "./calendar", "./data"];
 const ISSUE_DATA_SCHEMA_VERSION = "1.3.0";
 const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
 const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  main();
+  main().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
 }
 
-function main() {
+async function main() {
   const data = JSON.parse(readFileSync(DATA_FILE, "utf8"));
   const template = readFileSync(TEMPLATE_FILE, "utf8");
   const issueDate = data.meta.date;
+  const scheduleArtifacts = await ensureCanonicalScheduleArtifacts(data);
 
   // Compute the archive first so renderIssue can wire prev/next links
   // into the dated issue page based on surrounding entries.
@@ -54,7 +61,7 @@ function main() {
   assertNoUnresolvedTokens(issueHtml);
   const archiveHtml = renderArchivePage(archive);
   const status = buildStatusPayload(data, archive);
-  const latest = buildLatestPayload(data);
+  const latest = buildLatestPayload(data, scheduleArtifacts.schedule);
 
   mkdirSync(`${ISSUES_DIR}/${issueDate}`, { recursive: true });
   mkdirSync(ARCHIVE_DIR, { recursive: true });
@@ -96,7 +103,7 @@ function main() {
     ogSvg,
   });
 
-  console.log("Rendered latest issue, dated issue page, archive, RSS, sitemap, latest.json, and site artifact");
+  console.log("Rendered latest issue, dated issue page, archive, schedule data, calendar, latest.json, and site artifact");
 }
 
 function buildSiteArtifact({
@@ -836,6 +843,7 @@ function buildStatusPayload(data, archive) {
     off_day: data.meta.off_day ?? false,
     issue_path: `issues/${data.meta.date}/`,
     archive_path: "archive/",
+    schedule_path: "data/phillies-2026.json",
     archive_entries: archive.entries.length,
     status: data.meta.status ?? {},
   };
@@ -844,10 +852,13 @@ function buildStatusPayload(data, archive) {
 // Consumer-facing payload for external embeds (ticker widget, calendar feeds,
 // Ballparks Quest integration, etc.). Curated subset of the canonical data
 // file. Upgrade 1 of the Wire + Schedule + Quest unification plan.
-function buildLatestPayload(data) {
+function buildLatestPayload(data, canonicalSchedule) {
   const meta = data.meta ?? {};
   const gameStatus = data.sections?.game_status?.content ?? {};
   const hero = data.hero ?? {};
+  const scheduleSummary = canonicalSchedule?.summary ?? {};
+  const nextScheduleGame = canonicalSchedule?.games?.find((game) => String(game.game_pk) === String(scheduleSummary.next_game_pk)) || null;
+  const currentScheduleGame = canonicalSchedule?.games?.find((game) => String(game.game_pk) === String(scheduleSummary.current_game_pk)) || null;
   return {
     schema_version: "latest-1.0.0",
     publication: meta.publication,
@@ -878,6 +889,33 @@ function buildLatestPayload(data) {
       inning: gameStatus.inning ?? null,
       situation: gameStatus.situation ?? null,
       recap_line: gameStatus.recap_line ?? null,
+    },
+    schedule: {
+      schema_version: canonicalSchedule?.schema_version ?? null,
+      path: CANONICAL_SCHEDULE_PATH,
+      season: canonicalSchedule?.season ?? null,
+      updated_at: canonicalSchedule?.generated_at ?? null,
+      current_game_pk: scheduleSummary.current_game_pk ?? null,
+      next_game_pk: scheduleSummary.next_game_pk ?? null,
+      next_game: nextScheduleGame
+        ? {
+            game_pk: nextScheduleGame.game_pk,
+            official_date: nextScheduleGame.official_date,
+            date_label: nextScheduleGame.date_label,
+            time_label: nextScheduleGame.time_label,
+            title: nextScheduleGame.title,
+            matchup: nextScheduleGame.matchup,
+            venue: nextScheduleGame.venue?.name ?? null,
+          }
+        : null,
+      current_game: currentScheduleGame
+        ? {
+            game_pk: currentScheduleGame.game_pk,
+            official_date: currentScheduleGame.official_date,
+            title: currentScheduleGame.title,
+            matchup: currentScheduleGame.matchup,
+          }
+        : null,
     },
     ticker: Array.isArray(data.ticker) ? data.ticker : [],
   };

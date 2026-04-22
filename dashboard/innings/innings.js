@@ -5,7 +5,10 @@
    Persists filter state in localStorage (philliesWire_prefs).
    ============================================ */
 
+import { findCurrentOrNextGame } from "../../shared/phillies-schedule.mjs";
+
 const ARCHIVE_URL = "../../archive.json";
+const SCHEDULE_URL = "../../data/phillies-2026.json";
 
 const LS_PREFS = "philliesWire_prefs";
 const Prefs = {
@@ -212,15 +215,31 @@ async function fetchIssueData(date) {
   } catch { return null; }
 }
 
+async function fetchSchedule() {
+  try {
+    const response = await fetch(SCHEDULE_URL, { cache: "no-store" });
+    if (!response.ok) return null;
+    return await response.json();
+  } catch {
+    return null;
+  }
+}
+
 async function init() {
   wireFilter();
   try {
-    const res = await fetch(ARCHIVE_URL, { cache: "no-store" });
+    const [res, schedulePayload] = await Promise.all([
+      fetch(ARCHIVE_URL, { cache: "no-store" }),
+      fetchSchedule(),
+    ]);
     if (!res.ok) throw new Error(`archive.json HTTP ${res.status}`);
     const archive = await res.json();
     const entries = Array.isArray(archive.entries) ? archive.entries : [];
-    // Prefer the most recent final (gives a real score) over today's pregame.
-    const target = entries.find(e => e.mode === "final") || entries[0];
+    const pointer = schedulePayload?.games ? findCurrentOrNextGame(schedulePayload.games, new Date()) : null;
+    const scheduleGame = pointer?.current_game || pointer?.latest_completed_game || pointer?.next_game || null;
+    const target = (scheduleGame && entries.find((entry) => entry.date === scheduleGame.official_date))
+      || entries.find((entry) => entry.mode === "final")
+      || entries[0];
     if (!target) {
       setText("matchup-head", "No issues published yet");
       return;

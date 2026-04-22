@@ -26,6 +26,7 @@ try {
     "live-feed.js",
     "fonts.css",
     "render.mjs",
+    "canonical-schedule.mjs",
     "pregame-preview.js",
     "config.mjs",
   ];
@@ -37,6 +38,18 @@ try {
 
   if (existsSync(join(repoRoot, "fonts"))) {
     cpSync(join(repoRoot, "fonts"), join(work, "fonts"), { recursive: true });
+  }
+  if (existsSync(join(repoRoot, "shared"))) {
+    cpSync(join(repoRoot, "shared"), join(work, "shared"), { recursive: true });
+  }
+  if (existsSync(join(repoRoot, "schedule"))) {
+    cpSync(join(repoRoot, "schedule"), join(work, "schedule"), { recursive: true });
+  }
+  if (existsSync(join(repoRoot, "dashboard"))) {
+    cpSync(join(repoRoot, "dashboard"), join(work, "dashboard"), { recursive: true });
+  }
+  if (existsSync(join(repoRoot, "embed"))) {
+    cpSync(join(repoRoot, "embed"), join(work, "embed"), { recursive: true });
   }
 
   // Seed phillies-wire-data.json from the fixture so render has something to
@@ -58,7 +71,11 @@ try {
   );
 
   // Run render in the temp dir.
-  const result = spawnSync(process.execPath, ["render.mjs"], { cwd: work, encoding: "utf8" });
+  const result = spawnSync(process.execPath, ["render.mjs"], {
+    cwd: work,
+    encoding: "utf8",
+    env: { ...process.env, PW_SKIP_SCHEDULE_FETCH: "1" },
+  });
   if (result.status !== 0) {
     console.error(result.stdout);
     console.error(result.stderr);
@@ -80,6 +97,11 @@ try {
     "site/feed.xml",
     "site/robots.txt",
     "site/fonts.css",
+    "data/phillies-2026.json",
+    "calendar/phillies-2026-all.ics",
+    "site/data/phillies-2026.json",
+    "site/calendar/phillies-2026-all.ics",
+    "site/schedule/index.html",
   ];
   for (const out of outputs) {
     assert.ok(existsSync(join(work, out)), `missing output: ${out}`);
