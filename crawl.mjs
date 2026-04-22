@@ -392,12 +392,45 @@ function pickActiveGame(games) {
   return byStart[0];
 }
 
+// MLB's schedule feed omits pitchHand.code for some pitchers; when it does,
+// resolvePitcher silently defaulted to "R", which shipped "Matthew Boyd
+// (RHP)" in the 2026-04-22 edition. overrides/pitchers.json is an optional
+// handedness lookup (keys lowercased) used only when the feed omits the code.
+let PITCHER_HAND_OVERRIDES = null;
+function lookupPitcherHand(name) {
+  if (!name) return null;
+  if (PITCHER_HAND_OVERRIDES === null) {
+    const path = "./overrides/pitchers.json";
+    if (!existsSync(path)) {
+      PITCHER_HAND_OVERRIDES = {};
+    } else {
+      try {
+        // statSync before readFileSync, matching loadOverrides' pattern:
+        // reject a crafted large file before it exhausts heap.
+        const { size } = statSync(path);
+        if (size > OVERRIDE_MAX_FILE_BYTES) {
+          throw new Error(`overrides/pitchers.json is suspiciously large (${size} bytes).`);
+        }
+        const raw = JSON.parse(readFileSync(path, "utf8"));
+        const table = raw?.handedness ?? {};
+        PITCHER_HAND_OVERRIDES = Object.fromEntries(
+          Object.entries(table).map(([k, v]) => [String(k).toLowerCase().trim(), v]),
+        );
+      } catch {
+        PITCHER_HAND_OVERRIDES = {};
+      }
+    }
+  }
+  const hand = PITCHER_HAND_OVERRIDES[String(name).toLowerCase().trim()];
+  return hand === "L" || hand === "R" || hand === "S" ? hand : null;
+}
+
 function resolvePitcher(side, fixture, role) {
   const probable = side?.probablePitcher;
   if (probable?.fullName) {
     return {
       name: probable.fullName,
-      hand: probable.pitchHand?.code ?? "R",
+      hand: probable.pitchHand?.code ?? lookupPitcherHand(probable.fullName) ?? "R",
     };
   }
 

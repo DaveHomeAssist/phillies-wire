@@ -431,6 +431,91 @@ for (const file of htmlFiles) {
   }
 }
 
+// Streak-sign consistency: record.streak must start with W or L and must
+// agree with the W/L outcome of the most recent final in archive.json.
+// Guards against the 2026-04-22 regression where the payload shipped
+// record.streak="W1" while the archive showed seven straight losses.
+{
+  const recordStreak = String(data.record?.streak ?? "").trim();
+  const finals = (archive.entries ?? []).filter(
+    (entry) => entry.mode === "final" && typeof entry.headline === "string",
+  );
+  if (recordStreak && finals.length) {
+    const latest = finals[0];
+    const match = latest.headline.match(/PHI\s+(\d+)\s*,\s*[A-Z]{2,4}\s+(\d+)/i);
+    if (match) {
+      const phi = parseInt(match[1], 10);
+      const opp = parseInt(match[2], 10);
+      const lastOutcome = phi > opp ? "W" : "L";
+      const streakSign = recordStreak[0]?.toUpperCase();
+      if (streakSign !== "W" && streakSign !== "L") {
+        fail(`record.streak must start with "W" or "L"; got "${recordStreak}".`);
+      }
+      if (streakSign !== lastOutcome) {
+        fail(
+          `record.streak "${recordStreak}" disagrees with the most recent final (${latest.date}: "${latest.headline}" → ${lastOutcome}).`,
+        );
+      }
+    }
+  }
+}
+
+// Pitcher handedness override conflict: if overrides/pitchers.json
+// declares a hand for a named probable pitcher, the rendered payload
+// must not contradict it. Prevents the 2026-04-22 "Matthew Boyd (RHP)"
+// regression from shipping again once the override file is seeded.
+{
+  const overridesPath = "./overrides/pitchers.json";
+  if (existsSync(overridesPath)) {
+    let overrides = {};
+    try {
+      const raw = JSON.parse(readFileSync(overridesPath, "utf8"));
+      const table = raw?.handedness ?? {};
+      overrides = Object.fromEntries(
+        Object.entries(table).map(([k, v]) => [String(k).toLowerCase().trim(), v]),
+      );
+    } catch {
+      overrides = {};
+    }
+    const starterGroups = [
+      data.sections?.game_status?.content?.starters,
+      data.sections?.lineup?.content?.starters,
+    ].filter(Boolean);
+    for (const group of starterGroups) {
+      for (const [role, entry] of Object.entries(group)) {
+        if (!entry?.name || !entry?.hand) continue;
+        const expected = overrides[String(entry.name).toLowerCase().trim()];
+        if (expected && expected !== entry.hand) {
+          fail(
+            `Pitcher handedness override conflict: ${entry.name} (${role}) rendered as "${entry.hand}" but overrides/pitchers.json declares "${expected}".`,
+          );
+        }
+      }
+    }
+  }
+}
+
+// Dashboard ES-module integrity: every `import ... from "../path"` in
+// dashboard.js must resolve to a file present in both the root checkout
+// and the site/ mirror. An untracked-but-present module would pass
+// developer-machine verify but 404 in production.
+{
+  const dashboardJs = readFileSync("./dashboard/dashboard.js", "utf8");
+  const importRe = /from\s+["']\.\.\/([^"']+)["']/g;
+  let match;
+  while ((match = importRe.exec(dashboardJs)) !== null) {
+    const rel = match[1];
+    const root = `./${rel}`;
+    const site = `./site/${rel}`;
+    if (!existsSync(root)) {
+      fail(`Dashboard imports ${rel} but ${root} is missing.`);
+    }
+    if (!existsSync(site)) {
+      fail(`Dashboard imports ${rel} but ${site} is missing (render did not mirror it).`);
+    }
+  }
+}
+
 console.log("Rendered issue, archive, schedule, calendar, latest.json, ticker, and site artifact verified");
 
 function readJson(path) {

@@ -295,6 +295,24 @@ function renderEmptyState(error) {
   setText("headline", "Couldn't load archive.json");
   setText("dek", error && error.message ? error.message : String(error));
   setText("updated", "—");
+  setText("phi-runs", "—");
+  setText("opp-runs", "—");
+  setText("opp-abbr", "—");
+  setText("opp-name", "—");
+  setText("wins", "—");
+  setText("losses", "—");
+  setText("streak", "—");
+  setText("edition", "—");
+  const nextHost = slot("next");
+  if (nextHost) nextHost.innerHTML = '<p class="next-empty">Couldn’t load schedule. Try again shortly.</p>';
+  const activity = slot("activity");
+  if (activity) activity.innerHTML = '<li class="activity-empty">No entries available — archive fetch failed.</li>';
+  const keyHost = slot("key");
+  if (keyHost) keyHost.innerHTML = '<li class="key-empty">No entries available — archive fetch failed.</li>';
+  const il = slot("il-entries");
+  if (il) il.innerHTML = '<li class="il-empty">Injury report unavailable.</li>';
+  const healthPill = el('[data-slot="health-status"]');
+  if (healthPill) healthPill.textContent = "—";
 }
 
 async function fetchIssueData(date) {
@@ -319,9 +337,16 @@ async function fetchSchedule() {
 function renderInjuryReport(issueData) {
   const host = slot("il-entries");
   if (!host) return;
+  const statusPill = el('[data-slot="health-status"]');
+  if (!issueData) {
+    host.innerHTML = '<li class="il-empty">Injury report unavailable for today’s edition.</li>';
+    if (statusPill) statusPill.textContent = "—";
+    return;
+  }
   const entries = issueData?.sections?.injury_report?.content?.il_entries;
   if (!Array.isArray(entries) || !entries.length) {
     host.innerHTML = '<li class="il-empty">No active IL entries.</li>';
+    if (statusPill) statusPill.textContent = "0 on IL";
     return;
   }
   host.innerHTML = "";
@@ -339,7 +364,6 @@ function renderInjuryReport(issueData) {
     `;
     host.appendChild(li);
   }
-  const statusPill = el('[data-slot="health-status"]');
   if (statusPill) statusPill.textContent = `${entries.length} on IL`;
 }
 
@@ -423,6 +447,7 @@ async function init() {
       fetch(ARCHIVE_URL, { cache: "no-store" }),
       fetchSchedule(),
     ]);
+    console.info(`[dashboard] archive.json HTTP ${res.status} ${res.headers.get("content-length") ?? "?"}B`);
     if (!res.ok) throw new Error(`archive.json HTTP ${res.status}`);
     const archive = await res.json();
     const entries = Array.isArray(archive.entries) ? archive.entries : [];
@@ -437,12 +462,12 @@ async function init() {
     renderKeyEvents(entries);
 
     // Per-issue data.json (schema 1.3.0) — graceful fallback if not yet deployed.
+    // Always call the per-issue renderers so their placeholders resolve even
+    // when data.json is missing; each renderer handles the null case.
     const issueData = await fetchIssueData(entries[0].date);
-    if (issueData) {
-      renderInjuryReport(issueData);
-      renderLineup(issueData);
-      renderPlayerFocus(issueData);
-    }
+    renderInjuryReport(issueData);
+    renderLineup(issueData);
+    renderPlayerFocus(issueData);
   } catch (e) {
     console.error(e);
     renderEmptyState(e);

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Pitcher handedness overrides. Consulted by crawl.mjs::resolvePitcher only when the MLB schedule feed omits pitchHand.code. Keys are case-insensitive fullName matches.",
+  "handedness": {
+    "Matthew Boyd": "L",
+    "Kyle Backhus": "R",
+    "Cristopher Sánchez": "L",
+    "Cristopher Sanchez": "L",
+    "Aaron Nola": "R",
+    "Jesús Luzardo": "L",
+    "Jesus Luzardo": "L",
+    "Ranger Suárez": "L",
+    "Ranger Suarez": "L",
+    "Andrew Painter": "R",
+    "Kyle Schwarber": "L",
+    "Zack Wheeler": "R",
+    "Orion Kerkering": "R",
+    "Max Lazar": "R",
+    "José Alvarado": "L",
+    "Jose Alvarado": "L",
+    "Jhoan Durán": "R",
+    "Jhoan Duran": "R",
+    "Shota Imanaga": "L",
+    "Colin Rea": "R",
+    "Nathan Eovaldi": "R",
+    "PJ Poulin": "L",
+    "Martín Pérez": "L",
+    "Martin Perez": "L",
+    "Grant Holmes": "R"
+  }
+}
