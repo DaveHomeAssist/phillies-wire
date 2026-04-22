@@ -5,14 +5,14 @@
     "edition": 23,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-22T01:12:37.714Z",
+    "generated_at": "2026-04-22T01:59:04.220Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 21, 2026, 9:12 PM ET",
+      "generated_at_et": "Apr 21, 2026, 9:59 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, CHC 1",
-    "dek": "End 5th · 3 outs",
-    "summary": "Trea Turner is up against Shota Imanaga. Series: CHC leads 1-0.",
+    "headline": "PHI 1, CHC 6",
+    "dek": "Top 8th · 2 outs",
+    "summary": "Bryce Harper is up against Riley Martin. Series: CHC leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "50° · Clear"
+        "value": "49° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Shota Imanaga on the mound",
+      "Bryce Harper at the plate",
+      "Riley Martin on the mound",
       "Wrigley Field, Chicago"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 50,
-          "condition": "Clear",
-          "wind": "10 mph · gusts 21",
+          "temp_f": 49,
+          "condition": "Mostly sunny",
+          "wind": "8 mph · gusts 21",
           "gusts_mph": 21
         },
         "giveaway": "",
