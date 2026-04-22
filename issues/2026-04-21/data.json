@@ -5,14 +5,14 @@
     "edition": 23,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-22T01:59:04.220Z",
+    "generated_at": "2026-04-22T03:16:22.036Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 21, 2026, 9:59 PM ET",
+      "generated_at_et": "Apr 21, 2026, 11:16 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -20,38 +20,38 @@
   },
   "record": {
     "wins": 8,
-    "losses": 14,
+    "losses": 15,
     "streak": "W1",
     "division_rank": 1,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, CHC 6",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Bryce Harper is up against Riley Martin. Series: CHC leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 4, CHC 7.",
+    "dek": "CHC 7, PHI 4 · Shota Imanaga · 7.0 IP, 3 H, 1 ER, 1 K",
+    "summary": "PHI 4, CHC 7. Final at Wrigley Field, Chicago. CHC leads 2-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Wrigley Field, Chicago"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP+ · MLB.TV · 94.1 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "49° · Mostly sunny"
+        "label": "Series",
+        "value": "CHC leads 2-0"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
-      "Riley Martin on the mound",
-      "Wrigley Field, Chicago"
+      "Shota Imanaga: 7.0 IP, 3 H, 1 ER, 1 K",
+      "Jesús Luzardo: 4.2 IP, 5 H, 1 ER, 3 K",
+      "Seiya Suzuki: 2-for-4, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
-    "next_value": "TBD vs Matthew Boyd · CHC vs PHI · Wed, Apr 22 · 7:40 PM"
+    "next_value": "Kyle Backhus vs Matthew Boyd · CHC vs PHI · Wed, Apr 22 · 7:40 PM"
   },
   "sections": {
     "lineup": {
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "CHC leads 1-0"
+          "label": "CHC leads 2-0"
         },
         "broadcast": {
           "tv": "NBCSP+",
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 49,
-          "condition": "Mostly sunny",
-          "wind": "8 mph · gusts 21",
-          "gusts_mph": 21
+          "temp_f": 47,
+          "condition": "Overcast",
+          "wind": "7 mph · gusts 19",
+          "gusts_mph": 19
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -405,7 +405,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "TBD vs Matthew Boyd · CHC vs PHI",
+    "matchup": "Kyle Backhus vs Matthew Boyd · CHC vs PHI",
     "date": "Wed, Apr 22",
     "time": "7:40 PM",
     "broadcast": "NBCSP",
