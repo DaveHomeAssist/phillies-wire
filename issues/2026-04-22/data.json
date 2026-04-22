@@ -5,14 +5,14 @@
     "edition": 24,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-22T21:34:28.196Z",
+    "generated_at": "2026-04-22T22:03:30.139Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 22, 2026, 5:34 PM ET",
+      "generated_at_et": "Apr 22, 2026, 6:03 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "60° · Mostly sunny · 5 mph · gusts 5",
+      "61° · Clear · 4 mph · gusts 5",
       "CHC leads 2-0"
     ],
     "next_label": "Tomorrow",
@@ -55,10 +55,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. CHC lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at CHC game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "7:40 PM",
         "starters": {
@@ -87,57 +87,57 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nico Hoerner",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alex Bregman",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ian Happ",
+              "position": "LF",
+              "bats": "S"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Seiya Suzuki",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Busch",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Dansby Swanson",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Moisés Ballesteros",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Amaya",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Pete Crow-Armstrong",
+              "position": "CF",
+              "bats": "L"
             }
           ],
           "away": [
@@ -255,57 +255,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nico Hoerner",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alex Bregman",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ian Happ",
+              "position": "LF",
+              "bats": "S"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Seiya Suzuki",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Busch",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Dansby Swanson",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Moisés Ballesteros",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Amaya",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Pete Crow-Armstrong",
+              "position": "CF",
+              "bats": "L"
             }
           ]
         }
@@ -345,9 +345,9 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 60,
-          "condition": "Mostly sunny",
-          "wind": "5 mph · gusts 5",
+          "temp_f": 61,
+          "condition": "Clear",
+          "wind": "4 mph · gusts 5",
           "gusts_mph": 5
         },
         "giveaway": "",
