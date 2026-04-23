@@ -5,14 +5,14 @@
     "edition": 25,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-23T13:31:44.854Z",
+    "generated_at": "2026-04-23T16:37:13.015Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "fallback",
-      "enrich_label": "Structured fallback published after enrich failure: Claude response did not parse as JSON after repair: Unexpected token '`', \"```json\n{\n\"... is not valid JSON",
-      "generated_at_et": "Apr 23, 2026, 9:31 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "Apr 23, 2026, 12:37 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "59° · Clear · 4 mph · gusts 9",
-      "Regular Season"
+      "74° · Clear · 9 mph · gusts 16",
+      "CHC leads 3-0"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Grant Holmes · ATL vs PHI · Fri, Apr 24 · 7:15 PM"
@@ -55,10 +55,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. CHC lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at CHC game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "2:20 PM",
         "starters": {
@@ -87,57 +87,57 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nico Hoerner",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alex Bregman",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ian Happ",
+              "position": "LF",
+              "bats": "S"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Seiya Suzuki",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Carson Kelly",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Busch",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Dansby Swanson",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Matt Shaw",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Amaya",
+              "position": "DH",
+              "bats": "R"
             }
           ],
           "away": [
@@ -161,38 +161,38 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
+              "name": "Felix Reyes",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
-              "position": "LF",
+              "position": "RF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 9,
+              "slot": 7,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
+              "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Garrett Stubbs",
+              "position": "C",
               "bats": "L"
             }
           ],
@@ -217,95 +217,95 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
+              "name": "Felix Reyes",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
-              "position": "LF",
+              "position": "RF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 9,
+              "slot": 7,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
+              "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Garrett Stubbs",
+              "position": "C",
               "bats": "L"
             }
           ],
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nico Hoerner",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alex Bregman",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ian Happ",
+              "position": "LF",
+              "bats": "S"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Seiya Suzuki",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Carson Kelly",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Busch",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Dansby Swanson",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Matt Shaw",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Amaya",
+              "position": "DH",
+              "bats": "R"
             }
           ]
         }
@@ -337,7 +337,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "CHC leads 3-0"
         },
         "broadcast": {
           "tv": "NBCSP+",
@@ -345,10 +345,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 59,
+          "temp_f": 74,
           "condition": "Clear",
-          "wind": "4 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "9 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
