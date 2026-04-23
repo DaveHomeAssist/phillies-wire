@@ -5,14 +5,14 @@
     "edition": 25,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-23T18:28:41.387Z",
+    "generated_at": "2026-04-23T18:40:40.179Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 23, 2026, 2:28 PM ET",
+      "generated_at_et": "Apr 23, 2026, 2:40 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, CHC 0",
-    "dek": "Bottom 1st · 1 out",
-    "summary": "Ian Happ is up against Cristopher Sánchez. Series: CHC leads 3-0.",
+    "headline": "PHI 1, CHC 0",
+    "dek": "Bottom 2nd · 0 outs",
+    "summary": "Carson Kelly is up against Cristopher Sánchez. Series: CHC leads 3-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "76° · Clear"
+        "value": "77° · Clear"
       }
     ],
     "bullets": [
-      "Ian Happ at the plate",
+      "Carson Kelly at the plate",
       "Cristopher Sánchez on the mound",
       "Wrigley Field, Chicago"
     ],
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 76,
+          "temp_f": 77,
           "condition": "Clear",
-          "wind": "9 mph · gusts 21",
-          "gusts_mph": 21
+          "wind": "10 mph · gusts 22",
+          "gusts_mph": 22
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
