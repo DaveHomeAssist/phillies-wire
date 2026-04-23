@@ -5,14 +5,14 @@
     "edition": 24,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-22T23:32:42.606Z",
+    "generated_at": "2026-04-23T00:01:39.084Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 22, 2026, 7:32 PM ET",
+      "generated_at_et": "Apr 22, 2026, 8:01 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, CHC 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Kyle Schwarber is up against Matthew Boyd. Series: CHC leads 2-0.",
+    "headline": "PHI 0, CHC 1",
+    "dek": "Top 2nd · 1 out",
+    "summary": "Alec Bohm is up against Matthew Boyd. Series: CHC leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "60° · Clear"
+        "value": "59° · Clear"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
+      "Alec Bohm at the plate",
       "Matthew Boyd on the mound",
       "Wrigley Field, Chicago"
     ],
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 60,
+          "temp_f": 59,
           "condition": "Clear",
-          "wind": "3 mph · gusts 5",
-          "gusts_mph": 5
+          "wind": "5 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
