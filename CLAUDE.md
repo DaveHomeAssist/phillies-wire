@@ -34,6 +34,39 @@ Status: v1.6-preview. Core newsletter is stable on cron. The merged dashboard, i
 - Anticipatory UX on dashboard: `localStorage` key `philliesWire_prefs`, `save-data` detection, mobile bottom-tab navigation, first-visit hint. All animations gated by `prefers-reduced-motion` and `[data-save-data]`.
 - Ticker embed is inline-only (no external script src, no external link href) so third parties can iframe it safely.
 
+## Email Delivery
+
+`deliver.mjs` is the final pipeline stage. It's opt-in: if `DELIVERY_RECIPIENTS` is unset the stage exits cleanly with `"skipping delivery"` and the pipeline still counts as green.
+
+**Transport:** `nodemailer` `createTransport` against any SMTP server. Defaults target Gmail (`smtp.gmail.com:587`, STARTTLS, TLSv1.2 minimum). Port 465 triggers implicit TLS (`secure: true`); all other ports require STARTTLS.
+
+**Environment variables:**
+
+| Variable | Required | Default | Purpose |
+|---|---|---|---|
+| `DELIVERY_RECIPIENTS` | conditional | unset | Comma-separated recipient list. If unset, stage is skipped. |
+| `SMTP_USER` | yes (if delivering) | — | SMTP auth user. Also used as the `From:` address. |
+| `SMTP_PASS` | yes (if delivering) | — | SMTP auth password. For Gmail, use an App Password, not the account password. |
+| `SMTP_HOST` | no | `smtp.gmail.com` | Override for non-Gmail providers. |
+| `SMTP_PORT` | no | `587` | 587 = STARTTLS, 465 = implicit TLS. |
+
+**What gets sent:**
+
+- `From:` → `"Phillies Wire" <SMTP_USER>`
+- `Subject:` → `Phillies Wire · {date} · PHI {wins}-{losses}`
+- HTML body → `phillies-wire-output.html` with `tokens.css` + `phillies-wire.css` inlined and Google Fonts links stripped (email clients ignore them anyway)
+- Text fallback → headline + narrative paragraphs from `sections.preview.content.narrative`
+
+**Failure modes:**
+
+- Missing `SMTP_USER` / `SMTP_PASS` → pipeline fails with `"SMTP_USER and SMTP_PASS are required for delivery."` Fix env, re-run.
+- `transport.verify()` fails → logged as a warning, send attempts anyway (some SMTP providers block VRFY/EHLO introspection but work for `sendMail`).
+- `sendMail` throws → caught and rethrown with SMTP user/password redacted from the message before stdout.
+
+**PII hygiene:** The recipient list is never logged, only the count. CI action logs are retained; dumping emails to stdout would make them searchable indefinitely.
+
+**Isolation:** `run.mjs` explicitly `delete`s `SMTP_USER` / `SMTP_PASS` from the env before running earlier pipeline stages. Only `deliver.mjs` sees them.
+
 ## Documentation Maintenance
 
 - **Issue tracker:** This file (`## Issue Tracker` section below)
