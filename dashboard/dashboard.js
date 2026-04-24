@@ -5,41 +5,19 @@
    Anticipates user intent via localStorage + save-data detection.
    ============================================ */
 
+import {
+  readPrefs,
+  readSignals,
+  writePrefs,
+  writeSignals,
+} from "../shared/phillies-prefs.mjs";
 import { findCurrentOrNextGame } from "../shared/phillies-schedule.mjs";
 
 const ARCHIVE_URL = "../archive.json";
 const SCHEDULE_URL = "../data/phillies-2026.json";
 
-// ── Preferences & session signals (zero-backend, zero tracking) ──
-const LS_PREFS = "philliesWire_prefs";
-const LS_SIGNALS = "philliesWire_sessionSignals";
-
-const Prefs = {
-  read(key, fallback) {
-    try {
-      const raw = localStorage.getItem(key);
-      return raw ? { ...fallback, ...JSON.parse(raw) } : fallback;
-    } catch { return fallback; }
-  },
-  write(key, value) {
-    try { localStorage.setItem(key, JSON.stringify(value)); } catch {}
-  },
-};
-
-const defaultPrefs = {
-  theme: "dark",
-  lastVisit: null,
-  streakAlertThreshold: 3,
-  reducedData: false,
-};
-const defaultSignals = {
-  visitCount: 0,
-  mostViewedPanel: null,
-  lastMode: null,
-};
-
-let prefs = Prefs.read(LS_PREFS, defaultPrefs);
-let signals = Prefs.read(LS_SIGNALS, defaultSignals);
+let prefs = readPrefs();
+let signals = readSignals();
 
 // Save-data detection — honour slow connections / user intent
 const saveDataActive =
@@ -63,8 +41,8 @@ window.addEventListener("beforeunload", persist);
 
 function persist() {
   prefs.lastVisit = new Date().toISOString();
-  Prefs.write(LS_PREFS, prefs);
-  Prefs.write(LS_SIGNALS, signals);
+  prefs = writePrefs(prefs);
+  signals = writeSignals(signals);
 }
 
 const el = (sel, scope = document) => scope.querySelector(sel);
@@ -126,6 +104,8 @@ function renderHero(latest) {
   signals.lastMode = latest.mode;
 
   const score = parseScore(latest.headline);
+  const phiRunsEl = el('[data-slot="phi-runs"]');
+  const oppRunsEl = el('[data-slot="opp-runs"]');
   if (score) {
     setText("phi-runs", String(score.phi));
     setText("opp-runs", String(score.opp));
@@ -133,19 +113,56 @@ function renderHero(latest) {
     setText("opp-name", teamName(score.oppAbbr));
     const initial = el('[data-slot="opp-initial"]');
     if (initial) initial.textContent = score.oppAbbr[0];
+    if (phiRunsEl) phiRunsEl.removeAttribute("data-empty");
+    if (oppRunsEl) oppRunsEl.removeAttribute("data-empty");
   } else {
-    setText("phi-runs", "—");
-    setText("opp-runs", "—");
+    const empty = latest.mode === "pregame" ? "—" : "—";
+    setText("phi-runs", empty);
+    setText("opp-runs", empty);
     setText("opp-abbr", "—");
     setText("opp-name", latest.mode === "pregame" ? "TBD" : "—");
     const initial = el('[data-slot="opp-initial"]');
     if (initial) initial.textContent = "?";
+    if (phiRunsEl) phiRunsEl.setAttribute("data-empty", "true");
+    if (oppRunsEl) oppRunsEl.setAttribute("data-empty", "true");
   }
+
+  renderHeroState(latest);
 
   setText("headline", latest.headline || "Latest edition");
   setText("dek", latest.dek || latest.summary || "");
   setText("updated", fmtDate(latest.generated_at || latest.updated_at));
   setText("edition", latest.edition != null ? `Vol. ${latest.volume} Ed. ${latest.edition}` : "—");
+}
+
+function renderHeroState(latest) {
+  const host = slot("hero-state");
+  if (!host) return;
+  const mode = latest.mode || "";
+  host.setAttribute("data-mode", mode);
+
+  const game = latest.game || {};
+  const hero = latest.hero || {};
+  const firstPitch = game.first_pitch || hero.first_pitch || hero.time_label;
+  const inning = latest.inning_label || hero.inning_label || hero.inning || "";
+  const finalBoxLabel = latest.final_label || hero.final_label;
+
+  if (mode === "live") {
+    setText("hero-state-label", "Inning");
+    setText("hero-state-value", inning || "Live");
+  } else if (mode === "pregame") {
+    setText("hero-state-label", "First Pitch");
+    setText("hero-state-value", firstPitch || "TBD");
+  } else if (mode === "final") {
+    setText("hero-state-label", "Final");
+    setText("hero-state-value", finalBoxLabel || "9 inn");
+  } else if (mode === "off_day") {
+    setText("hero-state-label", "Off Day");
+    setText("hero-state-value", "—");
+  } else {
+    setText("hero-state-label", (latest.mode_label || "State").toString());
+    setText("hero-state-value", "—");
+  }
 }
 
 function renderNextGame(entries, schedulePayload) {

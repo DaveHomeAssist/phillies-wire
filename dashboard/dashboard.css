@@ -72,6 +72,14 @@ body {
   font-family: var(--font-body, "Work Sans", "Inter", -apple-system, BlinkMacSystemFont, sans-serif);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+/* Row wrapping sidebar + stage, so the Wire banner can stack above them. */
+.dash-app {
+  display: flex;
+  flex: 1;
+  min-height: 0;
 }
 
 /* ── Sidebar ───────────────────────────────── */
@@ -287,39 +295,107 @@ body {
 .card-status[data-mode="off_day"] { color: var(--dash-ink-quiet); }
 
 /* Hero */
-.hero-body { display: flex; flex-direction: column; gap: 12px; padding-top: 4px; }
+.hero-body { display: flex; flex-direction: column; gap: 16px; padding-top: 4px; }
+
+/* Outside-in score row: NAME·LOGO·SCORE | STATE | SCORE·LOGO·NAME
+   away (PHI) reads left→right, home (opp) reads right→left. */
 .hero-score {
-  display: flex; align-items: center; justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
   gap: 20px;
 }
 .team { display: flex; align-items: center; gap: 14px; min-width: 0; }
-.team-opp { justify-content: flex-end; }
+.team-phi { justify-content: flex-end; text-align: right; }
+.team-opp { justify-content: flex-start; text-align: left; }
 .team-logo {
-  width: 48px; height: 48px;
+  width: 52px; height: 52px;
   border-radius: 12px;
   display: grid; place-items: center;
   font-family: var(--font-display, "Bangers", "Oswald", sans-serif);
-  font-size: 24px; font-weight: 700;
+  font-size: 26px; font-weight: 700;
   color: #fff;
   background: linear-gradient(135deg, var(--dash-brand), var(--dash-brand-deep));
   border: 1px solid rgba(255, 255, 255, 0.08);
   flex: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
 }
 .team-logo-opp { background: linear-gradient(135deg, var(--dash-navy-soft), var(--dash-navy)); }
-.team-detail { display: flex; flex-direction: column; line-height: 1.1; min-width: 0; }
+.team-detail { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
 .team-abbr {
   font-family: var(--font-display, "Bangers", "Oswald", sans-serif);
-  font-size: 16px; letter-spacing: 0.08em; color: var(--dash-ink); font-weight: 600;
+  font-size: clamp(22px, 2.6vw, 30px);
+  letter-spacing: 0.02em;
+  color: var(--dash-ink);
+  font-weight: 600;
+  line-height: 1;
 }
-.team-name { font-size: 11px; color: var(--dash-ink-quiet); text-transform: uppercase; letter-spacing: 0.1em; }
+.team-name {
+  font-size: 11px;
+  color: var(--dash-ink-quiet);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 4px;
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  white-space: nowrap;
+}
 .team-runs {
   font-family: var(--font-display, "Bangers", "Oswald", sans-serif);
-  font-size: clamp(36px, 5vw, 54px);
+  font-size: clamp(40px, 5.4vw, 58px);
   font-weight: 700;
   color: var(--dash-ink);
   line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
-.hero-divider { font-size: 28px; color: var(--dash-ink-quiet); }
+.team-runs[data-empty="true"] { color: var(--dash-ink-quiet); }
+
+/* Centered state column: small label on top, larger value below.
+   Modes: pregame ("First Pitch" / "2:20 PM"), live ("Inning" / "▲ 7"),
+   final ("Final" / "9 inn · 2:48"), off_day ("Off Day" / "—"). */
+.hero-state {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 4px;
+  min-width: 96px;
+  text-align: center;
+}
+.hero-state-label {
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dash-ink-quiet);
+}
+.hero-state-value {
+  font-family: var(--font-display, "Bangers", "Oswald", sans-serif);
+  font-size: clamp(20px, 2.2vw, 26px);
+  color: var(--dash-ink);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+.hero-state[data-mode="live"] .hero-state-value {
+  color: var(--dash-brand);
+}
+.hero-state[data-mode="live"] .hero-state-value::before {
+  content: "▲";
+  font-size: 0.7em;
+  margin-right: 6px;
+  color: var(--dash-brand);
+}
+.hero-state[data-mode="pregame"] .hero-state-value {
+  color: var(--dash-navy-soft);
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 500;
+}
+.hero-state[data-mode="final"] .hero-state-value {
+  color: var(--dash-gold);
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: clamp(13px, 1.4vw, 15px);
+  letter-spacing: 0.06em;
+}
+.hero-state[data-mode="off_day"] .hero-state-value {
+  color: var(--dash-ink-quiet);
+}
 .hero-headline {
   margin: 0;
   font-family: var(--font-serif, "Libre Caslon Text", Georgia, serif);
