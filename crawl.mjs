@@ -3,6 +3,7 @@ import { pathToFileURL } from "node:url";
 import { buildPregamePreviewContent, buildRecapPullQuote } from "./pregame-preview.js";
 import {
   createFetchSoft,
+  deriveIlFromTransactions,
   fetchDailyMlbData,
   fetchGameDetail,
   fetchPitcherStats,
@@ -73,17 +74,36 @@ async function main() {
   const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
   const overrides = loadOverrides(TODAY);
   const fetchSoft = createFetchSoft();
-  const [{ scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, injuryResponse }, weatherResponse] =
-    await Promise.all([
-      fetchDailyMlbData({
-        today: TODAY,
-        yesterday: YESTERDAY,
-        endDate: getRelativeIsoDate(4),
-        teamId: TEAM_ID,
-        fetchSoft,
-      }),
-      fetchWeatherData(fetchSoft),
-    ]);
+  const [
+    {
+      scheduleResponse,
+      nextScheduleResponse,
+      rosterResponse,
+      transactionResponse,
+      injuryResponse: primaryInjuryResponse,
+      seasonTransactionsResponse,
+    },
+    weatherResponse,
+  ] = await Promise.all([
+    fetchDailyMlbData({
+      today: TODAY,
+      yesterday: YESTERDAY,
+      endDate: getRelativeIsoDate(4),
+      teamId: TEAM_ID,
+      fetchSoft,
+    }),
+    fetchWeatherData(fetchSoft),
+  ]);
+
+  // `/teams/{id}/injuries` 404s upstream; createFetchSoft catches it and
+  // returns null. When that happens, derive the IL from the season-long
+  // transaction log so the Injury Report section still reflects live state
+  // instead of only the editorial fixture baseline.
+  const primaryHasEntries =
+    Array.isArray(primaryInjuryResponse?.injuries) && primaryInjuryResponse.injuries.length > 0;
+  const injuryResponse = primaryHasEntries
+    ? primaryInjuryResponse
+    : deriveIlFromTransactions(seasonTransactionsResponse);
 
   const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
   const game = pickActiveGame(scheduleResponse?.dates?.[0]?.games ?? []);
