@@ -5,14 +5,14 @@
     "edition": 26,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-24T19:48:25.991Z",
+    "generated_at": "2026-04-24T20:16:48.478Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 24, 2026, 3:48 PM ET",
+      "generated_at_et": "Apr 24, 2026, 4:16 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "78° · Mostly sunny · 7 mph · gusts 16",
+      "78° · Partly cloudy · 6 mph · gusts 15",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -55,10 +55,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. ATL lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at ATL game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "7:15 PM",
         "starters": {
@@ -161,38 +161,38 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
+              "slot": 5,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 9,
+              "slot": 7,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
+              "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Garrett Stubbs",
+              "position": "C",
               "bats": "L"
             }
           ],
@@ -217,38 +217,38 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
+              "slot": 5,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 9,
+              "slot": 7,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
+              "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Garrett Stubbs",
+              "position": "C",
               "bats": "L"
             }
           ],
@@ -346,9 +346,9 @@
         },
         "weather": {
           "temp_f": 78,
-          "condition": "Mostly sunny",
-          "wind": "7 mph · gusts 16",
-          "gusts_mph": 16
+          "condition": "Partly cloudy",
+          "wind": "6 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
