@@ -5,14 +5,14 @@
     "edition": 26,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-24T20:47:38.339Z",
+    "generated_at": "2026-04-24T21:18:15.994Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 24, 2026, 4:47 PM ET",
+      "generated_at_et": "Apr 24, 2026, 5:18 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "78° · Overcast · 6 mph · gusts 13",
+      "76° · Overcast · 7 mph · gusts 13",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -111,33 +111,33 @@
             },
             {
               "slot": 5,
-              "name": "Michael Harris II",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
               "name": "Austin Riley",
               "position": "3B",
               "bats": "R"
             },
             {
-              "slot": 7,
+              "slot": 6,
               "name": "Dominic Smith",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 7,
               "name": "Mauricio Dubón",
               "position": "SS",
               "bats": "R"
             },
             {
-              "slot": 9,
+              "slot": 8,
               "name": "Mike Yastrzemski",
               "position": "LF",
               "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Eli White",
+              "position": "CF",
+              "bats": "R"
             }
           ],
           "away": [
@@ -279,33 +279,33 @@
             },
             {
               "slot": 5,
-              "name": "Michael Harris II",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
               "name": "Austin Riley",
               "position": "3B",
               "bats": "R"
             },
             {
-              "slot": 7,
+              "slot": 6,
               "name": "Dominic Smith",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 7,
               "name": "Mauricio Dubón",
               "position": "SS",
               "bats": "R"
             },
             {
-              "slot": 9,
+              "slot": 8,
               "name": "Mike Yastrzemski",
               "position": "LF",
               "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Eli White",
+              "position": "CF",
+              "bats": "R"
             }
           ]
         }
@@ -345,9 +345,9 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 78,
+          "temp_f": 76,
           "condition": "Overcast",
-          "wind": "6 mph · gusts 13",
+          "wind": "7 mph · gusts 13",
           "gusts_mph": 13
         },
         "giveaway": "",
