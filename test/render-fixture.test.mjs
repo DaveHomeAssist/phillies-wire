@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { populate } from "../render.mjs";
 
 const template = readFileSync(new URL("../phillies-wire-v2.html", import.meta.url), "utf8");
-const fixture = JSON.parse(readFileSync(new URL("../phillies-wire-schema.json", import.meta.url), "utf8"));
+const fixture = JSON.parse(readFileSync(new URL("../samples/issue-1.2.0.sample.json", import.meta.url), "utf8"));
 
 runTest("fixture render resolves every token and includes required landmarks", () => {
   const data = JSON.parse(JSON.stringify(fixture));

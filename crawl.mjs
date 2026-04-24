@@ -70,7 +70,7 @@ export {
 };
 
 async function main() {
-  const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
+  const fixture = JSON.parse(readFileSync("./samples/issue-1.2.0.sample.json", "utf8"));
   const overrides = loadOverrides(TODAY);
   const fetchSoft = createFetchSoft();
   const [{ scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, injuryResponse }, weatherResponse] =

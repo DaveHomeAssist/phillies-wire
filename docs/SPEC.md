@@ -449,7 +449,11 @@ phillies-wire/
 ├── overrides/                  ← editorial override files (rare)
 ├── README.md
 ├── HANDOFF.md
-└── phillies-wire-schema.json   ← full example payload (v1.2.0)
+└── samples/                    ← per-contract fixture payloads
+    ├── issue-1.2.0.sample.json     ← legacy per-issue shape (test fixture)
+    ├── issue-1.3.0.sample.json     ← current per-issue shape
+    ├── latest-1.0.0.sample.json    ← /latest.json consumer feed
+    └── README.md                    ← per-contract description + regen steps
 ```
 
 ---
@@ -470,7 +474,7 @@ Close these in the next planning pass, not now.
 
 - `README.md` — how to run locally
 - `HANDOFF.md` — operational playbook
-- `phillies-wire-schema.json` — full example payload
+- `samples/` — per-contract fixture payloads (per-issue `data.json` at `1.2.0` + `1.3.0`, consumer feed at `latest-1.0.0`). See `samples/README.md`.
 - [MLB Stats API docs](https://statsapi.mlb.com/docs/)
 - [Open-Meteo docs](https://open-meteo.com/en/docs)
 - Gemini mockups (in `00-inbox/phillies-ticker-poc/` reference material)

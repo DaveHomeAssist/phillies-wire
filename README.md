@@ -13,7 +13,10 @@ phillies-wire/
 |-- tokens.css
 |-- phillies-wire.css
 |-- phillies-wire-v2.html
-|-- phillies-wire-schema.json
+|-- samples/
+|   |-- issue-1.2.0.sample.json  ← fixture used by tests + crawl seed
+|   |-- issue-1.3.0.sample.json  ← current per-issue format
+|   `-- latest-1.0.0.sample.json ← consumer feed shape
 |-- crawl.mjs
 |-- enrich.mjs
 |-- render.mjs

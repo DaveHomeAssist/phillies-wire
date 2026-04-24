@@ -160,7 +160,7 @@ const htmlFiles = [
   "./site/archive/index.html",
 ];
 const textIntegrityFiles = [
-  "./phillies-wire-schema.json",
+  "./samples/issue-1.2.0.sample.json",
   "./phillies-wire-data.json",
   "./status.json",
   "./archive.json",

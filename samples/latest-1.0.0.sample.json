@@ -1,0 +1,125 @@
+{
+  "schema_version": "latest-1.0.0",
+  "publication": "Phillies Wire",
+  "edition_date": "2026-04-24",
+  "volume": 1,
+  "edition": 26,
+  "generated_at": "2026-04-24T07:10:45.350Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
+  "off_day": false,
+  "record": {
+    "wins": 8,
+    "losses": 17,
+    "streak": "W1",
+    "division_rank": 1,
+    "division": "NL East"
+  },
+  "hero": {
+    "headline": "Phillies @ Braves · Game 1",
+    "dek": "Andrew Painter vs Grant Holmes",
+    "summary": "Andrew Painter vs Grant Holmes · Phillies @ Braves · Game 1",
+    "next_label": "Tomorrow",
+    "next_value": "Zack Wheeler vs Bryce Elder · ATL vs PHI · Sat, Apr 25 · 7:15 PM"
+  },
+  "game": {
+    "matchup": "Phillies @ Braves · Game 1",
+    "first_pitch": "7:15 PM",
+    "venue": "Truist Park, Atlanta",
+    "starters": {
+      "home": {
+        "name": "Grant Holmes",
+        "hand": "R"
+      },
+      "away": {
+        "name": "Andrew Painter",
+        "hand": "R"
+      },
+      "phi": {
+        "name": "Andrew Painter",
+        "hand": "R"
+      },
+      "opp": {
+        "name": "Grant Holmes",
+        "hand": "R"
+      }
+    },
+    "series": {
+      "home_wins": 1,
+      "away_wins": 0,
+      "label": "Regular Season"
+    },
+    "broadcast": {
+      "tv": "NBCSP+",
+      "stream": "MLB.TV",
+      "radio": "94.1 WIP"
+    },
+    "weather": {
+      "temp_f": 58,
+      "condition": "Clear",
+      "wind": "6 mph · gusts 13",
+      "gusts_mph": 13
+    },
+    "score": null,
+    "inning": null,
+    "situation": null,
+    "recap_line": null
+  },
+  "schedule": {
+    "schema_version": "1.0.0",
+    "path": "data/phillies-2026.json",
+    "season": 2026,
+    "updated_at": "2026-04-24T07:10:45.444Z",
+    "current_game_pk": 824932,
+    "next_game_pk": 824933,
+    "next_game": {
+      "game_pk": 824933,
+      "official_date": "2026-04-25",
+      "date_label": "Sat, Apr 25, 2026",
+      "time_label": "7:15 PM",
+      "title": "Phillies at Atlanta Braves",
+      "matchup": "PHI at ATL",
+      "venue": "Truist Park"
+    },
+    "current_game": {
+      "game_pk": 824932,
+      "official_date": "2026-04-24",
+      "title": "Phillies at Atlanta Braves",
+      "matchup": "PHI at ATL"
+    }
+  },
+  "ticker": [
+    {
+      "text": "PHI 8-17",
+      "highlight": true
+    },
+    {
+      "text": "Phillies @ Braves · Game 1 · 7:15 PM",
+      "highlight": false
+    },
+    {
+      "text": "Andrew Painter vs Grant Holmes",
+      "highlight": true
+    },
+    {
+      "text": "NBCSP+ · 94.1 WIP",
+      "highlight": false
+    },
+    {
+      "text": "58° · Clear · gusts 13 mph",
+      "highlight": false
+    },
+    {
+      "text": "released RHP Taijuan Walker.",
+      "highlight": false
+    },
+    {
+      "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "recalled RHP Nolan Hoffman from Lehigh Valley IronPigs.",
+      "highlight": false
+    }
+  ]
+}

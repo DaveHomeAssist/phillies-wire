@@ -20,7 +20,6 @@ try {
   // Copy the minimum files render.mjs needs.
   const files = [
     "phillies-wire-v2.html",
-    "phillies-wire-schema.json",
     "tokens.css",
     "phillies-wire.css",
     "live-feed.js",
@@ -54,7 +53,7 @@ try {
 
   // Seed phillies-wire-data.json from the fixture so render has something to
   // stamp. Fixture ticker/hero/sections are already production-shaped.
-  const fixture = JSON.parse(readFileSync(join(repoRoot, "phillies-wire-schema.json"), "utf8"));
+  const fixture = JSON.parse(readFileSync(join(repoRoot, "samples/issue-1.2.0.sample.json"), "utf8"));
 
   // Align meta.date to "today" so status / archive entry look valid.
   const today = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());

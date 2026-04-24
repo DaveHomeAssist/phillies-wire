@@ -1,7 +1,7 @@
 import assert from "assert";
 import { readFileSync } from "node:fs";
 
-const schemaText = readFileSync(new URL("../phillies-wire-schema.json", import.meta.url), "utf8");
+const schemaText = readFileSync(new URL("../samples/issue-1.2.0.sample.json", import.meta.url), "utf8");
 
 runTest("schema fixture does not contain mojibake in user-facing fallback copy", () => {
   const mojibakePattern = /Â·|Â°|â€“|â€”|Ã[^\s]/;
