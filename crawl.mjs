@@ -61,6 +61,7 @@ export {
   extractDecisions,
   extractBattingOrder,
   buildLineupSection,
+  buildPlaysTimeline,
   mergeInjuryEntries,
   normalizeLiveInjuries,
   buildTbdBattingOrder,
@@ -250,6 +251,12 @@ async function buildLivePayload(context) {
     // Transit block is Citizens Bank Park / SEPTA specific. Only show it
     // for home games. Away games hide the transit row entirely.
     venue_is_home: philliesAreHome,
+    plays: buildPlaysTimeline({
+      gameFeed,
+      philliesAreHome,
+      philliesAbbr: philliesSide.team.abbreviation,
+      opponentAbbr: opponentSide.team.abbreviation,
+    }),
   };
 
   data.sections.lineup = buildLineupSection({
@@ -1031,6 +1038,100 @@ function collectUpcomingGames(scheduleResponse, teamId) {
   }
 
   return games.sort((left, right) => left.gameDate.localeCompare(right.gameDate));
+}
+
+// Converts MLB Stats API `feed/live` allPlays into the per-play shape the
+// innings dashboard client already renders (half/inning/event_type/detail/
+// actor/score_after). Replaces the prior linescore-first contract where
+// the plays array was always empty and the innings page said "no plays
+// yet" even after the game started. Keeps event_type within the enum the
+// client knows how to style: score_change, home_run, key_play, strikeout,
+// or a neutral "other" marker.
+function buildPlaysTimeline({ gameFeed, philliesAreHome, philliesAbbr, opponentAbbr }) {
+  const allPlays = gameFeed?.liveData?.plays?.allPlays;
+  if (!Array.isArray(allPlays) || allPlays.length === 0) {
+    return [];
+  }
+
+  const homeAbbr = philliesAreHome ? philliesAbbr : opponentAbbr;
+  const awayAbbr = philliesAreHome ? opponentAbbr : philliesAbbr;
+  const phiAbbr = philliesAbbr ?? "PHI";
+  const oppAbbr = opponentAbbr ?? "OPP";
+
+  const result = [];
+  for (const play of allPlays) {
+    const about = play?.about ?? {};
+    const res = play?.result ?? {};
+    const matchup = play?.matchup ?? {};
+
+    const halfInning = about.halfInning;
+    const inning = about.inning;
+    if (halfInning !== "top" && halfInning !== "bottom") continue;
+    if (!Number.isFinite(inning)) continue;
+
+    const eventType = classifyPlayEventType({
+      mlbEventType: res.eventType,
+      isScoringPlay: about.isScoringPlay === true,
+      captivatingIndex: about.captivatingIndex,
+    });
+
+    const entry = {
+      at_bat_index: about.atBatIndex ?? null,
+      inning,
+      half: halfInning,
+      event_type: eventType,
+      event_label: res.event ?? "",
+      detail: res.description ?? "",
+      actor: matchup.batter?.fullName ?? "",
+      score_after: buildScoreAfter({
+        isScoringPlay: about.isScoringPlay === true,
+        awayScore: res.awayScore,
+        homeScore: res.homeScore,
+        philliesAreHome,
+        phiAbbr,
+        oppAbbr,
+        homeAbbr,
+        awayAbbr,
+      }),
+      captivating_index: Number.isFinite(about.captivatingIndex) ? about.captivatingIndex : null,
+      is_complete: about.isComplete === true,
+    };
+    result.push(entry);
+  }
+
+  return result;
+}
+
+function classifyPlayEventType({ mlbEventType, isScoringPlay, captivatingIndex }) {
+  if (mlbEventType === "home_run") return "home_run";
+  if (mlbEventType === "strikeout") return "strikeout";
+  if (isScoringPlay) return "score_change";
+  // captivatingIndex is 0-100; >=70 catches dramatic non-scoring plays
+  // (web gems, key defensive saves, etc.) without flooding the feed.
+  if (Number.isFinite(captivatingIndex) && captivatingIndex >= 70) return "key_play";
+  return "other";
+}
+
+function buildScoreAfter({
+  isScoringPlay,
+  awayScore,
+  homeScore,
+  philliesAreHome,
+  phiAbbr,
+  oppAbbr,
+  homeAbbr,
+  awayAbbr,
+}) {
+  if (!isScoringPlay) return "";
+  if (!Number.isFinite(awayScore) || !Number.isFinite(homeScore)) return "";
+  // Use an en dash between scores to match the site's typographic convention.
+  const phiScore = philliesAreHome ? homeScore : awayScore;
+  const oppScore = philliesAreHome ? awayScore : homeScore;
+  if (phiAbbr && oppAbbr) {
+    return `${phiAbbr} ${phiScore}–${oppScore} ${oppAbbr}`;
+  }
+  // Fallback when abbreviations are missing: preserve home/away orientation.
+  return `${awayAbbr ?? "AWAY"} ${awayScore}–${homeScore} ${homeAbbr ?? "HOME"}`;
 }
 
 function extractKeyPerformers(boxscore, fallback) {

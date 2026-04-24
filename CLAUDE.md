@@ -42,7 +42,7 @@ Status: v1.6-preview. Core newsletter is stable on cron. The merged dashboard, i
 - **Sprint plans:** [docs/](docs/) (e.g. `SPRINT_2026-W17.md`)
 - **Portfolio contract:** `/Users/daverobertson/Desktop/Code/90-governance/docs/DEFINITION_OF_DONE.md`
 
-Last verified: 2026-04-22. Next action: enrich the innings timeline with full per play event arrays from live game data instead of the current linescore-first contract.
+Last verified: 2026-04-24. Next action: TBD — innings timeline now emits per-play event arrays from `feed/live`; prior linescore-first contract is superseded by `buildPlaysTimeline` in crawl.mjs.
 
 ## Definition of Done adoption status
 
