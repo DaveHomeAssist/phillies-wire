@@ -5,14 +5,14 @@
     "edition": 26,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-24T22:17:49.041Z",
+    "generated_at": "2026-04-24T22:45:37.278Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 24, 2026, 6:17 PM ET",
+      "generated_at_et": "Apr 24, 2026, 6:45 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Braves · Game 1",
-    "dek": "Andrew Painter vs Grant Holmes",
-    "summary": "Andrew Painter vs Grant Holmes · Phillies @ Braves · Game 1",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, ATL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Grant Holmes. Series: Regular Season.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "7:15 PM"
-      },
       {
         "label": "Venue",
         "value": "Truist Park, Atlanta"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP+ · MLB.TV · 94.1 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "67° · Mostly sunny"
       }
     ],
     "bullets": [
-      "70° · Overcast · 10 mph · gusts 16",
-      "Regular Season"
+      "Trea Turner at the plate",
+      "Grant Holmes on the mound",
+      "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Bryce Elder · ATL vs PHI · Sat, Apr 25 · 7:15 PM"
@@ -345,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 70,
-          "condition": "Overcast",
-          "wind": "10 mph · gusts 16",
-          "gusts_mph": 16
+          "temp_f": 67,
+          "condition": "Mostly sunny",
+          "wind": "11 mph · gusts 17",
+          "gusts_mph": 17
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
