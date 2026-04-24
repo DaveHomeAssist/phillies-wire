@@ -38,6 +38,7 @@ Status: v1.6-preview. Core newsletter is stable on cron. The merged dashboard, i
 
 - **Issue tracker:** This file (`## Issue Tracker` section below)
 - **Session log:** `/Users/daverobertson/Desktop/Code/90-governance/docs/today.csv`
+- **Runbook:** [RUNBOOK.md](RUNBOOK.md) — operational recovery reference; pipeline stages, failure modes, re-running editions
 - **Full site spec:** [docs/SPEC.md](docs/SPEC.md) — site specification, bumped per release
 - **Sprint plans:** [docs/](docs/) (e.g. `SPRINT_2026-W17.md`)
 - **Portfolio contract:** `/Users/daverobertson/Desktop/Code/90-governance/docs/DEFINITION_OF_DONE.md`
