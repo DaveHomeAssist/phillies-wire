@@ -6,6 +6,7 @@
    ============================================ */
 
 import {
+  applyPrefsToDocument,
   readPrefs,
   readSignals,
   writePrefs,
@@ -18,6 +19,8 @@ const SCHEDULE_URL = "../data/phillies-2026.json";
 
 let prefs = readPrefs();
 let signals = readSignals();
+
+applyPrefsToDocument(prefs);
 
 // Save-data detection — honour slow connections / user intent
 const saveDataActive =

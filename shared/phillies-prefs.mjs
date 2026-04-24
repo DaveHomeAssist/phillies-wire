@@ -11,6 +11,14 @@ export const defaultPrefs = Object.freeze({
   streakAlertThreshold: 3,
   reducedData: false,
   inningsFilter: "all",
+  // Tweaks folded in from claude.ai/design bundle 2026-04-23.
+  density: "cozy",        // compact | cozy | airy
+  feedStyle: "list",      // list | card | timeline
+  accent: "#e81828",      // any hex — applied as --accent CSS var
+  // Profile (Phillies Wire is single-user / local-only; these just
+  // personalize local notes and shares).
+  displayName: "",
+  handle: "",
 });
 
 export const defaultSignals = Object.freeze({
@@ -151,6 +159,32 @@ export function clearLocalBundle() {
     localStorage.removeItem(SCHEDULE_IMPORT_KEY);
     localStorage.removeItem(ISSUE_THEME_KEY);
   } catch {}
+}
+
+/**
+ * Mirror a prefs object onto the documentElement so CSS can react.
+ * Sets data-theme, data-density, data-feed-style and --accent CSS var.
+ * No-op when called in a non-browser context.
+ */
+export function applyPrefsToDocument(prefs = readPrefs()) {
+  if (typeof document === "undefined") return;
+  const root = document.documentElement;
+  if (prefs.theme)     root.dataset.theme = prefs.theme;
+  if (prefs.density)   root.dataset.density = prefs.density;
+  if (prefs.feedStyle) root.dataset.feedStyle = prefs.feedStyle;
+  if (typeof prefs.accent === "string" && /^#[0-9a-f]{6}$/i.test(prefs.accent)) {
+    root.style.setProperty("--accent", prefs.accent);
+    // Also override the legacy brand vars so existing surfaces pick up
+    // the user's accent without needing per-rule rewrites.
+    root.style.setProperty("--color-accent", prefs.accent);
+    root.style.setProperty("--dash-brand", prefs.accent);
+    // Soft variant: same hex at 14% opacity.
+    const r = parseInt(prefs.accent.slice(1, 3), 16);
+    const g = parseInt(prefs.accent.slice(3, 5), 16);
+    const b = parseInt(prefs.accent.slice(5, 7), 16);
+    root.style.setProperty("--accent-soft", `rgba(${r},${g},${b},0.14)`);
+    root.style.setProperty("--color-accent-soft", `rgba(${r},${g},${b},0.14)`);
+  }
 }
 
 export function summarizeAttendance(state = readScheduleState()) {

@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#e81828" />
-<title>Phillies Wire · Local Preferences</title>
+<title>Phillies Wire · Preferences</title>
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="../../fonts.css" />
 <link rel="stylesheet" href="../../tokens.css" />
@@ -47,130 +47,257 @@
   <main class="stage preferences-stage">
     <header class="topbar">
       <div class="topbar-title">
-        <span class="eyebrow">This browser only</span>
-        <h1>Local Preferences</h1>
-        <span class="crumbs">Theme, live behavior, and local export tools</span>
+        <span class="eyebrow">Account · Settings</span>
+        <h1>Preferences</h1>
+        <span class="crumbs">Local to this browser · no account, no sync</span>
       </div>
       <div class="topbar-meta">
+        <button class="btn-ghost" id="pref-reset" type="button">Reset all</button>
         <a class="icon-btn" href="../" aria-label="Back to Command Center" title="Command Center">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
         </a>
       </div>
     </header>
 
-    <section class="preferences-grid" aria-label="Preferences panels">
-      <article class="card pref-card">
-        <header class="card-head">
-          <span class="card-eyebrow">Appearance</span>
-          <span class="card-status">Issue pages</span>
-        </header>
-        <div class="pref-stack">
-          <label class="pref-field" for="pref-theme">
-            <span class="pref-label">Issue theme</span>
-            <span class="pref-copy">Applies to the latest issue and archive style toggle.</span>
-          </label>
-          <select id="pref-theme" class="pref-select">
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-          </select>
+    <div class="prefs-layout">
+      <aside class="prefs-tabs" role="tablist" aria-label="Preference sections">
+        <button class="prefs-tab is-active" role="tab" data-tab="profile" aria-selected="true">Profile</button>
+        <button class="prefs-tab" role="tab" data-tab="appearance" aria-selected="false">Appearance</button>
+        <button class="prefs-tab" role="tab" data-tab="coverage" aria-selected="false">Game Coverage</button>
+        <button class="prefs-tab" role="tab" data-tab="local" aria-selected="false">Local Data</button>
+        <div class="prefs-tab-meta">
+          <div class="tab-meta-eyebrow">Saved on this device</div>
+          <div class="tab-meta-name" data-slot="tab-meta-name">—</div>
+          <div class="tab-meta-handle" data-slot="tab-meta-handle">no handle set</div>
         </div>
-      </article>
+      </aside>
 
-      <article class="card pref-card">
-        <header class="card-head">
-          <span class="card-eyebrow">Live behavior</span>
-          <span class="card-status">Dashboard</span>
-        </header>
-        <div class="pref-stack">
-          <label class="pref-toggle" for="pref-reduced-data">
-            <span>
-              <span class="pref-label">Reduced data mode</span>
-              <span class="pref-copy">Disables extra motion and honors slow connection behavior.</span>
-            </span>
-            <input id="pref-reduced-data" type="checkbox" />
-          </label>
-
-          <label class="pref-field" for="pref-streak-threshold">
-            <span class="pref-label">Losing streak alert threshold</span>
-            <span class="pref-copy">Controls when the record card starts pulsing.</span>
-          </label>
-          <input id="pref-streak-threshold" class="pref-range" type="range" min="2" max="6" step="1" value="3" />
-          <div class="pref-inline-value" data-slot="streak-threshold-value">L3</div>
-
-          <label class="pref-field" for="pref-innings-filter">
-            <span class="pref-label">Default innings filter</span>
-            <span class="pref-copy">Sets the first view on the innings timeline.</span>
-          </label>
-          <select id="pref-innings-filter" class="pref-select">
-            <option value="all">All plays</option>
-            <option value="scoring">Score changes only</option>
-          </select>
-        </div>
-      </article>
-
-      <article class="card pref-card">
-        <header class="card-head">
-          <span class="card-eyebrow">Local summary</span>
-          <span class="card-status">Saved keys</span>
-        </header>
-        <dl class="pref-summary">
-          <div><dt>Visits</dt><dd data-slot="visit-count">0</dd></div>
-          <div><dt>Last mode</dt><dd data-slot="last-mode">—</dd></div>
-          <div><dt>Last visit</dt><dd data-slot="last-visit">—</dd></div>
-          <div><dt>Attended</dt><dd data-slot="attended-count">0</dd></div>
-          <div><dt>Planned</dt><dd data-slot="planned-count">0</dd></div>
-          <div><dt>Skipped</dt><dd data-slot="skipped-count">0</dd></div>
-          <div><dt>Imported from Quest</dt><dd data-slot="imported-at">No</dd></div>
-        </dl>
-      </article>
-
-      <article class="card pref-card">
-        <header class="card-head">
-          <span class="card-eyebrow">Local tools</span>
-          <span class="card-status">Backup</span>
-        </header>
-        <div class="pref-stack">
-          <p class="pref-copy">Exports and imports include Wire preferences, session signals, and schedule attendance state for this browser.</p>
-          <div class="pref-actions">
-            <button class="pref-button" id="pref-export" type="button">Export local bundle</button>
-            <button class="pref-button" id="pref-import" type="button">Import local bundle</button>
-            <button class="pref-button pref-button-danger" id="pref-reset" type="button">Reset local Wire data</button>
+      <div class="prefs-content">
+        <!-- ─────────── PROFILE ─────────── -->
+        <section class="pref-section" data-panel="profile" role="tabpanel">
+          <header class="pref-section-head">
+            <span class="eyebrow">Who you are</span>
+            <h2 class="pref-section-title">Profile</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Display name</div>
+                <div class="pref-desc">Shown on notes and local shares. Stays on this browser.</div>
+              </div>
+              <div class="pref-control">
+                <input id="pref-display-name" class="pref-input" type="text" placeholder="Dave R." autocomplete="off" />
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Handle</div>
+                <div class="pref-desc">Optional short identifier, e.g. @daver.</div>
+              </div>
+              <div class="pref-control">
+                <input id="pref-handle" class="pref-input" type="text" placeholder="@daver" autocomplete="off" />
+              </div>
+            </div>
           </div>
-          <input id="pref-import-file" type="file" accept="application/json" hidden />
-          <p class="pref-status" data-slot="status-copy">No changes yet.</p>
-        </div>
-      </article>
+        </section>
 
-      <article class="card pref-card pref-card-full">
-        <header class="card-head">
-          <span class="card-eyebrow">Route map</span>
-          <span class="card-status">Current system</span>
-        </header>
-        <div class="pref-links">
-          <a class="pref-link-card" href="../">
-            <strong>Command Center</strong>
-            <span>Live score, activity feed, record, injuries, and key events.</span>
-          </a>
-          <a class="pref-link-card" href="../../schedule/">
-            <strong>Schedule</strong>
-            <span>Season tracker, attendance state, notes, and game links.</span>
-          </a>
-          <a class="pref-link-card" href="../innings/">
-            <strong>Innings</strong>
-            <span>Linescore and play progression for the active or latest game.</span>
-          </a>
-          <a class="pref-link-card" href="../../">
-            <strong>Latest Issue</strong>
-            <span>The full editorial edition and archive entry point.</span>
-          </a>
-        </div>
-      </article>
-    </section>
+        <!-- ─────────── APPEARANCE ─────────── -->
+        <section class="pref-section" data-panel="appearance" role="tabpanel" hidden>
+          <header class="pref-section-head">
+            <span class="eyebrow">Design tweaks</span>
+            <h2 class="pref-section-title">Appearance</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Issue theme</div>
+                <div class="pref-desc">Applies to the latest issue and archive pages.</div>
+              </div>
+              <div class="pref-control">
+                <div class="pref-seg" role="radiogroup" aria-label="Theme">
+                  <button class="pref-seg-btn" data-pref="theme" data-value="dark" type="button">Dark</button>
+                  <button class="pref-seg-btn" data-pref="theme" data-value="light" type="button">Light</button>
+                </div>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Density</div>
+                <div class="pref-desc">Tightens or relaxes padding across the app shell.</div>
+              </div>
+              <div class="pref-control">
+                <div class="pref-seg" role="radiogroup" aria-label="Density">
+                  <button class="pref-seg-btn" data-pref="density" data-value="compact" type="button">Compact</button>
+                  <button class="pref-seg-btn" data-pref="density" data-value="cozy" type="button">Cozy</button>
+                  <button class="pref-seg-btn" data-pref="density" data-value="airy" type="button">Airy</button>
+                </div>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Accent colour</div>
+                <div class="pref-desc">Brand accent used on pills, rails, and highlights.</div>
+              </div>
+              <div class="pref-control">
+                <div class="pref-swatches" role="radiogroup" aria-label="Accent">
+                  <button class="pref-swatch" data-value="#e81828" type="button" style="background:#e81828" aria-label="Phillies red"></button>
+                  <button class="pref-swatch" data-value="#f08f2e" type="button" style="background:#f08f2e" aria-label="Orange"></button>
+                  <button class="pref-swatch" data-value="#3ddc97" type="button" style="background:#3ddc97" aria-label="Green"></button>
+                  <button class="pref-swatch" data-value="#6fb1ff" type="button" style="background:#6fb1ff" aria-label="Blue"></button>
+                  <button class="pref-swatch" data-value="#b57bff" type="button" style="background:#b57bff" aria-label="Purple"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─────────── GAME COVERAGE ─────────── -->
+        <section class="pref-section" data-panel="coverage" role="tabpanel" hidden>
+          <header class="pref-section-head">
+            <span class="eyebrow">How you watch</span>
+            <h2 class="pref-section-title">Game Coverage</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Activity feed style</div>
+                <div class="pref-desc">Rendering for the Command Center's activity list.</div>
+              </div>
+              <div class="pref-control">
+                <div class="pref-seg" role="radiogroup" aria-label="Feed style">
+                  <button class="pref-seg-btn" data-pref="feedStyle" data-value="list" type="button">List</button>
+                  <button class="pref-seg-btn" data-pref="feedStyle" data-value="card" type="button">Card</button>
+                  <button class="pref-seg-btn" data-pref="feedStyle" data-value="timeline" type="button">Timeline</button>
+                </div>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Default innings filter</div>
+                <div class="pref-desc">First view on the innings timeline page.</div>
+              </div>
+              <div class="pref-control">
+                <select id="pref-innings-filter" class="pref-input">
+                  <option value="all">All plays</option>
+                  <option value="scoring">Score changes only</option>
+                </select>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Losing streak alert</div>
+                <div class="pref-desc">Threshold at which the record card starts pulsing.</div>
+              </div>
+              <div class="pref-control pref-range-wrap">
+                <input id="pref-streak-threshold" class="pref-range" type="range" min="2" max="6" step="1" value="3" />
+                <span class="pref-range-value" data-slot="streak-threshold-value">L3</span>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Reduced data mode</div>
+                <div class="pref-desc">Disables extra motion and honours slow-connection hints.</div>
+              </div>
+              <div class="pref-control">
+                <button class="pref-toggle" id="pref-reduced-data" type="button" role="switch" aria-checked="false">
+                  <span class="pref-toggle-thumb"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─────────── LOCAL DATA ─────────── -->
+        <section class="pref-section" data-panel="local" role="tabpanel" hidden>
+          <header class="pref-section-head">
+            <span class="eyebrow">This browser only</span>
+            <h2 class="pref-section-title">Local Data</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-summary-grid">
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Visits</div>
+                <div class="pref-summary-value" data-slot="visit-count">0</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Last mode</div>
+                <div class="pref-summary-value" data-slot="last-mode">—</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Last visit</div>
+                <div class="pref-summary-value" data-slot="last-visit">—</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Attended</div>
+                <div class="pref-summary-value" data-slot="attended-count">0</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Planned</div>
+                <div class="pref-summary-value" data-slot="planned-count">0</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Skipped</div>
+                <div class="pref-summary-value" data-slot="skipped-count">0</div>
+              </div>
+              <div class="pref-summary-tile pref-summary-tile-wide">
+                <div class="pref-summary-label">Imported from Ballparks Quest</div>
+                <div class="pref-summary-value" data-slot="imported-at">No</div>
+              </div>
+            </div>
+
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Backup</div>
+                <div class="pref-desc">Export and import include prefs, session signals, and schedule state.</div>
+              </div>
+              <div class="pref-control pref-actions">
+                <button class="pref-button" id="pref-export" type="button">Export bundle</button>
+                <button class="pref-button" id="pref-import" type="button">Import bundle</button>
+                <input id="pref-import-file" type="file" accept="application/json" hidden />
+              </div>
+            </div>
+
+            <p class="pref-status" data-slot="status-copy" data-tone="quiet">No changes yet.</p>
+
+            <div class="danger-row">
+              <button class="pref-button pref-button-danger" id="pref-reset-local" type="button">Reset local Wire data</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="pref-section pref-section-routes">
+          <header class="pref-section-head">
+            <span class="eyebrow">Route map</span>
+            <h2 class="pref-section-title">Where things live</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-links">
+              <a class="pref-link-card" href="../">
+                <strong>Command Center</strong>
+                <span>Live score, activity feed, record, injuries, and key events.</span>
+              </a>
+              <a class="pref-link-card" href="../../schedule/">
+                <strong>Schedule</strong>
+                <span>Season tracker, attendance state, notes, and game links.</span>
+              </a>
+              <a class="pref-link-card" href="../innings/">
+                <strong>Innings</strong>
+                <span>Linescore and play progression for the active or latest game.</span>
+              </a>
+              <a class="pref-link-card" href="../../">
+                <strong>Latest Issue</strong>
+                <span>The full editorial edition and archive entry point.</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
     <footer class="stage-foot">
-      <span>Phillies Wire · Local Preferences</span>
+      <span>Phillies Wire · Preferences</span>
       <span class="foot-sep">·</span>
-      <a href="../../schedule/" class="foot-link">Open schedule tracker →</a>
+      <span>Saved to this browser only</span>
     </footer>
   </main>
 

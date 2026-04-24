@@ -5,13 +5,14 @@
    Persists filter state in localStorage (philliesWire_prefs).
    ============================================ */
 
-import { readPrefs, writePrefs } from "../../shared/phillies-prefs.mjs";
+import { applyPrefsToDocument, readPrefs, writePrefs } from "../../shared/phillies-prefs.mjs";
 import { findCurrentOrNextGame } from "../../shared/phillies-schedule.mjs";
 
 const ARCHIVE_URL = "../../archive.json";
 const SCHEDULE_URL = "../../data/phillies-2026.json";
 
 let prefs = readPrefs();
+applyPrefsToDocument(prefs);
 
 const el  = (sel, scope = document) => scope.querySelector(sel);
 const els = (sel, scope = document) => [...scope.querySelectorAll(sel)];
