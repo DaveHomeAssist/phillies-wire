@@ -308,6 +308,22 @@ body {
 .team { display: flex; align-items: center; gap: 14px; min-width: 0; }
 .team-phi { justify-content: flex-end; text-align: right; }
 .team-opp { justify-content: flex-start; text-align: left; }
+
+/* PHI-home: swap grid columns so the home team sits on the right per
+   scoreboard convention, and reverse each cluster so the team NAME
+   stays on the outside (furthest from centered state column). */
+.hero-score[data-phi-side="home"] .team-phi {
+  grid-column: 3;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  text-align: right;
+}
+.hero-score[data-phi-side="home"] .team-opp {
+  grid-column: 1;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  text-align: left;
+}
 .team-logo {
   width: 52px; height: 52px;
   border-radius: 12px;

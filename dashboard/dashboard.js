@@ -406,6 +406,35 @@ function renderLineup(issueData) {
   }
 }
 
+function renderHeroDirection(issueData) {
+  // Flip scorehero to PHI-home when the game is at Citizens Bank Park.
+  // Preference order:
+  //   1. venue_is_home (explicit flag from enrich.mjs)
+  //   2. starters.phi.name === starters.home.name (structural match)
+  //   3. headline / matchup text: "@ Phillies" / "vs Phillies"
+  //   4. default "away" (PHI on the left — current behavior)
+  const score = document.querySelector('.hero-score');
+  if (!score) return;
+
+  const gs = issueData?.sections?.game_status?.content;
+  let side = null;
+
+  if (gs?.venue_is_home === true)  side = "home";
+  if (gs?.venue_is_home === false) side = "away";
+
+  if (!side && gs?.starters?.phi?.name && gs?.starters?.home?.name) {
+    side = gs.starters.phi.name === gs.starters.home.name ? "home" : "away";
+  }
+
+  if (!side) {
+    const text = `${issueData?.hero?.headline || ""} ${gs?.matchup || ""}`.toLowerCase();
+    if (/@\s*phil/.test(text) || /\bvs\s+phil/.test(text)) side = "home";
+    else if (/\bphil[^@]*@/.test(text)) side = "away";
+  }
+
+  score.setAttribute("data-phi-side", side || "away");
+}
+
 function renderPlayerFocus(issueData) {
   const card = el('[data-card="focus"]');
   if (!card) return;
@@ -456,6 +485,7 @@ async function init() {
     // Per-issue data.json (schema 1.3.0) — graceful fallback if not yet deployed.
     const issueData = await fetchIssueData(entries[0].date);
     if (issueData) {
+      renderHeroDirection(issueData);
       renderInjuryReport(issueData);
       renderLineup(issueData);
       renderPlayerFocus(issueData);
