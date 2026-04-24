@@ -8,10 +8,13 @@
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="../../fonts.css" />
 <link rel="stylesheet" href="../../tokens.css" />
+<link rel="stylesheet" href="../../shared/wire-banner.css" />
 <link rel="stylesheet" href="../dashboard.css" />
 <link rel="stylesheet" href="./preferences.css" />
 </head>
 <body>
+  <div class="pw-wire-banner" data-wire-banner data-feed-url="../../latest.json" hidden></div>
+  <div class="dash-app">
   <aside class="sidebar" aria-label="Primary navigation">
     <div class="sidebar-brand" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
@@ -171,6 +174,12 @@
     </footer>
   </main>
 
+  </div><!-- /.dash-app -->
+
+  <script type="module">
+    import { mountWireBanner } from "../../shared/wire-banner.mjs";
+    mountWireBanner("[data-wire-banner]");
+  </script>
   <script type="module" src="./preferences.js"></script>
 </body>
 </html>

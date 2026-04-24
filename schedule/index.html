@@ -8,10 +8,13 @@
 <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="../fonts.css" />
 <link rel="stylesheet" href="../tokens.css" />
+<link rel="stylesheet" href="../shared/wire-banner.css" />
 <link rel="stylesheet" href="../dashboard/dashboard.css" />
 <link rel="stylesheet" href="./schedule.css" />
 </head>
 <body>
+  <div class="pw-wire-banner" data-wire-banner data-feed-url="../latest.json" hidden></div>
+  <div class="dash-app">
   <aside class="sidebar" aria-label="Primary navigation">
     <div class="sidebar-brand" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
@@ -34,6 +37,11 @@
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
       </a>
     </nav>
+    <div class="sidebar-footer">
+      <a class="nav-item" href="../dashboard/preferences/" data-nav="preferences" title="Preferences">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </a>
+    </div>
   </aside>
 
   <main class="stage schedule-stage">
@@ -112,6 +120,12 @@
     </footer>
   </main>
 
+  </div><!-- /.dash-app -->
+
+  <script type="module">
+    import { mountWireBanner } from "../shared/wire-banner.mjs";
+    mountWireBanner("[data-wire-banner]");
+  </script>
   <script type="module" src="./schedule.js"></script>
 </body>
 </html>
