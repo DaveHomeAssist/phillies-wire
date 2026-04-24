@@ -101,18 +101,43 @@
 .schedule-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px;
+  align-items: center;
 }
 
 .schedule-filters .filter-btn {
+  appearance: none;
   border: 1px solid var(--schedule-border);
-  background: var(--schedule-surface);
+  background: transparent;
+  color: var(--schedule-copy);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font: 500 11px/1 "Inter", sans-serif;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  user-select: none;
+  transition: background 140ms ease, color 140ms ease, border-color 140ms ease, transform 100ms ease;
+  white-space: nowrap;
+}
+
+.schedule-filters .filter-btn:hover {
   color: #fff;
+  background: var(--schedule-surface);
+  border-color: var(--schedule-surface-strong);
+}
+
+.schedule-filters .filter-btn:active {
+  transform: scale(0.96);
 }
 
 .schedule-filters .filter-btn[aria-pressed="true"] {
-  background: rgba(232, 24, 40, 0.2);
-  border-color: rgba(232, 24, 40, 0.44);
+  background: var(--schedule-accent);
+  color: #fff;
+  border-color: var(--schedule-accent);
+}
+
+.schedule-filters .filter-btn[aria-pressed="true"]:hover {
+  filter: brightness(1.08);
 }
 
 .schedule-stats {
