@@ -5,14 +5,14 @@
     "edition": 26,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-24T07:10:45.350Z",
+    "generated_at": "2026-04-24T13:31:10.213Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "pending",
-      "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 24, 2026, 3:10 AM ET",
+      "enrich_state": "fallback",
+      "enrich_label": "Structured fallback published after enrich failure: Claude response did not parse as JSON after repair: Unexpected token '`', \"```json\n{\n\"... is not valid JSON",
+      "generated_at_et": "Apr 24, 2026, 9:31 AM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "58° · Clear · 6 mph · gusts 13",
+      "66° · Overcast · 7 mph · gusts 13",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -345,9 +345,9 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 58,
-          "condition": "Clear",
-          "wind": "6 mph · gusts 13",
+          "temp_f": 66,
+          "condition": "Overcast",
+          "wind": "7 mph · gusts 13",
           "gusts_mph": 13
         },
         "giveaway": "",
