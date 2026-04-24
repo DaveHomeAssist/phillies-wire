@@ -104,6 +104,50 @@
       </div>
     </section>
 
+    <section class="atbat-card" aria-label="Current at-bat" data-slot="atbat-card" hidden>
+      <header class="atbat-head">
+        <span class="card-eyebrow">At Bat</span>
+        <span class="atbat-pill" data-slot="atbat-pill">—</span>
+      </header>
+      <div class="atbat-body">
+        <div class="atbat-batter">
+          <div class="batter-name" data-slot="batter-name">—</div>
+          <div class="batter-meta" data-slot="batter-meta">—</div>
+          <div class="pitch-seq-label">Pitches</div>
+          <div class="pitch-seq" data-slot="pitch-seq" role="list" aria-label="Pitch sequence"></div>
+        </div>
+        <div class="atbat-field">
+          <svg class="diamond" viewBox="0 0 200 200" aria-hidden="true" data-slot="diamond">
+            <path class="field-arc" d="M 20 110 Q 100 -30 180 110"
+                  fill="rgba(61,220,151,0.05)"
+                  stroke="rgba(61,220,151,0.18)" stroke-width="1" />
+            <polygon class="infield" points="100,140 150,90 100,40 50,90"
+                     fill="rgba(255,255,255,0.03)"
+                     stroke="rgba(255,255,255,0.18)" stroke-width="1.2" />
+            <rect class="base" data-base="first"  x="142" y="82" width="16" height="16" transform="rotate(45 150 90)" />
+            <rect class="base" data-base="second" x="92"  y="32" width="16" height="16" transform="rotate(45 100 40)" />
+            <rect class="base" data-base="third"  x="42"  y="82" width="16" height="16" transform="rotate(45 50 90)" />
+            <polygon class="home" points="92,140 108,140 108,150 100,158 92,150" />
+            <circle class="mound" cx="100" cy="95" r="4" fill="rgba(255,255,255,0.4)" />
+          </svg>
+          <div class="count-bars" data-slot="count-bars">
+            <div class="count-group">
+              <div class="count-label">Balls</div>
+              <div class="count-dots" data-slot="count-balls"></div>
+            </div>
+            <div class="count-group">
+              <div class="count-label">Strikes</div>
+              <div class="count-dots" data-slot="count-strikes"></div>
+            </div>
+            <div class="count-group">
+              <div class="count-label">Outs</div>
+              <div class="count-dots" data-slot="count-outs"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="plays-card" aria-label="Notable plays">
       <header class="plays-head">
         <span class="card-eyebrow">Notable Plays</span>
