@@ -5,14 +5,14 @@
     "edition": 26,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-25T01:56:35.567Z",
+    "generated_at": "2026-04-25T01:58:43.510Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 24, 2026, 9:56 PM ET",
+      "generated_at_et": "Apr 24, 2026, 9:58 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -20,35 +20,35 @@
   },
   "record": {
     "wins": 8,
-    "losses": 17,
+    "losses": 18,
     "streak": "W1",
     "division_rank": 1,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 3, ATL 5",
-    "dek": "Middle 9th · 3 outs",
-    "summary": "Ozzie Albies is up against Tim Mayza. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 3, ATL 5.",
+    "dek": "ATL 5, PHI 3 · Grant Holmes · 6.0 IP, 7 H, 3 ER, 4 K",
+    "summary": "PHI 3, ATL 5. Final at Truist Park, Atlanta. ATL leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Truist Park, Atlanta"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP+ · MLB.TV · 94.1 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "57° · Clear"
+        "label": "Series",
+        "value": "ATL leads 1-0"
       }
     ],
     "bullets": [
-      "Ozzie Albies at the plate",
-      "Tim Mayza on the mound",
-      "Truist Park, Atlanta"
+      "Grant Holmes: 6.0 IP, 7 H, 3 ER, 4 K",
+      "Andrew Painter: 5.2 IP, 9 H, 5 ER, 1 K",
+      "Ronald Acuña Jr.: 1-for-3, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Bryce Elder · ATL vs PHI · Sat, Apr 25 · 7:15 PM"
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "ATL leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP+",
