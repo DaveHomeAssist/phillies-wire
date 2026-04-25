@@ -5,14 +5,14 @@
     "edition": 26,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-25T00:37:30.314Z",
+    "generated_at": "2026-04-25T01:11:24.527Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 24, 2026, 8:37 PM ET",
+      "generated_at_et": "Apr 24, 2026, 9:11 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 3, ATL 2",
-    "dek": "Middle 5th · 3 outs",
-    "summary": "Ronald Acuña Jr. is up against Andrew Painter. Series: Regular Season.",
+    "headline": "PHI 3, ATL 5",
+    "dek": "Top 7th · 2 outs",
+    "summary": "Adolis García is up against Aaron Bummer. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "59° · Partly cloudy"
+        "value": "57° · Overcast"
       }
     ],
     "bullets": [
-      "Ronald Acuña Jr. at the plate",
-      "Andrew Painter on the mound",
+      "Adolis García at the plate",
+      "Aaron Bummer on the mound",
       "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
@@ -125,7 +125,7 @@
             {
               "slot": 7,
               "name": "Mauricio Dubón",
-              "position": "SS",
+              "position": "CF",
               "bats": "R"
             },
             {
@@ -293,7 +293,7 @@
             {
               "slot": 7,
               "name": "Mauricio Dubón",
-              "position": "SS",
+              "position": "CF",
               "bats": "R"
             },
             {
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 59,
-          "condition": "Partly cloudy",
-          "wind": "11 mph · gusts 19",
-          "gusts_mph": 19
+          "temp_f": 57,
+          "condition": "Overcast",
+          "wind": "9 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
