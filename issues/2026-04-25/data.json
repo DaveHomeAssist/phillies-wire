@@ -5,14 +5,14 @@
     "edition": 27,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-25T23:46:46.252Z",
+    "generated_at": "2026-04-25T23:57:32.690Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 25, 2026, 7:46 PM ET",
+      "generated_at_et": "Apr 25, 2026, 7:57 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Braves · Game 2",
-    "dek": "Zack Wheeler vs Bryce Elder",
-    "summary": "Zack Wheeler vs Bryce Elder · Phillies @ Braves · Game 2",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, ATL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Bryce Elder. Series: ATL leads 1-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "7:15 PM"
-      },
       {
         "label": "Venue",
         "value": "Truist Park, Atlanta"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP+ · MLB.TV · 94.1 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "45° · Light drizzle"
       }
     ],
     "bullets": [
-      "45° · Light drizzle · 11 mph · gusts 27",
-      "ATL leads 1-0"
+      "Trea Turner at the plate",
+      "Bryce Elder on the mound",
+      "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Chris Sale · ATL vs PHI · Sun, Apr 26 · 1:35 PM"
