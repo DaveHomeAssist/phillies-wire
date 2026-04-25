@@ -5,14 +5,14 @@
     "edition": 27,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-25T22:12:38.992Z",
+    "generated_at": "2026-04-25T22:27:05.048Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 25, 2026, 6:12 PM ET",
+      "generated_at_et": "Apr 25, 2026, 6:27 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "47° · Drizzle · 11 mph · gusts 25",
+      "47° · Heavy rain · 8 mph · gusts 19",
       "ATL leads 1-0"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
         },
         "weather": {
           "temp_f": 47,
-          "condition": "Drizzle",
-          "wind": "11 mph · gusts 25",
-          "gusts_mph": 25
+          "condition": "Heavy rain",
+          "wind": "8 mph · gusts 19",
+          "gusts_mph": 19
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
