@@ -5,14 +5,14 @@
     "edition": 28,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T20:15:02.498Z",
+    "generated_at": "2026-04-26T20:30:24.790Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 26, 2026, 4:15 PM ET",
+      "generated_at_et": "Apr 26, 2026, 4:30 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -20,35 +20,35 @@
   },
   "record": {
     "wins": 9,
-    "losses": 18,
+    "losses": 19,
     "streak": "W1",
     "division_rank": 1,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 2, ATL 6",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Brandon Marsh is up against Robert Suarez. Series: Series tied 1-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 2, ATL 6.",
+    "dek": "ATL 6, PHI 2 · Chris Sale · 6.0 IP, 1 H, 0 ER, 9 K",
+    "summary": "PHI 2, ATL 6. Final at Truist Park, Atlanta. ATL wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Truist Park, Atlanta"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP+ · MLB.TV · 94.1 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "54° · Partly cloudy"
+        "label": "Series",
+        "value": "ATL wins 2-1"
       }
     ],
     "bullets": [
-      "Brandon Marsh at the plate",
-      "Robert Suarez on the mound",
-      "Truist Park, Atlanta"
+      "Chris Sale: 6.0 IP, 1 H, 0 ER, 9 K",
+      "Aaron Nola: 4.2 IP, 7 H, 6 ER, 6 K",
+      "Matt Olson: 1-for-4, 1 HR, 3 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Tyler Mahle · PHI vs SF · Tue, Apr 28 · 6:40 PM"
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Series tied 1-1"
+          "label": "ATL wins 2-1"
         },
         "broadcast": {
           "tv": "NBCSP+",
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 54,
+          "temp_f": 55,
           "condition": "Partly cloudy",
-          "wind": "10 mph · gusts 16",
-          "gusts_mph": 16
+          "wind": "10 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
