@@ -5,14 +5,14 @@
     "edition": 28,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T19:21:05.067Z",
+    "generated_at": "2026-04-26T19:46:22.859Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 26, 2026, 3:21 PM ET",
+      "generated_at_et": "Apr 26, 2026, 3:46 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, ATL 6",
-    "dek": "Top 6th · 0 outs",
-    "summary": "Kyle Schwarber is up against Chris Sale. Series: Series tied 1-1.",
+    "dek": "Bottom 7th · 0 outs",
+    "summary": "Matt Olson is up against Tim Mayza. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "53° · Overcast"
+        "value": "54° · Overcast"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
-      "Chris Sale on the mound",
+      "Matt Olson at the plate",
+      "Tim Mayza on the mound",
       "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 53,
+          "temp_f": 54,
           "condition": "Overcast",
-          "wind": "10 mph · gusts 17",
-          "gusts_mph": 17
+          "wind": "10 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
