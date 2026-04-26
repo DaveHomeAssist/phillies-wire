@@ -5,14 +5,14 @@
     "edition": 28,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T19:47:12.234Z",
+    "generated_at": "2026-04-26T20:13:34.899Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 26, 2026, 3:47 PM ET",
+      "generated_at_et": "Apr 26, 2026, 4:13 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, ATL 6",
-    "dek": "Bottom 7th · 0 outs",
-    "summary": "Matt Olson is up against Tim Mayza. Series: Series tied 1-1.",
+    "headline": "PHI 2, ATL 6",
+    "dek": "End 8th · 3 outs",
+    "summary": "Felix Reyes is up against Aaron Bummer. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "54° · Overcast"
+        "value": "55° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Matt Olson at the plate",
-      "Tim Mayza on the mound",
+      "Felix Reyes at the plate",
+      "Aaron Bummer on the mound",
       "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
@@ -346,8 +346,8 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 54,
-          "condition": "Overcast",
+          "temp_f": 55,
+          "condition": "Partly cloudy",
           "wind": "10 mph · gusts 16",
           "gusts_mph": 16
         },
