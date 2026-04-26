@@ -5,14 +5,14 @@
     "edition": 28,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T17:46:14.089Z",
+    "generated_at": "2026-04-26T18:15:59.853Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 26, 2026, 1:46 PM ET",
+      "generated_at_et": "Apr 26, 2026, 2:15 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,8 +28,8 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, ATL 0",
-    "dek": "Bottom 1st · 0 outs",
+    "headline": "PHI 0, ATL 6",
+    "dek": "Bottom 2nd · 1 out",
     "summary": "Matt Olson is up against Aaron Nola. Series: Series tied 1-1.",
     "cards": [
       {
@@ -42,7 +42,7 @@
       },
       {
         "label": "Weather",
-        "value": "49° · Overcast"
+        "value": "50° · Overcast"
       }
     ],
     "bullets": [
@@ -346,9 +346,9 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 49,
+          "temp_f": 50,
           "condition": "Overcast",
-          "wind": "10 mph · gusts 16",
+          "wind": "9 mph · gusts 16",
           "gusts_mph": 16
         },
         "giveaway": "",
