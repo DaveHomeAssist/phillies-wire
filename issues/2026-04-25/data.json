@@ -5,50 +5,50 @@
     "edition": 27,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T03:07:42.288Z",
+    "generated_at": "2026-04-26T03:45:58.068Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 25, 2026, 11:07 PM ET",
+      "generated_at_et": "Apr 25, 2026, 11:45 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
     }
   },
   "record": {
-    "wins": 8,
+    "wins": 9,
     "losses": 18,
     "streak": "W1",
     "division_rank": 1,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 8, ATL 5",
-    "dek": "Bottom 10th · 1 out",
-    "summary": "Ozzie Albies is up against Kyle Backhus. Series: ATL leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 8, ATL 5.",
+    "dek": "PHI 8, ATL 5 · Zack Wheeler · 5.0 IP, 3 H, 2 ER, 6 K",
+    "summary": "PHI 8, ATL 5. Final at Truist Park, Atlanta. Series tied 1-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Truist Park, Atlanta"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP+ · MLB.TV · 94.1 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "44° · Drizzle"
+        "label": "Series",
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "Ozzie Albies at the plate",
-      "Kyle Backhus on the mound",
-      "Truist Park, Atlanta"
+      "Zack Wheeler: 5.0 IP, 3 H, 2 ER, 6 K",
+      "Bryce Elder: 7.0 IP, 6 H, 3 ER, 2 K",
+      "Bryce Harper: 2-for-3, 4 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Chris Sale · ATL vs PHI · Sun, Apr 26 · 1:35 PM"
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "ATL leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP+",
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 44,
-          "condition": "Drizzle",
-          "wind": "10 mph · gusts 20",
-          "gusts_mph": 20
+          "condition": "Rain",
+          "wind": "10 mph · gusts 22",
+          "gusts_mph": 22
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
