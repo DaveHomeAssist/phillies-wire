@@ -5,14 +5,14 @@
     "edition": 28,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T18:48:13.760Z",
+    "generated_at": "2026-04-26T19:19:38.684Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 26, 2026, 2:48 PM ET",
+      "generated_at_et": "Apr 26, 2026, 3:19 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, ATL 6",
-    "dek": "Middle 4th · 3 outs",
-    "summary": "Eli White is up against Aaron Nola. Series: Series tied 1-1.",
+    "dek": "End 5th · 3 outs",
+    "summary": "Kyle Schwarber is up against Chris Sale. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,16 +42,16 @@
       },
       {
         "label": "Weather",
-        "value": "52° · Overcast"
+        "value": "53° · Overcast"
       }
     ],
     "bullets": [
-      "Eli White at the plate",
-      "Aaron Nola on the mound",
+      "Kyle Schwarber at the plate",
+      "Chris Sale on the mound",
       "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Jesús Luzardo vs TBD · PHI vs SF · Tue, Apr 28 · 6:40 PM"
+    "next_value": "Jesús Luzardo vs Tyler Mahle · PHI vs SF · Tue, Apr 28 · 6:40 PM"
   },
   "sections": {
     "lineup": {
@@ -346,7 +346,7 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 52,
+          "temp_f": 53,
           "condition": "Overcast",
           "wind": "10 mph · gusts 17",
           "gusts_mph": 17
@@ -405,7 +405,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Jesús Luzardo vs TBD · PHI vs SF",
+    "matchup": "Jesús Luzardo vs Tyler Mahle · PHI vs SF",
     "date": "Tue, Apr 28",
     "time": "6:40 PM",
     "broadcast": "NBCSP",
