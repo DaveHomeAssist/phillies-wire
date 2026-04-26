@@ -5,14 +5,14 @@
     "edition": 27,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T01:55:29.315Z",
+    "generated_at": "2026-04-26T02:19:48.104Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 25, 2026, 9:55 PM ET",
+      "generated_at_et": "Apr 25, 2026, 10:19 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 3, ATL 4",
-    "dek": "Middle 7th · 3 outs",
-    "summary": "Eli White is up against Orion Kerkering. Series: ATL leads 1-0.",
+    "headline": "PHI 4, ATL 4",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "Austin Riley is up against José Alvarado. Series: ATL leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "45° · Light rain"
+        "value": "45° · Light drizzle"
       }
     ],
     "bullets": [
-      "Eli White at the plate",
-      "Orion Kerkering on the mound",
+      "Austin Riley at the plate",
+      "José Alvarado on the mound",
       "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
@@ -347,8 +347,8 @@
         },
         "weather": {
           "temp_f": 45,
-          "condition": "Light rain",
-          "wind": "9 mph · gusts 22",
+          "condition": "Light drizzle",
+          "wind": "10 mph · gusts 22",
           "gusts_mph": 22
         },
         "giveaway": "",
