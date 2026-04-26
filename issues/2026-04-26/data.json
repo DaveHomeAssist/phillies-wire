@@ -5,14 +5,14 @@
     "edition": 28,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T16:47:00.612Z",
+    "generated_at": "2026-04-26T17:15:45.283Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 26, 2026, 12:47 PM ET",
+      "generated_at_et": "Apr 26, 2026, 1:15 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Braves · Game 3",
-    "dek": "Aaron Nola vs Chris Sale",
-    "summary": "Aaron Nola vs Chris Sale · Phillies @ Braves · Game 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, ATL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Chris Sale. Series: Series tied 1-1.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "1:35 PM"
-      },
       {
         "label": "Venue",
         "value": "Truist Park, Atlanta"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP+ · MLB.TV · 94.1 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "48° · Overcast"
       }
     ],
     "bullets": [
-      "49° · Overcast · 10 mph · gusts 16",
-      "Series tied 1-1"
+      "Trea Turner at the plate",
+      "Chris Sale on the mound",
+      "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs TBD · PHI vs SF · Tue, Apr 28 · 6:40 PM"
@@ -345,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 49,
+          "temp_f": 48,
           "condition": "Overcast",
-          "wind": "10 mph · gusts 16",
-          "gusts_mph": 16
+          "wind": "9 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
