@@ -5,14 +5,14 @@
     "edition": 28,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T17:17:08.964Z",
+    "generated_at": "2026-04-26T17:45:22.265Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 26, 2026, 1:17 PM ET",
+      "generated_at_et": "Apr 26, 2026, 1:45 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, ATL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Chris Sale. Series: Series tied 1-1.",
+    "dek": "Bottom 1st · 0 outs",
+    "summary": "Drake Baldwin is up against Aaron Nola. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "48° · Overcast"
+        "value": "49° · Overcast"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Chris Sale on the mound",
+      "Drake Baldwin at the plate",
+      "Aaron Nola on the mound",
       "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 48,
+          "temp_f": 49,
           "condition": "Overcast",
-          "wind": "9 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "10 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
