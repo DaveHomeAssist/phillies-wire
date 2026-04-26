@@ -5,14 +5,14 @@
     "edition": 28,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T13:27:52.069Z",
+    "generated_at": "2026-04-26T16:16:44.533Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "fallback",
-      "enrich_label": "Structured fallback published after enrich failure: Claude response did not parse as JSON after repair: Unexpected token '`', \"```json\n{\n\"... is not valid JSON",
-      "generated_at_et": "Apr 26, 2026, 9:27 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "Apr 26, 2026, 12:16 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "44° · Overcast · 9 mph · gusts 18",
-      "Regular Season"
+      "47° · Overcast · 11 mph · gusts 18",
+      "Series tied 1-1"
     ],
     "next_label": "Tomorrow",
     "next_value": "TBD vs TBD · PHI vs SF · Tue, Apr 28 · 6:40 PM"
@@ -55,10 +55,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. ATL lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at ATL game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "1:35 PM",
         "starters": {
@@ -87,57 +87,57 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ronald Acuña Jr.",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Drake Baldwin",
+              "position": "C",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Matt Olson",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ozzie Albies",
+              "position": "2B",
+              "bats": "S"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Harris II",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Austin Riley",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Mauricio Dubón",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Eli White",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jorge Mateo",
+              "position": "SS",
+              "bats": "R"
             }
           ],
           "away": [
@@ -161,39 +161,39 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
+              "name": "Felix Reyes",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
               "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
+              "name": "Alec Bohm",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
+              "name": "Edmundo Sosa",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
+              "name": "Dylan Moore",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "phi": [
@@ -217,95 +217,95 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
+              "name": "Felix Reyes",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
               "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
+              "name": "Alec Bohm",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
+              "name": "Edmundo Sosa",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
+              "name": "Dylan Moore",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ronald Acuña Jr.",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Drake Baldwin",
+              "position": "C",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Matt Olson",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ozzie Albies",
+              "position": "2B",
+              "bats": "S"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Michael Harris II",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Austin Riley",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Mauricio Dubón",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Eli White",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jorge Mateo",
+              "position": "SS",
+              "bats": "R"
             }
           ]
         }
@@ -337,7 +337,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP+",
@@ -345,9 +345,9 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 44,
+          "temp_f": 47,
           "condition": "Overcast",
-          "wind": "9 mph · gusts 18",
+          "wind": "11 mph · gusts 18",
           "gusts_mph": 18
         },
         "giveaway": "",
