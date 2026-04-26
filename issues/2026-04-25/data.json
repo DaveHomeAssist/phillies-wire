@@ -5,14 +5,14 @@
     "edition": 27,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T01:03:00.826Z",
+    "generated_at": "2026-04-26T01:15:31.942Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 25, 2026, 9:03 PM ET",
+      "generated_at_et": "Apr 25, 2026, 9:15 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 2, ATL 0",
-    "dek": "Bottom 4th · 0 outs",
-    "summary": "Matt Olson is up against Zack Wheeler. Series: ATL leads 1-0.",
+    "headline": "PHI 2, ATL 2",
+    "dek": "Bottom 4th · 2 outs",
+    "summary": "Mike Yastrzemski is up against Zack Wheeler. Series: ATL leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "45° · Drizzle"
+        "value": "45° · Light drizzle"
       }
     ],
     "bullets": [
-      "Matt Olson at the plate",
+      "Mike Yastrzemski at the plate",
       "Zack Wheeler on the mound",
       "Truist Park, Atlanta"
     ],
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 45,
-          "condition": "Drizzle",
-          "wind": "10 mph · gusts 20",
-          "gusts_mph": 20
+          "condition": "Light drizzle",
+          "wind": "10 mph · gusts 22",
+          "gusts_mph": 22
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
