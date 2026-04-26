@@ -5,14 +5,14 @@
     "edition": 27,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-26T00:41:31.925Z",
+    "generated_at": "2026-04-26T01:03:00.826Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 25, 2026, 8:41 PM ET",
+      "generated_at_et": "Apr 25, 2026, 9:03 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, ATL 0",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Kyle Schwarber is up against Bryce Elder. Series: ATL leads 1-0.",
+    "headline": "PHI 2, ATL 0",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "Matt Olson is up against Zack Wheeler. Series: ATL leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "45° · Heavy rain"
+        "value": "45° · Drizzle"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
-      "Bryce Elder on the mound",
+      "Matt Olson at the plate",
+      "Zack Wheeler on the mound",
       "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 45,
-          "condition": "Heavy rain",
-          "wind": "9 mph · gusts 18",
-          "gusts_mph": 18
+          "condition": "Drizzle",
+          "wind": "10 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
