@@ -68,6 +68,7 @@ export {
   extractKeyPerformers,
   pickActiveGame,
   clampOverride,
+  updateRecordFromStandings,
 };
 
 async function main() {
@@ -317,6 +318,7 @@ async function buildLivePayload(context) {
     buildRotation(nextGames, fixture.sections.roster.content.rotation),
     fetchStandings(),
   ]);
+  data.record = updateRecordFromStandings(data.record, standings);
 
   data.meta.game_pk = game.gamePk;
   data.meta.first_pitch_iso = game.gameDate;
@@ -880,6 +882,17 @@ function buildStandingsPreview(teams) {
   }
 
   return `PHI ${phi.wins}-${phi.losses} · ${phi.gb === "\u2014" ? "1st" : `${phi.gb} GB`} · ${phi.streak}`;
+}
+
+function updateRecordFromStandings(record, teams) {
+  const phi = teams.find((team) => team.is_phi);
+  if (!phi) return record;
+
+  return {
+    ...record,
+    streak: phi.streak || record.streak,
+    division_rank: Number.isFinite(phi.division_rank) ? phi.division_rank : record.division_rank,
+  };
 }
 
 function buildUpNext(nextGames, fallback) {

@@ -13,6 +13,7 @@ import {
   pickActiveGame,
   resolvePitcher,
   resolveSeriesLabel,
+  updateRecordFromStandings,
 } from "../crawl.mjs";
 import {
   buildWindSummary,
@@ -386,6 +387,22 @@ runTest("pickActiveGame prefers live, then upcoming, then last final", () => {
   const final1 = { gameDate: "2026-05-04T17:00:00Z", status: { abstractGameState: "Final" } };
   const final2 = { gameDate: "2026-05-04T20:05:00Z", status: { abstractGameState: "Final" } };
   assert.strictEqual(pickActiveGame([final1, final2]), final2);
+});
+
+runTest("updateRecordFromStandings copies Phillies streak and division rank without touching W-L", () => {
+  const record = { wins: 10, losses: 19, streak: "W1", division_rank: 1, division: "NL East" };
+  const updated = updateRecordFromStandings(record, [
+    { abbr: "NYM", streak: "W2", division_rank: 1, is_phi: false },
+    { abbr: "PHI", streak: "L3", division_rank: 5, is_phi: true },
+  ]);
+
+  assert.deepEqual(updated, {
+    wins: 10,
+    losses: 19,
+    streak: "L3",
+    division_rank: 5,
+    division: "NL East",
+  });
 });
 
 function runTest(name, fn) {

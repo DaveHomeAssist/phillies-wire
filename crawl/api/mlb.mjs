@@ -212,7 +212,10 @@ async function fetchStandings() {
   const season = new Date().getFullYear();
   const response = await fetchJson(
     `${MLB_API_BASE}/standings?leagueId=104&season=${season}&standingsTypes=regularSeason`,
-  ).catch(() => null);
+  ).catch((error) => {
+    console.warn(`[crawl] standings fetch failed: ${error.message}`);
+    return null;
+  });
 
   if (!response?.records) {
     return [];
@@ -228,6 +231,7 @@ async function fetchStandings() {
         pct: team.winningPercentage,
         gb: normalizeGamesBack(team.gamesBack),
         streak: team.streak?.streakCode ?? "",
+        division_rank: Number.parseInt(team.divisionRank, 10),
         is_phi: team.team.id === TEAM_ID,
       }));
     }
