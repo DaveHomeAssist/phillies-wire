@@ -5,50 +5,50 @@
     "edition": 30,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-29T00:04:55.831Z",
+    "generated_at": "2026-04-29T01:09:30.962Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 28, 2026, 8:04 PM ET",
+      "generated_at_et": "Apr 28, 2026, 9:09 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
     }
   },
   "record": {
-    "wins": 9,
+    "wins": 10,
     "losses": 19,
     "streak": "W1",
     "division_rank": 1,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 4, SF 0",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Adolis García is up against Tyler Mahle. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 7, SF 0.",
+    "dek": "PHI 7, SF 0 · Jesús Luzardo · 7.0 IP, 2 H, 0 ER, 8 K",
+    "summary": "PHI 7, SF 0. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP+ · MLB.TV · 94.1 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "60° · Overcast"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "Adolis García at the plate",
-      "Tyler Mahle on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Jesús Luzardo: 7.0 IP, 2 H, 0 ER, 8 K",
+      "Tyler Mahle: 5.0 IP, 6 H, 5 ER, 3 K",
+      "Trea Turner: 4-for-5, 1 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Logan Webb · PHI vs SF · Wed, Apr 29 · 6:40 PM"
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP+",
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 60,
+          "temp_f": 59,
           "condition": "Overcast",
-          "wind": "4 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "5 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
