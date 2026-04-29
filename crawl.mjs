@@ -160,7 +160,8 @@ function preserveEditorialFromPrevious(freshData) {
   }
   for (const path of EDITORIAL_FIELDS_TO_PRESERVE) {
     const previousValue = getPath(previous, path);
-    if (previousValue !== undefined && previousValue !== null && previousValue !== "") {
+    const freshParent = getPath(freshData, path.slice(0, -1));
+    if (freshParent && previousValue !== undefined && previousValue !== null && previousValue !== "") {
       setPath(freshData, path, previousValue);
     }
   }
@@ -312,6 +313,10 @@ async function buildLivePayload(context) {
       venue: data.sections.game_status.content.venue,
       seriesLabel: data.sections.game_status.content.series.label,
     });
+    data.sections.recap.chip_label = "Final";
+    data.sections.recap.chip_tone = "final";
+  } else {
+    delete data.sections.recap;
   }
 
   const [rotation, standings] = await Promise.all([
@@ -327,8 +332,6 @@ async function buildLivePayload(context) {
   data.sections.roster.content.rotation = rotation;
   data.sections.roster.content.as_of_label = buildFreshnessLabel("As of", data.meta.generated_at);
   data.sections.roster.content.highlights = buildRosterHighlights(rosterResponse, transactionResponse, fixture.sections.roster.content.highlights);
-  data.sections.recap.chip_label = "Final";
-  data.sections.recap.chip_tone = "final";
   data.sections.roster.chip_label = rosterResponse?.roster ? "Confirmed" : "Fallback";
   data.sections.roster.chip_tone = rosterResponse?.roster ? "confirmed" : "fallback";
   data.sections.injury_report.content.il_entries = mergeInjuryEntries(

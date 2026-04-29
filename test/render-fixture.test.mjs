@@ -145,6 +145,36 @@ runTest("fixture render surfaces section chips when provided", () => {
   assert.match(html, /pw-section-chip--editorial">Editorial/);
 });
 
+runTest("fixture render omits recap accordion when no final recap is present", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.assets_prefix = "./";
+  data.meta.latest_href = "./";
+  data.meta.archive_href = "./archive/";
+  data.meta.show_sections = true;
+  data.meta.off_day = false;
+  data.meta.game_pk = "0";
+  data.meta.first_pitch_iso = "2026-03-28T20:05:00Z";
+  data.meta.page_title = "T";
+  data.meta.page_description = "D";
+  data.meta.canonical_url = "https://example.com/";
+  data.meta.og_title = "OGT";
+  data.meta.og_description = "OGD";
+  data.meta.og_image = "https://example.com/og.svg";
+  data.meta.og_image_alt = "alt";
+  data.meta.json_ld = "[\"safe\"]";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
+  delete data.sections.recap;
+
+  const html = populate(template, data);
+  assert.doesNotMatch(html, /data-row="recap"/);
+  assert.doesNotMatch(html, /PHI 5, TEX 3/);
+});
+
 runTest("fixture render keeps matchup metadata in the hero instead of duplicating Game Status rows", () => {
   const data = JSON.parse(JSON.stringify(fixture));
   data.meta.assets_prefix = "./";
