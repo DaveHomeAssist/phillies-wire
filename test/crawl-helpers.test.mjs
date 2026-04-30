@@ -2,10 +2,13 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 
 import {
+  applyStandingRecord,
+  buildPitchHandIndex,
   buildLineupSection,
   buildTbdBattingOrder,
   clampOverride,
   extractBattingOrder,
+  extractBroadcast,
   extractDecisions,
   extractKeyPerformers,
   mergeInjuryEntries,
@@ -29,6 +32,29 @@ runTest("resolvePitcher prefers MLB probable data including pitchHand", () => {
   const pitcher = resolvePitcher(side, fixture, "phi");
   assert.equal(pitcher.name, "Jose Alvarado");
   assert.equal(pitcher.hand, "L");
+});
+
+runTest("resolvePitcher uses feed pitchHand when schedule probable omits it", () => {
+  const side = {
+    probablePitcher: { id: 666200, fullName: "Jesús Luzardo" },
+  };
+  const pitchHands = new Map([[666200, "L"]]);
+  const pitcher = resolvePitcher(side, fixture, "phi", pitchHands);
+  assert.equal(pitcher.name, "Jesús Luzardo");
+  assert.equal(pitcher.hand, "L");
+});
+
+runTest("buildPitchHandIndex reads pitcher hands from feed players", () => {
+  const index = buildPitchHandIndex({
+    gameData: {
+      players: {
+        ID1: { id: 1, pitchHand: { code: "L" } },
+        ID2: { id: 2, pitchHand: { code: "R" } },
+      },
+    },
+  });
+  assert.equal(index.get(1), "L");
+  assert.equal(index.get(2), "R");
 });
 
 runTest("resolvePitcher falls back to PHI fixture only for the phi role", () => {
@@ -57,6 +83,32 @@ runTest("resolveSeriesLabel prefers seriesStatus.result, then description, then 
     "Game 2 of 3",
   );
   assert.equal(resolveSeriesLabel({}, "Series 1-0"), "Series 1-0");
+});
+
+runTest("extractBroadcast handles flat MLB broadcasts and prefers home feed", () => {
+  const game = {
+    broadcasts: [
+      { type: "TV", name: "NBCS BA", homeAway: "away" },
+      { type: "TV", name: "NBCSP", homeAway: "home" },
+      { type: "AM", name: "KNBR 680", homeAway: "away" },
+      { type: "FM", name: "94 WIP", homeAway: "home" },
+    ],
+  };
+  assert.equal(extractBroadcast(game, "TV"), "NBCSP");
+  assert.equal(extractBroadcast(game, "RADIO"), "94 WIP");
+});
+
+runTest("applyStandingRecord refreshes record fields from standings", () => {
+  const record = { wins: 1, losses: 0, streak: "W1", division_rank: 1 };
+  const updated = applyStandingRecord(record, [
+    { abbr: "ATL", wins: 20, losses: 9, streak: "W1", division_rank: 1 },
+    { abbr: "PHI", wins: 9, losses: 19, streak: "L1", division_rank: 4, gb: "10.5", is_phi: true },
+  ]);
+  assert.equal(updated.wins, 9);
+  assert.equal(updated.losses, 19);
+  assert.equal(updated.streak, "L1");
+  assert.equal(updated.division_rank, 4);
+  assert.equal(updated.games_back, "10.5");
 });
 
 runTest("extractDecisions normalizes decisions to { winner, loser, save }", () => {
@@ -282,6 +334,39 @@ runTest("mergeInjuryEntries overlays live injuries onto the fixture baseline", (
   assert.ok(byName["Ranger Suarez"], "New live-only IL entry should be appended");
   assert.equal(byName["Ranger Suarez"].source, "live");
   assert.equal(byName["Ranger Suarez"].last_confirmed, generatedAt);
+});
+
+runTest("mergeInjuryEntries rebuilds current IL from transactions and removes activations", () => {
+  const generatedAt = "2026-04-28T17:05:00Z";
+  const fallbackGeneratedAt = "2026-03-28T14:00:00Z";
+  const baseline = [
+    { name: "Zack Wheeler", position: "RHP", il_type: "15-Day", badge: "il", injury: "Old note", status_note: "" },
+    { name: "Max Lazar", position: "RHP", il_type: "15-Day", badge: "il", injury: "Old oblique note", status_note: "" },
+  ];
+  const transactions = [
+    {
+      effectiveDate: "2026-04-15",
+      person: { fullName: "Jhoan Duran" },
+      description: "Philadelphia Phillies placed RHP Jhoan Duran on the 15-day injured list retroactive to April 15, 2026. Left oblique strain.",
+    },
+    {
+      effectiveDate: "2026-04-22",
+      person: { fullName: "Max Lazar" },
+      description: "Philadelphia Phillies transferred RHP Max Lazar from the 15-day injured list to the 60-day injured list. Left oblique strain.",
+    },
+    {
+      effectiveDate: "2026-04-25",
+      person: { fullName: "Zack Wheeler" },
+      description: "Philadelphia Phillies activated RHP Zack Wheeler from the 15-day injured list.",
+    },
+  ];
+  const merged = mergeInjuryEntries(baseline, null, { transactions }, generatedAt, fallbackGeneratedAt);
+  const byName = Object.fromEntries(merged.map((entry) => [entry.name, entry]));
+  assert.equal(byName["Zack Wheeler"], undefined);
+  assert.equal(byName["Max Lazar"].il_type, "60-Day");
+  assert.equal(byName["Max Lazar"].source, "live");
+  assert.equal(byName["Jhoan Duran"].il_type, "15-Day");
+  assert.equal(byName["Jhoan Duran"].source, "live");
 });
 
 runTest("mergeInjuryEntries preserves fallback freshness when no live injury data arrives", () => {

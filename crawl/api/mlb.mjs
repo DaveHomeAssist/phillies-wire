@@ -7,12 +7,21 @@ import {
 } from "../../config.mjs";
 import { normalizeGamesBack } from "../format.mjs";
 
+const TEAM_ABBR_BY_ID = {
+  120: "WSH",
+  121: "NYM",
+  143: "PHI",
+  144: "ATL",
+  146: "MIA",
+};
+
 export {
   createFetchSoft,
   fetchDailyMlbData,
   fetchGameDetail,
   fetchJson,
   fetchPitcherStats,
+  fetchRecentFinals,
   fetchStandings,
 };
 
@@ -24,7 +33,14 @@ function createFetchSoft() {
     });
 }
 
-async function fetchDailyMlbData({ today, yesterday, endDate, teamId = TEAM_ID, fetchSoft = createFetchSoft() }) {
+async function fetchDailyMlbData({
+  today,
+  yesterday,
+  transactionStartDate = yesterday,
+  endDate,
+  teamId = TEAM_ID,
+  fetchSoft = createFetchSoft(),
+}) {
   const [scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, injuryResponse] = await Promise.all([
     fetchSoft(
       "schedule",
@@ -35,7 +51,7 @@ async function fetchDailyMlbData({ today, yesterday, endDate, teamId = TEAM_ID, 
       `${MLB_API_BASE}/schedule?sportId=1&teamId=${teamId}&startDate=${today}&endDate=${endDate}&hydrate=linescore,probablePitcher,seriesStatus,team,broadcasts(all)`,
     ),
     fetchSoft("roster", `${MLB_API_BASE}/teams/${teamId}/roster?rosterType=active`),
-    fetchSoft("transactions", `${MLB_API_BASE}/transactions?teamId=${teamId}&startDate=${yesterday}&endDate=${today}`),
+    fetchSoft("transactions", `${MLB_API_BASE}/transactions?teamId=${teamId}&startDate=${transactionStartDate}&endDate=${today}`),
     fetchSoft("injuries", `${MLB_API_BASE}/teams/${teamId}/injuries`),
   ]);
 
@@ -92,6 +108,72 @@ async function fetchPitcherStats(pitcherIds) {
   return statsMap;
 }
 
+// Fetch the most recent COMPLETED final game for the team in the lookback
+// window. Excludes postponed/cancelled/suspended entries, which the API still
+// stamps abstractGameState="Final" with codedGameState="D" and no scores.
+// Returns null if no completed final exists in the window.
+async function fetchRecentFinals({
+  teamId = TEAM_ID,
+  today,
+  lookbackDays = 10,
+  fetchSoft = createFetchSoft(),
+} = {}) {
+  if (!today) return null;
+  const start = offsetIsoDate(today, -lookbackDays);
+  const end = offsetIsoDate(today, -1);
+  const response = await fetchSoft(
+    "recent-finals",
+    `${MLB_API_BASE}/schedule?sportId=1&teamId=${teamId}&startDate=${start}&endDate=${end}&hydrate=team,linescore`,
+  );
+  if (!response?.dates) return null;
+
+  const finals = [];
+  for (const day of response.dates) {
+    for (const game of day?.games ?? []) {
+      const status = game?.status ?? {};
+      if (status.abstractGameState !== "Final") continue;
+      // codedGameState "D" is Postponed/Cancelled/Suspended without final
+      // score. detailedState may be "Postponed", "Cancelled", "Suspended".
+      if (status.codedGameState === "D") continue;
+      const home = game?.teams?.home;
+      const away = game?.teams?.away;
+      const homeScore = home?.score;
+      const awayScore = away?.score;
+      if (typeof homeScore !== "number" || typeof awayScore !== "number") continue;
+      const phiIsHome = home?.team?.id === teamId;
+      const phiSide = phiIsHome ? home : away;
+      const oppSide = phiIsHome ? away : home;
+      const phiRuns = phiSide?.score;
+      const oppRuns = oppSide?.score;
+      const oppAbbr =
+        oppSide?.team?.abbreviation
+          ?? TEAM_ABBR_BY_ID[oppSide?.team?.id]
+          ?? oppSide?.team?.teamCode?.toUpperCase()
+          ?? "OPP";
+      finals.push({
+        date: day.date,
+        game_pk: game.gamePk,
+        phi_runs: phiRuns,
+        opp_runs: oppRuns,
+        opp_abbr: oppAbbr,
+        outcome: phiRuns > oppRuns ? "W" : "L",
+        venue_is_home: phiIsHome,
+      });
+    }
+  }
+  if (!finals.length) return null;
+  // Newest first
+  finals.sort((a, b) => b.date.localeCompare(a.date));
+  return finals[0];
+}
+
+function offsetIsoDate(iso, deltaDays) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  dt.setUTCDate(dt.getUTCDate() + deltaDays);
+  return dt.toISOString().slice(0, 10);
+}
+
 async function fetchStandings() {
   const season = new Date().getFullYear();
   const response = await fetchJson(
@@ -106,12 +188,13 @@ async function fetchStandings() {
     if (division.division?.id === 204) {
       return division.teamRecords.map((team) => ({
         name: team.team.name,
-        abbr: team.team.abbreviation ?? team.team.name.split(" ").pop(),
+        abbr: team.team.abbreviation ?? TEAM_ABBR_BY_ID[team.team.id] ?? team.team.name.split(" ").pop(),
         wins: team.wins,
         losses: team.losses,
         pct: team.winningPercentage,
         gb: normalizeGamesBack(team.gamesBack),
         streak: team.streak?.streakCode ?? "",
+        division_rank: Number(team.divisionRank) || null,
         is_phi: team.team.id === TEAM_ID,
       }));
     }

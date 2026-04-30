@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from "node:fs";
+import { runFactcheck } from "./factcheck.mjs";
 
 const data = readJson("./phillies-wire-data.json");
 const status = readJson("./status.json");
@@ -439,29 +440,46 @@ for (const file of htmlFiles) {
   }
 }
 
-// Streak sign must agree with the most recent completed final in archive.json.
+// Streak sign must agree with the most recent completed final.
 // Missing this check on 2026-04-22 allowed a payload with record.streak="W1"
-// to ship while the archive showed seven consecutive losses.
+// to ship while the archive showed seven consecutive losses. Truth source is
+// data.meta.last_final (sourced fresh from MLB API by crawl), with a fallback
+// to archive.json. Archive can be structurally stale when daily editions
+// were never promoted to final (live cron didn't run, or rain-out etc), so
+// the archive comparison is only enforced when the latest archive final is
+// recent relative to the issue date.
 {
   const recordStreak = (data.record?.streak ?? "").trim();
-  const finals = (archive.entries ?? []).filter(
-    (entry) => entry.mode === "final" && typeof entry.headline === "string",
-  );
-  if (recordStreak && finals.length) {
-    const latest = finals[0]; // archive.json is newest-first
-    const match = latest.headline.match(/PHI\s+(\d+)\s*,\s*[A-Z]{2,4}\s+(\d+)/i);
-    if (match) {
-      const phi = parseInt(match[1], 10);
-      const opp = parseInt(match[2], 10);
-      const lastOutcome = phi > opp ? "W" : "L";
-      const streakSign = recordStreak[0]?.toUpperCase();
-      if (streakSign !== "W" && streakSign !== "L") {
-        fail(`record.streak must start with "W" or "L"; got "${recordStreak}"`);
-      }
-      if (streakSign !== lastOutcome) {
+  if (recordStreak) {
+    const streakSign = recordStreak[0]?.toUpperCase();
+    if (streakSign !== "W" && streakSign !== "L") {
+      fail(`record.streak must start with "W" or "L"; got "${recordStreak}"`);
+    }
+
+    const lastFinal = data.meta?.last_final;
+    if (lastFinal && (lastFinal.outcome === "W" || lastFinal.outcome === "L")) {
+      if (streakSign !== lastFinal.outcome) {
         fail(
-          `record.streak "${recordStreak}" disagrees with the most recent final (${latest.date}: "${latest.headline}" → ${lastOutcome}).`,
+          `record.streak "${recordStreak}" disagrees with most recent MLB final (${lastFinal.date}: PHI ${lastFinal.phi_runs}, ${lastFinal.opp_abbr} ${lastFinal.opp_runs} → ${lastFinal.outcome}).`,
         );
+      }
+    } else {
+      const finals = (archive.entries ?? []).filter(
+        (entry) => entry.mode === "final" && typeof entry.headline === "string",
+      );
+      const latest = finals[0]; // archive.json is newest-first
+      if (latest && isWithinDays(latest.date, data.meta?.date, 3)) {
+        const match = latest.headline.match(/PHI\s+(\d+)\s*,\s*[A-Z]{2,4}\s+(\d+)/i);
+        if (match) {
+          const phi = parseInt(match[1], 10);
+          const opp = parseInt(match[2], 10);
+          const lastOutcome = phi > opp ? "W" : "L";
+          if (streakSign !== lastOutcome) {
+            fail(
+              `record.streak "${recordStreak}" disagrees with the most recent archived final (${latest.date}: "${latest.headline}" → ${lastOutcome}).`,
+            );
+          }
+        }
       }
     }
   }
@@ -520,6 +538,14 @@ for (const file of htmlFiles) {
   }
 }
 
+{
+  const { findings } = await runFactcheck({ mode: "pre-publish" });
+  const blocking = [...findings.errors, ...findings.pipeline];
+  if (blocking.length) {
+    fail(`Factcheck failed: ${formatFactcheckFindings(blocking)}`);
+  }
+}
+
 console.log("Rendered issue, archive, schedule, calendar, latest.json, ticker, and site artifact verified");
 
 function readJson(path) {
@@ -541,6 +567,21 @@ function assertNoMojibake(text, file) {
   if (mojibakePattern.test(text)) {
     fail(`Mojibake detected in ${file}.`);
   }
+}
+
+function formatFactcheckFindings(findings) {
+  return findings
+    .slice(0, 5)
+    .map((finding) => `${finding.id}: ${finding.title}`)
+    .join("; ");
+}
+
+function isWithinDays(isoA, isoB, days) {
+  if (!isoA || !isoB) return false;
+  const a = Date.parse(`${isoA}T00:00:00Z`);
+  const b = Date.parse(`${isoB}T00:00:00Z`);
+  if (Number.isNaN(a) || Number.isNaN(b)) return false;
+  return Math.abs(b - a) <= days * 24 * 60 * 60 * 1000;
 }
 
 function fail(message) {

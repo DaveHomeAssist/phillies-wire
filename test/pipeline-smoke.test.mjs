@@ -102,6 +102,10 @@ try {
     "site/data/phillies-2026.json",
     "site/calendar/phillies-2026-all.ics",
     "site/schedule/index.html",
+    "site/dashboard/preferences/index.html",
+    "site/dashboard/preferences/preferences.css",
+    "site/dashboard/preferences/preferences.js",
+    "site/shared/phillies-prefs.mjs",
   ];
   for (const out of outputs) {
     assert.ok(existsSync(join(work, out)), `missing output: ${out}`);

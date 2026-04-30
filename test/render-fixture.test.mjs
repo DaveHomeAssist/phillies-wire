@@ -131,6 +131,7 @@ runTest("fixture render surfaces section chips when provided", () => {
   };
   data.sections.recap.chip_label = "Final";
   data.sections.recap.chip_tone = "final";
+  data.sections.recap.show = true;
   data.sections.roster.chip_label = "Confirmed";
   data.sections.roster.chip_tone = "confirmed";
   data.sections.injury_report.chip_label = "Live";
@@ -184,6 +185,66 @@ runTest("fixture render keeps matchup metadata in the hero instead of duplicatin
   assert.doesNotMatch(gameStatusHtml, /pw-info-label">Series<\/span>/);
   assert.doesNotMatch(gameStatusHtml, /pw-info-label">Broadcast<\/span>/);
   assert.doesNotMatch(gameStatusHtml, /pw-info-label">Weather<\/span>/);
+});
+
+runTest("fixture render hides recap when recap.show is false", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.assets_prefix = "./";
+  data.meta.latest_href = "./";
+  data.meta.archive_href = "./archive/";
+  data.meta.show_sections = true;
+  data.meta.off_day = false;
+  data.meta.game_pk = "0";
+  data.meta.first_pitch_iso = "2026-03-28T20:05:00Z";
+  data.meta.page_title = "T";
+  data.meta.page_description = "D";
+  data.meta.canonical_url = "https://example.com/";
+  data.meta.og_title = "OGT";
+  data.meta.og_description = "OGD";
+  data.meta.og_image = "https://example.com/og.svg";
+  data.meta.og_image_alt = "alt";
+  data.meta.json_ld = "[\"safe\"]";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
+  data.sections.recap.show = false;
+
+  const html = populate(template, data);
+  assert.doesNotMatch(html, /data-row="recap"/);
+  assert.doesNotMatch(html, /Thursday Recap/);
+});
+
+runTest("fixture render shows recap when recap.show is true", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.assets_prefix = "./";
+  data.meta.latest_href = "./";
+  data.meta.archive_href = "./archive/";
+  data.meta.show_sections = true;
+  data.meta.off_day = false;
+  data.meta.game_pk = "0";
+  data.meta.first_pitch_iso = "2026-03-28T20:05:00Z";
+  data.meta.page_title = "T";
+  data.meta.page_description = "D";
+  data.meta.canonical_url = "https://example.com/";
+  data.meta.og_title = "OGT";
+  data.meta.og_description = "OGD";
+  data.meta.og_image = "https://example.com/og.svg";
+  data.meta.og_image_alt = "alt";
+  data.meta.json_ld = "[\"safe\"]";
+  data.meta.issue_nav = { show: false };
+  data.meta.share = {
+    twitter_url: "https://twitter.com/intent/tweet",
+    bluesky_url: "https://bsky.app/intent/compose",
+    mailto_url: "mailto:?subject=test",
+  };
+  data.sections.recap.show = true;
+
+  const html = populate(template, data);
+  assert.match(html, /data-row="recap"/);
+  assert.match(html, /Thursday Recap/);
 });
 
 runTest("triple-brace token emits raw HTML without escaping", () => {

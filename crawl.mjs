@@ -6,6 +6,7 @@ import {
   fetchDailyMlbData,
   fetchGameDetail,
   fetchPitcherStats,
+  fetchRecentFinals,
   fetchStandings,
 } from "./crawl/api/mlb.mjs";
 import { fetchWeatherData } from "./crawl/api/weather.mjs";
@@ -32,6 +33,7 @@ import {
 } from "./config.mjs";
 const TODAY = getIsoDate();
 const YESTERDAY = getRelativeIsoDate(-1);
+const TRANSACTION_START_DATE = `${TODAY.slice(0, 4)}-03-01`;
 const OUTPUT_FILE = "./phillies-wire-data.json";
 const ERROR_LOG = "./crawl-error.log";
 const PITCHER_OVERRIDES_PATH = "./overrides/pitchers.json";
@@ -76,6 +78,8 @@ export function lookupPitcherHand(fullName) {
 // the previous payload instead of starting from fixture.
 const IS_LIVE_REFRESH = (process.env.ISSUE_MODE || "").toLowerCase() === "live";
 const EDITORIAL_FIELDS_TO_PRESERVE = [
+  ["meta", "status", "enrich_state"],
+  ["meta", "status", "enrich_label"],
   ["ticker"],
   ["sections", "preview", "content", "narrative"],
   ["sections", "preview", "content", "pull_quote"],
@@ -90,11 +94,14 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 export {
   resolvePitcher,
   resolveSeriesLabel,
+  buildPitchHandIndex,
   extractDecisions,
+  extractBroadcast,
   extractBattingOrder,
   buildLineupSection,
   mergeInjuryEntries,
   normalizeLiveInjuries,
+  applyStandingRecord,
   buildTbdBattingOrder,
   extractKeyPerformers,
   pickActiveGame,
@@ -105,16 +112,18 @@ async function main() {
   const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
   const overrides = loadOverrides(TODAY);
   const fetchSoft = createFetchSoft();
-  const [{ scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, injuryResponse }, weatherResponse] =
+  const [{ scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, injuryResponse }, weatherResponse, lastFinal] =
     await Promise.all([
       fetchDailyMlbData({
         today: TODAY,
         yesterday: YESTERDAY,
+        transactionStartDate: TRANSACTION_START_DATE,
         endDate: getRelativeIsoDate(4),
         teamId: TEAM_ID,
         fetchSoft,
       }),
       fetchWeatherData(fetchSoft),
+      fetchRecentFinals({ teamId: TEAM_ID, today: TODAY, fetchSoft }),
     ]);
 
   const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
@@ -122,6 +131,7 @@ async function main() {
 
   if (!game) {
     const offDay = buildOffDayPayload(fixture, nextGames, overrides);
+    if (lastFinal) offDay.meta.last_final = lastFinal;
     validateCrawlPayload(offDay);
     writePayload(offDay);
     console.log(`No game scheduled for ${TODAY}. Off-day payload written.`);
@@ -145,6 +155,7 @@ async function main() {
     injuryResponse,
     weatherResponse,
   });
+  if (lastFinal) data.meta.last_final = lastFinal;
 
   const finalData = IS_LIVE_REFRESH ? preserveEditorialFromPrevious(data) : data;
   validateCrawlPayload(finalData);
@@ -209,6 +220,7 @@ async function buildLivePayload(context) {
   // because the boxscore endpoint thins person to {id, fullName, link} and
   // does NOT carry batSide. feed/live is the canonical source.
   const handednessByPlayerId = buildHandednessIndex(gameFeed);
+  const pitchHandByPlayerId = buildPitchHandIndex(gameFeed);
 
   const data = cloneJson(fixture);
   const homeTeam = game.teams.home.team;
@@ -244,15 +256,18 @@ async function buildLivePayload(context) {
   };
 
   data.sections.game_status.preview = buildGameStatusPreview(data.meta.status.mode);
+  data.sections.recap.show = false;
+  data.sections.recap.chip_label = "";
+  data.sections.recap.chip_tone = "";
 
-  const philliesPitcher = resolvePitcher(philliesSide, fixture, "phi");
-  const opponentPitcher = resolvePitcher(opponentSide, fixture, "opp");
+  const philliesPitcher = resolvePitcher(philliesSide, fixture, "phi", pitchHandByPlayerId);
+  const opponentPitcher = resolvePitcher(opponentSide, fixture, "opp", pitchHandByPlayerId);
   const homePitcher = philliesAreHome ? philliesPitcher : opponentPitcher;
   const awayPitcher = philliesAreHome ? opponentPitcher : philliesPitcher;
 
   data.sections.game_status.content = {
     ...data.sections.game_status.content,
-    matchup: `${awayTeam.teamName} @ ${homeTeam.teamName} · Game ${game.seriesGameNumber ?? 1}`,
+    matchup: buildMatchupTitle(game, awayTeam, homeTeam),
     first_pitch: formatGameTime(game.gameDate),
     venue: `${game.venue.name}, ${homeTeam.locationName}`,
     starters: {
@@ -308,8 +323,10 @@ async function buildLivePayload(context) {
   data.sections.preview.content.pull_quote = pregamePreview.content.pull_quote;
 
   if (isFinalGame(game)) {
+    data.sections.recap.show = true;
     data.sections.recap.preview = buildRecapPreview(game, boxscore, fixture.sections.recap.preview);
     data.sections.recap.title = `${formatWeekday(game.gameDate)} Recap`;
+    data.sections.recap.content.date = data.meta.date;
     data.sections.recap.content.result = {
       home_score: game.teams.home.score,
       away_score: game.teams.away.score,
@@ -329,6 +346,7 @@ async function buildLivePayload(context) {
     buildRotation(nextGames, fixture.sections.roster.content.rotation),
     fetchStandings(),
   ]);
+  data.record = applyStandingRecord(data.record, standings);
 
   data.meta.game_pk = game.gamePk;
   data.meta.first_pitch_iso = game.gameDate;
@@ -337,8 +355,10 @@ async function buildLivePayload(context) {
   data.sections.roster.content.rotation = rotation;
   data.sections.roster.content.as_of_label = buildFreshnessLabel("As of", data.meta.generated_at);
   data.sections.roster.content.highlights = buildRosterHighlights(rosterResponse, transactionResponse, fixture.sections.roster.content.highlights);
-  data.sections.recap.chip_label = "Final";
-  data.sections.recap.chip_tone = "final";
+  if (data.sections.recap.show) {
+    data.sections.recap.chip_label = "Final";
+    data.sections.recap.chip_tone = "final";
+  }
   data.sections.roster.chip_label = rosterResponse?.roster ? "Confirmed" : "Fallback";
   data.sections.roster.chip_tone = rosterResponse?.roster ? "confirmed" : "fallback";
   data.sections.injury_report.content.il_entries = mergeInjuryEntries(
@@ -348,7 +368,13 @@ async function buildLivePayload(context) {
     data.meta.generated_at,
     fallbackGeneratedAt,
   );
-  const hasLiveInjuryFeed = Array.isArray(injuryResponse?.injuries) || Array.isArray(injuryResponse?.roster);
+  data.sections.injury_report.content.footer_note = buildInjuryFooterNote(
+    data.sections.injury_report.content.il_entries,
+    Boolean(transactionResponse?.transactions?.length),
+  );
+  const hasLiveInjuryFeed = Array.isArray(injuryResponse?.injuries)
+    || Array.isArray(injuryResponse?.roster)
+    || hasTransactionInjuryData(transactionResponse);
   data.sections.injury_report.chip_label = hasLiveInjuryFeed ? "Live" : "Fallback";
   data.sections.injury_report.chip_tone = hasLiveInjuryFeed ? "live" : "fallback";
   data.sections.farm_system.chip_label = "Editorial";
@@ -366,10 +392,15 @@ async function buildLivePayload(context) {
 
   if (nextGames.length > 1) {
     const nextGame = nextGames[1];
+    // Same-day doubleheader: nextGames[1] shares its ISO date with the active
+    // game. Don't call it "Tomorrow"; readers will be confused, especially
+    // when the date label says "today's date".
+    const nextIsoDate = String(nextGame.gameDate ?? "").slice(0, 10);
+    const sameDayDoubleheader = nextIsoDate === TODAY;
     data.next_game = {
       ...data.next_game,
-      label: "Tomorrow",
-      matchup: `${nextGame.homePitcher} vs ${nextGame.awayPitcher} · ${nextGame.matchup}`,
+      label: sameDayDoubleheader ? "Game 2 Today" : "Tomorrow",
+      matchup: buildNextGameMatchup(nextGame),
       date: nextGame.dateLabel,
       time: nextGame.timeLabel,
       broadcast: nextGame.broadcast ?? fixture.next_game.broadcast,
@@ -380,7 +411,7 @@ async function buildLivePayload(context) {
     data.next_game = {
       ...data.next_game,
       label: "Next Game",
-      matchup: `${nextGame.homePitcher} vs ${nextGame.awayPitcher} · ${nextGame.matchup}`,
+      matchup: buildNextGameMatchup(nextGame),
       date: nextGame.dateLabel,
       time: nextGame.timeLabel,
       broadcast: nextGame.broadcast ?? fixture.next_game.broadcast,
@@ -398,6 +429,37 @@ async function buildLivePayload(context) {
   }
 
   return data;
+}
+
+function buildMatchupTitle(game, awayTeam, homeTeam) {
+  const seriesGame = game?.seriesGameNumber ?? 1;
+  const gamesInSeries = game?.gamesInSeries ?? game?.seriesStatus?.totalGames;
+  const seriesPart = gamesInSeries
+    ? `Game ${seriesGame} of ${gamesInSeries}`
+    : `Game ${seriesGame}`;
+  return `${awayTeam.teamName} @ ${homeTeam.teamName} · ${seriesPart}`;
+}
+
+function buildNextGameMatchup(nextGame) {
+  const phi = nextGame?.homePitcher;
+  const opp = nextGame?.awayPitcher;
+  const teams = nextGame?.matchup ?? "";
+  const haveBothPitchers = phi && phi !== "TBD" && opp && opp !== "TBD";
+  if (haveBothPitchers) {
+    return `${phi} vs ${opp} · ${teams}`.trim();
+  }
+  if (phi && phi !== "TBD") return `${phi} · ${teams}`.trim();
+  if (opp && opp !== "TBD") return `${opp} · ${teams}`.trim();
+  return teams || "TBD";
+}
+
+function buildDoubleheaderBullet(game) {
+  const indicator = game?.doubleHeader;
+  if (indicator !== "S" && indicator !== "Y") return null;
+  const dhNumber = game?.gameNumber;
+  if (!dhNumber) return null;
+  const dhLabel = dhNumber === 1 ? "Game 1 of 2" : `Game ${dhNumber} of 2`;
+  return `Doubleheader · ${dhLabel}`;
 }
 
 function pickActiveGame(games) {
@@ -424,12 +486,14 @@ function pickActiveGame(games) {
   return byStart[0];
 }
 
-function resolvePitcher(side, fixture, role) {
+function resolvePitcher(side, fixture, role, pitchHandByPlayerId = null) {
   const probable = side?.probablePitcher;
   if (probable?.fullName) {
+    const id = probable.id ?? probable.personId;
+    const feedHand = pitchHandByPlayerId && id != null ? pitchHandByPlayerId.get(Number(id)) : null;
     return {
       name: probable.fullName,
-      hand: probable.pitchHand?.code ?? lookupPitcherHand(probable.fullName) ?? "R",
+      hand: probable.pitchHand?.code ?? feedHand ?? lookupPitcherHand(probable.fullName) ?? "R",
     };
   }
 
@@ -611,6 +675,20 @@ function buildHandednessIndex(gameFeed) {
   return index;
 }
 
+function buildPitchHandIndex(gameFeed) {
+  const index = new Map();
+  const players = gameFeed?.gameData?.players;
+  if (!players || typeof players !== "object") return index;
+  for (const record of Object.values(players)) {
+    const id = Number(record?.id);
+    const code = record?.pitchHand?.code;
+    if (Number.isFinite(id) && typeof code === "string" && code.length > 0) {
+      index.set(id, code);
+    }
+  }
+  return index;
+}
+
 function extractBattingOrder(teamBox, handednessByPlayerId = null) {
   if (!teamBox?.players) {
     return [];
@@ -771,6 +849,7 @@ function buildHero(data, game) {
   }
 
   const starters = data.sections.game_status.content.starters;
+  const dhBullet = buildDoubleheaderBullet(game);
   return {
     mode: "pregame",
     label: "Pregame",
@@ -785,6 +864,7 @@ function buildHero(data, game) {
     bullets: [
       `${data.sections.game_status.content.weather.temp_f}° · ${data.sections.game_status.content.weather.condition} · ${data.sections.game_status.content.weather.wind}`,
       data.sections.game_status.content.series.label,
+      dhBullet,
     ].filter((line) => typeof line === "string" && line.trim().length > 0),
     next_label: data.next_game.label,
     next_value: `${data.next_game.matchup} · ${data.next_game.date} · ${data.next_game.time}`,
@@ -894,6 +974,22 @@ function buildStandingsPreview(teams) {
   return `PHI ${phi.wins}-${phi.losses} · ${phi.gb === "\u2014" ? "1st" : `${phi.gb} GB`} · ${phi.streak}`;
 }
 
+function applyStandingRecord(record = {}, standings = []) {
+  const phi = standings.find((team) => team.is_phi);
+  if (!phi) {
+    return record;
+  }
+
+  return {
+    ...record,
+    wins: phi.wins ?? record.wins,
+    losses: phi.losses ?? record.losses,
+    streak: phi.streak ?? record.streak,
+    division_rank: phi.division_rank ?? record.division_rank,
+    games_back: phi.gb ?? record.games_back,
+  };
+}
+
 function buildUpNext(nextGames, fallback) {
   if (nextGames.length < 2) {
     return fallback;
@@ -938,6 +1034,7 @@ function buildRosterHighlights(rosterResponse, transactionResponse, fallback) {
 
 function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse, generatedAtIso = null, fallbackGeneratedAtIso = null) {
   const transactions = transactionResponse?.transactions ?? [];
+  const transactionState = buildTransactionInjuryState(transactions);
   const transactionDescriptions = new Map(
     transactions.map((transaction) => [transaction.person?.fullName, transaction.description]),
   );
@@ -945,14 +1042,27 @@ function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse
   const liveInjuries = normalizeLiveInjuries(injuryResponse);
   const byName = new Map();
 
-  // Seed with fixture baseline so we retain editorial-quality context notes
-  // for known long-term IL entries.
-  for (const entry of fallbackEntries) {
-    byName.set(entry.name, {
-      ...entry,
-      source: entry.source ?? "fallback",
-      last_confirmed: entry.last_confirmed ?? fallbackGeneratedAtIso ?? null,
-    });
+  if (transactionState.hasData) {
+    for (const injury of transactionState.activeInjuries.values()) {
+      const fallback = fallbackEntries.find((entry) => entry.name === injury.name) ?? {};
+      byName.set(injury.name, {
+        ...fallback,
+        ...injury,
+        injury: injury.injury || fallback.injury || "",
+        source: "live",
+        last_confirmed: generatedAtIso ?? fallback.last_confirmed ?? fallbackGeneratedAtIso ?? null,
+      });
+    }
+  } else {
+    // Seed with fixture baseline so we retain editorial-quality context notes
+    // for known long-term IL entries.
+    for (const entry of fallbackEntries) {
+      byName.set(entry.name, {
+        ...entry,
+        source: entry.source ?? "fallback",
+        last_confirmed: entry.last_confirmed ?? fallbackGeneratedAtIso ?? null,
+      });
+    }
   }
 
   // Overlay live MLB data. New entries are appended; known entries get
@@ -1004,6 +1114,98 @@ function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse
   }
 
   return Array.from(byName.values()).map((entry) => annotateFreshness(entry, fallbackGeneratedAtIso));
+}
+
+function hasTransactionInjuryData(transactionResponse) {
+  return (transactionResponse?.transactions ?? []).some((transaction) =>
+    /injured list|disabled list|10-day|15-day|60-day|activated/i.test(transaction.description ?? ""),
+  );
+}
+
+function buildTransactionInjuryState(transactions = []) {
+  const activeInjuries = new Map();
+  let hasData = false;
+
+  const sorted = [...transactions].sort((left, right) =>
+    String(left.effectiveDate ?? left.date ?? "").localeCompare(String(right.effectiveDate ?? right.date ?? "")),
+  );
+
+  for (const transaction of sorted) {
+    const description = transaction.description ?? "";
+    const name = transaction.person?.fullName;
+    if (!name || !description) {
+      continue;
+    }
+
+    if (/activated .* from the .*injured list/i.test(description)) {
+      hasData = true;
+      activeInjuries.delete(name);
+      continue;
+    }
+
+    if (/placed .* on the .*injured list/i.test(description) || /transferred .* injured list .* injured list/i.test(description)) {
+      hasData = true;
+      activeInjuries.set(name, buildInjuryEntryFromTransaction(transaction));
+    }
+  }
+
+  return { hasData, activeInjuries };
+}
+
+function buildInjuryEntryFromTransaction(transaction) {
+  const description = transaction.description ?? "";
+  const ilType = extractIlType(description);
+  return {
+    name: transaction.person?.fullName,
+    position: extractPositionFromDescription(description),
+    il_type: ilType,
+    badge: "il",
+    injury: extractInjuryDescription(description),
+    status_note: shortTransactionNote(description),
+    retroactive_to: extractRetroactiveDate(description, transaction.effectiveDate ?? transaction.date),
+    first_eligible: null,
+  };
+}
+
+function extractIlType(description) {
+  const matches = [...String(description).matchAll(/(\d+)[- ]?day injured list/gi)];
+  const value = matches[matches.length - 1]?.[1];
+  return value ? `${value}-Day` : "IL";
+}
+
+function extractPositionFromDescription(description) {
+  const match = String(description).match(/Philadelphia Phillies\s+(?:placed|transferred)\s+([A-Z0-9]{1,3})\s+/i);
+  return match?.[1]?.toUpperCase() ?? inferPositionFromDescription(description);
+}
+
+function extractInjuryDescription(description) {
+  const sentences = String(description)
+    .split(".")
+    .map((part) => part.trim())
+    .filter(Boolean);
+  return sentences[sentences.length - 1] ?? "";
+}
+
+function extractRetroactiveDate(description, fallbackDate) {
+  const match = String(description).match(/retroactive to ([A-Za-z]+ \d{1,2}, \d{4})/i);
+  if (!match) {
+    return fallbackDate ?? null;
+  }
+  const parsed = Date.parse(`${match[1]} 12:00:00 GMT`);
+  if (Number.isNaN(parsed)) {
+    return fallbackDate ?? null;
+  }
+  return new Date(parsed).toISOString().slice(0, 10);
+}
+
+function buildInjuryFooterNote(entries, transactionFeedAvailable) {
+  if (!transactionFeedAvailable) {
+    return "Injury status is using the fixture baseline because transaction data was unavailable.";
+  }
+  if (!entries.length) {
+    return "No active Phillies injured list entries found in the MLB transactions feed.";
+  }
+  return "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable.";
 }
 
 function normalizeLiveInjuries(injuryResponse) {
@@ -1239,15 +1441,33 @@ function shortTransactionNote(description) {
 
 function extractBroadcast(game, mediaType) {
   const epg = game?.broadcasts ?? game?.content?.media?.epg ?? [];
+  const candidates = [];
+
   for (const item of epg) {
+    const itemType = normalizeBroadcastType(item.mediaType ?? item.type);
+    const itemTitle = item.title ?? item.name;
+    if (itemType === mediaType && itemTitle) {
+      candidates.push({ title: itemTitle, homeAway: item.homeAway ?? null });
+    }
     for (const content of item.items ?? []) {
-      if ((content.mediaType ?? "").toUpperCase() === mediaType && content.title) {
-        return content.title;
+      const contentType = normalizeBroadcastType(content.mediaType ?? content.type);
+      const contentTitle = content.title ?? content.name;
+      if (contentType === mediaType && contentTitle) {
+        candidates.push({ title: contentTitle, homeAway: content.homeAway ?? item.homeAway ?? null });
       }
     }
   }
 
-  return null;
+  return candidates.find((candidate) => candidate.homeAway === "home")?.title
+    ?? candidates[0]?.title
+    ?? null;
+}
+
+function normalizeBroadcastType(value) {
+  const normalized = String(value ?? "").toUpperCase();
+  if (normalized === "TV") return "TV";
+  if (normalized === "RADIO" || normalized === "AM" || normalized === "FM") return "RADIO";
+  return normalized;
 }
 
 function annotateFreshness(entry, fallbackGeneratedAtIso = null) {
