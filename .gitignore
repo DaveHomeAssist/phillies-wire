@@ -15,3 +15,8 @@ feed.xml
 manifest.webmanifest
 favicon.svg
 og-default.svg
+# Fact-check generated Markdown reports (one per edition).
+reports/
+# Local-only audit / scratch artifacts that aren't part of the publish.
+legacy/
+phillies-wire-audit-presentations.html

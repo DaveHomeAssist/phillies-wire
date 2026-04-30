@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from "node:fs";
+import { runFactcheck } from "./factcheck.mjs";
 
 const data = readJson("./phillies-wire-data.json");
 const status = readJson("./status.json");
@@ -46,13 +47,21 @@ const requiredFiles = [
   "./latest.json",
   "./site/latest.json",
   "./schedule/index.html",
+  "./dashboard/preferences/index.html",
+  "./dashboard/preferences/preferences.css",
+  "./dashboard/preferences/preferences.js",
   "./site/schedule/index.html",
+  "./site/dashboard/preferences/index.html",
+  "./site/dashboard/preferences/preferences.css",
+  "./site/dashboard/preferences/preferences.js",
   schedulePath,
   siteSchedulePath,
   calendarPath,
   siteCalendarPath,
   "./embed/ticker.html",
   "./site/embed/ticker.html",
+  "./shared/phillies-prefs.mjs",
+  "./site/shared/phillies-prefs.mjs",
 ];
 
 for (const file of requiredFiles) {
@@ -431,6 +440,112 @@ for (const file of htmlFiles) {
   }
 }
 
+// Streak sign must agree with the most recent completed final.
+// Missing this check on 2026-04-22 allowed a payload with record.streak="W1"
+// to ship while the archive showed seven consecutive losses. Truth source is
+// data.meta.last_final (sourced fresh from MLB API by crawl), with a fallback
+// to archive.json. Archive can be structurally stale when daily editions
+// were never promoted to final (live cron didn't run, or rain-out etc), so
+// the archive comparison is only enforced when the latest archive final is
+// recent relative to the issue date.
+{
+  const recordStreak = (data.record?.streak ?? "").trim();
+  if (recordStreak) {
+    const streakSign = recordStreak[0]?.toUpperCase();
+    if (streakSign !== "W" && streakSign !== "L") {
+      fail(`record.streak must start with "W" or "L"; got "${recordStreak}"`);
+    }
+
+    const lastFinal = data.meta?.last_final;
+    if (lastFinal && (lastFinal.outcome === "W" || lastFinal.outcome === "L")) {
+      if (streakSign !== lastFinal.outcome) {
+        fail(
+          `record.streak "${recordStreak}" disagrees with most recent MLB final (${lastFinal.date}: PHI ${lastFinal.phi_runs}, ${lastFinal.opp_abbr} ${lastFinal.opp_runs} → ${lastFinal.outcome}).`,
+        );
+      }
+    } else {
+      const finals = (archive.entries ?? []).filter(
+        (entry) => entry.mode === "final" && typeof entry.headline === "string",
+      );
+      const latest = finals[0]; // archive.json is newest-first
+      if (latest && isWithinDays(latest.date, data.meta?.date, 3)) {
+        const match = latest.headline.match(/PHI\s+(\d+)\s*,\s*[A-Z]{2,4}\s+(\d+)/i);
+        if (match) {
+          const phi = parseInt(match[1], 10);
+          const opp = parseInt(match[2], 10);
+          const lastOutcome = phi > opp ? "W" : "L";
+          if (streakSign !== lastOutcome) {
+            fail(
+              `record.streak "${recordStreak}" disagrees with the most recent archived final (${latest.date}: "${latest.headline}" → ${lastOutcome}).`,
+            );
+          }
+        }
+      }
+    }
+  }
+}
+
+// Probable pitcher handedness sanity: if overrides/pitchers.json exists and
+// declares a hand for a named probable pitcher, the rendered payload must
+// not contradict it. This is the 2026-04-22 Matthew Boyd regression guard.
+{
+  const overridesPath = "./overrides/pitchers.json";
+  if (existsSync(overridesPath)) {
+    let overrides = {};
+    try {
+      overrides = JSON.parse(readFileSync(overridesPath, "utf8"))?.handedness ?? {};
+    } catch {
+      overrides = {};
+    }
+    const starters = [
+      data.sections?.game_status?.content?.starters,
+      data.sections?.lineup?.content?.starters,
+    ].filter(Boolean);
+    for (const group of starters) {
+      for (const [role, entry] of Object.entries(group)) {
+        if (!entry?.name || !entry?.hand) continue;
+        const expected = overrides[entry.name.toLowerCase().trim()];
+        if (expected && expected !== entry.hand) {
+          fail(
+            `Pitcher handedness override conflict: ${entry.name} (${role}) rendered as "${entry.hand}" but overrides/pitchers.json declares "${expected}".`,
+          );
+        }
+      }
+    }
+  }
+}
+
+// Dashboard ES-module integrity: every `import ... from "../path"` in
+// dashboard.js must resolve to a file present in both the root checkout
+// and the site/ mirror. The 2026-04-22 "empty dashboard" outage happened
+// because shared/phillies-prefs.mjs was untracked — verify listed it in
+// requiredFiles (pass in working tree), but CI deployed from HEAD, so
+// production returned 404 and every dashboard widget stayed as placeholder.
+{
+  const dashboardJs = readFileSync("./dashboard/dashboard.js", "utf8");
+  const importRe = /from\s+["']\.\.\/([^"']+)["']/g;
+  let match;
+  while ((match = importRe.exec(dashboardJs)) !== null) {
+    const rel = match[1];
+    const root = `./${rel}`;
+    const site = `./site/${rel}`;
+    if (!existsSync(root)) {
+      fail(`Dashboard imports ${rel} but ${root} is missing.`);
+    }
+    if (!existsSync(site)) {
+      fail(`Dashboard imports ${rel} but ${site} is missing (render did not mirror it).`);
+    }
+  }
+}
+
+{
+  const { findings } = await runFactcheck({ mode: "pre-publish" });
+  const blocking = [...findings.errors, ...findings.pipeline];
+  if (blocking.length) {
+    fail(`Factcheck failed: ${formatFactcheckFindings(blocking)}`);
+  }
+}
+
 console.log("Rendered issue, archive, schedule, calendar, latest.json, ticker, and site artifact verified");
 
 function readJson(path) {
@@ -452,6 +567,21 @@ function assertNoMojibake(text, file) {
   if (mojibakePattern.test(text)) {
     fail(`Mojibake detected in ${file}.`);
   }
+}
+
+function formatFactcheckFindings(findings) {
+  return findings
+    .slice(0, 5)
+    .map((finding) => `${finding.id}: ${finding.title}`)
+    .join("; ");
+}
+
+function isWithinDays(isoA, isoB, days) {
+  if (!isoA || !isoB) return false;
+  const a = Date.parse(`${isoA}T00:00:00Z`);
+  const b = Date.parse(`${isoB}T00:00:00Z`);
+  if (Number.isNaN(a) || Number.isNaN(b)) return false;
+  return Math.abs(b - a) <= days * 24 * 60 * 60 * 1000;
 }
 
 function fail(message) {

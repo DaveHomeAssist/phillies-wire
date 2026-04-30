@@ -6,6 +6,9 @@ import {
   groupGamesByMonth,
   isCompletedGame,
 } from "../shared/phillies-schedule.mjs";
+import { applyPrefsToDocument, readPrefs } from "../shared/phillies-prefs.mjs";
+
+applyPrefsToDocument(readPrefs());
 
 const SCHEDULE_URL = "../data/phillies-2026.json";
 const STATE_KEY = "philliesWire_scheduleState";

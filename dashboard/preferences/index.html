@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#e81828" />
+<title>Phillies Wire · Preferences</title>
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../../fonts.css" />
+<link rel="stylesheet" href="../../tokens.css" />
+<link rel="stylesheet" href="../../shared/wire-banner.css" />
+<link rel="stylesheet" href="../dashboard.css" />
+<link rel="stylesheet" href="./preferences.css" />
+</head>
+<body>
+  <div class="pw-wire-banner" data-wire-banner data-feed-url="../../latest.json" hidden></div>
+  <div class="dash-app">
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="sidebar-brand" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 4h12" />
+        <path d="M12 4v16" />
+        <path d="M7 20h10" />
+      </svg>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-item" href="../" data-nav="command" title="Command Center">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+      </a>
+      <a class="nav-item" href="../../schedule/" data-nav="schedule" title="Schedule">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      </a>
+      <a class="nav-item" href="../innings/" data-nav="analytics" title="Innings">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-6M22 20H2"/></svg>
+      </a>
+      <a class="nav-item" href="../../" data-nav="issues" title="Latest Issue">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a class="nav-item is-active" href="./" data-nav="preferences" aria-current="page" title="Preferences">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <main class="stage preferences-stage">
+    <header class="topbar">
+      <div class="topbar-title">
+        <span class="eyebrow">Account · Settings</span>
+        <h1>Preferences</h1>
+        <span class="crumbs">Local to this browser · no account, no sync</span>
+      </div>
+      <div class="topbar-meta">
+        <button class="btn-ghost" id="pref-reset" type="button">Reset all</button>
+        <a class="icon-btn" href="../" aria-label="Back to Command Center" title="Command Center">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <div class="prefs-layout">
+      <aside class="prefs-tabs" role="tablist" aria-label="Preference sections">
+        <button class="prefs-tab is-active" role="tab" data-tab="profile" aria-selected="true">Profile</button>
+        <button class="prefs-tab" role="tab" data-tab="appearance" aria-selected="false">Appearance</button>
+        <button class="prefs-tab" role="tab" data-tab="coverage" aria-selected="false">Game Coverage</button>
+        <button class="prefs-tab" role="tab" data-tab="local" aria-selected="false">Local Data</button>
+        <div class="prefs-tab-meta">
+          <div class="tab-meta-eyebrow">Saved on this device</div>
+          <div class="tab-meta-name" data-slot="tab-meta-name">—</div>
+          <div class="tab-meta-handle" data-slot="tab-meta-handle">no handle set</div>
+        </div>
+      </aside>
+
+      <div class="prefs-content">
+        <!-- ─────────── PROFILE ─────────── -->
+        <section class="pref-section" data-panel="profile" role="tabpanel">
+          <header class="pref-section-head">
+            <span class="eyebrow">Who you are</span>
+            <h2 class="pref-section-title">Profile</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Display name</div>
+                <div class="pref-desc">Shown on notes and local shares. Stays on this browser.</div>
+              </div>
+              <div class="pref-control">
+                <input id="pref-display-name" class="pref-input" type="text" placeholder="Dave R." autocomplete="off" />
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Handle</div>
+                <div class="pref-desc">Optional short identifier, e.g. @daver.</div>
+              </div>
+              <div class="pref-control">
+                <input id="pref-handle" class="pref-input" type="text" placeholder="@daver" autocomplete="off" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─────────── APPEARANCE ─────────── -->
+        <section class="pref-section" data-panel="appearance" role="tabpanel" hidden>
+          <header class="pref-section-head">
+            <span class="eyebrow">Design tweaks</span>
+            <h2 class="pref-section-title">Appearance</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Issue theme</div>
+                <div class="pref-desc">Applies to the latest issue and archive pages.</div>
+              </div>
+              <div class="pref-control">
+                <div class="pref-seg" role="radiogroup" aria-label="Theme">
+                  <button class="pref-seg-btn" data-pref="theme" data-value="dark" type="button">Dark</button>
+                  <button class="pref-seg-btn" data-pref="theme" data-value="light" type="button">Light</button>
+                </div>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Density</div>
+                <div class="pref-desc">Tightens or relaxes padding across the app shell.</div>
+              </div>
+              <div class="pref-control">
+                <div class="pref-seg" role="radiogroup" aria-label="Density">
+                  <button class="pref-seg-btn" data-pref="density" data-value="compact" type="button">Compact</button>
+                  <button class="pref-seg-btn" data-pref="density" data-value="cozy" type="button">Cozy</button>
+                  <button class="pref-seg-btn" data-pref="density" data-value="airy" type="button">Airy</button>
+                </div>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Accent colour</div>
+                <div class="pref-desc">Brand accent used on pills, rails, and highlights.</div>
+              </div>
+              <div class="pref-control">
+                <div class="pref-swatches" role="radiogroup" aria-label="Accent">
+                  <button class="pref-swatch" data-value="#e81828" type="button" style="background:#e81828" aria-label="Phillies red"></button>
+                  <button class="pref-swatch" data-value="#f08f2e" type="button" style="background:#f08f2e" aria-label="Orange"></button>
+                  <button class="pref-swatch" data-value="#3ddc97" type="button" style="background:#3ddc97" aria-label="Green"></button>
+                  <button class="pref-swatch" data-value="#6fb1ff" type="button" style="background:#6fb1ff" aria-label="Blue"></button>
+                  <button class="pref-swatch" data-value="#b57bff" type="button" style="background:#b57bff" aria-label="Purple"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─────────── GAME COVERAGE ─────────── -->
+        <section class="pref-section" data-panel="coverage" role="tabpanel" hidden>
+          <header class="pref-section-head">
+            <span class="eyebrow">How you watch</span>
+            <h2 class="pref-section-title">Game Coverage</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Activity feed style</div>
+                <div class="pref-desc">Rendering for the Command Center's activity list.</div>
+              </div>
+              <div class="pref-control">
+                <div class="pref-seg" role="radiogroup" aria-label="Feed style">
+                  <button class="pref-seg-btn" data-pref="feedStyle" data-value="list" type="button">List</button>
+                  <button class="pref-seg-btn" data-pref="feedStyle" data-value="card" type="button">Card</button>
+                  <button class="pref-seg-btn" data-pref="feedStyle" data-value="timeline" type="button">Timeline</button>
+                </div>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Default innings filter</div>
+                <div class="pref-desc">First view on the innings timeline page.</div>
+              </div>
+              <div class="pref-control">
+                <select id="pref-innings-filter" class="pref-input">
+                  <option value="all">All plays</option>
+                  <option value="scoring">Score changes only</option>
+                </select>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Losing streak alert</div>
+                <div class="pref-desc">Threshold at which the record card starts pulsing.</div>
+              </div>
+              <div class="pref-control pref-range-wrap">
+                <input id="pref-streak-threshold" class="pref-range" type="range" min="2" max="6" step="1" value="3" />
+                <span class="pref-range-value" data-slot="streak-threshold-value">L3</span>
+              </div>
+            </div>
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Reduced data mode</div>
+                <div class="pref-desc">Disables extra motion and honours slow-connection hints.</div>
+              </div>
+              <div class="pref-control">
+                <button class="pref-toggle" id="pref-reduced-data" type="button" role="switch" aria-checked="false">
+                  <span class="pref-toggle-thumb"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─────────── LOCAL DATA ─────────── -->
+        <section class="pref-section" data-panel="local" role="tabpanel" hidden>
+          <header class="pref-section-head">
+            <span class="eyebrow">This browser only</span>
+            <h2 class="pref-section-title">Local Data</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-summary-grid">
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Visits</div>
+                <div class="pref-summary-value" data-slot="visit-count">0</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Last mode</div>
+                <div class="pref-summary-value" data-slot="last-mode">—</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Last visit</div>
+                <div class="pref-summary-value" data-slot="last-visit">—</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Attended</div>
+                <div class="pref-summary-value" data-slot="attended-count">0</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Planned</div>
+                <div class="pref-summary-value" data-slot="planned-count">0</div>
+              </div>
+              <div class="pref-summary-tile">
+                <div class="pref-summary-label">Skipped</div>
+                <div class="pref-summary-value" data-slot="skipped-count">0</div>
+              </div>
+              <div class="pref-summary-tile pref-summary-tile-wide">
+                <div class="pref-summary-label">Imported from Ballparks Quest</div>
+                <div class="pref-summary-value" data-slot="imported-at">No</div>
+              </div>
+            </div>
+
+            <div class="pref-row">
+              <div class="pref-label">
+                <div class="pref-title">Backup</div>
+                <div class="pref-desc">Export and import include prefs, session signals, and schedule state.</div>
+              </div>
+              <div class="pref-control pref-actions">
+                <button class="pref-button" id="pref-export" type="button">Export bundle</button>
+                <button class="pref-button" id="pref-import" type="button">Import bundle</button>
+                <input id="pref-import-file" type="file" accept="application/json" hidden />
+              </div>
+            </div>
+
+            <p class="pref-status" data-slot="status-copy" data-tone="quiet">No changes yet.</p>
+
+            <div class="danger-row">
+              <button class="pref-button pref-button-danger" id="pref-reset-local" type="button">Reset local Wire data</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="pref-section pref-section-routes">
+          <header class="pref-section-head">
+            <span class="eyebrow">Route map</span>
+            <h2 class="pref-section-title">Where things live</h2>
+          </header>
+          <div class="pref-section-body">
+            <div class="pref-links">
+              <a class="pref-link-card" href="../">
+                <strong>Command Center</strong>
+                <span>Live score, activity feed, record, injuries, and key events.</span>
+              </a>
+              <a class="pref-link-card" href="../../schedule/">
+                <strong>Schedule</strong>
+                <span>Season tracker, attendance state, notes, and game links.</span>
+              </a>
+              <a class="pref-link-card" href="../innings/">
+                <strong>Innings</strong>
+                <span>Linescore and play progression for the active or latest game.</span>
+              </a>
+              <a class="pref-link-card" href="../../">
+                <strong>Latest Issue</strong>
+                <span>The full editorial edition and archive entry point.</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="stage-foot">
+      <span>Phillies Wire · Preferences</span>
+      <span class="foot-sep">·</span>
+      <span>Saved to this browser only</span>
+    </footer>
+  </main>
+
+  </div><!-- /.dash-app -->
+
+  <script type="module">
+    import { mountWireBanner } from "../../shared/wire-banner.mjs";
+    mountWireBanner("[data-wire-banner]");
+  </script>
+  <script type="module" src="./preferences.js"></script>
+</body>
+</html>

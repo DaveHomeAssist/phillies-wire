@@ -5,25 +5,14 @@
    Persists filter state in localStorage (philliesWire_prefs).
    ============================================ */
 
+import { applyPrefsToDocument, readPrefs, writePrefs } from "../../shared/phillies-prefs.mjs";
 import { findCurrentOrNextGame } from "../../shared/phillies-schedule.mjs";
 
 const ARCHIVE_URL = "../../archive.json";
 const SCHEDULE_URL = "../../data/phillies-2026.json";
 
-const LS_PREFS = "philliesWire_prefs";
-const Prefs = {
-  read(fallback) {
-    try {
-      const raw = localStorage.getItem(LS_PREFS);
-      return raw ? { ...fallback, ...JSON.parse(raw) } : fallback;
-    } catch { return fallback; }
-  },
-  write(value) {
-    try { localStorage.setItem(LS_PREFS, JSON.stringify(value)); } catch {}
-  },
-};
-
-let prefs = Prefs.read({ inningsFilter: "all" });
+let prefs = readPrefs();
+applyPrefsToDocument(prefs);
 
 const el  = (sel, scope = document) => scope.querySelector(sel);
 const els = (sel, scope = document) => [...scope.querySelectorAll(sel)];
@@ -192,6 +181,75 @@ function markerFor(type) {
   }
 }
 
+/**
+ * At-bat card. Expected data contract (when populated by enrich.mjs):
+ *   gs.situation = {
+ *     batter: { name: "Bryce Harper", meta: "1B · L · 4-1 .312/.421/.598" },
+ *     pitches: ["B","S","S","B","F","X"],         // ordered from first pitch
+ *     count:   { balls: 1, strikes: 2, outs: 1 },
+ *     bases:   { first: true, second: false, third: true },
+ *     status:  "Now"                               // pill label
+ *   }
+ * Hidden entirely when not present (pregame/final/off_day).
+ */
+function renderAtBat(latestEntry, issueData) {
+  const card = slot("atbat-card");
+  if (!card) return;
+  const mode = latestEntry?.mode || issueData?.hero?.mode;
+  const situation = issueData?.sections?.game_status?.content?.situation;
+  if (mode !== "live" || !situation) {
+    card.hidden = true;
+    return;
+  }
+  card.hidden = false;
+
+  setText("atbat-pill", situation.status || "Now");
+  setText("batter-name", situation.batter?.name || "—");
+  setText("batter-meta", situation.batter?.meta || "");
+
+  // Pitch sequence — up to the current at-bat. Kinds: B(all)/S(trike)/F(oul)/X(contact).
+  const seq = slot("pitch-seq");
+  if (seq) {
+    const pitches = Array.isArray(situation.pitches) ? situation.pitches : [];
+    if (!pitches.length) {
+      seq.innerHTML = '<span class="pitch-seq-empty">No pitches yet this at-bat.</span>';
+    } else {
+      seq.innerHTML = pitches
+        .map((p) => `<span class="pitch" data-kind="${escapeHtml(p)}" role="listitem">${escapeHtml(p)}</span>`)
+        .join("");
+    }
+  }
+
+  // Bases — light up occupied bags on the diamond.
+  const diamond = slot("diamond");
+  if (diamond) {
+    const bases = situation.bases || {};
+    diamond.querySelectorAll(".base").forEach((node) => {
+      const key = node.getAttribute("data-base");
+      node.setAttribute("data-on", bases[key] ? "true" : "false");
+    });
+  }
+
+  // Count — fill dots. Balls ≤ 3, Strikes ≤ 2, Outs ≤ 3.
+  const count = situation.count || {};
+  paintDots("count-balls",   3, count.balls   || 0, "ball");
+  paintDots("count-strikes", 2, count.strikes || 0, "strike");
+  paintDots("count-outs",    3, count.outs    || 0, "out");
+}
+
+function paintDots(slotName, total, on, kind) {
+  const host = slot(slotName);
+  if (!host) return;
+  host.innerHTML = "";
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement("div");
+    dot.className = "count-dot";
+    dot.setAttribute("data-kind", kind);
+    dot.setAttribute("data-on", i < on ? "true" : "false");
+    host.appendChild(dot);
+  }
+}
+
 function wireFilter() {
   // Set pressed state from persisted pref.
   els(".filter-btn").forEach(btn => {
@@ -199,7 +257,7 @@ function wireFilter() {
     btn.addEventListener("click", () => {
       prefs.inningsFilter = btn.dataset.filter;
       els(".filter-btn").forEach(b => b.setAttribute("aria-pressed", b.dataset.filter === prefs.inningsFilter ? "true" : "false"));
-      Prefs.write(prefs);
+      prefs = writePrefs(prefs);
       // Re-render plays only — linescore is filter-agnostic.
       if (window.__currentIssueData) renderPlays(window.__currentIssueData);
     });
@@ -248,6 +306,7 @@ async function init() {
     window.__currentIssueData = issueData;
     renderMatchup(target, issueData);
     renderLinescore(target, issueData);
+    renderAtBat(target, issueData);
     renderPlays(issueData);
   } catch (e) {
     console.error(e);

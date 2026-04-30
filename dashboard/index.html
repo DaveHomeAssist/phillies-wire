@@ -8,9 +8,12 @@
 <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="../fonts.css" />
 <link rel="stylesheet" href="../tokens.css" />
+<link rel="stylesheet" href="../shared/wire-banner.css" />
 <link rel="stylesheet" href="./dashboard.css" />
 </head>
 <body>
+  <div class="pw-wire-banner" data-wire-banner data-feed-url="../latest.json" hidden></div>
+  <div class="dash-app">
   <aside class="sidebar" aria-label="Primary navigation">
     <div class="sidebar-brand" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
@@ -33,6 +36,11 @@
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
       </a>
     </nav>
+    <div class="sidebar-footer">
+      <a class="nav-item" href="./preferences/" data-nav="preferences" title="Preferences">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </a>
+    </div>
   </aside>
 
   <main class="stage">
@@ -66,21 +74,24 @@
         <div class="hero-body">
           <div class="hero-score">
             <div class="team team-phi">
-              <div class="team-logo" aria-hidden="true">P</div>
               <div class="team-detail">
                 <span class="team-abbr">PHI</span>
                 <span class="team-name">Phillies</span>
               </div>
+              <div class="team-logo" aria-hidden="true">P</div>
               <span class="team-runs" data-slot="phi-runs">—</span>
             </div>
-            <div class="hero-divider" aria-hidden="true">·</div>
+            <div class="hero-state" data-slot="hero-state" aria-live="polite">
+              <span class="hero-state-label" data-slot="hero-state-label">·</span>
+              <span class="hero-state-value" data-slot="hero-state-value">·</span>
+            </div>
             <div class="team team-opp">
               <span class="team-runs" data-slot="opp-runs">—</span>
+              <div class="team-logo team-logo-opp" aria-hidden="true" data-slot="opp-initial">—</div>
               <div class="team-detail">
                 <span class="team-abbr" data-slot="opp-abbr">—</span>
                 <span class="team-name" data-slot="opp-name">Opponent</span>
               </div>
-              <div class="team-logo team-logo-opp" aria-hidden="true" data-slot="opp-initial">—</div>
             </div>
           </div>
           <p class="hero-headline" data-slot="headline">Loading latest edition…</p>
@@ -187,6 +198,12 @@
     </footer>
   </main>
 
+  </div><!-- /.dash-app -->
+
+  <script type="module">
+    import { mountWireBanner } from "../shared/wire-banner.mjs";
+    mountWireBanner("[data-wire-banner]");
+  </script>
   <script type="module" src="./dashboard.js"></script>
 </body>
 </html>

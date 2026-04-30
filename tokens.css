@@ -281,3 +281,40 @@
   --z-sticky:  200;
   --z-toast:   300;
 }
+
+
+/* ── WIRE BANNER + SURFACE ACCENTS ──────────────────────────
+   Added 2026-04-23 for unified top-of-page Wire banner and
+   soft accent tints. Additive — do not rename existing tokens.
+   ---------------------------------------------------------- */
+:root {
+  /* Soft accent tint — rail active states, pill backgrounds */
+  --color-accent-soft:     rgba(232, 24, 40, 0.14);
+
+  /* Wire banner — red label on navy band, ticker runs across */
+  --wire-banner-bg:        var(--color-ticker-bg);
+  --wire-banner-border:    rgba(0, 0, 0, 0.4);
+  --wire-banner-label-bg:  var(--primitive-red-500);
+  --wire-banner-label-fg:  #ffffff;
+  --wire-banner-text:      rgba(255, 255, 255, 0.82);
+  --wire-banner-hi:        var(--primitive-red-400);
+  --wire-banner-sep:       rgba(255, 255, 255, 0.24);
+  --wire-banner-height:    38px;
+
+  /* Feed-style opt-in — consumed by .activity-list if data-feed-style set */
+  --feed-row-h:            56px;
+}
+
+[data-theme="dark"] {
+  --color-accent-soft:     rgba(232, 24, 40, 0.18);
+  --wire-banner-bg:        #001a52;
+  --wire-banner-border:    rgba(0, 0, 0, 0.55);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent-soft:   rgba(232, 24, 40, 0.18);
+    --wire-banner-bg:      #001a52;
+    --wire-banner-border:  rgba(0, 0, 0, 0.55);
+  }
+}

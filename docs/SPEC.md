@@ -37,6 +37,7 @@ phillies-wire/                                 → GitHub Pages root
 ├── /issues/<YYYY-MM-DD>/                      → Permalinks per day
 ├── /dashboard/                                → live command center
 ├── /dashboard/innings/                        → innings timeline view
+├── /dashboard/preferences/                    → browser local preferences
 ├── /schedule/                                 → Phillies schedule + attendance tracker
 ├── /data/phillies-2026.json                   → canonical season schedule
 ├── /calendar/phillies-2026-all.ics            → season calendar feed
@@ -61,6 +62,7 @@ phillies-wire/                                 → GitHub Pages root
 | **Dated issue** | `/issues/<date>/` | Permanent per-day record | Search / RSS readers | Immutable after day closes |
 | **Dashboard** | `/dashboard/` | Live command center view: hero, activity feed, record, key events | Dave + household | Client-side poll of `archive.json` + `live-feed` data during games |
 | **Innings timeline** | `/dashboard/innings/` | Linescore and play progression view | Dave + household | Client-side read of per-issue `data.json` + canonical schedule |
+| **Local preferences** | `/dashboard/preferences/` | Browser-only controls for theme, reduced data, innings defaults, and local export or import | Dave + household | LocalStorage only |
 | **Schedule tracker** | `/schedule/` | Season schedule, attendance state, notes, and cross-links | Dave + household | Generated schedule JSON + local-first state |
 | **Canonical schedule** | `/data/phillies-2026.json` | Machine-readable Phillies season source of truth | Dashboards, scripts, calendar, Quest cutover | Every render |
 | **Season calendar** | `/calendar/phillies-2026-all.ics` | Importable season feed | Calendar apps | Every render |
@@ -298,6 +300,7 @@ Rule: never reference `--primitive-*` outside `tokens.css`.
 | `https://davehomeassist.github.io/phillies-wire/archive/` | Yes | Yes | |
 | `https://davehomeassist.github.io/phillies-wire/issues/<date>/` | Yes | Yes | Immutable after day closes |
 | `https://davehomeassist.github.io/phillies-wire/dashboard/` | Yes | Yes | `robots: noindex` recommended |
+| `https://davehomeassist.github.io/phillies-wire/dashboard/preferences/` | Yes | Yes | Local browser state only |
 | `https://davehomeassist.github.io/phillies-wire/archive.json` | Yes | No | `Cache-Control: no-store` preferred |
 | `https://davehomeassist.github.io/phillies-wire/feed.xml` | Yes | Yes | |
 
@@ -423,13 +426,15 @@ phillies-wire/
 │   ├── index.html              ← Clean SaaS command center
 │   ├── dashboard.css           ← dashboard styles (reuses tokens.css)
 │   ├── dashboard.js            ← reads archive + canonical schedule
+│   ├── preferences/            ← browser local preferences and export tools
 │   └── innings/                ← linescore + play progression surface
 ├── schedule/
 │   ├── index.html              ← season tracker + attendance UI
 │   ├── schedule.css            ← tracker styles
 │   └── schedule.js             ← canonical schedule reader + legacy import
 ├── shared/
-│   └── phillies-schedule.mjs   ← schedule helpers shared by render + browser
+│   ├── phillies-schedule.mjs   ← schedule helpers shared by render + browser
+│   └── phillies-prefs.mjs      ← browser local preference helpers
 ├── docs/
 │   └── SPEC.md                 ← this file
 ├── scripts/
