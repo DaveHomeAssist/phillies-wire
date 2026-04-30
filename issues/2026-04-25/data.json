@@ -1,26 +1,26 @@
 {
   "schema_version": "1.3.0",
   "meta": {
-    "date": "2026-04-22",
-    "edition": 24,
+    "date": "2026-04-25",
+    "edition": 27,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-23T03:13:36.782Z",
+    "generated_at": "2026-04-26T03:45:58.068Z",
     "status": {
       "mode": "final",
       "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 22, 2026, 11:13 PM ET",
+      "generated_at_et": "Apr 25, 2026, 11:45 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
       ]
     }
   },
   "record": {
-    "wins": 8,
-    "losses": 16,
+    "wins": 9,
+    "losses": 18,
     "streak": "W1",
     "division_rank": 1,
     "division": "NL East"
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "final",
     "label": "Final",
-    "headline": "PHI 2, CHC 7.",
-    "dek": "CHC 7, PHI 2 · Matthew Boyd · 4.2 IP, 5 H, 2 ER, 5 K",
-    "summary": "PHI 2, CHC 7. Final at Wrigley Field, Chicago. CHC wins 3-0.",
+    "headline": "PHI 8, ATL 5.",
+    "dek": "PHI 8, ATL 5 · Zack Wheeler · 5.0 IP, 3 H, 2 ER, 6 K",
+    "summary": "PHI 8, ATL 5. Final at Truist Park, Atlanta. Series tied 1-1.",
     "cards": [
       {
         "label": "Winning Pitcher",
@@ -38,49 +38,49 @@
       },
       {
         "label": "Venue",
-        "value": "Wrigley Field, Chicago"
+        "value": "Truist Park, Atlanta"
       },
       {
         "label": "Series",
-        "value": "CHC wins 3-0"
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "Matthew Boyd: 4.2 IP, 5 H, 2 ER, 5 K",
-      "Alan Rangel: 3.0 IP, 3 H, 1 ER, 5 K",
-      "Seiya Suzuki: 2-for-4, 1 HR, 2 RBI, 1 R"
+      "Zack Wheeler: 5.0 IP, 3 H, 2 ER, 6 K",
+      "Bryce Elder: 7.0 IP, 6 H, 3 ER, 2 K",
+      "Bryce Harper: 2-for-3, 4 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Edward Cabrera · CHC vs PHI · Thu, Apr 23 · 2:20 PM"
+    "next_value": "Aaron Nola vs Chris Sale · ATL vs PHI · Sun, Apr 26 · 1:35 PM"
   },
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at CHC game.",
+        "status_note": "Official batting orders confirmed for today's PHI at ATL game.",
         "announced": true,
         "mode": "official",
         "mode_label": "Official",
         "show_orders": true,
-        "first_pitch": "7:40 PM",
+        "first_pitch": "7:15 PM",
         "starters": {
           "home": {
-            "team": "CHC",
-            "name": "Matthew Boyd",
+            "team": "ATL",
+            "name": "Bryce Elder",
             "hand": "R"
           },
           "away": {
             "team": "PHI",
-            "name": "Kyle Backhus",
+            "name": "Zack Wheeler",
             "hand": "R"
           },
           "phi": {
             "team": "PHI",
-            "name": "Kyle Backhus",
+            "name": "Zack Wheeler",
             "hand": "R"
           },
           "opp": {
-            "team": "CHC",
-            "name": "Matthew Boyd",
+            "team": "ATL",
+            "name": "Bryce Elder",
             "hand": "R"
           }
         },
@@ -88,100 +88,100 @@
           "home": [
             {
               "slot": 1,
-              "name": "Nico Hoerner",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Alex Bregman",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Ian Happ",
-              "position": "LF",
-              "bats": "S"
-            },
-            {
-              "slot": 4,
-              "name": "Seiya Suzuki",
+              "name": "Ronald Acuña Jr.",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 5,
-              "name": "Michael Busch",
+              "slot": 2,
+              "name": "Drake Baldwin",
+              "position": "C",
+              "bats": "L"
+            },
+            {
+              "slot": 3,
+              "name": "Matt Olson",
               "position": "1B",
               "bats": "L"
             },
             {
-              "slot": 6,
-              "name": "Dansby Swanson",
-              "position": "SS",
-              "bats": "R"
+              "slot": 4,
+              "name": "Ozzie Albies",
+              "position": "2B",
+              "bats": "S"
             },
             {
-              "slot": 7,
-              "name": "Moisés Ballesteros",
+              "slot": 5,
+              "name": "Michael Harris II",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 8,
-              "name": "Miguel Amaya",
-              "position": "C",
+              "slot": 6,
+              "name": "Austin Riley",
+              "position": "3B",
               "bats": "R"
             },
             {
-              "slot": 9,
-              "name": "Pete Crow-Armstrong",
-              "position": "CF",
+              "slot": 7,
+              "name": "Mauricio Dubón",
+              "position": "SS",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
+              "name": "Mike Yastrzemski",
+              "position": "LF",
               "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Eli White",
+              "position": "CF",
+              "bats": "R"
             }
           ],
           "away": [
             {
               "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
               "name": "Trea Turner",
               "position": "SS",
               "bats": "R"
             },
             {
-              "slot": 3,
-              "name": "Bryce Harper",
+              "slot": 2,
+              "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 4,
-              "name": "Felix Reyes",
+              "slot": 3,
+              "name": "Bryce Harper",
               "position": "1B",
-              "bats": "R"
+              "bats": "L"
             },
             {
-              "slot": 5,
+              "slot": 4,
               "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
+              "slot": 5,
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
+            },
+            {
               "slot": 6,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Edmundo Sosa",
-              "position": "2B",
+              "name": "Alec Bohm",
+              "position": "3B",
               "bats": "R"
             },
             {
@@ -200,44 +200,44 @@
           "phi": [
             {
               "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
               "name": "Trea Turner",
               "position": "SS",
               "bats": "R"
             },
             {
-              "slot": 3,
-              "name": "Bryce Harper",
+              "slot": 2,
+              "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 4,
-              "name": "Felix Reyes",
+              "slot": 3,
+              "name": "Bryce Harper",
               "position": "1B",
-              "bats": "R"
+              "bats": "L"
             },
             {
-              "slot": 5,
+              "slot": 4,
               "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
+              "slot": 5,
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
+            },
+            {
               "slot": 6,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Edmundo Sosa",
-              "position": "2B",
+              "name": "Alec Bohm",
+              "position": "3B",
               "bats": "R"
             },
             {
@@ -256,57 +256,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Nico Hoerner",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Alex Bregman",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Ian Happ",
-              "position": "LF",
-              "bats": "S"
-            },
-            {
-              "slot": 4,
-              "name": "Seiya Suzuki",
+              "name": "Ronald Acuña Jr.",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 5,
-              "name": "Michael Busch",
+              "slot": 2,
+              "name": "Drake Baldwin",
+              "position": "C",
+              "bats": "L"
+            },
+            {
+              "slot": 3,
+              "name": "Matt Olson",
               "position": "1B",
               "bats": "L"
             },
             {
-              "slot": 6,
-              "name": "Dansby Swanson",
-              "position": "SS",
-              "bats": "R"
+              "slot": 4,
+              "name": "Ozzie Albies",
+              "position": "2B",
+              "bats": "S"
             },
             {
-              "slot": 7,
-              "name": "Moisés Ballesteros",
+              "slot": 5,
+              "name": "Michael Harris II",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 8,
-              "name": "Miguel Amaya",
-              "position": "C",
+              "slot": 6,
+              "name": "Austin Riley",
+              "position": "3B",
               "bats": "R"
             },
             {
-              "slot": 9,
-              "name": "Pete Crow-Armstrong",
-              "position": "CF",
+              "slot": 7,
+              "name": "Mauricio Dubón",
+              "position": "SS",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
+              "name": "Mike Yastrzemski",
+              "position": "LF",
               "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Eli White",
+              "position": "CF",
+              "bats": "R"
             }
           ]
         }
@@ -314,31 +314,31 @@
     },
     "game_status": {
       "content": {
-        "matchup": "Phillies @ Cubs · Game 3",
-        "first_pitch": "7:40 PM",
-        "venue": "Wrigley Field, Chicago",
+        "matchup": "Phillies @ Braves · Game 2",
+        "first_pitch": "7:15 PM",
+        "venue": "Truist Park, Atlanta",
         "starters": {
           "home": {
-            "name": "Matthew Boyd",
+            "name": "Bryce Elder",
             "hand": "R"
           },
           "away": {
-            "name": "Kyle Backhus",
+            "name": "Zack Wheeler",
             "hand": "R"
           },
           "phi": {
-            "name": "Kyle Backhus",
+            "name": "Zack Wheeler",
             "hand": "R"
           },
           "opp": {
-            "name": "Matthew Boyd",
+            "name": "Bryce Elder",
             "hand": "R"
           }
         },
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "CHC wins 3-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP+",
@@ -346,10 +346,10 @@
           "radio": "94.1 WIP"
         },
         "weather": {
-          "temp_f": 55,
-          "condition": "Overcast",
-          "wind": "4 mph · gusts 10",
-          "gusts_mph": 10
+          "temp_f": 44,
+          "condition": "Rain",
+          "wind": "10 mph · gusts 22",
+          "gusts_mph": 22
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -405,10 +405,10 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Cristopher Sánchez vs Edward Cabrera · CHC vs PHI",
-    "date": "Thu, Apr 23",
-    "time": "2:20 PM",
+    "matchup": "Aaron Nola vs Chris Sale · ATL vs PHI",
+    "date": "Sun, Apr 26",
+    "time": "1:35 PM",
     "broadcast": "NBCSP",
-    "venue": "Wrigley Field"
+    "venue": "Truist Park"
   }
 }

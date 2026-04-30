@@ -3,6 +3,7 @@ import { pathToFileURL } from "node:url";
 import { buildPregamePreviewContent, buildRecapPullQuote } from "./pregame-preview.js";
 import {
   createFetchSoft,
+  deriveIlFromTransactions,
   fetchDailyMlbData,
   fetchGameDetail,
   fetchPitcherStats,
@@ -106,25 +107,46 @@ export {
   extractKeyPerformers,
   pickActiveGame,
   clampOverride,
+  updateRecordFromStandings,
 };
 
 async function main() {
   const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
   const overrides = loadOverrides(TODAY);
   const fetchSoft = createFetchSoft();
-  const [{ scheduleResponse, nextScheduleResponse, rosterResponse, transactionResponse, injuryResponse }, weatherResponse, lastFinal] =
-    await Promise.all([
-      fetchDailyMlbData({
-        today: TODAY,
-        yesterday: YESTERDAY,
-        transactionStartDate: TRANSACTION_START_DATE,
-        endDate: getRelativeIsoDate(4),
-        teamId: TEAM_ID,
-        fetchSoft,
-      }),
-      fetchWeatherData(fetchSoft),
-      fetchRecentFinals({ teamId: TEAM_ID, today: TODAY, fetchSoft }),
-    ]);
+  const [
+    {
+      scheduleResponse,
+      nextScheduleResponse,
+      rosterResponse,
+      transactionResponse,
+      injuryResponse: primaryInjuryResponse,
+      seasonTransactionsResponse,
+    },
+    weatherResponse,
+    lastFinal,
+  ] = await Promise.all([
+    fetchDailyMlbData({
+      today: TODAY,
+      yesterday: YESTERDAY,
+      transactionStartDate: TRANSACTION_START_DATE,
+      endDate: getRelativeIsoDate(4),
+      teamId: TEAM_ID,
+      fetchSoft,
+    }),
+    fetchWeatherData(fetchSoft),
+    fetchRecentFinals({ teamId: TEAM_ID, today: TODAY, fetchSoft }),
+  ]);
+
+  // `/teams/{id}/injuries` 404s upstream; createFetchSoft catches it and
+  // returns null. When that happens, derive the IL from the season-long
+  // transaction log so the Injury Report section still reflects live state
+  // instead of only the editorial fixture baseline.
+  const primaryHasEntries =
+    Array.isArray(primaryInjuryResponse?.injuries) && primaryInjuryResponse.injuries.length > 0;
+  const injuryResponse = primaryHasEntries
+    ? primaryInjuryResponse
+    : deriveIlFromTransactions(seasonTransactionsResponse);
 
   const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
   const game = pickActiveGame(scheduleResponse?.dates?.[0]?.games ?? []);
@@ -182,7 +204,8 @@ function preserveEditorialFromPrevious(freshData) {
   }
   for (const path of EDITORIAL_FIELDS_TO_PRESERVE) {
     const previousValue = getPath(previous, path);
-    if (previousValue !== undefined && previousValue !== null && previousValue !== "") {
+    const freshParent = getPath(freshData, path.slice(0, -1));
+    if (freshParent && previousValue !== undefined && previousValue !== null && previousValue !== "") {
       setPath(freshData, path, previousValue);
     }
   }
@@ -340,13 +363,19 @@ async function buildLivePayload(context) {
       venue: data.sections.game_status.content.venue,
       seriesLabel: data.sections.game_status.content.series.label,
     });
+    data.sections.recap.chip_label = "Final";
+    data.sections.recap.chip_tone = "final";
   }
+  // recap.show (set false earlier in the flow) gates visibility in the
+  // template via {{#if sections.recap.show}}. Don't delete the section —
+  // validateCrawlPayload requires sections.recap to be present, and the
+  // template's #if already hides the row on non-final editions.
 
   const [rotation, standings] = await Promise.all([
     buildRotation(nextGames, fixture.sections.roster.content.rotation),
     fetchStandings(),
   ]);
-  data.record = applyStandingRecord(data.record, standings);
+  data.record = updateRecordFromStandings(data.record, standings);
 
   data.meta.game_pk = game.gamePk;
   data.meta.first_pitch_iso = game.gameDate;
@@ -355,10 +384,6 @@ async function buildLivePayload(context) {
   data.sections.roster.content.rotation = rotation;
   data.sections.roster.content.as_of_label = buildFreshnessLabel("As of", data.meta.generated_at);
   data.sections.roster.content.highlights = buildRosterHighlights(rosterResponse, transactionResponse, fixture.sections.roster.content.highlights);
-  if (data.sections.recap.show) {
-    data.sections.recap.chip_label = "Final";
-    data.sections.recap.chip_tone = "final";
-  }
   data.sections.roster.chip_label = rosterResponse?.roster ? "Confirmed" : "Fallback";
   data.sections.roster.chip_tone = rosterResponse?.roster ? "confirmed" : "fallback";
   data.sections.injury_report.content.il_entries = mergeInjuryEntries(
@@ -987,6 +1012,21 @@ function applyStandingRecord(record = {}, standings = []) {
     streak: phi.streak ?? record.streak,
     division_rank: phi.division_rank ?? record.division_rank,
     games_back: phi.gb ?? record.games_back,
+  };
+}
+
+// Pulled out of applyStandingRecord because the schedule endpoint's
+// philliesSide.leagueRecord is the freshest source for W-L (already applied
+// upstream when the payload was built). Standings reconciles the slower-
+// changing fields — streak and division rank — without re-stamping W-L.
+function updateRecordFromStandings(record, teams) {
+  const phi = teams.find((team) => team.is_phi);
+  if (!phi) return record;
+
+  return {
+    ...record,
+    streak: phi.streak || record.streak,
+    division_rank: Number.isFinite(phi.division_rank) ? phi.division_rank : record.division_rank,
   };
 }
 
