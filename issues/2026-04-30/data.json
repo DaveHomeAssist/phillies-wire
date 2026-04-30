@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.3.0",
+  "meta": {
+    "date": "2026-04-30",
+    "edition": 26,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-04-30T05:23:47.874Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Structured fallback published. Editorial enrichment is not configured.",
+      "generated_at_et": "Apr 30, 2026, 1:23 AM ET",
+      "source_notes": [
+        "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
+        "Rehab assignment notes are refreshed from the MLB transactions feed."
+      ]
+    }
+  },
+  "record": {
+    "wins": 10,
+    "losses": 19,
+    "streak": "W1",
+    "division_rank": 4,
+    "division": "NL East",
+    "games_back": "11.0"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Giants @ Phillies · Game 2 of 3",
+    "dek": "Cristopher Sánchez vs Logan Webb",
+    "summary": "Cristopher Sánchez vs Logan Webb · Giants @ Phillies · Game 2 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "12:35 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "Citizens Bank Park, Philadelphia"
+      },
+      {
+        "label": "Watch",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "50° · Overcast · 5 mph · gusts 10",
+      "PHI leads 1-0",
+      "Doubleheader · Game 1 of 2"
+    ],
+    "next_label": "Game 2 Today",
+    "next_value": "PHI vs SF · Thu, Apr 30 · 5:35 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "PHI order is a projected baseline. SF lineup posts about two hours before first pitch.",
+        "announced": false,
+        "mode": "projected",
+        "mode_label": "Projected",
+        "show_orders": true,
+        "first_pitch": "12:35 PM",
+        "starters": {
+          "home": {
+            "team": "PHI",
+            "name": "Cristopher Sánchez",
+            "hand": "L"
+          },
+          "away": {
+            "team": "SF",
+            "name": "Logan Webb",
+            "hand": "R"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Cristopher Sánchez",
+            "hand": "L"
+          },
+          "opp": {
+            "team": "SF",
+            "name": "Logan Webb",
+            "hand": "R"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
+            },
+            {
+              "slot": 2,
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
+            },
+            {
+              "slot": 3,
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
+            },
+            {
+              "slot": 4,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 5,
+              "name": "Nick Castellanos",
+              "position": "RF",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
+              "slot": 7,
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
+            },
+            {
+              "slot": 2,
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
+            },
+            {
+              "slot": 3,
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
+            },
+            {
+              "slot": 4,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 5,
+              "name": "Nick Castellanos",
+              "position": "RF",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
+              "slot": 7,
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Giants @ Phillies · Game 2 of 3",
+        "first_pitch": "12:35 PM",
+        "venue": "Citizens Bank Park, Philadelphia",
+        "starters": {
+          "home": {
+            "name": "Cristopher Sánchez",
+            "hand": "L"
+          },
+          "away": {
+            "name": "Logan Webb",
+            "hand": "R"
+          },
+          "phi": {
+            "name": "Cristopher Sánchez",
+            "hand": "L"
+          },
+          "opp": {
+            "name": "Logan Webb",
+            "hand": "R"
+          }
+        },
+        "series": {
+          "home_wins": 1,
+          "away_wins": 0,
+          "label": "PHI leads 1-0"
+        },
+        "broadcast": {
+          "tv": "NBCSP",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 50,
+          "condition": "Overcast",
+          "wind": "5 mph · gusts 10",
+          "gusts_mph": 10
+        },
+        "giveaway": "",
+        "transit": "Broad Street Line to AT&T Station",
+        "venue_is_home": true
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Max Lazar",
+            "position": "RHP",
+            "il_type": "60-Day",
+            "badge": "il",
+            "injury": "Left oblique strain",
+            "status_note": "transferred RHP Max Lazar from the 15-day injured list to the 60-day injured list. Left oblique strain",
+            "first_eligible": null,
+            "retroactive_to": "2026-04-22",
+            "source": "live",
+            "last_confirmed": "2026-04-30T05:23:47.874Z",
+            "freshness_label": "As of Apr 30, 2026, 1:23 AM ET"
+          },
+          {
+            "name": "Zach Pop",
+            "position": "RHP",
+            "il_type": "15-Day",
+            "badge": "il",
+            "injury": "Right calf strain",
+            "status_note": "placed RHP Zach Pop on the 15-day injured list retroactive to April 13, 2026. Right calf strain",
+            "retroactive_to": "2026-04-13",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-04-30T05:23:47.874Z",
+            "freshness_label": "As of Apr 30, 2026, 1:23 AM ET"
+          },
+          {
+            "name": "Jhoan Duran",
+            "position": "RHP",
+            "il_type": "15-Day",
+            "badge": "il",
+            "injury": "Left oblique strain",
+            "status_note": "placed RHP Jhoan Duran on the 15-day injured list retroactive to April 15, 2026. Left oblique strain",
+            "retroactive_to": "2026-04-15",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-04-30T05:23:47.874Z",
+            "freshness_label": "As of Apr 30, 2026, 1:23 AM ET"
+          },
+          {
+            "name": "J.T. Realmuto",
+            "position": "C",
+            "il_type": "10-Day",
+            "badge": "il",
+            "injury": "Back spasms",
+            "status_note": "placed C J.T. Realmuto on the 10-day injured list. Back spasms",
+            "retroactive_to": "2026-04-22",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-04-30T05:23:47.874Z",
+            "freshness_label": "As of Apr 30, 2026, 1:23 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Game 2 Today",
+    "matchup": "PHI vs SF",
+    "date": "Thu, Apr 30",
+    "time": "5:35 PM",
+    "broadcast": "NBCSP",
+    "venue": "Citizens Bank Park"
+  }
+}
