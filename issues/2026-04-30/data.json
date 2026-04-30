@@ -5,14 +5,14 @@
     "edition": 32,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-30T19:32:38.681Z",
+    "generated_at": "2026-04-30T19:49:28.671Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 30, 2026, 3:32 PM ET",
+      "generated_at_et": "Apr 30, 2026, 3:49 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "pregame",
     "label": "Pregame",
     "headline": "Giants @ Phillies · Game 3 of 3",
-    "dek": "Aaron Nola vs Adrian Houser",
-    "summary": "Aaron Nola vs Adrian Houser · Giants @ Phillies · Game 3 of 3",
+    "dek": "Tim Mayza vs Adrian Houser",
+    "summary": "Tim Mayza vs Adrian Houser · Giants @ Phillies · Game 3 of 3",
     "cards": [
       {
         "label": "First Pitch",
@@ -52,7 +52,7 @@
       "Doubleheader · Game 2 of 2"
     ],
     "next_label": "Game 2 Today",
-    "next_value": "Adrian Houser · PHI vs SF · Thu, Apr 30 · 5:35 PM"
+    "next_value": "Tim Mayza vs Adrian Houser · PHI vs SF · Thu, Apr 30 · 5:35 PM"
   },
   "sections": {
     "lineup": {
@@ -66,8 +66,8 @@
         "starters": {
           "home": {
             "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
+            "name": "Tim Mayza",
+            "hand": "L"
           },
           "away": {
             "team": "SF",
@@ -76,8 +76,8 @@
           },
           "phi": {
             "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
+            "name": "Tim Mayza",
+            "hand": "L"
           },
           "opp": {
             "team": "SF",
@@ -320,16 +320,16 @@
         "venue": "Citizens Bank Park, Philadelphia",
         "starters": {
           "home": {
-            "name": "Aaron Nola",
-            "hand": "R"
+            "name": "Tim Mayza",
+            "hand": "L"
           },
           "away": {
             "name": "Adrian Houser",
             "hand": "R"
           },
           "phi": {
-            "name": "Aaron Nola",
-            "hand": "R"
+            "name": "Tim Mayza",
+            "hand": "L"
           },
           "opp": {
             "name": "Adrian Houser",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-04-30T19:32:38.681Z",
-            "freshness_label": "As of Apr 30, 2026, 3:32 PM ET"
+            "last_confirmed": "2026-04-30T19:49:28.671Z",
+            "freshness_label": "As of Apr 30, 2026, 3:49 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T19:32:38.681Z",
-            "freshness_label": "As of Apr 30, 2026, 3:32 PM ET"
+            "last_confirmed": "2026-04-30T19:49:28.671Z",
+            "freshness_label": "As of Apr 30, 2026, 3:49 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T19:32:38.681Z",
-            "freshness_label": "As of Apr 30, 2026, 3:32 PM ET"
+            "last_confirmed": "2026-04-30T19:49:28.671Z",
+            "freshness_label": "As of Apr 30, 2026, 3:49 PM ET"
           },
           {
             "name": "J.T. Realmuto",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-22",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T19:32:38.681Z",
-            "freshness_label": "As of Apr 30, 2026, 3:32 PM ET"
+            "last_confirmed": "2026-04-30T19:49:28.671Z",
+            "freshness_label": "As of Apr 30, 2026, 3:49 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -419,7 +419,7 @@
   },
   "next_game": {
     "label": "Game 2 Today",
-    "matchup": "Adrian Houser · PHI vs SF",
+    "matchup": "Tim Mayza vs Adrian Houser · PHI vs SF",
     "date": "Thu, Apr 30",
     "time": "5:35 PM",
     "broadcast": "NBCSP",
