@@ -5,14 +5,14 @@
     "edition": 32,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-30T17:11:38.536Z",
+    "generated_at": "2026-04-30T17:31:59.240Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 30, 2026, 1:11 PM ET",
+      "generated_at_et": "Apr 30, 2026, 1:31 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, SF 2",
-    "dek": "Top 3rd · 1 out",
-    "summary": "Luis Arraez is up against Cristopher Sánchez. Series: PHI leads 1-0.",
+    "dek": "Bottom 4th · 1 out",
+    "summary": "Edmundo Sosa is up against Logan Webb. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "59° · Partly cloudy"
+        "value": "61° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Luis Arraez at the plate",
-      "Cristopher Sánchez on the mound",
+      "Edmundo Sosa at the plate",
+      "Logan Webb on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Game 2 Today",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 59,
-          "condition": "Partly cloudy",
-          "wind": "7 mph · gusts 13",
-          "gusts_mph": 13
+          "temp_f": 61,
+          "condition": "Mostly sunny",
+          "wind": "6 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-04-30T17:11:38.536Z",
-            "freshness_label": "As of Apr 30, 2026, 1:11 PM ET"
+            "last_confirmed": "2026-04-30T17:31:59.240Z",
+            "freshness_label": "As of Apr 30, 2026, 1:31 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T17:11:38.536Z",
-            "freshness_label": "As of Apr 30, 2026, 1:11 PM ET"
+            "last_confirmed": "2026-04-30T17:31:59.240Z",
+            "freshness_label": "As of Apr 30, 2026, 1:31 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T17:11:38.536Z",
-            "freshness_label": "As of Apr 30, 2026, 1:11 PM ET"
+            "last_confirmed": "2026-04-30T17:31:59.240Z",
+            "freshness_label": "As of Apr 30, 2026, 1:31 PM ET"
           },
           {
             "name": "J.T. Realmuto",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-22",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T17:11:38.536Z",
-            "freshness_label": "As of Apr 30, 2026, 1:11 PM ET"
+            "last_confirmed": "2026-04-30T17:31:59.240Z",
+            "freshness_label": "As of Apr 30, 2026, 1:31 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
