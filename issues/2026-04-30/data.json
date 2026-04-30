@@ -5,14 +5,14 @@
     "edition": 32,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-30T20:09:07.406Z",
+    "generated_at": "2026-04-30T20:28:09.121Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 30, 2026, 4:09 PM ET",
+      "generated_at_et": "Apr 30, 2026, 4:28 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "63° · Clear · 8 mph · gusts 15",
+      "63° · Mostly sunny · 8 mph · gusts 15",
       "PHI leads 2-0",
       "Doubleheader · Game 2 of 2"
     ],
@@ -348,7 +348,7 @@
         },
         "weather": {
           "temp_f": 63,
-          "condition": "Clear",
+          "condition": "Mostly sunny",
           "wind": "8 mph · gusts 15",
           "gusts_mph": 15
         },
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-04-30T20:09:07.406Z",
-            "freshness_label": "As of Apr 30, 2026, 4:09 PM ET"
+            "last_confirmed": "2026-04-30T20:28:09.121Z",
+            "freshness_label": "As of Apr 30, 2026, 4:28 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T20:09:07.406Z",
-            "freshness_label": "As of Apr 30, 2026, 4:09 PM ET"
+            "last_confirmed": "2026-04-30T20:28:09.121Z",
+            "freshness_label": "As of Apr 30, 2026, 4:28 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T20:09:07.406Z",
-            "freshness_label": "As of Apr 30, 2026, 4:09 PM ET"
+            "last_confirmed": "2026-04-30T20:28:09.121Z",
+            "freshness_label": "As of Apr 30, 2026, 4:28 PM ET"
           },
           {
             "name": "J.T. Realmuto",
@@ -409,8 +409,21 @@
             "retroactive_to": "2026-04-22",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T20:09:07.406Z",
-            "freshness_label": "As of Apr 30, 2026, 4:09 PM ET"
+            "last_confirmed": "2026-04-30T20:28:09.121Z",
+            "freshness_label": "As of Apr 30, 2026, 4:28 PM ET"
+          },
+          {
+            "name": "Kyle Backhus",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left elbow inflammation",
+            "status_note": "",
+            "retroactive_to": "2026-04-27",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-04-30T20:28:09.121Z",
+            "freshness_label": "As of Apr 30, 2026, 4:28 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
