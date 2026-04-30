@@ -5,14 +5,14 @@
     "edition": 32,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-30T07:35:54.932Z",
+    "generated_at": "2026-04-30T13:32:39.957Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "pending",
-      "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 30, 2026, 3:35 AM ET",
+      "enrich_state": "enriched",
+      "enrich_label": "Editorial copy enriched via Claude.",
+      "generated_at_et": "Apr 30, 2026, 9:32 AM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "49° · Overcast · 4 mph · gusts 5",
+      "53° · Overcast · 4 mph · gusts 13",
       "PHI leads 1-0",
       "Doubleheader · Game 1 of 2"
     ],
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 49,
+          "temp_f": 53,
           "condition": "Overcast",
-          "wind": "4 mph · gusts 5",
-          "gusts_mph": 5
+          "wind": "4 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-04-30T07:35:54.932Z",
-            "freshness_label": "As of Apr 30, 2026, 3:35 AM ET"
+            "last_confirmed": "2026-04-30T13:32:39.957Z",
+            "freshness_label": "As of Apr 30, 2026, 9:32 AM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T07:35:54.932Z",
-            "freshness_label": "As of Apr 30, 2026, 3:35 AM ET"
+            "last_confirmed": "2026-04-30T13:32:39.957Z",
+            "freshness_label": "As of Apr 30, 2026, 9:32 AM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T07:35:54.932Z",
-            "freshness_label": "As of Apr 30, 2026, 3:35 AM ET"
+            "last_confirmed": "2026-04-30T13:32:39.957Z",
+            "freshness_label": "As of Apr 30, 2026, 9:32 AM ET"
           },
           {
             "name": "J.T. Realmuto",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-22",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T07:35:54.932Z",
-            "freshness_label": "As of Apr 30, 2026, 3:35 AM ET"
+            "last_confirmed": "2026-04-30T13:32:39.957Z",
+            "freshness_label": "As of Apr 30, 2026, 9:32 AM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
