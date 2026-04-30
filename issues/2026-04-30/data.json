@@ -5,14 +5,14 @@
     "edition": 32,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-30T13:32:39.957Z",
+    "generated_at": "2026-04-30T16:35:24.357Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "Apr 30, 2026, 9:32 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "Apr 30, 2026, 12:35 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,29 +27,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Giants @ Phillies · Game 2 of 3",
-    "dek": "Cristopher Sánchez vs Logan Webb",
-    "summary": "Cristopher Sánchez vs Logan Webb · Giants @ Phillies · Game 2 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, SF 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Heliot Ramos is up against Cristopher Sánchez. Series: PHI leads 1-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "12:35 PM"
-      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "58° · Partly cloudy"
       }
     ],
     "bullets": [
-      "53° · Overcast · 4 mph · gusts 13",
-      "PHI leads 1-0",
-      "Doubleheader · Game 1 of 2"
+      "Heliot Ramos at the plate",
+      "Cristopher Sánchez on the mound",
+      "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Game 2 Today",
     "next_value": "PHI vs SF · Thu, Apr 30 · 5:35 PM"
@@ -57,10 +57,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. SF lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's SF at PHI game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "12:35 PM",
         "starters": {
@@ -107,95 +107,95 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
+              "slot": 5,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 9,
+              "slot": 7,
+              "name": "Edmundo Sosa",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
               "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Heliot Ramos",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Matt Chapman",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Luis Arraez",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Casey Schmitt",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Rafael Devers",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Willy Adames",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jung Hoo Lee",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jerar Encarnacion",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Patrick Bailey",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "phi": [
@@ -219,95 +219,95 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
+              "slot": 5,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 9,
+              "slot": 7,
+              "name": "Edmundo Sosa",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
               "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Heliot Ramos",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Matt Chapman",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Luis Arraez",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Casey Schmitt",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Rafael Devers",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Willy Adames",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jung Hoo Lee",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jerar Encarnacion",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Patrick Bailey",
+              "position": "C",
+              "bats": "S"
             }
           ]
         }
@@ -347,9 +347,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 53,
-          "condition": "Overcast",
-          "wind": "4 mph · gusts 13",
+          "temp_f": 58,
+          "condition": "Partly cloudy",
+          "wind": "8 mph · gusts 13",
           "gusts_mph": 13
         },
         "giveaway": "",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-04-30T13:32:39.957Z",
-            "freshness_label": "As of Apr 30, 2026, 9:32 AM ET"
+            "last_confirmed": "2026-04-30T16:35:24.357Z",
+            "freshness_label": "As of Apr 30, 2026, 12:35 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T13:32:39.957Z",
-            "freshness_label": "As of Apr 30, 2026, 9:32 AM ET"
+            "last_confirmed": "2026-04-30T16:35:24.357Z",
+            "freshness_label": "As of Apr 30, 2026, 12:35 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T13:32:39.957Z",
-            "freshness_label": "As of Apr 30, 2026, 9:32 AM ET"
+            "last_confirmed": "2026-04-30T16:35:24.357Z",
+            "freshness_label": "As of Apr 30, 2026, 12:35 PM ET"
           },
           {
             "name": "J.T. Realmuto",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-22",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T13:32:39.957Z",
-            "freshness_label": "As of Apr 30, 2026, 9:32 AM ET"
+            "last_confirmed": "2026-04-30T16:35:24.357Z",
+            "freshness_label": "As of Apr 30, 2026, 12:35 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
