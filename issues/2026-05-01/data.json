@@ -5,14 +5,14 @@
     "edition": 33,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-01T19:31:06.475Z",
+    "generated_at": "2026-05-01T19:56:30.680Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 1, 2026, 3:31 PM ET",
+      "generated_at_et": "May 1, 2026, 3:56 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "66° · Mostly sunny · 7 mph · gusts 9",
+      "66° · Clear · 7 mph · gusts 15",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -56,10 +56,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. MIA lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at MIA game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "7:10 PM",
         "starters": {
@@ -144,113 +144,113 @@
           "away": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 3,
+              "slot": 2,
               "name": "Bryce Harper",
               "position": "1B",
               "bats": "L"
             },
             {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
+              "slot": 3,
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
+              "slot": 4,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 5,
+              "name": "Edmundo Sosa",
+              "position": "SS",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 9,
+              "slot": 7,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
               "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "phi": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
             },
             {
-              "slot": 3,
+              "slot": 2,
               "name": "Bryce Harper",
               "position": "1B",
               "bats": "L"
             },
             {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
+              "slot": 3,
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
+              "slot": 4,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 5,
+              "name": "Edmundo Sosa",
+              "position": "SS",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 9,
+              "slot": 7,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
               "name": "Justin Crawford",
               "position": "CF",
               "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "opp": [
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 66,
-          "condition": "Mostly sunny",
-          "wind": "7 mph · gusts 9",
-          "gusts_mph": 9
+          "condition": "Clear",
+          "wind": "7 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-01T19:31:06.475Z",
-            "freshness_label": "As of May 1, 2026, 3:31 PM ET"
+            "last_confirmed": "2026-05-01T19:56:30.680Z",
+            "freshness_label": "As of May 1, 2026, 3:56 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-01T19:31:06.475Z",
-            "freshness_label": "As of May 1, 2026, 3:31 PM ET"
+            "last_confirmed": "2026-05-01T19:56:30.680Z",
+            "freshness_label": "As of May 1, 2026, 3:56 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-01T19:31:06.475Z",
-            "freshness_label": "As of May 1, 2026, 3:31 PM ET"
+            "last_confirmed": "2026-05-01T19:56:30.680Z",
+            "freshness_label": "As of May 1, 2026, 3:56 PM ET"
           },
           {
             "name": "J.T. Realmuto",
@@ -408,8 +408,8 @@
             "retroactive_to": "2026-04-22",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-01T19:31:06.475Z",
-            "freshness_label": "As of May 1, 2026, 3:31 PM ET"
+            "last_confirmed": "2026-05-01T19:56:30.680Z",
+            "freshness_label": "As of May 1, 2026, 3:56 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -421,8 +421,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-01T19:31:06.475Z",
-            "freshness_label": "As of May 1, 2026, 3:31 PM ET"
+            "last_confirmed": "2026-05-01T19:56:30.680Z",
+            "freshness_label": "As of May 1, 2026, 3:56 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
