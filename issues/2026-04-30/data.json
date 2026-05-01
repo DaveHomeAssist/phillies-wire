@@ -5,14 +5,14 @@
     "edition": 32,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-04-30T23:48:18.314Z",
+    "generated_at": "2026-05-01T00:03:24.101Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Apr 30, 2026, 7:48 PM ET",
+      "generated_at_et": "Apr 30, 2026, 8:03 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 4, SF 4",
-    "dek": "Top 6th · 2 outs",
-    "summary": "Luis Arraez is up against Trevor Richards. Series: PHI leads 2-0.",
+    "dek": "Middle 7th · 3 outs",
+    "summary": "Garrett Stubbs is up against Caleb Kilian. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "56° · Overcast"
+        "value": "55° · Overcast"
       }
     ],
     "bullets": [
-      "Luis Arraez at the plate",
-      "Trevor Richards on the mound",
+      "Garrett Stubbs at the plate",
+      "Caleb Kilian on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Game 2 Today",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 56,
+          "temp_f": 55,
           "condition": "Overcast",
-          "wind": "3 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "4 mph · gusts 8",
+          "gusts_mph": 8
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-04-30T23:48:18.314Z",
-            "freshness_label": "As of Apr 30, 2026, 7:48 PM ET"
+            "last_confirmed": "2026-05-01T00:03:24.101Z",
+            "freshness_label": "As of Apr 30, 2026, 8:03 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T23:48:18.314Z",
-            "freshness_label": "As of Apr 30, 2026, 7:48 PM ET"
+            "last_confirmed": "2026-05-01T00:03:24.101Z",
+            "freshness_label": "As of Apr 30, 2026, 8:03 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T23:48:18.314Z",
-            "freshness_label": "As of Apr 30, 2026, 7:48 PM ET"
+            "last_confirmed": "2026-05-01T00:03:24.101Z",
+            "freshness_label": "As of Apr 30, 2026, 8:03 PM ET"
           },
           {
             "name": "J.T. Realmuto",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-22",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T23:48:18.314Z",
-            "freshness_label": "As of Apr 30, 2026, 7:48 PM ET"
+            "last_confirmed": "2026-05-01T00:03:24.101Z",
+            "freshness_label": "As of Apr 30, 2026, 8:03 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -422,8 +422,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-04-30T23:48:18.314Z",
-            "freshness_label": "As of Apr 30, 2026, 7:48 PM ET"
+            "last_confirmed": "2026-05-01T00:03:24.101Z",
+            "freshness_label": "As of Apr 30, 2026, 8:03 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
