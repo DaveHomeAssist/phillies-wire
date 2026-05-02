@@ -5,14 +5,14 @@
     "edition": 33,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-02T01:06:29.761Z",
+    "generated_at": "2026-05-02T01:17:39.724Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 1, 2026, 9:06 PM ET",
+      "generated_at_et": "May 1, 2026, 9:17 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 2, MIA 1",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "Otto Lopez is up against Zack Wheeler. Series: Regular Season.",
+    "dek": "Top 7th · 1 out",
+    "summary": "Bryce Harper is up against Cade Gibson. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "57° · Clear"
+        "value": "56° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Otto Lopez at the plate",
-      "Zack Wheeler on the mound",
+      "Bryce Harper at the plate",
+      "Cade Gibson on the mound",
       "loanDepot park, Miami"
     ],
     "next_label": "Tomorrow",
@@ -347,10 +347,10 @@
           "radio": "WQAM 104.3"
         },
         "weather": {
-          "temp_f": 57,
-          "condition": "Clear",
-          "wind": "8 mph · gusts 17",
-          "gusts_mph": 17
+          "temp_f": 56,
+          "condition": "Mostly sunny",
+          "wind": "8 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-02T01:06:29.761Z",
-            "freshness_label": "As of May 1, 2026, 9:06 PM ET"
+            "last_confirmed": "2026-05-02T01:17:39.724Z",
+            "freshness_label": "As of May 1, 2026, 9:17 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T01:06:29.761Z",
-            "freshness_label": "As of May 1, 2026, 9:06 PM ET"
+            "last_confirmed": "2026-05-02T01:17:39.724Z",
+            "freshness_label": "As of May 1, 2026, 9:17 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T01:06:29.761Z",
-            "freshness_label": "As of May 1, 2026, 9:06 PM ET"
+            "last_confirmed": "2026-05-02T01:17:39.724Z",
+            "freshness_label": "As of May 1, 2026, 9:17 PM ET"
           },
           {
             "name": "J.T. Realmuto",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-22",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T01:06:29.761Z",
-            "freshness_label": "As of May 1, 2026, 9:06 PM ET"
+            "last_confirmed": "2026-05-02T01:17:39.724Z",
+            "freshness_label": "As of May 1, 2026, 9:17 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -422,8 +422,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T01:06:29.761Z",
-            "freshness_label": "As of May 1, 2026, 9:06 PM ET"
+            "last_confirmed": "2026-05-02T01:17:39.724Z",
+            "freshness_label": "As of May 1, 2026, 9:17 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
