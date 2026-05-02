@@ -5,14 +5,14 @@
     "edition": 34,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-02T19:24:50.556Z",
+    "generated_at": "2026-05-02T19:48:12.795Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 2, 2026, 3:24 PM ET",
+      "generated_at_et": "May 2, 2026, 3:48 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,28 +27,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Marlins · Game 2 of 4",
-    "dek": "Andrew Painter vs Max Meyer",
-    "summary": "Andrew Painter vs Max Meyer · Phillies @ Marlins · Game 2 of 4",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, MIA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Max Meyer. Series: PHI leads 1-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "4:10 PM"
-      },
       {
         "label": "Venue",
         "value": "loanDepot park, Miami"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "Marlins.TV presented by Werner, Hoffman, Greig & Garcia · MLB.TV · WQAM 104.3"
+      },
+      {
+        "label": "Weather",
+        "value": "61° · Overcast"
       }
     ],
     "bullets": [
-      "61° · Overcast · 9 mph · gusts 12",
-      "PHI leads 1-0"
+      "Trea Turner at the plate",
+      "Max Meyer on the mound",
+      "loanDepot park, Miami"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Chris Paddack · MIA vs PHI · Sun, May 3 · 1:40 PM"
@@ -163,7 +164,7 @@
             {
               "slot": 4,
               "name": "Adolis García",
-              "position": "RF",
+              "position": "CF",
               "bats": "R"
             },
             {
@@ -186,14 +187,14 @@
             },
             {
               "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
+              "name": "Garrett Stubbs",
+              "position": "LF",
               "bats": "L"
             },
             {
               "slot": 9,
               "name": "Felix Reyes",
-              "position": "LF",
+              "position": "RF",
               "bats": "R"
             }
           ],
@@ -219,7 +220,7 @@
             {
               "slot": 4,
               "name": "Adolis García",
-              "position": "RF",
+              "position": "CF",
               "bats": "R"
             },
             {
@@ -242,14 +243,14 @@
             },
             {
               "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
+              "name": "Garrett Stubbs",
+              "position": "LF",
               "bats": "L"
             },
             {
               "slot": 9,
               "name": "Felix Reyes",
-              "position": "LF",
+              "position": "RF",
               "bats": "R"
             }
           ],
@@ -348,8 +349,8 @@
         "weather": {
           "temp_f": 61,
           "condition": "Overcast",
-          "wind": "9 mph · gusts 12",
-          "gusts_mph": 12
+          "wind": "8 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-02T19:24:50.556Z",
-            "freshness_label": "As of May 2, 2026, 3:24 PM ET"
+            "last_confirmed": "2026-05-02T19:48:12.795Z",
+            "freshness_label": "As of May 2, 2026, 3:48 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T19:24:50.556Z",
-            "freshness_label": "As of May 2, 2026, 3:24 PM ET"
+            "last_confirmed": "2026-05-02T19:48:12.795Z",
+            "freshness_label": "As of May 2, 2026, 3:48 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -395,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T19:24:50.556Z",
-            "freshness_label": "As of May 2, 2026, 3:24 PM ET"
+            "last_confirmed": "2026-05-02T19:48:12.795Z",
+            "freshness_label": "As of May 2, 2026, 3:48 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -408,8 +409,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T19:24:50.556Z",
-            "freshness_label": "As of May 2, 2026, 3:24 PM ET"
+            "last_confirmed": "2026-05-02T19:48:12.795Z",
+            "freshness_label": "As of May 2, 2026, 3:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
