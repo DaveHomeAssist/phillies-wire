@@ -5,14 +5,14 @@
     "edition": 33,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-02T02:19:01.206Z",
+    "generated_at": "2026-05-02T03:14:13.813Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 1, 2026, 10:19 PM ET",
+      "generated_at_et": "May 1, 2026, 11:14 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 12,
+    "wins": 13,
     "losses": 19,
-    "streak": "W3",
+    "streak": "W4",
     "division_rank": 4,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 6, MIA 4",
-    "dek": "Middle 9th · 3 outs",
-    "summary": "Javier Sanoja is up against José Alvarado. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 6, MIA 5.",
+    "dek": "PHI 6, MIA 5 · Zack Wheeler · 6.0 IP, 3 H, 1 ER, 8 K",
+    "summary": "PHI 6, MIA 5. Final at loanDepot park, Miami. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "loanDepot park, Miami"
       },
       {
-        "label": "Broadcast",
-        "value": "Marlins.TV presented by Werner, Hoffman, Greig & Garcia · MLB.TV · WQAM 104.3"
-      },
-      {
-        "label": "Weather",
-        "value": "54° · Mostly sunny"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "Javier Sanoja at the plate",
-      "José Alvarado on the mound",
-      "loanDepot park, Miami"
+      "Zack Wheeler: 6.0 IP, 3 H, 1 ER, 8 K",
+      "Eury Pérez: 5.0 IP, 4 H, 2 ER, 6 K",
+      "Bryson Stott: 1-for-3, 1 HR, 3 RBI, 2 R, 1 SB"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Max Meyer · MIA vs PHI · Sat, May 2 · 4:10 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "Marlins.TV presented by Werner, Hoffman, Greig & Garcia",
@@ -347,10 +347,10 @@
           "radio": "WQAM 104.3"
         },
         "weather": {
-          "temp_f": 54,
-          "condition": "Mostly sunny",
-          "wind": "4 mph · gusts 18",
-          "gusts_mph": 18
+          "temp_f": 55,
+          "condition": "Partly cloudy",
+          "wind": "5 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-02T02:19:01.206Z",
-            "freshness_label": "As of May 1, 2026, 10:19 PM ET"
+            "last_confirmed": "2026-05-02T03:14:13.813Z",
+            "freshness_label": "As of May 1, 2026, 11:14 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T02:19:01.206Z",
-            "freshness_label": "As of May 1, 2026, 10:19 PM ET"
+            "last_confirmed": "2026-05-02T03:14:13.813Z",
+            "freshness_label": "As of May 1, 2026, 11:14 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T02:19:01.206Z",
-            "freshness_label": "As of May 1, 2026, 10:19 PM ET"
+            "last_confirmed": "2026-05-02T03:14:13.813Z",
+            "freshness_label": "As of May 1, 2026, 11:14 PM ET"
           },
           {
             "name": "J.T. Realmuto",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-22",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T02:19:01.206Z",
-            "freshness_label": "As of May 1, 2026, 10:19 PM ET"
+            "last_confirmed": "2026-05-02T03:14:13.813Z",
+            "freshness_label": "As of May 1, 2026, 11:14 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -422,8 +422,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-02T02:19:01.206Z",
-            "freshness_label": "As of May 1, 2026, 10:19 PM ET"
+            "last_confirmed": "2026-05-02T03:14:13.813Z",
+            "freshness_label": "As of May 1, 2026, 11:14 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
