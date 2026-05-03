@@ -5,14 +5,14 @@
     "edition": 35,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-03T19:25:19.202Z",
+    "generated_at": "2026-05-03T19:48:06.789Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 3, 2026, 3:25 PM ET",
+      "generated_at_et": "May 3, 2026, 3:48 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 7, MIA 0",
-    "dek": "Bottom 6th · 2 outs",
-    "summary": "Connor Norby is up against Jesús Luzardo. Series: Series tied 1-1.",
+    "headline": "PHI 7, MIA 2",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Otto Lopez is up against Chase Shugart. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "59° · Mostly sunny"
+        "value": "60° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Connor Norby at the plate",
-      "Jesús Luzardo on the mound",
+      "Otto Lopez at the plate",
+      "Chase Shugart on the mound",
       "loanDepot park, Miami"
     ],
     "next_label": "Tomorrow",
@@ -126,7 +126,7 @@
             {
               "slot": 7,
               "name": "Leo Jiménez",
-              "position": "3B",
+              "position": "2B",
               "bats": "R"
             },
             {
@@ -294,7 +294,7 @@
             {
               "slot": 7,
               "name": "Leo Jiménez",
-              "position": "3B",
+              "position": "2B",
               "bats": "R"
             },
             {
@@ -347,10 +347,10 @@
           "radio": "WQAM 104.3"
         },
         "weather": {
-          "temp_f": 59,
+          "temp_f": 60,
           "condition": "Mostly sunny",
-          "wind": "14 mph · gusts 27",
-          "gusts_mph": 27
+          "wind": "14 mph · gusts 24",
+          "gusts_mph": 24
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-03T19:25:19.202Z",
-            "freshness_label": "As of May 3, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-05-03T19:48:06.789Z",
+            "freshness_label": "As of May 3, 2026, 3:48 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-03T19:25:19.202Z",
-            "freshness_label": "As of May 3, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-05-03T19:48:06.789Z",
+            "freshness_label": "As of May 3, 2026, 3:48 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-03T19:25:19.202Z",
-            "freshness_label": "As of May 3, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-05-03T19:48:06.789Z",
+            "freshness_label": "As of May 3, 2026, 3:48 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-03T19:25:19.202Z",
-            "freshness_label": "As of May 3, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-05-03T19:48:06.789Z",
+            "freshness_label": "As of May 3, 2026, 3:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
