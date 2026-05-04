@@ -5,14 +5,14 @@
     "edition": 36,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-04T19:35:46.573Z",
+    "generated_at": "2026-05-04T20:10:36.640Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 4, 2026, 3:35 PM ET",
+      "generated_at_et": "May 4, 2026, 4:10 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "73° · Clear · 12 mph · gusts 21",
+      "73° · Clear · 13 mph · gusts 21",
       "PHI leads 2-1"
     ],
     "next_label": "Tomorrow",
@@ -56,10 +56,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. MIA lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at MIA game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "6:40 PM",
         "starters": {
@@ -162,32 +162,32 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
+              "slot": 5,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
+              "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
+              "name": "Garrett Stubbs",
+              "position": "C",
               "bats": "L"
             },
             {
@@ -218,32 +218,32 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Adolis García",
               "position": "RF",
               "bats": "R"
             },
             {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
+              "slot": 5,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
+              "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
+              "name": "Garrett Stubbs",
+              "position": "C",
               "bats": "L"
             },
             {
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 73,
           "condition": "Clear",
-          "wind": "12 mph · gusts 21",
+          "wind": "13 mph · gusts 21",
           "gusts_mph": 21
         },
         "giveaway": "",
@@ -369,8 +369,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-04T19:35:46.573Z",
-            "freshness_label": "As of May 4, 2026, 3:35 PM ET"
+            "last_confirmed": "2026-05-04T20:10:36.640Z",
+            "freshness_label": "As of May 4, 2026, 4:10 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-04T19:35:46.573Z",
-            "freshness_label": "As of May 4, 2026, 3:35 PM ET"
+            "last_confirmed": "2026-05-04T20:10:36.640Z",
+            "freshness_label": "As of May 4, 2026, 4:10 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-04T19:35:46.573Z",
-            "freshness_label": "As of May 4, 2026, 3:35 PM ET"
+            "last_confirmed": "2026-05-04T20:10:36.640Z",
+            "freshness_label": "As of May 4, 2026, 4:10 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -408,8 +408,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-04T19:35:46.573Z",
-            "freshness_label": "As of May 4, 2026, 3:35 PM ET"
+            "last_confirmed": "2026-05-04T20:10:36.640Z",
+            "freshness_label": "As of May 4, 2026, 4:10 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
