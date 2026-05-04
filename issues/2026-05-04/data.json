@@ -5,14 +5,14 @@
     "edition": 36,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-04T22:35:55.984Z",
+    "generated_at": "2026-05-04T23:06:26.446Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 4, 2026, 6:35 PM ET",
+      "generated_at_et": "May 4, 2026, 7:06 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, MIA 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Janson Junk. Series: PHI leads 2-1.",
+    "dek": "Top 2nd · 2 outs",
+    "summary": "Justin Crawford is up against Janson Junk. Series: PHI leads 2-1.",
     "cards": [
       {
         "label": "Venue",
@@ -43,11 +43,11 @@
       },
       {
         "label": "Weather",
-        "value": "73° · Clear"
+        "value": "72° · Clear"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
+      "Justin Crawford at the plate",
       "Janson Junk on the mound",
       "loanDepot park, Miami"
     ],
@@ -347,10 +347,10 @@
           "radio": "WQAM 104.3"
         },
         "weather": {
-          "temp_f": 73,
+          "temp_f": 72,
           "condition": "Clear",
-          "wind": "12 mph · gusts 19",
-          "gusts_mph": 19
+          "wind": "11 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-04T22:35:55.984Z",
-            "freshness_label": "As of May 4, 2026, 6:35 PM ET"
+            "last_confirmed": "2026-05-04T23:06:26.446Z",
+            "freshness_label": "As of May 4, 2026, 7:06 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-04T22:35:55.984Z",
-            "freshness_label": "As of May 4, 2026, 6:35 PM ET"
+            "last_confirmed": "2026-05-04T23:06:26.446Z",
+            "freshness_label": "As of May 4, 2026, 7:06 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-04T22:35:55.984Z",
-            "freshness_label": "As of May 4, 2026, 6:35 PM ET"
+            "last_confirmed": "2026-05-04T23:06:26.446Z",
+            "freshness_label": "As of May 4, 2026, 7:06 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-04T22:35:55.984Z",
-            "freshness_label": "As of May 4, 2026, 6:35 PM ET"
+            "last_confirmed": "2026-05-04T23:06:26.446Z",
+            "freshness_label": "As of May 4, 2026, 7:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
