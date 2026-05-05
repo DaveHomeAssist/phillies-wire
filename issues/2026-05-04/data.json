@@ -5,14 +5,14 @@
     "edition": 36,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-05T01:05:01.365Z",
+    "generated_at": "2026-05-05T01:55:46.215Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 4, 2026, 9:05 PM ET",
+      "generated_at_et": "May 4, 2026, 9:55 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 14,
+    "wins": 15,
     "losses": 20,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 4,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, MIA 0",
-    "dek": "End 8th · 3 outs",
-    "summary": "Bryson Stott is up against Lake Bachar. Series: PHI leads 2-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 1, MIA 0.",
+    "dek": "PHI 1, MIA 0 · Aaron Nola · 6.0 IP, 5 H, 0 ER, 5 K",
+    "summary": "PHI 1, MIA 0. Final at loanDepot park, Miami. PHI wins 3-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "loanDepot park, Miami"
       },
       {
-        "label": "Broadcast",
-        "value": "Marlins.TV presented by Werner, Hoffman, Greig & Garcia · MLB.TV · WQAM 104.3"
-      },
-      {
-        "label": "Weather",
-        "value": "66° · Clear"
+        "label": "Series",
+        "value": "PHI wins 3-1"
       }
     ],
     "bullets": [
-      "Bryson Stott at the plate",
-      "Lake Bachar on the mound",
-      "loanDepot park, Miami"
+      "Aaron Nola: 6.0 IP, 5 H, 0 ER, 5 K",
+      "Janson Junk: 5.1 IP, 5 H, 1 ER, 6 K",
+      "Bryce Harper: 3-for-4, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Luis Severino · PHI vs ATH · Tue, May 5 · 6:40 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "PHI leads 2-1"
+          "label": "PHI wins 3-1"
         },
         "broadcast": {
           "tv": "Marlins.TV presented by Werner, Hoffman, Greig & Garcia",
@@ -349,8 +349,8 @@
         "weather": {
           "temp_f": 66,
           "condition": "Clear",
-          "wind": "7 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "7 mph · gusts 17",
+          "gusts_mph": 17
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-05T01:05:01.365Z",
-            "freshness_label": "As of May 4, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-05-05T01:55:46.215Z",
+            "freshness_label": "As of May 4, 2026, 9:55 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-05T01:05:01.365Z",
-            "freshness_label": "As of May 4, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-05-05T01:55:46.215Z",
+            "freshness_label": "As of May 4, 2026, 9:55 PM ET"
           },
           {
             "name": "Jhoan Duran",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-15",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-05T01:05:01.365Z",
-            "freshness_label": "As of May 4, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-05-05T01:55:46.215Z",
+            "freshness_label": "As of May 4, 2026, 9:55 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -409,8 +409,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-05T01:05:01.365Z",
-            "freshness_label": "As of May 4, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-05-05T01:55:46.215Z",
+            "freshness_label": "As of May 4, 2026, 9:55 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
