@@ -5,14 +5,14 @@
     "edition": 37,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-05T22:49:07.687Z",
+    "generated_at": "2026-05-05T23:06:16.888Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 5, 2026, 6:49 PM ET",
+      "generated_at_et": "May 5, 2026, 7:06 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, ATH 0",
-    "dek": "Bottom 1st · 1 out",
-    "summary": "Kyle Schwarber is up against Luis Severino. Series: Regular Season.",
+    "dek": "Bottom 2nd · 0 outs",
+    "summary": "Justin Crawford is up against Luis Severino. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -43,11 +43,11 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Clear"
+        "value": "79° · Clear"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
+      "Justin Crawford at the plate",
       "Luis Severino on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
+          "temp_f": 79,
           "condition": "Clear",
-          "wind": "16 mph · gusts 32",
-          "gusts_mph": 32
+          "wind": "15 mph · gusts 33",
+          "gusts_mph": 33
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-05T22:49:07.687Z",
-            "freshness_label": "As of May 5, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-05-05T23:06:16.888Z",
+            "freshness_label": "As of May 5, 2026, 7:06 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-05T22:49:07.687Z",
-            "freshness_label": "As of May 5, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-05-05T23:06:16.888Z",
+            "freshness_label": "As of May 5, 2026, 7:06 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-05T22:49:07.687Z",
-            "freshness_label": "As of May 5, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-05-05T23:06:16.888Z",
+            "freshness_label": "As of May 5, 2026, 7:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
