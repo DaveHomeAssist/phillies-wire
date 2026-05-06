@@ -5,14 +5,14 @@
     "edition": 37,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-06T01:05:14.632Z",
+    "generated_at": "2026-05-06T01:18:45.524Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 5, 2026, 9:05 PM ET",
+      "generated_at_et": "May 5, 2026, 9:18 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 9, ATH 0",
-    "dek": "End 8th · 3 outs",
-    "summary": "Nick Kurtz is up against Cristopher Sánchez. Series: Regular Season.",
+    "headline": "PHI 9, ATH 1",
+    "dek": "Top 9th · 2 outs",
+    "summary": "Brett Harris is up against Jhoan Duran. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "Nick Kurtz at the plate",
-      "Cristopher Sánchez on the mound",
+      "Brett Harris at the plate",
+      "Jhoan Duran on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -349,7 +349,7 @@
         "weather": {
           "temp_f": 73,
           "condition": "Overcast",
-          "wind": "15 mph · gusts 37",
+          "wind": "16 mph · gusts 37",
           "gusts_mph": 37
         },
         "giveaway": "",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-06T01:05:14.632Z",
-            "freshness_label": "As of May 5, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-05-06T01:18:45.524Z",
+            "freshness_label": "As of May 5, 2026, 9:18 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-06T01:05:14.632Z",
-            "freshness_label": "As of May 5, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-05-06T01:18:45.524Z",
+            "freshness_label": "As of May 5, 2026, 9:18 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-06T01:05:14.632Z",
-            "freshness_label": "As of May 5, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-05-06T01:18:45.524Z",
+            "freshness_label": "As of May 5, 2026, 9:18 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
