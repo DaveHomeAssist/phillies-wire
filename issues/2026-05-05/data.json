@@ -5,14 +5,14 @@
     "edition": 37,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-06T01:18:45.524Z",
+    "generated_at": "2026-05-06T01:55:39.788Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 5, 2026, 9:18 PM ET",
+      "generated_at_et": "May 5, 2026, 9:55 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 15,
+    "wins": 16,
     "losses": 20,
-    "streak": "W2",
-    "division_rank": 4,
+    "streak": "W3",
+    "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 9, ATH 1",
-    "dek": "Top 9th · 2 outs",
-    "summary": "Brett Harris is up against Jhoan Duran. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 9, ATH 1.",
+    "dek": "PHI 9, ATH 1 · Cristopher Sánchez · 8.0 IP, 3 H, 0 ER, 10 K",
+    "summary": "PHI 9, ATH 1. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "73° · Overcast"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "Brett Harris at the plate",
-      "Jhoan Duran on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Cristopher Sánchez: 8.0 IP, 3 H, 0 ER, 10 K",
+      "Luis Severino: 5.0 IP, 7 H, 1 ER, 3 K",
+      "Bryce Harper: 3-for-4, 2 HR, 3 RBI, 3 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Jeffrey Springs · PHI vs ATH · Wed, May 6 · 6:40 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
+          "temp_f": 71,
           "condition": "Overcast",
-          "wind": "16 mph · gusts 37",
-          "gusts_mph": 37
+          "wind": "14 mph · gusts 32",
+          "gusts_mph": 32
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-06T01:18:45.524Z",
-            "freshness_label": "As of May 5, 2026, 9:18 PM ET"
+            "last_confirmed": "2026-05-06T01:55:39.788Z",
+            "freshness_label": "As of May 5, 2026, 9:55 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-06T01:18:45.524Z",
-            "freshness_label": "As of May 5, 2026, 9:18 PM ET"
+            "last_confirmed": "2026-05-06T01:55:39.788Z",
+            "freshness_label": "As of May 5, 2026, 9:55 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-06T01:18:45.524Z",
-            "freshness_label": "As of May 5, 2026, 9:18 PM ET"
+            "last_confirmed": "2026-05-06T01:55:39.788Z",
+            "freshness_label": "As of May 5, 2026, 9:55 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
