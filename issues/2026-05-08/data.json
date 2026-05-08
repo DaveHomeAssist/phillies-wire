@@ -5,14 +5,14 @@
     "edition": 40,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-08T23:23:03.975Z",
+    "generated_at": "2026-05-08T23:34:08.677Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 8, 2026, 7:23 PM ET",
+      "generated_at_et": "May 8, 2026, 7:34 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, COL 1",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Tyler Freeman is up against Jesús Luzardo. Series: Regular Season.",
+    "dek": "Top 4th · 0 outs",
+    "summary": "Hunter Goodman is up against Jesús Luzardo. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -43,11 +43,11 @@
       },
       {
         "label": "Weather",
-        "value": "67° · Overcast"
+        "value": "66° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Tyler Freeman at the plate",
+      "Hunter Goodman at the plate",
       "Jesús Luzardo on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 67,
-          "condition": "Overcast",
-          "wind": "9 mph · gusts 17",
-          "gusts_mph": 17
+          "temp_f": 66,
+          "condition": "Partly cloudy",
+          "wind": "6 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-08T23:23:03.975Z",
-            "freshness_label": "As of May 8, 2026, 7:23 PM ET"
+            "last_confirmed": "2026-05-08T23:34:08.677Z",
+            "freshness_label": "As of May 8, 2026, 7:34 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-08T23:23:03.975Z",
-            "freshness_label": "As of May 8, 2026, 7:23 PM ET"
+            "last_confirmed": "2026-05-08T23:34:08.677Z",
+            "freshness_label": "As of May 8, 2026, 7:34 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-08T23:23:03.975Z",
-            "freshness_label": "As of May 8, 2026, 7:23 PM ET"
+            "last_confirmed": "2026-05-08T23:34:08.677Z",
+            "freshness_label": "As of May 8, 2026, 7:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
