@@ -5,14 +5,14 @@
     "edition": 39,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-08T00:37:22.841Z",
+    "generated_at": "2026-05-08T01:10:06.115Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 7, 2026, 8:37 PM ET",
+      "generated_at_et": "May 7, 2026, 9:10 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, ATH 12",
-    "dek": "Top 7th · 1 out",
-    "summary": "Jeff McNeil is up against Chase Shugart. Series: PHI leads 2-0.",
+    "dek": "Bottom 9th · 2 outs",
+    "summary": "Felix Reyes is up against Brooks Kriske. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "61° · Partly cloudy"
+        "value": "60° · Overcast"
       }
     ],
     "bullets": [
-      "Jeff McNeil at the plate",
-      "Chase Shugart on the mound",
+      "Felix Reyes at the plate",
+      "Brooks Kriske on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -96,7 +96,7 @@
             {
               "slot": 2,
               "name": "Kyle Schwarber",
-              "position": "DH",
+              "position": "1B",
               "bats": "L"
             },
             {
@@ -126,7 +126,7 @@
             {
               "slot": 7,
               "name": "Edmundo Sosa",
-              "position": "3B",
+              "position": "SS",
               "bats": "R"
             },
             {
@@ -208,7 +208,7 @@
             {
               "slot": 2,
               "name": "Kyle Schwarber",
-              "position": "DH",
+              "position": "1B",
               "bats": "L"
             },
             {
@@ -238,7 +238,7 @@
             {
               "slot": 7,
               "name": "Edmundo Sosa",
-              "position": "3B",
+              "position": "SS",
               "bats": "R"
             },
             {
@@ -347,9 +347,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 61,
-          "condition": "Partly cloudy",
-          "wind": "3 mph · gusts 5",
+          "temp_f": 60,
+          "condition": "Overcast",
+          "wind": "4 mph · gusts 5",
           "gusts_mph": 5
         },
         "giveaway": "",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-08T00:37:22.841Z",
-            "freshness_label": "As of May 7, 2026, 8:37 PM ET"
+            "last_confirmed": "2026-05-08T01:10:06.115Z",
+            "freshness_label": "As of May 7, 2026, 9:10 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-08T00:37:22.841Z",
-            "freshness_label": "As of May 7, 2026, 8:37 PM ET"
+            "last_confirmed": "2026-05-08T01:10:06.115Z",
+            "freshness_label": "As of May 7, 2026, 9:10 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-08T00:37:22.841Z",
-            "freshness_label": "As of May 7, 2026, 8:37 PM ET"
+            "last_confirmed": "2026-05-08T01:10:06.115Z",
+            "freshness_label": "As of May 7, 2026, 9:10 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
