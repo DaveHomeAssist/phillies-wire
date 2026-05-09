@@ -5,14 +5,14 @@
     "edition": 41,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-09T22:46:54.400Z",
+    "generated_at": "2026-05-09T23:18:14.056Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 9, 2026, 6:46 PM ET",
+      "generated_at_et": "May 9, 2026, 7:18 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -23,15 +23,15 @@
     "wins": 17,
     "losses": 22,
     "streak": "L2",
-    "division_rank": 3,
+    "division_rank": 4,
     "division": "NL East"
   },
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, COL 0",
-    "dek": "Bottom 1st · 1 out",
-    "summary": "Felix Reyes is up against Kyle Freeland. Series: COL leads 1-0.",
+    "headline": "PHI 1, COL 1",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Bryson Stott is up against Kyle Freeland. Series: COL leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -43,11 +43,11 @@
       },
       {
         "label": "Weather",
-        "value": "63° · Mostly sunny"
+        "value": "63° · Clear"
       }
     ],
     "bullets": [
-      "Felix Reyes at the plate",
+      "Bryson Stott at the plate",
       "Kyle Freeland on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -348,9 +348,9 @@
         },
         "weather": {
           "temp_f": 63,
-          "condition": "Mostly sunny",
-          "wind": "5 mph · gusts 5",
-          "gusts_mph": 5
+          "condition": "Clear",
+          "wind": "5 mph · gusts 8",
+          "gusts_mph": 8
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-09T22:46:54.400Z",
-            "freshness_label": "As of May 9, 2026, 6:46 PM ET"
+            "last_confirmed": "2026-05-09T23:18:14.056Z",
+            "freshness_label": "As of May 9, 2026, 7:18 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-09T22:46:54.400Z",
-            "freshness_label": "As of May 9, 2026, 6:46 PM ET"
+            "last_confirmed": "2026-05-09T23:18:14.056Z",
+            "freshness_label": "As of May 9, 2026, 7:18 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-09T22:46:54.400Z",
-            "freshness_label": "As of May 9, 2026, 6:46 PM ET"
+            "last_confirmed": "2026-05-09T23:18:14.056Z",
+            "freshness_label": "As of May 9, 2026, 7:18 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
