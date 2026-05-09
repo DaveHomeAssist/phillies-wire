@@ -5,14 +5,14 @@
     "edition": 40,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-09T01:08:27.264Z",
+    "generated_at": "2026-05-09T01:38:41.612Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 8, 2026, 9:08 PM ET",
+      "generated_at_et": "May 8, 2026, 9:38 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 3, COL 7",
-    "dek": "Bottom 8th · 0 outs",
-    "summary": "J.T. Realmuto is up against Jimmy Herget. Series: Regular Season.",
+    "headline": "PHI 7, COL 7",
+    "dek": "Top 10th · 0 outs",
+    "summary": "TJ Rumfield is up against Orion Kerkering. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "62° · Partly cloudy"
+        "value": "64° · Partly cloudy"
       }
     ],
     "bullets": [
-      "J.T. Realmuto at the plate",
-      "Jimmy Herget on the mound",
+      "TJ Rumfield at the plate",
+      "Orion Kerkering on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 62,
+          "temp_f": 64,
           "condition": "Partly cloudy",
-          "wind": "2 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "5 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-09T01:08:27.264Z",
-            "freshness_label": "As of May 8, 2026, 9:08 PM ET"
+            "last_confirmed": "2026-05-09T01:38:41.612Z",
+            "freshness_label": "As of May 8, 2026, 9:38 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-09T01:08:27.264Z",
-            "freshness_label": "As of May 8, 2026, 9:08 PM ET"
+            "last_confirmed": "2026-05-09T01:38:41.612Z",
+            "freshness_label": "As of May 8, 2026, 9:38 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-09T01:08:27.264Z",
-            "freshness_label": "As of May 8, 2026, 9:08 PM ET"
+            "last_confirmed": "2026-05-09T01:38:41.612Z",
+            "freshness_label": "As of May 8, 2026, 9:38 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
