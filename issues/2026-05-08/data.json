@@ -5,14 +5,14 @@
     "edition": 40,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-09T01:55:56.160Z",
+    "generated_at": "2026-05-09T02:40:20.923Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 8, 2026, 9:55 PM ET",
+      "generated_at_et": "May 8, 2026, 10:40 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -21,35 +21,35 @@
   },
   "record": {
     "wins": 17,
-    "losses": 21,
-    "streak": "L1",
+    "losses": 22,
+    "streak": "L2",
     "division_rank": 3,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 7, COL 8",
-    "dek": "Top 11th · 0 outs",
-    "summary": "Troy Johnston is up against Brad Keller. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 7, COL 9.",
+    "dek": "COL 9, PHI 7 · Chase Dollander · 5.2 IP, 3 H, 2 ER, 5 K",
+    "summary": "PHI 7, COL 9. Final at Citizens Bank Park, Philadelphia. COL leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "64° · Overcast"
+        "label": "Series",
+        "value": "COL leads 1-0"
       }
     ],
     "bullets": [
-      "Troy Johnston at the plate",
-      "Brad Keller on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Chase Dollander: 5.2 IP, 3 H, 2 ER, 5 K",
+      "Jesús Luzardo: 3.0 IP, 6 H, 6 ER, 6 K",
+      "Hunter Goodman: 4-for-5, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Kyle Freeland · PHI vs COL · Sat, May 9 · 6:05 PM"
@@ -176,7 +176,7 @@
             {
               "slot": 6,
               "name": "Willi Castro",
-              "position": "2B",
+              "position": "3B",
               "bats": "S"
             },
             {
@@ -288,7 +288,7 @@
             {
               "slot": 6,
               "name": "Willi Castro",
-              "position": "2B",
+              "position": "3B",
               "bats": "S"
             },
             {
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "COL leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 64,
-          "condition": "Overcast",
-          "wind": "6 mph · gusts 13",
-          "gusts_mph": 13
+          "temp_f": 63,
+          "condition": "Mostly sunny",
+          "wind": "7 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-09T01:55:56.160Z",
-            "freshness_label": "As of May 8, 2026, 9:55 PM ET"
+            "last_confirmed": "2026-05-09T02:40:20.923Z",
+            "freshness_label": "As of May 8, 2026, 10:40 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-09T01:55:56.160Z",
-            "freshness_label": "As of May 8, 2026, 9:55 PM ET"
+            "last_confirmed": "2026-05-09T02:40:20.923Z",
+            "freshness_label": "As of May 8, 2026, 10:40 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-09T01:55:56.160Z",
-            "freshness_label": "As of May 8, 2026, 9:55 PM ET"
+            "last_confirmed": "2026-05-09T02:40:20.923Z",
+            "freshness_label": "As of May 8, 2026, 10:40 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
