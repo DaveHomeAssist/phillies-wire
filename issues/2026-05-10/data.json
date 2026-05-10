@@ -5,14 +5,14 @@
     "edition": 42,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-10T19:27:26.062Z",
+    "generated_at": "2026-05-10T19:50:09.564Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 10, 2026, 3:27 PM ET",
+      "generated_at_et": "May 10, 2026, 3:50 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 6, COL 0",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Jake McCarthy is up against Cristopher Sánchez. Series: Series tied 1-1.",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "Bryson Stott is up against Zach Agnos. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "79° · Partly cloudy"
+        "value": "78° · Overcast"
       }
     ],
     "bullets": [
-      "Jake McCarthy at the plate",
-      "Cristopher Sánchez on the mound",
+      "Bryson Stott at the plate",
+      "Zach Agnos on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -152,7 +152,7 @@
             {
               "slot": 2,
               "name": "Tyler Freeman",
-              "position": "2B",
+              "position": "RF",
               "bats": "R"
             },
             {
@@ -264,7 +264,7 @@
             {
               "slot": 2,
               "name": "Tyler Freeman",
-              "position": "2B",
+              "position": "RF",
               "bats": "R"
             },
             {
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 79,
-          "condition": "Partly cloudy",
-          "wind": "8 mph · gusts 17",
-          "gusts_mph": 17
+          "temp_f": 78,
+          "condition": "Overcast",
+          "wind": "6 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-10T19:27:26.062Z",
-            "freshness_label": "As of May 10, 2026, 3:27 PM ET"
+            "last_confirmed": "2026-05-10T19:50:09.564Z",
+            "freshness_label": "As of May 10, 2026, 3:50 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-10T19:27:26.062Z",
-            "freshness_label": "As of May 10, 2026, 3:27 PM ET"
+            "last_confirmed": "2026-05-10T19:50:09.564Z",
+            "freshness_label": "As of May 10, 2026, 3:50 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-10T19:27:26.062Z",
-            "freshness_label": "As of May 10, 2026, 3:27 PM ET"
+            "last_confirmed": "2026-05-10T19:50:09.564Z",
+            "freshness_label": "As of May 10, 2026, 3:50 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
