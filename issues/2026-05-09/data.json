@@ -5,14 +5,14 @@
     "edition": 41,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-09T23:47:33.629Z",
+    "generated_at": "2026-05-10T00:38:53.621Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 9, 2026, 7:47 PM ET",
+      "generated_at_et": "May 9, 2026, 8:38 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 6, COL 3",
-    "dek": "Bottom 4th · 1 out",
-    "summary": "Trea Turner is up against Kyle Freeland. Series: COL leads 1-0.",
+    "headline": "PHI 7, COL 3",
+    "dek": "End 7th · 3 outs",
+    "summary": "Hunter Goodman is up against Tanner Banks. Series: COL leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "59° · Clear"
+        "value": "56° · Clear"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Kyle Freeland on the mound",
+      "Hunter Goodman at the plate",
+      "Tanner Banks on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -120,7 +120,7 @@
             {
               "slot": 6,
               "name": "Brandon Marsh",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -232,7 +232,7 @@
             {
               "slot": 6,
               "name": "Brandon Marsh",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 59,
+          "temp_f": 56,
           "condition": "Clear",
-          "wind": "4 mph · gusts 8",
-          "gusts_mph": 8
+          "wind": "5 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-09T23:47:33.629Z",
-            "freshness_label": "As of May 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-05-10T00:38:53.621Z",
+            "freshness_label": "As of May 9, 2026, 8:38 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-09T23:47:33.629Z",
-            "freshness_label": "As of May 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-05-10T00:38:53.621Z",
+            "freshness_label": "As of May 9, 2026, 8:38 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-09T23:47:33.629Z",
-            "freshness_label": "As of May 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-05-10T00:38:53.621Z",
+            "freshness_label": "As of May 9, 2026, 8:38 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
