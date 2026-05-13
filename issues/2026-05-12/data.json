@@ -5,14 +5,14 @@
     "edition": 44,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-13T00:48:07.110Z",
+    "generated_at": "2026-05-13T01:13:46.139Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 12, 2026, 8:48 PM ET",
+      "generated_at_et": "May 12, 2026, 9:13 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 2, BOS 1",
-    "dek": "Bottom 8th · 0 outs",
-    "summary": "Carlos Narváez is up against Zack Wheeler. Series: Regular Season.",
+    "dek": "Bottom 9th · 1 out",
+    "summary": "Ceddanne Rafaela is up against Jhoan Duran. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "61° · Clear"
+        "value": "60° · Clear"
       }
     ],
     "bullets": [
-      "Carlos Narváez at the plate",
-      "Zack Wheeler on the mound",
+      "Ceddanne Rafaela at the plate",
+      "Jhoan Duran on the mound",
       "Fenway Park, Boston"
     ],
     "next_label": "Tomorrow",
@@ -347,10 +347,10 @@
           "radio": "WEEI 93.7"
         },
         "weather": {
-          "temp_f": 61,
+          "temp_f": 60,
           "condition": "Clear",
-          "wind": "5 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "4 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-13T00:48:07.110Z",
-            "freshness_label": "As of May 12, 2026, 8:48 PM ET"
+            "last_confirmed": "2026-05-13T01:13:46.139Z",
+            "freshness_label": "As of May 12, 2026, 9:13 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-13T00:48:07.110Z",
-            "freshness_label": "As of May 12, 2026, 8:48 PM ET"
+            "last_confirmed": "2026-05-13T01:13:46.139Z",
+            "freshness_label": "As of May 12, 2026, 9:13 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-13T00:48:07.110Z",
-            "freshness_label": "As of May 12, 2026, 8:48 PM ET"
+            "last_confirmed": "2026-05-13T01:13:46.139Z",
+            "freshness_label": "As of May 12, 2026, 9:13 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
