@@ -5,14 +5,14 @@
     "edition": 44,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-13T01:13:46.139Z",
+    "generated_at": "2026-05-13T01:40:36.685Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 12, 2026, 9:13 PM ET",
+      "generated_at_et": "May 12, 2026, 9:40 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 19,
+    "wins": 20,
     "losses": 22,
-    "streak": "W2",
+    "streak": "W3",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 2, BOS 1",
-    "dek": "Bottom 9th · 1 out",
-    "summary": "Ceddanne Rafaela is up against Jhoan Duran. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 2, BOS 1.",
+    "dek": "PHI 2, BOS 1 · Zack Wheeler · 7.1 IP, 6 H, 1 ER, 4 K",
+    "summary": "PHI 2, BOS 1. Final at Fenway Park, Boston. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Fenway Park, Boston"
       },
       {
-        "label": "Broadcast",
-        "value": "NESN · MLB.TV · WEEI 93.7"
-      },
-      {
-        "label": "Weather",
-        "value": "60° · Clear"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "Ceddanne Rafaela at the plate",
-      "Jhoan Duran on the mound",
-      "Fenway Park, Boston"
+      "Zack Wheeler: 7.1 IP, 6 H, 1 ER, 4 K",
+      "Brayan Bello: 6.1 IP, 4 H, 1 ER, 5 K",
+      "Kyle Schwarber: 1-for-3, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Sonny Gray · BOS vs PHI · Wed, May 13 · 6:45 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "NESN",
@@ -347,10 +347,10 @@
           "radio": "WEEI 93.7"
         },
         "weather": {
-          "temp_f": 60,
+          "temp_f": 58,
           "condition": "Clear",
-          "wind": "4 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "10 mph · gusts 24",
+          "gusts_mph": 24
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-13T01:13:46.139Z",
-            "freshness_label": "As of May 12, 2026, 9:13 PM ET"
+            "last_confirmed": "2026-05-13T01:40:36.685Z",
+            "freshness_label": "As of May 12, 2026, 9:40 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-13T01:13:46.139Z",
-            "freshness_label": "As of May 12, 2026, 9:13 PM ET"
+            "last_confirmed": "2026-05-13T01:40:36.685Z",
+            "freshness_label": "As of May 12, 2026, 9:40 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-13T01:13:46.139Z",
-            "freshness_label": "As of May 12, 2026, 9:13 PM ET"
+            "last_confirmed": "2026-05-13T01:40:36.685Z",
+            "freshness_label": "As of May 12, 2026, 9:40 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
