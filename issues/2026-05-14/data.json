@@ -5,14 +5,14 @@
     "edition": 46,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-14T21:09:13.126Z",
+    "generated_at": "2026-05-14T21:32:38.741Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 14, 2026, 5:09 PM ET",
+      "generated_at_et": "May 14, 2026, 5:32 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,11 +47,11 @@
       }
     ],
     "bullets": [
-      "62° · Overcast · 13 mph · gusts 20",
+      "63° · Partly cloudy · 14 mph · gusts 21",
       "Series tied 1-1"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Braxton Ashcraft · PIT vs PHI · Fri, May 15 · 6:40 PM"
+    "next_value": "Aaron Nola vs Braxton Ashcraft · PIT vs PHI · Fri, May 15 · 6:40 PM"
   },
   "sections": {
     "lineup": {
@@ -346,10 +346,10 @@
           "radio": "WEEI 93.7"
         },
         "weather": {
-          "temp_f": 62,
-          "condition": "Overcast",
-          "wind": "13 mph · gusts 20",
-          "gusts_mph": 20
+          "temp_f": 63,
+          "condition": "Partly cloudy",
+          "wind": "14 mph · gusts 21",
+          "gusts_mph": 21
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-14T21:09:13.126Z",
-            "freshness_label": "As of May 14, 2026, 5:09 PM ET"
+            "last_confirmed": "2026-05-14T21:32:38.741Z",
+            "freshness_label": "As of May 14, 2026, 5:32 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-14T21:09:13.126Z",
-            "freshness_label": "As of May 14, 2026, 5:09 PM ET"
+            "last_confirmed": "2026-05-14T21:32:38.741Z",
+            "freshness_label": "As of May 14, 2026, 5:32 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-14T21:09:13.126Z",
-            "freshness_label": "As of May 14, 2026, 5:09 PM ET"
+            "last_confirmed": "2026-05-14T21:32:38.741Z",
+            "freshness_label": "As of May 14, 2026, 5:32 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -405,7 +405,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Braxton Ashcraft · PIT vs PHI",
+    "matchup": "Aaron Nola vs Braxton Ashcraft · PIT vs PHI",
     "date": "Fri, May 15",
     "time": "6:40 PM",
     "broadcast": "SportsNet Pittsburgh",
