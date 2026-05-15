@@ -5,14 +5,14 @@
     "edition": 46,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-14T23:34:23.189Z",
+    "generated_at": "2026-05-15T00:06:34.649Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 14, 2026, 7:34 PM ET",
+      "generated_at_et": "May 14, 2026, 8:06 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, BOS 0",
-    "dek": "Top 3rd · 0 outs",
-    "summary": "J.T. Realmuto is up against Ranger Suarez. Series: Series tied 1-1.",
+    "dek": "Top 5th · 1 out",
+    "summary": "Felix Reyes is up against Ranger Suarez. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -43,11 +43,11 @@
       },
       {
         "label": "Weather",
-        "value": "59° · Clear"
+        "value": "57° · Clear"
       }
     ],
     "bullets": [
-      "J.T. Realmuto at the plate",
+      "Felix Reyes at the plate",
       "Ranger Suarez on the mound",
       "Fenway Park, Boston"
     ],
@@ -347,9 +347,9 @@
           "radio": "WEEI 93.7"
         },
         "weather": {
-          "temp_f": 59,
+          "temp_f": 57,
           "condition": "Clear",
-          "wind": "11 mph · gusts 18",
+          "wind": "9 mph · gusts 18",
           "gusts_mph": 18
         },
         "giveaway": "",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-14T23:34:23.189Z",
-            "freshness_label": "As of May 14, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-05-15T00:06:34.649Z",
+            "freshness_label": "As of May 14, 2026, 8:06 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-14T23:34:23.189Z",
-            "freshness_label": "As of May 14, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-05-15T00:06:34.649Z",
+            "freshness_label": "As of May 14, 2026, 8:06 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-14T23:34:23.189Z",
-            "freshness_label": "As of May 14, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-05-15T00:06:34.649Z",
+            "freshness_label": "As of May 14, 2026, 8:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
