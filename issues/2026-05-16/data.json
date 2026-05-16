@@ -5,14 +5,14 @@
     "edition": 48,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-16T19:53:07.081Z",
+    "generated_at": "2026-05-16T20:17:06.013Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 16, 2026, 3:53 PM ET",
+      "generated_at_et": "May 16, 2026, 4:17 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, PIT 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Bubba Chandler. Series: PHI leads 1-0.",
+    "headline": "PHI 3, PIT 0",
+    "dek": "Top 1st · 2 outs",
+    "summary": "Adolis García is up against Bubba Chandler. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
+      "Adolis García at the plate",
       "Bubba Chandler on the mound",
       "PNC Park, Pittsburgh"
     ],
@@ -349,7 +349,7 @@
         "weather": {
           "temp_f": 82,
           "condition": "Clear",
-          "wind": "16 mph · gusts 23",
+          "wind": "15 mph · gusts 23",
           "gusts_mph": 23
         },
         "giveaway": "",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-16T19:53:07.081Z",
-            "freshness_label": "As of May 16, 2026, 3:53 PM ET"
+            "last_confirmed": "2026-05-16T20:17:06.013Z",
+            "freshness_label": "As of May 16, 2026, 4:17 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-16T19:53:07.081Z",
-            "freshness_label": "As of May 16, 2026, 3:53 PM ET"
+            "last_confirmed": "2026-05-16T20:17:06.013Z",
+            "freshness_label": "As of May 16, 2026, 4:17 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-16T19:53:07.081Z",
-            "freshness_label": "As of May 16, 2026, 3:53 PM ET"
+            "last_confirmed": "2026-05-16T20:17:06.013Z",
+            "freshness_label": "As of May 16, 2026, 4:17 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
