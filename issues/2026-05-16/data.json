@@ -5,14 +5,14 @@
     "edition": 48,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-16T17:23:52.802Z",
+    "generated_at": "2026-05-16T17:48:11.356Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 16, 2026, 1:23 PM ET",
+      "generated_at_et": "May 16, 2026, 1:48 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "80° · Clear · 14 mph · gusts 22",
-      "Regular Season"
+      "81° · Clear · 14 mph · gusts 20",
+      "PHI leads 1-0"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Paul Skenes · PIT vs PHI · Sun, May 17 · 1:35 PM"
@@ -168,27 +168,27 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
+            },
+            {
+              "slot": 7,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -224,27 +224,27 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
+            },
+            {
+              "slot": 7,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "SportsNet Pittsburgh",
@@ -346,10 +346,10 @@
           "radio": "Sports Radio 93.7 KDKA The Fan"
         },
         "weather": {
-          "temp_f": 80,
+          "temp_f": 81,
           "condition": "Clear",
-          "wind": "14 mph · gusts 22",
-          "gusts_mph": 22
+          "wind": "14 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-16T17:23:52.802Z",
-            "freshness_label": "As of May 16, 2026, 1:23 PM ET"
+            "last_confirmed": "2026-05-16T17:48:11.356Z",
+            "freshness_label": "As of May 16, 2026, 1:48 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-16T17:23:52.802Z",
-            "freshness_label": "As of May 16, 2026, 1:23 PM ET"
+            "last_confirmed": "2026-05-16T17:48:11.356Z",
+            "freshness_label": "As of May 16, 2026, 1:48 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-16T17:23:52.802Z",
-            "freshness_label": "As of May 16, 2026, 1:23 PM ET"
+            "last_confirmed": "2026-05-16T17:48:11.356Z",
+            "freshness_label": "As of May 16, 2026, 1:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
