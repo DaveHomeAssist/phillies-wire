@@ -5,14 +5,14 @@
     "edition": 48,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-16T20:47:18.345Z",
+    "generated_at": "2026-05-16T21:18:25.613Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 16, 2026, 4:47 PM ET",
+      "generated_at_et": "May 16, 2026, 5:18 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 5, PIT 0",
-    "dek": "End 2nd · 3 outs",
-    "summary": "Brandon Marsh is up against Bubba Chandler. Series: PHI leads 1-0.",
+    "dek": "Bottom 4th · 2 outs",
+    "summary": "Marcell Ozuna is up against Cristopher Sánchez. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "Brandon Marsh at the plate",
-      "Bubba Chandler on the mound",
+      "Marcell Ozuna at the plate",
+      "Cristopher Sánchez on the mound",
       "PNC Park, Pittsburgh"
     ],
     "next_label": "Tomorrow",
@@ -132,7 +132,7 @@
             {
               "slot": 8,
               "name": "Jared Triolo",
-              "position": "RF",
+              "position": "1B",
               "bats": "R"
             },
             {
@@ -300,7 +300,7 @@
             {
               "slot": 8,
               "name": "Jared Triolo",
-              "position": "RF",
+              "position": "1B",
               "bats": "R"
             },
             {
@@ -349,7 +349,7 @@
         "weather": {
           "temp_f": 81,
           "condition": "Clear",
-          "wind": "15 mph · gusts 22",
+          "wind": "14 mph · gusts 22",
           "gusts_mph": 22
         },
         "giveaway": "",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-16T20:47:18.345Z",
-            "freshness_label": "As of May 16, 2026, 4:47 PM ET"
+            "last_confirmed": "2026-05-16T21:18:25.613Z",
+            "freshness_label": "As of May 16, 2026, 5:18 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-16T20:47:18.345Z",
-            "freshness_label": "As of May 16, 2026, 4:47 PM ET"
+            "last_confirmed": "2026-05-16T21:18:25.613Z",
+            "freshness_label": "As of May 16, 2026, 5:18 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-16T20:47:18.345Z",
-            "freshness_label": "As of May 16, 2026, 4:47 PM ET"
+            "last_confirmed": "2026-05-16T21:18:25.613Z",
+            "freshness_label": "As of May 16, 2026, 5:18 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
