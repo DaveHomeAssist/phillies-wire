@@ -5,14 +5,14 @@
     "edition": 49,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-17T16:49:00.637Z",
+    "generated_at": "2026-05-17T17:23:01.396Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 17, 2026, 12:49 PM ET",
+      "generated_at_et": "May 17, 2026, 1:23 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,28 +27,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Pirates · Game 3 of 3",
-    "dek": "Zack Wheeler vs Paul Skenes",
-    "summary": "Zack Wheeler vs Paul Skenes · Phillies @ Pirates · Game 3 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, PIT 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Paul Skenes. Series: PHI leads 2-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "1:35 PM"
-      },
       {
         "label": "Venue",
         "value": "PNC Park, Pittsburgh"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "SportsNet Pittsburgh · MLB.TV · Sports Radio 93.7 KDKA The Fan"
+      },
+      {
+        "label": "Weather",
+        "value": "87° · Clear"
       }
     ],
     "bullets": [
-      "86° · Clear · 9 mph · gusts 11",
-      "PHI leads 2-0"
+      "Trea Turner at the plate",
+      "Paul Skenes on the mound",
+      "PNC Park, Pittsburgh"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Nick Lodolo · PHI vs CIN · Mon, May 18 · 6:40 PM"
@@ -346,10 +347,10 @@
           "radio": "Sports Radio 93.7 KDKA The Fan"
         },
         "weather": {
-          "temp_f": 86,
+          "temp_f": 87,
           "condition": "Clear",
-          "wind": "9 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "9 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-17T16:49:00.637Z",
-            "freshness_label": "As of May 17, 2026, 12:49 PM ET"
+            "last_confirmed": "2026-05-17T17:23:01.396Z",
+            "freshness_label": "As of May 17, 2026, 1:23 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-17T16:49:00.637Z",
-            "freshness_label": "As of May 17, 2026, 12:49 PM ET"
+            "last_confirmed": "2026-05-17T17:23:01.396Z",
+            "freshness_label": "As of May 17, 2026, 1:23 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -395,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-17T16:49:00.637Z",
-            "freshness_label": "As of May 17, 2026, 12:49 PM ET"
+            "last_confirmed": "2026-05-17T17:23:01.396Z",
+            "freshness_label": "As of May 17, 2026, 1:23 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
