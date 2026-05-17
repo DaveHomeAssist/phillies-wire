@@ -5,14 +5,14 @@
     "edition": 49,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-17T13:29:45.407Z",
+    "generated_at": "2026-05-17T16:23:25.092Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "May 17, 2026, 9:29 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "May 17, 2026, 12:23 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,19 +47,19 @@
       }
     ],
     "bullets": [
-      "78° · Overcast · 8 mph · gusts 15",
-      "Regular Season"
+      "85° · Clear · 9 mph · gusts 11",
+      "PHI leads 2-0"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Nick Lodolo · PHI vs CIN · Mon, May 18 · 6:40 PM"
+    "next_value": "Andrew Painter vs Nick Lodolo · PHI vs CIN · Mon, May 18 · 6:40 PM"
   },
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. PIT lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at PIT game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "1:35 PM",
         "starters": {
@@ -88,57 +88,57 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Oneil Cruz",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Lowe",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryan Reynolds",
+              "position": "LF",
+              "bats": "S"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nick Gonzales",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Spencer Horwitz",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Konnor Griffin",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jake Mangum",
+              "position": "CF",
+              "bats": "S"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jared Triolo",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Henry Davis",
+              "position": "C",
+              "bats": "R"
             }
           ],
           "away": [
@@ -168,27 +168,27 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
+            },
+            {
+              "slot": 7,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -224,27 +224,27 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 6,
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
+            },
+            {
+              "slot": 7,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -256,57 +256,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Oneil Cruz",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Lowe",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryan Reynolds",
+              "position": "LF",
+              "bats": "S"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nick Gonzales",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Spencer Horwitz",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Konnor Griffin",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jake Mangum",
+              "position": "CF",
+              "bats": "S"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jared Triolo",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Henry Davis",
+              "position": "C",
+              "bats": "R"
             }
           ]
         }
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 2-0"
         },
         "broadcast": {
           "tv": "SportsNet Pittsburgh",
@@ -346,10 +346,10 @@
           "radio": "Sports Radio 93.7 KDKA The Fan"
         },
         "weather": {
-          "temp_f": 78,
-          "condition": "Overcast",
-          "wind": "8 mph · gusts 15",
-          "gusts_mph": 15
+          "temp_f": 85,
+          "condition": "Clear",
+          "wind": "9 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-17T13:29:45.407Z",
-            "freshness_label": "As of May 17, 2026, 9:29 AM ET"
+            "last_confirmed": "2026-05-17T16:23:25.092Z",
+            "freshness_label": "As of May 17, 2026, 12:23 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-17T13:29:45.407Z",
-            "freshness_label": "As of May 17, 2026, 9:29 AM ET"
+            "last_confirmed": "2026-05-17T16:23:25.092Z",
+            "freshness_label": "As of May 17, 2026, 12:23 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-17T13:29:45.407Z",
-            "freshness_label": "As of May 17, 2026, 9:29 AM ET"
+            "last_confirmed": "2026-05-17T16:23:25.092Z",
+            "freshness_label": "As of May 17, 2026, 12:23 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -405,7 +405,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Nick Lodolo · PHI vs CIN",
+    "matchup": "Andrew Painter vs Nick Lodolo · PHI vs CIN",
     "date": "Mon, May 18",
     "time": "6:40 PM",
     "broadcast": "NBCSP",
