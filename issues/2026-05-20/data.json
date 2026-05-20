@@ -5,14 +5,14 @@
     "edition": 52,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-20T19:50:55.386Z",
+    "generated_at": "2026-05-20T19:57:24.731Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 20, 2026, 3:50 PM ET",
+      "generated_at_et": "May 20, 2026, 3:57 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -21,35 +21,35 @@
   },
   "record": {
     "wins": 25,
-    "losses": 24,
-    "streak": "L1",
+    "losses": 25,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 4, CIN 9",
-    "dek": "Bottom 9th · 1 out",
-    "summary": "Brandon Marsh is up against Sam Moll. Series: Series tied 1-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 4, CIN 9.",
+    "dek": "CIN 9, PHI 4 · Andrew Abbott · 5.1 IP, 3 H, 1 ER, 3 K",
+    "summary": "PHI 4, CIN 9. Final at Citizens Bank Park, Philadelphia. CIN wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBC 10 · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "94° · Clear"
+        "label": "Series",
+        "value": "CIN wins 2-1"
       }
     ],
     "bullets": [
-      "Brandon Marsh at the plate",
-      "Sam Moll on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Andrew Abbott: 5.1 IP, 3 H, 1 ER, 3 K",
+      "Aaron Nola: 5.0 IP, 8 H, 4 ER, 5 K",
+      "Sal Stewart: 4-for-5, 1 HR, 2 RBI, 3 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Gavin Williams · PHI vs CLE · Fri, May 22 · 6:40 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Series tied 1-1"
+          "label": "CIN wins 2-1"
         },
         "broadcast": {
           "tv": "NBC 10",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-20T19:50:55.386Z",
-            "freshness_label": "As of May 20, 2026, 3:50 PM ET"
+            "last_confirmed": "2026-05-20T19:57:24.731Z",
+            "freshness_label": "As of May 20, 2026, 3:57 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-20T19:50:55.386Z",
-            "freshness_label": "As of May 20, 2026, 3:50 PM ET"
+            "last_confirmed": "2026-05-20T19:57:24.731Z",
+            "freshness_label": "As of May 20, 2026, 3:57 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-20T19:50:55.386Z",
-            "freshness_label": "As of May 20, 2026, 3:50 PM ET"
+            "last_confirmed": "2026-05-20T19:57:24.731Z",
+            "freshness_label": "As of May 20, 2026, 3:57 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
