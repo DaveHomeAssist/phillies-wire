@@ -5,14 +5,14 @@
     "edition": 52,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-20T13:51:04.443Z",
+    "generated_at": "2026-05-20T17:09:00.292Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "May 20, 2026, 9:51 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "May 20, 2026, 1:09 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,39 +27,40 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Reds @ Phillies · Game 3 of 3",
-    "dek": "Aaron Nola vs Andrew Abbott",
-    "summary": "Aaron Nola vs Andrew Abbott · Reds @ Phillies · Game 3 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, CIN 0",
+    "dek": "Top 1st · 1 out",
+    "summary": "Elly De La Cruz is up against Aaron Nola. Series: Series tied 1-1.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "1:05 PM"
-      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBC 10 · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "92° · Clear"
       }
     ],
     "bullets": [
-      "85° · Clear · 8 mph · gusts 16",
-      "Regular Season"
+      "Elly De La Cruz at the plate",
+      "Aaron Nola on the mound",
+      "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Gavin Williams · PHI vs CLE · Fri, May 22 · 6:40 PM"
+    "next_value": "Cristopher Sánchez vs Gavin Williams · PHI vs CLE · Fri, May 22 · 6:40 PM"
   },
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. CIN lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's CIN at PHI game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "1:05 PM",
         "starters": {
@@ -94,39 +95,39 @@
             },
             {
               "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 3,
               "name": "Bryce Harper",
-              "position": "1B",
+              "position": "DH",
               "bats": "L"
             },
             {
               "slot": 4,
               "name": "Alec Bohm",
-              "position": "3B",
+              "position": "1B",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
               "name": "J.T. Realmuto",
               "position": "C",
               "bats": "R"
             },
             {
-              "slot": 7,
+              "slot": 6,
               "name": "Brandon Marsh",
-              "position": "LF",
+              "position": "CF",
               "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "Edmundo Sosa",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 8,
@@ -136,65 +137,65 @@
             },
             {
               "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
+              "name": "Otto Kemp",
+              "position": "LF",
+              "bats": "R"
             }
           ],
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Matt McLain",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Elly De La Cruz",
+              "position": "DH",
+              "bats": "S"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "JJ Bleday",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Sal Stewart",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Spencer Steer",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nathaniel Lowe",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Blake Dunn",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Will Benson",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "P.J. Higgins",
+              "position": "C",
+              "bats": "R"
             }
           ],
           "phi": [
@@ -206,39 +207,39 @@
             },
             {
               "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 3,
               "name": "Bryce Harper",
-              "position": "1B",
+              "position": "DH",
               "bats": "L"
             },
             {
               "slot": 4,
               "name": "Alec Bohm",
-              "position": "3B",
+              "position": "1B",
               "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
               "name": "J.T. Realmuto",
               "position": "C",
               "bats": "R"
             },
             {
-              "slot": 7,
+              "slot": 6,
               "name": "Brandon Marsh",
-              "position": "LF",
+              "position": "CF",
               "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "Edmundo Sosa",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 8,
@@ -248,65 +249,65 @@
             },
             {
               "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
+              "name": "Otto Kemp",
+              "position": "LF",
+              "bats": "R"
             }
           ],
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Matt McLain",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Elly De La Cruz",
+              "position": "DH",
+              "bats": "S"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "JJ Bleday",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Sal Stewart",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Spencer Steer",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nathaniel Lowe",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Blake Dunn",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Will Benson",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "P.J. Higgins",
+              "position": "C",
+              "bats": "R"
             }
           ]
         }
@@ -338,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBC 10",
@@ -346,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 85,
+          "temp_f": 92,
           "condition": "Clear",
-          "wind": "8 mph · gusts 16",
-          "gusts_mph": 16
+          "wind": "9 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-20T13:51:04.443Z",
-            "freshness_label": "As of May 20, 2026, 9:51 AM ET"
+            "last_confirmed": "2026-05-20T17:09:00.292Z",
+            "freshness_label": "As of May 20, 2026, 1:09 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-20T13:51:04.443Z",
-            "freshness_label": "As of May 20, 2026, 9:51 AM ET"
+            "last_confirmed": "2026-05-20T17:09:00.292Z",
+            "freshness_label": "As of May 20, 2026, 1:09 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -395,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-20T13:51:04.443Z",
-            "freshness_label": "As of May 20, 2026, 9:51 AM ET"
+            "last_confirmed": "2026-05-20T17:09:00.292Z",
+            "freshness_label": "As of May 20, 2026, 1:09 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -405,7 +406,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Gavin Williams · PHI vs CLE",
+    "matchup": "Cristopher Sánchez vs Gavin Williams · PHI vs CLE",
     "date": "Fri, May 22",
     "time": "6:40 PM",
     "broadcast": "NBCSP",
