@@ -5,14 +5,14 @@
     "edition": 55,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-24T18:52:55.650Z",
+    "generated_at": "2026-05-24T19:30:51.691Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 24, 2026, 2:52 PM ET",
+      "generated_at_et": "May 24, 2026, 3:30 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, CLE 1",
-    "dek": "Bottom 5th · 2 outs",
-    "summary": "Bryce Harper is up against Parker Messick. Series: Series tied 1-1.",
+    "headline": "PHI 0, CLE 2",
+    "dek": "Bottom 7th · 0 outs",
+    "summary": "Trea Turner is up against Tim Herrin. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "58° · Overcast"
+        "value": "59° · Overcast"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
-      "Parker Messick on the mound",
+      "Trea Turner at the plate",
+      "Tim Herrin on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -138,7 +138,7 @@
             {
               "slot": 9,
               "name": "Brandon Marsh",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             }
           ],
@@ -182,7 +182,7 @@
             {
               "slot": 7,
               "name": "Steven Kwan",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -250,7 +250,7 @@
             {
               "slot": 9,
               "name": "Brandon Marsh",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             }
           ],
@@ -294,7 +294,7 @@
             {
               "slot": 7,
               "name": "Steven Kwan",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 58,
+          "temp_f": 59,
           "condition": "Overcast",
-          "wind": "8 mph · gusts 13",
-          "gusts_mph": 13
+          "wind": "7 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-24T18:52:55.650Z",
-            "freshness_label": "As of May 24, 2026, 2:52 PM ET"
+            "last_confirmed": "2026-05-24T19:30:51.691Z",
+            "freshness_label": "As of May 24, 2026, 3:30 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-24T18:52:55.650Z",
-            "freshness_label": "As of May 24, 2026, 2:52 PM ET"
+            "last_confirmed": "2026-05-24T19:30:51.691Z",
+            "freshness_label": "As of May 24, 2026, 3:30 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-24T18:52:55.650Z",
-            "freshness_label": "As of May 24, 2026, 2:52 PM ET"
+            "last_confirmed": "2026-05-24T19:30:51.691Z",
+            "freshness_label": "As of May 24, 2026, 3:30 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
