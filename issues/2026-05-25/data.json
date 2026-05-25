@@ -5,14 +5,14 @@
     "edition": 56,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-25T17:35:03.327Z",
+    "generated_at": "2026-05-25T18:16:36.893Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 25, 2026, 1:35 PM ET",
+      "generated_at_et": "May 25, 2026, 2:16 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "pregame",
     "label": "Pregame",
     "headline": "Phillies @ Padres · Game 1 of 3",
-    "dek": "Jesús Luzardo vs Randy Vásquez",
-    "summary": "Jesús Luzardo vs Randy Vásquez · Phillies @ Padres · Game 1 of 3",
+    "dek": "Jesús Luzardo vs Griffin Canning",
+    "summary": "Jesús Luzardo vs Griffin Canning · Phillies @ Padres · Game 1 of 3",
     "cards": [
       {
         "label": "First Pitch",
@@ -47,11 +47,11 @@
       }
     ],
     "bullets": [
-      "66° · Overcast · 4 mph · gusts 8",
+      "67° · Overcast · 3 mph · gusts 7",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Griffin Canning · SD vs PHI · Tue, May 26 · 9:40 PM"
+    "next_value": "Aaron Nola · SD vs PHI · Tue, May 26 · 9:40 PM"
   },
   "sections": {
     "lineup": {
@@ -65,7 +65,7 @@
         "starters": {
           "home": {
             "team": "SD",
-            "name": "Randy Vásquez",
+            "name": "Griffin Canning",
             "hand": "R"
           },
           "away": {
@@ -80,7 +80,7 @@
           },
           "opp": {
             "team": "SD",
-            "name": "Randy Vásquez",
+            "name": "Griffin Canning",
             "hand": "R"
           }
         },
@@ -88,57 +88,57 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Fernando Tatis Jr.",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Andujar",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Xander Bogaerts",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Manny Machado",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jackson Merrill",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nick Castellanos",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ty France",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ramón Laureano",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Rodolfo Durán",
+              "position": "C",
+              "bats": "R"
             }
           ],
           "away": [
@@ -256,57 +256,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Fernando Tatis Jr.",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Andujar",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Xander Bogaerts",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Manny Machado",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jackson Merrill",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nick Castellanos",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ty France",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ramón Laureano",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Rodolfo Durán",
+              "position": "C",
+              "bats": "R"
             }
           ]
         }
@@ -319,7 +319,7 @@
         "venue": "Petco Park, San Diego",
         "starters": {
           "home": {
-            "name": "Randy Vásquez",
+            "name": "Griffin Canning",
             "hand": "R"
           },
           "away": {
@@ -331,7 +331,7 @@
             "hand": "L"
           },
           "opp": {
-            "name": "Randy Vásquez",
+            "name": "Griffin Canning",
             "hand": "R"
           }
         },
@@ -346,10 +346,10 @@
           "radio": "KWFN 97.3"
         },
         "weather": {
-          "temp_f": 66,
+          "temp_f": 67,
           "condition": "Overcast",
-          "wind": "4 mph · gusts 8",
-          "gusts_mph": 8
+          "wind": "3 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-25T17:35:03.327Z",
-            "freshness_label": "As of May 25, 2026, 1:35 PM ET"
+            "last_confirmed": "2026-05-25T18:16:36.893Z",
+            "freshness_label": "As of May 25, 2026, 2:16 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-25T17:35:03.327Z",
-            "freshness_label": "As of May 25, 2026, 1:35 PM ET"
+            "last_confirmed": "2026-05-25T18:16:36.893Z",
+            "freshness_label": "As of May 25, 2026, 2:16 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-25T17:35:03.327Z",
-            "freshness_label": "As of May 25, 2026, 1:35 PM ET"
+            "last_confirmed": "2026-05-25T18:16:36.893Z",
+            "freshness_label": "As of May 25, 2026, 2:16 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -405,7 +405,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Aaron Nola vs Griffin Canning · SD vs PHI",
+    "matchup": "Aaron Nola · SD vs PHI",
     "date": "Tue, May 26",
     "time": "9:40 PM",
     "broadcast": "Padres.TV Presented by UC San Diego Health",
