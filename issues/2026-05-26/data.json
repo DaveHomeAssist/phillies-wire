@@ -5,14 +5,14 @@
     "edition": 57,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-27T01:46:16.474Z",
+    "generated_at": "2026-05-27T02:21:09.868Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 26, 2026, 9:46 PM ET",
+      "generated_at_et": "May 26, 2026, 10:21 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, SD 0",
-    "dek": "Top 1st · 2 outs",
-    "summary": "Alec Bohm is up against Randy Vásquez. Series: PHI leads 1-0.",
+    "headline": "PHI 4, SD 0",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Ty France is up against Aaron Nola. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "69° · Overcast"
+        "value": "68° · Overcast"
       }
     ],
     "bullets": [
-      "Alec Bohm at the plate",
-      "Randy Vásquez on the mound",
+      "Ty France at the plate",
+      "Aaron Nola on the mound",
       "Petco Park, San Diego"
     ],
     "next_label": "Tomorrow",
@@ -347,10 +347,10 @@
           "radio": "KWFN 97.3"
         },
         "weather": {
-          "temp_f": 69,
+          "temp_f": 68,
           "condition": "Overcast",
-          "wind": "7 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "6 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-27T01:46:16.474Z",
-            "freshness_label": "As of May 26, 2026, 9:46 PM ET"
+            "last_confirmed": "2026-05-27T02:21:09.868Z",
+            "freshness_label": "As of May 26, 2026, 10:21 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-27T01:46:16.474Z",
-            "freshness_label": "As of May 26, 2026, 9:46 PM ET"
+            "last_confirmed": "2026-05-27T02:21:09.868Z",
+            "freshness_label": "As of May 26, 2026, 10:21 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-27T01:46:16.474Z",
-            "freshness_label": "As of May 26, 2026, 9:46 PM ET"
+            "last_confirmed": "2026-05-27T02:21:09.868Z",
+            "freshness_label": "As of May 26, 2026, 10:21 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
