@@ -5,14 +5,14 @@
     "edition": 58,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-27T22:20:31.744Z",
+    "generated_at": "2026-05-27T23:00:15.536Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 27, 2026, 6:20 PM ET",
+      "generated_at_et": "May 27, 2026, 7:00 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 28,
+    "wins": 29,
     "losses": 27,
-    "streak": "W2",
+    "streak": "W3",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 3, SD 0",
-    "dek": "Top 9th · 1 out",
-    "summary": "Alec Bohm is up against Ron Marinaccio. Series: PHI leads 2-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 3, SD 0.",
+    "dek": "PHI 3, SD 0 · Cristopher Sánchez · 7.0 IP, 6 H, 0 ER, 9 K",
+    "summary": "PHI 3, SD 0. Final at Petco Park, San Diego. PHI wins 3-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Petco Park, San Diego"
       },
       {
-        "label": "Broadcast",
-        "value": "Padres.TV Presented by UC San Diego Health · MLB.TV · KWFN 97.3"
-      },
-      {
-        "label": "Weather",
-        "value": "77° · Partly cloudy"
+        "label": "Series",
+        "value": "PHI wins 3-0"
       }
     ],
     "bullets": [
-      "Alec Bohm at the plate",
-      "Ron Marinaccio on the mound",
-      "Petco Park, San Diego"
+      "Cristopher Sánchez: 7.0 IP, 6 H, 0 ER, 9 K",
+      "Walker Buehler: 5.1 IP, 3 H, 2 ER, 2 K",
+      "Trea Turner: 1-for-4, 1 HR, 2 RBI, 1 R, 1 SB"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · LAD vs PHI · Fri, May 29 · 10:15 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "PHI leads 2-0"
+          "label": "PHI wins 3-0"
         },
         "broadcast": {
           "tv": "Padres.TV Presented by UC San Diego Health",
@@ -347,10 +347,10 @@
           "radio": "KWFN 97.3"
         },
         "weather": {
-          "temp_f": 77,
-          "condition": "Partly cloudy",
-          "wind": "8 mph · gusts 16",
-          "gusts_mph": 16
+          "temp_f": 76,
+          "condition": "Overcast",
+          "wind": "6 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-27T22:20:31.744Z",
-            "freshness_label": "As of May 27, 2026, 6:20 PM ET"
+            "last_confirmed": "2026-05-27T23:00:15.536Z",
+            "freshness_label": "As of May 27, 2026, 7:00 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-27T22:20:31.744Z",
-            "freshness_label": "As of May 27, 2026, 6:20 PM ET"
+            "last_confirmed": "2026-05-27T23:00:15.536Z",
+            "freshness_label": "As of May 27, 2026, 7:00 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-27T22:20:31.744Z",
-            "freshness_label": "As of May 27, 2026, 6:20 PM ET"
+            "last_confirmed": "2026-05-27T23:00:15.536Z",
+            "freshness_label": "As of May 27, 2026, 7:00 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
