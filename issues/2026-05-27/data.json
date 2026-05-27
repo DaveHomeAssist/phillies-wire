@@ -5,14 +5,14 @@
     "edition": 58,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-27T19:03:55.956Z",
+    "generated_at": "2026-05-27T19:56:22.414Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 27, 2026, 3:03 PM ET",
+      "generated_at_et": "May 27, 2026, 3:56 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -23,32 +23,33 @@
     "wins": 28,
     "losses": 27,
     "streak": "W2",
-    "division_rank": 3,
+    "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Padres · Game 3 of 3",
-    "dek": "Cristopher Sánchez vs Walker Buehler",
-    "summary": "Cristopher Sánchez vs Walker Buehler · Phillies @ Padres · Game 3 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, SD 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Walker Buehler. Series: PHI leads 2-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "4:10 PM"
-      },
       {
         "label": "Venue",
         "value": "Petco Park, San Diego"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "Padres.TV Presented by UC San Diego Health · MLB.TV · KWFN 97.3"
+      },
+      {
+        "label": "Weather",
+        "value": "77° · Overcast"
       }
     ],
     "bullets": [
-      "77° · Overcast · 8 mph · gusts 14",
-      "PHI leads 2-0"
+      "Kyle Schwarber at the plate",
+      "Walker Buehler on the mound",
+      "Petco Park, San Diego"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · LAD vs PHI · Fri, May 29 · 10:15 PM"
@@ -348,8 +349,8 @@
         "weather": {
           "temp_f": 77,
           "condition": "Overcast",
-          "wind": "8 mph · gusts 14",
-          "gusts_mph": 14
+          "wind": "8 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-27T19:03:55.956Z",
-            "freshness_label": "As of May 27, 2026, 3:03 PM ET"
+            "last_confirmed": "2026-05-27T19:56:22.414Z",
+            "freshness_label": "As of May 27, 2026, 3:56 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-27T19:03:55.956Z",
-            "freshness_label": "As of May 27, 2026, 3:03 PM ET"
+            "last_confirmed": "2026-05-27T19:56:22.414Z",
+            "freshness_label": "As of May 27, 2026, 3:56 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -395,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-27T19:03:55.956Z",
-            "freshness_label": "As of May 27, 2026, 3:03 PM ET"
+            "last_confirmed": "2026-05-27T19:56:22.414Z",
+            "freshness_label": "As of May 27, 2026, 3:56 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
