@@ -5,14 +5,14 @@
     "edition": 60,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-30T01:18:09.490Z",
+    "generated_at": "2026-05-30T02:03:00.274Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 29, 2026, 9:18 PM ET",
+      "generated_at_et": "May 29, 2026, 10:03 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,28 +27,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Dodgers · Game 1 of 3",
-    "dek": "Zack Wheeler vs Justin Wrobleski",
-    "summary": "Zack Wheeler vs Justin Wrobleski · Phillies @ Dodgers · Game 1 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, LAD 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Justin Wrobleski. Series: Regular Season.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "10:15 PM"
-      },
       {
         "label": "Venue",
         "value": "UNIQLO Field at Dodger Stadium, Los Angeles"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "Apple TV · MLB.TV · Dodgers Radio AM570"
+      },
+      {
+        "label": "Weather",
+        "value": "70° · Clear"
       }
     ],
     "bullets": [
-      "70° · Clear · 10 mph · gusts 20",
-      "Regular Season"
+      "Kyle Schwarber at the plate",
+      "Justin Wrobleski on the mound",
+      "UNIQLO Field at Dodger Stadium, Los Angeles"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Roki Sasaki · LAD vs PHI · Sat, May 30 · 10:10 PM"
@@ -348,8 +349,8 @@
         "weather": {
           "temp_f": 70,
           "condition": "Clear",
-          "wind": "10 mph · gusts 20",
-          "gusts_mph": 20
+          "wind": "9 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-30T01:18:09.490Z",
-            "freshness_label": "As of May 29, 2026, 9:18 PM ET"
+            "last_confirmed": "2026-05-30T02:03:00.274Z",
+            "freshness_label": "As of May 29, 2026, 10:03 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +383,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-30T01:18:09.490Z",
-            "freshness_label": "As of May 29, 2026, 9:18 PM ET"
+            "last_confirmed": "2026-05-30T02:03:00.274Z",
+            "freshness_label": "As of May 29, 2026, 10:03 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -395,8 +396,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-30T01:18:09.490Z",
-            "freshness_label": "As of May 29, 2026, 9:18 PM ET"
+            "last_confirmed": "2026-05-30T02:03:00.274Z",
+            "freshness_label": "As of May 29, 2026, 10:03 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
