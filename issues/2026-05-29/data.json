@@ -5,14 +5,14 @@
     "edition": 60,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-30T00:15:00.738Z",
+    "generated_at": "2026-05-30T01:15:03.440Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 29, 2026, 8:15 PM ET",
+      "generated_at_et": "May 29, 2026, 9:15 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,11 +47,11 @@
       }
     ],
     "bullets": [
-      "71° · Clear · 10 mph · gusts 22",
+      "70° · Clear · 10 mph · gusts 20",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Roki Sasaki · LAD vs PHI · Sat, May 30 · 10:10 PM"
+    "next_value": "Jesús Luzardo vs Roki Sasaki · LAD vs PHI · Sat, May 30 · 10:10 PM"
   },
   "sections": {
     "lineup": {
@@ -346,10 +346,10 @@
           "radio": "Dodgers Radio AM570"
         },
         "weather": {
-          "temp_f": 71,
+          "temp_f": 70,
           "condition": "Clear",
-          "wind": "10 mph · gusts 22",
-          "gusts_mph": 22
+          "wind": "10 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "first_eligible": null,
             "retroactive_to": "2026-03-22",
             "source": "live",
-            "last_confirmed": "2026-05-30T00:15:00.738Z",
-            "freshness_label": "As of May 29, 2026, 8:15 PM ET"
+            "last_confirmed": "2026-05-30T01:15:03.440Z",
+            "freshness_label": "As of May 29, 2026, 9:15 PM ET"
           },
           {
             "name": "Zach Pop",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-04-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-30T00:15:00.738Z",
-            "freshness_label": "As of May 29, 2026, 8:15 PM ET"
+            "last_confirmed": "2026-05-30T01:15:03.440Z",
+            "freshness_label": "As of May 29, 2026, 9:15 PM ET"
           },
           {
             "name": "Kyle Backhus",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-30T00:15:00.738Z",
-            "freshness_label": "As of May 29, 2026, 8:15 PM ET"
+            "last_confirmed": "2026-05-30T01:15:03.440Z",
+            "freshness_label": "As of May 29, 2026, 9:15 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -405,7 +405,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Roki Sasaki · LAD vs PHI",
+    "matchup": "Jesús Luzardo vs Roki Sasaki · LAD vs PHI",
     "date": "Sat, May 30",
     "time": "10:10 PM",
     "broadcast": "SportsNet LA",
