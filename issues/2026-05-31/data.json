@@ -5,14 +5,14 @@
     "edition": 62,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-31T13:30:58.318Z",
+    "generated_at": "2026-05-31T16:29:36.211Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "May 31, 2026, 9:30 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "May 31, 2026, 12:29 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "59° · Clear · 3 mph · gusts 9",
+      "72° · Clear · 5 mph · gusts 14",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "Dodgers Radio AM570"
         },
         "weather": {
-          "temp_f": 59,
+          "temp_f": 72,
           "condition": "Clear",
-          "wind": "3 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "5 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-31T13:30:58.318Z",
-            "freshness_label": "As of May 31, 2026, 9:30 AM ET"
+            "last_confirmed": "2026-05-31T16:29:36.211Z",
+            "freshness_label": "As of May 31, 2026, 12:29 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
