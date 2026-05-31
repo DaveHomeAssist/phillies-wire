@@ -5,14 +5,14 @@
     "edition": 62,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-31T16:55:20.655Z",
+    "generated_at": "2026-05-31T17:25:16.427Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 31, 2026, 12:55 PM ET",
+      "generated_at_et": "May 31, 2026, 1:25 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "74° · Clear · 6 mph · gusts 12",
-      "Regular Season"
+      "75° · Clear · 7 mph · gusts 17",
+      "Series tied 1-1"
     ],
     "next_label": "Tomorrow",
     "next_value": "Randy Vásquez · PHI vs SD · Tue, Jun 2 · 6:40 PM"
@@ -56,10 +56,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. LAD lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at LAD game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "4:10 PM",
         "starters": {
@@ -88,71 +88,71 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Shohei Ohtani",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Andy Pages",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Freddie Freeman",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Mookie Betts",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Tucker",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Max Muncy",
+              "position": "3B",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ryan Ward",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Dalton Rushing",
+              "position": "C",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alex Freeland",
+              "position": "2B",
+              "bats": "S"
             }
           ],
           "away": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -162,33 +162,33 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 5,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -200,15 +200,15 @@
           "phi": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -218,33 +218,33 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 5,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -256,57 +256,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Shohei Ohtani",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Andy Pages",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Freddie Freeman",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Mookie Betts",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Tucker",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Max Muncy",
+              "position": "3B",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ryan Ward",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Dalton Rushing",
+              "position": "C",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alex Freeland",
+              "position": "2B",
+              "bats": "S"
             }
           ]
         }
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "SportsNet LA",
@@ -346,10 +346,10 @@
           "radio": "Dodgers Radio AM570"
         },
         "weather": {
-          "temp_f": 74,
+          "temp_f": 75,
           "condition": "Clear",
-          "wind": "6 mph · gusts 12",
-          "gusts_mph": 12
+          "wind": "7 mph · gusts 17",
+          "gusts_mph": 17
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-31T16:55:20.655Z",
-            "freshness_label": "As of May 31, 2026, 12:55 PM ET"
+            "last_confirmed": "2026-05-31T17:25:16.427Z",
+            "freshness_label": "As of May 31, 2026, 1:25 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
