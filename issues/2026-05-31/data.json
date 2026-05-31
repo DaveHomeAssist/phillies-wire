@@ -5,14 +5,14 @@
     "edition": 62,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-05-31T21:36:11.127Z",
+    "generated_at": "2026-05-31T22:07:27.979Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "May 31, 2026, 5:36 PM ET",
+      "generated_at_et": "May 31, 2026, 6:07 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, LAD 4",
-    "dek": "End 4th · 3 outs",
-    "summary": "Rafael Marchán is up against Yoshinobu Yamamoto. Series: Series tied 1-1.",
+    "headline": "PHI 0, LAD 6",
+    "dek": "Top 6th · 0 outs",
+    "summary": "Bryce Harper is up against Yoshinobu Yamamoto. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "Rafael Marchán at the plate",
+      "Bryce Harper at the plate",
       "Yoshinobu Yamamoto on the mound",
       "UNIQLO Field at Dodger Stadium, Los Angeles"
     ],
@@ -349,8 +349,8 @@
         "weather": {
           "temp_f": 76,
           "condition": "Clear",
-          "wind": "11 mph · gusts 17",
-          "gusts_mph": 17
+          "wind": "9 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-05-31T21:36:11.127Z",
-            "freshness_label": "As of May 31, 2026, 5:36 PM ET"
+            "last_confirmed": "2026-05-31T22:07:27.979Z",
+            "freshness_label": "As of May 31, 2026, 6:07 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
