@@ -5,14 +5,14 @@
     "edition": 63,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-02T23:35:21.326Z",
+    "generated_at": "2026-06-02T23:53:29.649Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 2, 2026, 7:35 PM ET",
+      "generated_at_et": "Jun 2, 2026, 7:53 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, SD 2",
-    "dek": "End 3rd · 3 outs",
-    "summary": "Miguel Andujar is up against Aaron Nola. Series: Regular Season.",
+    "headline": "PHI 2, SD 2",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "Alec Bohm is up against Randy Vásquez. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "75° · Overcast"
+        "value": "74° · Overcast"
       }
     ],
     "bullets": [
-      "Miguel Andujar at the plate",
-      "Aaron Nola on the mound",
+      "Alec Bohm at the plate",
+      "Randy Vásquez on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 75,
+          "temp_f": 74,
           "condition": "Overcast",
-          "wind": "5 mph · gusts 12",
-          "gusts_mph": 12
+          "wind": "3 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-02T23:35:21.326Z",
-            "freshness_label": "As of Jun 2, 2026, 7:35 PM ET"
+            "last_confirmed": "2026-06-02T23:53:29.649Z",
+            "freshness_label": "As of Jun 2, 2026, 7:53 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
