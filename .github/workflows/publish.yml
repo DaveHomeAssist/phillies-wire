@@ -92,6 +92,29 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
 
+      # Daily fact-check. Reconciles the just-published edition against the MLB
+      # Stats API server-side (Node https → statsapi.mlb.com — no MCP, so no
+      # provenance allowlist limits), writes reports/factcheck-<date>.md,
+      # upserts the Notion row, and emails on any errors via the same SMTP
+      # config deliver.mjs uses. Reads phillies-wire-data.json /
+      # phillies-wire-output.html, which the pipeline left in the workspace.
+      # Daily-only — the */15 live-refresh runs skip it. Best-effort so a
+      # reconciliation finding never fails the publish that already shipped.
+      # FACTCHECK_RECIPIENTS is intentionally omitted: factcheck.mjs falls back
+      # to DELIVERY_RECIPIENTS, and a missing secret would inject an empty
+      # string that defeats that fallback.
+      - name: Daily fact-check
+        if: success() && steps.mode.outputs.mode == 'daily'
+        continue-on-error: true
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASSWORD }}
+          DELIVERY_RECIPIENTS: ${{ secrets.DELIVERY_RECIPIENTS }}
+        run: node factcheck.mjs
+
       - name: Upload diagnostics
         if: always()
         uses: actions/upload-artifact@89ef406dd8d7e03cfd12d9e0a4a378f454709029 # v4.3.5
@@ -106,6 +129,7 @@ jobs:
             status.json
             crawl-error.log
             enrich-error.log
+            reports/
 
       # Commit-back is best-effort — if it races, the deploy already shipped
       # and the next cron picks up the changes. continue-on-error makes the
