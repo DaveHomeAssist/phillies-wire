@@ -5,14 +5,14 @@
     "edition": 65,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-04T14:00:31.013Z",
+    "generated_at": "2026-06-04T17:06:31.136Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "Jun 4, 2026, 10:00 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "Jun 4, 2026, 1:06 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,39 +27,40 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Padres @ Phillies · Game 3 of 3",
-    "dek": "Zack Wheeler vs Lucas Giolito",
-    "summary": "Zack Wheeler vs Lucas Giolito · Padres @ Phillies · Game 3 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, SD 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Fernando Tatis Jr. is up against Zack Wheeler. Series: PHI leads 2-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "1:05 PM"
-      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Watch",
-        "value": "NBC 10 · MLB.TV · 94 WIP"
+        "label": "Broadcast",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "89° · Clear"
       }
     ],
     "bullets": [
-      "48° · Mostly sunny · Calm",
-      "Regular Season"
+      "Fernando Tatis Jr. at the plate",
+      "Zack Wheeler on the mound",
+      "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Anthony Kay · PHI vs CWS · Fri, Jun 5 · 6:40 PM"
+    "next_value": "Jesús Luzardo vs Anthony Kay · PHI vs CWS · Fri, Jun 5 · 6:40 PM"
   },
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. SD lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's SD at PHI game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "1:05 PM",
         "starters": {
@@ -88,15 +89,15 @@
           "home": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -106,33 +107,33 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 5,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -144,71 +145,71 @@
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Fernando Tatis Jr.",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Gavin Sheets",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Manny Machado",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ty France",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jackson Merrill",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Xander Bogaerts",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Andujar",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Freddy Fermin",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Johnson",
+              "position": "RF",
+              "bats": "S"
             }
           ],
           "phi": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -218,33 +219,33 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 5,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
+              "slot": 8,
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -256,57 +257,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Fernando Tatis Jr.",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Gavin Sheets",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Manny Machado",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ty France",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jackson Merrill",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Xander Bogaerts",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Miguel Andujar",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Freddy Fermin",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Johnson",
+              "position": "RF",
+              "bats": "S"
             }
           ]
         }
@@ -338,18 +339,18 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 2-0"
         },
         "broadcast": {
-          "tv": "NBC 10",
+          "tv": "NBCSP",
           "stream": "MLB.TV",
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 48,
-          "condition": "Mostly sunny",
-          "wind": "Calm",
-          "gusts_mph": 30
+          "temp_f": 89,
+          "condition": "Clear",
+          "wind": "6 mph · gusts 8",
+          "gusts_mph": 8
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-04T14:00:31.013Z",
-            "freshness_label": "As of Jun 4, 2026, 10:00 AM ET"
+            "last_confirmed": "2026-06-04T17:06:31.136Z",
+            "freshness_label": "As of Jun 4, 2026, 1:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -379,7 +380,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Anthony Kay · PHI vs CWS",
+    "matchup": "Jesús Luzardo vs Anthony Kay · PHI vs CWS",
     "date": "Fri, Jun 5",
     "time": "6:40 PM",
     "broadcast": "NBCSP",
