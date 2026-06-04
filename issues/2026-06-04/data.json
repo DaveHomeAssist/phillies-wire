@@ -5,14 +5,14 @@
     "edition": 65,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-04T19:43:17.720Z",
+    "generated_at": "2026-06-04T19:56:03.367Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 4, 2026, 3:43 PM ET",
+      "generated_at_et": "Jun 4, 2026, 3:56 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 32,
+    "wins": 33,
     "losses": 29,
-    "streak": "W2",
+    "streak": "W3",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 6, SD 2",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Jackson Merrill is up against José Alvarado. Series: PHI leads 2-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 6, SD 4.",
+    "dek": "PHI 6, SD 4 · Zack Wheeler · 7.0 IP, 2 H, 2 ER, 8 K",
+    "summary": "PHI 6, SD 4. Final at Citizens Bank Park, Philadelphia. PHI wins 3-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "90° · Partly cloudy"
+        "label": "Series",
+        "value": "PHI wins 3-0"
       }
     ],
     "bullets": [
-      "Jackson Merrill at the plate",
-      "José Alvarado on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Zack Wheeler: 7.0 IP, 2 H, 2 ER, 8 K",
+      "Lucas Giolito: 4.0 IP, 6 H, 2 ER, 5 K",
+      "Jackson Merrill: 1-for-3, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Anthony Kay · PHI vs CWS · Fri, Jun 5 · 6:40 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "PHI leads 2-0"
+          "label": "PHI wins 3-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,9 +348,9 @@
         },
         "weather": {
           "temp_f": 90,
-          "condition": "Partly cloudy",
-          "wind": "7 mph · gusts 8",
-          "gusts_mph": 8
+          "condition": "Overcast",
+          "wind": "6 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-04T19:43:17.720Z",
-            "freshness_label": "As of Jun 4, 2026, 3:43 PM ET"
+            "last_confirmed": "2026-06-04T19:56:03.367Z",
+            "freshness_label": "As of Jun 4, 2026, 3:56 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
