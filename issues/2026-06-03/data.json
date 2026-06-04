@@ -5,14 +5,14 @@
     "edition": 64,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-04T00:18:17.838Z",
+    "generated_at": "2026-06-04T01:31:27.923Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 3, 2026, 8:18 PM ET",
+      "generated_at_et": "Jun 3, 2026, 9:31 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 31,
+    "wins": 32,
     "losses": 29,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, SD 1",
-    "dek": "Bottom 7th · 0 outs",
-    "summary": "J.T. Realmuto is up against Jason Adam. Series: PHI leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 3, SD 2.",
+    "dek": "PHI 3, SD 2 · Cristopher Sánchez · 7.0 IP, 4 H, 1 ER, 8 K",
+    "summary": "PHI 3, SD 2. Final at Citizens Bank Park, Philadelphia. PHI wins 2-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "78° · Clear"
+        "label": "Series",
+        "value": "PHI wins 2-0"
       }
     ],
     "bullets": [
-      "J.T. Realmuto at the plate",
-      "Jason Adam on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Cristopher Sánchez: 7.0 IP, 4 H, 1 ER, 8 K",
+      "Walker Buehler: 6.0 IP, 4 H, 1 ER, 6 K",
+      "J.T. Realmuto: 1-for-3, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Lucas Giolito · PHI vs SD · Thu, Jun 4 · 1:05 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "PHI leads 1-0"
+          "label": "PHI wins 2-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 78,
+          "temp_f": 72,
           "condition": "Clear",
-          "wind": "1 mph · gusts 2",
-          "gusts_mph": 2
+          "wind": "6 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-04T00:18:17.838Z",
-            "freshness_label": "As of Jun 3, 2026, 8:18 PM ET"
+            "last_confirmed": "2026-06-04T01:31:27.923Z",
+            "freshness_label": "As of Jun 3, 2026, 9:31 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
