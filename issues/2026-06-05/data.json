@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.3.0",
+  "meta": {
+    "date": "2026-06-05",
+    "edition": 66,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-06-05T05:00:29.572Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "Jun 5, 2026, 1:00 AM ET",
+      "source_notes": [
+        "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
+        "Rehab assignment notes are refreshed from the MLB transactions feed."
+      ]
+    }
+  },
+  "record": {
+    "wins": 33,
+    "losses": 29,
+    "streak": "W3",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "White Sox @ Phillies · Game 1 of 3",
+    "dek": "Jesús Luzardo vs Anthony Kay",
+    "summary": "Jesús Luzardo vs Anthony Kay · White Sox @ Phillies · Game 1 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "6:40 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "Citizens Bank Park, Philadelphia"
+      },
+      {
+        "label": "Watch",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "70° · Clear · 3 mph · gusts 4",
+      "Regular Season"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "Andrew Painter vs Sean Burke · PHI vs CWS · Sat, Jun 6 · 4:05 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "PHI order is a projected baseline. CWS lineup posts about two hours before first pitch.",
+        "announced": false,
+        "mode": "projected",
+        "mode_label": "Projected",
+        "show_orders": true,
+        "first_pitch": "6:40 PM",
+        "starters": {
+          "home": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "away": {
+            "team": "CWS",
+            "name": "Anthony Kay",
+            "hand": "L"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "team": "CWS",
+            "name": "Anthony Kay",
+            "hand": "L"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
+            },
+            {
+              "slot": 2,
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
+            },
+            {
+              "slot": 3,
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
+            },
+            {
+              "slot": 4,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 5,
+              "name": "Nick Castellanos",
+              "position": "RF",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
+              "slot": 7,
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
+            },
+            {
+              "slot": 2,
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
+            },
+            {
+              "slot": 3,
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
+            },
+            {
+              "slot": 4,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 5,
+              "name": "Nick Castellanos",
+              "position": "RF",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
+              "slot": 7,
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
+            },
+            {
+              "slot": 9,
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "White Sox @ Phillies · Game 1 of 3",
+        "first_pitch": "6:40 PM",
+        "venue": "Citizens Bank Park, Philadelphia",
+        "starters": {
+          "home": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "away": {
+            "name": "Anthony Kay",
+            "hand": "L"
+          },
+          "phi": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "name": "Anthony Kay",
+            "hand": "L"
+          }
+        },
+        "series": {
+          "home_wins": 1,
+          "away_wins": 0,
+          "label": "Regular Season"
+        },
+        "broadcast": {
+          "tv": "NBCSP",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 70,
+          "condition": "Clear",
+          "wind": "3 mph · gusts 4",
+          "gusts_mph": 4
+        },
+        "giveaway": "",
+        "transit": "Broad Street Line to AT&T Station",
+        "venue_is_home": true
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Kyle Backhus",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left elbow inflammation",
+            "status_note": "",
+            "retroactive_to": "2026-04-27",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-06-05T05:00:29.572Z",
+            "freshness_label": "As of Jun 5, 2026, 1:00 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Tomorrow",
+    "matchup": "Andrew Painter vs Sean Burke · PHI vs CWS",
+    "date": "Sat, Jun 6",
+    "time": "4:05 PM",
+    "broadcast": "NBCSP",
+    "venue": "Citizens Bank Park"
+  }
+}
