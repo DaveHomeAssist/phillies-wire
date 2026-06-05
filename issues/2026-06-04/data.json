@@ -5,14 +5,14 @@
     "edition": 65,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-05T03:21:54.597Z",
+    "generated_at": "2026-06-05T03:46:25.969Z",
     "status": {
       "mode": "final",
       "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 4, 2026, 11:21 PM ET",
+      "generated_at_et": "Jun 4, 2026, 11:46 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 74,
+          "temp_f": 72,
           "condition": "Clear",
-          "wind": "5 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "3 mph · gusts 3",
+          "gusts_mph": 3
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-05T03:21:54.597Z",
-            "freshness_label": "As of Jun 4, 2026, 11:21 PM ET"
+            "last_confirmed": "2026-06-05T03:46:25.969Z",
+            "freshness_label": "As of Jun 4, 2026, 11:46 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
