@@ -5,14 +5,14 @@
     "edition": 66,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-06T01:58:07.191Z",
+    "generated_at": "2026-06-06T02:24:49.664Z",
     "status": {
       "mode": "final",
       "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 5, 2026, 9:58 PM ET",
+      "generated_at_et": "Jun 5, 2026, 10:24 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -52,7 +52,7 @@
       "Randal Grichuk: 2-for-3, 2 HR, 2 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter vs Sean Burke · PHI vs CWS · Sat, Jun 6 · 4:05 PM"
+    "next_value": "Andrew Painter vs Brandon Eisert · PHI vs CWS · Sat, Jun 6 · 4:05 PM"
   },
   "sections": {
     "lineup": {
@@ -347,7 +347,7 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 81,
+          "temp_f": 80,
           "condition": "Clear",
           "wind": "6 mph · gusts 13",
           "gusts_mph": 13
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-06T01:58:07.191Z",
-            "freshness_label": "As of Jun 5, 2026, 9:58 PM ET"
+            "last_confirmed": "2026-06-06T02:24:49.664Z",
+            "freshness_label": "As of Jun 5, 2026, 10:24 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -380,7 +380,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Andrew Painter vs Sean Burke · PHI vs CWS",
+    "matchup": "Andrew Painter vs Brandon Eisert · PHI vs CWS",
     "date": "Sat, Jun 6",
     "time": "4:05 PM",
     "broadcast": "NBCSP",
