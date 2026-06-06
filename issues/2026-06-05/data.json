@@ -5,14 +5,14 @@
     "edition": 66,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-06T01:11:19.119Z",
+    "generated_at": "2026-06-06T01:29:26.790Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 5, 2026, 9:11 PM ET",
+      "generated_at_et": "Jun 5, 2026, 9:29 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 8, CWS 6",
-    "dek": "Middle 8th · 3 outs",
-    "summary": "Adolis García is up against Seranthony Domínguez. Series: Regular Season.",
+    "dek": "Middle 9th · 3 outs",
+    "summary": "Bryce Harper is up against Trevor Richards. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "Adolis García at the plate",
-      "Seranthony Domínguez on the mound",
+      "Bryce Harper at the plate",
+      "Trevor Richards on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -158,13 +158,13 @@
             {
               "slot": 3,
               "name": "Miguel Vargas",
-              "position": "1B",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 4,
               "name": "Colson Montgomery",
-              "position": "3B",
+              "position": "SS",
               "bats": "L"
             },
             {
@@ -270,13 +270,13 @@
             {
               "slot": 3,
               "name": "Miguel Vargas",
-              "position": "1B",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 4,
               "name": "Colson Montgomery",
-              "position": "3B",
+              "position": "SS",
               "bats": "L"
             },
             {
@@ -349,8 +349,8 @@
         "weather": {
           "temp_f": 82,
           "condition": "Clear",
-          "wind": "6 mph · gusts 12",
-          "gusts_mph": 12
+          "wind": "7 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-06T01:11:19.119Z",
-            "freshness_label": "As of Jun 5, 2026, 9:11 PM ET"
+            "last_confirmed": "2026-06-06T01:29:26.790Z",
+            "freshness_label": "As of Jun 5, 2026, 9:29 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
