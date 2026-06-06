@@ -5,14 +5,14 @@
     "edition": 67,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-06T18:33:28.525Z",
+    "generated_at": "2026-06-06T18:56:08.097Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 6, 2026, 2:33 PM ET",
+      "generated_at_et": "Jun 6, 2026, 2:56 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "92° · Clear · 14 mph · gusts 22",
+      "91° · Mostly sunny · 14 mph · gusts 22",
       "PHI leads 1-0"
     ],
     "next_label": "Tomorrow",
@@ -346,8 +346,8 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 92,
-          "condition": "Clear",
+          "temp_f": 91,
+          "condition": "Mostly sunny",
           "wind": "14 mph · gusts 22",
           "gusts_mph": 22
         },
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-06T18:33:28.525Z",
-            "freshness_label": "As of Jun 6, 2026, 2:33 PM ET"
+            "last_confirmed": "2026-06-06T18:56:08.097Z",
+            "freshness_label": "As of Jun 6, 2026, 2:56 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
