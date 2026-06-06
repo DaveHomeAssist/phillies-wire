@@ -5,14 +5,14 @@
     "edition": 67,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-06T22:26:12.444Z",
+    "generated_at": "2026-06-06T22:37:39.781Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 6, 2026, 6:26 PM ET",
+      "generated_at_et": "Jun 6, 2026, 6:37 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 3, CWS 6",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Drew Romo is up against Tim Mayza. Series: PHI leads 1-0.",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "Bryson Stott is up against Sean Newcomb. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "90° · Partly cloudy"
+        "value": "89° · Overcast"
       }
     ],
     "bullets": [
-      "Drew Romo at the plate",
-      "Tim Mayza on the mound",
+      "Bryson Stott at the plate",
+      "Sean Newcomb on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 90,
-          "condition": "Partly cloudy",
-          "wind": "14 mph · gusts 22",
-          "gusts_mph": 22
+          "temp_f": 89,
+          "condition": "Overcast",
+          "wind": "16 mph · gusts 25",
+          "gusts_mph": 25
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-06T22:26:12.444Z",
-            "freshness_label": "As of Jun 6, 2026, 6:26 PM ET"
+            "last_confirmed": "2026-06-06T22:37:39.781Z",
+            "freshness_label": "As of Jun 6, 2026, 6:37 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
