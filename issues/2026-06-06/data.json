@@ -5,14 +5,14 @@
     "edition": 67,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-06T20:08:43.764Z",
+    "generated_at": "2026-06-06T20:28:36.135Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 6, 2026, 4:08 PM ET",
+      "generated_at_et": "Jun 6, 2026, 4:28 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, CWS 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Sam Antonacci is up against Andrew Painter. Series: PHI leads 1-0.",
+    "headline": "PHI 0, CWS 4",
+    "dek": "Bottom 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Brandon Eisert. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "Sam Antonacci at the plate",
-      "Andrew Painter on the mound",
+      "Kyle Schwarber at the plate",
+      "Brandon Eisert on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -349,8 +349,8 @@
         "weather": {
           "temp_f": 91,
           "condition": "Clear",
-          "wind": "14 mph · gusts 21",
-          "gusts_mph": 21
+          "wind": "14 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-06T20:08:43.764Z",
-            "freshness_label": "As of Jun 6, 2026, 4:08 PM ET"
+            "last_confirmed": "2026-06-06T20:28:36.135Z",
+            "freshness_label": "As of Jun 6, 2026, 4:28 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
