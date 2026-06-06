@@ -5,14 +5,14 @@
     "edition": 66,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-06T01:29:26.790Z",
+    "generated_at": "2026-06-06T01:58:07.191Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 5, 2026, 9:29 PM ET",
+      "generated_at_et": "Jun 5, 2026, 9:58 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 33,
+    "wins": 34,
     "losses": 29,
-    "streak": "W3",
+    "streak": "W4",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 8, CWS 6",
-    "dek": "Middle 9th · 3 outs",
-    "summary": "Bryce Harper is up against Trevor Richards. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 8, CWS 6.",
+    "dek": "PHI 8, CWS 6 · Jesús Luzardo · 6.0 IP, 7 H, 5 ER, 2 K",
+    "summary": "PHI 8, CWS 6. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "82° · Clear"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
-      "Trevor Richards on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Jesús Luzardo: 6.0 IP, 7 H, 5 ER, 2 K",
+      "Anthony Kay: 4.0 IP, 7 H, 6 ER, 4 K",
+      "Randal Grichuk: 2-for-3, 2 HR, 2 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Sean Burke · PHI vs CWS · Sat, Jun 6 · 4:05 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 82,
+          "temp_f": 81,
           "condition": "Clear",
-          "wind": "7 mph · gusts 14",
-          "gusts_mph": 14
+          "wind": "6 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-06T01:29:26.790Z",
-            "freshness_label": "As of Jun 5, 2026, 9:29 PM ET"
+            "last_confirmed": "2026-06-06T01:58:07.191Z",
+            "freshness_label": "As of Jun 5, 2026, 9:58 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
