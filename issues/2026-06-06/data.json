@@ -5,14 +5,14 @@
     "edition": 67,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-06T13:30:44.408Z",
+    "generated_at": "2026-06-06T16:27:24.722Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "Jun 6, 2026, 9:30 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "Jun 6, 2026, 12:27 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "81° · Clear · 5 mph · gusts 9",
+      "90° · Overcast · 12 mph · gusts 23",
       "PHI leads 1-0"
     ],
     "next_label": "Tomorrow",
@@ -88,15 +88,15 @@
           "home": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -112,9 +112,9 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 6,
@@ -124,15 +124,15 @@
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
+              "name": "Bryson Stott",
+              "position": "2B",
               "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -200,15 +200,15 @@
           "phi": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -224,9 +224,9 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 6,
@@ -236,15 +236,15 @@
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
+              "name": "Bryson Stott",
+              "position": "2B",
               "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
+              "name": "Adolis García",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 81,
-          "condition": "Clear",
-          "wind": "5 mph · gusts 9",
-          "gusts_mph": 9
+          "temp_f": 90,
+          "condition": "Overcast",
+          "wind": "12 mph · gusts 23",
+          "gusts_mph": 23
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-06T13:30:44.408Z",
-            "freshness_label": "As of Jun 6, 2026, 9:30 AM ET"
+            "last_confirmed": "2026-06-06T16:27:24.722Z",
+            "freshness_label": "As of Jun 6, 2026, 12:27 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
