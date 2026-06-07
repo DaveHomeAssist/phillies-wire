@@ -5,14 +5,14 @@
     "edition": 68,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-07T16:33:19.510Z",
+    "generated_at": "2026-06-07T17:10:19.491Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 7, 2026, 12:33 PM ET",
+      "generated_at_et": "Jun 7, 2026, 1:10 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,11 +47,11 @@
       }
     ],
     "bullets": [
-      "85° · Mostly sunny · 12 mph · gusts 20",
+      "86° · Mostly sunny · 15 mph · gusts 23",
       "Series tied 1-1"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez · TOR vs PHI · Mon, Jun 8 · 7:07 PM"
+    "next_value": "Cristopher Sánchez vs Patrick Corbin · TOR vs PHI · Mon, Jun 8 · 7:07 PM"
   },
   "sections": {
     "lineup": {
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 85,
+          "temp_f": 86,
           "condition": "Mostly sunny",
-          "wind": "12 mph · gusts 20",
-          "gusts_mph": 20
+          "wind": "15 mph · gusts 23",
+          "gusts_mph": 23
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-07T16:33:19.510Z",
-            "freshness_label": "As of Jun 7, 2026, 12:33 PM ET"
+            "last_confirmed": "2026-06-07T17:10:19.491Z",
+            "freshness_label": "As of Jun 7, 2026, 1:10 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -379,7 +379,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Cristopher Sánchez · TOR vs PHI",
+    "matchup": "Cristopher Sánchez vs Patrick Corbin · TOR vs PHI",
     "date": "Mon, Jun 8",
     "time": "7:07 PM",
     "broadcast": "Sportsnet",
