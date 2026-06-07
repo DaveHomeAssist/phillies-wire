@@ -5,14 +5,14 @@
     "edition": 68,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-07T18:42:54.151Z",
+    "generated_at": "2026-06-07T18:44:51.918Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 7, 2026, 2:42 PM ET",
+      "generated_at_et": "Jun 7, 2026, 2:44 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -30,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 3, CWS 3",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Drew Romo is up against Aaron Nola. Series: Series tied 1-1.",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Brandon Marsh is up against David Sandlin. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "Drew Romo at the plate",
-      "Aaron Nola on the mound",
+      "Brandon Marsh at the plate",
+      "David Sandlin on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-07T18:42:54.151Z",
-            "freshness_label": "As of Jun 7, 2026, 2:42 PM ET"
+            "last_confirmed": "2026-06-07T18:44:51.918Z",
+            "freshness_label": "As of Jun 7, 2026, 2:44 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
