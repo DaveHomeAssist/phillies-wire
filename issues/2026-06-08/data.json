@@ -5,14 +5,14 @@
     "edition": 69,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-08T22:17:11.679Z",
+    "generated_at": "2026-06-08T22:59:38.274Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 8, 2026, 6:17 PM ET",
+      "generated_at_et": "Jun 8, 2026, 6:59 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,28 +27,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Blue Jays · Game 1 of 3",
-    "dek": "Cristopher Sánchez vs Patrick Corbin",
-    "summary": "Cristopher Sánchez vs Patrick Corbin · Phillies @ Blue Jays · Game 1 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, TOR 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Patrick Corbin. Series: Regular Season.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "7:07 PM"
-      },
       {
         "label": "Venue",
         "value": "Rogers Centre, Toronto"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "Sportsnet · MLB.TV · SN590 THE FAN"
+      },
+      {
+        "label": "Weather",
+        "value": "74° · Clear"
       }
     ],
     "bullets": [
-      "75° · Clear · 10 mph · gusts 12",
-      "Regular Season"
+      "Kyle Schwarber at the plate",
+      "Patrick Corbin on the mound",
+      "Rogers Centre, Toronto"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Dylan Cease · TOR vs PHI · Tue, Jun 9 · 7:07 PM"
@@ -346,10 +347,10 @@
           "radio": "SN590 THE FAN"
         },
         "weather": {
-          "temp_f": 75,
+          "temp_f": 74,
           "condition": "Clear",
-          "wind": "10 mph · gusts 12",
-          "gusts_mph": 12
+          "wind": "10 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-08T22:17:11.679Z",
-            "freshness_label": "As of Jun 8, 2026, 6:17 PM ET"
+            "last_confirmed": "2026-06-08T22:59:38.274Z",
+            "freshness_label": "As of Jun 8, 2026, 6:59 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
