@@ -5,14 +5,14 @@
     "edition": 69,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-09T00:10:27.720Z",
+    "generated_at": "2026-06-09T01:16:25.118Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 8, 2026, 8:10 PM ET",
+      "generated_at_et": "Jun 8, 2026, 9:16 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 5, TOR 1",
-    "dek": "Top 4th · 0 outs",
-    "summary": "Trea Turner is up against Adam Macko. Series: Regular Season.",
+    "headline": "PHI 5, TOR 2",
+    "dek": "Top 8th · 0 outs",
+    "summary": "Alec Bohm is up against Simeon Woods Richardson. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "71° · Clear"
+        "value": "67° · Clear"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Adam Macko on the mound",
+      "Alec Bohm at the plate",
+      "Simeon Woods Richardson on the mound",
       "Rogers Centre, Toronto"
     ],
     "next_label": "Tomorrow",
@@ -164,7 +164,7 @@
             {
               "slot": 4,
               "name": "Brandon Marsh",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -220,7 +220,7 @@
             {
               "slot": 4,
               "name": "Brandon Marsh",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -347,9 +347,9 @@
           "radio": "SN590 THE FAN"
         },
         "weather": {
-          "temp_f": 71,
+          "temp_f": 67,
           "condition": "Clear",
-          "wind": "9 mph · gusts 14",
+          "wind": "6 mph · gusts 14",
           "gusts_mph": 14
         },
         "giveaway": "",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-09T00:10:27.720Z",
-            "freshness_label": "As of Jun 8, 2026, 8:10 PM ET"
+            "last_confirmed": "2026-06-09T01:16:25.118Z",
+            "freshness_label": "As of Jun 8, 2026, 9:16 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
