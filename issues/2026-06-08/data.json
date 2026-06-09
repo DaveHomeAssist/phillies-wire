@@ -5,14 +5,14 @@
     "edition": 69,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-09T01:16:25.118Z",
+    "generated_at": "2026-06-09T02:20:08.406Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 8, 2026, 9:16 PM ET",
+      "generated_at_et": "Jun 8, 2026, 10:20 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 35,
+    "wins": 36,
     "losses": 30,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 5, TOR 2",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Alec Bohm is up against Simeon Woods Richardson. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 5, TOR 2.",
+    "dek": "PHI 5, TOR 2 · Cristopher Sánchez · 7.0 IP, 4 H, 2 ER, 10 K",
+    "summary": "PHI 5, TOR 2. Final at Rogers Centre, Toronto. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Rogers Centre, Toronto"
       },
       {
-        "label": "Broadcast",
-        "value": "Sportsnet · MLB.TV · SN590 THE FAN"
-      },
-      {
-        "label": "Weather",
-        "value": "67° · Clear"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "Alec Bohm at the plate",
-      "Simeon Woods Richardson on the mound",
-      "Rogers Centre, Toronto"
+      "Cristopher Sánchez: 7.0 IP, 4 H, 2 ER, 10 K",
+      "Simeon Woods Richardson: 4.0 IP, 1 H, 0 ER, 3 K",
+      "Ernie Clement: 2-for-4, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Dylan Cease · TOR vs PHI · Tue, Jun 9 · 7:07 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "Sportsnet",
@@ -347,10 +347,10 @@
           "radio": "SN590 THE FAN"
         },
         "weather": {
-          "temp_f": 67,
+          "temp_f": 65,
           "condition": "Clear",
-          "wind": "6 mph · gusts 14",
-          "gusts_mph": 14
+          "wind": "2 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-09T01:16:25.118Z",
-            "freshness_label": "As of Jun 8, 2026, 9:16 PM ET"
+            "last_confirmed": "2026-06-09T02:20:08.406Z",
+            "freshness_label": "As of Jun 8, 2026, 10:20 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
