@@ -5,14 +5,14 @@
     "edition": 71,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-10T22:40:06.596Z",
+    "generated_at": "2026-06-10T23:15:46.574Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 10, 2026, 6:40 PM ET",
+      "generated_at_et": "Jun 10, 2026, 7:15 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,28 +27,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Blue Jays · Game 3 of 3",
-    "dek": "Jesús Luzardo vs Max Scherzer",
-    "summary": "Jesús Luzardo vs Max Scherzer · Phillies @ Blue Jays · Game 3 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 1, TOR 0",
+    "dek": "Top 1st · 2 outs",
+    "summary": "Alec Bohm is up against Max Scherzer. Series: Series tied 1-1.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "7:07 PM"
-      },
       {
         "label": "Venue",
         "value": "Rogers Centre, Toronto"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "SN1 · MLB.TV · SN590 THE FAN"
+      },
+      {
+        "label": "Weather",
+        "value": "77° · Heavy showers"
       }
     ],
     "bullets": [
-      "84° · Overcast · 5 mph · gusts 10",
-      "Series tied 1-1"
+      "Alec Bohm at the plate",
+      "Max Scherzer on the mound",
+      "Rogers Centre, Toronto"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Jacob Misiorowski · MIL vs PHI · Fri, Jun 12 · 7:40 PM"
@@ -346,10 +347,10 @@
           "radio": "SN590 THE FAN"
         },
         "weather": {
-          "temp_f": 84,
-          "condition": "Overcast",
-          "wind": "5 mph · gusts 10",
-          "gusts_mph": 10
+          "temp_f": 77,
+          "condition": "Heavy showers",
+          "wind": "11 mph · gusts 22",
+          "gusts_mph": 22
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-10T22:40:06.596Z",
-            "freshness_label": "As of Jun 10, 2026, 6:40 PM ET"
+            "last_confirmed": "2026-06-10T23:15:46.574Z",
+            "freshness_label": "As of Jun 10, 2026, 7:15 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
