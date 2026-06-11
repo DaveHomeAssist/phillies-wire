@@ -5,14 +5,14 @@
     "edition": 71,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-10T23:59:45.717Z",
+    "generated_at": "2026-06-11T01:20:16.513Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 10, 2026, 7:59 PM ET",
+      "generated_at_et": "Jun 10, 2026, 9:20 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 4, TOR 0",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "George Springer is up against Jesús Luzardo. Series: Series tied 1-1.",
+    "headline": "PHI 6, TOR 1",
+    "dek": "Top 7th · 1 out",
+    "summary": "Alec Bohm is up against Braydon Fisher. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "George Springer at the plate",
-      "Jesús Luzardo on the mound",
+      "Alec Bohm at the plate",
+      "Braydon Fisher on the mound",
       "Rogers Centre, Toronto"
     ],
     "next_label": "Tomorrow",
@@ -102,7 +102,7 @@
             {
               "slot": 3,
               "name": "Ernie Clement",
-              "position": "SS",
+              "position": "2B",
               "bats": "R"
             },
             {
@@ -270,7 +270,7 @@
             {
               "slot": 3,
               "name": "Ernie Clement",
-              "position": "SS",
+              "position": "2B",
               "bats": "R"
             },
             {
@@ -349,8 +349,8 @@
         "weather": {
           "temp_f": 75,
           "condition": "Overcast",
-          "wind": "8 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "5 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-10T23:59:45.717Z",
-            "freshness_label": "As of Jun 10, 2026, 7:59 PM ET"
+            "last_confirmed": "2026-06-11T01:20:16.513Z",
+            "freshness_label": "As of Jun 10, 2026, 9:20 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
