@@ -5,14 +5,14 @@
     "edition": 73,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-12T23:10:08.377Z",
+    "generated_at": "2026-06-12T23:33:56.875Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 12, 2026, 7:10 PM ET",
+      "generated_at_et": "Jun 12, 2026, 7:33 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,28 +27,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Brewers · Game 1 of 3",
-    "dek": "Tanner Banks vs Jacob Misiorowski",
-    "summary": "Tanner Banks vs Jacob Misiorowski · Phillies @ Brewers · Game 1 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, MIL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Jacob Misiorowski. Series: Regular Season.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "7:40 PM"
-      },
       {
         "label": "Venue",
         "value": "American Family Field, Milwaukee"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "Brewers.TV · MLB.TV · WTMJ 620"
+      },
+      {
+        "label": "Weather",
+        "value": "91° · Partly cloudy"
       }
     ],
     "bullets": [
-      "92° · Clear · 11 mph · gusts 21",
-      "Regular Season"
+      "Kyle Schwarber at the plate",
+      "Jacob Misiorowski on the mound",
+      "American Family Field, Milwaukee"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Shane Drohan · MIL vs PHI · Sat, Jun 13 · 7:10 PM"
@@ -346,10 +347,10 @@
           "radio": "WTMJ 620"
         },
         "weather": {
-          "temp_f": 92,
-          "condition": "Clear",
-          "wind": "11 mph · gusts 21",
-          "gusts_mph": 21
+          "temp_f": 91,
+          "condition": "Partly cloudy",
+          "wind": "6 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-12T23:10:08.377Z",
-            "freshness_label": "As of Jun 12, 2026, 7:10 PM ET"
+            "last_confirmed": "2026-06-12T23:33:56.875Z",
+            "freshness_label": "As of Jun 12, 2026, 7:33 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +383,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-12T23:10:08.377Z",
-            "freshness_label": "As of Jun 12, 2026, 7:10 PM ET"
+            "last_confirmed": "2026-06-12T23:33:56.875Z",
+            "freshness_label": "As of Jun 12, 2026, 7:33 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
