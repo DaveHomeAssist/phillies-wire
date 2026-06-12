@@ -5,14 +5,14 @@
     "edition": 73,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-12T19:41:36.453Z",
+    "generated_at": "2026-06-12T20:17:50.093Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 12, 2026, 3:41 PM ET",
+      "generated_at_et": "Jun 12, 2026, 4:17 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "92° · Partly cloudy · 8 mph · gusts 20",
+      "95° · Clear · 11 mph · gusts 20",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -144,15 +144,15 @@
           "away": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -162,33 +162,33 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 5,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "Gabriel Rincones Jr.",
+              "position": "RF",
+              "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -200,15 +200,15 @@
           "phi": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -218,33 +218,33 @@
             },
             {
               "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nick Castellanos",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
               "name": "Brandon Marsh",
               "position": "LF",
               "bats": "L"
             },
             {
-              "slot": 8,
+              "slot": 5,
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
+            },
+            {
+              "slot": 6,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
+            },
+            {
+              "slot": 7,
+              "name": "Gabriel Rincones Jr.",
+              "position": "RF",
+              "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -346,9 +346,9 @@
           "radio": "WTMJ 620"
         },
         "weather": {
-          "temp_f": 92,
-          "condition": "Partly cloudy",
-          "wind": "8 mph · gusts 20",
+          "temp_f": 95,
+          "condition": "Clear",
+          "wind": "11 mph · gusts 20",
           "gusts_mph": 20
         },
         "giveaway": "",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-12T19:41:36.453Z",
-            "freshness_label": "As of Jun 12, 2026, 3:41 PM ET"
+            "last_confirmed": "2026-06-12T20:17:50.093Z",
+            "freshness_label": "As of Jun 12, 2026, 4:17 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
