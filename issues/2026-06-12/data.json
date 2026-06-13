@@ -5,14 +5,14 @@
     "edition": 73,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-13T00:49:57.851Z",
+    "generated_at": "2026-06-13T01:25:51.565Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 12, 2026, 8:49 PM ET",
+      "generated_at_et": "Jun 12, 2026, 9:25 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, MIL 2",
-    "dek": "Bottom 5th · 2 outs",
-    "summary": "William Contreras is up against Andrew Painter. Series: Regular Season.",
+    "headline": "PHI 0, MIL 6",
+    "dek": "Top 8th · 1 out",
+    "summary": "Alec Bohm is up against Jacob Misiorowski. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "88° · Partly cloudy"
+        "value": "87° · Partly cloudy"
       }
     ],
     "bullets": [
-      "William Contreras at the plate",
-      "Andrew Painter on the mound",
+      "Alec Bohm at the plate",
+      "Jacob Misiorowski on the mound",
       "American Family Field, Milwaukee"
     ],
     "next_label": "Tomorrow",
@@ -114,7 +114,7 @@
             {
               "slot": 5,
               "name": "Jake Bauers",
-              "position": "RF",
+              "position": "1B",
               "bats": "L"
             },
             {
@@ -282,7 +282,7 @@
             {
               "slot": 5,
               "name": "Jake Bauers",
-              "position": "RF",
+              "position": "1B",
               "bats": "L"
             },
             {
@@ -347,10 +347,10 @@
           "radio": "WTMJ 620"
         },
         "weather": {
-          "temp_f": 88,
+          "temp_f": 87,
           "condition": "Partly cloudy",
-          "wind": "6 mph · gusts 12",
-          "gusts_mph": 12
+          "wind": "7 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-13T00:49:57.851Z",
-            "freshness_label": "As of Jun 12, 2026, 8:49 PM ET"
+            "last_confirmed": "2026-06-13T01:25:51.565Z",
+            "freshness_label": "As of Jun 12, 2026, 9:25 PM ET"
           },
           {
             "name": "Adolis García",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-13T00:49:57.851Z",
-            "freshness_label": "As of Jun 12, 2026, 8:49 PM ET"
+            "last_confirmed": "2026-06-13T01:25:51.565Z",
+            "freshness_label": "As of Jun 12, 2026, 9:25 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
