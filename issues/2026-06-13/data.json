@@ -5,14 +5,14 @@
     "edition": 74,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-13T19:51:08.020Z",
+    "generated_at": "2026-06-13T20:01:17.620Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 13, 2026, 3:51 PM ET",
+      "generated_at_et": "Jun 13, 2026, 4:01 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "88° · Clear · 8 mph · gusts 10",
-      "Regular Season"
+      "88° · Clear · 8 mph · gusts 12",
+      "MIL leads 1-0"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Kyle Harrison · MIL vs PHI · Sun, Jun 14 · 2:10 PM"
@@ -88,57 +88,57 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Christian Yelich",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jackson Chourio",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brice Turang",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "William Contreras",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jake Bauers",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Garrett Mitchell",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Sal Frelick",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "David Hamilton",
+              "position": "3B",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Joey Ortiz",
+              "position": "SS",
+              "bats": "R"
             }
           ],
           "away": [
@@ -256,57 +256,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Christian Yelich",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jackson Chourio",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brice Turang",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "William Contreras",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jake Bauers",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Garrett Mitchell",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Sal Frelick",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "David Hamilton",
+              "position": "3B",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Joey Ortiz",
+              "position": "SS",
+              "bats": "R"
             }
           ]
         }
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "MIL leads 1-0"
         },
         "broadcast": {
           "tv": "FS1",
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 88,
           "condition": "Clear",
-          "wind": "8 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "8 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-13T19:51:08.020Z",
-            "freshness_label": "As of Jun 13, 2026, 3:51 PM ET"
+            "last_confirmed": "2026-06-13T20:01:17.620Z",
+            "freshness_label": "As of Jun 13, 2026, 4:01 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-13T19:51:08.020Z",
-            "freshness_label": "As of Jun 13, 2026, 3:51 PM ET"
+            "last_confirmed": "2026-06-13T20:01:17.620Z",
+            "freshness_label": "As of Jun 13, 2026, 4:01 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
