@@ -5,14 +5,14 @@
     "edition": 74,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-13T20:01:17.620Z",
+    "generated_at": "2026-06-13T20:31:57.015Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 13, 2026, 4:01 PM ET",
+      "generated_at_et": "Jun 13, 2026, 4:31 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "88° · Clear · 8 mph · gusts 12",
+      "88° · Clear · 9 mph · gusts 12",
       "MIL leads 1-0"
     ],
     "next_label": "Tomorrow",
@@ -56,10 +56,10 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. MIL lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at MIL game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "7:10 PM",
         "starters": {
@@ -144,15 +144,15 @@
           "away": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -168,47 +168,47 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Brandon Marsh",
               "position": "RF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
+              "name": "Edmundo Sosa",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
+              "slot": 8,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
               "slot": 9,
-              "name": "Justin Crawford",
+              "name": "Derek Hill",
               "position": "CF",
-              "bats": "L"
+              "bats": "R"
             }
           ],
           "phi": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -224,33 +224,33 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Brandon Marsh",
               "position": "RF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
+              "name": "Edmundo Sosa",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
+              "slot": 8,
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
+            },
+            {
               "slot": 9,
-              "name": "Justin Crawford",
+              "name": "Derek Hill",
               "position": "CF",
-              "bats": "L"
+              "bats": "R"
             }
           ],
           "opp": [
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 88,
           "condition": "Clear",
-          "wind": "8 mph · gusts 12",
+          "wind": "9 mph · gusts 12",
           "gusts_mph": 12
         },
         "giveaway": "",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-13T20:01:17.620Z",
-            "freshness_label": "As of Jun 13, 2026, 4:01 PM ET"
+            "last_confirmed": "2026-06-13T20:31:57.015Z",
+            "freshness_label": "As of Jun 13, 2026, 4:31 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-13T20:01:17.620Z",
-            "freshness_label": "As of Jun 13, 2026, 4:01 PM ET"
+            "last_confirmed": "2026-06-13T20:31:57.015Z",
+            "freshness_label": "As of Jun 13, 2026, 4:31 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
