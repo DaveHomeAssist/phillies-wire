@@ -5,14 +5,14 @@
     "edition": 75,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-14T16:35:00.730Z",
+    "generated_at": "2026-06-14T17:10:58.556Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 14, 2026, 12:35 PM ET",
+      "generated_at_et": "Jun 14, 2026, 1:10 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,11 +47,11 @@
       }
     ],
     "bullets": [
-      "90° · Partly cloudy · 12 mph · gusts 16",
+      "90° · Overcast · 12 mph · gusts 17",
       "Series tied 1-1"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Ryan Gusto · PHI vs MIA · Mon, Jun 15 · 6:40 PM"
+    "next_value": "Zack Wheeler vs Ryan Gusto · PHI vs MIA · Mon, Jun 15 · 6:40 PM"
   },
   "sections": {
     "lineup": {
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 90,
-          "condition": "Partly cloudy",
-          "wind": "12 mph · gusts 16",
-          "gusts_mph": 16
+          "condition": "Overcast",
+          "wind": "12 mph · gusts 17",
+          "gusts_mph": 17
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-14T16:35:00.730Z",
-            "freshness_label": "As of Jun 14, 2026, 12:35 PM ET"
+            "last_confirmed": "2026-06-14T17:10:58.556Z",
+            "freshness_label": "As of Jun 14, 2026, 1:10 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-14T16:35:00.730Z",
-            "freshness_label": "As of Jun 14, 2026, 12:35 PM ET"
+            "last_confirmed": "2026-06-14T17:10:58.556Z",
+            "freshness_label": "As of Jun 14, 2026, 1:10 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -392,7 +392,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Ryan Gusto · PHI vs MIA",
+    "matchup": "Zack Wheeler vs Ryan Gusto · PHI vs MIA",
     "date": "Mon, Jun 15",
     "time": "6:40 PM",
     "broadcast": "NBCSP",
