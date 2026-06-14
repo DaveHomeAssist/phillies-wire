@@ -5,14 +5,14 @@
     "edition": 75,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-14T13:32:14.803Z",
+    "generated_at": "2026-06-14T16:35:00.730Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "Jun 14, 2026, 9:32 AM ET",
+      "enrich_state": "pending",
+      "enrich_label": "Draft edition",
+      "generated_at_et": "Jun 14, 2026, 12:35 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -47,19 +47,19 @@
       }
     ],
     "bullets": [
-      "83° · Clear · 6 mph · gusts 13",
-      "MIL leads 1-0"
+      "90° · Partly cloudy · 12 mph · gusts 16",
+      "Series tied 1-1"
     ],
     "next_label": "Tomorrow",
-    "next_value": "PHI vs MIA · Mon, Jun 15 · 6:40 PM"
+    "next_value": "Ryan Gusto · PHI vs MIA · Mon, Jun 15 · 6:40 PM"
   },
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "PHI order is a projected baseline. MIL lineup posts about two hours before first pitch.",
-        "announced": false,
-        "mode": "projected",
-        "mode_label": "Projected",
+        "status_note": "Official batting orders confirmed for today's PHI at MIL game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
         "show_orders": true,
         "first_pitch": "2:10 PM",
         "starters": {
@@ -88,71 +88,71 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jackson Chourio",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Andrew Vaughn",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "William Contreras",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Gary Sánchez",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Luis Rengifo",
+              "position": "3B",
+              "bats": "S"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Garrett Mitchell",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Blake Perkins",
+              "position": "RF",
+              "bats": "S"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Joey Ortiz",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "David Hamilton",
+              "position": "2B",
+              "bats": "L"
             }
           ],
           "away": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -168,47 +168,47 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Brandon Marsh",
               "position": "RF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
+              "name": "Edmundo Sosa",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
+              "slot": 8,
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
+            },
+            {
               "slot": 9,
-              "name": "Justin Crawford",
+              "name": "Derek Hill",
               "position": "CF",
-              "bats": "L"
+              "bats": "R"
             }
           ],
           "phi": [
             {
               "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
               "name": "Kyle Schwarber",
               "position": "DH",
               "bats": "L"
+            },
+            {
+              "slot": 2,
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
@@ -224,89 +224,89 @@
             },
             {
               "slot": 5,
-              "name": "Nick Castellanos",
+              "name": "Brandon Marsh",
               "position": "RF",
-              "bats": "R"
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
+              "name": "Edmundo Sosa",
+              "position": "LF",
               "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
+              "slot": 8,
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
+            },
+            {
               "slot": 9,
-              "name": "Justin Crawford",
+              "name": "Derek Hill",
               "position": "CF",
-              "bats": "L"
+              "bats": "R"
             }
           ],
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jackson Chourio",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Andrew Vaughn",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "William Contreras",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Gary Sánchez",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Luis Rengifo",
+              "position": "3B",
+              "bats": "S"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Garrett Mitchell",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Blake Perkins",
+              "position": "RF",
+              "bats": "S"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Joey Ortiz",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "David Hamilton",
+              "position": "2B",
+              "bats": "L"
             }
           ]
         }
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "MIL leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "Brewers.TV",
@@ -346,10 +346,10 @@
           "radio": "WTMJ 620"
         },
         "weather": {
-          "temp_f": 83,
-          "condition": "Clear",
-          "wind": "6 mph · gusts 13",
-          "gusts_mph": 13
+          "temp_f": 90,
+          "condition": "Partly cloudy",
+          "wind": "12 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-14T13:32:14.803Z",
-            "freshness_label": "As of Jun 14, 2026, 9:32 AM ET"
+            "last_confirmed": "2026-06-14T16:35:00.730Z",
+            "freshness_label": "As of Jun 14, 2026, 12:35 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-14T13:32:14.803Z",
-            "freshness_label": "As of Jun 14, 2026, 9:32 AM ET"
+            "last_confirmed": "2026-06-14T16:35:00.730Z",
+            "freshness_label": "As of Jun 14, 2026, 12:35 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -392,7 +392,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "PHI vs MIA",
+    "matchup": "Ryan Gusto · PHI vs MIA",
     "date": "Mon, Jun 15",
     "time": "6:40 PM",
     "broadcast": "NBCSP",
