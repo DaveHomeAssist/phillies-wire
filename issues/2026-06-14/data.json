@@ -5,14 +5,14 @@
     "edition": 75,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-14T18:09:38.699Z",
+    "generated_at": "2026-06-14T18:34:07.629Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 14, 2026, 2:09 PM ET",
+      "generated_at_et": "Jun 14, 2026, 2:34 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, MIL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Kyle Schwarber is up against Kyle Harrison. Series: Series tied 1-1.",
+    "headline": "PHI 0, MIL 1",
+    "dek": "Middle 2nd · 3 outs",
+    "summary": "Garrett Mitchell is up against Cristopher Sánchez. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -47,8 +47,8 @@
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
-      "Kyle Harrison on the mound",
+      "Garrett Mitchell at the plate",
+      "Cristopher Sánchez on the mound",
       "American Family Field, Milwaukee"
     ],
     "next_label": "Tomorrow",
@@ -349,8 +349,8 @@
         "weather": {
           "temp_f": 91,
           "condition": "Overcast",
-          "wind": "13 mph · gusts 19",
-          "gusts_mph": 19
+          "wind": "13 mph · gusts 21",
+          "gusts_mph": 21
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-14T18:09:38.699Z",
-            "freshness_label": "As of Jun 14, 2026, 2:09 PM ET"
+            "last_confirmed": "2026-06-14T18:34:07.629Z",
+            "freshness_label": "As of Jun 14, 2026, 2:34 PM ET"
           },
           {
             "name": "Adolis García",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-14T18:09:38.699Z",
-            "freshness_label": "As of Jun 14, 2026, 2:09 PM ET"
+            "last_confirmed": "2026-06-14T18:34:07.629Z",
+            "freshness_label": "As of Jun 14, 2026, 2:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
