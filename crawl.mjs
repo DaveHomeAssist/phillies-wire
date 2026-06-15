@@ -108,10 +108,19 @@ export {
   pickActiveGame,
   clampOverride,
   updateRecordFromStandings,
+  normalizeGameContext,
+  computeCrawlState,
+  safeRound,
+  safeFormatGameTime,
+  formatScore,
+  loadFixture,
+  loadOverrides,
+  buildHero,
+  applyStandingsCrawlState,
 };
 
 async function main() {
-  const fixture = JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
+  const fixture = loadFixture();
   const overrides = loadOverrides(TODAY);
   const fetchSoft = createFetchSoft();
   const [
@@ -149,10 +158,17 @@ async function main() {
     : deriveIlFromTransactions(seasonTransactionsResponse);
 
   const nextGames = collectUpcomingGames(nextScheduleResponse, TEAM_ID);
-  const game = pickActiveGame(scheduleResponse?.dates?.[0]?.games ?? []);
+  const game = scheduleResponse ? pickActiveGame(scheduleResponse?.dates?.[0]?.games ?? []) : null;
 
   if (!game) {
-    const offDay = buildOffDayPayload(fixture, nextGames, overrides);
+    const offDay = buildOffDayPayload(fixture, nextGames, overrides, {
+      scheduleResponse,
+      nextScheduleResponse,
+      rosterResponse,
+      transactionResponse,
+      injuryResponse,
+      weatherResponse,
+    });
     if (lastFinal) offDay.meta.last_final = lastFinal;
     validateCrawlPayload(offDay);
     writePayload(offDay);
@@ -246,11 +262,8 @@ async function buildLivePayload(context) {
   const pitchHandByPlayerId = buildPitchHandIndex(gameFeed);
 
   const data = cloneJson(fixture);
-  const homeTeam = game.teams.home.team;
-  const awayTeam = game.teams.away.team;
-  const philliesAreHome = homeTeam.id === TEAM_ID;
-  const philliesSide = philliesAreHome ? game.teams.home : game.teams.away;
-  const opponentSide = philliesAreHome ? game.teams.away : game.teams.home;
+  const gameContext = normalizeGameContext(game);
+  const { homeEntry, awayEntry, homeTeam, awayTeam, philliesAreHome, philliesSide, opponentSide } = gameContext;
   const weather = weatherResponse?.current ?? {};
 
   data.meta.schema_version = fixture.meta.schema_version ?? SCHEMA_VERSION;
@@ -268,7 +281,14 @@ async function buildLivePayload(context) {
     ...fixture.meta.status,
     mode: deriveMode(game),
     mode_label: deriveModeLabel(game),
-    crawl_state: "ok",
+    crawl_state: computeCrawlState({
+      scheduleResponse: true,
+      nextScheduleResponse,
+      rosterResponse,
+      transactionResponse,
+      injuryResponse,
+      weatherResponse,
+    }),
     enrich_state: "pending",
     // Public-safe label. Internal "awaiting editorial pass" wording was
     // being shown to readers; "Draft edition" tells a subscriber the
@@ -291,8 +311,8 @@ async function buildLivePayload(context) {
   data.sections.game_status.content = {
     ...data.sections.game_status.content,
     matchup: buildMatchupTitle(game, awayTeam, homeTeam),
-    first_pitch: formatGameTime(game.gameDate),
-    venue: `${game.venue.name}, ${homeTeam.locationName}`,
+    first_pitch: safeFormatGameTime(game.gameDate),
+    venue: buildVenueLabel(game, homeTeam),
     starters: {
       home: homePitcher,
       away: awayPitcher,
@@ -310,10 +330,10 @@ async function buildLivePayload(context) {
       radio: extractBroadcast(game, "RADIO") ?? fixture.sections.game_status.content.broadcast.radio,
     },
     weather: {
-      temp_f: Math.round(weather.temperature_2m ?? fixture.sections.game_status.content.weather.temp_f),
+      temp_f: safeRound(weather.temperature_2m, fixture.sections.game_status.content.weather.temp_f, 72),
       condition: weatherCodeToText(weather.weather_code) ?? fixture.sections.game_status.content.weather.condition,
       wind: buildWindSummary(weather),
-      gusts_mph: Math.round(weather.wind_gusts_10m ?? fixture.sections.game_status.content.weather.gusts_mph),
+      gusts_mph: safeRound(weather.wind_gusts_10m, fixture.sections.game_status.content.weather.gusts_mph, 0),
     },
     giveaway: fixture.sections.game_status.content.giveaway,
     transit: fixture.sections.game_status.content.transit,
@@ -348,12 +368,12 @@ async function buildLivePayload(context) {
   if (isFinalGame(game)) {
     data.sections.recap.show = true;
     data.sections.recap.preview = buildRecapPreview(game, boxscore, fixture.sections.recap.preview);
-    data.sections.recap.title = `${formatWeekday(game.gameDate)} Recap`;
+    data.sections.recap.title = `${safeFormatWeekday(game.gameDate)} Recap`;
     data.sections.recap.content.date = data.meta.date;
     data.sections.recap.content.result = {
-      home_score: game.teams.home.score,
-      away_score: game.teams.away.score,
-      winner: game.teams.home.score > game.teams.away.score ? homeTeam.abbreviation : awayTeam.abbreviation,
+      home_score: homeEntry.score,
+      away_score: awayEntry.score,
+      winner: pickWinnerAbbr(homeEntry, awayEntry),
       summary_line: buildRecapSummaryLine(game, TEAM_ID),
     };
     data.sections.recap.content.key_performers = extractKeyPerformers(boxscore, fixture.sections.recap.content.key_performers);
@@ -375,7 +395,9 @@ async function buildLivePayload(context) {
     buildRotation(nextGames, fixture.sections.roster.content.rotation),
     fetchStandings(),
   ]);
-  data.record = updateRecordFromStandings(data.record, standings);
+  const standingsRows = standings ?? [];
+  applyStandingsCrawlState(data.meta.status, standingsRows);
+  data.record = updateRecordFromStandings(data.record, standingsRows);
 
   data.meta.game_pk = game.gamePk;
   data.meta.first_pitch_iso = game.gameDate;
@@ -410,9 +432,12 @@ async function buildLivePayload(context) {
   );
   data.sections.standings = {
     title: "NL East Standings",
-    preview: buildStandingsPreview(standings),
-    content: { teams: standings },
+    preview: buildStandingsPreview(standingsRows),
+    content: { teams: standingsRows },
   };
+  if (data.meta.status.crawl_state === "degraded") {
+    markCrawlDegraded(data.meta.status);
+  }
   data.sections.preview.content.up_next = buildUpNext(nextGames, fixture.sections.preview.content.up_next);
 
   if (nextGames.length > 1) {
@@ -465,6 +490,164 @@ function buildMatchupTitle(game, awayTeam, homeTeam) {
   return `${awayTeam.teamName} @ ${homeTeam.teamName} · ${seriesPart}`;
 }
 
+function normalizeGameContext(game, teamId = TEAM_ID) {
+  const homeEntry = normalizeTeamEntry(game?.teams?.home, {
+    id: teamId,
+    name: "Philadelphia Phillies",
+    abbreviation: "PHI",
+    teamName: "Phillies",
+    locationName: "Philadelphia",
+  });
+  const awayEntry = normalizeTeamEntry(game?.teams?.away, {
+    id: null,
+    name: "Opponent",
+    abbreviation: "OPP",
+    teamName: "Opponent",
+    locationName: "",
+  });
+  const homeTeam = homeEntry.team;
+  const awayTeam = awayEntry.team;
+  const philliesAreHome = Number(homeTeam.id) === teamId
+    ? true
+    : Number(awayTeam.id) === teamId
+    ? false
+    : homeTeam.id != null
+    ? false
+    : true;
+  const philliesSide = philliesAreHome ? homeEntry : awayEntry;
+  const opponentSide = philliesAreHome ? awayEntry : homeEntry;
+  if (Number(philliesSide.team.id) !== teamId) {
+    philliesSide.team = {
+      ...philliesSide.team,
+      id: teamId,
+      name: "Philadelphia Phillies",
+      abbreviation: "PHI",
+      teamName: "Phillies",
+      locationName: philliesSide.team.locationName || "Philadelphia",
+    };
+  }
+  if (!opponentSide.team.abbreviation || opponentSide.team.abbreviation === "PHI") {
+    opponentSide.team = { ...opponentSide.team, abbreviation: "OPP", teamName: "Opponent", name: "Opponent" };
+  }
+  return {
+    homeEntry,
+    awayEntry,
+    homeTeam: homeEntry.team,
+    awayTeam: awayEntry.team,
+    philliesAreHome,
+    philliesSide,
+    opponentSide,
+  };
+}
+
+function normalizeTeamEntry(entry = {}, fallbackTeam = {}) {
+  const team = entry?.team ?? {};
+  return {
+    ...entry,
+    leagueRecord: entry?.leagueRecord ?? null,
+    score: entry?.score == null ? null : Number.isFinite(Number(entry.score)) ? Number(entry.score) : null,
+    probablePitcher: entry?.probablePitcher ?? null,
+    team: {
+      id: team.id ?? fallbackTeam.id ?? null,
+      name: team.name ?? fallbackTeam.name ?? "Opponent",
+      abbreviation: team.abbreviation ?? fallbackTeam.abbreviation ?? "OPP",
+      teamName: team.teamName ?? fallbackTeam.teamName ?? team.name ?? "Opponent",
+      locationName: team.locationName ?? fallbackTeam.locationName ?? "",
+    },
+  };
+}
+
+function buildVenueLabel(game, homeTeam) {
+  const venue = game?.venue?.name ?? "Venue TBD";
+  const location = homeTeam?.locationName;
+  return location ? `${venue}, ${location}` : venue;
+}
+
+function computeCrawlState(sources = {}) {
+  return Object.values(sources).some((value) => value == null) ? "degraded" : "ok";
+}
+
+function safeRound(primary, fallback, hardDefault = 0) {
+  for (const value of [primary, fallback, hardDefault]) {
+    const numeric = Number(value);
+    if (Number.isFinite(numeric)) {
+      return Math.round(numeric);
+    }
+  }
+  return hardDefault;
+}
+
+function safeFormatGameTime(value) {
+  if (!value) {
+    return "TBD";
+  }
+  try {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) {
+      return "TBD";
+    }
+    return formatGameTime(value);
+  } catch {
+    return "TBD";
+  }
+}
+
+function safeFormatShortDate(value) {
+  return safeFormatDateLabel(value, formatShortDate, "Upcoming");
+}
+
+function safeFormatMonthDay(value) {
+  return safeFormatDateLabel(value, formatMonthDay, "TBD");
+}
+
+function safeFormatWeekday(value) {
+  return safeFormatDateLabel(value, formatWeekday, "Game");
+}
+
+function safeFormatDateLabel(value, formatter, fallback) {
+  if (!value) {
+    return fallback;
+  }
+  try {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) {
+      return fallback;
+    }
+    return formatter(value);
+  } catch {
+    return fallback;
+  }
+}
+
+function formatScore(value) {
+  if (value == null) {
+    return "\u2014";
+  }
+  const numeric = Number(value);
+  return Number.isFinite(numeric) ? String(numeric) : "\u2014";
+}
+
+function pickWinnerAbbr(homeEntry, awayEntry) {
+  const homeScore = Number(homeEntry?.score);
+  const awayScore = Number(awayEntry?.score);
+  if (!Number.isFinite(homeScore) || !Number.isFinite(awayScore)) {
+    return "TBD";
+  }
+  return homeScore > awayScore ? homeEntry.team.abbreviation : awayEntry.team.abbreviation;
+}
+
+function markCrawlDegraded(status, note = "One or more live data sources were unavailable; safe fallbacks were used.") {
+  status.crawl_state = "degraded";
+  status.source_notes = dedupeStrings([...(status.source_notes ?? []), note]);
+}
+
+function applyStandingsCrawlState(status, standingsRows) {
+  if (!standingsRows.length) {
+    markCrawlDegraded(status, "NL East standings unavailable; record and standings fields may use schedule or fixture fallback.");
+  }
+  return status;
+}
+
 function buildNextGameMatchup(nextGame) {
   const phi = nextGame?.homePitcher;
   const opp = nextGame?.awayPitcher;
@@ -499,16 +682,28 @@ function pickActiveGame(games) {
     String(left.gameDate ?? "").localeCompare(String(right.gameDate ?? "")),
   );
 
-  const live = byStart.find((game) => game?.status?.abstractGameState === "Live");
+  const selectable = byStart.filter((game) => !isPostponedOrCanceled(game));
+
+  const live = selectable.find((game) => game?.status?.abstractGameState === "Live");
   if (live) return live;
 
-  const upcoming = byStart.find((game) => game?.status?.abstractGameState === "Preview");
+  const upcoming = selectable.find((game) => game?.status?.abstractGameState === "Preview");
   if (upcoming) return upcoming;
 
-  const finals = byStart.filter((game) => game?.status?.abstractGameState === "Final");
+  const finals = selectable.filter((game) => game?.status?.abstractGameState === "Final");
   if (finals.length) return finals[finals.length - 1];
 
-  return byStart[0];
+  return selectable[0] ?? null;
+}
+
+function isPostponedOrCanceled(game) {
+  const statusText = [
+    game?.status?.detailedState,
+    game?.status?.reason,
+    game?.status?.abstractGameCode,
+  ].filter(Boolean).join(" ").toLowerCase();
+  const statusCode = String(game?.status?.codedGameState ?? game?.status?.statusCode ?? "").toUpperCase();
+  return statusCode === "D" || /postponed|cancelled|canceled/.test(statusText);
 }
 
 function resolvePitcher(side, fixture, role, pitchHandByPlayerId = null) {
@@ -753,7 +948,7 @@ function extractBattingOrder(teamBox, handednessByPlayerId = null) {
   return deduped.length === 9 ? deduped : [];
 }
 
-function buildOffDayPayload(fixture, nextGames, overrides) {
+function buildOffDayPayload(fixture, nextGames, overrides, sources = {}) {
   const data = cloneJson(fixture);
   const nextGame = nextGames[0] ?? null;
 
@@ -766,12 +961,15 @@ function buildOffDayPayload(fixture, nextGames, overrides) {
     ...fixture.meta.status,
     mode: "off_day",
     mode_label: "Off Day",
-    crawl_state: "ok",
+    crawl_state: computeCrawlState(sources),
     enrich_state: "skipped",
     enrich_label: "No game today. Archive and next-game mode published.",
     generated_at_et: formatGeneratedAtEt(data.meta.generated_at),
     source_notes: buildSourceNotes(null, fixture, overrides),
   };
+  if (data.meta.status.crawl_state === "degraded") {
+    markCrawlDegraded(data.meta.status);
+  }
 
   if (nextGame) {
     data.next_game = {
@@ -813,9 +1011,7 @@ function buildOffDayPayload(fixture, nextGames, overrides) {
 function buildHero(data, game) {
   const mode = data.meta.status.mode;
   const linescore = game.linescore ?? {};
-  const philliesAreHome = game.teams.home.team.id === TEAM_ID;
-  const philliesSide = philliesAreHome ? game.teams.home : game.teams.away;
-  const opponentSide = philliesAreHome ? game.teams.away : game.teams.home;
+  const { philliesAreHome, philliesSide, opponentSide } = normalizeGameContext(game);
 
   if (mode === "final") {
     const decisions = data.sections.recap.content.decisions ?? {};
@@ -855,7 +1051,7 @@ function buildHero(data, game) {
     return {
       mode,
       label: "Live",
-      headline: `${philliesSide.team.abbreviation} ${philliesSide.score ?? 0}, ${opponentSide.team.abbreviation} ${opponentSide.score ?? 0}`,
+      headline: `${philliesSide.team.abbreviation} ${formatScore(philliesSide.score)}, ${opponentSide.team.abbreviation} ${formatScore(opponentSide.score)}`,
       dek: `${inning} · ${outs}`,
       summary: `${batter} is up against ${pitcher}.${seriesContext ? ` ${seriesContext}` : ""}`,
       cards: [
@@ -907,6 +1103,7 @@ function buildGameStatusPreview(mode) {
 }
 
 function buildTicker(data, transactionResponse, weather) {
+  const gameWeather = data.sections.game_status.content.weather;
   const items = [
     { text: `PHI ${data.record.wins}-${data.record.losses}`, highlight: true },
     {
@@ -922,7 +1119,7 @@ function buildTicker(data, transactionResponse, weather) {
       highlight: false,
     },
     {
-      text: `${Math.round(weather.temperature_2m ?? data.sections.game_status.content.weather.temp_f)}° · ${data.sections.game_status.content.weather.condition} · gusts ${Math.round(weather.wind_gusts_10m ?? data.sections.game_status.content.weather.gusts_mph)} mph`,
+      text: `${safeRound(weather.temperature_2m, gameWeather.temp_f, 72)}° · ${gameWeather.condition} · gusts ${safeRound(weather.wind_gusts_10m, gameWeather.gusts_mph, 0)} mph`,
       highlight: false,
     },
   ];
@@ -1282,17 +1479,16 @@ function collectUpcomingGames(scheduleResponse, teamId) {
 
   for (const date of scheduleResponse?.dates ?? []) {
     for (const game of date.games ?? []) {
-      const homeTeam = game.teams.home.team;
-      const awayTeam = game.teams.away.team;
-      const philliesAreHome = homeTeam.id === teamId;
-      const philliesSide = philliesAreHome ? game.teams.home : game.teams.away;
-      const opponentSide = philliesAreHome ? game.teams.away : game.teams.home;
+      if (isPostponedOrCanceled(game)) {
+        continue;
+      }
+      const { homeTeam, awayTeam, philliesSide, opponentSide } = normalizeGameContext(game, teamId);
 
       games.push({
         gameDate: game.gameDate,
-        dateLabel: formatShortDate(game.gameDate),
-        shortDate: formatMonthDay(game.gameDate),
-        timeLabel: formatGameTime(game.gameDate),
+        dateLabel: safeFormatShortDate(game.gameDate),
+        shortDate: safeFormatMonthDay(game.gameDate),
+        timeLabel: safeFormatGameTime(game.gameDate),
         matchup: `${homeTeam.abbreviation} vs ${awayTeam.abbreviation}`,
         opponentAbbr: opponentSide.team.abbreviation,
         homePitcher: philliesSide.probablePitcher?.fullName ?? "TBD",
@@ -1388,10 +1584,12 @@ function buildRecapPreview(game, boxscore, fallback) {
     return fallback;
   }
 
-  const winner = game.teams.home.score > game.teams.away.score ? game.teams.home.team.abbreviation : game.teams.away.team.abbreviation;
-  const loser = winner === game.teams.home.team.abbreviation ? game.teams.away.team.abbreviation : game.teams.home.team.abbreviation;
-  const winningScore = Math.max(game.teams.home.score, game.teams.away.score);
-  const losingScore = Math.min(game.teams.home.score, game.teams.away.score);
+  const { homeEntry, awayEntry } = normalizeGameContext(game);
+  const winner = pickWinnerAbbr(homeEntry, awayEntry);
+  const loser = winner === homeEntry.team.abbreviation ? awayEntry.team.abbreviation : homeEntry.team.abbreviation;
+  const scores = [Number(homeEntry.score), Number(awayEntry.score)].filter(Number.isFinite);
+  const winningScore = scores.length === 2 ? Math.max(...scores) : "\u2014";
+  const losingScore = scores.length === 2 ? Math.min(...scores) : "\u2014";
   const firstPerformer = extractKeyPerformers(boxscore, [])[0];
   return firstPerformer
     ? `${winner} ${winningScore}, ${loser} ${losingScore} · ${firstPerformer.name} · ${firstPerformer.line}`
@@ -1399,10 +1597,8 @@ function buildRecapPreview(game, boxscore, fallback) {
 }
 
 function buildRecapSummaryLine(game, teamId) {
-  const philliesAreHome = game.teams.home.team.id === teamId;
-  const philliesSide = philliesAreHome ? game.teams.home : game.teams.away;
-  const opponentSide = philliesAreHome ? game.teams.away : game.teams.home;
-  return `${philliesSide.team.abbreviation} ${philliesSide.score}, ${opponentSide.team.abbreviation} ${opponentSide.score}.`;
+  const { philliesSide, opponentSide } = normalizeGameContext(game, teamId);
+  return `${philliesSide.team.abbreviation} ${formatScore(philliesSide.score)}, ${opponentSide.team.abbreviation} ${formatScore(opponentSide.score)}.`;
 }
 
 function validateCrawlPayload(data) {
@@ -1526,6 +1722,20 @@ function writePayload(data) {
   writeFileSync(OUTPUT_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
 }
 
+function loadFixture() {
+  try {
+    return JSON.parse(readFileSync("./phillies-wire-schema.json", "utf8"));
+  } catch (schemaError) {
+    try {
+      const previous = JSON.parse(readFileSync(OUTPUT_FILE, "utf8"));
+      console.warn(`[crawl] phillies-wire-schema.json unavailable; using previous payload as fixture fallback: ${schemaError.message}`);
+      return previous;
+    } catch {
+      throw new Error(`Unable to load phillies-wire-schema.json: ${schemaError.message}`);
+    }
+  }
+}
+
 function loadDailyProphet() {
   const path = "./daily-prophet.json";
   if (!existsSync(path)) {
@@ -1559,17 +1769,23 @@ function loadOverrides(date) {
     return null;
   }
 
-  // Check file size BEFORE reading. A 50 MB crafted override would
-  // exhaust heap during readFileSync before the existing post-read
-  // length check could fire. statSync is O(1) and doesn't touch data.
-  const { size } = statSync(path);
-  if (size > OVERRIDE_MAX_FILE_BYTES) {
-    throw new Error(`Override file ${path} is suspiciously large (${size} bytes). Aborting.`);
-  }
+  try {
+    // Check file size BEFORE reading. A 50 MB crafted override would
+    // exhaust heap during readFileSync before the existing post-read
+    // length check could fire. statSync is O(1) and doesn't touch data.
+    const { size } = statSync(path);
+    if (size > OVERRIDE_MAX_FILE_BYTES) {
+      console.warn(`[crawl] override file ${path} is suspiciously large (${size} bytes); ignoring it.`);
+      return null;
+    }
 
-  const raw = readFileSync(path, "utf8");
-  const parsed = JSON.parse(raw);
-  return clampOverride(parsed);
+    const raw = readFileSync(path, "utf8");
+    const parsed = JSON.parse(raw);
+    return clampOverride(parsed);
+  } catch (error) {
+    console.warn(`[crawl] override file ${path} could not be loaded; ignoring it: ${error.message}`);
+    return null;
+  }
 }
 
 function clampOverride(value) {

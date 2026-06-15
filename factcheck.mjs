@@ -31,6 +31,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { FETCH_TIMEOUT_MS } from "./config.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -47,6 +48,7 @@ const WHITELIST_DEFAULT = join(__dirname, "factcheck-whitelist.json");
 
 const MLB_TEAM_ID_PHI = 143;
 const MLB_API = "https://statsapi.mlb.com/api/v1";
+const FACTCHECK_FETCH_TIMEOUT_MS = Number(process.env.FACTCHECK_FETCH_TIMEOUT_MS ?? FETCH_TIMEOUT_MS);
 
 // NL East team IDs — used for standings reconciliation
 const NL_EAST_IDS = {
@@ -141,8 +143,7 @@ async function main() {
     console.error(`[FACTCHECK] notion upsert failed: ${e.message}`);
   }
 
-  const errCount = findings.errors.length + findings.stale.length + findings.pipeline.length;
-  if (errCount > 0) {
+  if (shouldEmailReport(findings)) {
     try {
       await emailReport(report);
       console.log(`[FACTCHECK] email sent`);
@@ -253,7 +254,7 @@ function runDeterministicChecks({ data, html, findings, whitelist: _w }) {
   // 4. Standings math: W + L ≥ 0 and GB consistent with leader
   const standingsRows = getStandingsRows(data);
   if (standingsRows.length) {
-    const leader = standingsRows.find((r) => Number(r.gb) === 0) ?? standingsRows[0];
+    const leader = pickStandingsLeader(standingsRows);
     if (leader && leader.wins != null && leader.losses != null) {
       for (const r of standingsRows) {
         if (r.wins == null || r.losses == null) continue;
@@ -383,7 +384,14 @@ async function runSourceChecks({ data, findings }) {
     const game = sched?.dates?.[0]?.games?.[0];
     if (game && game.status?.abstractGameState === "Final") {
       const gamePk = game.gamePk;
-      const boxscore = await fetchJSON(`${MLB_API}.1/game/${gamePk}/boxscore`).catch(() => null);
+      const boxscore = await fetchJSON(`${MLB_API}/game/${gamePk}/boxscore`).catch((error) => {
+        findings.unverified.push({
+          id: "recap-boxscore-api-unreachable",
+          title: "Could not reach MLB Stats API boxscore for recap reconciliation",
+          detail: error.message,
+        });
+        return null;
+      });
       if (boxscore) reconcileRecap({ data, boxscore, game, findings });
     }
   } catch (e) {
@@ -608,11 +616,16 @@ function buildReport({ editionDate, volume, issueNumber, status, findings, sourc
   };
 }
 
-function pickStatus(findings) {
+export function pickStatus(findings) {
   if (findings.pipeline.length > 0) return "Pipeline Bug";
   if (findings.errors.length > 0) return "Errors";
   if (findings.stale.length > 0) return "Stale Copy";
+  if (findings.unverified.length > 0) return "Unverified";
   return "Clean";
+}
+
+export function shouldEmailReport(findings) {
+  return findings.errors.length + findings.stale.length + findings.pipeline.length + findings.unverified.length > 0;
 }
 
 function printSummary(findings) {
@@ -707,7 +720,7 @@ async function emailReport(report) {
     tls: { minVersion: "TLSv1.2" },
   });
 
-  const subject = `[Wire Fact-check] ${report.editionDate} — ${report.status} (${report.findings.errors.length}E / ${report.findings.stale.length}S / ${report.findings.pipeline.length}P)`;
+  const subject = `[Wire Fact-check] ${report.editionDate} — ${report.status} (${report.findings.errors.length}E / ${report.findings.stale.length}S / ${report.findings.pipeline.length}P / ${report.findings.unverified.length}U)`;
   const html = markdownToEmailHTML(report.markdown);
 
   await transport.sendMail({
@@ -798,10 +811,39 @@ function truncate(s, n) {
   return s.length <= n ? s : s.slice(0, n - 1) + "…";
 }
 
-async function fetchJSON(url) {
-  const res = await fetch(url, { headers: { "User-Agent": "phillies-wire-factcheck/1.0" } });
+export async function fetchJSON(url, { fetchImpl = fetch, timeoutMs = FACTCHECK_FETCH_TIMEOUT_MS } = {}) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  let res;
+  try {
+    res = await fetchImpl(url, {
+      headers: { "User-Agent": "phillies-wire-factcheck/1.0" },
+      signal: controller.signal,
+    });
+  } catch (error) {
+    if (error?.name === "AbortError") {
+      throw new Error(`Factcheck fetch timed out after ${timeoutMs}ms: ${url}`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeout);
+  }
   if (!res.ok) throw new Error(`HTTP ${res.status} ${url}`);
   return res.json();
+}
+
+export function pickStandingsLeader(rows = []) {
+  return rows
+    .filter((row) => Number.isFinite(Number(row.wins)) && Number.isFinite(Number(row.losses)))
+    .sort((left, right) => {
+      const leftGames = Number(left.wins) + Number(left.losses);
+      const rightGames = Number(right.wins) + Number(right.losses);
+      const leftPct = leftGames ? Number(left.wins) / leftGames : 0;
+      const rightPct = rightGames ? Number(right.wins) / rightGames : 0;
+      return rightPct - leftPct
+        || Number(right.wins) - Number(left.wins)
+        || Number(left.losses) - Number(right.losses);
+    })[0] ?? null;
 }
 
 // ---------- Exported surface for verify.mjs ----------

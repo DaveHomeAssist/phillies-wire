@@ -6,6 +6,7 @@ import {
   CANONICAL_SCHEDULE_SCHEMA_VERSION,
   CANONICAL_SCHEDULE_SEASON,
   buildCanonicalSchedulePayload,
+  buildCanonicalScheduleSummary,
   findCurrentOrNextGame,
   formatEtDateLabel,
   formatEtTimeLabel,
@@ -68,13 +69,7 @@ export async function ensureCanonicalScheduleArtifacts(currentIssueData = {}) {
 
   const overrideResult = applyOverrides(payload, loadOverrides());
   payload = overrideResult.payload;
-  const pointer = findCurrentOrNextGame(payload.games, new Date());
-  payload.summary = {
-    ...payload.summary,
-    current_game_pk: pointer.current_game?.game_pk ?? null,
-    next_game_pk: pointer.next_game?.game_pk ?? null,
-    latest_completed_game_pk: pointer.latest_completed_game?.game_pk ?? null,
-  };
+  payload = refreshScheduleSummary(payload, new Date());
 
   const calendarText = buildCalendar(payload.games);
   const audit = {
@@ -99,6 +94,13 @@ export async function ensureCanonicalScheduleArtifacts(currentIssueData = {}) {
     calendarText,
     schedulePath: SCHEDULE_FILE,
     calendarPath: CALENDAR_FILE,
+  };
+}
+
+export function refreshScheduleSummary(payload, now = new Date()) {
+  return {
+    ...payload,
+    summary: buildCanonicalScheduleSummary(payload.games ?? [], now),
   };
 }
 
@@ -344,7 +346,7 @@ function ensureOverrideFile() {
   writeFileSync(SCHEDULE_OVERRIDES_FILE, `${JSON.stringify(initial, null, 2)}\n`, "utf8");
 }
 
-function buildCalendar(games = []) {
+export function buildCalendar(games = []) {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
@@ -366,7 +368,7 @@ function buildCalendar(games = []) {
     lines.push(
       "BEGIN:VEVENT",
       `UID:phillies-wire-${game.game_pk}@davehomeassist.github.io`,
-      `DTSTAMP:${buildCalendarStamp(new Date().toISOString())}`,
+      `DTSTAMP:${buildUtcCalendarStamp(new Date().toISOString())}`,
       `DTSTART;TZID=America/New_York:${start}`,
       `DTEND;TZID=America/New_York:${end}`,
       `SUMMARY:${escapeCalendarText(`⚾ ${game.title}`)}`,
@@ -381,14 +383,36 @@ function buildCalendar(games = []) {
 }
 
 function buildCalendarStamp(value) {
+  return buildEtCalendarStamp(value);
+}
+
+function buildEtCalendarStamp(value) {
+  return buildCalendarStampInTimeZone(value, "America/New_York");
+}
+
+function buildUtcCalendarStamp(value) {
+  return buildCalendarStampInTimeZone(value, "UTC") + "Z";
+}
+
+function buildCalendarStampInTimeZone(value, timeZone) {
   const date = new Date(value);
-  const year = date.getUTCFullYear();
-  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
-  const day = String(date.getUTCDate()).padStart(2, "0");
-  const hours = String(date.getUTCHours()).padStart(2, "0");
-  const minutes = String(date.getUTCMinutes()).padStart(2, "0");
-  const seconds = String(date.getUTCSeconds()).padStart(2, "0");
-  return `${year}${month}${day}T${hours}${minutes}${seconds}Z`;
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+    timeZone,
+    hour12: false,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  }).formatToParts(date).filter((part) => part.type !== "literal").map((part) => [part.type, part.value]));
+  const year = parts.year;
+  const month = parts.month;
+  const day = parts.day;
+  const hours = parts.hour === "24" ? "00" : parts.hour;
+  const minutes = parts.minute;
+  const seconds = parts.second;
+  return `${year}${month}${day}T${hours}${minutes}${seconds}`;
 }
 
 function buildCalendarEndStamp(value) {
@@ -417,7 +441,7 @@ function inferOfficialDate(dateLabel, fallbackDate) {
   }).format(new Date(parsed));
 }
 
-function buildNextGameIso(nextGame, fallbackDate) {
+export function buildNextGameIso(nextGame, fallbackDate) {
   const officialDate = inferOfficialDate(nextGame.date, fallbackDate);
   const time = String(nextGame.time || "7:05 PM");
   const match = time.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
@@ -430,7 +454,40 @@ function buildNextGameIso(nextGame, fallbackDate) {
     }
     minutes = Number(match[2]);
   }
-  return new Date(`${officialDate}T${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:00-04:00`).toISOString();
+  return buildEtLocalIso(officialDate, hours, minutes);
+}
+
+function buildEtLocalIso(officialDate, hours, minutes) {
+  const [year, month, day] = officialDate.split("-").map(Number);
+  let candidate = new Date(Date.UTC(year, month - 1, day, hours + 5, minutes, 0));
+  for (let i = 0; i < 3; i += 1) {
+    const parts = getEtDateParts(candidate);
+    const desired = Date.UTC(year, month - 1, day, hours, minutes, 0);
+    const actual = Date.UTC(parts.year, parts.month - 1, parts.day, parts.hour, parts.minute, 0);
+    const deltaMs = desired - actual;
+    if (deltaMs === 0) break;
+    candidate = new Date(candidate.getTime() + deltaMs);
+  }
+  return candidate.toISOString();
+}
+
+function getEtDateParts(date) {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    hour12: false,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).formatToParts(date).filter((part) => part.type !== "literal").map((part) => [part.type, part.value]));
+  return {
+    year: Number(parts.year),
+    month: Number(parts.month),
+    day: Number(parts.day),
+    hour: Number(parts.hour === "24" ? "0" : parts.hour),
+    minute: Number(parts.minute),
+  };
 }
 
 function extractOpponentAbbr(text) {

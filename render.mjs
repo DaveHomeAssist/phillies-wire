@@ -4,6 +4,7 @@ import {
   mkdirSync,
   readdirSync,
   readFileSync,
+  renameSync,
   rmSync,
   statSync,
   writeFileSync,
@@ -23,6 +24,8 @@ const ARCHIVE_FILE = "./archive.json";
 const ARCHIVE_DIR = "./archive";
 const ISSUES_DIR = "./issues";
 const SITE_DIR = "./site";
+const SITE_TMP_DIR = "./site.tmp";
+const SITE_BACKUP_DIR = "./site.bak";
 const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./live-feed.js", "./fonts.css"];
 const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed", "./schedule", "./shared", "./calendar", "./data"];
 const ISSUE_DATA_SCHEMA_VERSION = "1.3.0";
@@ -38,6 +41,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 
 async function main() {
   const data = JSON.parse(readFileSync(DATA_FILE, "utf8"));
+  validateRenderInput(data);
   const template = readFileSync(TEMPLATE_FILE, "utf8");
   const issueDate = data.meta.date;
   const scheduleArtifacts = await ensureCanonicalScheduleArtifacts(data);
@@ -106,7 +110,25 @@ async function main() {
   console.log("Rendered latest issue, dated issue page, archive, schedule data, calendar, latest.json, and site artifact");
 }
 
-function buildSiteArtifact({
+export function validateRenderInput(data) {
+  const missing = [];
+  if (!data || typeof data !== "object") {
+    throw new Error("Render input must be a JSON object.");
+  }
+  if (!hasValidIssueDate(data.meta?.date)) missing.push("meta.date");
+  if (!data.meta?.publication) missing.push("meta.publication");
+  if (!data.meta?.generated_at) missing.push("meta.generated_at");
+  if (!data.record || typeof data.record !== "object") missing.push("record");
+  if (!data.hero || typeof data.hero !== "object") missing.push("hero");
+  if (!data.hero?.headline) missing.push("hero.headline");
+  if (!data.sections || typeof data.sections !== "object") missing.push("sections");
+  if (!data.next_game || typeof data.next_game !== "object") missing.push("next_game");
+  if (missing.length) {
+    throw new Error(`Render input missing required field(s): ${missing.join(", ")}`);
+  }
+}
+
+export function buildSiteArtifact({
   latestHtml,
   archive,
   archiveHtml,
@@ -119,38 +141,57 @@ function buildSiteArtifact({
   faviconSvg,
   ogSvg,
 }) {
-  rmSync(SITE_DIR, { recursive: true, force: true });
-  mkdirSync(SITE_DIR, { recursive: true });
+  rmSync(SITE_TMP_DIR, { recursive: true, force: true });
+  mkdirSync(SITE_TMP_DIR, { recursive: true });
 
-  writeFileSync(`${SITE_DIR}/index.html`, latestHtml, "utf8");
-  writeFileSync(`${SITE_DIR}/archive.json`, `${JSON.stringify(archive, null, 2)}\n`, "utf8");
-  writeFileSync(`${SITE_DIR}/status.json`, `${JSON.stringify(status, null, 2)}\n`, "utf8");
-  writeFileSync(`${SITE_DIR}/latest.json`, `${JSON.stringify(latest, null, 2)}\n`, "utf8");
-  writeFileSync(`${SITE_DIR}/robots.txt`, robotsTxt, "utf8");
-  writeFileSync(`${SITE_DIR}/sitemap.xml`, sitemapXml, "utf8");
-  writeFileSync(`${SITE_DIR}/feed.xml`, feedXml, "utf8");
-  writeFileSync(`${SITE_DIR}/manifest.webmanifest`, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
-  writeFileSync(`${SITE_DIR}/favicon.svg`, faviconSvg, "utf8");
-  writeFileSync(`${SITE_DIR}/${DEFAULT_OG_IMAGE_PATH}`, ogSvg, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/index.html`, latestHtml, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/archive.json`, `${JSON.stringify(archive, null, 2)}\n`, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/status.json`, `${JSON.stringify(status, null, 2)}\n`, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/latest.json`, `${JSON.stringify(latest, null, 2)}\n`, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/robots.txt`, robotsTxt, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/sitemap.xml`, sitemapXml, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/feed.xml`, feedXml, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/manifest.webmanifest`, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/favicon.svg`, faviconSvg, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/${DEFAULT_OG_IMAGE_PATH}`, ogSvg, "utf8");
 
   for (const asset of STATIC_ASSET_FILES) {
     if (existsSync(asset)) {
-      copyFileSync(asset, `${SITE_DIR}/${asset.replace("./", "")}`);
+      copyFileSync(asset, `${SITE_TMP_DIR}/${asset.replace("./", "")}`);
     }
   }
 
   for (const dir of STATIC_ASSET_DIRS) {
     if (existsSync(dir)) {
-      copyDirectory(dir, `${SITE_DIR}/${dir.replace("./", "")}`);
+      copyDirectory(dir, `${SITE_TMP_DIR}/${dir.replace("./", "")}`);
     }
   }
 
   if (existsSync(ISSUES_DIR)) {
-    copyDirectory(ISSUES_DIR, `${SITE_DIR}/issues`);
+    copyDirectory(ISSUES_DIR, `${SITE_TMP_DIR}/issues`);
   }
 
-  mkdirSync(`${SITE_DIR}/archive`, { recursive: true });
-  writeFileSync(`${SITE_DIR}/archive/index.html`, archiveHtml, "utf8");
+  mkdirSync(`${SITE_TMP_DIR}/archive`, { recursive: true });
+  writeFileSync(`${SITE_TMP_DIR}/archive/index.html`, archiveHtml, "utf8");
+  replaceSiteArtifact();
+}
+
+function replaceSiteArtifact() {
+  rmSync(SITE_BACKUP_DIR, { recursive: true, force: true });
+  const hadPreviousSite = existsSync(SITE_DIR);
+  if (hadPreviousSite) {
+    renameSync(SITE_DIR, SITE_BACKUP_DIR);
+  }
+  try {
+    renameSync(SITE_TMP_DIR, SITE_DIR);
+  } catch (error) {
+    if (hadPreviousSite && existsSync(SITE_BACKUP_DIR) && !existsSync(SITE_DIR)) {
+      renameSync(SITE_BACKUP_DIR, SITE_DIR);
+    }
+    throw error;
+  } finally {
+    rmSync(SITE_BACKUP_DIR, { recursive: true, force: true });
+  }
 }
 
 // Per-issue machine-readable payload. A minimal, stable subset of the full
@@ -520,10 +561,10 @@ function buildArchiveEntry(data) {
   };
 }
 
-function upsertArchive(archive, entry, data) {
-  const entries = [entry, ...(archive.entries ?? []).filter((item) => item.date !== entry.date)].sort((left, right) =>
-    right.date.localeCompare(left.date),
-  );
+export function upsertArchive(archive, entry, data) {
+  const entries = [entry, ...(archive.entries ?? []).filter((item) => item.date !== entry.date)]
+    .filter((item) => hasValidIssueDate(item.date))
+    .sort((left, right) => String(right.date).localeCompare(String(left.date)));
 
   return {
     schema_version: data.meta.schema_version ?? archive.schema_version ?? "1.2.0",
@@ -535,7 +576,7 @@ function upsertArchive(archive, entry, data) {
 }
 
 function renderArchivePage(archive) {
-  const entries = archive.entries ?? [];
+  const entries = (archive.entries ?? []).filter((entry) => hasValidIssueDate(entry.date));
   const latestEntry = entries[0];
   const latestSummary = latestEntry
     ? `${formatArchiveDate(latestEntry.date)} · ${latestEntry.hero_label} · ${latestEntry.headline}`
@@ -730,8 +771,11 @@ function renderTemplate(templateString, scope, root) {
   output = output.replace(/{{{\s*([^}]+)\s*}}}/g, (_match, path) => {
     const trimmed = path.trim();
     if (!trimmed) throw new Error("Empty {{{ }}} expression in template.");
+    if (!isAllowedRawToken(trimmed)) {
+      throw new Error(`Raw template token "${trimmed}" is not allowlisted.`);
+    }
     const value = resolvePath(trimmed, scope, root);
-    return value == null ? "" : String(value);
+    return stringifyTokenValue(value, trimmed);
   });
 
   return output.replace(/{{\s*([^#\/][^}]*)\s*}}/g, (_match, path) => {
@@ -740,8 +784,22 @@ function renderTemplate(templateString, scope, root) {
     // whole scope object and silently stringify to "[object Object]".
     if (!trimmed) throw new Error("Empty {{ }} expression in template.");
     const value = resolvePath(trimmed, scope, root);
-    return escapeHtml(value == null ? "" : String(value));
+    return escapeHtml(stringifyTokenValue(value, trimmed));
   });
+}
+
+function stringifyTokenValue(value, path) {
+  if (value == null) {
+    return "";
+  }
+  if (Array.isArray(value) || typeof value === "object") {
+    throw new Error(`Template token "${path}" resolved to a non-scalar value.`);
+  }
+  return String(value);
+}
+
+function isAllowedRawToken(path) {
+  return path === "meta.json_ld" || path === "meta.raw";
 }
 
 function renderBlocks(templateString, blockName, scope, root, replacer) {
@@ -819,8 +877,8 @@ function resolvePath(path, scope, root) {
   return trimmedPath.split(".").reduce((current, segment) => current?.[segment], base);
 }
 
-function escapeHtml(value) {
-  return value
+export function escapeHtml(value) {
+  return String(value ?? "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -921,7 +979,10 @@ function buildLatestPayload(data, canonicalSchedule) {
   };
 }
 
-function formatArchiveDate(dateString) {
+export function formatArchiveDate(dateString) {
+  if (!hasValidIssueDate(dateString)) {
+    return "Undated";
+  }
   return new Intl.DateTimeFormat("en-US", {
     timeZone: "America/New_York",
     weekday: "short",
@@ -929,6 +990,14 @@ function formatArchiveDate(dateString) {
     day: "numeric",
     year: "numeric",
   }).format(new Date(`${dateString}T12:00:00Z`));
+}
+
+function hasValidIssueDate(value) {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    return false;
+  }
+  const parsed = new Date(`${value}T12:00:00Z`);
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
 }
 
 function formatTimestamp(isoString) {

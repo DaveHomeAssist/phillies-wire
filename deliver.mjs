@@ -1,14 +1,16 @@
 import { readFileSync, existsSync } from "node:fs";
-import { createTransport } from "nodemailer";
+import { pathToFileURL } from "node:url";
 
 const OUTPUT_FILE = "./phillies-wire-output.html";
 const DATA_FILE = "./phillies-wire-data.json";
 const CSS_FILES = ["./tokens.css", "./phillies-wire.css"];
 
-main().catch((error) => {
-  console.error(redactSmtp(error.message));
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(redactSmtp(error.message));
+    process.exit(1);
+  });
+}
 
 function redactSmtp(message) {
   if (!message) {
@@ -26,17 +28,18 @@ function redactSmtp(message) {
   return redacted;
 }
 
-async function main() {
+export async function main({ createTransportImpl = null } = {}) {
   const recipients = process.env.DELIVERY_RECIPIENTS;
   if (!recipients) {
     console.log("DELIVERY_RECIPIENTS not set — skipping delivery.");
-    process.exit(0);
+    return;
   }
 
   const smtpUser = process.env.SMTP_USER;
   const smtpPass = process.env.SMTP_PASS;
   if (!smtpUser || !smtpPass) {
-    throw new Error("SMTP_USER and SMTP_PASS are required for delivery.");
+    console.error("SMTP_USER and SMTP_PASS are required for delivery; skipping delivery.");
+    return;
   }
 
   const data = JSON.parse(readFileSync(DATA_FILE, "utf8"));
@@ -47,17 +50,40 @@ async function main() {
   const plainText = buildPlainText(data);
 
   const smtpPort = Number(process.env.SMTP_PORT ?? 587);
-  const transport = createTransport({
+  const makeTransport = createTransportImpl ?? (await import("nodemailer")).createTransport;
+  const transport = makeTransport({
     host: process.env.SMTP_HOST ?? "smtp.gmail.com",
     port: smtpPort,
     secure: smtpPort === 465,
     requireTLS: true,
     auth: { user: smtpUser, pass: smtpPass },
+    connectionTimeout: Number(process.env.SMTP_TIMEOUT_MS ?? 10000),
+    greetingTimeout: Number(process.env.SMTP_TIMEOUT_MS ?? 10000),
+    socketTimeout: Number(process.env.SMTP_TIMEOUT_MS ?? 10000),
     tls: {
       minVersion: "TLSv1.2",
     },
   });
 
+  const delivery = await sendDelivery(transport, {
+    from: `"${data.meta.publication}" <${smtpUser}>`,
+    to: recipients,
+    subject,
+    text: plainText,
+    html: inlinedHtml,
+  });
+  if (delivery.delivered === 0) {
+    return;
+  }
+
+  // Log the count, not the list. Action logs are retained and emails
+  // are PII — a recipient list dumped to stdout ends up searchable in
+  // CI history indefinitely.
+  const count = delivery.delivered;
+  console.log(`Delivered to ${count} recipient${count === 1 ? "" : "s"}`);
+}
+
+export async function sendDelivery(transport, message, { retries = 1 } = {}) {
   try {
     await transport.verify();
   } catch (error) {
@@ -67,22 +93,46 @@ async function main() {
     console.warn(`SMTP verification warning: ${redactSmtp(error.message)}`);
   }
 
-  await transport.sendMail({
-    from: `"${data.meta.publication}" <${smtpUser}>`,
-    to: recipients,
-    subject,
-    text: plainText,
-    html: inlinedHtml,
-  });
+  const recipients = parseRecipients(message.to);
+  let delivered = 0;
+  let failed = 0;
+  try {
+    for (const [index, recipient] of recipients.entries()) {
+      const ok = await sendOneRecipient(transport, { ...message, to: recipient }, { retries, index });
+      if (ok) {
+        delivered += 1;
+      } else {
+        failed += 1;
+      }
+    }
+    return { delivered, failed };
+  } finally {
+    transport.close?.();
+  }
+}
 
-  // Log the count, not the list. Action logs are retained and emails
-  // are PII — a recipient list dumped to stdout ends up searchable in
-  // CI history indefinitely.
-  const count = String(recipients)
+function parseRecipients(value) {
+  return String(value ?? "")
     .split(",")
-    .map((s) => s.trim())
-    .filter(Boolean).length;
-  console.log(`Delivered to ${count} recipient${count === 1 ? "" : "s"}`);
+    .map((recipient) => recipient.trim())
+    .filter(Boolean);
+}
+
+async function sendOneRecipient(transport, message, { retries, index }) {
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
+    try {
+      await transport.sendMail(message);
+      return true;
+    } catch (error) {
+      if (attempt < retries) {
+        console.warn(`SMTP delivery warning for recipient #${index + 1}, retrying: ${redactSmtp(error.message)}`);
+        continue;
+      }
+      console.error(`SMTP delivery failed for recipient #${index + 1}: ${redactSmtp(error.message)}`);
+      return false;
+    }
+  }
+  return false;
 }
 
 function inlineStyles(html, cssFiles) {

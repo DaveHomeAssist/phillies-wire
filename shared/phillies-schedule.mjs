@@ -227,21 +227,12 @@ export function findLatestCompletedGame(games = []) {
 }
 
 export function buildCanonicalSchedulePayload(rawGames = [], meta = {}) {
-  const games = rawGames
+  const games = dedupeRawGamesByPk(rawGames)
     .filter((game) => String(game.gameType || "").toUpperCase() === "R")
     .map((game, index) => buildCanonicalGame(game, { season: meta.season, sequence: index + 1 }))
     .sort(sortGamesByDate);
 
-  const pointer = findCurrentOrNextGame(games, meta.now || new Date());
-  const summary = {
-    total_games: games.length,
-    home_games: games.filter((game) => game.home_game).length,
-    away_games: games.filter((game) => !game.home_game).length,
-    completed_games: games.filter(isCompletedGame).length,
-    current_game_pk: pointer.current_game?.game_pk ?? null,
-    next_game_pk: pointer.next_game?.game_pk ?? null,
-    latest_completed_game_pk: pointer.latest_completed_game?.game_pk ?? null,
-  };
+  const summary = buildCanonicalScheduleSummary(games, meta.now || new Date());
 
   return {
     schema_version: CANONICAL_SCHEDULE_SCHEMA_VERSION,
@@ -256,6 +247,35 @@ export function buildCanonicalSchedulePayload(rawGames = [], meta = {}) {
     summary,
     games,
   };
+}
+
+export function buildCanonicalScheduleSummary(games = [], now = new Date()) {
+  const pointer = findCurrentOrNextGame(games, now);
+  return {
+    total_games: games.length,
+    home_games: games.filter((game) => game.home_game).length,
+    away_games: games.filter((game) => !game.home_game).length,
+    completed_games: games.filter(isCompletedGame).length,
+    current_game_pk: pointer.current_game?.game_pk ?? null,
+    next_game_pk: pointer.next_game?.game_pk ?? null,
+    latest_completed_game_pk: pointer.latest_completed_game?.game_pk ?? null,
+  };
+}
+
+function dedupeRawGamesByPk(rawGames) {
+  const seen = new Set();
+  return rawGames.filter((game) => {
+    const pk = game?.gamePk;
+    if (pk == null) {
+      return true;
+    }
+    const key = String(pk);
+    if (seen.has(key)) {
+      return false;
+    }
+    seen.add(key);
+    return true;
+  });
 }
 
 export function buildCanonicalGame(rawGame = {}) {
