@@ -117,6 +117,7 @@ export {
   loadOverrides,
   buildHero,
   applyStandingsCrawlState,
+  reconcileRecordStreakWithLastFinal,
 };
 
 async function main() {
@@ -169,7 +170,10 @@ async function main() {
       injuryResponse,
       weatherResponse,
     });
-    if (lastFinal) offDay.meta.last_final = lastFinal;
+    if (lastFinal) {
+      offDay.meta.last_final = lastFinal;
+      offDay.record = reconcileRecordStreakWithLastFinal(offDay.record, lastFinal);
+    }
     validateCrawlPayload(offDay);
     writePayload(offDay);
     console.log(`No game scheduled for ${TODAY}. Off-day payload written.`);
@@ -194,7 +198,10 @@ async function main() {
     injuryResponse,
     weatherResponse,
   });
-  if (lastFinal) data.meta.last_final = lastFinal;
+  if (lastFinal) {
+    data.meta.last_final = lastFinal;
+    data.record = reconcileRecordStreakWithLastFinal(data.record, lastFinal);
+  }
 
   const finalData = IS_LIVE_REFRESH ? preserveEditorialFromPrevious(data) : data;
   validateCrawlPayload(finalData);
@@ -1226,6 +1233,20 @@ function updateRecordFromStandings(record, teams) {
     ...record,
     streak: phi.streak || record.streak,
     division_rank: Number.isFinite(phi.division_rank) ? phi.division_rank : record.division_rank,
+  };
+}
+
+function reconcileRecordStreakWithLastFinal(record = {}, lastFinal = null) {
+  if (!lastFinal || (lastFinal.outcome !== "W" && lastFinal.outcome !== "L")) {
+    return record;
+  }
+  const current = String(record.streak ?? "").trim();
+  if (current[0]?.toUpperCase() === lastFinal.outcome) {
+    return record;
+  }
+  return {
+    ...record,
+    streak: `${lastFinal.outcome}1`,
   };
 }
 

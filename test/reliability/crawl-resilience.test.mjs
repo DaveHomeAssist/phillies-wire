@@ -29,6 +29,7 @@ import {
   loadOverrides,
   buildHero,
   applyStandingsCrawlState,
+  reconcileRecordStreakWithLastFinal,
 } from "../../crawl.mjs";
 import { test, run, assert } from "./_harness.mjs";
 
@@ -89,6 +90,14 @@ test("P1-CRAWL-4: missing source responses mark crawl state degraded", () => {
   applyStandingsCrawlState(status, []);
   assert.equal(status.crawl_state, "degraded");
   assert.ok(status.source_notes.some((note) => /standings unavailable/i.test(note)));
+});
+
+test("record.streak is reconciled with the freshest MLB final before verify", () => {
+  const out = reconcileRecordStreakWithLastFinal(
+    { wins: 40, losses: 29, streak: "L1" },
+    { date: "2026-06-13", phi_runs: 9, opp_abbr: "MIL", opp_runs: 8, outcome: "W" },
+  );
+  assert.equal(out.streak, "W1");
 });
 
 test("P1-CRAWL-4: weather numerics use finite fallbacks instead of NaN", () => {
