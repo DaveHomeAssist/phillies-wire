@@ -5,14 +5,14 @@
     "edition": 76,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-15T22:03:21.262Z",
+    "generated_at": "2026-06-15T22:30:19.071Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 15, 2026, 6:03 PM ET",
+      "generated_at_et": "Jun 15, 2026, 6:30 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -27,28 +27,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Marlins @ Phillies · Game 1 of 3",
-    "dek": "Zack Wheeler vs Ryan Gusto",
-    "summary": "Zack Wheeler vs Ryan Gusto · Marlins @ Phillies · Game 1 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, MIA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Liam Hicks is up against Zack Wheeler. Series: Regular Season.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "6:40 PM"
-      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "75° · Overcast"
       }
     ],
     "bullets": [
-      "76° · Overcast · 9 mph · gusts 17",
-      "Regular Season"
+      "Liam Hicks at the plate",
+      "Zack Wheeler on the mound",
+      "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Tyler Phillips · PHI vs MIA · Tue, Jun 16 · 6:40 PM"
@@ -346,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 76,
+          "temp_f": 75,
           "condition": "Overcast",
-          "wind": "9 mph · gusts 17",
-          "gusts_mph": 17
+          "wind": "7 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -369,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-15T22:03:21.262Z",
-            "freshness_label": "As of Jun 15, 2026, 6:03 PM ET"
+            "last_confirmed": "2026-06-15T22:30:19.071Z",
+            "freshness_label": "As of Jun 15, 2026, 6:30 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +383,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-15T22:03:21.262Z",
-            "freshness_label": "As of Jun 15, 2026, 6:03 PM ET"
+            "last_confirmed": "2026-06-15T22:30:19.071Z",
+            "freshness_label": "As of Jun 15, 2026, 6:30 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
