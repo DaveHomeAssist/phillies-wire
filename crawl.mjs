@@ -118,6 +118,7 @@ export {
   buildHero,
   applyStandingsCrawlState,
   reconcileRecordStreakWithLastFinal,
+  reconcilePayloadStreakWithLastFinal,
 };
 
 async function main() {
@@ -172,7 +173,7 @@ async function main() {
     });
     if (lastFinal) {
       offDay.meta.last_final = lastFinal;
-      offDay.record = reconcileRecordStreakWithLastFinal(offDay.record, lastFinal);
+      reconcilePayloadStreakWithLastFinal(offDay, lastFinal);
     }
     validateCrawlPayload(offDay);
     writePayload(offDay);
@@ -200,7 +201,7 @@ async function main() {
   });
   if (lastFinal) {
     data.meta.last_final = lastFinal;
-    data.record = reconcileRecordStreakWithLastFinal(data.record, lastFinal);
+    reconcilePayloadStreakWithLastFinal(data, lastFinal);
   }
 
   const finalData = IS_LIVE_REFRESH ? preserveEditorialFromPrevious(data) : data;
@@ -1248,6 +1249,32 @@ function reconcileRecordStreakWithLastFinal(record = {}, lastFinal = null) {
     ...record,
     streak: `${lastFinal.outcome}1`,
   };
+}
+
+function reconcilePayloadStreakWithLastFinal(data = {}, lastFinal = null) {
+  if (!lastFinal || (lastFinal.outcome !== "W" && lastFinal.outcome !== "L")) {
+    return data;
+  }
+
+  data.record = reconcileRecordStreakWithLastFinal(data.record ?? {}, lastFinal);
+
+  const teams = data.sections?.standings?.content?.teams;
+  if (Array.isArray(teams)) {
+    const streak = data.record?.streak ?? `${lastFinal.outcome}1`;
+    const reconciledTeams = teams.map((team) => (
+      isPhilliesStandingRow(team)
+        ? { ...team, streak }
+        : team
+    ));
+    data.sections.standings.content.teams = reconciledTeams;
+    data.sections.standings.preview = buildStandingsPreview(reconciledTeams);
+  }
+
+  return data;
+}
+
+function isPhilliesStandingRow(team = {}) {
+  return team.is_phi || team.abbr === "PHI" || team.team === "PHI";
 }
 
 function buildUpNext(nextGames, fallback) {

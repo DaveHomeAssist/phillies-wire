@@ -30,6 +30,7 @@ import {
   buildHero,
   applyStandingsCrawlState,
   reconcileRecordStreakWithLastFinal,
+  reconcilePayloadStreakWithLastFinal,
 } from "../../crawl.mjs";
 import { test, run, assert } from "./_harness.mjs";
 
@@ -98,6 +99,31 @@ test("record.streak is reconciled with the freshest MLB final before verify", ()
     { date: "2026-06-13", phi_runs: 9, opp_abbr: "MIL", opp_runs: 8, outcome: "W" },
   );
   assert.equal(out.streak, "W1");
+});
+
+test("record and standings streaks are reconciled together before factcheck", () => {
+  const payload = {
+    record: { wins: 40, losses: 29, streak: "L1" },
+    sections: {
+      standings: {
+        preview: "PHI 40-29 · 1st · L1",
+        content: {
+          teams: [
+            { abbr: "PHI", wins: 40, losses: 29, gb: "\u2014", streak: "L1", is_phi: true },
+            { abbr: "ATL", wins: 31, losses: 38, gb: "9.0", streak: "W1" },
+          ],
+        },
+      },
+    },
+  };
+  const out = reconcilePayloadStreakWithLastFinal(
+    payload,
+    { date: "2026-06-13", phi_runs: 9, opp_abbr: "MIL", opp_runs: 8, outcome: "W" },
+  );
+  const phi = out.sections.standings.content.teams.find((team) => team.is_phi);
+  assert.equal(out.record.streak, "W1");
+  assert.equal(phi.streak, "W1");
+  assert.match(out.sections.standings.preview, /W1$/);
 });
 
 test("P1-CRAWL-4: weather numerics use finite fallbacks instead of NaN", () => {
