@@ -119,6 +119,7 @@ export {
   applyStandingsCrawlState,
   reconcileRecordStreakWithLastFinal,
   reconcilePayloadStreakWithLastFinal,
+  extractLastFinalFromGame,
 };
 
 async function main() {
@@ -199,9 +200,10 @@ async function main() {
     injuryResponse,
     weatherResponse,
   });
-  if (lastFinal) {
-    data.meta.last_final = lastFinal;
-    reconcilePayloadStreakWithLastFinal(data, lastFinal);
+  const resolvedLastFinal = extractLastFinalFromGame(game) ?? lastFinal;
+  if (resolvedLastFinal) {
+    data.meta.last_final = resolvedLastFinal;
+    reconcilePayloadStreakWithLastFinal(data, resolvedLastFinal);
   }
 
   const finalData = IS_LIVE_REFRESH ? preserveEditorialFromPrevious(data) : data;
@@ -1271,6 +1273,28 @@ function reconcilePayloadStreakWithLastFinal(data = {}, lastFinal = null) {
   }
 
   return data;
+}
+
+function extractLastFinalFromGame(game, teamId = TEAM_ID) {
+  if (!isFinalGame(game)) {
+    return null;
+  }
+  const { philliesAreHome, philliesSide, opponentSide } = normalizeGameContext(game, teamId);
+  const phiRuns = philliesSide.score;
+  const oppRuns = opponentSide.score;
+  if (!Number.isFinite(phiRuns) || !Number.isFinite(oppRuns)) {
+    return null;
+  }
+
+  return {
+    date: game.officialDate ?? String(game.gameDate ?? TODAY).slice(0, 10),
+    game_pk: game.gamePk ?? null,
+    phi_runs: phiRuns,
+    opp_runs: oppRuns,
+    opp_abbr: opponentSide.team.abbreviation ?? opponentSide.team.teamCode?.toUpperCase() ?? "OPP",
+    outcome: phiRuns > oppRuns ? "W" : "L",
+    venue_is_home: philliesAreHome,
+  };
 }
 
 function isPhilliesStandingRow(team = {}) {

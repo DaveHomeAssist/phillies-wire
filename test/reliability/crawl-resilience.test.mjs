@@ -31,6 +31,7 @@ import {
   applyStandingsCrawlState,
   reconcileRecordStreakWithLastFinal,
   reconcilePayloadStreakWithLastFinal,
+  extractLastFinalFromGame,
 } from "../../crawl.mjs";
 import { test, run, assert } from "./_harness.mjs";
 
@@ -124,6 +125,38 @@ test("record and standings streaks are reconciled together before factcheck", ()
   assert.equal(out.record.streak, "W1");
   assert.equal(phi.streak, "W1");
   assert.match(out.sections.standings.preview, /W1$/);
+});
+
+test("same-day active final supersedes the previous recent-final fallback", () => {
+  const activeFinal = extractLastFinalFromGame({
+    gamePk: 777,
+    officialDate: "2026-06-14",
+    status: { abstractGameState: "Final", detailedState: "Final" },
+    teams: {
+      home: { team: { id: 158, abbreviation: "MIL", teamName: "Brewers" }, score: 4 },
+      away: { team: { id: 143, abbreviation: "PHI", teamName: "Phillies" }, score: 0 },
+    },
+  });
+  assert.equal(activeFinal.outcome, "L");
+  assert.equal(activeFinal.date, "2026-06-14");
+  assert.equal(activeFinal.phi_runs, 0);
+  assert.equal(activeFinal.opp_runs, 4);
+
+  const payload = {
+    record: { wins: 38, losses: 33, streak: "W1" },
+    sections: {
+      standings: {
+        preview: "PHI 38-33 · 2.0 GB · W1",
+        content: {
+          teams: [{ abbr: "PHI", wins: 38, losses: 33, gb: "2.0", streak: "W1", is_phi: true }],
+        },
+      },
+    },
+  };
+  const out = reconcilePayloadStreakWithLastFinal(payload, activeFinal);
+  assert.equal(out.record.streak, "L1");
+  assert.equal(out.sections.standings.content.teams[0].streak, "L1");
+  assert.match(out.sections.standings.preview, /L1$/);
 });
 
 test("P1-CRAWL-4: weather numerics use finite fallbacks instead of NaN", () => {
