@@ -5,14 +5,14 @@
     "edition": 77,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-16T22:53:50.818Z",
+    "generated_at": "2026-06-16T23:04:21.761Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 16, 2026, 6:53 PM ET",
+      "generated_at_et": "Jun 16, 2026, 7:04 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, MIA 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "Brandon Marsh is up against Tyler Phillips. Series: PHI leads 1-0.",
+    "headline": "PHI 3, MIA 0",
+    "dek": "Bottom 1st · 1 out",
+    "summary": "J.T. Realmuto is up against Tyler Phillips. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -47,7 +47,7 @@
       }
     ],
     "bullets": [
-      "Brandon Marsh at the plate",
+      "J.T. Realmuto at the plate",
       "Tyler Phillips on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -349,8 +349,8 @@
         "weather": {
           "temp_f": 75,
           "condition": "Clear",
-          "wind": "7 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "7 mph · gusts 8",
+          "gusts_mph": 8
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-16T22:53:50.818Z",
-            "freshness_label": "As of Jun 16, 2026, 6:53 PM ET"
+            "last_confirmed": "2026-06-16T23:04:21.761Z",
+            "freshness_label": "As of Jun 16, 2026, 7:04 PM ET"
           },
           {
             "name": "Adolis García",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-16T22:53:50.818Z",
-            "freshness_label": "As of Jun 16, 2026, 6:53 PM ET"
+            "last_confirmed": "2026-06-16T23:04:21.761Z",
+            "freshness_label": "As of Jun 16, 2026, 7:04 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-16T22:53:50.818Z",
-            "freshness_label": "As of Jun 16, 2026, 6:53 PM ET"
+            "last_confirmed": "2026-06-16T23:04:21.761Z",
+            "freshness_label": "As of Jun 16, 2026, 7:04 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
