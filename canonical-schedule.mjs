@@ -151,57 +151,62 @@ function buildFallbackSchedulePayload(currentIssueData = {}, generatedAt) {
   const status = meta.status || {};
   const nextGame = currentIssueData.next_game || {};
   const currentDate = meta.date;
+  const gameStatus = currentIssueData.sections?.game_status?.content ?? {};
 
   if (currentDate) {
+    const currentGameIso = meta.first_pitch_iso || buildNextGameIso(
+      { date: currentDate, time: gameStatus.first_pitch },
+      currentDate,
+    );
     fallbackGames.push({
       game_pk: Number(meta.game_pk || 0) || null,
       official_date: currentDate,
-      game_date: meta.first_pitch_iso || `${currentDate}T23:05:00Z`,
-      title: currentIssueData.sections?.game_status?.content?.matchup || currentIssueData.hero?.headline || "Phillies game",
-      matchup: currentIssueData.sections?.game_status?.content?.matchup || currentIssueData.hero?.headline || "PHI",
-      date_label: formatEtDateLabel(meta.first_pitch_iso || currentDate),
-      time_label: formatEtTimeLabel(meta.first_pitch_iso || null),
-      home_game: Boolean(currentIssueData.sections?.game_status?.content?.venue_is_home),
-      phillies_side: currentIssueData.sections?.game_status?.content?.venue_is_home ? "home" : "away",
+      game_date: currentGameIso,
+      title: gameStatus.matchup || currentIssueData.hero?.headline || "Phillies game",
+      matchup: gameStatus.matchup || currentIssueData.hero?.headline || "PHI",
+      date_label: formatEtDateLabel(currentGameIso),
+      time_label: formatEtTimeLabel(currentGameIso),
+      home_game: Boolean(gameStatus.venue_is_home),
+      phillies_side: gameStatus.venue_is_home ? "home" : "away",
       phillies: {
         team_id: TEAM_ID,
-        side: currentIssueData.sections?.game_status?.content?.venue_is_home ? "home" : "away",
-        score: currentIssueData.sections?.game_status?.content?.score?.phillies ?? null,
-        probable_pitcher: currentIssueData.sections?.game_status?.content?.starters?.phi ?? null,
+        side: gameStatus.venue_is_home ? "home" : "away",
+        score: gameStatus.score?.phillies ?? null,
+        probable_pitcher: gameStatus.starters?.phi ?? null,
         league_record: null,
       },
       opponent: {
         team_id: null,
-        side: currentIssueData.sections?.game_status?.content?.venue_is_home ? "away" : "home",
-        name: currentIssueData.sections?.game_status?.content?.matchup || "Opponent",
+        side: gameStatus.venue_is_home ? "away" : "home",
+        name: gameStatus.matchup || "Opponent",
         abbr: extractOpponentAbbr(currentIssueData.hero?.headline),
-        score: currentIssueData.sections?.game_status?.content?.score?.opponent ?? null,
-        probable_pitcher: currentIssueData.sections?.game_status?.content?.starters?.opp ?? null,
+        score: gameStatus.score?.opponent ?? null,
+        probable_pitcher: gameStatus.starters?.opp ?? null,
         league_record: null,
       },
       teams: {
         home: {
-          team_id: currentIssueData.sections?.game_status?.content?.venue_is_home ? TEAM_ID : null,
-          name: currentIssueData.sections?.game_status?.content?.venue_is_home ? "Philadelphia Phillies" : "Opponent",
-          abbr: currentIssueData.sections?.game_status?.content?.venue_is_home ? "PHI" : extractOpponentAbbr(currentIssueData.hero?.headline),
+          team_id: gameStatus.venue_is_home ? TEAM_ID : null,
+          name: gameStatus.venue_is_home ? "Philadelphia Phillies" : "Opponent",
+          abbr: gameStatus.venue_is_home ? "PHI" : extractOpponentAbbr(currentIssueData.hero?.headline),
           score: null,
           is_winner: false,
-          probable_pitcher: currentIssueData.sections?.game_status?.content?.starters?.home ?? null,
+          probable_pitcher: gameStatus.starters?.home ?? null,
           league_record: null,
         },
         away: {
-          team_id: currentIssueData.sections?.game_status?.content?.venue_is_home ? null : TEAM_ID,
-          name: currentIssueData.sections?.game_status?.content?.venue_is_home ? "Opponent" : "Philadelphia Phillies",
-          abbr: currentIssueData.sections?.game_status?.content?.venue_is_home ? extractOpponentAbbr(currentIssueData.hero?.headline) : "PHI",
+          team_id: gameStatus.venue_is_home ? null : TEAM_ID,
+          name: gameStatus.venue_is_home ? "Opponent" : "Philadelphia Phillies",
+          abbr: gameStatus.venue_is_home ? extractOpponentAbbr(currentIssueData.hero?.headline) : "PHI",
           score: null,
           is_winner: false,
-          probable_pitcher: currentIssueData.sections?.game_status?.content?.starters?.away ?? null,
+          probable_pitcher: gameStatus.starters?.away ?? null,
           league_record: null,
         },
       },
       venue: {
         id: null,
-        name: currentIssueData.sections?.game_status?.content?.venue || nextGame.venue || "TBD",
+        name: gameStatus.venue || nextGame.venue || "TBD",
       },
       status: {
         abstract: status.mode_label || status.mode || "Preview",
@@ -210,8 +215,8 @@ function buildFallbackSchedulePayload(currentIssueData = {}, generatedAt) {
         start_time_tbd: false,
       },
       score: {
-        phillies: currentIssueData.sections?.game_status?.content?.score?.phillies ?? null,
-        opponent: currentIssueData.sections?.game_status?.content?.score?.opponent ?? null,
+        phillies: gameStatus.score?.phillies ?? null,
+        opponent: gameStatus.score?.opponent ?? null,
         home: null,
         away: null,
       },
@@ -219,13 +224,13 @@ function buildFallbackSchedulePayload(currentIssueData = {}, generatedAt) {
       series: {
         game_number: null,
         total_games: null,
-        label: currentIssueData.sections?.game_status?.content?.series || null,
-        description: currentIssueData.sections?.game_status?.content?.series || null,
+        label: gameStatus.series || null,
+        description: gameStatus.series || null,
       },
       description: null,
       double_header: "N",
       day_night: null,
-      legacy_match_key: `${currentDate}:${extractOpponentAbbr(currentIssueData.hero?.headline)}:${currentIssueData.sections?.game_status?.content?.venue_is_home ? "H" : "A"}`,
+      legacy_match_key: `${currentDate}:${extractOpponentAbbr(currentIssueData.hero?.headline)}:${gameStatus.venue_is_home ? "H" : "A"}`,
       attendance_key: `pw-game:${meta.game_pk || currentDate}`,
       tags: ["fallback"],
     });
@@ -429,16 +434,69 @@ function escapeCalendarText(value) {
 }
 
 function inferOfficialDate(dateLabel, fallbackDate) {
+  const fallback = fallbackDate || `${CANONICAL_SCHEDULE_SEASON}-01-01`;
   if (!dateLabel) {
-    return fallbackDate || `${CANONICAL_SCHEDULE_SEASON}-01-01`;
+    return fallback;
   }
-  const parsed = Date.parse(`${dateLabel}, ${CANONICAL_SCHEDULE_SEASON}`);
-  if (Number.isNaN(parsed)) {
-    return fallbackDate || `${CANONICAL_SCHEDULE_SEASON}-01-01`;
+  const label = String(dateLabel).trim();
+  const isoMatch = label.match(/\b(\d{4})-(\d{2})-(\d{2})\b/);
+  if (isoMatch) {
+    return isoMatch[0];
   }
-  return new Intl.DateTimeFormat("en-CA", {
-    timeZone: "America/New_York",
-  }).format(new Date(parsed));
+
+  const monthDay = parseMonthDayLabel(label, fallback);
+  return monthDay ?? fallback;
+}
+
+const MONTH_INDEX_BY_LABEL = new Map([
+  ["jan", 1],
+  ["january", 1],
+  ["feb", 2],
+  ["february", 2],
+  ["mar", 3],
+  ["march", 3],
+  ["apr", 4],
+  ["april", 4],
+  ["may", 5],
+  ["jun", 6],
+  ["june", 6],
+  ["jul", 7],
+  ["july", 7],
+  ["aug", 8],
+  ["august", 8],
+  ["sep", 9],
+  ["sept", 9],
+  ["september", 9],
+  ["oct", 10],
+  ["october", 10],
+  ["nov", 11],
+  ["november", 11],
+  ["dec", 12],
+  ["december", 12],
+]);
+
+function parseMonthDayLabel(label, fallbackDate) {
+  const match = label.match(
+    /\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t|tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?\s+(\d{1,2})(?:st|nd|rd|th)?(?:,\s*(\d{4}))?\b/i,
+  );
+  if (!match) return null;
+
+  const month = MONTH_INDEX_BY_LABEL.get(match[1].toLowerCase());
+  const day = Number(match[2]);
+  const fallbackYear = String(fallbackDate || "").slice(0, 4) || String(CANONICAL_SCHEDULE_SEASON);
+  const year = Number(match[3] ?? fallbackYear);
+  if (!month || !Number.isInteger(day) || !Number.isInteger(year)) {
+    return null;
+  }
+  const date = new Date(Date.UTC(year, month - 1, day));
+  if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) {
+    return null;
+  }
+  return [
+    String(year).padStart(4, "0"),
+    String(month).padStart(2, "0"),
+    String(day).padStart(2, "0"),
+  ].join("-");
 }
 
 export function buildNextGameIso(nextGame, fallbackDate) {

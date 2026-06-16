@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
+import { writeDeliveryStatus } from "./deliver.mjs";
 
 const DATA_FILE = "./phillies-wire-data.json";
 const ARCHIVE_FILE = "./archive.json";
@@ -41,6 +42,7 @@ export function main() {
   }
 
   if (IS_LIVE_REFRESH) {
+    writeDeliveryStatus({ state: "skipped", required: false, reason: "live refresh skips email delivery" });
     console.log("Delivery skipped: game-window refresh does not send email.");
     return;
   }
@@ -48,6 +50,7 @@ export function main() {
   if (process.env.DELIVERY_RECIPIENTS) {
     runNodeStage("deliver.mjs", buildStageEnv("deliver.mjs"));
   } else {
+    writeDeliveryStatus({ state: "skipped", required: false, reason: "DELIVERY_RECIPIENTS not set" });
     console.log("Delivery skipped: DELIVERY_RECIPIENTS not set.");
   }
 }

@@ -13,6 +13,7 @@ import {
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { formatGameTime as rawFormatGameTime } from "../../crawl/format.mjs";
 import {
   extractBattingOrder,
   buildTbdBattingOrder,
@@ -165,6 +166,8 @@ test("P1-CRAWL-4: weather numerics use finite fallbacks instead of NaN", () => {
 });
 
 test("P2-CRAWL-5: invalid times and missing live scores render safe sentinels", () => {
+  assert.equal(rawFormatGameTime(undefined), "TBD");
+  assert.equal(rawFormatGameTime("not-a-date"), "TBD");
   assert.equal(safeFormatGameTime(undefined), "TBD");
   assert.equal(safeFormatGameTime("not-a-date"), "TBD");
   assert.equal(formatScore(undefined), "\u2014");

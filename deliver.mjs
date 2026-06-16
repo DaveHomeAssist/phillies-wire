@@ -1,8 +1,10 @@
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, writeFileSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 
 const OUTPUT_FILE = "./phillies-wire-output.html";
 const DATA_FILE = "./phillies-wire-data.json";
+const DELIVERY_STATUS_FILE = "./delivery-status.json";
+const SITE_DELIVERY_STATUS_FILE = "./site/delivery-status.json";
 const CSS_FILES = ["./tokens.css", "./phillies-wire.css"];
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
@@ -32,6 +34,7 @@ export async function main({ createTransportImpl = null } = {}) {
   const recipients = process.env.DELIVERY_RECIPIENTS;
   if (!recipients) {
     console.log("DELIVERY_RECIPIENTS not set — skipping delivery.");
+    writeDeliveryStatus({ state: "skipped", required: false, reason: "DELIVERY_RECIPIENTS not set" });
     return;
   }
 
@@ -39,6 +42,7 @@ export async function main({ createTransportImpl = null } = {}) {
   const smtpPass = process.env.SMTP_PASS;
   if (!smtpUser || !smtpPass) {
     console.error("SMTP_USER and SMTP_PASS are required for delivery; skipping delivery.");
+    writeDeliveryStatus({ state: "misconfigured", required: true, reason: "SMTP credentials missing" });
     return;
   }
 
@@ -72,6 +76,12 @@ export async function main({ createTransportImpl = null } = {}) {
     text: plainText,
     html: inlinedHtml,
   });
+  writeDeliveryStatus({
+    state: delivery.delivered === 0 ? "failed" : delivery.failed > 0 ? "partial" : "sent",
+    required: true,
+    delivered: delivery.delivered,
+    failed: delivery.failed,
+  });
   if (delivery.delivered === 0) {
     return;
   }
@@ -81,6 +91,25 @@ export async function main({ createTransportImpl = null } = {}) {
   // CI history indefinitely.
   const count = delivery.delivered;
   console.log(`Delivered to ${count} recipient${count === 1 ? "" : "s"}`);
+}
+
+export function writeDeliveryStatus(status = {}) {
+  const payload = {
+    schema_version: "delivery-1.0.0",
+    generated_at: new Date().toISOString(),
+    mode: (process.env.ISSUE_MODE || "daily").toLowerCase(),
+    state: status.state ?? "unknown",
+    required: Boolean(status.required),
+    delivered: Number(status.delivered ?? 0),
+    failed: Number(status.failed ?? 0),
+    reason: status.reason ?? null,
+  };
+  const text = `${JSON.stringify(payload, null, 2)}\n`;
+  writeFileSync(DELIVERY_STATUS_FILE, text, "utf8");
+  if (existsSync("./site")) {
+    writeFileSync(SITE_DELIVERY_STATUS_FILE, text, "utf8");
+  }
+  return payload;
 }
 
 export async function sendDelivery(transport, message, { retries = 1 } = {}) {

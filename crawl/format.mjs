@@ -120,11 +120,18 @@ function getRelativeIsoDate(offsetDays) {
 }
 
 function formatGameTime(isoString) {
+  if (!isoString) {
+    return "TBD";
+  }
+  const date = new Date(isoString);
+  if (Number.isNaN(date.getTime())) {
+    return "TBD";
+  }
   return new Intl.DateTimeFormat("en-US", {
     timeZone: "America/New_York",
     hour: "numeric",
     minute: "2-digit",
-  }).format(new Date(isoString));
+  }).format(date);
 }
 
 function formatShortDate(isoString) {
