@@ -5,14 +5,14 @@
     "edition": 76,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-16T00:05:34.526Z",
+    "generated_at": "2026-06-16T00:16:45.002Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 15, 2026, 8:05 PM ET",
+      "generated_at_et": "Jun 15, 2026, 8:16 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -29,9 +29,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 3, MIA 0",
-    "dek": "Top 5th · 1 out",
-    "summary": "Liam Hicks is up against Zack Wheeler. Series: Regular Season.",
+    "headline": "PHI 5, MIA 0",
+    "dek": "Bottom 5th · 2 outs",
+    "summary": "Edmundo Sosa is up against William Kempner. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -43,12 +43,12 @@
       },
       {
         "label": "Weather",
-        "value": "73° · Mostly sunny"
+        "value": "72° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Liam Hicks at the plate",
-      "Zack Wheeler on the mound",
+      "Edmundo Sosa at the plate",
+      "William Kempner on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
+          "temp_f": 72,
           "condition": "Mostly sunny",
-          "wind": "5 mph · gusts 13",
-          "gusts_mph": 13
+          "wind": "5 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-16T00:05:34.526Z",
-            "freshness_label": "As of Jun 15, 2026, 8:05 PM ET"
+            "last_confirmed": "2026-06-16T00:16:45.002Z",
+            "freshness_label": "As of Jun 15, 2026, 8:16 PM ET"
           },
           {
             "name": "Adolis García",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-16T00:05:34.526Z",
-            "freshness_label": "As of Jun 15, 2026, 8:05 PM ET"
+            "last_confirmed": "2026-06-16T00:16:45.002Z",
+            "freshness_label": "As of Jun 15, 2026, 8:16 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
