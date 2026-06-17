@@ -34,7 +34,7 @@ import {
 } from "./config.mjs";
 const TODAY = getIsoDate();
 const YESTERDAY = getRelativeIsoDate(-1);
-const TRANSACTION_START_DATE = `${TODAY.slice(0, 4)}-03-01`;
+const TRANSACTION_START_DATE = TODAY;
 const OUTPUT_FILE = "./phillies-wire-data.json";
 const ERROR_LOG = "./crawl-error.log";
 const PITCHER_OVERRIDES_PATH = "./overrides/pitchers.json";
@@ -72,16 +72,13 @@ export function lookupPitcherHand(fullName) {
 
 // Live-refresh mode: the game-window cron re-crawls every 15 min to update
 // scores, inning, and hero card values. It must NOT overwrite the morning's
-// Claude-enriched editorial copy (pull quotes, preview narrative, ticker
-// items) — enrich.mjs does not run on live refreshes, so a fresh overwrite
-// here would replace good copy with the structured fallback and never
-// regenerate it. When ISSUE_MODE=live, we merge live MLB updates back into
-// the previous payload instead of starting from fixture.
+// Claude-enriched editorial copy (pull quotes and preview narrative) —
+// enrich.mjs does not run on live refreshes, so a fresh overwrite here would
+// replace good copy with the structured fallback and never regenerate it.
+// When ISSUE_MODE=live, we merge live MLB updates back into the previous
+// payload instead of starting from fixture.
 const IS_LIVE_REFRESH = (process.env.ISSUE_MODE || "").toLowerCase() === "live";
 const EDITORIAL_FIELDS_TO_PRESERVE = [
-  ["meta", "status", "enrich_state"],
-  ["meta", "status", "enrich_label"],
-  ["ticker"],
   ["sections", "preview", "content", "narrative"],
   ["sections", "preview", "content", "pull_quote"],
   ["sections", "recap", "content", "pull_quote"],
@@ -116,10 +113,14 @@ export {
   loadFixture,
   loadOverrides,
   buildHero,
+  preserveEditorialFromPrevious,
+  applyFreshnessGuards,
   applyStandingsCrawlState,
   reconcileRecordStreakWithLastFinal,
   reconcilePayloadStreakWithLastFinal,
   extractLastFinalFromGame,
+  buildRosterPreview,
+  buildInjuryPreview,
 };
 
 async function main() {
@@ -230,6 +231,9 @@ function preserveEditorialFromPrevious(freshData) {
     return freshData;
   }
   for (const path of EDITORIAL_FIELDS_TO_PRESERVE) {
+    if (path[0] === "sections" && path[1] === "preview" && freshData.meta?.status?.mode !== "pregame") {
+      continue;
+    }
     const previousValue = getPath(previous, path);
     const freshParent = getPath(freshData, path.slice(0, -1));
     if (freshParent && previousValue !== undefined && previousValue !== null && previousValue !== "") {
@@ -277,6 +281,7 @@ async function buildLivePayload(context) {
   const gameContext = normalizeGameContext(game);
   const { homeEntry, awayEntry, homeTeam, awayTeam, philliesAreHome, philliesSide, opponentSide } = gameContext;
   const weather = weatherResponse?.current ?? {};
+  const mode = deriveMode(game);
 
   data.meta.schema_version = fixture.meta.schema_version ?? SCHEMA_VERSION;
   data.meta.date = TODAY;
@@ -291,7 +296,7 @@ async function buildLivePayload(context) {
 
   data.meta.status = {
     ...fixture.meta.status,
-    mode: deriveMode(game),
+    mode,
     mode_label: deriveModeLabel(game),
     crawl_state: computeCrawlState({
       scheduleResponse: true,
@@ -301,11 +306,8 @@ async function buildLivePayload(context) {
       injuryResponse,
       weatherResponse,
     }),
-    enrich_state: "pending",
-    // Public-safe label. Internal "awaiting editorial pass" wording was
-    // being shown to readers; "Draft edition" tells a subscriber the
-    // same thing without exposing workflow state.
-    enrich_label: "Draft edition",
+    enrich_state: "skipped",
+    enrich_label: buildPublicEditionLabel(mode),
     generated_at_et: formatGeneratedAtEt(data.meta.generated_at),
     source_notes: buildSourceNotes(transactionResponse, fixture, overrides),
   };
@@ -337,9 +339,9 @@ async function buildLivePayload(context) {
     },
     broadcast: {
       ...data.sections.game_status.content.broadcast,
-      tv: extractBroadcast(game, "TV") ?? fixture.sections.game_status.content.broadcast.tv,
+      tv: extractBroadcast(game, "TV") ?? "TV TBD",
       stream: fixture.sections.game_status.content.broadcast.stream,
-      radio: extractBroadcast(game, "RADIO") ?? fixture.sections.game_status.content.broadcast.radio,
+      radio: extractBroadcast(game, "RADIO") ?? "Radio TBD",
     },
     weather: {
       temp_f: safeRound(weather.temperature_2m, fixture.sections.game_status.content.weather.temp_f, 72),
@@ -389,7 +391,7 @@ async function buildLivePayload(context) {
       summary_line: buildRecapSummaryLine(game, TEAM_ID),
     };
     data.sections.recap.content.key_performers = extractKeyPerformers(boxscore, fixture.sections.recap.content.key_performers);
-    data.sections.recap.content.decisions = extractDecisions(boxscore);
+    data.sections.recap.content.decisions = extractDecisions(boxscore, game);
     data.sections.recap.content.pull_quote = buildRecapPullQuote({
       summaryLine: data.sections.recap.content.result.summary_line,
       venue: data.sections.game_status.content.venue,
@@ -418,6 +420,7 @@ async function buildLivePayload(context) {
   data.sections.roster.content.rotation = rotation;
   data.sections.roster.content.as_of_label = buildFreshnessLabel("As of", data.meta.generated_at);
   data.sections.roster.content.highlights = buildRosterHighlights(rosterResponse, transactionResponse, fixture.sections.roster.content.highlights);
+  data.sections.roster.preview = buildRosterPreview(data.sections.roster.content.highlights, transactionResponse, rosterResponse);
   data.sections.roster.chip_label = rosterResponse?.roster ? "Confirmed" : "Fallback";
   data.sections.roster.chip_tone = rosterResponse?.roster ? "confirmed" : "fallback";
   data.sections.injury_report.content.il_entries = mergeInjuryEntries(
@@ -427,13 +430,14 @@ async function buildLivePayload(context) {
     data.meta.generated_at,
     fallbackGeneratedAt,
   );
-  data.sections.injury_report.content.footer_note = buildInjuryFooterNote(
-    data.sections.injury_report.content.il_entries,
-    Boolean(transactionResponse?.transactions?.length),
-  );
+  data.sections.injury_report.preview = buildInjuryPreview(data.sections.injury_report.content.il_entries);
   const hasLiveInjuryFeed = Array.isArray(injuryResponse?.injuries)
     || Array.isArray(injuryResponse?.roster)
     || hasTransactionInjuryData(transactionResponse);
+  data.sections.injury_report.content.footer_note = buildInjuryFooterNote(
+    data.sections.injury_report.content.il_entries,
+    hasLiveInjuryFeed,
+  );
   data.sections.injury_report.chip_label = hasLiveInjuryFeed ? "Live" : "Fallback";
   data.sections.injury_report.chip_tone = hasLiveInjuryFeed ? "live" : "fallback";
   data.sections.farm_system.chip_label = "Editorial";
@@ -451,6 +455,7 @@ async function buildLivePayload(context) {
     markCrawlDegraded(data.meta.status);
   }
   data.sections.preview.content.up_next = buildUpNext(nextGames, fixture.sections.preview.content.up_next);
+  applyFreshnessGuards(data);
 
   if (nextGames.length > 1) {
     const nextGame = nextGames[1];
@@ -491,6 +496,16 @@ async function buildLivePayload(context) {
   }
 
   return data;
+}
+
+function buildPublicEditionLabel(mode) {
+  if (mode === "final") {
+    return "Final edition";
+  }
+  if (mode === "live") {
+    return "Live update";
+  }
+  return "Pregame edition";
 }
 
 function buildMatchupTitle(game, awayTeam, homeTeam) {
@@ -729,16 +744,6 @@ function resolvePitcher(side, fixture, role, pitchHandByPlayerId = null) {
     };
   }
 
-  // Only the Phillies fallback is reliable — the fixture's opponent
-  // starter is Rangers-specific and would leak into, say, a Nationals
-  // preview. Leave the opponent as TBD instead of lying to the reader.
-  if (role === "phi") {
-    const fallback = fixture.sections.game_status.content.starters?.phi
-      ?? fixture.sections.game_status.content.starters?.home
-      ?? { name: "TBD", hand: "R" };
-    return { name: fallback.name ?? "TBD", hand: fallback.hand ?? "R" };
-  }
-
   return { name: "TBD", hand: "R" };
 }
 
@@ -761,8 +766,8 @@ function resolveSeriesLabel(game, fallbackLabel) {
   return fallbackLabel;
 }
 
-function extractDecisions(boxscore) {
-  const decisions = boxscore?.decisions ?? {};
+function extractDecisions(boxscore, game = null) {
+  const decisions = boxscore?.decisions ?? game?.decisions ?? {};
   const normalize = (entry) => {
     if (!entry) return null;
     return {
@@ -779,9 +784,82 @@ function extractDecisions(boxscore) {
   };
 }
 
+function applyFreshnessGuards(data) {
+  const mode = data?.meta?.status?.mode ?? "pregame";
+  applyPreviewFreshnessGuard(data, mode);
+  applyFarmFreshnessGuard(data);
+  return data;
+}
+
+function applyPreviewFreshnessGuard(data, mode) {
+  const preview = data?.sections?.preview;
+  if (!preview) {
+    return;
+  }
+
+  preview.show = mode === "pregame";
+  if (preview.show) {
+    return;
+  }
+
+  preview.preview = mode === "final" ? "Final recap is current" : "Live game coverage is active";
+  if (preview.content) {
+    preview.content.narrative = [];
+    preview.content.pull_quote = "";
+  }
+}
+
+function applyFarmFreshnessGuard(data) {
+  const farm = data?.sections?.farm_system;
+  const generatedAt = data?.meta?.generated_at;
+  if (!farm?.content) {
+    return;
+  }
+
+  const isFresh = isRecentlyConfirmed(farm.content.last_confirmed, generatedAt, 3);
+  farm.show = isFresh;
+  if (isFresh) {
+    return;
+  }
+
+  farm.preview = "Farm system notes hidden until refreshed";
+  farm.chip_label = "Stale";
+  farm.chip_tone = "fallback";
+  farm.content.affiliate = {
+    name: farm.content.affiliate?.name ?? "Lehigh Valley IronPigs",
+    level: farm.content.affiliate?.level ?? "Triple-A",
+    opponent: "Schedule refresh required",
+    game_number: "",
+    series_games: "",
+    series_dates: "",
+    venue: "",
+    stream: "",
+    manager: "",
+    manager_note: "",
+  };
+  farm.content.names_to_watch = [];
+  farm.content.last_confirmed_label = buildFreshnessLabel("Last confirmed", farm.content.last_confirmed);
+  data.meta.status.source_notes = dedupeStrings([
+    ...(data.meta.status.source_notes ?? []),
+    "Farm system notes hidden because the editorial baseline is stale.",
+  ]);
+}
+
+function isRecentlyConfirmed(lastConfirmedIso, generatedAtIso, maxAgeDays) {
+  if (!lastConfirmedIso || !generatedAtIso) {
+    return false;
+  }
+  const lastConfirmed = new Date(lastConfirmedIso);
+  const generatedAt = new Date(generatedAtIso);
+  if (Number.isNaN(lastConfirmed.getTime()) || Number.isNaN(generatedAt.getTime())) {
+    return false;
+  }
+  const ageMs = generatedAt.getTime() - lastConfirmed.getTime();
+  return ageMs >= 0 && ageMs <= maxAgeDays * 24 * 60 * 60 * 1000;
+}
+
 function buildLineupSection(context) {
   const { fixture, boxscore, handednessByPlayerId, philliesAreHome, homeTeam, awayTeam, starters, firstPitch, opponentAbbr } = context;
-  const fixtureLineup = fixture.sections.lineup;
   const homeAbbr = homeTeam.abbreviation;
   const awayAbbr = awayTeam.abbreviation;
 
@@ -795,21 +873,12 @@ function buildLineupSection(context) {
   const awayAnnounced = awayOrder.length === 9;
   const announced = homeAnnounced && awayAnnounced;
 
-  // Phillies fallback is the only reliable baseline; opponent fallback in
-  // the fixture is Rangers-specific. Only reuse the opponent fallback when
-  // today's opponent actually is Texas — otherwise leave a TBD placeholder.
-  const fixturePhiOrder = fixtureLineup.content.batting_order.home;
-  const fixtureOppOrder = opponentAbbr === "TEX" ? fixtureLineup.content.batting_order.away : buildTbdBattingOrder(opponentAbbr);
-
-  const phiFallbackOrder = fixturePhiOrder;
-  const oppFallbackOrder = fixtureOppOrder;
-
   const phiOrder = homeAnnounced && philliesAreHome ? homeOrder
     : awayAnnounced && !philliesAreHome ? awayOrder
-    : phiFallbackOrder;
+    : buildTbdBattingOrder("PHI");
   const oppOrder = homeAnnounced && !philliesAreHome ? homeOrder
     : awayAnnounced && philliesAreHome ? awayOrder
-    : oppFallbackOrder;
+    : buildTbdBattingOrder(opponentAbbr);
 
   const homeStarter = {
     team: homeAbbr,
@@ -822,30 +891,15 @@ function buildLineupSection(context) {
     hand: starters.away?.hand ?? "R",
   };
 
-  // Three-state mode drives template rendering:
-  //   official  both boxscore orders posted
-  //   projected PHI side is a fixture baseline, opponent is pending
-  //   pending   both sides pending (road game, no baseline)
-  let mode;
-  if (announced) {
-    mode = "official";
-  } else if (phiOrder !== oppFallbackOrder && phiOrder.length === 9) {
-    mode = "projected";
-  } else {
-    mode = "pending";
-  }
-  const modeLabel = mode === "official" ? "Official" : mode === "projected" ? "Projected" : "Pending";
+  const mode = announced ? "official" : "pending";
+  const modeLabel = mode === "official" ? "Official" : "Pending";
 
   const statusNote = mode === "official"
     ? `Official batting orders confirmed for today's ${awayAbbr} at ${homeAbbr} game.`
-    : mode === "projected"
-    ? `PHI order is a projected baseline. ${opponentAbbr} lineup posts about two hours before first pitch.`
     : "Lineups post about two hours before first pitch. Holding until MLB confirms.";
 
   const preview = mode === "official"
     ? `${homeAbbr} order set · ${starters.phi?.name ?? "TBD"} vs ${starters.opp?.name ?? "TBD"}`
-    : mode === "projected"
-    ? `Projected · ${starters.phi?.name ?? "TBD"} vs ${starters.opp?.name ?? "TBD"}`
     : `Lineups pending · ${starters.phi?.name ?? "TBD"} vs ${starters.opp?.name ?? "TBD"}`;
 
   return {
@@ -855,10 +909,9 @@ function buildLineupSection(context) {
       announced,
       mode,
       mode_label: modeLabel,
-      // Template toggle: render the 9x2 batting order grid only when we
-      // have either confirmed lineups or a projected PHI baseline.
-      // Pending mode suppresses the grid so readers don't see filler rows.
-      show_orders: mode !== "pending",
+      // Template toggle: render the 9x2 batting order grid only when MLB
+      // confirms both lineups. Fixture projections are not canonical.
+      show_orders: announced,
       first_pitch: firstPitch,
       starters: {
         home: homeStarter,
@@ -1016,6 +1069,7 @@ function buildOffDayPayload(fixture, nextGames, overrides, sources = {}) {
   };
 
   data.sections.preview.content.up_next = buildUpNext(nextGames, fixture.sections.preview.content.up_next);
+  data.ticker = buildOffDayTicker(data, nextGame);
   applyOverrides(data, overrides);
   return data;
 }
@@ -1150,12 +1204,27 @@ function buildTicker(data, transactionResponse, weather) {
   return items.slice(0, 9);
 }
 
+function buildOffDayTicker(data, nextGame) {
+  const items = [
+    { text: `PHI ${data.record.wins}-${data.record.losses}`, highlight: true },
+    {
+      text: nextGame
+        ? `${data.next_game.matchup} · ${data.next_game.date} · ${data.next_game.time}`
+        : "Next Phillies game pending schedule refresh",
+      highlight: false,
+    },
+  ];
+
+  if (nextGame?.broadcast) {
+    items.push({ text: nextGame.broadcast, highlight: false });
+  }
+
+  items.push({ text: "Off day", highlight: false });
+  return items;
+}
+
 function buildSourceNotes(transactionResponse, fixture, overrides) {
   const notes = [];
-
-  for (const note of fixture?.meta?.status?.source_notes ?? []) {
-    notes.push(note);
-  }
 
   if (transactionResponse?.transactions?.some((transaction) => /rehab assignment/i.test(transaction.description))) {
     notes.push("Rehab assignment notes are refreshed from the MLB transactions feed.");
@@ -1174,7 +1243,7 @@ function buildSourceNotes(transactionResponse, fixture, overrides) {
 
 async function buildRotation(nextGames, fallback) {
   if (!nextGames.length) {
-    return (fallback ?? []).map((entry) => ({ ...entry, source: "fallback" }));
+    return [];
   }
 
   const pitcherIds = nextGames
@@ -1301,12 +1370,9 @@ function isPhilliesStandingRow(team = {}) {
   return team.is_phi || team.abbr === "PHI" || team.team === "PHI";
 }
 
-function buildUpNext(nextGames, fallback) {
-  if (nextGames.length < 2) {
-    return fallback;
-  }
-
-  return nextGames.slice(1, 4).map((game) => ({
+function buildUpNext(nextGames, _fallback) {
+  const upcoming = nextGames.length > 1 ? nextGames.slice(1, 4) : nextGames.slice(0, 3);
+  return upcoming.map((game) => ({
     date: game.dateLabel,
     matchup: `${game.homePitcher} vs ${game.awayPitcher}`,
     time: game.timeLabel,
@@ -1343,6 +1409,29 @@ function buildRosterHighlights(rosterResponse, transactionResponse, fallback) {
   return deduped.slice(0, 5);
 }
 
+function buildRosterPreview(highlights = [], transactionResponse = null, rosterResponse = null) {
+  const transactions = transactionResponse?.transactions ?? [];
+  const todayMoves = transactions
+    .map((transaction) => shortTransactionNote(transaction.description ?? ""))
+    .filter(Boolean)
+    .slice(0, 2);
+  if (todayMoves.length) {
+    return todayMoves.join(" · ");
+  }
+
+  const activeNames = new Set((rosterResponse?.roster ?? []).map((entry) => entry.person?.fullName).filter(Boolean));
+  const activeHighlights = highlights
+    .filter((entry) => entry.status === "active" || activeNames.has(entry.name))
+    .map((entry) => entry.name)
+    .filter(Boolean)
+    .slice(0, 2);
+  if (activeHighlights.length) {
+    return `${activeHighlights.join(" + ")} active`;
+  }
+
+  return rosterResponse?.roster ? "Roster feed refreshed" : "Roster feed unavailable";
+}
+
 function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse, generatedAtIso = null, fallbackGeneratedAtIso = null) {
   const transactions = transactionResponse?.transactions ?? [];
   const transactionState = buildTransactionInjuryState(transactions);
@@ -1362,16 +1451,6 @@ function mergeInjuryEntries(fallbackEntries, injuryResponse, transactionResponse
         injury: injury.injury || fallback.injury || "",
         source: "live",
         last_confirmed: generatedAtIso ?? fallback.last_confirmed ?? fallbackGeneratedAtIso ?? null,
-      });
-    }
-  } else {
-    // Seed with fixture baseline so we retain editorial-quality context notes
-    // for known long-term IL entries.
-    for (const entry of fallbackEntries) {
-      byName.set(entry.name, {
-        ...entry,
-        source: entry.source ?? "fallback",
-        last_confirmed: entry.last_confirmed ?? fallbackGeneratedAtIso ?? null,
       });
     }
   }
@@ -1511,12 +1590,28 @@ function extractRetroactiveDate(description, fallbackDate) {
 
 function buildInjuryFooterNote(entries, transactionFeedAvailable) {
   if (!transactionFeedAvailable) {
-    return "Injury status is using the fixture baseline because transaction data was unavailable.";
+    return "Injury status unavailable because MLB injury and transaction feeds did not return current data.";
   }
   if (!entries.length) {
     return "No active Phillies injured list entries found in the MLB transactions feed.";
   }
   return "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable.";
+}
+
+function buildInjuryPreview(entries = []) {
+  const liveEntries = entries.filter((entry) => entry.source === "live");
+  if (!liveEntries.length) {
+    return "No active Phillies IL entries found";
+  }
+
+  return liveEntries
+    .slice(0, 3)
+    .map((entry) => {
+      const position = entry.position ? ` ${entry.position}` : "";
+      const injury = entry.injury ? ` · ${entry.injury}` : "";
+      return `${entry.name}${position}${injury}`;
+    })
+    .join(" · ");
 }
 
 function normalizeLiveInjuries(injuryResponse) {
@@ -1598,7 +1693,7 @@ function extractKeyPerformers(boxscore, fallback) {
 
   const chosen = pitchers.concat(hitters).slice(0, 5);
   if (!chosen.length) {
-    return fallback;
+    return [];
   }
 
   return chosen.map(({ score: _score, role: _role, ...performer }) => performer);

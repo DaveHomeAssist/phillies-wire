@@ -86,7 +86,7 @@
     <div class="pw-status-bar">
       <div class="pw-status-row">
         <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}" id="pw-status-mode-chip">{{meta.status.mode_label}}</span>
-        <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}">{{meta.status.enrich_state}}</span>
+        <span class="pw-status-chip pw-status-chip--{{meta.status.enrich_state}}">{{meta.status.enrich_label}}</span>
         <span class="pw-status-text" id="pw-status-text" data-generated-at="{{meta.generated_at}}">Updated {{meta.status.generated_at_et}}</span>
         <span class="pw-status-freshness" id="pw-status-freshness" hidden></span>
       </div>
@@ -162,9 +162,9 @@
           </div>
           {{/if}}
           <div class="pw-live-score" id="pw-live-score" data-game-pk="{{meta.game_pk}}" data-first-pitch="{{meta.first_pitch_iso}}" data-venue="{{sections.game_status.content.venue}}" aria-live="polite" aria-atomic="true">
-            <span class="pw-live-badge">Live</span>
-            <span class="pw-live-line" id="pw-live-line"><span class="pw-skeleton">Live score starts at first pitch</span></span>
-            <div class="pw-live-detail" id="pw-live-detail"><span class="pw-skeleton">Pregame</span></div>
+            <span class="pw-live-badge">Score</span>
+            <span class="pw-live-line" id="pw-live-line"><span class="pw-skeleton">Scoreboard updates load automatically</span></span>
+            <div class="pw-live-detail" id="pw-live-detail"><span class="pw-skeleton">{{meta.status.mode_label}}</span></div>
           </div>
         </div>
       </div>
@@ -372,6 +372,7 @@
       </div>
     </div>
 
+    {{#if sections.farm_system.show}}
     <div class="pw-acc-row" data-row="farm">
       <button class="pw-acc-header" data-pw-toggle="farm" aria-expanded="false">
         <div class="pw-acc-header-left">
@@ -407,7 +408,9 @@
         </div>
       </div>
     </div>
+    {{/if}}
 
+    {{#if sections.preview.show}}
     <div class="pw-acc-row" data-row="preview">
       <button class="pw-acc-header" data-pw-toggle="preview" aria-expanded="false">
         <div class="pw-acc-header-left">
@@ -436,6 +439,7 @@
         </div>
       </div>
     </div>
+    {{/if}}
   </div>
   </section>
   {{/if}}

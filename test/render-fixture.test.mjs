@@ -39,7 +39,7 @@ runTest("fixture render resolves every token and includes required landmarks", (
   assert.match(html, /aria-live="polite"/);
   assert.match(html, /data-row="lineup"/);
   assert.match(html, /<a class="pw-skip-link"/);
-  assert.match(html, /Trea Turner/);
+  assert.match(html, /Schedule refresh required/);
 });
 
 runTest("fixture render populates Open Graph and JSON-LD", () => {
@@ -98,7 +98,11 @@ runTest("fixture render surfaces freshness labels when provided", () => {
     mailto_url: "mailto:?subject=test",
   };
   data.sections.roster.content.as_of_label = "As of Apr 20, 2026, 1:05 PM ET";
+  data.sections.injury_report.content.il_entries = [
+    { name: "Current Player", position: "RHP", injury: "Current injury", freshness_label: "" },
+  ];
   data.sections.injury_report.content.il_entries[0].freshness_label = "Last confirmed Mar 28, 2026, 10:00 AM ET";
+  data.sections.farm_system.show = true;
   data.sections.farm_system.content.last_confirmed_label = "Last confirmed Mar 28, 2026, 10:00 AM ET";
 
   const html = populate(template, data);
@@ -138,6 +142,7 @@ runTest("fixture render surfaces section chips when provided", () => {
   data.sections.injury_report.chip_tone = "live";
   data.sections.farm_system.chip_label = "Editorial";
   data.sections.farm_system.chip_tone = "editorial";
+  data.sections.farm_system.show = true;
 
   const html = populate(template, data);
   assert.match(html, /pw-section-chip--final">Final/);
@@ -271,10 +276,11 @@ runTest("fixture render shows recap when recap.show is true", () => {
     mailto_url: "mailto:?subject=test",
   };
   data.sections.recap.show = true;
+  data.sections.recap.title = "Current Recap";
 
   const html = populate(template, data);
   assert.match(html, /data-row="recap"/);
-  assert.match(html, /Thursday Recap/);
+  assert.match(html, /Current Recap/);
 });
 
 runTest("triple-brace token emits raw HTML without escaping", () => {

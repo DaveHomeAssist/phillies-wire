@@ -29,6 +29,12 @@ import {
   loadFixture,
   loadOverrides,
   buildHero,
+  preserveEditorialFromPrevious,
+  applyFreshnessGuards,
+  extractDecisions,
+  buildRosterPreview,
+  buildInjuryPreview,
+  mergeInjuryEntries,
   applyStandingsCrawlState,
   reconcileRecordStreakWithLastFinal,
   reconcilePayloadStreakWithLastFinal,
@@ -195,6 +201,166 @@ test("P2-CRAWL-5: invalid times and missing live scores render safe sentinels", 
     linescore: {},
   });
   assert.equal(hero.headline, "PHI \u2014, ATL \u2014");
+});
+
+test("final hero can use schedule decisions when the boxscore payload omits decisions", () => {
+  const decisions = extractDecisions({}, {
+    decisions: {
+      winner: { id: 123, fullName: "Jesús Luzardo", link: "/api/v1/people/123" },
+      loser: { id: 456, fullName: "Tyler Phillips", link: "/api/v1/people/456" },
+    },
+  });
+  assert.equal(decisions.winner.fullName, "Jesús Luzardo");
+
+  const hero = buildHero({
+    meta: { status: { mode: "final" } },
+    sections: {
+      recap: {
+        preview: "PHI 8, MIA 2 · Jesús Luzardo · 7.0 IP, 5 H, 2 ER, 9 K",
+        content: {
+          decisions,
+          result: { summary_line: "PHI 8, MIA 2." },
+          pull_quote: "PHI 8, MIA 2. Final at Citizens Bank Park, Philadelphia. PHI wins 2-0.",
+          key_performers: [],
+        },
+      },
+      game_status: {
+        content: {
+          venue: "Citizens Bank Park, Philadelphia",
+          series: { label: "PHI wins 2-0" },
+        },
+      },
+    },
+    next_game: { label: "Tomorrow", matchup: "Andrew Painter vs Sandy Alcantara", date: "Wed, Jun 17", time: "1:05 PM" },
+  }, {
+    status: { abstractGameState: "Final", detailedState: "Final" },
+    teams: {
+      home: { team: { id: 143, abbreviation: "PHI", teamName: "Phillies" }, score: 8 },
+      away: { team: { id: 146, abbreviation: "MIA", teamName: "Marlins" }, score: 2 },
+    },
+  });
+  assert.equal(hero.cards[0].label, "Winning Pitcher");
+  assert.equal(hero.cards[0].value, "Jesús Luzardo");
+});
+
+test("live refresh does not preserve stale ticker or draft status into a final payload", () => {
+  const work = mkdtempSync(join(tmpdir(), "pw-live-preserve-"));
+  const previousCwd = process.cwd();
+  try {
+    writeFileSync(join(work, "phillies-wire-data.json"), JSON.stringify({
+      meta: {
+        date: "2026-06-16",
+        status: { enrich_state: "pending", enrich_label: "Draft edition" },
+      },
+      ticker: [{ text: "signed free agent RHP Ronaldson Estevez to a minor league contract.", highlight: false }],
+      sections: {
+        preview: { content: { narrative: ["Pregame copy"], pull_quote: "Pregame quote" } },
+      },
+    }), "utf8");
+    process.chdir(work);
+    const fresh = {
+      meta: {
+        date: "2026-06-16",
+        status: { mode: "final", enrich_state: "skipped", enrich_label: "Final edition" },
+      },
+      ticker: [{ text: "Philadelphia Phillies recalled RHP Max Lazar from Lehigh Valley IronPigs.", highlight: false }],
+      sections: {
+        preview: { content: { narrative: [], pull_quote: "" } },
+      },
+    };
+    const out = preserveEditorialFromPrevious(fresh);
+    assert.equal(out.meta.status.enrich_state, "skipped");
+    assert.equal(out.meta.status.enrich_label, "Final edition");
+    assert.equal(out.ticker[0].text, "Philadelphia Phillies recalled RHP Max Lazar from Lehigh Valley IronPigs.");
+    assert.deepEqual(out.sections.preview.content.narrative, []);
+  } finally {
+    process.chdir(previousCwd);
+    rmSync(work, { recursive: true, force: true });
+  }
+});
+
+test("final payload hides pregame preview and stale farm editorial baselines", () => {
+  const data = {
+    meta: {
+      generated_at: "2026-06-17T03:22:13.258Z",
+      status: { mode: "final", source_notes: [] },
+    },
+    sections: {
+      preview: {
+        show: true,
+        preview: "Jesús Luzardo vs Tyler Phillips · Marlins @ Phillies · Game 2 of 3",
+        content: { narrative: ["First pitch is 6:40 PM."], pull_quote: "Pregame quote" },
+      },
+      farm_system: {
+        show: true,
+        preview: "IronPigs open tonight vs Toledo · Wheeler + Kerkering appear",
+        chip_label: "Editorial",
+        chip_tone: "editorial",
+        content: {
+          last_confirmed: "2026-03-28T14:00:00Z",
+          names_to_watch: [{ name: "Zack Wheeler", note: "Rehab start today" }],
+        },
+      },
+    },
+  };
+  applyFreshnessGuards(data);
+  assert.equal(data.sections.preview.show, false);
+  assert.deepEqual(data.sections.preview.content.narrative, []);
+  assert.equal(data.sections.farm_system.show, false);
+  assert.match(data.sections.farm_system.preview, /hidden/);
+  assert.deepEqual(data.sections.farm_system.content.names_to_watch, []);
+  assert.ok(data.meta.status.source_notes.some((note) => /Farm system notes hidden/i.test(note)));
+});
+
+test("roster preview uses current issue transactions instead of fixture copy", () => {
+  const preview = buildRosterPreview([], {
+    transactions: [
+      {
+        description: "Philadelphia Phillies recalled RHP Max Lazar from Lehigh Valley IronPigs.",
+      },
+      {
+        description: "Philadelphia Phillies placed RHP Brad Keller on the 15-day injured list retroactive to June 14, 2026. Right forearm tendinitis.",
+      },
+    ],
+  }, { roster: [] });
+  assert.match(preview, /recalled RHP Max Lazar/);
+  assert.doesNotMatch(preview, /Crawford \+ Painter make club|40-man unchanged/);
+});
+
+test("injury preview summarizes current IL entries instead of rehab fixture copy", () => {
+  const preview = buildInjuryPreview([
+    { name: "Kyle Backhus", position: "LHP", injury: "Left elbow inflammation", source: "live" },
+    { name: "Adolis García", position: "RF", injury: "Right latissimus dorsi tear", source: "live" },
+    { name: "Brad Keller", position: "RHP", injury: "Right forearm tendinitis", source: "live" },
+  ]);
+  assert.match(preview, /Kyle Backhus/);
+  assert.match(preview, /Brad Keller/);
+  assert.doesNotMatch(preview, /Wheeler rehab today|Kerkering Apr 7|Lazar Apr 6/);
+});
+
+test("live reconstructed IL entries replace stale fixture injury baseline", () => {
+  const merged = mergeInjuryEntries(
+    [
+      { name: "Zack Wheeler", position: "RHP", injury: "Thoracic outlet surgery", status_note: "Rehab start today", source: "fallback" },
+      { name: "Orion Kerkering", position: "RHP", injury: "Hamstring strain", status_note: "Kerkering Apr 7", source: "fallback" },
+    ],
+    {
+      injuries: [
+        {
+          person: { fullName: "Brad Keller" },
+          position: { abbreviation: "RHP" },
+          injuryListType: "15-Day",
+          injuryDescription: "Right forearm tendinitis",
+        },
+      ],
+    },
+    { transactions: [] },
+    "2026-06-17T04:23:56.423Z",
+    "2026-03-28T14:00:00Z",
+  );
+  assert.deepEqual(merged.map((entry) => entry.name), ["Brad Keller"]);
+  assert.equal(merged[0].source, "live");
+  assert.doesNotMatch(JSON.stringify(merged), /Zack Wheeler|Orion Kerkering|Rehab start today|Kerkering Apr 7/);
 });
 
 test("P0-CRAWL-2: malformed overrides degrade to no overrides", () => {

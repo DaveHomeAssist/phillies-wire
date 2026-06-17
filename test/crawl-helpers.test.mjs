@@ -58,13 +58,11 @@ runTest("buildPitchHandIndex reads pitcher hands from feed players", () => {
   assert.equal(index.get(2), "R");
 });
 
-runTest("resolvePitcher falls back to PHI fixture only for the phi role", () => {
+runTest("resolvePitcher emits TBD when MLB probable data is missing", () => {
   const phi = resolvePitcher({}, fixture, "phi");
-  assert.equal(phi.name, "Aaron Nola");
+  assert.equal(phi.name, "TBD");
   assert.equal(phi.hand, "R");
 
-  // Opponent fallback must not leak the fixture's TEX starter into a
-  // non-Texas matchup — we emit TBD until MLB confirms.
   const opp = resolvePitcher({}, fixture, "opp");
   assert.equal(opp.name, "TBD");
   assert.equal(opp.hand, "R");
@@ -199,7 +197,16 @@ runTest("extractBattingOrder still falls back to 'R' when no feed map and no bat
   assert.ok(order.every((slot) => slot.bats === "R"));
 });
 
-runTest("buildLineupSection keeps PHI fallback when opponent is not TEX", () => {
+runTest("extractKeyPerformers does not leak fallback performers from an empty boxscore", () => {
+  const fallback = [{ name: "Stale Player", position: "DH", line: "old line" }];
+  const performers = extractKeyPerformers(
+    { teams: { home: { players: {} }, away: { players: {} } } },
+    fallback,
+  );
+  assert.deepEqual(performers, []);
+});
+
+runTest("buildLineupSection does not render fixture batting orders before MLB confirms lineups", () => {
   const starters = {
     home: { team: "WSH", name: "MacKenzie Gore", hand: "L" },
     away: { team: "PHI", name: "Jesus Luzardo", hand: "L" },
@@ -218,21 +225,17 @@ runTest("buildLineupSection keeps PHI fallback when opponent is not TEX", () => 
   });
 
   assert.equal(section.content.announced, false);
-  assert.equal(section.content.mode, "projected");
-  assert.equal(section.content.mode_label, "Projected");
-  assert.equal(section.content.show_orders, true);
-  assert.equal(section.content.batting_order.phi[0].name, "Trea Turner");
-  // Opponent placeholders use a clean Pending sentinel; no filler names.
+  assert.equal(section.content.mode, "pending");
+  assert.equal(section.content.mode_label, "Pending");
+  assert.equal(section.content.show_orders, false);
+  assert.equal(section.content.batting_order.phi[0].name, "Pending");
   assert.equal(section.content.batting_order.opp[0].name, "Pending");
   assert.equal(section.content.batting_order.opp[0].position, "");
   assert.equal(section.content.batting_order.opp[0].bats, "");
+  assert.doesNotMatch(JSON.stringify(section), /Trea Turner|Kyle Schwarber|Bryce Harper|Nick Castellanos/);
 });
 
-runTest("buildLineupSection sets mode=pending when no fixture baseline applies for the opponent", () => {
-  // Phillies away at WSH, no boxscore, not TEX so no fixture opponent
-  // baseline. PHI gets the fixture baseline, but the PHI row runs through
-  // the home column; on a road game the opp column falls through to the
-  // Pending sentinel and mode should be pending for the grid suppression.
+runTest("buildLineupSection keeps pending mode until both sides post", () => {
   const section = buildLineupSection({
     fixture,
     boxscore: null,
@@ -248,10 +251,11 @@ runTest("buildLineupSection sets mode=pending when no fixture baseline applies f
     firstPitch: "6:40 PM ET",
     opponentAbbr: "WSH",
   });
-  // PHI side still has the fixture baseline so the mode is projected,
-  // not pending. The guard is that show_orders is still true.
-  assert.equal(section.content.mode, "projected");
-  assert.equal(section.content.show_orders, true);
+  assert.equal(section.content.mode, "pending");
+  assert.equal(section.content.mode_label, "Pending");
+  assert.equal(section.content.show_orders, false);
+  assert.equal(section.content.batting_order.phi[0].name, "Pending");
+  assert.equal(section.content.batting_order.opp[0].name, "Pending");
 });
 
 runTest("buildLineupSection uses live boxscore order when both lineups post", () => {
@@ -303,7 +307,7 @@ runTest("buildLineupSection uses live boxscore order when both lineups post", ()
   assert.equal(section.content.batting_order.opp[0].name, "Away1");
 });
 
-runTest("mergeInjuryEntries overlays live injuries onto the fixture baseline", () => {
+runTest("mergeInjuryEntries supplements live injuries without leaking unmatched fallback rows", () => {
   const generatedAt = "2026-04-20T17:05:00Z";
   const fallbackGeneratedAt = "2026-03-28T14:00:00Z";
   const baseline = [
@@ -370,7 +374,7 @@ runTest("mergeInjuryEntries rebuilds current IL from transactions and removes ac
   assert.equal(byName["Jhoan Duran"].source, "live");
 });
 
-runTest("mergeInjuryEntries preserves fallback freshness when no live injury data arrives", () => {
+runTest("mergeInjuryEntries returns no IL rows when no current injury source is available", () => {
   const baseline = [
     {
       name: "Max Lazar",
@@ -383,9 +387,7 @@ runTest("mergeInjuryEntries preserves fallback freshness when no live injury dat
     },
   ];
   const merged = mergeInjuryEntries(baseline, null, { transactions: [] }, "2026-04-20T17:05:00Z", "2026-03-28T14:00:00Z");
-  assert.equal(merged[0].source, "fallback");
-  assert.equal(merged[0].last_confirmed, "2026-03-28T14:00:00Z");
-  assert.match(merged[0].freshness_label, /^Last confirmed /);
+  assert.deepEqual(merged, []);
 });
 
 runTest("normalizeLiveInjuries is resilient to missing optional fields", () => {

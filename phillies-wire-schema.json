@@ -1,342 +1,177 @@
 {
   "meta": {
     "schema_version": "1.2.0",
-    "date": "2026-03-28",
-    "edition": 2,
+    "date": "",
+    "edition": 0,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-03-28T14:00:00Z",
+    "generated_at": "",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
-      "crawl_state": "ok",
-      "enrich_state": "pending",
-      "enrich_label": "Draft edition",
-      "generated_at_et": "Mar 28, 2026, 10:00 AM ET",
-      "source_notes": [
-        "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable."
-      ]
+      "crawl_state": "degraded",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "",
+      "source_notes": []
     }
   },
   "record": {
-    "wins": 1,
+    "wins": 0,
     "losses": 0,
-    "streak": "W1",
-    "division_rank": 1,
+    "streak": "",
+    "division_rank": 0,
     "division": "NL East"
   },
   "hero": {
     "mode": "pregame",
     "label": "Pregame",
-    "headline": "Phillies vs Rangers",
-    "dek": "Aaron Nola vs Jacob deGrom",
-    "summary": "Game 2 at Citizens Bank Park with first pitch at 4:05 PM ET.",
+    "headline": "Phillies Wire",
+    "dek": "Schedule refresh required",
+    "summary": "Live MLB sources have not populated this issue yet.",
     "cards": [
-      { "label": "First Pitch", "value": "4:05 PM ET" },
-      { "label": "Venue", "value": "Citizens Bank Park, Philadelphia" },
-      { "label": "Watch", "value": "NBCSP+ · 94.1 WIP" }
+      { "label": "First Pitch", "value": "TBD" },
+      { "label": "Venue", "value": "TBD" },
+      { "label": "Watch", "value": "TBD" }
     ],
     "bullets": [
-      "48° · Mostly sunny · NNW 15–20 mph",
-      "PHI leads 1–0"
+      "Schedule refresh required"
     ],
-    "next_label": "Tomorrow",
-    "next_value": "Luzardo vs Gore · Sun Mar 29 · 1:35 PM ET"
+    "next_label": "Next Game",
+    "next_value": "Schedule refresh required"
   },
   "ticker": [
-    { "text": "PHI 1–0", "highlight": true },
-    { "text": "Game 2 vs TEX · 4:05 PM ET", "highlight": false },
-    { "text": "Nola vs deGrom", "highlight": true },
-    { "text": "NBCSP+ · 94.1 WIP", "highlight": false },
-    { "text": "48° · Breezy · ~30 mph gusts", "highlight": false },
-    { "text": "Wheeler rehab starts today at LV", "highlight": true },
-    { "text": "Kerkering targets Apr 7", "highlight": false },
-    { "text": "Sánchez: 10 K · 6 IP · 0 ER on Thu", "highlight": false },
-    { "text": "Schwarber HR · Bohm 3-run HR", "highlight": false }
+    { "text": "Schedule refresh required", "highlight": true }
   ],
   "sections": {
     "lineup": {
-      "preview": "Lineups posted about 2 hours before first pitch",
+      "preview": "Lineups pending MLB confirmation",
       "content": {
-        "status_note": "Official lineups typically post roughly two hours before first pitch.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "4:05 PM ET",
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "TBD",
         "starters": {
-          "home": { "team": "PHI", "name": "Aaron Nola", "hand": "R" },
-          "away": { "team": "TEX", "name": "Jacob deGrom", "hand": "R" }
+          "home": { "team": "PHI", "name": "TBD", "hand": "R" },
+          "away": { "team": "OPP", "name": "TBD", "hand": "R" },
+          "phi": { "team": "PHI", "name": "TBD", "hand": "R" },
+          "opp": { "team": "OPP", "name": "TBD", "hand": "R" }
         },
         "batting_order": {
-          "home": [
-            { "slot": 1, "name": "Trea Turner", "position": "SS", "bats": "R" },
-            { "slot": 2, "name": "Kyle Schwarber", "position": "DH", "bats": "L" },
-            { "slot": 3, "name": "Bryce Harper", "position": "1B", "bats": "L" },
-            { "slot": 4, "name": "Alec Bohm", "position": "3B", "bats": "R" },
-            { "slot": 5, "name": "Nick Castellanos", "position": "RF", "bats": "R" },
-            { "slot": 6, "name": "J.T. Realmuto", "position": "C", "bats": "R" },
-            { "slot": 7, "name": "Brandon Marsh", "position": "LF", "bats": "L" },
-            { "slot": 8, "name": "Bryson Stott", "position": "2B", "bats": "L" },
-            { "slot": 9, "name": "Justin Crawford", "position": "CF", "bats": "L" }
-          ],
-          "away": [
-            { "slot": 1, "name": "Marcus Semien", "position": "2B", "bats": "R" },
-            { "slot": 2, "name": "Corey Seager", "position": "SS", "bats": "L" },
-            { "slot": 3, "name": "Wyatt Langford", "position": "LF", "bats": "R" },
-            { "slot": 4, "name": "Adolis García", "position": "RF", "bats": "R" },
-            { "slot": 5, "name": "Josh Jung", "position": "3B", "bats": "R" },
-            { "slot": 6, "name": "Joc Pederson", "position": "DH", "bats": "L" },
-            { "slot": 7, "name": "Jonah Heim", "position": "C", "bats": "S" },
-            { "slot": 8, "name": "Evan Carter", "position": "CF", "bats": "L" },
-            { "slot": 9, "name": "Jake Burger", "position": "1B", "bats": "R" }
-          ]
+          "home": [],
+          "away": [],
+          "phi": [],
+          "opp": []
         }
       }
     },
     "game_status": {
       "preview": "Starters, live tracker, and park notes",
       "content": {
-        "matchup": "Phillies vs Rangers — Game 2",
-        "first_pitch": "4:05 PM ET",
-        "venue": "Citizens Bank Park, Philadelphia",
+        "matchup": "Schedule refresh required",
+        "first_pitch": "TBD",
+        "venue": "TBD",
         "starters": {
-          "home": { "name": "Aaron Nola", "hand": "R" },
-          "away": { "name": "Jacob deGrom", "hand": "R" },
-          "phi": { "name": "Aaron Nola", "hand": "R" },
-          "opp": { "name": "Jacob deGrom", "hand": "R" }
+          "home": { "name": "TBD", "hand": "R" },
+          "away": { "name": "TBD", "hand": "R" },
+          "phi": { "name": "TBD", "hand": "R" },
+          "opp": { "name": "TBD", "hand": "R" }
         },
-        "series": { "home_wins": 1, "away_wins": 0, "label": "PHI leads 1–0" },
+        "series": { "home_wins": 0, "away_wins": 0, "label": "Series status pending" },
         "broadcast": {
-          "tv": "NBCSP+",
+          "tv": "TV TBD",
           "stream": "MLB.TV",
-          "radio": "94.1 WIP"
+          "radio": "Radio TBD"
         },
         "weather": {
-          "temp_f": 48,
-          "condition": "Mostly sunny",
-          "wind": "NNW 15–20 mph",
-          "gusts_mph": 30
+          "temp_f": "",
+          "condition": "Weather unavailable",
+          "wind": "Weather unavailable",
+          "gusts_mph": ""
         },
         "giveaway": "",
-        "transit": "Broad Street Line to AT&T Station",
+        "transit": "Broad Street Line to NRG Station",
         "venue_is_home": true
       }
     },
     "recap": {
-      "title": "Thursday Recap",
-      "preview": "PHI 5, TEX 3 · Sánchez 10 K · Schwarber + Bohm HR",
+      "show": false,
+      "title": "Recap",
+      "preview": "Final recap pending",
+      "chip_label": "",
+      "chip_tone": "",
       "content": {
-        "result": { "home_score": 5, "away_score": 3, "winner": "PHI", "summary_line": "PHI 5, TEX 3." },
+        "result": { "home_score": null, "away_score": null, "winner": "", "summary_line": "" },
         "decisions": {
-          "winner": { "id": null, "fullName": "Cristopher Sánchez", "link": null },
-          "loser": { "id": null, "fullName": "Nathan Eovaldi", "link": null },
-          "save": { "id": null, "fullName": "Jhoan Durán", "link": null }
+          "winner": null,
+          "loser": null,
+          "save": null
         },
-        "date": "2026-03-26",
-        "key_performers": [
-          {
-            "name": "Cristopher Sánchez",
-            "position": "SP",
-            "line": "6 IP, 3 H, 0 ER, 0 BB, 10 K",
-            "note": "87 pitches, changeup 54% whiff rate"
-          },
-          {
-            "name": "Kyle Schwarber",
-            "position": "DH",
-            "line": "1-for-3, 2B HR, 2 RBI",
-            "note": "Two-run opposite-field HR in 1st off Eovaldi"
-          },
-          {
-            "name": "Alec Bohm",
-            "position": "3B",
-            "line": "1-for-3, HR, 3 RBI",
-            "note": "Three-run shot in 5th chased Eovaldi"
-          },
-          {
-            "name": "Justin Crawford",
-            "position": "CF",
-            "line": "2-for-4",
-            "note": "Two singles in first two MLB at-bats"
-          },
-          {
-            "name": "Jhoan Durán",
-            "position": "CL",
-            "line": "1 IP, 1 H, 1 ER, 0 BB, 1 K, SV 1",
-            "note": "Closed after Backhus surrendered 2-run HR"
-          }
-        ],
-        "pull_quote": "Sánchez retired 19 of the final 20 batters. His changeup had a 54% whiff rate."
+        "date": "",
+        "key_performers": [],
+        "pull_quote": ""
       }
     },
     "roster": {
-      "preview": "Crawford + Painter make club · 40-man unchanged",
+      "preview": "Roster feed pending",
+      "chip_label": "Pending",
+      "chip_tone": "fallback",
       "content": {
-        "rotation": [
-          { "date": "Mar 28", "pitcher": "Nola", "opponent": "TEX", "hand": "R" },
-          { "date": "Mar 29", "pitcher": "Luzardo", "opponent": "TEX", "hand": "L" },
-          { "date": "Mar 30", "pitcher": "Walker", "opponent": "WSH", "hand": "R" },
-          { "date": "Mar 31", "pitcher": "Painter", "opponent": "WSH", "hand": "R" },
-          { "date": "Apr 1", "pitcher": "Sánchez", "opponent": "WSH", "hand": "L" }
-        ],
-        "highlights": [
-          {
-            "name": "Justin Crawford",
-            "position": "CF",
-            "status": "active",
-            "note": "Rookie · Made Opening Day club"
-          },
-          {
-            "name": "Andrew Painter",
-            "position": "SP",
-            "status": "active",
-            "note": "#28 MLB prospect · Starts Mar 31"
-          },
-          {
-            "name": "Jhoan Durán",
-            "position": "CL",
-            "status": "active",
-            "note": "Closer · Saved Game 1"
-          },
-          {
-            "name": "Sergio Alcántara",
-            "position": "INF",
-            "status": "milb",
-            "note": "MiLB deal · Assigned Triple-A LV"
-          },
-          {
-            "name": "Óscar Mercado",
-            "position": "OF",
-            "status": "milb",
-            "note": "MiLB deal · Returns to LV"
-          }
-        ]
+        "rotation": [],
+        "highlights": [],
+        "as_of_label": ""
       }
     },
     "injury_report": {
-      "preview": "Wheeler rehab today · Kerkering Apr 7 · Lazar Apr 6",
+      "preview": "Injury feed pending",
+      "chip_label": "Pending",
+      "chip_tone": "fallback",
       "content": {
-        "il_entries": [
-          {
-            "name": "Zack Wheeler",
-            "position": "RHP",
-            "il_type": "15-Day",
-            "badge": "il",
-            "injury": "Thoracic outlet decompression surgery (Sep 23)",
-            "status_note": "Rehab start today at LV — 3 IP / ~50 pitches",
-            "target_return": "Mid-April",
-            "retroactive_to": "2026-03-22"
-          },
-          {
-            "name": "Orion Kerkering",
-            "position": "RHP",
-            "il_type": "15-Day",
-            "badge": "il",
-            "injury": "Grade 1 right hamstring strain",
-            "status_note": "1 IP rehab outing today after Wheeler",
-            "first_eligible": "2026-04-07",
-            "retroactive_to": "2026-03-22"
-          },
-          {
-            "name": "Max Lazar",
-            "position": "RHP",
-            "il_type": "15-Day",
-            "badge": "dtd",
-            "injury": "Left oblique strain (WBC)",
-            "status_note": "Minor per Thomson",
-            "first_eligible": "2026-04-06",
-            "retroactive_to": "2026-03-22"
-          }
-        ],
-        "footer_note": "All three IL stints retroactive to March 22. No 40-man pressure until Wheeler is activation-ready."
+        "il_entries": [],
+        "footer_note": "Injury status unavailable until MLB injury or transaction feeds return current data."
       }
     },
     "farm_system": {
-      "preview": "IronPigs open tonight vs Toledo · Wheeler + Kerkering appear",
+      "show": false,
+      "preview": "Farm system notes hidden until refreshed",
+      "chip_label": "Stale",
+      "chip_tone": "fallback",
       "content": {
         "affiliate": {
           "name": "Lehigh Valley IronPigs",
           "level": "Triple-A",
-          "opponent": "Toledo Mud Hens",
-          "game_number": 1,
-          "series_games": 3,
-          "series_dates": "Mar 27–29",
-          "venue": "Coca-Cola Park",
-          "stream": "MiLB.TV",
-          "manager": "Anthony Contreras",
-          "manager_note": "Franchise-record 5th season"
+          "opponent": "Schedule refresh required",
+          "game_number": "",
+          "series_games": "",
+          "series_dates": "",
+          "venue": "",
+          "stream": "",
+          "manager": "",
+          "manager_note": ""
         },
-        "names_to_watch": [
-          {
-            "name": "Zack Wheeler",
-            "position": "RHP",
-            "badge": "rehab",
-            "note": "Rehab start today — first live outing post-surgery"
-          },
-          {
-            "name": "Orion Kerkering",
-            "position": "RHP",
-            "badge": "rehab",
-            "note": "1 IP rehab outing today after Wheeler"
-          },
-          {
-            "name": "Christian Cairo",
-            "position": "INF",
-            "badge": "new",
-            "note": "Contract selected + optioned to LV. Near-term recall candidate."
-          },
-          {
-            "name": "Liover Peguero",
-            "position": "INF",
-            "badge": "new",
-            "note": "Established Triple-A depth piece"
-          },
-          {
-            "name": "Chase Shugart / Seth Johnson",
-            "position": "RHP",
-            "badge": "new",
-            "note": "40-man experience · Near-term recall options"
-          }
-        ]
+        "names_to_watch": [],
+        "last_confirmed": null,
+        "last_confirmed_label": ""
       }
     },
     "preview": {
-      "preview": "Nola's redemption bid · deGrom's first start at CBP",
+      "show": false,
+      "preview": "Preview pending live schedule refresh",
       "content": {
-        "narrative": [
-          "The storyline today is Aaron Nola making his first start since a career-worst 6.01 ERA in 2025. He showed genuine velocity gains this spring — 94.5 mph max — and dominated a Venezuela WBC lineup that reads like an All-Star ballot. He faces the same Rangers offense Sánchez carved up on Thursday.",
-          "deGrom went 12–8, 2.97 ERA last season but faces Citizens Bank Park for the first time as a Ranger. Schwarber and Bohm are both hot. A win today clinches the series before Luzardo even takes the ball Sunday."
-        ],
-        "pull_quote": "The Phillies don't need Nola back in the low 3s. They need 20 quality starts out of 32.",
-        "up_next": [
-          {
-            "date": "Sun Mar 29",
-            "matchup": "Luzardo vs Gore",
-            "time": "1:35 PM ET",
-            "broadcast": "NBCSP"
-          },
-          {
-            "date": "Mon Mar 30",
-            "matchup": "Walker vs WSH",
-            "time": "6:40 PM ET",
-            "broadcast": "NBCSP+"
-          },
-          {
-            "date": "Tue Mar 31",
-            "matchup": "Painter MLB debut vs WSH",
-            "time": "6:40 PM ET",
-            "broadcast": "NBCSP+"
-          }
-        ]
+        "narrative": [],
+        "pull_quote": "",
+        "up_next": []
       }
     }
   },
   "next_game": {
-    "label": "Tomorrow",
-    "matchup": "Luzardo vs Gore · PHI vs TEX",
-    "date": "Sun Mar 29",
-    "time": "1:35 PM ET",
-    "broadcast": "NBCSP",
-    "venue": "Citizens Bank Park"
+    "label": "Next Game",
+    "matchup": "Schedule refresh required",
+    "date": "TBD",
+    "time": "TBD",
+    "broadcast": "TBD",
+    "venue": "TBD"
   }
 }
