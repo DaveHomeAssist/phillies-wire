@@ -5,14 +5,14 @@
     "edition": 78,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-17T19:43:01.176Z",
+    "generated_at": "2026-06-17T19:56:53.458Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jun 17, 2026, 3:43 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jun 17, 2026, 3:56 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,35 +20,35 @@
   },
   "record": {
     "wins": 40,
-    "losses": 33,
-    "streak": "W2",
+    "losses": 34,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 4, MIA 12",
-    "dek": "Top 9th · 2 outs",
-    "summary": "Esteury Ruiz is up against Chase Shugart. Series: PHI leads 2-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 4, MIA 12.",
+    "dek": "MIA 12, PHI 4 · Sandy Alcantara · 6.0 IP, 8 H, 2 ER, 6 K",
+    "summary": "PHI 4, MIA 12. Final at Citizens Bank Park, Philadelphia. PHI wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "83° · Partly cloudy"
+        "label": "Series",
+        "value": "PHI wins 2-1"
       }
     ],
     "bullets": [
-      "Esteury Ruiz at the plate",
-      "Chase Shugart on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Sandy Alcantara: 6.0 IP, 8 H, 2 ER, 6 K",
+      "Tim Mayza: 2.0 IP, 1 H, 0 ER, 3 K",
+      "Kyle Stowers: 4-for-5, 2 HR, 5 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sean Manaea · PHI vs NYM · Thu, Jun 18 · 6:40 PM"
@@ -137,7 +137,7 @@
             {
               "slot": 9,
               "name": "Garrett Stubbs",
-              "position": "C",
+              "position": "P",
               "bats": "L"
             }
           ],
@@ -249,7 +249,7 @@
             {
               "slot": 9,
               "name": "Garrett Stubbs",
-              "position": "C",
+              "position": "P",
               "bats": "L"
             }
           ],
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 2-0"
+          "label": "PHI wins 2-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,7 +347,7 @@
         },
         "weather": {
           "temp_f": 83,
-          "condition": "Partly cloudy",
+          "condition": "Mostly sunny",
           "wind": "9 mph · gusts 16",
           "gusts_mph": 16
         },
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T19:43:01.176Z",
-            "freshness_label": "As of Jun 17, 2026, 3:43 PM ET"
+            "last_confirmed": "2026-06-17T19:56:53.458Z",
+            "freshness_label": "As of Jun 17, 2026, 3:56 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +382,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T19:43:01.176Z",
-            "freshness_label": "As of Jun 17, 2026, 3:43 PM ET"
+            "last_confirmed": "2026-06-17T19:56:53.458Z",
+            "freshness_label": "As of Jun 17, 2026, 3:56 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T19:43:01.176Z",
-            "freshness_label": "As of Jun 17, 2026, 3:43 PM ET"
+            "last_confirmed": "2026-06-17T19:56:53.458Z",
+            "freshness_label": "As of Jun 17, 2026, 3:56 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
