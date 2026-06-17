@@ -5,14 +5,14 @@
     "edition": 77,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-17T00:59:37.354Z",
+    "generated_at": "2026-06-17T01:32:23.775Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 16, 2026, 8:59 PM ET",
+      "generated_at_et": "Jun 16, 2026, 9:32 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -20,36 +20,36 @@
     }
   },
   "record": {
-    "wins": 39,
+    "wins": 40,
     "losses": 33,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 8, MIA 2",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Leo Jiménez is up against Max Lazar. Series: PHI leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 8, MIA 2.",
+    "dek": "PHI 8, MIA 2 · Jesús Luzardo · 7.0 IP, 5 H, 2 ER, 9 K",
+    "summary": "PHI 8, MIA 2. Final at Citizens Bank Park, Philadelphia. PHI wins 2-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "72° · Clear"
+        "label": "Series",
+        "value": "PHI wins 2-0"
       }
     ],
     "bullets": [
-      "Leo Jiménez at the plate",
-      "Max Lazar on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Jesús Luzardo: 7.0 IP, 5 H, 2 ER, 9 K",
+      "Dax Fulton: 2.0 IP, 0 H, 0 ER, 2 K",
+      "Alec Bohm: 2-for-4, 1 HR, 3 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Sandy Alcantara · PHI vs MIA · Wed, Jun 17 · 1:05 PM"
@@ -339,7 +339,7 @@
         "series": {
           "home_wins": 1,
           "away_wins": 0,
-          "label": "PHI leads 1-0"
+          "label": "PHI wins 2-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 72,
+          "temp_f": 70,
           "condition": "Clear",
-          "wind": "2 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "6 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to AT&T Station",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T00:59:37.354Z",
-            "freshness_label": "As of Jun 16, 2026, 8:59 PM ET"
+            "last_confirmed": "2026-06-17T01:32:23.775Z",
+            "freshness_label": "As of Jun 16, 2026, 9:32 PM ET"
           },
           {
             "name": "Adolis García",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T00:59:37.354Z",
-            "freshness_label": "As of Jun 16, 2026, 8:59 PM ET"
+            "last_confirmed": "2026-06-17T01:32:23.775Z",
+            "freshness_label": "As of Jun 16, 2026, 9:32 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T00:59:37.354Z",
-            "freshness_label": "As of Jun 16, 2026, 8:59 PM ET"
+            "last_confirmed": "2026-06-17T01:32:23.775Z",
+            "freshness_label": "As of Jun 16, 2026, 9:32 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
