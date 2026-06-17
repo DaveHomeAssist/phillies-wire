@@ -5,14 +5,14 @@
     "edition": 78,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-17T14:11:28.208Z",
+    "generated_at": "2026-06-17T17:06:06.070Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
-      "enrich_state": "fallback",
-      "enrich_label": "Structured fallback published. Editorial enrichment failed.",
-      "generated_at_et": "Jun 17, 2026, 10:11 AM ET",
+      "enrich_state": "skipped",
+      "enrich_label": "Live update",
+      "generated_at_et": "Jun 17, 2026, 1:06 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -26,40 +26,41 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Marlins @ Phillies · Game 3 of 3",
-    "dek": "Andrew Painter vs Sandy Alcantara",
-    "summary": "Andrew Painter vs Sandy Alcantara · Marlins @ Phillies · Game 3 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, MIA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Liam Hicks is up against Andrew Painter. Series: PHI leads 2-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "1:05 PM"
-      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Watch",
-        "value": "NBC 10 · MLB.TV · 94 WIP"
+        "label": "Broadcast",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "83° · Mostly sunny"
       }
     ],
     "bullets": [
-      "74° · Mostly sunny · 7 mph · gusts 10",
-      "PHI leads 2-0"
+      "Liam Hicks at the plate",
+      "Andrew Painter on the mound",
+      "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Sean Manaea · PHI vs NYM · Thu, Jun 18 · 6:40 PM"
+    "next_value": "Aaron Nola vs Sean Manaea · PHI vs NYM · Thu, Jun 18 · 6:40 PM"
   },
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
-        "announced": false,
-        "mode": "pending",
-        "mode_label": "Pending",
-        "show_orders": false,
+        "status_note": "Official batting orders confirmed for today's MIA at PHI game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
+        "show_orders": true,
         "first_pitch": "1:05 PM",
         "starters": {
           "home": {
@@ -143,57 +144,57 @@
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Liam Hicks",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Otto Lopez",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Stowers",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Xavier Edwards",
+              "position": "2B",
+              "bats": "S"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Javier Sanoja",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Owen Caissie",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jakob Marsee",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Joe Mack",
+              "position": "C",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Esteury Ruiz",
+              "position": "LF",
+              "bats": "R"
             }
           ],
           "phi": [
@@ -255,57 +256,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Liam Hicks",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Otto Lopez",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Stowers",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Xavier Edwards",
+              "position": "2B",
+              "bats": "S"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Javier Sanoja",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Owen Caissie",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jakob Marsee",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Joe Mack",
+              "position": "C",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Esteury Ruiz",
+              "position": "LF",
+              "bats": "R"
             }
           ]
         }
@@ -340,15 +341,15 @@
           "label": "PHI leads 2-0"
         },
         "broadcast": {
-          "tv": "NBC 10",
+          "tv": "NBCSP",
           "stream": "MLB.TV",
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 74,
+          "temp_f": 83,
           "condition": "Mostly sunny",
-          "wind": "7 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "9 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -368,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T14:11:28.208Z",
-            "freshness_label": "As of Jun 17, 2026, 10:11 AM ET"
+            "last_confirmed": "2026-06-17T17:06:06.070Z",
+            "freshness_label": "As of Jun 17, 2026, 1:06 PM ET"
           },
           {
             "name": "Adolis García",
@@ -381,8 +382,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T14:11:28.208Z",
-            "freshness_label": "As of Jun 17, 2026, 10:11 AM ET"
+            "last_confirmed": "2026-06-17T17:06:06.070Z",
+            "freshness_label": "As of Jun 17, 2026, 1:06 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -394,8 +395,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T14:11:28.208Z",
-            "freshness_label": "As of Jun 17, 2026, 10:11 AM ET"
+            "last_confirmed": "2026-06-17T17:06:06.070Z",
+            "freshness_label": "As of Jun 17, 2026, 1:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -404,7 +405,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Sean Manaea · PHI vs NYM",
+    "matchup": "Aaron Nola vs Sean Manaea · PHI vs NYM",
     "date": "Thu, Jun 18",
     "time": "6:40 PM",
     "broadcast": "NBCSP",
