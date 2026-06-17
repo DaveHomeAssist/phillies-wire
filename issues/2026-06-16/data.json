@@ -5,14 +5,14 @@
     "edition": 77,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-17T02:41:01.149Z",
+    "generated_at": "2026-06-17T03:22:13.258Z",
     "status": {
       "mode": "final",
       "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "pending",
       "enrich_label": "Draft edition",
-      "generated_at_et": "Jun 16, 2026, 10:41 PM ET",
+      "generated_at_et": "Jun 16, 2026, 11:22 PM ET",
       "source_notes": [
         "Injury report uses fixture baseline plus live transactions when the MLB injuries endpoint is unavailable.",
         "Rehab assignment notes are refreshed from the MLB transactions feed."
@@ -347,9 +347,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 67,
-          "condition": "Partly cloudy",
-          "wind": "5 mph · gusts 16",
+          "temp_f": 66,
+          "condition": "Overcast",
+          "wind": "7 mph · gusts 16",
           "gusts_mph": 16
         },
         "giveaway": "",
@@ -370,8 +370,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T02:41:01.149Z",
-            "freshness_label": "As of Jun 16, 2026, 10:41 PM ET"
+            "last_confirmed": "2026-06-17T03:22:13.258Z",
+            "freshness_label": "As of Jun 16, 2026, 11:22 PM ET"
           },
           {
             "name": "Adolis García",
@@ -383,8 +383,8 @@
             "retroactive_to": "2026-06-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T02:41:01.149Z",
-            "freshness_label": "As of Jun 16, 2026, 10:41 PM ET"
+            "last_confirmed": "2026-06-17T03:22:13.258Z",
+            "freshness_label": "As of Jun 16, 2026, 11:22 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -396,8 +396,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-17T02:41:01.149Z",
-            "freshness_label": "As of Jun 16, 2026, 10:41 PM ET"
+            "last_confirmed": "2026-06-17T03:22:13.258Z",
+            "freshness_label": "As of Jun 16, 2026, 11:22 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
