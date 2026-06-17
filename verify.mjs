@@ -54,6 +54,14 @@ const requiredFiles = [
   "./site/dashboard/preferences/index.html",
   "./site/dashboard/preferences/preferences.css",
   "./site/dashboard/preferences/preferences.js",
+  "./dashboard/accuracy/index.html",
+  "./dashboard/accuracy/accuracy.css",
+  "./dashboard/accuracy/accuracy.js",
+  "./dashboard/accuracy/accuracy.json",
+  "./site/dashboard/accuracy/index.html",
+  "./site/dashboard/accuracy/accuracy.css",
+  "./site/dashboard/accuracy/accuracy.js",
+  "./site/dashboard/accuracy/accuracy.json",
   schedulePath,
   siteSchedulePath,
   calendarPath,
@@ -535,6 +543,60 @@ for (const file of htmlFiles) {
     if (!existsSync(site)) {
       fail(`Dashboard imports ${rel} but ${site} is missing (render did not mirror it).`);
     }
+  }
+}
+
+// Accuracy dashboard contract (/dashboard/accuracy/). The fact-check
+// scorecard is a static surface backed by accuracy.json; the page hydrates
+// from it client-side. Gate the contract so a malformed report or a broken
+// site mirror can't ship a dead scorecard (same failure mode as the
+// 2026-04-22 empty-dashboard outage).
+{
+  const accuracy = readJson("./dashboard/accuracy/accuracy.json");
+  const siteAccuracy = readJson("./site/dashboard/accuracy/accuracy.json");
+
+  if (JSON.stringify(accuracy) !== JSON.stringify(siteAccuracy)) {
+    fail("Accuracy report JSON and site/ copy differ — site artifact copy broke.");
+  }
+
+  if (!accuracy.schema_version || !/^accuracy-\d+\.\d+\.\d+$/.test(accuracy.schema_version)) {
+    fail(`Accuracy report schema_version must look like "accuracy-1.0.0"; got "${accuracy.schema_version}"`);
+  }
+
+  if (!accuracy.summary || typeof accuracy.summary.total_claims !== "number") {
+    fail("Accuracy report is missing summary.total_claims.");
+  }
+
+  if (!Array.isArray(accuracy.sections) || accuracy.sections.length < 1) {
+    fail("Accuracy report must include at least one section.");
+  }
+
+  const allowedVerdicts = new Set(["accurate", "inaccurate", "unverifiable"]);
+  let counted = 0;
+  for (const section of accuracy.sections) {
+    if (!section || !Array.isArray(section.items)) {
+      fail(`Accuracy section "${section?.title ?? "?"}" is missing an items array.`);
+    }
+    for (const item of section.items) {
+      counted += 1;
+      if (!allowedVerdicts.has(item?.verdict)) {
+        fail(`Accuracy item has an invalid verdict ${JSON.stringify(item?.verdict)} (claim: ${item?.claim ?? "?"}).`);
+      }
+    }
+  }
+
+  // The headline tally must reconcile with the items actually listed, so the
+  // scorecard can never advertise a count it doesn't show.
+  if (counted !== accuracy.summary.total_claims) {
+    fail(`Accuracy summary.total_claims (${accuracy.summary.total_claims}) does not match counted items (${counted}).`);
+  }
+
+  const accuracyHtml = readFileSync("./dashboard/accuracy/index.html", "utf8");
+  assertNoUnresolvedTokens(accuracyHtml, "./dashboard/accuracy/index.html");
+  assertNoMojibake(accuracyHtml, "./dashboard/accuracy/index.html");
+  assertNoMojibake(readFileSync("./dashboard/accuracy/accuracy.json", "utf8"), "./dashboard/accuracy/accuracy.json");
+  if (!/Phillies Wire/.test(accuracyHtml)) {
+    fail("Accuracy page is missing the publication name.");
   }
 }
 

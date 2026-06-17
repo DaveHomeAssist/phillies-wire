@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#e81828" />
+<title>Phillies Wire · Accuracy</title>
+<meta name="description" content="Daily fact-check of the Phillies Wire edition: every data point checked against authoritative MLB sources, with verdicts and timeline relevancy." />
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../../fonts.css" />
+<link rel="stylesheet" href="../../tokens.css" />
+<link rel="stylesheet" href="../../shared/wire-banner.css" />
+<link rel="stylesheet" href="../dashboard.css" />
+<link rel="stylesheet" href="./accuracy.css" />
+</head>
+<body>
+  <div class="pw-wire-banner" data-wire-banner data-feed-url="../../latest.json" hidden></div>
+  <div class="dash-app">
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div class="sidebar-brand" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 4h12" /><path d="M12 4v16" /><path d="M7 20h10" />
+      </svg>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-item" href="../" data-nav="command" title="Command Center">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+      </a>
+      <a class="nav-item" href="../../schedule/" data-nav="schedule" title="Schedule">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      </a>
+      <a class="nav-item" href="../innings/" data-nav="analytics" title="Innings">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-6M22 20H2"/></svg>
+      </a>
+      <a class="nav-item is-active" href="#" data-nav="accuracy" title="Accuracy" aria-current="page">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      </a>
+      <a class="nav-item" href="../../" data-nav="issues" title="Latest Issue">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a class="nav-item" href="../preferences/" data-nav="preferences" title="Preferences">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <main class="stage">
+    <header class="topbar">
+      <div class="topbar-title">
+        <span class="eyebrow">Editorial · Quality</span>
+        <h1>Accuracy</h1>
+        <span class="crumbs" data-slot="crumbs">Fact-check of today's edition</span>
+      </div>
+      <div class="topbar-meta">
+        <span class="acc-grade" data-slot="grade" hidden>—</span>
+        <a class="icon-btn" href="../" aria-label="Back to Command Center" title="Command Center">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <p class="acc-state" data-slot="state" aria-live="polite">Loading fact-check report…</p>
+
+    <section class="acc-report" data-slot="report" hidden>
+
+      <article class="acc-card acc-summary" aria-labelledby="acc-summary-title">
+        <header class="card-head">
+          <span class="card-eyebrow">Edition Scorecard</span>
+          <span class="card-status" data-slot="summary-edition">—</span>
+        </header>
+        <h2 id="acc-summary-title" class="acc-headline" data-slot="summary-headline">—</h2>
+        <div class="acc-stat-grid" data-slot="summary-stats" role="list"></div>
+        <div class="acc-relevancy" data-slot="summary-relevancy"></div>
+        <p class="acc-method" data-slot="method"></p>
+      </article>
+
+      <article class="acc-card acc-highlights" data-slot="highlights-card" hidden>
+        <header class="card-head">
+          <span class="card-eyebrow">Worth a Second Look</span>
+          <span class="card-status">Verified</span>
+        </header>
+        <div class="acc-highlight-list" data-slot="highlights"></div>
+      </article>
+
+      <div class="acc-sections" data-slot="sections"></div>
+
+      <article class="acc-card acc-sources" data-slot="sources-card" hidden>
+        <header class="card-head">
+          <span class="card-eyebrow">Sources</span>
+          <span class="card-status" data-slot="sources-count">—</span>
+        </header>
+        <ul class="acc-source-list" data-slot="sources" role="list"></ul>
+      </article>
+
+      <article class="acc-card acc-legend">
+        <header class="card-head">
+          <span class="card-eyebrow">Legend</span>
+        </header>
+        <div class="acc-legend-grid" data-slot="legend"></div>
+      </article>
+
+    </section>
+
+    <footer class="stage-foot">
+      <span>Phillies Wire · Accuracy</span>
+      <span class="foot-sep">·</span>
+      <span data-slot="foot-edition">—</span>
+      <span class="foot-sep">·</span>
+      <a href="../" class="foot-link">← Command Center</a>
+    </footer>
+  </main>
+
+  </div><!-- /.dash-app -->
+
+  <noscript>
+    <p style="padding:16px;color:#8893b8;font-family:Inter,sans-serif;">
+      This accuracy report is rendered from
+      <a href="./accuracy.json" style="color:#e81828;">accuracy.json</a>.
+      Enable JavaScript to view the formatted scorecard.
+    </p>
+  </noscript>
+
+  <script type="module">
+    import { mountWireBanner } from "../../shared/wire-banner.mjs";
+    mountWireBanner("[data-wire-banner]");
+  </script>
+  <script type="module" src="./accuracy.js"></script>
+</body>
+</html>

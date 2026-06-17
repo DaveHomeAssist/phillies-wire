@@ -38,6 +38,7 @@ phillies-wire/                                 → GitHub Pages root
 ├── /dashboard/                                → live command center
 ├── /dashboard/innings/                        → innings timeline view
 ├── /dashboard/preferences/                    → browser local preferences
+├── /dashboard/accuracy/                        → daily fact-check scorecard
 ├── /schedule/                                 → Phillies schedule + attendance tracker
 ├── /data/phillies-2026.json                   → canonical season schedule
 ├── /calendar/phillies-2026-all.ics            → season calendar feed
@@ -63,6 +64,7 @@ phillies-wire/                                 → GitHub Pages root
 | **Dashboard** | `/dashboard/` | Live command center view: hero, activity feed, record, key events | Dave + household | Client-side poll of `archive.json` + `live-feed` data during games |
 | **Innings timeline** | `/dashboard/innings/` | Linescore and play progression view | Dave + household | Client-side read of per-issue `data.json` + canonical schedule |
 | **Local preferences** | `/dashboard/preferences/` | Browser-only controls for theme, reduced data, innings defaults, and local export or import | Dave + household | LocalStorage only |
+| **Accuracy scorecard** | `/dashboard/accuracy/` | Daily fact-check of the edition: per-claim verdicts + timeline relevancy, checked against authoritative MLB sources | Dave + editorial | Client-side read of `dashboard/accuracy/accuracy.json` (schema `accuracy-1.0.0`) |
 | **Schedule tracker** | `/schedule/` | Season schedule, attendance state, notes, and cross-links | Dave + household | Generated schedule JSON + local-first state |
 | **Canonical schedule** | `/data/phillies-2026.json` | Machine-readable Phillies season source of truth | Dashboards, scripts, calendar, Quest cutover | Every render |
 | **Season calendar** | `/calendar/phillies-2026-all.ics` | Importable season feed | Calendar apps | Every render |

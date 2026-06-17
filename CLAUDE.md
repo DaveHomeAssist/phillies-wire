@@ -10,6 +10,7 @@ Status: v1.6-preview. Core newsletter is stable on cron. The merged dashboard, i
 **Dashboard:** https://davehomeassist.github.io/phillies-wire/dashboard/
 **Innings:** https://davehomeassist.github.io/phillies-wire/dashboard/innings/
 **Preferences:** https://davehomeassist.github.io/phillies-wire/dashboard/preferences/
+**Accuracy:** https://davehomeassist.github.io/phillies-wire/dashboard/accuracy/
 **Schedule:** https://davehomeassist.github.io/phillies-wire/schedule/
 
 ## Stack
@@ -20,7 +21,8 @@ Status: v1.6-preview. Core newsletter is stable on cron. The merged dashboard, i
 - **Data sources:** MLB Stats API (schedule, boxscore, injuries), Open-Meteo (weather)
 - **Deploy:** GitHub Actions → GitHub Pages (`.github/workflows/publish.yml`)
 - **Consumer surfaces:** `latest.json` feed (schema `latest-1.0.0`), per-issue `data.json` (schema `1.3.0`), canonical season schedule at `data/phillies-2026.json`, season ICS at `calendar/phillies-2026-all.ics`, iframe-safe ticker embed at `/embed/ticker.html`, merged schedule tracker at `/schedule/`, and local preferences at `/dashboard/preferences/`
-- **Verification:** `verify.mjs` asserts per-issue data.json contract, canonical schedule JSON, season calendar copy, latest.json schema + 26h freshness, ticker four render fns + iframe safety, system-reminder injection guard, mojibake scan, SEO/accessibility tags
+- **Accuracy dashboard:** `/dashboard/accuracy/` renders a daily fact-check scorecard from `dashboard/accuracy/accuracy.json` (schema `accuracy-1.0.0`): per-claim verdicts (accurate / inaccurate / unverifiable) and timeline relevancy (current / outdated / misleading), checked against authoritative MLB sources
+- **Verification:** `verify.mjs` asserts per-issue data.json contract, canonical schedule JSON, season calendar copy, latest.json schema + 26h freshness, ticker four render fns + iframe safety, accuracy scorecard contract (schema + tally reconciliation + site mirror), system-reminder injection guard, mojibake scan, SEO/accessibility tags
 - **Dependencies:** Only `nodemailer` (for optional email delivery)
 
 ## Key Decisions

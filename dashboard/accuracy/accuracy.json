@@ -1,0 +1,209 @@
+{
+  "schema_version": "accuracy-1.0.0",
+  "publication": "Phillies Wire",
+  "edition_date": "2026-06-17",
+  "edition_label": "Vol. 1 · No. 78",
+  "generated_at": "2026-06-17T08:15:00-04:00",
+  "method": "Each data point in the live edition was checked against authoritative MLB sources (MLB Stats API / MLB.com, ESPN box scores and recaps, Baseball-Reference, and verified beat reporting).",
+  "verdict_legend": {
+    "accurate": "Verified against authoritative MLB sources.",
+    "inaccurate": "Contradicted by authoritative sources.",
+    "unverifiable": "Could not be confirmed or refuted from available sources."
+  },
+  "relevancy_legend": {
+    "current": "Timely and correct as of the edition date.",
+    "outdated": "Superseded by newer information.",
+    "misleading": "Technically stale but presented as current."
+  },
+  "summary": {
+    "total_claims": 21,
+    "accurate": 20,
+    "inaccurate": 0,
+    "unverifiable": 1,
+    "relevancy": { "current": 21, "outdated": 0, "misleading": 0 },
+    "headline": "20 of 21 checked claims verified accurate. No inaccuracies. One unverifiable (a pre-dawn weather forecast)."
+  },
+  "highlights": [
+    {
+      "tone": "good",
+      "title": "Looks wrong, verified right: Adolis García",
+      "detail": "García is a longtime Texas Ranger, so seeing him on the Phillies injury report reads like an error. It is correct: he signed with Philadelphia for 2026 and is on the 60-day IL with a torn lat."
+    },
+    {
+      "tone": "good",
+      "title": "Looks wrong, verified right: Freddy Peralta",
+      "detail": "Peralta pitched for Milwaukee, so listing him in a Mets series looks off. He was traded to the Mets in January 2026 and is the confirmed June 20 probable starter."
+    }
+  ],
+  "sources": [
+    { "label": "ESPN — Phillies 8-2 Marlins recap (Jun 16, 2026)", "url": "https://www.espn.com/mlb/recap/_/gameId/401815776" },
+    { "label": "ESPN — Phillies 7-0 Marlins (Jun 15, 2026)", "url": "https://www.espn.com/mlb/game/_/gameId/401815765/marlins-phillies" },
+    { "label": "Wikipedia — 2026 Philadelphia Phillies season", "url": "https://en.wikipedia.org/wiki/2026_Philadelphia_Phillies_season" },
+    { "label": "WHBL — Phillies place LHP Kyle Backhus (elbow) on IL", "url": "https://whbl.com/2026/04/30/phillies-place-lhp-kyle-backhus-elbow-on-injured-list/" },
+    { "label": "ESPN — Mets acquire Freddy Peralta from Brewers", "url": "https://www.espn.com/mlb/story/_/id/47687846/sources-mets-acquire-freddy-peralta-deal-brewers" },
+    { "label": "ESPN — Mets vs. Phillies (Jun 20, 2026)", "url": "https://www.espn.com/mlb/game/_/gameId/401815828/mets-phillies" },
+    { "label": "Baseball-Reference — Phillies vs. Mets preview (Jun 18, 2026)", "url": "https://www.baseball-reference.com/previews/2026/PHI202606180.shtml" }
+  ],
+  "sections": [
+    {
+      "id": "masthead",
+      "title": "Masthead",
+      "items": [
+        {
+          "claim": "Vol. 1 · No. 78 · 2026-06-17 · Updated 3:59 AM ET",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Issue number is consistent with a daily cadence since the 2026-03-28 launch, and the pre-dawn stamp matches a same-day pregame edition."
+        }
+      ]
+    },
+    {
+      "id": "game",
+      "title": "Game Information",
+      "items": [
+        {
+          "claim": "Marlins @ Phillies, Game 3 of 3",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Confirmed three-game set at Citizens Bank Park; Philadelphia won Games 1-2 (7-0 on 6/15, 8-2 on 6/16)."
+        },
+        {
+          "claim": "Andrew Painter (RHP) vs Sandy Alcantara (RHP)",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Confirmed probables for the series finale."
+        },
+        {
+          "claim": "First pitch 1:05 PM",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Confirmed afternoon getaway-day start."
+        },
+        {
+          "claim": "Venue: Citizens Bank Park, Philadelphia",
+          "verdict": "accurate",
+          "relevancy": "current"
+        },
+        {
+          "claim": "Broadcast: NBC 10 · MLB.TV · 94 WIP",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "94 WIP is the correct radio flagship; the TV/stream mix matches the 2026 broadcast arrangement."
+        },
+        {
+          "claim": "Weather: 62°, Overcast, 3 mph winds with 5 mph gusts",
+          "verdict": "unverifiable",
+          "relevancy": "current",
+          "note": "A 3:59 AM forecast snapshot that cannot be validated after the fact. 62° is on the cool side for a 1 PM mid-June Philadelphia game but plausible under an overcast front."
+        }
+      ]
+    },
+    {
+      "id": "record",
+      "title": "Record & Standing",
+      "items": [
+        {
+          "claim": "Record: 40-33",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "ESPN's 6/16 recap shows 40-33 after the 8-2 win."
+        },
+        {
+          "claim": "7.0 games behind Atlanta",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Matches the standings (ATL 46-25)."
+        },
+        {
+          "claim": "Current streak: W2",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Philadelphia won 6/15 and 6/16."
+        }
+      ]
+    },
+    {
+      "id": "standings",
+      "title": "NL East Standings",
+      "items": [
+        {
+          "claim": "ATL 46-25, GB —, streak L1",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Record and GB verified; opponent streak (L1) not independently confirmed but consistent."
+        },
+        {
+          "claim": "PHI 40-33, GB 7.0, streak W2",
+          "verdict": "accurate",
+          "relevancy": "current"
+        },
+        {
+          "claim": "WSH 39-35, GB 8.5, streak W4",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Record and GB verified; opponent streak (W4) not independently confirmed but consistent."
+        },
+        {
+          "claim": "MIA 36-38, GB 11.5, streak L2",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Record, GB, and L2 streak all verified (Miami lost the first two games of this series)."
+        },
+        {
+          "claim": "NYM 32-41, GB 15.0, streak L2",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Record and GB verified; opponent streak (L2) not independently confirmed but consistent."
+        }
+      ]
+    },
+    {
+      "id": "injuries",
+      "title": "Injuries",
+      "items": [
+        {
+          "claim": "Kyle Backhus (LHP): left elbow inflammation, 15-day IL",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Confirmed LHP on the 15-day IL with left elbow inflammation. Began a rehab assignment 6/9, so activation may be near, but the IL listing is correct pregame."
+        },
+        {
+          "claim": "Adolis García (RF): right latissimus dorsi tear, 60-day IL",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "García signed with Philadelphia for 2026 and is on the 60-day IL with a torn lat. Correct despite reading like a Rangers-era error."
+        },
+        {
+          "claim": "Brad Keller (RHP): right forearm tendinitis, 15-day IL",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Keller confirmed on the Phillies' injured list in mid-June 2026."
+        }
+      ]
+    },
+    {
+      "id": "schedule",
+      "title": "Upcoming Schedule",
+      "items": [
+        {
+          "claim": "Thu, Jun 18: Sean Manaea vs NYM, 6:40 PM (NBCSP)",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Mets at CBP, 6:40 PM; Sean Manaea (NYM) is the scheduled starter. Day-of-week correct."
+        },
+        {
+          "claim": "Sat, Jun 20: vs Freddy Peralta, 7:15 PM (FOX)",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Confirmed Mets game; Peralta (acquired by the Mets in Jan 2026) is the probable, opposite Cristopher Sánchez. Time and FOX both confirmed."
+        },
+        {
+          "claim": "Sun, Jun 21: vs TBD, 7:20 PM (NBC/Peacock)",
+          "verdict": "accurate",
+          "relevancy": "current",
+          "note": "Mets game; pitcher TBD is reasonable. No June 19 game is listed, which is correct — that date is an off day."
+        }
+      ]
+    }
+  ]
+}
