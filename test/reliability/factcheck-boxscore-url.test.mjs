@@ -9,6 +9,7 @@
 
 import { readFileSync } from "node:fs";
 import {
+  buildAccuracyReport,
   fetchJSON,
   pickStandingsLeader,
   pickStatus,
@@ -61,6 +62,72 @@ test("P2-FC-4: standings leader is chosen by record, not fragile GB text", () =>
     { abbr: "NYM", wins: 11, losses: 8, gb: "1.5" },
   ]);
   assert.equal(leader.abbr, "PHI");
+});
+
+test("P2-FC-5: accuracy export uses run time and current edition metadata", () => {
+  const report = buildAccuracyReport({
+    generatedAt: new Date("2026-06-17T11:05:20Z"),
+    findings: { accurate: [], errors: [], stale: [], pipeline: [], unverified: [] },
+    data: {
+      meta: {
+        date: "2026-06-17",
+        volume: 1,
+        edition: 78,
+        publication: "Phillies Wire",
+        generated_at: "2026-06-17T04:48:25.189Z",
+        status: { generated_at_et: "Jun 17, 2026, 12:48 AM ET" },
+      },
+      hero: { headline: "Marlins @ Phillies \u00b7 Game 3 of 3" },
+      record: { wins: 40, losses: 33, streak: "W2", division_rank: 2, division: "NL East" },
+      sections: {
+        game_status: {
+          content: {
+            matchup: "Marlins @ Phillies \u00b7 Game 3 of 3",
+            first_pitch: "1:05 PM",
+            venue: "Citizens Bank Park",
+            starters: {
+              home: { name: "Andrew Painter", hand: "R" },
+              away: { name: "Sandy Alcantara", hand: "R" },
+            },
+            broadcast: { tv: "NBC 10", radio: "94 WIP" },
+            weather: { temp_f: 64, condition: "Overcast", wind: "5 mph" },
+          },
+        },
+        standings: { content: { teams: [{ abbr: "PHI", wins: 40, losses: 33, gb: "7.0", streak: "W2", is_phi: true }] } },
+        lineup: { content: { mode_label: "Pending", status_note: "Lineups pending.", show_orders: false } },
+        injury_report: { content: { il_entries: [{ name: "Kyle Backhus", position: "LHP", injury: "Left elbow inflammation", il_type: "15-day" }] } },
+        preview: { content: { up_next: [{ date: "Thu, Jun 18", matchup: "PHI vs NYM", time: "6:40 PM", broadcast: "NBCSP" }] } },
+      },
+      next_game: { date: "Thu, Jun 18", matchup: "PHI vs NYM", time: "6:40 PM", broadcast: "NBCSP" },
+    },
+  });
+
+  assert.equal(report.schema_version, "accuracy-1.0.0");
+  assert.equal(report.edition_date, "2026-06-17");
+  assert.equal(report.edition_label, "Vol. 1 \u00b7 No. 78");
+  assert.equal(report.generated_at, "2026-06-17T11:05:20.000Z");
+  assert.notEqual(report.generated_at, "2026-06-17T04:48:25.189Z");
+  assert.equal(report.summary.inaccurate, 0);
+  assert.equal(report.summary.relevancy.outdated, 0);
+  assert.equal(report.summary.total_claims, report.sections.flatMap((section) => section.items).length);
+});
+
+test("P2-FC-5: accuracy export reflects factcheck findings in summary counts", () => {
+  const report = buildAccuracyReport({
+    generatedAt: "2026-06-17T11:05:20Z",
+    data: { meta: { date: "2026-06-17", publication: "Phillies Wire" } },
+    findings: {
+      accurate: [],
+      errors: [{ id: "bad-record", title: "Record disagrees with MLB API", detail: "Wire 1-0, API 0-1." }],
+      stale: [{ id: "stale", title: "Edition date stale", detail: "Yesterday's copy." }],
+      pipeline: [],
+      unverified: [{ id: "api", title: "Transactions API unreachable", detail: "timeout" }],
+    },
+  });
+
+  assert.equal(report.summary.inaccurate, 1);
+  assert.equal(report.summary.unverifiable, 1);
+  assert.equal(report.summary.relevancy.outdated, 1);
 });
 
 // --- Pin (open P0) ---

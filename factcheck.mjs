@@ -17,6 +17,7 @@
 // CLI:
 //   node factcheck.mjs              → daily mode (default)
 //   node factcheck.mjs --pre-publish → deterministic-only, exit 1 on any fail
+//   node factcheck.mjs --export-accuracy → write dashboard/accuracy/accuracy.json only
 //
 // Env:
 //   NOTION_API_KEY              — Notion integration token
@@ -45,6 +46,8 @@ const DATA_FILE = join(__dirname, "phillies-wire-data.json");
 const OUTPUT_HTML = join(__dirname, "phillies-wire-output.html");
 const REPORTS_DIR = join(__dirname, "reports");
 const WHITELIST_DEFAULT = join(__dirname, "factcheck-whitelist.json");
+const ACCURACY_REPORT_FILE = join(__dirname, "dashboard", "accuracy", "accuracy.json");
+const ACCURACY_SCHEMA_VERSION = "accuracy-1.0.0";
 
 const MLB_TEAM_ID_PHI = 143;
 const MLB_API = "https://statsapi.mlb.com/api/v1";
@@ -62,6 +65,7 @@ const NL_EAST_IDS = {
 // ---------- Main ----------
 
 const isPrePublish = process.argv.includes("--pre-publish");
+const isAccuracyExport = process.argv.includes("--export-accuracy");
 const mode = isPrePublish ? "pre-publish" : "daily";
 const DRY_RUN = process.env.FACTCHECK_DRY_RUN === "1";
 
@@ -74,7 +78,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 }
 
 async function main() {
-  console.log(`[FACTCHECK] mode=${mode} dry_run=${DRY_RUN}`);
+  console.log(`[FACTCHECK] mode=${mode} accuracy_export=${isAccuracyExport} dry_run=${DRY_RUN}`);
 
   const { data, html, source } = loadLocalArtifacts();
   const editionDate = data?.meta?.date ?? todayISO();
@@ -101,6 +105,17 @@ async function main() {
   applyWhitelist(findings, whitelist);
 
   const status = pickStatus(findings);
+  const accuracyReport = buildAccuracyReport({ data, findings, generatedAt: new Date() });
+  if (isAccuracyExport || mode === "daily") {
+    writeAccuracyReport(accuracyReport);
+  }
+
+  if (isAccuracyExport) {
+    console.log(`[FACTCHECK] accuracy report written: ${ACCURACY_REPORT_FILE}`);
+    printSummary(findings);
+    return;
+  }
+
   const report = buildReport({
     editionDate,
     volume,
@@ -572,6 +587,278 @@ function buildActiveIlFromTransactions(transactions = []) {
 }
 
 // ---------- Report assembly ----------
+
+export function buildAccuracyReport({ data, findings, generatedAt = new Date() } = {}) {
+  const safeFindings = findings ?? { accurate: [], errors: [], stale: [], unverified: [], pipeline: [] };
+  const meta = data?.meta ?? {};
+  const editionDate = meta.date ?? todayISO();
+  const editionLabel = formatEditionLabel(meta);
+  const sections = [];
+
+  addSection(sections, "masthead", "Masthead", [
+    claim(`${editionLabel || "Phillies Wire"}${editionLabel ? " · " : ""}${editionDate}`, {
+      note: "Edition metadata from the current pipeline artifact.",
+    }),
+    meta.status?.generated_at_et ? claim(`Updated ${meta.status.generated_at_et}`, {
+      note: "Rendered update timestamp from the current edition.",
+    }) : null,
+  ]);
+
+  const game = data?.sections?.game_status?.content ?? {};
+  const starters = game.starters ?? data?.sections?.lineup?.content?.starters ?? {};
+  const broadcast = game.broadcast ?? {};
+  const weather = game.weather ?? {};
+  addSection(sections, "game", "Game Information", [
+    game.matchup ? claim(game.matchup) : data?.hero?.headline ? claim(data.hero.headline) : null,
+    formatStarterClaim(starters),
+    game.first_pitch ? claim(`First pitch ${game.first_pitch}`) : null,
+    game.venue ? claim(`Venue: ${game.venue}`) : null,
+    formatBroadcastClaim(broadcast),
+    formatWeatherClaim(weather),
+  ]);
+
+  const record = data?.record ?? {};
+  addSection(sections, "record", "Record & Standing", [
+    Number.isFinite(Number(record.wins)) && Number.isFinite(Number(record.losses))
+      ? claim(`Record: ${record.wins}-${record.losses}`)
+      : null,
+    record.division_rank && record.division
+      ? claim(`Division standing: ${ordinal(record.division_rank)} in ${record.division}`)
+      : null,
+    record.streak ? claim(`Current streak: ${record.streak}`) : null,
+  ]);
+
+  const standingsRows = getStandingsRows(data);
+  addSection(sections, "standings", "NL East Standings", standingsRows.map((row) =>
+    claim(`${row.abbr ?? row.team ?? row.name}: ${row.wins}-${row.losses}, GB ${row.gb ?? "—"}, streak ${row.streak ?? "—"}`, {
+      note: row.is_phi ? "Phillies row also reconciles with the page header record." : undefined,
+    }),
+  ));
+
+  const lineup = data?.sections?.lineup?.content ?? {};
+  addSection(sections, "lineup", "Lineup", buildLineupClaims(lineup));
+
+  const injuries = getInjuryEntries(data);
+  addSection(sections, "injuries", "Injuries", injuries.map((entry) =>
+    claim(`${entry.name ?? entry.player} (${entry.position ?? "player"}): ${entry.injury ?? entry.status_note ?? "injury listed"}, ${entry.il_type ?? "IL"}`, {
+      note: entry.freshness_label ?? entry.status_note,
+    }),
+  ));
+
+  const nextGame = data?.next_game ?? {};
+  const preview = data?.sections?.preview?.content ?? {};
+  addSection(sections, "schedule", "Upcoming Schedule", [
+    nextGame.matchup ? claim(`${nextGame.date ?? nextGame.label ?? "Next"}: ${nextGame.matchup}, ${nextGame.time ?? "time TBD"}${nextGame.broadcast ? ` (${nextGame.broadcast})` : ""}`) : null,
+    ...(preview.up_next ?? []).map((gameItem) =>
+      claim(`${gameItem.date ?? "Upcoming"}: ${gameItem.matchup ?? "TBD"}, ${gameItem.time ?? "time TBD"}${gameItem.broadcast ? ` (${gameItem.broadcast})` : ""}`),
+    ),
+  ]);
+
+  addFactcheckFindingSections(sections, safeFindings);
+
+  const summary = summarizeAccuracy(sections);
+  return {
+    schema_version: ACCURACY_SCHEMA_VERSION,
+    publication: meta.publication ?? "Phillies Wire",
+    edition_date: editionDate,
+    edition_label: editionLabel,
+    generated_at: toIsoString(generatedAt),
+    method: "Generated by factcheck.mjs during the pipeline from the current Wire data artifact plus deterministic checks and MLB Stats API source checks where available. Weather forecast snapshots are marked unverifiable after the fact.",
+    verdict_legend: {
+      accurate: "Confirmed by the current pipeline source data and not contradicted by factcheck checks.",
+      inaccurate: "Contradicted by a factcheck error or pipeline integrity finding.",
+      unverifiable: "Could not be confirmed or refuted from available sources.",
+    },
+    relevancy_legend: {
+      current: "Timely for the edition date.",
+      outdated: "Superseded by newer information or stale relative phrasing.",
+      misleading: "Pipeline state could mislead readers even if a literal value is present.",
+    },
+    summary,
+    highlights: buildAccuracyHighlights(safeFindings, summary),
+    sources: buildAccuracySources(editionDate, Boolean(weather && Object.keys(weather).length)),
+    sections,
+  };
+}
+
+function writeAccuracyReport(report, path = ACCURACY_REPORT_FILE) {
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+}
+
+function addSection(sections, id, title, items) {
+  const cleanItems = items.filter((item) => item?.claim);
+  if (cleanItems.length) {
+    sections.push({ id, title, items: cleanItems });
+  }
+}
+
+function claim(text, { verdict = "accurate", relevancy = "current", note } = {}) {
+  const item = {
+    claim: String(text),
+    verdict,
+    relevancy,
+  };
+  if (note) item.note = String(note);
+  return item;
+}
+
+function formatEditionLabel(meta) {
+  const parts = [];
+  if (meta.volume != null) parts.push(`Vol. ${meta.volume}`);
+  if (meta.edition != null) parts.push(`No. ${meta.edition}`);
+  return parts.join(" · ");
+}
+
+function formatStarterClaim(starters = {}) {
+  const home = starters.home ?? starters.phi;
+  const away = starters.away ?? starters.opp;
+  if (!home?.name && !away?.name) return null;
+  return claim(`${formatPitcher(home)} vs ${formatPitcher(away)}`);
+}
+
+function formatPitcher(pitcher = {}) {
+  const hand = pitcher.hand ? ` (${pitcher.hand}HP)` : "";
+  return `${pitcher.name ?? "TBD"}${hand}`;
+}
+
+function formatBroadcastClaim(broadcast = {}) {
+  const parts = [broadcast.tv, broadcast.stream, broadcast.radio].filter(Boolean);
+  return parts.length ? claim(`Broadcast: ${parts.join(" · ")}`) : null;
+}
+
+function formatWeatherClaim(weather = {}) {
+  const parts = [
+    weather.temp_f != null ? `${weather.temp_f}°` : null,
+    weather.condition,
+    weather.wind,
+  ].filter(Boolean);
+  return parts.length ? claim(`Weather: ${parts.join(", ")}`, {
+    verdict: "unverifiable",
+    relevancy: "current",
+    note: "Forecast snapshot generated during the run; weather observations can change after publish.",
+  }) : null;
+}
+
+function buildLineupClaims(lineup = {}) {
+  const items = [];
+  if (lineup.mode_label || lineup.status_note) {
+    items.push(claim(`Lineup status: ${lineup.mode_label ?? lineup.mode ?? "Unknown"}${lineup.status_note ? ` — ${lineup.status_note}` : ""}`));
+  }
+  if (lineup.show_orders) {
+    for (const [label, order] of [["PHI", lineup.batting_order?.phi ?? lineup.batting_order?.home], ["Opponent", lineup.batting_order?.opp ?? lineup.batting_order?.away]]) {
+      if (Array.isArray(order) && order.length) {
+        items.push(claim(`${label} batting order: ${formatBattingOrder(order)}`));
+      }
+    }
+  }
+  return items;
+}
+
+function formatBattingOrder(order) {
+  return order
+    .filter((batter) => batter?.name && batter.name !== "Pending")
+    .map((batter) => `${batter.slot}. ${batter.name}${batter.position ? ` ${batter.position}` : ""}`)
+    .join("; ");
+}
+
+function addFactcheckFindingSections(sections, findings) {
+  addSection(sections, "factcheck-errors", "Fact-check Errors", findings.errors.map((finding) =>
+    claim(finding.title, { verdict: "inaccurate", relevancy: "current", note: finding.detail }),
+  ));
+  addSection(sections, "factcheck-stale", "Stale Copy", findings.stale.map((finding) =>
+    claim(finding.title, { verdict: "accurate", relevancy: "outdated", note: finding.detail }),
+  ));
+  addSection(sections, "factcheck-pipeline", "Pipeline Integrity", findings.pipeline.map((finding) =>
+    claim(finding.title, { verdict: "inaccurate", relevancy: "misleading", note: finding.detail }),
+  ));
+  addSection(sections, "factcheck-unverified", "Unverified Source Gaps", findings.unverified.map((finding) =>
+    claim(finding.title, { verdict: "unverifiable", relevancy: "current", note: finding.detail }),
+  ));
+}
+
+function summarizeAccuracy(sections) {
+  const items = sections.flatMap((section) => section.items ?? []);
+  const summary = {
+    total_claims: items.length,
+    accurate: 0,
+    inaccurate: 0,
+    unverifiable: 0,
+    relevancy: { current: 0, outdated: 0, misleading: 0 },
+    headline: "",
+  };
+
+  for (const item of items) {
+    if (item.verdict === "inaccurate") summary.inaccurate += 1;
+    else if (item.verdict === "unverifiable") summary.unverifiable += 1;
+    else summary.accurate += 1;
+
+    if (item.relevancy === "outdated") summary.relevancy.outdated += 1;
+    else if (item.relevancy === "misleading") summary.relevancy.misleading += 1;
+    else summary.relevancy.current += 1;
+  }
+
+  const parts = [`${summary.accurate} of ${summary.total_claims} checked claims verified accurate.`];
+  parts.push(summary.inaccurate ? `${summary.inaccurate} inaccurate.` : "No inaccuracies.");
+  if (summary.unverifiable) parts.push(`${summary.unverifiable} unverifiable.`);
+  if (summary.relevancy.outdated) parts.push(`${summary.relevancy.outdated} outdated.`);
+  if (summary.relevancy.misleading) parts.push(`${summary.relevancy.misleading} misleading.`);
+  summary.headline = parts.join(" ");
+  return summary;
+}
+
+function buildAccuracyHighlights(findings, summary) {
+  const highlights = [];
+  if (summary.inaccurate === 0) {
+    highlights.push({
+      tone: "good",
+      title: "No inaccurate claims detected",
+      detail: "factcheck.mjs found no factual disagreements in this run.",
+    });
+  }
+  if (findings.unverified.length || summary.unverifiable) {
+    highlights.push({
+      tone: "warn",
+      title: `${summary.unverifiable} unverifiable claim${summary.unverifiable === 1 ? "" : "s"}`,
+      detail: "Unverifiable items are retained on the report instead of being treated as confirmed facts.",
+    });
+  }
+  if (findings.stale.length === 0 && findings.pipeline.length === 0) {
+    highlights.push({
+      tone: "good",
+      title: "No stale copy or pipeline integrity findings",
+      detail: "The current run did not produce stale-copy or render-integrity findings.",
+    });
+  }
+  return highlights;
+}
+
+function buildAccuracySources(editionDate, includesWeather) {
+  const sources = [
+    { label: "Phillies Wire current issue data", url: `${DEFAULT_WIRE_ROOT}issues/${editionDate}/data.json` },
+    { label: "MLB Stats API", url: MLB_API },
+  ];
+  if (includesWeather) {
+    sources.push({ label: "Open-Meteo forecast data", url: "https://open-meteo.com/" });
+  }
+  return sources;
+}
+
+function ordinal(value) {
+  const n = Number(value);
+  if (!Number.isFinite(n)) return String(value);
+  const suffix = n % 10 === 1 && n % 100 !== 11 ? "st"
+    : n % 10 === 2 && n % 100 !== 12 ? "nd"
+      : n % 10 === 3 && n % 100 !== 13 ? "rd"
+        : "th";
+  return `${n}${suffix}`;
+}
+
+function toIsoString(value) {
+  if (value instanceof Date) return value.toISOString();
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? new Date().toISOString() : parsed.toISOString();
+}
 
 function buildReport({ editionDate, volume, issueNumber, status, findings, source, mode }) {
   const wireURL = process.env.FACTCHECK_WIRE_ROOT ?? DEFAULT_WIRE_ROOT;

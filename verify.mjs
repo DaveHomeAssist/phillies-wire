@@ -567,11 +567,36 @@ for (const file of htmlFiles) {
     fail("Accuracy report is missing summary.total_claims.");
   }
 
+  if (accuracy.edition_date !== data.meta.date) {
+    fail(`Accuracy report edition_date (${accuracy.edition_date}) does not match rendered edition (${data.meta.date}).`);
+  }
+
+  const expectedAccuracyLabel = `Vol. ${data.meta.volume} · No. ${data.meta.edition}`;
+  if (accuracy.edition_label !== expectedAccuracyLabel) {
+    fail(`Accuracy report edition_label (${accuracy.edition_label}) does not match rendered edition (${expectedAccuracyLabel}).`);
+  }
+
+  const accuracyGeneratedAt = Date.parse(accuracy.generated_at);
+  if (Number.isNaN(accuracyGeneratedAt)) {
+    fail(`Accuracy report generated_at is not a valid ISO timestamp: ${accuracy.generated_at}`);
+  }
+  const accuracyFutureSkewMinutes = (accuracyGeneratedAt - Date.now()) / (1000 * 60);
+  if (accuracyFutureSkewMinutes > 5) {
+    fail(`Accuracy report generated_at is ${accuracyFutureSkewMinutes.toFixed(1)} minutes in the future.`);
+  }
+  const accuracyAgeHours = (Date.now() - accuracyGeneratedAt) / (1000 * 60 * 60);
+  if (accuracyAgeHours > 26) {
+    fail(`Accuracy report generated_at is stale by ${accuracyAgeHours.toFixed(1)} hours.`);
+  }
+
   if (!Array.isArray(accuracy.sections) || accuracy.sections.length < 1) {
     fail("Accuracy report must include at least one section.");
   }
 
   const allowedVerdicts = new Set(["accurate", "inaccurate", "unverifiable"]);
+  const allowedRelevancy = new Set(["current", "outdated", "misleading"]);
+  const verdictCounts = { accurate: 0, inaccurate: 0, unverifiable: 0 };
+  const relevancyCounts = { current: 0, outdated: 0, misleading: 0 };
   let counted = 0;
   for (const section of accuracy.sections) {
     if (!section || !Array.isArray(section.items)) {
@@ -582,6 +607,11 @@ for (const file of htmlFiles) {
       if (!allowedVerdicts.has(item?.verdict)) {
         fail(`Accuracy item has an invalid verdict ${JSON.stringify(item?.verdict)} (claim: ${item?.claim ?? "?"}).`);
       }
+      if (!allowedRelevancy.has(item?.relevancy)) {
+        fail(`Accuracy item has an invalid relevancy ${JSON.stringify(item?.relevancy)} (claim: ${item?.claim ?? "?"}).`);
+      }
+      verdictCounts[item.verdict] += 1;
+      relevancyCounts[item.relevancy] += 1;
     }
   }
 
@@ -589,6 +619,24 @@ for (const file of htmlFiles) {
   // scorecard can never advertise a count it doesn't show.
   if (counted !== accuracy.summary.total_claims) {
     fail(`Accuracy summary.total_claims (${accuracy.summary.total_claims}) does not match counted items (${counted}).`);
+  }
+  for (const [key, value] of Object.entries(verdictCounts)) {
+    if (accuracy.summary[key] !== value) {
+      fail(`Accuracy summary.${key} (${accuracy.summary[key]}) does not match counted ${key} items (${value}).`);
+    }
+  }
+  for (const [key, value] of Object.entries(relevancyCounts)) {
+    if (accuracy.summary.relevancy?.[key] !== value) {
+      fail(`Accuracy summary.relevancy.${key} (${accuracy.summary.relevancy?.[key]}) does not match counted ${key} items (${value}).`);
+    }
+  }
+  if (accuracy.summary.inaccurate !== 0) {
+    fail(`Accuracy report contains ${accuracy.summary.inaccurate} inaccurate claim(s).`);
+  }
+  if (accuracy.summary.relevancy.outdated !== 0 || accuracy.summary.relevancy.misleading !== 0) {
+    fail(
+      `Accuracy report contains stale claim(s): ${accuracy.summary.relevancy.outdated} outdated, ${accuracy.summary.relevancy.misleading} misleading.`,
+    );
   }
 
   const accuracyHtml = readFileSync("./dashboard/accuracy/index.html", "utf8");

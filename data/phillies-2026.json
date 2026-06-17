@@ -2,10 +2,10 @@
   "schema_version": "1.0.0",
   "publication": "Phillies Wire",
   "season": 2026,
-  "generated_at": "2026-06-17T04:48:26.069Z",
+  "generated_at": "2026-06-17T18:15:03.021Z",
   "source": {
     "provider": "MLB Stats API",
-    "fetched_at": "2026-06-17T04:48:26.789Z",
+    "fetched_at": "2026-06-17T18:15:03.254Z",
     "query": {
       "sportId": "1",
       "teamId": "143",
@@ -8206,7 +8206,7 @@
       "phillies": {
         "team_id": 143,
         "side": "home",
-        "score": null,
+        "score": 4,
         "probable_pitcher": {
           "id": 691725,
           "name": "Andrew Painter"
@@ -8223,7 +8223,7 @@
         "side": "away",
         "name": "Miami Marlins",
         "abbr": "MIA",
-        "score": null,
+        "score": 6,
         "probable_pitcher": {
           "id": 645261,
           "name": "Sandy Alcantara"
@@ -8240,7 +8240,7 @@
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
+          "score": 4,
           "is_winner": false,
           "probable_pitcher": {
             "id": 691725,
@@ -8257,7 +8257,7 @@
           "team_id": 146,
           "name": "Miami Marlins",
           "abbr": "MIA",
-          "score": null,
+          "score": 6,
           "is_winner": false,
           "probable_pitcher": {
             "id": 645261,
@@ -8276,22 +8276,22 @@
         "name": "Citizens Bank Park"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Live",
+        "detailed": "In Progress",
+        "code": "I",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 4,
+        "opponent": 6,
+        "home": 4,
+        "away": 6
       },
       "result": null,
       "series": {
         "game_number": 3,
         "total_games": 3,
-        "label": "Regular Season",
+        "label": "PHI leads 2-0",
         "description": "Regular Season"
       },
       "description": null,
@@ -8320,7 +8320,10 @@
         "team_id": 143,
         "side": "home",
         "score": null,
-        "probable_pitcher": null,
+        "probable_pitcher": {
+          "id": 605400,
+          "name": "Aaron Nola"
+        },
         "league_record": {
           "wins": 40,
           "losses": 33,
@@ -8352,7 +8355,10 @@
           "abbr": "PHI",
           "score": null,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 605400,
+            "name": "Aaron Nola"
+          },
           "league_record": {
             "wins": 40,
             "losses": 33,
@@ -8427,7 +8433,10 @@
         "team_id": 143,
         "side": "home",
         "score": null,
-        "probable_pitcher": null,
+        "probable_pitcher": {
+          "id": 650911,
+          "name": "Cristopher Sánchez"
+        },
         "league_record": {
           "wins": 40,
           "losses": 33,
@@ -8459,7 +8468,10 @@
           "abbr": "PHI",
           "score": null,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 650911,
+            "name": "Cristopher Sánchez"
+          },
           "league_record": {
             "wins": 40,
             "losses": 33,
@@ -8534,7 +8546,10 @@
         "team_id": 143,
         "side": "home",
         "score": null,
-        "probable_pitcher": null,
+        "probable_pitcher": {
+          "id": 554430,
+          "name": "Zack Wheeler"
+        },
         "league_record": {
           "wins": 40,
           "losses": 33,
@@ -8563,7 +8578,10 @@
           "abbr": "PHI",
           "score": null,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 554430,
+            "name": "Zack Wheeler"
+          },
           "league_record": {
             "wins": 40,
             "losses": 33,

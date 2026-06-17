@@ -9,16 +9,23 @@ const DEFAULT_VOLUME = 1;
 
 // Two operating modes:
 //   daily — the morning publish. Full pipeline: crawl, enrich with Claude,
-//           render, verify, deliver emails. Runs once per day.
+//           export accuracy report, render, verify, deliver emails. Runs once
+//           per day.
 //   live  — game-window refresh. Crawl (preserving morning editorial),
-//           render, verify. No enrich (would burn Anthropic tokens
-//           regenerating the same morning copy). No deliver (would spam
-//           subscribers every 15 minutes during a game).
+//           export accuracy report, render, verify. No enrich (would burn
+//           Anthropic tokens regenerating the same morning copy). No deliver
+//           (would spam subscribers every 15 minutes during a game).
 const ISSUE_MODE = (process.env.ISSUE_MODE || "daily").toLowerCase();
 const IS_LIVE_REFRESH = ISSUE_MODE === "live";
 
-const DAILY_STAGES = ["crawl.mjs", "enrich.mjs", "render.mjs", "verify.mjs"];
-const LIVE_STAGES  = ["crawl.mjs", "render.mjs", "verify.mjs"];
+const ACCURACY_EXPORT_STAGE = {
+  scriptName: "factcheck.mjs",
+  args: ["--export-accuracy"],
+  label: "factcheck.mjs --export-accuracy",
+};
+
+const DAILY_STAGES = ["crawl.mjs", "enrich.mjs", ACCURACY_EXPORT_STAGE, "render.mjs", "verify.mjs"];
+const LIVE_STAGES  = ["crawl.mjs", ACCURACY_EXPORT_STAGE, "render.mjs", "verify.mjs"];
 const PIPELINE_STAGES = IS_LIVE_REFRESH ? LIVE_STAGES : DAILY_STAGES;
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
@@ -29,10 +36,11 @@ export function main() {
   console.log(`Pipeline mode: ${ISSUE_MODE}${IS_LIVE_REFRESH ? " (skipping enrich + deliver)" : ""}`);
 
   for (const stage of PIPELINE_STAGES) {
-    const stageEnv = buildStageEnv(stage);
+    const scriptName = getStageScriptName(stage);
+    const stageEnv = buildStageEnv(scriptName);
     runNodeStage(stage, stageEnv);
 
-    if (stage === "crawl.mjs") {
+    if (scriptName === "crawl.mjs") {
       const editionMeta = syncEditionMetadata();
       const editionAction = editionMeta.reused ? "reused" : "assigned";
       console.log(
@@ -70,9 +78,16 @@ function buildStageEnv(stage) {
   return env;
 }
 
-export function runNodeStage(scriptName, stageEnv = process.env) {
-  console.log(`\n==> Running ${scriptName}`);
-  const result = spawnSync(process.execPath, [scriptName], {
+function getStageScriptName(stage) {
+  return typeof stage === "string" ? stage : stage.scriptName;
+}
+
+export function runNodeStage(stage, stageEnv = process.env) {
+  const scriptName = getStageScriptName(stage);
+  const args = typeof stage === "string" ? [] : (stage.args ?? []);
+  const label = typeof stage === "string" ? scriptName : (stage.label ?? [scriptName, ...args].join(" "));
+  console.log(`\n==> Running ${label}`);
+  const result = spawnSync(process.execPath, [scriptName, ...args], {
     stdio: "inherit",
     env: stageEnv,
   });
