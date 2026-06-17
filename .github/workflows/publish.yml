@@ -2,6 +2,15 @@ name: Publish Phillies Wire
 
 on:
   workflow_dispatch:
+    inputs:
+      issue_mode:
+        description: "Pipeline mode for manual publish"
+        required: true
+        default: "live"
+        type: choice
+        options:
+          - live
+          - daily
   schedule:
     # Daily morning publish. 13:00 UTC = 09:00 ET (EDT) / 08:00 ET (EST).
     - cron: "0 13 * * *"
@@ -52,16 +61,19 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
 
-      # The 13:00 UTC schedule AND manual workflow_dispatch get the full
-      # pipeline (crawl + enrich + render + verify + deliver). Every other
-      # schedule (the game-window */15 crons) gets the live-refresh path:
+      # The 13:00 UTC schedule gets the full pipeline (crawl + enrich +
+      # render + verify + deliver). Manual dispatch defaults to the safer
+      # live-refresh path unless issue_mode=daily is selected. Every other
+      # schedule (the game-window */15 crons) also gets the live-refresh path:
       # crawl preserves the morning's editorial copy, enrich + deliver are
       # skipped. This stops the refresh from burning Anthropic tokens and
       # spamming email recipients every 15 minutes during a game.
       - name: Determine issue mode
         id: mode
         run: |
-          if [ "${{ github.event.schedule }}" = "0 13 * * *" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ github.event.inputs.issue_mode }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 13 * * *" ]; then
             echo "mode=daily" >> "$GITHUB_OUTPUT"
           else
             echo "mode=live" >> "$GITHUB_OUTPUT"
