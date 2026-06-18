@@ -13,11 +13,14 @@
 //   PHILLIES_WIRE_WEBHOOK     - optional Slack/Discord webhook for failure
 
 import https from "node:https";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 
 const BASE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
 const MAX_AGE_MIN = Number(process.env.PHILLIES_WIRE_MAX_AGE_MIN ?? 240);
 const WEBHOOK = process.env.PHILLIES_WIRE_WEBHOOK;
+const HEALTH_DIR = process.env.PHILLIES_WIRE_HEALTH_DIR;
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((error) => {
@@ -26,15 +29,9 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 }
 
 export async function main() {
-  const baseUrl = BASE_URL.replace(/\/$/, "");
-  const status = await fetchJson(`${baseUrl}/status.json`);
-  const issuePath = status?.issue_path || (status?.date ? `issues/${status.date}/` : null);
-  const [latest, issueData, issueHtml, delivery] = await Promise.all([
-    fetchJson(`${baseUrl}/latest.json`),
-    issuePath ? fetchJson(`${baseUrl}/${issuePath.replace(/^\//, "")}data.json`) : Promise.resolve(null),
-    issuePath ? fetchText(`${baseUrl}/${issuePath.replace(/^\//, "")}`) : Promise.resolve(""),
-    fetchJson(`${baseUrl}/delivery-status.json`),
-  ]);
+  const { status, latest, issueData, issueHtml, delivery } = HEALTH_DIR
+    ? await loadLocalSnapshot(HEALTH_DIR)
+    : await loadRemoteSnapshot(BASE_URL);
   const result = validateHealthSnapshot({
     status,
     latest,
@@ -45,6 +42,31 @@ export async function main() {
     maxAgeMin: MAX_AGE_MIN,
   });
   console.log(`OK: status.json is ${result.ageMin}m old. Latest issue ${status.date}. Delivery ${delivery.state}.`);
+}
+
+async function loadRemoteSnapshot(baseUrlValue) {
+  const baseUrl = baseUrlValue.replace(/\/$/, "");
+  const status = await fetchJson(`${baseUrl}/status.json`);
+  const issuePath = status?.issue_path || (status?.date ? `issues/${status.date}/` : null);
+  const [latest, issueData, issueHtml, delivery] = await Promise.all([
+    fetchJson(`${baseUrl}/latest.json`),
+    issuePath ? fetchJson(`${baseUrl}/${issuePath.replace(/^\//, "")}data.json`) : Promise.resolve(null),
+    issuePath ? fetchText(`${baseUrl}/${issuePath.replace(/^\//, "")}`) : Promise.resolve(""),
+    fetchJson(`${baseUrl}/delivery-status.json`),
+  ]);
+  return { status, latest, issueData, issueHtml, delivery };
+}
+
+async function loadLocalSnapshot(baseDir) {
+  const status = await readLocalJson(baseDir, "status.json");
+  const issuePath = status?.issue_path || (status?.date ? `issues/${status.date}/` : null);
+  const [latest, issueData, issueHtml, delivery] = await Promise.all([
+    readLocalJson(baseDir, "latest.json"),
+    issuePath ? readLocalJson(baseDir, issuePath.replace(/^\//, ""), "data.json") : Promise.resolve(null),
+    issuePath ? readLocalText(baseDir, issuePath.replace(/^\//, ""), "index.html") : Promise.resolve(""),
+    readLocalJson(baseDir, "delivery-status.json"),
+  ]);
+  return { status, latest, issueData, issueHtml, delivery };
 }
 
 export function validateHealthSnapshot({ status, latest, issueData, issueHtml, delivery }, options = {}) {
@@ -131,6 +153,14 @@ async function fail(message) {
 
 function fetchJson(url) {
   return fetchText(url).then((raw) => JSON.parse(raw));
+}
+
+function readLocalJson(...parts) {
+  return readLocalText(...parts).then((raw) => JSON.parse(raw));
+}
+
+function readLocalText(...parts) {
+  return readFile(join(...parts), "utf8");
 }
 
 function fetchText(url) {

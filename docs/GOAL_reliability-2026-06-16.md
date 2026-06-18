@@ -13,15 +13,21 @@ Phillies Wire publishes a correct daily issue unattended and fails loud, not sil
 5. Delivery failures isolated — site ships even if email fails.
 6. No host file lock blocks the daily run or the test gate.
 
-## State (2026-06-16)
-All 19 findings fixed and source-verified; Codex closed the unpinned P0s too. **Not execution-verified** — core `.mjs` files are locked by an active host process (`errno -35`, git "Resource deadlock avoided"), blocking `npm test`.
+## State (2026-06-18)
+All 19 findings are fixed and execution verified. Delivery now emits `delivery-status.json` from `deliver.mjs` with `schema_version`, `generated_at`, `state`, `required`, `delivered`, and numeric `failed`; the local health check can validate the produced `site/` artifact through `PHILLIES_WIRE_HEALTH_DIR=site`.
 
 ## Gaps
-- **G0 (blocker):** clear host lock; `npm test` + `git status` run clean.
-- **G1:** execution-verify suites green; record exit codes here.
-- **G2:** seal residuals — `canonical-schedule.mjs:159` `T23:05:00Z` default time; `crawl/format.mjs:122` unguarded `formatGameTime`.
-- **G3:** add pins for unpinned fixes (P0-CRAWL-1/2, P0-RENDER-2) so regressions can't reopen silently.
-- **G4:** daily health signal (crawl schema gaps, leftover `{{tokens}}`, delivery check).
+- **G0:** cleared; reachable repo accepts source edits and commits.
+- **G1:** cleared; `npm test` exits 0 with the legacy plus reliability suites.
+- **G2:** cleared by reliability guards for schedule fallback and crawl time formatting.
+- **G3:** cleared; reliability pins cover the previously unpinned P0 fixes.
+- **G4:** cleared; `delivery-status.json` producer and health signal are pinned.
+
+## Verification (2026-06-18)
+- `grep -n "delivery-status.json" deliver.mjs` returns the direct `writeFileSync("./delivery-status.json", text, "utf8");` producer line.
+- Stubbed local delivery run writes `delivery-status.json` and `site/delivery-status.json` with `state: "sent"` and numeric `failed: 0`.
+- `PHILLIES_WIRE_HEALTH_DIR=site PHILLIES_WIRE_MAX_AGE_MIN=10000 node scripts/health-check.mjs` logs `Delivery sent.`
+- `npm test` exits 0 with the producer pin included in the reliability suite.
 
 ## Milestones
 M1 Unblocked & green (G0+G1) → GREEN baseline · M2 Edges sealed (G2+G3) · M3 Self-monitoring (G4)

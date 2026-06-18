@@ -55,6 +55,7 @@ classification and alert-surfacing behavior are one source-check contract.
 | P2-RENDER-6 | `render-token-resolution` | Raw triple-brace tokens are allowlisted. |
 | P2-CRAWL-5 | `crawl-resilience` | Invalid times and missing live scores render safe sentinels. |
 | P2-DELIVER-2 | `deliver-failure-isolation` | Per-recipient delivery isolates one bad address and retries transient failures. |
+| G4 | `delivery-status` | Delivery writes root and site `delivery-status.json` with numeric delivered and failed counts. |
 | G4 | `health-signal` | Post-deploy health fails on schema gaps, unresolved tokens, and failed delivery status. |
 
 See `docs/RELIABILITY_AUDIT_2026-06-13.md` for the full findings and fixes.
