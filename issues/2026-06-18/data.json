@@ -5,14 +5,14 @@
     "edition": 79,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-19T01:32:43.372Z",
+    "generated_at": "2026-06-19T02:41:06.646Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jun 18, 2026, 9:32 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jun 18, 2026, 10:41 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,35 +20,35 @@
   },
   "record": {
     "wins": 40,
-    "losses": 34,
-    "streak": "L1",
+    "losses": 35,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 3, NYM 6",
-    "dek": "Top 9th · 1 out",
-    "summary": "Mark Vientos is up against Bryse Wilson. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 4, NYM 6.",
+    "dek": "NYM 6, PHI 4 · Aaron Nola · 5.0 IP, 7 H, 2 ER, 6 K",
+    "summary": "PHI 4, NYM 6. Final at Citizens Bank Park, Philadelphia. NYM leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "79° · Mostly sunny"
+        "label": "Series",
+        "value": "NYM leads 1-0"
       }
     ],
     "bullets": [
-      "Mark Vientos at the plate",
-      "Bryse Wilson on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Aaron Nola: 5.0 IP, 7 H, 2 ER, 6 K",
+      "Sean Manaea: 5.1 IP, 6 H, 2 ER, 5 K",
+      "Juan Soto: 2-for-4, 2 HR, 2 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Freddy Peralta · PHI vs NYM · Sat, Jun 20 · 7:15 PM"
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "NYM leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 79,
-          "condition": "Mostly sunny",
-          "wind": "13 mph · gusts 25",
-          "gusts_mph": 25
+          "condition": "Overcast",
+          "wind": "11 mph · gusts 23",
+          "gusts_mph": 23
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-19T01:32:43.372Z",
-            "freshness_label": "As of Jun 18, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-06-19T02:41:06.646Z",
+            "freshness_label": "As of Jun 18, 2026, 10:41 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +382,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-19T01:32:43.372Z",
-            "freshness_label": "As of Jun 18, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-06-19T02:41:06.646Z",
+            "freshness_label": "As of Jun 18, 2026, 10:41 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-19T01:32:43.372Z",
-            "freshness_label": "As of Jun 18, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-06-19T02:41:06.646Z",
+            "freshness_label": "As of Jun 18, 2026, 10:41 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
