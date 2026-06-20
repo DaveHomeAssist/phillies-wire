@@ -5,14 +5,14 @@
     "edition": 81,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-20T23:28:20.592Z",
+    "generated_at": "2026-06-20T23:44:08.768Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jun 20, 2026, 7:28 PM ET",
+      "generated_at_et": "Jun 20, 2026, 7:44 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, NYM 0",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Bryce Harper is up against Freddy Peralta. Series: NYM leads 1-0.",
+    "headline": "PHI 1, NYM 0",
+    "dek": "Middle 2nd · 3 outs",
+    "summary": "Alec Bohm is up against Freddy Peralta. Series: NYM leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "78° · Mostly sunny"
+        "value": "78° · Clear"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
+      "Alec Bohm at the plate",
       "Freddy Peralta on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 78,
-          "condition": "Mostly sunny",
-          "wind": "11 mph · gusts 18",
-          "gusts_mph": 18
+          "condition": "Clear",
+          "wind": "9 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-20T23:28:20.592Z",
-            "freshness_label": "As of Jun 20, 2026, 7:28 PM ET"
+            "last_confirmed": "2026-06-20T23:44:08.768Z",
+            "freshness_label": "As of Jun 20, 2026, 7:44 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +382,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-20T23:28:20.592Z",
-            "freshness_label": "As of Jun 20, 2026, 7:28 PM ET"
+            "last_confirmed": "2026-06-20T23:44:08.768Z",
+            "freshness_label": "As of Jun 20, 2026, 7:44 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-20T23:28:20.592Z",
-            "freshness_label": "As of Jun 20, 2026, 7:28 PM ET"
+            "last_confirmed": "2026-06-20T23:44:08.768Z",
+            "freshness_label": "As of Jun 20, 2026, 7:44 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
