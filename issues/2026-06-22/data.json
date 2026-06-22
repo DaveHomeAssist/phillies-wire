@@ -5,14 +5,14 @@
     "edition": 83,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-22T08:28:34.864Z",
+    "generated_at": "2026-06-22T14:51:55.659Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Jun 22, 2026, 4:28 AM ET",
+      "enrich_state": "fallback",
+      "enrich_label": "Structured fallback published. Editorial enrichment failed.",
+      "generated_at_et": "Jun 22, 2026, 10:51 AM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "68° · Overcast · 3 mph · gusts 3",
+      "82° · Partly cloudy · 11 mph · gusts 20",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -345,10 +345,10 @@
           "radio": "WJFK 106.7 The Fan"
         },
         "weather": {
-          "temp_f": 68,
-          "condition": "Overcast",
-          "wind": "3 mph · gusts 3",
-          "gusts_mph": 3
+          "temp_f": 82,
+          "condition": "Partly cloudy",
+          "wind": "11 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -368,8 +368,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T08:28:34.864Z",
-            "freshness_label": "As of Jun 22, 2026, 4:28 AM ET"
+            "last_confirmed": "2026-06-22T14:51:55.659Z",
+            "freshness_label": "As of Jun 22, 2026, 10:51 AM ET"
           },
           {
             "name": "Adolis García",
@@ -381,8 +381,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T08:28:34.864Z",
-            "freshness_label": "As of Jun 22, 2026, 4:28 AM ET"
+            "last_confirmed": "2026-06-22T14:51:55.659Z",
+            "freshness_label": "As of Jun 22, 2026, 10:51 AM ET"
           },
           {
             "name": "Brad Keller",
@@ -394,8 +394,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T08:28:34.864Z",
-            "freshness_label": "As of Jun 22, 2026, 4:28 AM ET"
+            "last_confirmed": "2026-06-22T14:51:55.659Z",
+            "freshness_label": "As of Jun 22, 2026, 10:51 AM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
