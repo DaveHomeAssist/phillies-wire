@@ -5,50 +5,50 @@
     "edition": 82,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-22T01:32:50.153Z",
+    "generated_at": "2026-06-22T02:26:42.296Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jun 21, 2026, 9:32 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jun 21, 2026, 10:26 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 41,
+    "wins": 42,
     "losses": 35,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 6, NYM 2",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Luis Torrens is up against José Alvarado. Series: Series tied 1-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 6, NYM 2.",
+    "dek": "PHI 6, NYM 2 · Zack Wheeler · 5.2 IP, 4 H, 2 ER, 7 K",
+    "summary": "PHI 6, NYM 2. Final at Citizens Bank Park, Philadelphia. PHI wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBC/Peacock · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "75° · Mostly sunny"
+        "label": "Series",
+        "value": "PHI wins 2-1"
       }
     ],
     "bullets": [
-      "Luis Torrens at the plate",
-      "José Alvarado on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Zack Wheeler: 5.2 IP, 4 H, 2 ER, 7 K",
+      "David Peterson: 4.0 IP, 6 H, 4 ER, 5 K",
+      "Bryce Harper: 3-for-4, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Foster Griffin · WSH vs PHI · Mon, Jun 22 · 6:45 PM"
@@ -119,7 +119,7 @@
             {
               "slot": 6,
               "name": "Brandon Marsh",
-              "position": "RF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -131,7 +131,7 @@
             {
               "slot": 8,
               "name": "Derek Hill",
-              "position": "CF",
+              "position": "RF",
               "bats": "R"
             },
             {
@@ -231,7 +231,7 @@
             {
               "slot": 6,
               "name": "Brandon Marsh",
-              "position": "RF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -243,7 +243,7 @@
             {
               "slot": 8,
               "name": "Derek Hill",
-              "position": "CF",
+              "position": "RF",
               "bats": "R"
             },
             {
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Series tied 1-1"
+          "label": "PHI wins 2-1"
         },
         "broadcast": {
           "tv": "NBC/Peacock",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 75,
-          "condition": "Mostly sunny",
-          "wind": "4 mph · gusts 5",
-          "gusts_mph": 5
+          "temp_f": 74,
+          "condition": "Overcast",
+          "wind": "4 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -369,8 +369,8 @@
             "retroactive_to": "2026-04-27",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T01:32:50.153Z",
-            "freshness_label": "As of Jun 21, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-06-22T02:26:42.296Z",
+            "freshness_label": "As of Jun 21, 2026, 10:26 PM ET"
           },
           {
             "name": "Adolis García",
@@ -382,8 +382,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T01:32:50.153Z",
-            "freshness_label": "As of Jun 21, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-06-22T02:26:42.296Z",
+            "freshness_label": "As of Jun 21, 2026, 10:26 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -395,8 +395,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T01:32:50.153Z",
-            "freshness_label": "As of Jun 21, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-06-22T02:26:42.296Z",
+            "freshness_label": "As of Jun 21, 2026, 10:26 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
