@@ -5,14 +5,14 @@
     "edition": 83,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-22T18:55:18.142Z",
+    "generated_at": "2026-06-22T19:41:27.154Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Pregame edition",
-      "generated_at_et": "Jun 22, 2026, 2:55 PM ET",
+      "generated_at_et": "Jun 22, 2026, 3:41 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "pregame",
     "label": "Pregame",
     "headline": "Phillies @ Nationals · Game 1 of 4",
-    "dek": "TBD vs Foster Griffin",
-    "summary": "TBD vs Foster Griffin · Phillies @ Nationals · Game 1 of 4",
+    "dek": "Tim Mayza vs Foster Griffin",
+    "summary": "Tim Mayza vs Foster Griffin · Phillies @ Nationals · Game 1 of 4",
     "cards": [
       {
         "label": "First Pitch",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "76° · Overcast · 4 mph · gusts 13",
+      "87° · Overcast · 7 mph · gusts 18",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -55,11 +55,11 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
-        "announced": false,
-        "mode": "pending",
-        "mode_label": "Pending",
-        "show_orders": false,
+        "status_note": "Official batting orders confirmed for today's PHI at WSH game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
+        "show_orders": true,
         "first_pitch": "6:45 PM",
         "starters": {
           "home": {
@@ -69,13 +69,13 @@
           },
           "away": {
             "team": "PHI",
-            "name": "TBD",
-            "hand": "R"
+            "name": "Tim Mayza",
+            "hand": "L"
           },
           "phi": {
             "team": "PHI",
-            "name": "TBD",
-            "hand": "R"
+            "name": "Tim Mayza",
+            "hand": "L"
           },
           "opp": {
             "team": "WSH",
@@ -143,113 +143,113 @@
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Derek Hill",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "phi": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Derek Hill",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Rafael Marchán",
+              "position": "C",
+              "bats": "S"
             }
           ],
           "opp": [
@@ -322,12 +322,12 @@
             "hand": "L"
           },
           "away": {
-            "name": "TBD",
-            "hand": "R"
+            "name": "Tim Mayza",
+            "hand": "L"
           },
           "phi": {
-            "name": "TBD",
-            "hand": "R"
+            "name": "Tim Mayza",
+            "hand": "L"
           },
           "opp": {
             "name": "Foster Griffin",
@@ -345,10 +345,10 @@
           "radio": "WJFK 106.7 The Fan"
         },
         "weather": {
-          "temp_f": 76,
+          "temp_f": 87,
           "condition": "Overcast",
-          "wind": "4 mph · gusts 13",
-          "gusts_mph": 13
+          "wind": "7 mph · gusts 18",
+          "gusts_mph": 18
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,19 +359,6 @@
       "content": {
         "il_entries": [
           {
-            "name": "Kyle Backhus",
-            "position": "LHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Left elbow inflammation",
-            "status_note": "",
-            "retroactive_to": "2026-04-27",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-06-22T18:55:18.142Z",
-            "freshness_label": "As of Jun 22, 2026, 2:55 PM ET"
-          },
-          {
             "name": "Adolis García",
             "position": "RF",
             "il_type": "60-day",
@@ -381,8 +368,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T18:55:18.142Z",
-            "freshness_label": "As of Jun 22, 2026, 2:55 PM ET"
+            "last_confirmed": "2026-06-22T19:41:27.154Z",
+            "freshness_label": "As of Jun 22, 2026, 3:41 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -394,8 +381,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T18:55:18.142Z",
-            "freshness_label": "As of Jun 22, 2026, 2:55 PM ET"
+            "last_confirmed": "2026-06-22T19:41:27.154Z",
+            "freshness_label": "As of Jun 22, 2026, 3:41 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
