@@ -1,35 +1,61 @@
 # HANDOFF.md — Phillies Wire
 
-**Last updated:** 2026-04-14
-**Status:** Production. 33 tests passing, 0 vulnerabilities, publishing on cron.
+**Last updated:** 2026-06-23
+**Status:** Production, v1.6-preview. Publishing on cron (daily + game-window), latest issue current. `verify.mjs` gates every publish.
 **Branch:** `main`
+**Canonical source of truth:** [`CLAUDE.md`](CLAUDE.md) — read it first. This file is the orientation companion; `CLAUDE.md` holds the live issue tracker, key decisions, and Definition-of-Done status.
 
 ---
 
 ## Current state
 
-Phillies Wire is a daily static newsletter that:
+Phillies Wire started as a daily static newsletter and has grown into a small Phillies content surface. Every cron run regenerates:
 
-1. Crawls MLB Stats API + Open-Meteo every day and every 15 minutes during the game window
-2. Enriches editorial copy via Claude (pull quote + preview narrative) with a structured fallback
-3. Renders into a static HTML template stamped with a custom `{{...}}` engine
-4. Verifies the output contract (hero shape, lineup shape, required files)
-5. Deploys to GitHub Pages and (optionally) emails subscribers
+1. The **daily newsletter** (latest + dated issue + archive)
+2. A per-issue **`data.json`** consumer contract (schema `1.3.0`)
+3. A consumer **`latest.json`** feed (schema `latest-1.0.0`)
+4. The canonical **season schedule** at `data/phillies-2026.json` (schema `1.0.0`)
+5. A season **ICS calendar** at `calendar/phillies-2026-all.ics`
+6. An iframe-safe **ticker embed** at `/embed/ticker.html`
 
-The original HANDOFF claimed `crawl.mjs`, `enrich.mjs`, `render.mjs` were "not built". That's obsolete — all five pipeline stages are complete and shipping.
+On top of that, several static surfaces ship from the repo:
 
-## Pipeline files
+- **Dashboard** — `/dashboard/` (real IL/lineup/player-focus panels from per-issue `data.json`)
+- **Innings timeline** — `/dashboard/innings/` (per-play event arrays from MLB `feed/live`)
+- **Preferences** — `/dashboard/preferences/` (local theme, reduced-data, innings filter, streak alerts, export/import)
+- **Accuracy scorecard** — `/dashboard/accuracy/` (daily fact-check verdicts, schema `accuracy-1.0.0`)
+- **Schedule tracker** — `/schedule/` (merged from the old Ballparks Quest schedule, now repo-owned)
 
-| File | Lines | Role |
-|---|---|---|
-| `run.mjs` | ~150 | Orchestrator, child-process spawn, edition number sync |
-| `crawl.mjs` | ~1400 | MLB + weather + fixture merge → `phillies-wire-data.json` |
-| `enrich.mjs` | ~400 | Claude editorial pass (pull quote + preview narrative), retries + fallback |
-| `render.mjs` | ~840 | Template engine + latest/issue/archive/site output |
-| `verify.mjs` | ~260 | Output contract assertions |
-| `deliver.mjs` | ~100 | Optional SMTP delivery (nodemailer) |
-| `live-feed.js` | ~280 | Browser-side live score polling |
-| `config.mjs` | ~30 | Centralized constants (TEAM_ID, VENUE, API base, schema version, timeouts) |
+**Live:** https://davehomeassist.github.io/phillies-wire/
+
+## Pipeline
+
+```text
+run.mjs -> crawl.mjs -> edition sync -> enrich.mjs -> render.mjs -> verify.mjs -> deliver.mjs? -> factcheck.mjs
+```
+
+| File | Role |
+|---|---|
+| `run.mjs` | Orchestrator, child-process spawn, edition number sync; runs `factcheck.mjs --export-accuracy` post-publish |
+| `crawl.mjs` | MLB + weather + fixture merge → data JSON; freshness gates; per-play `feed/live` pull; injury fallback via transactions feed |
+| `enrich.mjs` | Claude editorial pass (pull quote + preview narrative), retries + timeout + structured fallback |
+| `render.mjs` | Template engine + latest/issue/archive/site output + per-issue `data.json` + static-asset copy (`STATIC_ASSET_DIRS`) |
+| `verify.mjs` | Hard pre-publish gate; runs `runFactcheck({mode:"pre-publish"})`; asserts every consumer contract |
+| `deliver.mjs` | Optional SMTP delivery (nodemailer) |
+| `factcheck.mjs` | Pre-publish deterministic gate + daily source-verified fact-check; exports the accuracy scorecard |
+| `live-feed.js` | Browser-side live score polling |
+| `config.mjs` | Centralized constants (TEAM_ID, VENUE, API base, schema versions, timeouts) |
+
+## Fact-check system
+
+Wired into the pipeline (see [`docs/FACTCHECK.md`](docs/FACTCHECK.md)):
+
+- **Pre-publish gate:** `verify.mjs` imports `runFactcheck` and blocks publish on errors / pipeline issues.
+- **Post-publish:** `run.mjs` runs `factcheck.mjs --export-accuracy`, which feeds `/dashboard/accuracy/`.
+- Deterministic checks run offline in-process; source-verified checks (vs MLB Stats API) run on the daily scheduled run.
+- `factcheck-whitelist.json` suppresses intentional editorial accepts.
+
+> Note: `docs/FACTCHECK.md`'s "Production-ready checklist" GAP items for `verify.mjs` / `run.mjs` / `.gitignore` are now **closed**. The only outstanding external dependency is the `NOTION_API_KEY` GitHub secret + email recipients (verify in repo settings).
 
 ## Template engine syntax
 
@@ -41,7 +67,7 @@ The original HANDOFF claimed `crawl.mjs`, `enrich.mjs`, `render.mjs` were "not b
 | `{{{meta.json_ld}}}` | Triple-brace. Raw HTML output, no escaping. Use only for trusted computed markup (JSON-LD, preformatted snippets). |
 | `{{#each items}}...{{/each}}` | Iterate an array. Inside the block, `{{this.field}}` refers to the current item and `{{root.path}}` still resolves from the top. |
 | `{{#if flag}}...{{/if}}` | Conditional block. Rendered if the path resolves to a truthy value. |
-| Nested blocks | `{{#each ...}}` and `{{#if ...}}` can be nested. Tested in `test/render.test.mjs`. |
+| Nested blocks | `{{#each ...}}` and `{{#if ...}}` can be nested. |
 
 ### Gotchas
 
@@ -49,58 +75,51 @@ The original HANDOFF claimed `crawl.mjs`, `enrich.mjs`, `render.mjs` were "not b
 - `{{undefined.path}}` resolves to an empty string, not an error. Use `{{#if}}` for guarded sections.
 - Unresolved `{{tokens}}` in the final output trigger `assertNoUnresolvedTokens` in `verify.mjs` and break the pipeline on purpose.
 
-## Recent work
-
-Three major batches on top of the original pipeline (all merged):
-
-1. **PR #1** — CI lockfile upgrade (v1 → v3) so GitHub Actions' `npm ci` stops failing
-2. **PR #2** — Game-day lineup section (starters + 1-9 batting order) with boxscore lineup fetch + schema validation
-3. **PR #3** — Review follow-ups: 27 commits, +2,709/-254 lines. Highlights:
-   - Correctness: `decisions.winner` for WP/LP, `/injuries` merge, pitchHand from MLB, series label resolution, non-TEX opponent lineup fallback
-   - Security: SMTP requireTLS, GitHub Actions pinning, `ANTHROPIC_API_KEY` unset after enrich
-   - SEO: meta description, Open Graph, Twitter Card, JSON-LD NewsArticle, canonical URLs, sitemap.xml, robots.txt, RSS feed
-   - A11y: aria-live score, skip link, landmarks, aria-controls, reduced-motion, theme persistence
-   - Resilience: soft-catch every MLB/weather fetch, doubleheader-aware game picker, enrich retries + timeout + prompt caching
-   - Tests: 9 → 33 (render engine, crawl helpers, lineup builder, injury merge, game picker, live feed polling)
-
 ## What to run locally
 
 ```bash
+git pull                                 # main moves on every cron run — pull before working
 npm ci
-npm test                           # 33 tests, should all pass
-npm audit                          # should say 0 vulnerabilities
-ANTHROPIC_API_KEY=sk-... node run.mjs   # full pipeline end-to-end
+npm test                                 # node scripts/lint.mjs && node scripts/test-runner.mjs test test/reliability
+ANTHROPIC_API_KEY=sk-... node run.mjs    # full pipeline end-to-end
 ```
 
-Without an `ANTHROPIC_API_KEY`, enrich falls back to a structured message and the pipeline still publishes.
+Without `ANTHROPIC_API_KEY`, enrich falls back to a structured message and the pipeline still publishes.
+
+> The repo publishes from cron many times a day, committing snapshots back to `main`. A local clone goes stale fast — always `git pull` before starting work.
 
 ## Environment variables
 
 | Variable | Stage | Required? | Purpose |
 |---|---|---|---|
 | `ANTHROPIC_API_KEY` | enrich | optional | Editorial copy via Claude. Omit → structured fallback. |
-| `ENRICH_MODEL` | enrich | optional | Override model name (default `claude-sonnet-4-5`) |
-| `ENRICH_MAX_TOKENS` | enrich | optional | Override max tokens (default 4000) |
+| `ENRICH_MODEL` | enrich | optional | Override model name |
+| `ENRICH_MAX_TOKENS` | enrich | optional | Override max tokens |
 | `ENRICH_STRICT` | enrich | optional | `"true"` → fail pipeline on enrich error instead of falling back |
 | `DELIVERY_RECIPIENTS` | deliver | optional | Comma-separated emails. Omit → skip delivery. |
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` | deliver | if delivering | SMTP transport |
+| `NOTION_API_KEY` | factcheck | for Notion | Integration token for the fact-check report DB |
+| `FACTCHECK_RECIPIENTS` | factcheck | for email | Falls back to `DELIVERY_RECIPIENTS` |
+| `FACTCHECK_DRY_RUN` | factcheck | optional | `"1"` → skip Notion + email side effects |
 
 ## CI workflow
 
-Triggered by:
+`.github/workflows/publish.yml`. Triggered by:
 
 - Daily cron at 13:00 UTC (~9 AM ET)
-- Game-window cron every 15 minutes, 16:00-23:00 UTC and 00:00-05:00 UTC
-- Manual `workflow_dispatch`
+- Game-window cron every 15 minutes (afternoon/evening windows)
+- Manual `workflow_dispatch` (mode selectable)
 
-Job shape: `npm ci` → `npm test` → `node run.mjs` → commit archive snapshot → upload Pages artifact → deploy. Diagnostics (data JSON, output HTML, status.json, error logs) upload on every run.
+Job shape: `npm ci` → `npm test` → `node run.mjs` (crawl→enrich→render→verify→deliver→factcheck) → deploy Pages → **then** persist archive snapshot commit (deploy-before-persist push-race fix, commit `ab0ad55`; persist step retries with `pull --rebase --autostash`).
 
 ## Open follow-ups
 
-- **Split `crawl.mjs`** into `crawl/` subdirectory (api/mlb.mjs, api/weather.mjs, build/sections.mjs, build/lineup.mjs, validate.mjs, format.mjs) — it's ~1,400 lines and the next decomposition target
-- **Self-host Google Fonts** — template currently loads Barlow Condensed + Inter from fonts.googleapis.com
-- **Integration test** — mock MLB fixture + assert full pipeline output shape (smoke coverage beyond the unit tests)
-- **Email template hardening** — Outlook and Gmail rendering quirks (from original handoff, still open)
+See the **Issue Tracker** in [`CLAUDE.md`](CLAUDE.md) for the authoritative list. Currently open:
+
+- **004 (P3)** — `statsapi.mlb.com/.../teams/143/injuries` returns 404. Handled gracefully via the transactions-feed fallback; a stable alternate source is still wanted.
+- **003 (P3)** — L5/L6 streak reviewer disagreement retained as an audit-trail flag (resolved in practice by the streak-strip viz).
+- Self-host Google Fonts + critical-CSS inlining for faster first paint (from original handoff, still open).
+- Playwright end-to-end smoke test for the live-feed pipeline.
 
 ## Notion references
 

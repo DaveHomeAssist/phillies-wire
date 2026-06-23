@@ -1,50 +1,57 @@
 # Phillies Wire
 
-A daily Philadelphia Phillies newsletter site built as a static page, a lightweight JSON pipeline, and a GitHub Pages deployment target.
+A daily Philadelphia Phillies content site: a static newsletter, a set of dashboard surfaces, a lightweight JSON pipeline, and a GitHub Pages deployment target. Zero backend — every data source is a public API.
 
-**Built:** March 28, 2026  
-**Version:** 1.2.0  
-**Stack:** Vanilla HTML, CSS custom properties, Node scripts, GitHub Pages
+**Built:** March 28, 2026
+**Version:** 1.6-preview
+**Stack:** Vanilla HTML, CSS custom properties, Node ESM scripts, GitHub Pages
+**Canonical docs:** [`CLAUDE.md`](CLAUDE.md) (source of truth) · [`HANDOFF.md`](HANDOFF.md) (orientation) · [`docs/SPEC.md`](docs/SPEC.md) (site spec)
+
+## Live surfaces
+
+| Surface | URL |
+|---|---|
+| Newsletter | https://davehomeassist.github.io/phillies-wire/ |
+| Dashboard | https://davehomeassist.github.io/phillies-wire/dashboard/ |
+| Innings timeline | https://davehomeassist.github.io/phillies-wire/dashboard/innings/ |
+| Preferences | https://davehomeassist.github.io/phillies-wire/dashboard/preferences/ |
+| Accuracy scorecard | https://davehomeassist.github.io/phillies-wire/dashboard/accuracy/ |
+| Schedule tracker | https://davehomeassist.github.io/phillies-wire/schedule/ |
 
 ## Project structure
 
 ```text
 phillies-wire/
-|-- tokens.css
-|-- phillies-wire.css
-|-- phillies-wire-v2.html
-|-- phillies-wire-schema.json
-|-- crawl.mjs
-|-- enrich.mjs
-|-- render.mjs
-|-- verify.mjs
-|-- run.mjs
-|-- deliver.mjs
-|-- live-feed.js
-|-- pregame-preview.js
-|-- archive.json
-|-- archive/
-|-- issues/
-|-- overrides/
-|-- scripts/
-|   |-- lint.mjs           # node --check syntax scan
-|   `-- health-check.mjs   # cron-friendly staleness probe
-|-- test/
-|-- .github/workflows/publish.yml
-|-- README.md
-`-- HANDOFF.md
+|-- tokens.css, phillies-wire.css      # design tokens + styles
+|-- crawl.mjs, enrich.mjs, render.mjs  # pipeline stages
+|-- verify.mjs, deliver.mjs, run.mjs   # gate, optional email, orchestrator
+|-- factcheck.mjs                      # pre-publish gate + daily fact-check + accuracy export
+|-- config.mjs                         # centralized constants
+|-- live-feed.js                       # browser-side live polling
+|-- data/phillies-2026.json            # canonical season schedule (source of truth)
+|-- calendar/phillies-2026-all.ics     # season ICS
+|-- embed/ticker.html                  # iframe-safe ticker
+|-- dashboard/                         # dashboard, innings, preferences, accuracy
+|-- schedule/                          # merged schedule tracker
+|-- issues/, archive/, archive.json    # generated newsletter output
+|-- scripts/                           # lint.mjs, test-runner.mjs, health-check.mjs
+|-- test/, test/reliability/           # unit + reliability suites
+|-- .github/workflows/publish.yml      # CI publish + deploy
+`-- README.md, HANDOFF.md, CLAUDE.md, docs/
 ```
 
 ## Pipeline
 
 ```text
-run.mjs -> crawl.mjs -> edition sync -> enrich.mjs -> render.mjs -> verify.mjs -> deliver.mjs?
-        -> latest index + dated issue + archive.json + archive/index.html + site/
+run.mjs -> crawl.mjs -> edition sync -> enrich.mjs -> render.mjs -> verify.mjs -> deliver.mjs? -> factcheck.mjs
+        -> latest index + dated issue + per-issue data.json + archive.json + archive/index.html
+        -> latest.json feed + canonical schedule JSON + ICS calendar + ticker + accuracy scorecard
 ```
 
-Run locally:
+Run locally (pull first — `main` advances on every cron run):
 
 ```bash
+git pull
 node run.mjs
 ```
 
@@ -57,59 +64,52 @@ node render.mjs
 node verify.mjs
 ```
 
+## Verification gate
+
+`verify.mjs` is a hard pre-publish gate. It runs the deterministic fact-check (`runFactcheck`) and asserts the per-issue `data.json` contract, canonical schedule JSON, season calendar copy, `latest.json` schema + freshness, ticker render functions + iframe safety, the accuracy scorecard contract, plus SEO/accessibility tags and a mojibake/injection scan. Any failure breaks the publish on purpose.
+
 ## Fallback behavior
 
-- `crawl.mjs` still publishes when the MLB injuries endpoint is unavailable by using the fixture baseline plus live transactions.
-- `crawl.mjs` also supports same-day payload overrides from [`overrides/`](C:/Users/Dave%20RambleOn/Desktop/00-Inbox/Vivaldi%20Downloads/phillies-wire/overrides/README.md).
-- `enrich.mjs` now uses an editorial-only payload instead of sending the full issue JSON to Claude.
-- If `ANTHROPIC_API_KEY` is missing, or if enrich fails, the site publishes a structured fallback instead of failing the issue.
-- `render.mjs` writes the latest issue, dated issue pages, `archive.json`, `archive/index.html`, and `status.json`, and the site surfaces freshness plus fallback notes from `meta.status`.
-- `run.mjs` orchestrates the full pipeline, reuses the current day's edition number on reruns, and increments the issue number only when a new publication date is crawled.
+- `crawl.mjs` still publishes when the MLB injuries endpoint 404s by deriving IL from the season transactions feed plus the fixture baseline.
+- `crawl.mjs` supports same-day payload overrides for editorial corrections.
+- `enrich.mjs` sends an editorial-only payload to Claude; if `ANTHROPIC_API_KEY` is missing or enrich fails, the site publishes a structured fallback instead of failing the issue.
+- `run.mjs` reuses the current day's edition number on reruns and increments only when a new publication date is crawled.
+
+## Fact-check
+
+`factcheck.mjs` runs in two modes (see [`docs/FACTCHECK.md`](docs/FACTCHECK.md)):
+
+- **Pre-publish** (deterministic, offline) — invoked by `verify.mjs`; blocks publish on render bugs or factual contradictions.
+- **Daily** (source-verified vs MLB Stats API) — run by `run.mjs` post-publish via `--export-accuracy`, which powers the `/dashboard/accuracy/` scorecard and upserts a Notion report.
 
 ## Automated publish
 
-- Workflow: [`.github/workflows/publish.yml`](C:/Users/Dave%20RambleOn/Desktop/00-Inbox/Vivaldi%20Downloads/phillies-wire/.github/workflows/publish.yml)
+- Workflow: [`.github/workflows/publish.yml`](.github/workflows/publish.yml)
 - Triggers: `workflow_dispatch`, daily cron, and game-window refresh cron
-- Output: GitHub Pages artifact plus committed archive snapshots on `main`
-- Diagnostics: each run uploads the rendered HTML, archive manifest/page, data JSON, `status.json`, and any stage error logs
-
-## Phase 2 additions
-
-- State-aware hero block for `pregame`, `live`, `final`, and `off_day`
-- Stable latest page plus dated issues under `issues/YYYY-MM-DD/`
-- Archive index at `archive/index.html`
-- `archive.json` manifest for downstream automation or QA
-- Override directory for same-day editorial corrections
-- Broader contract verification across latest, dated, archive, and `site/` outputs
+- Output: GitHub Pages deploy, then a committed archive snapshot on `main` (deploy runs before the persist commit to avoid a push race)
+- Diagnostics: each run uploads rendered HTML, archive manifest/page, data JSON, `status.json`, and any stage error logs
 
 ## Data sources
 
-- `statsapi.mlb.com`
-- `open-meteo.com`
-- MLB transactions feed for injury/rehab freshness
+- `statsapi.mlb.com` — schedule, boxscore, injuries, `feed/live` play-by-play
+- `open-meteo.com` — weather
+- MLB transactions feed — injury/rehab freshness (and IL fallback when `/injuries` 404s)
 
-## What's new
+## Consumer contracts
 
-- Per-issue SEO metadata: canonical URL, Open Graph, Twitter Card, and JSON-LD NewsArticle + SportsEvent blocks; robots.txt, sitemap.xml, Atom feed.xml, manifest.webmanifest, and a generated og-default.svg are produced on every run.
-- Game-day lineup section with both starting pitchers (including pitching hand) and the announced 1–9 batting order, sourced from the MLB boxscore endpoint with a PHI-first fallback.
-- Live injury report merging the MLB /injuries endpoint with the transactions feed; the fallback baseline is preserved for editorial context.
-- Archive page with month grouping, client-side search, canonical URL, and share-ready metadata.
-- Prev/Next navigation on dated issue pages plus a share bar (X / Bluesky / email / copy link) on every page.
-- Accessibility: semantic landmarks (`<main>`, `<nav>`, `<footer>`, `<aside>`), skip link, live regions, reduced-motion support, theme persistence via localStorage, visually-hidden accordion heading, WCAG AA contrast on the masthead subheader.
-- Live polling no longer reloads the page; it refreshes in place, pauses on hidden tabs, backs off after consecutive failures, and pauses cleanly on rain delays / postponements.
-- Enrich stage uses prompt caching on the system block, honours a 60-second timeout, and retries 429 / 5xx / network resets up to four times with jittered backoff.
-- CSP-friendly event delegation: inline `onclick` handlers replaced with `data-pw-*` attributes and a single delegated listener, so the script-src CSP can be tightened in the future.
-- Override merge supports a `"__delete__"` sentinel to retract generated fields, and every override value is length-capped as a defense-in-depth measure.
-- `node scripts/lint.mjs` syntax-checks every tracked `.mjs` / `.js` file and runs as the first step of `npm test`.
-- `node scripts/health-check.mjs` probes the deployed `status.json` and posts to an optional webhook when the site goes stale.
+Versioned by `schema_version` string; breaking changes bump the major:
+
+- Per-issue `data.json` — `1.3.0`
+- `latest.json` feed — `latest-1.0.0`
+- Canonical schedule `data/phillies-2026.json` — `1.0.0`
+- Accuracy scorecard — `accuracy-1.0.0`
 
 ## Next likely upgrades
 
-- Critical CSS inlining and self-hosted fonts for faster first paint.
+- Critical-CSS inlining and self-hosted fonts for faster first paint.
 - Bullpen availability card driven by rolling reliever usage.
-- Head-to-head season history and umpire crew mini-block.
+- Stable alternate source for the team injuries endpoint (issue 004).
 - Playwright end-to-end smoke test for the live-feed pipeline.
-- Progressive enhancement to a typed template engine once section density grows.
 
 ## Notion references
 
