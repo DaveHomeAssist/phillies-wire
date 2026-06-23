@@ -5,14 +5,14 @@
     "edition": 84,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-23T22:42:09.864Z",
+    "generated_at": "2026-06-23T23:10:25.715Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jun 23, 2026, 6:42 PM ET",
+      "generated_at_et": "Jun 23, 2026, 7:10 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, WSH 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against PJ Poulin. Series: WSH leads 1-0.",
+    "headline": "PHI 0, WSH 1",
+    "dek": "End 2nd · 3 outs",
+    "summary": "Gabriel Rincones Jr. is up against Zack Littell. Series: WSH leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "PJ Poulin on the mound",
+      "Gabriel Rincones Jr. at the plate",
+      "Zack Littell on the mound",
       "Nationals Park, Washington"
     ],
     "next_label": "Tomorrow",
@@ -150,8 +150,8 @@
             },
             {
               "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
+              "name": "Brandon Marsh",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -162,33 +162,33 @@
             },
             {
               "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
               "name": "Alec Bohm",
               "position": "3B",
               "bats": "R"
             },
             {
-              "slot": 6,
+              "slot": 5,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 7,
+              "slot": 6,
               "name": "J.T. Realmuto",
               "position": "C",
               "bats": "R"
             },
             {
-              "slot": 8,
+              "slot": 7,
               "name": "Gabriel Rincones Jr.",
               "position": "RF",
               "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "Edmundo Sosa",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -206,8 +206,8 @@
             },
             {
               "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
+              "name": "Brandon Marsh",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -218,33 +218,33 @@
             },
             {
               "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
               "name": "Alec Bohm",
               "position": "3B",
               "bats": "R"
             },
             {
-              "slot": 6,
+              "slot": 5,
               "name": "Bryson Stott",
               "position": "2B",
               "bats": "L"
             },
             {
-              "slot": 7,
+              "slot": 6,
               "name": "J.T. Realmuto",
               "position": "C",
               "bats": "R"
             },
             {
-              "slot": 8,
+              "slot": 7,
               "name": "Gabriel Rincones Jr.",
               "position": "RF",
               "bats": "L"
+            },
+            {
+              "slot": 8,
+              "name": "Edmundo Sosa",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 69,
           "condition": "Overcast",
-          "wind": "5 mph · gusts 13",
-          "gusts_mph": 13
+          "wind": "7 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -369,8 +369,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-23T22:42:09.864Z",
-            "freshness_label": "As of Jun 23, 2026, 6:42 PM ET"
+            "last_confirmed": "2026-06-23T23:10:25.715Z",
+            "freshness_label": "As of Jun 23, 2026, 7:10 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-23T22:42:09.864Z",
-            "freshness_label": "As of Jun 23, 2026, 6:42 PM ET"
+            "last_confirmed": "2026-06-23T23:10:25.715Z",
+            "freshness_label": "As of Jun 23, 2026, 7:10 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
