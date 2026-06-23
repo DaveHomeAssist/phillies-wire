@@ -5,14 +5,14 @@
     "edition": 84,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-23T13:49:51.486Z",
+    "generated_at": "2026-06-23T16:52:31.299Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "fallback",
-      "enrich_label": "Structured fallback published. Editorial enrichment failed.",
-      "generated_at_et": "Jun 23, 2026, 9:49 AM ET",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Jun 23, 2026, 12:52 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "73° · Overcast · 7 mph · gusts 12",
+      "70° · Overcast · 8 mph · gusts 12",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -345,9 +345,9 @@
           "radio": "WJFK 106.7 The Fan"
         },
         "weather": {
-          "temp_f": 73,
+          "temp_f": 70,
           "condition": "Overcast",
-          "wind": "7 mph · gusts 12",
+          "wind": "8 mph · gusts 12",
           "gusts_mph": 12
         },
         "giveaway": "",
@@ -368,8 +368,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-23T13:49:51.486Z",
-            "freshness_label": "As of Jun 23, 2026, 9:49 AM ET"
+            "last_confirmed": "2026-06-23T16:52:31.299Z",
+            "freshness_label": "As of Jun 23, 2026, 12:52 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -381,8 +381,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-23T13:49:51.486Z",
-            "freshness_label": "As of Jun 23, 2026, 9:49 AM ET"
+            "last_confirmed": "2026-06-23T16:52:31.299Z",
+            "freshness_label": "As of Jun 23, 2026, 12:52 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
