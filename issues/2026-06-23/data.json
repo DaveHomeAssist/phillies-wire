@@ -5,14 +5,14 @@
     "edition": 84,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-23T22:09:59.875Z",
+    "generated_at": "2026-06-23T22:42:09.864Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Jun 23, 2026, 6:09 PM ET",
+      "enrich_label": "Live update",
+      "generated_at_et": "Jun 23, 2026, 6:42 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Nationals · Game 2 of 4",
-    "dek": "Jesús Luzardo vs PJ Poulin",
-    "summary": "Jesús Luzardo vs PJ Poulin · Phillies @ Nationals · Game 2 of 4",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, WSH 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against PJ Poulin. Series: WSH leads 1-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "6:45 PM"
-      },
       {
         "label": "Venue",
         "value": "Nationals Park, Washington"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "Nationals.TV · MLB.TV · WJFK 106.7 The Fan"
+      },
+      {
+        "label": "Weather",
+        "value": "69° · Overcast"
       }
     ],
     "bullets": [
-      "70° · Overcast · 7 mph · gusts 13",
-      "WSH leads 1-0"
+      "Trea Turner at the plate",
+      "PJ Poulin on the mound",
+      "Nationals Park, Washington"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Miles Mikolas · WSH vs PHI · Wed, Jun 24 · 6:45 PM"
@@ -94,26 +95,26 @@
             {
               "slot": 2,
               "name": "Curtis Mead",
-              "position": "1B",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 3,
               "name": "Andrés Chaparro",
-              "position": "DH",
+              "position": "1B",
               "bats": "R"
             },
             {
               "slot": 4,
-              "name": "CJ Abrams",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
               "name": "Dylan Crews",
               "position": "LF",
               "bats": "R"
+            },
+            {
+              "slot": 5,
+              "name": "Jorbit Vivas",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 6,
@@ -123,15 +124,15 @@
             },
             {
               "slot": 7,
-              "name": "Jorbit Vivas",
-              "position": "3B",
-              "bats": "L"
+              "name": "Nasim Nuñez",
+              "position": "SS",
+              "bats": "S"
             },
             {
               "slot": 8,
-              "name": "Nasim Nuñez",
-              "position": "2B",
-              "bats": "S"
+              "name": "José Tena",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 9,
@@ -262,26 +263,26 @@
             {
               "slot": 2,
               "name": "Curtis Mead",
-              "position": "1B",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 3,
               "name": "Andrés Chaparro",
-              "position": "DH",
+              "position": "1B",
               "bats": "R"
             },
             {
               "slot": 4,
-              "name": "CJ Abrams",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
               "name": "Dylan Crews",
               "position": "LF",
               "bats": "R"
+            },
+            {
+              "slot": 5,
+              "name": "Jorbit Vivas",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 6,
@@ -291,15 +292,15 @@
             },
             {
               "slot": 7,
-              "name": "Jorbit Vivas",
-              "position": "3B",
-              "bats": "L"
+              "name": "Nasim Nuñez",
+              "position": "SS",
+              "bats": "S"
             },
             {
               "slot": 8,
-              "name": "Nasim Nuñez",
-              "position": "2B",
-              "bats": "S"
+              "name": "José Tena",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 9,
@@ -345,9 +346,9 @@
           "radio": "WJFK 106.7 The Fan"
         },
         "weather": {
-          "temp_f": 70,
+          "temp_f": 69,
           "condition": "Overcast",
-          "wind": "7 mph · gusts 13",
+          "wind": "5 mph · gusts 13",
           "gusts_mph": 13
         },
         "giveaway": "",
@@ -368,8 +369,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-23T22:09:59.875Z",
-            "freshness_label": "As of Jun 23, 2026, 6:09 PM ET"
+            "last_confirmed": "2026-06-23T22:42:09.864Z",
+            "freshness_label": "As of Jun 23, 2026, 6:42 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -381,8 +382,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-23T22:09:59.875Z",
-            "freshness_label": "As of Jun 23, 2026, 6:09 PM ET"
+            "last_confirmed": "2026-06-23T22:42:09.864Z",
+            "freshness_label": "As of Jun 23, 2026, 6:42 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
