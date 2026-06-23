@@ -5,14 +5,14 @@
     "edition": 83,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-22T23:44:27.861Z",
+    "generated_at": "2026-06-23T00:09:02.912Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Jun 22, 2026, 7:44 PM ET",
+      "enrich_label": "Live update",
+      "generated_at_et": "Jun 22, 2026, 8:09 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Nationals · Game 1 of 4",
-    "dek": "Tim Mayza vs Foster Griffin",
-    "summary": "Tim Mayza vs Foster Griffin · Phillies @ Nationals · Game 1 of 4",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, WSH 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Foster Griffin. Series: Regular Season.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "6:45 PM"
-      },
       {
         "label": "Venue",
         "value": "Nationals Park, Washington"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "Nationals.TV · MLB.TV · WJFK 106.7 The Fan"
+      },
+      {
+        "label": "Weather",
+        "value": "74° · Overcast"
       }
     ],
     "bullets": [
-      "74° · Rain · 1 mph · gusts 2",
-      "Regular Season"
+      "Trea Turner at the plate",
+      "Foster Griffin on the mound",
+      "Nationals Park, Washington"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Zack Littell · WSH vs PHI · Tue, Jun 23 · 6:45 PM"
@@ -346,9 +347,9 @@
         },
         "weather": {
           "temp_f": 74,
-          "condition": "Rain",
-          "wind": "1 mph · gusts 2",
-          "gusts_mph": 2
+          "condition": "Overcast",
+          "wind": "4 mph · gusts 5",
+          "gusts_mph": 5
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -368,8 +369,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T23:44:27.861Z",
-            "freshness_label": "As of Jun 22, 2026, 7:44 PM ET"
+            "last_confirmed": "2026-06-23T00:09:02.912Z",
+            "freshness_label": "As of Jun 22, 2026, 8:09 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -381,8 +382,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-22T23:44:27.861Z",
-            "freshness_label": "As of Jun 22, 2026, 7:44 PM ET"
+            "last_confirmed": "2026-06-23T00:09:02.912Z",
+            "freshness_label": "As of Jun 22, 2026, 8:09 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
