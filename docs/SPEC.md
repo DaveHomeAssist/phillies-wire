@@ -1,9 +1,9 @@
 # Phillies Wire — Site Specification
 
-**Version:** 1.6.0
+**Version:** 1.6.1
 **Owner:** Dave Robertson
-**Last revised:** 2026-04-22
-**Status:** Active. v1.6.0 ships the merged dashboard system: per-issue `data.json`, innings timeline, canonical schedule JSON, schedule tracker, season ICS, and Ballparks Quest schedule cutover.
+**Last revised:** 2026-06-25
+**Status:** Active. v1.6.0 shipped the merged dashboard system (per-issue `data.json`, innings timeline, canonical schedule JSON, schedule tracker, season ICS, Ballparks Quest cutover). v1.6.1 adds the "Liberty Bell / broadsheet" enhancement layer (§5.5), road-game data correctness fixes, and a dedicated inline-styled HTML email (§10.2).
 
 ---
 
@@ -294,7 +294,7 @@ Rule: never reference `--primitive-*` outside `tokens.css`.
 
 ### 5.5 Enhancement layer (`pw-enhance.css`)
 
-Additive "Liberty Bell / broadsheet" polish layer that loads after `tokens.css` + `phillies-wire.css`. Token-only (no raw hex); namespaces its own tokens `--pwx-*`. Safe to remove without breaking the base styles. Inlined into the email by `deliver.mjs` so the delivered issue matches the site.
+Additive "Liberty Bell / broadsheet" polish layer that loads after `tokens.css` + `phillies-wire.css`. Token-only (no raw hex); namespaces its own tokens `--pwx-*`. Safe to remove without breaking the base styles. (The delivered email is a separate, dedicated inline-styled document — see §10.2 — not this layer; mail clients strip `<style>` and CSS vars.)
 
 Adds:
 - **Masthead** — Liberty Bell emblem (one-time CSS ring animation, disabled under `prefers-reduced-motion` and in mail clients), pinstripe texture, gold baseline seam, and a colonial **gazette dateline** band.
@@ -371,7 +371,7 @@ GitHub Pages → cached at Fastly edge → readers open at their leisure. ~3-min
 
 ### 10.2 Email (optional)
 
-SMTP via nodemailer. One send per `daily` cron per recipient list. Subject line: "Phillies Wire — <headline>". Body: plain-text digest derived from `hero.summary` + `ticker` text + next game. No images, no HTML email (avoids deliverability / rendering issues).
+SMTP via nodemailer, one send per `daily` cron per recipient list (game-window crons do not email). The HTML body is a dedicated, fully inline-styled, table-based document built by `buildEmailHtml` in `email-render.mjs` (re-exported from `deliver.mjs`, built from the issue data at send time) — not the rendered site page. Because the Gmail app strips `<style>` blocks and clients do not resolve CSS custom properties, the email uses zero `<style>`/`var()`, web-safe font fallbacks (Barlow Condensed/Inter → Arial Narrow/Helvetica/Arial), Outlook VML button fallbacks, and a `text/plain` alternative. The contract is pinned by `test/reliability/email-render.test.mjs`.
 
 ### 10.3 RSS
 
@@ -406,7 +406,8 @@ Strictly zero third-party tracking beyond Plausible if adopted. No GA, no Facebo
 | **1.3.0** | `/dashboard/` + per-issue `data.json` | shipped |
 | **1.4.0** | `/dashboard/innings/` | shipped |
 | **1.5.0** | Canonical schedule JSON + season ICS + `/schedule/` tracker | shipped |
-| **1.6.0** (current) | Ballparks Quest Phillies cutover + merged dashboard navigation + latest feed schedule pointers | shipped |
+| **1.6.0** | Ballparks Quest Phillies cutover + merged dashboard navigation + latest feed schedule pointers | shipped |
+| **1.6.1** (current) | Liberty Bell / broadsheet enhancement layer + road-game data correctness (Issue 006) + dedicated inline-styled HTML email (Issue 007) | shipped |
 | **1.7.0** | `/broadcast/` large-display + `/editorial/` weekly recap | Design iteration |
 | **1.8.0** | Weekly recap aggregator at `/recaps/<week>/` + custom domain | Aggregation and ops work |
 
