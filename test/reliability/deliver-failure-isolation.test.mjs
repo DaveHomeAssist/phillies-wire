@@ -37,7 +37,7 @@ async function runDeliverOnce() {
       sections: {},
     }),
   );
-  writeFileSync(join(work, "phillies-wire-output.html"), "<html><head></head><body>Wire</body></html>");
+  writeFileSync(join(work, "phillies-wire-email.html"), "<html><head></head><body>Wire</body></html>");
   const previousCwd = process.cwd();
   const previousEnv = {
     DELIVERY_RECIPIENTS: process.env.DELIVERY_RECIPIENTS,
