@@ -1,7 +1,7 @@
 # HANDOFF.md — Phillies Wire
 
-**Last updated:** 2026-06-23
-**Status:** Production, v1.6-preview. Publishing on cron (daily + game-window), latest issue current. `verify.mjs` gates every publish.
+**Last updated:** 2026-06-25
+**Status:** Production, v1.6.1. Publishing on cron (daily + game-window), latest issue current. `verify.mjs` gates every publish. v1.6.1 adds the Liberty Bell / broadsheet enhancement layer, road-game correctness fixes (Issue 006), and a dedicated inline-styled HTML email (Issue 007).
 **Branch:** `main`
 **Canonical source of truth:** [`CLAUDE.md`](CLAUDE.md) — read it first. This file is the orientation companion; `CLAUDE.md` holds the live issue tracker, key decisions, and Definition-of-Done status.
 
@@ -118,7 +118,7 @@ See the **Issue Tracker** in [`CLAUDE.md`](CLAUDE.md) for the authoritative list
 
 - **004 (P3)** — `statsapi.mlb.com/.../teams/143/injuries` returns 404. Handled gracefully via the transactions-feed fallback; a stable alternate source is still wanted.
 - **003 (P3)** — L5/L6 streak reviewer disagreement retained as an audit-trail flag (resolved in practice by the streak-strip viz).
-- Self-host Google Fonts + critical-CSS inlining for faster first paint (from original handoff, still open).
+- Critical-CSS inlining for faster first paint (Google Fonts now self-hosted via the v1.6.1 enhancement layer).
 - Playwright end-to-end smoke test for the live-feed pipeline.
 
 ## Notion references
