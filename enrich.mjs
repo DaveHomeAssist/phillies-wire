@@ -29,7 +29,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   main().catch((error) => handleFatal(error));
 }
 
-export { parseJsonResponseText, stripMarkdownJsonFence };
+export { parseJsonResponseText, stripMarkdownJsonFence, validateEditorialFields };
 
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
@@ -55,7 +55,7 @@ async function main() {
     validateShape(editorialRequest, editorialDelta);
 
     const enriched = mergeEditorial(input, editorialDelta);
-    validateEditorialFields(editorialDelta);
+    validateEditorialFields(editorialRequest, editorialDelta);
     markEnrichmentStatus(enriched, "enriched", "Editorial copy enriched via Claude.");
     writeData(enriched);
     console.log("phillies-wire-data.json enriched");
@@ -153,13 +153,24 @@ function validateShape(original, enriched) {
   }
 }
 
-function validateEditorialFields(editorialDelta) {
+function validateEditorialFields(original, editorialDelta) {
   const recapQuote = editorialDelta.sections?.recap?.content?.pull_quote;
   const previewQuote = editorialDelta.sections?.preview?.content?.pull_quote;
   const narrative = editorialDelta.sections?.preview?.content?.narrative;
 
-  if (!isNonEmptyString(recapQuote) || !isNonEmptyString(previewQuote)) {
-    throw new Error("Both pull_quote fields must be non-empty strings.");
+  // Only require a rewritten field to be non-empty if the source had content.
+  // The morning issue is pregame, so there is no recap yet and
+  // sections.recap.content.pull_quote is "" — requiring it to be non-empty
+  // made enrichment reject its own correct output and fall back every day.
+  // The preview pull_quote is always present pregame (off-days skip enrich
+  // entirely), so it stays required.
+  const recapSourced = isNonEmptyString(original?.sections?.recap?.content?.pull_quote);
+
+  if (!isNonEmptyString(previewQuote)) {
+    throw new Error("preview pull_quote must be a non-empty string.");
+  }
+  if (recapSourced && !isNonEmptyString(recapQuote)) {
+    throw new Error("recap pull_quote must stay non-empty when a recap exists.");
   }
 
   if (!Array.isArray(narrative) || narrative.length < 2 || narrative.length > 3 || narrative.some((value) => !isNonEmptyString(value))) {
