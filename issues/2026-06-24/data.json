@@ -5,50 +5,50 @@
     "edition": 85,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-25T01:43:16.443Z",
+    "generated_at": "2026-06-25T02:21:39.934Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jun 24, 2026, 9:43 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jun 24, 2026, 10:21 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 43,
+    "wins": 44,
     "losses": 36,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 5, WSH 4",
-    "dek": "Bottom 9th · 0 outs",
-    "summary": "Nasim Nuñez is up against Jhoan Duran. Series: Series tied 1-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 5, WSH 4.",
+    "dek": "PHI 5, WSH 4 · Aaron Nola · 5.0 IP, 3 H, 2 ER, 5 K",
+    "summary": "PHI 5, WSH 4. Final at Nationals Park, Washington. PHI leads 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Nationals Park, Washington"
       },
       {
-        "label": "Broadcast",
-        "value": "Nationals.TV · MLB.TV · WJFK 106.7 The Fan"
-      },
-      {
-        "label": "Weather",
-        "value": "75° · Clear"
+        "label": "Series",
+        "value": "PHI leads 2-1"
       }
     ],
     "bullets": [
-      "Nasim Nuñez at the plate",
-      "Jhoan Duran on the mound",
-      "Nationals Park, Washington"
+      "Aaron Nola: 5.0 IP, 3 H, 2 ER, 5 K",
+      "Carson Palmquist: 3.1 IP, 2 H, 1 ER, 3 K",
+      "Curtis Mead: 1-for-2, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Cade Cavalli · WSH vs PHI · Thu, Jun 25 · 6:45 PM"
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Series tied 1-1"
+          "label": "PHI leads 2-1"
         },
         "broadcast": {
           "tv": "Nationals.TV",
@@ -346,10 +346,10 @@
           "radio": "WJFK 106.7 The Fan"
         },
         "weather": {
-          "temp_f": 75,
+          "temp_f": 74,
           "condition": "Clear",
-          "wind": "3 mph · gusts 4",
-          "gusts_mph": 4
+          "wind": "3 mph · gusts 3",
+          "gusts_mph": 3
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -369,8 +369,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-25T01:43:16.443Z",
-            "freshness_label": "As of Jun 24, 2026, 9:43 PM ET"
+            "last_confirmed": "2026-06-25T02:21:39.934Z",
+            "freshness_label": "As of Jun 24, 2026, 10:21 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -382,8 +382,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-25T01:43:16.443Z",
-            "freshness_label": "As of Jun 24, 2026, 9:43 PM ET"
+            "last_confirmed": "2026-06-25T02:21:39.934Z",
+            "freshness_label": "As of Jun 24, 2026, 10:21 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
