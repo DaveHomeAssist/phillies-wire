@@ -18,7 +18,6 @@ const mojibakePattern = /Â·|Â°|â€“|â€”|â€œ|â€\u009d|Ã[\u00
 
 const requiredFiles = [
   "./phillies-wire-output.html",
-  "./phillies-wire-email.html",
   "./index.html",
   "./status.json",
   "./archive.json",
@@ -80,23 +79,6 @@ const requiredFiles = [
 for (const file of requiredFiles) {
   if (!existsSync(file)) {
     fail(`Missing required output: ${file}`);
-  }
-}
-
-// Email regression guard. The delivered email must be inline-styled and free
-// of CSS custom properties — mail clients (Gmail/Outlook) do not resolve
-// var() or reliably honor <style> blocks, so a var()-based body collapses to
-// unstyled "plain text" in the inbox.
-{
-  const emailHtml = readFileSync("./phillies-wire-email.html", "utf8");
-  if (/var\(/.test(emailHtml)) {
-    fail("Email HTML contains CSS var(); mail clients will not resolve it. Use concrete inline styles.");
-  }
-  if ((emailHtml.match(/ style="/g) || []).length < 40) {
-    fail("Email HTML has too few inline style attributes; it is not a properly inline-styled email.");
-  }
-  if (/fonts\.googleapis\.com/.test(emailHtml)) {
-    fail("Email HTML loads Google Fonts; email must use web-safe font fallbacks.");
   }
 }
 

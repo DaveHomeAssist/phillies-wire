@@ -26,7 +26,6 @@ try {
     "live-feed.js",
     "fonts.css",
     "render.mjs",
-    "email-render.mjs",
     "canonical-schedule.mjs",
     "pregame-preview.js",
     "config.mjs",
