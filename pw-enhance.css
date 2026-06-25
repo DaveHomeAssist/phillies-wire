@@ -1,0 +1,379 @@
+/* ============================================================
+   PHILLIES WIRE — ENHANCEMENT LAYER
+   pw-enhance.css
+   Additive polish. Loads AFTER tokens.css + phillies-wire.css.
+   Token-only (no raw hex); new tokens namespaced --pwx-*.
+   Safe to inline in deliver.mjs (append to CSS_FILES).
+   ============================================================ */
+
+:root {
+  /* Namespaced enhancement tokens — derived from brand primitives */
+  --pwx-stitch:        rgba(255, 255, 255, 0.05);
+  --pwx-gold-rule:     var(--primitive-gold-500);
+  --pwx-mu-bg:         var(--color-bg-raised);
+  --pwx-mu-line:       var(--color-border-mid);
+  --pwx-index:         var(--primitive-red-500);
+}
+
+/* ── MASTHEAD: pinstripe texture + gold baseline rule ───────*/
+.pw-masthead {
+  position: relative;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 5px,
+      var(--pwx-stitch) 5px,
+      var(--pwx-stitch) 6px
+    );
+  background-color: var(--color-mast-bg);
+}
+
+/* thin gold seam under the wordmark/record row */
+.pw-mast-top {
+  border-bottom: 2px solid var(--pwx-gold-rule);
+}
+
+/* red accent tab replaced by the Liberty Bell emblem (see PHILLY layer) */
+.pw-mast-wordmark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* record box: crisp white keyline so the red reads as a "scoreboard" */
+.pw-mast-record {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+/* ── HERO: refined label + top-accented info cards ─────────*/
+.pw-hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.pw-hero-label::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: var(--color-brand-red);
+}
+
+/* give the three hero cards a colored cap + uppercase data feel */
+.pw-hero-card {
+  position: relative;
+  overflow: hidden;
+}
+.pw-hero-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-brand-navy);
+  opacity: 0.5;
+}
+.pw-hero-card:nth-child(1)::before { background: var(--color-brand-red); opacity: 1; }
+.pw-hero-card:nth-child(2)::before { background: var(--color-brand-navy); opacity: 1; }
+.pw-hero-card:nth-child(3)::before { background: var(--color-brand-gold); opacity: 1; }
+
+/* ── TALE OF THE TAPE — pitching matchup centerpiece ────────
+   Markup addition (one block in the hero). Designed to hold the
+   ERA / W-L / WHIP the pipeline already pulls for the rotation. */
+.pwx-matchup {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 0;
+  margin-top: var(--space-4);
+  border: 1px solid var(--pwx-mu-line);
+  border-radius: var(--radius-md);
+  background: var(--pwx-mu-bg);
+  overflow: hidden;
+}
+
+.pwx-mu-side {
+  padding: var(--space-3) var(--space-4) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.pwx-mu-side--home {
+  text-align: right;
+  align-items: flex-end;
+}
+.pwx-mu-side--away {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.pwx-mu-team {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-2xs);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+.pwx-mu-side--home .pwx-mu-team { color: var(--color-brand-red); }
+
+.pwx-mu-name {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-brand-navy);
+}
+[data-theme="dark"] .pwx-mu-name { color: var(--primitive-navy-100); }
+@media (prefers-color-scheme: dark) {
+  .pwx-mu-name { color: var(--primitive-navy-100); }
+}
+
+.pwx-mu-hand {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.pwx-mu-stats {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+.pwx-mu-side--home .pwx-mu-stats { justify-content: flex-end; }
+
+.pwx-mu-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pwx-mu-stat dt {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: 9px;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+.pwx-mu-stat dd {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-lg);
+  line-height: 1;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* center "VS" divider with a baseball-diamond accent */
+.pwx-mu-vs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-2);
+  background: var(--color-brand-navy);
+  position: relative;
+}
+.pwx-mu-vs-label {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-md);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-text-inverse);
+}
+.pwx-mu-vs-diamond {
+  width: 12px;
+  height: 12px;
+  background: var(--color-brand-gold);
+  transform: rotate(45deg);
+}
+
+/* ── SECTION LABELS: numbered broadsheet index ─────────────*/
+.pw-acc-title {
+  counter-increment: pwx-section;
+}
+.pw-accordion {
+  counter-reset: pwx-section;
+}
+.pw-acc-title::before {
+  content: counter(pwx-section, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-2xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--pwx-index);
+  border: 1px solid var(--color-border-mid);
+  border-radius: var(--radius-sm);
+  padding: 1px 4px;
+  margin-right: var(--space-1);
+  flex-shrink: 0;
+}
+
+/* hide the old red dot — the index number now carries the accent */
+.pw-acc-dot { display: none; }
+
+/* ── PULL QUOTE: editorial upgrade ─────────────────────────*/
+.pw-pull {
+  position: relative;
+  border-left-width: 4px;
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+  margin: var(--space-4) 0 var(--space-2);
+  font-size: var(--text-xl);
+  letter-spacing: var(--tracking-tight);
+}
+
+/* ── ROTATION CARDS: equal height + crisp source state ─────*/
+.pw-rotation-grid {
+  align-items: stretch;
+}
+.pw-rot-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition:
+    border-color var(--duration-fast) var(--ease-default),
+    transform var(--duration-fast) var(--ease-default);
+}
+.pw-rot-card[data-source="live"]:hover {
+  border-color: var(--color-border-strong);
+  transform: translateY(-1px);
+}
+.pw-rot-stat {
+  margin-top: auto;
+  padding-top: var(--space-1);
+}
+
+/* ── SHARE / FOOTER: double broadsheet rule ────────────────*/
+.pw-share {
+  border-top: 3px double var(--color-border-mid);
+}
+
+/* ── NEXT-GAME STRIP: arrow + gold tick ────────────────────*/
+.pw-next-matchup {
+  position: relative;
+  padding-left: var(--space-3);
+}
+.pw-next-matchup::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 1em;
+  background: var(--color-brand-gold);
+}
+
+/* ── REDUCED MOTION ────────────────────────────────────────*/
+@media (prefers-reduced-motion: reduce) {
+  .pw-rot-card { transition: none; }
+  .pwx-bell { animation: none !important; }
+}
+
+/* ============================================================
+   PHILADELPHIA LAYER — Liberty Bell + colonial gazette cues
+   ============================================================ */
+
+/* Liberty Bell emblem in the masthead */
+.pwx-bell {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  color: var(--color-brand-gold);
+  transform-origin: 50% 8%;
+}
+.pwx-bell .pwx-bell-crack {
+  stroke: var(--color-mast-bg);
+  stroke-width: 2.4;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* a gentle one-time ring when the masthead enters view */
+@media (prefers-reduced-motion: no-preference) {
+  .pwx-bell { animation: pwx-ring 2.6s var(--ease-in-out) 0.4s 1; }
+}
+@keyframes pwx-ring {
+  0%   { transform: rotate(0deg); }
+  12%  { transform: rotate(11deg); }
+  26%  { transform: rotate(-9deg); }
+  40%  { transform: rotate(6deg); }
+  54%  { transform: rotate(-4deg); }
+  68%  { transform: rotate(2deg); }
+  82%  { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Colonial gazette dateline — thin band under the wordmark row */
+.pwx-gazette {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-mast-bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.pwx-gazette-rule {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--pwx-gold-rule));
+  opacity: 0.55;
+}
+.pwx-gazette-rule:last-child {
+  background: linear-gradient(90deg, var(--pwx-gold-rule), transparent);
+}
+.pwx-gazette-items {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+.pwx-gazette-item {
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-2xs);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+  white-space: nowrap;
+}
+.pwx-gazette-item--gold { color: var(--color-brand-gold); }
+.pwx-gazette-sep {
+  width: 5px;
+  height: 5px;
+  background: var(--color-brand-gold);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* "Ring the Bell" footer motto */
+.pwx-ring {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xs);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-brand-gold);
+}
+.pwx-ring svg { width: 13px; height: 13px; }
+
+/* Keystone bullets in the hero (Pennsylvania, the Keystone State) */
+.pw-hero-bullet::before {
+  border-radius: 1px;
+  width: 8px;
+  height: 8px;
+  clip-path: polygon(50% 0, 100% 28%, 82% 100%, 18% 100%, 0 28%);
+  background: var(--color-brand-gold);
+}
