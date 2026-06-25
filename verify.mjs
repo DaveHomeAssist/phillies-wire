@@ -131,6 +131,27 @@ if (
   fail("Live hero headline is using the AWAY/HOME fallback placeholders.");
 }
 
+// Regression guards (Issue 006). Home-venue-specific fields must not leak
+// onto road games, and the "Roster & Lineup" chip must not claim the lineup
+// is confirmed while the lineup section is still pending.
+if (!data.meta.off_day) {
+  const gameStatus = data.sections?.game_status?.content ?? {};
+  const venueIsHome = gameStatus.venue_is_home === true;
+  if (!venueIsHome && gameStatus.transit) {
+    fail(
+      `Away game still carries a transit string ("${gameStatus.transit}"). Transit is Citizens Bank Park / SEPTA specific and must be cleared when venue_is_home is false.`,
+    );
+  }
+
+  const rosterChip = data.sections?.roster?.chip_label ?? "";
+  const lineupAnnounced = data.sections?.lineup?.content?.announced === true;
+  if (/confirmed/i.test(rosterChip) && !lineupAnnounced) {
+    fail(
+      `Roster chip reads "${rosterChip}" while the lineup is not announced. The "Roster & Lineup" chip must not say "Confirmed" until lineups post.`,
+    );
+  }
+}
+
 if (status.date !== data.meta.date || status.publication !== data.meta.publication) {
   fail("status.json does not match the rendered issue metadata.");
 }

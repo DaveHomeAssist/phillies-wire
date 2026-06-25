@@ -11,8 +11,14 @@ export const VENUE = {
 
 export const MLB_API_BASE = "https://statsapi.mlb.com/api/v1";
 
-export const WEATHER_URL =
-  `https://api.open-meteo.com/v1/forecast?latitude=${VENUE.lat}&longitude=${VENUE.lon}&current=temperature_2m,wind_speed_10m,wind_gusts_10m,weather_code&temperature_unit=fahrenheit&wind_speed_unit=mph`;
+export function buildWeatherUrl(lat = VENUE.lat, lon = VENUE.lon) {
+  return `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,wind_speed_10m,wind_gusts_10m,weather_code&temperature_unit=fahrenheit&wind_speed_unit=mph`;
+}
+
+// Default forecast is the home park (Citizens Bank Park). Road games resolve
+// the actual game venue's coordinates and rebuild this URL at crawl time so
+// the hero shows the city the game is played in, not Philadelphia.
+export const WEATHER_URL = buildWeatherUrl();
 
 export const SCHEMA_VERSION = "1.2.0";
 
