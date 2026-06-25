@@ -37,6 +37,7 @@ Status: v1.6-preview. Core newsletter is stable on cron. The merged dashboard, i
 - Anticipatory UX on dashboard: `localStorage` key `philliesWire_prefs`, `save-data` detection, mobile bottom-tab navigation, first-visit hint. All animations gated by `prefers-reduced-motion` and `[data-save-data]`.
 - Preferences live at `/dashboard/preferences/` and manage browser local theme, reduced-data mode, innings default filter, streak alert threshold, and local export or import of Wire state.
 - Ticker embed is inline-only (no external script src, no external link href) so third parties can iframe it safely.
+- Visual style is layered: `tokens.css` (primitives + semantic tokens) → `phillies-wire.css` (components) → `pw-enhance.css` (additive "Liberty Bell / broadsheet" enhancement). The enhancement layer is token-only (no raw hex), namespaces its own tokens `--pwx-*`, and is safe to drop without breaking the base. It adds the masthead Liberty Bell + pinstripe, a colonial gazette dateline, a numbered broadsheet section index, keystone hero bullets, a "Ring the Bell" footer motto, and the **Tale of the Tape** pitching-matchup block (ERA / W-L / WHIP for both starters, fed by `fetchPitcherStats`, omitted when either starter is TBD). Fonts are self-hosted (`fonts.css` + `fonts/`), no Google Fonts. `deliver.mjs` inlines `pw-enhance.css` so the email matches the site; the bell animation is CSS-only and degrades to a static bell in mail clients and under `prefers-reduced-motion`.
 
 ## Documentation Maintenance
 
