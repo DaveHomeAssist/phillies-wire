@@ -217,6 +217,7 @@ async function fetchPitcherStats(pitcherIds) {
         era: splits.era ?? "",
         wins: splits.wins ?? 0,
         losses: splits.losses ?? 0,
+        whip: splits.whip ?? "",
       });
     }
   }
