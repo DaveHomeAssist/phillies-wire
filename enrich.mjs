@@ -68,6 +68,11 @@ async function main() {
       throw error;
     }
 
+    // Surface the cause on stderr so it shows in the workflow log. Until now
+    // the reason was written ONLY to enrich-error.log (a build artifact), so
+    // every fallback was opaque from the CI output and impossible to diagnose
+    // without downloading the artifact.
+    console.error(`Enrichment failed; published structured fallback. Reason: ${redactApiKey(error?.message ?? String(error))}`);
     console.log("phillies-wire-data.json published with structured fallback");
   }
 }
@@ -292,16 +297,26 @@ async function requestRepair(apiKey, badResponse, editorialRequest) {
 
 function handleFatal(error) {
   writeError(error);
-  console.error(error.message);
+  console.error(redactApiKey(error.message));
   process.exit(1);
+}
+
+// Never let the Anthropic key reach a log line or the committed error file.
+// CI logs and artifacts are retained, so a leaked key would be searchable.
+function redactApiKey(message) {
+  let out = String(message ?? "");
+  const key = process.env.ANTHROPIC_API_KEY?.trim();
+  if (key) {
+    out = out.split(key).join("[anthropic_api_key]");
+  }
+  return out.replace(/sk-ant-[A-Za-z0-9_-]{8,}/g, "[anthropic_api_key]");
 }
 
 function writeError(error) {
   // Append rather than overwrite. A run that fails twice in a row used to
   // destroy the first failure's evidence; now both entries survive.
-  const message = typeof error === "string"
-    ? `[${new Date().toISOString()}] ${error}\n`
-    : `[${new Date().toISOString()}] ${error.stack ?? error.message}\n`;
+  const body = typeof error === "string" ? error : (error.stack ?? error.message);
+  const message = `[${new Date().toISOString()}] ${redactApiKey(body)}\n`;
   appendFileSync(ERROR_LOG, message, "utf8");
 }
 
