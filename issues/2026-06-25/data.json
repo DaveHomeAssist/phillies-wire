@@ -5,14 +5,14 @@
     "edition": 86,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-25T06:58:57.610Z",
+    "generated_at": "2026-06-25T08:39:11.640Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Pregame edition",
-      "generated_at_et": "Jun 25, 2026, 2:58 AM ET",
+      "generated_at_et": "Jun 25, 2026, 4:39 AM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -42,15 +42,15 @@
       },
       {
         "label": "Watch",
-        "value": "Nationals.TV · MLB.TV · WJFK 106.7 The Fan"
+        "value": "NBCSP · MLB.TV · 94 WIP"
       }
     ],
     "bullets": [
-      "65° · Clear · 2 mph · gusts 4",
+      "65° · Mostly sunny · 1 mph · gusts 3",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
-    "next_value": "NYM vs PHI · Fri, Jun 26 · 7:10 PM"
+    "next_value": "PHI @ NYM · Fri, Jun 26 · 7:10 PM"
   },
   "sections": {
     "lineup": {
@@ -340,19 +340,37 @@
           "label": "Regular Season"
         },
         "broadcast": {
-          "tv": "Nationals.TV",
+          "tv": "NBCSP",
           "stream": "MLB.TV",
-          "radio": "WJFK 106.7 The Fan"
+          "radio": "94 WIP"
         },
         "weather": {
           "temp_f": 65,
-          "condition": "Clear",
-          "wind": "2 mph · gusts 4",
-          "gusts_mph": 4
+          "condition": "Mostly sunny",
+          "wind": "1 mph · gusts 3",
+          "gusts_mph": 3
         },
         "giveaway": "",
-        "transit": "Broad Street Line to NRG Station",
-        "venue_is_home": false
+        "transit": "",
+        "venue_is_home": false,
+        "matchup_tape": {
+          "home": {
+            "team": "WSH",
+            "name": "Cade Cavalli",
+            "hand": "R",
+            "era": "4.07",
+            "record": "4-4",
+            "whip": "1.46"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Cristopher Sánchez",
+            "hand": "L",
+            "era": "1.80",
+            "record": "9-3",
+            "whip": "1.09"
+          }
+        }
       }
     },
     "injury_report": {
@@ -368,8 +386,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-25T06:58:57.610Z",
-            "freshness_label": "As of Jun 25, 2026, 2:58 AM ET"
+            "last_confirmed": "2026-06-25T08:39:11.640Z",
+            "freshness_label": "As of Jun 25, 2026, 4:39 AM ET"
           },
           {
             "name": "Brad Keller",
@@ -381,8 +399,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-25T06:58:57.610Z",
-            "freshness_label": "As of Jun 25, 2026, 2:58 AM ET"
+            "last_confirmed": "2026-06-25T08:39:11.640Z",
+            "freshness_label": "As of Jun 25, 2026, 4:39 AM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -391,10 +409,10 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "NYM vs PHI",
+    "matchup": "PHI @ NYM",
     "date": "Fri, Jun 26",
     "time": "7:10 PM",
-    "broadcast": "WPIX",
+    "broadcast": "NBCSP",
     "venue": "Citi Field"
   }
 }
