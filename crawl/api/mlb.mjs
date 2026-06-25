@@ -53,7 +53,7 @@ async function fetchDailyMlbData({
   ] = await Promise.all([
     fetchSoft(
       "schedule",
-      `${MLB_API_BASE}/schedule?sportId=1&teamId=${teamId}&date=${today}&hydrate=linescore,probablePitcher,seriesStatus,team,broadcasts(all),game(content(summary,media(epg)))`,
+      `${MLB_API_BASE}/schedule?sportId=1&teamId=${teamId}&date=${today}&hydrate=linescore,probablePitcher,seriesStatus,team,venue(location),broadcasts(all),game(content(summary,media(epg)))`,
     ),
     fetchSoft(
       "next-schedule",

@@ -31,6 +31,7 @@ import {
 import {
   TEAM_ID,
   SCHEMA_VERSION,
+  buildWeatherUrl,
 } from "./config.mjs";
 const TODAY = getIsoDate();
 const YESTERDAY = getRelativeIsoDate(-1);
@@ -188,6 +189,16 @@ async function main() {
   // thinned to {id, fullName, link} — batSide lives in feed/live only.
   const { boxscore, gameFeed } = await fetchGameDetail(game.gamePk);
 
+  // Weather is prefetched for the home park. Rebuild the forecast from the
+  // actual game venue's coordinates (hydrated on the schedule) so road games
+  // show the host city's weather, not Philadelphia's. Falls back to the home
+  // forecast when coordinates are unavailable or the venue fetch fails.
+  const venueCoords = game?.venue?.location?.defaultCoordinates;
+  const gameWeatherResponse =
+    venueCoords?.latitude != null && venueCoords?.longitude != null
+      ? (await fetchWeatherData(fetchSoft, buildWeatherUrl(venueCoords.latitude, venueCoords.longitude))) ?? weatherResponse
+      : weatherResponse;
+
   const data = await buildLivePayload({
     fixture,
     overrides,
@@ -199,7 +210,7 @@ async function main() {
     rosterResponse,
     transactionResponse,
     injuryResponse,
-    weatherResponse,
+    weatherResponse: gameWeatherResponse,
   });
   const resolvedLastFinal = extractLastFinalFromGame(game) ?? lastFinal;
   if (resolvedLastFinal) {
@@ -339,9 +350,12 @@ async function buildLivePayload(context) {
     },
     broadcast: {
       ...data.sections.game_status.content.broadcast,
-      tv: extractBroadcast(game, "TV") ?? "TV TBD",
+      // This is a Phillies newsletter: pick the broadcast feed on the
+      // Phillies' side of the game (home feed when home, away feed when on
+      // the road), not the opponent's home-side feed.
+      tv: extractBroadcast(game, "TV", philliesAreHome ? "home" : "away") ?? "TV TBD",
       stream: fixture.sections.game_status.content.broadcast.stream,
-      radio: extractBroadcast(game, "RADIO") ?? "Radio TBD",
+      radio: extractBroadcast(game, "RADIO", philliesAreHome ? "home" : "away") ?? "Radio TBD",
     },
     weather: {
       temp_f: safeRound(weather.temperature_2m, fixture.sections.game_status.content.weather.temp_f, 72),
@@ -350,9 +364,11 @@ async function buildLivePayload(context) {
       gusts_mph: safeRound(weather.wind_gusts_10m, fixture.sections.game_status.content.weather.gusts_mph, 0),
     },
     giveaway: fixture.sections.game_status.content.giveaway,
-    transit: fixture.sections.game_status.content.transit,
-    // Transit block is Citizens Bank Park / SEPTA specific. Only show it
-    // for home games. Away games hide the transit row entirely.
+    // Transit block is Citizens Bank Park / SEPTA specific, so it is only
+    // valid for home games. Clear it on the road instead of leaving the
+    // Philadelphia directions in the JSON contract (the template already
+    // gates the row on venue_is_home).
+    transit: philliesAreHome ? fixture.sections.game_status.content.transit : "",
     venue_is_home: philliesAreHome,
   };
 
@@ -421,8 +437,21 @@ async function buildLivePayload(context) {
   data.sections.roster.content.as_of_label = buildFreshnessLabel("As of", data.meta.generated_at);
   data.sections.roster.content.highlights = buildRosterHighlights(rosterResponse, transactionResponse, fixture.sections.roster.content.highlights);
   data.sections.roster.preview = buildRosterPreview(data.sections.roster.content.highlights, transactionResponse, rosterResponse);
-  data.sections.roster.chip_label = rosterResponse?.roster ? "Confirmed" : "Fallback";
-  data.sections.roster.chip_tone = rosterResponse?.roster ? "confirmed" : "fallback";
+  // The section is "Roster & Lineup", so the chip must not claim "Confirmed"
+  // while the lineup is still pending — that contradicts the lineup body. Only
+  // say "Confirmed" once lineups have actually been announced.
+  const rosterConfirmed = Boolean(rosterResponse?.roster);
+  const lineupAnnounced = data.sections.lineup?.content?.announced === true;
+  data.sections.roster.chip_label = !rosterConfirmed
+    ? "Fallback"
+    : lineupAnnounced
+      ? "Confirmed"
+      : "Lineup Pending";
+  data.sections.roster.chip_tone = !rosterConfirmed
+    ? "fallback"
+    : lineupAnnounced
+      ? "confirmed"
+      : "pending";
   data.sections.injury_report.content.il_entries = mergeInjuryEntries(
     fixture.sections.injury_report.content.il_entries,
     injuryResponse,
@@ -1651,19 +1680,24 @@ function collectUpcomingGames(scheduleResponse, teamId) {
       if (isPostponedOrCanceled(game)) {
         continue;
       }
-      const { homeTeam, awayTeam, philliesSide, opponentSide } = normalizeGameContext(game, teamId);
+      const { homeTeam, awayTeam, philliesSide, opponentSide, philliesAreHome } = normalizeGameContext(game, teamId);
 
       games.push({
         gameDate: game.gameDate,
         dateLabel: safeFormatShortDate(game.gameDate),
         shortDate: safeFormatMonthDay(game.gameDate),
         timeLabel: safeFormatGameTime(game.gameDate),
-        matchup: `${homeTeam.abbreviation} vs ${awayTeam.abbreviation}`,
+        // Orient from the Phillies' perspective: "PHI vs NYM" at home,
+        // "PHI @ NYM" on the road. Leading with the opponent and a bare "vs"
+        // read as a home game even when the Phillies are the visitors.
+        matchup: philliesAreHome
+          ? `${philliesSide.team.abbreviation} vs ${opponentSide.team.abbreviation}`
+          : `${philliesSide.team.abbreviation} @ ${opponentSide.team.abbreviation}`,
         opponentAbbr: opponentSide.team.abbreviation,
         homePitcher: philliesSide.probablePitcher?.fullName ?? "TBD",
         homePitcherId: philliesSide.probablePitcher?.id ?? null,
         awayPitcher: opponentSide.probablePitcher?.fullName ?? "TBD",
-        broadcast: extractBroadcast(game, "TV"),
+        broadcast: extractBroadcast(game, "TV", philliesAreHome ? "home" : "away"),
         venue: game.venue?.name ?? "TBD",
       });
     }
@@ -1844,7 +1878,7 @@ function shortTransactionNote(description) {
     .replace(/\.$/, "");
 }
 
-function extractBroadcast(game, mediaType) {
+function extractBroadcast(game, mediaType, preferredHomeAway = "home") {
   const epg = game?.broadcasts ?? game?.content?.media?.epg ?? [];
   const candidates = [];
 
@@ -1863,7 +1897,8 @@ function extractBroadcast(game, mediaType) {
     }
   }
 
-  return candidates.find((candidate) => candidate.homeAway === "home")?.title
+  return candidates.find((candidate) => candidate.homeAway === preferredHomeAway)?.title
+    ?? candidates.find((candidate) => candidate.homeAway === "national")?.title
     ?? candidates[0]?.title
     ?? null;
 }
