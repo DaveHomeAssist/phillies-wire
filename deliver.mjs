@@ -1,7 +1,9 @@
 import { readFileSync, existsSync, writeFileSync } from "node:fs";
 import { pathToFileURL } from "node:url";
+import { buildEmailHtml } from "./email-render.mjs";
 
-const EMAIL_FILE = "./phillies-wire-email.html";
+export { buildEmailHtml };
+
 const DATA_FILE = "./phillies-wire-data.json";
 const SITE_DELIVERY_STATUS_FILE = "./site/delivery-status.json";
 
@@ -45,10 +47,10 @@ export async function main({ createTransportImpl = null } = {}) {
   }
 
   const data = JSON.parse(readFileSync(DATA_FILE, "utf8"));
-  // render.mjs produced a complete, inline-styled, table-based email
-  // (email-render.mjs). Send it verbatim — no <style>-block inlining, which
-  // mail clients strip.
-  const html = readFileSync(EMAIL_FILE, "utf8");
+  // Build the email here from the issue data: a self-contained, fully
+  // inline-styled document (no <style> block, no CSS vars) that mail clients
+  // render — not the site page.
+  const html = buildEmailHtml(data);
 
   const subject = `${data.meta.publication} · ${data.meta.date} · PHI ${data.record.wins}-${data.record.losses}`;
   const plainText = buildPlainText(data);
