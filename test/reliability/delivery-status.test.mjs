@@ -39,7 +39,7 @@ test("G4: deliver writes delivery-status.json after a successful send", async ()
         sections: {},
       }),
     );
-    writeFileSync("phillies-wire-output.html", "<html><head></head><body>Wire</body></html>");
+    writeFileSync("phillies-wire-email.html", "<html><head></head><body>Wire</body></html>");
     process.env.DELIVERY_RECIPIENTS = "fan@example.com";
     process.env.SMTP_USER = "wire@example.com";
     process.env.SMTP_PASS = "stub-password";
