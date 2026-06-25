@@ -3,7 +3,7 @@
 A daily Philadelphia Phillies content site: a static newsletter, a set of dashboard surfaces, a lightweight JSON pipeline, and a GitHub Pages deployment target. Zero backend — every data source is a public API.
 
 **Built:** March 28, 2026
-**Version:** 1.6-preview
+**Version:** 1.6.1
 **Stack:** Vanilla HTML, CSS custom properties, Node ESM scripts, GitHub Pages
 **Canonical docs:** [`CLAUDE.md`](CLAUDE.md) (source of truth) · [`HANDOFF.md`](HANDOFF.md) (orientation) · [`docs/SPEC.md`](docs/SPEC.md) (site spec)
 
@@ -106,7 +106,7 @@ Versioned by `schema_version` string; breaking changes bump the major:
 
 ## Next likely upgrades
 
-- Critical-CSS inlining and self-hosted fonts for faster first paint.
+- Critical-CSS inlining for faster first paint (fonts are already self-hosted).
 - Bullpen availability card driven by rolling reliever usage.
 - Stable alternate source for the team injuries endpoint (issue 004).
 - Playwright end-to-end smoke test for the live-feed pipeline.
