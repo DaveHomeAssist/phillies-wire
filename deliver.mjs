@@ -4,7 +4,7 @@ import { pathToFileURL } from "node:url";
 const OUTPUT_FILE = "./phillies-wire-output.html";
 const DATA_FILE = "./phillies-wire-data.json";
 const SITE_DELIVERY_STATUS_FILE = "./site/delivery-status.json";
-const CSS_FILES = ["./tokens.css", "./phillies-wire.css"];
+const CSS_FILES = ["./tokens.css", "./phillies-wire.css", "./pw-enhance.css"];
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((error) => {

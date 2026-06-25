@@ -31,6 +31,7 @@
 <link rel="stylesheet" href="{{meta.assets_prefix}}fonts.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}tokens.css">
 <link rel="stylesheet" href="{{meta.assets_prefix}}phillies-wire.css">
+<link rel="stylesheet" href="{{meta.assets_prefix}}pw-enhance.css">
 <link rel="modulepreload" href="{{meta.assets_prefix}}live-feed.js">
 <script type="application/ld+json">{{{meta.json_ld}}}</script>
 <script>
@@ -61,6 +62,13 @@
   <div class="pw-masthead">
     <div class="pw-mast-top">
       <div class="pw-mast-wordmark">
+        <svg class="pwx-bell" viewBox="0 0 48 48" fill="currentColor" aria-hidden="true">
+          <rect x="22" y="4" width="4" height="4" rx="1"/>
+          <path d="M24 8c-6.5 0-10.5 4.8-11.6 13.2C11.5 27.6 10.4 31 8 33h32c-2.4-2-3.5-5.4-4.4-11.8C34.5 12.8 30.5 8 24 8z"/>
+          <rect x="6" y="33" width="36" height="4" rx="1"/>
+          <rect x="22" y="37" width="4" height="5" rx="1"/>
+          <path class="pwx-bell-crack" d="M24 13l-3.2 5.5 3.2 3.4-3.2 5.5 2.4 4.1"/>
+        </svg>
         <span class="pw-mast-pub">{{meta.publication}}</span>
         <span class="pw-mast-sub">Vol. {{meta.volume}} &middot; No. {{meta.edition}} &middot; {{meta.date}}</span>
       </div>
@@ -68,6 +76,18 @@
         <div class="pw-record-num">{{record.wins}}-{{record.losses}}</div>
         <div class="pw-record-label">Season</div>
       </div>
+    </div>
+
+    <div class="pwx-gazette" aria-hidden="true">
+      <span class="pwx-gazette-rule"></span>
+      <div class="pwx-gazette-items">
+        <span class="pwx-gazette-item">Philadelphia</span>
+        <span class="pwx-gazette-sep"></span>
+        <span class="pwx-gazette-item pwx-gazette-item--gold">Ring the Bell</span>
+        <span class="pwx-gazette-sep"></span>
+        <span class="pwx-gazette-item">Est. 2026</span>
+      </div>
+      <span class="pwx-gazette-rule"></span>
     </div>
 
     <div class="pw-ticker">
@@ -104,6 +124,36 @@
       <div class="pw-hero-dek" id="pw-hero-dek">{{hero.dek}}</div>
       <p class="pw-hero-summary" id="pw-hero-summary">{{hero.summary}}</p>
     </div>
+
+    {{#if sections.game_status.content.matchup_tape}}
+    <div class="pwx-matchup" aria-label="Pitching matchup, Tale of the Tape">
+      <div class="pwx-mu-side pwx-mu-side--away">
+        <span class="pwx-mu-team">{{sections.game_status.content.matchup_tape.away.team}}</span>
+        <span class="pwx-mu-name">{{sections.game_status.content.matchup_tape.away.name}}</span>
+        <span class="pwx-mu-hand">{{sections.game_status.content.matchup_tape.away.hand}}HP</span>
+        <dl class="pwx-mu-stats">
+          <div class="pwx-mu-stat"><dt>ERA</dt><dd>{{sections.game_status.content.matchup_tape.away.era}}</dd></div>
+          <div class="pwx-mu-stat"><dt>W-L</dt><dd>{{sections.game_status.content.matchup_tape.away.record}}</dd></div>
+          <div class="pwx-mu-stat"><dt>WHIP</dt><dd>{{sections.game_status.content.matchup_tape.away.whip}}</dd></div>
+        </dl>
+      </div>
+      <div class="pwx-mu-vs">
+        <span class="pwx-mu-vs-diamond"></span>
+        <span class="pwx-mu-vs-label">VS</span>
+        <span class="pwx-mu-vs-diamond"></span>
+      </div>
+      <div class="pwx-mu-side pwx-mu-side--home">
+        <span class="pwx-mu-team">{{sections.game_status.content.matchup_tape.home.team}}</span>
+        <span class="pwx-mu-name">{{sections.game_status.content.matchup_tape.home.name}}</span>
+        <span class="pwx-mu-hand">{{sections.game_status.content.matchup_tape.home.hand}}HP</span>
+        <dl class="pwx-mu-stats">
+          <div class="pwx-mu-stat"><dt>ERA</dt><dd>{{sections.game_status.content.matchup_tape.home.era}}</dd></div>
+          <div class="pwx-mu-stat"><dt>W-L</dt><dd>{{sections.game_status.content.matchup_tape.home.record}}</dd></div>
+          <div class="pwx-mu-stat"><dt>WHIP</dt><dd>{{sections.game_status.content.matchup_tape.home.whip}}</dd></div>
+        </dl>
+      </div>
+    </div>
+    {{/if}}
 
     <div class="pw-hero-grid">
       {{#each hero.cards}}
@@ -487,6 +537,7 @@
     <div>
       <span class="pw-footer-pub">{{meta.publication}}</span>
       <span class="pw-footer-meta">Vol. {{meta.volume}} &middot; No. {{meta.edition}} &middot; {{meta.date}} &middot; {{meta.status.enrich_label}}</span>
+      <span class="pwx-ring"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a1 1 0 0 1 1 1c3.6.5 6 3.6 6 8 0 3 .8 5 2 6H3c1.2-1 2-3 2-6 0-4.4 2.4-7.5 6-8a1 1 0 0 1 1-1z"/><rect x="11" y="20" width="2" height="2.4" rx="1"/></svg>Ring the Bell</span>
     </div>
     <button class="pw-theme-toggle" type="button" data-pw-theme aria-pressed="false" aria-label="Toggle dark mode">
       <span class="pw-theme-toggle-label">Dark</span>

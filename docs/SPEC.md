@@ -292,6 +292,18 @@ Rule: never reference `--primitive-*` outside `tokens.css`.
 | **IL entry** | `/`, `/issues/<date>/` | `{ name, position, il_type, injury, target_return }` |
 | **Mode pill** | everywhere | `pregame \| live \| final \| off_day` with color mapping |
 
+### 5.5 Enhancement layer (`pw-enhance.css`)
+
+Additive "Liberty Bell / broadsheet" polish layer that loads after `tokens.css` + `phillies-wire.css`. Token-only (no raw hex); namespaces its own tokens `--pwx-*`. Safe to remove without breaking the base styles. Inlined into the email by `deliver.mjs` so the delivered issue matches the site.
+
+Adds:
+- **Masthead** — Liberty Bell emblem (one-time CSS ring animation, disabled under `prefers-reduced-motion` and in mail clients), pinstripe texture, gold baseline seam, and a colonial **gazette dateline** band.
+- **Section index** — numbered broadsheet markers (`01`, `02`, …) via CSS counters, replacing the old red dot.
+- **Hero** — keystone-shaped bullets and the **Tale of the Tape** pitching matchup: `sections.game_status.content.matchup_tape = { home, away }`, each `{ team, name, hand, era, record, whip }` sourced from `fetchPitcherStats`. The block is omitted when either starter is TBD; each missing stat renders as an em dash.
+- **Footer** — "Ring the Bell" motto.
+
+Fonts are self-hosted (`fonts.css` + `fonts/` — Barlow Condensed + Inter, latin subset). No Google Fonts on any surface; `verify.mjs` fails if the rendered page links `fonts.googleapis.com`.
+
 ---
 
 ## 6. URL contract

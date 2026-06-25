@@ -26,7 +26,7 @@ const ISSUES_DIR = "./issues";
 const SITE_DIR = "./site";
 const SITE_TMP_DIR = "./site.tmp";
 const SITE_BACKUP_DIR = "./site.bak";
-const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./live-feed.js", "./fonts.css"];
+const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./pw-enhance.css", "./live-feed.js", "./fonts.css"];
 const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed", "./schedule", "./shared", "./calendar", "./data"];
 const ISSUE_DATA_SCHEMA_VERSION = "1.3.0";
 const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
@@ -618,11 +618,10 @@ ${itemsHtml}
 <meta property="og:url" content="${escapeHtml(canonicalUrl)}">
 <meta property="og:image" content="${escapeHtml(SITE_URL + "/" + DEFAULT_OG_IMAGE_PATH)}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../fonts.css">
 <link rel="stylesheet" href="../tokens.css">
 <link rel="stylesheet" href="../phillies-wire.css">
+<link rel="stylesheet" href="../pw-enhance.css">
 </head>
 <body>
 <a class="pw-skip-link" href="#pw-archive-main">Skip to archive content</a>

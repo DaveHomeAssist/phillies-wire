@@ -32,6 +32,10 @@ const requiredFiles = [
   siteIssueDataPath,
   "./live-feed.js",
   "./site/live-feed.js",
+  "./pw-enhance.css",
+  "./site/pw-enhance.css",
+  "./fonts.css",
+  "./site/fonts.css",
   "./robots.txt",
   "./sitemap.xml",
   "./feed.xml",
@@ -222,6 +226,18 @@ for (const file of htmlFiles) {
 const latestHtml = readFileSync("./index.html", "utf8");
 if (!/pw-hero/.test(latestHtml)) {
   fail("Latest issue page is missing the hero section.");
+}
+
+// Enhancement layer (Liberty Bell / broadsheet) must be wired in and the
+// fonts self-hosted, not loaded from Google Fonts.
+if (!/pw-enhance\.css/.test(latestHtml)) {
+  fail("Latest issue page does not link pw-enhance.css (enhancement layer missing).");
+}
+if (!/fonts\.css/.test(latestHtml)) {
+  fail("Latest issue page does not link the self-hosted fonts.css.");
+}
+if (/fonts\.googleapis\.com/.test(latestHtml)) {
+  fail("Latest issue page still loads Google Fonts; fonts must be self-hosted.");
 }
 
 if (!data.meta.off_day && !/pw-accordion/.test(latestHtml)) {

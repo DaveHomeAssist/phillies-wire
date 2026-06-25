@@ -333,6 +333,35 @@ async function buildLivePayload(context) {
   const homePitcher = philliesAreHome ? philliesPitcher : opponentPitcher;
   const awayPitcher = philliesAreHome ? opponentPitcher : philliesPitcher;
 
+  // Tale of the Tape: season ERA / W-L / WHIP for both starters, fetched by
+  // probable-pitcher id. Each missing stat renders as an em dash, and the
+  // whole block is omitted when either starter is still TBD so the hero
+  // never shows a half-empty matchup.
+  const phiPitcherId = philliesSide?.probablePitcher?.id ?? philliesSide?.probablePitcher?.personId ?? null;
+  const oppPitcherId = opponentSide?.probablePitcher?.id ?? opponentSide?.probablePitcher?.personId ?? null;
+  const starterStats = await fetchPitcherStats([phiPitcherId, oppPitcherId].filter(Boolean));
+  const toTapeStats = (stats) => ({
+    era: stats?.era || "—",
+    record: stats?.wins != null ? `${stats.wins}-${stats.losses}` : "—",
+    whip: stats?.whip || "—",
+  });
+  const phiTape = {
+    team: philliesSide.team.abbreviation,
+    name: philliesPitcher.name,
+    hand: philliesPitcher.hand,
+    ...toTapeStats(phiPitcherId ? starterStats.get(phiPitcherId) : null),
+  };
+  const oppTape = {
+    team: opponentSide.team.abbreviation,
+    name: opponentPitcher.name,
+    hand: opponentPitcher.hand,
+    ...toTapeStats(oppPitcherId ? starterStats.get(oppPitcherId) : null),
+  };
+  const matchupTape =
+    philliesPitcher.name !== "TBD" && opponentPitcher.name !== "TBD"
+      ? { home: philliesAreHome ? phiTape : oppTape, away: philliesAreHome ? oppTape : phiTape }
+      : null;
+
   data.sections.game_status.content = {
     ...data.sections.game_status.content,
     matchup: buildMatchupTitle(game, awayTeam, homeTeam),
@@ -370,6 +399,7 @@ async function buildLivePayload(context) {
     // gates the row on venue_is_home).
     transit: philliesAreHome ? fixture.sections.game_status.content.transit : "",
     venue_is_home: philliesAreHome,
+    matchup_tape: matchupTape,
   };
 
   data.sections.lineup = buildLineupSection({
