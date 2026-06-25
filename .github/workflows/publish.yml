@@ -11,6 +11,11 @@ on:
         options:
           - live
           - daily
+      test_recipients:
+        description: "Comma-separated recipient override for manual test sends. Leave blank to use the subscriber list."
+        required: false
+        default: ""
+        type: string
   schedule:
     # Daily morning publish. 13:00 UTC = 09:00 ET (EDT) / 08:00 ET (EST).
     - cron: "0 13 * * *"
@@ -87,7 +92,9 @@ jobs:
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASSWORD }}
-          DELIVERY_RECIPIENTS: ${{ secrets.DELIVERY_RECIPIENTS }}
+          # A manual dispatch may override recipients for a scoped test send;
+          # scheduled runs (inputs empty) always use the subscriber list.
+          DELIVERY_RECIPIENTS: ${{ (github.event.inputs.test_recipients != '' && github.event.inputs.test_recipients) || secrets.DELIVERY_RECIPIENTS }}
 
         run: node run.mjs
 
