@@ -7,6 +7,10 @@
 // nav, and JS preloads. The fix is a dedicated document with inline style=""
 // attributes. These cases pin that contract so it can't silently regress.
 
+import { spawnSync } from "node:child_process";
+import { mkdtempSync, writeFileSync, rmSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { buildEmailHtml } from "../../deliver.mjs";
 import { test, run, assert } from "./_harness.mjs";
 
@@ -74,6 +78,45 @@ test("off-day payload renders without throwing and shows next game", () => {
   assert.ok(/No game/i.test(html), "off-day notice present");
   assert.ok(html.includes("PHI vs NYM"), "next game present");
   assert.ok(!/<style[\s>]/i.test(html), "still no <style> block on off-days");
+});
+
+// Guard the module load order: deliver.mjs invokes main() at the top of the
+// file when run directly, and main() calls buildEmailHtml synchronously. Any
+// const it depends on (EMAIL palette, SITE_URL) must be declared before that
+// guard or the real `node deliver.mjs` run dies with a temporal-dead-zone
+// "Cannot access 'X' before initialization" — which an in-process import of
+// buildEmailHtml (every test above) cannot reproduce. Run it as a subprocess.
+test("running deliver.mjs directly does not hit a temporal-dead-zone error", () => {
+  const work = mkdtempSync(join(tmpdir(), "pw-deliver-direct-"));
+  try {
+    writeFileSync(
+      join(work, "phillies-wire-data.json"),
+      JSON.stringify({
+        meta: { publication: "Phillies Wire", date: "2026-06-25" },
+        record: { wins: 1, losses: 0 },
+        sections: { preview: { content: { narrative: ["x"] } } },
+        next_game: {},
+      }),
+    );
+    const res = spawnSync(process.execPath, [join(process.cwd(), "deliver.mjs")], {
+      cwd: work,
+      encoding: "utf8",
+      env: {
+        ...process.env,
+        DELIVERY_RECIPIENTS: "test@example.com",
+        SMTP_USER: "u@example.com",
+        SMTP_PASS: "x",
+        SMTP_HOST: "127.0.0.1",
+        SMTP_PORT: "1",
+        SMTP_TIMEOUT_MS: "300",
+      },
+    });
+    const output = `${res.stdout ?? ""}${res.stderr ?? ""}`;
+    assert.ok(!/before initialization/.test(output), `module load-order regression: ${output}`);
+    assert.ok(!/is not defined/.test(output), `undefined reference at load: ${output}`);
+  } finally {
+    rmSync(work, { recursive: true, force: true });
+  }
 });
 
 await run();

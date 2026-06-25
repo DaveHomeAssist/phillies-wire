@@ -4,6 +4,23 @@ import { pathToFileURL } from "node:url";
 const DATA_FILE = "./phillies-wire-data.json";
 const SITE_DELIVERY_STATUS_FILE = "./site/delivery-status.json";
 
+// Brand palette (concrete hex — email clients do not resolve CSS custom
+// properties, so every color is a literal). Mirrors tokens.css. Declared
+// before the run guard below: when deliver.mjs is run directly, main()
+// executes during module evaluation and calls buildEmailHtml synchronously,
+// so these must be initialized first (a const after the guard would TDZ).
+const EMAIL = {
+  red: "#e81828",
+  navy: "#002d72",
+  cream: "#fff9f0",
+  paper: "#ffffff",
+  ink: "#1a1a1a",
+  muted: "#6b7280",
+  line: "#e3d9c6",
+  gold: "#a87010",
+};
+const SITE_URL = "https://davehomeassist.github.io/phillies-wire/";
+
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((error) => {
     console.error(redactSmtp(error.message));
@@ -165,20 +182,6 @@ async function sendOneRecipient(transport, message, { retries, index }) {
   }
   return false;
 }
-
-// Brand palette (concrete hex — email clients do not resolve CSS custom
-// properties, so every color is a literal). Mirrors tokens.css.
-const EMAIL = {
-  red: "#e81828",
-  navy: "#002d72",
-  cream: "#fff9f0",
-  paper: "#ffffff",
-  ink: "#1a1a1a",
-  muted: "#6b7280",
-  line: "#e3d9c6",
-  gold: "#a87010",
-};
-const SITE_URL = "https://davehomeassist.github.io/phillies-wire/";
 
 function esc(value) {
   return String(value ?? "")
