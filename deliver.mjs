@@ -170,6 +170,12 @@ function inlineStyles(html, cssFiles) {
     }
   }
 
+  // Mail clients (Gmail, Outlook, Apple Mail) do not resolve CSS custom
+  // properties, so the var()-based design system would collapse to unstyled
+  // text in an inbox. Flatten every var() to its concrete light-theme value
+  // before inlining so the <style> block carries real hex/px.
+  css = flattenCssVariables(css);
+
   // Strip external stylesheet links and inject inline <style> block
   let output = html.replace(/<link[^>]*rel="stylesheet"[^>]*>/gi, "");
   output = output.replace("</head>", `<style>\n${css}</style>\n</head>`);
@@ -179,6 +185,47 @@ function inlineStyles(html, cssFiles) {
   output = output.replace(/<link[^>]*fonts\.gstatic\.com[^>]*>/gi, "");
 
   return output;
+}
+
+// Resolve CSS custom properties to concrete values for email delivery.
+// The variable map is built from the first declaration of each token — and
+// because tokens.css declares the light theme before the dark overrides,
+// "first wins" yields the light value. var(--x[, fallback]) references are
+// then substituted iteratively so nested tokens (semantic -> primitive)
+// collapse to literals. Unknown vars with no fallback are left untouched.
+export function flattenCssVariables(css) {
+  const map = new Map();
+  const declRe = /(--[\w-]+)\s*:\s*([^;{}]+);/g;
+  let decl;
+  while ((decl = declRe.exec(css)) !== null) {
+    const name = decl[1].trim();
+    if (!map.has(name)) {
+      map.set(name, decl[2].trim());
+    }
+  }
+
+  // Fallback may itself contain a single level of parens, e.g.
+  // var(--x, rgba(0,0,0,.06)) — match balanced inner parens so it resolves.
+  const varRe = /var\(\s*(--[\w-]+)\s*(?:,\s*((?:[^()]+|\([^()]*\))*?))?\s*\)/g;
+  let out = css;
+  for (let pass = 0; pass < 12; pass += 1) {
+    let changed = false;
+    out = out.replace(varRe, (full, name, fallback) => {
+      if (map.has(name)) {
+        changed = true;
+        return map.get(name);
+      }
+      if (fallback != null) {
+        changed = true;
+        return fallback.trim();
+      }
+      return full;
+    });
+    if (!changed) {
+      break;
+    }
+  }
+  return out;
 }
 
 function buildPlainText(data) {
