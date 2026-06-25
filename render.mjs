@@ -13,12 +13,10 @@ import { pathToFileURL } from "node:url";
 
 import { ensureCanonicalScheduleArtifacts } from "./canonical-schedule.mjs";
 import { CANONICAL_SCHEDULE_PATH } from "./shared/phillies-schedule.mjs";
-import { buildEmailHtml } from "./email-render.mjs";
 
 const DATA_FILE = "./phillies-wire-data.json";
 const TEMPLATE_FILE = "./phillies-wire-v2.html";
 const OUTPUT_FILE = "./phillies-wire-output.html";
-const EMAIL_FILE = "./phillies-wire-email.html";
 const INDEX_FILE = "./index.html";
 const STATUS_FILE = "./status.json";
 const LATEST_FILE = "./latest.json";
@@ -73,9 +71,6 @@ async function main() {
   mkdirSync(ARCHIVE_DIR, { recursive: true });
 
   writeFileSync(OUTPUT_FILE, latestHtml, "utf8");
-  // Dedicated inline-styled email (table-based, no CSS vars / <style> reliance)
-  // so mail clients render it. deliver.mjs sends this, not the site page.
-  writeFileSync(EMAIL_FILE, buildEmailHtml(data), "utf8");
   writeFileSync(INDEX_FILE, latestHtml, "utf8");
   writeFileSync(`${ISSUES_DIR}/${issueDate}/index.html`, issueHtml, "utf8");
   writeFileSync(`${ISSUES_DIR}/${issueDate}/data.json`, buildIssueDataJson(data), "utf8");
