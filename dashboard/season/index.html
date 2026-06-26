@@ -4,14 +4,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#e81828" />
-<title>Phillies Wire · Accuracy</title>
-<meta name="description" content="Daily fact-check of the Phillies Wire edition: every data point checked against authoritative MLB sources, with verdicts and timeline relevancy." />
+<title>Phillies Wire · Season at a Glance</title>
+<meta name="description" content="The Phillies' 2026 season at a glance: record, run differential, home/road and division splits, recent form, monthly breakdown, and the next game — derived from the canonical schedule." />
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="../../fonts.css" />
 <link rel="stylesheet" href="../../tokens.css" />
 <link rel="stylesheet" href="../../shared/wire-banner.css" />
 <link rel="stylesheet" href="../dashboard.css" />
-<link rel="stylesheet" href="./accuracy.css" />
+<link rel="stylesheet" href="./season.css" />
 </head>
 <body>
   <div class="pw-wire-banner" data-wire-banner data-feed-url="../../latest.json" hidden></div>
@@ -29,13 +29,13 @@
       <a class="nav-item" href="../../schedule/" data-nav="schedule" title="Schedule">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
       </a>
-      <a class="nav-item" href="../season/" data-nav="season" title="Season at a Glance">
+      <a class="nav-item is-active" href="#" data-nav="season" title="Season at a Glance" aria-current="page">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 4h12v4a6 6 0 0 1-12 0z"/><path d="M18 5h2a2 2 0 0 1-2 4M6 5H4a2 2 0 0 0 2 4"/></svg>
       </a>
       <a class="nav-item" href="../innings/" data-nav="analytics" title="Innings">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-6M22 20H2"/></svg>
       </a>
-      <a class="nav-item is-active" href="#" data-nav="accuracy" title="Accuracy" aria-current="page">
+      <a class="nav-item" href="../accuracy/" data-nav="accuracy" title="Accuracy">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
       </a>
       <a class="nav-item" href="../../" data-nav="issues" title="Latest Issue">
@@ -52,64 +52,64 @@
   <main class="stage">
     <header class="topbar">
       <div class="topbar-title">
-        <span class="eyebrow">Editorial · Quality</span>
-        <h1>Accuracy</h1>
-        <span class="crumbs" data-slot="crumbs">Fact-check of today's edition</span>
+        <span class="eyebrow">Season · Overview</span>
+        <h1>Season at a Glance</h1>
+        <span class="crumbs" data-slot="crumbs">2026 regular season</span>
       </div>
       <div class="topbar-meta">
-        <span class="acc-grade" data-slot="grade" hidden>—</span>
+        <span class="season-chip" data-slot="record-chip" hidden>—</span>
         <a class="icon-btn" href="../" aria-label="Back to Command Center" title="Command Center">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
         </a>
       </div>
     </header>
 
-    <p class="acc-state" data-slot="state" aria-live="polite">Loading fact-check report…</p>
+    <p class="season-state" data-slot="state" aria-live="polite">Loading season summary…</p>
 
-    <section class="acc-report" data-slot="report" hidden>
+    <section class="season-report" data-slot="report" hidden>
 
-      <article class="acc-card acc-summary" aria-labelledby="acc-summary-title">
+      <div class="kpi-grid" data-slot="kpis" role="list"></div>
+
+      <div class="season-cols">
+        <article class="season-card">
+          <header class="card-head">
+            <span class="card-eyebrow">Splits</span>
+            <span class="card-status">Win rate</span>
+          </header>
+          <div class="split-list" data-slot="splits"></div>
+        </article>
+
+        <article class="season-card">
+          <header class="card-head">
+            <span class="card-eyebrow">Recent Form</span>
+            <span class="card-status" data-slot="streak-now">—</span>
+          </header>
+          <div class="form-strip" data-slot="form-strip"></div>
+          <div class="run-grid" data-slot="runs"></div>
+        </article>
+      </div>
+
+      <article class="season-card">
         <header class="card-head">
-          <span class="card-eyebrow">Edition Scorecard</span>
-          <span class="card-status" data-slot="summary-edition">—</span>
+          <span class="card-eyebrow">Month by Month</span>
+          <span class="card-status">W · L</span>
         </header>
-        <h2 id="acc-summary-title" class="acc-headline" data-slot="summary-headline">—</h2>
-        <div class="acc-stat-grid" data-slot="summary-stats" role="list"></div>
-        <div class="acc-relevancy" data-slot="summary-relevancy"></div>
-        <p class="acc-method" data-slot="method"></p>
+        <div class="month-list" data-slot="months"></div>
       </article>
 
-      <article class="acc-card acc-highlights" data-slot="highlights-card" hidden>
+      <article class="season-card season-next">
         <header class="card-head">
-          <span class="card-eyebrow">Worth a Second Look</span>
-          <span class="card-status">Verified</span>
+          <span class="card-eyebrow">Up Next</span>
         </header>
-        <div class="acc-highlight-list" data-slot="highlights"></div>
-      </article>
-
-      <div class="acc-sections" data-slot="sections"></div>
-
-      <article class="acc-card acc-sources" data-slot="sources-card" hidden>
-        <header class="card-head">
-          <span class="card-eyebrow">Sources</span>
-          <span class="card-status" data-slot="sources-count">—</span>
-        </header>
-        <ul class="acc-source-list" data-slot="sources" role="list"></ul>
-      </article>
-
-      <article class="acc-card acc-legend">
-        <header class="card-head">
-          <span class="card-eyebrow">Legend</span>
-        </header>
-        <div class="acc-legend-grid" data-slot="legend"></div>
+        <div class="next-body" data-slot="next"></div>
       </article>
 
     </section>
 
     <footer class="stage-foot">
-      <span>Phillies Wire · Accuracy</span>
+      <span>Phillies Wire · Season at a Glance</span>
       <span class="foot-sep">·</span>
-      <span data-slot="foot-edition">—</span>
+      <span data-slot="foot-generated">—</span>
       <span class="foot-sep">·</span>
       <a href="../" class="foot-link">← Command Center</a>
     </footer>
@@ -119,9 +119,9 @@
 
   <noscript>
     <p style="padding:16px;color:#8893b8;font-family:Inter,sans-serif;">
-      This accuracy report is rendered from
-      <a href="./accuracy.json" style="color:#e81828;">accuracy.json</a>.
-      Enable JavaScript to view the formatted scorecard.
+      This season summary is derived from
+      <a href="../../data/phillies-2026.json" style="color:#e81828;">phillies-2026.json</a>.
+      Enable JavaScript to view the formatted overview.
     </p>
   </noscript>
 
@@ -129,6 +129,6 @@
     import { mountWireBanner } from "../../shared/wire-banner.mjs";
     mountWireBanner("[data-wire-banner]");
   </script>
-  <script type="module" src="./accuracy.js"></script>
+  <script type="module" src="./season.js"></script>
 </body>
 </html>

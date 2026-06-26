@@ -1,0 +1,231 @@
+/* ============================================================
+   PHILLIES WIRE — SEASON AT A GLANCE
+   Layered on dashboard.css; reuses the --dash-* token set.
+   ============================================================ */
+
+.season-state {
+  color: var(--dash-ink-dim);
+  font-size: 14px;
+  padding: 8px 2px;
+}
+.season-state[data-tone="error"] { color: var(--dash-bad); }
+
+.season-report {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dash-gap);
+}
+
+/* Topbar record chip */
+.season-chip {
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--dash-border);
+  color: var(--dash-ink-dim);
+  font-variant-numeric: tabular-nums;
+}
+.season-chip[data-tone="good"] { color: var(--dash-good); border-color: rgba(47, 191, 113, 0.4); background: rgba(47, 191, 113, 0.1); }
+.season-chip[data-tone="bad"]  { color: var(--dash-bad);  border-color: rgba(239, 95, 95, 0.4);  background: rgba(239, 95, 95, 0.1); }
+
+/* ── KPI band ───────────────────────────────── */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--dash-gap);
+}
+@media (max-width: 1100px) { .kpi-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px)  { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.kpi-tile {
+  background: linear-gradient(160deg, var(--dash-surface) 0%, var(--dash-surface-raise) 100%);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--dash-radius);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: var(--dash-shadow);
+  animation: card-enter var(--t-entry) var(--ease-out-spring) both;
+}
+.kpi-tile:nth-child(1) { animation-delay:  20ms; }
+.kpi-tile:nth-child(2) { animation-delay:  60ms; }
+.kpi-tile:nth-child(3) { animation-delay: 100ms; }
+.kpi-tile:nth-child(4) { animation-delay: 140ms; }
+.kpi-tile:nth-child(5) { animation-delay: 180ms; }
+.kpi-tile:nth-child(6) { animation-delay: 220ms; }
+.kpi-value {
+  font-family: var(--font-display, "Bangers", "Oswald", sans-serif);
+  font-size: clamp(26px, 3vw, 34px);
+  line-height: 1;
+  color: var(--dash-ink);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.kpi-tile[data-tone="good"] .kpi-value { color: var(--dash-good); }
+.kpi-tile[data-tone="bad"]  .kpi-value { color: var(--dash-bad); }
+.kpi-label {
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dash-ink-quiet);
+}
+.kpi-sub { font-size: 11px; color: var(--dash-ink-dim); }
+
+/* ── Two-column card row ────────────────────── */
+.season-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--dash-gap);
+}
+@media (max-width: 900px) { .season-cols { grid-template-columns: 1fr; } }
+
+.season-card {
+  background: linear-gradient(160deg, var(--dash-surface) 0%, var(--dash-surface-raise) 100%);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--dash-radius-lg);
+  padding: 18px 20px;
+  box-shadow: var(--dash-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: card-enter var(--t-entry) var(--ease-out-spring) both;
+  animation-delay: 220ms;
+}
+
+/* ── Splits ─────────────────────────────────── */
+.split-list { display: flex; flex-direction: column; gap: 12px; }
+.split-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 48px;
+  align-items: center;
+  gap: 12px;
+}
+.split-label {
+  font-size: 12px;
+  color: var(--dash-ink-dim);
+  letter-spacing: 0.04em;
+}
+.split-bar {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+.split-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--dash-good);
+  transition: width var(--t-entry) var(--ease-out-spring);
+}
+.split-bar-fill[data-tone="bad"] { background: var(--dash-bad); }
+.split-rec {
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: 12px;
+  color: var(--dash-ink);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Recent form ────────────────────────────── */
+.form-strip { display: flex; gap: 6px; flex-wrap: wrap; }
+.form-empty { color: var(--dash-ink-quiet); font-style: italic; font-size: 13px; }
+.form-dot {
+  flex: 1 1 28px;
+  min-width: 28px;
+  height: 30px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  animation: streak-dot-in var(--t-entry) var(--ease-out-spring) both;
+}
+.form-dot[data-result="W"] { background: var(--dash-good); }
+.form-dot[data-result="L"] { background: var(--dash-bad); }
+
+/* ── Runs / streak tiles ────────────────────── */
+.run-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.run-tile {
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--dash-border);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.run-value {
+  font-family: var(--font-display, "Bangers", "Oswald", sans-serif);
+  font-size: 26px;
+  line-height: 1;
+  color: var(--dash-ink);
+  font-variant-numeric: tabular-nums;
+}
+.run-label {
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dash-ink-quiet);
+}
+.run-sub { font-size: 11px; color: var(--dash-ink-dim); }
+
+/* ── Month by month ─────────────────────────── */
+.month-list { display: flex; flex-direction: column; gap: 10px; }
+.month-empty { color: var(--dash-ink-quiet); font-style: italic; font-size: 13px; margin: 0; }
+.month-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 56px;
+  align-items: center;
+  gap: 12px;
+}
+.month-name {
+  font-size: 12px;
+  color: var(--dash-ink-dim);
+  letter-spacing: 0.04em;
+}
+.month-track {
+  display: flex;
+  align-items: center;
+  height: 14px;
+  gap: 2px;
+}
+.month-seg {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  transition: width var(--t-entry) var(--ease-out-spring);
+}
+.month-win  { background: var(--dash-good); }
+.month-loss { background: var(--dash-bad); }
+.month-rec {
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: 12px;
+  color: var(--dash-ink);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Up next ────────────────────────────────── */
+.season-next { animation-delay: 260ms; }
+.next-body { display: flex; flex-direction: column; gap: 6px; }
+.next-empty { color: var(--dash-ink-quiet); font-style: italic; margin: 0; }
+.next-matchup {
+  font-family: var(--font-display, "Bangers", "Oswald", sans-serif);
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  color: var(--dash-ink);
+}
+.next-meta { color: var(--dash-ink-dim); font-size: 13px; }
