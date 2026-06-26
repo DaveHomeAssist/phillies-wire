@@ -11,6 +11,7 @@ Status: v1.6.1. Core newsletter is stable on cron. The merged dashboard, innings
 **Innings:** https://davehomeassist.github.io/phillies-wire/dashboard/innings/
 **Preferences:** https://davehomeassist.github.io/phillies-wire/dashboard/preferences/
 **Accuracy:** https://davehomeassist.github.io/phillies-wire/dashboard/accuracy/
+**Season:** https://davehomeassist.github.io/phillies-wire/dashboard/season/
 **Schedule:** https://davehomeassist.github.io/phillies-wire/schedule/
 
 ## Stack
@@ -33,6 +34,7 @@ Status: v1.6.1. Core newsletter is stable on cron. The merged dashboard, innings
 - Publish workflow deploys BEFORE persisting the archive snapshot commit (push-race fix 2026-04-20, commit `ab0ad55`). Persist step has 3-attempt retry with `pull --rebase --autostash` and `continue-on-error: true`.
 - Dashboard lives at `/dashboard/` as a static asset copied via `STATIC_ASSET_DIRS` in `render.mjs`. Same for `/embed/`, `/schedule/`, `/calendar/`, and `/shared/`.
 - `data/phillies-2026.json` is the canonical Phillies schedule source. Dashboard, schedule tracker, innings view, calendar, and latest feed all resolve current and next game state from that artifact.
+- Season at a Glance lives at `/dashboard/season/` (`index.html` + `season.css` + `season.js`). It is a zero-data-file page: every figure is derived **client-side** from `data/phillies-2026.json` — overall record (authoritative `league_record`, which ties out to the source `.pct`), run differential, home/road · NL East · day/night · one-run splits, last-10 form, current & longest W/L streaks, month-by-month W-L, and an "Up Next" card resolved as the first playable game after the last completed one (robust to a postponed game sitting at the schedule frontier). Mirrors the accuracy-page hydration pattern (fetch JSON → build DOM defensively → honour theme/reduced-data prefs). Required files pinned in `verify.mjs`; markup token/mojibake-guarded there too.
 - Legacy Phillies schedule state from Ballparks Quest uses the `phillies2026` browser key and is imported once into the new schedule tracker.
 - Anticipatory UX on dashboard: `localStorage` key `philliesWire_prefs`, `save-data` detection, mobile bottom-tab navigation, first-visit hint. All animations gated by `prefers-reduced-motion` and `[data-save-data]`.
 - Preferences live at `/dashboard/preferences/` and manage browser local theme, reduced-data mode, innings default filter, streak alert threshold, and local export or import of Wire state.
@@ -49,7 +51,7 @@ Status: v1.6.1. Core newsletter is stable on cron. The merged dashboard, innings
 - **Sprint plans:** [docs/](docs/) (e.g. `SPRINT_2026-W17.md`)
 - **Portfolio contract:** `/Users/daverobertson/Desktop/Code/90-governance/docs/DEFINITION_OF_DONE.md`
 
-Last verified: 2026-06-25. Next action: enrich the innings timeline with full per play event arrays from live game data instead of the current linescore-first contract.
+Last verified: 2026-06-26. Next action: enrich the innings timeline with full per play event arrays from live game data instead of the current linescore-first contract. Latest change: shipped the Season at a Glance page at `/dashboard/season/`.
 
 ## Definition of Done adoption status
 
@@ -71,3 +73,4 @@ Last verified: 2026-06-25. Next action: enrich the innings timeline with full pe
 | 005 | P3 | resolved | Feature branch prune | Legacy `feat/latest-json-and-ticker` remote branch deleted after merge confirmation. |
 | 006 | P1 | resolved | Road-game editions showed home-venue / opponent data | External fact-check (2026-06-25) of the road series at Washington found: weather pulled from a hardcoded Citizens Bank Park lat/lon (Philadelphia, not the game city); broadcast/Watch showing the opponent's feed (`Nationals.TV` / `WJFK`) instead of the Phillies' (`NBCSP` / `94 WIP`); a "Roster & Lineup Confirmed" chip while lineups were still pending; opponent-first next-game wording (`NYM vs PHI`); and a stale Philadelphia SEPTA `transit` string in the JSON on road games. Fixed in `crawl.mjs` / `config.mjs` / `crawl/api/mlb.mjs`: `extractBroadcast` prefers the Phillies side, weather rebuilds from the hydrated game-venue coordinates, the roster chip is lineup-aware, next-game matchup is Phillies-perspective (`PHI @ NYM`), and `transit` is cleared when `venue_is_home` is false. `verify.mjs` gains transit↔venue and roster-chip↔lineup regression guards. Injuries were audited as correct (García / Keller are Phillies) and left untouched. Local `verify.mjs` exits 0; all 18 test suites pass. |
 | 007 | P1 | resolved | Newsletter email rendered as unstyled plain text | The email was the full site page with a `<style>` block built on CSS custom properties; the Gmail app strips `<style>` and never resolves `var()`, so it collapsed to plain text. A first fix (flattening `var()` to concrete values, `0a092056`) was insufficient because the `<style>` block itself is stripped. Final fix: `email-render.mjs` builds a dedicated, fully inline-styled, table-based email (`buildEmailHtml`, re-exported from `deliver.mjs`, built from data at send time); zero `<style>`/`var()`, web-safe fonts. Pinned by `test/reliability/email-render.test.mjs` (6 cases). Delivered styled to 2 recipients on 2026-06-25; CI 19/19 green. |
+| 008 | P3 | resolved | Season at a Glance page | New dashboard page at `/dashboard/season/` summarizing the whole 2026 season — record, win %, run differential, home/road · NL East · day/night · one-run splits, last-10 form, current & longest W/L streaks, runs for/against, month-by-month, and Up Next. Fully client-derived from `data/phillies-2026.json` (no new data file or pipeline step); mirrors the accuracy-page hydration pattern and reuses the `--dash-*` token set. Added to the sidebar nav on every dashboard page, pinned in `verify.mjs` required files + token/mojibake guards. Smoke-tested headless (record/splits/streaks/months/next all tie out); lint clean. |

@@ -66,6 +66,12 @@ const requiredFiles = [
   "./site/dashboard/accuracy/accuracy.css",
   "./site/dashboard/accuracy/accuracy.js",
   "./site/dashboard/accuracy/accuracy.json",
+  "./dashboard/season/index.html",
+  "./dashboard/season/season.css",
+  "./dashboard/season/season.js",
+  "./site/dashboard/season/index.html",
+  "./site/dashboard/season/season.css",
+  "./site/dashboard/season/season.js",
   schedulePath,
   siteSchedulePath,
   calendarPath,
@@ -682,6 +688,23 @@ for (const file of htmlFiles) {
   assertNoMojibake(readFileSync("./dashboard/accuracy/accuracy.json", "utf8"), "./dashboard/accuracy/accuracy.json");
   if (!/Phillies Wire/.test(accuracyHtml)) {
     fail("Accuracy page is missing the publication name.");
+  }
+}
+
+{
+  // Season at a Glance (/dashboard/season/). Static page derived
+  // entirely on the client from the canonical schedule, so we just
+  // guard the markup for token/encoding regressions and that it
+  // points at the canonical schedule artifact it depends on.
+  const seasonHtml = readFileSync("./dashboard/season/index.html", "utf8");
+  assertNoUnresolvedTokens(seasonHtml, "./dashboard/season/index.html");
+  assertNoMojibake(seasonHtml, "./dashboard/season/index.html");
+  if (!/Phillies Wire/.test(seasonHtml)) {
+    fail("Season page is missing the publication name.");
+  }
+  const seasonJs = readFileSync("./dashboard/season/season.js", "utf8");
+  if (!/data\/phillies-2026\.json/.test(seasonJs)) {
+    fail("Season page does not read the canonical schedule artifact.");
   }
 }
 
