@@ -7,6 +7,8 @@
 // design project's email.html. Track A correctness is preserved: transit is
 // shown only on home games; broadcast/weather come straight from the data.
 
+import { SUBSCRIBE_URL } from "./config.mjs";
+
 const DISPLAY = "'Barlow Condensed','Arial Narrow',Arial,sans-serif";
 const BODY = "'Inter',Helvetica,Arial,sans-serif";
 const SITE_URL = "https://davehomeassist.github.io/phillies-wire";
@@ -239,6 +241,8 @@ function ctaAndFooter(meta, issueUrl) {
         <a href="${esc(issueUrl)}" style="color:#d4ac58; text-decoration:none;">View online</a>
         <span style="color:#3a5286;">&nbsp;&middot;&nbsp;</span>
         <a href="${SITE_URL}/archive/" style="color:#d4ac58; text-decoration:none;">Archive</a>
+        <span style="color:#3a5286;">&nbsp;&middot;&nbsp;</span>
+        <a href="${esc(SUBSCRIBE_URL)}" style="color:#d4ac58; text-decoration:none;">Subscribe</a>
       </td></tr>
       <tr><td align="center" style="padding:14px 0 0; font-family:${BODY}; font-size:11px; line-height:1.55; color:#5e76a6;">Phillies Wire &middot; Citizens Bank Park &middot; Philadelphia, PA 19148</td></tr>
     </table>
