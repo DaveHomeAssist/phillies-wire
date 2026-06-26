@@ -5,50 +5,50 @@
     "edition": 86,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-26T01:45:18.086Z",
+    "generated_at": "2026-06-26T01:47:19.365Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jun 25, 2026, 9:45 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jun 25, 2026, 9:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 44,
+    "wins": 45,
     "losses": 36,
-    "streak": "W2",
+    "streak": "W3",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 10, WSH 5",
-    "dek": "End 9th · 3 outs",
-    "summary": "Trea Turner is up against Gus Varland. Series: PHI leads 2-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 10, WSH 5.",
+    "dek": "PHI 10, WSH 5 · Cade Cavalli · 6.0 IP, 5 H, 2 ER, 7 K",
+    "summary": "PHI 10, WSH 5. Final at Nationals Park, Washington. PHI wins 3-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Nationals Park, Washington"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "78° · Partly cloudy"
+        "label": "Series",
+        "value": "PHI wins 3-1"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Gus Varland on the mound",
-      "Nationals Park, Washington"
+      "Cade Cavalli: 6.0 IP, 5 H, 2 ER, 7 K",
+      "Cristopher Sánchez: 5.0 IP, 7 H, 5 ER, 6 K",
+      "Brandon Marsh: 2-for-4, 1 HR, 3 RBI, 2 R, 1 SB"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI @ NYM · Fri, Jun 26 · 7:10 PM"
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 2-1"
+          "label": "PHI wins 3-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -387,8 +387,8 @@
             "retroactive_to": "2026-06-25",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-26T01:45:18.086Z",
-            "freshness_label": "As of Jun 25, 2026, 9:45 PM ET"
+            "last_confirmed": "2026-06-26T01:47:19.365Z",
+            "freshness_label": "As of Jun 25, 2026, 9:47 PM ET"
           },
           {
             "name": "Adolis García",
@@ -400,8 +400,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-26T01:45:18.086Z",
-            "freshness_label": "As of Jun 25, 2026, 9:45 PM ET"
+            "last_confirmed": "2026-06-26T01:47:19.365Z",
+            "freshness_label": "As of Jun 25, 2026, 9:47 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -413,8 +413,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-26T01:45:18.086Z",
-            "freshness_label": "As of Jun 25, 2026, 9:45 PM ET"
+            "last_confirmed": "2026-06-26T01:47:19.365Z",
+            "freshness_label": "As of Jun 25, 2026, 9:47 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
