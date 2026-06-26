@@ -95,6 +95,10 @@ jobs:
           # A manual dispatch may override recipients for a scoped test send;
           # scheduled runs (inputs empty) always use the subscriber list.
           DELIVERY_RECIPIENTS: ${{ (github.event.inputs.test_recipients != '' && github.event.inputs.test_recipients) || secrets.DELIVERY_RECIPIENTS }}
+          # Active Buttondown subscribers (the site Subscribe button) are merged
+          # with DELIVERY_RECIPIENTS at send time. Best-effort: if unset/down,
+          # delivery falls back to DELIVERY_RECIPIENTS.
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
 
         run: node run.mjs
 
