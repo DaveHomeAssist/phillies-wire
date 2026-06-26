@@ -5,14 +5,14 @@
     "edition": 86,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-25T23:59:30.949Z",
+    "generated_at": "2026-06-26T00:54:44.110Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jun 25, 2026, 7:59 PM ET",
+      "generated_at_et": "Jun 25, 2026, 8:54 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, WSH 5",
-    "dek": "Bottom 4th · 1 out",
-    "summary": "Curtis Mead is up against Cristopher Sánchez. Series: PHI leads 2-1.",
+    "headline": "PHI 3, WSH 5",
+    "dek": "Top 7th · 1 out",
+    "summary": "Brandon Marsh is up against Clayton Beeter. Series: PHI leads 2-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "84° · Clear"
+        "value": "81° · Overcast"
       }
     ],
     "bullets": [
-      "Curtis Mead at the plate",
-      "Cristopher Sánchez on the mound",
+      "Brandon Marsh at the plate",
+      "Clayton Beeter on the mound",
       "Nationals Park, Washington"
     ],
     "next_label": "Tomorrow",
@@ -346,8 +346,8 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 84,
-          "condition": "Clear",
+          "temp_f": 81,
+          "condition": "Overcast",
           "wind": "7 mph · gusts 13",
           "gusts_mph": 13
         },
@@ -359,7 +359,7 @@
             "team": "WSH",
             "name": "Cade Cavalli",
             "hand": "R",
-            "era": "3.87",
+            "era": "4.00",
             "record": "4-4",
             "whip": "1.43"
           },
@@ -367,9 +367,9 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.17",
+            "era": "2.13",
             "record": "9-3",
-            "whip": "1.12"
+            "whip": "1.11"
           }
         }
       }
@@ -387,8 +387,8 @@
             "retroactive_to": "2026-06-25",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-25T23:59:30.949Z",
-            "freshness_label": "As of Jun 25, 2026, 7:59 PM ET"
+            "last_confirmed": "2026-06-26T00:54:44.110Z",
+            "freshness_label": "As of Jun 25, 2026, 8:54 PM ET"
           },
           {
             "name": "Adolis García",
@@ -400,8 +400,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-25T23:59:30.949Z",
-            "freshness_label": "As of Jun 25, 2026, 7:59 PM ET"
+            "last_confirmed": "2026-06-26T00:54:44.110Z",
+            "freshness_label": "As of Jun 25, 2026, 8:54 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -413,8 +413,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-25T23:59:30.949Z",
-            "freshness_label": "As of Jun 25, 2026, 7:59 PM ET"
+            "last_confirmed": "2026-06-26T00:54:44.110Z",
+            "freshness_label": "As of Jun 25, 2026, 8:54 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
