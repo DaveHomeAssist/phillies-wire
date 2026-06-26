@@ -29,3 +29,10 @@ export const CLAUDE_MAX_TOKENS = Number(process.env.ENRICH_MAX_TOKENS || 4000);
 // HTTP fetch timeout for live data sources (MLB / Open-Meteo).
 // Kept tight so a stalled endpoint cannot block the cron cycle.
 export const FETCH_TIMEOUT_MS = 10_000;
+
+// Email-list signup → the public Buttondown hosted subscribe page. The site
+// Subscribe button, the nav link, and the email footer all link here, so to
+// change the signup destination (a Notion form, a custom domain, a mailto
+// fallback, etc.) swap ONLY this one constant.
+export const SUBSCRIBE_ADDRESS = "subscribe@phillieswire.com";
+export const SUBSCRIBE_URL = "https://buttondown.com/phillieswire";

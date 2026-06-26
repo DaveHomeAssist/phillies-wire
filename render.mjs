@@ -13,6 +13,7 @@ import { pathToFileURL } from "node:url";
 
 import { ensureCanonicalScheduleArtifacts } from "./canonical-schedule.mjs";
 import { CANONICAL_SCHEDULE_PATH } from "./shared/phillies-schedule.mjs";
+import { SUBSCRIBE_URL } from "./config.mjs";
 
 const DATA_FILE = "./phillies-wire-data.json";
 const TEMPLATE_FILE = "./phillies-wire-v2.html";
@@ -345,6 +346,7 @@ function renderIssue(templateString, data, links, context = {}) {
   renderData.meta.assets_prefix = links.assetsPrefix;
   renderData.meta.latest_href = links.latestHref;
   renderData.meta.archive_href = links.archiveHref;
+  renderData.meta.subscribe_url = SUBSCRIBE_URL;
   enrichMetaForSeo(renderData, links);
   enrichMetaForNavigation(renderData, links, context);
   enrichMetaForSharing(renderData);
