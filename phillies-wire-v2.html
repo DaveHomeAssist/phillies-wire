@@ -57,6 +57,7 @@
     <a class="pw-shell-link" href="{{meta.latest_href}}">Latest</a>
     <a class="pw-shell-link" href="{{meta.archive_href}}">Archive</a>
     <a class="pw-shell-link" href="{{meta.assets_prefix}}feed.xml" rel="alternate">RSS</a>
+    <a class="pw-shell-link pw-shell-link--subscribe" href="{{meta.subscribe_url}}" target="_blank" rel="noopener">Subscribe</a>
   </nav>
 
   <div class="pw-masthead">
@@ -523,6 +524,16 @@
     {{/if}}
   </nav>
   {{/if}}
+
+  <section class="pw-subscribe" aria-labelledby="pw-subscribe-heading">
+    <div class="pw-subscribe-inner">
+      <div class="pw-subscribe-copy">
+        <h2 class="pw-subscribe-title" id="pw-subscribe-heading">Get the Wire in your inbox</h2>
+        <p class="pw-subscribe-dek">A fresh Phillies Wire every morning &mdash; the matchup, lineups, standings, injuries, and what&rsquo;s next.</p>
+      </div>
+      <a class="pw-subscribe-cta" href="{{meta.subscribe_url}}" target="_blank" rel="noopener">Subscribe &#8594;</a>
+    </div>
+  </section>
 
   <nav class="pw-share" aria-label="Share">
     <span class="pw-share-label">Share</span>
