@@ -30,10 +30,18 @@ function redactSmtp(message) {
   return redacted;
 }
 
-export async function main({ createTransportImpl = null } = {}) {
-  const recipients = process.env.DELIVERY_RECIPIENTS;
+export async function main({ createTransportImpl = null, fetchSubscribersImpl = null } = {}) {
+  // Recipients = the manual DELIVERY_RECIPIENTS list plus active Buttondown
+  // subscribers (the site Subscribe button feeds Buttondown). The Buttondown
+  // fetch is best-effort: any failure falls back to DELIVERY_RECIPIENTS, so a
+  // Buttondown outage can never block the daily send.
+  const subscriberEmails = await fetchButtondownSubscribers(process.env.BUTTONDOWN_API_KEY, fetchSubscribersImpl);
+  const recipients = dedupeEmails([
+    ...parseRecipients(process.env.DELIVERY_RECIPIENTS),
+    ...subscriberEmails,
+  ]).join(", ");
   if (!recipients) {
-    console.log("DELIVERY_RECIPIENTS not set — skipping delivery.");
+    console.log("No recipients (DELIVERY_RECIPIENTS unset and no Buttondown subscribers) — skipping delivery.");
     writeDeliveryStatus({ state: "sent", required: false });
     return;
   }
@@ -146,6 +154,62 @@ function parseRecipients(value) {
     .split(",")
     .map((recipient) => recipient.trim())
     .filter(Boolean);
+}
+
+const BUTTONDOWN_API_URL = "https://api.buttondown.email/v1/subscribers";
+
+// Lowercase and de-duplicate a list of email addresses, dropping anything
+// that is not an address. Lowercasing makes the manual list and the
+// Buttondown list de-dupe cleanly when the same person is in both.
+export function dedupeEmails(list) {
+  const seen = new Set();
+  const out = [];
+  for (const raw of list ?? []) {
+    const email = String(raw ?? "").trim().toLowerCase();
+    if (email.includes("@") && !seen.has(email)) {
+      seen.add(email);
+      out.push(email);
+    }
+  }
+  return out;
+}
+
+// Pull the active ("regular") addresses out of a Buttondown /v1/subscribers
+// API page. Tolerates both the older (`email` / `subscriber_type`) and newer
+// (`email_address` / `type`) field names so an API field rename can't silently
+// drop the whole list.
+export function extractActiveSubscribers(results) {
+  return (Array.isArray(results) ? results : [])
+    .filter((s) => String(s?.subscriber_type ?? s?.type ?? "regular").toLowerCase() === "regular")
+    .map((s) => String(s?.email_address ?? s?.email ?? "").trim().toLowerCase())
+    .filter((email) => email.includes("@"));
+}
+
+// Best-effort fetch of active subscribers from Buttondown. Returns [] when no
+// API key is configured or on any error, so a missing key or a Buttondown
+// outage falls back to DELIVERY_RECIPIENTS instead of blocking the send.
+async function fetchButtondownSubscribers(apiKey, fetchImpl = null) {
+  if (!apiKey) {
+    return [];
+  }
+  const doFetch = fetchImpl ?? globalThis.fetch;
+  const emails = [];
+  let url = `${BUTTONDOWN_API_URL}?type=regular`;
+  try {
+    for (let page = 0; page < 100 && url; page += 1) {
+      const res = await doFetch(url, { headers: { Authorization: `Token ${apiKey}` } });
+      if (!res.ok) {
+        console.warn(`Buttondown subscribers fetch returned ${res.status}; using DELIVERY_RECIPIENTS only.`);
+        break;
+      }
+      const data = await res.json();
+      emails.push(...extractActiveSubscribers(data?.results));
+      url = data?.next ?? null;
+    }
+  } catch (error) {
+    console.warn(`Buttondown subscribers fetch failed (${redactSmtp(error.message)}); using DELIVERY_RECIPIENTS only.`);
+  }
+  return emails;
 }
 
 async function sendOneRecipient(transport, message, { retries, index }) {
