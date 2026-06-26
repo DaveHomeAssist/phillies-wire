@@ -5,14 +5,14 @@
     "edition": 87,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-26T19:53:11.644Z",
+    "generated_at": "2026-06-26T20:21:07.984Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Pregame edition",
-      "generated_at_et": "Jun 26, 2026, 3:53 PM ET",
+      "generated_at_et": "Jun 26, 2026, 4:21 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "pregame",
     "label": "Pregame",
     "headline": "Phillies @ Mets · Game 1 of 3",
-    "dek": "Zack Wheeler vs TBD",
-    "summary": "Zack Wheeler vs TBD · Phillies @ Mets · Game 1 of 3",
+    "dek": "Zack Wheeler vs Zach Thornton",
+    "summary": "Zack Wheeler vs Zach Thornton · Phillies @ Mets · Game 1 of 3",
     "cards": [
       {
         "label": "First Pitch",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "84° · Overcast · 7 mph · gusts 14",
+      "85° · Overcast · 9 mph · gusts 13",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -55,17 +55,17 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
-        "announced": false,
-        "mode": "pending",
-        "mode_label": "Pending",
-        "show_orders": false,
+        "status_note": "Official batting orders confirmed for today's PHI at NYM game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
+        "show_orders": true,
         "first_pitch": "7:10 PM",
         "starters": {
           "home": {
             "team": "NYM",
-            "name": "TBD",
-            "hand": "R"
+            "name": "Zach Thornton",
+            "hand": "L"
           },
           "away": {
             "team": "PHI",
@@ -79,8 +79,8 @@
           },
           "opp": {
             "team": "NYM",
-            "name": "TBD",
-            "hand": "R"
+            "name": "Zach Thornton",
+            "hand": "L"
           }
         },
         "batting_order": {
@@ -143,113 +143,113 @@
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Derek Hill",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "LF",
+              "bats": "R"
             }
           ],
           "phi": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Derek Hill",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "LF",
+              "bats": "R"
             }
           ],
           "opp": [
@@ -318,8 +318,8 @@
         "venue": "Citi Field, Flushing",
         "starters": {
           "home": {
-            "name": "TBD",
-            "hand": "R"
+            "name": "Zach Thornton",
+            "hand": "L"
           },
           "away": {
             "name": "Zack Wheeler",
@@ -330,8 +330,8 @@
             "hand": "R"
           },
           "opp": {
-            "name": "TBD",
-            "hand": "R"
+            "name": "Zach Thornton",
+            "hand": "L"
           }
         },
         "series": {
@@ -345,15 +345,32 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 84,
+          "temp_f": 85,
           "condition": "Overcast",
-          "wind": "7 mph · gusts 14",
-          "gusts_mph": 14
+          "wind": "9 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "",
         "venue_is_home": false,
-        "matchup_tape": null
+        "matchup_tape": {
+          "home": {
+            "team": "NYM",
+            "name": "Zach Thornton",
+            "hand": "L",
+            "era": "8.31",
+            "record": "0-1",
+            "whip": "1.38"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Zack Wheeler",
+            "hand": "R",
+            "era": "2.11",
+            "record": "7-1",
+            "whip": "0.88"
+          }
+        }
       }
     },
     "injury_report": {
@@ -369,8 +386,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-26T19:53:11.644Z",
-            "freshness_label": "As of Jun 26, 2026, 3:53 PM ET"
+            "last_confirmed": "2026-06-26T20:21:07.984Z",
+            "freshness_label": "As of Jun 26, 2026, 4:21 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -382,8 +399,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-26T19:53:11.644Z",
-            "freshness_label": "As of Jun 26, 2026, 3:53 PM ET"
+            "last_confirmed": "2026-06-26T20:21:07.984Z",
+            "freshness_label": "As of Jun 26, 2026, 4:21 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -395,8 +412,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-26T19:53:11.644Z",
-            "freshness_label": "As of Jun 26, 2026, 3:53 PM ET"
+            "last_confirmed": "2026-06-26T20:21:07.984Z",
+            "freshness_label": "As of Jun 26, 2026, 4:21 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
