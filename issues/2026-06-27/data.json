@@ -5,14 +5,14 @@
     "edition": 88,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-27T21:38:30.187Z",
+    "generated_at": "2026-06-27T22:07:31.359Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jun 27, 2026, 5:38 PM ET",
+      "generated_at_et": "Jun 27, 2026, 6:07 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, NYM 0",
-    "dek": "Top 2nd · 0 outs",
-    "summary": "Edmundo Sosa is up against Christian Scott. Series: PHI leads 1-0.",
+    "headline": "PHI 2, NYM 0",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Francisco Alvarez is up against Alan Rangel. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "75° · Drizzle"
+        "value": "75° · Overcast"
       }
     ],
     "bullets": [
-      "Edmundo Sosa at the plate",
-      "Christian Scott on the mound",
+      "Francisco Alvarez at the plate",
+      "Alan Rangel on the mound",
       "Citi Field, Flushing"
     ],
     "next_label": "Tomorrow",
@@ -347,8 +347,8 @@
         },
         "weather": {
           "temp_f": 75,
-          "condition": "Drizzle",
-          "wind": "5 mph · gusts 9",
+          "condition": "Overcast",
+          "wind": "6 mph · gusts 9",
           "gusts_mph": 9
         },
         "giveaway": "",
@@ -359,17 +359,17 @@
             "team": "NYM",
             "name": "Christian Scott",
             "hand": "R",
-            "era": "3.02",
+            "era": "3.30",
             "record": "2-0",
-            "whip": "1.37"
+            "whip": "1.35"
           },
           "away": {
             "team": "PHI",
             "name": "Tim Mayza",
             "hand": "L",
-            "era": "2.97",
+            "era": "2.95",
             "record": "2-2",
-            "whip": "0.99"
+            "whip": "0.98"
           }
         }
       }
@@ -387,8 +387,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-27T21:38:30.187Z",
-            "freshness_label": "As of Jun 27, 2026, 5:38 PM ET"
+            "last_confirmed": "2026-06-27T22:07:31.359Z",
+            "freshness_label": "As of Jun 27, 2026, 6:07 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -400,8 +400,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-27T21:38:30.187Z",
-            "freshness_label": "As of Jun 27, 2026, 5:38 PM ET"
+            "last_confirmed": "2026-06-27T22:07:31.359Z",
+            "freshness_label": "As of Jun 27, 2026, 6:07 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -413,8 +413,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-27T21:38:30.187Z",
-            "freshness_label": "As of Jun 27, 2026, 5:38 PM ET"
+            "last_confirmed": "2026-06-27T22:07:31.359Z",
+            "freshness_label": "As of Jun 27, 2026, 6:07 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
