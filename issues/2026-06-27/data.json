@@ -5,14 +5,14 @@
     "edition": 88,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-27T05:21:17.171Z",
+    "generated_at": "2026-06-27T06:37:21.561Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Pregame edition",
-      "generated_at_et": "Jun 27, 2026, 1:21 AM ET",
+      "generated_at_et": "Jun 27, 2026, 2:37 AM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "pregame",
     "label": "Pregame",
     "headline": "Phillies @ Mets · Game 2 of 3",
-    "dek": "Alan Rangel vs TBD",
-    "summary": "Alan Rangel vs TBD · Phillies @ Mets · Game 2 of 3",
+    "dek": "Alan Rangel vs Christian Scott",
+    "summary": "Alan Rangel vs Christian Scott · Phillies @ Mets · Game 2 of 3",
     "cards": [
       {
         "label": "First Pitch",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "73° · Overcast · 2 mph · gusts 5",
-      "Regular Season"
+      "73° · Overcast · 3 mph · gusts 5",
+      "PHI leads 1-0"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ NYM · Sun, Jun 28 · 1:40 PM"
@@ -64,7 +64,7 @@
         "starters": {
           "home": {
             "team": "NYM",
-            "name": "TBD",
+            "name": "Christian Scott",
             "hand": "R"
           },
           "away": {
@@ -79,7 +79,7 @@
           },
           "opp": {
             "team": "NYM",
-            "name": "TBD",
+            "name": "Christian Scott",
             "hand": "R"
           }
         },
@@ -318,7 +318,7 @@
         "venue": "Citi Field, Flushing",
         "starters": {
           "home": {
-            "name": "TBD",
+            "name": "Christian Scott",
             "hand": "R"
           },
           "away": {
@@ -330,14 +330,14 @@
             "hand": "R"
           },
           "opp": {
-            "name": "TBD",
+            "name": "Christian Scott",
             "hand": "R"
           }
         },
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,13 +347,30 @@
         "weather": {
           "temp_f": 73,
           "condition": "Overcast",
-          "wind": "2 mph · gusts 5",
+          "wind": "3 mph · gusts 5",
           "gusts_mph": 5
         },
         "giveaway": "",
         "transit": "",
         "venue_is_home": false,
-        "matchup_tape": null
+        "matchup_tape": {
+          "home": {
+            "team": "NYM",
+            "name": "Christian Scott",
+            "hand": "R",
+            "era": "3.10",
+            "record": "2-0",
+            "whip": "1.35"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Alan Rangel",
+            "hand": "R",
+            "era": "2.25",
+            "record": "0-0",
+            "whip": "1.00"
+          }
+        }
       }
     },
     "injury_report": {
@@ -369,8 +386,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-27T05:21:17.171Z",
-            "freshness_label": "As of Jun 27, 2026, 1:21 AM ET"
+            "last_confirmed": "2026-06-27T06:37:21.561Z",
+            "freshness_label": "As of Jun 27, 2026, 2:37 AM ET"
           },
           {
             "name": "Brad Keller",
@@ -382,8 +399,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-27T05:21:17.171Z",
-            "freshness_label": "As of Jun 27, 2026, 1:21 AM ET"
+            "last_confirmed": "2026-06-27T06:37:21.561Z",
+            "freshness_label": "As of Jun 27, 2026, 2:37 AM ET"
           },
           {
             "name": "Johan Rojas",
@@ -395,8 +412,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-27T05:21:17.171Z",
-            "freshness_label": "As of Jun 27, 2026, 1:21 AM ET"
+            "last_confirmed": "2026-06-27T06:37:21.561Z",
+            "freshness_label": "As of Jun 27, 2026, 2:37 AM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
