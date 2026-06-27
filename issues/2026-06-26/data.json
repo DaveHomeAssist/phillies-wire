@@ -5,50 +5,50 @@
     "edition": 87,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-27T01:18:39.672Z",
+    "generated_at": "2026-06-27T02:19:25.266Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jun 26, 2026, 9:18 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jun 26, 2026, 10:19 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 45,
+    "wins": 46,
     "losses": 36,
-    "streak": "W3",
+    "streak": "W4",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 2, NYM 1",
-    "dek": "Top 9th · 2 outs",
-    "summary": "Justin Crawford is up against Cionel Pérez. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 2, NYM 1.",
+    "dek": "PHI 2, NYM 1 · Zach Thornton · 6.0 IP, 5 H, 1 ER, 7 K",
+    "summary": "PHI 2, NYM 1. Final at Citi Field, Flushing. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citi Field, Flushing"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "74° · Overcast"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "Justin Crawford at the plate",
-      "Cionel Pérez on the mound",
-      "Citi Field, Flushing"
+      "Zach Thornton: 6.0 IP, 5 H, 1 ER, 7 K",
+      "Zack Wheeler: 7.0 IP, 4 H, 1 ER, 5 K",
+      "Bryce Harper: 3-for-4, 1 RBI"
     ],
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel · PHI @ NYM · Sat, Jun 27 · 4:10 PM"
@@ -338,7 +338,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 74,
+          "temp_f": 73,
           "condition": "Overcast",
-          "wind": "4 mph · gusts 8",
-          "gusts_mph": 8
+          "wind": "5 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "",
@@ -368,7 +368,7 @@
             "name": "Zack Wheeler",
             "hand": "R",
             "era": "2.03",
-            "record": "7-1",
+            "record": "8-1",
             "whip": "0.86"
           }
         }
@@ -387,8 +387,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-27T01:18:39.672Z",
-            "freshness_label": "As of Jun 26, 2026, 9:18 PM ET"
+            "last_confirmed": "2026-06-27T02:19:25.266Z",
+            "freshness_label": "As of Jun 26, 2026, 10:19 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -400,8 +400,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-27T01:18:39.672Z",
-            "freshness_label": "As of Jun 26, 2026, 9:18 PM ET"
+            "last_confirmed": "2026-06-27T02:19:25.266Z",
+            "freshness_label": "As of Jun 26, 2026, 10:19 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -413,8 +413,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-27T01:18:39.672Z",
-            "freshness_label": "As of Jun 26, 2026, 9:18 PM ET"
+            "last_confirmed": "2026-06-27T02:19:25.266Z",
+            "freshness_label": "As of Jun 26, 2026, 10:19 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
