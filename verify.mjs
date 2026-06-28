@@ -15,6 +15,16 @@ const siteCalendarPath = "./site/calendar/phillies-2026-all.ics";
 // Covers the CP1252-in-UTF-8 sequences we've seen in the wild: punctuation
 // and accented characters passed through a double-encoding pipeline.
 const mojibakePattern = /Â·|Â°|â€“|â€”|â€œ|â€\u009d|Ã[\u0080-\u00BF]/;
+const allowedPlayEventTypes = new Set([
+  "home_run",
+  "extra_base_hit",
+  "single",
+  "walk_hbp",
+  "reached_on_error",
+  "strikeout",
+  "out",
+  "other",
+]);
 
 const requiredFiles = [
   "./phillies-wire-output.html",
@@ -51,10 +61,16 @@ const requiredFiles = [
   "./latest.json",
   "./site/latest.json",
   "./schedule/index.html",
+  "./dashboard/innings/index.html",
+  "./dashboard/innings/innings.css",
+  "./dashboard/innings/innings.js",
   "./dashboard/preferences/index.html",
   "./dashboard/preferences/preferences.css",
   "./dashboard/preferences/preferences.js",
   "./site/schedule/index.html",
+  "./site/dashboard/innings/index.html",
+  "./site/dashboard/innings/innings.css",
+  "./site/dashboard/innings/innings.js",
   "./site/dashboard/preferences/index.html",
   "./site/dashboard/preferences/preferences.css",
   "./site/dashboard/preferences/preferences.js",
@@ -230,6 +246,8 @@ for (const file of htmlFiles) {
 }
 
 const latestHtml = readFileSync("./index.html", "utf8");
+const feedXml = readFileSync("./feed.xml", "utf8");
+const siteFeedXml = readFileSync("./site/feed.xml", "utf8");
 if (!/pw-hero/.test(latestHtml)) {
   fail("Latest issue page is missing the hero section.");
 }
@@ -269,6 +287,23 @@ if (!data.meta.off_day) {
 
 if (!/live-feed\.js/.test(latestHtml)) {
   fail("Latest issue page is missing the live-feed module.");
+}
+
+if (!/dashboard\/innings\//.test(latestHtml) || !/Inning by inning/.test(latestHtml)) {
+  fail("Latest issue page is missing the Inning by inning navigation link.");
+}
+
+if (!/^<\?xml version="1\.0" encoding="UTF-8"\?>\s*<rss\b/.test(feedXml)) {
+  fail("feed.xml must be RSS 2.0 and start with an <rss> root.");
+}
+if (/<feed\b[^>]*xmlns="http:\/\/www\.w3\.org\/2005\/Atom"/.test(feedXml)) {
+  fail("feed.xml is Atom XML but pages advertise application/rss+xml.");
+}
+if (!/<channel>/.test(feedXml) || !/<item>/.test(feedXml) || !/type="application\/rss\+xml"/.test(feedXml)) {
+  fail("feed.xml is missing required RSS channel, item, or self-link metadata.");
+}
+if (siteFeedXml !== feedXml) {
+  fail("site/feed.xml must match root feed.xml.");
 }
 
 const requiredMeta = [
@@ -343,6 +378,12 @@ if (!data.meta.off_day) {
   const issueDataBytes = Buffer.byteLength(JSON.stringify(issueData), "utf8");
   if (issueDataBytes > 20 * 1024) {
     fail(`Issue data.json exceeds 20 KB budget (${issueDataBytes} bytes). Strip heavier sections.`);
+  }
+  const issueMode = issueData.meta?.status?.mode ?? issueData.hero?.mode ?? "";
+  const gameStatus = issueData.sections?.game_status?.content ?? {};
+  if (issueMode === "live" || issueMode === "final") {
+    validateIssuePlayContract(gameStatus.plays, issueMode);
+    validateIssueLinescoreContract(gameStatus.linescore, issueMode);
   }
 }
 
@@ -744,6 +785,61 @@ function formatFactcheckFindings(findings) {
     .slice(0, 5)
     .map((finding) => `${finding.id}: ${finding.title}`)
     .join("; ");
+}
+
+function validateIssuePlayContract(plays, mode) {
+  if (!Array.isArray(plays)) {
+    fail(`Issue data.json game_status.content.plays must be an array for ${mode} issues.`);
+  }
+  if (mode === "final" && plays.length === 0) {
+    fail("Final issue data.json must include at least one normalized play.");
+  }
+
+  for (const [index, play] of plays.entries()) {
+    if (!Number.isInteger(play?.inning) || play.inning < 1) {
+      fail(`Issue play ${index} has invalid inning: ${play?.inning}`);
+    }
+    if (play?.half !== "top" && play?.half !== "bottom") {
+      fail(`Issue play ${index} has invalid half: ${play?.half}`);
+    }
+    if (!play?.team || typeof play.team !== "string") {
+      fail(`Issue play ${index} is missing team.`);
+    }
+    if (!allowedPlayEventTypes.has(play?.event_type)) {
+      fail(`Issue play ${index} has invalid event_type: ${play?.event_type}`);
+    }
+    if (!play?.actor || typeof play.actor !== "string") {
+      fail(`Issue play ${index} is missing actor.`);
+    }
+    if (!play?.detail || typeof play.detail !== "string") {
+      fail(`Issue play ${index} is missing detail.`);
+    }
+  }
+}
+
+function validateIssueLinescoreContract(linescore, mode) {
+  if (!linescore || typeof linescore !== "object") {
+    fail(`Issue data.json game_status.content.linescore is required for ${mode} issues.`);
+  }
+  if (!Array.isArray(linescore.innings)) {
+    fail("Issue linescore.innings must be an array.");
+  }
+  for (const [index, inning] of linescore.innings.entries()) {
+    if (!Number.isInteger(inning?.num) || inning.num < 1) {
+      fail(`Issue linescore inning ${index} has invalid num: ${inning?.num}`);
+    }
+    for (const side of ["away", "home"]) {
+      const team = inning?.[side];
+      if (!team || typeof team !== "object") {
+        fail(`Issue linescore inning ${index} is missing ${side}.`);
+      }
+      for (const key of ["runs", "hits", "errors"]) {
+        if (team[key] != null && !Number.isFinite(Number(team[key]))) {
+          fail(`Issue linescore inning ${index} ${side}.${key} is invalid: ${team[key]}`);
+        }
+      }
+    }
+  }
 }
 
 function isWithinDays(isoA, isoB, days) {

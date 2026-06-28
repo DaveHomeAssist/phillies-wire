@@ -1,10 +1,69 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 
-import { populate } from "../render.mjs";
+import { buildFeedXml, buildIssueDataJson, populate } from "../render.mjs";
 
 const template = readFileSync(new URL("../phillies-wire-v2.html", import.meta.url), "utf8");
 const fixture = JSON.parse(readFileSync(new URL("../phillies-wire-schema.json", import.meta.url), "utf8"));
+
+runTest("feed builder emits RSS 2.0, not Atom", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.publication = "Phillies Wire";
+  const feed = buildFeedXml({
+    updated_at: "2026-06-28T01:47:00.000Z",
+    entries: [
+      {
+        date: "2026-06-27",
+        headline: "PHI 2, NYM 6.",
+        dek: "Final at Citi Field.",
+        generated_at: "2026-06-28T01:47:00.000Z",
+      },
+    ],
+  }, data);
+
+  assert.match(feed, /^<\?xml version="1\.0" encoding="UTF-8"\?>\n<rss version="2\.0"/);
+  assert.match(feed, /<channel>/);
+  assert.match(feed, /<item>/);
+  assert.match(feed, /<guid isPermaLink="true">https:\/\/davehomeassist\.github\.io\/phillies-wire\/issues\/2026-06-27\/<\/guid>/);
+  assert.match(feed, /type="application\/rss\+xml"/);
+  assert.doesNotMatch(feed, /<feed xmlns="http:\/\/www\.w3\.org\/2005\/Atom"/);
+});
+
+runTest("issue data builder keeps a large final play array under budget", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.date = "2026-06-27";
+  data.meta.edition = 87;
+  data.meta.volume = 1;
+  data.meta.generated_at = "2026-06-28T01:40:00.000Z";
+  data.meta.status.mode = "final";
+  data.meta.status.mode_label = "Final";
+  data.hero.mode = "final";
+  data.hero.label = "Final";
+  data.hero.headline = "PHI 3, NYM 8.";
+  data.hero.summary = "PHI 3, NYM 8. Final at Citi Field.";
+  data.sections.game_status.content.linescore = makeLinescore();
+  data.sections.game_status.content.plays = makeManyPlays(71);
+  data.sections.lineup.content.batting_order.home = makeLineup("NYM");
+  data.sections.lineup.content.batting_order.away = makeLineup("PHI");
+  data.sections.lineup.content.batting_order.phi = makeLineup("PHI");
+  data.sections.lineup.content.batting_order.opp = makeLineup("NYM");
+  data.sections.injury_report.content.il_entries = [
+    { name: "Player One", position: "RHP", injury: "Shoulder", il_type: "15-day IL", status_note: "Rehab work continues." },
+  ];
+
+  const text = buildIssueDataJson(data);
+  const issueData = JSON.parse(text);
+  const plays = issueData.sections.game_status.content.plays;
+
+  assert.ok(Buffer.byteLength(JSON.stringify(issueData), "utf8") <= 20 * 1024);
+  assert.equal(issueData.schema_version, "1.4.0");
+  assert.equal(plays.length, 71);
+  assert.equal(JSON.stringify(plays).includes("playEvents"), false);
+  assert.equal(issueData.sections.lineup, null);
+  assert.equal(issueData.sections.injury_report, null);
+  assert.ok(plays.every((play) => typeof play.detail === "string" && play.detail.length > 0));
+  assert.ok(plays.some((play) => play.score_after === "PHI 2, NYM 0"));
+});
 
 runTest("fixture render resolves every token and includes required landmarks", () => {
   const data = JSON.parse(JSON.stringify(fixture));
@@ -36,6 +95,7 @@ runTest("fixture render resolves every token and includes required landmarks", (
 
   assert.match(html, /<main id="pw-main"/);
   assert.match(html, /<nav class="pw-shell-nav"/);
+  assert.match(html, /href="\.\/dashboard\/innings\/">Inning by inning<\/a>/);
   assert.match(html, /aria-live="polite"/);
   assert.match(html, /data-row="lineup"/);
   assert.match(html, /<a class="pw-skip-link"/);
@@ -321,6 +381,57 @@ runTest("completely empty {{}} stays literal (regex never matches)", () => {
   // because the page won't render the token in any meaningful way.
   assert.equal(populate("<span>{{}}</span>", {}), "<span>{{}}</span>");
 });
+
+function makeManyPlays(count) {
+  const eventTypes = ["strikeout", "walk_hbp", "single", "out", "home_run", "extra_base_hit", "reached_on_error"];
+  return Array.from({ length: count }, (_, index) => {
+    const event_type = eventTypes[index % eventTypes.length];
+    const is_scoring = index === 12 || index === 48;
+    const is_key = is_scoring || event_type === "home_run" || event_type === "extra_base_hit";
+    return {
+      id: `823609:${index}`,
+      inning: Math.floor(index / 8) + 1,
+      half: index % 2 === 0 ? "top" : "bottom",
+      team: index % 2 === 0 ? "PHI" : "NYM",
+      event_type,
+      actor: index % 2 === 0 ? "Bryce Harper" : "Francisco Lindor",
+      actor_id: index % 2 === 0 ? 547180 : 596019,
+      detail: `Bryce Harper singles on a sharp line drive to center fielder A.J. Ewing. Runner ${index} advances while the throw comes through the cutoff man.`,
+      score_after: is_scoring ? "PHI 2, NYM 0" : "PHI 0, NYM 0",
+      runs: is_scoring ? 2 : 0,
+      is_scoring,
+      is_key,
+    };
+  });
+}
+
+function makeLineup(team) {
+  return Array.from({ length: 9 }, (_, index) => ({
+    slot: index + 1,
+    name: `${team} Batter ${index + 1}`,
+    position: "IF",
+    bats: index % 2 ? "L" : "R",
+  }));
+}
+
+function makeLinescore() {
+  return {
+    currentInning: 9,
+    currentInningOrdinal: "9th",
+    inningState: "End",
+    isTopInning: false,
+    outs: 3,
+    teams: {
+      away: { runs: 3, hits: 7, errors: 0 },
+      home: { runs: 8, hits: 11, errors: 1 },
+    },
+    innings: Array.from({ length: 9 }, (_, index) => ({
+      num: index + 1,
+      away: { runs: index === 3 ? 2 : 0, hits: 1, errors: 0 },
+      home: { runs: index === 5 ? 3 : 0, hits: 1, errors: index === 8 ? 1 : 0 },
+    })),
+  };
+}
 
 function runTest(name, fn) {
   try {

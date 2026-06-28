@@ -105,6 +105,33 @@ runTest("findCurrentOrNextGame prefers live or preview games before future final
   assert.equal(pointer.current_game.game_pk, 900001);
 });
 
+runTest("findCurrentOrNextGame does not treat postponed finals as current", () => {
+  const postponed = {
+    ...rawGame,
+    gamePk: 823471,
+    officialDate: "2026-04-30",
+    gameDate: "2026-04-30T17:10:00Z",
+    status: {
+      abstractGameState: "Final",
+      detailedState: "Postponed",
+      statusCode: "DR",
+      startTimeTBD: false,
+    },
+  };
+  const latestFinal = {
+    ...rawGame,
+    gamePk: 823609,
+    officialDate: "2026-06-27",
+    gameDate: "2026-06-27T20:10:00Z",
+  };
+  const payload = buildCanonicalSchedulePayload([postponed, latestFinal], {
+    now: new Date("2026-06-28T01:40:00Z"),
+  });
+  const pointer = findCurrentOrNextGame(payload.games, new Date("2026-06-28T01:40:00Z"));
+  assert.equal(pointer.current_game, null);
+  assert.equal(pointer.latest_completed_game.game_pk, 823609);
+});
+
 runTest("buildLegacyMatchKey keeps date opponent and side stable", () => {
   assert.equal(
     buildLegacyMatchKey({ official_date: "2026-04-18", opponent_abbr: "ATL", home_game: true }),

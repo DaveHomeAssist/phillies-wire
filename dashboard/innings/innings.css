@@ -3,6 +3,12 @@
    Extends ../dashboard.css — reuses layout shell + motion tokens.
    ============================================ */
 
+.dash-app,
+.stage {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .stage { gap: 18px; }
 
 /* Filter toggle in topbar */
@@ -46,6 +52,7 @@
   border-radius: var(--dash-radius-lg);
   box-shadow: var(--dash-shadow);
   animation: card-enter var(--t-entry) var(--ease-out-spring) both;
+  min-width: 0;
 }
 .matchup-head {
   font-family: var(--font-serif, Georgia, serif);
@@ -69,6 +76,7 @@
   display: flex; flex-direction: column; gap: 14px;
   animation: card-enter var(--t-entry) var(--ease-out-spring) 80ms both;
   overflow: hidden;
+  min-width: 0;
 }
 .linescore-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .linescore-note { font-size: 11px; color: var(--dash-ink-quiet); font-style: italic; }
@@ -148,6 +156,7 @@
   box-shadow: var(--dash-shadow);
   display: flex; flex-direction: column; gap: 14px;
   animation: card-enter var(--t-entry) var(--ease-out-spring) 160ms both;
+  min-width: 0;
 }
 .plays-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .plays-count {
@@ -172,6 +181,179 @@
   padding: 1px 4px;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 3px;
+}
+
+.timeline-host {
+  position: relative;
+  min-width: 0;
+}
+.timeline-wrap {
+  display: flex;
+  border: 1px solid var(--dash-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  max-width: 100%;
+  min-width: 0;
+}
+.timeline-gutter {
+  flex: 0 0 58px;
+  border-right: 1px solid var(--dash-ink);
+  background: var(--dash-surface);
+  position: relative;
+  z-index: 1;
+}
+.timeline-gutter-head { height: 42px; }
+.timeline-team-lane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-top: 1px solid var(--dash-border);
+}
+.timeline-team-lane.is-phi {
+  background: color-mix(in srgb, var(--dash-brand) 8%, transparent);
+}
+.timeline-team-abbr {
+  color: var(--dash-ink);
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+.timeline-team-lane.is-phi .timeline-team-abbr { color: var(--dash-brand); }
+.timeline-team-total {
+  color: var(--dash-ink);
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+}
+.timeline-run-label {
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-top: 1px solid var(--dash-ink);
+  color: var(--dash-ink-quiet);
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+.timeline-scroll {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.timeline-scroll::-webkit-scrollbar { height: 9px; }
+.timeline-scroll::-webkit-scrollbar-thumb {
+  background: var(--dash-border);
+  border-radius: 999px;
+}
+.timeline-svg {
+  display: block;
+  min-width: 100%;
+}
+.timeline-grid-line,
+.timeline-lane-line {
+  stroke: var(--dash-border);
+  stroke-width: 1;
+}
+.timeline-total-line {
+  stroke: var(--dash-ink);
+  stroke-width: 1;
+}
+.timeline-phi-band {
+  fill: var(--dash-brand);
+  opacity: 0.035;
+}
+.timeline-inning-label,
+.timeline-run {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 11px;
+  fill: var(--dash-ink-quiet);
+}
+.timeline-inning-label {
+  font-size: 12px;
+  fill: var(--dash-ink);
+  font-weight: 700;
+}
+.timeline-run.has-run {
+  fill: var(--dash-brand);
+  font-weight: 800;
+}
+.timeline-marker {
+  cursor: default;
+  outline: none;
+}
+.timeline-marker[tabindex] { cursor: pointer; }
+.timeline-marker:focus-visible {
+  filter: drop-shadow(0 0 0.35rem var(--dash-brand));
+}
+.marker-fill.is-phi { fill: var(--dash-brand); }
+.marker-fill.is-opp { fill: var(--dash-navy-soft); }
+.marker-stroke.is-phi {
+  fill: transparent;
+  stroke: var(--dash-brand);
+  stroke-width: 2;
+}
+.marker-stroke.is-opp {
+  fill: transparent;
+  stroke: var(--dash-navy-soft);
+  stroke-width: 2;
+}
+.marker-ring {
+  fill: transparent;
+  stroke: var(--dash-gold);
+  stroke-width: 1.5;
+}
+.marker-muted-stroke {
+  fill: transparent;
+  stroke: var(--dash-ink-quiet);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+.marker-muted-fill { fill: var(--dash-ink-quiet); }
+.timeline-tooltip {
+  position: fixed;
+  z-index: 50;
+  max-width: 280px;
+  display: grid;
+  gap: 4px;
+  padding: 9px 11px;
+  border-radius: 8px;
+  background: var(--dash-ink);
+  color: var(--dash-surface);
+  box-shadow: var(--dash-shadow);
+  pointer-events: none;
+}
+.timeline-tooltip[hidden] { display: none; }
+.timeline-tooltip strong {
+  font-size: 12.5px;
+  line-height: 1.2;
+}
+.timeline-tooltip span {
+  font-size: 12px;
+  line-height: 1.4;
+}
+.timeline-tooltip em {
+  color: var(--dash-gold);
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 11px;
+  font-style: normal;
+}
+.plays-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .play-row {
@@ -223,9 +405,14 @@
 }
 .marker-score { background: var(--dash-brand); }
 .marker-hr    { background: var(--dash-gold); clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); border-radius: 0; }
+.marker-xbh   { background: var(--dash-ink); border-radius: 0; transform: rotate(45deg); width: 10px; height: 10px; }
+.marker-single { background: var(--dash-ink); }
+.marker-walk  { background: transparent; border: 2px solid var(--dash-ink); }
+.marker-error { background: transparent; border: 2px solid var(--dash-ink); border-radius: 0; width: 10px; height: 10px; }
 .marker-key   { background: transparent; border: 2px solid var(--dash-navy-soft); border-radius: 0; transform: rotate(45deg); width: 10px; height: 10px; }
 .marker-k     { background: transparent; color: var(--dash-bad); font-family: var(--font-mono, ui-monospace, monospace); font-weight: 700; font-size: 13px; line-height: 1; border-radius: 0; }
 .marker-k::before { content: "\00d7"; }
+.marker-out   { background: var(--dash-ink-quiet); width: 14px; height: 4px; border-radius: 999px; }
 
 /* ── At-bat card ──────────────────────────── */
 .atbat-card {
@@ -236,6 +423,7 @@
   padding: 18px 22px;
   animation: card-enter var(--t-entry) var(--ease-out-spring) both;
   animation-delay: 140ms;
+  min-width: 0;
 }
 .atbat-card[hidden] { display: none; }
 .atbat-head {

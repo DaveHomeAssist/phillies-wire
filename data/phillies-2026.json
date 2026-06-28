@@ -2,10 +2,10 @@
   "schema_version": "1.0.0",
   "publication": "Phillies Wire",
   "season": 2026,
-  "generated_at": "2026-06-17T18:15:03.021Z",
+  "generated_at": "2026-06-28T02:41:27.925Z",
   "source": {
     "provider": "MLB Stats API",
-    "fetched_at": "2026-06-17T18:15:03.254Z",
+    "fetched_at": "2026-06-28T02:41:28.268Z",
     "query": {
       "sportId": "1",
       "teamId": "143",
@@ -18,10 +18,10 @@
     "total_games": 162,
     "home_games": 81,
     "away_games": 81,
-    "completed_games": 73,
-    "current_game_pk": 823471,
-    "next_game_pk": 823472,
-    "latest_completed_game_pk": 823451
+    "completed_games": 83,
+    "current_game_pk": 823608,
+    "next_game_pk": 823444,
+    "latest_completed_game_pk": 823609
   },
   "games": [
     {
@@ -8213,9 +8213,9 @@
         },
         "league_record": {
           "wins": 40,
-          "losses": 33,
+          "losses": 34,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".541"
         }
       },
       "opponent": {
@@ -8223,16 +8223,16 @@
         "side": "away",
         "name": "Miami Marlins",
         "abbr": "MIA",
-        "score": 6,
+        "score": 12,
         "probable_pitcher": {
           "id": 645261,
           "name": "Sandy Alcantara"
         },
         "league_record": {
-          "wins": 36,
+          "wins": 37,
           "losses": 38,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".493"
         }
       },
       "teams": {
@@ -8248,26 +8248,26 @@
           },
           "league_record": {
             "wins": 40,
-            "losses": 33,
+            "losses": 34,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".541"
           }
         },
         "away": {
           "team_id": 146,
           "name": "Miami Marlins",
           "abbr": "MIA",
-          "score": 6,
-          "is_winner": false,
+          "score": 12,
+          "is_winner": true,
           "probable_pitcher": {
             "id": 645261,
             "name": "Sandy Alcantara"
           },
           "league_record": {
-            "wins": 36,
+            "wins": 37,
             "losses": 38,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".493"
           }
         }
       },
@@ -8276,22 +8276,22 @@
         "name": "Citizens Bank Park"
       },
       "status": {
-        "abstract": "Live",
-        "detailed": "In Progress",
-        "code": "I",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
         "phillies": 4,
-        "opponent": 6,
+        "opponent": 12,
         "home": 4,
-        "away": 6
+        "away": 12
       },
-      "result": null,
+      "result": "L",
       "series": {
         "game_number": 3,
         "total_games": 3,
-        "label": "PHI leads 2-0",
+        "label": "PHI wins 2-1",
         "description": "Regular Season"
       },
       "description": null,
@@ -8319,16 +8319,16 @@
       "phillies": {
         "team_id": 143,
         "side": "home",
-        "score": null,
+        "score": 4,
         "probable_pitcher": {
           "id": 605400,
           "name": "Aaron Nola"
         },
         "league_record": {
           "wins": 40,
-          "losses": 33,
+          "losses": 35,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".533"
         }
       },
       "opponent": {
@@ -8336,16 +8336,16 @@
         "side": "away",
         "name": "New York Mets",
         "abbr": "NYM",
-        "score": null,
+        "score": 6,
         "probable_pitcher": {
           "id": 640455,
           "name": "Sean Manaea"
         },
         "league_record": {
-          "wins": 32,
+          "wins": 34,
           "losses": 41,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".453"
         }
       },
       "teams": {
@@ -8353,7 +8353,7 @@
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
+          "score": 4,
           "is_winner": false,
           "probable_pitcher": {
             "id": 605400,
@@ -8361,26 +8361,26 @@
           },
           "league_record": {
             "wins": 40,
-            "losses": 33,
+            "losses": 35,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".533"
           }
         },
         "away": {
           "team_id": 121,
           "name": "New York Mets",
           "abbr": "NYM",
-          "score": null,
-          "is_winner": false,
+          "score": 6,
+          "is_winner": true,
           "probable_pitcher": {
             "id": 640455,
             "name": "Sean Manaea"
           },
           "league_record": {
-            "wins": 32,
+            "wins": 34,
             "losses": 41,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".453"
           }
         }
       },
@@ -8389,22 +8389,22 @@
         "name": "Citizens Bank Park"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 4,
+        "opponent": 6,
+        "home": 4,
+        "away": 6
       },
-      "result": null,
+      "result": "L",
       "series": {
         "game_number": 1,
         "total_games": 3,
-        "label": "Regular Season",
+        "label": "NYM leads 1-0",
         "description": "Regular Season"
       },
       "description": null,
@@ -8432,16 +8432,16 @@
       "phillies": {
         "team_id": 143,
         "side": "home",
-        "score": null,
+        "score": 15,
         "probable_pitcher": {
           "id": 650911,
           "name": "Cristopher Sánchez"
         },
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 41,
+          "losses": 35,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".539"
         }
       },
       "opponent": {
@@ -8449,16 +8449,16 @@
         "side": "away",
         "name": "New York Mets",
         "abbr": "NYM",
-        "score": null,
+        "score": 3,
         "probable_pitcher": {
           "id": 642547,
           "name": "Freddy Peralta"
         },
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 34,
+          "losses": 42,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".447"
         }
       },
       "teams": {
@@ -8466,34 +8466,34 @@
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
-          "is_winner": false,
+          "score": 15,
+          "is_winner": true,
           "probable_pitcher": {
             "id": 650911,
             "name": "Cristopher Sánchez"
           },
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 41,
+            "losses": 35,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".539"
           }
         },
         "away": {
           "team_id": 121,
           "name": "New York Mets",
           "abbr": "NYM",
-          "score": null,
+          "score": 3,
           "is_winner": false,
           "probable_pitcher": {
             "id": 642547,
             "name": "Freddy Peralta"
           },
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 34,
+            "losses": 42,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".447"
           }
         }
       },
@@ -8502,22 +8502,22 @@
         "name": "Citizens Bank Park"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 15,
+        "opponent": 3,
+        "home": 15,
+        "away": 3
       },
-      "result": null,
+      "result": "W",
       "series": {
         "game_number": 2,
         "total_games": 3,
-        "label": "Regular Season",
+        "label": "Series tied 1-1",
         "description": "Regular Season"
       },
       "description": null,
@@ -8545,16 +8545,16 @@
       "phillies": {
         "team_id": 143,
         "side": "home",
-        "score": null,
+        "score": 6,
         "probable_pitcher": {
           "id": 554430,
           "name": "Zack Wheeler"
         },
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 42,
+          "losses": 35,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".545"
         }
       },
       "opponent": {
@@ -8562,13 +8562,16 @@
         "side": "away",
         "name": "New York Mets",
         "abbr": "NYM",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 2,
+        "probable_pitcher": {
+          "id": 656849,
+          "name": "David Peterson"
+        },
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 34,
+          "losses": 43,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".442"
         }
       },
       "teams": {
@@ -8576,31 +8579,34 @@
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
-          "is_winner": false,
+          "score": 6,
+          "is_winner": true,
           "probable_pitcher": {
             "id": 554430,
             "name": "Zack Wheeler"
           },
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 42,
+            "losses": 35,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".545"
           }
         },
         "away": {
           "team_id": 121,
           "name": "New York Mets",
           "abbr": "NYM",
-          "score": null,
+          "score": 2,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 656849,
+            "name": "David Peterson"
+          },
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 34,
+            "losses": 43,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".442"
           }
         }
       },
@@ -8609,22 +8615,22 @@
         "name": "Citizens Bank Park"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 6,
+        "opponent": 2,
+        "home": 6,
+        "away": 2
       },
-      "result": null,
+      "result": "W",
       "series": {
         "game_number": 3,
         "total_games": 3,
-        "label": "Regular Season",
+        "label": "PHI wins 2-1",
         "description": "Regular Season"
       },
       "description": null,
@@ -8652,13 +8658,16 @@
       "phillies": {
         "team_id": 143,
         "side": "away",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 1,
+        "probable_pitcher": {
+          "id": 641835,
+          "name": "Tim Mayza"
+        },
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 42,
+          "losses": 36,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".538"
         }
       },
       "opponent": {
@@ -8666,13 +8675,16 @@
         "side": "home",
         "name": "Washington Nationals",
         "abbr": "WSH",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 4,
+        "probable_pitcher": {
+          "id": 656492,
+          "name": "Foster Griffin"
+        },
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 41,
+          "losses": 38,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".519"
         }
       },
       "teams": {
@@ -8680,28 +8692,34 @@
           "team_id": 120,
           "name": "Washington Nationals",
           "abbr": "WSH",
-          "score": null,
-          "is_winner": false,
-          "probable_pitcher": null,
+          "score": 4,
+          "is_winner": true,
+          "probable_pitcher": {
+            "id": 656492,
+            "name": "Foster Griffin"
+          },
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 41,
+            "losses": 38,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".519"
           }
         },
         "away": {
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
+          "score": 1,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 641835,
+            "name": "Tim Mayza"
+          },
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 42,
+            "losses": 36,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".538"
           }
         }
       },
@@ -8710,22 +8728,22 @@
         "name": "Nationals Park"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 1,
+        "opponent": 4,
+        "home": 4,
+        "away": 1
       },
-      "result": null,
+      "result": "L",
       "series": {
         "game_number": 1,
         "total_games": 4,
-        "label": "Regular Season",
+        "label": "WSH leads 1-0",
         "description": "Regular Season"
       },
       "description": null,
@@ -8752,13 +8770,16 @@
       "phillies": {
         "team_id": 143,
         "side": "away",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 14,
+        "probable_pitcher": {
+          "id": 666200,
+          "name": "Jesús Luzardo"
+        },
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 43,
+          "losses": 36,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".544"
         }
       },
       "opponent": {
@@ -8766,13 +8787,16 @@
         "side": "home",
         "name": "Washington Nationals",
         "abbr": "WSH",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 9,
+        "probable_pitcher": {
+          "id": 676571,
+          "name": "PJ Poulin"
+        },
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 41,
+          "losses": 39,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".513"
         }
       },
       "teams": {
@@ -8780,28 +8804,34 @@
           "team_id": 120,
           "name": "Washington Nationals",
           "abbr": "WSH",
-          "score": null,
+          "score": 9,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 676571,
+            "name": "PJ Poulin"
+          },
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 41,
+            "losses": 39,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".513"
           }
         },
         "away": {
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
-          "is_winner": false,
-          "probable_pitcher": null,
+          "score": 14,
+          "is_winner": true,
+          "probable_pitcher": {
+            "id": 666200,
+            "name": "Jesús Luzardo"
+          },
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 43,
+            "losses": 36,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".544"
           }
         }
       },
@@ -8810,22 +8840,22 @@
         "name": "Nationals Park"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 14,
+        "opponent": 9,
+        "home": 9,
+        "away": 14
       },
-      "result": null,
+      "result": "W",
       "series": {
         "game_number": 2,
         "total_games": 4,
-        "label": "Regular Season",
+        "label": "Series tied 1-1",
         "description": "Regular Season"
       },
       "description": null,
@@ -8852,13 +8882,16 @@
       "phillies": {
         "team_id": 143,
         "side": "away",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 5,
+        "probable_pitcher": {
+          "id": 605400,
+          "name": "Aaron Nola"
+        },
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 44,
+          "losses": 36,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".550"
         }
       },
       "opponent": {
@@ -8866,13 +8899,16 @@
         "side": "home",
         "name": "Washington Nationals",
         "abbr": "WSH",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 4,
+        "probable_pitcher": {
+          "id": 687223,
+          "name": "Carson Palmquist"
+        },
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 41,
+          "losses": 40,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".506"
         }
       },
       "teams": {
@@ -8880,28 +8916,34 @@
           "team_id": 120,
           "name": "Washington Nationals",
           "abbr": "WSH",
-          "score": null,
+          "score": 4,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 687223,
+            "name": "Carson Palmquist"
+          },
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 41,
+            "losses": 40,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".506"
           }
         },
         "away": {
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
-          "is_winner": false,
-          "probable_pitcher": null,
+          "score": 5,
+          "is_winner": true,
+          "probable_pitcher": {
+            "id": 605400,
+            "name": "Aaron Nola"
+          },
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 44,
+            "losses": 36,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".550"
           }
         }
       },
@@ -8910,22 +8952,22 @@
         "name": "Nationals Park"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 5,
+        "opponent": 4,
+        "home": 4,
+        "away": 5
       },
-      "result": null,
+      "result": "W",
       "series": {
         "game_number": 3,
         "total_games": 4,
-        "label": "Regular Season",
+        "label": "PHI leads 2-1",
         "description": "Regular Season"
       },
       "description": null,
@@ -8952,13 +8994,16 @@
       "phillies": {
         "team_id": 143,
         "side": "away",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 10,
+        "probable_pitcher": {
+          "id": 650911,
+          "name": "Cristopher Sánchez"
+        },
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 45,
+          "losses": 36,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".556"
         }
       },
       "opponent": {
@@ -8966,13 +9011,16 @@
         "side": "home",
         "name": "Washington Nationals",
         "abbr": "WSH",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 5,
+        "probable_pitcher": {
+          "id": 676917,
+          "name": "Cade Cavalli"
+        },
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 41,
+          "losses": 41,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -8980,28 +9028,34 @@
           "team_id": 120,
           "name": "Washington Nationals",
           "abbr": "WSH",
-          "score": null,
+          "score": 5,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 676917,
+            "name": "Cade Cavalli"
+          },
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 41,
+            "losses": 41,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".500"
           }
         },
         "away": {
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
-          "is_winner": false,
-          "probable_pitcher": null,
+          "score": 10,
+          "is_winner": true,
+          "probable_pitcher": {
+            "id": 650911,
+            "name": "Cristopher Sánchez"
+          },
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 45,
+            "losses": 36,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".556"
           }
         }
       },
@@ -9010,22 +9064,22 @@
         "name": "Nationals Park"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 10,
+        "opponent": 5,
+        "home": 5,
+        "away": 10
       },
-      "result": null,
+      "result": "W",
       "series": {
         "game_number": 4,
         "total_games": 4,
-        "label": "Regular Season",
+        "label": "PHI wins 3-1",
         "description": "Regular Season"
       },
       "description": null,
@@ -9052,13 +9106,16 @@
       "phillies": {
         "team_id": 143,
         "side": "away",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 2,
+        "probable_pitcher": {
+          "id": 554430,
+          "name": "Zack Wheeler"
+        },
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 36,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".561"
         }
       },
       "opponent": {
@@ -9066,13 +9123,16 @@
         "side": "home",
         "name": "New York Mets",
         "abbr": "NYM",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 1,
+        "probable_pitcher": {
+          "id": 804267,
+          "name": "Zach Thornton"
+        },
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 34,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".415"
         }
       },
       "teams": {
@@ -9080,28 +9140,34 @@
           "team_id": 121,
           "name": "New York Mets",
           "abbr": "NYM",
-          "score": null,
+          "score": 1,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 804267,
+            "name": "Zach Thornton"
+          },
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 34,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".415"
           }
         },
         "away": {
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
-          "is_winner": false,
-          "probable_pitcher": null,
+          "score": 2,
+          "is_winner": true,
+          "probable_pitcher": {
+            "id": 554430,
+            "name": "Zack Wheeler"
+          },
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 36,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".561"
           }
         }
       },
@@ -9110,22 +9176,22 @@
         "name": "Citi Field"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 2,
+        "opponent": 1,
+        "home": 1,
+        "away": 2
       },
-      "result": null,
+      "result": "W",
       "series": {
         "game_number": 1,
         "total_games": 3,
-        "label": "Regular Season",
+        "label": "PHI leads 1-0",
         "description": "Regular Season"
       },
       "description": null,
@@ -9153,13 +9219,16 @@
       "phillies": {
         "team_id": 143,
         "side": "away",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 2,
+        "probable_pitcher": {
+          "id": 641835,
+          "name": "Tim Mayza"
+        },
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -9167,13 +9236,16 @@
         "side": "home",
         "name": "New York Mets",
         "abbr": "NYM",
-        "score": null,
-        "probable_pitcher": null,
+        "score": 6,
+        "probable_pitcher": {
+          "id": 681035,
+          "name": "Christian Scott"
+        },
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -9181,28 +9253,34 @@
           "team_id": 121,
           "name": "New York Mets",
           "abbr": "NYM",
-          "score": null,
-          "is_winner": false,
-          "probable_pitcher": null,
+          "score": 6,
+          "is_winner": true,
+          "probable_pitcher": {
+            "id": 681035,
+            "name": "Christian Scott"
+          },
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".422"
           }
         },
         "away": {
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
+          "score": 2,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 641835,
+            "name": "Tim Mayza"
+          },
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -9211,22 +9289,22 @@
         "name": "Citi Field"
       },
       "status": {
-        "abstract": "Preview",
-        "detailed": "Scheduled",
-        "code": "S",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 2,
+        "opponent": 6,
+        "home": 6,
+        "away": 2
       },
-      "result": null,
+      "result": "L",
       "series": {
         "game_number": 2,
         "total_games": 3,
-        "label": "Regular Season",
+        "label": "Series tied 1-1",
         "description": "Regular Season"
       },
       "description": null,
@@ -9256,12 +9334,15 @@
         "team_id": 143,
         "side": "away",
         "score": null,
-        "probable_pitcher": null,
+        "probable_pitcher": {
+          "id": 666200,
+          "name": "Jesús Luzardo"
+        },
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -9270,12 +9351,15 @@
         "name": "New York Mets",
         "abbr": "NYM",
         "score": null,
-        "probable_pitcher": null,
+        "probable_pitcher": {
+          "id": 672335,
+          "name": "Cionel Pérez"
+        },
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -9285,12 +9369,15 @@
           "abbr": "NYM",
           "score": null,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 672335,
+            "name": "Cionel Pérez"
+          },
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".422"
           }
         },
         "away": {
@@ -9299,12 +9386,15 @@
           "abbr": "PHI",
           "score": null,
           "is_winner": false,
-          "probable_pitcher": null,
+          "probable_pitcher": {
+            "id": 666200,
+            "name": "Jesús Luzardo"
+          },
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -9328,7 +9418,7 @@
       "series": {
         "game_number": 3,
         "total_games": 3,
-        "label": "Regular Season",
+        "label": "Series tied 1-1",
         "description": "Regular Season"
       },
       "description": null,
@@ -9360,10 +9450,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -9374,10 +9464,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 37,
-          "losses": 37,
+          "wins": 41,
+          "losses": 42,
           "ties": 0,
-          "pct": ".500"
+          "pct": ".494"
         }
       },
       "teams": {
@@ -9389,10 +9479,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -9403,10 +9493,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 37,
-            "losses": 37,
+            "wins": 41,
+            "losses": 42,
             "ties": 0,
-            "pct": ".500"
+            "pct": ".494"
           }
         }
       },
@@ -9459,10 +9549,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -9473,10 +9563,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 37,
-          "losses": 37,
+          "wins": 41,
+          "losses": 42,
           "ties": 0,
-          "pct": ".500"
+          "pct": ".494"
         }
       },
       "teams": {
@@ -9488,10 +9578,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -9502,10 +9592,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 37,
-            "losses": 37,
+            "wins": 41,
+            "losses": 42,
             "ties": 0,
-            "pct": ".500"
+            "pct": ".494"
           }
         }
       },
@@ -9558,10 +9648,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -9572,10 +9662,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 37,
-          "losses": 37,
+          "wins": 41,
+          "losses": 42,
           "ties": 0,
-          "pct": ".500"
+          "pct": ".494"
         }
       },
       "teams": {
@@ -9587,10 +9677,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -9601,10 +9691,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 37,
-            "losses": 37,
+            "wins": 41,
+            "losses": 42,
             "ties": 0,
-            "pct": ".500"
+            "pct": ".494"
           }
         }
       },
@@ -9657,10 +9747,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -9671,10 +9761,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 37,
-          "losses": 37,
+          "wins": 41,
+          "losses": 42,
           "ties": 0,
-          "pct": ".500"
+          "pct": ".494"
         }
       },
       "teams": {
@@ -9686,10 +9776,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -9700,10 +9790,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 37,
-            "losses": 37,
+            "wins": 41,
+            "losses": 42,
             "ties": 0,
-            "pct": ".500"
+            "pct": ".494"
           }
         }
       },
@@ -9757,10 +9847,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -9771,10 +9861,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 29,
-          "losses": 45,
+          "wins": 34,
+          "losses": 50,
           "ties": 0,
-          "pct": ".392"
+          "pct": ".405"
         }
       },
       "teams": {
@@ -9786,10 +9876,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 29,
-            "losses": 45,
+            "wins": 34,
+            "losses": 50,
             "ties": 0,
-            "pct": ".392"
+            "pct": ".405"
           }
         },
         "away": {
@@ -9800,10 +9890,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -9857,10 +9947,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -9871,10 +9961,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 29,
-          "losses": 45,
+          "wins": 34,
+          "losses": 50,
           "ties": 0,
-          "pct": ".392"
+          "pct": ".405"
         }
       },
       "teams": {
@@ -9886,10 +9976,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 29,
-            "losses": 45,
+            "wins": 34,
+            "losses": 50,
             "ties": 0,
-            "pct": ".392"
+            "pct": ".405"
           }
         },
         "away": {
@@ -9900,10 +9990,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -9958,10 +10048,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -9972,10 +10062,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 29,
-          "losses": 45,
+          "wins": 34,
+          "losses": 50,
           "ties": 0,
-          "pct": ".392"
+          "pct": ".405"
         }
       },
       "teams": {
@@ -9987,10 +10077,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 29,
-            "losses": 45,
+            "wins": 34,
+            "losses": 50,
             "ties": 0,
-            "pct": ".392"
+            "pct": ".405"
           }
         },
         "away": {
@@ -10001,10 +10091,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -10059,10 +10149,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10073,10 +10163,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 35,
-          "losses": 37,
+          "wins": 39,
+          "losses": 42,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".481"
         }
       },
       "teams": {
@@ -10088,10 +10178,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 35,
-            "losses": 37,
+            "wins": 39,
+            "losses": 42,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".481"
           }
         },
         "away": {
@@ -10102,10 +10192,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -10158,10 +10248,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10172,10 +10262,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 35,
-          "losses": 37,
+          "wins": 39,
+          "losses": 42,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".481"
         }
       },
       "teams": {
@@ -10187,10 +10277,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 35,
-            "losses": 37,
+            "wins": 39,
+            "losses": 42,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".481"
           }
         },
         "away": {
@@ -10201,10 +10291,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -10257,10 +10347,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10271,10 +10361,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 35,
-          "losses": 37,
+          "wins": 39,
+          "losses": 42,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".481"
         }
       },
       "teams": {
@@ -10286,10 +10376,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 35,
-            "losses": 37,
+            "wins": 39,
+            "losses": 42,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".481"
           }
         },
         "away": {
@@ -10300,10 +10390,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -10356,10 +10446,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10370,10 +10460,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 30,
-          "losses": 43,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".411"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -10385,10 +10475,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 30,
-            "losses": 43,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".411"
+            "pct": ".422"
           }
         },
         "away": {
@@ -10399,10 +10489,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -10456,10 +10546,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10470,10 +10560,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 30,
-          "losses": 43,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".411"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -10485,10 +10575,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 30,
-            "losses": 43,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".411"
+            "pct": ".422"
           }
         },
         "away": {
@@ -10499,10 +10589,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -10556,10 +10646,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10570,10 +10660,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 30,
-          "losses": 43,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".411"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -10585,10 +10675,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 30,
-            "losses": 43,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".411"
+            "pct": ".422"
           }
         },
         "away": {
@@ -10599,10 +10689,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -10657,10 +10747,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10671,10 +10761,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -10686,10 +10776,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -10700,10 +10790,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".422"
           }
         }
       },
@@ -10758,10 +10848,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10772,10 +10862,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -10787,10 +10877,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -10801,10 +10891,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".422"
           }
         }
       },
@@ -10860,10 +10950,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10874,10 +10964,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -10889,10 +10979,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -10903,10 +10993,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".422"
           }
         }
       },
@@ -10962,10 +11052,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -10976,10 +11066,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 47,
-          "losses": 27,
+          "wins": 52,
+          "losses": 30,
           "ties": 0,
-          "pct": ".635"
+          "pct": ".634"
         }
       },
       "teams": {
@@ -10991,10 +11081,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -11005,10 +11095,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 47,
-            "losses": 27,
+            "wins": 52,
+            "losses": 30,
             "ties": 0,
-            "pct": ".635"
+            "pct": ".634"
           }
         }
       },
@@ -11062,10 +11152,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11076,10 +11166,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 47,
-          "losses": 27,
+          "wins": 52,
+          "losses": 30,
           "ties": 0,
-          "pct": ".635"
+          "pct": ".634"
         }
       },
       "teams": {
@@ -11091,10 +11181,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -11105,10 +11195,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 47,
-            "losses": 27,
+            "wins": 52,
+            "losses": 30,
             "ties": 0,
-            "pct": ".635"
+            "pct": ".634"
           }
         }
       },
@@ -11162,10 +11252,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11176,10 +11266,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 47,
-          "losses": 27,
+          "wins": 52,
+          "losses": 30,
           "ties": 0,
-          "pct": ".635"
+          "pct": ".634"
         }
       },
       "teams": {
@@ -11191,10 +11281,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -11205,10 +11295,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 47,
-            "losses": 27,
+            "wins": 52,
+            "losses": 30,
             "ties": 0,
-            "pct": ".635"
+            "pct": ".634"
           }
         }
       },
@@ -11262,10 +11352,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11276,10 +11366,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 44,
-          "losses": 27,
+          "wins": 48,
+          "losses": 34,
           "ties": 0,
-          "pct": ".620"
+          "pct": ".585"
         }
       },
       "teams": {
@@ -11291,10 +11381,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -11305,10 +11395,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 44,
-            "losses": 27,
+            "wins": 48,
+            "losses": 34,
             "ties": 0,
-            "pct": ".620"
+            "pct": ".585"
           }
         }
       },
@@ -11363,10 +11453,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11377,10 +11467,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 44,
-          "losses": 27,
+          "wins": 48,
+          "losses": 34,
           "ties": 0,
-          "pct": ".620"
+          "pct": ".585"
         }
       },
       "teams": {
@@ -11392,10 +11482,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -11406,10 +11496,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 44,
-            "losses": 27,
+            "wins": 48,
+            "losses": 34,
             "ties": 0,
-            "pct": ".620"
+            "pct": ".585"
           }
         }
       },
@@ -11464,10 +11554,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11478,10 +11568,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 44,
-          "losses": 27,
+          "wins": 48,
+          "losses": 34,
           "ties": 0,
-          "pct": ".620"
+          "pct": ".585"
         }
       },
       "teams": {
@@ -11493,10 +11583,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -11507,10 +11597,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 44,
-            "losses": 27,
+            "wins": 48,
+            "losses": 34,
             "ties": 0,
-            "pct": ".620"
+            "pct": ".585"
           }
         }
       },
@@ -11565,10 +11655,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11579,10 +11669,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 36,
-          "losses": 38,
+          "wins": 44,
+          "losses": 39,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".530"
         }
       },
       "teams": {
@@ -11594,10 +11684,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 36,
-            "losses": 38,
+            "wins": 44,
+            "losses": 39,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".530"
           }
         },
         "away": {
@@ -11608,10 +11698,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -11665,10 +11755,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11679,10 +11769,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 36,
-          "losses": 38,
+          "wins": 44,
+          "losses": 39,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".530"
         }
       },
       "teams": {
@@ -11694,10 +11784,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 36,
-            "losses": 38,
+            "wins": 44,
+            "losses": 39,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".530"
           }
         },
         "away": {
@@ -11708,10 +11798,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -11765,10 +11855,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11779,10 +11869,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 36,
-          "losses": 38,
+          "wins": 44,
+          "losses": 39,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".530"
         }
       },
       "teams": {
@@ -11794,10 +11884,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 36,
-            "losses": 38,
+            "wins": 44,
+            "losses": 39,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".530"
           }
         },
         "away": {
@@ -11808,10 +11898,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -11866,10 +11956,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11880,10 +11970,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 34,
-          "losses": 40,
+          "wins": 39,
+          "losses": 45,
           "ties": 0,
-          "pct": ".459"
+          "pct": ".464"
         }
       },
       "teams": {
@@ -11895,10 +11985,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 34,
-            "losses": 40,
+            "wins": 39,
+            "losses": 45,
             "ties": 0,
-            "pct": ".459"
+            "pct": ".464"
           }
         },
         "away": {
@@ -11909,10 +11999,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -11966,10 +12056,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -11980,10 +12070,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 34,
-          "losses": 40,
+          "wins": 39,
+          "losses": 45,
           "ties": 0,
-          "pct": ".459"
+          "pct": ".464"
         }
       },
       "teams": {
@@ -11995,10 +12085,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 34,
-            "losses": 40,
+            "wins": 39,
+            "losses": 45,
             "ties": 0,
-            "pct": ".459"
+            "pct": ".464"
           }
         },
         "away": {
@@ -12009,10 +12099,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -12066,10 +12156,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12080,10 +12170,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 34,
-          "losses": 40,
+          "wins": 39,
+          "losses": 45,
           "ties": 0,
-          "pct": ".459"
+          "pct": ".464"
         }
       },
       "teams": {
@@ -12095,10 +12185,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 34,
-            "losses": 40,
+            "wins": 39,
+            "losses": 45,
             "ties": 0,
-            "pct": ".459"
+            "pct": ".464"
           }
         },
         "away": {
@@ -12109,10 +12199,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -12167,10 +12257,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12181,10 +12271,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 42,
+          "losses": 42,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -12196,10 +12286,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -12210,10 +12300,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 42,
+            "losses": 42,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".500"
           }
         }
       },
@@ -12267,10 +12357,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12281,10 +12371,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 42,
+          "losses": 42,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -12296,10 +12386,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -12310,10 +12400,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 42,
+            "losses": 42,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".500"
           }
         }
       },
@@ -12367,10 +12457,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12381,10 +12471,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 42,
+          "losses": 42,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -12396,10 +12486,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -12410,10 +12500,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 42,
+            "losses": 42,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".500"
           }
         }
       },
@@ -12467,10 +12557,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12481,10 +12571,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 42,
+          "losses": 42,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -12496,10 +12586,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -12510,10 +12600,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 42,
+            "losses": 42,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".500"
           }
         }
       },
@@ -12567,10 +12657,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12581,10 +12671,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 35,
-          "losses": 38,
+          "wins": 39,
+          "losses": 44,
           "ties": 0,
-          "pct": ".479"
+          "pct": ".470"
         }
       },
       "teams": {
@@ -12596,10 +12686,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -12610,10 +12700,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 35,
-            "losses": 38,
+            "wins": 39,
+            "losses": 44,
             "ties": 0,
-            "pct": ".479"
+            "pct": ".470"
           }
         }
       },
@@ -12667,10 +12757,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12681,10 +12771,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 35,
-          "losses": 38,
+          "wins": 39,
+          "losses": 44,
           "ties": 0,
-          "pct": ".479"
+          "pct": ".470"
         }
       },
       "teams": {
@@ -12696,10 +12786,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -12710,10 +12800,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 35,
-            "losses": 38,
+            "wins": 39,
+            "losses": 44,
             "ties": 0,
-            "pct": ".479"
+            "pct": ".470"
           }
         }
       },
@@ -12767,10 +12857,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12781,10 +12871,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 35,
-          "losses": 38,
+          "wins": 39,
+          "losses": 44,
           "ties": 0,
-          "pct": ".479"
+          "pct": ".470"
         }
       },
       "teams": {
@@ -12796,10 +12886,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -12810,10 +12900,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 35,
-            "losses": 38,
+            "wins": 39,
+            "losses": 44,
             "ties": 0,
-            "pct": ".479"
+            "pct": ".470"
           }
         }
       },
@@ -12868,10 +12958,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12882,10 +12972,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 31,
+          "wins": 42,
+          "losses": 38,
           "ties": 0,
-          "pct": ".563"
+          "pct": ".525"
         }
       },
       "teams": {
@@ -12897,10 +12987,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 31,
+            "wins": 42,
+            "losses": 38,
             "ties": 0,
-            "pct": ".563"
+            "pct": ".525"
           }
         },
         "away": {
@@ -12911,10 +13001,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -12967,10 +13057,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -12981,10 +13071,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 31,
+          "wins": 42,
+          "losses": 38,
           "ties": 0,
-          "pct": ".563"
+          "pct": ".525"
         }
       },
       "teams": {
@@ -12996,10 +13086,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 31,
+            "wins": 42,
+            "losses": 38,
             "ties": 0,
-            "pct": ".563"
+            "pct": ".525"
           }
         },
         "away": {
@@ -13010,10 +13100,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -13066,10 +13156,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13080,10 +13170,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 31,
+          "wins": 42,
+          "losses": 38,
           "ties": 0,
-          "pct": ".563"
+          "pct": ".525"
         }
       },
       "teams": {
@@ -13095,10 +13185,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 31,
+            "wins": 42,
+            "losses": 38,
             "ties": 0,
-            "pct": ".563"
+            "pct": ".525"
           }
         },
         "away": {
@@ -13109,10 +13199,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -13166,10 +13256,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13180,10 +13270,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 35,
-          "losses": 40,
+          "wins": 39,
+          "losses": 45,
           "ties": 0,
-          "pct": ".467"
+          "pct": ".464"
         }
       },
       "teams": {
@@ -13195,10 +13285,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 35,
-            "losses": 40,
+            "wins": 39,
+            "losses": 45,
             "ties": 0,
-            "pct": ".467"
+            "pct": ".464"
           }
         },
         "away": {
@@ -13209,10 +13299,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -13266,10 +13356,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13280,10 +13370,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 35,
-          "losses": 40,
+          "wins": 39,
+          "losses": 45,
           "ties": 0,
-          "pct": ".467"
+          "pct": ".464"
         }
       },
       "teams": {
@@ -13295,10 +13385,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 35,
-            "losses": 40,
+            "wins": 39,
+            "losses": 45,
             "ties": 0,
-            "pct": ".467"
+            "pct": ".464"
           }
         },
         "away": {
@@ -13309,10 +13399,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -13366,10 +13456,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13380,10 +13470,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 35,
-          "losses": 40,
+          "wins": 39,
+          "losses": 45,
           "ties": 0,
-          "pct": ".467"
+          "pct": ".464"
         }
       },
       "teams": {
@@ -13395,10 +13485,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 35,
-            "losses": 40,
+            "wins": 39,
+            "losses": 45,
             "ties": 0,
-            "pct": ".467"
+            "pct": ".464"
           }
         },
         "away": {
@@ -13409,10 +13499,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -13467,10 +13557,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13481,10 +13571,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 36,
-          "losses": 38,
+          "wins": 44,
+          "losses": 39,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".530"
         }
       },
       "teams": {
@@ -13496,10 +13586,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -13510,10 +13600,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 36,
-            "losses": 38,
+            "wins": 44,
+            "losses": 39,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".530"
           }
         }
       },
@@ -13567,10 +13657,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13581,10 +13671,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 36,
-          "losses": 38,
+          "wins": 44,
+          "losses": 39,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".530"
         }
       },
       "teams": {
@@ -13596,10 +13686,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -13610,10 +13700,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 36,
-            "losses": 38,
+            "wins": 44,
+            "losses": 39,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".530"
           }
         }
       },
@@ -13667,10 +13757,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13681,10 +13771,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 36,
-          "losses": 38,
+          "wins": 44,
+          "losses": 39,
           "ties": 0,
-          "pct": ".486"
+          "pct": ".530"
         }
       },
       "teams": {
@@ -13696,10 +13786,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -13710,10 +13800,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 36,
-            "losses": 38,
+            "wins": 44,
+            "losses": 39,
             "ties": 0,
-            "pct": ".486"
+            "pct": ".530"
           }
         }
       },
@@ -13767,10 +13857,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13781,10 +13871,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 31,
+          "wins": 42,
+          "losses": 38,
           "ties": 0,
-          "pct": ".563"
+          "pct": ".525"
         }
       },
       "teams": {
@@ -13796,10 +13886,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -13810,10 +13900,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 31,
+            "wins": 42,
+            "losses": 38,
             "ties": 0,
-            "pct": ".563"
+            "pct": ".525"
           }
         }
       },
@@ -13866,10 +13956,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13880,10 +13970,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 31,
+          "wins": 42,
+          "losses": 38,
           "ties": 0,
-          "pct": ".563"
+          "pct": ".525"
         }
       },
       "teams": {
@@ -13895,10 +13985,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -13909,10 +13999,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 31,
+            "wins": 42,
+            "losses": 38,
             "ties": 0,
-            "pct": ".563"
+            "pct": ".525"
           }
         }
       },
@@ -13965,10 +14055,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -13979,10 +14069,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 31,
+          "wins": 42,
+          "losses": 38,
           "ties": 0,
-          "pct": ".563"
+          "pct": ".525"
         }
       },
       "teams": {
@@ -13994,10 +14084,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -14008,10 +14098,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 31,
+            "wins": 42,
+            "losses": 38,
             "ties": 0,
-            "pct": ".563"
+            "pct": ".525"
           }
         }
       },
@@ -14065,10 +14155,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14079,10 +14169,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 38,
-          "losses": 36,
+          "wins": 42,
+          "losses": 42,
           "ties": 0,
-          "pct": ".514"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -14094,10 +14184,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 38,
-            "losses": 36,
+            "wins": 42,
+            "losses": 42,
             "ties": 0,
-            "pct": ".514"
+            "pct": ".500"
           }
         },
         "away": {
@@ -14108,10 +14198,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -14164,10 +14254,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14178,10 +14268,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 38,
-          "losses": 36,
+          "wins": 42,
+          "losses": 42,
           "ties": 0,
-          "pct": ".514"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -14193,10 +14283,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 38,
-            "losses": 36,
+            "wins": 42,
+            "losses": 42,
             "ties": 0,
-            "pct": ".514"
+            "pct": ".500"
           }
         },
         "away": {
@@ -14207,10 +14297,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -14263,10 +14353,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14277,10 +14367,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 38,
-          "losses": 36,
+          "wins": 42,
+          "losses": 42,
           "ties": 0,
-          "pct": ".514"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -14292,10 +14382,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 38,
-            "losses": 36,
+            "wins": 42,
+            "losses": 42,
             "ties": 0,
-            "pct": ".514"
+            "pct": ".500"
           }
         },
         "away": {
@@ -14306,10 +14396,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -14363,10 +14453,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14377,10 +14467,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 30,
-          "losses": 44,
+          "wins": 34,
+          "losses": 49,
           "ties": 0,
-          "pct": ".405"
+          "pct": ".410"
         }
       },
       "teams": {
@@ -14392,10 +14482,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 30,
-            "losses": 44,
+            "wins": 34,
+            "losses": 49,
             "ties": 0,
-            "pct": ".405"
+            "pct": ".410"
           }
         },
         "away": {
@@ -14406,10 +14496,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -14462,10 +14552,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14476,10 +14566,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 30,
-          "losses": 44,
+          "wins": 34,
+          "losses": 49,
           "ties": 0,
-          "pct": ".405"
+          "pct": ".410"
         }
       },
       "teams": {
@@ -14491,10 +14581,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 30,
-            "losses": 44,
+            "wins": 34,
+            "losses": 49,
             "ties": 0,
-            "pct": ".405"
+            "pct": ".410"
           }
         },
         "away": {
@@ -14505,10 +14595,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -14561,10 +14651,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14575,10 +14665,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 30,
-          "losses": 44,
+          "wins": 34,
+          "losses": 49,
           "ties": 0,
-          "pct": ".405"
+          "pct": ".410"
         }
       },
       "teams": {
@@ -14590,10 +14680,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 30,
-            "losses": 44,
+            "wins": 34,
+            "losses": 49,
             "ties": 0,
-            "pct": ".405"
+            "pct": ".410"
           }
         },
         "away": {
@@ -14604,10 +14694,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -14661,10 +14751,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14675,10 +14765,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 37,
-          "losses": 36,
+          "wins": 41,
+          "losses": 41,
           "ties": 0,
-          "pct": ".507"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -14690,10 +14780,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 37,
-            "losses": 36,
+            "wins": 41,
+            "losses": 41,
             "ties": 0,
-            "pct": ".507"
+            "pct": ".500"
           }
         },
         "away": {
@@ -14704,10 +14794,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -14760,10 +14850,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14774,10 +14864,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 37,
-          "losses": 36,
+          "wins": 41,
+          "losses": 41,
           "ties": 0,
-          "pct": ".507"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -14789,10 +14879,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 37,
-            "losses": 36,
+            "wins": 41,
+            "losses": 41,
             "ties": 0,
-            "pct": ".507"
+            "pct": ".500"
           }
         },
         "away": {
@@ -14803,10 +14893,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -14859,10 +14949,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14873,10 +14963,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 37,
-          "losses": 36,
+          "wins": 41,
+          "losses": 41,
           "ties": 0,
-          "pct": ".507"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -14888,10 +14978,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 37,
-            "losses": 36,
+            "wins": 41,
+            "losses": 41,
             "ties": 0,
-            "pct": ".507"
+            "pct": ".500"
           }
         },
         "away": {
@@ -14902,10 +14992,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -14959,10 +15049,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -14973,10 +15063,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 46,
-          "losses": 25,
+          "wins": 49,
+          "losses": 31,
           "ties": 0,
-          "pct": ".648"
+          "pct": ".613"
         }
       },
       "teams": {
@@ -14988,10 +15078,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -15002,10 +15092,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 46,
-            "losses": 25,
+            "wins": 49,
+            "losses": 31,
             "ties": 0,
-            "pct": ".648"
+            "pct": ".613"
           }
         }
       },
@@ -15060,10 +15150,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15074,10 +15164,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 46,
-          "losses": 25,
+          "wins": 49,
+          "losses": 31,
           "ties": 0,
-          "pct": ".648"
+          "pct": ".613"
         }
       },
       "teams": {
@@ -15089,10 +15179,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -15103,10 +15193,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 46,
-            "losses": 25,
+            "wins": 49,
+            "losses": 31,
             "ties": 0,
-            "pct": ".648"
+            "pct": ".613"
           }
         }
       },
@@ -15161,10 +15251,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15175,10 +15265,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 46,
-          "losses": 25,
+          "wins": 49,
+          "losses": 31,
           "ties": 0,
-          "pct": ".648"
+          "pct": ".613"
         }
       },
       "teams": {
@@ -15190,10 +15280,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -15204,10 +15294,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 46,
-            "losses": 25,
+            "wins": 49,
+            "losses": 31,
             "ties": 0,
-            "pct": ".648"
+            "pct": ".613"
           }
         }
       },
@@ -15263,10 +15353,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15277,10 +15367,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 46,
-          "losses": 25,
+          "wins": 49,
+          "losses": 31,
           "ties": 0,
-          "pct": ".648"
+          "pct": ".613"
         }
       },
       "teams": {
@@ -15292,10 +15382,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -15306,10 +15396,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 46,
-            "losses": 25,
+            "wins": 49,
+            "losses": 31,
             "ties": 0,
-            "pct": ".648"
+            "pct": ".613"
           }
         }
       },
@@ -15365,10 +15455,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15379,10 +15469,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 34,
-          "losses": 41,
+          "wins": 41,
+          "losses": 44,
           "ties": 0,
-          "pct": ".453"
+          "pct": ".482"
         }
       },
       "teams": {
@@ -15394,10 +15484,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -15408,10 +15498,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 34,
-            "losses": 41,
+            "wins": 41,
+            "losses": 44,
             "ties": 0,
-            "pct": ".453"
+            "pct": ".482"
           }
         }
       },
@@ -15465,10 +15555,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15479,10 +15569,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 34,
-          "losses": 41,
+          "wins": 41,
+          "losses": 44,
           "ties": 0,
-          "pct": ".453"
+          "pct": ".482"
         }
       },
       "teams": {
@@ -15494,10 +15584,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -15508,10 +15598,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 34,
-            "losses": 41,
+            "wins": 41,
+            "losses": 44,
             "ties": 0,
-            "pct": ".453"
+            "pct": ".482"
           }
         }
       },
@@ -15565,10 +15655,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15579,10 +15669,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 34,
-          "losses": 41,
+          "wins": 41,
+          "losses": 44,
           "ties": 0,
-          "pct": ".453"
+          "pct": ".482"
         }
       },
       "teams": {
@@ -15594,10 +15684,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -15608,10 +15698,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 34,
-            "losses": 41,
+            "wins": 41,
+            "losses": 44,
             "ties": 0,
-            "pct": ".453"
+            "pct": ".482"
           }
         }
       },
@@ -15666,10 +15756,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15680,10 +15770,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 46,
-          "losses": 25,
+          "wins": 49,
+          "losses": 31,
           "ties": 0,
-          "pct": ".648"
+          "pct": ".613"
         }
       },
       "teams": {
@@ -15695,10 +15785,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 46,
-            "losses": 25,
+            "wins": 49,
+            "losses": 31,
             "ties": 0,
-            "pct": ".648"
+            "pct": ".613"
           }
         },
         "away": {
@@ -15709,10 +15799,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -15767,10 +15857,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15781,10 +15871,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 46,
-          "losses": 25,
+          "wins": 49,
+          "losses": 31,
           "ties": 0,
-          "pct": ".648"
+          "pct": ".613"
         }
       },
       "teams": {
@@ -15796,10 +15886,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 46,
-            "losses": 25,
+            "wins": 49,
+            "losses": 31,
             "ties": 0,
-            "pct": ".648"
+            "pct": ".613"
           }
         },
         "away": {
@@ -15810,10 +15900,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -15868,10 +15958,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15882,10 +15972,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 46,
-          "losses": 25,
+          "wins": 49,
+          "losses": 31,
           "ties": 0,
-          "pct": ".648"
+          "pct": ".613"
         }
       },
       "teams": {
@@ -15897,10 +15987,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 46,
-            "losses": 25,
+            "wins": 49,
+            "losses": 31,
             "ties": 0,
-            "pct": ".648"
+            "pct": ".613"
           }
         },
         "away": {
@@ -15911,10 +16001,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -15970,10 +16060,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -15984,10 +16074,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 42,
+          "losses": 42,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -15999,10 +16089,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 42,
+            "losses": 42,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".500"
           }
         },
         "away": {
@@ -16013,10 +16103,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -16070,10 +16160,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16084,10 +16174,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 39,
-          "losses": 35,
+          "wins": 42,
+          "losses": 42,
           "ties": 0,
-          "pct": ".527"
+          "pct": ".500"
         }
       },
       "teams": {
@@ -16099,10 +16189,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 39,
-            "losses": 35,
+            "wins": 42,
+            "losses": 42,
             "ties": 0,
-            "pct": ".527"
+            "pct": ".500"
           }
         },
         "away": {
@@ -16113,10 +16203,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -16170,10 +16260,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16184,10 +16274,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -16199,10 +16289,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".422"
           }
         },
         "away": {
@@ -16213,10 +16303,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -16271,10 +16361,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16285,10 +16375,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -16300,10 +16390,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".422"
           }
         },
         "away": {
@@ -16314,10 +16404,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -16372,10 +16462,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16386,10 +16476,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -16401,10 +16491,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".422"
           }
         },
         "away": {
@@ -16415,10 +16505,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -16474,10 +16564,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16488,10 +16578,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 32,
-          "losses": 41,
+          "wins": 35,
+          "losses": 48,
           "ties": 0,
-          "pct": ".438"
+          "pct": ".422"
         }
       },
       "teams": {
@@ -16503,10 +16593,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 32,
-            "losses": 41,
+            "wins": 35,
+            "losses": 48,
             "ties": 0,
-            "pct": ".438"
+            "pct": ".422"
           }
         },
         "away": {
@@ -16517,10 +16607,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         }
       },
@@ -16576,10 +16666,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16590,10 +16680,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 44,
-          "losses": 26,
+          "wins": 50,
+          "losses": 30,
           "ties": 0,
-          "pct": ".629"
+          "pct": ".625"
         }
       },
       "teams": {
@@ -16605,10 +16695,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -16619,10 +16709,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 44,
-            "losses": 26,
+            "wins": 50,
+            "losses": 30,
             "ties": 0,
-            "pct": ".629"
+            "pct": ".625"
           }
         }
       },
@@ -16675,10 +16765,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16689,10 +16779,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 44,
-          "losses": 26,
+          "wins": 50,
+          "losses": 30,
           "ties": 0,
-          "pct": ".629"
+          "pct": ".625"
         }
       },
       "teams": {
@@ -16704,10 +16794,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -16718,10 +16808,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 44,
-            "losses": 26,
+            "wins": 50,
+            "losses": 30,
             "ties": 0,
-            "pct": ".629"
+            "pct": ".625"
           }
         }
       },
@@ -16774,10 +16864,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16788,10 +16878,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 44,
-          "losses": 26,
+          "wins": 50,
+          "losses": 30,
           "ties": 0,
-          "pct": ".629"
+          "pct": ".625"
         }
       },
       "teams": {
@@ -16803,10 +16893,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -16817,10 +16907,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 44,
-            "losses": 26,
+            "wins": 50,
+            "losses": 30,
             "ties": 0,
-            "pct": ".629"
+            "pct": ".625"
           }
         }
       },
@@ -16873,10 +16963,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16887,10 +16977,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 41,
-          "losses": 29,
+          "wins": 47,
+          "losses": 33,
           "ties": 0,
-          "pct": ".586"
+          "pct": ".588"
         }
       },
       "teams": {
@@ -16902,10 +16992,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -16916,10 +17006,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 41,
-            "losses": 29,
+            "wins": 47,
+            "losses": 33,
             "ties": 0,
-            "pct": ".586"
+            "pct": ".588"
           }
         }
       },
@@ -16973,10 +17063,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -16987,10 +17077,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 41,
-          "losses": 29,
+          "wins": 47,
+          "losses": 33,
           "ties": 0,
-          "pct": ".586"
+          "pct": ".588"
         }
       },
       "teams": {
@@ -17002,10 +17092,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -17016,10 +17106,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 41,
-            "losses": 29,
+            "wins": 47,
+            "losses": 33,
             "ties": 0,
-            "pct": ".586"
+            "pct": ".588"
           }
         }
       },
@@ -17073,10 +17163,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 40,
-          "losses": 33,
+          "wins": 46,
+          "losses": 37,
           "ties": 0,
-          "pct": ".548"
+          "pct": ".554"
         }
       },
       "opponent": {
@@ -17087,10 +17177,10 @@
         "score": null,
         "probable_pitcher": null,
         "league_record": {
-          "wins": 41,
-          "losses": 29,
+          "wins": 47,
+          "losses": 33,
           "ties": 0,
-          "pct": ".586"
+          "pct": ".588"
         }
       },
       "teams": {
@@ -17102,10 +17192,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 40,
-            "losses": 33,
+            "wins": 46,
+            "losses": 37,
             "ties": 0,
-            "pct": ".548"
+            "pct": ".554"
           }
         },
         "away": {
@@ -17116,10 +17206,10 @@
           "is_winner": false,
           "probable_pitcher": null,
           "league_record": {
-            "wins": 41,
-            "losses": 29,
+            "wins": 47,
+            "losses": 33,
             "ties": 0,
-            "pct": ".586"
+            "pct": ".588"
           }
         }
       },

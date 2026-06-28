@@ -154,19 +154,23 @@
       </div>
     </section>
 
-    <section class="plays-card" aria-label="Notable plays">
+    <section class="plays-card timeline-card" aria-label="Inning by inning timeline">
       <header class="plays-head">
-        <span class="card-eyebrow">Notable Plays</span>
+        <span class="card-eyebrow">Inning by Inning</span>
         <span class="plays-count" data-slot="plays-count">—</span>
       </header>
-      <ol class="plays-list" data-slot="plays" role="list">
-        <li class="plays-empty">Per-play feed isn't yet populated by the crawler. Notable plays will appear here once <code>sections.game_status.content.plays</code> lands in the data.json contract (v1.5 target).</li>
-      </ol>
+      <div class="timeline-host" data-slot="plays" aria-live="polite">
+        <p class="plays-empty">Per-play feed isn't yet populated by the crawler. The inning timeline will appear here once <code>sections.game_status.content.plays</code> lands in the data.json contract.</p>
+      </div>
+      <ol class="plays-sr" data-slot="plays-sr"></ol>
       <footer class="plays-legend" aria-label="Event legend">
-        <span class="legend-item"><span class="marker marker-score"></span> Score change</span>
         <span class="legend-item"><span class="marker marker-hr"></span> Home run</span>
-        <span class="legend-item"><span class="marker marker-key"></span> Key play</span>
+        <span class="legend-item"><span class="marker marker-xbh"></span> Extra-base hit</span>
+        <span class="legend-item"><span class="marker marker-single"></span> Single</span>
+        <span class="legend-item"><span class="marker marker-walk"></span> Walk / HBP</span>
+        <span class="legend-item"><span class="marker marker-error"></span> Error</span>
         <span class="legend-item"><span class="marker marker-k"></span> Strikeout</span>
+        <span class="legend-item"><span class="marker marker-out"></span> Out</span>
       </footer>
     </section>
 

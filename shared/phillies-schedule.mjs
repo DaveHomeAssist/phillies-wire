@@ -218,6 +218,7 @@ export function isCompletedGame(game = {}) {
 export function isActiveGame(game = {}) {
   const statusCode = String(game.status?.code || "").toUpperCase();
   const abstractState = String(game.status?.abstract || "").toLowerCase();
+  if (isCompletedGame(game)) return false;
   return ACTIVE_STATE_CODES.has(statusCode) || abstractState === "live" || abstractState === "preview";
 }
 

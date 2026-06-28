@@ -122,6 +122,9 @@ export {
   extractLastFinalFromGame,
   buildRosterPreview,
   buildInjuryPreview,
+  normalizeGamePlays,
+  normalizeGameLinescore,
+  normalizeLiveSituation,
 };
 
 async function main() {
@@ -400,6 +403,14 @@ async function buildLivePayload(context) {
     transit: philliesAreHome ? fixture.sections.game_status.content.transit : "",
     venue_is_home: philliesAreHome,
     matchup_tape: matchupTape,
+    linescore: normalizeGameLinescore(gameFeed, game),
+    plays: normalizeGamePlays(gameFeed, {
+      gamePk: game.gamePk,
+      homeTeam,
+      awayTeam,
+      philliesAreHome,
+    }),
+    ...(mode === "live" ? { situation: normalizeLiveSituation(gameFeed) } : {}),
   };
 
   data.sections.lineup = buildLineupSection({
@@ -1031,6 +1042,252 @@ function buildPitchHandIndex(gameFeed) {
     }
   }
   return index;
+}
+
+const PLAY_EVENT_TYPES = new Set([
+  "home_run",
+  "extra_base_hit",
+  "single",
+  "walk_hbp",
+  "reached_on_error",
+  "strikeout",
+  "out",
+  "other",
+]);
+
+function normalizeGamePlays(gameFeed, context = {}) {
+  const plays = gameFeed?.liveData?.plays?.allPlays;
+  if (!Array.isArray(plays)) return [];
+
+  const homeAbbr = context.homeTeam?.abbreviation ?? "HOME";
+  const awayAbbr = context.awayTeam?.abbreviation ?? "AWAY";
+  const philliesAbbr = context.philliesAreHome ? homeAbbr : awayAbbr;
+  const opponentAbbr = context.philliesAreHome ? awayAbbr : homeAbbr;
+
+  let previousAwayScore = 0;
+  let previousHomeScore = 0;
+
+  return plays
+    .map((play, index) => {
+      const normalized = normalizePlateAppearance(play, index, {
+        gamePk: context.gamePk,
+        homeAbbr,
+        awayAbbr,
+        philliesAbbr,
+        opponentAbbr,
+        previousAwayScore,
+        previousHomeScore,
+      });
+      const awayScore = numberOrNull(play?.result?.awayScore);
+      const homeScore = numberOrNull(play?.result?.homeScore);
+      if (awayScore != null) previousAwayScore = awayScore;
+      if (homeScore != null) previousHomeScore = homeScore;
+      return normalized;
+    })
+    .filter(Boolean);
+}
+
+function normalizePlateAppearance(play, index, context) {
+  const inning = Number(play?.about?.inning);
+  const half = normalizeHalfInning(play?.about?.halfInning);
+  if (!Number.isFinite(inning) || !half) return null;
+
+  const team = half === "top" ? context.awayAbbr : context.homeAbbr;
+  const eventType = normalizePlayEventType(play);
+  const batter = play?.matchup?.batter ?? play?.matchup?.batterSnapshot;
+  const actor = batter?.fullName ?? play?.result?.player?.fullName ?? "Unknown batter";
+  const actorId = Number(batter?.id ?? play?.result?.player?.id);
+  const description = clampPlayDetail(play?.result?.description ?? play?.result?.event ?? eventLabel(eventType));
+  const awayScore = numberOrNull(play?.result?.awayScore);
+  const homeScore = numberOrNull(play?.result?.homeScore);
+  const rbiRuns = Math.max(0, Number(play?.result?.rbi) || 0);
+  const runs = calculatePlayRuns({
+    team,
+    homeAbbr: context.homeAbbr,
+    awayAbbr: context.awayAbbr,
+    homeScore,
+    awayScore,
+    previousHomeScore: context.previousHomeScore,
+    previousAwayScore: context.previousAwayScore,
+  }) ?? rbiRuns;
+  const isScoring = play?.about?.isScoringPlay === true || runs > 0 || rbiRuns > 0;
+
+  return {
+    id: `${context.gamePk ?? "game"}:${play?.about?.atBatIndex ?? index}`,
+    inning,
+    half,
+    team,
+    event_type: PLAY_EVENT_TYPES.has(eventType) ? eventType : "other",
+    actor,
+    actor_id: Number.isFinite(actorId) ? actorId : null,
+    detail: description,
+    score_after: formatPlayScore({
+      homeScore,
+      awayScore,
+      philliesAbbr: context.philliesAbbr,
+      opponentAbbr: context.opponentAbbr,
+      philliesAreHome: context.philliesAbbr === context.homeAbbr,
+    }),
+    runs,
+    is_scoring: isScoring,
+    is_key: isScoring || eventType === "home_run" || eventType === "extra_base_hit",
+  };
+}
+
+function normalizeGameLinescore(gameFeed, game = null) {
+  const source = gameFeed?.liveData?.linescore ?? game?.linescore;
+  if (!source || typeof source !== "object") return null;
+  const innings = Array.isArray(source.innings)
+    ? source.innings.map((inning, index) => ({
+        num: Number(inning?.num ?? index + 1),
+        away: normalizeLineTeam(inning?.away),
+        home: normalizeLineTeam(inning?.home),
+      }))
+    : [];
+
+  return {
+    currentInning: numberOrNull(source.currentInning),
+    currentInningOrdinal: source.currentInningOrdinal ?? "",
+    inningState: source.inningState ?? "",
+    isTopInning: source.isTopInning === true,
+    outs: numberOrNull(source.outs),
+    teams: {
+      away: normalizeLineTeam(source.teams?.away),
+      home: normalizeLineTeam(source.teams?.home),
+    },
+    innings,
+  };
+}
+
+function calculatePlayRuns({
+  team,
+  homeAbbr,
+  awayAbbr,
+  homeScore,
+  awayScore,
+  previousHomeScore,
+  previousAwayScore,
+}) {
+  if (team === homeAbbr && homeScore != null && previousHomeScore != null) {
+    return Math.max(0, homeScore - previousHomeScore);
+  }
+  if (team === awayAbbr && awayScore != null && previousAwayScore != null) {
+    return Math.max(0, awayScore - previousAwayScore);
+  }
+  return null;
+}
+
+function normalizeLiveSituation(gameFeed) {
+  const linescore = gameFeed?.liveData?.linescore;
+  if (!linescore || typeof linescore !== "object") return null;
+  const currentPlay = gameFeed?.liveData?.plays?.currentPlay;
+  const batter = linescore.offense?.batter ?? currentPlay?.matchup?.batter;
+  if (!batter?.fullName) return null;
+
+  const pitcher = linescore.defense?.pitcher ?? currentPlay?.matchup?.pitcher;
+  const pitches = Array.isArray(currentPlay?.playEvents)
+    ? currentPlay.playEvents.map(normalizePitchCode).filter(Boolean)
+    : [];
+
+  return {
+    batter: {
+      name: batter.fullName,
+      meta: pitcher?.fullName ? `vs ${pitcher.fullName}` : "",
+    },
+    pitches,
+    count: {
+      balls: numberOrZero(linescore.balls),
+      strikes: numberOrZero(linescore.strikes),
+      outs: numberOrZero(linescore.outs),
+    },
+    bases: {
+      first: Boolean(linescore.offense?.first),
+      second: Boolean(linescore.offense?.second),
+      third: Boolean(linescore.offense?.third),
+    },
+    status: linescore.currentInningOrdinal
+      ? `${linescore.inningState ?? "Live"} ${linescore.currentInningOrdinal}`.trim()
+      : "Live",
+  };
+}
+
+function normalizeLineTeam(team = {}) {
+  return {
+    runs: numberOrNull(team?.runs),
+    hits: numberOrNull(team?.hits),
+    errors: numberOrNull(team?.errors),
+  };
+}
+
+function normalizeHalfInning(value) {
+  const half = String(value ?? "").toLowerCase();
+  if (half === "top" || half === "bottom") return half;
+  return null;
+}
+
+function normalizePlayEventType(play) {
+  const eventType = String(play?.result?.eventType ?? "").toLowerCase();
+  const event = String(play?.result?.event ?? "").toLowerCase();
+
+  if (eventType === "home_run" || event.includes("home run") || event.includes("homers")) return "home_run";
+  if (["double", "triple"].includes(eventType) || /\b(double|triple)\b/.test(event)) return "extra_base_hit";
+  if (eventType === "single" || /\bsingle\b/.test(event)) return "single";
+  if (["walk", "intent_walk", "hit_by_pitch"].includes(eventType) || /walk|hit by pitch/.test(event)) return "walk_hbp";
+  if (eventType === "field_error" || /error/.test(event)) return "reached_on_error";
+  if (eventType === "strikeout" || /strikeout|strikes out|called out on strikes/.test(event)) return "strikeout";
+  if (isOutEvent(eventType, event)) return "out";
+  return "other";
+}
+
+function isOutEvent(eventType, event) {
+  if (eventType.endsWith("_out")) return true;
+  return /groundout|flyout|lineout|pop out|forceout|double play|sac bunt|sac fly|out/.test(event);
+}
+
+function eventLabel(type) {
+  switch (type) {
+    case "home_run": return "Home run";
+    case "extra_base_hit": return "Extra-base hit";
+    case "single": return "Single";
+    case "walk_hbp": return "Walk / HBP";
+    case "reached_on_error": return "Reached on error";
+    case "strikeout": return "Strikeout";
+    case "out": return "Out";
+    default: return "Play";
+  }
+}
+
+function clampPlayDetail(value, maxLength = 132) {
+  const text = String(value ?? "").replace(/\s+/g, " ").trim();
+  if (text.length <= maxLength) return text || "Play detail pending";
+  return `${text.slice(0, maxLength - 1).trimEnd()}\u2026`;
+}
+
+function formatPlayScore({ homeScore, awayScore, philliesAbbr, opponentAbbr, philliesAreHome }) {
+  if (homeScore == null || awayScore == null) return "";
+  const phiScore = philliesAreHome ? homeScore : awayScore;
+  const oppScore = philliesAreHome ? awayScore : homeScore;
+  return `${philliesAbbr} ${phiScore}, ${opponentAbbr} ${oppScore}`;
+}
+
+function normalizePitchCode(event) {
+  if (!event?.isPitch) return null;
+  const code = String(event?.details?.call?.code ?? "").toUpperCase();
+  if (code === "B" || code === "I" || code === "P") return "B";
+  if (code === "S" || code === "C" || code === "M") return "S";
+  if (code === "F") return "F";
+  if (event?.details?.isInPlay === true || code === "X") return "X";
+  return null;
+}
+
+function numberOrNull(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+}
+
+function numberOrZero(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : 0;
 }
 
 function extractBattingOrder(teamBox, handednessByPlayerId = null) {

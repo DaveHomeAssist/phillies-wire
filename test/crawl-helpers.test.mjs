@@ -12,7 +12,10 @@ import {
   extractDecisions,
   extractKeyPerformers,
   mergeInjuryEntries,
+  normalizeGameLinescore,
+  normalizeGamePlays,
   normalizeLiveInjuries,
+  normalizeLiveSituation,
   pickActiveGame,
   resolvePitcher,
   resolveSeriesLabel,
@@ -56,6 +59,128 @@ runTest("buildPitchHandIndex reads pitcher hands from feed players", () => {
   });
   assert.equal(index.get(1), "L");
   assert.equal(index.get(2), "R");
+});
+
+runTest("normalizeGamePlays maps MLB allPlays into compact plate appearances", () => {
+  const gameFeed = {
+    liveData: {
+      plays: {
+        allPlays: [
+          makePlay(0, 1, "top", "strikeout", "Strikeout", "Trea Turner strikes out swinging.", 0, 0, 0, 607208, "Trea Turner"),
+          makePlay(1, 1, "top", "walk", "Walk", "Kyle Schwarber walks.", 0, 0, 0, 656941, "Kyle Schwarber"),
+          makePlay(2, 1, "top", "single", "Single", "Brandon Marsh singles on a line drive.", 0, 0, 0, 669016, "Brandon Marsh"),
+          makePlay(3, 3, "top", "home_run", "Home Run", "Bryce Harper homers (19). Trea Turner scores.", 2, 0, 2, 547180, "Bryce Harper", true),
+          makePlay(4, 3, "bottom", "field_out", "Field Out", "Francisco Lindor flies out to right fielder.", 2, 0, 0, 596019, "Francisco Lindor"),
+        ],
+      },
+    },
+  };
+
+  const plays = normalizeGamePlays(gameFeed, {
+    gamePk: 786123,
+    homeTeam: { abbreviation: "NYM" },
+    awayTeam: { abbreviation: "PHI" },
+    philliesAreHome: false,
+  });
+
+  assert.equal(plays.length, 5);
+  assert.deepEqual(
+    plays.map((play) => play.event_type),
+    ["strikeout", "walk_hbp", "single", "home_run", "out"],
+  );
+  assert.deepEqual(
+    plays.map((play) => play.team),
+    ["PHI", "PHI", "PHI", "PHI", "NYM"],
+  );
+  assert.equal(plays[3].id, "786123:3");
+  assert.equal(plays[3].actor, "Bryce Harper");
+  assert.equal(plays[3].actor_id, 547180);
+  assert.equal(plays[3].score_after, "PHI 2, NYM 0");
+  assert.equal(plays[3].runs, 2);
+  assert.equal(plays[3].is_scoring, true);
+  assert.equal(plays[3].is_key, true);
+  assert.equal(Object.hasOwn(plays[3], "playEvents"), false);
+});
+
+runTest("normalizeGamePlays counts scoring plays without RBI from score delta", () => {
+  const gameFeed = {
+    liveData: {
+      plays: {
+        allPlays: [
+          makePlay(0, 1, "top", "single", "Single", "Brandon Marsh singles.", 0, 0, 0, 669016, "Brandon Marsh"),
+          makePlay(1, 1, "top", "field_error", "Field Error", "Bryson Stott reaches on a fielding error. Brandon Marsh scores.", 1, 0, 0, 681082, "Bryson Stott", true),
+        ],
+      },
+    },
+  };
+
+  const plays = normalizeGamePlays(gameFeed, {
+    gamePk: 786123,
+    homeTeam: { abbreviation: "NYM" },
+    awayTeam: { abbreviation: "PHI" },
+    philliesAreHome: false,
+  });
+
+  assert.equal(plays[1].event_type, "reached_on_error");
+  assert.equal(plays[1].score_after, "PHI 1, NYM 0");
+  assert.equal(plays[1].runs, 1);
+  assert.equal(plays[1].is_scoring, true);
+});
+
+runTest("normalizeGameLinescore and normalizeLiveSituation emit compact live state", () => {
+  const gameFeed = {
+    liveData: {
+      linescore: {
+        currentInning: 3,
+        currentInningOrdinal: "3rd",
+        inningState: "Top",
+        isTopInning: true,
+        outs: 1,
+        balls: 2,
+        strikes: 1,
+        teams: {
+          away: { runs: 2, hits: 4, errors: 0 },
+          home: { runs: 0, hits: 2, errors: 1 },
+        },
+        innings: [
+          { num: 1, away: { runs: 0, hits: 1, errors: 0 }, home: { runs: 0, hits: 1, errors: 0 } },
+          { num: 2, away: { runs: 0, hits: 0, errors: 0 }, home: { runs: 0, hits: 0, errors: 1 } },
+          { num: 3, away: { runs: 2, hits: 3, errors: 0 }, home: { runs: 0, hits: 1, errors: 0 } },
+        ],
+        offense: {
+          batter: { fullName: "Bryce Harper" },
+          first: { fullName: "Trea Turner" },
+          third: { fullName: "Kyle Schwarber" },
+        },
+        defense: {
+          pitcher: { fullName: "Kodai Senga" },
+        },
+      },
+      plays: {
+        currentPlay: {
+          playEvents: [
+            { isPitch: true, details: { call: { code: "B" } } },
+            { isPitch: true, details: { call: { code: "S" } } },
+            { isPitch: true, details: { call: { code: "F" } } },
+            { isPitch: true, details: { call: { code: "X" }, isInPlay: true } },
+          ],
+        },
+      },
+    },
+  };
+
+  const linescore = normalizeGameLinescore(gameFeed);
+  assert.equal(linescore.currentInning, 3);
+  assert.equal(linescore.teams.away.runs, 2);
+  assert.equal(linescore.innings.length, 3);
+  assert.equal(linescore.innings[2].away.runs, 2);
+
+  const situation = normalizeLiveSituation(gameFeed);
+  assert.equal(situation.batter.name, "Bryce Harper");
+  assert.equal(situation.batter.meta, "vs Kodai Senga");
+  assert.deepEqual(situation.pitches, ["B", "S", "F", "X"]);
+  assert.deepEqual(situation.count, { balls: 2, strikes: 1, outs: 1 });
+  assert.deepEqual(situation.bases, { first: true, second: false, third: true });
 });
 
 runTest("resolvePitcher emits TBD when MLB probable data is missing", () => {
@@ -491,6 +616,31 @@ runTest("updateRecordFromStandings copies Phillies streak and division rank with
     division: "NL East",
   });
 });
+
+function makePlay(atBatIndex, inning, halfInning, eventType, event, description, awayScore, homeScore, rbi, batterId, batterName, isScoringPlay = false) {
+  return {
+    about: {
+      atBatIndex,
+      inning,
+      halfInning,
+      isScoringPlay,
+    },
+    result: {
+      eventType,
+      event,
+      description,
+      awayScore,
+      homeScore,
+      rbi,
+    },
+    matchup: {
+      batter: {
+        id: batterId,
+        fullName: batterName,
+      },
+    },
+  };
+}
 
 function runTest(name, fn) {
   try {

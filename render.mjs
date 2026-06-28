@@ -29,7 +29,8 @@ const SITE_TMP_DIR = "./site.tmp";
 const SITE_BACKUP_DIR = "./site.bak";
 const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./pw-enhance.css", "./live-feed.js", "./fonts.css"];
 const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed", "./schedule", "./shared", "./calendar", "./data"];
-const ISSUE_DATA_SCHEMA_VERSION = "1.3.0";
+const ISSUE_DATA_SCHEMA_VERSION = "1.4.0";
+const ISSUE_DATA_BUDGET_BYTES = 20 * 1024;
 const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
 const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
 
@@ -61,6 +62,7 @@ async function main() {
     latestHref: "../../",
     archiveHref: "../../archive/",
   }, { archive });
+  const issueDataJson = buildIssueDataJson(data);
 
   assertNoUnresolvedTokens(latestHtml);
   assertNoUnresolvedTokens(issueHtml);
@@ -74,7 +76,7 @@ async function main() {
   writeFileSync(OUTPUT_FILE, latestHtml, "utf8");
   writeFileSync(INDEX_FILE, latestHtml, "utf8");
   writeFileSync(`${ISSUES_DIR}/${issueDate}/index.html`, issueHtml, "utf8");
-  writeFileSync(`${ISSUES_DIR}/${issueDate}/data.json`, buildIssueDataJson(data), "utf8");
+  writeFileSync(`${ISSUES_DIR}/${issueDate}/data.json`, issueDataJson, "utf8");
   writeFileSync(`${ARCHIVE_DIR}/index.html`, archiveHtml, "utf8");
   writeFileSync(ARCHIVE_FILE, `${JSON.stringify(archive, null, 2)}\n`, "utf8");
   writeFileSync(STATUS_FILE, `${JSON.stringify(status, null, 2)}\n`, "utf8");
@@ -96,6 +98,9 @@ async function main() {
 
   buildSiteArtifact({
     latestHtml,
+    issueDate,
+    issueHtml,
+    issueDataJson,
     archive,
     archiveHtml,
     status,
@@ -131,6 +136,9 @@ export function validateRenderInput(data) {
 
 export function buildSiteArtifact({
   latestHtml,
+  issueDate,
+  issueHtml,
+  issueDataJson,
   archive,
   archiveHtml,
   status,
@@ -168,13 +176,27 @@ export function buildSiteArtifact({
     }
   }
 
-  if (existsSync(ISSUES_DIR)) {
-    copyDirectory(ISSUES_DIR, `${SITE_TMP_DIR}/issues`);
-  }
+  copyIssuesForSiteArtifact(issueDate, issueHtml, issueDataJson);
 
   mkdirSync(`${SITE_TMP_DIR}/archive`, { recursive: true });
   writeFileSync(`${SITE_TMP_DIR}/archive/index.html`, archiveHtml, "utf8");
   replaceSiteArtifact();
+}
+
+function copyIssuesForSiteArtifact(issueDate, issueHtml, issueDataJson) {
+  const hydratedIssuesDir = `${SITE_DIR}/issues`;
+  if (existsSync(hydratedIssuesDir)) {
+    copyDirectory(hydratedIssuesDir, `${SITE_TMP_DIR}/issues`);
+  } else if (existsSync(ISSUES_DIR)) {
+    copyDirectory(ISSUES_DIR, `${SITE_TMP_DIR}/issues`);
+  }
+
+  if (issueDate && issueHtml && issueDataJson) {
+    const issueDir = `${SITE_TMP_DIR}/issues/${issueDate}`;
+    mkdirSync(issueDir, { recursive: true });
+    writeFileSync(`${issueDir}/index.html`, issueHtml, "utf8");
+    writeFileSync(`${issueDir}/data.json`, issueDataJson, "utf8");
+  }
 }
 
 function replaceSiteArtifact() {
@@ -200,7 +222,7 @@ function replaceSiteArtifact() {
 // See docs/SPEC.md §3.2 for the contract.
 // The ISSUE_DATA_SCHEMA_VERSION constant is declared at the top of the file
 // so it's available when main() runs at module load.
-function buildIssueDataJson(data) {
+export function buildIssueDataJson(data) {
   const payload = {
     schema_version: ISSUE_DATA_SCHEMA_VERSION,
     meta: {
@@ -220,7 +242,73 @@ function buildIssueDataJson(data) {
     },
     next_game: data.next_game ?? null,
   };
+  fitIssueDataPayload(payload);
   return `${JSON.stringify(payload, null, 2)}\n`;
+}
+
+function fitIssueDataPayload(payload) {
+  const gameStatus = payload.sections?.game_status?.content;
+  const plays = gameStatus?.plays;
+  if (!Array.isArray(plays) || !plays.length || issueDataSize(payload) <= ISSUE_DATA_BUDGET_BYTES) {
+    return payload;
+  }
+
+  const mode = payload.meta?.status?.mode ?? payload.hero?.mode ?? "";
+  if (mode === "final") {
+    payload.sections.lineup = null;
+  }
+  if (issueDataSize(payload) <= ISSUE_DATA_BUDGET_BYTES) return payload;
+
+  payload.sections.injury_report = null;
+  if (issueDataSize(payload) <= ISSUE_DATA_BUDGET_BYTES) return payload;
+
+  for (const maxLength of [96, 72, 56, 48, 40, 32, 24]) {
+    gameStatus.plays = plays.map((play) => shortenIssuePlayDetail(play, maxLength));
+    if (issueDataSize(payload) <= ISSUE_DATA_BUDGET_BYTES) return payload;
+  }
+
+  gameStatus.plays = gameStatus.plays.map((play) => ({
+    ...play,
+    score_after: play.is_scoring || play.is_key ? play.score_after : "",
+  }));
+  if (issueDataSize(payload) <= ISSUE_DATA_BUDGET_BYTES) return payload;
+
+  gameStatus.plays = gameStatus.plays.map((play) => ({
+    ...play,
+    detail: compactIssuePlayDetail(play),
+  }));
+  return payload;
+}
+
+function shortenIssuePlayDetail(play, maxLength) {
+  const detail = String(play?.detail ?? "").replace(/\s+/g, " ").trim();
+  if (detail.length <= maxLength) return { ...play, detail };
+  return {
+    ...play,
+    detail: `${detail.slice(0, maxLength - 1).trimEnd()}\u2026`,
+  };
+}
+
+function compactIssuePlayDetail(play) {
+  const label = issuePlayEventLabel(play?.event_type);
+  return label === "Play" ? "Play" : label;
+}
+
+function issuePlayEventLabel(type) {
+  switch (type) {
+    case "home_run": return "Home run";
+    case "extra_base_hit": return "Extra-base hit";
+    case "single": return "Single";
+    case "walk_hbp": return "Walk / HBP";
+    case "reached_on_error": return "Reached on error";
+    case "strikeout": return "Strikeout";
+    case "out": return "Out";
+    default: return "Play";
+  }
+}
+
+function issueDataSize(payload) {
+  return Buffer.byteLength(JSON.stringify(payload), "utf8");
 }
 
 function buildRobotsTxt() {
@@ -256,7 +344,7 @@ function buildSitemapXml(archive) {
   return `${lines.join("\n")}\n`;
 }
 
-function buildFeedXml(archive, data) {
+export function buildFeedXml(archive, data) {
   const publication = data.meta?.publication ?? "Phillies Wire";
   const updated = archive.updated_at ?? new Date().toISOString();
   const entries = (archive.entries ?? []).slice(0, 30);
@@ -266,28 +354,38 @@ function buildFeedXml(archive, data) {
       const url = `${SITE_URL}/issues/${entry.date}/`;
       const title = `${publication}: ${entry.headline ?? entry.hero_label}`;
       const description = entry.dek || entry.summary || "";
-      return `  <entry>
-    <title>${escapeXml(title)}</title>
-    <link href="${escapeXml(url)}"/>
-    <id>${escapeXml(url)}</id>
-    <updated>${escapeXml(entry.generated_at ?? `${entry.date}T12:00:00Z`)}</updated>
-    <summary>${escapeXml(description)}</summary>
-    <author><name>${escapeXml(publication)}</name></author>
-  </entry>`;
+      return `    <item>
+      <title>${escapeXml(title)}</title>
+      <link>${escapeXml(url)}</link>
+      <guid isPermaLink="true">${escapeXml(url)}</guid>
+      <pubDate>${escapeXml(formatRssDate(entry.generated_at ?? `${entry.date}T12:00:00Z`))}</pubDate>
+      <description>${escapeXml(description)}</description>
+    </item>`;
     })
     .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>${escapeXml(publication)}</title>
-  <link href="${escapeXml(SITE_URL + "/")}"/>
-  <link rel="self" href="${escapeXml(SITE_URL + "/feed.xml")}"/>
-  <updated>${escapeXml(updated)}</updated>
-  <id>${escapeXml(SITE_URL + "/")}</id>
-  <generator>phillies-wire/render.mjs</generator>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${escapeXml(publication)}</title>
+    <link>${escapeXml(SITE_URL + "/")}</link>
+    <description>Daily Philadelphia Phillies newsletter.</description>
+    <language>en-us</language>
+    <lastBuildDate>${escapeXml(formatRssDate(updated))}</lastBuildDate>
+    <atom:link href="${escapeXml(SITE_URL + "/feed.xml")}" rel="self" type="application/rss+xml"/>
+    <generator>phillies-wire/render.mjs</generator>
 ${items}
-</feed>
+  </channel>
+</rss>
 `;
+}
+
+function formatRssDate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return new Date().toUTCString();
+  }
+  return date.toUTCString();
 }
 
 function buildManifest(data) {
@@ -631,6 +729,7 @@ ${itemsHtml}
   <nav class="pw-shell-nav" aria-label="Primary">
     <a class="pw-shell-link" href="../">Latest</a>
     <a class="pw-shell-link" href="./">Archive</a>
+    <a class="pw-shell-link" href="../dashboard/innings/">Inning by inning</a>
     <a class="pw-shell-link" href="../feed.xml" rel="alternate">RSS</a>
   </nav>
 
