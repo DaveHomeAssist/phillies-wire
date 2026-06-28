@@ -22,8 +22,8 @@ const factcheckSource = readFileSync(new URL("../../factcheck.mjs", import.meta.
 const runSource = readFileSync(new URL("../../run.mjs", import.meta.url), "utf8");
 
 // A recap whose final score disagrees with the box score. PHI are home; the
-// box score / linescore says PHI 2, NYM 7, but the preserved recap still reads
-// "PHI 5, NYM 3" (it describes an earlier game).
+// box score says PHI 2, NYM 7, but the recap copy reads "PHI 5, NYM 3" (it
+// describes a different, most-recent-final game than factcheck's "yesterday").
 function disagreeingFixture() {
   const data = { recap: { final_score: "PHI 5, NYM 3" } };
   const boxscore = {
@@ -82,14 +82,38 @@ test("PIN: run.mjs passes --live-refresh to the accuracy export only on live run
   );
 });
 
-test("PIN: factcheck detects --live-refresh and threads it into the source checks", () => {
+test("PIN: factcheck detects --live-refresh and threads it into the recap check only", () => {
   assert.ok(
     /process\.argv\.includes\("--live-refresh"\)/.test(factcheckSource),
     "expected factcheck.mjs to detect the --live-refresh flag",
   );
   assert.ok(
-    /liveRefresh \? findings\.unverified : findings\.errors/.test(factcheckSource),
-    "expected the live-refresh disagreement bucket to route to unverified",
+    /const recapBucket = liveRefresh \? findings\.unverified : findings\.errors/.test(factcheckSource),
+    "expected the recap reconciliation to use the live-refresh-aware bucket",
+  );
+  assert.ok(
+    /reconcileRecap\(\{ data, boxscore, game, findings, bucket: recapBucket \}\)/.test(factcheckSource),
+    "expected the recap reconciliation to receive the recap bucket",
+  );
+});
+
+// Codex P2: standings are live-fetched each refresh (NOT a frozen snapshot), so
+// a standings-vs-API disagreement must keep blocking in every mode — otherwise a
+// degraded crawl could publish stale NL East records past the verify gate.
+test("PIN: standings record disagreements stay blocking errors in all modes", () => {
+  const standingsBlock = factcheckSource.slice(
+    factcheckSource.indexOf("// B. Standings reconciliation"),
+    factcheckSource.indexOf("// C."),
+  );
+  assert.ok(standingsBlock.length > 0, "sanity: located the standings reconciliation block");
+  assert.ok(
+    /findings\.errors\.push\(\{\s*\/\/[^\n]*\n\s*id: `standings-record-/.test(standingsBlock)
+      || /\/\/ Always blocking[\s\S]*?findings\.errors\.push\(\{\s*\n\s*id: `standings-record-/.test(standingsBlock),
+    "standings-record disagreement must push to findings.errors (blocking), not the live-refresh bucket",
+  );
+  assert.ok(
+    !/recapBucket\.push\(\{\s*\n\s*id: `standings-record-/.test(standingsBlock),
+    "standings disagreement must not route through the recap (downgrade) bucket",
   );
 });
 
