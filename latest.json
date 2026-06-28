@@ -4,7 +4,7 @@
   "edition_date": "2026-06-28",
   "volume": 1,
   "edition": 89,
-  "generated_at": "2026-06-28T17:55:11.027Z",
+  "generated_at": "2026-06-28T18:26:11.535Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYM 0",
-    "dek": "Top 2nd · 0 outs",
-    "summary": "Brandon Marsh is up against Tobias Myers. Series: Series tied 1-1.",
+    "headline": "PHI 3, NYM 0",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Tyrone Taylor is up against Jesús Luzardo. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Braxton Ashcraft · PHI vs PIT · Mon, Jun 29 · 6:40 PM"
   },
@@ -56,16 +56,16 @@
     },
     "weather": {
       "temp_f": 82,
-      "condition": "Overcast",
-      "wind": "4 mph · gusts 5",
-      "gusts_mph": 5
+      "condition": "Partly cloudy",
+      "wind": "3 mph · gusts 4",
+      "gusts_mph": 4
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Tobias Myers"
+        "name": "Tyrone Taylor",
+        "meta": "vs Jesús Luzardo"
       },
       "pitches": [],
       "count": {
@@ -74,11 +74,11 @@
         "outs": 0
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 2nd"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-28T17:55:11.464Z",
+    "updated_at": "2026-06-28T18:26:12.391Z",
     "current_game_pk": 823608,
     "next_game_pk": 823444,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Overcast · gusts 5 mph",
+      "text": "82° · Partly cloudy · gusts 4 mph",
       "highlight": false
     }
   ]

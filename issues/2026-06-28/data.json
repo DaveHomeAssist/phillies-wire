@@ -5,14 +5,14 @@
     "edition": 89,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-28T17:55:11.027Z",
+    "generated_at": "2026-06-28T18:26:11.535Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jun 28, 2026, 1:55 PM ET",
+      "generated_at_et": "Jun 28, 2026, 2:26 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, NYM 0",
-    "dek": "Top 2nd · 0 outs",
-    "summary": "Brandon Marsh is up against Tobias Myers. Series: Series tied 1-1.",
+    "headline": "PHI 3, NYM 0",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Tyrone Taylor is up against Jesús Luzardo. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Overcast"
+        "value": "82° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Brandon Marsh at the plate",
-      "Tobias Myers on the mound",
+      "Tyrone Taylor at the plate",
+      "Jesús Luzardo on the mound",
       "Citi Field, Flushing"
     ],
     "next_label": "Tomorrow",
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 82,
-          "condition": "Overcast",
-          "wind": "4 mph · gusts 5",
-          "gusts_mph": 5
+          "condition": "Partly cloudy",
+          "wind": "3 mph · gusts 4",
+          "gusts_mph": 4
         },
         "giveaway": "",
         "transit": "",
@@ -367,21 +367,21 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.95",
+            "era": "3.91",
             "record": "6-4",
-            "whip": "1.29"
+            "whip": "1.27"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "Top",
-          "isTopInning": true,
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
+          "inningState": "Bottom",
+          "isTopInning": false,
           "outs": 0,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 1,
+              "runs": 3,
+              "hits": 6,
               "errors": 0
             },
             "home": {
@@ -407,8 +407,21 @@
             {
               "num": 2,
               "away": {
-                "runs": null,
-                "hits": 1,
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 3,
+                "hits": 4,
                 "errors": 0
               },
               "home": {
@@ -523,11 +536,207 @@
             "inning": 2,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Play",
+            "detail": "Brandon Marsh called out on strikes.",
             "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:8",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto strikes out swinging.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:9",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott singles on a line drive to right fielder Carson Benge. Alec Bohm to 2nd.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:10",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill grounds out, third baseman Mark Vientos to first baseman Eric Wagaman.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:11",
+            "inning": 2,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Eric Wagaman",
+            "actor_id": 676572,
+            "detail": "Eric Wagaman lines out to right fielder Derek Hill.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Francisco Alvarez",
+            "actor_id": 682626,
+            "detail": "Francisco Alvarez grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Mark Vientos",
+            "actor_id": 668901,
+            "detail": "Mark Vientos grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:14",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds out to first baseman Eric Wagaman.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:15",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner singles on a line drive to right fielder Carson Benge.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:16",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber singles on a sharp line drive to right fielder Carson Benge. Trea Turner to 2nd.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:17",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper out on a sacrifice fly to center fielder Tyrone Taylor. Trea Turner scores. Kyle Schwarber to 3rd.",
+            "score_after": "PHI 1, NYM 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823608:18",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm doubles (11) on a ground ball to left fielder Juan Soto. Kyle Schwarber scores.",
+            "score_after": "PHI 2, NYM 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823608:19",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh singles on a sharp line drive to right fielder Carson Benge. Alec Bohm scores.",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823608:20",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto flies out to center fielder Tyrone Taylor.",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:21",
+            "inning": 3,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "other",
+            "actor": "Tyrone Taylor",
+            "actor_id": 621438,
+            "detail": "Play",
+            "score_after": "PHI 3, NYM 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -535,8 +744,8 @@
         ],
         "situation": {
           "batter": {
-            "name": "Brandon Marsh",
-            "meta": "vs Tobias Myers"
+            "name": "Tyrone Taylor",
+            "meta": "vs Jesús Luzardo"
           },
           "pitches": [],
           "count": {
@@ -545,11 +754,11 @@
             "outs": 0
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 2nd"
+          "status": "Bottom 3rd"
         }
       }
     },
@@ -566,8 +775,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-28T17:55:11.027Z",
-            "freshness_label": "As of Jun 28, 2026, 1:55 PM ET"
+            "last_confirmed": "2026-06-28T18:26:11.535Z",
+            "freshness_label": "As of Jun 28, 2026, 2:26 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -579,8 +788,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-28T17:55:11.027Z",
-            "freshness_label": "As of Jun 28, 2026, 1:55 PM ET"
+            "last_confirmed": "2026-06-28T18:26:11.535Z",
+            "freshness_label": "As of Jun 28, 2026, 2:26 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -592,8 +801,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-28T17:55:11.027Z",
-            "freshness_label": "As of Jun 28, 2026, 1:55 PM ET"
+            "last_confirmed": "2026-06-28T18:26:11.535Z",
+            "freshness_label": "As of Jun 28, 2026, 2:26 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
