@@ -4,7 +4,7 @@
   "edition_date": "2026-06-28",
   "volume": 1,
   "edition": 89,
-  "generated_at": "2026-06-28T18:28:30.850Z",
+  "generated_at": "2026-06-28T18:53:01.547Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, NYM 0",
-    "dek": "Bottom 3rd · 1 out",
-    "summary": "Luis Torrens is up against Jesús Luzardo. Series: Series tied 1-1.",
+    "dek": "End 4th · 3 outs",
+    "summary": "Trea Turner is up against Tobias Myers. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Braxton Ashcraft · PHI vs PIT · Mon, Jun 29 · 6:40 PM"
   },
@@ -55,30 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 79,
       "condition": "Partly cloudy",
-      "wind": "3 mph · gusts 4",
-      "gusts_mph": 4
+      "wind": "8 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Torrens",
-        "meta": "vs Jesús Luzardo"
+        "name": "Trea Turner",
+        "meta": "vs Tobias Myers"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S",
+        "B",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "balls": 1,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-28T18:28:31.133Z",
+    "updated_at": "2026-06-28T18:53:02.333Z",
     "current_game_pk": 823608,
     "next_game_pk": 823444,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Partly cloudy · gusts 4 mph",
+      "text": "79° · Partly cloudy · gusts 9 mph",
       "highlight": false
     }
   ]
