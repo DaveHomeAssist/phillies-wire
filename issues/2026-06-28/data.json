@@ -5,14 +5,14 @@
     "edition": 89,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-28T17:29:12.321Z",
+    "generated_at": "2026-06-28T17:53:52.716Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jun 28, 2026, 1:29 PM ET",
+      "generated_at_et": "Jun 28, 2026, 1:53 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, NYM 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Cionel Pérez. Series: Series tied 1-1.",
+    "dek": "Top 2nd · 0 outs",
+    "summary": "Alec Bohm is up against Tobias Myers. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "81° · Overcast"
+        "value": "82° · Overcast"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Cionel Pérez on the mound",
+      "Alec Bohm at the plate",
+      "Tobias Myers on the mound",
       "Citi Field, Flushing"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 81,
+          "temp_f": 82,
           "condition": "Overcast",
-          "wind": "6 mph · gusts 7",
-          "gusts_mph": 7
+          "wind": "4 mph · gusts 5",
+          "gusts_mph": 5
         },
         "giveaway": "",
         "transit": "",
@@ -359,22 +359,22 @@
             "team": "NYM",
             "name": "Cionel Pérez",
             "hand": "L",
-            "era": "4.99",
+            "era": "4.83",
             "record": "3-3",
-            "whip": "1.37"
+            "whip": "1.33"
           },
           "away": {
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "4.00",
+            "era": "3.98",
             "record": "6-4",
-            "whip": "1.30"
+            "whip": "1.29"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
           "inningState": "Top",
           "isTopInning": true,
           "outs": 0,
@@ -394,6 +394,19 @@
             {
               "num": 1,
               "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
                 "runs": null,
                 "hits": 0,
                 "errors": 0
@@ -412,10 +425,94 @@
             "inning": 1,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Status Change - Warmup",
+            "detail": "Trea Turner lines out sharply to left fielder Juan Soto.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:1",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:2",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out on a foul tip.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:3",
+            "inning": 1,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Carson Benge",
+            "actor_id": 701807,
+            "detail": "Carson Benge grounds out softly, pitcher Jesús Luzardo to first baseman Bryce Harper.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Juan Soto",
+            "actor_id": 665742,
+            "detail": "Juan Soto grounds out, third baseman Alec Bohm to first baseman Bryce Harper.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "strikeout",
+            "actor": "Bo Bichette",
+            "actor_id": 666182,
+            "detail": "Bo Bichette strikes out on a foul tip.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:6",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Pitching Change: Tobias Myers replaces Cionel Pérez.",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,8 +521,8 @@
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
-            "meta": "vs Cionel Pérez"
+            "name": "Alec Bohm",
+            "meta": "vs Tobias Myers"
           },
           "pitches": [],
           "count": {
@@ -438,7 +535,7 @@
             "second": false,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "Top 2nd"
         }
       }
     },
@@ -455,8 +552,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-28T17:29:12.321Z",
-            "freshness_label": "As of Jun 28, 2026, 1:29 PM ET"
+            "last_confirmed": "2026-06-28T17:53:52.716Z",
+            "freshness_label": "As of Jun 28, 2026, 1:53 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -468,8 +565,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-28T17:29:12.321Z",
-            "freshness_label": "As of Jun 28, 2026, 1:29 PM ET"
+            "last_confirmed": "2026-06-28T17:53:52.716Z",
+            "freshness_label": "As of Jun 28, 2026, 1:53 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -481,8 +578,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-28T17:29:12.321Z",
-            "freshness_label": "As of Jun 28, 2026, 1:29 PM ET"
+            "last_confirmed": "2026-06-28T17:53:52.716Z",
+            "freshness_label": "As of Jun 28, 2026, 1:53 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
