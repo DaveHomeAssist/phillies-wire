@@ -396,11 +396,17 @@ function runDeterministicChecks({ data, html, findings, whitelist: _w }) {
 // ---------- Source-verified checks ----------
 
 async function runSourceChecks({ data, findings, liveRefresh = false }) {
-  // On a live refresh the recap/standings are the preserved morning snapshot, so
-  // a disagreement with the live API is expected drift rather than a publishable
-  // error. Route those findings to the non-blocking `unverified` bucket so the
-  // verify gate (and, in daily mode, email delivery) is never tripped by it.
-  const sourceDisagreementBucket = liveRefresh ? findings.unverified : findings.errors;
+  // The recap is editorial copy describing the most-recent final, which can
+  // legitimately differ from factcheck's calendar-"yesterday" at game-final and
+  // timezone boundaries. On a live refresh that race is expected drift, not a
+  // publishable error, so its disagreements go to the non-blocking `unverified`
+  // bucket (keeping the verify gate — and daily email — from false-failing).
+  //
+  // Standings are NOT in this carve-out: crawl re-fetches them live on every
+  // refresh (they are not a frozen snapshot), so a standings-vs-API mismatch is
+  // a real wrong-data signal (e.g. a degraded crawl fallback publishing stale NL
+  // East records) and MUST keep blocking in every mode.
+  const recapBucket = liveRefresh ? findings.unverified : findings.errors;
   // A. Previous-day box score reconciliation
   try {
     const yesterdayISO = offsetDays(todayISO(), -1);
@@ -416,7 +422,7 @@ async function runSourceChecks({ data, findings, liveRefresh = false }) {
         });
         return null;
       });
-      if (boxscore) reconcileRecap({ data, boxscore, game, findings, bucket: sourceDisagreementBucket });
+      if (boxscore) reconcileRecap({ data, boxscore, game, findings, bucket: recapBucket });
     }
   } catch (e) {
     findings.unverified.push({
@@ -436,7 +442,8 @@ async function runSourceChecks({ data, findings, liveRefresh = false }) {
         const apiRow = nle[wireRow.abbr ?? wireRow.team];
         if (!apiRow) continue;
         if (apiRow.wins !== wireRow.wins || apiRow.losses !== wireRow.losses) {
-          sourceDisagreementBucket.push({
+          // Always blocking — standings are live-fetched, not a frozen snapshot.
+          findings.errors.push({
             id: `standings-record-${wireRow.team}`,
             title: `${wireRow.team} record disagrees with MLB API`,
             detail: `Wire: ${wireRow.wins}-${wireRow.losses}. API: ${apiRow.wins}-${apiRow.losses}.`,
