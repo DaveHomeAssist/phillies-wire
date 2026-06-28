@@ -4,21 +4,21 @@
   "edition_date": "2026-06-28",
   "volume": 1,
   "edition": 89,
-  "generated_at": "2026-06-28T20:10:05.902Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-06-28T21:07:42.496Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 46,
+    "wins": 47,
     "losses": 37,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, NYM 4",
-    "dek": "Bottom 7th · 1 out",
-    "summary": "Francisco Alvarez is up against José Alvarado. Series: Series tied 1-1.",
+    "headline": "PHI 5, NYM 4.",
+    "dek": "PHI 5, NYM 4 · Jesús Luzardo · 5.0 IP, 4 H, 1 ER, 6 K",
+    "summary": "PHI 5, NYM 4. Final at Citi Field, Flushing. PHI wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Braxton Ashcraft · PHI vs PIT · Mon, Jun 29 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "PHI wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,57 +57,40 @@
     "weather": {
       "temp_f": 81,
       "condition": "Clear",
-      "wind": "9 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "8 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Jared Young",
-        "meta": "vs José Alvarado"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 2
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-28T20:10:06.222Z",
-    "current_game_pk": 823608,
-    "next_game_pk": 823444,
+    "updated_at": "2026-06-28T21:07:42.955Z",
+    "current_game_pk": 823444,
+    "next_game_pk": 823445,
     "next_game": {
-      "game_pk": 823444,
-      "official_date": "2026-06-29",
-      "date_label": "Mon, Jun 29, 2026",
+      "game_pk": 823445,
+      "official_date": "2026-06-30",
+      "date_label": "Tue, Jun 30, 2026",
       "time_label": "6:40 PM",
       "title": "Pittsburgh Pirates at Phillies",
       "matchup": "PIT at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823608,
-      "official_date": "2026-06-28",
-      "title": "Phillies at New York Mets",
-      "matchup": "PHI at NYM"
+      "game_pk": 823444,
+      "official_date": "2026-06-29",
+      "title": "Pittsburgh Pirates at Phillies",
+      "matchup": "PIT at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 46-37",
+      "text": "PHI 47-37",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Clear · gusts 10 mph",
+      "text": "81° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]

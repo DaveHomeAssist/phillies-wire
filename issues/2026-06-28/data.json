@@ -5,313 +5,56 @@
     "edition": 89,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-28T20:10:05.902Z",
+    "generated_at": "2026-06-28T21:07:42.496Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jun 28, 2026, 4:10 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jun 28, 2026, 5:07 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 46,
+    "wins": 47,
     "losses": 37,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 5, NYM 4",
-    "dek": "Bottom 7th · 1 out",
-    "summary": "Francisco Alvarez is up against José Alvarado. Series: Series tied 1-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 5, NYM 4.",
+    "dek": "PHI 5, NYM 4 · Jesús Luzardo · 5.0 IP, 4 H, 1 ER, 6 K",
+    "summary": "PHI 5, NYM 4. Final at Citi Field, Flushing. PHI wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citi Field, Flushing"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "81° · Clear"
+        "label": "Series",
+        "value": "PHI wins 2-1"
       }
     ],
     "bullets": [
-      "Francisco Alvarez at the plate",
-      "José Alvarado on the mound",
-      "Citi Field, Flushing"
+      "Jesús Luzardo: 5.0 IP, 4 H, 1 ER, 6 K",
+      "Kodai Senga: 5.0 IP, 4 H, 2 ER, 4 K",
+      "A.J. Ewing: 2-for-3, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Braxton Ashcraft · PHI vs PIT · Mon, Jun 29 · 6:40 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at NYM game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "1:40 PM",
-        "starters": {
-          "home": {
-            "team": "NYM",
-            "name": "Cionel Pérez",
-            "hand": "L"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "NYM",
-            "name": "Cionel Pérez",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Carson Benge",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Juan Soto",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bo Bichette",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Eric Wagaman",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Francisco Alvarez",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Mark Vientos",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Tyrone Taylor",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Brett Baty",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Luis Torrens",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Derek Hill",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Derek Hill",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Carson Benge",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Juan Soto",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bo Bichette",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Eric Wagaman",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Francisco Alvarez",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Mark Vientos",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Tyrone Taylor",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Brett Baty",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Luis Torrens",
-              "position": "C",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Mets · Game 3 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Series tied 1-1"
+          "label": "PHI wins 2-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 81,
           "condition": "Clear",
-          "wind": "9 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "8 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "",
@@ -373,20 +116,20 @@
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 5,
-              "hits": 9,
-              "errors": 0
+              "hits": 10,
+              "errors": 1
             },
             "home": {
               "runs": 4,
-              "hits": 8,
+              "hits": 9,
               "errors": 0
             }
           },
@@ -474,10 +217,36 @@
               "away": {
                 "runs": 2,
                 "hits": 2,
+                "errors": 1
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -493,8 +262,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner lines out s…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -507,8 +276,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -521,8 +290,8 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper strikes ou…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -535,8 +304,8 @@
             "event_type": "out",
             "actor": "Carson Benge",
             "actor_id": 701807,
-            "detail": "Carson Benge grounds ou…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -549,8 +318,8 @@
             "event_type": "out",
             "actor": "Juan Soto",
             "actor_id": 665742,
-            "detail": "Juan Soto grounds out,…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -563,8 +332,8 @@
             "event_type": "strikeout",
             "actor": "Bo Bichette",
             "actor_id": 666182,
-            "detail": "Bo Bichette strikes out…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -577,8 +346,8 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -591,8 +360,8 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh called ou…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -605,8 +374,8 @@
             "event_type": "strikeout",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto strikes o…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -619,8 +388,8 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -633,8 +402,8 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill grounds out,…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -647,8 +416,8 @@
             "event_type": "out",
             "actor": "Eric Wagaman",
             "actor_id": 676572,
-            "detail": "Eric Wagaman lines out…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -661,8 +430,8 @@
             "event_type": "out",
             "actor": "Francisco Alvarez",
             "actor_id": 682626,
-            "detail": "Francisco Alvarez groun…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -675,8 +444,8 @@
             "event_type": "out",
             "actor": "Mark Vientos",
             "actor_id": 668901,
-            "detail": "Mark Vientos grounds ou…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -689,8 +458,8 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -703,8 +472,8 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -717,8 +486,8 @@
             "event_type": "single",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber singles…",
-            "score_after": "PHI 0, NYM 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -731,7 +500,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper out on a s…",
+            "detail": "Out",
             "score_after": "PHI 1, NYM 0",
             "runs": 1,
             "is_scoring": true,
@@ -745,7 +514,7 @@
             "event_type": "extra_base_hit",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm doubles (11)…",
+            "detail": "Extra-base hit",
             "score_after": "PHI 2, NYM 0",
             "runs": 1,
             "is_scoring": true,
@@ -759,7 +528,7 @@
             "event_type": "single",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh singles o…",
+            "detail": "Single",
             "score_after": "PHI 3, NYM 0",
             "runs": 1,
             "is_scoring": true,
@@ -773,8 +542,8 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto flies out…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -787,8 +556,8 @@
             "event_type": "single",
             "actor": "Tyrone Taylor",
             "actor_id": 621438,
-            "detail": "Tyrone Taylor singles o…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -801,8 +570,8 @@
             "event_type": "out",
             "actor": "Brett Baty",
             "actor_id": 683146,
-            "detail": "Brett Baty grounds out…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -815,8 +584,8 @@
             "event_type": "out",
             "actor": "Luis Torrens",
             "actor_id": 620443,
-            "detail": "Luis Torrens grounds ou…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -829,8 +598,8 @@
             "event_type": "strikeout",
             "actor": "Carson Benge",
             "actor_id": 701807,
-            "detail": "Carson Benge strikes ou…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -843,8 +612,8 @@
             "event_type": "strikeout",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott strikes ou…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -857,8 +626,8 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill pops out to…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -871,8 +640,8 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford lines o…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -885,8 +654,8 @@
             "event_type": "walk_hbp",
             "actor": "Juan Soto",
             "actor_id": 665742,
-            "detail": "Juan Soto walks.",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -899,8 +668,8 @@
             "event_type": "single",
             "actor": "Bo Bichette",
             "actor_id": 666182,
-            "detail": "Bo Bichette singles on…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -913,8 +682,8 @@
             "event_type": "strikeout",
             "actor": "Eric Wagaman",
             "actor_id": 676572,
-            "detail": "Eric Wagaman strikes ou…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -927,8 +696,8 @@
             "event_type": "strikeout",
             "actor": "Francisco Alvarez",
             "actor_id": 682626,
-            "detail": "Francisco Alvarez strik…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -941,8 +710,8 @@
             "event_type": "strikeout",
             "actor": "Mark Vientos",
             "actor_id": 668901,
-            "detail": "Mark Vientos strikes ou…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -955,8 +724,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner flies out t…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -969,8 +738,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -983,8 +752,8 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds ou…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -997,8 +766,8 @@
             "event_type": "single",
             "actor": "Tyrone Taylor",
             "actor_id": 621438,
-            "detail": "Tyrone Taylor singles o…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1011,8 +780,8 @@
             "event_type": "walk_hbp",
             "actor": "Brett Baty",
             "actor_id": 683146,
-            "detail": "Brett Baty walks. Tyron…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1025,8 +794,8 @@
             "event_type": "out",
             "actor": "Luis Torrens",
             "actor_id": 620443,
-            "detail": "Luis Torrens grounds ou…",
-            "score_after": "PHI 3, NYM 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1039,7 +808,7 @@
             "event_type": "single",
             "actor": "Carson Benge",
             "actor_id": 701807,
-            "detail": "Carson Benge singles on…",
+            "detail": "Single",
             "score_after": "PHI 3, NYM 1",
             "runs": 1,
             "is_scoring": true,
@@ -1053,8 +822,8 @@
             "event_type": "walk_hbp",
             "actor": "Juan Soto",
             "actor_id": 665742,
-            "detail": "Juan Soto walks. Carson…",
-            "score_after": "PHI 3, NYM 1",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1067,8 +836,8 @@
             "event_type": "strikeout",
             "actor": "Bo Bichette",
             "actor_id": 666182,
-            "detail": "Bo Bichette strikes out…",
-            "score_after": "PHI 3, NYM 1",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1081,8 +850,8 @@
             "event_type": "out",
             "actor": "Eric Wagaman",
             "actor_id": 676572,
-            "detail": "Eric Wagaman lines out…",
-            "score_after": "PHI 3, NYM 1",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1095,8 +864,8 @@
             "event_type": "walk_hbp",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm walks.",
-            "score_after": "PHI 3, NYM 1",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1109,7 +878,7 @@
             "event_type": "extra_base_hit",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh doubles (…",
+            "detail": "Extra-base hit",
             "score_after": "PHI 3, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -1123,8 +892,8 @@
             "event_type": "strikeout",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto strikes o…",
-            "score_after": "PHI 3, NYM 1",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1137,8 +906,8 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds ou…",
-            "score_after": "PHI 3, NYM 1",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1151,8 +920,8 @@
             "event_type": "strikeout",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill strikes out…",
-            "score_after": "PHI 3, NYM 1",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1165,7 +934,7 @@
             "event_type": "extra_base_hit",
             "actor": "Francisco Alvarez",
             "actor_id": 682626,
-            "detail": "Francisco Alvarez doubl…",
+            "detail": "Extra-base hit",
             "score_after": "PHI 3, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -1179,8 +948,8 @@
             "event_type": "strikeout",
             "actor": "Jared Young",
             "actor_id": 676724,
-            "detail": "Jared Young called out…",
-            "score_after": "PHI 3, NYM 1",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1193,7 +962,7 @@
             "event_type": "home_run",
             "actor": "A.J. Ewing",
             "actor_id": 805999,
-            "detail": "A.J. Ewing homers (4) o…",
+            "detail": "Home run",
             "score_after": "PHI 3, NYM 3",
             "runs": 2,
             "is_scoring": true,
@@ -1207,8 +976,8 @@
             "event_type": "walk_hbp",
             "actor": "Brett Baty",
             "actor_id": 683146,
-            "detail": "Brett Baty walks.",
-            "score_after": "PHI 3, NYM 3",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1221,8 +990,8 @@
             "event_type": "single",
             "actor": "Luis Torrens",
             "actor_id": 620443,
-            "detail": "Luis Torrens singles on…",
-            "score_after": "PHI 3, NYM 3",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1235,7 +1004,7 @@
             "event_type": "out",
             "actor": "Carson Benge",
             "actor_id": 701807,
-            "detail": "Carson Benge grounds in…",
+            "detail": "Out",
             "score_after": "PHI 3, NYM 4",
             "runs": 1,
             "is_scoring": true,
@@ -1249,8 +1018,8 @@
             "event_type": "single",
             "actor": "Juan Soto",
             "actor_id": 665742,
-            "detail": "Juan Soto singles on a…",
-            "score_after": "PHI 3, NYM 4",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1263,8 +1032,8 @@
             "event_type": "out",
             "actor": "Bo Bichette",
             "actor_id": 666182,
-            "detail": "Bo Bichette flies out t…",
-            "score_after": "PHI 3, NYM 4",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1277,8 +1046,8 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford singles…",
-            "score_after": "PHI 3, NYM 4",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1291,8 +1060,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner pops out to…",
-            "score_after": "PHI 3, NYM 4",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1305,7 +1074,7 @@
             "event_type": "home_run",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber homers (…",
+            "detail": "Home run",
             "score_after": "PHI 5, NYM 4",
             "runs": 2,
             "is_scoring": true,
@@ -1319,8 +1088,8 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds ou…",
-            "score_after": "PHI 5, NYM 4",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1333,8 +1102,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out,…",
-            "score_after": "PHI 5, NYM 4",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1347,8 +1116,8 @@
             "event_type": "strikeout",
             "actor": "Ronny Mauricio",
             "actor_id": 677595,
-            "detail": "Ronny Mauricio strikes…",
-            "score_after": "PHI 5, NYM 4",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1361,8 +1130,8 @@
             "event_type": "strikeout",
             "actor": "Francisco Alvarez",
             "actor_id": 682626,
-            "detail": "Francisco Alvarez strik…",
-            "score_after": "PHI 5, NYM 4",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1372,34 +1141,282 @@
             "inning": 7,
             "half": "bottom",
             "team": "NYM",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Jared Young",
             "actor_id": 676724,
-            "detail": "Play",
-            "score_after": "PHI 5, NYM 4",
+            "detail": "Walk / HBP",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:64",
+            "inning": 7,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "single",
+            "actor": "A.J. Ewing",
+            "actor_id": 805999,
+            "detail": "Single",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:65",
+            "inning": 7,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Brett Baty",
+            "actor_id": 683146,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:66",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:67",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "Single",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:68",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Strikeout",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:69",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:70",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Luis Torrens",
+            "actor_id": 620443,
+            "detail": "Walk / HBP",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:71",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Carson Benge",
+            "actor_id": 701807,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:72",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Juan Soto",
+            "actor_id": 665742,
+            "detail": "Walk / HBP",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:73",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Bo Bichette",
+            "actor_id": 666182,
+            "detail": "Walk / HBP",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:74",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Ronny Mauricio",
+            "actor_id": 677595,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:75",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "strikeout",
+            "actor": "Francisco Alvarez",
+            "actor_id": 682626,
+            "detail": "Strikeout",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:76",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:77",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:78",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:79",
+            "inning": 9,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Jared Young",
+            "actor_id": 676724,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:80",
+            "inning": 9,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "A.J. Ewing",
+            "actor_id": 805999,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:81",
+            "inning": 9,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Brett Baty",
+            "actor_id": 683146,
+            "detail": "Walk / HBP",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:82",
+            "inning": 9,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Luis Torrens",
+            "actor_id": 620443,
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Jared Young",
-            "meta": "vs José Alvarado"
-          },
-          "pitches": [],
-          "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 2
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Bottom 7th"
-        }
+        ]
       }
     },
     "injury_report": null
