@@ -18,10 +18,17 @@ const DEFAULT_VOLUME = 1;
 const ISSUE_MODE = (process.env.ISSUE_MODE || "daily").toLowerCase();
 const IS_LIVE_REFRESH = ISSUE_MODE === "live";
 
+// On a live refresh the crawl deliberately preserves the morning's editorial
+// snapshot (recap, standings), so factcheck's live-API source checks would be
+// comparing intentionally-frozen copy against a moved source. Pass the flag so
+// those reconciliations are recorded as unverifiable instead of blocking
+// errors — otherwise a routine overnight game going Final false-fails the
+// verify gate and stalls the site refresh (and would gate the daily email).
+const ACCURACY_EXPORT_ARGS = ["--export-accuracy", ...(IS_LIVE_REFRESH ? ["--live-refresh"] : [])];
 const ACCURACY_EXPORT_STAGE = {
   scriptName: "factcheck.mjs",
-  args: ["--export-accuracy"],
-  label: "factcheck.mjs --export-accuracy",
+  args: ACCURACY_EXPORT_ARGS,
+  label: `factcheck.mjs ${ACCURACY_EXPORT_ARGS.join(" ")}`,
 };
 
 const DAILY_STAGES = ["crawl.mjs", "enrich.mjs", ACCURACY_EXPORT_STAGE, "render.mjs", "verify.mjs"];
