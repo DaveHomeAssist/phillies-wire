@@ -147,7 +147,7 @@
    [data-theme="dark"] on <html> for user toggle support.
    ---------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --color-bg:           var(--primitive-ink-900);
     --color-bg-subtle:    var(--primitive-ink-800);
     --color-bg-raised:    var(--primitive-ink-700);
@@ -312,7 +312,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --color-accent-soft:   rgba(232, 24, 40, 0.18);
     --wire-banner-bg:      #001a52;
     --wire-banner-border:  rgba(0, 0, 0, 0.55);

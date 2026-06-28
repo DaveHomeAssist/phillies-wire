@@ -40,11 +40,13 @@
   (function () {
     try {
       var stored = localStorage.getItem('pw-theme');
-      if (stored === 'dark') {
-        document.documentElement.dataset.theme = 'dark';
-      } else if (stored !== 'light' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.dataset.theme = 'dark';
-      }
+      // Always resolve to an explicit theme so a manual choice wins over the
+      // OS preference. data-theme present => CSS prefers-color-scheme gate is
+      // disabled and [data-theme] drives the palette deterministically.
+      var theme = (stored === 'dark' || stored === 'light')
+        ? stored
+        : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.dataset.theme = theme;
     } catch (_err) {}
   })();
 </script>
@@ -563,16 +565,16 @@
     var html = document.documentElement;
 
     function applyStoredTheme() {
+      var stored = null;
       try {
-        var stored = localStorage.getItem(THEME_KEY);
-        if (stored === 'dark' || stored === 'light') {
-          html.dataset.theme = stored === 'dark' ? 'dark' : '';
-          return;
-        }
+        stored = localStorage.getItem(THEME_KEY);
       } catch (_err) {}
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        html.dataset.theme = 'dark';
-      }
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      // Resolve to an explicit 'light'/'dark' so a manual choice always wins
+      // over the OS preference (see the CSS :not([data-theme]) gate).
+      html.dataset.theme = (stored === 'dark' || stored === 'light')
+        ? stored
+        : (prefersDark ? 'dark' : 'light');
     }
 
     applyStoredTheme();
@@ -628,10 +630,10 @@
     };
 
     window.toggleTheme = function (button) {
-      var next = html.dataset.theme === 'dark' ? '' : 'dark';
+      var next = html.dataset.theme === 'dark' ? 'light' : 'dark';
       html.dataset.theme = next;
       try {
-        localStorage.setItem(THEME_KEY, next === 'dark' ? 'dark' : 'light');
+        localStorage.setItem(THEME_KEY, next);
       } catch (_err) {}
       if (button) {
         var isDark = next === 'dark';

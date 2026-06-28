@@ -129,7 +129,7 @@
 }
 [data-theme="dark"] .pwx-mu-name { color: var(--primitive-navy-100); }
 @media (prefers-color-scheme: dark) {
-  .pwx-mu-name { color: var(--primitive-navy-100); }
+  :root:not([data-theme]) .pwx-mu-name { color: var(--primitive-navy-100); }
 }
 
 .pwx-mu-hand {

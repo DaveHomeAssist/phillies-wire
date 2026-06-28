@@ -423,7 +423,7 @@ a:hover { text-decoration: underline; }
 }
 
 @media (prefers-color-scheme: dark) {
-  .pw-hero-headline { color: var(--primitive-navy-100); }
+  :root:not([data-theme]) .pw-hero-headline { color: var(--primitive-navy-100); }
 }
 
 [data-theme="dark"] .pw-hero-headline { color: var(--primitive-navy-100); }
@@ -553,7 +553,7 @@ a:hover { text-decoration: underline; }
 }
 
 @media (prefers-color-scheme: dark) {
-  .pw-off-day-next { color: var(--primitive-navy-100); }
+  :root:not([data-theme]) .pw-off-day-next { color: var(--primitive-navy-100); }
 }
 
 [data-theme="dark"] .pw-off-day-next { color: var(--primitive-navy-100); }
@@ -616,7 +616,7 @@ a:hover { text-decoration: underline; }
 }
 
 @media (prefers-color-scheme: dark) {
-  .pw-acc-title { color: var(--primitive-navy-100); }
+  :root:not([data-theme]) .pw-acc-title { color: var(--primitive-navy-100); }
 }
 
 [data-theme="dark"] .pw-acc-title { color: var(--primitive-navy-100); }
@@ -886,7 +886,7 @@ a:hover { text-decoration: underline; }
 }
 
 @media (prefers-color-scheme: dark) {
-  .pw-rot-pitcher { color: var(--primitive-navy-100); }
+  :root:not([data-theme]) .pw-rot-pitcher { color: var(--primitive-navy-100); }
 }
 
 [data-theme="dark"] .pw-rot-pitcher { color: var(--primitive-navy-100); }
@@ -968,7 +968,7 @@ a:hover { text-decoration: underline; }
 }
 
 @media (prefers-color-scheme: dark) {
-  .pw-standings-row--phi td { color: var(--primitive-navy-100); }
+  :root:not([data-theme]) .pw-standings-row--phi td { color: var(--primitive-navy-100); }
 }
 
 [data-theme="dark"] .pw-standings-row--phi td { color: var(--primitive-navy-100); }
@@ -1077,7 +1077,7 @@ a:hover { text-decoration: underline; }
 }
 
 @media (prefers-color-scheme: dark) {
-  .pw-footer-pub { color: var(--primitive-navy-100); }
+  :root:not([data-theme]) .pw-footer-pub { color: var(--primitive-navy-100); }
 }
 
 [data-theme="dark"] .pw-footer-pub { color: var(--primitive-navy-100); }
@@ -1129,7 +1129,7 @@ a:hover { text-decoration: underline; }
 }
 
 @media (prefers-color-scheme: dark) {
-  .pw-archive-title { color: var(--primitive-navy-100); }
+  :root:not([data-theme]) .pw-archive-title { color: var(--primitive-navy-100); }
 }
 
 [data-theme="dark"] .pw-archive-title { color: var(--primitive-navy-100); }
@@ -1442,7 +1442,7 @@ a:hover { text-decoration: underline; }
 }
 
 @media (prefers-color-scheme: dark) {
-  .pw-archive-item-headline { color: var(--primitive-navy-100); }
+  :root:not([data-theme]) .pw-archive-item-headline { color: var(--primitive-navy-100); }
 }
 
 [data-theme="dark"] .pw-archive-item-headline { color: var(--primitive-navy-100); }
