@@ -66,6 +66,10 @@ const NL_EAST_IDS = {
 
 const isPrePublish = process.argv.includes("--pre-publish");
 const isAccuracyExport = process.argv.includes("--export-accuracy");
+// A live-refresh export reconciles the morning's intentionally-frozen editorial
+// snapshot against the live MLB API. Disagreements there are expected drift, not
+// publish-blocking errors, so they are recorded as unverifiable instead.
+const isLiveRefresh = process.argv.includes("--live-refresh");
 const mode = isPrePublish ? "pre-publish" : "daily";
 const DRY_RUN = process.env.FACTCHECK_DRY_RUN === "1";
 
@@ -99,7 +103,7 @@ async function main() {
 
   // --- Source-verified checks (daily only) ---
   if (mode === "daily") {
-    await runSourceChecks({ data, findings });
+    await runSourceChecks({ data, findings, liveRefresh: isLiveRefresh });
   }
 
   applyWhitelist(findings, whitelist);
@@ -391,7 +395,12 @@ function runDeterministicChecks({ data, html, findings, whitelist: _w }) {
 
 // ---------- Source-verified checks ----------
 
-async function runSourceChecks({ data, findings }) {
+async function runSourceChecks({ data, findings, liveRefresh = false }) {
+  // On a live refresh the recap/standings are the preserved morning snapshot, so
+  // a disagreement with the live API is expected drift rather than a publishable
+  // error. Route those findings to the non-blocking `unverified` bucket so the
+  // verify gate (and, in daily mode, email delivery) is never tripped by it.
+  const sourceDisagreementBucket = liveRefresh ? findings.unverified : findings.errors;
   // A. Previous-day box score reconciliation
   try {
     const yesterdayISO = offsetDays(todayISO(), -1);
@@ -407,7 +416,7 @@ async function runSourceChecks({ data, findings }) {
         });
         return null;
       });
-      if (boxscore) reconcileRecap({ data, boxscore, game, findings });
+      if (boxscore) reconcileRecap({ data, boxscore, game, findings, bucket: sourceDisagreementBucket });
     }
   } catch (e) {
     findings.unverified.push({
@@ -427,7 +436,7 @@ async function runSourceChecks({ data, findings }) {
         const apiRow = nle[wireRow.abbr ?? wireRow.team];
         if (!apiRow) continue;
         if (apiRow.wins !== wireRow.wins || apiRow.losses !== wireRow.losses) {
-          findings.errors.push({
+          sourceDisagreementBucket.push({
             id: `standings-record-${wireRow.team}`,
             title: `${wireRow.team} record disagrees with MLB API`,
             detail: `Wire: ${wireRow.wins}-${wireRow.losses}. API: ${apiRow.wins}-${apiRow.losses}.`,
@@ -472,7 +481,7 @@ async function runSourceChecks({ data, findings }) {
   }
 }
 
-function reconcileRecap({ data, boxscore, game, findings }) {
+export function reconcileRecap({ data, boxscore, game, findings, bucket = findings.errors }) {
   const phiSide = boxscore.teams?.home?.team?.id === MLB_TEAM_ID_PHI ? "home" : "away";
   const phiBox = boxscore.teams?.[phiSide];
   const oppBox = boxscore.teams?.[phiSide === "home" ? "away" : "home"];
@@ -492,7 +501,7 @@ function reconcileRecap({ data, boxscore, game, findings }) {
       const phiWire = Number(m[1] ?? m[4]);
       const oppWire = Number(m[2] ?? m[3]);
       if (phiWire !== phiRuns || oppWire !== oppRuns) {
-        findings.errors.push({
+        bucket.push({
           id: "recap-final-score",
           title: "Recap final score disagrees with MLB box score",
           detail: `Wire: ${wireRecap.final_score}. API: PHI ${phiRuns}, OPP ${oppRuns}.`,
@@ -517,7 +526,7 @@ function reconcileRecap({ data, boxscore, game, findings }) {
         Number(starterStats.baseOnBalls) !== Number(bb) ||
         Number(starterStats.strikeOuts) !== Number(k);
       if (disagree) {
-        findings.errors.push({
+        bucket.push({
           id: "recap-starter-line",
           title: "Starter line disagrees with MLB box score",
           detail: `Wire: ${wireRecap.starter_line}. API: ${starterStats.inningsPitched} IP, ${starterStats.hits} H, ${starterStats.earnedRuns} ER, ${starterStats.baseOnBalls} BB, ${starterStats.strikeOuts} K.`,
