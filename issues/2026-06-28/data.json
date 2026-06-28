@@ -1,0 +1,452 @@
+{
+  "schema_version": "1.4.0",
+  "meta": {
+    "date": "2026-06-28",
+    "edition": 89,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-06-28T05:31:57.247Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Jun 28, 2026, 1:31 AM ET",
+      "source_notes": [
+        "Farm system notes hidden because the editorial baseline is stale."
+      ]
+    }
+  },
+  "record": {
+    "wins": 46,
+    "losses": 37,
+    "streak": "L1",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Phillies @ Mets · Game 3 of 3",
+    "dek": "Jesús Luzardo vs Cionel Pérez",
+    "summary": "Jesús Luzardo vs Cionel Pérez · Phillies @ Mets · Game 3 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "1:40 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "Citi Field, Flushing"
+      },
+      {
+        "label": "Watch",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "68° · Clear · 4 mph · gusts 8",
+      "Series tied 1-1"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "PHI vs PIT · Mon, Jun 29 · 6:40 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "1:40 PM",
+        "starters": {
+          "home": {
+            "team": "NYM",
+            "name": "Cionel Pérez",
+            "hand": "L"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "team": "NYM",
+            "name": "Cionel Pérez",
+            "hand": "L"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Phillies @ Mets · Game 3 of 3",
+        "first_pitch": "1:40 PM",
+        "venue": "Citi Field, Flushing",
+        "starters": {
+          "home": {
+            "name": "Cionel Pérez",
+            "hand": "L"
+          },
+          "away": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "phi": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "name": "Cionel Pérez",
+            "hand": "L"
+          }
+        },
+        "series": {
+          "home_wins": 0,
+          "away_wins": 0,
+          "label": "Series tied 1-1"
+        },
+        "broadcast": {
+          "tv": "NBCSP",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 68,
+          "condition": "Clear",
+          "wind": "4 mph · gusts 8",
+          "gusts_mph": 8
+        },
+        "giveaway": "",
+        "transit": "",
+        "venue_is_home": false,
+        "matchup_tape": {
+          "home": {
+            "team": "NYM",
+            "name": "Cionel Pérez",
+            "hand": "L",
+            "era": "4.99",
+            "record": "3-3",
+            "whip": "1.37"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L",
+            "era": "4.00",
+            "record": "6-4",
+            "whip": "1.30"
+          }
+        },
+        "linescore": {
+          "currentInning": null,
+          "currentInningOrdinal": "",
+          "inningState": "",
+          "isTopInning": false,
+          "outs": null,
+          "teams": {
+            "away": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            },
+            "home": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            }
+          },
+          "innings": []
+        },
+        "plays": []
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-06-28T05:31:57.247Z",
+            "freshness_label": "As of Jun 28, 2026, 1:31 AM ET"
+          },
+          {
+            "name": "Brad Keller",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right forearm tendinitis",
+            "status_note": "",
+            "retroactive_to": "2026-06-14",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-06-28T05:31:57.247Z",
+            "freshness_label": "As of Jun 28, 2026, 1:31 AM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-06-28T05:31:57.247Z",
+            "freshness_label": "As of Jun 28, 2026, 1:31 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Tomorrow",
+    "matchup": "PHI vs PIT",
+    "date": "Mon, Jun 29",
+    "time": "6:40 PM",
+    "broadcast": "NBCSP",
+    "venue": "Citizens Bank Park"
+  }
+}
