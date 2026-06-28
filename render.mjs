@@ -27,11 +27,17 @@ const ISSUES_DIR = "./issues";
 const SITE_DIR = "./site";
 const SITE_TMP_DIR = "./site.tmp";
 const SITE_BACKUP_DIR = "./site.bak";
-const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./pw-enhance.css", "./live-feed.js", "./fonts.css"];
+const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./pw-enhance.css", "./live-feed.js", "./fonts.css", "./og-default.png"];
 const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed", "./schedule", "./shared", "./calendar", "./data"];
 const ISSUE_DATA_SCHEMA_VERSION = "1.3.0";
-const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
-const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
+const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://phillieswire.com";
+// Social scrapers (Facebook, X, LinkedIn, iMessage, Slack) do not render SVG
+// OG images, so the link-preview image is a committed static PNG. The dynamic
+// SVG is still emitted as a secondary asset at OG_SVG_PATH.
+const DEFAULT_OG_IMAGE_PATH = "og-default.png";
+const OG_SVG_PATH = "og-default.svg";
+const OG_IMAGE_WIDTH = 1200;
+const OG_IMAGE_HEIGHT = 630;
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((error) => {
@@ -92,7 +98,12 @@ async function main() {
   writeFileSync("./feed.xml", feedXml, "utf8");
   writeFileSync("./manifest.webmanifest", `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
   writeFileSync("./favicon.svg", faviconSvg, "utf8");
-  writeFileSync(`./${DEFAULT_OG_IMAGE_PATH}`, ogSvg, "utf8");
+  writeFileSync(`./${OG_SVG_PATH}`, ogSvg, "utf8");
+
+  // Re-derive prev/next nav across every dated issue from archive adjacency
+  // before assembling the deploy artifact (fixes the render-time "no next yet"
+  // gap for all past and future issues).
+  backfillIssueNav(archive);
 
   buildSiteArtifact({
     latestHtml,
@@ -154,7 +165,7 @@ export function buildSiteArtifact({
   writeFileSync(`${SITE_TMP_DIR}/feed.xml`, feedXml, "utf8");
   writeFileSync(`${SITE_TMP_DIR}/manifest.webmanifest`, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
   writeFileSync(`${SITE_TMP_DIR}/favicon.svg`, faviconSvg, "utf8");
-  writeFileSync(`${SITE_TMP_DIR}/${DEFAULT_OG_IMAGE_PATH}`, ogSvg, "utf8");
+  writeFileSync(`${SITE_TMP_DIR}/${OG_SVG_PATH}`, ogSvg, "utf8");
 
   for (const asset of STATIC_ASSET_FILES) {
     if (existsSync(asset)) {
@@ -307,10 +318,14 @@ function buildManifest(data) {
 }
 
 function buildFaviconSvg() {
+  // Canonical Phillies Wire baseball mark: navy tile, seam circle, orange core, teal stitch.
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#002d72"/>
-  <path d="M7 24L7 8h8.2c3.2 0 5.3 1.9 5.3 5 0 3.2-2.1 5.1-5.3 5.1H11v5.9z" fill="#e81828"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="28" fill="#0C2233"/>
+  <circle cx="64" cy="64" r="34" stroke="#F2E5CD" stroke-opacity="0.45" stroke-width="2"/>
+  <circle cx="64" cy="64" r="9" fill="#FF7A3D"/>
+  <path d="M31 64H97" stroke="#F2E5CD" stroke-width="3" stroke-linecap="round"/>
+  <path d="M39 84C44.5 77.5 49.5 74 57 74C67 74 69 84 79 84C85 84 89.5 81.5 93 77" stroke="#82C9C8" stroke-width="5" stroke-linecap="round"/>
 </svg>
 `;
 }
@@ -386,6 +401,72 @@ function enrichMetaForNavigation(data, links, context) {
         }
       : null,
   };
+}
+
+function buildIssueNavMarkup(prev, next) {
+  if (!prev && !next) {
+    return "";
+  }
+  const prevHtml = prev
+    ? `
+    <a class="pw-issue-nav-link pw-issue-nav-link--prev" href="${prev.href}" rel="prev">
+      <span class="pw-issue-nav-direction">&larr; Previous</span>
+      <span class="pw-issue-nav-date">${escapeHtml(prev.label)}</span>
+      <span class="pw-issue-nav-title">${escapeHtml(prev.headline)}</span>
+    </a>`
+    : "";
+  const nextHtml = next
+    ? `
+    <a class="pw-issue-nav-link pw-issue-nav-link--next" href="${next.href}" rel="next">
+      <span class="pw-issue-nav-direction">Next &rarr;</span>
+      <span class="pw-issue-nav-date">${escapeHtml(next.label)}</span>
+      <span class="pw-issue-nav-title">${escapeHtml(next.headline)}</span>
+    </a>`
+    : "";
+  return `<nav class="pw-issue-nav" aria-label="Issue navigation">${prevHtml}${nextHtml}
+  </nav>`;
+}
+
+// Dated issue pages are rendered once, on the day they are newest, so they
+// never gain a "next" link at render time. Re-derive prev/next for every
+// issue from the full archive and rewrite the nav block in place. Idempotent:
+// re-running replaces the existing block, so each daily build heals the
+// previous issue's previously-missing "next" link.
+function backfillIssueNav(archive) {
+  const entries = (archive.entries ?? []).filter((entry) => hasValidIssueDate(entry.date));
+  const navPattern = /\s*<nav class="pw-issue-nav"[\s\S]*?<\/nav>/;
+  for (let i = 0; i < entries.length; i += 1) {
+    const file = `${ISSUES_DIR}/${entries[i].date}/index.html`;
+    if (!existsSync(file)) {
+      continue;
+    }
+    const newer = entries[i - 1] ?? null;
+    const older = entries[i + 1] ?? null;
+    const prev = older
+      ? { href: `../${older.date}/`, label: formatIssueDateLong(older.date), headline: older.headline ?? "Previous issue" }
+      : null;
+    const next = newer
+      ? { href: `../${newer.date}/`, label: formatIssueDateLong(newer.date), headline: newer.headline ?? "Next issue" }
+      : null;
+    const markup = buildIssueNavMarkup(prev, next);
+
+    let html = readFileSync(file, "utf8");
+    if (navPattern.test(html)) {
+      html = html.replace(navPattern, markup ? `\n  ${markup}` : "");
+    } else if (markup) {
+      // Insert before the first anchor present. Current-template issues have a
+      // share nav; older-template issues fall back to the footer (which may be a
+      // <footer> or a legacy <div>) or the main close.
+      const anchorMatch = html.match(/<nav class="pw-share"|<(?:footer|div) class="pw-footer"|<\/main>/);
+      if (!anchorMatch) {
+        continue;
+      }
+      html = html.replace(anchorMatch[0], `${markup}\n  ${anchorMatch[0]}`);
+    } else {
+      continue;
+    }
+    writeFileSync(file, html, "utf8");
+  }
 }
 
 function enrichMetaForSharing(data) {
@@ -619,6 +700,9 @@ ${itemsHtml}
 <meta property="og:type" content="website">
 <meta property="og:url" content="${escapeHtml(canonicalUrl)}">
 <meta property="og:image" content="${escapeHtml(SITE_URL + "/" + DEFAULT_OG_IMAGE_PATH)}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="${OG_IMAGE_WIDTH}">
+<meta property="og:image:height" content="${OG_IMAGE_HEIGHT}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../fonts.css">
 <link rel="stylesheet" href="../tokens.css">
@@ -630,8 +714,10 @@ ${itemsHtml}
 <div class="pw-page">
   <nav class="pw-shell-nav" aria-label="Primary">
     <a class="pw-shell-link" href="../">Latest</a>
-    <a class="pw-shell-link" href="./">Archive</a>
+    <a class="pw-shell-link" href="./" aria-current="page">Archive</a>
+    <a class="pw-shell-link" href="../dashboard/">Dashboard</a>
     <a class="pw-shell-link" href="../feed.xml" rel="alternate">RSS</a>
+    <a class="pw-shell-link pw-shell-link--subscribe" href="${escapeHtml(SUBSCRIBE_URL)}" target="_blank" rel="noopener">Subscribe</a>
   </nav>
 
   <main id="pw-archive-main" class="pw-main">
@@ -654,6 +740,14 @@ ${itemsHtml}
 
 ${groupHtml}
   </main>
+  <footer class="pw-footer">
+    <div>
+      <span class="pw-footer-pub">${escapeHtml(archive.publication)}</span>
+      <span class="pw-footer-meta">${escapeHtml(String(entries.length))} issue${entries.length === 1 ? "" : "s"} &middot; Updated ${escapeHtml(formatTimestamp(archive.updated_at))}</span>
+      <span class="pwx-ring"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a1 1 0 0 1 1 1c3.6.5 6 3.6 6 8 0 3 .8 5 2 6H3c1.2-1 2-3 2-6 0-4.4 2.4-7.5 6-8a1 1 0 0 1 1-1z"/><rect x="11" y="20" width="2" height="2.4" rx="1"/></svg>Ring the Bell</span>
+    </div>
+    <a class="pw-shell-link pw-shell-link--subscribe" href="${escapeHtml(SUBSCRIBE_URL)}" target="_blank" rel="noopener">Subscribe &#8594;</a>
+  </footer>
 </div>
 <script>
   (function () {
