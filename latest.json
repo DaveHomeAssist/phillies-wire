@@ -4,7 +4,7 @@
   "edition_date": "2026-06-28",
   "volume": 1,
   "edition": 89,
-  "generated_at": "2026-06-28T19:33:18.493Z",
+  "generated_at": "2026-06-28T20:09:32.054Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, NYM 1",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Jared Young is up against Chase Shugart. Series: Series tied 1-1.",
+    "headline": "PHI 5, NYM 4",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Francisco Alvarez is up against José Alvarado. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Braxton Ashcraft · PHI vs PIT · Mon, Jun 29 · 6:40 PM"
   },
@@ -56,35 +56,35 @@
     },
     "weather": {
       "temp_f": 81,
-      "condition": "Mostly sunny",
-      "wind": "8 mph · gusts 9",
-      "gusts_mph": 9
+      "condition": "Clear",
+      "wind": "9 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jared Young",
-        "meta": "vs Chase Shugart"
+        "name": "Francisco Alvarez",
+        "meta": "vs José Alvarado"
       },
       "pitches": [
         "B",
         "B",
-        "S",
+        "B",
         "S",
         "F"
       ],
       "count": {
         "balls": 3,
         "strikes": 2,
-        "outs": 0
+        "outs": 1
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -92,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-28T19:33:18.977Z",
+    "updated_at": "2026-06-28T20:09:32.886Z",
     "current_game_pk": 823608,
     "next_game_pk": 823444,
     "next_game": {
@@ -129,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Mostly sunny · gusts 9 mph",
+      "text": "81° · Clear · gusts 10 mph",
       "highlight": false
     }
   ]
