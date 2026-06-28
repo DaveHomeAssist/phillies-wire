@@ -87,6 +87,9 @@ jobs:
       - name: Run pipeline
         env:
           ISSUE_MODE: ${{ steps.mode.outputs.mode }}
+          # Canonical public domain. Drives every canonical/og/sitemap/feed URL.
+          # render.mjs defaults to this too; set here so the render step is explicit.
+          PHILLIES_WIRE_BASE_URL: https://phillieswire.com
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}

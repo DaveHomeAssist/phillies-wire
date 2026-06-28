@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { runFactcheck } from "./factcheck.mjs";
 
 const data = readJson("./phillies-wire-data.json");
@@ -244,6 +244,31 @@ if (!/fonts\.css/.test(latestHtml)) {
 }
 if (/fonts\.googleapis\.com/.test(latestHtml)) {
   fail("Latest issue page still loads Google Fonts; fonts must be self-hosted.");
+}
+
+// Regression guard across EVERY issue page (persisted + deployed), not just the
+// latest: historical pages must stay free of external Google Fonts, must not
+// leak internal header/secret names, and must not carry injected reminders.
+for (const root of ["./issues", "./site/issues"]) {
+  if (!existsSync(root)) {
+    continue;
+  }
+  for (const dir of readdirSync(root)) {
+    const file = `${root}/${dir}/index.html`;
+    if (!existsSync(file)) {
+      continue;
+    }
+    const html = readFileSync(file, "utf8");
+    if (/fonts\.googleapis\.com|fonts\.gstatic\.com/.test(html)) {
+      fail(`Issue page loads external Google Fonts (must be self-hosted): ${file}`);
+    }
+    if (/x-api-key|sk-ant-/.test(html)) {
+      fail(`Issue page leaks an internal key/header name: ${file}`);
+    }
+    if (/<system-reminder>/.test(html)) {
+      fail(`Issue page contains an injected system-reminder: ${file}`);
+    }
+  }
 }
 
 if (!data.meta.off_day && !/pw-accordion/.test(latestHtml)) {

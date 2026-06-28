@@ -795,3 +795,30 @@ body {
   font-style: italic;
   margin-left: 6px;
 }
+
+/* Accessibility: keyboard skip-link for the dashboard app shell. Visually
+   hidden until focused, then anchored top-left over the sidebar. */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -56px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--dash-brand-deep, #002d72);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 12px;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
+}

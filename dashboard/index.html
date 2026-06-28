@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,follow" />
 <meta name="theme-color" content="#e81828" />
 <title>Phillies Wire · Command Center</title>
 <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
@@ -12,6 +13,7 @@
 <link rel="stylesheet" href="./dashboard.css" />
 </head>
 <body>
+  <a class="skip-link" href="#stage-main">Skip to content</a>
   <div class="pw-wire-banner" data-wire-banner data-feed-url="../latest.json" hidden></div>
   <div class="dash-app">
   <aside class="sidebar" aria-label="Primary navigation">
@@ -49,7 +51,7 @@
     </div>
   </aside>
 
-  <main class="stage">
+  <main id="stage-main" class="stage">
     <header class="topbar">
       <div class="topbar-title">
         <span class="eyebrow">Insights &amp; Reports</span>
