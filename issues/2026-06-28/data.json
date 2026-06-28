@@ -5,14 +5,14 @@
     "edition": 89,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-28T13:30:34.737Z",
+    "generated_at": "2026-06-28T16:29:30.325Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "Jun 28, 2026, 9:30 AM ET",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Jun 28, 2026, 12:29 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -46,20 +46,20 @@
       }
     ],
     "bullets": [
-      "74° · Overcast · 2 mph · gusts 4",
+      "80° · Overcast · 6 mph · gusts 7",
       "Series tied 1-1"
     ],
     "next_label": "Tomorrow",
-    "next_value": "PHI vs PIT · Mon, Jun 29 · 6:40 PM"
+    "next_value": "Braxton Ashcraft · PHI vs PIT · Mon, Jun 29 · 6:40 PM"
   },
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
-        "announced": false,
-        "mode": "pending",
-        "mode_label": "Pending",
-        "show_orders": false,
+        "status_note": "Official batting orders confirmed for today's PHI at NYM game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
+        "show_orders": true,
         "first_pitch": "1:40 PM",
         "starters": {
           "home": {
@@ -87,225 +87,225 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Carson Benge",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Juan Soto",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bo Bichette",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Eric Wagaman",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Francisco Alvarez",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Mark Vientos",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Tyrone Taylor",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brett Baty",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Luis Torrens",
+              "position": "C",
+              "bats": "R"
             }
           ],
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Derek Hill",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
             }
           ],
           "phi": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Derek Hill",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
             }
           ],
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Carson Benge",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Juan Soto",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bo Bichette",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Eric Wagaman",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Francisco Alvarez",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Mark Vientos",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Tyrone Taylor",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brett Baty",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Luis Torrens",
+              "position": "C",
+              "bats": "R"
             }
           ]
         }
@@ -345,10 +345,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 74,
+          "temp_f": 80,
           "condition": "Overcast",
-          "wind": "2 mph · gusts 4",
-          "gusts_mph": 4
+          "wind": "6 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "",
@@ -372,26 +372,55 @@
           }
         },
         "linescore": {
-          "currentInning": null,
-          "currentInningOrdinal": "",
-          "inningState": "",
-          "isTopInning": false,
-          "outs": null,
+          "currentInning": 1,
+          "currentInningOrdinal": "1st",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": null,
-              "hits": null,
-              "errors": null
+              "runs": 0,
+              "hits": 0,
+              "errors": 0
             },
             "home": {
-              "runs": null,
-              "hits": null,
-              "errors": null
+              "runs": 0,
+              "hits": 0,
+              "errors": 0
             }
           },
-          "innings": []
+          "innings": [
+            {
+              "num": 1,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              }
+            }
+          ]
         },
-        "plays": []
+        "plays": [
+          {
+            "id": "823608:0",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Status Change - Pre-Game",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          }
+        ]
       }
     },
     "injury_report": {
@@ -407,8 +436,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-28T13:30:34.737Z",
-            "freshness_label": "As of Jun 28, 2026, 9:30 AM ET"
+            "last_confirmed": "2026-06-28T16:29:30.325Z",
+            "freshness_label": "As of Jun 28, 2026, 12:29 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -420,8 +449,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-28T13:30:34.737Z",
-            "freshness_label": "As of Jun 28, 2026, 9:30 AM ET"
+            "last_confirmed": "2026-06-28T16:29:30.325Z",
+            "freshness_label": "As of Jun 28, 2026, 12:29 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -433,8 +462,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-28T13:30:34.737Z",
-            "freshness_label": "As of Jun 28, 2026, 9:30 AM ET"
+            "last_confirmed": "2026-06-28T16:29:30.325Z",
+            "freshness_label": "As of Jun 28, 2026, 12:29 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -443,7 +472,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "PHI vs PIT",
+    "matchup": "Braxton Ashcraft · PHI vs PIT",
     "date": "Mon, Jun 29",
     "time": "6:40 PM",
     "broadcast": "NBCSP",
