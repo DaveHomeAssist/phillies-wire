@@ -15,7 +15,7 @@ import {
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 
-import { main as deliverMain } from "../../deliver.mjs";
+import { main as deliverMain, writeDeliveryStatus } from "../../deliver.mjs";
 import { test, run, assert } from "./_harness.mjs";
 
 test("G4: deliver writes delivery-status.json after a successful send", async () => {
@@ -79,6 +79,27 @@ test("G4: deliver writes delivery-status.json after a successful send", async ()
         process.env[key] = value;
       }
     }
+    rmSync(work, { recursive: true, force: true });
+  }
+});
+
+test("G4b: live refresh can write skipped delivery status", () => {
+  const work = mkdtempSync(join(tmpdir(), "pw-delivery-skipped-"));
+  const previousCwd = process.cwd();
+
+  try {
+    process.chdir(work);
+    mkdirSync("site", { recursive: true });
+    const status = writeDeliveryStatus({ state: "skipped", required: false });
+    const rootStatus = JSON.parse(readFileSync("delivery-status.json", "utf8"));
+    const siteStatus = JSON.parse(readFileSync("site/delivery-status.json", "utf8"));
+
+    assert.equal(status.state, "skipped");
+    assert.equal(rootStatus.state, "skipped");
+    assert.equal(siteStatus.state, "skipped");
+    assert.equal(rootStatus.required, false);
+  } finally {
+    process.chdir(previousCwd);
     rmSync(work, { recursive: true, force: true });
   }
 });

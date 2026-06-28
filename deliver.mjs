@@ -104,7 +104,7 @@ export async function main({ createTransportImpl = null, fetchSubscribersImpl = 
 }
 
 export function writeDeliveryStatus(status = {}) {
-  const state = ["sent", "partial", "failed"].includes(status.state) ? status.state : "failed";
+  const state = ["sent", "partial", "failed", "skipped"].includes(status.state) ? status.state : "failed";
   const payload = {
     schema_version: "delivery-1.0.0",
     generated_at: new Date().toISOString(),

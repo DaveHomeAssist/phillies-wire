@@ -1,0 +1,113 @@
+{
+  "schema_version": "latest-1.0.0",
+  "publication": "Phillies Wire",
+  "edition_date": "2026-06-27",
+  "volume": 1,
+  "edition": 88,
+  "generated_at": "2026-06-28T02:47:46.333Z",
+  "mode": "final",
+  "mode_label": "Final",
+  "off_day": false,
+  "record": {
+    "wins": 46,
+    "losses": 37,
+    "streak": "L1",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "headline": "PHI 2, NYM 6.",
+    "dek": "NYM 6, PHI 2 · Christian Scott · 4.1 IP, 3 H, 2 ER, 6 K",
+    "summary": "PHI 2, NYM 6. Final at Citi Field, Flushing. Series tied 1-1.",
+    "next_label": "Tomorrow",
+    "next_value": "Jesús Luzardo vs Cionel Pérez · PHI @ NYM · Sun, Jun 28 · 1:40 PM"
+  },
+  "game": {
+    "matchup": "Phillies @ Mets · Game 2 of 3",
+    "first_pitch": "4:10 PM",
+    "venue": "Citi Field, Flushing",
+    "starters": {
+      "home": {
+        "name": "Christian Scott",
+        "hand": "R"
+      },
+      "away": {
+        "name": "Tim Mayza",
+        "hand": "L"
+      },
+      "phi": {
+        "name": "Tim Mayza",
+        "hand": "L"
+      },
+      "opp": {
+        "name": "Christian Scott",
+        "hand": "R"
+      }
+    },
+    "series": {
+      "home_wins": 0,
+      "away_wins": 0,
+      "label": "Series tied 1-1"
+    },
+    "broadcast": {
+      "tv": "NBCSP",
+      "stream": "MLB.TV",
+      "radio": "94 WIP"
+    },
+    "weather": {
+      "temp_f": 68,
+      "condition": "Overcast",
+      "wind": "3 mph · gusts 8",
+      "gusts_mph": 8
+    },
+    "score": null,
+    "inning": null,
+    "situation": null,
+    "recap_line": null
+  },
+  "schedule": {
+    "schema_version": "1.0.0",
+    "path": "data/phillies-2026.json",
+    "season": 2026,
+    "updated_at": "2026-06-28T02:47:46.839Z",
+    "current_game_pk": 823608,
+    "next_game_pk": 823444,
+    "next_game": {
+      "game_pk": 823444,
+      "official_date": "2026-06-29",
+      "date_label": "Mon, Jun 29, 2026",
+      "time_label": "6:40 PM",
+      "title": "Pittsburgh Pirates at Phillies",
+      "matchup": "PIT at PHI",
+      "venue": "Citizens Bank Park"
+    },
+    "current_game": {
+      "game_pk": 823608,
+      "official_date": "2026-06-28",
+      "title": "Phillies at New York Mets",
+      "matchup": "PHI at NYM"
+    }
+  },
+  "ticker": [
+    {
+      "text": "PHI 46-37",
+      "highlight": true
+    },
+    {
+      "text": "Phillies @ Mets · Game 2 of 3 · 4:10 PM",
+      "highlight": false
+    },
+    {
+      "text": "Tim Mayza vs Christian Scott",
+      "highlight": true
+    },
+    {
+      "text": "NBCSP · 94 WIP",
+      "highlight": false
+    },
+    {
+      "text": "68° · Overcast · gusts 8 mph",
+      "highlight": false
+    }
+  ]
+}
