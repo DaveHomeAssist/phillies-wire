@@ -5,14 +5,14 @@
     "edition": 89,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-28T20:09:32.054Z",
+    "generated_at": "2026-06-28T20:10:05.902Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jun 28, 2026, 4:09 PM ET",
+      "generated_at_et": "Jun 28, 2026, 4:10 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -377,7 +377,7 @@
           "currentInningOrdinal": "7th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 1,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 5,
@@ -1358,9 +1358,23 @@
             "inning": 7,
             "half": "bottom",
             "team": "NYM",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Francisco Alvarez",
             "actor_id": 682626,
+            "detail": "Francisco Alvarez strik…",
+            "score_after": "PHI 5, NYM 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823608:63",
+            "inning": 7,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "other",
+            "actor": "Jared Young",
+            "actor_id": 676724,
             "detail": "Play",
             "score_after": "PHI 5, NYM 4",
             "runs": 0,
@@ -1370,20 +1384,14 @@
         ],
         "situation": {
           "batter": {
-            "name": "Francisco Alvarez",
+            "name": "Jared Young",
             "meta": "vs José Alvarado"
           },
-          "pitches": [
-            "B",
-            "B",
-            "B",
-            "S",
-            "F"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 3,
-            "strikes": 2,
-            "outs": 1
+            "balls": 0,
+            "strikes": 0,
+            "outs": 2
           },
           "bases": {
             "first": false,
