@@ -21,7 +21,7 @@ import { pathToFileURL } from "node:url";
 // HTTPS" is enabled (cert provisioning). The deployed site serves HTTPS
 // regardless, and we probe with node:https, so upgrade the scheme rather than
 // hard-failing the post-deploy check on the protocol prefix.
-const BASE_URL = (process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire")
+const BASE_URL = (process.env.PHILLIES_WIRE_BASE_URL ?? "https://phillieswire.com")
   .replace(/^http:\/\//i, "https://");
 const MAX_AGE_MIN = Number(process.env.PHILLIES_WIRE_MAX_AGE_MIN ?? 240);
 const WEBHOOK = process.env.PHILLIES_WIRE_WEBHOOK;

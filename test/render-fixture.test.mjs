@@ -24,7 +24,7 @@ runTest("feed builder emits RSS 2.0, not Atom", () => {
   assert.match(feed, /^<\?xml version="1\.0" encoding="UTF-8"\?>\n<rss version="2\.0"/);
   assert.match(feed, /<channel>/);
   assert.match(feed, /<item>/);
-  assert.match(feed, /<guid isPermaLink="true">https:\/\/davehomeassist\.github\.io\/phillies-wire\/issues\/2026-06-27\/<\/guid>/);
+  assert.match(feed, /<guid isPermaLink="true">https:\/\/phillieswire\.com\/issues\/2026-06-27\/<\/guid>/);
   assert.match(feed, /type="application\/rss\+xml"/);
   assert.doesNotMatch(feed, /<feed xmlns="http:\/\/www\.w3\.org\/2005\/Atom"/);
 });

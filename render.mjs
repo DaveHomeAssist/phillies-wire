@@ -31,7 +31,7 @@ const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./pw-enhance
 const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed", "./schedule", "./shared", "./calendar", "./data"];
 const ISSUE_DATA_SCHEMA_VERSION = "1.4.0";
 const ISSUE_DATA_BUDGET_BYTES = 20 * 1024;
-const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://davehomeassist.github.io/phillies-wire";
+const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://phillieswire.com";
 const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
