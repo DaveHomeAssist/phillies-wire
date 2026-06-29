@@ -4,7 +4,7 @@
   "edition_date": "2026-06-29",
   "volume": 1,
   "edition": 90,
-  "generated_at": "2026-06-29T23:24:39.216Z",
+  "generated_at": "2026-06-29T23:36:26.523Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, PIT 0",
-    "dek": "Bottom 3rd · 1 out",
-    "summary": "Bryce Harper is up against Braxton Ashcraft. Series: Regular Season.",
+    "headline": "PHI 5, PIT 0",
+    "dek": "Top 4th · 0 outs",
+    "summary": "Bryan Reynolds is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Bubba Chandler · PHI vs PIT · Tue, Jun 30 · 6:40 PM"
   },
@@ -55,35 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 85,
       "condition": "Partly cloudy",
-      "wind": "8 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "4 mph · gusts 5",
+      "gusts_mph": 5
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Braxton Ashcraft"
+        "name": "Bryan Reynolds",
+        "meta": "vs Aaron Nola"
       },
       "pitches": [
+        "B",
         "S",
         "F",
         "F",
-        "B"
+        "B",
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 3,
         "strikes": 2,
-        "outs": 1
+        "outs": 0
       },
       "bases": {
-        "first": true,
-        "second": false,
+        "first": false,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Top 4th"
     },
     "recap_line": null
   },
@@ -91,7 +94,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-29T23:24:39.686Z",
+    "updated_at": "2026-06-29T23:36:27.306Z",
     "current_game_pk": 823444,
     "next_game_pk": 823445,
     "next_game": {
@@ -128,7 +131,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Partly cloudy · gusts 11 mph",
+      "text": "85° · Partly cloudy · gusts 5 mph",
       "highlight": false
     }
   ]
