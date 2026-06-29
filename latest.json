@@ -4,9 +4,9 @@
   "edition_date": "2026-06-29",
   "volume": 1,
   "edition": 90,
-  "generated_at": "2026-06-29T22:15:35.845Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-06-29T22:37:21.915Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 47,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Pirates @ Phillies · Game 1 of 4",
-    "dek": "Aaron Nola vs Braxton Ashcraft",
-    "summary": "Aaron Nola vs Braxton Ashcraft · Pirates @ Phillies · Game 1 of 4",
+    "headline": "PHI 0, PIT 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Konnor Griffin is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Bubba Chandler · PHI vs PIT · Tue, Jun 30 · 6:40 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 87,
+      "temp_f": 85,
       "condition": "Overcast",
-      "wind": "3 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "11 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Konnor Griffin",
+        "meta": "vs Aaron Nola"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-29T22:15:36.555Z",
+    "updated_at": "2026-06-29T22:37:22.375Z",
     "current_game_pk": 823444,
     "next_game_pk": 823445,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Overcast · gusts 5 mph",
+      "text": "85° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
