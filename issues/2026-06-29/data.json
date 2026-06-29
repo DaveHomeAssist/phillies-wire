@@ -5,14 +5,14 @@
     "edition": 90,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-29T21:03:51.166Z",
+    "generated_at": "2026-06-29T21:31:57.037Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Pregame edition",
-      "generated_at_et": "Jun 29, 2026, 5:03 PM ET",
+      "generated_at_et": "Jun 29, 2026, 5:31 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "89° · Clear · 3 mph · gusts 4",
+      "90° · Partly cloudy · 1 mph · gusts 3",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -55,11 +55,11 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
-        "announced": false,
-        "mode": "pending",
-        "mode_label": "Pending",
-        "show_orders": false,
+        "status_note": "Official batting orders confirmed for today's PIT at PHI game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
+        "show_orders": true,
         "first_pitch": "6:40 PM",
         "starters": {
           "home": {
@@ -143,57 +143,57 @@
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Konnor Griffin",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Lowe",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryan Reynolds",
+              "position": "LF",
+              "bats": "S"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ryan O'Hearn",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Esmerlyn Valdez",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Endy Rodríguez",
+              "position": "C",
+              "bats": "S"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Tyler Callihan",
+              "position": "3B",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jared Triolo",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jake Mangum",
+              "position": "CF",
+              "bats": "S"
             }
           ],
           "phi": [
@@ -255,57 +255,57 @@
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Konnor Griffin",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Lowe",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryan Reynolds",
+              "position": "LF",
+              "bats": "S"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Ryan O'Hearn",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Esmerlyn Valdez",
+              "position": "RF",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Endy Rodríguez",
+              "position": "C",
+              "bats": "S"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Tyler Callihan",
+              "position": "3B",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jared Triolo",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jake Mangum",
+              "position": "CF",
+              "bats": "S"
             }
           ]
         }
@@ -345,10 +345,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 89,
-          "condition": "Clear",
-          "wind": "3 mph · gusts 4",
-          "gusts_mph": 4
+          "temp_f": 90,
+          "condition": "Partly cloudy",
+          "wind": "1 mph · gusts 3",
+          "gusts_mph": 3
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -372,26 +372,55 @@
           }
         },
         "linescore": {
-          "currentInning": null,
-          "currentInningOrdinal": "",
-          "inningState": "",
-          "isTopInning": false,
-          "outs": null,
+          "currentInning": 1,
+          "currentInningOrdinal": "1st",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": null,
-              "hits": null,
-              "errors": null
+              "runs": 0,
+              "hits": 0,
+              "errors": 0
             },
             "home": {
-              "runs": null,
-              "hits": null,
-              "errors": null
+              "runs": 0,
+              "hits": 0,
+              "errors": 0
             }
           },
-          "innings": []
+          "innings": [
+            {
+              "num": 1,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              }
+            }
+          ]
         },
-        "plays": []
+        "plays": [
+          {
+            "id": "823444:0",
+            "inning": 1,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "other",
+            "actor": "Konnor Griffin",
+            "actor_id": 804606,
+            "detail": "Status Change - Pre-Game",
+            "score_after": "PHI 0, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          }
+        ]
       }
     },
     "injury_report": {
@@ -407,8 +436,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-29T21:03:51.166Z",
-            "freshness_label": "As of Jun 29, 2026, 5:03 PM ET"
+            "last_confirmed": "2026-06-29T21:31:57.037Z",
+            "freshness_label": "As of Jun 29, 2026, 5:31 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -420,8 +449,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-29T21:03:51.166Z",
-            "freshness_label": "As of Jun 29, 2026, 5:03 PM ET"
+            "last_confirmed": "2026-06-29T21:31:57.037Z",
+            "freshness_label": "As of Jun 29, 2026, 5:31 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -433,8 +462,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-29T21:03:51.166Z",
-            "freshness_label": "As of Jun 29, 2026, 5:03 PM ET"
+            "last_confirmed": "2026-06-29T21:31:57.037Z",
+            "freshness_label": "As of Jun 29, 2026, 5:31 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
