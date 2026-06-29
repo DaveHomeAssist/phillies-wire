@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-06-28",
+  "edition_date": "2026-06-29",
   "volume": 1,
-  "edition": 89,
-  "generated_at": "2026-06-29T03:47:14.582Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 90,
+  "generated_at": "2026-06-29T05:36:37.146Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 47,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, NYM 4.",
-    "dek": "PHI 5, NYM 4 · Jesús Luzardo · 5.0 IP, 4 H, 1 ER, 6 K",
-    "summary": "PHI 5, NYM 4. Final at Citi Field, Flushing. PHI wins 2-1.",
+    "headline": "Pirates @ Phillies · Game 1 of 4",
+    "dek": "Aaron Nola vs Braxton Ashcraft",
+    "summary": "Aaron Nola vs Braxton Ashcraft · Pirates @ Phillies · Game 1 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Braxton Ashcraft · PHI vs PIT · Mon, Jun 29 · 6:40 PM"
+    "next_value": "Cristopher Sánchez vs Bubba Chandler · PHI vs PIT · Tue, Jun 30 · 6:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ Mets · Game 3 of 3",
-    "first_pitch": "1:40 PM",
-    "venue": "Citi Field, Flushing",
+    "matchup": "Pirates @ Phillies · Game 1 of 4",
+    "first_pitch": "6:40 PM",
+    "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Cionel Pérez",
-        "hand": "L"
+        "name": "Aaron Nola",
+        "hand": "R"
       },
       "away": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Braxton Ashcraft",
+        "hand": "R"
       },
       "phi": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Aaron Nola",
+        "hand": "R"
       },
       "opp": {
-        "name": "Cionel Pérez",
-        "hand": "L"
+        "name": "Braxton Ashcraft",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI wins 2-1"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,8 +57,8 @@
     "weather": {
       "temp_f": 69,
       "condition": "Clear",
-      "wind": "3 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "2 mph · gusts 2",
+      "gusts_mph": 2
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-29T03:47:15.385Z",
+    "updated_at": "2026-06-29T05:36:37.683Z",
     "current_game_pk": 823444,
     "next_game_pk": 823445,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Mets · Game 3 of 3 · 1:40 PM",
+      "text": "Pirates @ Phillies · Game 1 of 4 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Cionel Pérez",
+      "text": "Aaron Nola vs Braxton Ashcraft",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "69° · Clear · gusts 7 mph",
+      "text": "69° · Clear · gusts 2 mph",
       "highlight": false
     }
   ]
