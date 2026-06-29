@@ -4,7 +4,7 @@
   "edition_date": "2026-06-29",
   "volume": 1,
   "edition": 90,
-  "generated_at": "2026-06-29T23:36:26.523Z",
+  "generated_at": "2026-06-29T23:49:32.492Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, PIT 0",
-    "dek": "Top 4th · 0 outs",
-    "summary": "Bryan Reynolds is up against Aaron Nola. Series: Regular Season.",
+    "headline": "PHI 5, PIT 2",
+    "dek": "End 4th · 3 outs",
+    "summary": "Jared Triolo is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Bubba Chandler · PHI vs PIT · Tue, Jun 30 · 6:40 PM"
   },
@@ -55,38 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 85,
-      "condition": "Partly cloudy",
-      "wind": "4 mph · gusts 5",
-      "gusts_mph": 5
+      "temp_f": 84,
+      "condition": "Overcast",
+      "wind": "4 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryan Reynolds",
+        "name": "Jared Triolo",
         "meta": "vs Aaron Nola"
       },
       "pitches": [
-        "B",
         "S",
         "F",
+        "B",
         "F",
-        "B",
-        "B",
-        "X"
+        "S"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 0
+        "balls": 1,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -94,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-29T23:36:27.306Z",
+    "updated_at": "2026-06-29T23:49:32.995Z",
     "current_game_pk": 823444,
     "next_game_pk": 823445,
     "next_game": {
@@ -131,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "85° · Partly cloudy · gusts 5 mph",
+      "text": "84° · Overcast · gusts 6 mph",
       "highlight": false
     }
   ]
