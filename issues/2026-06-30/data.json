@@ -5,7 +5,7 @@
     "edition": 91,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-30T23:09:13.373Z",
+    "generated_at": "2026-06-30T23:09:50.022Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -369,7 +369,7 @@
             "hand": "R",
             "era": "4.35",
             "record": "3-7",
-            "whip": "1.38"
+            "whip": "1.36"
           }
         },
         "linescore": {
@@ -601,17 +601,34 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823445:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Play",
+            "score_after": "PHI 0, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "J.T. Realmuto",
+            "name": "Gabriel Rincones Jr.",
             "meta": "vs Bubba Chandler"
           },
-          "pitches": [],
+          "pitches": [
+            "F",
+            "S"
+          ],
           "count": {
-            "balls": 1,
-            "strikes": 0,
+            "balls": 0,
+            "strikes": 2,
             "outs": 2
           },
           "bases": {
@@ -636,7 +653,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-30T23:09:13.373Z",
+            "last_confirmed": "2026-06-30T23:09:50.022Z",
             "freshness_label": "As of Jun 30, 2026, 7:09 PM ET"
           },
           {
@@ -649,7 +666,7 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-30T23:09:13.373Z",
+            "last_confirmed": "2026-06-30T23:09:50.022Z",
             "freshness_label": "As of Jun 30, 2026, 7:09 PM ET"
           },
           {
@@ -662,7 +679,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-06-30T23:09:13.373Z",
+            "last_confirmed": "2026-06-30T23:09:50.022Z",
             "freshness_label": "As of Jun 30, 2026, 7:09 PM ET"
           }
         ],

@@ -4,7 +4,7 @@
   "edition_date": "2026-06-30",
   "volume": 1,
   "edition": 91,
-  "generated_at": "2026-06-30T23:09:13.373Z",
+  "generated_at": "2026-06-30T23:09:50.022Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -64,13 +64,16 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
+        "name": "Gabriel Rincones Jr.",
         "meta": "vs Bubba Chandler"
       },
-      "pitches": [],
+      "pitches": [
+        "F",
+        "S"
+      ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
+        "balls": 0,
+        "strikes": 2,
         "outs": 2
       },
       "bases": {
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-30T23:09:13.826Z",
+    "updated_at": "2026-06-30T23:09:50.508Z",
     "current_game_pk": 823445,
     "next_game_pk": 823446,
     "next_game": {
@@ -127,11 +130,11 @@
       "highlight": false
     },
     {
-      "text": "optioned RHP Chase Shugart to Lehigh Valley IronPigs.",
+      "text": "selected the contract of RHP Lou Trivino from Lehigh Valley IronPigs.",
       "highlight": false
     },
     {
-      "text": "selected the contract of RHP Lou Trivino from Lehigh Valley IronPigs.",
+      "text": "optioned RHP Chase Shugart to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
