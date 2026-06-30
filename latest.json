@@ -4,7 +4,7 @@
   "edition_date": "2026-06-30",
   "volume": 1,
   "edition": 91,
-  "generated_at": "2026-06-30T23:09:50.022Z",
+  "generated_at": "2026-06-30T23:41:36.768Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, PIT 0",
-    "dek": "Bottom 2nd · 2 outs",
-    "summary": "Gabriel Rincones Jr. is up against Bubba Chandler. Series: PIT leads 1-0.",
+    "headline": "PHI 2, PIT 0",
+    "dek": "Bottom 4th · 1 out",
+    "summary": "Bryson Stott is up against Bubba Chandler. Series: PIT leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Paul Skenes · PHI vs PIT · Wed, Jul 1 · 6:40 PM"
   },
@@ -55,33 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 87,
+      "temp_f": 85,
       "condition": "Mostly sunny",
-      "wind": "10 mph · gusts 17",
-      "gusts_mph": 17
+      "wind": "7 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Gabriel Rincones Jr.",
+        "name": "Bryson Stott",
         "meta": "vs Bubba Chandler"
       },
       "pitches": [
-        "F",
-        "S"
+        "B"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 2
+        "balls": 1,
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -89,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-30T23:09:50.508Z",
+    "updated_at": "2026-06-30T23:41:37.031Z",
     "current_game_pk": 823445,
     "next_game_pk": 823446,
     "next_game": {
@@ -126,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Mostly sunny · gusts 17 mph",
+      "text": "85° · Mostly sunny · gusts 13 mph",
       "highlight": false
     },
     {
