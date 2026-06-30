@@ -4,7 +4,7 @@
   "edition_date": "2026-06-30",
   "volume": 1,
   "edition": 91,
-  "generated_at": "2026-06-30T22:35:18.208Z",
+  "generated_at": "2026-06-30T23:09:13.373Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, PIT 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Konnor Griffin is up against Cristopher Sánchez. Series: PIT leads 1-0.",
+    "dek": "Bottom 2nd · 2 outs",
+    "summary": "Gabriel Rincones Jr. is up against Bubba Chandler. Series: PIT leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Paul Skenes · PHI vs PIT · Wed, Jul 1 · 6:40 PM"
   },
@@ -55,30 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 88,
-      "condition": "Partly cloudy",
-      "wind": "9 mph · gusts 15",
-      "gusts_mph": 15
+      "temp_f": 87,
+      "condition": "Mostly sunny",
+      "wind": "10 mph · gusts 17",
+      "gusts_mph": 17
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Konnor Griffin",
-        "meta": "vs Cristopher Sánchez"
+        "name": "J.T. Realmuto",
+        "meta": "vs Bubba Chandler"
       },
       "pitches": [],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
-        "outs": 0
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-30T22:35:18.739Z",
+    "updated_at": "2026-06-30T23:09:13.826Z",
     "current_game_pk": 823445,
     "next_game_pk": 823446,
     "next_game": {
@@ -123,15 +123,15 @@
       "highlight": false
     },
     {
-      "text": "88° · Partly cloudy · gusts 15 mph",
-      "highlight": false
-    },
-    {
-      "text": "selected the contract of RHP Lou Trivino from Lehigh Valley IronPigs.",
+      "text": "87° · Mostly sunny · gusts 17 mph",
       "highlight": false
     },
     {
       "text": "optioned RHP Chase Shugart to Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "selected the contract of RHP Lou Trivino from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
