@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-06-29",
+  "edition_date": "2026-06-30",
   "volume": 1,
-  "edition": 90,
-  "generated_at": "2026-06-30T03:45:56.502Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 91,
+  "generated_at": "2026-06-30T04:28:21.816Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 47,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 7, PIT 11.",
-    "dek": "PIT 11, PHI 7 · Braxton Ashcraft · 6.0 IP, 5 H, 5 ER, 8 K",
-    "summary": "PHI 7, PIT 11. Final at Citizens Bank Park, Philadelphia. PIT leads 1-0.",
+    "headline": "Pirates @ Phillies · Game 2 of 4",
+    "dek": "Cristopher Sánchez vs Bubba Chandler",
+    "summary": "Cristopher Sánchez vs Bubba Chandler · Pirates @ Phillies · Game 2 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Bubba Chandler · PHI vs PIT · Tue, Jun 30 · 6:40 PM"
+    "next_value": "Zack Wheeler vs Paul Skenes · PHI vs PIT · Wed, Jul 1 · 6:40 PM"
   },
   "game": {
-    "matchup": "Pirates @ Phillies · Game 1 of 4",
+    "matchup": "Pirates @ Phillies · Game 2 of 4",
     "first_pitch": "6:40 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "away": {
-        "name": "Braxton Ashcraft",
+        "name": "Bubba Chandler",
         "hand": "R"
       },
       "phi": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "opp": {
-        "name": "Braxton Ashcraft",
+        "name": "Bubba Chandler",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PIT leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,9 +55,9 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 73,
+      "temp_f": 72,
       "condition": "Clear",
-      "wind": "3 mph · gusts 9",
+      "wind": "4 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-30T03:45:57.217Z",
+    "updated_at": "2026-06-30T04:28:22.324Z",
     "current_game_pk": 823445,
     "next_game_pk": 823446,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Pirates @ Phillies · Game 1 of 4 · 6:40 PM",
+      "text": "Pirates @ Phillies · Game 2 of 4 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Braxton Ashcraft",
+      "text": "Cristopher Sánchez vs Bubba Chandler",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "73° · Clear · gusts 9 mph",
+      "text": "72° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
