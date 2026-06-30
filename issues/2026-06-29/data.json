@@ -5,14 +5,14 @@
     "edition": 90,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-06-30T00:52:57.327Z",
+    "generated_at": "2026-06-30T01:17:45.352Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jun 29, 2026, 8:52 PM ET",
+      "generated_at_et": "Jun 29, 2026, 9:17 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 5, PIT 8",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Kyle Schwarber is up against Evan Sisk. Series: Regular Season.",
+    "headline": "PHI 6, PIT 8",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "J.T. Realmuto is up against Yohan Ramírez. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "79° · Clear"
+        "value": "77° · Clear"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
-      "Evan Sisk on the mound",
+      "J.T. Realmuto at the plate",
+      "Yohan Ramírez on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 79,
+          "temp_f": 77,
           "condition": "Clear",
-          "wind": "6 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "5 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,8 +373,8 @@
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
           "inningState": "Bottom",
           "isTopInning": false,
           "outs": 2,
@@ -385,8 +385,8 @@
               "errors": 0
             },
             "home": {
-              "runs": 5,
-              "hits": 6,
+              "runs": 6,
+              "hits": 8,
               "errors": 2
             }
           },
@@ -477,8 +477,21 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 2,
                 "errors": 0
               }
             }
@@ -493,8 +506,8 @@
             "event_type": "out",
             "actor": "Konnor Griffin",
             "actor_id": 804606,
-            "detail": "Konnor Griffin pops out…",
-            "score_after": "PHI 0, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -507,8 +520,8 @@
             "event_type": "strikeout",
             "actor": "Brandon Lowe",
             "actor_id": 664040,
-            "detail": "Brandon Lowe strikes ou…",
-            "score_after": "PHI 0, PIT 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -521,8 +534,8 @@
             "event_type": "out",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Bryan Reynolds grounds…",
-            "score_after": "PHI 0, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -535,7 +548,7 @@
             "event_type": "home_run",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner homers (8)…",
+            "detail": "Home run",
             "score_after": "PHI 1, PIT 0",
             "runs": 1,
             "is_scoring": true,
@@ -549,8 +562,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes…",
-            "score_after": "PHI 1, PIT 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -563,8 +576,8 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds ou…",
-            "score_after": "PHI 1, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -577,7 +590,7 @@
             "event_type": "home_run",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh homers (1…",
+            "detail": "Home run",
             "score_after": "PHI 2, PIT 0",
             "runs": 1,
             "is_scoring": true,
@@ -591,8 +604,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out,…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -605,8 +618,8 @@
             "event_type": "out",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Ryan O'Hearn lines out…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -619,8 +632,8 @@
             "event_type": "strikeout",
             "actor": "Esmerlyn Valdez",
             "actor_id": 699013,
-            "detail": "Esmerlyn Valdez strikes…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -633,8 +646,8 @@
             "event_type": "single",
             "actor": "Endy Rodríguez",
             "actor_id": 682848,
-            "detail": "Endy Rodríguez singles…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -647,8 +660,8 @@
             "event_type": "out",
             "actor": "Tyler Callihan",
             "actor_id": 682997,
-            "detail": "Tyler Callihan grounds…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -661,8 +674,8 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds ou…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -675,8 +688,8 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds o…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -689,8 +702,8 @@
             "event_type": "strikeout",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. st…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -703,8 +716,8 @@
             "event_type": "out",
             "actor": "Jared Triolo",
             "actor_id": 669707,
-            "detail": "Jared Triolo grounds ou…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -717,8 +730,8 @@
             "event_type": "out",
             "actor": "Jake Mangum",
             "actor_id": 663968,
-            "detail": "Jake Mangum grounds out…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -731,7 +744,7 @@
             "event_type": "extra_base_hit",
             "actor": "Konnor Griffin",
             "actor_id": 804606,
-            "detail": "Konnor Griffin doubles…",
+            "detail": "Extra-base hit",
             "score_after": "PHI 2, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -745,8 +758,8 @@
             "event_type": "strikeout",
             "actor": "Brandon Lowe",
             "actor_id": 664040,
-            "detail": "Brandon Lowe strikes ou…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -759,8 +772,8 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford singles…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -773,8 +786,8 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on…",
-            "score_after": "PHI 2, PIT 0",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -787,7 +800,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber out on a…",
+            "detail": "Out",
             "score_after": "PHI 3, PIT 0",
             "runs": 1,
             "is_scoring": true,
@@ -801,7 +814,7 @@
             "event_type": "home_run",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper homers (20…",
+            "detail": "Home run",
             "score_after": "PHI 5, PIT 0",
             "runs": 2,
             "is_scoring": true,
@@ -815,8 +828,8 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes o…",
-            "score_after": "PHI 5, PIT 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -829,8 +842,8 @@
             "event_type": "strikeout",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm strikes out s…",
-            "score_after": "PHI 5, PIT 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -843,7 +856,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Umpire reviewed (home r…",
+            "detail": "Extra-base hit",
             "score_after": "PHI 5, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -857,8 +870,8 @@
             "event_type": "strikeout",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Ryan O'Hearn strikes ou…",
-            "score_after": "PHI 5, PIT 0",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -871,7 +884,7 @@
             "event_type": "home_run",
             "actor": "Esmerlyn Valdez",
             "actor_id": 699013,
-            "detail": "Esmerlyn Valdez homers…",
+            "detail": "Home run",
             "score_after": "PHI 5, PIT 2",
             "runs": 2,
             "is_scoring": true,
@@ -885,8 +898,8 @@
             "event_type": "out",
             "actor": "Endy Rodríguez",
             "actor_id": 682848,
-            "detail": "Endy Rodríguez bunt gro…",
-            "score_after": "PHI 5, PIT 2",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -899,8 +912,8 @@
             "event_type": "strikeout",
             "actor": "Tyler Callihan",
             "actor_id": 682997,
-            "detail": "Tyler Callihan strikes…",
-            "score_after": "PHI 5, PIT 2",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -913,8 +926,8 @@
             "event_type": "strikeout",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott strikes ou…",
-            "score_after": "PHI 5, PIT 2",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -927,8 +940,8 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto flies out…",
-            "score_after": "PHI 5, PIT 2",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -941,8 +954,8 @@
             "event_type": "strikeout",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. st…",
-            "score_after": "PHI 5, PIT 2",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -955,7 +968,7 @@
             "event_type": "home_run",
             "actor": "Jared Triolo",
             "actor_id": 669707,
-            "detail": "Jared Triolo homers (1)…",
+            "detail": "Home run",
             "score_after": "PHI 5, PIT 3",
             "runs": 1,
             "is_scoring": true,
@@ -969,7 +982,7 @@
             "event_type": "extra_base_hit",
             "actor": "Jake Mangum",
             "actor_id": 663968,
-            "detail": "Jake Mangum doubles (8)…",
+            "detail": "Extra-base hit",
             "score_after": "PHI 5, PIT 3",
             "runs": 0,
             "is_scoring": false,
@@ -983,8 +996,8 @@
             "event_type": "single",
             "actor": "Konnor Griffin",
             "actor_id": 804606,
-            "detail": "Konnor Griffin singles…",
-            "score_after": "PHI 5, PIT 3",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -997,7 +1010,7 @@
             "event_type": "out",
             "actor": "Brandon Lowe",
             "actor_id": 664040,
-            "detail": "Brandon Lowe out on a s…",
+            "detail": "Out",
             "score_after": "PHI 5, PIT 4",
             "runs": 1,
             "is_scoring": true,
@@ -1011,8 +1024,8 @@
             "event_type": "walk_hbp",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Bryan Reynolds walks.",
-            "score_after": "PHI 5, PIT 4",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1025,7 +1038,7 @@
             "event_type": "single",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Ryan O'Hearn singles on…",
+            "detail": "Single",
             "score_after": "PHI 5, PIT 5",
             "runs": 1,
             "is_scoring": true,
@@ -1039,8 +1052,8 @@
             "event_type": "walk_hbp",
             "actor": "Esmerlyn Valdez",
             "actor_id": 699013,
-            "detail": "Esmerlyn Valdez walks.…",
-            "score_after": "PHI 5, PIT 5",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1053,7 +1066,7 @@
             "event_type": "walk_hbp",
             "actor": "Endy Rodríguez",
             "actor_id": 682848,
-            "detail": "Endy Rodríguez walks. B…",
+            "detail": "Walk / HBP",
             "score_after": "PHI 5, PIT 6",
             "runs": 1,
             "is_scoring": true,
@@ -1067,7 +1080,7 @@
             "event_type": "out",
             "actor": "Tyler Callihan",
             "actor_id": 682997,
-            "detail": "Tyler Callihan grounds…",
+            "detail": "Out",
             "score_after": "PHI 5, PIT 8",
             "runs": 2,
             "is_scoring": true,
@@ -1081,8 +1094,8 @@
             "event_type": "strikeout",
             "actor": "Jared Triolo",
             "actor_id": 669707,
-            "detail": "Jared Triolo strikes ou…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1095,8 +1108,8 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford lines o…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1109,8 +1122,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds out…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1123,8 +1136,8 @@
             "event_type": "walk_hbp",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber walks.",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1137,8 +1150,8 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper strikes ou…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1151,8 +1164,8 @@
             "event_type": "strikeout",
             "actor": "Jake Mangum",
             "actor_id": 663968,
-            "detail": "Jake Mangum strikes out…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1165,8 +1178,8 @@
             "event_type": "strikeout",
             "actor": "Konnor Griffin",
             "actor_id": 804606,
-            "detail": "Konnor Griffin strikes…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1179,8 +1192,8 @@
             "event_type": "strikeout",
             "actor": "Brandon Lowe",
             "actor_id": 664040,
-            "detail": "Brandon Lowe strikes ou…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1193,8 +1206,8 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes o…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1207,8 +1220,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm flies out to…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1221,8 +1234,8 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds ou…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1235,8 +1248,8 @@
             "event_type": "out",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Bryan Reynolds flies ou…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1249,8 +1262,8 @@
             "event_type": "out",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Ryan O'Hearn grounds ou…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1263,7 +1276,7 @@
             "event_type": "extra_base_hit",
             "actor": "Esmerlyn Valdez",
             "actor_id": 699013,
-            "detail": "Esmerlyn Valdez doubles…",
+            "detail": "Extra-base hit",
             "score_after": "PHI 5, PIT 8",
             "runs": 0,
             "is_scoring": false,
@@ -1277,8 +1290,8 @@
             "event_type": "walk_hbp",
             "actor": "Endy Rodríguez",
             "actor_id": 682848,
-            "detail": "Endy Rodríguez walks.",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1291,8 +1304,8 @@
             "event_type": "strikeout",
             "actor": "Nick Gonzales",
             "actor_id": 693304,
-            "detail": "J.T. Realmuto challenge…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1305,8 +1318,8 @@
             "event_type": "walk_hbp",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto hit by pi…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Walk / HBP",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1319,8 +1332,8 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill bunt grounds…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1333,8 +1346,8 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford singles…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Single",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1347,8 +1360,8 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner strikes out…",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Strikeout",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1358,11 +1371,123 @@
             "inning": 7,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Play",
-            "score_after": "PHI 5, PIT 8",
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823444:63",
+            "inning": 8,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "strikeout",
+            "actor": "Jared Triolo",
+            "actor_id": 669707,
+            "detail": "Strikeout",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823444:64",
+            "inning": 8,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "out",
+            "actor": "Jake Mangum",
+            "actor_id": 663968,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823444:65",
+            "inning": 8,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "out",
+            "actor": "Konnor Griffin",
+            "actor_id": 804606,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823444:66",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Strikeout",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823444:67",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Home run",
+            "score_after": "PHI 6, PIT 8",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823444:68",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823444:69",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Single",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823444:70",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "Out",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1370,21 +1495,27 @@
         ],
         "situation": {
           "batter": {
-            "name": "Kyle Schwarber",
-            "meta": "vs Evan Sisk"
+            "name": "J.T. Realmuto",
+            "meta": "vs Yohan Ramírez"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "B",
+            "B",
+            "S",
+            "F"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
+            "balls": 3,
+            "strikes": 2,
             "outs": 2
           },
           "bases": {
             "first": false,
             "second": true,
-            "third": true
+            "third": false
           },
-          "status": "Bottom 7th"
+          "status": "Bottom 8th"
         }
       }
     },

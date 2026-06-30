@@ -4,7 +4,7 @@
   "edition_date": "2026-06-29",
   "volume": 1,
   "edition": 90,
-  "generated_at": "2026-06-30T00:52:57.327Z",
+  "generated_at": "2026-06-30T01:17:45.352Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, PIT 8",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Kyle Schwarber is up against Evan Sisk. Series: Regular Season.",
+    "headline": "PHI 6, PIT 8",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "J.T. Realmuto is up against Yohan Ramírez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Bubba Chandler · PHI vs PIT · Tue, Jun 30 · 6:40 PM"
   },
@@ -55,30 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 77,
       "condition": "Clear",
-      "wind": "6 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "5 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Evan Sisk"
+        "name": "J.T. Realmuto",
+        "meta": "vs Yohan Ramírez"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "B",
+        "S",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 3,
+        "strikes": 2,
         "outs": 2
       },
       "bases": {
         "first": false,
         "second": true,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 7th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-06-30T00:52:57.942Z",
+    "updated_at": "2026-06-30T01:17:46.354Z",
     "current_game_pk": 823444,
     "next_game_pk": 823445,
     "next_game": {
@@ -123,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 15 mph",
+      "text": "77° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]
