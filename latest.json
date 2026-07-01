@@ -4,9 +4,9 @@
   "edition_date": "2026-07-01",
   "volume": 1,
   "edition": 92,
-  "generated_at": "2026-07-01T21:49:40.108Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-01T22:29:50.745Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 48,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Pirates @ Phillies · Game 3 of 4",
-    "dek": "Zack Wheeler vs Paul Skenes",
-    "summary": "Zack Wheeler vs Paul Skenes · Pirates @ Phillies · Game 3 of 4",
+    "headline": "PHI 0, PIT 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Konnor Griffin is up against Zack Wheeler. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Jared Jones · PHI vs PIT · Thu, Jul 2 · 12:35 PM"
   },
@@ -62,14 +62,31 @@
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Konnor Griffin",
+        "meta": "vs Zack Wheeler"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-01T21:49:40.409Z",
+    "updated_at": "2026-07-01T22:29:51.273Z",
     "current_game_pk": 823446,
     "next_game_pk": 823442,
     "next_game": {
