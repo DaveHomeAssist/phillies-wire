@@ -4,21 +4,21 @@
   "edition_date": "2026-06-30",
   "volume": 1,
   "edition": 91,
-  "generated_at": "2026-07-01T00:10:38.369Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-01T01:23:07.714Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 47,
+    "wins": 48,
     "losses": 38,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, PIT 0",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "Brandon Marsh is up against Bubba Chandler. Series: PIT leads 1-0.",
+    "headline": "PHI 8, PIT 0.",
+    "dek": "PHI 8, PIT 0 · Cristopher Sánchez · 7.0 IP, 3 H, 0 ER, 9 K",
+    "summary": "PHI 8, PIT 0. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Paul Skenes · PHI vs PIT · Wed, Jul 1 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PIT leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,62 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
-      "condition": "Overcast",
-      "wind": "7 mph · gusts 16",
-      "gusts_mph": 16
+      "temp_f": 79,
+      "condition": "Mostly sunny",
+      "wind": "6 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Bubba Chandler"
-      },
-      "pitches": [
-        "B",
-        "X"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 0,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Middle 6th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-01T00:10:38.838Z",
-    "current_game_pk": 823445,
-    "next_game_pk": 823446,
+    "updated_at": "2026-07-01T01:23:08.551Z",
+    "current_game_pk": 823446,
+    "next_game_pk": 823442,
     "next_game": {
-      "game_pk": 823446,
-      "official_date": "2026-07-01",
-      "date_label": "Wed, Jul 1, 2026",
-      "time_label": "6:40 PM",
+      "game_pk": 823442,
+      "official_date": "2026-07-02",
+      "date_label": "Thu, Jul 2, 2026",
+      "time_label": "12:35 PM",
       "title": "Pittsburgh Pirates at Phillies",
       "matchup": "PIT at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823445,
-      "official_date": "2026-06-30",
+      "game_pk": 823446,
+      "official_date": "2026-07-01",
       "title": "Pittsburgh Pirates at Phillies",
       "matchup": "PIT at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 47-38",
+      "text": "PHI 48-38",
       "highlight": true
     },
     {
@@ -126,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Overcast · gusts 16 mph",
+      "text": "79° · Mostly sunny · gusts 15 mph",
       "highlight": false
     },
     {
