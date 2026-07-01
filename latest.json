@@ -4,7 +4,7 @@
   "edition_date": "2026-06-30",
   "volume": 1,
   "edition": 91,
-  "generated_at": "2026-07-01T00:09:20.545Z",
+  "generated_at": "2026-07-01T00:10:38.369Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, PIT 0",
-    "dek": "Top 6th · 2 outs",
-    "summary": "Marcell Ozuna is up against Cristopher Sánchez. Series: PIT leads 1-0.",
+    "dek": "Middle 6th · 3 outs",
+    "summary": "Brandon Marsh is up against Bubba Chandler. Series: PIT leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Paul Skenes · PHI vs PIT · Wed, Jul 1 · 6:40 PM"
   },
@@ -64,25 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Marcell Ozuna",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Brandon Marsh",
+        "meta": "vs Bubba Chandler"
       },
       "pitches": [
-        "S",
         "B",
         "X"
       ],
       "count": {
         "balls": 1,
-        "strikes": 1,
-        "outs": 2
+        "strikes": 0,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 6th"
+      "status": "Middle 6th"
     },
     "recap_line": null
   },
@@ -90,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-01T00:09:21.028Z",
+    "updated_at": "2026-07-01T00:10:38.838Z",
     "current_game_pk": 823445,
     "next_game_pk": 823446,
     "next_game": {
@@ -131,11 +130,11 @@
       "highlight": false
     },
     {
-      "text": "selected the contract of RHP Lou Trivino from Lehigh Valley IronPigs.",
+      "text": "optioned RHP Chase Shugart to Lehigh Valley IronPigs.",
       "highlight": false
     },
     {
-      "text": "optioned RHP Chase Shugart to Lehigh Valley IronPigs.",
+      "text": "selected the contract of RHP Lou Trivino from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
