@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-06-30",
+  "edition_date": "2026-07-01",
   "volume": 1,
-  "edition": 91,
-  "generated_at": "2026-07-01T03:47:02.686Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 92,
+  "generated_at": "2026-07-01T05:34:19.665Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 48,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 8, PIT 0.",
-    "dek": "PHI 8, PIT 0 · Cristopher Sánchez · 7.0 IP, 3 H, 0 ER, 9 K",
-    "summary": "PHI 8, PIT 0. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
+    "headline": "Pirates @ Phillies · Game 3 of 4",
+    "dek": "Zack Wheeler vs Paul Skenes",
+    "summary": "Zack Wheeler vs Paul Skenes · Pirates @ Phillies · Game 3 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Paul Skenes · PHI vs PIT · Wed, Jul 1 · 6:40 PM"
+    "next_value": "Alan Rangel vs Jared Jones · PHI vs PIT · Thu, Jul 2 · 12:35 PM"
   },
   "game": {
-    "matchup": "Pirates @ Phillies · Game 2 of 4",
+    "matchup": "Pirates @ Phillies · Game 3 of 4",
     "first_pitch": "6:40 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "away": {
-        "name": "Bubba Chandler",
+        "name": "Paul Skenes",
         "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Bubba Chandler",
+        "name": "Paul Skenes",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "PIT leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 75,
       "condition": "Clear",
-      "wind": "8 mph · gusts 18",
-      "gusts_mph": 18
+      "wind": "6 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-01T03:47:03.094Z",
+    "updated_at": "2026-07-01T05:34:20.196Z",
     "current_game_pk": 823446,
     "next_game_pk": 823442,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Pirates @ Phillies · Game 2 of 4 · 6:40 PM",
+      "text": "Pirates @ Phillies · Game 3 of 4 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Bubba Chandler",
+      "text": "Zack Wheeler vs Paul Skenes",
       "highlight": true
     },
     {
@@ -106,15 +106,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Clear · gusts 18 mph",
-      "highlight": false
-    },
-    {
-      "text": "selected the contract of RHP Lou Trivino from Lehigh Valley IronPigs.",
-      "highlight": false
-    },
-    {
-      "text": "optioned RHP Chase Shugart to Lehigh Valley IronPigs.",
+      "text": "75° · Clear · gusts 16 mph",
       "highlight": false
     }
   ]
