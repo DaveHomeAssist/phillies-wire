@@ -4,7 +4,7 @@
   "edition_date": "2026-07-01",
   "volume": 1,
   "edition": 92,
-  "generated_at": "2026-07-01T22:56:39.477Z",
+  "generated_at": "2026-07-01T23:10:13.431Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, PIT 0",
-    "dek": "End 1st · 3 outs",
-    "summary": "Ryan O'Hearn is up against Zack Wheeler. Series: Series tied 1-1.",
+    "dek": "Bottom 2nd · 0 outs",
+    "summary": "J.T. Realmuto is up against Paul Skenes. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Jared Jones · PHI vs PIT · Thu, Jul 2 · 12:35 PM"
   },
@@ -64,25 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ryan O'Hearn",
-        "meta": "vs Zack Wheeler"
+        "name": "J.T. Realmuto",
+        "meta": "vs Paul Skenes"
       },
-      "pitches": [
-        "S",
-        "B",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 3
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "End 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-01T22:56:40.149Z",
+    "updated_at": "2026-07-01T23:10:14.115Z",
     "current_game_pk": 823446,
     "next_game_pk": 823442,
     "next_game": {
