@@ -4,7 +4,7 @@
   "edition_date": "2026-07-01",
   "volume": 1,
   "edition": 92,
-  "generated_at": "2026-07-01T23:10:13.431Z",
+  "generated_at": "2026-07-01T23:34:07.571Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, PIT 0",
-    "dek": "Bottom 2nd · 0 outs",
-    "summary": "J.T. Realmuto is up against Paul Skenes. Series: Series tied 1-1.",
+    "headline": "PHI 5, PIT 2",
+    "dek": "Top 3rd · 1 out",
+    "summary": "Esmerlyn Valdez is up against Zack Wheeler. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Jared Jones · PHI vs PIT · Thu, Jul 2 · 12:35 PM"
   },
@@ -55,30 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 94,
+      "temp_f": 91,
       "condition": "Clear",
-      "wind": "8 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "8 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Paul Skenes"
+        "name": "Esmerlyn Valdez",
+        "meta": "vs Zack Wheeler"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "F",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
         "first": true,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-01T23:10:14.115Z",
+    "updated_at": "2026-07-01T23:34:08.072Z",
     "current_game_pk": 823446,
     "next_game_pk": 823442,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "94° · Clear · gusts 11 mph",
+      "text": "91° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]

@@ -5,14 +5,14 @@
     "edition": 92,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-01T23:10:13.431Z",
+    "generated_at": "2026-07-01T23:34:07.571Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 1, 2026, 7:10 PM ET",
+      "generated_at_et": "Jul 1, 2026, 7:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, PIT 0",
-    "dek": "Bottom 2nd · 0 outs",
-    "summary": "J.T. Realmuto is up against Paul Skenes. Series: Series tied 1-1.",
+    "headline": "PHI 5, PIT 2",
+    "dek": "Top 3rd · 1 out",
+    "summary": "Esmerlyn Valdez is up against Zack Wheeler. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "94° · Clear"
+        "value": "91° · Clear"
       }
     ],
     "bullets": [
-      "J.T. Realmuto at the plate",
-      "Paul Skenes on the mound",
+      "Esmerlyn Valdez at the plate",
+      "Zack Wheeler on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 94,
+          "temp_f": 91,
           "condition": "Clear",
-          "wind": "8 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "8 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,34 +359,34 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "1.98",
+            "era": "2.09",
             "record": "8-1",
-            "whip": "0.87"
+            "whip": "0.89"
           },
           "away": {
             "team": "PIT",
             "name": "Paul Skenes",
             "hand": "R",
-            "era": "3.06",
+            "era": "3.41",
             "record": "6-7",
-            "whip": "0.97"
+            "whip": "0.99"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 0,
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 1,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 1,
-              "errors": 0
+              "runs": 2,
+              "hits": 4,
+              "errors": 1
             },
             "home": {
-              "runs": 0,
-              "hits": 1,
+              "runs": 5,
+              "hits": 2,
               "errors": 0
             }
           },
@@ -409,11 +409,24 @@
               "away": {
                 "runs": 0,
                 "hits": 1,
+                "errors": 1
+              },
+              "home": {
+                "runs": 5,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 2,
+                "hits": 3,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 1,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -621,11 +634,151 @@
             "inning": 2,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "Mound Visit.",
+            "detail": "J.T. Realmuto strikes out swinging.",
             "score_after": "PHI 0, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823446:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. walks. Bryson Stott to 2nd.",
+            "score_after": "PHI 0, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823446:16",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford reaches on a fielder's choice. Alec Bohm scores. Bryson Stott scores. Gabriel Rincones Jr. to 3rd. Justin Crawford…",
+            "score_after": "PHI 2, PIT 0",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823446:17",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner homers (10) on a fly ball to left field. Gabriel Rincones Jr. scores. Justin Crawford scores.",
+            "score_after": "PHI 5, PIT 0",
+            "runs": 3,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823446:18",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber pops out to third baseman Nick Gonzales.",
+            "score_after": "PHI 5, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823446:19",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 5, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823446:20",
+            "inning": 3,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "home_run",
+            "actor": "Henry Davis",
+            "actor_id": 680779,
+            "detail": "Henry Davis homers (7) on a fly ball to left center field.",
+            "score_after": "PHI 5, PIT 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823446:21",
+            "inning": 3,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "single",
+            "actor": "Konnor Griffin",
+            "actor_id": 804606,
+            "detail": "Konnor Griffin singles on a ground ball to shortstop Trea Turner.",
+            "score_after": "PHI 5, PIT 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823446:22",
+            "inning": 3,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "strikeout",
+            "actor": "Brandon Lowe",
+            "actor_id": 664040,
+            "detail": "Brandon Lowe strikes out on a foul tip.",
+            "score_after": "PHI 5, PIT 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823446:23",
+            "inning": 3,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "single",
+            "actor": "Bryan Reynolds",
+            "actor_id": 668804,
+            "detail": "Bryan Reynolds singles on a sharp line drive to left fielder Brandon Marsh. Konnor Griffin scores.",
+            "score_after": "PHI 5, PIT 2",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823446:24",
+            "inning": 3,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "other",
+            "actor": "Esmerlyn Valdez",
+            "actor_id": 699013,
+            "detail": "Play",
+            "score_after": "PHI 5, PIT 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -633,21 +786,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "J.T. Realmuto",
-            "meta": "vs Paul Skenes"
+            "name": "Esmerlyn Valdez",
+            "meta": "vs Zack Wheeler"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "S",
+            "F",
+            "B"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "balls": 2,
+            "strikes": 2,
+            "outs": 1
           },
           "bases": {
             "first": true,
             "second": false,
-            "third": true
+            "third": false
           },
-          "status": "Bottom 2nd"
+          "status": "Top 3rd"
         }
       }
     },
@@ -664,8 +822,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-01T23:10:13.431Z",
-            "freshness_label": "As of Jul 1, 2026, 7:10 PM ET"
+            "last_confirmed": "2026-07-01T23:34:07.571Z",
+            "freshness_label": "As of Jul 1, 2026, 7:34 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -677,8 +835,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-01T23:10:13.431Z",
-            "freshness_label": "As of Jul 1, 2026, 7:10 PM ET"
+            "last_confirmed": "2026-07-01T23:34:07.571Z",
+            "freshness_label": "As of Jul 1, 2026, 7:34 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -690,8 +848,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-01T23:10:13.431Z",
-            "freshness_label": "As of Jul 1, 2026, 7:10 PM ET"
+            "last_confirmed": "2026-07-01T23:34:07.571Z",
+            "freshness_label": "As of Jul 1, 2026, 7:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
