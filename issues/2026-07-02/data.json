@@ -5,14 +5,14 @@
     "edition": 93,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-02T18:47:21.629Z",
+    "generated_at": "2026-07-02T18:59:35.911Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 2, 2026, 2:47 PM ET",
+      "generated_at_et": "Jul 2, 2026, 2:59 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, PIT 2",
-    "dek": "Top 7th · 1 out",
-    "summary": "Ryan O'Hearn is up against José Alvarado. Series: PHI leads 2-1.",
+    "headline": "PHI 1, PIT 3",
+    "dek": "Bottom 7th · 2 outs",
+    "summary": "Rafael Marchán is up against Carmen Mlodzinski. Series: PHI leads 2-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Ryan O'Hearn at the plate",
-      "José Alvarado on the mound",
+      "Rafael Marchán at the plate",
+      "Carmen Mlodzinski on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -375,18 +375,18 @@
         "linescore": {
           "currentInning": 7,
           "currentInningOrdinal": "7th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 1,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 2,
           "teams": {
             "away": {
-              "runs": 2,
-              "hits": 10,
+              "runs": 3,
+              "hits": 11,
               "errors": 0
             },
             "home": {
               "runs": 1,
-              "hits": 3,
+              "hits": 4,
               "errors": 0
             }
           },
@@ -472,13 +472,13 @@
             {
               "num": 7,
               "away": {
-                "runs": 1,
-                "hits": 2,
+                "runs": 2,
+                "hits": 3,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -1246,11 +1246,95 @@
             "inning": 7,
             "half": "top",
             "team": "PIT",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Play",
+            "detail": "Ryan O'Hearn strikes out swinging.",
             "score_after": "PHI 1, PIT 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:55",
+            "inning": 7,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "single",
+            "actor": "Nick Gonzales",
+            "actor_id": 693304,
+            "detail": "Nick Gonzales singles on a line drive to center fielder Justin Crawford. Esmerlyn Valdez scores.",
+            "score_after": "PHI 1, PIT 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823442:56",
+            "inning": 7,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "strikeout",
+            "actor": "Marcell Ozuna",
+            "actor_id": 542303,
+            "detail": "Marcell Ozuna called out on strikes.",
+            "score_after": "PHI 1, PIT 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:57",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott singles on a fly ball to left fielder Bryan Reynolds.",
+            "score_after": "PHI 1, PIT 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:58",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. flies out to center fielder Jake Mangum.",
+            "score_after": "PHI 1, PIT 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:59",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds into a force out, pitcher Carmen Mlodzinski to shortstop Jared Triolo. Bryson Stott out at 2nd. Justin Craw…",
+            "score_after": "PHI 1, PIT 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:60",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Rafael Marchán",
+            "actor_id": 665561,
+            "detail": "Play",
+            "score_after": "PHI 1, PIT 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1258,24 +1342,23 @@
         ],
         "situation": {
           "batter": {
-            "name": "Ryan O'Hearn",
-            "meta": "vs José Alvarado"
+            "name": "Rafael Marchán",
+            "meta": "vs Carmen Mlodzinski"
           },
           "pitches": [
-            "S",
-            "F"
+            "S"
           ],
           "count": {
             "balls": 0,
-            "strikes": 2,
-            "outs": 1
+            "strikes": 1,
+            "outs": 2
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
-            "third": true
+            "third": false
           },
-          "status": "Top 7th"
+          "status": "Bottom 7th"
         }
       }
     },
@@ -1292,8 +1375,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-02T18:47:21.629Z",
-            "freshness_label": "As of Jul 2, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-07-02T18:59:35.911Z",
+            "freshness_label": "As of Jul 2, 2026, 2:59 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1305,8 +1388,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-02T18:47:21.629Z",
-            "freshness_label": "As of Jul 2, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-07-02T18:59:35.911Z",
+            "freshness_label": "As of Jul 2, 2026, 2:59 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1318,8 +1401,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-02T18:47:21.629Z",
-            "freshness_label": "As of Jul 2, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-07-02T18:59:35.911Z",
+            "freshness_label": "As of Jul 2, 2026, 2:59 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

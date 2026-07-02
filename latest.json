@@ -4,7 +4,7 @@
   "edition_date": "2026-07-02",
   "volume": 1,
   "edition": 93,
-  "generated_at": "2026-07-02T18:47:21.629Z",
+  "generated_at": "2026-07-02T18:59:35.911Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, PIT 2",
-    "dek": "Top 7th · 1 out",
-    "summary": "Ryan O'Hearn is up against José Alvarado. Series: PHI leads 2-1.",
+    "headline": "PHI 1, PIT 3",
+    "dek": "Bottom 7th · 2 outs",
+    "summary": "Rafael Marchán is up against Carmen Mlodzinski. Series: PHI leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ KC · Sat, Jul 4 · 8:10 PM"
   },
@@ -64,24 +64,23 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ryan O'Hearn",
-        "meta": "vs José Alvarado"
+        "name": "Rafael Marchán",
+        "meta": "vs Carmen Mlodzinski"
       },
       "pitches": [
-        "S",
-        "F"
+        "S"
       ],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 1
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Top 7th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -89,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-02T18:47:22.164Z",
+    "updated_at": "2026-07-02T18:59:36.510Z",
     "current_game_pk": 823442,
     "next_game_pk": 824092,
     "next_game": {
