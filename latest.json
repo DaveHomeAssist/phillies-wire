@@ -4,7 +4,7 @@
   "edition_date": "2026-07-01",
   "volume": 1,
   "edition": 92,
-  "generated_at": "2026-07-02T00:08:22.242Z",
+  "generated_at": "2026-07-02T00:52:04.021Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 8, PIT 2",
-    "dek": "End 4th · 3 outs",
-    "summary": "Brandon Lowe is up against Zack Wheeler. Series: Series tied 1-1.",
+    "headline": "PHI 8, PIT 4",
+    "dek": "Middle 6th · 3 outs",
+    "summary": "Trea Turner is up against Cam Sanders. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Jared Jones · PHI vs PIT · Thu, Jul 2 · 12:35 PM"
   },
@@ -55,27 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 90,
+      "temp_f": 88,
       "condition": "Clear",
-      "wind": "6 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "7 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Lowe",
-        "meta": "vs Zack Wheeler"
+        "name": "Trea Turner",
+        "meta": "vs Cam Sanders"
       },
       "pitches": [
         "S",
         "B",
-        "S",
-        "B"
+        "F",
+        "B",
+        "F",
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 3,
+        "balls": 3,
+        "strikes": 2,
         "outs": 3
       },
       "bases": {
@@ -83,7 +86,7 @@
         "second": false,
         "third": false
       },
-      "status": "End 4th"
+      "status": "Middle 6th"
     },
     "recap_line": null
   },
@@ -91,7 +94,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-02T00:08:22.753Z",
+    "updated_at": "2026-07-02T00:52:04.541Z",
     "current_game_pk": 823446,
     "next_game_pk": 823442,
     "next_game": {
@@ -128,7 +131,7 @@
       "highlight": false
     },
     {
-      "text": "90° · Clear · gusts 14 mph",
+      "text": "88° · Clear · gusts 16 mph",
       "highlight": false
     }
   ]
