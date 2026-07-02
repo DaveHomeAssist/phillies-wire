@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from "node:fs";
 import { runFactcheck } from "./factcheck.mjs";
+import { ISSUE_DATA_BUDGET_BYTES } from "./render.mjs";
 
 const data = readJson("./phillies-wire-data.json");
 const status = readJson("./status.json");
@@ -376,8 +377,8 @@ if (!data.meta.off_day) {
     fail("Issue data.json and site/ copy differ — site artifact copy broke.");
   }
   const issueDataBytes = Buffer.byteLength(JSON.stringify(issueData), "utf8");
-  if (issueDataBytes > 20 * 1024) {
-    fail(`Issue data.json exceeds 20 KB budget (${issueDataBytes} bytes). Strip heavier sections.`);
+  if (issueDataBytes > ISSUE_DATA_BUDGET_BYTES) {
+    fail(`Issue data.json exceeds ${ISSUE_DATA_BUDGET_BYTES / 1024} KB budget (${issueDataBytes} bytes). Strip heavier sections.`);
   }
   const issueMode = issueData.meta?.status?.mode ?? issueData.hero?.mode ?? "";
   const gameStatus = issueData.sections?.game_status?.content ?? {};

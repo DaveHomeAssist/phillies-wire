@@ -26,6 +26,11 @@ const BASE_URL = (process.env.PHILLIES_WIRE_BASE_URL ?? "https://phillieswire.co
 const MAX_AGE_MIN = Number(process.env.PHILLIES_WIRE_MAX_AGE_MIN ?? 240);
 const WEBHOOK = process.env.PHILLIES_WIRE_WEBHOOK;
 const HEALTH_DIR = process.env.PHILLIES_WIRE_HEALTH_DIR;
+// GitHub Pages sits behind Fastly with max-age=600, so a probe fired right
+// after a deploy can read the previous build for up to 10 minutes. Retries
+// (with cache-busting query strings, see loadRemoteSnapshot) ride that out.
+const RETRIES = Math.max(1, Number(process.env.PHILLIES_WIRE_RETRIES ?? 3));
+const RETRY_DELAY_SEC = Math.max(0, Number(process.env.PHILLIES_WIRE_RETRY_DELAY_SEC ?? 30));
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((error) => {
@@ -34,30 +39,46 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 }
 
 export async function main() {
-  const { status, latest, issueData, issueHtml, delivery } = HEALTH_DIR
-    ? await loadLocalSnapshot(HEALTH_DIR)
-    : await loadRemoteSnapshot(BASE_URL);
-  const result = validateHealthSnapshot({
-    status,
-    latest,
-    issueData,
-    issueHtml,
-    delivery,
-  }, {
-    maxAgeMin: MAX_AGE_MIN,
-  });
-  console.log(`OK: status.json is ${result.ageMin}m old. Latest issue ${status.date}. Delivery ${delivery.state}.`);
+  let lastError;
+  for (let attempt = 1; attempt <= RETRIES; attempt += 1) {
+    try {
+      const { status, latest, issueData, issueHtml, delivery } = HEALTH_DIR
+        ? await loadLocalSnapshot(HEALTH_DIR)
+        : await loadRemoteSnapshot(BASE_URL);
+      const result = validateHealthSnapshot({
+        status,
+        latest,
+        issueData,
+        issueHtml,
+        delivery,
+      }, {
+        maxAgeMin: MAX_AGE_MIN,
+      });
+      console.log(`OK: status.json is ${result.ageMin}m old. Latest issue ${status.date}. Delivery ${delivery.state}.`);
+      return;
+    } catch (error) {
+      lastError = error;
+      if (attempt < RETRIES) {
+        console.log(`Attempt ${attempt}/${RETRIES} failed (${error.message}); retrying in ${RETRY_DELAY_SEC}s.`);
+        await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY_SEC * 1000));
+      }
+    }
+  }
+  throw lastError;
 }
 
 async function loadRemoteSnapshot(baseUrlValue) {
   const baseUrl = baseUrlValue.replace(/\/$/, "");
-  const status = await fetchJson(`${baseUrl}/status.json`);
+  // Unique query string per snapshot: Fastly keys its cache on the full URL,
+  // so this reads what the origin actually serves instead of a stale edge copy.
+  const bust = `?health=${Date.now()}`;
+  const status = await fetchJson(`${baseUrl}/status.json${bust}`);
   const issuePath = status?.issue_path || (status?.date ? `issues/${status.date}/` : null);
   const [latest, issueData, issueHtml, delivery] = await Promise.all([
-    fetchJson(`${baseUrl}/latest.json`),
-    issuePath ? fetchJson(`${baseUrl}/${issuePath.replace(/^\//, "")}data.json`) : Promise.resolve(null),
-    issuePath ? fetchText(`${baseUrl}/${issuePath.replace(/^\//, "")}`) : Promise.resolve(""),
-    fetchJson(`${baseUrl}/delivery-status.json`),
+    fetchJson(`${baseUrl}/latest.json${bust}`),
+    issuePath ? fetchJson(`${baseUrl}/${issuePath.replace(/^\//, "")}data.json${bust}`) : Promise.resolve(null),
+    issuePath ? fetchText(`${baseUrl}/${issuePath.replace(/^\//, "")}${bust}`) : Promise.resolve(""),
+    fetchJson(`${baseUrl}/delivery-status.json${bust}`),
   ]);
   return { status, latest, issueData, issueHtml, delivery };
 }

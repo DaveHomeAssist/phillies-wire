@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 
-import { buildFeedXml, buildIssueDataJson, populate } from "../render.mjs";
+import { buildFeedXml, buildIssueDataJson, populate, ISSUE_DATA_BUDGET_BYTES } from "../render.mjs";
 
 const template = readFileSync(new URL("../phillies-wire-v2.html", import.meta.url), "utf8");
 const fixture = JSON.parse(readFileSync(new URL("../phillies-wire-schema.json", import.meta.url), "utf8"));
@@ -42,7 +42,7 @@ runTest("issue data builder keeps a large final play array under budget", () => 
   data.hero.headline = "PHI 3, NYM 8.";
   data.hero.summary = "PHI 3, NYM 8. Final at Citi Field.";
   data.sections.game_status.content.linescore = makeLinescore();
-  data.sections.game_status.content.plays = makeManyPlays(71);
+  data.sections.game_status.content.plays = makeManyPlays(96);
   data.sections.lineup.content.batting_order.home = makeLineup("NYM");
   data.sections.lineup.content.batting_order.away = makeLineup("PHI");
   data.sections.lineup.content.batting_order.phi = makeLineup("PHI");
@@ -55,14 +55,37 @@ runTest("issue data builder keeps a large final play array under budget", () => 
   const issueData = JSON.parse(text);
   const plays = issueData.sections.game_status.content.plays;
 
-  assert.ok(Buffer.byteLength(JSON.stringify(issueData), "utf8") <= 20 * 1024);
+  assert.ok(Buffer.byteLength(JSON.stringify(issueData), "utf8") <= ISSUE_DATA_BUDGET_BYTES);
   assert.equal(issueData.schema_version, "1.4.0");
-  assert.equal(plays.length, 71);
+  assert.equal(plays.length, 96);
   assert.equal(JSON.stringify(plays).includes("playEvents"), false);
   assert.equal(issueData.sections.lineup, null);
   assert.equal(issueData.sections.injury_report, null);
   assert.ok(plays.every((play) => typeof play.detail === "string" && play.detail.length > 0));
   assert.ok(plays.some((play) => play.score_after === "PHI 2, NYM 0"));
+});
+
+runTest("issue data builder sheds the injury report when a plays-less payload exceeds budget", () => {
+  const data = JSON.parse(JSON.stringify(fixture));
+  data.meta.status.mode = "pregame";
+  data.hero.mode = "pregame";
+  data.sections.game_status.content.plays = [];
+  data.sections.injury_report.content.il_entries = Array.from({ length: 12 }, (_, index) => ({
+    name: `Player ${index + 1}`,
+    position: "RHP",
+    injury: "Right shoulder inflammation",
+    il_type: "15-day IL",
+    status_note: "Throwing program continues at the complex.",
+  }));
+
+  const baseline = Buffer.byteLength(JSON.stringify(JSON.parse(buildIssueDataJson(data))), "utf8");
+  data.hero.summary = "x".repeat(Math.max(0, ISSUE_DATA_BUDGET_BYTES - baseline) + 512);
+
+  const issueData = JSON.parse(buildIssueDataJson(data));
+
+  assert.ok(Buffer.byteLength(JSON.stringify(issueData), "utf8") <= ISSUE_DATA_BUDGET_BYTES);
+  assert.equal(issueData.sections.injury_report, null);
+  assert.notEqual(issueData.sections.lineup, null);
 });
 
 runTest("fixture render resolves every token and includes required landmarks", () => {
