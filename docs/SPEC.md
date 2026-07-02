@@ -115,7 +115,7 @@ phillies-wire/                                 → GitHub Pages root
 
 ### 3.2 Per-issue data (schema_version 1.3.0 — shipped v1.4.0)
 
-Written to `site/issues/<date>/data.json` alongside each `index.html` by `render.mjs::buildIssueDataJson()`. Asserted by `verify.mjs` against a 20 KB budget. Fetched by `/dashboard/` at runtime.
+Written to `site/issues/<date>/data.json` alongside each `index.html` by `render.mjs::buildIssueDataJson()`. Asserted by `verify.mjs` against a 24 KB budget (`ISSUE_DATA_BUDGET_BYTES`, shared with `render.mjs`). Fetched by `/dashboard/` at runtime.
 
 ```json
 {
@@ -134,7 +134,7 @@ Written to `site/issues/<date>/data.json` alongside each `index.html` by `render
 
 Fields omitted intentionally: `recap.content` (only needed in HTML render), `roster.content` (too big), `farm_system.content` (low-value for dashboard), `preview.content` (only needed in HTML), `ticker` (derivable from hero).
 
-**Budget**: each `data.json` ≤ 20 KB. Current payload ≈ 7–8 KB on typical game days.
+**Budget**: each `data.json` ≤ 24 KB. Current payload ≈ 7–8 KB on typical game days.
 
 **Consumers**:
 - `/dashboard/` — `fetchIssueData(date)` reads this, hydrates Team Health (from `injury_report.il_entries`), Lineup card (from `lineup.batting_order.home`), Player Focus (from `lineup.starters.home` / `next_game`).
