@@ -5,14 +5,14 @@
     "edition": 93,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-02T18:06:02.639Z",
+    "generated_at": "2026-07-02T18:18:27.717Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 2, 2026, 2:06 PM ET",
+      "generated_at_et": "Jul 2, 2026, 2:18 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, PIT 0",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Bryan Reynolds is up against Tim Mayza. Series: PHI leads 2-1.",
+    "headline": "PHI 1, PIT 1",
+    "dek": "End 5th · 3 outs",
+    "summary": "Nick Gonzales is up against Tim Mayza. Series: PHI leads 2-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Bryan Reynolds at the plate",
+      "Nick Gonzales at the plate",
       "Tim Mayza on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 102,
           "condition": "Clear",
-          "wind": "6 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "7 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -375,18 +375,18 @@
         "linescore": {
           "currentInning": 5,
           "currentInningOrdinal": "5th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "End",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 5,
+              "runs": 1,
+              "hits": 6,
               "errors": 0
             },
             "home": {
               "runs": 1,
-              "hits": 2,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -446,13 +446,13 @@
             {
               "num": 5,
               "away": {
-                "runs": null,
-                "hits": 2,
+                "runs": 1,
+                "hits": 3,
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -968,11 +968,95 @@
             "inning": 5,
             "half": "top",
             "team": "PIT",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Play",
+            "detail": "Bryan Reynolds strikes out swinging.",
             "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:37",
+            "inning": 5,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "single",
+            "actor": "Esmerlyn Valdez",
+            "actor_id": 699013,
+            "detail": "Esmerlyn Valdez singles on a sharp ground ball to center fielder Justin Crawford. Jake Mangum scores. Brandon Lowe to 3rd.",
+            "score_after": "PHI 1, PIT 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823442:38",
+            "inning": 5,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "other",
+            "actor": "Ryan O'Hearn",
+            "actor_id": 656811,
+            "detail": "Ryan O'Hearn grounds into a double play, shortstop Trea Turner to first baseman Bryce Harper. Esmerlyn Valdez out at 2nd. Ryan O'He…",
+            "score_after": "PHI 1, PIT 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:39",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford flies out to center fielder Jake Mangum.",
+            "score_after": "PHI 1, PIT 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:40",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Rafael Marchán",
+            "actor_id": 665561,
+            "detail": "Rafael Marchán flies out to right fielder Esmerlyn Valdez.",
+            "score_after": "PHI 1, PIT 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:41",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner singles on a ground ball to first baseman Ryan O'Hearn.",
+            "score_after": "PHI 1, PIT 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:42",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out, second baseman Brandon Lowe to first baseman Ryan O'Hearn.",
+            "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -980,24 +1064,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryan Reynolds",
+            "name": "Nick Gonzales",
             "meta": "vs Tim Mayza"
           },
           "pitches": [
             "S",
-            "F"
+            "S",
+            "X"
           ],
           "count": {
-            "balls": 0,
+            "balls": 1,
             "strikes": 2,
-            "outs": 0
+            "outs": 3
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
-            "third": true
+            "third": false
           },
-          "status": "Top 5th"
+          "status": "End 5th"
         }
       }
     },
@@ -1014,8 +1099,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-02T18:06:02.639Z",
-            "freshness_label": "As of Jul 2, 2026, 2:06 PM ET"
+            "last_confirmed": "2026-07-02T18:18:27.717Z",
+            "freshness_label": "As of Jul 2, 2026, 2:18 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1027,8 +1112,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-02T18:06:02.639Z",
-            "freshness_label": "As of Jul 2, 2026, 2:06 PM ET"
+            "last_confirmed": "2026-07-02T18:18:27.717Z",
+            "freshness_label": "As of Jul 2, 2026, 2:18 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1040,8 +1125,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-02T18:06:02.639Z",
-            "freshness_label": "As of Jul 2, 2026, 2:06 PM ET"
+            "last_confirmed": "2026-07-02T18:18:27.717Z",
+            "freshness_label": "As of Jul 2, 2026, 2:18 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
