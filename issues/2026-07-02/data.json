@@ -5,14 +5,14 @@
     "edition": 93,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-02T17:33:43.450Z",
+    "generated_at": "2026-07-02T18:06:02.639Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 2, 2026, 1:33 PM ET",
+      "generated_at_et": "Jul 2, 2026, 2:06 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, PIT 0",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "Bryce Harper is up against Jared Jones. Series: PHI leads 2-1.",
+    "headline": "PHI 1, PIT 0",
+    "dek": "Top 5th · 0 outs",
+    "summary": "Bryan Reynolds is up against Tim Mayza. Series: PHI leads 2-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "101° · Clear"
+        "value": "102° · Clear"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
-      "Jared Jones on the mound",
+      "Bryan Reynolds at the plate",
+      "Tim Mayza on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 101,
+          "temp_f": 102,
           "condition": "Clear",
-          "wind": "5 mph · gusts 10",
+          "wind": "6 mph · gusts 10",
           "gusts_mph": 10
         },
         "giveaway": "",
@@ -359,34 +359,34 @@
             "team": "PHI",
             "name": "Alan Rangel",
             "hand": "R",
-            "era": "3.60",
+            "era": "3.38",
             "record": "0-1",
-            "whip": "1.27"
+            "whip": "1.31"
           },
           "away": {
             "team": "PIT",
             "name": "Jared Jones",
             "hand": "R",
-            "era": "5.27",
+            "era": "5.28",
             "record": "1-1",
-            "whip": "1.35"
+            "whip": "1.38"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 2,
+          "currentInning": 5,
+          "currentInningOrdinal": "5th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 3,
+              "hits": 5,
               "errors": 0
             },
             "home": {
-              "runs": 0,
-              "hits": 1,
+              "runs": 1,
+              "hits": 2,
               "errors": 0
             }
           },
@@ -421,6 +421,32 @@
               "num": 3,
               "away": {
                 "runs": 0,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": null,
                 "hits": 2,
                 "errors": 0
               },
@@ -774,11 +800,179 @@
             "inning": 3,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "extra_base_hit",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Mound Visit.",
-            "score_after": "PHI 0, PIT 0",
+            "detail": "Bryce Harper doubles (16) on a sharp line drive to left fielder Bryan Reynolds. Rafael Marchán scores. Kyle Schwarber to 3rd.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823442:25",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh lines out to right fielder Esmerlyn Valdez.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:26",
+            "inning": 4,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "out",
+            "actor": "Ryan O'Hearn",
+            "actor_id": 656811,
+            "detail": "Ryan O'Hearn grounds out to first baseman Bryce Harper.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:27",
+            "inning": 4,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "out",
+            "actor": "Nick Gonzales",
+            "actor_id": 693304,
+            "detail": "Nick Gonzales grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:28",
+            "inning": 4,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "walk_hbp",
+            "actor": "Marcell Ozuna",
+            "actor_id": 542303,
+            "detail": "Marcell Ozuna walks.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:29",
+            "inning": 4,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "walk_hbp",
+            "actor": "Endy Rodríguez",
+            "actor_id": 682848,
+            "detail": "Endy Rodríguez walks. Marcell Ozuna to 2nd.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:30",
+            "inning": 4,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "out",
+            "actor": "Jared Triolo",
+            "actor_id": 669707,
+            "detail": "Jared Triolo grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:31",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds out, shortstop Jared Triolo to first baseman Ryan O'Hearn.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:32",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott strikes out swinging.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. strikes out on a foul tip.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:34",
+            "inning": 5,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "extra_base_hit",
+            "actor": "Jake Mangum",
+            "actor_id": 663968,
+            "detail": "Jake Mangum doubles (9) on a line drive to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823442:35",
+            "inning": 5,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "single",
+            "actor": "Brandon Lowe",
+            "actor_id": 664040,
+            "detail": "Brandon Lowe singles on a sharp ground ball to left fielder Brandon Marsh. Jake Mangum to 3rd.",
+            "score_after": "PHI 1, PIT 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823442:36",
+            "inning": 5,
+            "half": "top",
+            "team": "PIT",
+            "event_type": "other",
+            "actor": "Bryan Reynolds",
+            "actor_id": 668804,
+            "detail": "Play",
+            "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -786,21 +980,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryce Harper",
-            "meta": "vs Jared Jones"
+            "name": "Bryan Reynolds",
+            "meta": "vs Tim Mayza"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "F"
+          ],
           "count": {
             "balls": 0,
-            "strikes": 0,
-            "outs": 2
+            "strikes": 2,
+            "outs": 0
           },
           "bases": {
             "first": true,
-            "second": true,
-            "third": false
+            "second": false,
+            "third": true
           },
-          "status": "Bottom 3rd"
+          "status": "Top 5th"
         }
       }
     },
@@ -817,8 +1014,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-02T17:33:43.450Z",
-            "freshness_label": "As of Jul 2, 2026, 1:33 PM ET"
+            "last_confirmed": "2026-07-02T18:06:02.639Z",
+            "freshness_label": "As of Jul 2, 2026, 2:06 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -830,8 +1027,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-02T17:33:43.450Z",
-            "freshness_label": "As of Jul 2, 2026, 1:33 PM ET"
+            "last_confirmed": "2026-07-02T18:06:02.639Z",
+            "freshness_label": "As of Jul 2, 2026, 2:06 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -843,8 +1040,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-02T17:33:43.450Z",
-            "freshness_label": "As of Jul 2, 2026, 1:33 PM ET"
+            "last_confirmed": "2026-07-02T18:06:02.639Z",
+            "freshness_label": "As of Jul 2, 2026, 2:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

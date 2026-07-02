@@ -4,7 +4,7 @@
   "edition_date": "2026-07-02",
   "volume": 1,
   "edition": 93,
-  "generated_at": "2026-07-02T17:33:43.450Z",
+  "generated_at": "2026-07-02T18:06:02.639Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, PIT 0",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "Bryce Harper is up against Jared Jones. Series: PHI leads 2-1.",
+    "headline": "PHI 1, PIT 0",
+    "dek": "Top 5th · 0 outs",
+    "summary": "Bryan Reynolds is up against Tim Mayza. Series: PHI leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ KC · Sat, Jul 4 · 8:10 PM"
   },
@@ -55,30 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 101,
+      "temp_f": 102,
       "condition": "Clear",
-      "wind": "5 mph · gusts 10",
+      "wind": "6 mph · gusts 10",
       "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Jared Jones"
+        "name": "Bryan Reynolds",
+        "meta": "vs Tim Mayza"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "F"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 2
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
         "first": true,
-        "second": true,
-        "third": false
+        "second": false,
+        "third": true
       },
-      "status": "Bottom 3rd"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-02T17:33:44.216Z",
+    "updated_at": "2026-07-02T18:06:03.178Z",
     "current_game_pk": 823442,
     "next_game_pk": 824092,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "101° · Clear · gusts 10 mph",
+      "text": "102° · Clear · gusts 10 mph",
       "highlight": false
     }
   ]
