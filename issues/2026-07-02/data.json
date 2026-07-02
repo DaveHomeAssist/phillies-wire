@@ -5,14 +5,14 @@
     "edition": 93,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-02T19:36:47.019Z",
+    "generated_at": "2026-07-02T20:11:33.003Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 2, 2026, 3:36 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 2, 2026, 4:11 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 49,
-    "losses": 38,
-    "streak": "W2",
+    "losses": 39,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, PIT 6",
-    "dek": "Bottom 9th · 2 outs",
-    "summary": "Bryson Stott is up against Mason Montgomery. Series: PHI leads 2-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 1, PIT 6.",
+    "dek": "PIT 6, PHI 1 · Jared Jones · 4.0 IP, 2 H, 1 ER, 6 K",
+    "summary": "PHI 1, PIT 6. Final at Citizens Bank Park, Philadelphia. Series tied 2-2.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "102° · Clear"
+        "label": "Series",
+        "value": "Series tied 2-2"
       }
     ],
     "bullets": [
-      "Bryson Stott at the plate",
-      "Mason Montgomery on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Jared Jones: 4.0 IP, 2 H, 1 ER, 6 K",
+      "Alan Rangel: 4.0 IP, 3 H, 0 ER, 4 K",
+      "Nick Gonzales: 3-for-5, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ KC · Sat, Jul 4 · 8:10 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PIT at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "12:35 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Alan Rangel",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PIT",
-            "name": "Jared Jones",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Alan Rangel",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "PIT",
-            "name": "Jared Jones",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Rafael Marchán",
-              "position": "C",
-              "bats": "S"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Jake Mangum",
-              "position": "LF",
-              "bats": "S"
-            },
-            {
-              "slot": 2,
-              "name": "Brandon Lowe",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryan Reynolds",
-              "position": "RF",
-              "bats": "S"
-            },
-            {
-              "slot": 4,
-              "name": "Esmerlyn Valdez",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Ryan O'Hearn",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Nick Gonzales",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Marcell Ozuna",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Endy Rodríguez",
-              "position": "C",
-              "bats": "S"
-            },
-            {
-              "slot": 9,
-              "name": "Jared Triolo",
-              "position": "SS",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Rafael Marchán",
-              "position": "C",
-              "bats": "S"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Jake Mangum",
-              "position": "LF",
-              "bats": "S"
-            },
-            {
-              "slot": 2,
-              "name": "Brandon Lowe",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryan Reynolds",
-              "position": "RF",
-              "bats": "S"
-            },
-            {
-              "slot": 4,
-              "name": "Esmerlyn Valdez",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Ryan O'Hearn",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Nick Gonzales",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Marcell Ozuna",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Endy Rodríguez",
-              "position": "C",
-              "bats": "S"
-            },
-            {
-              "slot": 9,
-              "name": "Jared Triolo",
-              "position": "SS",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Pirates @ Phillies · Game 4 of 4",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 2-1"
+          "label": "Series tied 2-2"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,7 +91,7 @@
         "weather": {
           "temp_f": 102,
           "condition": "Clear",
-          "wind": "8 mph · gusts 11",
+          "wind": "9 mph · gusts 11",
           "gusts_mph": 11
         },
         "giveaway": "",
@@ -377,7 +120,7 @@
           "currentInningOrdinal": "9th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 6,
@@ -503,7 +246,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -519,7 +262,7 @@
             "event_type": "out",
             "actor": "Jake Mangum",
             "actor_id": 663968,
-            "detail": "Jake Mangum grounds out, second…",
+            "detail": "Jake Mangum grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -533,7 +276,7 @@
             "event_type": "out",
             "actor": "Brandon Lowe",
             "actor_id": 664040,
-            "detail": "Brandon Lowe lines out sharply…",
+            "detail": "Brandon Lowe lines out sharply to right fielder Gabriel Rincones Jr.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -547,7 +290,7 @@
             "event_type": "strikeout",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Bryan Reynolds strikes out swin…",
+            "detail": "Bryan Reynolds strikes out swinging.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -561,7 +304,7 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner strikes out swingin…",
+            "detail": "Trea Turner strikes out swinging.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -575,7 +318,7 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes out on a…",
+            "detail": "Kyle Schwarber strikes out on a foul tip.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -589,7 +332,7 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper strikes out swingi…",
+            "detail": "Bryce Harper strikes out swinging.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -603,7 +346,7 @@
             "event_type": "strikeout",
             "actor": "Esmerlyn Valdez",
             "actor_id": 699013,
-            "detail": "Esmerlyn Valdez strikes out swi…",
+            "detail": "Esmerlyn Valdez strikes out swinging.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -617,7 +360,7 @@
             "event_type": "extra_base_hit",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Ryan O'Hearn doubles (12) on a…",
+            "detail": "Ryan O'Hearn doubles (12) on a line drive to right fielder Gabriel Rincones Jr.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -631,7 +374,7 @@
             "event_type": "out",
             "actor": "Nick Gonzales",
             "actor_id": 693304,
-            "detail": "Nick Gonzales grounds out, thir…",
+            "detail": "Nick Gonzales grounds out, third baseman Alec Bohm to first baseman Bryce Harper.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -659,7 +402,7 @@
             "event_type": "strikeout",
             "actor": "Endy Rodríguez",
             "actor_id": 682848,
-            "detail": "Endy Rodríguez strikes out swin…",
+            "detail": "Endy Rodríguez strikes out swinging.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -673,7 +416,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out, firs…",
+            "detail": "Brandon Marsh grounds out, first baseman Ryan O'Hearn to pitcher Jared Jones.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -687,7 +430,7 @@
             "event_type": "extra_base_hit",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm doubles (12) on a lin…",
+            "detail": "Alec Bohm doubles (12) on a line drive to left fielder Bryan Reynolds.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -701,7 +444,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out to fir…",
+            "detail": "Bryson Stott grounds out to first baseman Ryan O'Hearn. Alec Bohm to 3rd.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -715,7 +458,7 @@
             "event_type": "out",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. pops out t…",
+            "detail": "Gabriel Rincones Jr. pops out to third baseman Nick Gonzales.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -743,7 +486,7 @@
             "event_type": "single",
             "actor": "Jake Mangum",
             "actor_id": 663968,
-            "detail": "Jake Mangum singles on a soft b…",
+            "detail": "Jake Mangum singles on a soft bunt ground ball to third baseman Alec Bohm. Jared Triolo to 2nd.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -757,7 +500,7 @@
             "event_type": "strikeout",
             "actor": "Brandon Lowe",
             "actor_id": 664040,
-            "detail": "Brandon Lowe strikes out swingi…",
+            "detail": "Brandon Lowe strikes out swinging.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -771,7 +514,7 @@
             "event_type": "single",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Bryan Reynolds singles on a fly…",
+            "detail": "Bryan Reynolds singles on a fly ball to center fielder Justin Crawford. Jared Triolo to 3rd. Jake Mangum to 2nd.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -785,7 +528,7 @@
             "event_type": "other",
             "actor": "Esmerlyn Valdez",
             "actor_id": 699013,
-            "detail": "Esmerlyn Valdez grounds into a…",
+            "detail": "Esmerlyn Valdez grounds into a double play, third baseman Alec Bohm to first baseman Bryce Harper. Jake Mangum out at 3rd. Esmerlyn…",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -799,7 +542,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford lines out to le…",
+            "detail": "Justin Crawford lines out to left fielder Bryan Reynolds.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -827,7 +570,7 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner strikes out swingin…",
+            "detail": "Trea Turner strikes out swinging.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -841,7 +584,7 @@
             "event_type": "walk_hbp",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber walks. Rafael Ma…",
+            "detail": "Kyle Schwarber walks. Rafael Marchán to 2nd.",
             "score_after": "PHI 0, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -855,7 +598,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper doubles (16) on a…",
+            "detail": "Bryce Harper doubles (16) on a sharp line drive to left fielder Bryan Reynolds. Rafael Marchán scores. Kyle Schwarber to 3rd.",
             "score_after": "PHI 1, PIT 0",
             "runs": 1,
             "is_scoring": true,
@@ -869,7 +612,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh lines out to righ…",
+            "detail": "Brandon Marsh lines out to right fielder Esmerlyn Valdez.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -883,7 +626,7 @@
             "event_type": "out",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Ryan O'Hearn grounds out to fir…",
+            "detail": "Ryan O'Hearn grounds out to first baseman Bryce Harper.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -897,7 +640,7 @@
             "event_type": "out",
             "actor": "Nick Gonzales",
             "actor_id": 693304,
-            "detail": "Nick Gonzales grounds out, shor…",
+            "detail": "Nick Gonzales grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -925,7 +668,7 @@
             "event_type": "walk_hbp",
             "actor": "Endy Rodríguez",
             "actor_id": 682848,
-            "detail": "Endy Rodríguez walks. Marcell O…",
+            "detail": "Endy Rodríguez walks. Marcell Ozuna to 2nd.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -939,7 +682,7 @@
             "event_type": "out",
             "actor": "Jared Triolo",
             "actor_id": 669707,
-            "detail": "Jared Triolo grounds out, short…",
+            "detail": "Jared Triolo grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -953,7 +696,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, shortsto…",
+            "detail": "Alec Bohm grounds out, shortstop Jared Triolo to first baseman Ryan O'Hearn.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -967,7 +710,7 @@
             "event_type": "strikeout",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott strikes out swingi…",
+            "detail": "Bryson Stott strikes out swinging.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -981,7 +724,7 @@
             "event_type": "strikeout",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. strikes ou…",
+            "detail": "Gabriel Rincones Jr. strikes out on a foul tip.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -995,7 +738,7 @@
             "event_type": "extra_base_hit",
             "actor": "Jake Mangum",
             "actor_id": 663968,
-            "detail": "Jake Mangum doubles (9) on a li…",
+            "detail": "Jake Mangum doubles (9) on a line drive to right fielder Gabriel Rincones Jr.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -1009,7 +752,7 @@
             "event_type": "single",
             "actor": "Brandon Lowe",
             "actor_id": 664040,
-            "detail": "Brandon Lowe singles on a sharp…",
+            "detail": "Brandon Lowe singles on a sharp ground ball to left fielder Brandon Marsh. Jake Mangum to 3rd.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -1023,7 +766,7 @@
             "event_type": "strikeout",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Bryan Reynolds strikes out swin…",
+            "detail": "Bryan Reynolds strikes out swinging.",
             "score_after": "PHI 1, PIT 0",
             "runs": 0,
             "is_scoring": false,
@@ -1037,7 +780,7 @@
             "event_type": "single",
             "actor": "Esmerlyn Valdez",
             "actor_id": 699013,
-            "detail": "Esmerlyn Valdez singles on a sh…",
+            "detail": "Esmerlyn Valdez singles on a sharp ground ball to center fielder Justin Crawford. Jake Mangum scores. Brandon Lowe to 3rd.",
             "score_after": "PHI 1, PIT 1",
             "runs": 1,
             "is_scoring": true,
@@ -1051,7 +794,7 @@
             "event_type": "other",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Ryan O'Hearn grounds into a dou…",
+            "detail": "Ryan O'Hearn grounds into a double play, shortstop Trea Turner to first baseman Bryce Harper. Esmerlyn Valdez out at 2nd. Ryan O'He…",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1065,7 +808,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford flies out to ce…",
+            "detail": "Justin Crawford flies out to center fielder Jake Mangum.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1079,7 +822,7 @@
             "event_type": "out",
             "actor": "Rafael Marchán",
             "actor_id": 665561,
-            "detail": "Rafael Marchán flies out to rig…",
+            "detail": "Rafael Marchán flies out to right fielder Esmerlyn Valdez.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1093,7 +836,7 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a ground…",
+            "detail": "Trea Turner singles on a ground ball to first baseman Ryan O'Hearn.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1107,7 +850,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber grounds out, sec…",
+            "detail": "Kyle Schwarber grounds out, second baseman Brandon Lowe to first baseman Ryan O'Hearn.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1121,7 +864,7 @@
             "event_type": "single",
             "actor": "Nick Gonzales",
             "actor_id": 693304,
-            "detail": "Nick Gonzales singles on a grou…",
+            "detail": "Nick Gonzales singles on a ground ball to left fielder Brandon Marsh.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1135,7 +878,7 @@
             "event_type": "single",
             "actor": "Marcell Ozuna",
             "actor_id": 542303,
-            "detail": "Marcell Ozuna singles on a line…",
+            "detail": "Marcell Ozuna singles on a line drive to right fielder Gabriel Rincones Jr. Nick Gonzales to 3rd.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1149,7 +892,7 @@
             "event_type": "strikeout",
             "actor": "Endy Rodríguez",
             "actor_id": 682848,
-            "detail": "Endy Rodríguez strikes out swin…",
+            "detail": "Endy Rodríguez strikes out swinging.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1163,7 +906,7 @@
             "event_type": "out",
             "actor": "Jared Triolo",
             "actor_id": 669707,
-            "detail": "Jared Triolo grounds out, third…",
+            "detail": "Jared Triolo grounds out, third baseman Alec Bohm to first baseman Bryce Harper. Marcell Ozuna to 2nd.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1177,7 +920,7 @@
             "event_type": "strikeout",
             "actor": "Jake Mangum",
             "actor_id": 663968,
-            "detail": "Jake Mangum strikes out swingin…",
+            "detail": "Jake Mangum strikes out swinging.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1191,7 +934,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds out sharpl…",
+            "detail": "Bryce Harper grounds out sharply, second baseman Brandon Lowe to first baseman Ryan O'Hearn.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1205,7 +948,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out to fi…",
+            "detail": "Brandon Marsh grounds out to first baseman Ryan O'Hearn.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1219,7 +962,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm lines out to right fi…",
+            "detail": "Alec Bohm lines out to right fielder Esmerlyn Valdez.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1233,7 +976,7 @@
             "event_type": "single",
             "actor": "Brandon Lowe",
             "actor_id": 664040,
-            "detail": "Brandon Lowe singles on a line…",
+            "detail": "Brandon Lowe singles on a line drive to left fielder Brandon Marsh.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1247,7 +990,7 @@
             "event_type": "out",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Bryan Reynolds lines out to lef…",
+            "detail": "Bryan Reynolds lines out to left fielder Brandon Marsh.",
             "score_after": "PHI 1, PIT 1",
             "runs": 0,
             "is_scoring": false,
@@ -1261,7 +1004,7 @@
             "event_type": "extra_base_hit",
             "actor": "Esmerlyn Valdez",
             "actor_id": 699013,
-            "detail": "Esmerlyn Valdez triples (1) on…",
+            "detail": "Esmerlyn Valdez triples (1) on a sharp line drive to center fielder Justin Crawford. Brandon Lowe scores.",
             "score_after": "PHI 1, PIT 2",
             "runs": 1,
             "is_scoring": true,
@@ -1275,7 +1018,7 @@
             "event_type": "strikeout",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Ryan O'Hearn strikes out swingi…",
+            "detail": "Ryan O'Hearn strikes out swinging.",
             "score_after": "PHI 1, PIT 2",
             "runs": 0,
             "is_scoring": false,
@@ -1289,7 +1032,7 @@
             "event_type": "single",
             "actor": "Nick Gonzales",
             "actor_id": 693304,
-            "detail": "Nick Gonzales singles on a line…",
+            "detail": "Nick Gonzales singles on a line drive to center fielder Justin Crawford. Esmerlyn Valdez scores.",
             "score_after": "PHI 1, PIT 3",
             "runs": 1,
             "is_scoring": true,
@@ -1303,7 +1046,7 @@
             "event_type": "strikeout",
             "actor": "Marcell Ozuna",
             "actor_id": 542303,
-            "detail": "Marcell Ozuna called out on str…",
+            "detail": "Marcell Ozuna called out on strikes.",
             "score_after": "PHI 1, PIT 3",
             "runs": 0,
             "is_scoring": false,
@@ -1317,7 +1060,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a fly b…",
+            "detail": "Bryson Stott singles on a fly ball to left fielder Bryan Reynolds.",
             "score_after": "PHI 1, PIT 3",
             "runs": 0,
             "is_scoring": false,
@@ -1331,7 +1074,7 @@
             "event_type": "out",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. flies out…",
+            "detail": "Gabriel Rincones Jr. flies out to center fielder Jake Mangum.",
             "score_after": "PHI 1, PIT 3",
             "runs": 0,
             "is_scoring": false,
@@ -1345,7 +1088,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds into a…",
+            "detail": "Justin Crawford grounds into a force out, pitcher Carmen Mlodzinski to shortstop Jared Triolo. Bryson Stott out at 2nd. Justin Craw…",
             "score_after": "PHI 1, PIT 3",
             "runs": 0,
             "is_scoring": false,
@@ -1359,7 +1102,7 @@
             "event_type": "out",
             "actor": "Rafael Marchán",
             "actor_id": 665561,
-            "detail": "Rafael Marchán lines out to lef…",
+            "detail": "Rafael Marchán lines out to left fielder Bryan Reynolds.",
             "score_after": "PHI 1, PIT 3",
             "runs": 0,
             "is_scoring": false,
@@ -1373,7 +1116,7 @@
             "event_type": "home_run",
             "actor": "Endy Rodríguez",
             "actor_id": 682848,
-            "detail": "Endy Rodríguez homers (5) on a…",
+            "detail": "Endy Rodríguez homers (5) on a fly ball to center field.",
             "score_after": "PHI 1, PIT 4",
             "runs": 1,
             "is_scoring": true,
@@ -1387,7 +1130,7 @@
             "event_type": "strikeout",
             "actor": "Jared Triolo",
             "actor_id": 669707,
-            "detail": "Jared Triolo strikes out swingi…",
+            "detail": "Jared Triolo strikes out swinging.",
             "score_after": "PHI 1, PIT 4",
             "runs": 0,
             "is_scoring": false,
@@ -1401,7 +1144,7 @@
             "event_type": "single",
             "actor": "Jake Mangum",
             "actor_id": 663968,
-            "detail": "Jake Mangum singles on a ground…",
+            "detail": "Jake Mangum singles on a ground ball to shortstop Trea Turner.",
             "score_after": "PHI 1, PIT 4",
             "runs": 0,
             "is_scoring": false,
@@ -1415,7 +1158,7 @@
             "event_type": "walk_hbp",
             "actor": "Brandon Lowe",
             "actor_id": 664040,
-            "detail": "Brandon Lowe walks. Jake Mangum…",
+            "detail": "Brandon Lowe walks. Jake Mangum to 2nd.",
             "score_after": "PHI 1, PIT 4",
             "runs": 0,
             "is_scoring": false,
@@ -1429,7 +1172,7 @@
             "event_type": "walk_hbp",
             "actor": "Bryan Reynolds",
             "actor_id": 668804,
-            "detail": "Bryan Reynolds walks. Jake Mang…",
+            "detail": "Bryan Reynolds walks. Jake Mangum to 3rd. Brandon Lowe to 2nd.",
             "score_after": "PHI 1, PIT 4",
             "runs": 0,
             "is_scoring": false,
@@ -1443,7 +1186,7 @@
             "event_type": "out",
             "actor": "Esmerlyn Valdez",
             "actor_id": 699013,
-            "detail": "Esmerlyn Valdez out on a sacrif…",
+            "detail": "Esmerlyn Valdez out on a sacrifice fly to right fielder Gabriel Rincones Jr. Jake Mangum scores. Brandon Lowe to 3rd.",
             "score_after": "PHI 1, PIT 5",
             "runs": 1,
             "is_scoring": true,
@@ -1457,7 +1200,7 @@
             "event_type": "strikeout",
             "actor": "Ryan O'Hearn",
             "actor_id": 656811,
-            "detail": "Ryan O'Hearn strikes out swingi…",
+            "detail": "Ryan O'Hearn strikes out swinging.",
             "score_after": "PHI 1, PIT 5",
             "runs": 0,
             "is_scoring": false,
@@ -1471,7 +1214,7 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner flies out to center…",
+            "detail": "Trea Turner flies out to center fielder Billy Cook.",
             "score_after": "PHI 1, PIT 5",
             "runs": 0,
             "is_scoring": false,
@@ -1485,7 +1228,7 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes out swin…",
+            "detail": "Kyle Schwarber strikes out swinging.",
             "score_after": "PHI 1, PIT 5",
             "runs": 0,
             "is_scoring": false,
@@ -1499,7 +1242,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds out, third…",
+            "detail": "Bryce Harper grounds out, third baseman Nick Gonzales to first baseman Ryan O'Hearn.",
             "score_after": "PHI 1, PIT 5",
             "runs": 0,
             "is_scoring": false,
@@ -1513,7 +1256,7 @@
             "event_type": "home_run",
             "actor": "Nick Gonzales",
             "actor_id": 693304,
-            "detail": "Nick Gonzales homers (4) on a f…",
+            "detail": "Nick Gonzales homers (4) on a fly ball to left center field.",
             "score_after": "PHI 1, PIT 6",
             "runs": 1,
             "is_scoring": true,
@@ -1527,7 +1270,7 @@
             "event_type": "strikeout",
             "actor": "Marcell Ozuna",
             "actor_id": 542303,
-            "detail": "Marcell Ozuna strikes out swing…",
+            "detail": "Marcell Ozuna strikes out swinging.",
             "score_after": "PHI 1, PIT 6",
             "runs": 0,
             "is_scoring": false,
@@ -1541,7 +1284,7 @@
             "event_type": "out",
             "actor": "Endy Rodríguez",
             "actor_id": 682848,
-            "detail": "Endy Rodríguez flies out to rig…",
+            "detail": "Endy Rodríguez flies out to right fielder Gabriel Rincones Jr.",
             "score_after": "PHI 1, PIT 6",
             "runs": 0,
             "is_scoring": false,
@@ -1555,7 +1298,7 @@
             "event_type": "out",
             "actor": "Jared Triolo",
             "actor_id": 669707,
-            "detail": "Jared Triolo grounds out, short…",
+            "detail": "Jared Triolo grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
             "score_after": "PHI 1, PIT 6",
             "runs": 0,
             "is_scoring": false,
@@ -1569,7 +1312,7 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes out swing…",
+            "detail": "Brandon Marsh strikes out swinging.",
             "score_after": "PHI 1, PIT 6",
             "runs": 0,
             "is_scoring": false,
@@ -1594,34 +1337,16 @@
             "inning": 9,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Play",
+            "detail": "Bryson Stott called out on strikes.",
             "score_after": "PHI 1, PIT 6",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Bryson Stott",
-            "meta": "vs Mason Montgomery"
-          },
-          "pitches": [],
-          "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 2
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Bottom 9th"
-        }
+        ]
       }
     },
     "injury_report": null
