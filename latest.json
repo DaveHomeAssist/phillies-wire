@@ -4,9 +4,9 @@
   "edition_date": "2026-07-02",
   "volume": 1,
   "edition": 93,
-  "generated_at": "2026-07-02T15:17:26.887Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-02T17:18:03.266Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 49,
@@ -16,11 +16,11 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Pirates @ Phillies · Game 4 of 4",
-    "dek": "Alan Rangel vs Jared Jones",
-    "summary": "Alan Rangel vs Jared Jones · Pirates @ Phillies · Game 4 of 4",
+    "headline": "PHI 0, PIT 0",
+    "dek": "Top 3rd · 0 outs",
+    "summary": "Jake Mangum is up against Alan Rangel. Series: PHI leads 2-1.",
     "next_label": "Tomorrow",
-    "next_value": "PHI @ KC · Sat, Jul 4 · 8:10 PM"
+    "next_value": "Jesús Luzardo · PHI @ KC · Sat, Jul 4 · 8:10 PM"
   },
   "game": {
     "matchup": "Pirates @ Phillies · Game 4 of 4",
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 97,
+      "temp_f": 101,
       "condition": "Clear",
-      "wind": "5 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "7 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Jake Mangum",
+        "meta": "vs Alan Rangel"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": true,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 3rd"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-02T15:17:27.570Z",
+    "updated_at": "2026-07-02T17:18:03.803Z",
     "current_game_pk": 823442,
     "next_game_pk": 824092,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "97° · Clear · gusts 8 mph",
+      "text": "101° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
