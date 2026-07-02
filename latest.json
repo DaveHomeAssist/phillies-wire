@@ -1,53 +1,53 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-01",
+  "edition_date": "2026-07-02",
   "volume": 1,
-  "edition": 92,
-  "generated_at": "2026-07-02T01:17:58.571Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "edition": 93,
+  "generated_at": "2026-07-02T04:26:38.557Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
-    "wins": 48,
+    "wins": 49,
     "losses": 38,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 8, PIT 4",
-    "dek": "Top 7th · 1 out",
-    "summary": "Jared Triolo is up against Seth Johnson. Series: Series tied 1-1.",
+    "headline": "Pirates @ Phillies · Game 4 of 4",
+    "dek": "Alan Rangel vs Jared Jones",
+    "summary": "Alan Rangel vs Jared Jones · Pirates @ Phillies · Game 4 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Alan Rangel vs Jared Jones · PHI vs PIT · Thu, Jul 2 · 12:35 PM"
+    "next_value": "PHI @ KC · Sat, Jul 4 · 8:10 PM"
   },
   "game": {
-    "matchup": "Pirates @ Phillies · Game 3 of 4",
-    "first_pitch": "6:40 PM",
+    "matchup": "Pirates @ Phillies · Game 4 of 4",
+    "first_pitch": "12:35 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Zack Wheeler",
+        "name": "Alan Rangel",
         "hand": "R"
       },
       "away": {
-        "name": "Paul Skenes",
+        "name": "Jared Jones",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "Alan Rangel",
         "hand": "R"
       },
       "opp": {
-        "name": "Paul Skenes",
+        "name": "Jared Jones",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,67 +55,50 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 87,
-      "condition": "Mostly sunny",
-      "wind": "7 mph · gusts 15",
-      "gusts_mph": 15
+      "temp_f": 84,
+      "condition": "Clear",
+      "wind": "7 mph · gusts 17",
+      "gusts_mph": 17
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Jared Triolo",
-        "meta": "vs Seth Johnson"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
-      },
-      "bases": {
-        "first": true,
-        "second": true,
-        "third": false
-      },
-      "status": "Top 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-02T01:17:59.368Z",
-    "current_game_pk": 823446,
-    "next_game_pk": 823442,
+    "updated_at": "2026-07-02T04:26:39.131Z",
+    "current_game_pk": 823442,
+    "next_game_pk": 824092,
     "next_game": {
-      "game_pk": 823442,
-      "official_date": "2026-07-02",
-      "date_label": "Thu, Jul 2, 2026",
-      "time_label": "12:35 PM",
-      "title": "Pittsburgh Pirates at Phillies",
-      "matchup": "PIT at PHI",
-      "venue": "Citizens Bank Park"
+      "game_pk": 824092,
+      "official_date": "2026-07-04",
+      "date_label": "Sat, Jul 4, 2026",
+      "time_label": "8:10 PM",
+      "title": "Phillies at Kansas City Royals",
+      "matchup": "PHI at KC",
+      "venue": "Kauffman Stadium"
     },
     "current_game": {
-      "game_pk": 823446,
-      "official_date": "2026-07-01",
+      "game_pk": 823442,
+      "official_date": "2026-07-02",
       "title": "Pittsburgh Pirates at Phillies",
       "matchup": "PIT at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 48-38",
+      "text": "PHI 49-38",
       "highlight": true
     },
     {
-      "text": "Pirates @ Phillies · Game 3 of 4 · 6:40 PM",
+      "text": "Pirates @ Phillies · Game 4 of 4 · 12:35 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Paul Skenes",
+      "text": "Alan Rangel vs Jared Jones",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Mostly sunny · gusts 15 mph",
+      "text": "84° · Clear · gusts 17 mph",
       "highlight": false
     }
   ]
