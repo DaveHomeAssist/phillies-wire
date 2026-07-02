@@ -4,7 +4,7 @@
   "edition_date": "2026-07-01",
   "volume": 1,
   "edition": 92,
-  "generated_at": "2026-07-01T23:45:33.754Z",
+  "generated_at": "2026-07-02T00:08:22.242Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, PIT 2",
-    "dek": "End 3rd · 3 outs",
-    "summary": "Nick Gonzales is up against Zack Wheeler. Series: Series tied 1-1.",
+    "headline": "PHI 8, PIT 2",
+    "dek": "End 4th · 3 outs",
+    "summary": "Brandon Lowe is up against Zack Wheeler. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Jared Jones · PHI vs PIT · Thu, Jul 2 · 12:35 PM"
   },
@@ -55,25 +55,27 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 91,
+      "temp_f": 90,
       "condition": "Clear",
-      "wind": "7 mph · gusts 14",
+      "wind": "6 mph · gusts 14",
       "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Nick Gonzales",
+        "name": "Brandon Lowe",
         "meta": "vs Zack Wheeler"
       },
       "pitches": [
         "S",
-        "X"
+        "B",
+        "S",
+        "B"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 3,
         "outs": 3
       },
       "bases": {
@@ -81,7 +83,7 @@
         "second": false,
         "third": false
       },
-      "status": "End 3rd"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-01T23:45:34.121Z",
+    "updated_at": "2026-07-02T00:08:22.753Z",
     "current_game_pk": 823446,
     "next_game_pk": 823442,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "91° · Clear · gusts 14 mph",
+      "text": "90° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]
