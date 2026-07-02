@@ -30,7 +30,10 @@ const SITE_BACKUP_DIR = "./site.bak";
 const STATIC_ASSET_FILES = ["./tokens.css", "./phillies-wire.css", "./pw-enhance.css", "./live-feed.js", "./fonts.css"];
 const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed", "./schedule", "./shared", "./calendar", "./data"];
 const ISSUE_DATA_SCHEMA_VERSION = "1.4.0";
-const ISSUE_DATA_BUDGET_BYTES = 20 * 1024;
+// Shared with verify.mjs, which enforces this as a hard publish gate. 24 KB
+// leaves headroom above the largest observed plays-less payload (20,494 bytes
+// on 2026-07-02 blocked four deploys at the old 20 KB gate).
+export const ISSUE_DATA_BUDGET_BYTES = 24 * 1024;
 const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://phillieswire.com";
 const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
 
@@ -247,11 +250,15 @@ export function buildIssueDataJson(data) {
 }
 
 function fitIssueDataPayload(payload) {
-  const gameStatus = payload.sections?.game_status?.content;
-  const plays = gameStatus?.plays;
-  if (!Array.isArray(plays) || !plays.length || issueDataSize(payload) <= ISSUE_DATA_BUDGET_BYTES) {
+  // The section trims must run even when there is no play array — a
+  // plays-less payload that exceeds the budget would otherwise ship as-is
+  // and hard-fail the verify gate, blocking the deploy entirely.
+  if (issueDataSize(payload) <= ISSUE_DATA_BUDGET_BYTES) {
     return payload;
   }
+
+  const gameStatus = payload.sections?.game_status?.content;
+  const plays = gameStatus?.plays;
 
   const mode = payload.meta?.status?.mode ?? payload.hero?.mode ?? "";
   if (mode === "final") {
@@ -261,6 +268,10 @@ function fitIssueDataPayload(payload) {
 
   payload.sections.injury_report = null;
   if (issueDataSize(payload) <= ISSUE_DATA_BUDGET_BYTES) return payload;
+
+  if (!Array.isArray(plays) || !plays.length) {
+    return payload;
+  }
 
   for (const maxLength of [96, 72, 56, 48, 40, 32, 24]) {
     gameStatus.plays = plays.map((play) => shortenIssuePlayDetail(play, maxLength));

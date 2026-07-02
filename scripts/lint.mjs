@@ -5,8 +5,9 @@
 import { readdirSync, statSync } from "node:fs";
 import { join, extname, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 
-const ROOT = resolve(new URL("..", import.meta.url).pathname);
+const ROOT = resolve(fileURLToPath(new URL("..", import.meta.url)));
 const EXCLUDE_DIRS = new Set(["node_modules", ".git", "site", ".claude"]);
 const EXTENSIONS = new Set([".mjs", ".js"]);
 
