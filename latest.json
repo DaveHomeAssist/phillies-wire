@@ -4,7 +4,7 @@
   "edition_date": "2026-07-01",
   "volume": 1,
   "edition": 92,
-  "generated_at": "2026-07-02T00:52:04.021Z",
+  "generated_at": "2026-07-02T01:17:58.571Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 8, PIT 4",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "Trea Turner is up against Cam Sanders. Series: Series tied 1-1.",
+    "dek": "Top 7th · 1 out",
+    "summary": "Jared Triolo is up against Seth Johnson. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Jared Jones · PHI vs PIT · Thu, Jul 2 · 12:35 PM"
   },
@@ -55,38 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 88,
-      "condition": "Clear",
-      "wind": "7 mph · gusts 16",
-      "gusts_mph": 16
+      "temp_f": 87,
+      "condition": "Mostly sunny",
+      "wind": "7 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Cam Sanders"
+        "name": "Jared Triolo",
+        "meta": "vs Seth Johnson"
       },
-      "pitches": [
-        "S",
-        "B",
-        "F",
-        "B",
-        "F",
-        "B",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 3
+        "balls": 0,
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Middle 6th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -94,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-02T00:52:04.541Z",
+    "updated_at": "2026-07-02T01:17:59.368Z",
     "current_game_pk": 823446,
     "next_game_pk": 823442,
     "next_game": {
@@ -131,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "88° · Clear · gusts 16 mph",
+      "text": "87° · Mostly sunny · gusts 15 mph",
       "highlight": false
     }
   ]
