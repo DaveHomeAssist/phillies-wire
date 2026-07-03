@@ -1,64 +1,64 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-02",
+  "edition_date": "2026-07-03",
   "volume": 1,
-  "edition": 93,
-  "generated_at": "2026-07-03T03:12:10.467Z",
-  "mode": "final",
-  "mode_label": "Final",
-  "off_day": false,
+  "edition": 94,
+  "generated_at": "2026-07-03T04:30:58.035Z",
+  "mode": "off_day",
+  "mode_label": "Off Day",
+  "off_day": true,
   "record": {
-    "wins": 49,
-    "losses": 39,
+    "wins": 0,
+    "losses": 0,
     "streak": "L1",
-    "division_rank": 2,
+    "division_rank": 0,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, PIT 6.",
-    "dek": "PIT 6, PHI 1 · Jared Jones · 4.0 IP, 2 H, 1 ER, 6 K",
-    "summary": "PHI 1, PIT 6. Final at Citizens Bank Park, Philadelphia. Series tied 2-2.",
-    "next_label": "Tomorrow",
+    "headline": "No Phillies game today",
+    "dek": "Next up: Jesús Luzardo vs Michael Wacha · PHI @ KC",
+    "summary": "Use the archive to catch up or check the next scheduled game window.",
+    "next_label": "Next Game",
     "next_value": "Jesús Luzardo vs Michael Wacha · PHI @ KC · Sat, Jul 4 · 8:10 PM"
   },
   "game": {
-    "matchup": "Pirates @ Phillies · Game 4 of 4",
-    "first_pitch": "12:35 PM",
-    "venue": "Citizens Bank Park, Philadelphia",
+    "matchup": "Schedule refresh required",
+    "first_pitch": "TBD",
+    "venue": "TBD",
     "starters": {
       "home": {
-        "name": "Alan Rangel",
+        "name": "TBD",
         "hand": "R"
       },
       "away": {
-        "name": "Jared Jones",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Alan Rangel",
+        "name": "TBD",
         "hand": "R"
       },
       "opp": {
-        "name": "Jared Jones",
+        "name": "TBD",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 2-2"
+      "label": "Series status pending"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "TV TBD",
       "stream": "MLB.TV",
-      "radio": "94 WIP"
+      "radio": "Radio TBD"
     },
     "weather": {
-      "temp_f": 87,
-      "condition": "Clear",
-      "wind": "5 mph · gusts 13",
-      "gusts_mph": 13
+      "temp_f": "",
+      "condition": "Weather unavailable",
+      "wind": "Weather unavailable",
+      "gusts_mph": ""
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-03T03:12:10.770Z",
+    "updated_at": "2026-07-03T04:30:58.572Z",
     "current_game_pk": 824092,
     "next_game_pk": 824091,
     "next_game": {
@@ -90,27 +90,19 @@
   },
   "ticker": [
     {
-      "text": "PHI 49-39",
+      "text": "PHI 0-0",
       "highlight": true
     },
     {
-      "text": "Pirates @ Phillies · Game 4 of 4 · 12:35 PM",
+      "text": "Jesús Luzardo vs Michael Wacha · PHI @ KC · Sat, Jul 4 · 8:10 PM",
       "highlight": false
     },
     {
-      "text": "Alan Rangel vs Jared Jones",
-      "highlight": true
-    },
-    {
-      "text": "NBCSP · 94 WIP",
+      "text": "NBCSP",
       "highlight": false
     },
     {
-      "text": "87° · Clear · gusts 13 mph",
-      "highlight": false
-    },
-    {
-      "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
+      "text": "Off day",
       "highlight": false
     }
   ]
