@@ -4,9 +4,9 @@
   "edition_date": "2026-07-04",
   "volume": 1,
   "edition": 95,
-  "generated_at": "2026-07-04T23:21:11.346Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-04T23:48:39.632Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 49,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Royals · Game 1 of 3",
-    "dek": "Jesús Luzardo vs Michael Wacha",
-    "summary": "Jesús Luzardo vs Michael Wacha · Phillies @ Royals · Game 1 of 3",
+    "headline": "PHI 0, KC 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Michael Wacha. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Luinder Avila · PHI @ KC · Sun, Jul 5 · 3:00 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 74,
       "condition": "Overcast",
       "wind": "7 mph · gusts 16",
       "gusts_mph": 16
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Michael Wacha"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-04T23:21:11.895Z",
+    "updated_at": "2026-07-04T23:48:40.286Z",
     "current_game_pk": 824092,
     "next_game_pk": 824091,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 16 mph",
+      "text": "74° · Overcast · gusts 16 mph",
       "highlight": false
     },
     {
