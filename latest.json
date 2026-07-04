@@ -4,7 +4,7 @@
   "edition_date": "2026-07-04",
   "volume": 1,
   "edition": 95,
-  "generated_at": "2026-07-04T19:57:34.999Z",
+  "generated_at": "2026-07-04T20:25:26.945Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 75,
       "condition": "Overcast",
-      "wind": "8 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "13 mph · gusts 20",
+      "gusts_mph": 20
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-04T19:57:35.529Z",
+    "updated_at": "2026-07-04T20:25:27.493Z",
     "current_game_pk": 824092,
     "next_game_pk": 824091,
     "next_game": {
@@ -106,11 +106,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 11 mph",
-      "highlight": false
-    },
-    {
-      "text": "traded RHP Ryan Degges to Cleveland Guardians for cash.",
+      "text": "75° · Overcast · gusts 20 mph",
       "highlight": false
     },
     {
@@ -119,6 +115,10 @@
     },
     {
       "text": "recalled LHP Tanner Banks from Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "traded RHP Ryan Degges to Cleveland Guardians for cash.",
       "highlight": false
     }
   ]
