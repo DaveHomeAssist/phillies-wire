@@ -4,7 +4,7 @@
   "edition_date": "2026-07-04",
   "volume": 1,
   "edition": 95,
-  "generated_at": "2026-07-05T01:56:33.454Z",
+  "generated_at": "2026-07-05T02:18:32.105Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, KC 1",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Brandon Marsh is up against Lucas Erceg. Series: Regular Season.",
+    "headline": "PHI 5, KC 1",
+    "dek": "Top 8th · 2 outs",
+    "summary": "J.T. Realmuto is up against Jose Cuas. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Luinder Avila · PHI @ KC · Sun, Jul 5 · 3:00 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 71,
+      "temp_f": 70,
       "condition": "Overcast",
       "wind": "4 mph · gusts 5",
       "gusts_mph": 5
@@ -64,24 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Lucas Erceg"
+        "name": "J.T. Realmuto",
+        "meta": "vs Jose Cuas"
       },
       "pitches": [
         "S",
-        "B"
+        "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 1,
         "outs": 2
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": true
       },
-      "status": "Top 7th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -89,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-05T01:56:34.012Z",
+    "updated_at": "2026-07-05T02:18:32.942Z",
     "current_game_pk": 824092,
     "next_game_pk": 824091,
     "next_game": {
@@ -126,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "71° · Overcast · gusts 5 mph",
+      "text": "70° · Overcast · gusts 5 mph",
       "highlight": false
     },
     {
@@ -134,15 +134,15 @@
       "highlight": false
     },
     {
-      "text": "traded RHP Ryan Degges to Cleveland Guardians for cash.",
-      "highlight": false
-    },
-    {
-      "text": "traded RHP Ryan Degges to Cleveland Guardians for cash.",
-      "highlight": false
-    },
-    {
       "text": "recalled LHP Tanner Banks from Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "traded RHP Ryan Degges to Cleveland Guardians for cash.",
+      "highlight": false
+    },
+    {
+      "text": "traded RHP Ryan Degges to Cleveland Guardians for cash.",
       "highlight": false
     }
   ]
