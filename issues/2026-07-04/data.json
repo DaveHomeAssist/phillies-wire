@@ -5,14 +5,14 @@
     "edition": 95,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-05T01:05:07.685Z",
+    "generated_at": "2026-07-05T01:19:57.276Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 4, 2026, 9:05 PM ET",
+      "generated_at_et": "Jul 4, 2026, 9:19 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 3, KC 0",
-    "dek": "Top 4th · 1 out",
-    "summary": "Justin Crawford is up against Michael Wacha. Series: Regular Season.",
+    "headline": "PHI 3, KC 1",
+    "dek": "End 4th · 3 outs",
+    "summary": "Kyle Schwarber is up against Michael Wacha. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "73° · Clear"
+        "value": "72° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Justin Crawford at the plate",
+      "Kyle Schwarber at the plate",
       "Michael Wacha on the mound",
       "Kauffman Stadium, Kansas City"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
-          "condition": "Clear",
-          "wind": "2 mph · gusts 5",
-          "gusts_mph": 5
+          "temp_f": 72,
+          "condition": "Mostly sunny",
+          "wind": "2 mph · gusts 3",
+          "gusts_mph": 3
         },
         "giveaway": "",
         "transit": "",
@@ -359,7 +359,7 @@
             "team": "KC",
             "name": "Michael Wacha",
             "hand": "R",
-            "era": "3.46",
+            "era": "3.43",
             "record": "5-5",
             "whip": "1.17"
           },
@@ -367,7 +367,7 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.77",
+            "era": "3.82",
             "record": "6-4",
             "whip": "1.28"
           }
@@ -375,18 +375,18 @@
         "linescore": {
           "currentInning": 4,
           "currentInningOrdinal": "4th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 1,
+          "inningState": "End",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 3,
-              "hits": 6,
+              "hits": 7,
               "errors": 0
             },
             "home": {
-              "runs": 0,
-              "hits": 1,
+              "runs": 1,
+              "hits": 3,
               "errors": 1
             }
           },
@@ -434,12 +434,12 @@
               "num": 4,
               "away": {
                 "runs": 3,
-                "hits": 3,
+                "hits": 4,
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 1,
+                "hits": 2,
                 "errors": 0
               }
             }
@@ -829,11 +829,109 @@
             "inning": 4,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Play",
+            "detail": "Justin Crawford singles on a fly ball to center fielder Lane Thomas.",
             "score_after": "PHI 3, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:28",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner flies into a double play, center fielder Lane Thomas to shortstop Bobby Witt Jr. to first baseman Jac Caglianone. Justi…",
+            "score_after": "PHI 3, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "824092:29",
+            "inning": 4,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Bobby Witt Jr.",
+            "actor_id": 677951,
+            "detail": "Bobby Witt Jr. flies out to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 3, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:30",
+            "inning": 4,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "extra_base_hit",
+            "actor": "Lane Thomas",
+            "actor_id": 657041,
+            "detail": "Lane Thomas doubles (10) on a ground ball to left fielder Brandon Marsh.",
+            "score_after": "PHI 3, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "824092:31",
+            "inning": 4,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Jac Caglianone",
+            "actor_id": 695506,
+            "detail": "Jac Caglianone grounds out, shortstop Trea Turner to first baseman Bryce Harper. Lane Thomas to 3rd.",
+            "score_after": "PHI 3, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:32",
+            "inning": 4,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "single",
+            "actor": "Nick Loftin",
+            "actor_id": 679845,
+            "detail": "Nick Loftin singles on a ground ball to third baseman Alec Bohm. Lane Thomas scores.",
+            "score_after": "PHI 3, KC 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824092:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "walk_hbp",
+            "actor": "Starling Marte",
+            "actor_id": 516782,
+            "detail": "Royals challenged (other), call on the field was overturned: Starling Marte hit by pitch. Nick Loftin to 2nd.",
+            "score_after": "PHI 3, KC 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:34",
+            "inning": 4,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Isaac Collins",
+            "actor_id": 686555,
+            "detail": "Isaac Collins flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 3, KC 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -841,23 +939,23 @@
         ],
         "situation": {
           "batter": {
-            "name": "Justin Crawford",
+            "name": "Kyle Schwarber",
             "meta": "vs Michael Wacha"
           },
           "pitches": [
-            "F"
+            "X"
           ],
           "count": {
             "balls": 0,
-            "strikes": 1,
-            "outs": 1
+            "strikes": 0,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 4th"
+          "status": "End 4th"
         }
       }
     },
@@ -874,8 +972,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T01:05:07.685Z",
-            "freshness_label": "As of Jul 4, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-07-05T01:19:57.276Z",
+            "freshness_label": "As of Jul 4, 2026, 9:19 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -887,8 +985,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T01:05:07.685Z",
-            "freshness_label": "As of Jul 4, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-07-05T01:19:57.276Z",
+            "freshness_label": "As of Jul 4, 2026, 9:19 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -900,8 +998,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T01:05:07.685Z",
-            "freshness_label": "As of Jul 4, 2026, 9:05 PM ET"
+            "last_confirmed": "2026-07-05T01:19:57.276Z",
+            "freshness_label": "As of Jul 4, 2026, 9:19 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
