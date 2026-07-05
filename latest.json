@@ -4,7 +4,7 @@
   "edition_date": "2026-07-05",
   "volume": 1,
   "edition": 96,
-  "generated_at": "2026-07-05T20:10:11.496Z",
+  "generated_at": "2026-07-05T20:37:19.602Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, KC 2",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Alec Bohm is up against Luinder Avila. Series: PHI leads 1-0.",
+    "headline": "PHI 1, KC 3",
+    "dek": "Top 6th · 2 outs",
+    "summary": "Alec Bohm is up against Matt Strahm. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Noah Cameron · PHI @ KC · Mon, Jul 6 · 2:10 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 90,
+      "temp_f": 91,
       "condition": "Clear",
       "wind": "7 mph · gusts 10",
       "gusts_mph": 10
@@ -65,22 +65,25 @@
     "situation": {
       "batter": {
         "name": "Alec Bohm",
-        "meta": "vs Luinder Avila"
+        "meta": "vs Matt Strahm"
       },
       "pitches": [
-        "B"
+        "B",
+        "S",
+        "F",
+        "F"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Top 5th"
+      "status": "Top 6th"
     },
     "recap_line": null
   },
@@ -88,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-05T20:10:12.101Z",
+    "updated_at": "2026-07-05T20:37:20.199Z",
     "current_game_pk": 824091,
     "next_game_pk": 824089,
     "next_game": {
@@ -125,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "90° · Clear · gusts 10 mph",
+      "text": "91° · Clear · gusts 10 mph",
       "highlight": false
     },
     {
