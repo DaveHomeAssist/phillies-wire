@@ -5,14 +5,14 @@
     "edition": 95,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-05T00:08:01.339Z",
+    "generated_at": "2026-07-05T00:37:59.624Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 4, 2026, 8:08 PM ET",
+      "generated_at_et": "Jul 4, 2026, 8:37 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, KC 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Michael Wacha. Series: Regular Season.",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Nick Loftin is up against Jesús Luzardo. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "74° · Overcast"
+        "value": "73° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Michael Wacha on the mound",
+      "Nick Loftin at the plate",
+      "Jesús Luzardo on the mound",
       "Kauffman Stadium, Kansas City"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 74,
-          "condition": "Overcast",
-          "wind": "6 mph · gusts 13",
-          "gusts_mph": 13
+          "temp_f": 73,
+          "condition": "Mostly sunny",
+          "wind": "4 mph · gusts 5",
+          "gusts_mph": 5
         },
         "giveaway": "",
         "transit": "",
@@ -359,42 +359,55 @@
             "team": "KC",
             "name": "Michael Wacha",
             "hand": "R",
-            "era": "3.31",
+            "era": "3.25",
             "record": "5-5",
-            "whip": "1.14"
+            "whip": "1.15"
           },
           "away": {
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.88",
+            "era": "3.84",
             "record": "6-4",
-            "whip": "1.30"
+            "whip": "1.29"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 0,
+              "hits": 2,
               "errors": 0
             },
             "home": {
               "runs": 0,
               "hits": 0,
-              "errors": 0
+              "errors": 1
             }
           },
           "innings": [
             {
               "num": 1,
               "away": {
-                "runs": null,
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 1
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -412,10 +425,192 @@
             "inning": 1,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Status Change - Warmup",
+            "detail": "Trea Turner strikes out swinging.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:1",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber singles on a sharp line drive to right fielder Tyler Tolbert.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:2",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper singles on a ground ball to pitcher Michael Wacha. Kyle Schwarber to 3rd. Bryce Harper to 2nd. Kyle Schwarber advances…",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:3",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh pops out to third baseman Nick Loftin in foul territory.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:4",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm walks.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:5",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott pops out to second baseman Michael Massey in foul territory.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:6",
+            "inning": 1,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Carter Jensen",
+            "actor_id": 695600,
+            "detail": "Carter Jensen flies out to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:7",
+            "inning": 1,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Bobby Witt Jr.",
+            "actor_id": 677951,
+            "detail": "Bobby Witt Jr. grounds out, third baseman Alec Bohm to first baseman Bryce Harper.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:8",
+            "inning": 1,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "strikeout",
+            "actor": "Lane Thomas",
+            "actor_id": 657041,
+            "detail": "Lane Thomas strikes out swinging.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:9",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, second baseman Michael Massey to first baseman Jac Caglianone.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:10",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. called out on strikes.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:11",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford strikes out on a foul tip.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "strikeout",
+            "actor": "Jac Caglianone",
+            "actor_id": 695506,
+            "detail": "Jac Caglianone called out on strikes.",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824092:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "other",
+            "actor": "Nick Loftin",
+            "actor_id": 679845,
+            "detail": "Play",
             "score_after": "PHI 0, KC 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,21 +619,23 @@
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
-            "meta": "vs Michael Wacha"
+            "name": "Nick Loftin",
+            "meta": "vs Jesús Luzardo"
           },
-          "pitches": [],
+          "pitches": [
+            "S"
+          ],
           "count": {
             "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "strikes": 1,
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -455,8 +652,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T00:08:01.339Z",
-            "freshness_label": "As of Jul 4, 2026, 8:08 PM ET"
+            "last_confirmed": "2026-07-05T00:37:59.624Z",
+            "freshness_label": "As of Jul 4, 2026, 8:37 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -468,8 +665,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T00:08:01.339Z",
-            "freshness_label": "As of Jul 4, 2026, 8:08 PM ET"
+            "last_confirmed": "2026-07-05T00:37:59.624Z",
+            "freshness_label": "As of Jul 4, 2026, 8:37 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -481,8 +678,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T00:08:01.339Z",
-            "freshness_label": "As of Jul 4, 2026, 8:08 PM ET"
+            "last_confirmed": "2026-07-05T00:37:59.624Z",
+            "freshness_label": "As of Jul 4, 2026, 8:37 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
