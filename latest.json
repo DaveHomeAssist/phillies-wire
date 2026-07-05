@@ -4,9 +4,9 @@
   "edition_date": "2026-07-05",
   "volume": 1,
   "edition": 96,
-  "generated_at": "2026-07-05T18:25:39.623Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-05T18:50:33.856Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 50,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Royals · Game 2 of 3",
-    "dek": "Aaron Nola vs Luinder Avila",
-    "summary": "Aaron Nola vs Luinder Avila · Phillies @ Royals · Game 2 of 3",
+    "headline": "PHI 0, KC 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Luinder Avila. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Noah Cameron · PHI @ KC · Mon, Jul 6 · 2:10 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 88,
+      "temp_f": 89,
       "condition": "Clear",
-      "wind": "5 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "8 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Luinder Avila"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-05T18:25:39.966Z",
+    "updated_at": "2026-07-05T18:50:34.618Z",
     "current_game_pk": 824091,
     "next_game_pk": 824089,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "88° · Clear · gusts 10 mph",
+      "text": "89° · Clear · gusts 11 mph",
       "highlight": false
     },
     {
