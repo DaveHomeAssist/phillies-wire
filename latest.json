@@ -4,21 +4,21 @@
   "edition_date": "2026-07-05",
   "volume": 1,
   "edition": 96,
-  "generated_at": "2026-07-05T21:07:35.306Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-05T21:36:34.844Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 50,
-    "losses": 39,
-    "streak": "W1",
+    "losses": 40,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, KC 3",
-    "dek": "Middle 8th · 3 outs",
-    "summary": "Bobby Witt Jr. is up against Aaron Nola. Series: PHI leads 1-0.",
+    "headline": "PHI 2, KC 5.",
+    "dek": "KC 5, PHI 2 · Aaron Nola · 7.0 IP, 7 H, 3 ER, 7 K",
+    "summary": "PHI 2, KC 5. Final at Kauffman Stadium, Kansas City. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Noah Cameron · PHI @ KC · Mon, Jul 6 · 2:10 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,60 +57,40 @@
     "weather": {
       "temp_f": 90,
       "condition": "Clear",
-      "wind": "8 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "7 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Bobby Witt Jr.",
-        "meta": "vs Aaron Nola"
-      },
-      "pitches": [
-        "B",
-        "X"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 0,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Middle 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-05T21:07:35.685Z",
-    "current_game_pk": 824091,
-    "next_game_pk": 824089,
+    "updated_at": "2026-07-05T21:36:35.766Z",
+    "current_game_pk": 824089,
+    "next_game_pk": 824495,
     "next_game": {
-      "game_pk": 824089,
-      "official_date": "2026-07-06",
-      "date_label": "Mon, Jul 6, 2026",
-      "time_label": "2:10 PM",
-      "title": "Phillies at Kansas City Royals",
-      "matchup": "PHI at KC",
-      "venue": "Kauffman Stadium"
+      "game_pk": 824495,
+      "official_date": "2026-07-07",
+      "date_label": "Tue, Jul 7, 2026",
+      "time_label": "7:10 PM",
+      "title": "Phillies at Cincinnati Reds",
+      "matchup": "PHI at CIN",
+      "venue": "Great American Ball Park"
     },
     "current_game": {
-      "game_pk": 824091,
-      "official_date": "2026-07-05",
+      "game_pk": 824089,
+      "official_date": "2026-07-06",
       "title": "Phillies at Kansas City Royals",
       "matchup": "PHI at KC"
     }
   },
   "ticker": [
     {
-      "text": "PHI 50-39",
+      "text": "PHI 50-40",
       "highlight": true
     },
     {
@@ -126,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "90° · Clear · gusts 10 mph",
+      "text": "90° · Clear · gusts 9 mph",
       "highlight": false
     },
     {

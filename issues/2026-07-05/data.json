@@ -5,14 +5,14 @@
     "edition": 96,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-05T21:07:35.306Z",
+    "generated_at": "2026-07-05T21:36:34.844Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 5, 2026, 5:07 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 5, 2026, 5:36 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 50,
-    "losses": 39,
-    "streak": "W1",
+    "losses": 40,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 2, KC 3",
-    "dek": "Middle 8th · 3 outs",
-    "summary": "Bobby Witt Jr. is up against Aaron Nola. Series: PHI leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 2, KC 5.",
+    "dek": "KC 5, PHI 2 · Aaron Nola · 7.0 IP, 7 H, 3 ER, 7 K",
+    "summary": "PHI 2, KC 5. Final at Kauffman Stadium, Kansas City. Series tied 1-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Kauffman Stadium, Kansas City"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "90° · Clear"
+        "label": "Series",
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "Bobby Witt Jr. at the plate",
-      "Aaron Nola on the mound",
-      "Kauffman Stadium, Kansas City"
+      "Aaron Nola: 7.0 IP, 7 H, 3 ER, 7 K",
+      "Luinder Avila: 5.0 IP, 3 H, 1 ER, 4 K",
+      "Isaac Collins: 2-for-3, 1 R, 1 SB"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Noah Cameron · PHI @ KC · Mon, Jul 6 · 2:10 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at KC game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "3:00 PM",
-        "starters": {
-          "home": {
-            "team": "KC",
-            "name": "Luinder Avila",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "KC",
-            "name": "Luinder Avila",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Carter Jensen",
-              "position": "C",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Bobby Witt Jr.",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Jac Caglianone",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Lane Thomas",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Michael Massey",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Salvador Perez",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Josh Rojas",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Kameron Misner",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Isaac Collins",
-              "position": "LF",
-              "bats": "S"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Garrett Stubbs",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Garrett Stubbs",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Carter Jensen",
-              "position": "C",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Bobby Witt Jr.",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Jac Caglianone",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Lane Thomas",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Michael Massey",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Salvador Perez",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Josh Rojas",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Kameron Misner",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Isaac Collins",
-              "position": "LF",
-              "bats": "S"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Royals · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 90,
           "condition": "Clear",
-          "wind": "8 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "7 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "",
@@ -360,7 +103,7 @@
             "name": "Luinder Avila",
             "hand": "R",
             "era": "5.05",
-            "record": "3-3",
+            "record": "4-3",
             "whip": "1.59"
           },
           "away": {
@@ -368,14 +111,14 @@
             "name": "Aaron Nola",
             "hand": "R",
             "era": "5.87",
-            "record": "3-5",
+            "record": "3-6",
             "whip": "1.46"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Middle",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
           "isTopInning": true,
           "outs": 3,
           "teams": {
@@ -385,8 +128,8 @@
               "errors": 0
             },
             "home": {
-              "runs": 3,
-              "hits": 7,
+              "runs": 5,
+              "hits": 8,
               "errors": 1
             }
           },
@@ -490,6 +233,19 @@
                 "errors": 0
               },
               "home": {
+                "runs": 2,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
                 "runs": null,
                 "hits": 0,
                 "errors": 0
@@ -562,7 +318,7 @@
             "event_type": "single",
             "actor": "Bobby Witt Jr.",
             "actor_id": 677951,
-            "detail": "Bobby Witt Jr. singles on a ground ball to center fielder Justin Crawford.",
+            "detail": "Bobby Witt Jr. singles on a sharp ground ball to center fielder Justin Crawford.",
             "score_after": "PHI 0, KC 0",
             "runs": 0,
             "is_scoring": false,
@@ -1323,29 +1079,134 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "824091:59",
+            "inning": 8,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "walk_hbp",
+            "actor": "Bobby Witt Jr.",
+            "actor_id": 677951,
+            "detail": "Bobby Witt Jr. walks.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:60",
+            "inning": 8,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Jac Caglianone",
+            "actor_id": 695506,
+            "detail": "Jac Caglianone flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:61",
+            "inning": 8,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "walk_hbp",
+            "actor": "Lane Thomas",
+            "actor_id": 657041,
+            "detail": "Lane Thomas walks.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:62",
+            "inning": 8,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "strikeout",
+            "actor": "Nick Loftin",
+            "actor_id": 679845,
+            "detail": "Nick Loftin strikes out swinging.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:63",
+            "inning": 8,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "extra_base_hit",
+            "actor": "Salvador Perez",
+            "actor_id": 521692,
+            "detail": "Salvador Perez doubles (11) on a line drive to left fielder Brandon Marsh. Bobby Witt Jr. scores. Lane Thomas scores.",
+            "score_after": "PHI 2, KC 5",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824091:64",
+            "inning": 8,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Josh Rojas",
+            "actor_id": 668942,
+            "detail": "Josh Rojas grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "score_after": "PHI 2, KC 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:65",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm lines out to first baseman Jac Caglianone.",
+            "score_after": "PHI 2, KC 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:66",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to center fielder Lane Thomas.",
+            "score_after": "PHI 2, KC 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:67",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. grounds out, shortstop Bobby Witt Jr. to first baseman Jac Caglianone.",
+            "score_after": "PHI 2, KC 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Bobby Witt Jr.",
-            "meta": "vs Aaron Nola"
-          },
-          "pitches": [
-            "B",
-            "X"
-          ],
-          "count": {
-            "balls": 1,
-            "strikes": 0,
-            "outs": 3
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Middle 8th"
-        }
+        ]
       }
     },
     "injury_report": {
@@ -1361,8 +1222,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T21:07:35.306Z",
-            "freshness_label": "As of Jul 5, 2026, 5:07 PM ET"
+            "last_confirmed": "2026-07-05T21:36:34.844Z",
+            "freshness_label": "As of Jul 5, 2026, 5:36 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1374,8 +1235,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T21:07:35.306Z",
-            "freshness_label": "As of Jul 5, 2026, 5:07 PM ET"
+            "last_confirmed": "2026-07-05T21:36:34.844Z",
+            "freshness_label": "As of Jul 5, 2026, 5:36 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1387,8 +1248,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T21:07:35.306Z",
-            "freshness_label": "As of Jul 5, 2026, 5:07 PM ET"
+            "last_confirmed": "2026-07-05T21:36:34.844Z",
+            "freshness_label": "As of Jul 5, 2026, 5:36 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
