@@ -4,7 +4,7 @@
   "edition_date": "2026-07-05",
   "volume": 1,
   "edition": 96,
-  "generated_at": "2026-07-05T18:51:29.472Z",
+  "generated_at": "2026-07-05T19:30:19.588Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, KC 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Luinder Avila. Series: PHI leads 1-0.",
+    "headline": "PHI 0, KC 2",
+    "dek": "Bottom 2nd · 0 outs",
+    "summary": "Josh Rojas is up against Aaron Nola. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Noah Cameron · PHI @ KC · Mon, Jul 6 · 2:10 PM"
   },
@@ -55,30 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 89,
+      "temp_f": 90,
       "condition": "Clear",
-      "wind": "8 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "8 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Luinder Avila"
+        "name": "Josh Rojas",
+        "meta": "vs Aaron Nola"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "X"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Middle 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-05T18:51:29.729Z",
+    "updated_at": "2026-07-05T19:30:20.436Z",
     "current_game_pk": 824091,
     "next_game_pk": 824089,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Clear · gusts 11 mph",
+      "text": "90° · Clear · gusts 10 mph",
       "highlight": false
     },
     {
