@@ -5,14 +5,14 @@
     "edition": 96,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-05T20:37:19.602Z",
+    "generated_at": "2026-07-05T21:07:35.306Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 5, 2026, 4:37 PM ET",
+      "generated_at_et": "Jul 5, 2026, 5:07 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, KC 3",
-    "dek": "Top 6th · 2 outs",
-    "summary": "Alec Bohm is up against Matt Strahm. Series: PHI leads 1-0.",
+    "headline": "PHI 2, KC 3",
+    "dek": "Middle 8th · 3 outs",
+    "summary": "Bobby Witt Jr. is up against Aaron Nola. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "91° · Clear"
+        "value": "90° · Clear"
       }
     ],
     "bullets": [
-      "Alec Bohm at the plate",
-      "Matt Strahm on the mound",
+      "Bobby Witt Jr. at the plate",
+      "Aaron Nola on the mound",
       "Kauffman Stadium, Kansas City"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 91,
+          "temp_f": 90,
           "condition": "Clear",
-          "wind": "7 mph · gusts 10",
+          "wind": "8 mph · gusts 10",
           "gusts_mph": 10
         },
         "giveaway": "",
@@ -367,27 +367,27 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "6.00",
+            "era": "5.87",
             "record": "3-5",
-            "whip": "1.49"
+            "whip": "1.46"
           }
         },
         "linescore": {
-          "currentInning": 6,
-          "currentInningOrdinal": "6th",
-          "inningState": "Top",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
+          "inningState": "Middle",
           "isTopInning": true,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 4,
+              "runs": 2,
+              "hits": 5,
               "errors": 0
             },
             "home": {
               "runs": 3,
               "hits": 7,
-              "errors": 0
+              "errors": 1
             }
           },
           "innings": [
@@ -459,8 +459,34 @@
             {
               "num": 6,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 1
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
@@ -1093,11 +1119,207 @@
             "inning": 6,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Play",
+            "detail": "Alec Bohm lines out to left fielder Isaac Collins.",
             "score_after": "PHI 1, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:45",
+            "inning": 6,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Michael Massey",
+            "actor_id": 686681,
+            "detail": "Michael Massey lines out to left fielder Brandon Marsh.",
+            "score_after": "PHI 1, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:46",
+            "inning": 6,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Salvador Perez",
+            "actor_id": 521692,
+            "detail": "Salvador Perez grounds out to first baseman Bryce Harper.",
+            "score_after": "PHI 1, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:47",
+            "inning": 6,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Josh Rojas",
+            "actor_id": 668942,
+            "detail": "Josh Rojas flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 1, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:48",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott singles on a ground ball to center fielder Lane Thomas.",
+            "score_after": "PHI 1, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:49",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. flies out sharply to right fielder Kameron Misner.",
+            "score_after": "PHI 1, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:50",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford reaches on a fielder's choice. Bryson Stott to 3rd. Bryson Stott advances to 3rd, on a throwing error by third base…",
+            "score_after": "PHI 1, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:51",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs grounds into a force out, pitcher John Schreiber to shortstop Bobby Witt Jr. Bryson Stott scores. Justin Crawford ou…",
+            "score_after": "PHI 2, KC 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824091:52",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner strikes out swinging.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:53",
+            "inning": 7,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "strikeout",
+            "actor": "Kameron Misner",
+            "actor_id": 670224,
+            "detail": "Kameron Misner strikes out swinging.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:54",
+            "inning": 7,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "strikeout",
+            "actor": "Isaac Collins",
+            "actor_id": 686555,
+            "detail": "Isaac Collins strikes out swinging.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:55",
+            "inning": 7,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "strikeout",
+            "actor": "Carter Jensen",
+            "actor_id": 695600,
+            "detail": "Carter Jensen strikes out swinging.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:56",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out, second baseman Michael Massey to first baseman Jac Caglianone.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:57",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 2, KC 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824091:58",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh lines out sharply to center fielder Lane Thomas.",
+            "score_after": "PHI 2, KC 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1105,26 +1327,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Alec Bohm",
-            "meta": "vs Matt Strahm"
+            "name": "Bobby Witt Jr.",
+            "meta": "vs Aaron Nola"
           },
           "pitches": [
             "B",
-            "S",
-            "F",
-            "F"
+            "X"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 2,
-            "outs": 2
+            "balls": 1,
+            "strikes": 0,
+            "outs": 3
           },
           "bases": {
-            "first": true,
-            "second": true,
+            "first": false,
+            "second": false,
             "third": false
           },
-          "status": "Top 6th"
+          "status": "Middle 8th"
         }
       }
     },
@@ -1141,8 +1361,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T20:37:19.602Z",
-            "freshness_label": "As of Jul 5, 2026, 4:37 PM ET"
+            "last_confirmed": "2026-07-05T21:07:35.306Z",
+            "freshness_label": "As of Jul 5, 2026, 5:07 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1154,8 +1374,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T20:37:19.602Z",
-            "freshness_label": "As of Jul 5, 2026, 4:37 PM ET"
+            "last_confirmed": "2026-07-05T21:07:35.306Z",
+            "freshness_label": "As of Jul 5, 2026, 5:07 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1167,8 +1387,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-05T20:37:19.602Z",
-            "freshness_label": "As of Jul 5, 2026, 4:37 PM ET"
+            "last_confirmed": "2026-07-05T21:07:35.306Z",
+            "freshness_label": "As of Jul 5, 2026, 5:07 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

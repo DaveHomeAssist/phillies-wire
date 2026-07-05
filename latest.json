@@ -4,7 +4,7 @@
   "edition_date": "2026-07-05",
   "volume": 1,
   "edition": 96,
-  "generated_at": "2026-07-05T20:37:19.602Z",
+  "generated_at": "2026-07-05T21:07:35.306Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, KC 3",
-    "dek": "Top 6th · 2 outs",
-    "summary": "Alec Bohm is up against Matt Strahm. Series: PHI leads 1-0.",
+    "headline": "PHI 2, KC 3",
+    "dek": "Middle 8th · 3 outs",
+    "summary": "Bobby Witt Jr. is up against Aaron Nola. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Noah Cameron · PHI @ KC · Mon, Jul 6 · 2:10 PM"
   },
@@ -55,35 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 91,
+      "temp_f": 90,
       "condition": "Clear",
-      "wind": "7 mph · gusts 10",
+      "wind": "8 mph · gusts 10",
       "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Matt Strahm"
+        "name": "Bobby Witt Jr.",
+        "meta": "vs Aaron Nola"
       },
       "pitches": [
         "B",
-        "S",
-        "F",
-        "F"
+        "X"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 2
+        "balls": 1,
+        "strikes": 0,
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Top 6th"
+      "status": "Middle 8th"
     },
     "recap_line": null
   },
@@ -91,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-05T20:37:20.199Z",
+    "updated_at": "2026-07-05T21:07:35.685Z",
     "current_game_pk": 824091,
     "next_game_pk": 824089,
     "next_game": {
@@ -128,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "91° · Clear · gusts 10 mph",
+      "text": "90° · Clear · gusts 10 mph",
       "highlight": false
     },
     {
