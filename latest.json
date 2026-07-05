@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-04",
+  "edition_date": "2026-07-05",
   "volume": 1,
-  "edition": 95,
-  "generated_at": "2026-07-05T03:45:20.825Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 96,
+  "generated_at": "2026-07-05T04:48:51.074Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 50,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, KC 1.",
-    "dek": "PHI 6, KC 1 · Jesús Luzardo · 6.0 IP, 4 H, 1 ER, 9 K",
-    "summary": "PHI 6, KC 1. Final at Kauffman Stadium, Kansas City. PHI leads 1-0.",
+    "headline": "Phillies @ Royals · Game 2 of 3",
+    "dek": "Aaron Nola vs Luinder Avila",
+    "summary": "Aaron Nola vs Luinder Avila · Phillies @ Royals · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Luinder Avila · PHI @ KC · Sun, Jul 5 · 3:00 PM"
+    "next_value": "Cristopher Sánchez vs Noah Cameron · PHI @ KC · Mon, Jul 6 · 2:10 PM"
   },
   "game": {
-    "matchup": "Phillies @ Royals · Game 1 of 3",
-    "first_pitch": "8:10 PM",
+    "matchup": "Phillies @ Royals · Game 2 of 3",
+    "first_pitch": "3:00 PM",
     "venue": "Kauffman Stadium, Kansas City",
     "starters": {
       "home": {
-        "name": "Michael Wacha",
+        "name": "Luinder Avila",
         "hand": "R"
       },
       "away": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Aaron Nola",
+        "hand": "R"
       },
       "phi": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Aaron Nola",
+        "hand": "R"
       },
       "opp": {
-        "name": "Michael Wacha",
+        "name": "Luinder Avila",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 69,
-      "condition": "Mostly sunny",
-      "wind": "3 mph · gusts 3",
-      "gusts_mph": 3
+      "temp_f": 68,
+      "condition": "Partly cloudy",
+      "wind": "4 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-05T03:45:21.413Z",
+    "updated_at": "2026-07-05T04:48:51.762Z",
     "current_game_pk": 824091,
     "next_game_pk": 824089,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Royals · Game 1 of 3 · 8:10 PM",
+      "text": "Phillies @ Royals · Game 2 of 3 · 3:00 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Michael Wacha",
+      "text": "Aaron Nola vs Luinder Avila",
       "highlight": true
     },
     {
@@ -106,23 +106,7 @@
       "highlight": false
     },
     {
-      "text": "69° · Mostly sunny · gusts 3 mph",
-      "highlight": false
-    },
-    {
-      "text": "signed free agent C Payton Henry to a minor league contract.",
-      "highlight": false
-    },
-    {
-      "text": "traded RHP Ryan Degges to Cleveland Guardians for cash.",
-      "highlight": false
-    },
-    {
-      "text": "traded RHP Ryan Degges to Cleveland Guardians for cash.",
-      "highlight": false
-    },
-    {
-      "text": "recalled LHP Tanner Banks from Lehigh Valley IronPigs.",
+      "text": "68° · Partly cloudy · gusts 7 mph",
       "highlight": false
     }
   ]
