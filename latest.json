@@ -4,9 +4,9 @@
   "edition_date": "2026-07-06",
   "volume": 1,
   "edition": 97,
-  "generated_at": "2026-07-06T17:03:10.429Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-06T17:51:58.020Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 50,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Royals · Game 3 of 3",
-    "dek": "Cristopher Sánchez vs Noah Cameron",
-    "summary": "Cristopher Sánchez vs Noah Cameron · Phillies @ Royals · Game 3 of 3",
+    "headline": "PHI 0, KC 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Noah Cameron. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Abbott · PHI @ CIN · Tue, Jul 7 · 7:10 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 88,
+      "temp_f": 89,
       "condition": "Mostly sunny",
-      "wind": "6 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "4 mph · gusts 5",
+      "gusts_mph": 5
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Noah Cameron"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-06T17:03:10.866Z",
+    "updated_at": "2026-07-06T17:51:58.433Z",
     "current_game_pk": 824089,
     "next_game_pk": 824495,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "88° · Mostly sunny · gusts 7 mph",
+      "text": "89° · Mostly sunny · gusts 5 mph",
       "highlight": false
     }
   ]
