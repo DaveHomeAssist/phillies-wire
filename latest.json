@@ -4,7 +4,7 @@
   "edition_date": "2026-07-06",
   "volume": 1,
   "edition": 97,
-  "generated_at": "2026-07-06T20:54:23.833Z",
+  "generated_at": "2026-07-06T21:05:29.537Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, KC 13",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Starling Marte is up against Lou Trivino III. Series: Series tied 1-1.",
+    "dek": "Middle 8th · 3 outs",
+    "summary": "Tyler Tolbert is up against Lou Trivino III. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Abbott · PHI @ CIN · Tue, Jul 7 · 7:10 PM"
   },
@@ -57,34 +57,36 @@
     "weather": {
       "temp_f": 89,
       "condition": "Clear",
-      "wind": "7 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "7 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Starling Marte",
+        "name": "Tyler Tolbert",
         "meta": "vs Lou Trivino III"
       },
       "pitches": [
         "S",
+        "B",
+        "B",
+        "S",
         "F",
-        "B",
-        "B",
-        "F"
+        "F",
+        "S"
       ],
       "count": {
         "balls": 2,
-        "strikes": 2,
-        "outs": 2
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
-        "second": true,
-        "third": true
+        "second": false,
+        "third": false
       },
-      "status": "Bottom 7th"
+      "status": "Middle 8th"
     },
     "recap_line": null
   },
@@ -92,7 +94,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-06T20:54:24.482Z",
+    "updated_at": "2026-07-06T21:05:29.982Z",
     "current_game_pk": 824089,
     "next_game_pk": 824495,
     "next_game": {
@@ -129,7 +131,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Clear · gusts 9 mph",
+      "text": "89° · Clear · gusts 8 mph",
       "highlight": false
     },
     {

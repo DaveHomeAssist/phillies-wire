@@ -5,14 +5,14 @@
     "edition": 97,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-06T20:54:23.833Z",
+    "generated_at": "2026-07-06T21:05:29.537Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 6, 2026, 4:54 PM ET",
+      "generated_at_et": "Jul 6, 2026, 5:05 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, KC 13",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Starling Marte is up against Lou Trivino III. Series: Series tied 1-1.",
+    "dek": "Middle 8th · 3 outs",
+    "summary": "Tyler Tolbert is up against Lou Trivino III. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Starling Marte at the plate",
+      "Tyler Tolbert at the plate",
       "Lou Trivino III on the mound",
       "Kauffman Stadium, Kansas City"
     ],
@@ -107,7 +107,7 @@
             {
               "slot": 4,
               "name": "Jac Caglianone",
-              "position": "RF",
+              "position": "1B",
               "bats": "L"
             },
             {
@@ -119,7 +119,7 @@
             {
               "slot": 6,
               "name": "Starling Marte",
-              "position": "LF",
+              "position": "RF",
               "bats": "R"
             },
             {
@@ -275,7 +275,7 @@
             {
               "slot": 4,
               "name": "Jac Caglianone",
-              "position": "RF",
+              "position": "1B",
               "bats": "L"
             },
             {
@@ -287,7 +287,7 @@
             {
               "slot": 6,
               "name": "Starling Marte",
-              "position": "LF",
+              "position": "RF",
               "bats": "R"
             },
             {
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 89,
           "condition": "Clear",
-          "wind": "7 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "7 mph · gusts 8",
+          "gusts_mph": 8
         },
         "giveaway": "",
         "transit": "",
@@ -373,15 +373,15 @@
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 2,
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
+          "inningState": "Middle",
+          "isTopInning": true,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 1,
-              "hits": 9,
+              "hits": 10,
               "errors": 1
             },
             "home": {
@@ -481,6 +481,19 @@
                 "hits": 1,
                 "errors": 0
               }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              }
             }
           ]
         },
@@ -493,7 +506,7 @@
             "event_type": "extra_base_hit",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner doubles (16) on a fly ball…",
+            "detail": "Trea Turner doubles (16…",
             "score_after": "PHI 0, KC 0",
             "runs": 0,
             "is_scoring": false,
@@ -507,8 +520,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes out swinging.",
-            "score_after": "PHI 0, KC 0",
+            "detail": "Kyle Schwarber strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -522,7 +535,7 @@
             "actor": "Bryce Harper",
             "actor_id": 547180,
             "detail": "Bryce Harper walks.",
-            "score_after": "PHI 0, KC 0",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -535,7 +548,7 @@
             "event_type": "extra_base_hit",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm doubles (14) on a sharp fly b…",
+            "detail": "Alec Bohm doubles (14)…",
             "score_after": "PHI 1, KC 0",
             "runs": 1,
             "is_scoring": true,
@@ -549,8 +562,8 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes out swinging.",
-            "score_after": "PHI 1, KC 0",
+            "detail": "Brandon Marsh strikes o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -564,7 +577,7 @@
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
             "detail": "Edmundo Sosa walks.",
-            "score_after": "PHI 1, KC 0",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -577,8 +590,8 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out, second basema…",
-            "score_after": "PHI 1, KC 0",
+            "detail": "Bryson Stott grounds ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -592,7 +605,7 @@
             "actor": "Lane Thomas",
             "actor_id": 657041,
             "detail": "Lane Thomas walks.",
-            "score_after": "PHI 1, KC 0",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -605,8 +618,8 @@
             "event_type": "out",
             "actor": "Bobby Witt Jr.",
             "actor_id": 677951,
-            "detail": "Bobby Witt Jr. grounds into a force out…",
-            "score_after": "PHI 1, KC 0",
+            "detail": "Bobby Witt Jr. grounds…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -619,8 +632,8 @@
             "event_type": "single",
             "actor": "Salvador Perez",
             "actor_id": 521692,
-            "detail": "Salvador Perez singles on a sharp line…",
-            "score_after": "PHI 1, KC 0",
+            "detail": "Salvador Perez singles…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -633,7 +646,7 @@
             "event_type": "out",
             "actor": "Jac Caglianone",
             "actor_id": 695506,
-            "detail": "Jac Caglianone grounds into a force out…",
+            "detail": "Jac Caglianone grounds…",
             "score_after": "PHI 1, KC 1",
             "runs": 1,
             "is_scoring": true,
@@ -647,7 +660,7 @@
             "event_type": "single",
             "actor": "Nick Loftin",
             "actor_id": 679845,
-            "detail": "Nick Loftin singles on a line drive to…",
+            "detail": "Nick Loftin singles on…",
             "score_after": "PHI 1, KC 2",
             "runs": 1,
             "is_scoring": true,
@@ -661,7 +674,7 @@
             "event_type": "single",
             "actor": "Starling Marte",
             "actor_id": 516782,
-            "detail": "Starling Marte singles on a sharp line…",
+            "detail": "Starling Marte singles…",
             "score_after": "PHI 1, KC 3",
             "runs": 1,
             "is_scoring": true,
@@ -675,8 +688,8 @@
             "event_type": "single",
             "actor": "Tyler Tolbert",
             "actor_id": 686475,
-            "detail": "Tyler Tolbert singles on a ground ball…",
-            "score_after": "PHI 1, KC 3",
+            "detail": "Tyler Tolbert singles o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -689,7 +702,7 @@
             "event_type": "home_run",
             "actor": "Luke Maile",
             "actor_id": 571912,
-            "detail": "Luke Maile homers (1) on a fly ball to…",
+            "detail": "Luke Maile homers (1) o…",
             "score_after": "PHI 1, KC 6",
             "runs": 3,
             "is_scoring": true,
@@ -703,8 +716,8 @@
             "event_type": "strikeout",
             "actor": "Josh Rojas",
             "actor_id": 668942,
-            "detail": "Josh Rojas called out on strikes.",
-            "score_after": "PHI 1, KC 6",
+            "detail": "Josh Rojas called out o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -717,8 +730,8 @@
             "event_type": "strikeout",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto strikes out on a foul tip.",
-            "score_after": "PHI 1, KC 6",
+            "detail": "J.T. Realmuto strikes o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -731,8 +744,8 @@
             "event_type": "single",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill singles on a line drive to c…",
-            "score_after": "PHI 1, KC 6",
+            "detail": "Derek Hill singles on a…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -745,8 +758,8 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a ground ball to…",
-            "score_after": "PHI 1, KC 6",
+            "detail": "Trea Turner singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -759,8 +772,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes out swinging.",
-            "score_after": "PHI 1, KC 6",
+            "detail": "Kyle Schwarber strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -773,8 +786,8 @@
             "event_type": "walk_hbp",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper challenged (pitch result),…",
-            "score_after": "PHI 1, KC 6",
+            "detail": "Bryce Harper challenged…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -787,8 +800,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, third baseman Jo…",
-            "score_after": "PHI 1, KC 6",
+            "detail": "Alec Bohm grounds out,…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -801,8 +814,8 @@
             "event_type": "single",
             "actor": "Lane Thomas",
             "actor_id": 657041,
-            "detail": "Lane Thomas singles on a ground ball to…",
-            "score_after": "PHI 1, KC 6",
+            "detail": "Lane Thomas singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -815,7 +828,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bobby Witt Jr.",
             "actor_id": 677951,
-            "detail": "Bobby Witt Jr. flies into a double play…",
+            "detail": "Bobby Witt Jr. flies in…",
             "score_after": "PHI 1, KC 6",
             "runs": 0,
             "is_scoring": false,
@@ -829,7 +842,7 @@
             "event_type": "home_run",
             "actor": "Salvador Perez",
             "actor_id": 521692,
-            "detail": "Salvador Perez homers (11) on a fly bal…",
+            "detail": "Salvador Perez homers (…",
             "score_after": "PHI 1, KC 7",
             "runs": 1,
             "is_scoring": true,
@@ -843,8 +856,8 @@
             "event_type": "out",
             "actor": "Jac Caglianone",
             "actor_id": 695506,
-            "detail": "Jac Caglianone grounds out to first bas…",
-            "score_after": "PHI 1, KC 7",
+            "detail": "Jac Caglianone grounds…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -857,8 +870,8 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh flies out to left fielder…",
-            "score_after": "PHI 1, KC 7",
+            "detail": "Brandon Marsh flies out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -871,8 +884,8 @@
             "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa lines out sharply to left…",
-            "score_after": "PHI 1, KC 7",
+            "detail": "Edmundo Sosa lines out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -885,8 +898,8 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a ground ball t…",
-            "score_after": "PHI 1, KC 7",
+            "detail": "Bryson Stott singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -899,8 +912,8 @@
             "event_type": "single",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto singles on a ground ball…",
-            "score_after": "PHI 1, KC 7",
+            "detail": "J.T. Realmuto singles o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -913,8 +926,8 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill flies out to right fielder J…",
-            "score_after": "PHI 1, KC 7",
+            "detail": "Derek Hill flies out to…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -927,8 +940,8 @@
             "event_type": "single",
             "actor": "Nick Loftin",
             "actor_id": 679845,
-            "detail": "Nick Loftin singles on a ground ball to…",
-            "score_after": "PHI 1, KC 7",
+            "detail": "Nick Loftin singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -941,8 +954,8 @@
             "event_type": "out",
             "actor": "Starling Marte",
             "actor_id": 516782,
-            "detail": "Starling Marte grounds out, third basem…",
-            "score_after": "PHI 1, KC 7",
+            "detail": "Starling Marte grounds…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -955,7 +968,7 @@
             "event_type": "extra_base_hit",
             "actor": "Tyler Tolbert",
             "actor_id": 686475,
-            "detail": "Tyler Tolbert doubles (1) on a line dri…",
+            "detail": "Tyler Tolbert doubles (…",
             "score_after": "PHI 1, KC 8",
             "runs": 1,
             "is_scoring": true,
@@ -969,8 +982,8 @@
             "event_type": "out",
             "actor": "Luke Maile",
             "actor_id": 571912,
-            "detail": "Luke Maile flies out to right fielder B…",
-            "score_after": "PHI 1, KC 8",
+            "detail": "Luke Maile flies out to…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -983,8 +996,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds out to first basema…",
-            "score_after": "PHI 1, KC 8",
+            "detail": "Trea Turner grounds out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -998,7 +1011,7 @@
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
             "detail": "Kyle Schwarber walks.",
-            "score_after": "PHI 1, KC 8",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1011,8 +1024,8 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper strikes out swinging.",
-            "score_after": "PHI 1, KC 8",
+            "detail": "Bryce Harper strikes ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1025,8 +1038,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds into a force out, thi…",
-            "score_after": "PHI 1, KC 8",
+            "detail": "Alec Bohm grounds into…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1039,8 +1052,8 @@
             "event_type": "out",
             "actor": "Josh Rojas",
             "actor_id": 668942,
-            "detail": "Josh Rojas grounds out to first baseman…",
-            "score_after": "PHI 1, KC 8",
+            "detail": "Josh Rojas grounds out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1053,7 +1066,7 @@
             "event_type": "home_run",
             "actor": "Lane Thomas",
             "actor_id": 657041,
-            "detail": "Lane Thomas homers (6) on a fly ball to…",
+            "detail": "Lane Thomas homers (6)…",
             "score_after": "PHI 1, KC 9",
             "runs": 1,
             "is_scoring": true,
@@ -1067,8 +1080,8 @@
             "event_type": "single",
             "actor": "Bobby Witt Jr.",
             "actor_id": 677951,
-            "detail": "Bobby Witt Jr. singles on a sharp line…",
-            "score_after": "PHI 1, KC 9",
+            "detail": "Bobby Witt Jr. singles…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1081,7 +1094,7 @@
             "event_type": "extra_base_hit",
             "actor": "Salvador Perez",
             "actor_id": 521692,
-            "detail": "Salvador Perez doubles (12) on a ground…",
+            "detail": "Salvador Perez doubles…",
             "score_after": "PHI 1, KC 9",
             "runs": 0,
             "is_scoring": false,
@@ -1095,8 +1108,8 @@
             "event_type": "strikeout",
             "actor": "Jac Caglianone",
             "actor_id": 695506,
-            "detail": "Jac Caglianone strikes out swinging.",
-            "score_after": "PHI 1, KC 9",
+            "detail": "Jac Caglianone strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1110,7 +1123,7 @@
             "actor": "Nick Loftin",
             "actor_id": 679845,
             "detail": "Nick Loftin walks.",
-            "score_after": "PHI 1, KC 9",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1123,8 +1136,8 @@
             "event_type": "out",
             "actor": "Starling Marte",
             "actor_id": 516782,
-            "detail": "Starling Marte grounds into a force out…",
-            "score_after": "PHI 1, KC 9",
+            "detail": "Starling Marte grounds…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1137,8 +1150,8 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes out swinging.",
-            "score_after": "PHI 1, KC 9",
+            "detail": "Brandon Marsh strikes o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1151,8 +1164,8 @@
             "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa grounds out, third baseman…",
-            "score_after": "PHI 1, KC 9",
+            "detail": "Edmundo Sosa grounds ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1166,7 +1179,7 @@
             "actor": "Bryson Stott",
             "actor_id": 681082,
             "detail": "Bryson Stott walks.",
-            "score_after": "PHI 1, KC 9",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1179,8 +1192,8 @@
             "event_type": "strikeout",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto strikes out swinging.",
-            "score_after": "PHI 1, KC 9",
+            "detail": "J.T. Realmuto strikes o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1193,7 +1206,7 @@
             "event_type": "home_run",
             "actor": "Tyler Tolbert",
             "actor_id": 686475,
-            "detail": "Tyler Tolbert homers (1) on a fly ball…",
+            "detail": "Tyler Tolbert homers (1…",
             "score_after": "PHI 1, KC 10",
             "runs": 1,
             "is_scoring": true,
@@ -1207,8 +1220,8 @@
             "event_type": "out",
             "actor": "Luke Maile",
             "actor_id": 571912,
-            "detail": "Luke Maile grounds out, shortstop Trea…",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Luke Maile grounds out,…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1221,8 +1234,8 @@
             "event_type": "out",
             "actor": "Josh Rojas",
             "actor_id": 668942,
-            "detail": "Josh Rojas flies out to center fielder…",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Josh Rojas flies out to…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1235,8 +1248,8 @@
             "event_type": "strikeout",
             "actor": "Lane Thomas",
             "actor_id": 657041,
-            "detail": "Lane Thomas challenged (pitch result),…",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Lane Thomas challenged…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1249,8 +1262,8 @@
             "event_type": "strikeout",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill called out on strikes.",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Derek Hill called out o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1263,8 +1276,8 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a ground ball to…",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Trea Turner singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1277,8 +1290,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes out swinging.",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Kyle Schwarber strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1292,7 +1305,7 @@
             "actor": "Bryce Harper",
             "actor_id": 547180,
             "detail": "Bryce Harper walks.",
-            "score_after": "PHI 1, KC 10",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1305,8 +1318,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds into a force out, fie…",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Alec Bohm grounds into…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1319,8 +1332,8 @@
             "event_type": "single",
             "actor": "Bobby Witt Jr.",
             "actor_id": 677951,
-            "detail": "Bobby Witt Jr. singles on a sharp line…",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Bobby Witt Jr. singles…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1333,8 +1346,8 @@
             "event_type": "out",
             "actor": "Salvador Perez",
             "actor_id": 521692,
-            "detail": "Salvador Perez flies out sharply to cen…",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Salvador Perez flies ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1347,8 +1360,8 @@
             "event_type": "strikeout",
             "actor": "Jac Caglianone",
             "actor_id": 695506,
-            "detail": "Jac Caglianone called out on strikes.",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Jac Caglianone called o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1361,8 +1374,8 @@
             "event_type": "single",
             "actor": "Nick Loftin",
             "actor_id": 679845,
-            "detail": "Nick Loftin singles on a ground ball to…",
-            "score_after": "PHI 1, KC 10",
+            "detail": "Nick Loftin singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1375,7 +1388,7 @@
             "event_type": "single",
             "actor": "Starling Marte",
             "actor_id": 516782,
-            "detail": "Starling Marte singles on a ground ball…",
+            "detail": "Starling Marte singles…",
             "score_after": "PHI 1, KC 11",
             "runs": 1,
             "is_scoring": true,
@@ -1389,8 +1402,8 @@
             "event_type": "single",
             "actor": "Tyler Tolbert",
             "actor_id": 686475,
-            "detail": "Tyler Tolbert singles on a soft ground…",
-            "score_after": "PHI 1, KC 11",
+            "detail": "Tyler Tolbert singles o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1403,8 +1416,8 @@
             "event_type": "out",
             "actor": "Luke Maile",
             "actor_id": 571912,
-            "detail": "Luke Maile flies out to left fielder Br…",
-            "score_after": "PHI 1, KC 11",
+            "detail": "Luke Maile flies out to…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1418,7 +1431,7 @@
             "actor": "Brandon Marsh",
             "actor_id": 669016,
             "detail": "Brandon Marsh walks.",
-            "score_after": "PHI 1, KC 11",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1431,8 +1444,8 @@
             "event_type": "other",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa grounds into a double play…",
-            "score_after": "PHI 1, KC 11",
+            "detail": "Edmundo Sosa grounds in…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1445,8 +1458,8 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a ground ball t…",
-            "score_after": "PHI 1, KC 11",
+            "detail": "Bryson Stott singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1459,8 +1472,8 @@
             "event_type": "single",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. singles on a groun…",
-            "score_after": "PHI 1, KC 11",
+            "detail": "Gabriel Rincones Jr. si…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1473,8 +1486,8 @@
             "event_type": "strikeout",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill strikes out swinging.",
-            "score_after": "PHI 1, KC 11",
+            "detail": "Derek Hill strikes out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1487,8 +1500,8 @@
             "event_type": "out",
             "actor": "Josh Rojas",
             "actor_id": 668942,
-            "detail": "Josh Rojas grounds out to first baseman…",
-            "score_after": "PHI 1, KC 11",
+            "detail": "Josh Rojas grounds out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1502,7 +1515,7 @@
             "actor": "Kameron Misner",
             "actor_id": 670224,
             "detail": "Kameron Misner walks.",
-            "score_after": "PHI 1, KC 11",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1516,7 +1529,7 @@
             "actor": "Michael Massey",
             "actor_id": 686681,
             "detail": "Michael Massey walks.",
-            "score_after": "PHI 1, KC 11",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1529,8 +1542,8 @@
             "event_type": "walk_hbp",
             "actor": "Salvador Perez",
             "actor_id": 521692,
-            "detail": "Salvador Perez hit by pitch. Kameron Mi…",
-            "score_after": "PHI 1, KC 11",
+            "detail": "Salvador Perez hit by p…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1543,7 +1556,7 @@
             "event_type": "single",
             "actor": "Jac Caglianone",
             "actor_id": 695506,
-            "detail": "Jac Caglianone singles on a ground ball…",
+            "detail": "Jac Caglianone singles…",
             "score_after": "PHI 1, KC 12",
             "runs": 1,
             "is_scoring": true,
@@ -1557,7 +1570,7 @@
             "event_type": "out",
             "actor": "Nick Loftin",
             "actor_id": 679845,
-            "detail": "Nick Loftin grounds out to first basema…",
+            "detail": "Nick Loftin grounds out…",
             "score_after": "PHI 1, KC 13",
             "runs": 1,
             "is_scoring": true,
@@ -1568,11 +1581,67 @@
             "inning": 7,
             "half": "bottom",
             "team": "KC",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Starling Marte",
             "actor_id": 516782,
-            "detail": "Play",
-            "score_after": "PHI 1, KC 13",
+            "detail": "Starling Marte called o…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:78",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Rafael Marchán",
+            "actor_id": 665561,
+            "detail": "Rafael Marchán lines ou…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:79",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford strikes…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:80",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs singles…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:81",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm strikes out s…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1580,27 +1649,29 @@
         ],
         "situation": {
           "batter": {
-            "name": "Starling Marte",
+            "name": "Tyler Tolbert",
             "meta": "vs Lou Trivino III"
           },
           "pitches": [
             "S",
+            "B",
+            "B",
+            "S",
             "F",
-            "B",
-            "B",
-            "F"
+            "F",
+            "S"
           ],
           "count": {
             "balls": 2,
-            "strikes": 2,
-            "outs": 2
+            "strikes": 3,
+            "outs": 3
           },
           "bases": {
             "first": false,
-            "second": true,
-            "third": true
+            "second": false,
+            "third": false
           },
-          "status": "Bottom 7th"
+          "status": "Middle 8th"
         }
       }
     },
