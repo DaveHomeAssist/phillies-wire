@@ -4,21 +4,21 @@
   "edition_date": "2026-07-06",
   "volume": 1,
   "edition": 97,
-  "generated_at": "2026-07-06T21:05:29.537Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-06T21:32:30.807Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 50,
-    "losses": 40,
-    "streak": "L1",
+    "losses": 41,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, KC 13",
-    "dek": "Middle 8th · 3 outs",
-    "summary": "Tyler Tolbert is up against Lou Trivino III. Series: Series tied 1-1.",
+    "headline": "PHI 1, KC 15.",
+    "dek": "KC 15, PHI 1 · Noah Cameron · 5.0 IP, 6 H, 1 ER, 7 K",
+    "summary": "PHI 1, KC 15. Final at Kauffman Stadium, Kansas City. KC wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Abbott · PHI @ CIN · Tue, Jul 7 · 7:10 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "KC wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,67 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 89,
+      "temp_f": 88,
       "condition": "Clear",
-      "wind": "7 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "6 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Tyler Tolbert",
-        "meta": "vs Lou Trivino III"
-      },
-      "pitches": [
-        "S",
-        "B",
-        "B",
-        "S",
-        "F",
-        "F",
-        "S"
-      ],
-      "count": {
-        "balls": 2,
-        "strikes": 3,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Middle 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-06T21:05:29.982Z",
-    "current_game_pk": 824089,
-    "next_game_pk": 824495,
+    "updated_at": "2026-07-06T21:32:31.537Z",
+    "current_game_pk": 824495,
+    "next_game_pk": 824496,
     "next_game": {
-      "game_pk": 824495,
-      "official_date": "2026-07-07",
-      "date_label": "Tue, Jul 7, 2026",
+      "game_pk": 824496,
+      "official_date": "2026-07-08",
+      "date_label": "Wed, Jul 8, 2026",
       "time_label": "7:10 PM",
       "title": "Phillies at Cincinnati Reds",
       "matchup": "PHI at CIN",
       "venue": "Great American Ball Park"
     },
     "current_game": {
-      "game_pk": 824089,
-      "official_date": "2026-07-06",
-      "title": "Phillies at Kansas City Royals",
-      "matchup": "PHI at KC"
+      "game_pk": 824495,
+      "official_date": "2026-07-07",
+      "title": "Phillies at Cincinnati Reds",
+      "matchup": "PHI at CIN"
     }
   },
   "ticker": [
     {
-      "text": "PHI 50-40",
+      "text": "PHI 50-41",
       "highlight": true
     },
     {
@@ -131,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Clear · gusts 8 mph",
+      "text": "88° · Clear · gusts 7 mph",
       "highlight": false
     },
     {
