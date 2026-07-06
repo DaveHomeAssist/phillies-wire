@@ -5,14 +5,14 @@
     "edition": 97,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-06T14:10:31.734Z",
+    "generated_at": "2026-07-06T17:03:10.429Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "Jul 6, 2026, 10:10 AM ET",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Jul 6, 2026, 1:03 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "79° · Clear · 5 mph · gusts 7",
-      "Regular Season"
+      "88° · Mostly sunny · 6 mph · gusts 7",
+      "Series tied 1-1"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Abbott · PHI @ CIN · Tue, Jul 7 · 7:10 PM"
@@ -55,11 +55,11 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
-        "announced": false,
-        "mode": "pending",
-        "mode_label": "Pending",
-        "show_orders": false,
+        "status_note": "Official batting orders confirmed for today's PHI at KC game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
+        "show_orders": true,
         "first_pitch": "2:10 PM",
         "starters": {
           "home": {
@@ -87,225 +87,225 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Lane Thomas",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bobby Witt Jr.",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Salvador Perez",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jac Caglianone",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nick Loftin",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Starling Marte",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Tyler Tolbert",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Luke Maile",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Josh Rojas",
+              "position": "3B",
+              "bats": "L"
             }
           ],
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Derek Hill",
+              "position": "CF",
+              "bats": "R"
             }
           ],
           "phi": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Derek Hill",
+              "position": "CF",
+              "bats": "R"
             }
           ],
           "opp": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Lane Thomas",
+              "position": "CF",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bobby Witt Jr.",
+              "position": "DH",
+              "bats": "R"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Salvador Perez",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Jac Caglianone",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Nick Loftin",
+              "position": "2B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Starling Marte",
+              "position": "LF",
+              "bats": "R"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Tyler Tolbert",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Luke Maile",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Josh Rojas",
+              "position": "3B",
+              "bats": "L"
             }
           ]
         }
@@ -337,7 +337,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -345,9 +345,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 79,
-          "condition": "Clear",
-          "wind": "5 mph · gusts 7",
+          "temp_f": 88,
+          "condition": "Mostly sunny",
+          "wind": "6 mph · gusts 7",
           "gusts_mph": 7
         },
         "giveaway": "",
@@ -372,26 +372,55 @@
           }
         },
         "linescore": {
-          "currentInning": null,
-          "currentInningOrdinal": "",
-          "inningState": "",
-          "isTopInning": false,
-          "outs": null,
+          "currentInning": 1,
+          "currentInningOrdinal": "1st",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": null,
-              "hits": null,
-              "errors": null
+              "runs": 0,
+              "hits": 0,
+              "errors": 0
             },
             "home": {
-              "runs": null,
-              "hits": null,
-              "errors": null
+              "runs": 0,
+              "hits": 0,
+              "errors": 0
             }
           },
-          "innings": []
+          "innings": [
+            {
+              "num": 1,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              }
+            }
+          ]
         },
-        "plays": []
+        "plays": [
+          {
+            "id": "824089:0",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Status Change - Pre-Game",
+            "score_after": "PHI 0, KC 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          }
+        ]
       }
     },
     "injury_report": {
@@ -407,8 +436,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-06T14:10:31.734Z",
-            "freshness_label": "As of Jul 6, 2026, 10:10 AM ET"
+            "last_confirmed": "2026-07-06T17:03:10.429Z",
+            "freshness_label": "As of Jul 6, 2026, 1:03 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -420,8 +449,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-06T14:10:31.734Z",
-            "freshness_label": "As of Jul 6, 2026, 10:10 AM ET"
+            "last_confirmed": "2026-07-06T17:03:10.429Z",
+            "freshness_label": "As of Jul 6, 2026, 1:03 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -433,8 +462,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-06T14:10:31.734Z",
-            "freshness_label": "As of Jul 6, 2026, 10:10 AM ET"
+            "last_confirmed": "2026-07-06T17:03:10.429Z",
+            "freshness_label": "As of Jul 6, 2026, 1:03 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
