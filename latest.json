@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-05",
+  "edition_date": "2026-07-06",
   "volume": 1,
-  "edition": 96,
-  "generated_at": "2026-07-06T03:17:35.244Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 97,
+  "generated_at": "2026-07-06T04:44:16.461Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 50,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, KC 5.",
-    "dek": "KC 5, PHI 2 · Aaron Nola · 7.0 IP, 7 H, 3 ER, 7 K",
-    "summary": "PHI 2, KC 5. Final at Kauffman Stadium, Kansas City. Series tied 1-1.",
+    "headline": "Phillies @ Royals · Game 3 of 3",
+    "dek": "Cristopher Sánchez vs Noah Cameron",
+    "summary": "Cristopher Sánchez vs Noah Cameron · Phillies @ Royals · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Noah Cameron · PHI @ KC · Mon, Jul 6 · 2:10 PM"
+    "next_value": "Andrew Abbott · PHI @ CIN · Tue, Jul 7 · 7:10 PM"
   },
   "game": {
-    "matchup": "Phillies @ Royals · Game 2 of 3",
-    "first_pitch": "3:00 PM",
+    "matchup": "Phillies @ Royals · Game 3 of 3",
+    "first_pitch": "2:10 PM",
     "venue": "Kauffman Stadium, Kansas City",
     "starters": {
       "home": {
-        "name": "Luinder Avila",
-        "hand": "R"
+        "name": "Noah Cameron",
+        "hand": "L"
       },
       "away": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "phi": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "opp": {
-        "name": "Luinder Avila",
-        "hand": "R"
+        "name": "Noah Cameron",
+        "hand": "L"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "PHI leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 77,
       "condition": "Clear",
-      "wind": "4 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "5 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-06T03:17:35.553Z",
+    "updated_at": "2026-07-06T04:44:16.842Z",
     "current_game_pk": 824089,
     "next_game_pk": 824495,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Royals · Game 2 of 3 · 3:00 PM",
+      "text": "Phillies @ Royals · Game 3 of 3 · 2:10 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Luinder Avila",
+      "text": "Cristopher Sánchez vs Noah Cameron",
       "highlight": true
     },
     {
@@ -106,19 +106,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 10 mph",
-      "highlight": false
-    },
-    {
-      "text": "designated RHP Jean Cabrera for assignment.",
-      "highlight": false
-    },
-    {
-      "text": "signed free agent OF Bryan De La Cruz.",
-      "highlight": false
-    },
-    {
-      "text": "optioned OF Bryan De La Cruz to Lehigh Valley IronPigs.",
+      "text": "77° · Clear · gusts 8 mph",
       "highlight": false
     }
   ]
