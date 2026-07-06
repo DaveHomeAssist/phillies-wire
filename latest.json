@@ -4,7 +4,7 @@
   "edition_date": "2026-07-06",
   "volume": 1,
   "edition": 97,
-  "generated_at": "2026-07-06T19:34:55.374Z",
+  "generated_at": "2026-07-06T20:11:31.409Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, KC 8",
-    "dek": "Bottom 4th · 0 outs",
-    "summary": "Josh Rojas is up against Cristopher Sánchez. Series: Series tied 1-1.",
+    "headline": "PHI 1, KC 10",
+    "dek": "Top 6th · 0 outs",
+    "summary": "Derek Hill is up against Steven Cruz. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Abbott · PHI @ CIN · Tue, Jul 7 · 7:10 PM"
   },
@@ -64,16 +64,16 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Josh Rojas",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Derek Hill",
+        "meta": "vs Steven Cruz"
       },
       "pitches": [
-        "B",
-        "B"
+        "S",
+        "F"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 0,
+        "balls": 0,
+        "strikes": 2,
         "outs": 0
       },
       "bases": {
@@ -81,7 +81,7 @@
         "second": false,
         "third": false
       },
-      "status": "Bottom 4th"
+      "status": "Top 6th"
     },
     "recap_line": null
   },
@@ -89,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-06T19:34:55.943Z",
+    "updated_at": "2026-07-06T20:11:31.820Z",
     "current_game_pk": 824089,
     "next_game_pk": 824495,
     "next_game": {
