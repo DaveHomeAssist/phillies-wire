@@ -4,7 +4,7 @@
   "edition_date": "2026-07-06",
   "volume": 1,
   "edition": 97,
-  "generated_at": "2026-07-06T18:39:27.075Z",
+  "generated_at": "2026-07-06T18:46:15.146Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, KC 3",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Luke Maile is up against Cristopher Sánchez. Series: Series tied 1-1.",
+    "headline": "PHI 1, KC 6",
+    "dek": "Top 2nd · 1 out",
+    "summary": "Derek Hill is up against Noah Cameron. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Abbott · PHI @ CIN · Tue, Jul 7 · 7:10 PM"
   },
@@ -55,32 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 88,
-      "condition": "Mostly sunny",
-      "wind": "5 mph · gusts 6",
-      "gusts_mph": 6
+      "temp_f": 89,
+      "condition": "Clear",
+      "wind": "6 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luke Maile",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Derek Hill",
+        "meta": "vs Noah Cameron"
       },
       "pitches": [
         "B"
       ],
       "count": {
         "balls": 1,
-        "strikes": 1,
-        "outs": 2
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -88,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-06T18:39:27.510Z",
+    "updated_at": "2026-07-06T18:46:15.783Z",
     "current_game_pk": 824089,
     "next_game_pk": 824495,
     "next_game": {
@@ -125,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "88° · Mostly sunny · gusts 6 mph",
+      "text": "89° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
