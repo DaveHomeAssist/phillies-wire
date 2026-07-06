@@ -4,7 +4,7 @@
   "edition_date": "2026-07-06",
   "volume": 1,
   "edition": 97,
-  "generated_at": "2026-07-06T20:11:31.409Z",
+  "generated_at": "2026-07-06T20:24:19.869Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, KC 10",
-    "dek": "Top 6th · 0 outs",
-    "summary": "Derek Hill is up against Steven Cruz. Series: Series tied 1-1.",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Jac Caglianone is up against Kyle Backhus. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Abbott · PHI @ CIN · Tue, Jul 7 · 7:10 PM"
   },
@@ -55,33 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 89,
+      "temp_f": 90,
       "condition": "Mostly sunny",
-      "wind": "7 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "7 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Derek Hill",
-        "meta": "vs Steven Cruz"
+        "name": "Jac Caglianone",
+        "meta": "vs Kyle Backhus"
       },
       "pitches": [
         "S",
-        "F"
+        "S"
       ],
       "count": {
         "balls": 0,
         "strikes": 2,
-        "outs": 0
+        "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 6th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -89,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-06T20:11:31.820Z",
+    "updated_at": "2026-07-06T20:24:20.612Z",
     "current_game_pk": 824089,
     "next_game_pk": 824495,
     "next_game": {
@@ -126,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Mostly sunny · gusts 9 mph",
+      "text": "90° · Mostly sunny · gusts 8 mph",
       "highlight": false
     }
   ]

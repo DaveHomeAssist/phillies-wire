@@ -5,14 +5,14 @@
     "edition": 97,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-06T20:11:31.409Z",
+    "generated_at": "2026-07-06T20:24:19.869Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 6, 2026, 4:11 PM ET",
+      "generated_at_et": "Jul 6, 2026, 4:24 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, KC 10",
-    "dek": "Top 6th · 0 outs",
-    "summary": "Derek Hill is up against Steven Cruz. Series: Series tied 1-1.",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Jac Caglianone is up against Kyle Backhus. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "89° · Mostly sunny"
+        "value": "90° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Derek Hill at the plate",
-      "Steven Cruz on the mound",
+      "Jac Caglianone at the plate",
+      "Kyle Backhus on the mound",
       "Kauffman Stadium, Kansas City"
     ],
     "next_label": "Tomorrow",
@@ -169,13 +169,13 @@
             {
               "slot": 5,
               "name": "Brandon Marsh",
-              "position": "RF",
+              "position": "LF",
               "bats": "L"
             },
             {
               "slot": 6,
               "name": "Edmundo Sosa",
-              "position": "LF",
+              "position": "SS",
               "bats": "R"
             },
             {
@@ -225,13 +225,13 @@
             {
               "slot": 5,
               "name": "Brandon Marsh",
-              "position": "RF",
+              "position": "LF",
               "bats": "L"
             },
             {
               "slot": 6,
               "name": "Edmundo Sosa",
-              "position": "LF",
+              "position": "SS",
               "bats": "R"
             },
             {
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 89,
+          "temp_f": 90,
           "condition": "Mostly sunny",
-          "wind": "7 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "7 mph · gusts 8",
+          "gusts_mph": 8
         },
         "giveaway": "",
         "transit": "",
@@ -375,18 +375,18 @@
         "linescore": {
           "currentInning": 6,
           "currentInningOrdinal": "6th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 1,
-              "hits": 6,
+              "hits": 7,
               "errors": 1
             },
             "home": {
               "runs": 10,
-              "hits": 13,
+              "hits": 14,
               "errors": 0
             }
           },
@@ -459,13 +459,13 @@
             {
               "num": 6,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -1233,10 +1233,108 @@
             "inning": 6,
             "half": "top",
             "team": "PHI",
-            "event_type": "out",
+            "event_type": "strikeout",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Batter Timeout.",
+            "detail": "Derek Hill called out on strikes.",
+            "score_after": "PHI 1, KC 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:55",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner singles on a ground ball to shortstop Tyler Tolbert, deflected by third baseman Josh Rojas.",
+            "score_after": "PHI 1, KC 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:56",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 1, KC 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:57",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper walks.",
+            "score_after": "PHI 1, KC 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:58",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds into a force out, fielded by third baseman Josh Rojas. Trea Turner out at 3rd.",
+            "score_after": "PHI 1, KC 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:59",
+            "inning": 6,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "single",
+            "actor": "Bobby Witt Jr.",
+            "actor_id": 677951,
+            "detail": "Bobby Witt Jr. singles on a sharp line drive to center fielder Derek Hill.",
+            "score_after": "PHI 1, KC 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:60",
+            "inning": 6,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "out",
+            "actor": "Salvador Perez",
+            "actor_id": 521692,
+            "detail": "Salvador Perez flies out sharply to center fielder Derek Hill.",
+            "score_after": "PHI 1, KC 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824089:61",
+            "inning": 6,
+            "half": "bottom",
+            "team": "KC",
+            "event_type": "other",
+            "actor": "Jac Caglianone",
+            "actor_id": 695506,
+            "detail": "Play",
             "score_after": "PHI 1, KC 10",
             "runs": 0,
             "is_scoring": false,
@@ -1245,24 +1343,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Derek Hill",
-            "meta": "vs Steven Cruz"
+            "name": "Jac Caglianone",
+            "meta": "vs Kyle Backhus"
           },
           "pitches": [
             "S",
-            "F"
+            "S"
           ],
           "count": {
             "balls": 0,
             "strikes": 2,
-            "outs": 0
+            "outs": 1
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
-          "status": "Top 6th"
+          "status": "Bottom 6th"
         }
       }
     },
@@ -1279,8 +1377,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-06T20:11:31.409Z",
-            "freshness_label": "As of Jul 6, 2026, 4:11 PM ET"
+            "last_confirmed": "2026-07-06T20:24:19.869Z",
+            "freshness_label": "As of Jul 6, 2026, 4:24 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1292,8 +1390,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-06T20:11:31.409Z",
-            "freshness_label": "As of Jul 6, 2026, 4:11 PM ET"
+            "last_confirmed": "2026-07-06T20:24:19.869Z",
+            "freshness_label": "As of Jul 6, 2026, 4:24 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1305,8 +1403,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-06T20:11:31.409Z",
-            "freshness_label": "As of Jul 6, 2026, 4:11 PM ET"
+            "last_confirmed": "2026-07-06T20:24:19.869Z",
+            "freshness_label": "As of Jul 6, 2026, 4:24 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
