@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-06",
+  "edition_date": "2026-07-07",
   "volume": 1,
-  "edition": 97,
-  "generated_at": "2026-07-07T03:46:18.342Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 98,
+  "generated_at": "2026-07-07T04:35:19.772Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 50,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, KC 15.",
-    "dek": "KC 15, PHI 1 · Noah Cameron · 5.0 IP, 6 H, 1 ER, 7 K",
-    "summary": "PHI 1, KC 15. Final at Kauffman Stadium, Kansas City. KC wins 2-1.",
+    "headline": "Phillies @ Reds · Game 1 of 3",
+    "dek": "TBD vs Andrew Abbott",
+    "summary": "TBD vs Andrew Abbott · Phillies @ Reds · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Abbott · PHI @ CIN · Tue, Jul 7 · 7:10 PM"
+    "next_value": "Chase Burns · PHI @ CIN · Wed, Jul 8 · 7:10 PM"
   },
   "game": {
-    "matchup": "Phillies @ Royals · Game 3 of 3",
-    "first_pitch": "2:10 PM",
-    "venue": "Kauffman Stadium, Kansas City",
+    "matchup": "Phillies @ Reds · Game 1 of 3",
+    "first_pitch": "7:10 PM",
+    "venue": "Great American Ball Park, Cincinnati",
     "starters": {
       "home": {
-        "name": "Noah Cameron",
+        "name": "Andrew Abbott",
         "hand": "L"
       },
       "away": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "TBD",
+        "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "TBD",
+        "hand": "R"
       },
       "opp": {
-        "name": "Noah Cameron",
+        "name": "Andrew Abbott",
         "hand": "L"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "KC wins 2-1"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
-      "condition": "Clear",
-      "wind": "5 mph · gusts 11",
-      "gusts_mph": 11
+      "temp_f": 73,
+      "condition": "Partly cloudy",
+      "wind": "4 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-07T03:46:19.154Z",
+    "updated_at": "2026-07-07T04:35:20.449Z",
     "current_game_pk": 824495,
     "next_game_pk": 824496,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Royals · Game 3 of 3 · 2:10 PM",
+      "text": "Phillies @ Reds · Game 1 of 3 · 7:10 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Noah Cameron",
+      "text": "TBD vs Andrew Abbott",
       "highlight": true
     },
     {
@@ -106,11 +106,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 11 mph",
-      "highlight": false
-    },
-    {
-      "text": "signed free agent RHP Hua Ho to a minor league contract.",
+      "text": "73° · Partly cloudy · gusts 6 mph",
       "highlight": false
     }
   ]
