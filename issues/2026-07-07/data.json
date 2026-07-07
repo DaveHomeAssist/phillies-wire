@@ -5,14 +5,14 @@
     "edition": 98,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-07T23:33:25.210Z",
+    "generated_at": "2026-07-07T23:48:37.920Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 7, 2026, 7:33 PM ET",
+      "generated_at_et": "Jul 7, 2026, 7:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, CIN 0",
-    "dek": "Middle 2nd · 3 outs",
-    "summary": "Nathaniel Lowe is up against Zack Wheeler. Series: Regular Season.",
+    "dek": "Top 3rd · 1 out",
+    "summary": "Trea Turner is up against Andrew Abbott. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "83° · Clear"
+        "value": "82° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Nathaniel Lowe at the plate",
-      "Zack Wheeler on the mound",
+      "Trea Turner at the plate",
+      "Andrew Abbott on the mound",
       "Great American Ball Park, Cincinnati"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 83,
-          "condition": "Clear",
-          "wind": "3 mph · gusts 6",
-          "gusts_mph": 6
+          "temp_f": 82,
+          "condition": "Mostly sunny",
+          "wind": "4 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "",
@@ -359,29 +359,29 @@
             "team": "CIN",
             "name": "Andrew Abbott",
             "hand": "L",
-            "era": "3.80",
+            "era": "3.79",
             "record": "5-4",
-            "whip": "1.41"
+            "whip": "1.43"
           },
           "away": {
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.33",
+            "era": "2.30",
             "record": "8-1",
-            "whip": "0.94"
+            "whip": "0.93"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "Middle",
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
+          "inningState": "Top",
           "isTopInning": true,
-          "outs": 3,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 0,
+              "hits": 2,
               "errors": 0
             },
             "home": {
@@ -409,6 +409,19 @@
               "away": {
                 "runs": 0,
                 "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": null,
+                "hits": 2,
                 "errors": 0
               },
               "home": {
@@ -559,30 +572,128 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "824495:10",
+            "inning": 2,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Nathaniel Lowe",
+            "actor_id": 663993,
+            "detail": "Nathaniel Lowe called out on strikes.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:11",
+            "inning": 2,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Spencer Steer",
+            "actor_id": 668715,
+            "detail": "Spencer Steer pops out to catcher J.T. Realmuto in foul territory.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Tyler Stephenson",
+            "actor_id": 663886,
+            "detail": "Tyler Stephenson strikes out swinging.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:13",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to left fielder JJ Bleday.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:14",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill doubles (3) on a sharp line drive to center fielder TJ Friedl.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "824495:15",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford singles on a line drive to right fielder Spencer Steer. Derek Hill to 3rd.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:16",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Play",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Nathaniel Lowe",
-            "meta": "vs Zack Wheeler"
+            "name": "Trea Turner",
+            "meta": "vs Andrew Abbott"
           },
           "pitches": [
             "S",
-            "S",
             "F",
-            "X"
+            "F",
+            "F"
           ],
           "count": {
             "balls": 0,
             "strikes": 2,
-            "outs": 3
+            "outs": 1
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
-            "third": false
+            "third": true
           },
-          "status": "Middle 2nd"
+          "status": "Top 3rd"
         }
       }
     },
@@ -599,8 +710,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-07T23:33:25.210Z",
-            "freshness_label": "As of Jul 7, 2026, 7:33 PM ET"
+            "last_confirmed": "2026-07-07T23:48:37.920Z",
+            "freshness_label": "As of Jul 7, 2026, 7:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -612,8 +723,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-07T23:33:25.210Z",
-            "freshness_label": "As of Jul 7, 2026, 7:33 PM ET"
+            "last_confirmed": "2026-07-07T23:48:37.920Z",
+            "freshness_label": "As of Jul 7, 2026, 7:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -625,8 +736,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-07T23:33:25.210Z",
-            "freshness_label": "As of Jul 7, 2026, 7:33 PM ET"
+            "last_confirmed": "2026-07-07T23:48:37.920Z",
+            "freshness_label": "As of Jul 7, 2026, 7:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
