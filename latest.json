@@ -4,9 +4,9 @@
   "edition_date": "2026-07-07",
   "volume": 1,
   "edition": 98,
-  "generated_at": "2026-07-07T22:41:09.993Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-07T22:49:45.440Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 50,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Reds · Game 1 of 3",
-    "dek": "Zack Wheeler vs Andrew Abbott",
-    "summary": "Zack Wheeler vs Andrew Abbott · Phillies @ Reds · Game 1 of 3",
+    "headline": "PHI 0, CIN 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Andrew Abbott. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Chase Burns · PHI @ CIN · Wed, Jul 8 · 7:10 PM"
   },
@@ -56,20 +56,37 @@
     },
     "weather": {
       "temp_f": 84,
-      "condition": "Partly cloudy",
-      "wind": "4 mph · gusts 6",
-      "gusts_mph": 6
+      "condition": "Mostly sunny",
+      "wind": "5 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Andrew Abbott"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-07T22:41:10.605Z",
+    "updated_at": "2026-07-07T22:49:45.765Z",
     "current_game_pk": 824495,
     "next_game_pk": 824496,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Partly cloudy · gusts 6 mph",
+      "text": "84° · Mostly sunny · gusts 7 mph",
       "highlight": false
     },
     {
