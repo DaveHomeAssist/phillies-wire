@@ -4,7 +4,7 @@
   "edition_date": "2026-07-07",
   "volume": 1,
   "edition": 98,
-  "generated_at": "2026-07-07T23:21:58.202Z",
+  "generated_at": "2026-07-07T23:33:25.210Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, CIN 0",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "JJ Bleday is up against Zack Wheeler. Series: Regular Season.",
+    "dek": "Middle 2nd · 3 outs",
+    "summary": "Nathaniel Lowe is up against Zack Wheeler. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Chase Burns · PHI @ CIN · Wed, Jul 8 · 7:10 PM"
   },
@@ -57,30 +57,33 @@
     "weather": {
       "temp_f": 83,
       "condition": "Clear",
-      "wind": "4 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "3 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "JJ Bleday",
+        "name": "Nathaniel Lowe",
         "meta": "vs Zack Wheeler"
       },
       "pitches": [
-        "S"
+        "S",
+        "S",
+        "F",
+        "X"
       ],
       "count": {
         "balls": 0,
-        "strikes": 1,
-        "outs": 2
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Middle 2nd"
     },
     "recap_line": null
   },
@@ -88,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-07T23:21:59.198Z",
+    "updated_at": "2026-07-07T23:33:25.689Z",
     "current_game_pk": 824495,
     "next_game_pk": 824496,
     "next_game": {
@@ -125,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 7 mph",
+      "text": "83° · Clear · gusts 6 mph",
       "highlight": false
     },
     {
