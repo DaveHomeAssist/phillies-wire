@@ -5,14 +5,14 @@
     "edition": 99,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-08T19:31:11.006Z",
+    "generated_at": "2026-07-08T19:50:41.337Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Pregame edition",
-      "generated_at_et": "Jul 8, 2026, 3:31 PM ET",
+      "generated_at_et": "Jul 8, 2026, 3:50 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "91° · Mostly sunny · 1 mph · gusts 3",
+      "91° · Partly cloudy · 0 mph · gusts 3",
       "PHI leads 1-0"
     ],
     "next_label": "Tomorrow",
@@ -55,11 +55,11 @@
   "sections": {
     "lineup": {
       "content": {
-        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
-        "announced": false,
-        "mode": "pending",
-        "mode_label": "Pending",
-        "show_orders": false,
+        "status_note": "Official batting orders confirmed for today's PHI at CIN game.",
+        "announced": true,
+        "mode": "official",
+        "mode_label": "Official",
+        "show_orders": true,
         "first_pitch": "7:10 PM",
         "starters": {
           "home": {
@@ -143,113 +143,113 @@
           "away": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Gabriel Rincones Jr.",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "SS",
+              "bats": "R"
             }
           ],
           "phi": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "1B",
+              "bats": "L"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Gabriel Rincones Jr.",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "SS",
+              "bats": "R"
             }
           ],
           "opp": [
@@ -346,8 +346,8 @@
         },
         "weather": {
           "temp_f": 91,
-          "condition": "Mostly sunny",
-          "wind": "1 mph · gusts 3",
+          "condition": "Partly cloudy",
+          "wind": "0 mph · gusts 3",
           "gusts_mph": 3
         },
         "giveaway": "",
@@ -355,31 +355,73 @@
         "venue_is_home": false,
         "matchup_tape": null,
         "linescore": {
-          "currentInning": null,
-          "currentInningOrdinal": "",
-          "inningState": "",
-          "isTopInning": false,
-          "outs": null,
+          "currentInning": 1,
+          "currentInningOrdinal": "1st",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": null,
-              "hits": null,
-              "errors": null
+              "runs": 0,
+              "hits": 0,
+              "errors": 0
             },
             "home": {
-              "runs": null,
-              "hits": null,
-              "errors": null
+              "runs": 0,
+              "hits": 0,
+              "errors": 0
             }
           },
-          "innings": []
+          "innings": [
+            {
+              "num": 1,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              }
+            }
+          ]
         },
-        "plays": []
+        "plays": [
+          {
+            "id": "824496:0",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Status Change - Pre-Game",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          }
+        ]
       }
     },
     "injury_report": {
       "content": {
         "il_entries": [
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-08T19:50:41.337Z",
+            "freshness_label": "As of Jul 8, 2026, 3:50 PM ET"
+          },
           {
             "name": "Adolis García",
             "position": "RF",
@@ -390,21 +432,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T19:31:11.006Z",
-            "freshness_label": "As of Jul 8, 2026, 3:31 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right forearm tendinitis",
-            "status_note": "",
-            "retroactive_to": "2026-06-14",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-07-08T19:31:11.006Z",
-            "freshness_label": "As of Jul 8, 2026, 3:31 PM ET"
+            "last_confirmed": "2026-07-08T19:50:41.337Z",
+            "freshness_label": "As of Jul 8, 2026, 3:50 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -416,8 +445,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T19:31:11.006Z",
-            "freshness_label": "As of Jul 8, 2026, 3:31 PM ET"
+            "last_confirmed": "2026-07-08T19:50:41.337Z",
+            "freshness_label": "As of Jul 8, 2026, 3:50 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

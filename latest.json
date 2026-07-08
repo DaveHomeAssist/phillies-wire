@@ -4,7 +4,7 @@
   "edition_date": "2026-07-08",
   "volume": 1,
   "edition": 99,
-  "generated_at": "2026-07-08T19:31:11.006Z",
+  "generated_at": "2026-07-08T19:50:41.337Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -56,8 +56,8 @@
     },
     "weather": {
       "temp_f": 91,
-      "condition": "Mostly sunny",
-      "wind": "1 mph · gusts 3",
+      "condition": "Partly cloudy",
+      "wind": "0 mph · gusts 3",
       "gusts_mph": 3
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-08T19:31:11.522Z",
+    "updated_at": "2026-07-08T19:50:42.044Z",
     "current_game_pk": 824496,
     "next_game_pk": 824494,
     "next_game": {
@@ -106,7 +106,23 @@
       "highlight": false
     },
     {
-      "text": "91° · Mostly sunny · gusts 3 mph",
+      "text": "91° · Partly cloudy · gusts 3 mph",
+      "highlight": false
+    },
+    {
+      "text": "activated RHP Brad Keller from the 15-day injured list.",
+      "highlight": false
+    },
+    {
+      "text": "placed RHP Lou Trivino III on the 15-day injured list retroactive to July 7, 2026. Right thoracic muscle spasm.",
+      "highlight": false
+    },
+    {
+      "text": "optioned RHP Seth Johnson to Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "recalled RHP Alan Rangel from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
