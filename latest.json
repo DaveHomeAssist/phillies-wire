@@ -4,21 +4,21 @@
   "edition_date": "2026-07-07",
   "volume": 1,
   "edition": 98,
-  "generated_at": "2026-07-08T02:01:07.298Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-08T02:38:38.175Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 50,
+    "wins": 51,
     "losses": 41,
-    "streak": "L2",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, CIN 1",
-    "dek": "Top 9th · 1 out",
-    "summary": "Derek Hill is up against Sam Moll. Series: Regular Season.",
+    "headline": "PHI 4, CIN 1.",
+    "dek": "PHI 4, CIN 1 · Zack Wheeler · 7.0 IP, 4 H, 1 ER, 14 K",
+    "summary": "PHI 4, CIN 1. Final at Great American Ball Park, Cincinnati. PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Chase Burns · PHI @ CIN · Wed, Jul 8 · 7:10 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "PHI leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,63 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 75,
       "condition": "Overcast",
       "wind": "3 mph · gusts 5",
       "gusts_mph": 5
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Derek Hill",
-        "meta": "vs Sam Moll"
-      },
-      "pitches": [
-        "S",
-        "B",
-        "X"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 1
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-08T02:01:07.714Z",
-    "current_game_pk": 824495,
-    "next_game_pk": 824496,
+    "updated_at": "2026-07-08T02:38:38.646Z",
+    "current_game_pk": 824496,
+    "next_game_pk": 824494,
     "next_game": {
-      "game_pk": 824496,
-      "official_date": "2026-07-08",
-      "date_label": "Wed, Jul 8, 2026",
+      "game_pk": 824494,
+      "official_date": "2026-07-09",
+      "date_label": "Thu, Jul 9, 2026",
       "time_label": "7:10 PM",
       "title": "Phillies at Cincinnati Reds",
       "matchup": "PHI at CIN",
       "venue": "Great American Ball Park"
     },
     "current_game": {
-      "game_pk": 824495,
-      "official_date": "2026-07-07",
+      "game_pk": 824496,
+      "official_date": "2026-07-08",
       "title": "Phillies at Cincinnati Reds",
       "matchup": "PHI at CIN"
     }
   },
   "ticker": [
     {
-      "text": "PHI 50-41",
+      "text": "PHI 51-41",
       "highlight": true
     },
     {
@@ -127,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 5 mph",
+      "text": "75° · Overcast · gusts 5 mph",
       "highlight": false
     },
     {
