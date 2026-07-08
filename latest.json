@@ -4,7 +4,7 @@
   "edition_date": "2026-07-07",
   "volume": 1,
   "edition": 98,
-  "generated_at": "2026-07-08T00:06:48.553Z",
+  "generated_at": "2026-07-08T00:37:23.642Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, CIN 0",
-    "dek": "Top 4th · 1 out",
-    "summary": "J.T. Realmuto is up against Andrew Abbott. Series: Regular Season.",
+    "dek": "Top 6th · 1 out",
+    "summary": "Bryce Harper is up against Andrew Abbott. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Chase Burns · PHI @ CIN · Wed, Jul 8 · 7:10 PM"
   },
@@ -56,37 +56,32 @@
     },
     "weather": {
       "temp_f": 81,
-      "condition": "Mostly sunny",
-      "wind": "4 mph · gusts 8",
-      "gusts_mph": 8
+      "condition": "Partly cloudy",
+      "wind": "3 mph · gusts 5",
+      "gusts_mph": 5
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
+        "name": "Bryce Harper",
         "meta": "vs Andrew Abbott"
       },
       "pitches": [
-        "B",
         "F",
-        "B",
-        "F",
-        "F",
-        "B",
         "F"
       ],
       "count": {
-        "balls": 3,
+        "balls": 0,
         "strikes": 2,
-        "outs": 1
+        "outs": 0
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "Top 6th"
     },
     "recap_line": null
   },
@@ -94,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-08T00:06:49.048Z",
+    "updated_at": "2026-07-08T00:37:24.219Z",
     "current_game_pk": 824495,
     "next_game_pk": 824496,
     "next_game": {
@@ -131,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Mostly sunny · gusts 8 mph",
+      "text": "81° · Partly cloudy · gusts 5 mph",
       "highlight": false
     },
     {
