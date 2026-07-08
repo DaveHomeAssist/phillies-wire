@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-07",
+  "edition_date": "2026-07-08",
   "volume": 1,
-  "edition": 98,
-  "generated_at": "2026-07-08T03:53:55.311Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 99,
+  "generated_at": "2026-07-08T04:36:09.276Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 51,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, CIN 1.",
-    "dek": "PHI 4, CIN 1 · Zack Wheeler · 7.0 IP, 4 H, 1 ER, 14 K",
-    "summary": "PHI 4, CIN 1. Final at Great American Ball Park, Cincinnati. PHI leads 1-0.",
+    "headline": "Phillies @ Reds · Game 2 of 3",
+    "dek": "TBD vs Chase Burns",
+    "summary": "TBD vs Chase Burns · Phillies @ Reds · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Chase Burns · PHI @ CIN · Wed, Jul 8 · 7:10 PM"
+    "next_value": "Jesús Luzardo vs Brady Singer · PHI @ CIN · Thu, Jul 9 · 7:10 PM"
   },
   "game": {
-    "matchup": "Phillies @ Reds · Game 1 of 3",
+    "matchup": "Phillies @ Reds · Game 2 of 3",
     "first_pitch": "7:10 PM",
     "venue": "Great American Ball Park, Cincinnati",
     "starters": {
       "home": {
-        "name": "Andrew Abbott",
-        "hand": "L"
+        "name": "Chase Burns",
+        "hand": "R"
       },
       "away": {
-        "name": "Zack Wheeler",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "TBD",
         "hand": "R"
       },
       "opp": {
-        "name": "Andrew Abbott",
-        "hand": "L"
+        "name": "Chase Burns",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "ESPN/ESPN App",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 73,
+      "temp_f": 74,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "4 mph · gusts 4",
+      "gusts_mph": 4
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-08T03:53:56.154Z",
+    "updated_at": "2026-07-08T04:36:09.753Z",
     "current_game_pk": 824496,
     "next_game_pk": 824494,
     "next_game": {
@@ -94,27 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Reds · Game 1 of 3 · 7:10 PM",
+      "text": "Phillies @ Reds · Game 2 of 3 · 7:10 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Andrew Abbott",
+      "text": "TBD vs Chase Burns",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "ESPN/ESPN App · 94 WIP",
       "highlight": false
     },
     {
-      "text": "73° · Overcast · gusts 5 mph",
-      "highlight": false
-    },
-    {
-      "text": "optioned LHP Kyle Backhus to Lehigh Valley IronPigs.",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Max Lazar from Lehigh Valley IronPigs.",
+      "text": "74° · Overcast · gusts 4 mph",
       "highlight": false
     }
   ]
