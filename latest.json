@@ -4,7 +4,7 @@
   "edition_date": "2026-07-08",
   "volume": 1,
   "edition": 99,
-  "generated_at": "2026-07-08T23:09:09.030Z",
+  "generated_at": "2026-07-08T23:38:12.191Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, CIN 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Bryce Harper is up against Chase Burns. Series: PHI leads 1-0.",
+    "headline": "PHI 1, CIN 0",
+    "dek": "Top 2nd · 1 out",
+    "summary": "J.T. Realmuto is up against Chase Burns. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Brady Singer · PHI @ CIN · Thu, Jul 9 · 7:10 PM"
   },
@@ -55,30 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 87,
+      "temp_f": 81,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 4",
-      "gusts_mph": 4
+      "wind": "4 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
+        "name": "J.T. Realmuto",
         "meta": "vs Chase Burns"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Top 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-08T23:09:09.621Z",
+    "updated_at": "2026-07-08T23:38:12.488Z",
     "current_game_pk": 824496,
     "next_game_pk": 824494,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Overcast · gusts 4 mph",
+      "text": "81° · Overcast · gusts 6 mph",
       "highlight": false
     },
     {

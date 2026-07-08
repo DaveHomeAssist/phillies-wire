@@ -5,14 +5,14 @@
     "edition": 99,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-08T23:09:09.030Z",
+    "generated_at": "2026-07-08T23:38:12.191Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 8, 2026, 7:09 PM ET",
+      "generated_at_et": "Jul 8, 2026, 7:38 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, CIN 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Bryce Harper is up against Chase Burns. Series: PHI leads 1-0.",
+    "headline": "PHI 1, CIN 0",
+    "dek": "Top 2nd · 1 out",
+    "summary": "J.T. Realmuto is up against Chase Burns. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "87° · Overcast"
+        "value": "81° · Overcast"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
+      "J.T. Realmuto at the plate",
       "Chase Burns on the mound",
       "Great American Ball Park, Cincinnati"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 87,
+          "temp_f": 81,
           "condition": "Overcast",
-          "wind": "4 mph · gusts 4",
-          "gusts_mph": 4
+          "wind": "4 mph · gusts 6",
+          "gusts_mph": 6
         },
         "giveaway": "",
         "transit": "",
@@ -359,29 +359,29 @@
             "team": "CIN",
             "name": "Chase Burns",
             "hand": "R",
-            "era": "2.40",
+            "era": "2.36",
             "record": "10-1",
-            "whip": "1.08"
+            "whip": "1.07"
           },
           "away": {
             "team": "PHI",
             "name": "Alan Rangel",
             "hand": "R",
-            "era": "3.38",
+            "era": "3.18",
             "record": "0-1",
-            "whip": "1.31"
+            "whip": "1.35"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 0,
+              "runs": 1,
+              "hits": 2,
               "errors": 0
             },
             "home": {
@@ -394,8 +394,21 @@
             {
               "num": 1,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 1,
+                "hits": 2,
                 "errors": 0
               },
               "home": {
@@ -412,11 +425,179 @@
             "inning": 1,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Status Change - Warmup",
+            "detail": "Bryce Harper flies out to right fielder Noelvi Marte.",
             "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:1",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out on a foul tip.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:2",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh walks.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:3",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott lines out to center fielder TJ Friedl.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Elly De La Cruz",
+            "actor_id": 682829,
+            "detail": "Elly De La Cruz grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "walk_hbp",
+            "actor": "Sal Stewart",
+            "actor_id": 701398,
+            "detail": "Sal Stewart walks.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:6",
+            "inning": 1,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "walk_hbp",
+            "actor": "JJ Bleday",
+            "actor_id": 668709,
+            "detail": "JJ Bleday walks.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:7",
+            "inning": 1,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Eugenio Suárez",
+            "actor_id": 553993,
+            "detail": "Eugenio Suárez strikes out swinging.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:8",
+            "inning": 1,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Spencer Steer",
+            "actor_id": 668715,
+            "detail": "Spencer Steer strikes out swinging.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:9",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds out, shortstop Elly De La Cruz to first baseman Spencer Steer.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:10",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. doubles (3) on a line drive to center fielder TJ Friedl.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "824496:11",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford triples (3) on a ground ball to right fielder Noelvi Marte. Gabriel Rincones Jr. scores.",
+            "score_after": "PHI 1, CIN 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824496:12",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "Play",
+            "score_after": "PHI 1, CIN 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -424,21 +605,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryce Harper",
+            "name": "J.T. Realmuto",
             "meta": "vs Chase Burns"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "S",
+            "B"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "balls": 2,
+            "strikes": 1,
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
-            "third": false
+            "third": true
           },
-          "status": "Top 1st"
+          "status": "Top 2nd"
         }
       }
     },
@@ -455,8 +640,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T23:09:09.030Z",
-            "freshness_label": "As of Jul 8, 2026, 7:09 PM ET"
+            "last_confirmed": "2026-07-08T23:38:12.191Z",
+            "freshness_label": "As of Jul 8, 2026, 7:38 PM ET"
           },
           {
             "name": "Adolis García",
@@ -468,8 +653,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T23:09:09.030Z",
-            "freshness_label": "As of Jul 8, 2026, 7:09 PM ET"
+            "last_confirmed": "2026-07-08T23:38:12.191Z",
+            "freshness_label": "As of Jul 8, 2026, 7:38 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -481,8 +666,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T23:09:09.030Z",
-            "freshness_label": "As of Jul 8, 2026, 7:09 PM ET"
+            "last_confirmed": "2026-07-08T23:38:12.191Z",
+            "freshness_label": "As of Jul 8, 2026, 7:38 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
