@@ -5,16 +5,15 @@
     "edition": 99,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-08T21:40:01.474Z",
+    "generated_at": "2026-07-08T21:40:41.220Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
-      "crawl_state": "degraded",
+      "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Pregame edition",
       "generated_at_et": "Jul 8, 2026, 5:40 PM ET",
       "source_notes": [
-        "One or more live data sources were unavailable; safe fallbacks were used.",
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
@@ -47,7 +46,7 @@
       }
     ],
     "bullets": [
-      "0° · Weather unavailable · Calm",
+      "89° · Partly cloudy · 4 mph · gusts 4",
       "PHI leads 1-0"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +345,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 0,
-          "condition": "Weather unavailable",
-          "wind": "Calm",
-          "gusts_mph": 0
+          "temp_f": 89,
+          "condition": "Partly cloudy",
+          "wind": "4 mph · gusts 4",
+          "gusts_mph": 4
         },
         "giveaway": "",
         "transit": "",
@@ -437,7 +436,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T21:40:01.474Z",
+            "last_confirmed": "2026-07-08T21:40:41.220Z",
             "freshness_label": "As of Jul 8, 2026, 5:40 PM ET"
           },
           {
@@ -450,7 +449,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T21:40:01.474Z",
+            "last_confirmed": "2026-07-08T21:40:41.220Z",
             "freshness_label": "As of Jul 8, 2026, 5:40 PM ET"
           },
           {
@@ -463,7 +462,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T21:40:01.474Z",
+            "last_confirmed": "2026-07-08T21:40:41.220Z",
             "freshness_label": "As of Jul 8, 2026, 5:40 PM ET"
           }
         ],
