@@ -4,7 +4,7 @@
   "edition_date": "2026-07-07",
   "volume": 1,
   "edition": 98,
-  "generated_at": "2026-07-07T23:48:37.920Z",
+  "generated_at": "2026-07-08T00:06:48.553Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, CIN 0",
-    "dek": "Top 3rd · 1 out",
-    "summary": "Trea Turner is up against Andrew Abbott. Series: Regular Season.",
+    "headline": "PHI 3, CIN 0",
+    "dek": "Top 4th · 1 out",
+    "summary": "J.T. Realmuto is up against Andrew Abbott. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Chase Burns · PHI @ CIN · Wed, Jul 8 · 7:10 PM"
   },
@@ -55,35 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 81,
       "condition": "Mostly sunny",
-      "wind": "4 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "4 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
+        "name": "J.T. Realmuto",
         "meta": "vs Andrew Abbott"
       },
       "pitches": [
-        "S",
+        "B",
+        "F",
+        "B",
         "F",
         "F",
+        "B",
         "F"
       ],
       "count": {
-        "balls": 0,
+        "balls": 3,
         "strikes": 2,
         "outs": 1
       },
       "bases": {
-        "first": true,
-        "second": false,
-        "third": true
+        "first": false,
+        "second": true,
+        "third": false
       },
-      "status": "Top 3rd"
+      "status": "Top 4th"
     },
     "recap_line": null
   },
@@ -91,7 +94,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-07T23:48:38.502Z",
+    "updated_at": "2026-07-08T00:06:49.048Z",
     "current_game_pk": 824495,
     "next_game_pk": 824496,
     "next_game": {
@@ -128,7 +131,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Mostly sunny · gusts 7 mph",
+      "text": "81° · Mostly sunny · gusts 8 mph",
       "highlight": false
     },
     {

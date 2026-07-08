@@ -5,14 +5,14 @@
     "edition": 98,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-07T23:48:37.920Z",
+    "generated_at": "2026-07-08T00:06:48.553Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 7, 2026, 7:48 PM ET",
+      "generated_at_et": "Jul 7, 2026, 8:06 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, CIN 0",
-    "dek": "Top 3rd · 1 out",
-    "summary": "Trea Turner is up against Andrew Abbott. Series: Regular Season.",
+    "headline": "PHI 3, CIN 0",
+    "dek": "Top 4th · 1 out",
+    "summary": "J.T. Realmuto is up against Andrew Abbott. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Mostly sunny"
+        "value": "81° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
+      "J.T. Realmuto at the plate",
       "Andrew Abbott on the mound",
       "Great American Ball Park, Cincinnati"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 82,
+          "temp_f": 81,
           "condition": "Mostly sunny",
-          "wind": "4 mph · gusts 7",
-          "gusts_mph": 7
+          "wind": "4 mph · gusts 8",
+          "gusts_mph": 8
         },
         "giveaway": "",
         "transit": "",
@@ -359,29 +359,29 @@
             "team": "CIN",
             "name": "Andrew Abbott",
             "hand": "L",
-            "era": "3.79",
+            "era": "4.03",
             "record": "5-4",
-            "whip": "1.43"
+            "whip": "1.42"
           },
           "away": {
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.30",
+            "era": "2.28",
             "record": "8-1",
-            "whip": "0.93"
+            "whip": "0.92"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
           "inningState": "Top",
           "isTopInning": true,
           "outs": 1,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 2,
+              "runs": 3,
+              "hits": 4,
               "errors": 0
             },
             "home": {
@@ -420,8 +420,21 @@
             {
               "num": 3,
               "away": {
+                "runs": 3,
+                "hits": 3,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
                 "runs": null,
-                "hits": 2,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -662,11 +675,123 @@
             "inning": 3,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
+            "detail": "Trea Turner grounds out, shortstop Elly De La Cruz to first baseman Sal Stewart. Derek Hill scores. Justin Crawford to 2nd.",
+            "score_after": "PHI 1, CIN 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824495:17",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber homers (31) on a line drive to right center field. Justin Crawford scores.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824495:18",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper flies out to center fielder TJ Friedl.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:19",
+            "inning": 3,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "TJ Friedl",
+            "actor_id": 670770,
+            "detail": "TJ Friedl strikes out swinging.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:20",
+            "inning": 3,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Matt McLain",
+            "actor_id": 680574,
+            "detail": "Matt McLain grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:21",
+            "inning": 3,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Elly De La Cruz",
+            "actor_id": 682829,
+            "detail": "Elly De La Cruz grounds out to first baseman Bryce Harper.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:22",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm strikes out swinging.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:23",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa singles on a line drive to center fielder TJ Friedl.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:24",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
             "detail": "Play",
-            "score_after": "PHI 0, CIN 0",
+            "score_after": "PHI 3, CIN 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -674,26 +799,29 @@
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
+            "name": "J.T. Realmuto",
             "meta": "vs Andrew Abbott"
           },
           "pitches": [
-            "S",
+            "B",
+            "F",
+            "B",
             "F",
             "F",
+            "B",
             "F"
           ],
           "count": {
-            "balls": 0,
+            "balls": 3,
             "strikes": 2,
             "outs": 1
           },
           "bases": {
-            "first": true,
-            "second": false,
-            "third": true
+            "first": false,
+            "second": true,
+            "third": false
           },
-          "status": "Top 3rd"
+          "status": "Top 4th"
         }
       }
     },
@@ -710,8 +838,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-07T23:48:37.920Z",
-            "freshness_label": "As of Jul 7, 2026, 7:48 PM ET"
+            "last_confirmed": "2026-07-08T00:06:48.553Z",
+            "freshness_label": "As of Jul 7, 2026, 8:06 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -723,8 +851,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-07T23:48:37.920Z",
-            "freshness_label": "As of Jul 7, 2026, 7:48 PM ET"
+            "last_confirmed": "2026-07-08T00:06:48.553Z",
+            "freshness_label": "As of Jul 7, 2026, 8:06 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -736,8 +864,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-07T23:48:37.920Z",
-            "freshness_label": "As of Jul 7, 2026, 7:48 PM ET"
+            "last_confirmed": "2026-07-08T00:06:48.553Z",
+            "freshness_label": "As of Jul 7, 2026, 8:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
