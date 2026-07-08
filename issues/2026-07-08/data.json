@@ -5,14 +5,14 @@
     "edition": 99,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-08T22:36:35.511Z",
+    "generated_at": "2026-07-08T23:08:34.720Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Jul 8, 2026, 6:36 PM ET",
+      "enrich_label": "Live update",
+      "generated_at_et": "Jul 8, 2026, 7:08 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Reds · Game 2 of 3",
-    "dek": "Alan Rangel vs Chase Burns",
-    "summary": "Alan Rangel vs Chase Burns · Phillies @ Reds · Game 2 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, CIN 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Bryce Harper is up against Chase Burns. Series: PHI leads 1-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "7:10 PM"
-      },
       {
         "label": "Venue",
         "value": "Great American Ball Park, Cincinnati"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "ESPN/ESPN App · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "87° · Overcast"
       }
     ],
     "bullets": [
-      "87° · Overcast · 2 mph · gusts 5",
-      "PHI leads 1-0"
+      "Bryce Harper at the plate",
+      "Chase Burns on the mound",
+      "Great American Ball Park, Cincinnati"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Brady Singer · PHI @ CIN · Thu, Jul 9 · 7:10 PM"
@@ -347,8 +348,8 @@
         "weather": {
           "temp_f": 87,
           "condition": "Overcast",
-          "wind": "2 mph · gusts 5",
-          "gusts_mph": 5
+          "wind": "4 mph · gusts 4",
+          "gusts_mph": 4
         },
         "giveaway": "",
         "transit": "",
@@ -414,13 +415,31 @@
             "event_type": "other",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Status Change - Pre-Game",
+            "detail": "Status Change - Warmup",
             "score_after": "PHI 0, CIN 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ]
+        ],
+        "situation": {
+          "batter": {
+            "name": "Bryce Harper",
+            "meta": "vs Chase Burns"
+          },
+          "pitches": [],
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "bases": {
+            "first": false,
+            "second": false,
+            "third": false
+          },
+          "status": "Top 1st"
+        }
       }
     },
     "injury_report": {
@@ -436,8 +455,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T22:36:35.511Z",
-            "freshness_label": "As of Jul 8, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-08T23:08:34.720Z",
+            "freshness_label": "As of Jul 8, 2026, 7:08 PM ET"
           },
           {
             "name": "Adolis García",
@@ -449,8 +468,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T22:36:35.511Z",
-            "freshness_label": "As of Jul 8, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-08T23:08:34.720Z",
+            "freshness_label": "As of Jul 8, 2026, 7:08 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -462,8 +481,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T22:36:35.511Z",
-            "freshness_label": "As of Jul 8, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-08T23:08:34.720Z",
+            "freshness_label": "As of Jul 8, 2026, 7:08 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

@@ -4,9 +4,9 @@
   "edition_date": "2026-07-08",
   "volume": 1,
   "edition": 99,
-  "generated_at": "2026-07-08T22:36:35.511Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-08T23:08:34.720Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 51,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Reds · Game 2 of 3",
-    "dek": "Alan Rangel vs Chase Burns",
-    "summary": "Alan Rangel vs Chase Burns · Phillies @ Reds · Game 2 of 3",
+    "headline": "PHI 0, CIN 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Bryce Harper is up against Chase Burns. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Brady Singer · PHI @ CIN · Thu, Jul 9 · 7:10 PM"
   },
@@ -57,19 +57,36 @@
     "weather": {
       "temp_f": 87,
       "condition": "Overcast",
-      "wind": "2 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "4 mph · gusts 4",
+      "gusts_mph": 4
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Bryce Harper",
+        "meta": "vs Chase Burns"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-08T22:36:36.353Z",
+    "updated_at": "2026-07-08T23:08:35.599Z",
     "current_game_pk": 824496,
     "next_game_pk": 824494,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Overcast · gusts 5 mph",
+      "text": "87° · Overcast · gusts 4 mph",
       "highlight": false
     },
     {
