@@ -5,14 +5,14 @@
     "edition": 98,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-08T00:37:23.642Z",
+    "generated_at": "2026-07-08T00:53:54.119Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 7, 2026, 8:37 PM ET",
+      "generated_at_et": "Jul 7, 2026, 8:53 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 3, CIN 0",
-    "dek": "Top 6th · 1 out",
-    "summary": "Bryce Harper is up against Andrew Abbott. Series: Regular Season.",
+    "dek": "Top 7th · 2 outs",
+    "summary": "Derek Hill is up against Pierce Johnson. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "81° · Partly cloudy"
+        "value": "80° · Overcast"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
-      "Andrew Abbott on the mound",
+      "Derek Hill at the plate",
+      "Pierce Johnson on the mound",
       "Great American Ball Park, Cincinnati"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 81,
-          "condition": "Partly cloudy",
-          "wind": "3 mph · gusts 5",
-          "gusts_mph": 5
+          "temp_f": 80,
+          "condition": "Overcast",
+          "wind": "4 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "",
@@ -359,25 +359,25 @@
             "team": "CIN",
             "name": "Andrew Abbott",
             "hand": "L",
-            "era": "3.96",
+            "era": "3.92",
             "record": "5-4",
-            "whip": "1.42"
+            "whip": "1.41"
           },
           "away": {
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.23",
+            "era": "2.20",
             "record": "8-1",
             "whip": "0.91"
           }
         },
         "linescore": {
-          "currentInning": 6,
-          "currentInningOrdinal": "6th",
+          "currentInning": 7,
+          "currentInningOrdinal": "7th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 3,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 0,
-              "hits": 2,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -458,6 +458,19 @@
             },
             {
               "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
               "away": {
                 "runs": null,
                 "hits": 0,
@@ -995,9 +1008,135 @@
             "inning": 6,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
+            "detail": "Bryce Harper called out on strikes.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:38",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds out, shortstop Elly De La Cruz to first baseman Sal Stewart.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:39",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa grounds out, shortstop Elly De La Cruz to first baseman Sal Stewart.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:40",
+            "inning": 6,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Matt McLain",
+            "actor_id": 680574,
+            "detail": "Matt McLain strikes out swinging.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:41",
+            "inning": 6,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Elly De La Cruz",
+            "actor_id": 682829,
+            "detail": "Elly De La Cruz lines out sharply to left fielder Edmundo Sosa.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:42",
+            "inning": 6,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "single",
+            "actor": "Sal Stewart",
+            "actor_id": 701398,
+            "detail": "Sal Stewart singles on a ground ball to third baseman Alec Bohm.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:43",
+            "inning": 6,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "JJ Bleday",
+            "actor_id": 668709,
+            "detail": "JJ Bleday strikes out swinging.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:44",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto flies out to right fielder Spencer Steer.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:45",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to center fielder TJ Friedl.",
+            "score_after": "PHI 3, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824495:46",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
             "detail": "Play",
             "score_after": "PHI 3, CIN 0",
             "runs": 0,
@@ -1007,24 +1146,23 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryce Harper",
-            "meta": "vs Andrew Abbott"
+            "name": "Derek Hill",
+            "meta": "vs Pierce Johnson"
           },
           "pitches": [
-            "F",
-            "F"
+            "S"
           ],
           "count": {
             "balls": 0,
-            "strikes": 2,
-            "outs": 0
+            "strikes": 1,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 6th"
+          "status": "Top 7th"
         }
       }
     },
@@ -1041,8 +1179,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T00:37:23.642Z",
-            "freshness_label": "As of Jul 7, 2026, 8:37 PM ET"
+            "last_confirmed": "2026-07-08T00:53:54.119Z",
+            "freshness_label": "As of Jul 7, 2026, 8:53 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1054,8 +1192,8 @@
             "retroactive_to": "2026-06-14",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T00:37:23.642Z",
-            "freshness_label": "As of Jul 7, 2026, 8:37 PM ET"
+            "last_confirmed": "2026-07-08T00:53:54.119Z",
+            "freshness_label": "As of Jul 7, 2026, 8:53 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1067,8 +1205,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T00:37:23.642Z",
-            "freshness_label": "As of Jul 7, 2026, 8:37 PM ET"
+            "last_confirmed": "2026-07-08T00:53:54.119Z",
+            "freshness_label": "As of Jul 7, 2026, 8:53 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
