@@ -4,21 +4,21 @@
   "edition_date": "2026-07-08",
   "volume": 1,
   "edition": 99,
-  "generated_at": "2026-07-09T01:43:12.426Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-09T02:42:23.787Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 51,
-    "losses": 41,
-    "streak": "W1",
+    "losses": 42,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, CIN 11",
-    "dek": "Top 7th · 1 out",
-    "summary": "Bryson Stott is up against Caleb Ferguson. Series: PHI leads 1-0.",
+    "headline": "PHI 5, CIN 11.",
+    "dek": "CIN 11, PHI 5 · Chase Burns · 5.0 IP, 3 H, 3 ER, 2 K",
+    "summary": "PHI 5, CIN 11. Final at Great American Ball Park, Cincinnati. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Brady Singer · PHI @ CIN · Thu, Jul 9 · 7:10 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "ESPN/ESPN App",
@@ -55,59 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 76,
       "condition": "Overcast",
-      "wind": "5 mph · gusts 9",
+      "wind": "3 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Caleb Ferguson"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-09T01:43:12.692Z",
-    "current_game_pk": 824496,
-    "next_game_pk": 824494,
+    "updated_at": "2026-07-09T02:42:24.698Z",
+    "current_game_pk": 824494,
+    "next_game_pk": 824252,
     "next_game": {
-      "game_pk": 824494,
-      "official_date": "2026-07-09",
-      "date_label": "Thu, Jul 9, 2026",
-      "time_label": "7:10 PM",
-      "title": "Phillies at Cincinnati Reds",
-      "matchup": "PHI at CIN",
-      "venue": "Great American Ball Park"
+      "game_pk": 824252,
+      "official_date": "2026-07-10",
+      "date_label": "Fri, Jul 10, 2026",
+      "time_label": "6:40 PM",
+      "title": "Phillies at Detroit Tigers",
+      "matchup": "PHI at DET",
+      "venue": "Comerica Park"
     },
     "current_game": {
-      "game_pk": 824496,
-      "official_date": "2026-07-08",
+      "game_pk": 824494,
+      "official_date": "2026-07-09",
       "title": "Phillies at Cincinnati Reds",
       "matchup": "PHI at CIN"
     }
   },
   "ticker": [
     {
-      "text": "PHI 51-41",
+      "text": "PHI 51-42",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 9 mph",
+      "text": "76° · Overcast · gusts 9 mph",
       "highlight": false
     },
     {
