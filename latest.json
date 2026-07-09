@@ -4,7 +4,7 @@
   "edition_date": "2026-07-08",
   "volume": 1,
   "edition": 99,
-  "generated_at": "2026-07-09T01:42:43.181Z",
+  "generated_at": "2026-07-09T01:43:12.426Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -64,22 +64,17 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
+        "name": "Alec Bohm",
         "meta": "vs Caleb Ferguson"
       },
-      "pitches": [
-        "B",
-        "S",
-        "B",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 3,
-        "strikes": 1,
+        "balls": 0,
+        "strikes": 0,
         "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-09T01:42:43.900Z",
+    "updated_at": "2026-07-09T01:43:12.692Z",
     "current_game_pk": 824496,
     "next_game_pk": 824494,
     "next_game": {
