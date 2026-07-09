@@ -5,14 +5,14 @@
     "edition": 99,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-08T23:38:12.191Z",
+    "generated_at": "2026-07-09T00:08:47.213Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 8, 2026, 7:38 PM ET",
+      "generated_at_et": "Jul 8, 2026, 8:08 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, CIN 0",
-    "dek": "Top 2nd · 1 out",
-    "summary": "J.T. Realmuto is up against Chase Burns. Series: PHI leads 1-0.",
+    "headline": "PHI 2, CIN 2",
+    "dek": "Bottom 3rd · 2 outs",
+    "summary": "Spencer Steer is up against Alan Rangel. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "J.T. Realmuto at the plate",
-      "Chase Burns on the mound",
+      "Spencer Steer at the plate",
+      "Alan Rangel on the mound",
       "Great American Ball Park, Cincinnati"
     ],
     "next_label": "Tomorrow",
@@ -359,34 +359,34 @@
             "team": "CIN",
             "name": "Chase Burns",
             "hand": "R",
-            "era": "2.36",
+            "era": "2.50",
             "record": "10-1",
-            "whip": "1.07"
+            "whip": "1.08"
           },
           "away": {
             "team": "PHI",
             "name": "Alan Rangel",
             "hand": "R",
-            "era": "3.18",
+            "era": "3.86",
             "record": "0-1",
-            "whip": "1.35"
+            "whip": "1.39"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 1,
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 2,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 2,
+              "runs": 2,
+              "hits": 3,
               "errors": 0
             },
             "home": {
-              "runs": 0,
-              "hits": 0,
+              "runs": 2,
+              "hits": 2,
               "errors": 0
             }
           },
@@ -407,13 +407,26 @@
             {
               "num": 2,
               "away": {
-                "runs": 1,
+                "runs": 2,
                 "hits": 2,
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 2,
+                "hits": 2,
                 "errors": 0
               }
             }
@@ -593,11 +606,207 @@
             "inning": 2,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "Play",
+            "detail": "J.T. Realmuto called out on strikes.",
             "score_after": "PHI 1, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:13",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa flies out to center fielder TJ Friedl.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824496:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Noelvi Marte",
+            "actor_id": 682622,
+            "detail": "Noelvi Marte strikes out swinging.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Jose Trevino",
+            "actor_id": 624431,
+            "detail": "Jose Trevino strikes out swinging.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:16",
+            "inning": 2,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Edwin Arroyo",
+            "actor_id": 695490,
+            "detail": "Edwin Arroyo lines out to second baseman Bryson Stott.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:17",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, shortstop Elly De La Cruz to first baseman Spencer Steer.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:18",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber pops out to third baseman Sal Stewart.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:19",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh singles on a ground ball to left fielder JJ Bleday.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:20",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to center fielder TJ Friedl.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:21",
+            "inning": 3,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "TJ Friedl",
+            "actor_id": 670770,
+            "detail": "TJ Friedl flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "extra_base_hit",
+            "actor": "Elly De La Cruz",
+            "actor_id": 682829,
+            "detail": "Elly De La Cruz doubles (15) on a sharp line drive to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 2, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "824496:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "home_run",
+            "actor": "Sal Stewart",
+            "actor_id": 701398,
+            "detail": "Sal Stewart homers (18) on a fly ball to right field. Elly De La Cruz scores.",
+            "score_after": "PHI 2, CIN 2",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824496:24",
+            "inning": 3,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "JJ Bleday",
+            "actor_id": 668709,
+            "detail": "JJ Bleday flies out sharply to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 2, CIN 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:25",
+            "inning": 3,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "walk_hbp",
+            "actor": "Eugenio Suárez",
+            "actor_id": 553993,
+            "detail": "Eugenio Suárez walks.",
+            "score_after": "PHI 2, CIN 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824496:26",
+            "inning": 3,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "other",
+            "actor": "Spencer Steer",
+            "actor_id": 668715,
+            "detail": "Play",
+            "score_after": "PHI 2, CIN 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -605,8 +814,8 @@
         ],
         "situation": {
           "batter": {
-            "name": "J.T. Realmuto",
-            "meta": "vs Chase Burns"
+            "name": "Spencer Steer",
+            "meta": "vs Alan Rangel"
           },
           "pitches": [
             "B",
@@ -616,14 +825,14 @@
           "count": {
             "balls": 2,
             "strikes": 1,
-            "outs": 1
+            "outs": 2
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
-            "third": true
+            "third": false
           },
-          "status": "Top 2nd"
+          "status": "Bottom 3rd"
         }
       }
     },
@@ -640,8 +849,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T23:38:12.191Z",
-            "freshness_label": "As of Jul 8, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-07-09T00:08:47.213Z",
+            "freshness_label": "As of Jul 8, 2026, 8:08 PM ET"
           },
           {
             "name": "Adolis García",
@@ -653,8 +862,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T23:38:12.191Z",
-            "freshness_label": "As of Jul 8, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-07-09T00:08:47.213Z",
+            "freshness_label": "As of Jul 8, 2026, 8:08 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -666,8 +875,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-08T23:38:12.191Z",
-            "freshness_label": "As of Jul 8, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-07-09T00:08:47.213Z",
+            "freshness_label": "As of Jul 8, 2026, 8:08 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

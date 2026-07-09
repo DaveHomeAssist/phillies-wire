@@ -4,7 +4,7 @@
   "edition_date": "2026-07-08",
   "volume": 1,
   "edition": 99,
-  "generated_at": "2026-07-08T23:38:12.191Z",
+  "generated_at": "2026-07-09T00:08:47.213Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, CIN 0",
-    "dek": "Top 2nd · 1 out",
-    "summary": "J.T. Realmuto is up against Chase Burns. Series: PHI leads 1-0.",
+    "headline": "PHI 2, CIN 2",
+    "dek": "Bottom 3rd · 2 outs",
+    "summary": "Spencer Steer is up against Alan Rangel. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Brady Singer · PHI @ CIN · Thu, Jul 9 · 7:10 PM"
   },
@@ -64,8 +64,8 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Chase Burns"
+        "name": "Spencer Steer",
+        "meta": "vs Alan Rangel"
       },
       "pitches": [
         "B",
@@ -75,14 +75,14 @@
       "count": {
         "balls": 2,
         "strikes": 1,
-        "outs": 1
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Top 2nd"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -90,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-08T23:38:12.488Z",
+    "updated_at": "2026-07-09T00:08:48.004Z",
     "current_game_pk": 824496,
     "next_game_pk": 824494,
     "next_game": {
