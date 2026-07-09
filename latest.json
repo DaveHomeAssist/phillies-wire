@@ -4,9 +4,9 @@
   "edition_date": "2026-07-09",
   "volume": 1,
   "edition": 100,
-  "generated_at": "2026-07-09T22:32:01.336Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-09T23:09:00.758Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 51,
@@ -16,11 +16,11 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Reds · Game 3 of 3",
-    "dek": "Jesús Luzardo vs Brady Singer",
-    "summary": "Jesús Luzardo vs Brady Singer · Phillies @ Reds · Game 3 of 3",
+    "headline": "PHI 0, CIN 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Brady Singer. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
-    "next_value": "Jack Flaherty · PHI @ DET · Fri, Jul 10 · 6:40 PM"
+    "next_value": "Aaron Nola vs Jack Flaherty · PHI @ DET · Fri, Jul 10 · 6:40 PM"
   },
   "game": {
     "matchup": "Phillies @ Reds · Game 3 of 3",
@@ -56,20 +56,37 @@
     },
     "weather": {
       "temp_f": 86,
-      "condition": "Mostly sunny",
-      "wind": "5 mph · gusts 12",
+      "condition": "Clear",
+      "wind": "4 mph · gusts 12",
       "gusts_mph": 12
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Brady Singer"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-09T22:32:01.856Z",
+    "updated_at": "2026-07-09T23:09:01.435Z",
     "current_game_pk": 824494,
     "next_game_pk": 824252,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "86° · Mostly sunny · gusts 12 mph",
+      "text": "86° · Clear · gusts 12 mph",
       "highlight": false
     },
     {
