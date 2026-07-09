@@ -4,7 +4,7 @@
   "edition_date": "2026-07-08",
   "volume": 1,
   "edition": 99,
-  "generated_at": "2026-07-09T00:59:43.206Z",
+  "generated_at": "2026-07-09T01:42:43.181Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, CIN 7",
-    "dek": "Middle 5th · 3 outs",
-    "summary": "Spencer Steer is up against Max Lazar. Series: PHI leads 1-0.",
+    "headline": "PHI 4, CIN 11",
+    "dek": "Top 7th · 1 out",
+    "summary": "Bryson Stott is up against Caleb Ferguson. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Brady Singer · PHI @ CIN · Thu, Jul 9 · 7:10 PM"
   },
@@ -55,34 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 78,
       "condition": "Overcast",
-      "wind": "3 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Spencer Steer",
-        "meta": "vs Max Lazar"
+        "name": "Bryson Stott",
+        "meta": "vs Caleb Ferguson"
       },
       "pitches": [
         "B",
         "S",
-        "X"
+        "B",
+        "B"
       ],
       "count": {
-        "balls": 1,
+        "balls": 3,
         "strikes": 1,
-        "outs": 3
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 5th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-09T00:59:44.044Z",
+    "updated_at": "2026-07-09T01:42:43.900Z",
     "current_game_pk": 824496,
     "next_game_pk": 824494,
     "next_game": {
@@ -127,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Overcast · gusts 7 mph",
+      "text": "78° · Overcast · gusts 9 mph",
       "highlight": false
     },
     {
