@@ -5,14 +5,14 @@
     "edition": 99,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-09T00:08:47.213Z",
+    "generated_at": "2026-07-09T00:09:28.519Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 8, 2026, 8:08 PM ET",
+      "generated_at_et": "Jul 8, 2026, 8:09 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -369,7 +369,7 @@
             "hand": "R",
             "era": "3.86",
             "record": "0-1",
-            "whip": "1.39"
+            "whip": "1.34"
           }
         },
         "linescore": {
@@ -820,11 +820,13 @@
           "pitches": [
             "B",
             "S",
-            "B"
+            "B",
+            "S",
+            "F"
           ],
           "count": {
             "balls": 2,
-            "strikes": 1,
+            "strikes": 2,
             "outs": 2
           },
           "bases": {
@@ -849,8 +851,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-09T00:08:47.213Z",
-            "freshness_label": "As of Jul 8, 2026, 8:08 PM ET"
+            "last_confirmed": "2026-07-09T00:09:28.519Z",
+            "freshness_label": "As of Jul 8, 2026, 8:09 PM ET"
           },
           {
             "name": "Adolis García",
@@ -862,8 +864,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-09T00:08:47.213Z",
-            "freshness_label": "As of Jul 8, 2026, 8:08 PM ET"
+            "last_confirmed": "2026-07-09T00:09:28.519Z",
+            "freshness_label": "As of Jul 8, 2026, 8:09 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -875,8 +877,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-09T00:08:47.213Z",
-            "freshness_label": "As of Jul 8, 2026, 8:08 PM ET"
+            "last_confirmed": "2026-07-09T00:09:28.519Z",
+            "freshness_label": "As of Jul 8, 2026, 8:09 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
