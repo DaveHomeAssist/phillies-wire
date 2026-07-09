@@ -5,14 +5,14 @@
     "edition": 100,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-09T20:36:32.937Z",
+    "generated_at": "2026-07-09T21:10:43.834Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Pregame edition",
-      "generated_at_et": "Jul 9, 2026, 4:36 PM ET",
+      "generated_at_et": "Jul 9, 2026, 5:10 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "87° · Clear · 7 mph · gusts 15",
+      "87° · Clear · 6 mph · gusts 15",
       "Series tied 1-1"
     ],
     "next_label": "Tomorrow",
@@ -347,7 +347,7 @@
         "weather": {
           "temp_f": 87,
           "condition": "Clear",
-          "wind": "7 mph · gusts 15",
+          "wind": "6 mph · gusts 15",
           "gusts_mph": 15
         },
         "giveaway": "",
@@ -427,6 +427,19 @@
       "content": {
         "il_entries": [
           {
+            "name": "Tanner Banks",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left forearm strain",
+            "status_note": "",
+            "retroactive_to": "2026-07-09",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-09T21:10:43.834Z",
+            "freshness_label": "As of Jul 9, 2026, 5:10 PM ET"
+          },
+          {
             "name": "Adolis García",
             "position": "RF",
             "il_type": "60-day",
@@ -436,8 +449,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-09T20:36:32.937Z",
-            "freshness_label": "As of Jul 9, 2026, 4:36 PM ET"
+            "last_confirmed": "2026-07-09T21:10:43.834Z",
+            "freshness_label": "As of Jul 9, 2026, 5:10 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -449,8 +462,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-09T20:36:32.937Z",
-            "freshness_label": "As of Jul 9, 2026, 4:36 PM ET"
+            "last_confirmed": "2026-07-09T21:10:43.834Z",
+            "freshness_label": "As of Jul 9, 2026, 5:10 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -462,8 +475,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-09T20:36:32.937Z",
-            "freshness_label": "As of Jul 9, 2026, 4:36 PM ET"
+            "last_confirmed": "2026-07-09T21:10:43.834Z",
+            "freshness_label": "As of Jul 9, 2026, 5:10 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
