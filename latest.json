@@ -4,7 +4,7 @@
   "edition_date": "2026-07-09",
   "volume": 1,
   "edition": 100,
-  "generated_at": "2026-07-10T00:10:22.393Z",
+  "generated_at": "2026-07-10T00:57:32.125Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, CIN 0",
-    "dek": "Bottom 5th · 1 out",
-    "summary": "Noelvi Marte is up against Jesús Luzardo. Series: Series tied 1-1.",
+    "headline": "PHI 1, CIN 0",
+    "dek": "Bottom 8th · 0 outs",
+    "summary": "TJ Friedl is up against Jonathan Bowlan. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Jack Flaherty · PHI @ DET · Fri, Jul 10 · 6:40 PM"
   },
@@ -55,37 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
-      "condition": "Partly cloudy",
-      "wind": "4 mph · gusts 8",
-      "gusts_mph": 8
+      "temp_f": 81,
+      "condition": "Overcast",
+      "wind": "4 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Noelvi Marte",
-        "meta": "vs Jesús Luzardo"
+        "name": "TJ Friedl",
+        "meta": "vs Jonathan Bowlan"
       },
-      "pitches": [
-        "B",
-        "B",
-        "F",
-        "F",
-        "F",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 1
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -93,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-10T00:10:22.872Z",
+    "updated_at": "2026-07-10T00:57:32.901Z",
     "current_game_pk": 824494,
     "next_game_pk": 824252,
     "next_game": {
@@ -130,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Partly cloudy · gusts 8 mph",
+      "text": "81° · Overcast · gusts 9 mph",
       "highlight": false
     },
     {

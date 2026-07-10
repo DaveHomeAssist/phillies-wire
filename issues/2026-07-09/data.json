@@ -5,14 +5,14 @@
     "edition": 100,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-10T00:10:22.393Z",
+    "generated_at": "2026-07-10T00:57:32.125Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 9, 2026, 8:10 PM ET",
+      "generated_at_et": "Jul 9, 2026, 8:57 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, CIN 0",
-    "dek": "Bottom 5th · 1 out",
-    "summary": "Noelvi Marte is up against Jesús Luzardo. Series: Series tied 1-1.",
+    "headline": "PHI 1, CIN 0",
+    "dek": "Bottom 8th · 0 outs",
+    "summary": "TJ Friedl is up against Jonathan Bowlan. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "83° · Partly cloudy"
+        "value": "81° · Overcast"
       }
     ],
     "bullets": [
-      "Noelvi Marte at the plate",
-      "Jesús Luzardo on the mound",
+      "TJ Friedl at the plate",
+      "Jonathan Bowlan on the mound",
       "Great American Ball Park, Cincinnati"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 83,
-          "condition": "Partly cloudy",
-          "wind": "4 mph · gusts 8",
-          "gusts_mph": 8
+          "temp_f": 81,
+          "condition": "Overcast",
+          "wind": "4 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "",
@@ -359,7 +359,7 @@
             "team": "CIN",
             "name": "Brady Singer",
             "hand": "R",
-            "era": "4.74",
+            "era": "4.72",
             "record": "3-8",
             "whip": "1.47"
           },
@@ -367,26 +367,26 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.61",
+            "era": "3.51",
             "record": "7-4",
-            "whip": "1.23"
+            "whip": "1.22"
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 1,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 1,
+              "runs": 1,
+              "hits": 4,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 1,
+              "hits": 2,
               "errors": 0
             }
           },
@@ -448,6 +448,45 @@
               "away": {
                 "runs": 0,
                 "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 1,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -898,11 +937,361 @@
             "inning": 5,
             "half": "bottom",
             "team": "CIN",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Noelvi Marte",
             "actor_id": 682622,
-            "detail": "Play",
+            "detail": "Noelvi Marte walks.",
             "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:32",
+            "inning": 5,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Edwin Arroyo",
+            "actor_id": 695490,
+            "detail": "Edwin Arroyo grounds out, second baseman Bryson Stott to first baseman Bryce Harper. Noelvi Marte to 2nd.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:33",
+            "inning": 5,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "single",
+            "actor": "TJ Friedl",
+            "actor_id": 670770,
+            "detail": "TJ Friedl singles on a ground ball to second baseman Bryson Stott. Noelvi Marte to 3rd.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:34",
+            "inning": 5,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Elly De La Cruz",
+            "actor_id": 682829,
+            "detail": "Elly De La Cruz grounds into a force out, shortstop Trea Turner to second baseman Bryson Stott. TJ Friedl out at 2nd.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:35",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto called out on strikes.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:36",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford lines out to left fielder JJ Bleday.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:37",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner lines out sharply to center fielder TJ Friedl.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:38",
+            "inning": 6,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Sal Stewart",
+            "actor_id": 701398,
+            "detail": "Sal Stewart strikes out swinging.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:39",
+            "inning": 6,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "JJ Bleday",
+            "actor_id": 668709,
+            "detail": "JJ Bleday strikes out swinging.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:40",
+            "inning": 6,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Spencer Steer",
+            "actor_id": 668715,
+            "detail": "Spencer Steer called out on strikes.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:41",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber singles on a line drive to center fielder TJ Friedl.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:42",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds into a double play, second baseman Edwin Arroyo to shortstop Elly De La Cruz to first baseman Spencer Steer. K…",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:43",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh singles on a line drive to right fielder Noelvi Marte.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:44",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm hit by pitch. Brandon Marsh to 2nd.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:45",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to center fielder TJ Friedl.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:46",
+            "inning": 7,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "walk_hbp",
+            "actor": "Eugenio Suárez",
+            "actor_id": 553993,
+            "detail": "Eugenio Suárez walks.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:47",
+            "inning": 7,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Tyler Stephenson",
+            "actor_id": 663886,
+            "detail": "Tyler Stephenson grounds into a force out, shortstop Trea Turner to second baseman Bryson Stott. Eugenio Suárez out at 2nd. Tyler S…",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:48",
+            "inning": 7,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "strikeout",
+            "actor": "Noelvi Marte",
+            "actor_id": 682622,
+            "detail": "Noelvi Marte called out on strikes.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:49",
+            "inning": 7,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "out",
+            "actor": "Edwin Arroyo",
+            "actor_id": 695490,
+            "detail": "Edwin Arroyo grounds into a force out, second baseman Bryson Stott to shortstop Trea Turner. Tyler Stephenson out at 2nd.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:50",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. hit by pitch.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:51",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, shortstop Elly De La Cruz to first baseman Spencer Steer. Derek Hill to 2nd.",
+            "score_after": "PHI 0, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:52",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford singles on a ground ball to right fielder Noelvi Marte. Derek Hill scores.",
+            "score_after": "PHI 1, CIN 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824494:53",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner walks. Justin Crawford to 2nd.",
+            "score_after": "PHI 1, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:54",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 1, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:55",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 1, CIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824494:56",
+            "inning": 8,
+            "half": "bottom",
+            "team": "CIN",
+            "event_type": "other",
+            "actor": "TJ Friedl",
+            "actor_id": 670770,
+            "detail": "Pitching Change: Jonathan Bowlan replaces Jesús Luzardo.",
+            "score_after": "PHI 1, CIN 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -910,28 +1299,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Noelvi Marte",
-            "meta": "vs Jesús Luzardo"
+            "name": "TJ Friedl",
+            "meta": "vs Jonathan Bowlan"
           },
-          "pitches": [
-            "B",
-            "B",
-            "F",
-            "F",
-            "F",
-            "B"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 3,
-            "strikes": 2,
-            "outs": 1
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 5th"
+          "status": "Bottom 8th"
         }
       }
     },
@@ -948,8 +1330,8 @@
             "retroactive_to": "2026-07-09",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T00:10:22.393Z",
-            "freshness_label": "As of Jul 9, 2026, 8:10 PM ET"
+            "last_confirmed": "2026-07-10T00:57:32.125Z",
+            "freshness_label": "As of Jul 9, 2026, 8:57 PM ET"
           },
           {
             "name": "Adolis García",
@@ -961,8 +1343,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T00:10:22.393Z",
-            "freshness_label": "As of Jul 9, 2026, 8:10 PM ET"
+            "last_confirmed": "2026-07-10T00:57:32.125Z",
+            "freshness_label": "As of Jul 9, 2026, 8:57 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -974,8 +1356,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T00:10:22.393Z",
-            "freshness_label": "As of Jul 9, 2026, 8:10 PM ET"
+            "last_confirmed": "2026-07-10T00:57:32.125Z",
+            "freshness_label": "As of Jul 9, 2026, 8:57 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -987,8 +1369,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T00:10:22.393Z",
-            "freshness_label": "As of Jul 9, 2026, 8:10 PM ET"
+            "last_confirmed": "2026-07-10T00:57:32.125Z",
+            "freshness_label": "As of Jul 9, 2026, 8:57 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
