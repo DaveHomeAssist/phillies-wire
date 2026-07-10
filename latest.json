@@ -4,7 +4,7 @@
   "edition_date": "2026-07-10",
   "volume": 1,
   "edition": 101,
-  "generated_at": "2026-07-10T22:48:49.201Z",
+  "generated_at": "2026-07-10T23:06:53.718Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, DET 0",
-    "dek": "Middle 1st · 3 outs",
-    "summary": "Kevin McGonigle is up against Aaron Nola. Series: Regular Season.",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Eduardo Valencia is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
   },
@@ -57,33 +57,31 @@
     "weather": {
       "temp_f": 82,
       "condition": "Clear",
-      "wind": "7 mph · gusts 9",
+      "wind": "6 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kevin McGonigle",
+        "name": "Eduardo Valencia",
         "meta": "vs Aaron Nola"
       },
       "pitches": [
-        "B",
-        "F",
-        "F",
-        "S"
+        "S",
+        "F"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 3,
-        "outs": 3
+        "balls": 0,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -91,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-10T22:48:49.698Z",
+    "updated_at": "2026-07-10T23:06:54.175Z",
     "current_game_pk": 824252,
     "next_game_pk": 824249,
     "next_game": {

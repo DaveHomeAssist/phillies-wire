@@ -5,14 +5,14 @@
     "edition": 101,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-10T22:48:49.201Z",
+    "generated_at": "2026-07-10T23:06:53.718Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 10, 2026, 6:48 PM ET",
+      "generated_at_et": "Jul 10, 2026, 7:06 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, DET 0",
-    "dek": "Middle 1st · 3 outs",
-    "summary": "Kevin McGonigle is up against Aaron Nola. Series: Regular Season.",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Eduardo Valencia is up against Aaron Nola. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Kevin McGonigle at the plate",
+      "Eduardo Valencia at the plate",
       "Aaron Nola on the mound",
       "Comerica Park, Detroit"
     ],
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 82,
           "condition": "Clear",
-          "wind": "7 mph · gusts 9",
+          "wind": "6 mph · gusts 9",
           "gusts_mph": 9
         },
         "giveaway": "",
@@ -359,25 +359,25 @@
             "team": "DET",
             "name": "Jack Flaherty",
             "hand": "R",
-            "era": "4.58",
+            "era": "4.48",
             "record": "2-8",
-            "whip": "1.45"
+            "whip": "1.43"
           },
           "away": {
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.87",
+            "era": "5.81",
             "record": "3-6",
-            "whip": "1.46"
+            "whip": "1.45"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "Middle",
-          "isTopInning": true,
-          "outs": 3,
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
@@ -393,6 +393,19 @@
           "innings": [
             {
               "num": 1,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
               "away": {
                 "runs": 0,
                 "hits": 0,
@@ -462,30 +475,154 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "824252:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Kevin McGonigle",
+            "actor_id": 805808,
+            "detail": "Kevin McGonigle pops out to third baseman Alec Bohm in foul territory.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Colt Keith",
+            "actor_id": 690993,
+            "detail": "Colt Keith grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:6",
+            "inning": 1,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "walk_hbp",
+            "actor": "Riley Greene",
+            "actor_id": 682985,
+            "detail": "Riley Greene walks.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:7",
+            "inning": 1,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Spencer Torkelson",
+            "actor_id": 679529,
+            "detail": "Spencer Torkelson flies out to center fielder Derek Hill.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:8",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out to left fielder Riley Greene.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:9",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out, first baseman Spencer Torkelson to pitcher Jack Flaherty.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:10",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. strikes out swinging.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:11",
+            "inning": 2,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "strikeout",
+            "actor": "Kerry Carpenter",
+            "actor_id": 681481,
+            "detail": "Kerry Carpenter strikes out swinging.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "other",
+            "actor": "Eduardo Valencia",
+            "actor_id": 680664,
+            "detail": "Play",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Kevin McGonigle",
+            "name": "Eduardo Valencia",
             "meta": "vs Aaron Nola"
           },
           "pitches": [
-            "B",
-            "F",
-            "F",
-            "S"
+            "S",
+            "F"
           ],
           "count": {
-            "balls": 1,
-            "strikes": 3,
-            "outs": 3
+            "balls": 0,
+            "strikes": 2,
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -502,8 +639,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T22:48:49.201Z",
-            "freshness_label": "As of Jul 10, 2026, 6:48 PM ET"
+            "last_confirmed": "2026-07-10T23:06:53.718Z",
+            "freshness_label": "As of Jul 10, 2026, 7:06 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -515,8 +652,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T22:48:49.201Z",
-            "freshness_label": "As of Jul 10, 2026, 6:48 PM ET"
+            "last_confirmed": "2026-07-10T23:06:53.718Z",
+            "freshness_label": "As of Jul 10, 2026, 7:06 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -528,8 +665,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T22:48:49.201Z",
-            "freshness_label": "As of Jul 10, 2026, 6:48 PM ET"
+            "last_confirmed": "2026-07-10T23:06:53.718Z",
+            "freshness_label": "As of Jul 10, 2026, 7:06 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -541,8 +678,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T22:48:49.201Z",
-            "freshness_label": "As of Jul 10, 2026, 6:48 PM ET"
+            "last_confirmed": "2026-07-10T23:06:53.718Z",
+            "freshness_label": "As of Jul 10, 2026, 7:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
