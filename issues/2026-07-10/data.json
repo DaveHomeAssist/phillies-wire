@@ -5,14 +5,14 @@
     "edition": 101,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-10T22:07:50.239Z",
+    "generated_at": "2026-07-10T22:23:24.221Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Jul 10, 2026, 6:07 PM ET",
+      "enrich_label": "Live update",
+      "generated_at_et": "Jul 10, 2026, 6:23 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Tigers · Game 1 of 3",
-    "dek": "Aaron Nola vs Jack Flaherty",
-    "summary": "Aaron Nola vs Jack Flaherty · Phillies @ Tigers · Game 1 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, DET 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Jack Flaherty. Series: Regular Season.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "6:40 PM"
-      },
       {
         "label": "Venue",
         "value": "Comerica Park, Detroit"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "82° · Mostly sunny"
       }
     ],
     "bullets": [
-      "82° · Mostly sunny · 6 mph · gusts 8",
-      "Regular Season"
+      "Trea Turner at the plate",
+      "Jack Flaherty on the mound",
+      "Comerica Park, Detroit"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
@@ -185,9 +186,9 @@
             },
             {
               "slot": 8,
-              "name": "Justin Crawford",
+              "name": "Derek Hill",
               "position": "CF",
-              "bats": "L"
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -241,9 +242,9 @@
             },
             {
               "slot": 8,
-              "name": "Justin Crawford",
+              "name": "Derek Hill",
               "position": "CF",
-              "bats": "L"
+              "bats": "R"
             },
             {
               "slot": 9,
@@ -414,13 +415,31 @@
             "event_type": "other",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Status Change - Pre-Game",
+            "detail": "Status Change - Warmup",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ]
+        ],
+        "situation": {
+          "batter": {
+            "name": "Trea Turner",
+            "meta": "vs Jack Flaherty"
+          },
+          "pitches": [],
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "bases": {
+            "first": false,
+            "second": false,
+            "third": false
+          },
+          "status": "Top 1st"
+        }
       }
     },
     "injury_report": {
@@ -436,8 +455,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T22:07:50.239Z",
-            "freshness_label": "As of Jul 10, 2026, 6:07 PM ET"
+            "last_confirmed": "2026-07-10T22:23:24.221Z",
+            "freshness_label": "As of Jul 10, 2026, 6:23 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -449,8 +468,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T22:07:50.239Z",
-            "freshness_label": "As of Jul 10, 2026, 6:07 PM ET"
+            "last_confirmed": "2026-07-10T22:23:24.221Z",
+            "freshness_label": "As of Jul 10, 2026, 6:23 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -462,8 +481,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T22:07:50.239Z",
-            "freshness_label": "As of Jul 10, 2026, 6:07 PM ET"
+            "last_confirmed": "2026-07-10T22:23:24.221Z",
+            "freshness_label": "As of Jul 10, 2026, 6:23 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -475,8 +494,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-10T22:07:50.239Z",
-            "freshness_label": "As of Jul 10, 2026, 6:07 PM ET"
+            "last_confirmed": "2026-07-10T22:23:24.221Z",
+            "freshness_label": "As of Jul 10, 2026, 6:23 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

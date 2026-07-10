@@ -4,9 +4,9 @@
   "edition_date": "2026-07-10",
   "volume": 1,
   "edition": 101,
-  "generated_at": "2026-07-10T22:07:50.239Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-10T22:23:24.221Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 52,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Tigers · Game 1 of 3",
-    "dek": "Aaron Nola vs Jack Flaherty",
-    "summary": "Aaron Nola vs Jack Flaherty · Phillies @ Tigers · Game 1 of 3",
+    "headline": "PHI 0, DET 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Jack Flaherty. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
   },
@@ -62,14 +62,31 @@
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Jack Flaherty"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-10T22:07:50.763Z",
+    "updated_at": "2026-07-10T22:23:24.840Z",
     "current_game_pk": 824252,
     "next_game_pk": 824249,
     "next_game": {
