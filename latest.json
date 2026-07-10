@@ -4,21 +4,21 @@
   "edition_date": "2026-07-09",
   "volume": 1,
   "edition": 100,
-  "generated_at": "2026-07-10T00:57:32.125Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-10T01:41:47.066Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 51,
+    "wins": 52,
     "losses": 42,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, CIN 0",
-    "dek": "Bottom 8th · 0 outs",
-    "summary": "TJ Friedl is up against Jonathan Bowlan. Series: Series tied 1-1.",
+    "headline": "PHI 1, CIN 0.",
+    "dek": "PHI 1, CIN 0 · Jesús Luzardo · 7.0 IP, 2 H, 0 ER, 11 K",
+    "summary": "PHI 1, CIN 0. Final at Great American Ball Park, Cincinnati. PHI wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Jack Flaherty · PHI @ DET · Fri, Jul 10 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "PHI wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,59 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
-      "condition": "Overcast",
-      "wind": "4 mph · gusts 9",
-      "gusts_mph": 9
+      "temp_f": 78,
+      "condition": "Heavy showers",
+      "wind": "11 mph · gusts 28",
+      "gusts_mph": 28
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "TJ Friedl",
-        "meta": "vs Jonathan Bowlan"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-10T00:57:32.901Z",
-    "current_game_pk": 824494,
-    "next_game_pk": 824252,
+    "updated_at": "2026-07-10T01:41:47.433Z",
+    "current_game_pk": 824252,
+    "next_game_pk": 824249,
     "next_game": {
-      "game_pk": 824252,
-      "official_date": "2026-07-10",
-      "date_label": "Fri, Jul 10, 2026",
-      "time_label": "6:40 PM",
+      "game_pk": 824249,
+      "official_date": "2026-07-11",
+      "date_label": "Sat, Jul 11, 2026",
+      "time_label": "6:10 PM",
       "title": "Phillies at Detroit Tigers",
       "matchup": "PHI at DET",
       "venue": "Comerica Park"
     },
     "current_game": {
-      "game_pk": 824494,
-      "official_date": "2026-07-09",
-      "title": "Phillies at Cincinnati Reds",
-      "matchup": "PHI at CIN"
+      "game_pk": 824252,
+      "official_date": "2026-07-10",
+      "title": "Phillies at Detroit Tigers",
+      "matchup": "PHI at DET"
     }
   },
   "ticker": [
     {
-      "text": "PHI 51-42",
+      "text": "PHI 52-42",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Overcast · gusts 9 mph",
+      "text": "78° · Heavy showers · gusts 28 mph",
       "highlight": false
     },
     {
