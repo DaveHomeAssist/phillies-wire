@@ -4,7 +4,7 @@
   "edition_date": "2026-07-09",
   "volume": 1,
   "edition": 100,
-  "generated_at": "2026-07-10T00:08:47.723Z",
+  "generated_at": "2026-07-10T00:10:22.393Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,17 @@
         "name": "Noelvi Marte",
         "meta": "vs Jesús Luzardo"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "F",
+        "F",
+        "F",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 3,
+        "strikes": 2,
         "outs": 1
       },
       "bases": {
@@ -86,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-10T00:08:48.587Z",
+    "updated_at": "2026-07-10T00:10:22.872Z",
     "current_game_pk": 824494,
     "next_game_pk": 824252,
     "next_game": {
