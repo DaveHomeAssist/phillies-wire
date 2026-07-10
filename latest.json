@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-09",
+  "edition_date": "2026-07-10",
   "volume": 1,
-  "edition": 100,
-  "generated_at": "2026-07-10T02:43:08.751Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 101,
+  "generated_at": "2026-07-10T04:07:04.704Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 52,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, CIN 0.",
-    "dek": "PHI 1, CIN 0 · Jesús Luzardo · 7.0 IP, 2 H, 0 ER, 11 K",
-    "summary": "PHI 1, CIN 0. Final at Great American Ball Park, Cincinnati. PHI wins 2-1.",
+    "headline": "Phillies @ Tigers · Game 1 of 3",
+    "dek": "Aaron Nola vs Jack Flaherty",
+    "summary": "Aaron Nola vs Jack Flaherty · Phillies @ Tigers · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Jack Flaherty · PHI @ DET · Fri, Jul 10 · 6:40 PM"
+    "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
   },
   "game": {
-    "matchup": "Phillies @ Reds · Game 3 of 3",
-    "first_pitch": "7:10 PM",
-    "venue": "Great American Ball Park, Cincinnati",
+    "matchup": "Phillies @ Tigers · Game 1 of 3",
+    "first_pitch": "6:40 PM",
+    "venue": "Comerica Park, Detroit",
     "starters": {
       "home": {
-        "name": "Brady Singer",
+        "name": "Jack Flaherty",
         "hand": "R"
       },
       "away": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Aaron Nola",
+        "hand": "R"
       },
       "phi": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Aaron Nola",
+        "hand": "R"
       },
       "opp": {
-        "name": "Brady Singer",
+        "name": "Jack Flaherty",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI wins 2-1"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 77,
-      "condition": "Partly cloudy",
-      "wind": "4 mph · gusts 11",
-      "gusts_mph": 11
+      "temp_f": 72,
+      "condition": "Overcast",
+      "wind": "3 mph · gusts 4",
+      "gusts_mph": 4
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-10T02:43:09.028Z",
+    "updated_at": "2026-07-10T04:07:05.478Z",
     "current_game_pk": 824252,
     "next_game_pk": 824249,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Reds · Game 3 of 3 · 7:10 PM",
+      "text": "Phillies @ Tigers · Game 1 of 3 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Brady Singer",
+      "text": "Aaron Nola vs Jack Flaherty",
       "highlight": true
     },
     {
@@ -106,15 +106,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Partly cloudy · gusts 11 mph",
-      "highlight": false
-    },
-    {
-      "text": "placed LHP Tanner Banks on the 15-day injured list. Left forearm strain.",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Chase Shugart from Lehigh Valley IronPigs.",
+      "text": "72° · Overcast · gusts 4 mph",
       "highlight": false
     }
   ]
