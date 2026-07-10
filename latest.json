@@ -4,7 +4,7 @@
   "edition_date": "2026-07-09",
   "volume": 1,
   "edition": 100,
-  "generated_at": "2026-07-09T23:41:38.268Z",
+  "generated_at": "2026-07-10T00:08:47.723Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, CIN 0",
-    "dek": "Middle 3rd · 3 outs",
-    "summary": "Edwin Arroyo is up against Jesús Luzardo. Series: Series tied 1-1.",
+    "dek": "Bottom 5th · 1 out",
+    "summary": "Noelvi Marte is up against Jesús Luzardo. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Jack Flaherty · PHI @ DET · Fri, Jul 10 · 6:40 PM"
   },
@@ -55,32 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 84,
-      "condition": "Mostly sunny",
-      "wind": "4 mph · gusts 10",
-      "gusts_mph": 10
+      "temp_f": 83,
+      "condition": "Partly cloudy",
+      "wind": "4 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Edwin Arroyo",
+        "name": "Noelvi Marte",
         "meta": "vs Jesús Luzardo"
       },
-      "pitches": [
-        "X"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 3
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 3rd"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -88,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-09T23:41:38.992Z",
+    "updated_at": "2026-07-10T00:08:48.587Z",
     "current_game_pk": 824494,
     "next_game_pk": 824252,
     "next_game": {
@@ -125,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Mostly sunny · gusts 10 mph",
+      "text": "83° · Partly cloudy · gusts 8 mph",
       "highlight": false
     },
     {
