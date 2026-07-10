@@ -4,7 +4,7 @@
   "edition_date": "2026-07-10",
   "volume": 1,
   "edition": 101,
-  "generated_at": "2026-07-10T23:06:53.718Z",
+  "generated_at": "2026-07-10T23:21:43.989Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, DET 0",
-    "dek": "Bottom 2nd · 1 out",
-    "summary": "Eduardo Valencia is up against Aaron Nola. Series: Regular Season.",
+    "headline": "PHI 1, DET 0",
+    "dek": "Bottom 3rd · 1 out",
+    "summary": "Kevin McGonigle is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
   },
@@ -55,33 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
-      "condition": "Clear",
-      "wind": "6 mph · gusts 9",
-      "gusts_mph": 9
+      "temp_f": 81,
+      "condition": "Mostly sunny",
+      "wind": "6 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Eduardo Valencia",
+        "name": "Kevin McGonigle",
         "meta": "vs Aaron Nola"
       },
-      "pitches": [
-        "S",
-        "F"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 2,
+        "strikes": 0,
         "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -89,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-10T23:06:54.175Z",
+    "updated_at": "2026-07-10T23:21:44.555Z",
     "current_game_pk": 824252,
     "next_game_pk": 824249,
     "next_game": {
@@ -126,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 9 mph",
+      "text": "81° · Mostly sunny · gusts 8 mph",
       "highlight": false
     }
   ]
