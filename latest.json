@@ -4,7 +4,7 @@
   "edition_date": "2026-07-11",
   "volume": 1,
   "edition": 102,
-  "generated_at": "2026-07-11T23:19:38.297Z",
+  "generated_at": "2026-07-11T23:47:28.144Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, DET 0",
-    "dek": "Top 5th · 1 out",
-    "summary": "Brandon Marsh is up against Casey Mize. Series: DET leads 1-0.",
+    "headline": "PHI 4, DET 1",
+    "dek": "Bottom 6th · 2 outs",
+    "summary": "Riley Greene is up against Cristopher Sánchez. Series: DET leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
@@ -55,30 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
-      "condition": "Clear",
-      "wind": "9 mph · gusts 13",
+      "temp_f": 80,
+      "condition": "Overcast",
+      "wind": "7 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Casey Mize"
+        "name": "Riley Greene",
+        "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [],
+      "pitches": [
+        "F",
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T23:19:38.870Z",
+    "updated_at": "2026-07-11T23:47:28.702Z",
     "current_game_pk": 824249,
     "next_game_pk": 824250,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 13 mph",
+      "text": "80° · Overcast · gusts 13 mph",
       "highlight": false
     },
     {
