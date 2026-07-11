@@ -4,7 +4,7 @@
   "edition_date": "2026-07-10",
   "volume": 1,
   "edition": 101,
-  "generated_at": "2026-07-10T23:48:37.311Z",
+  "generated_at": "2026-07-11T00:05:57.610Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, DET 2",
-    "dek": "Bottom 4th · 1 out",
-    "summary": "Eduardo Valencia is up against Aaron Nola. Series: Regular Season.",
+    "dek": "Bottom 5th · 2 outs",
+    "summary": "Colt Keith is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
   },
@@ -55,34 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
+      "temp_f": 80,
       "condition": "Overcast",
-      "wind": "3 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "3 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Eduardo Valencia",
+        "name": "Colt Keith",
         "meta": "vs Aaron Nola"
       },
       "pitches": [
-        "S",
-        "B",
-        "S"
+        "B"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 2,
-        "outs": 1
+        "balls": 2,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 4th"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -90,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-10T23:48:37.854Z",
+    "updated_at": "2026-07-11T00:05:58.469Z",
     "current_game_pk": 824252,
     "next_game_pk": 824249,
     "next_game": {
@@ -127,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Overcast · gusts 5 mph",
+      "text": "80° · Overcast · gusts 6 mph",
       "highlight": false
     }
   ]
