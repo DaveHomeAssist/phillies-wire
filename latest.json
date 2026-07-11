@@ -4,7 +4,7 @@
   "edition_date": "2026-07-11",
   "volume": 1,
   "edition": 102,
-  "generated_at": "2026-07-11T22:46:20.406Z",
+  "generated_at": "2026-07-11T22:47:28.855Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, DET 0",
-    "dek": "Top 3rd · 0 outs",
-    "summary": "Trea Turner is up against Casey Mize. Series: DET leads 1-0.",
+    "headline": "PHI 1, DET 0",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Bryce Harper is up against Casey Mize. Series: DET leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
@@ -64,26 +64,19 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
+        "name": "Bryce Harper",
         "meta": "vs Casey Mize"
       },
-      "pitches": [
-        "B",
-        "B",
-        "F",
-        "S",
-        "B",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
-        "third": true
+        "third": false
       },
       "status": "Top 3rd"
     },
@@ -93,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T22:46:21.017Z",
+    "updated_at": "2026-07-11T22:47:29.108Z",
     "current_game_pk": 824249,
     "next_game_pk": 824250,
     "next_game": {
