@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-10",
+  "edition_date": "2026-07-11",
   "volume": 1,
-  "edition": 101,
-  "generated_at": "2026-07-11T03:52:34.839Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 102,
+  "generated_at": "2026-07-11T04:23:05.716Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 52,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, DET 10.",
-    "dek": "DET 10, PHI 2 · Jack Flaherty · 6.0 IP, 2 H, 2 ER, 6 K",
-    "summary": "PHI 2, DET 10. Final at Comerica Park, Detroit. DET leads 1-0.",
+    "headline": "Phillies @ Tigers · Game 2 of 3",
+    "dek": "Cristopher Sánchez vs Casey Mize",
+    "summary": "Cristopher Sánchez vs Casey Mize · Phillies @ Tigers · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
+    "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ Tigers · Game 1 of 3",
-    "first_pitch": "6:40 PM",
+    "matchup": "Phillies @ Tigers · Game 2 of 3",
+    "first_pitch": "6:10 PM",
     "venue": "Comerica Park, Detroit",
     "starters": {
       "home": {
-        "name": "Jack Flaherty",
+        "name": "Casey Mize",
         "hand": "R"
       },
       "away": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "phi": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "opp": {
-        "name": "Jack Flaherty",
+        "name": "Casey Mize",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "DET leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T03:52:35.338Z",
+    "updated_at": "2026-07-11T04:23:06.620Z",
     "current_game_pk": 824249,
     "next_game_pk": 824250,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Tigers · Game 1 of 3 · 6:40 PM",
+      "text": "Phillies @ Tigers · Game 2 of 3 · 6:10 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Jack Flaherty",
+      "text": "Cristopher Sánchez vs Casey Mize",
       "highlight": true
     },
     {

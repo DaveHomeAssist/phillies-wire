@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.4.0",
+  "meta": {
+    "date": "2026-07-11",
+    "edition": 102,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-07-11T04:23:05.716Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Jul 11, 2026, 12:23 AM ET",
+      "source_notes": [
+        "Farm system notes hidden because the editorial baseline is stale."
+      ]
+    }
+  },
+  "record": {
+    "wins": 52,
+    "losses": 43,
+    "streak": "L1",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Phillies @ Tigers · Game 2 of 3",
+    "dek": "Cristopher Sánchez vs Casey Mize",
+    "summary": "Cristopher Sánchez vs Casey Mize · Phillies @ Tigers · Game 2 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "6:10 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "Comerica Park, Detroit"
+      },
+      {
+        "label": "Watch",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "70° · Overcast · 4 mph · gusts 10",
+      "Regular Season"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "6:10 PM",
+        "starters": {
+          "home": {
+            "team": "DET",
+            "name": "Casey Mize",
+            "hand": "R"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Cristopher Sánchez",
+            "hand": "L"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Cristopher Sánchez",
+            "hand": "L"
+          },
+          "opp": {
+            "team": "DET",
+            "name": "Casey Mize",
+            "hand": "R"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Phillies @ Tigers · Game 2 of 3",
+        "first_pitch": "6:10 PM",
+        "venue": "Comerica Park, Detroit",
+        "starters": {
+          "home": {
+            "name": "Casey Mize",
+            "hand": "R"
+          },
+          "away": {
+            "name": "Cristopher Sánchez",
+            "hand": "L"
+          },
+          "phi": {
+            "name": "Cristopher Sánchez",
+            "hand": "L"
+          },
+          "opp": {
+            "name": "Casey Mize",
+            "hand": "R"
+          }
+        },
+        "series": {
+          "home_wins": 0,
+          "away_wins": 0,
+          "label": "Regular Season"
+        },
+        "broadcast": {
+          "tv": "NBCSP",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 70,
+          "condition": "Overcast",
+          "wind": "4 mph · gusts 10",
+          "gusts_mph": 10
+        },
+        "giveaway": "",
+        "transit": "",
+        "venue_is_home": false,
+        "matchup_tape": {
+          "home": {
+            "team": "DET",
+            "name": "Casey Mize",
+            "hand": "R",
+            "era": "2.64",
+            "record": "4-5",
+            "whip": "0.98"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Cristopher Sánchez",
+            "hand": "L",
+            "era": "2.62",
+            "record": "10-4",
+            "whip": "1.16"
+          }
+        },
+        "linescore": {
+          "currentInning": null,
+          "currentInningOrdinal": "",
+          "inningState": "",
+          "isTopInning": false,
+          "outs": null,
+          "teams": {
+            "away": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            },
+            "home": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            }
+          },
+          "innings": []
+        },
+        "plays": []
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-11T04:23:05.716Z",
+            "freshness_label": "As of Jul 11, 2026, 12:23 AM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-11T04:23:05.716Z",
+            "freshness_label": "As of Jul 11, 2026, 12:23 AM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-11T04:23:05.716Z",
+            "freshness_label": "As of Jul 11, 2026, 12:23 AM ET"
+          },
+          {
+            "name": "Tanner Banks",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left forearm strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-11T04:23:05.716Z",
+            "freshness_label": "As of Jul 11, 2026, 12:23 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Tomorrow",
+    "matchup": "Zack Wheeler vs Tarik Skubal · PHI @ DET",
+    "date": "Sun, Jul 12",
+    "time": "1:40 PM",
+    "broadcast": "NBCSP",
+    "venue": "Comerica Park"
+  }
+}
