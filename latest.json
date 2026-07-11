@@ -4,7 +4,7 @@
   "edition_date": "2026-07-10",
   "volume": 1,
   "edition": 101,
-  "generated_at": "2026-07-11T00:51:32.108Z",
+  "generated_at": "2026-07-11T01:12:56.015Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, DET 10",
-    "dek": "Bottom 7th · 1 out",
-    "summary": "Zach McKinstry is up against Max Lazar. Series: Regular Season.",
+    "dek": "Top 9th · 2 outs",
+    "summary": "Rafael Marchán is up against Beau Brieske. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
   },
@@ -55,30 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 77,
+      "temp_f": 76,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "7 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Zach McKinstry",
-        "meta": "vs Max Lazar"
+        "name": "Rafael Marchán",
+        "meta": "vs Beau Brieske"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "F",
+        "F",
+        "F",
+        "F"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 7th"
+      "status": "Top 9th"
     },
     "recap_line": null
   },
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T00:51:32.549Z",
+    "updated_at": "2026-07-11T01:12:56.466Z",
     "current_game_pk": 824252,
     "next_game_pk": 824249,
     "next_game": {
@@ -123,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Overcast · gusts 14 mph",
+      "text": "76° · Overcast · gusts 16 mph",
       "highlight": false
     }
   ]
