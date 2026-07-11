@@ -5,14 +5,14 @@
     "edition": 101,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-11T01:12:56.015Z",
+    "generated_at": "2026-07-11T01:34:41.498Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 10, 2026, 9:12 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 10, 2026, 9:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 52,
-    "losses": 42,
-    "streak": "W1",
-    "division_rank": 2,
+    "losses": 43,
+    "streak": "L1",
+    "division_rank": 3,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 2, DET 10",
-    "dek": "Top 9th · 2 outs",
-    "summary": "Rafael Marchán is up against Beau Brieske. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 2, DET 10.",
+    "dek": "DET 10, PHI 2 · Jack Flaherty · 6.0 IP, 2 H, 2 ER, 6 K",
+    "summary": "PHI 2, DET 10. Final at Comerica Park, Detroit. DET leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Comerica Park, Detroit"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "76° · Overcast"
+        "label": "Series",
+        "value": "DET leads 1-0"
       }
     ],
     "bullets": [
-      "Rafael Marchán at the plate",
-      "Beau Brieske on the mound",
-      "Comerica Park, Detroit"
+      "Jack Flaherty: 6.0 IP, 2 H, 2 ER, 6 K",
+      "Aaron Nola: 5.0 IP, 3 H, 2 ER, 8 K",
+      "Derek Hill: 3-for-4, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at DET game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:40 PM",
-        "starters": {
-          "home": {
-            "team": "DET",
-            "name": "Jack Flaherty",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "DET",
-            "name": "Jack Flaherty",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kevin McGonigle",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Colt Keith",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Riley Greene",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Spencer Torkelson",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Kerry Carpenter",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Eduardo Valencia",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Zach McKinstry",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "James Outman",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Jake Rogers",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Rafael Marchán",
-              "position": "C",
-              "bats": "S"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Rafael Marchán",
-              "position": "C",
-              "bats": "S"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Kevin McGonigle",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Colt Keith",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Riley Greene",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Spencer Torkelson",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Kerry Carpenter",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Eduardo Valencia",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Zach McKinstry",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "James Outman",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Jake Rogers",
-              "position": "C",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Tigers · Game 1 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "DET leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 76,
+          "temp_f": 73,
           "condition": "Overcast",
-          "wind": "7 mph · gusts 16",
-          "gusts_mph": 16
+          "wind": "4 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "",
@@ -360,7 +103,7 @@
             "name": "Jack Flaherty",
             "hand": "R",
             "era": "4.48",
-            "record": "2-8",
+            "record": "3-8",
             "whip": "1.41"
           },
           "away": {
@@ -377,7 +120,7 @@
           "currentInningOrdinal": "9th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 2,
@@ -498,7 +241,7 @@
             {
               "num": 9,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -519,7 +262,7 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds out, second baseman Zach Mc…",
+            "detail": "Trea Turner grounds out, second baseman Zach McKinstry to first baseman Spencer Torkelson.",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -547,7 +290,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper flies out to left fielder Riley Gr…",
+            "detail": "Bryce Harper flies out to left fielder Riley Greene in foul territory.",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -575,7 +318,7 @@
             "event_type": "out",
             "actor": "Kevin McGonigle",
             "actor_id": 805808,
-            "detail": "Kevin McGonigle pops out to third baseman Alec…",
+            "detail": "Kevin McGonigle pops out to third baseman Alec Bohm in foul territory.",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -589,7 +332,7 @@
             "event_type": "out",
             "actor": "Colt Keith",
             "actor_id": 690993,
-            "detail": "Colt Keith grounds out, shortstop Trea Turner t…",
+            "detail": "Colt Keith grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -617,7 +360,7 @@
             "event_type": "out",
             "actor": "Spencer Torkelson",
             "actor_id": 679529,
-            "detail": "Spencer Torkelson flies out to center fielder D…",
+            "detail": "Spencer Torkelson flies out to center fielder Derek Hill.",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -631,7 +374,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm flies out to left fielder Riley Green…",
+            "detail": "Alec Bohm flies out to left fielder Riley Greene.",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -645,7 +388,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out, first baseman Spencer…",
+            "detail": "Bryson Stott grounds out, first baseman Spencer Torkelson to pitcher Jack Flaherty.",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -701,7 +444,7 @@
             "event_type": "out",
             "actor": "Zach McKinstry",
             "actor_id": 656716,
-            "detail": "Zach McKinstry flies out sharply to center fiel…",
+            "detail": "Zach McKinstry flies out sharply to center fielder Derek Hill.",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -715,7 +458,7 @@
             "event_type": "home_run",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill homers (7) on a fly ball to center f…",
+            "detail": "Derek Hill homers (7) on a fly ball to center field.",
             "score_after": "PHI 1, DET 0",
             "runs": 1,
             "is_scoring": true,
@@ -729,7 +472,7 @@
             "event_type": "out",
             "actor": "Rafael Marchán",
             "actor_id": 665561,
-            "detail": "Rafael Marchán grounds out, second baseman Zach…",
+            "detail": "Rafael Marchán grounds out, second baseman Zach McKinstry to first baseman Spencer Torkelson.",
             "score_after": "PHI 1, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -743,7 +486,7 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner lines out to right fielder Kerry Ca…",
+            "detail": "Trea Turner lines out to right fielder Kerry Carpenter.",
             "score_after": "PHI 1, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -757,7 +500,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber grounds out to first baseman Spe…",
+            "detail": "Kyle Schwarber grounds out to first baseman Spencer Torkelson.",
             "score_after": "PHI 1, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -799,7 +542,7 @@
             "event_type": "home_run",
             "actor": "Kevin McGonigle",
             "actor_id": 805808,
-            "detail": "Kevin McGonigle homers (8) on a fly ball to cen…",
+            "detail": "Kevin McGonigle homers (8) on a fly ball to center field. Jake Rogers scores.",
             "score_after": "PHI 1, DET 2",
             "runs": 2,
             "is_scoring": true,
@@ -813,7 +556,7 @@
             "event_type": "out",
             "actor": "Colt Keith",
             "actor_id": 690993,
-            "detail": "Colt Keith flies out to center fielder Derek Hi…",
+            "detail": "Colt Keith flies out to center fielder Derek Hill.",
             "score_after": "PHI 1, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -827,7 +570,7 @@
             "event_type": "extra_base_hit",
             "actor": "Riley Greene",
             "actor_id": 682985,
-            "detail": "Riley Greene doubles (19) on a sharp fly ball t…",
+            "detail": "Riley Greene doubles (19) on a sharp fly ball to right fielder Gabriel Rincones Jr.",
             "score_after": "PHI 1, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -897,7 +640,7 @@
             "event_type": "walk_hbp",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott walks. Bryce Harper to 3rd. Alec B…",
+            "detail": "Bryson Stott walks. Bryce Harper to 3rd. Alec Bohm to 2nd.",
             "score_after": "PHI 1, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -925,7 +668,7 @@
             "event_type": "single",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill singles on a line drive to left fiel…",
+            "detail": "Derek Hill singles on a line drive to left fielder Riley Greene. Bryce Harper scores. Alec Bohm to 3rd. Bryson Stott to 2nd.",
             "score_after": "PHI 2, DET 2",
             "runs": 1,
             "is_scoring": true,
@@ -939,7 +682,7 @@
             "event_type": "out",
             "actor": "Rafael Marchán",
             "actor_id": 665561,
-            "detail": "Rafael Marchán grounds out, second baseman Zach…",
+            "detail": "Rafael Marchán grounds out, second baseman Zach McKinstry to first baseman Spencer Torkelson.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -995,7 +738,7 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner lines out sharply to left fielder R…",
+            "detail": "Trea Turner lines out sharply to left fielder Riley Greene.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -1009,7 +752,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber pops out to second baseman Zach…",
+            "detail": "Kyle Schwarber pops out to second baseman Zach McKinstry.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -1023,7 +766,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper flies out to right fielder Kerry C…",
+            "detail": "Bryce Harper flies out to right fielder Kerry Carpenter.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -1037,7 +780,7 @@
             "event_type": "out",
             "actor": "James Outman",
             "actor_id": 681546,
-            "detail": "James Outman grounds out, first baseman Bryce H…",
+            "detail": "James Outman grounds out, first baseman Bryce Harper to pitcher Aaron Nola.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -1051,7 +794,7 @@
             "event_type": "single",
             "actor": "Jake Rogers",
             "actor_id": 668670,
-            "detail": "Jake Rogers singles on a sharp line drive to ce…",
+            "detail": "Jake Rogers singles on a sharp line drive to center fielder Derek Hill.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -1065,7 +808,7 @@
             "event_type": "out",
             "actor": "Kevin McGonigle",
             "actor_id": 805808,
-            "detail": "Kevin McGonigle grounds out to first baseman Br…",
+            "detail": "Kevin McGonigle grounds out to first baseman Bryce Harper. Jake Rogers to 2nd.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -1107,7 +850,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm lines out sharply to left fielder Ril…",
+            "detail": "Alec Bohm lines out sharply to left fielder Riley Greene.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -1135,7 +878,7 @@
             "event_type": "walk_hbp",
             "actor": "Riley Greene",
             "actor_id": 682985,
-            "detail": "Phillies challenged (pitch result), call on the…",
+            "detail": "Rafael Marchán challenged (pitch result), call on the field was confirmed: Riley Greene walks.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -1149,7 +892,7 @@
             "event_type": "out",
             "actor": "Spencer Torkelson",
             "actor_id": 679529,
-            "detail": "Spencer Torkelson flies out to left fielder Bra…",
+            "detail": "Spencer Torkelson flies out to left fielder Brandon Marsh.",
             "score_after": "PHI 2, DET 2",
             "runs": 0,
             "is_scoring": false,
@@ -1177,7 +920,7 @@
             "event_type": "single",
             "actor": "Eduardo Valencia",
             "actor_id": 680664,
-            "detail": "Eduardo Valencia singles on a line drive to lef…",
+            "detail": "Eduardo Valencia singles on a line drive to left fielder Brandon Marsh. Riley Greene scores. Matt Vierling to 3rd.",
             "score_after": "PHI 2, DET 3",
             "runs": 1,
             "is_scoring": true,
@@ -1191,7 +934,7 @@
             "event_type": "out",
             "actor": "Zach McKinstry",
             "actor_id": 656716,
-            "detail": "Zach McKinstry hits a sacrifice bunt. Throwing…",
+            "detail": "Zach McKinstry hits a sacrifice bunt. Throwing error by pitcher Tim Mayza. Matt Vierling scores. Eduardo Valencia to 3rd. Zach McKi…",
             "score_after": "PHI 2, DET 4",
             "runs": 1,
             "is_scoring": true,
@@ -1205,7 +948,7 @@
             "event_type": "extra_base_hit",
             "actor": "James Outman",
             "actor_id": 681546,
-            "detail": "James Outman triples (2) on a sharp line drive…",
+            "detail": "James Outman triples (2) on a sharp line drive to center fielder Derek Hill. Eduardo Valencia scores. Zach McKinstry scores.",
             "score_after": "PHI 2, DET 6",
             "runs": 2,
             "is_scoring": true,
@@ -1219,7 +962,7 @@
             "event_type": "out",
             "actor": "Jake Rogers",
             "actor_id": 668670,
-            "detail": "Jake Rogers flies out to center fielder Derek H…",
+            "detail": "Jake Rogers flies out to center fielder Derek Hill.",
             "score_after": "PHI 2, DET 7",
             "runs": 1,
             "is_scoring": true,
@@ -1247,7 +990,7 @@
             "event_type": "out",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. grounds out, second basema…",
+            "detail": "Gabriel Rincones Jr. grounds out, second baseman Zach McKinstry to first baseman Spencer Torkelson.",
             "score_after": "PHI 2, DET 7",
             "runs": 0,
             "is_scoring": false,
@@ -1261,7 +1004,7 @@
             "event_type": "single",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill singles on a line drive to right fie…",
+            "detail": "Derek Hill singles on a line drive to right fielder Matt Vierling.",
             "score_after": "PHI 2, DET 7",
             "runs": 0,
             "is_scoring": false,
@@ -1275,7 +1018,7 @@
             "event_type": "out",
             "actor": "Rafael Marchán",
             "actor_id": 665561,
-            "detail": "Rafael Marchán flies out to right fielder Matt…",
+            "detail": "Rafael Marchán flies out to right fielder Matt Vierling.",
             "score_after": "PHI 2, DET 7",
             "runs": 0,
             "is_scoring": false,
@@ -1289,7 +1032,7 @@
             "event_type": "reached_on_error",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner reaches on a fielding error by seco…",
+            "detail": "Trea Turner reaches on a fielding error by second baseman Zach McKinstry. Derek Hill to 2nd.",
             "score_after": "PHI 2, DET 7",
             "runs": 0,
             "is_scoring": false,
@@ -1303,7 +1046,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber flies out to left fielder Riley…",
+            "detail": "Kyle Schwarber flies out to left fielder Riley Greene.",
             "score_after": "PHI 2, DET 7",
             "runs": 0,
             "is_scoring": false,
@@ -1317,7 +1060,7 @@
             "event_type": "home_run",
             "actor": "Colt Keith",
             "actor_id": 690993,
-            "detail": "Colt Keith homers (8) on a fly ball to right ce…",
+            "detail": "Colt Keith homers (8) on a fly ball to right center field.",
             "score_after": "PHI 2, DET 8",
             "runs": 1,
             "is_scoring": true,
@@ -1345,7 +1088,7 @@
             "event_type": "home_run",
             "actor": "Spencer Torkelson",
             "actor_id": 679529,
-            "detail": "Spencer Torkelson homers (16) on a line drive t…",
+            "detail": "Spencer Torkelson homers (16) on a line drive to left center field. Riley Greene scores.",
             "score_after": "PHI 2, DET 10",
             "runs": 2,
             "is_scoring": true,
@@ -1359,7 +1102,7 @@
             "event_type": "out",
             "actor": "Matt Vierling",
             "actor_id": 663837,
-            "detail": "Matt Vierling flies out to left fielder Brandon…",
+            "detail": "Matt Vierling flies out to left fielder Brandon Marsh.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1373,7 +1116,7 @@
             "event_type": "single",
             "actor": "Eduardo Valencia",
             "actor_id": 680664,
-            "detail": "Eduardo Valencia singles on a ground ball to ri…",
+            "detail": "Eduardo Valencia singles on a ground ball to right fielder Gabriel Rincones Jr.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1387,7 +1130,7 @@
             "event_type": "out",
             "actor": "Zach McKinstry",
             "actor_id": 656716,
-            "detail": "Zach McKinstry grounds into a force out, second…",
+            "detail": "Zach McKinstry grounds into a force out, second baseman Bryson Stott to shortstop Trea Turner. Eduardo Valencia out at 2nd. Zach Mc…",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1401,7 +1144,7 @@
             "event_type": "out",
             "actor": "James Outman",
             "actor_id": 681546,
-            "detail": "James Outman grounds out, shortstop Trea Turner…",
+            "detail": "James Outman grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1415,7 +1158,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper flies out to left fielder Riley Gr…",
+            "detail": "Bryce Harper flies out to left fielder Riley Greene.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1429,7 +1172,7 @@
             "event_type": "single",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh singles on a ground ball to cente…",
+            "detail": "Brandon Marsh singles on a ground ball to center fielder James Outman.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1443,7 +1186,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm lines out to right fielder Matt Vierl…",
+            "detail": "Alec Bohm lines out to right fielder Matt Vierling.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1457,7 +1200,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out, second baseman Zach M…",
+            "detail": "Bryson Stott grounds out, second baseman Zach McKinstry to first baseman Spencer Torkelson.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1471,7 +1214,7 @@
             "event_type": "out",
             "actor": "Jake Rogers",
             "actor_id": 668670,
-            "detail": "Jake Rogers lines out to right fielder Gabriel…",
+            "detail": "Jake Rogers lines out to right fielder Gabriel Rincones Jr.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1485,7 +1228,7 @@
             "event_type": "out",
             "actor": "Kevin McGonigle",
             "actor_id": 805808,
-            "detail": "Kevin McGonigle flies out to center fielder Der…",
+            "detail": "Kevin McGonigle flies out to center fielder Derek Hill.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1499,7 +1242,7 @@
             "event_type": "out",
             "actor": "Colt Keith",
             "actor_id": 690993,
-            "detail": "Colt Keith grounds out, second baseman Bryson S…",
+            "detail": "Colt Keith grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1513,7 +1256,7 @@
             "event_type": "out",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. grounds out, second basema…",
+            "detail": "Gabriel Rincones Jr. grounds out, second baseman Zach McKinstry to first baseman Spencer Torkelson.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
@@ -1538,43 +1281,77 @@
             "inning": 9,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Rafael Marchán",
             "actor_id": 665561,
-            "detail": "Play",
+            "detail": "Rafael Marchán pops out softly to pitcher Beau Brieske.",
             "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Rafael Marchán",
-            "meta": "vs Beau Brieske"
-          },
-          "pitches": [
-            "S",
-            "F",
-            "F",
-            "F",
-            "F"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 2,
-            "outs": 2
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Top 9th"
-        }
+        ]
       }
     },
-    "injury_report": null
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-11T01:34:41.498Z",
+            "freshness_label": "As of Jul 10, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-11T01:34:41.498Z",
+            "freshness_label": "As of Jul 10, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-11T01:34:41.498Z",
+            "freshness_label": "As of Jul 10, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Tanner Banks",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left forearm strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-11T01:34:41.498Z",
+            "freshness_label": "As of Jul 10, 2026, 9:34 PM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
   },
   "next_game": {
     "label": "Tomorrow",

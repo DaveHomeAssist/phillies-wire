@@ -4,21 +4,21 @@
   "edition_date": "2026-07-10",
   "volume": 1,
   "edition": 101,
-  "generated_at": "2026-07-11T01:12:56.015Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-11T01:34:41.498Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 52,
-    "losses": 42,
-    "streak": "W1",
-    "division_rank": 2,
+    "losses": 43,
+    "streak": "L1",
+    "division_rank": 3,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, DET 10",
-    "dek": "Top 9th · 2 outs",
-    "summary": "Rafael Marchán is up against Beau Brieske. Series: Regular Season.",
+    "headline": "PHI 2, DET 10.",
+    "dek": "DET 10, PHI 2 · Jack Flaherty · 6.0 IP, 2 H, 2 ER, 6 K",
+    "summary": "PHI 2, DET 10. Final at Comerica Park, Detroit. DET leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "DET leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,65 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 73,
       "condition": "Overcast",
-      "wind": "7 mph · gusts 16",
-      "gusts_mph": 16
+      "wind": "4 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Rafael Marchán",
-        "meta": "vs Beau Brieske"
-      },
-      "pitches": [
-        "S",
-        "F",
-        "F",
-        "F",
-        "F"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 2
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T01:12:56.466Z",
-    "current_game_pk": 824252,
-    "next_game_pk": 824249,
+    "updated_at": "2026-07-11T01:34:42.097Z",
+    "current_game_pk": 824249,
+    "next_game_pk": 824250,
     "next_game": {
-      "game_pk": 824249,
-      "official_date": "2026-07-11",
-      "date_label": "Sat, Jul 11, 2026",
-      "time_label": "6:10 PM",
+      "game_pk": 824250,
+      "official_date": "2026-07-12",
+      "date_label": "Sun, Jul 12, 2026",
+      "time_label": "1:40 PM",
       "title": "Phillies at Detroit Tigers",
       "matchup": "PHI at DET",
       "venue": "Comerica Park"
     },
     "current_game": {
-      "game_pk": 824252,
-      "official_date": "2026-07-10",
+      "game_pk": 824249,
+      "official_date": "2026-07-11",
       "title": "Phillies at Detroit Tigers",
       "matchup": "PHI at DET"
     }
   },
   "ticker": [
     {
-      "text": "PHI 52-42",
+      "text": "PHI 52-43",
       "highlight": true
     },
     {
@@ -129,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 16 mph",
+      "text": "73° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
