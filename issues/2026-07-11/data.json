@@ -5,14 +5,14 @@
     "edition": 102,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-11T23:18:23.645Z",
+    "generated_at": "2026-07-11T23:19:38.297Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 11, 2026, 7:18 PM ET",
+      "generated_at_et": "Jul 11, 2026, 7:19 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 4, DET 0",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Kyle Schwarber is up against Casey Mize. Series: DET leads 1-0.",
+    "dek": "Top 5th · 1 out",
+    "summary": "Brandon Marsh is up against Casey Mize. Series: DET leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
+      "Brandon Marsh at the plate",
       "Casey Mize on the mound",
       "Comerica Park, Detroit"
     ],
@@ -373,11 +373,11 @@
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
-          "inningState": "End",
-          "isTopInning": false,
-          "outs": 3,
+          "currentInning": 5,
+          "currentInningOrdinal": "5th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 4,
@@ -439,6 +439,19 @@
               },
               "home": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               }
@@ -907,29 +920,53 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "824249:33",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to second baseman Hao-Yu Lee.",
+            "score_after": "PHI 4, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:34",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Play",
+            "score_after": "PHI 4, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Kyle Schwarber",
+            "name": "Bryce Harper",
             "meta": "vs Casey Mize"
           },
-          "pitches": [
-            "S",
-            "S",
-            "X"
-          ],
+          "pitches": [],
           "count": {
             "balls": 0,
-            "strikes": 2,
-            "outs": 3
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 4th"
+          "status": "Top 5th"
         }
       }
     },
@@ -946,8 +983,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T23:18:23.645Z",
-            "freshness_label": "As of Jul 11, 2026, 7:18 PM ET"
+            "last_confirmed": "2026-07-11T23:19:38.297Z",
+            "freshness_label": "As of Jul 11, 2026, 7:19 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -959,8 +996,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T23:18:23.645Z",
-            "freshness_label": "As of Jul 11, 2026, 7:18 PM ET"
+            "last_confirmed": "2026-07-11T23:19:38.297Z",
+            "freshness_label": "As of Jul 11, 2026, 7:19 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -972,8 +1009,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T23:18:23.645Z",
-            "freshness_label": "As of Jul 11, 2026, 7:18 PM ET"
+            "last_confirmed": "2026-07-11T23:19:38.297Z",
+            "freshness_label": "As of Jul 11, 2026, 7:19 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -985,8 +1022,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T23:18:23.645Z",
-            "freshness_label": "As of Jul 11, 2026, 7:18 PM ET"
+            "last_confirmed": "2026-07-11T23:19:38.297Z",
+            "freshness_label": "As of Jul 11, 2026, 7:19 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

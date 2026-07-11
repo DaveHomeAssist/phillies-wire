@@ -4,7 +4,7 @@
   "edition_date": "2026-07-11",
   "volume": 1,
   "edition": 102,
-  "generated_at": "2026-07-11T23:18:23.645Z",
+  "generated_at": "2026-07-11T23:19:38.297Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, DET 0",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Kyle Schwarber is up against Casey Mize. Series: DET leads 1-0.",
+    "dek": "Top 5th · 1 out",
+    "summary": "Brandon Marsh is up against Casey Mize. Series: DET leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
@@ -64,25 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Bryce Harper",
         "meta": "vs Casey Mize"
       },
-      "pitches": [
-        "S",
-        "S",
-        "X"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 3
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 4th"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T23:18:24.125Z",
+    "updated_at": "2026-07-11T23:19:38.870Z",
     "current_game_pk": 824249,
     "next_game_pk": 824250,
     "next_game": {
