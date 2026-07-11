@@ -4,9 +4,9 @@
   "edition_date": "2026-07-11",
   "volume": 1,
   "edition": 102,
-  "generated_at": "2026-07-11T21:18:19.685Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-11T21:46:23.608Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 52,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Tigers · Game 2 of 3",
-    "dek": "Cristopher Sánchez vs Casey Mize",
-    "summary": "Cristopher Sánchez vs Casey Mize · Phillies @ Tigers · Game 2 of 3",
+    "headline": "PHI 0, DET 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Casey Mize. Series: DET leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 85,
-      "condition": "Mostly sunny",
+      "temp_f": 84,
+      "condition": "Clear",
       "wind": "10 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Casey Mize"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T21:18:20.476Z",
+    "updated_at": "2026-07-11T21:46:24.236Z",
     "current_game_pk": 824249,
     "next_game_pk": 824250,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "85° · Mostly sunny · gusts 13 mph",
+      "text": "84° · Clear · gusts 13 mph",
       "highlight": false
     },
     {
