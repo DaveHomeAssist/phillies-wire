@@ -5,14 +5,14 @@
     "edition": 101,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-11T00:35:48.385Z",
+    "generated_at": "2026-07-11T00:51:32.108Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 10, 2026, 8:35 PM ET",
+      "generated_at_et": "Jul 10, 2026, 8:51 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 2, DET 7",
-    "dek": "Top 7th · 1 out",
-    "summary": "Derek Hill is up against Jacob Waguespack. Series: Regular Season.",
+    "headline": "PHI 2, DET 10",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Zach McKinstry is up against Max Lazar. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "78° · Overcast"
+        "value": "77° · Overcast"
       }
     ],
     "bullets": [
-      "Derek Hill at the plate",
-      "Jacob Waguespack on the mound",
+      "Zach McKinstry at the plate",
+      "Max Lazar on the mound",
       "Comerica Park, Detroit"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 78,
+          "temp_f": 77,
           "condition": "Overcast",
-          "wind": "5 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "6 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "",
@@ -375,19 +375,19 @@
         "linescore": {
           "currentInning": 7,
           "currentInningOrdinal": "7th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 2,
-              "hits": 2,
+              "hits": 3,
               "errors": 1
             },
             "home": {
-              "runs": 7,
-              "hits": 5,
-              "errors": 0
+              "runs": 10,
+              "hits": 8,
+              "errors": 1
             }
           },
           "innings": [
@@ -472,14 +472,14 @@
             {
               "num": 7,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
-                "errors": 0
+                "runs": 3,
+                "hits": 3,
+                "errors": 1
               }
             }
           ]
@@ -1165,7 +1165,7 @@
             "event_type": "out",
             "actor": "Zach McKinstry",
             "actor_id": 656716,
-            "detail": "Zach McKinstry hits a sacrifice bunt. Matt Vierling scores. Zach McKinstry to 1st. Throwing error by pitcher Tim Mayza.",
+            "detail": "Zach McKinstry hits a sacrifice bunt. Throwing error by pitcher Tim Mayza. Matt Vierling scores. Eduardo Valencia to 3rd. Zach McKi…",
             "score_after": "PHI 2, DET 4",
             "runs": 1,
             "is_scoring": true,
@@ -1218,11 +1218,151 @@
             "inning": 7,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Play",
+            "detail": "Gabriel Rincones Jr. grounds out, second baseman Zach McKinstry to first baseman Spencer Torkelson.",
             "score_after": "PHI 2, DET 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:53",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill singles on a line drive to right fielder Matt Vierling.",
+            "score_after": "PHI 2, DET 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:54",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Rafael Marchán",
+            "actor_id": 665561,
+            "detail": "Rafael Marchán flies out to right fielder Matt Vierling.",
+            "score_after": "PHI 2, DET 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:55",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "reached_on_error",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner reaches on a fielding error by second baseman Zach McKinstry. Derek Hill to 2nd.",
+            "score_after": "PHI 2, DET 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:56",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to left fielder Riley Greene.",
+            "score_after": "PHI 2, DET 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:57",
+            "inning": 7,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "home_run",
+            "actor": "Colt Keith",
+            "actor_id": 690993,
+            "detail": "Colt Keith homers (8) on a fly ball to right center field.",
+            "score_after": "PHI 2, DET 8",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824252:58",
+            "inning": 7,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "walk_hbp",
+            "actor": "Riley Greene",
+            "actor_id": 682985,
+            "detail": "Riley Greene walks.",
+            "score_after": "PHI 2, DET 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:59",
+            "inning": 7,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "home_run",
+            "actor": "Spencer Torkelson",
+            "actor_id": 679529,
+            "detail": "Spencer Torkelson homers (16) on a line drive to left center field. Riley Greene scores.",
+            "score_after": "PHI 2, DET 10",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824252:60",
+            "inning": 7,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Matt Vierling",
+            "actor_id": 663837,
+            "detail": "Matt Vierling flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 2, DET 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:61",
+            "inning": 7,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "single",
+            "actor": "Eduardo Valencia",
+            "actor_id": 680664,
+            "detail": "Eduardo Valencia singles on a ground ball to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 2, DET 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824252:62",
+            "inning": 7,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "other",
+            "actor": "Zach McKinstry",
+            "actor_id": 656716,
+            "detail": "Mound Visit.",
+            "score_after": "PHI 2, DET 10",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1230,26 +1370,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Gabriel Rincones Jr.",
-            "meta": "vs Jacob Waguespack"
+            "name": "Zach McKinstry",
+            "meta": "vs Max Lazar"
           },
-          "pitches": [
-            "B",
-            "S",
-            "F",
-            "F"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 1,
-            "strikes": 2,
-            "outs": 0
+            "balls": 0,
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
-          "status": "Top 7th"
+          "status": "Bottom 7th"
         }
       }
     },
@@ -1266,8 +1401,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T00:35:48.385Z",
-            "freshness_label": "As of Jul 10, 2026, 8:35 PM ET"
+            "last_confirmed": "2026-07-11T00:51:32.108Z",
+            "freshness_label": "As of Jul 10, 2026, 8:51 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1279,8 +1414,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T00:35:48.385Z",
-            "freshness_label": "As of Jul 10, 2026, 8:35 PM ET"
+            "last_confirmed": "2026-07-11T00:51:32.108Z",
+            "freshness_label": "As of Jul 10, 2026, 8:51 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1292,8 +1427,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T00:35:48.385Z",
-            "freshness_label": "As of Jul 10, 2026, 8:35 PM ET"
+            "last_confirmed": "2026-07-11T00:51:32.108Z",
+            "freshness_label": "As of Jul 10, 2026, 8:51 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1305,8 +1440,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T00:35:48.385Z",
-            "freshness_label": "As of Jul 10, 2026, 8:35 PM ET"
+            "last_confirmed": "2026-07-11T00:51:32.108Z",
+            "freshness_label": "As of Jul 10, 2026, 8:51 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
