@@ -4,7 +4,7 @@
   "edition_date": "2026-07-10",
   "volume": 1,
   "edition": 101,
-  "generated_at": "2026-07-11T00:05:57.610Z",
+  "generated_at": "2026-07-11T00:35:48.385Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, DET 2",
-    "dek": "Bottom 5th · 2 outs",
-    "summary": "Colt Keith is up against Aaron Nola. Series: Regular Season.",
+    "headline": "PHI 2, DET 7",
+    "dek": "Top 7th · 1 out",
+    "summary": "Derek Hill is up against Jacob Waguespack. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Casey Mize · PHI @ DET · Sat, Jul 11 · 6:10 PM"
   },
@@ -55,32 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 78,
       "condition": "Overcast",
-      "wind": "3 mph · gusts 6",
-      "gusts_mph": 6
+      "wind": "5 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Colt Keith",
-        "meta": "vs Aaron Nola"
+        "name": "Gabriel Rincones Jr.",
+        "meta": "vs Jacob Waguespack"
       },
       "pitches": [
-        "B"
+        "B",
+        "S",
+        "F",
+        "F"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 0,
-        "outs": 2
+        "balls": 1,
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -88,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T00:05:58.469Z",
+    "updated_at": "2026-07-11T00:35:48.874Z",
     "current_game_pk": 824252,
     "next_game_pk": 824249,
     "next_game": {
@@ -125,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Overcast · gusts 6 mph",
+      "text": "78° · Overcast · gusts 10 mph",
       "highlight": false
     }
   ]
