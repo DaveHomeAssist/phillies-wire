@@ -4,7 +4,7 @@
   "edition_date": "2026-07-11",
   "volume": 1,
   "edition": 102,
-  "generated_at": "2026-07-11T22:18:25.994Z",
+  "generated_at": "2026-07-11T22:46:20.406Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, DET 0",
-    "dek": "Top 1st · 2 outs",
-    "summary": "Alec Bohm is up against Casey Mize. Series: DET leads 1-0.",
+    "dek": "Top 3rd · 0 outs",
+    "summary": "Trea Turner is up against Casey Mize. Series: DET leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
@@ -56,29 +56,36 @@
     },
     "weather": {
       "temp_f": 83,
-      "condition": "Mostly sunny",
-      "wind": "12 mph · gusts 17",
-      "gusts_mph": 17
+      "condition": "Clear",
+      "wind": "10 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
+        "name": "Trea Turner",
         "meta": "vs Casey Mize"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "F",
+        "S",
+        "B",
+        "X"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 2
+        "balls": 3,
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": true
       },
-      "status": "Top 1st"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -86,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T22:18:26.350Z",
+    "updated_at": "2026-07-11T22:46:21.017Z",
     "current_game_pk": 824249,
     "next_game_pk": 824250,
     "next_game": {
@@ -123,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Mostly sunny · gusts 17 mph",
+      "text": "83° · Clear · gusts 14 mph",
       "highlight": false
     },
     {
