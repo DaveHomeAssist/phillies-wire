@@ -4,7 +4,7 @@
   "edition_date": "2026-07-11",
   "volume": 1,
   "edition": 102,
-  "generated_at": "2026-07-11T22:47:28.855Z",
+  "generated_at": "2026-07-11T23:18:23.645Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, DET 0",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Bryce Harper is up against Casey Mize. Series: DET leads 1-0.",
+    "headline": "PHI 4, DET 0",
+    "dek": "Top 5th · 0 outs",
+    "summary": "Kyle Schwarber is up against Casey Mize. Series: DET leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
@@ -55,30 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 82,
       "condition": "Clear",
-      "wind": "10 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "9 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
+        "name": "Kyle Schwarber",
         "meta": "vs Casey Mize"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S",
+        "X"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 2
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T22:47:29.108Z",
+    "updated_at": "2026-07-11T23:18:24.125Z",
     "current_game_pk": 824249,
     "next_game_pk": 824250,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 14 mph",
+      "text": "82° · Clear · gusts 13 mph",
       "highlight": false
     },
     {

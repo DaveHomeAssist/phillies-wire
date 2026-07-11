@@ -5,14 +5,14 @@
     "edition": 102,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-11T22:47:28.855Z",
+    "generated_at": "2026-07-11T23:18:23.645Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 11, 2026, 6:47 PM ET",
+      "generated_at_et": "Jul 11, 2026, 7:18 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, DET 0",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Bryce Harper is up against Casey Mize. Series: DET leads 1-0.",
+    "headline": "PHI 4, DET 0",
+    "dek": "Top 5th · 0 outs",
+    "summary": "Kyle Schwarber is up against Casey Mize. Series: DET leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "83° · Clear"
+        "value": "82° · Clear"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
+      "Kyle Schwarber at the plate",
       "Casey Mize on the mound",
       "Comerica Park, Detroit"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 83,
+          "temp_f": 82,
           "condition": "Clear",
-          "wind": "10 mph · gusts 14",
-          "gusts_mph": 14
+          "wind": "9 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "",
@@ -359,34 +359,34 @@
             "team": "DET",
             "name": "Casey Mize",
             "hand": "R",
-            "era": "2.57",
+            "era": "2.85",
             "record": "4-5",
-            "whip": "0.98"
+            "whip": "1.00"
           },
           "away": {
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.57",
+            "era": "2.53",
             "record": "10-4",
             "whip": "1.15"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
+          "inningState": "End",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 1,
+              "runs": 4,
+              "hits": 4,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 1,
+              "hits": 3,
               "errors": 1
             }
           },
@@ -425,9 +425,22 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 2,
                 "errors": 1
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 3,
+                "hits": 3,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
               }
             }
           ]
@@ -676,11 +689,221 @@
             "inning": 3,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Play",
+            "detail": "Bryce Harper flies out to center fielder Matt Vierling.",
             "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:18",
+            "inning": 3,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Hao-Yu Lee",
+            "actor_id": 701678,
+            "detail": "Hao-Yu Lee lines out to left fielder Brandon Marsh.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:19",
+            "inning": 3,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "single",
+            "actor": "Ben Malgeri",
+            "actor_id": 701162,
+            "detail": "Ben Malgeri singles on a ground ball to third baseman Alec Bohm.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:20",
+            "inning": 3,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Zach McKinstry",
+            "actor_id": 656716,
+            "detail": "Zach McKinstry flies out to center fielder Derek Hill.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:21",
+            "inning": 3,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "single",
+            "actor": "Matt Vierling",
+            "actor_id": 663837,
+            "detail": "Matt Vierling singles on a ground ball to right fielder Gabriel Rincones Jr. Ben Malgeri to 2nd.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "strikeout",
+            "actor": "Kevin McGonigle",
+            "actor_id": 805808,
+            "detail": "Kevin McGonigle strikes out swinging.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:23",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh walks.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:24",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm called out on strikes.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:25",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott singles on a sharp line drive to center fielder Matt Vierling. Brandon Marsh to 2nd.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:26",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto doubles (10) on a sharp line drive to left fielder Riley Greene. Brandon Marsh scores. Bryson Stott scores.",
+            "score_after": "PHI 3, DET 0",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824249:27",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. grounds out to first baseman Spencer Torkelson. J.T. Realmuto to 3rd.",
+            "score_after": "PHI 3, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:28",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill singles on a sharp line drive to left fielder Riley Greene. J.T. Realmuto scores.",
+            "score_after": "PHI 4, DET 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824249:29",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, shortstop Zach McKinstry to first baseman Spencer Torkelson.",
+            "score_after": "PHI 4, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:30",
+            "inning": 4,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Dillon Dingler",
+            "actor_id": 693307,
+            "detail": "Dillon Dingler grounds out, pitcher Cristopher Sánchez to first baseman Bryce Harper.",
+            "score_after": "PHI 4, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:31",
+            "inning": 4,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "strikeout",
+            "actor": "Spencer Torkelson",
+            "actor_id": 679529,
+            "detail": "Spencer Torkelson strikes out swinging.",
+            "score_after": "PHI 4, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:32",
+            "inning": 4,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Riley Greene",
+            "actor_id": 682985,
+            "detail": "Riley Greene grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "score_after": "PHI 4, DET 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -688,21 +911,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryce Harper",
+            "name": "Kyle Schwarber",
             "meta": "vs Casey Mize"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "S",
+            "X"
+          ],
           "count": {
             "balls": 0,
-            "strikes": 0,
-            "outs": 2
+            "strikes": 2,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 3rd"
+          "status": "End 4th"
         }
       }
     },
@@ -719,8 +946,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T22:47:28.855Z",
-            "freshness_label": "As of Jul 11, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-07-11T23:18:23.645Z",
+            "freshness_label": "As of Jul 11, 2026, 7:18 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -732,8 +959,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T22:47:28.855Z",
-            "freshness_label": "As of Jul 11, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-07-11T23:18:23.645Z",
+            "freshness_label": "As of Jul 11, 2026, 7:18 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -745,8 +972,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T22:47:28.855Z",
-            "freshness_label": "As of Jul 11, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-07-11T23:18:23.645Z",
+            "freshness_label": "As of Jul 11, 2026, 7:18 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -758,8 +985,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-11T22:47:28.855Z",
-            "freshness_label": "As of Jul 11, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-07-11T23:18:23.645Z",
+            "freshness_label": "As of Jul 11, 2026, 7:18 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
