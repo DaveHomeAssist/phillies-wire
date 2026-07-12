@@ -5,14 +5,14 @@
     "edition": 103,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-12T17:24:07.456Z",
+    "generated_at": "2026-07-12T17:48:16.574Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 12, 2026, 1:24 PM ET",
+      "generated_at_et": "Jul 12, 2026, 1:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, DET 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Tarik Skubal. Series: Series tied 1-1.",
+    "dek": "Middle 1st · 3 outs",
+    "summary": "Kevin McGonigle is up against Zack Wheeler. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "83° · Clear"
+        "value": "84° · Clear"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Tarik Skubal on the mound",
+      "Kevin McGonigle at the plate",
+      "Zack Wheeler on the mound",
       "Comerica Park, Detroit"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 83,
+          "temp_f": 84,
           "condition": "Clear",
-          "wind": "9 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "9 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "",
@@ -359,9 +359,9 @@
             "team": "DET",
             "name": "Tarik Skubal",
             "hand": "L",
-            "era": "3.06",
+            "era": "3.03",
             "record": "5-4",
-            "whip": "0.95"
+            "whip": "0.94"
           },
           "away": {
             "team": "PHI",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 1,
           "currentInningOrdinal": "1st",
-          "inningState": "Top",
+          "inningState": "Middle",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 0,
@@ -394,7 +394,7 @@
             {
               "num": 1,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -412,10 +412,38 @@
             "inning": 1,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Status Change - Warmup",
+            "detail": "Trea Turner flies out to center fielder James Outman.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:1",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:2",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, third baseman Colt Keith to first baseman Spencer Torkelson.",
             "score_after": "PHI 0, DET 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,21 +452,31 @@
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
-            "meta": "vs Tarik Skubal"
+            "name": "Kevin McGonigle",
+            "meta": "vs Zack Wheeler"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "S",
+            "S",
+            "F",
+            "F",
+            "B",
+            "F",
+            "B",
+            "X"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "balls": 3,
+            "strikes": 2,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "Middle 1st"
         }
       }
     },
@@ -455,8 +493,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:24:07.456Z",
-            "freshness_label": "As of Jul 12, 2026, 1:24 PM ET"
+            "last_confirmed": "2026-07-12T17:48:16.574Z",
+            "freshness_label": "As of Jul 12, 2026, 1:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -468,8 +506,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:24:07.456Z",
-            "freshness_label": "As of Jul 12, 2026, 1:24 PM ET"
+            "last_confirmed": "2026-07-12T17:48:16.574Z",
+            "freshness_label": "As of Jul 12, 2026, 1:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -481,8 +519,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:24:07.456Z",
-            "freshness_label": "As of Jul 12, 2026, 1:24 PM ET"
+            "last_confirmed": "2026-07-12T17:48:16.574Z",
+            "freshness_label": "As of Jul 12, 2026, 1:48 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -494,8 +532,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:24:07.456Z",
-            "freshness_label": "As of Jul 12, 2026, 1:24 PM ET"
+            "last_confirmed": "2026-07-12T17:48:16.574Z",
+            "freshness_label": "As of Jul 12, 2026, 1:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
