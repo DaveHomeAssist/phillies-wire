@@ -5,313 +5,56 @@
     "edition": 102,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-12T00:33:04.848Z",
+    "generated_at": "2026-07-12T00:38:44.086Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 11, 2026, 8:33 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 11, 2026, 8:38 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 52,
+    "wins": 53,
     "losses": 43,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 4, DET 2",
-    "dek": "Middle 9th · 3 outs",
-    "summary": "Hao-Yu Lee is up against Jonathan Bowlan. Series: DET leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 4, DET 2.",
+    "dek": "PHI 4, DET 2 · Cristopher Sánchez · 7.0 IP, 10 H, 2 ER, 7 K",
+    "summary": "PHI 4, DET 2. Final at Comerica Park, Detroit. Series tied 1-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Comerica Park, Detroit"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "77° · Overcast"
+        "label": "Series",
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "Hao-Yu Lee at the plate",
-      "Jonathan Bowlan on the mound",
-      "Comerica Park, Detroit"
+      "Cristopher Sánchez: 7.0 IP, 10 H, 2 ER, 7 K",
+      "Casey Mize: 5.2 IP, 5 H, 3 ER, 5 K",
+      "Eduardo Valencia: 2-for-4, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at DET game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:10 PM",
-        "starters": {
-          "home": {
-            "team": "DET",
-            "name": "Casey Mize",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "DET",
-            "name": "Casey Mize",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Matt Vierling",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kevin McGonigle",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Dillon Dingler",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Spencer Torkelson",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Riley Greene",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Eduardo Valencia",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Hao-Yu Lee",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Ben Malgeri",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Zach McKinstry",
-              "position": "SS",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Matt Vierling",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kevin McGonigle",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Dillon Dingler",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Spencer Torkelson",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Riley Greene",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Eduardo Valencia",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Hao-Yu Lee",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Ben Malgeri",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Zach McKinstry",
-              "position": "SS",
-              "bats": "L"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Tigers · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "DET leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -375,8 +118,8 @@
         "linescore": {
           "currentInning": 9,
           "currentInningOrdinal": "9th",
-          "inningState": "Middle",
-          "isTopInning": true,
+          "inningState": "Bottom",
+          "isTopInning": false,
           "outs": 3,
           "teams": {
             "away": {
@@ -503,7 +246,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -1462,31 +1205,111 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "824249:68",
+            "inning": 9,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Colt Keith",
+            "actor_id": 690993,
+            "detail": "Colt Keith grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
+            "score_after": "PHI 4, DET 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:69",
+            "inning": 9,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Kerry Carpenter",
+            "actor_id": 681481,
+            "detail": "Kerry Carpenter pops out to catcher J.T. Realmuto in foul territory.",
+            "score_after": "PHI 4, DET 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824249:70",
+            "inning": 9,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Zach McKinstry",
+            "actor_id": 656716,
+            "detail": "Zach McKinstry pops out to shortstop Trea Turner.",
+            "score_after": "PHI 4, DET 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Hao-Yu Lee",
-            "meta": "vs Jonathan Bowlan"
-          },
-          "pitches": [
-            "X"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 3
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Middle 9th"
-        }
+        ]
       }
     },
-    "injury_report": null
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-12T00:38:44.086Z",
+            "freshness_label": "As of Jul 11, 2026, 8:38 PM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-12T00:38:44.086Z",
+            "freshness_label": "As of Jul 11, 2026, 8:38 PM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-12T00:38:44.086Z",
+            "freshness_label": "As of Jul 11, 2026, 8:38 PM ET"
+          },
+          {
+            "name": "Tanner Banks",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left forearm strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-12T00:38:44.086Z",
+            "freshness_label": "As of Jul 11, 2026, 8:38 PM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
   },
   "next_game": {
     "label": "Tomorrow",

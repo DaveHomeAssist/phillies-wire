@@ -4,21 +4,21 @@
   "edition_date": "2026-07-11",
   "volume": 1,
   "edition": 102,
-  "generated_at": "2026-07-12T00:33:04.848Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-12T00:38:44.086Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 52,
+    "wins": 53,
     "losses": 43,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, DET 2",
-    "dek": "Middle 9th · 3 outs",
-    "summary": "Hao-Yu Lee is up against Jonathan Bowlan. Series: DET leads 1-0.",
+    "headline": "PHI 4, DET 2.",
+    "dek": "PHI 4, DET 2 · Cristopher Sánchez · 7.0 IP, 10 H, 2 ER, 7 K",
+    "summary": "PHI 4, DET 2. Final at Comerica Park, Detroit. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "DET leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -62,54 +62,35 @@
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Hao-Yu Lee",
-        "meta": "vs Jonathan Bowlan"
-      },
-      "pitches": [
-        "X"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Middle 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-12T00:33:05.670Z",
-    "current_game_pk": 824249,
-    "next_game_pk": 824250,
+    "updated_at": "2026-07-12T00:38:44.596Z",
+    "current_game_pk": 824250,
+    "next_game_pk": 823440,
     "next_game": {
-      "game_pk": 824250,
-      "official_date": "2026-07-12",
-      "date_label": "Sun, Jul 12, 2026",
-      "time_label": "1:40 PM",
-      "title": "Phillies at Detroit Tigers",
-      "matchup": "PHI at DET",
-      "venue": "Comerica Park"
+      "game_pk": 823440,
+      "official_date": "2026-07-16",
+      "date_label": "Thu, Jul 16, 2026",
+      "time_label": "7:10 PM",
+      "title": "New York Mets at Phillies",
+      "matchup": "NYM at PHI",
+      "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 824249,
-      "official_date": "2026-07-11",
+      "game_pk": 824250,
+      "official_date": "2026-07-12",
       "title": "Phillies at Detroit Tigers",
       "matchup": "PHI at DET"
     }
   },
   "ticker": [
     {
-      "text": "PHI 52-43",
+      "text": "PHI 53-43",
       "highlight": true
     },
     {
