@@ -4,7 +4,7 @@
   "edition_date": "2026-07-12",
   "volume": 1,
   "edition": 103,
-  "generated_at": "2026-07-12T18:49:11.730Z",
+  "generated_at": "2026-07-12T19:25:08.922Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, DET 0",
-    "dek": "Top 5th · 1 out",
-    "summary": "Trea Turner is up against Tarik Skubal. Series: Series tied 1-1.",
+    "headline": "PHI 5, DET 0",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "James Outman is up against Zack Wheeler. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Christian Scott · PHI vs NYM · Thu, Jul 16 · 7:10 PM"
   },
@@ -64,26 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Tarik Skubal"
+        "name": "James Outman",
+        "meta": "vs Zack Wheeler"
       },
-      "pitches": [
-        "S",
-        "B",
-        "S",
-        "F"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
-        "strikes": 2,
-        "outs": 1
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
-        "second": true,
-        "third": true
+        "second": false,
+        "third": false
       },
-      "status": "Top 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-12T18:49:12.074Z",
+    "updated_at": "2026-07-12T19:25:09.400Z",
     "current_game_pk": 824250,
     "next_game_pk": 823440,
     "next_game": {

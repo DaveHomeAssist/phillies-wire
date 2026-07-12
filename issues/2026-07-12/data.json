@@ -5,14 +5,14 @@
     "edition": 103,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-12T18:49:11.730Z",
+    "generated_at": "2026-07-12T19:25:08.922Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 12, 2026, 2:49 PM ET",
+      "generated_at_et": "Jul 12, 2026, 3:25 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, DET 0",
-    "dek": "Top 5th · 1 out",
-    "summary": "Trea Turner is up against Tarik Skubal. Series: Series tied 1-1.",
+    "headline": "PHI 5, DET 0",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "James Outman is up against Zack Wheeler. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Tarik Skubal on the mound",
+      "James Outman at the plate",
+      "Zack Wheeler on the mound",
       "Comerica Park, Detroit"
     ],
     "next_label": "Tomorrow",
@@ -359,35 +359,35 @@
             "team": "DET",
             "name": "Tarik Skubal",
             "hand": "L",
-            "era": "3.00",
+            "era": "3.09",
             "record": "5-4",
-            "whip": "0.92"
+            "whip": "0.95"
           },
           "away": {
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.18",
+            "era": "2.15",
             "record": "9-1",
             "whip": "0.88"
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 1,
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 3,
+              "runs": 5,
+              "hits": 8,
               "errors": 1
             },
             "home": {
               "runs": 0,
-              "hits": 1,
-              "errors": 0
+              "hits": 2,
+              "errors": 1
             }
           },
           "innings": [
@@ -446,14 +446,27 @@
             {
               "num": 5,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 4,
+                "hits": 5,
                 "errors": 0
               },
               "home": {
                 "runs": null,
                 "hits": 0,
-                "errors": 0
+                "errors": 1
               }
             }
           ]
@@ -898,11 +911,221 @@
             "inning": 5,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Play",
+            "detail": "Trea Turner strikes out swinging.",
             "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:32",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:33",
+            "inning": 5,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "strikeout",
+            "actor": "Spencer Torkelson",
+            "actor_id": 679529,
+            "detail": "Spencer Torkelson strikes out swinging.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:34",
+            "inning": 5,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "strikeout",
+            "actor": "Kerry Carpenter",
+            "actor_id": 681481,
+            "detail": "Kerry Carpenter challenged (pitch result), call on the field was confirmed: Kerry Carpenter called out on strikes.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:35",
+            "inning": 5,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "single",
+            "actor": "Zach McKinstry",
+            "actor_id": 656716,
+            "detail": "Zach McKinstry singles on a line drive to left fielder Edmundo Sosa.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:36",
+            "inning": 5,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Matt Vierling",
+            "actor_id": 663837,
+            "detail": "Matt Vierling flies out to center fielder Derek Hill.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:37",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper singles on a ground ball to shortstop Kevin McGonigle.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:38",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm singles on a line drive to pitcher Keider Montero. Bryce Harper to 2nd.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:39",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa out on a sacrifice bunt, pitcher Keider Montero to first baseman Spencer Torkelson. Bryce Harper to 3rd. Alec Bohm to…",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:40",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Keider Montero intentionally walks Brandon Marsh.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:41",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill called out on strikes.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:42",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto doubles (11) on a line drive to left fielder Riley Greene. Bryce Harper scores. Alec Bohm scores. Brandon Marsh score…",
+            "score_after": "PHI 4, DET 0",
+            "runs": 3,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824250:43",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Phillies challenged (play at 1st), call on the field was overturned: Bryson Stott singles on a ground ball to shortstop Kevin McGon…",
+            "score_after": "PHI 5, DET 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824250:44",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner singles on a ground ball to right fielder Matt Vierling. Bryson Stott to 2nd.",
+            "score_after": "PHI 5, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:45",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out on a foul tip.",
+            "score_after": "PHI 5, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:46",
+            "inning": 6,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "other",
+            "actor": "James Outman",
+            "actor_id": 681546,
+            "detail": "Play",
+            "score_after": "PHI 5, DET 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -910,26 +1133,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
-            "meta": "vs Tarik Skubal"
+            "name": "James Outman",
+            "meta": "vs Zack Wheeler"
           },
-          "pitches": [
-            "S",
-            "B",
-            "S",
-            "F"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 1,
-            "strikes": 2,
-            "outs": 1
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
           },
           "bases": {
             "first": false,
-            "second": true,
-            "third": true
+            "second": false,
+            "third": false
           },
-          "status": "Top 5th"
+          "status": "Bottom 6th"
         }
       }
     },
@@ -946,8 +1164,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T18:49:11.730Z",
-            "freshness_label": "As of Jul 12, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-07-12T19:25:08.922Z",
+            "freshness_label": "As of Jul 12, 2026, 3:25 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -959,8 +1177,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T18:49:11.730Z",
-            "freshness_label": "As of Jul 12, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-07-12T19:25:08.922Z",
+            "freshness_label": "As of Jul 12, 2026, 3:25 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -972,8 +1190,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T18:49:11.730Z",
-            "freshness_label": "As of Jul 12, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-07-12T19:25:08.922Z",
+            "freshness_label": "As of Jul 12, 2026, 3:25 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -985,8 +1203,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T18:49:11.730Z",
-            "freshness_label": "As of Jul 12, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-07-12T19:25:08.922Z",
+            "freshness_label": "As of Jul 12, 2026, 3:25 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
