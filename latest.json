@@ -4,7 +4,7 @@
   "edition_date": "2026-07-11",
   "volume": 1,
   "edition": 102,
-  "generated_at": "2026-07-11T23:48:03.341Z",
+  "generated_at": "2026-07-12T00:33:04.848Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, DET 1",
-    "dek": "Bottom 6th · 2 outs",
-    "summary": "Riley Greene is up against Cristopher Sánchez. Series: DET leads 1-0.",
+    "headline": "PHI 4, DET 2",
+    "dek": "Middle 9th · 3 outs",
+    "summary": "Hao-Yu Lee is up against Jonathan Bowlan. Series: DET leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
   },
@@ -55,25 +55,24 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 77,
       "condition": "Overcast",
-      "wind": "7 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "6 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Gabriel Rincones Jr.",
-        "meta": "vs Drew Anderson"
+        "name": "Hao-Yu Lee",
+        "meta": "vs Jonathan Bowlan"
       },
       "pitches": [
-        "F",
-        "S"
+        "X"
       ],
       "count": {
         "balls": 0,
-        "strikes": 3,
+        "strikes": 0,
         "outs": 3
       },
       "bases": {
@@ -81,7 +80,7 @@
         "second": false,
         "third": false
       },
-      "status": "End 6th"
+      "status": "Middle 9th"
     },
     "recap_line": null
   },
@@ -89,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-11T23:48:03.647Z",
+    "updated_at": "2026-07-12T00:33:05.670Z",
     "current_game_pk": 824249,
     "next_game_pk": 824250,
     "next_game": {
@@ -126,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Overcast · gusts 13 mph",
+      "text": "77° · Overcast · gusts 15 mph",
       "highlight": false
     },
     {
