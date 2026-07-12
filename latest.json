@@ -4,7 +4,7 @@
   "edition_date": "2026-07-12",
   "volume": 1,
   "edition": 103,
-  "generated_at": "2026-07-12T18:47:58.532Z",
+  "generated_at": "2026-07-12T18:49:11.730Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,15 @@
         "name": "Trea Turner",
         "meta": "vs Tarik Skubal"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "S",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 2,
         "outs": 1
       },
       "bases": {
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-12T18:47:59.356Z",
+    "updated_at": "2026-07-12T18:49:12.074Z",
     "current_game_pk": 824250,
     "next_game_pk": 823440,
     "next_game": {
