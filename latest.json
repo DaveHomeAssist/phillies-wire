@@ -4,21 +4,21 @@
   "edition_date": "2026-07-12",
   "volume": 1,
   "edition": 103,
-  "generated_at": "2026-07-12T20:18:08.136Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-12T20:46:20.689Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 53,
+    "wins": 54,
     "losses": 43,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, DET 0",
-    "dek": "Middle 9th · 3 outs",
-    "summary": "Dillon Dingler is up against Orion Kerkering. Series: Series tied 1-1.",
+    "headline": "PHI 5, DET 0.",
+    "dek": "PHI 5, DET 0 · Zack Wheeler · 6.0 IP, 2 H, 0 ER, 10 K",
+    "summary": "PHI 5, DET 0. Final at Comerica Park, Detroit. PHI wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Christian Scott · PHI vs NYM · Thu, Jul 16 · 7:10 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "PHI wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,64 +57,40 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "9 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "7 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Dillon Dingler",
-        "meta": "vs Orion Kerkering"
-      },
-      "pitches": [
-        "F",
-        "F",
-        "B",
-        "F",
-        "F",
-        "S"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 3,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Middle 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-12T20:18:08.402Z",
-    "current_game_pk": 824250,
-    "next_game_pk": 823440,
+    "updated_at": "2026-07-12T20:46:21.334Z",
+    "current_game_pk": 823440,
+    "next_game_pk": 823441,
     "next_game": {
-      "game_pk": 823440,
-      "official_date": "2026-07-16",
-      "date_label": "Thu, Jul 16, 2026",
-      "time_label": "7:10 PM",
+      "game_pk": 823441,
+      "official_date": "2026-07-18",
+      "date_label": "Sat, Jul 18, 2026",
+      "time_label": "4:05 PM",
       "title": "New York Mets at Phillies",
       "matchup": "NYM at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 824250,
-      "official_date": "2026-07-12",
-      "title": "Phillies at Detroit Tigers",
-      "matchup": "PHI at DET"
+      "game_pk": 823440,
+      "official_date": "2026-07-16",
+      "title": "New York Mets at Phillies",
+      "matchup": "NYM at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 53-43",
+      "text": "PHI 54-43",
       "highlight": true
     },
     {
@@ -130,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Clear · gusts 11 mph",
+      "text": "84° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
