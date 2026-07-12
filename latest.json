@@ -4,9 +4,9 @@
   "edition_date": "2026-07-12",
   "volume": 1,
   "edition": 103,
-  "generated_at": "2026-07-12T16:48:31.655Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-12T17:23:12.310Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 53,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Tigers · Game 3 of 3",
-    "dek": "Zack Wheeler vs Tarik Skubal",
-    "summary": "Zack Wheeler vs Tarik Skubal · Phillies @ Tigers · Game 3 of 3",
+    "headline": "PHI 0, DET 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Tarik Skubal. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Christian Scott · PHI vs NYM · Thu, Jul 16 · 7:10 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 83,
       "condition": "Clear",
       "wind": "9 mph · gusts 11",
       "gusts_mph": 11
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Tarik Skubal"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-12T16:48:32.506Z",
+    "updated_at": "2026-07-12T17:23:12.909Z",
     "current_game_pk": 824250,
     "next_game_pk": 823440,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 11 mph",
+      "text": "83° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
