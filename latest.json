@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-11",
+  "edition_date": "2026-07-12",
   "volume": 1,
-  "edition": 102,
-  "generated_at": "2026-07-12T03:23:47.968Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 103,
+  "generated_at": "2026-07-12T04:26:53.821Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 53,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, DET 2.",
-    "dek": "PHI 4, DET 2 · Cristopher Sánchez · 7.0 IP, 10 H, 2 ER, 7 K",
-    "summary": "PHI 4, DET 2. Final at Comerica Park, Detroit. Series tied 1-1.",
+    "headline": "Phillies @ Tigers · Game 3 of 3",
+    "dek": "Zack Wheeler vs Tarik Skubal",
+    "summary": "Zack Wheeler vs Tarik Skubal · Phillies @ Tigers · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Tarik Skubal · PHI @ DET · Sun, Jul 12 · 1:40 PM"
+    "next_value": "PHI vs NYM · Thu, Jul 16 · 7:10 PM"
   },
   "game": {
-    "matchup": "Phillies @ Tigers · Game 2 of 3",
-    "first_pitch": "6:10 PM",
+    "matchup": "Phillies @ Tigers · Game 3 of 3",
+    "first_pitch": "1:40 PM",
     "venue": "Comerica Park, Detroit",
     "starters": {
       "home": {
-        "name": "Casey Mize",
-        "hand": "R"
+        "name": "Tarik Skubal",
+        "hand": "L"
       },
       "away": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Casey Mize",
-        "hand": "R"
+        "name": "Tarik Skubal",
+        "hand": "L"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 70,
-      "condition": "Overcast",
-      "wind": "6 mph · gusts 13",
-      "gusts_mph": 13
+      "temp_f": 69,
+      "condition": "Clear",
+      "wind": "5 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-12T03:23:48.750Z",
+    "updated_at": "2026-07-12T04:26:54.568Z",
     "current_game_pk": 824250,
     "next_game_pk": 823440,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Tigers · Game 2 of 3 · 6:10 PM",
+      "text": "Phillies @ Tigers · Game 3 of 3 · 1:40 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Casey Mize",
+      "text": "Zack Wheeler vs Tarik Skubal",
       "highlight": true
     },
     {
@@ -106,11 +106,7 @@
       "highlight": false
     },
     {
-      "text": "70° · Overcast · gusts 13 mph",
-      "highlight": false
-    },
-    {
-      "text": "sent RHP Jean Cabrera outright to Reading Fightin Phils.",
+      "text": "69° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
