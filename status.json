@@ -1,7 +1,7 @@
 {
   "publication": "Phillies Wire",
   "date": "2026-07-12",
-  "generated_at": "2026-07-12T07:35:07.015Z",
+  "generated_at": "2026-07-12T13:29:51.328Z",
   "off_day": false,
   "issue_path": "issues/2026-07-12/",
   "archive_path": "archive/",
@@ -10,11 +10,12 @@
   "status": {
     "mode": "pregame",
     "mode_label": "Pregame",
-    "crawl_state": "ok",
-    "enrich_state": "skipped",
-    "enrich_label": "Pregame edition",
-    "generated_at_et": "Jul 12, 2026, 3:35 AM ET",
+    "crawl_state": "degraded",
+    "enrich_state": "enriched",
+    "enrich_label": "Editorial copy enriched via Claude.",
+    "generated_at_et": "Jul 12, 2026, 9:29 AM ET",
     "source_notes": [
+      "One or more live data sources were unavailable; safe fallbacks were used.",
       "Farm system notes hidden because the editorial baseline is stale."
     ]
   }

@@ -5,15 +5,16 @@
     "edition": 103,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-12T07:35:07.015Z",
+    "generated_at": "2026-07-12T13:29:51.328Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
-      "crawl_state": "ok",
-      "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Jul 12, 2026, 3:35 AM ET",
+      "crawl_state": "degraded",
+      "enrich_state": "enriched",
+      "enrich_label": "Editorial copy enriched via Claude.",
+      "generated_at_et": "Jul 12, 2026, 9:29 AM ET",
       "source_notes": [
+        "One or more live data sources were unavailable; safe fallbacks were used.",
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
@@ -46,7 +47,7 @@
       }
     ],
     "bullets": [
-      "64° · Clear · 5 mph · gusts 11",
+      "0° · Weather unavailable · Calm",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -345,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 64,
-          "condition": "Clear",
-          "wind": "5 mph · gusts 11",
-          "gusts_mph": 11
+          "temp_f": 0,
+          "condition": "Weather unavailable",
+          "wind": "Calm",
+          "gusts_mph": 0
         },
         "giveaway": "",
         "transit": "",
@@ -407,8 +408,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T07:35:07.015Z",
-            "freshness_label": "As of Jul 12, 2026, 3:35 AM ET"
+            "last_confirmed": "2026-07-12T13:29:51.328Z",
+            "freshness_label": "As of Jul 12, 2026, 9:29 AM ET"
           },
           {
             "name": "Johan Rojas",
@@ -420,8 +421,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T07:35:07.015Z",
-            "freshness_label": "As of Jul 12, 2026, 3:35 AM ET"
+            "last_confirmed": "2026-07-12T13:29:51.328Z",
+            "freshness_label": "As of Jul 12, 2026, 9:29 AM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -433,8 +434,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T07:35:07.015Z",
-            "freshness_label": "As of Jul 12, 2026, 3:35 AM ET"
+            "last_confirmed": "2026-07-12T13:29:51.328Z",
+            "freshness_label": "As of Jul 12, 2026, 9:29 AM ET"
           },
           {
             "name": "Tanner Banks",
@@ -446,8 +447,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T07:35:07.015Z",
-            "freshness_label": "As of Jul 12, 2026, 3:35 AM ET"
+            "last_confirmed": "2026-07-12T13:29:51.328Z",
+            "freshness_label": "As of Jul 12, 2026, 9:29 AM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
