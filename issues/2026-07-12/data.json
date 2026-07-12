@@ -5,14 +5,14 @@
     "edition": 103,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-12T17:48:16.574Z",
+    "generated_at": "2026-07-12T17:49:21.272Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 12, 2026, 1:48 PM ET",
+      "generated_at_et": "Jul 12, 2026, 1:49 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,7 +29,7 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, DET 0",
-    "dek": "Middle 1st · 3 outs",
+    "dek": "Bottom 1st · 0 outs",
     "summary": "Kevin McGonigle is up against Zack Wheeler. Series: Series tied 1-1.",
     "cards": [
       {
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 1,
           "currentInningOrdinal": "1st",
-          "inningState": "Middle",
-          "isTopInning": true,
-          "outs": 3,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
@@ -448,6 +448,20 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "824250:3",
+            "inning": 1,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "other",
+            "actor": "Kevin McGonigle",
+            "actor_id": 805808,
+            "detail": "Play",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
@@ -456,27 +470,21 @@
             "meta": "vs Zack Wheeler"
           },
           "pitches": [
-            "B",
-            "S",
             "S",
             "F",
-            "F",
-            "B",
-            "F",
-            "B",
-            "X"
+            "F"
           ],
           "count": {
-            "balls": 3,
+            "balls": 0,
             "strikes": 2,
-            "outs": 3
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 1st"
+          "status": "Bottom 1st"
         }
       }
     },
@@ -493,8 +501,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:48:16.574Z",
-            "freshness_label": "As of Jul 12, 2026, 1:48 PM ET"
+            "last_confirmed": "2026-07-12T17:49:21.272Z",
+            "freshness_label": "As of Jul 12, 2026, 1:49 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -506,8 +514,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:48:16.574Z",
-            "freshness_label": "As of Jul 12, 2026, 1:48 PM ET"
+            "last_confirmed": "2026-07-12T17:49:21.272Z",
+            "freshness_label": "As of Jul 12, 2026, 1:49 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -519,8 +527,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:48:16.574Z",
-            "freshness_label": "As of Jul 12, 2026, 1:48 PM ET"
+            "last_confirmed": "2026-07-12T17:49:21.272Z",
+            "freshness_label": "As of Jul 12, 2026, 1:49 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -532,8 +540,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:48:16.574Z",
-            "freshness_label": "As of Jul 12, 2026, 1:48 PM ET"
+            "last_confirmed": "2026-07-12T17:49:21.272Z",
+            "freshness_label": "As of Jul 12, 2026, 1:49 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
