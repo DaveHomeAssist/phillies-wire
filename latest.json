@@ -4,7 +4,7 @@
   "edition_date": "2026-07-12",
   "volume": 1,
   "edition": 103,
-  "generated_at": "2026-07-12T18:20:55.958Z",
+  "generated_at": "2026-07-12T18:47:58.532Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, DET 0",
-    "dek": "Bottom 3rd · 0 outs",
-    "summary": "Matt Vierling is up against Zack Wheeler. Series: Series tied 1-1.",
+    "dek": "Top 5th · 1 out",
+    "summary": "Trea Turner is up against Tarik Skubal. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Christian Scott · PHI vs NYM · Thu, Jul 16 · 7:10 PM"
   },
@@ -57,30 +57,28 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "10 mph · gusts 12",
+      "wind": "9 mph · gusts 12",
       "gusts_mph": 12
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Matt Vierling",
-        "meta": "vs Zack Wheeler"
+        "name": "Trea Turner",
+        "meta": "vs Tarik Skubal"
       },
-      "pitches": [
-        "S"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 1,
-        "outs": 0
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
-        "first": true,
-        "second": false,
-        "third": false
+        "first": false,
+        "second": true,
+        "third": true
       },
-      "status": "Bottom 3rd"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -88,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-12T18:20:56.241Z",
+    "updated_at": "2026-07-12T18:47:59.356Z",
     "current_game_pk": 824250,
     "next_game_pk": 823440,
     "next_game": {
