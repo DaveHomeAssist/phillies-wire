@@ -5,14 +5,14 @@
     "edition": 103,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-12T18:19:31.355Z",
+    "generated_at": "2026-07-12T18:20:55.958Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 12, 2026, 2:19 PM ET",
+      "generated_at_et": "Jul 12, 2026, 2:20 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -30,7 +30,7 @@
     "label": "Live",
     "headline": "PHI 1, DET 0",
     "dek": "Bottom 3rd · 0 outs",
-    "summary": "Zach McKinstry is up against Zack Wheeler. Series: Series tied 1-1.",
+    "summary": "Matt Vierling is up against Zack Wheeler. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Zach McKinstry at the plate",
+      "Matt Vierling at the plate",
       "Zack Wheeler on the mound",
       "Comerica Park, Detroit"
     ],
@@ -382,7 +382,7 @@
             "away": {
               "runs": 1,
               "hits": 1,
-              "errors": 0
+              "errors": 1
             },
             "home": {
               "runs": 0,
@@ -422,7 +422,7 @@
               "away": {
                 "runs": 1,
                 "hits": 1,
-                "errors": 0
+                "errors": 1
               },
               "home": {
                 "runs": null,
@@ -690,9 +690,23 @@
             "inning": 3,
             "half": "bottom",
             "team": "DET",
-            "event_type": "other",
+            "event_type": "reached_on_error",
             "actor": "Zach McKinstry",
             "actor_id": 656716,
+            "detail": "Zach McKinstry reaches on a missed catch error by first baseman Bryce Harper, assist to second baseman Bryson Stott.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:19",
+            "inning": 3,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "other",
+            "actor": "Matt Vierling",
+            "actor_id": 663837,
             "detail": "Play",
             "score_after": "PHI 1, DET 0",
             "runs": 0,
@@ -702,22 +716,19 @@
         ],
         "situation": {
           "batter": {
-            "name": "Zach McKinstry",
+            "name": "Matt Vierling",
             "meta": "vs Zack Wheeler"
           },
           "pitches": [
-            "S",
-            "S",
-            "B",
-            "F"
+            "S"
           ],
           "count": {
-            "balls": 1,
-            "strikes": 2,
+            "balls": 0,
+            "strikes": 1,
             "outs": 0
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
@@ -738,8 +749,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T18:19:31.355Z",
-            "freshness_label": "As of Jul 12, 2026, 2:19 PM ET"
+            "last_confirmed": "2026-07-12T18:20:55.958Z",
+            "freshness_label": "As of Jul 12, 2026, 2:20 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -751,8 +762,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T18:19:31.355Z",
-            "freshness_label": "As of Jul 12, 2026, 2:19 PM ET"
+            "last_confirmed": "2026-07-12T18:20:55.958Z",
+            "freshness_label": "As of Jul 12, 2026, 2:20 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -764,8 +775,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T18:19:31.355Z",
-            "freshness_label": "As of Jul 12, 2026, 2:19 PM ET"
+            "last_confirmed": "2026-07-12T18:20:55.958Z",
+            "freshness_label": "As of Jul 12, 2026, 2:20 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -777,8 +788,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T18:19:31.355Z",
-            "freshness_label": "As of Jul 12, 2026, 2:19 PM ET"
+            "last_confirmed": "2026-07-12T18:20:55.958Z",
+            "freshness_label": "As of Jul 12, 2026, 2:20 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

@@ -4,7 +4,7 @@
   "edition_date": "2026-07-12",
   "volume": 1,
   "edition": 103,
-  "generated_at": "2026-07-12T18:19:31.355Z",
+  "generated_at": "2026-07-12T18:20:55.958Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -18,7 +18,7 @@
   "hero": {
     "headline": "PHI 1, DET 0",
     "dek": "Bottom 3rd · 0 outs",
-    "summary": "Zach McKinstry is up against Zack Wheeler. Series: Series tied 1-1.",
+    "summary": "Matt Vierling is up against Zack Wheeler. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Christian Scott · PHI vs NYM · Thu, Jul 16 · 7:10 PM"
   },
@@ -64,22 +64,19 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Zach McKinstry",
+        "name": "Matt Vierling",
         "meta": "vs Zack Wheeler"
       },
       "pitches": [
-        "S",
-        "S",
-        "B",
-        "F"
+        "S"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
@@ -91,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-12T18:19:31.904Z",
+    "updated_at": "2026-07-12T18:20:56.241Z",
     "current_game_pk": 824250,
     "next_game_pk": 823440,
     "next_game": {
