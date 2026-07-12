@@ -5,14 +5,14 @@
     "edition": 103,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-12T17:49:21.272Z",
+    "generated_at": "2026-07-12T18:19:31.355Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 12, 2026, 1:49 PM ET",
+      "generated_at_et": "Jul 12, 2026, 2:19 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, DET 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "Kevin McGonigle is up against Zack Wheeler. Series: Series tied 1-1.",
+    "headline": "PHI 1, DET 0",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Zach McKinstry is up against Zack Wheeler. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Kevin McGonigle at the plate",
+      "Zach McKinstry at the plate",
       "Zack Wheeler on the mound",
       "Comerica Park, Detroit"
     ],
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 84,
           "condition": "Clear",
-          "wind": "9 mph · gusts 12",
+          "wind": "10 mph · gusts 12",
           "gusts_mph": 12
         },
         "giveaway": "",
@@ -359,7 +359,7 @@
             "team": "DET",
             "name": "Tarik Skubal",
             "hand": "L",
-            "era": "3.03",
+            "era": "3.07",
             "record": "5-4",
             "whip": "0.94"
           },
@@ -367,26 +367,26 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.28",
+            "era": "2.22",
             "record": "9-1",
-            "whip": "0.91"
+            "whip": "0.90"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
           "inningState": "Bottom",
           "isTopInning": false,
           "outs": 0,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 0,
+              "runs": 1,
+              "hits": 1,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 0
             }
           },
@@ -396,6 +396,32 @@
               "away": {
                 "runs": 0,
                 "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 1,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -454,11 +480,221 @@
             "inning": 1,
             "half": "bottom",
             "team": "DET",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Kevin McGonigle",
             "actor_id": 805808,
-            "detail": "Play",
+            "detail": "Kevin McGonigle grounds out, first baseman Bryce Harper to pitcher Zack Wheeler.",
             "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "out",
+            "actor": "Dillon Dingler",
+            "actor_id": 693307,
+            "detail": "Dillon Dingler lines out to right fielder Brandon Marsh.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "strikeout",
+            "actor": "Colt Keith",
+            "actor_id": 690993,
+            "detail": "Colt Keith strikes out swinging.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:6",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out to center fielder James Outman.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:7",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa walks.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:8",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh grounds into a force out, second baseman Zach McKinstry to shortstop Kevin McGonigle. Edmundo Sosa out at 2nd. Brando…",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:9",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill strikes out swinging.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:10",
+            "inning": 2,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "single",
+            "actor": "Riley Greene",
+            "actor_id": 682985,
+            "detail": "Riley Greene singles on a line drive to right fielder Brandon Marsh.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:11",
+            "inning": 2,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "other",
+            "actor": "Spencer Torkelson",
+            "actor_id": 679529,
+            "detail": "Spencer Torkelson grounds into a double play, shortstop Trea Turner to second baseman Bryson Stott to first baseman Bryce Harper. R…",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "strikeout",
+            "actor": "Kerry Carpenter",
+            "actor_id": 681481,
+            "detail": "Kerry Carpenter strikes out swinging.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:13",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto hit by pitch.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:14",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out, second baseman Zach McKinstry to first baseman Spencer Torkelson. J.T. Realmuto to 2nd.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:15",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner lines out to right fielder Matt Vierling.",
+            "score_after": "PHI 0, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:16",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber singles on a line drive to left fielder Riley Greene. J.T. Realmuto scores. Kyle Schwarber to 2nd.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824250:17",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out softly, second baseman Zach McKinstry to first baseman Spencer Torkelson.",
+            "score_after": "PHI 1, DET 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824250:18",
+            "inning": 3,
+            "half": "bottom",
+            "team": "DET",
+            "event_type": "other",
+            "actor": "Zach McKinstry",
+            "actor_id": 656716,
+            "detail": "Play",
+            "score_after": "PHI 1, DET 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -466,16 +702,17 @@
         ],
         "situation": {
           "batter": {
-            "name": "Kevin McGonigle",
+            "name": "Zach McKinstry",
             "meta": "vs Zack Wheeler"
           },
           "pitches": [
             "S",
-            "F",
+            "S",
+            "B",
             "F"
           ],
           "count": {
-            "balls": 0,
+            "balls": 1,
             "strikes": 2,
             "outs": 0
           },
@@ -484,7 +721,7 @@
             "second": false,
             "third": false
           },
-          "status": "Bottom 1st"
+          "status": "Bottom 3rd"
         }
       }
     },
@@ -501,8 +738,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:49:21.272Z",
-            "freshness_label": "As of Jul 12, 2026, 1:49 PM ET"
+            "last_confirmed": "2026-07-12T18:19:31.355Z",
+            "freshness_label": "As of Jul 12, 2026, 2:19 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -514,8 +751,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:49:21.272Z",
-            "freshness_label": "As of Jul 12, 2026, 1:49 PM ET"
+            "last_confirmed": "2026-07-12T18:19:31.355Z",
+            "freshness_label": "As of Jul 12, 2026, 2:19 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -527,8 +764,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:49:21.272Z",
-            "freshness_label": "As of Jul 12, 2026, 1:49 PM ET"
+            "last_confirmed": "2026-07-12T18:19:31.355Z",
+            "freshness_label": "As of Jul 12, 2026, 2:19 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -540,8 +777,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-12T17:49:21.272Z",
-            "freshness_label": "As of Jul 12, 2026, 1:49 PM ET"
+            "last_confirmed": "2026-07-12T18:19:31.355Z",
+            "freshness_label": "As of Jul 12, 2026, 2:19 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
