@@ -330,6 +330,9 @@ function buildSitemapXml(archive) {
   const urls = [];
   urls.push({ loc: `${SITE_URL}/`, changefreq: "hourly", priority: "1.0", lastmod: archive.updated_at });
   urls.push({ loc: `${SITE_URL}/archive/`, changefreq: "daily", priority: "0.6", lastmod: archive.updated_at });
+  for (const staticPath of ["/dashboard/", "/dashboard/innings/", "/dashboard/season/", "/dashboard/accuracy/", "/dashboard/preferences/", "/schedule/"]) {
+    urls.push({ loc: `${SITE_URL}${staticPath}`, changefreq: "daily", priority: "0.5", lastmod: archive.updated_at });
+  }
   for (const entry of archive.entries ?? []) {
     urls.push({
       loc: `${SITE_URL}/issues/${entry.date}/`,
@@ -740,8 +743,11 @@ ${itemsHtml}
   <nav class="pw-shell-nav" aria-label="Primary">
     <a class="pw-shell-link" href="../">Latest</a>
     <a class="pw-shell-link" href="./">Archive</a>
+    <a class="pw-shell-link" href="../dashboard/">Dashboard</a>
+    <a class="pw-shell-link" href="../schedule/">Schedule</a>
     <a class="pw-shell-link" href="../dashboard/innings/">Inning by inning</a>
     <a class="pw-shell-link" href="../feed.xml" rel="alternate">RSS</a>
+    <a class="pw-shell-link pw-shell-link--subscribe" href="https://buttondown.com/phillieswire" target="_blank" rel="noopener">Subscribe</a>
   </nav>
 
   <main id="pw-archive-main" class="pw-main">
