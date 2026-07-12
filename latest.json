@@ -4,7 +4,7 @@
   "edition_date": "2026-07-12",
   "volume": 1,
   "edition": 103,
-  "generated_at": "2026-07-12T19:54:21.460Z",
+  "generated_at": "2026-07-12T20:18:08.136Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 5, DET 0",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Brandon Marsh is up against Keider Montero. Series: Series tied 1-1.",
+    "dek": "Middle 9th · 3 outs",
+    "summary": "Dillon Dingler is up against Orion Kerkering. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Christian Scott · PHI vs NYM · Thu, Jul 16 · 7:10 PM"
   },
@@ -57,31 +57,35 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "10 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "9 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Keider Montero"
+        "name": "Dillon Dingler",
+        "meta": "vs Orion Kerkering"
       },
       "pitches": [
-        "S",
+        "F",
+        "F",
+        "B",
+        "F",
+        "F",
         "S"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 0
+        "balls": 1,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 8th"
+      "status": "Middle 9th"
     },
     "recap_line": null
   },
@@ -89,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-12T19:54:21.791Z",
+    "updated_at": "2026-07-12T20:18:08.402Z",
     "current_game_pk": 824250,
     "next_game_pk": 823440,
     "next_game": {
@@ -126,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Clear · gusts 12 mph",
+      "text": "84° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
