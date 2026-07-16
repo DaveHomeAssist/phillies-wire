@@ -5,14 +5,14 @@
     "edition": 107,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-16T23:06:46.573Z",
+    "generated_at": "2026-07-16T23:33:23.223Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 16, 2026, 7:06 PM ET",
+      "generated_at_et": "Jul 16, 2026, 7:33 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, NYM 1",
-    "dek": "Bottom 4th · 0 outs",
-    "summary": "Kyle Schwarber is up against Christian Scott. Series: Regular Season.",
+    "dek": "Bottom 5th · 2 outs",
+    "summary": "Gabriel Rincones Jr. is up against Christian Scott. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "89° · Overcast"
+        "value": "92° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
+      "Gabriel Rincones Jr. at the plate",
       "Christian Scott on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 89,
-          "condition": "Overcast",
-          "wind": "2 mph · gusts 10",
-          "gusts_mph": 10
+          "temp_f": 92,
+          "condition": "Mostly sunny",
+          "wind": "9 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,34 +359,34 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.61",
+            "era": "5.56",
             "record": "3-6",
-            "whip": "1.42"
+            "whip": "1.44"
           },
           "away": {
             "team": "NYM",
             "name": "Christian Scott",
             "hand": "R",
-            "era": "3.00",
+            "era": "2.93",
             "record": "2-1",
-            "whip": "1.25"
+            "whip": "1.23"
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
+          "currentInning": 5,
+          "currentInningOrdinal": "5th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 1,
-              "hits": 3,
+              "hits": 4,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 1,
+              "hits": 2,
               "errors": 0
             }
           },
@@ -435,6 +435,19 @@
               "away": {
                 "runs": 0,
                 "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -801,9 +814,177 @@
             "inning": 4,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:26",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper doubles (18) on a ground ball to right fielder Carson Benge.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823440:27",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out to left fielder Juan Soto.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:28",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm pops out to first baseman Jared Young in foul territory.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:29",
+            "inning": 5,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Jared Young",
+            "actor_id": 676724,
+            "detail": "Jared Young walks.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:30",
+            "inning": 5,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "single",
+            "actor": "Brett Baty",
+            "actor_id": 683146,
+            "detail": "Brett Baty singles on a sharp line drive to center fielder Justin Crawford. Jared Young to 2nd.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:31",
+            "inning": 5,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Francisco Alvarez",
+            "actor_id": 682626,
+            "detail": "Francisco Alvarez walks. Jared Young to 3rd. Brett Baty to 2nd.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:32",
+            "inning": 5,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "extra_base_hit",
+            "actor": "A.J. Ewing",
+            "actor_id": 805999,
+            "detail": "A.J. Ewing lines into an unassisted double play, first baseman Bryce Harper. Francisco Alvarez out at 1st.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823440:33",
+            "inning": 5,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Juan Soto",
+            "actor_id": 665742,
+            "detail": "Aaron Nola intentionally walks Juan Soto.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:34",
+            "inning": 5,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Bo Bichette",
+            "actor_id": 666182,
+            "detail": "Bo Bichette flies out to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:35",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott strikes out swinging.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:36",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, second baseman Brett Baty to first baseman Jared Young.",
+            "score_after": "PHI 0, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:37",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
             "detail": "Play",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
@@ -813,24 +994,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Kyle Schwarber",
+            "name": "Gabriel Rincones Jr.",
             "meta": "vs Christian Scott"
           },
-          "pitches": [
-            "B",
-            "S"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 1,
-            "strikes": 1,
-            "outs": 0
+            "balls": 0,
+            "strikes": 0,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 4th"
+          "status": "Bottom 5th"
         }
       }
     },
@@ -847,8 +1025,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T23:06:46.573Z",
-            "freshness_label": "As of Jul 16, 2026, 7:06 PM ET"
+            "last_confirmed": "2026-07-16T23:33:23.223Z",
+            "freshness_label": "As of Jul 16, 2026, 7:33 PM ET"
           },
           {
             "name": "Adolis García",
@@ -860,8 +1038,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T23:06:46.573Z",
-            "freshness_label": "As of Jul 16, 2026, 7:06 PM ET"
+            "last_confirmed": "2026-07-16T23:33:23.223Z",
+            "freshness_label": "As of Jul 16, 2026, 7:33 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -873,8 +1051,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T23:06:46.573Z",
-            "freshness_label": "As of Jul 16, 2026, 7:06 PM ET"
+            "last_confirmed": "2026-07-16T23:33:23.223Z",
+            "freshness_label": "As of Jul 16, 2026, 7:33 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -886,8 +1064,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T23:06:46.573Z",
-            "freshness_label": "As of Jul 16, 2026, 7:06 PM ET"
+            "last_confirmed": "2026-07-16T23:33:23.223Z",
+            "freshness_label": "As of Jul 16, 2026, 7:33 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -899,8 +1077,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T23:06:46.573Z",
-            "freshness_label": "As of Jul 16, 2026, 7:06 PM ET"
+            "last_confirmed": "2026-07-16T23:33:23.223Z",
+            "freshness_label": "As of Jul 16, 2026, 7:33 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
