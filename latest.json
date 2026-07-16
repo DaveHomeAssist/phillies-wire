@@ -4,7 +4,7 @@
   "edition_date": "2026-07-16",
   "volume": 1,
   "edition": 107,
-  "generated_at": "2026-07-16T22:34:27.972Z",
+  "generated_at": "2026-07-16T23:06:05.807Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYM 0",
-    "dek": "Middle 2nd · 3 outs",
-    "summary": "Brandon Marsh is up against Christian Scott. Series: Regular Season.",
+    "headline": "PHI 0, NYM 1",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "Kyle Schwarber is up against Christian Scott. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Sean Manaea · PHI vs NYM · Sat, Jul 18 · 4:05 PM"
   },
@@ -55,36 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 91,
-      "condition": "Mostly sunny",
-      "wind": "9 mph · gusts 16",
-      "gusts_mph": 16
+      "temp_f": 89,
+      "condition": "Overcast",
+      "wind": "2 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
+        "name": "Kyle Schwarber",
         "meta": "vs Christian Scott"
       },
-      "pitches": [
-        "B",
-        "S",
-        "F",
-        "F",
-        "S"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
-        "strikes": 3,
-        "outs": 3
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 2nd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -92,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-16T22:34:28.515Z",
+    "updated_at": "2026-07-16T23:06:06.275Z",
     "current_game_pk": 823440,
     "next_game_pk": 823441,
     "next_game": {
@@ -129,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "91° · Mostly sunny · gusts 16 mph",
+      "text": "89° · Overcast · gusts 10 mph",
       "highlight": false
     },
     {
