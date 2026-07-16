@@ -4,7 +4,7 @@
   "edition_date": "2026-07-16",
   "volume": 1,
   "edition": 107,
-  "generated_at": "2026-07-16T23:33:23.223Z",
+  "generated_at": "2026-07-16T23:33:58.551Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,15 @@
         "name": "Gabriel Rincones Jr.",
         "meta": "vs Christian Scott"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "B",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 2,
         "outs": 2
       },
       "bases": {
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-16T23:33:24.154Z",
+    "updated_at": "2026-07-16T23:33:59.009Z",
     "current_game_pk": 823440,
     "next_game_pk": 823441,
     "next_game": {
