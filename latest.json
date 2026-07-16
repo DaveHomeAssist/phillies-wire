@@ -4,9 +4,9 @@
   "edition_date": "2026-07-16",
   "volume": 1,
   "edition": 107,
-  "generated_at": "2026-07-16T21:37:10.473Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-16T22:08:14.616Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 54,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Mets @ Phillies · Game 1 of 3",
-    "dek": "Aaron Nola vs Christian Scott",
-    "summary": "Aaron Nola vs Christian Scott · Mets @ Phillies · Game 1 of 3",
+    "headline": "PHI 0, NYM 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "A.J. Ewing is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Sean Manaea · PHI vs NYM · Sat, Jul 18 · 4:05 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 93,
-      "condition": "Clear",
-      "wind": "12 mph · gusts 19",
-      "gusts_mph": 19
+      "temp_f": 92,
+      "condition": "Partly cloudy",
+      "wind": "12 mph · gusts 22",
+      "gusts_mph": 22
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "A.J. Ewing",
+        "meta": "vs Aaron Nola"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-16T21:37:10.848Z",
+    "updated_at": "2026-07-16T22:08:14.832Z",
     "current_game_pk": 823440,
     "next_game_pk": 823441,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "93° · Clear · gusts 19 mph",
+      "text": "92° · Partly cloudy · gusts 22 mph",
       "highlight": false
     },
     {
