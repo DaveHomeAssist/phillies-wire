@@ -4,7 +4,7 @@
   "edition_date": "2026-07-16",
   "volume": 1,
   "edition": 107,
-  "generated_at": "2026-07-16T23:06:05.807Z",
+  "generated_at": "2026-07-16T23:06:46.573Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,13 @@
         "name": "Kyle Schwarber",
         "meta": "vs Christian Scott"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-16T23:06:06.275Z",
+    "updated_at": "2026-07-16T23:06:47.068Z",
     "current_game_pk": 823440,
     "next_game_pk": 823441,
     "next_game": {
