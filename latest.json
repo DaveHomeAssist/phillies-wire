@@ -4,7 +4,7 @@
   "edition_date": "2026-07-16",
   "volume": 1,
   "edition": 107,
-  "generated_at": "2026-07-16T22:08:14.616Z",
+  "generated_at": "2026-07-16T22:34:27.972Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, NYM 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "A.J. Ewing is up against Aaron Nola. Series: Regular Season.",
+    "dek": "Middle 2nd · 3 outs",
+    "summary": "Brandon Marsh is up against Christian Scott. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Sean Manaea · PHI vs NYM · Sat, Jul 18 · 4:05 PM"
   },
@@ -55,30 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 92,
-      "condition": "Partly cloudy",
-      "wind": "12 mph · gusts 22",
-      "gusts_mph": 22
+      "temp_f": 91,
+      "condition": "Mostly sunny",
+      "wind": "9 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "A.J. Ewing",
-        "meta": "vs Aaron Nola"
+        "name": "Brandon Marsh",
+        "meta": "vs Christian Scott"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "F",
+        "F",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 1,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Middle 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-16T22:08:14.832Z",
+    "updated_at": "2026-07-16T22:34:28.515Z",
     "current_game_pk": 823440,
     "next_game_pk": 823441,
     "next_game": {
@@ -123,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "92° · Partly cloudy · gusts 22 mph",
+      "text": "91° · Mostly sunny · gusts 16 mph",
       "highlight": false
     },
     {

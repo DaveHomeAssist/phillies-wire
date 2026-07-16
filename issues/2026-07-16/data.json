@@ -5,14 +5,14 @@
     "edition": 107,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-16T22:08:14.616Z",
+    "generated_at": "2026-07-16T22:34:27.972Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 16, 2026, 6:08 PM ET",
+      "generated_at_et": "Jul 16, 2026, 6:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, NYM 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "A.J. Ewing is up against Aaron Nola. Series: Regular Season.",
+    "dek": "Middle 2nd · 3 outs",
+    "summary": "Brandon Marsh is up against Christian Scott. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "92° · Partly cloudy"
+        "value": "91° · Mostly sunny"
       }
     ],
     "bullets": [
-      "A.J. Ewing at the plate",
-      "Aaron Nola on the mound",
+      "Brandon Marsh at the plate",
+      "Christian Scott on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 92,
-          "condition": "Partly cloudy",
-          "wind": "12 mph · gusts 22",
-          "gusts_mph": 22
+          "temp_f": 91,
+          "condition": "Mostly sunny",
+          "wind": "9 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,29 +359,29 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.75",
+            "era": "5.67",
             "record": "3-6",
-            "whip": "1.43"
+            "whip": "1.42"
           },
           "away": {
             "team": "NYM",
             "name": "Christian Scott",
             "hand": "R",
-            "era": "3.17",
+            "era": "3.11",
             "record": "2-1",
-            "whip": "1.30"
+            "whip": "1.27"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "Top",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "Middle",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 0,
+              "hits": 2,
               "errors": 0
             },
             "home": {
@@ -394,8 +394,21 @@
             {
               "num": 1,
               "away": {
-                "runs": null,
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
                 "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -412,10 +425,136 @@
             "inning": 1,
             "half": "top",
             "team": "NYM",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "A.J. Ewing",
             "actor_id": 805999,
-            "detail": "Status Change - Warmup",
+            "detail": "A.J. Ewing strikes out swinging.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:1",
+            "inning": 1,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "single",
+            "actor": "Juan Soto",
+            "actor_id": 665742,
+            "detail": "Juan Soto singles on a ground ball to center fielder Justin Crawford, deflected by shortstop Trea Turner.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:2",
+            "inning": 1,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "other",
+            "actor": "Bo Bichette",
+            "actor_id": 666182,
+            "detail": "Bo Bichette grounds into a double play, first baseman Bryce Harper to shortstop Trea Turner to first baseman Bryce Harper. Juan Sot…",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:3",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner lines out to center fielder A.J. Ewing.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to center fielder A.J. Ewing.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:6",
+            "inning": 2,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Francisco Lindor",
+            "actor_id": 596019,
+            "detail": "Francisco Lindor flies out to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:7",
+            "inning": 2,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "single",
+            "actor": "Carson Benge",
+            "actor_id": 701807,
+            "detail": "Carson Benge singles on a ground ball to left fielder Brandon Marsh.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:8",
+            "inning": 2,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Jorge Polanco",
+            "actor_id": 593871,
+            "detail": "Jorge Polanco pops out to shortstop Trea Turner.",
+            "score_after": "PHI 0, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:9",
+            "inning": 2,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "strikeout",
+            "actor": "Jared Young",
+            "actor_id": 676724,
+            "detail": "Jared Young strikes out swinging.",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,21 +563,27 @@
         ],
         "situation": {
           "batter": {
-            "name": "A.J. Ewing",
-            "meta": "vs Aaron Nola"
+            "name": "Brandon Marsh",
+            "meta": "vs Christian Scott"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "S",
+            "F",
+            "F",
+            "S"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "balls": 1,
+            "strikes": 3,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "Middle 2nd"
         }
       }
     },
@@ -455,8 +600,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T22:08:14.616Z",
-            "freshness_label": "As of Jul 16, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-16T22:34:27.972Z",
+            "freshness_label": "As of Jul 16, 2026, 6:34 PM ET"
           },
           {
             "name": "Adolis García",
@@ -468,8 +613,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T22:08:14.616Z",
-            "freshness_label": "As of Jul 16, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-16T22:34:27.972Z",
+            "freshness_label": "As of Jul 16, 2026, 6:34 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -481,8 +626,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T22:08:14.616Z",
-            "freshness_label": "As of Jul 16, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-16T22:34:27.972Z",
+            "freshness_label": "As of Jul 16, 2026, 6:34 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -494,8 +639,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T22:08:14.616Z",
-            "freshness_label": "As of Jul 16, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-16T22:34:27.972Z",
+            "freshness_label": "As of Jul 16, 2026, 6:34 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -507,8 +652,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-16T22:08:14.616Z",
-            "freshness_label": "As of Jul 16, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-16T22:34:27.972Z",
+            "freshness_label": "As of Jul 16, 2026, 6:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
