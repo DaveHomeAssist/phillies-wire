@@ -4,21 +4,21 @@
   "edition_date": "2026-07-16",
   "volume": 1,
   "edition": 107,
-  "generated_at": "2026-07-17T00:06:24.352Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-17T00:53:53.777Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 54,
-    "losses": 43,
-    "streak": "W2",
+    "losses": 44,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYM 3",
-    "dek": "Top 7th · 0 outs",
-    "summary": "A.J. Ewing is up against Jonathan Bowlan. Series: Regular Season.",
+    "headline": "PHI 1, NYM 4.",
+    "dek": "NYM 4, PHI 1 · Christian Scott · 5.2 IP, 3 H, 0 ER, 7 K",
+    "summary": "PHI 1, NYM 4. Final at Citizens Bank Park, Philadelphia. NYM leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Sean Manaea · PHI vs NYM · Sat, Jul 18 · 4:05 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "NYM leads 1-0"
     },
     "broadcast": {
       "tv": "ESPN/ESPN App",
@@ -55,59 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 89,
-      "condition": "Clear",
-      "wind": "7 mph · gusts 13",
-      "gusts_mph": 13
+      "temp_f": 88,
+      "condition": "Overcast",
+      "wind": "9 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "A.J. Ewing",
-        "meta": "vs Jonathan Bowlan"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-17T00:06:25.017Z",
-    "current_game_pk": 823440,
-    "next_game_pk": 823441,
+    "updated_at": "2026-07-17T00:53:54.434Z",
+    "current_game_pk": 823441,
+    "next_game_pk": 823439,
     "next_game": {
-      "game_pk": 823441,
-      "official_date": "2026-07-18",
-      "date_label": "Sat, Jul 18, 2026",
-      "time_label": "4:05 PM",
+      "game_pk": 823439,
+      "official_date": "2026-07-19",
+      "date_label": "Sun, Jul 19, 2026",
+      "time_label": "1:35 PM",
       "title": "New York Mets at Phillies",
       "matchup": "NYM at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823440,
-      "official_date": "2026-07-16",
+      "game_pk": 823441,
+      "official_date": "2026-07-18",
       "title": "New York Mets at Phillies",
       "matchup": "NYM at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 54-43",
+      "text": "PHI 54-44",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Clear · gusts 13 mph",
+      "text": "88° · Overcast · gusts 16 mph",
       "highlight": false
     },
     {

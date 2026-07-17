@@ -5,14 +5,14 @@
     "edition": 107,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-17T00:06:24.352Z",
+    "generated_at": "2026-07-17T00:53:53.777Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 16, 2026, 8:06 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 16, 2026, 8:53 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 54,
-    "losses": 43,
-    "streak": "W2",
+    "losses": 44,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 0, NYM 3",
-    "dek": "Top 7th · 0 outs",
-    "summary": "A.J. Ewing is up against Jonathan Bowlan. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 1, NYM 4.",
+    "dek": "NYM 4, PHI 1 · Christian Scott · 5.2 IP, 3 H, 0 ER, 7 K",
+    "summary": "PHI 1, NYM 4. Final at Citizens Bank Park, Philadelphia. NYM leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "ESPN/ESPN App · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "89° · Clear"
+        "label": "Series",
+        "value": "NYM leads 1-0"
       }
     ],
     "bullets": [
-      "A.J. Ewing at the plate",
-      "Jonathan Bowlan on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Christian Scott: 5.2 IP, 3 H, 0 ER, 7 K",
+      "Aaron Nola: 6.0 IP, 6 H, 3 ER, 6 K",
+      "Francisco Alvarez: 2-for-3, 2 HR, 2 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Sean Manaea · PHI vs NYM · Sat, Jul 18 · 4:05 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's NYM at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:10 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "away": {
-            "team": "NYM",
-            "name": "Christian Scott",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "NYM",
-            "name": "Christian Scott",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "A.J. Ewing",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Juan Soto",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bo Bichette",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Francisco Lindor",
-              "position": "SS",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Carson Benge",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Jorge Polanco",
-              "position": "DH",
-              "bats": "S"
-            },
-            {
-              "slot": 7,
-              "name": "Jared Young",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Brett Baty",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Francisco Alvarez",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "A.J. Ewing",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Juan Soto",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bo Bichette",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Francisco Lindor",
-              "position": "SS",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Carson Benge",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Jorge Polanco",
-              "position": "DH",
-              "bats": "S"
-            },
-            {
-              "slot": 7,
-              "name": "Jared Young",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Brett Baty",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Francisco Alvarez",
-              "position": "C",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Mets @ Phillies · Game 1 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "NYM leads 1-0"
         },
         "broadcast": {
           "tv": "ESPN/ESPN App",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 89,
-          "condition": "Clear",
-          "wind": "7 mph · gusts 13",
-          "gusts_mph": 13
+          "temp_f": 88,
+          "condition": "Overcast",
+          "wind": "9 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,34 +102,34 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.59",
-            "record": "3-6",
-            "whip": "1.44"
+            "era": "5.68",
+            "record": "3-7",
+            "whip": "1.45"
           },
           "away": {
             "team": "NYM",
             "name": "Christian Scott",
             "hand": "R",
             "era": "2.87",
-            "record": "2-1",
+            "record": "3-1",
             "whip": "1.22"
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 3,
-              "hits": 6,
+              "runs": 4,
+              "hits": 7,
               "errors": 1
             },
             "home": {
-              "runs": 0,
-              "hits": 3,
+              "runs": 1,
+              "hits": 4,
               "errors": 1
             }
           },
@@ -477,7 +220,33 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -1176,34 +945,296 @@
             "inning": 7,
             "half": "top",
             "team": "NYM",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "A.J. Ewing",
             "actor_id": 805999,
-            "detail": "Pitching Change: Jonathan Bowlan replaces Aaron Nola.",
+            "detail": "A.J. Ewing grounds out to first baseman Bryce Harper.",
             "score_after": "PHI 0, NYM 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823440:50",
+            "inning": 7,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Juan Soto",
+            "actor_id": 665742,
+            "detail": "Juan Soto walks.",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:51",
+            "inning": 7,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "other",
+            "actor": "Bo Bichette",
+            "actor_id": 666182,
+            "detail": "Bo Bichette grounds into a double play, shortstop Trea Turner to first baseman Bryce Harper. Juan Soto out at 2nd. Bo Bichette out…",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:52",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds out, third baseman Bo Bichette to first baseman Jared Young.",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:53",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to center fielder A.J. Ewing.",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:54",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, shortstop Francisco Lindor to first baseman Jared Young.",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:55",
+            "inning": 8,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Francisco Lindor",
+            "actor_id": 596019,
+            "detail": "Francisco Lindor flies out to shortstop Trea Turner.",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:56",
+            "inning": 8,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Carson Benge",
+            "actor_id": 701807,
+            "detail": "Carson Benge grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:57",
+            "inning": 8,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Jorge Polanco",
+            "actor_id": 593871,
+            "detail": "Jorge Polanco lines out sharply to left fielder Brandon Marsh.",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:58",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. flies out sharply to center fielder A.J. Ewing.",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:59",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford pops out to third baseman Bo Bichette.",
+            "score_after": "PHI 0, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:60",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner homers (11) on a fly ball to left field.",
+            "score_after": "PHI 1, NYM 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823440:61",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out, second baseman Brett Baty to first baseman Jared Young.",
+            "score_after": "PHI 1, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:62",
+            "inning": 9,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Jared Young",
+            "actor_id": 676724,
+            "detail": "Jared Young walks.",
+            "score_after": "PHI 1, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:63",
+            "inning": 9,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Brett Baty",
+            "actor_id": 683146,
+            "detail": "Brett Baty flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 1, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:64",
+            "inning": 9,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "strikeout",
+            "actor": "Francisco Alvarez",
+            "actor_id": 682626,
+            "detail": "Francisco Alvarez strikes out swinging.",
+            "score_after": "PHI 1, NYM 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:65",
+            "inning": 9,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "extra_base_hit",
+            "actor": "A.J. Ewing",
+            "actor_id": 805999,
+            "detail": "A.J. Ewing doubles (10) on a ground ball to left fielder Brandon Marsh. Jared Young scores.",
+            "score_after": "PHI 1, NYM 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823440:66",
+            "inning": 9,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "strikeout",
+            "actor": "Tyrone Taylor",
+            "actor_id": 621438,
+            "detail": "Tyrone Taylor strikes out swinging.",
+            "score_after": "PHI 1, NYM 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:67",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, second baseman Brett Baty to first baseman Jared Young.",
+            "score_after": "PHI 1, NYM 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:68",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh lines out to left fielder Tyrone Taylor.",
+            "score_after": "PHI 1, NYM 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823440:69",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm strikes out swinging.",
+            "score_after": "PHI 1, NYM 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "A.J. Ewing",
-            "meta": "vs Jonathan Bowlan"
-          },
-          "pitches": [],
-          "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 0
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Top 7th"
-        }
+        ]
       }
     },
     "injury_report": {
@@ -1219,8 +1250,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-17T00:06:24.352Z",
-            "freshness_label": "As of Jul 16, 2026, 8:06 PM ET"
+            "last_confirmed": "2026-07-17T00:53:53.777Z",
+            "freshness_label": "As of Jul 16, 2026, 8:53 PM ET"
           },
           {
             "name": "Adolis García",
@@ -1232,8 +1263,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-17T00:06:24.352Z",
-            "freshness_label": "As of Jul 16, 2026, 8:06 PM ET"
+            "last_confirmed": "2026-07-17T00:53:53.777Z",
+            "freshness_label": "As of Jul 16, 2026, 8:53 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1245,8 +1276,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-17T00:06:24.352Z",
-            "freshness_label": "As of Jul 16, 2026, 8:06 PM ET"
+            "last_confirmed": "2026-07-17T00:53:53.777Z",
+            "freshness_label": "As of Jul 16, 2026, 8:53 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1258,8 +1289,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-17T00:06:24.352Z",
-            "freshness_label": "As of Jul 16, 2026, 8:06 PM ET"
+            "last_confirmed": "2026-07-17T00:53:53.777Z",
+            "freshness_label": "As of Jul 16, 2026, 8:53 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1271,8 +1302,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-17T00:06:24.352Z",
-            "freshness_label": "As of Jul 16, 2026, 8:06 PM ET"
+            "last_confirmed": "2026-07-17T00:53:53.777Z",
+            "freshness_label": "As of Jul 16, 2026, 8:53 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
