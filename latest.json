@@ -1,64 +1,64 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-16",
+  "edition_date": "2026-07-17",
   "volume": 1,
-  "edition": 107,
-  "generated_at": "2026-07-17T03:50:13.160Z",
-  "mode": "final",
-  "mode_label": "Final",
-  "off_day": false,
+  "edition": 108,
+  "generated_at": "2026-07-17T05:03:40.712Z",
+  "mode": "off_day",
+  "mode_label": "Off Day",
+  "off_day": true,
   "record": {
-    "wins": 54,
-    "losses": 44,
+    "wins": 0,
+    "losses": 0,
     "streak": "L1",
-    "division_rank": 2,
+    "division_rank": 0,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, NYM 4.",
-    "dek": "NYM 4, PHI 1 · Christian Scott · 5.2 IP, 3 H, 0 ER, 7 K",
-    "summary": "PHI 1, NYM 4. Final at Citizens Bank Park, Philadelphia. NYM leads 1-0.",
-    "next_label": "Tomorrow",
+    "headline": "No Phillies game today",
+    "dek": "Next up: Jesús Luzardo vs Sean Manaea · PHI vs NYM",
+    "summary": "Use the archive to catch up or check the next scheduled game window.",
+    "next_label": "Next Game",
     "next_value": "Jesús Luzardo vs Sean Manaea · PHI vs NYM · Sat, Jul 18 · 4:05 PM"
   },
   "game": {
-    "matchup": "Mets @ Phillies · Game 1 of 3",
-    "first_pitch": "6:10 PM",
-    "venue": "Citizens Bank Park, Philadelphia",
+    "matchup": "Schedule refresh required",
+    "first_pitch": "TBD",
+    "venue": "TBD",
     "starters": {
       "home": {
-        "name": "Aaron Nola",
+        "name": "TBD",
         "hand": "R"
       },
       "away": {
-        "name": "Christian Scott",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Aaron Nola",
+        "name": "TBD",
         "hand": "R"
       },
       "opp": {
-        "name": "Christian Scott",
+        "name": "TBD",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "NYM leads 1-0"
+      "label": "Series status pending"
     },
     "broadcast": {
-      "tv": "ESPN/ESPN App",
+      "tv": "TV TBD",
       "stream": "MLB.TV",
-      "radio": "94 WIP"
+      "radio": "Radio TBD"
     },
     "weather": {
-      "temp_f": 81,
-      "condition": "Overcast",
-      "wind": "3 mph · gusts 7",
-      "gusts_mph": 7
+      "temp_f": "",
+      "condition": "Weather unavailable",
+      "wind": "Weather unavailable",
+      "gusts_mph": ""
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-17T03:50:13.552Z",
+    "updated_at": "2026-07-17T05:03:41.276Z",
     "current_game_pk": 823441,
     "next_game_pk": 823439,
     "next_game": {
@@ -90,31 +90,19 @@
   },
   "ticker": [
     {
-      "text": "PHI 54-44",
+      "text": "PHI 0-0",
       "highlight": true
     },
     {
-      "text": "Mets @ Phillies · Game 1 of 3 · 6:10 PM",
+      "text": "Jesús Luzardo vs Sean Manaea · PHI vs NYM · Sat, Jul 18 · 4:05 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Christian Scott",
-      "highlight": true
-    },
-    {
-      "text": "ESPN/ESPN App · 94 WIP",
+      "text": "NBCSP",
       "highlight": false
     },
     {
-      "text": "81° · Overcast · gusts 7 mph",
-      "highlight": false
-    },
-    {
-      "text": "placed RHP Brad Keller on the 15-day injured list retroactive to July 13, 2026. Right elbow UCL tear.",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Seth Johnson from Lehigh Valley IronPigs.",
+      "text": "Off day",
       "highlight": false
     }
   ]
