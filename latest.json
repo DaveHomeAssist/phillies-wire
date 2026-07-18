@@ -4,7 +4,7 @@
   "edition_date": "2026-07-18",
   "volume": 1,
   "edition": 109,
-  "generated_at": "2026-07-18T21:17:18.168Z",
+  "generated_at": "2026-07-18T21:18:18.606Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,12 @@
         "name": "A.J. Ewing",
         "meta": "vs José Alvarado"
       },
-      "pitches": [],
+      "pitches": [
+        "F"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "outs": 2
       },
       "bases": {
@@ -86,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-18T21:17:18.953Z",
+    "updated_at": "2026-07-18T21:18:18.986Z",
     "current_game_pk": 823441,
     "next_game_pk": 823439,
     "next_game": {
