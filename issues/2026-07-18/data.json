@@ -5,14 +5,14 @@
     "edition": 109,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-18T21:18:18.606Z",
+    "generated_at": "2026-07-18T21:46:41.663Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 18, 2026, 5:18 PM ET",
+      "generated_at_et": "Jul 18, 2026, 5:46 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 6, NYM 1",
-    "dek": "Top 7th · 2 outs",
-    "summary": "A.J. Ewing is up against José Alvarado. Series: NYM leads 1-0.",
+    "dek": "Bottom 7th · 0 outs",
+    "summary": "Derek Hill is up against Kodai Senga. Series: NYM leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "91° · Overcast"
+        "value": "85° · Overcast"
       }
     ],
     "bullets": [
-      "A.J. Ewing at the plate",
-      "José Alvarado on the mound",
+      "Derek Hill at the plate",
+      "Kodai Senga on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 91,
+          "temp_f": 85,
           "condition": "Overcast",
-          "wind": "11 mph · gusts 20",
-          "gusts_mph": 20
+          "wind": "9 mph · gusts 17",
+          "gusts_mph": 17
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -375,18 +375,18 @@
         "linescore": {
           "currentInning": 7,
           "currentInningOrdinal": "7th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 1,
-              "hits": 2,
+              "hits": 3,
               "errors": 3
             },
             "home": {
               "runs": 6,
-              "hits": 9,
+              "hits": 10,
               "errors": 1
             }
           },
@@ -472,13 +472,13 @@
             {
               "num": 7,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -1302,10 +1302,52 @@
             "inning": 7,
             "half": "top",
             "team": "NYM",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "A.J. Ewing",
             "actor_id": 805999,
-            "detail": "Play",
+            "detail": "Mets challenged (play at 1st), call on the field was overturned: A.J. Ewing singles on a ground ball to second baseman Bryson Stott.",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:59",
+            "inning": 7,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Eric Wagaman",
+            "actor_id": 676572,
+            "detail": "Eric Wagaman flies out to right fielder Derek Hill.",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:60",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto singles on a sharp line drive to center fielder A.J. Ewing.",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:61",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Status Change - Delayed: Rain",
             "score_after": "PHI 6, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -1314,23 +1356,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "A.J. Ewing",
-            "meta": "vs José Alvarado"
+            "name": "Derek Hill",
+            "meta": "vs Kodai Senga"
           },
           "pitches": [
+            "S",
+            "F",
             "F"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 1,
-            "outs": 2
+            "balls": 3,
+            "strikes": 2,
+            "outs": 0
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
-          "status": "Top 7th"
+          "status": "Bottom 7th"
         }
       }
     },
@@ -1347,8 +1391,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T21:18:18.606Z",
-            "freshness_label": "As of Jul 18, 2026, 5:18 PM ET"
+            "last_confirmed": "2026-07-18T21:46:41.663Z",
+            "freshness_label": "As of Jul 18, 2026, 5:46 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1360,8 +1404,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T21:18:18.606Z",
-            "freshness_label": "As of Jul 18, 2026, 5:18 PM ET"
+            "last_confirmed": "2026-07-18T21:46:41.663Z",
+            "freshness_label": "As of Jul 18, 2026, 5:46 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1373,8 +1417,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T21:18:18.606Z",
-            "freshness_label": "As of Jul 18, 2026, 5:18 PM ET"
+            "last_confirmed": "2026-07-18T21:46:41.663Z",
+            "freshness_label": "As of Jul 18, 2026, 5:46 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1386,8 +1430,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T21:18:18.606Z",
-            "freshness_label": "As of Jul 18, 2026, 5:18 PM ET"
+            "last_confirmed": "2026-07-18T21:46:41.663Z",
+            "freshness_label": "As of Jul 18, 2026, 5:46 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1399,8 +1443,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T21:18:18.606Z",
-            "freshness_label": "As of Jul 18, 2026, 5:18 PM ET"
+            "last_confirmed": "2026-07-18T21:46:41.663Z",
+            "freshness_label": "As of Jul 18, 2026, 5:46 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
