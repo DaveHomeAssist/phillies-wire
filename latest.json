@@ -4,21 +4,21 @@
   "edition_date": "2026-07-18",
   "volume": 1,
   "edition": 109,
-  "generated_at": "2026-07-18T22:18:13.018Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-18T22:46:22.005Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 54,
+    "wins": 55,
     "losses": 44,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, NYM 1",
-    "dek": "Bottom 7th · 1 out",
-    "summary": "Bryson Stott is up against Xzavion Curry. Series: NYM leads 1-0.",
+    "headline": "PHI 6, NYM 1.",
+    "dek": "PHI 6, NYM 1 · Jesús Luzardo · 5.0 IP, 2 H, 1 ER, 7 K",
+    "summary": "PHI 6, NYM 1. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "NYM leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,59 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
-      "condition": "Thunderstorms",
-      "wind": "11 mph · gusts 24",
-      "gusts_mph": 24
+      "temp_f": 77,
+      "condition": "Mostly sunny",
+      "wind": "8 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Xzavion Curry"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-18T22:18:13.421Z",
-    "current_game_pk": 823441,
-    "next_game_pk": 823439,
+    "updated_at": "2026-07-18T22:46:22.540Z",
+    "current_game_pk": 823439,
+    "next_game_pk": 823436,
     "next_game": {
-      "game_pk": 823439,
-      "official_date": "2026-07-19",
-      "date_label": "Sun, Jul 19, 2026",
-      "time_label": "1:35 PM",
-      "title": "New York Mets at Phillies",
-      "matchup": "NYM at PHI",
+      "game_pk": 823436,
+      "official_date": "2026-07-20",
+      "date_label": "Mon, Jul 20, 2026",
+      "time_label": "7:10 PM",
+      "title": "Los Angeles Dodgers at Phillies",
+      "matchup": "LAD at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823441,
-      "official_date": "2026-07-18",
+      "game_pk": 823439,
+      "official_date": "2026-07-19",
       "title": "New York Mets at Phillies",
       "matchup": "NYM at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 54-44",
+      "text": "PHI 55-44",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Thunderstorms · gusts 24 mph",
+      "text": "77° · Mostly sunny · gusts 16 mph",
       "highlight": false
     }
   ]
