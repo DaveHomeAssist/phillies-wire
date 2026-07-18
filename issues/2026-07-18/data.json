@@ -5,14 +5,14 @@
     "edition": 109,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-18T22:17:03.801Z",
+    "generated_at": "2026-07-18T22:18:13.018Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 18, 2026, 6:17 PM ET",
+      "generated_at_et": "Jul 18, 2026, 6:18 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 6, NYM 1",
-    "dek": "Bottom 7th · 0 outs",
-    "summary": "Derek Hill is up against Xzavion Curry. Series: NYM leads 1-0.",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Bryson Stott is up against Xzavion Curry. Series: NYM leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Derek Hill at the plate",
+      "Bryson Stott at the plate",
       "Xzavion Curry on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -377,7 +377,7 @@
           "currentInningOrdinal": "7th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 1,
@@ -1344,10 +1344,24 @@
             "inning": 7,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Pitching Change: Xzavion Curry replaces Kodai Senga.",
+            "detail": "Derek Hill strikes out swinging.",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:62",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Play",
             "score_after": "PHI 6, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -1356,18 +1370,14 @@
         ],
         "situation": {
           "batter": {
-            "name": "Derek Hill",
+            "name": "Bryson Stott",
             "meta": "vs Xzavion Curry"
           },
-          "pitches": [
-            "S",
-            "F",
-            "F"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 3,
-            "strikes": 2,
-            "outs": 0
+            "balls": 0,
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
             "first": true,
@@ -1391,8 +1401,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T22:17:03.801Z",
-            "freshness_label": "As of Jul 18, 2026, 6:17 PM ET"
+            "last_confirmed": "2026-07-18T22:18:13.018Z",
+            "freshness_label": "As of Jul 18, 2026, 6:18 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1404,8 +1414,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T22:17:03.801Z",
-            "freshness_label": "As of Jul 18, 2026, 6:17 PM ET"
+            "last_confirmed": "2026-07-18T22:18:13.018Z",
+            "freshness_label": "As of Jul 18, 2026, 6:18 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1417,8 +1427,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T22:17:03.801Z",
-            "freshness_label": "As of Jul 18, 2026, 6:17 PM ET"
+            "last_confirmed": "2026-07-18T22:18:13.018Z",
+            "freshness_label": "As of Jul 18, 2026, 6:18 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1430,8 +1440,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T22:17:03.801Z",
-            "freshness_label": "As of Jul 18, 2026, 6:17 PM ET"
+            "last_confirmed": "2026-07-18T22:18:13.018Z",
+            "freshness_label": "As of Jul 18, 2026, 6:18 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1443,8 +1453,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T22:17:03.801Z",
-            "freshness_label": "As of Jul 18, 2026, 6:17 PM ET"
+            "last_confirmed": "2026-07-18T22:18:13.018Z",
+            "freshness_label": "As of Jul 18, 2026, 6:18 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

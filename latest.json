@@ -4,7 +4,7 @@
   "edition_date": "2026-07-18",
   "volume": 1,
   "edition": 109,
-  "generated_at": "2026-07-18T22:17:03.801Z",
+  "generated_at": "2026-07-18T22:18:13.018Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 6, NYM 1",
-    "dek": "Bottom 7th · 0 outs",
-    "summary": "Derek Hill is up against Xzavion Curry. Series: NYM leads 1-0.",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Bryson Stott is up against Xzavion Curry. Series: NYM leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
   },
@@ -64,18 +64,14 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Derek Hill",
+        "name": "Bryson Stott",
         "meta": "vs Xzavion Curry"
       },
-      "pitches": [
-        "S",
-        "F",
-        "F"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
         "first": true,
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-18T22:17:04.326Z",
+    "updated_at": "2026-07-18T22:18:13.421Z",
     "current_game_pk": 823441,
     "next_game_pk": 823439,
     "next_game": {
