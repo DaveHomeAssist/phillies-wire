@@ -4,7 +4,7 @@
   "edition_date": "2026-07-18",
   "volume": 1,
   "edition": 109,
-  "generated_at": "2026-07-18T19:25:47.212Z",
+  "generated_at": "2026-07-18T19:53:09.036Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, NYM 0",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Brandon Marsh is up against Sean Manaea. Series: NYM leads 1-0.",
+    "headline": "PHI 2, NYM 1",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Kyle Schwarber is up against Sean Manaea. Series: NYM leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
   },
@@ -55,34 +55,37 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 88,
+      "temp_f": 86,
       "condition": "Overcast",
-      "wind": "11 mph · gusts 21",
-      "gusts_mph": 21
+      "wind": "9 mph · gusts 23",
+      "gusts_mph": 23
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Sean Manaea"
+        "name": "Francisco Alvarez",
+        "meta": "vs Jesús Luzardo"
       },
       "pitches": [
-        "B",
         "S",
+        "S",
+        "B",
+        "F",
+        "F",
         "S"
       ],
       "count": {
         "balls": 1,
-        "strikes": 2,
+        "strikes": 3,
         "outs": 2
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -90,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-18T19:25:47.691Z",
+    "updated_at": "2026-07-18T19:53:09.584Z",
     "current_game_pk": 823441,
     "next_game_pk": 823439,
     "next_game": {
@@ -127,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "88° · Overcast · gusts 21 mph",
+      "text": "86° · Overcast · gusts 23 mph",
       "highlight": false
     }
   ]
