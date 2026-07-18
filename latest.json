@@ -4,7 +4,7 @@
   "edition_date": "2026-07-18",
   "volume": 1,
   "edition": 109,
-  "generated_at": "2026-07-18T18:48:30.676Z",
+  "generated_at": "2026-07-18T19:25:47.212Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYM 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Francisco Lindor is up against Jesús Luzardo. Series: NYM leads 1-0.",
+    "headline": "PHI 2, NYM 0",
+    "dek": "Bottom 1st · 2 outs",
+    "summary": "Brandon Marsh is up against Sean Manaea. Series: NYM leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
   },
@@ -55,30 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 89,
+      "temp_f": 88,
       "condition": "Overcast",
-      "wind": "13 mph · gusts 26",
-      "gusts_mph": 26
+      "wind": "11 mph · gusts 21",
+      "gusts_mph": 21
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Francisco Lindor",
-        "meta": "vs Jesús Luzardo"
+        "name": "Brandon Marsh",
+        "meta": "vs Sean Manaea"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 1,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-18T18:48:31.124Z",
+    "updated_at": "2026-07-18T19:25:47.691Z",
     "current_game_pk": 823441,
     "next_game_pk": 823439,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Overcast · gusts 26 mph",
+      "text": "88° · Overcast · gusts 21 mph",
       "highlight": false
     }
   ]
