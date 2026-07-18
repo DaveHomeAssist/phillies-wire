@@ -4,7 +4,7 @@
   "edition_date": "2026-07-18",
   "volume": 1,
   "edition": 109,
-  "generated_at": "2026-07-18T20:46:54.697Z",
+  "generated_at": "2026-07-18T21:17:18.168Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, NYM 1",
-    "dek": "Bottom 5th · 2 outs",
-    "summary": "J.T. Realmuto is up against Kodai Senga. Series: NYM leads 1-0.",
+    "headline": "PHI 6, NYM 1",
+    "dek": "Top 7th · 2 outs",
+    "summary": "A.J. Ewing is up against José Alvarado. Series: NYM leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
   },
@@ -55,34 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 92,
+      "temp_f": 91,
       "condition": "Overcast",
-      "wind": "12 mph · gusts 23",
-      "gusts_mph": 23
+      "wind": "11 mph · gusts 20",
+      "gusts_mph": 20
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Kodai Senga"
+        "name": "A.J. Ewing",
+        "meta": "vs José Alvarado"
       },
-      "pitches": [
-        "S",
-        "B",
-        "F"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "outs": 2
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-18T20:46:55.185Z",
+    "updated_at": "2026-07-18T21:17:18.953Z",
     "current_game_pk": 823441,
     "next_game_pk": 823439,
     "next_game": {
@@ -127,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "92° · Overcast · gusts 23 mph",
+      "text": "91° · Overcast · gusts 20 mph",
       "highlight": false
     }
   ]

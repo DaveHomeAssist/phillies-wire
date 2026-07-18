@@ -5,14 +5,14 @@
     "edition": 109,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-18T20:46:54.697Z",
+    "generated_at": "2026-07-18T21:17:18.168Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 18, 2026, 4:46 PM ET",
+      "generated_at_et": "Jul 18, 2026, 5:17 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 4, NYM 1",
-    "dek": "Bottom 5th · 2 outs",
-    "summary": "J.T. Realmuto is up against Kodai Senga. Series: NYM leads 1-0.",
+    "headline": "PHI 6, NYM 1",
+    "dek": "Top 7th · 2 outs",
+    "summary": "A.J. Ewing is up against José Alvarado. Series: NYM leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "92° · Overcast"
+        "value": "91° · Overcast"
       }
     ],
     "bullets": [
-      "J.T. Realmuto at the plate",
-      "Kodai Senga on the mound",
+      "A.J. Ewing at the plate",
+      "José Alvarado on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -119,7 +119,7 @@
             {
               "slot": 6,
               "name": "Brandon Marsh",
-              "position": "RF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -131,7 +131,7 @@
             {
               "slot": 8,
               "name": "Derek Hill",
-              "position": "CF",
+              "position": "RF",
               "bats": "R"
             },
             {
@@ -231,7 +231,7 @@
             {
               "slot": 6,
               "name": "Brandon Marsh",
-              "position": "RF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -243,7 +243,7 @@
             {
               "slot": 8,
               "name": "Derek Hill",
-              "position": "CF",
+              "position": "RF",
               "bats": "R"
             },
             {
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 92,
+          "temp_f": 91,
           "condition": "Overcast",
-          "wind": "12 mph · gusts 23",
-          "gusts_mph": 23
+          "wind": "11 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,20 +373,20 @@
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "Bottom",
-          "isTopInning": false,
+          "currentInning": 7,
+          "currentInningOrdinal": "7th",
+          "inningState": "Top",
+          "isTopInning": true,
           "outs": 2,
           "teams": {
             "away": {
               "runs": 1,
               "hits": 2,
-              "errors": 2
+              "errors": 3
             },
             "home": {
-              "runs": 4,
-              "hits": 7,
+              "runs": 6,
+              "hits": 9,
               "errors": 1
             }
           },
@@ -453,6 +453,32 @@
               "home": {
                 "runs": 2,
                 "hits": 3,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 1
+              },
+              "home": {
+                "runs": 2,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -1080,11 +1106,207 @@
             "inning": 5,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "Play",
+            "detail": "J.T. Realmuto walks. Alec Bohm to 3rd. Edmundo Sosa to 2nd.",
             "score_after": "PHI 4, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:45",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill strikes out swinging.",
+            "score_after": "PHI 4, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:46",
+            "inning": 6,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Bo Bichette",
+            "actor_id": 666182,
+            "detail": "Bo Bichette grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
+            "score_after": "PHI 4, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:47",
+            "inning": 6,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Francisco Alvarez",
+            "actor_id": 682626,
+            "detail": "Francisco Alvarez flies out to center fielder Derek Hill.",
+            "score_after": "PHI 4, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:48",
+            "inning": 6,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "strikeout",
+            "actor": "Carson Benge",
+            "actor_id": 701807,
+            "detail": "Carson Benge strikes out swinging.",
+            "score_after": "PHI 4, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:49",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott triples (5) on a sharp line drive to center fielder A.J. Ewing.",
+            "score_after": "PHI 4, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823441:50",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner walks.",
+            "score_after": "PHI 4, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:51",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber walks.",
+            "score_after": "PHI 4, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:52",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper singles on a sharp line drive to right fielder Carson Benge. Bryson Stott scores. Trea Turner scores. Kyle Schwarber t…",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823441:53",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out to center fielder A.J. Ewing. Kyle Schwarber to 3rd. Throwing error by shortstop Francisco Lindor.",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:54",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa grounds out, third baseman Bo Bichette to first baseman Eric Wagaman.",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:55",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Francisco Alvarez challenged (pitch result), call on the field was overturned: Brandon Marsh called out on strikes.",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:56",
+            "inning": 7,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "strikeout",
+            "actor": "Marcus Semien",
+            "actor_id": 543760,
+            "detail": "Marcus Semien strikes out swinging.",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:57",
+            "inning": 7,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Tyrone Taylor",
+            "actor_id": 621438,
+            "detail": "Tyrone Taylor grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
+            "score_after": "PHI 6, NYM 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823441:58",
+            "inning": 7,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "other",
+            "actor": "A.J. Ewing",
+            "actor_id": 805999,
+            "detail": "Play",
+            "score_after": "PHI 6, NYM 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1092,25 +1314,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "J.T. Realmuto",
-            "meta": "vs Kodai Senga"
+            "name": "A.J. Ewing",
+            "meta": "vs José Alvarado"
           },
-          "pitches": [
-            "S",
-            "B",
-            "F"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 2,
-            "strikes": 2,
+            "balls": 0,
+            "strikes": 0,
             "outs": 2
           },
           "bases": {
-            "first": true,
-            "second": true,
+            "first": false,
+            "second": false,
             "third": false
           },
-          "status": "Bottom 5th"
+          "status": "Top 7th"
         }
       }
     },
@@ -1127,8 +1345,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T20:46:54.697Z",
-            "freshness_label": "As of Jul 18, 2026, 4:46 PM ET"
+            "last_confirmed": "2026-07-18T21:17:18.168Z",
+            "freshness_label": "As of Jul 18, 2026, 5:17 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1140,8 +1358,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T20:46:54.697Z",
-            "freshness_label": "As of Jul 18, 2026, 4:46 PM ET"
+            "last_confirmed": "2026-07-18T21:17:18.168Z",
+            "freshness_label": "As of Jul 18, 2026, 5:17 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1153,8 +1371,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T20:46:54.697Z",
-            "freshness_label": "As of Jul 18, 2026, 4:46 PM ET"
+            "last_confirmed": "2026-07-18T21:17:18.168Z",
+            "freshness_label": "As of Jul 18, 2026, 5:17 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1166,8 +1384,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T20:46:54.697Z",
-            "freshness_label": "As of Jul 18, 2026, 4:46 PM ET"
+            "last_confirmed": "2026-07-18T21:17:18.168Z",
+            "freshness_label": "As of Jul 18, 2026, 5:17 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1179,8 +1397,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-18T20:46:54.697Z",
-            "freshness_label": "As of Jul 18, 2026, 4:46 PM ET"
+            "last_confirmed": "2026-07-18T21:17:18.168Z",
+            "freshness_label": "As of Jul 18, 2026, 5:17 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
