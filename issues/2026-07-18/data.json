@@ -1,0 +1,478 @@
+{
+  "schema_version": "1.4.0",
+  "meta": {
+    "date": "2026-07-18",
+    "edition": 109,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-07-18T04:15:40.934Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Jul 18, 2026, 12:15 AM ET",
+      "source_notes": [
+        "Farm system notes hidden because the editorial baseline is stale."
+      ]
+    }
+  },
+  "record": {
+    "wins": 54,
+    "losses": 44,
+    "streak": "L1",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Mets @ Phillies · Game 2 of 3",
+    "dek": "Jesús Luzardo vs Sean Manaea",
+    "summary": "Jesús Luzardo vs Sean Manaea · Mets @ Phillies · Game 2 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "4:05 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "Citizens Bank Park, Philadelphia"
+      },
+      {
+        "label": "Watch",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "74° · Clear · 4 mph · gusts 8",
+      "Regular Season"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "4:05 PM",
+        "starters": {
+          "home": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "away": {
+            "team": "NYM",
+            "name": "Sean Manaea",
+            "hand": "L"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "team": "NYM",
+            "name": "Sean Manaea",
+            "hand": "L"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Mets @ Phillies · Game 2 of 3",
+        "first_pitch": "4:05 PM",
+        "venue": "Citizens Bank Park, Philadelphia",
+        "starters": {
+          "home": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "away": {
+            "name": "Sean Manaea",
+            "hand": "L"
+          },
+          "phi": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "name": "Sean Manaea",
+            "hand": "L"
+          }
+        },
+        "series": {
+          "home_wins": 0,
+          "away_wins": 0,
+          "label": "Regular Season"
+        },
+        "broadcast": {
+          "tv": "NBCSP",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 74,
+          "condition": "Clear",
+          "wind": "4 mph · gusts 8",
+          "gusts_mph": 8
+        },
+        "giveaway": "",
+        "transit": "Broad Street Line to NRG Station",
+        "venue_is_home": true,
+        "matchup_tape": {
+          "home": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L",
+            "era": "3.51",
+            "record": "8-4",
+            "whip": "1.22"
+          },
+          "away": {
+            "team": "NYM",
+            "name": "Sean Manaea",
+            "hand": "L",
+            "era": "4.56",
+            "record": "2-4",
+            "whip": "1.32"
+          }
+        },
+        "linescore": {
+          "currentInning": null,
+          "currentInningOrdinal": "",
+          "inningState": "",
+          "isTopInning": false,
+          "outs": null,
+          "teams": {
+            "away": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            },
+            "home": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            }
+          },
+          "innings": []
+        },
+        "plays": []
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-18T04:15:40.934Z",
+            "freshness_label": "As of Jul 18, 2026, 12:15 AM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-18T04:15:40.934Z",
+            "freshness_label": "As of Jul 18, 2026, 12:15 AM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-18T04:15:40.934Z",
+            "freshness_label": "As of Jul 18, 2026, 12:15 AM ET"
+          },
+          {
+            "name": "Tanner Banks",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left forearm strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-18T04:15:40.934Z",
+            "freshness_label": "As of Jul 18, 2026, 12:15 AM ET"
+          },
+          {
+            "name": "Brad Keller",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right elbow UCL tear",
+            "status_note": "",
+            "retroactive_to": "2026-07-13",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-18T04:15:40.934Z",
+            "freshness_label": "As of Jul 18, 2026, 12:15 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Tomorrow",
+    "matchup": "Alan Rangel vs Nolan McLean · PHI vs NYM",
+    "date": "Sun, Jul 19",
+    "time": "1:35 PM",
+    "broadcast": "NBCSP",
+    "venue": "Citizens Bank Park"
+  }
+}
