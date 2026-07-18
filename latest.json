@@ -4,9 +4,9 @@
   "edition_date": "2026-07-18",
   "volume": 1,
   "edition": 109,
-  "generated_at": "2026-07-18T18:20:32.132Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-18T18:47:42.378Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 54,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Mets @ Phillies · Game 2 of 3",
-    "dek": "Jesús Luzardo vs Sean Manaea",
-    "summary": "Jesús Luzardo vs Sean Manaea · Mets @ Phillies · Game 2 of 3",
+    "headline": "PHI 0, NYM 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Francisco Lindor is up against Jesús Luzardo. Series: NYM leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
   },
@@ -56,20 +56,37 @@
     },
     "weather": {
       "temp_f": 89,
-      "condition": "Mostly sunny",
-      "wind": "13 mph · gusts 28",
-      "gusts_mph": 28
+      "condition": "Overcast",
+      "wind": "13 mph · gusts 26",
+      "gusts_mph": 26
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Francisco Lindor",
+        "meta": "vs Jesús Luzardo"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-18T18:20:33.043Z",
+    "updated_at": "2026-07-18T18:47:42.858Z",
     "current_game_pk": 823441,
     "next_game_pk": 823439,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Mostly sunny · gusts 28 mph",
+      "text": "89° · Overcast · gusts 26 mph",
       "highlight": false
     }
   ]
