@@ -4,7 +4,7 @@
   "edition_date": "2026-07-18",
   "volume": 1,
   "edition": 109,
-  "generated_at": "2026-07-18T19:53:09.036Z",
+  "generated_at": "2026-07-18T20:16:24.361Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, NYM 1",
-    "dek": "Middle 3rd · 3 outs",
-    "summary": "Kyle Schwarber is up against Sean Manaea. Series: NYM leads 1-0.",
+    "dek": "Bottom 4th · 1 out",
+    "summary": "Derek Hill is up against Sean Manaea. Series: NYM leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
   },
@@ -55,37 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 86,
-      "condition": "Overcast",
-      "wind": "9 mph · gusts 23",
-      "gusts_mph": 23
+      "temp_f": 89,
+      "condition": "Mostly sunny",
+      "wind": "14 mph · gusts 22",
+      "gusts_mph": 22
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Francisco Alvarez",
-        "meta": "vs Jesús Luzardo"
+        "name": "Derek Hill",
+        "meta": "vs Sean Manaea"
       },
       "pitches": [
         "S",
-        "S",
         "B",
-        "F",
-        "F",
-        "S"
+        "B",
+        "F"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 3,
-        "outs": 2
+        "balls": 2,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Top 3rd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -93,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-18T19:53:09.584Z",
+    "updated_at": "2026-07-18T20:16:24.897Z",
     "current_game_pk": 823441,
     "next_game_pk": 823439,
     "next_game": {
@@ -130,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "86° · Overcast · gusts 23 mph",
+      "text": "89° · Mostly sunny · gusts 22 mph",
       "highlight": false
     }
   ]
