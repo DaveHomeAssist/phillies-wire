@@ -4,7 +4,7 @@
   "edition_date": "2026-07-18",
   "volume": 1,
   "edition": 109,
-  "generated_at": "2026-07-18T20:17:35.474Z",
+  "generated_at": "2026-07-18T20:46:04.699Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, NYM 1",
-    "dek": "Bottom 4th · 1 out",
-    "summary": "Derek Hill is up against Sean Manaea. Series: NYM leads 1-0.",
+    "headline": "PHI 4, NYM 1",
+    "dek": "Bottom 5th · 2 outs",
+    "summary": "J.T. Realmuto is up against Kodai Senga. Series: NYM leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
   },
@@ -55,36 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 89,
-      "condition": "Mostly sunny",
-      "wind": "14 mph · gusts 22",
-      "gusts_mph": 22
+      "temp_f": 92,
+      "condition": "Overcast",
+      "wind": "12 mph · gusts 23",
+      "gusts_mph": 23
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Derek Hill",
-        "meta": "vs Sean Manaea"
+        "name": "J.T. Realmuto",
+        "meta": "vs Kodai Senga"
       },
       "pitches": [
-        "S",
-        "B",
-        "B",
-        "F",
-        "F"
+        "S"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 1
+        "balls": 1,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
         "first": true,
-        "second": false,
-        "third": true
+        "second": true,
+        "third": false
       },
-      "status": "Bottom 4th"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -92,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-18T20:17:35.857Z",
+    "updated_at": "2026-07-18T20:46:05.267Z",
     "current_game_pk": 823441,
     "next_game_pk": 823439,
     "next_game": {
@@ -129,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Mostly sunny · gusts 22 mph",
+      "text": "92° · Overcast · gusts 23 mph",
       "highlight": false
     }
   ]
