@@ -5,14 +5,14 @@
     "edition": 110,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-19T18:20:40.674Z",
+    "generated_at": "2026-07-19T18:48:00.461Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 19, 2026, 2:20 PM ET",
+      "generated_at_et": "Jul 19, 2026, 2:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, NYM 5",
-    "dek": "End 2nd · 3 outs",
-    "summary": "Marcus Semien is up against Alan Rangel. Series: Series tied 1-1.",
+    "dek": "Bottom 4th · 2 outs",
+    "summary": "Brandon Marsh is up against Nolan McLean. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Clear"
+        "value": "79° · Clear"
       }
     ],
     "bullets": [
-      "Marcus Semien at the plate",
-      "Alan Rangel on the mound",
+      "Brandon Marsh at the plate",
+      "Nolan McLean on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
+          "temp_f": 79,
           "condition": "Clear",
-          "wind": "7 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "7 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,29 +359,29 @@
             "team": "PHI",
             "name": "Alan Rangel",
             "hand": "R",
-            "era": "5.91",
+            "era": "5.40",
             "record": "0-2",
-            "whip": "1.64"
+            "whip": "1.59"
           },
           "away": {
             "team": "NYM",
             "name": "Nolan McLean",
             "hand": "R",
-            "era": "3.48",
+            "era": "3.42",
             "record": "6-6",
             "whip": "1.10"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "End",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
+          "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 3,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 5,
-              "hits": 6,
+              "hits": 7,
               "errors": 0
             },
             "home": {
@@ -414,6 +414,32 @@
               "home": {
                 "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -727,28 +753,226 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823439:22",
+            "inning": 3,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "strikeout",
+            "actor": "Marcus Semien",
+            "actor_id": 543760,
+            "detail": "Marcus Semien strikes out swinging.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:23",
+            "inning": 3,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Brett Baty",
+            "actor_id": 683146,
+            "detail": "Brett Baty pops out to third baseman Alec Bohm in foul territory.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:24",
+            "inning": 3,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Luis Torrens",
+            "actor_id": 620443,
+            "detail": "Luis Torrens flies out to shortstop Trea Turner.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:25",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. flies out to left fielder Carson Benge.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:26",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford strikes out on a foul tip.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:27",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner strikes out swinging.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:28",
+            "inning": 4,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "strikeout",
+            "actor": "A.J. Ewing",
+            "actor_id": 805999,
+            "detail": "A.J. Ewing strikes out swinging.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:29",
+            "inning": 4,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Juan Soto",
+            "actor_id": 665742,
+            "detail": "Juan Soto pops out to second baseman Bryson Stott.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:30",
+            "inning": 4,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "single",
+            "actor": "Bo Bichette",
+            "actor_id": 666182,
+            "detail": "Bo Bichette singles on a line drive to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:31",
+            "inning": 4,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Francisco Lindor",
+            "actor_id": 596019,
+            "detail": "Francisco Lindor walks. Bo Bichette to 2nd.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:32",
+            "inning": 4,
+            "half": "top",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Carson Benge",
+            "actor_id": 701807,
+            "detail": "Carson Benge grounds out to first baseman Bryce Harper.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:34",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper flies out to center fielder A.J. Ewing.",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:35",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Play",
+            "score_after": "PHI 0, NYM 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Marcus Semien",
-            "meta": "vs Alan Rangel"
+            "name": "Brandon Marsh",
+            "meta": "vs Nolan McLean"
           },
           "pitches": [
             "S",
-            "X"
+            "F",
+            "B",
+            "B"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 1,
-            "outs": 3
+            "balls": 2,
+            "strikes": 2,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 2nd"
+          "status": "Bottom 4th"
         }
       }
     },
@@ -765,8 +989,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:20:40.674Z",
-            "freshness_label": "As of Jul 19, 2026, 2:20 PM ET"
+            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -778,8 +1002,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:20:40.674Z",
-            "freshness_label": "As of Jul 19, 2026, 2:20 PM ET"
+            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -791,8 +1015,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:20:40.674Z",
-            "freshness_label": "As of Jul 19, 2026, 2:20 PM ET"
+            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -804,8 +1028,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:20:40.674Z",
-            "freshness_label": "As of Jul 19, 2026, 2:20 PM ET"
+            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -817,8 +1041,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:20:40.674Z",
-            "freshness_label": "As of Jul 19, 2026, 2:20 PM ET"
+            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

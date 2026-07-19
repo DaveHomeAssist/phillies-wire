@@ -4,7 +4,7 @@
   "edition_date": "2026-07-19",
   "volume": 1,
   "edition": 110,
-  "generated_at": "2026-07-19T18:20:40.674Z",
+  "generated_at": "2026-07-19T18:48:00.461Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, NYM 5",
-    "dek": "End 2nd · 3 outs",
-    "summary": "Marcus Semien is up against Alan Rangel. Series: Series tied 1-1.",
+    "dek": "Bottom 4th · 2 outs",
+    "summary": "Brandon Marsh is up against Nolan McLean. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Emmet Sheehan · PHI vs LAD · Mon, Jul 20 · 7:10 PM"
   },
@@ -55,33 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "7 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "7 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Marcus Semien",
-        "meta": "vs Alan Rangel"
+        "name": "Brandon Marsh",
+        "meta": "vs Nolan McLean"
       },
       "pitches": [
         "S",
-        "X"
+        "F",
+        "B",
+        "B"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 1,
-        "outs": 3
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 2nd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-19T18:20:41.207Z",
+    "updated_at": "2026-07-19T18:48:01.139Z",
     "current_game_pk": 823439,
     "next_game_pk": 823436,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 11 mph",
+      "text": "79° · Clear · gusts 12 mph",
       "highlight": false
     }
   ]
