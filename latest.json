@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-18",
+  "edition_date": "2026-07-19",
   "volume": 1,
-  "edition": 109,
-  "generated_at": "2026-07-19T03:12:40.501Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 110,
+  "generated_at": "2026-07-19T04:25:06.256Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 55,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, NYM 1.",
-    "dek": "PHI 6, NYM 1 · Jesús Luzardo · 5.0 IP, 2 H, 1 ER, 7 K",
-    "summary": "PHI 6, NYM 1. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
+    "headline": "Mets @ Phillies · Game 3 of 3",
+    "dek": "Alan Rangel vs Nolan McLean",
+    "summary": "Alan Rangel vs Nolan McLean · Mets @ Phillies · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Alan Rangel vs Nolan McLean · PHI vs NYM · Sun, Jul 19 · 1:35 PM"
+    "next_value": "PHI vs LAD · Mon, Jul 20 · 7:10 PM"
   },
   "game": {
-    "matchup": "Mets @ Phillies · Game 2 of 3",
-    "first_pitch": "3:05 PM",
+    "matchup": "Mets @ Phillies · Game 3 of 3",
+    "first_pitch": "1:35 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Alan Rangel",
+        "hand": "R"
       },
       "away": {
-        "name": "Sean Manaea",
-        "hand": "L"
+        "name": "Nolan McLean",
+        "hand": "R"
       },
       "phi": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Alan Rangel",
+        "hand": "R"
       },
       "opp": {
-        "name": "Sean Manaea",
-        "hand": "L"
+        "name": "Nolan McLean",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 75,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 16",
-      "gusts_mph": 16
+      "wind": "8 mph · gusts 20",
+      "gusts_mph": 20
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-19T03:12:41.078Z",
+    "updated_at": "2026-07-19T04:25:07.050Z",
     "current_game_pk": 823439,
     "next_game_pk": 823436,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Mets @ Phillies · Game 2 of 3 · 3:05 PM",
+      "text": "Mets @ Phillies · Game 3 of 3 · 1:35 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Sean Manaea",
+      "text": "Alan Rangel vs Nolan McLean",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 16 mph",
+      "text": "75° · Overcast · gusts 20 mph",
       "highlight": false
     }
   ]
