@@ -4,7 +4,7 @@
   "edition_date": "2026-07-19",
   "volume": 1,
   "edition": 110,
-  "generated_at": "2026-07-19T18:19:01.805Z",
+  "generated_at": "2026-07-19T18:20:40.674Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, NYM 5",
-    "dek": "Bottom 2nd · 1 out",
-    "summary": "Bryson Stott is up against Nolan McLean. Series: Series tied 1-1.",
+    "dek": "End 2nd · 3 outs",
+    "summary": "Marcus Semien is up against Alan Rangel. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Emmet Sheehan · PHI vs LAD · Mon, Jul 20 · 7:10 PM"
   },
@@ -64,27 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Nolan McLean"
+        "name": "Marcus Semien",
+        "meta": "vs Alan Rangel"
       },
       "pitches": [
         "S",
-        "B",
-        "B",
-        "B",
-        "B"
+        "X"
       ],
       "count": {
-        "balls": 4,
+        "balls": 0,
         "strikes": 1,
-        "outs": 1
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "End 2nd"
     },
     "recap_line": null
   },
@@ -92,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-19T18:19:02.632Z",
+    "updated_at": "2026-07-19T18:20:41.207Z",
     "current_game_pk": 823439,
     "next_game_pk": 823436,
     "next_game": {
