@@ -5,14 +5,14 @@
     "edition": 110,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-19T19:25:35.881Z",
+    "generated_at": "2026-07-19T19:26:26.508Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 19, 2026, 3:25 PM ET",
+      "generated_at_et": "Jul 19, 2026, 3:26 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, NYM 6",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Gabriel Rincones Jr. is up against Nolan McLean. Series: Series tied 1-1.",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Justin Crawford is up against Nolan McLean. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Gabriel Rincones Jr. at the plate",
+      "Justin Crawford at the plate",
       "Nolan McLean on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -369,7 +369,7 @@
             "hand": "R",
             "era": "3.36",
             "record": "6-6",
-            "whip": "1.09"
+            "whip": "1.08"
           }
         },
         "linescore": {
@@ -377,7 +377,7 @@
           "currentInningOrdinal": "6th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 6,
@@ -1163,9 +1163,23 @@
             "inning": 6,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. called out on strikes.",
+            "score_after": "PHI 0, NYM 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823439:50",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
             "detail": "Play",
             "score_after": "PHI 0, NYM 6",
             "runs": 0,
@@ -1175,17 +1189,16 @@
         ],
         "situation": {
           "batter": {
-            "name": "Gabriel Rincones Jr.",
+            "name": "Justin Crawford",
             "meta": "vs Nolan McLean"
           },
           "pitches": [
-            "S",
             "F"
           ],
           "count": {
             "balls": 0,
-            "strikes": 2,
-            "outs": 0
+            "strikes": 1,
+            "outs": 1
           },
           "bases": {
             "first": false,
@@ -1209,8 +1222,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T19:25:35.881Z",
-            "freshness_label": "As of Jul 19, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-07-19T19:26:26.508Z",
+            "freshness_label": "As of Jul 19, 2026, 3:26 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1222,8 +1235,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T19:25:35.881Z",
-            "freshness_label": "As of Jul 19, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-07-19T19:26:26.508Z",
+            "freshness_label": "As of Jul 19, 2026, 3:26 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1235,8 +1248,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T19:25:35.881Z",
-            "freshness_label": "As of Jul 19, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-07-19T19:26:26.508Z",
+            "freshness_label": "As of Jul 19, 2026, 3:26 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1248,8 +1261,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T19:25:35.881Z",
-            "freshness_label": "As of Jul 19, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-07-19T19:26:26.508Z",
+            "freshness_label": "As of Jul 19, 2026, 3:26 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1261,8 +1274,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T19:25:35.881Z",
-            "freshness_label": "As of Jul 19, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-07-19T19:26:26.508Z",
+            "freshness_label": "As of Jul 19, 2026, 3:26 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
