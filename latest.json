@@ -4,7 +4,7 @@
   "edition_date": "2026-07-19",
   "volume": 1,
   "edition": 110,
-  "generated_at": "2026-07-19T18:48:57.228Z",
+  "generated_at": "2026-07-19T19:25:35.881Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYM 5",
-    "dek": "Bottom 4th · 2 outs",
-    "summary": "Brandon Marsh is up against Nolan McLean. Series: Series tied 1-1.",
+    "headline": "PHI 0, NYM 6",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Gabriel Rincones Jr. is up against Nolan McLean. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Emmet Sheehan · PHI vs LAD · Mon, Jul 20 · 7:10 PM"
   },
@@ -55,37 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 81,
       "condition": "Clear",
-      "wind": "7 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "7 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
+        "name": "Gabriel Rincones Jr.",
         "meta": "vs Nolan McLean"
       },
       "pitches": [
         "S",
-        "F",
-        "B",
-        "B",
-        "F",
-        "B"
+        "F"
       ],
       "count": {
-        "balls": 3,
+        "balls": 0,
         "strikes": 2,
-        "outs": 2
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 4th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -93,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-19T18:48:57.628Z",
+    "updated_at": "2026-07-19T19:25:36.501Z",
     "current_game_pk": 823439,
     "next_game_pk": 823436,
     "next_game": {
@@ -130,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 12 mph",
+      "text": "81° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
