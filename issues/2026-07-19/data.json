@@ -5,7 +5,7 @@
     "edition": 110,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-19T18:48:00.461Z",
+    "generated_at": "2026-07-19T18:48:57.228Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -941,10 +941,10 @@
             "inning": 4,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Play",
+            "detail": "Batter Timeout.",
             "score_after": "PHI 0, NYM 5",
             "runs": 0,
             "is_scoring": false,
@@ -960,10 +960,12 @@
             "S",
             "F",
             "B",
+            "B",
+            "F",
             "B"
           ],
           "count": {
-            "balls": 2,
+            "balls": 3,
             "strikes": 2,
             "outs": 2
           },
@@ -989,7 +991,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "last_confirmed": "2026-07-19T18:48:57.228Z",
             "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           },
           {
@@ -1002,7 +1004,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "last_confirmed": "2026-07-19T18:48:57.228Z",
             "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           },
           {
@@ -1015,7 +1017,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "last_confirmed": "2026-07-19T18:48:57.228Z",
             "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           },
           {
@@ -1028,7 +1030,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "last_confirmed": "2026-07-19T18:48:57.228Z",
             "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           },
           {
@@ -1041,7 +1043,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-19T18:48:00.461Z",
+            "last_confirmed": "2026-07-19T18:48:57.228Z",
             "freshness_label": "As of Jul 19, 2026, 2:48 PM ET"
           }
         ],
