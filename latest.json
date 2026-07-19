@@ -4,7 +4,7 @@
   "edition_date": "2026-07-19",
   "volume": 1,
   "edition": 110,
-  "generated_at": "2026-07-19T17:48:45.406Z",
+  "generated_at": "2026-07-19T18:19:01.805Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYM 2",
-    "dek": "Top 1st · 2 outs",
-    "summary": "Marcus Semien is up against Alan Rangel. Series: Series tied 1-1.",
+    "headline": "PHI 0, NYM 5",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Bryson Stott is up against Nolan McLean. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Emmet Sheehan · PHI vs LAD · Mon, Jul 20 · 7:10 PM"
   },
@@ -55,34 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 80,
       "condition": "Clear",
-      "wind": "7 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "7 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Marcus Semien",
-        "meta": "vs Alan Rangel"
+        "name": "Bryson Stott",
+        "meta": "vs Nolan McLean"
       },
       "pitches": [
         "S",
-        "S",
-        "F"
+        "B",
+        "B",
+        "B",
+        "B"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 2
+        "balls": 4,
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
         "first": true,
         "second": true,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -90,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-19T17:48:45.785Z",
+    "updated_at": "2026-07-19T18:19:02.632Z",
     "current_game_pk": 823439,
     "next_game_pk": 823436,
     "next_game": {
@@ -127,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 13 mph",
+      "text": "80° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
