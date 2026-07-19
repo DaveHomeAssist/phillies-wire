@@ -4,7 +4,7 @@
   "edition_date": "2026-07-19",
   "volume": 1,
   "edition": 110,
-  "generated_at": "2026-07-19T17:47:44.241Z",
+  "generated_at": "2026-07-19T17:48:45.406Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -18,7 +18,7 @@
   "hero": {
     "headline": "PHI 0, NYM 2",
     "dek": "Top 1st · 2 outs",
-    "summary": "Jared Young is up against Alan Rangel. Series: Series tied 1-1.",
+    "summary": "Marcus Semien is up against Alan Rangel. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Emmet Sheehan · PHI vs LAD · Mon, Jul 20 · 7:10 PM"
   },
@@ -64,15 +64,16 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jared Young",
+        "name": "Marcus Semien",
         "meta": "vs Alan Rangel"
       },
       "pitches": [
         "S",
-        "S"
+        "S",
+        "F"
       ],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 2,
         "outs": 2
       },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-19T17:47:44.718Z",
+    "updated_at": "2026-07-19T17:48:45.785Z",
     "current_game_pk": 823439,
     "next_game_pk": 823436,
     "next_game": {
