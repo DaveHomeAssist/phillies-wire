@@ -4,9 +4,9 @@
   "edition_date": "2026-07-19",
   "volume": 1,
   "edition": 110,
-  "generated_at": "2026-07-19T16:48:15.859Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-19T17:22:14.276Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 55,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Mets @ Phillies · Game 3 of 3",
-    "dek": "Alan Rangel vs Nolan McLean",
-    "summary": "Alan Rangel vs Nolan McLean · Mets @ Phillies · Game 3 of 3",
+    "headline": "PHI 0, NYM 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "A.J. Ewing is up against Alan Rangel. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Emmet Sheehan · PHI vs LAD · Mon, Jul 20 · 7:10 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "7 mph · gusts 16",
-      "gusts_mph": 16
+      "wind": "6 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "A.J. Ewing",
+        "meta": "vs Alan Rangel"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-19T16:48:16.473Z",
+    "updated_at": "2026-07-19T17:22:15.177Z",
     "current_game_pk": 823439,
     "next_game_pk": 823436,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 16 mph",
+      "text": "79° · Clear · gusts 13 mph",
       "highlight": false
     }
   ]
