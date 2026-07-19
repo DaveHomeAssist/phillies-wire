@@ -4,7 +4,7 @@
   "edition_date": "2026-07-19",
   "volume": 1,
   "edition": 110,
-  "generated_at": "2026-07-19T19:26:26.508Z",
+  "generated_at": "2026-07-19T19:53:53.750Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYM 6",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Justin Crawford is up against Nolan McLean. Series: Series tied 1-1.",
+    "headline": "PHI 1, NYM 6",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Alec Bohm is up against A.J. Minter. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Emmet Sheehan · PHI vs LAD · Mon, Jul 20 · 7:10 PM"
   },
@@ -57,22 +57,23 @@
     "weather": {
       "temp_f": 81,
       "condition": "Clear",
-      "wind": "7 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "8 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Justin Crawford",
-        "meta": "vs Nolan McLean"
+        "name": "Alec Bohm",
+        "meta": "vs A.J. Minter"
       },
       "pitches": [
-        "F"
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 0,
         "outs": 1
       },
       "bases": {
@@ -80,7 +81,7 @@
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -88,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-19T19:26:27.106Z",
+    "updated_at": "2026-07-19T19:53:54.279Z",
     "current_game_pk": 823439,
     "next_game_pk": 823436,
     "next_game": {
@@ -125,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Clear · gusts 11 mph",
+      "text": "81° · Clear · gusts 12 mph",
       "highlight": false
     }
   ]
