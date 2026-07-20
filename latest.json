@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-19",
+  "edition_date": "2026-07-20",
   "volume": 1,
-  "edition": 110,
-  "generated_at": "2026-07-20T03:24:05.235Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 111,
+  "generated_at": "2026-07-20T04:43:52.515Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 55,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, NYM 6.",
-    "dek": "NYM 6, PHI 1 · Nolan McLean · 6.0 IP, 2 H, 0 ER, 10 K",
-    "summary": "PHI 1, NYM 6. Final at Citizens Bank Park, Philadelphia. NYM wins 2-1.",
+    "headline": "Dodgers @ Phillies · Game 1 of 3",
+    "dek": "Cristopher Sánchez vs Emmet Sheehan",
+    "summary": "Cristopher Sánchez vs Emmet Sheehan · Dodgers @ Phillies · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Emmet Sheehan · PHI vs LAD · Mon, Jul 20 · 7:10 PM"
+    "next_value": "Zack Wheeler vs Eric Lauer · PHI vs LAD · Tue, Jul 21 · 6:40 PM"
   },
   "game": {
-    "matchup": "Mets @ Phillies · Game 3 of 3",
-    "first_pitch": "1:35 PM",
+    "matchup": "Dodgers @ Phillies · Game 1 of 3",
+    "first_pitch": "7:10 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Alan Rangel",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "away": {
-        "name": "Nolan McLean",
+        "name": "Emmet Sheehan",
         "hand": "R"
       },
       "phi": {
-        "name": "Alan Rangel",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "opp": {
-        "name": "Nolan McLean",
+        "name": "Emmet Sheehan",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "NYM wins 2-1"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "ESPN/ESPN App",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 70,
+      "temp_f": 68,
       "condition": "Clear",
-      "wind": "1 mph · gusts 1",
-      "gusts_mph": 1
+      "wind": "4 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-20T03:24:05.924Z",
+    "updated_at": "2026-07-20T04:43:53.311Z",
     "current_game_pk": 823436,
     "next_game_pk": 823437,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Mets @ Phillies · Game 3 of 3 · 1:35 PM",
+      "text": "Dodgers @ Phillies · Game 1 of 3 · 7:10 PM",
       "highlight": false
     },
     {
-      "text": "Alan Rangel vs Nolan McLean",
+      "text": "Cristopher Sánchez vs Emmet Sheehan",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "ESPN/ESPN App · 94 WIP",
       "highlight": false
     },
     {
-      "text": "70° · Clear · gusts 1 mph",
+      "text": "68° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
