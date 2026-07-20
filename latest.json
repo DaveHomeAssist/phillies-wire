@@ -4,7 +4,7 @@
   "edition_date": "2026-07-20",
   "volume": 1,
   "edition": 111,
-  "generated_at": "2026-07-20T23:07:40.853Z",
+  "generated_at": "2026-07-20T23:35:10.884Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, LAD 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Shohei Ohtani is up against Cristopher Sánchez. Series: Regular Season.",
+    "dek": "End 1st · 3 outs",
+    "summary": "Teoscar Hernández is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Justin Wrobleski · PHI vs LAD · Tue, Jul 21 · 6:40 PM"
   },
@@ -57,28 +57,34 @@
     "weather": {
       "temp_f": 82,
       "condition": "Clear",
-      "wind": "6 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Shohei Ohtani",
+        "name": "Teoscar Hernández",
         "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "F",
+        "F",
+        "X"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "End 1st"
     },
     "recap_line": null
   },
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-20T23:07:41.265Z",
+    "updated_at": "2026-07-20T23:35:11.368Z",
     "current_game_pk": 823436,
     "next_game_pk": 823437,
     "next_game": {
@@ -123,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 10 mph",
+      "text": "82° · Clear · gusts 9 mph",
       "highlight": false
     },
     {
