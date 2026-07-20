@@ -4,9 +4,9 @@
   "edition_date": "2026-07-20",
   "volume": 1,
   "edition": 111,
-  "generated_at": "2026-07-20T22:34:37.689Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-20T23:07:05.899Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 55,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Dodgers @ Phillies · Game 1 of 3",
-    "dek": "Cristopher Sánchez vs Emmet Sheehan",
-    "summary": "Cristopher Sánchez vs Emmet Sheehan · Dodgers @ Phillies · Game 1 of 3",
+    "headline": "PHI 0, LAD 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Shohei Ohtani is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Justin Wrobleski · PHI vs LAD · Tue, Jul 21 · 6:40 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 82,
       "condition": "Clear",
-      "wind": "7 mph · gusts 10",
+      "wind": "6 mph · gusts 10",
       "gusts_mph": 10
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Shohei Ohtani",
+        "meta": "vs Cristopher Sánchez"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-20T22:34:38.440Z",
+    "updated_at": "2026-07-20T23:07:06.575Z",
     "current_game_pk": 823436,
     "next_game_pk": 823437,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 10 mph",
+      "text": "82° · Clear · gusts 10 mph",
       "highlight": false
     },
     {
