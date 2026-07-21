@@ -5,14 +5,14 @@
     "edition": 112,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-21T23:20:56.926Z",
+    "generated_at": "2026-07-21T23:47:47.616Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Jul 21, 2026, 7:20 PM ET",
+      "enrich_label": "Live update",
+      "generated_at_et": "Jul 21, 2026, 7:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Dodgers @ Phillies · Game 2 of 3",
-    "dek": "Zack Wheeler vs Justin Wrobleski",
-    "summary": "Zack Wheeler vs Justin Wrobleski · Dodgers @ Phillies · Game 2 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, LAD 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Shohei Ohtani is up against Zack Wheeler. Series: PHI leads 1-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "6:40 PM"
-      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "74° · Overcast"
       }
     ],
     "bullets": [
-      "74° · Overcast · 10 mph · gusts 26",
-      "PHI leads 1-0"
+      "Shohei Ohtani at the plate",
+      "Zack Wheeler on the mound",
+      "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Eric Lauer · PHI vs LAD · Wed, Jul 22 · 6:40 PM"
@@ -347,8 +348,8 @@
         "weather": {
           "temp_f": 74,
           "condition": "Overcast",
-          "wind": "10 mph · gusts 26",
-          "gusts_mph": 26
+          "wind": "6 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -414,13 +415,31 @@
             "event_type": "other",
             "actor": "Shohei Ohtani",
             "actor_id": 660271,
-            "detail": "Status Change - Delayed Start: Rain",
+            "detail": "Status Change - Warmup",
             "score_after": "PHI 0, LAD 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ]
+        ],
+        "situation": {
+          "batter": {
+            "name": "Shohei Ohtani",
+            "meta": "vs Zack Wheeler"
+          },
+          "pitches": [],
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "bases": {
+            "first": false,
+            "second": false,
+            "third": false
+          },
+          "status": "Top 1st"
+        }
       }
     },
     "injury_report": {
@@ -436,8 +455,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T23:20:56.926Z",
-            "freshness_label": "As of Jul 21, 2026, 7:20 PM ET"
+            "last_confirmed": "2026-07-21T23:47:47.616Z",
+            "freshness_label": "As of Jul 21, 2026, 7:47 PM ET"
           },
           {
             "name": "Adolis García",
@@ -449,8 +468,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T23:20:56.926Z",
-            "freshness_label": "As of Jul 21, 2026, 7:20 PM ET"
+            "last_confirmed": "2026-07-21T23:47:47.616Z",
+            "freshness_label": "As of Jul 21, 2026, 7:47 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -462,8 +481,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T23:20:56.926Z",
-            "freshness_label": "As of Jul 21, 2026, 7:20 PM ET"
+            "last_confirmed": "2026-07-21T23:47:47.616Z",
+            "freshness_label": "As of Jul 21, 2026, 7:47 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -475,8 +494,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T23:20:56.926Z",
-            "freshness_label": "As of Jul 21, 2026, 7:20 PM ET"
+            "last_confirmed": "2026-07-21T23:47:47.616Z",
+            "freshness_label": "As of Jul 21, 2026, 7:47 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -488,8 +507,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T23:20:56.926Z",
-            "freshness_label": "As of Jul 21, 2026, 7:20 PM ET"
+            "last_confirmed": "2026-07-21T23:47:47.616Z",
+            "freshness_label": "As of Jul 21, 2026, 7:47 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -501,8 +520,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T23:20:56.926Z",
-            "freshness_label": "As of Jul 21, 2026, 7:20 PM ET"
+            "last_confirmed": "2026-07-21T23:47:47.616Z",
+            "freshness_label": "As of Jul 21, 2026, 7:47 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

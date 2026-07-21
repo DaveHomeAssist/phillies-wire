@@ -4,9 +4,9 @@
   "edition_date": "2026-07-21",
   "volume": 1,
   "edition": 112,
-  "generated_at": "2026-07-21T23:20:56.926Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-21T23:47:47.616Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 56,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Dodgers @ Phillies · Game 2 of 3",
-    "dek": "Zack Wheeler vs Justin Wrobleski",
-    "summary": "Zack Wheeler vs Justin Wrobleski · Dodgers @ Phillies · Game 2 of 3",
+    "headline": "PHI 0, LAD 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Shohei Ohtani is up against Zack Wheeler. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Eric Lauer · PHI vs LAD · Wed, Jul 22 · 6:40 PM"
   },
@@ -57,19 +57,36 @@
     "weather": {
       "temp_f": 74,
       "condition": "Overcast",
-      "wind": "10 mph · gusts 26",
-      "gusts_mph": 26
+      "wind": "6 mph · gusts 20",
+      "gusts_mph": 20
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Shohei Ohtani",
+        "meta": "vs Zack Wheeler"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-21T23:20:57.416Z",
+    "updated_at": "2026-07-21T23:47:48.369Z",
     "current_game_pk": 823437,
     "next_game_pk": 823438,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Overcast · gusts 26 mph",
+      "text": "74° · Overcast · gusts 20 mph",
       "highlight": false
     },
     {
