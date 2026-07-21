@@ -4,7 +4,7 @@
   "edition_date": "2026-07-20",
   "volume": 1,
   "edition": 111,
-  "generated_at": "2026-07-20T23:35:10.884Z",
+  "generated_at": "2026-07-21T00:05:19.539Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, LAD 0",
-    "dek": "End 1st · 3 outs",
-    "summary": "Teoscar Hernández is up against Cristopher Sánchez. Series: Regular Season.",
+    "headline": "PHI 4, LAD 0",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Bryce Harper is up against Emmet Sheehan. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Justin Wrobleski · PHI vs LAD · Tue, Jul 21 · 6:40 PM"
   },
@@ -55,28 +55,26 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
-      "condition": "Clear",
-      "wind": "5 mph · gusts 9",
-      "gusts_mph": 9
+      "temp_f": 81,
+      "condition": "Mostly sunny",
+      "wind": "5 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Teoscar Hernández",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Bryce Harper",
+        "meta": "vs Emmet Sheehan"
       },
       "pitches": [
-        "B",
         "S",
-        "F",
-        "F",
-        "X"
+        "S",
+        "S"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 3,
         "outs": 3
       },
       "bases": {
@@ -84,7 +82,7 @@
         "second": false,
         "third": false
       },
-      "status": "End 1st"
+      "status": "Middle 3rd"
     },
     "recap_line": null
   },
@@ -92,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-20T23:35:11.368Z",
+    "updated_at": "2026-07-21T00:05:20.048Z",
     "current_game_pk": 823436,
     "next_game_pk": 823437,
     "next_game": {
@@ -129,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 9 mph",
+      "text": "81° · Mostly sunny · gusts 11 mph",
       "highlight": false
     },
     {

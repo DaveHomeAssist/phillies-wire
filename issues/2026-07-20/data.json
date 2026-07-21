@@ -5,14 +5,14 @@
     "edition": 111,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-20T23:35:10.884Z",
+    "generated_at": "2026-07-21T00:05:19.539Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 20, 2026, 7:35 PM ET",
+      "generated_at_et": "Jul 20, 2026, 8:05 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, LAD 0",
-    "dek": "End 1st · 3 outs",
-    "summary": "Teoscar Hernández is up against Cristopher Sánchez. Series: Regular Season.",
+    "headline": "PHI 4, LAD 0",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Bryce Harper is up against Emmet Sheehan. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Clear"
+        "value": "81° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Teoscar Hernández at the plate",
-      "Cristopher Sánchez on the mound",
+      "Bryce Harper at the plate",
+      "Emmet Sheehan on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 82,
-          "condition": "Clear",
-          "wind": "5 mph · gusts 9",
-          "gusts_mph": 9
+          "temp_f": 81,
+          "condition": "Mostly sunny",
+          "wind": "5 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,24 +359,24 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.59",
+            "era": "2.55",
             "record": "11-4",
-            "whip": "1.18"
+            "whip": "1.17"
           },
           "away": {
             "team": "LAD",
             "name": "Emmet Sheehan",
             "hand": "R",
-            "era": "4.79",
+            "era": "5.12",
             "record": "4-6",
-            "whip": "1.25"
+            "whip": "1.27"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "End",
-          "isTopInning": false,
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
+          "inningState": "Middle",
+          "isTopInning": true,
           "outs": 3,
           "teams": {
             "away": {
@@ -385,8 +385,8 @@
               "errors": 0
             },
             "home": {
-              "runs": 0,
-              "hits": 1,
+              "runs": 4,
+              "hits": 5,
               "errors": 1
             }
           },
@@ -402,6 +402,32 @@
                 "runs": 0,
                 "hits": 1,
                 "errors": 1
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 4,
+                "hits": 4,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
               }
             }
           ]
@@ -546,23 +572,217 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823436:10",
+            "inning": 2,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Teoscar Hernández",
+            "actor_id": 606192,
+            "detail": "Teoscar Hernández flies out to right fielder Gabriel Rincones Jr. in foul territory.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:11",
+            "inning": 2,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Alex Call",
+            "actor_id": 669743,
+            "detail": "Alex Call strikes out on a foul tip.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:12",
+            "inning": 2,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Dalton Rushing",
+            "actor_id": 687221,
+            "detail": "Dalton Rushing strikes out swinging.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh strikes out swinging.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott singles on a line drive to center fielder Andy Pages.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto singles on a ground ball to center fielder Andy Pages. Bryson Stott to 2nd.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:16",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. doubles (4) on a line drive to right fielder Alex Call. Bryson Stott scores. J.T. Realmuto to 3rd.",
+            "score_after": "PHI 1, LAD 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823436:17",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford out on a sacrifice fly to right fielder Alex Call. J.T. Realmuto scores. Gabriel Rincones Jr. to 3rd.",
+            "score_after": "PHI 2, LAD 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823436:18",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner homers (13) on a fly ball to left field. Gabriel Rincones Jr. scores.",
+            "score_after": "PHI 4, LAD 0",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823436:19",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 4, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:20",
+            "inning": 3,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Shohei Ohtani",
+            "actor_id": 660271,
+            "detail": "Shohei Ohtani grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "score_after": "PHI 4, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:21",
+            "inning": 3,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Andy Pages",
+            "actor_id": 681624,
+            "detail": "Andy Pages lines out sharply to right fielder Gabriel Rincones Jr.",
+            "score_after": "PHI 4, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:22",
+            "inning": 3,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "walk_hbp",
+            "actor": "Tommy Edman",
+            "actor_id": 669242,
+            "detail": "Tommy Edman hit by pitch.",
+            "score_after": "PHI 4, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:23",
+            "inning": 3,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Freddie Freeman",
+            "actor_id": 518692,
+            "detail": "Freddie Freeman strikes out swinging.",
+            "score_after": "PHI 4, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Teoscar Hernández",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Bryce Harper",
+            "meta": "vs Emmet Sheehan"
           },
           "pitches": [
-            "B",
             "S",
-            "F",
-            "F",
-            "X"
+            "S",
+            "S"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 2,
+            "balls": 0,
+            "strikes": 3,
             "outs": 3
           },
           "bases": {
@@ -570,7 +790,7 @@
             "second": false,
             "third": false
           },
-          "status": "End 1st"
+          "status": "Middle 3rd"
         }
       }
     },
@@ -587,8 +807,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-20T23:35:10.884Z",
-            "freshness_label": "As of Jul 20, 2026, 7:35 PM ET"
+            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -600,8 +820,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-20T23:35:10.884Z",
-            "freshness_label": "As of Jul 20, 2026, 7:35 PM ET"
+            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -613,8 +833,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-20T23:35:10.884Z",
-            "freshness_label": "As of Jul 20, 2026, 7:35 PM ET"
+            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -626,8 +846,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-20T23:35:10.884Z",
-            "freshness_label": "As of Jul 20, 2026, 7:35 PM ET"
+            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -639,8 +859,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-20T23:35:10.884Z",
-            "freshness_label": "As of Jul 20, 2026, 7:35 PM ET"
+            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
