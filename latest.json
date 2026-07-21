@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-20",
+  "edition_date": "2026-07-21",
   "volume": 1,
-  "edition": 111,
-  "generated_at": "2026-07-21T03:54:49.079Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 112,
+  "generated_at": "2026-07-21T05:04:44.121Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 56,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 10, LAD 7.",
-    "dek": "PHI 10, LAD 7 · Cristopher Sánchez · 5.1 IP, 7 H, 3 ER, 7 K",
-    "summary": "PHI 10, LAD 7. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
+    "headline": "Dodgers @ Phillies · Game 2 of 3",
+    "dek": "Zack Wheeler vs Justin Wrobleski",
+    "summary": "Zack Wheeler vs Justin Wrobleski · Dodgers @ Phillies · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Justin Wrobleski · PHI vs LAD · Tue, Jul 21 · 6:40 PM"
+    "next_value": "Aaron Nola vs Eric Lauer · PHI vs LAD · Wed, Jul 22 · 6:40 PM"
   },
   "game": {
-    "matchup": "Dodgers @ Phillies · Game 1 of 3",
-    "first_pitch": "7:10 PM",
+    "matchup": "Dodgers @ Phillies · Game 2 of 3",
+    "first_pitch": "6:40 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "away": {
-        "name": "Emmet Sheehan",
-        "hand": "R"
-      },
-      "phi": {
-        "name": "Cristopher Sánchez",
+        "name": "Justin Wrobleski",
         "hand": "L"
       },
-      "opp": {
-        "name": "Emmet Sheehan",
+      "phi": {
+        "name": "Zack Wheeler",
         "hand": "R"
+      },
+      "opp": {
+        "name": "Justin Wrobleski",
+        "hand": "L"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "ESPN/ESPN App",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 73,
+      "temp_f": 71,
       "condition": "Overcast",
-      "wind": "8 mph · gusts 17",
-      "gusts_mph": 17
+      "wind": "7 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-21T03:54:49.590Z",
+    "updated_at": "2026-07-21T05:04:44.609Z",
     "current_game_pk": 823437,
     "next_game_pk": 823438,
     "next_game": {
@@ -94,27 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Dodgers @ Phillies · Game 1 of 3 · 7:10 PM",
+      "text": "Dodgers @ Phillies · Game 2 of 3 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Emmet Sheehan",
+      "text": "Zack Wheeler vs Justin Wrobleski",
       "highlight": true
     },
     {
-      "text": "ESPN/ESPN App · 94 WIP",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "73° · Overcast · gusts 17 mph",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Alex McFarlane from Reading Fightin Phils.",
-      "highlight": false
-    },
-    {
-      "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
+      "text": "71° · Overcast · gusts 14 mph",
       "highlight": false
     }
   ]
