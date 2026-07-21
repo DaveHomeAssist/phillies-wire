@@ -5,14 +5,14 @@
     "edition": 112,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-21T20:55:13.177Z",
+    "generated_at": "2026-07-21T21:27:46.096Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Pregame edition",
-      "generated_at_et": "Jul 21, 2026, 4:55 PM ET",
+      "generated_at_et": "Jul 21, 2026, 5:27 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "80° · Light drizzle · 19 mph · gusts 30",
+      "78° · Overcast · 7 mph · gusts 10",
       "PHI leads 1-0"
     ],
     "next_label": "Tomorrow",
@@ -345,10 +345,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
-          "condition": "Light drizzle",
-          "wind": "19 mph · gusts 30",
-          "gusts_mph": 30
+          "temp_f": 78,
+          "condition": "Overcast",
+          "wind": "7 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -427,6 +427,19 @@
       "content": {
         "il_entries": [
           {
+            "name": "Garrett Stubbs",
+            "position": "C",
+            "il_type": "10-day",
+            "badge": "il",
+            "injury": "Left wrist inflammation",
+            "status_note": "",
+            "retroactive_to": "2026-07-18",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-21T21:27:46.096Z",
+            "freshness_label": "As of Jul 21, 2026, 5:27 PM ET"
+          },
+          {
             "name": "Adolis García",
             "position": "RF",
             "il_type": "60-day",
@@ -436,8 +449,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T20:55:13.177Z",
-            "freshness_label": "As of Jul 21, 2026, 4:55 PM ET"
+            "last_confirmed": "2026-07-21T21:27:46.096Z",
+            "freshness_label": "As of Jul 21, 2026, 5:27 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -449,8 +462,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T20:55:13.177Z",
-            "freshness_label": "As of Jul 21, 2026, 4:55 PM ET"
+            "last_confirmed": "2026-07-21T21:27:46.096Z",
+            "freshness_label": "As of Jul 21, 2026, 5:27 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -462,8 +475,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T20:55:13.177Z",
-            "freshness_label": "As of Jul 21, 2026, 4:55 PM ET"
+            "last_confirmed": "2026-07-21T21:27:46.096Z",
+            "freshness_label": "As of Jul 21, 2026, 5:27 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -475,8 +488,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T20:55:13.177Z",
-            "freshness_label": "As of Jul 21, 2026, 4:55 PM ET"
+            "last_confirmed": "2026-07-21T21:27:46.096Z",
+            "freshness_label": "As of Jul 21, 2026, 5:27 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -488,8 +501,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T20:55:13.177Z",
-            "freshness_label": "As of Jul 21, 2026, 4:55 PM ET"
+            "last_confirmed": "2026-07-21T21:27:46.096Z",
+            "freshness_label": "As of Jul 21, 2026, 5:27 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

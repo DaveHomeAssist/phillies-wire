@@ -4,7 +4,7 @@
   "edition_date": "2026-07-21",
   "volume": 1,
   "edition": 112,
-  "generated_at": "2026-07-21T20:55:13.177Z",
+  "generated_at": "2026-07-21T21:27:46.096Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
-      "condition": "Light drizzle",
-      "wind": "19 mph · gusts 30",
-      "gusts_mph": 30
+      "temp_f": 78,
+      "condition": "Overcast",
+      "wind": "7 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-21T20:55:13.651Z",
+    "updated_at": "2026-07-21T21:27:46.586Z",
     "current_game_pk": 823437,
     "next_game_pk": 823438,
     "next_game": {
@@ -106,7 +106,15 @@
       "highlight": false
     },
     {
-      "text": "80° · Light drizzle · gusts 30 mph",
+      "text": "78° · Overcast · gusts 10 mph",
+      "highlight": false
+    },
+    {
+      "text": "placed C Garrett Stubbs on the 10-day injured list retroactive to July 18, 2026. Left wrist inflammation.",
+      "highlight": false
+    },
+    {
+      "text": "recalled OF Bryan De La Cruz from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
