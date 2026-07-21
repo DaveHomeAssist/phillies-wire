@@ -5,7 +5,7 @@
     "edition": 111,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-21T00:05:19.539Z",
+    "generated_at": "2026-07-21T00:05:57.890Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 3,
           "currentInningOrdinal": "3rd",
-          "inningState": "Middle",
-          "isTopInning": true,
-          "outs": 3,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
@@ -768,6 +768,20 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823436:24",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Play",
+            "score_after": "PHI 4, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
@@ -776,21 +790,19 @@
             "meta": "vs Emmet Sheehan"
           },
           "pitches": [
-            "S",
-            "S",
-            "S"
+            "F"
           ],
           "count": {
             "balls": 0,
-            "strikes": 3,
-            "outs": 3
+            "strikes": 1,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 3rd"
+          "status": "Bottom 3rd"
         }
       }
     },
@@ -807,7 +819,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "last_confirmed": "2026-07-21T00:05:57.890Z",
             "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           },
           {
@@ -820,7 +832,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "last_confirmed": "2026-07-21T00:05:57.890Z",
             "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           },
           {
@@ -833,7 +845,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "last_confirmed": "2026-07-21T00:05:57.890Z",
             "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           },
           {
@@ -846,7 +858,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "last_confirmed": "2026-07-21T00:05:57.890Z",
             "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           },
           {
@@ -859,7 +871,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-21T00:05:19.539Z",
+            "last_confirmed": "2026-07-21T00:05:57.890Z",
             "freshness_label": "As of Jul 20, 2026, 8:05 PM ET"
           }
         ],
