@@ -5,14 +5,14 @@
     "edition": 111,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-21T01:34:49.403Z",
+    "generated_at": "2026-07-21T01:36:48.960Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 20, 2026, 9:34 PM ET",
+      "generated_at_et": "Jul 20, 2026, 9:36 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 8, LAD 4",
+    "headline": "PHI 9, LAD 4",
     "dek": "Bottom 7th · 0 outs",
-    "summary": "Bryce Harper is up against Landon Knack. Series: Regular Season.",
+    "summary": "Alec Bohm is up against Landon Knack. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
+      "Alec Bohm at the plate",
       "Landon Knack on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -385,8 +385,8 @@
               "errors": 0
             },
             "home": {
-              "runs": 8,
-              "hits": 9,
+              "runs": 9,
+              "hits": 10,
               "errors": 1
             }
           },
@@ -477,8 +477,8 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 1,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -1372,11 +1372,25 @@
             "inning": 7,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "home_run",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Pitching Change: Landon Knack replaces Alex Vesia.",
-            "score_after": "PHI 8, LAD 4",
+            "detail": "Bryce Harper homers (21) on a fly ball to left center field.",
+            "score_after": "PHI 9, LAD 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823436:64",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Play",
+            "score_after": "PHI 9, LAD 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1384,13 +1398,16 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryce Harper",
+            "name": "Alec Bohm",
             "meta": "vs Landon Knack"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "F"
+          ],
           "count": {
             "balls": 0,
-            "strikes": 0,
+            "strikes": 2,
             "outs": 0
           },
           "bases": {
