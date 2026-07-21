@@ -5,313 +5,56 @@
     "edition": 111,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-21T01:36:48.960Z",
+    "generated_at": "2026-07-21T02:38:43.921Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 20, 2026, 9:36 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 20, 2026, 10:38 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 55,
+    "wins": 56,
     "losses": 45,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 9, LAD 4",
-    "dek": "Bottom 7th · 0 outs",
-    "summary": "Alec Bohm is up against Landon Knack. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 10, LAD 7.",
+    "dek": "PHI 10, LAD 7 · Cristopher Sánchez · 5.1 IP, 7 H, 3 ER, 7 K",
+    "summary": "PHI 10, LAD 7. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "ESPN/ESPN App · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "77° · Mostly sunny"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "Alec Bohm at the plate",
-      "Landon Knack on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Cristopher Sánchez: 5.1 IP, 7 H, 3 ER, 7 K",
+      "Emmet Sheehan: 5.1 IP, 8 H, 6 ER, 6 K",
+      "Trea Turner: 3-for-5, 2 HR, 5 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Justin Wrobleski · PHI vs LAD · Tue, Jul 21 · 6:40 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's LAD at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "7:10 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "away": {
-            "team": "LAD",
-            "name": "Emmet Sheehan",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "LAD",
-            "name": "Emmet Sheehan",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Shohei Ohtani",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Andy Pages",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Tommy Edman",
-              "position": "LF",
-              "bats": "S"
-            },
-            {
-              "slot": 4,
-              "name": "Freddie Freeman",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Mookie Betts",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Miguel Rojas",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Teoscar Hernández",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Alex Call",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Dalton Rushing",
-              "position": "1B",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Shohei Ohtani",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Andy Pages",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Tommy Edman",
-              "position": "LF",
-              "bats": "S"
-            },
-            {
-              "slot": 4,
-              "name": "Freddie Freeman",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Mookie Betts",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Miguel Rojas",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Teoscar Hernández",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Alex Call",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Dalton Rushing",
-              "position": "1B",
-              "bats": "L"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Dodgers @ Phillies · Game 1 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "ESPN/ESPN App",
@@ -346,8 +89,8 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 77,
-          "condition": "Mostly sunny",
+          "temp_f": 74,
+          "condition": "Partly cloudy",
           "wind": "7 mph · gusts 17",
           "gusts_mph": 17
         },
@@ -360,7 +103,7 @@
             "name": "Cristopher Sánchez",
             "hand": "L",
             "era": "2.71",
-            "record": "11-4",
+            "record": "12-4",
             "whip": "1.19"
           },
           "away": {
@@ -368,25 +111,25 @@
             "name": "Emmet Sheehan",
             "hand": "R",
             "era": "5.13",
-            "record": "4-6",
+            "record": "4-7",
             "whip": "1.27"
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 0,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 4,
-              "hits": 10,
+              "runs": 7,
+              "hits": 12,
               "errors": 0
             },
             "home": {
-              "runs": 9,
-              "hits": 10,
+              "runs": 10,
+              "hits": 11,
               "errors": 1
             }
           },
@@ -481,6 +224,32 @@
                 "hits": 1,
                 "errors": 0
               }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 3,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              }
             }
           ]
         },
@@ -535,7 +304,7 @@
             "event_type": "single",
             "actor": "Freddie Freeman",
             "actor_id": 518692,
-            "detail": "Freddie Freeman singles on a sharp line drive to left fielder Brandon Marsh. Tommy Edman to 2nd.",
+            "detail": "Freddie Freeman singles on a sharp line drive to left fielder Brandon M…",
             "score_after": "PHI 0, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -549,7 +318,7 @@
             "event_type": "reached_on_error",
             "actor": "Mookie Betts",
             "actor_id": 605141,
-            "detail": "Mookie Betts reaches on a fielding error by shortstop Trea Turner. Tommy Edman to 3rd. Freddie Freeman to 2nd.",
+            "detail": "Mookie Betts reaches on a fielding error by shortstop Trea Turner. Tomm…",
             "score_after": "PHI 0, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -563,7 +332,7 @@
             "event_type": "out",
             "actor": "Miguel Rojas",
             "actor_id": 500743,
-            "detail": "Miguel Rojas grounds into a force out, fielded by shortstop Trea Turner. Mookie Betts out at 2nd.",
+            "detail": "Miguel Rojas grounds into a force out, fielded by shortstop Trea Turner…",
             "score_after": "PHI 0, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -577,7 +346,7 @@
             "event_type": "extra_base_hit",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner doubles (18) on a sharp line drive to center fielder Andy Pages.",
+            "detail": "Trea Turner doubles (18) on a sharp line drive to center fielder Andy P…",
             "score_after": "PHI 0, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -619,7 +388,7 @@
             "event_type": "other",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds into a double play, third baseman Tommy Edman to second baseman Miguel Rojas to first baseman Freddie Freeman. Ky…",
+            "detail": "Alec Bohm grounds into a double play, third baseman Tommy Edman to seco…",
             "score_after": "PHI 0, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -633,7 +402,7 @@
             "event_type": "out",
             "actor": "Teoscar Hernández",
             "actor_id": 606192,
-            "detail": "Teoscar Hernández flies out to right fielder Gabriel Rincones Jr. in foul territory.",
+            "detail": "Teoscar Hernández flies out to right fielder Gabriel Rincones Jr. in fo…",
             "score_after": "PHI 0, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -703,7 +472,7 @@
             "event_type": "single",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto singles on a ground ball to center fielder Andy Pages. Bryson Stott to 2nd.",
+            "detail": "J.T. Realmuto singles on a ground ball to center fielder Andy Pages. Br…",
             "score_after": "PHI 0, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -717,7 +486,7 @@
             "event_type": "extra_base_hit",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. doubles (4) on a line drive to right fielder Alex Call. Bryson Stott scores. J.T. Realmuto to 3rd.",
+            "detail": "Gabriel Rincones Jr. doubles (4) on a line drive to right fielder Alex…",
             "score_after": "PHI 1, LAD 0",
             "runs": 1,
             "is_scoring": true,
@@ -731,7 +500,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford out on a sacrifice fly to right fielder Alex Call. J.T. Realmuto scores. Gabriel Rincones Jr. to 3rd.",
+            "detail": "Justin Crawford out on a sacrifice fly to right fielder Alex Call. J.T.…",
             "score_after": "PHI 2, LAD 0",
             "runs": 1,
             "is_scoring": true,
@@ -745,7 +514,7 @@
             "event_type": "home_run",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner homers (13) on a fly ball to left field. Gabriel Rincones Jr. scores.",
+            "detail": "Trea Turner homers (13) on a fly ball to left field. Gabriel Rincones J…",
             "score_after": "PHI 4, LAD 0",
             "runs": 2,
             "is_scoring": true,
@@ -773,7 +542,7 @@
             "event_type": "out",
             "actor": "Shohei Ohtani",
             "actor_id": 660271,
-            "detail": "Shohei Ohtani grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "detail": "Shohei Ohtani grounds out, second baseman Bryson Stott to first baseman…",
             "score_after": "PHI 4, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -843,7 +612,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, third baseman Tommy Edman to first baseman Freddie Freeman.",
+            "detail": "Alec Bohm grounds out, third baseman Tommy Edman to first baseman Fredd…",
             "score_after": "PHI 4, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -857,7 +626,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out, second baseman Miguel Rojas to first baseman Freddie Freeman.",
+            "detail": "Brandon Marsh grounds out, second baseman Miguel Rojas to first baseman…",
             "score_after": "PHI 4, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -885,7 +654,7 @@
             "event_type": "single",
             "actor": "Miguel Rojas",
             "actor_id": 500743,
-            "detail": "Miguel Rojas singles on a line drive to right fielder Gabriel Rincones Jr. Mookie Betts to 3rd.",
+            "detail": "Miguel Rojas singles on a line drive to right fielder Gabriel Rincones…",
             "score_after": "PHI 4, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -899,7 +668,7 @@
             "event_type": "other",
             "actor": "Teoscar Hernández",
             "actor_id": 606192,
-            "detail": "Teoscar Hernández grounds into a double play, shortstop Trea Turner to second baseman Bryson Stott to first baseman Bryce Harper. M…",
+            "detail": "Teoscar Hernández grounds into a double play, shortstop Trea Turner to…",
             "score_after": "PHI 4, LAD 1",
             "runs": 1,
             "is_scoring": true,
@@ -927,7 +696,7 @@
             "event_type": "strikeout",
             "actor": "Dalton Rushing",
             "actor_id": 687221,
-            "detail": "J.T. Realmuto challenged (pitch result), call on the field was overturned: Dalton Rushing called out on strikes.",
+            "detail": "J.T. Realmuto challenged (pitch result), call on the field was overturn…",
             "score_after": "PHI 4, LAD 1",
             "runs": 0,
             "is_scoring": false,
@@ -1011,7 +780,7 @@
             "event_type": "out",
             "actor": "Tommy Edman",
             "actor_id": 669242,
-            "detail": "Tommy Edman grounds into a force out, shortstop Trea Turner to second baseman Bryson Stott. Andy Pages out at 2nd. Tommy Edman to 1…",
+            "detail": "Tommy Edman grounds into a force out, shortstop Trea Turner to second b…",
             "score_after": "PHI 4, LAD 1",
             "runs": 0,
             "is_scoring": false,
@@ -1109,7 +878,7 @@
             "event_type": "single",
             "actor": "Mookie Betts",
             "actor_id": 605141,
-            "detail": "Mookie Betts singles on a sharp line drive to left fielder Brandon Marsh.",
+            "detail": "Mookie Betts singles on a sharp line drive to left fielder Brandon Mars…",
             "score_after": "PHI 4, LAD 1",
             "runs": 0,
             "is_scoring": false,
@@ -1123,7 +892,7 @@
             "event_type": "out",
             "actor": "Miguel Rojas",
             "actor_id": 500743,
-            "detail": "Miguel Rojas grounds into a force out, second baseman Bryson Stott to shortstop Trea Turner. Mookie Betts out at 2nd. Miguel Rojas…",
+            "detail": "Miguel Rojas grounds into a force out, second baseman Bryson Stott to s…",
             "score_after": "PHI 4, LAD 1",
             "runs": 0,
             "is_scoring": false,
@@ -1137,7 +906,7 @@
             "event_type": "single",
             "actor": "Teoscar Hernández",
             "actor_id": 606192,
-            "detail": "Teoscar Hernández singles on a ground ball to center fielder Justin Crawford. Miguel Rojas to 2nd.",
+            "detail": "Teoscar Hernández singles on a ground ball to center fielder Justin Cra…",
             "score_after": "PHI 4, LAD 1",
             "runs": 0,
             "is_scoring": false,
@@ -1151,7 +920,7 @@
             "event_type": "extra_base_hit",
             "actor": "Max Muncy",
             "actor_id": 571970,
-            "detail": "Max Muncy doubles (16) on a line drive to right fielder Gabriel Rincones Jr. Miguel Rojas scores. Teoscar Hernández to 3rd.",
+            "detail": "Max Muncy doubles (16) on a line drive to right fielder Gabriel Rincone…",
             "score_after": "PHI 4, LAD 2",
             "runs": 1,
             "is_scoring": true,
@@ -1193,7 +962,7 @@
             "event_type": "single",
             "actor": "Andy Pages",
             "actor_id": 681624,
-            "detail": "Andy Pages singles on a ground ball to shortstop Trea Turner. Teoscar Hernández scores. Max Muncy to 3rd. Shohei Ohtani to 2nd.",
+            "detail": "Andy Pages singles on a ground ball to shortstop Trea Turner. Teoscar H…",
             "score_after": "PHI 4, LAD 3",
             "runs": 1,
             "is_scoring": true,
@@ -1235,7 +1004,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott doubles (18) on a sharp line drive to center fielder Andy Pages.",
+            "detail": "Bryson Stott doubles (18) on a sharp line drive to center fielder Andy…",
             "score_after": "PHI 5, LAD 3",
             "runs": 0,
             "is_scoring": false,
@@ -1291,7 +1060,7 @@
             "event_type": "home_run",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner homers (14) on a line drive to left field. Bryson Stott scores. Derek Hill scores.",
+            "detail": "Trea Turner homers (14) on a line drive to left field. Bryson Stott sco…",
             "score_after": "PHI 8, LAD 3",
             "runs": 3,
             "is_scoring": true,
@@ -1305,7 +1074,7 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber challenged (pitch result), call on the field was confirmed: Kyle Schwarber called out on strikes.",
+            "detail": "Kyle Schwarber challenged (pitch result), call on the field was confirm…",
             "score_after": "PHI 8, LAD 3",
             "runs": 0,
             "is_scoring": false,
@@ -1347,7 +1116,7 @@
             "event_type": "out",
             "actor": "Alex Freeland",
             "actor_id": 690976,
-            "detail": "Alex Freeland grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "detail": "Alex Freeland grounds out, second baseman Bryson Stott to first baseman…",
             "score_after": "PHI 8, LAD 4",
             "runs": 0,
             "is_scoring": false,
@@ -1361,7 +1130,7 @@
             "event_type": "out",
             "actor": "Teoscar Hernández",
             "actor_id": 606192,
-            "detail": "Teoscar Hernández grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "detail": "Teoscar Hernández grounds out, second baseman Bryson Stott to first bas…",
             "score_after": "PHI 8, LAD 4",
             "runs": 0,
             "is_scoring": false,
@@ -1386,37 +1155,226 @@
             "inning": 7,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Play",
+            "detail": "Alec Bohm called out on strikes.",
             "score_after": "PHI 9, LAD 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823436:65",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out to right fielder Teoscar Hernández.",
+            "score_after": "PHI 9, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:66",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott lines out to right fielder Teoscar Hernández.",
+            "score_after": "PHI 9, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:67",
+            "inning": 8,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Max Muncy",
+            "actor_id": 571970,
+            "detail": "Max Muncy grounds out, second baseman Bryson Stott to first baseman Bry…",
+            "score_after": "PHI 9, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:68",
+            "inning": 8,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Dalton Rushing",
+            "actor_id": 687221,
+            "detail": "Dalton Rushing called out on strikes.",
+            "score_after": "PHI 9, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:69",
+            "inning": 8,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Shohei Ohtani",
+            "actor_id": 660271,
+            "detail": "Shohei Ohtani grounds out, second baseman Bryson Stott to first baseman…",
+            "score_after": "PHI 9, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:70",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, shortstop Mookie Betts to first baseman Dalt…",
+            "score_after": "PHI 9, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:71",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill homers (8) on a fly ball to left center field.",
+            "score_after": "PHI 10, LAD 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823436:72",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds out, first baseman Dalton Rushing to pitcher La…",
+            "score_after": "PHI 10, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:73",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner strikes out swinging.",
+            "score_after": "PHI 10, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:74",
+            "inning": 9,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "walk_hbp",
+            "actor": "Andy Pages",
+            "actor_id": 681624,
+            "detail": "Andy Pages walks.",
+            "score_after": "PHI 10, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:75",
+            "inning": 9,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "single",
+            "actor": "Tommy Edman",
+            "actor_id": 669242,
+            "detail": "Tommy Edman singles on a ground ball to third baseman Alec Bohm, deflec…",
+            "score_after": "PHI 10, LAD 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:76",
+            "inning": 9,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Eliezer Alfonzo",
+            "actor_id": 672613,
+            "detail": "Eliezer Alfonzo grounds into a force out, second baseman Bryson Stott t…",
+            "score_after": "PHI 10, LAD 5",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823436:77",
+            "inning": 9,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "home_run",
+            "actor": "Mookie Betts",
+            "actor_id": 605141,
+            "detail": "Mookie Betts homers (13) on a fly ball to left center field. Eliezer Al…",
+            "score_after": "PHI 10, LAD 7",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823436:78",
+            "inning": 9,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Alex Freeland",
+            "actor_id": 690976,
+            "detail": "Alex Freeland strikes out swinging.",
+            "score_after": "PHI 10, LAD 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823436:79",
+            "inning": 9,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Teoscar Hernández",
+            "actor_id": 606192,
+            "detail": "Teoscar Hernández grounds out, shortstop Trea Turner to first baseman B…",
+            "score_after": "PHI 10, LAD 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Alec Bohm",
-            "meta": "vs Landon Knack"
-          },
-          "pitches": [
-            "S",
-            "F"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 2,
-            "outs": 0
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Bottom 7th"
-        }
+        ]
       }
     },
     "injury_report": null
