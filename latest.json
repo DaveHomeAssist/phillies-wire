@@ -4,7 +4,7 @@
   "edition_date": "2026-07-22",
   "volume": 1,
   "edition": 113,
-  "generated_at": "2026-07-22T23:22:37.687Z",
+  "generated_at": "2026-07-22T23:34:37.926Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, LAD 1",
-    "dek": "Middle 3rd · 3 outs",
-    "summary": "Trea Turner is up against Eric Lauer. Series: Series tied 1-1.",
+    "dek": "Top 4th · 1 out",
+    "summary": "Freddie Freeman is up against Aaron Nola. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Will Warren · PHI vs NYY · Fri, Jul 24 · 6:45 PM"
   },
@@ -55,8 +55,8 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
-      "condition": "Overcast",
+      "temp_f": 79,
+      "condition": "Partly cloudy",
       "wind": "7 mph · gusts 15",
       "gusts_mph": 15
     },
@@ -64,23 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Eric Lauer"
+        "name": "Freddie Freeman",
+        "meta": "vs Aaron Nola"
       },
-      "pitches": [
-        "X"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 3
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 3rd"
+      "status": "Top 4th"
     },
     "recap_line": null
   },
@@ -88,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-22T23:22:38.369Z",
+    "updated_at": "2026-07-22T23:34:38.428Z",
     "current_game_pk": 823438,
     "next_game_pk": 823434,
     "next_game": {
@@ -125,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Overcast · gusts 15 mph",
+      "text": "79° · Partly cloudy · gusts 15 mph",
       "highlight": false
     }
   ]

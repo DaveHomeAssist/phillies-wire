@@ -5,14 +5,14 @@
     "edition": 113,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-22T23:22:37.687Z",
+    "generated_at": "2026-07-22T23:34:37.926Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 22, 2026, 7:22 PM ET",
+      "generated_at_et": "Jul 22, 2026, 7:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 2, LAD 1",
-    "dek": "Middle 3rd · 3 outs",
-    "summary": "Trea Turner is up against Eric Lauer. Series: Series tied 1-1.",
+    "dek": "Top 4th · 1 out",
+    "summary": "Freddie Freeman is up against Aaron Nola. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Overcast"
+        "value": "79° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Eric Lauer on the mound",
+      "Freddie Freeman at the plate",
+      "Aaron Nola on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,8 +346,8 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
-          "condition": "Overcast",
+          "temp_f": 79,
+          "condition": "Partly cloudy",
           "wind": "7 mph · gusts 15",
           "gusts_mph": 15
         },
@@ -359,25 +359,25 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.54",
+            "era": "5.60",
             "record": "3-7",
-            "whip": "1.41"
+            "whip": "1.42"
           },
           "away": {
             "team": "LAD",
             "name": "Eric Lauer",
             "hand": "L",
-            "era": "4.92",
+            "era": "4.86",
             "record": "4-5",
-            "whip": "1.28"
+            "whip": "1.27"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
-          "inningState": "Middle",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
+          "inningState": "Top",
           "isTopInning": true,
-          "outs": 3,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 1,
@@ -422,6 +422,19 @@
               "away": {
                 "runs": 1,
                 "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
@@ -698,27 +711,95 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823438:19",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner pops out to second baseman Tommy Edman.",
+            "score_after": "PHI 2, LAD 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:20",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber called out on strikes.",
+            "score_after": "PHI 2, LAD 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:21",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 2, LAD 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:22",
+            "inning": 4,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Andy Pages",
+            "actor_id": 681624,
+            "detail": "Andy Pages lines out to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 2, LAD 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:23",
+            "inning": 4,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "other",
+            "actor": "Freddie Freeman",
+            "actor_id": 518692,
+            "detail": "Play",
+            "score_after": "PHI 2, LAD 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
-            "meta": "vs Eric Lauer"
+            "name": "Freddie Freeman",
+            "meta": "vs Aaron Nola"
           },
-          "pitches": [
-            "X"
-          ],
+          "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 3
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 3rd"
+          "status": "Top 4th"
         }
       }
     },
@@ -735,8 +816,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:22:37.687Z",
-            "freshness_label": "As of Jul 22, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-07-22T23:34:37.926Z",
+            "freshness_label": "As of Jul 22, 2026, 7:34 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -748,8 +829,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:22:37.687Z",
-            "freshness_label": "As of Jul 22, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-07-22T23:34:37.926Z",
+            "freshness_label": "As of Jul 22, 2026, 7:34 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -761,8 +842,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:22:37.687Z",
-            "freshness_label": "As of Jul 22, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-07-22T23:34:37.926Z",
+            "freshness_label": "As of Jul 22, 2026, 7:34 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -774,8 +855,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:22:37.687Z",
-            "freshness_label": "As of Jul 22, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-07-22T23:34:37.926Z",
+            "freshness_label": "As of Jul 22, 2026, 7:34 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -787,8 +868,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:22:37.687Z",
-            "freshness_label": "As of Jul 22, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-07-22T23:34:37.926Z",
+            "freshness_label": "As of Jul 22, 2026, 7:34 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -800,8 +881,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:22:37.687Z",
-            "freshness_label": "As of Jul 22, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-07-22T23:34:37.926Z",
+            "freshness_label": "As of Jul 22, 2026, 7:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
