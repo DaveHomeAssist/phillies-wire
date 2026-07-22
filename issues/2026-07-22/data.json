@@ -5,14 +5,14 @@
     "edition": 113,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-22T22:49:21.868Z",
+    "generated_at": "2026-07-22T23:07:57.716Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 22, 2026, 6:49 PM ET",
+      "generated_at_et": "Jul 22, 2026, 7:07 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, LAD 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "Trea Turner is up against Eric Lauer. Series: Series tied 1-1.",
+    "headline": "PHI 2, LAD 0",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Bryson Stott is up against Eric Lauer. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Overcast"
+        "value": "81° · Overcast"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
+      "Bryson Stott at the plate",
       "Eric Lauer on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 82,
+          "temp_f": 81,
           "condition": "Overcast",
-          "wind": "5 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "7 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,25 +359,25 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.63",
+            "era": "5.57",
             "record": "3-7",
-            "whip": "1.43"
+            "whip": "1.42"
           },
           "away": {
             "team": "LAD",
             "name": "Eric Lauer",
             "hand": "L",
-            "era": "4.81",
+            "era": "4.98",
             "record": "4-5",
-            "whip": "1.28"
+            "whip": "1.29"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
@@ -385,14 +385,27 @@
               "errors": 0
             },
             "home": {
-              "runs": 0,
-              "hits": 0,
+              "runs": 2,
+              "hits": 2,
               "errors": 0
             }
           },
           "innings": [
             {
               "num": 1,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 2,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
               "away": {
                 "runs": 0,
                 "hits": 0,
@@ -454,11 +467,151 @@
             "inning": 1,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Play",
+            "detail": "Trea Turner grounds out, pitcher Eric Lauer to first baseman Freddie Freeman.",
             "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber singles on a line drive to center fielder Andy Pages.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:6",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm homers (13) on a fly ball to left field. Kyle Schwarber scores.",
+            "score_after": "PHI 2, LAD 0",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823438:7",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa grounds out, shortstop Mookie Betts to first baseman Freddie Freeman.",
+            "score_after": "PHI 2, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:8",
+            "inning": 2,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Max Muncy",
+            "actor_id": 571970,
+            "detail": "Max Muncy strikes out swinging.",
+            "score_after": "PHI 2, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:9",
+            "inning": 2,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Mookie Betts",
+            "actor_id": 605141,
+            "detail": "Mookie Betts flies out to center fielder Derek Hill.",
+            "score_after": "PHI 2, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:10",
+            "inning": 2,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Kyle Tucker",
+            "actor_id": 663656,
+            "detail": "Kyle Tucker flies out to center fielder Derek Hill.",
+            "score_after": "PHI 2, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:11",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill pops out to first baseman Freddie Freeman in foul territory.",
+            "score_after": "PHI 2, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz walks.",
+            "score_after": "PHI 2, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Play",
+            "score_after": "PHI 2, LAD 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -466,25 +619,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
+            "name": "Bryson Stott",
             "meta": "vs Eric Lauer"
           },
           "pitches": [
-            "B",
             "S",
-            "S"
+            "B"
           ],
           "count": {
             "balls": 1,
-            "strikes": 2,
-            "outs": 0
+            "strikes": 1,
+            "outs": 1
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
-          "status": "Bottom 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -501,8 +653,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:49:21.868Z",
-            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-22T23:07:57.716Z",
+            "freshness_label": "As of Jul 22, 2026, 7:07 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -514,8 +666,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:49:21.868Z",
-            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-22T23:07:57.716Z",
+            "freshness_label": "As of Jul 22, 2026, 7:07 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -527,8 +679,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:49:21.868Z",
-            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-22T23:07:57.716Z",
+            "freshness_label": "As of Jul 22, 2026, 7:07 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -540,8 +692,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:49:21.868Z",
-            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-22T23:07:57.716Z",
+            "freshness_label": "As of Jul 22, 2026, 7:07 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -553,8 +705,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:49:21.868Z",
-            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-22T23:07:57.716Z",
+            "freshness_label": "As of Jul 22, 2026, 7:07 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -566,8 +718,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:49:21.868Z",
-            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-22T23:07:57.716Z",
+            "freshness_label": "As of Jul 22, 2026, 7:07 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

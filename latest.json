@@ -4,7 +4,7 @@
   "edition_date": "2026-07-22",
   "volume": 1,
   "edition": 113,
-  "generated_at": "2026-07-22T22:49:21.868Z",
+  "generated_at": "2026-07-22T23:07:57.716Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, LAD 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "Trea Turner is up against Eric Lauer. Series: Series tied 1-1.",
+    "headline": "PHI 2, LAD 0",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Bryson Stott is up against Eric Lauer. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Will Warren · PHI vs NYY · Fri, Jul 24 · 6:45 PM"
   },
@@ -55,34 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 81,
       "condition": "Overcast",
-      "wind": "5 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "7 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
+        "name": "Bryson Stott",
         "meta": "vs Eric Lauer"
       },
       "pitches": [
-        "B",
         "S",
-        "S"
+        "B"
       ],
       "count": {
         "balls": 1,
-        "strikes": 2,
-        "outs": 0
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -90,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-22T22:49:22.557Z",
+    "updated_at": "2026-07-22T23:07:58.433Z",
     "current_game_pk": 823438,
     "next_game_pk": 823434,
     "next_game": {
@@ -127,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Overcast · gusts 11 mph",
+      "text": "81° · Overcast · gusts 14 mph",
       "highlight": false
     }
   ]
