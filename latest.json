@@ -4,7 +4,7 @@
   "edition_date": "2026-07-21",
   "volume": 1,
   "edition": 112,
-  "generated_at": "2026-07-21T23:48:38.351Z",
+  "generated_at": "2026-07-22T00:30:38.473Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, LAD 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Shohei Ohtani is up against Zack Wheeler. Series: PHI leads 1-0.",
+    "headline": "PHI 1, LAD 0",
+    "dek": "End 2nd · 3 outs",
+    "summary": "Tommy Edman is up against Zack Wheeler. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Eric Lauer · PHI vs LAD · Wed, Jul 22 · 6:40 PM"
   },
@@ -55,30 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 74,
+      "temp_f": 75,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 20",
-      "gusts_mph": 20
+      "wind": "4 mph · gusts 17",
+      "gusts_mph": 17
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Shohei Ohtani",
+        "name": "Tommy Edman",
         "meta": "vs Zack Wheeler"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "B",
+        "S",
+        "X"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "End 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-21T23:48:38.748Z",
+    "updated_at": "2026-07-22T00:30:38.855Z",
     "current_game_pk": 823437,
     "next_game_pk": 823438,
     "next_game": {
@@ -123,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Overcast · gusts 20 mph",
+      "text": "75° · Overcast · gusts 17 mph",
       "highlight": false
     },
     {
