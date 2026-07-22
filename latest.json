@@ -4,7 +4,7 @@
   "edition_date": "2026-07-21",
   "volume": 1,
   "edition": 112,
-  "generated_at": "2026-07-22T00:30:38.473Z",
+  "generated_at": "2026-07-22T00:35:53.090Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, LAD 0",
-    "dek": "End 2nd · 3 outs",
-    "summary": "Tommy Edman is up against Zack Wheeler. Series: PHI leads 1-0.",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Shohei Ohtani is up against Zack Wheeler. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Eric Lauer · PHI vs LAD · Wed, Jul 22 · 6:40 PM"
   },
@@ -55,36 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 75,
-      "condition": "Overcast",
-      "wind": "4 mph · gusts 17",
-      "gusts_mph": 17
+      "temp_f": 74,
+      "condition": "Light drizzle",
+      "wind": "17 mph · gusts 37",
+      "gusts_mph": 37
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Tommy Edman",
+        "name": "Shohei Ohtani",
         "meta": "vs Zack Wheeler"
       },
       "pitches": [
-        "S",
         "B",
-        "B",
-        "S",
-        "X"
+        "B"
       ],
       "count": {
         "balls": 2,
-        "strikes": 2,
-        "outs": 3
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
-      "status": "End 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -92,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-22T00:30:38.855Z",
+    "updated_at": "2026-07-22T00:35:53.345Z",
     "current_game_pk": 823437,
     "next_game_pk": 823438,
     "next_game": {
@@ -129,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "75° · Overcast · gusts 17 mph",
+      "text": "74° · Light drizzle · gusts 37 mph",
       "highlight": false
     },
     {
