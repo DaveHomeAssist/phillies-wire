@@ -4,9 +4,9 @@
   "edition_date": "2026-07-22",
   "volume": 1,
   "edition": 113,
-  "generated_at": "2026-07-22T22:07:44.274Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-22T22:23:39.145Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 56,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Dodgers @ Phillies · Game 3 of 3",
-    "dek": "Aaron Nola vs Eric Lauer",
-    "summary": "Aaron Nola vs Eric Lauer · Dodgers @ Phillies · Game 3 of 3",
+    "headline": "PHI 0, LAD 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Shohei Ohtani is up against Aaron Nola. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Will Warren · PHI vs NYY · Fri, Jul 24 · 6:45 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 81,
       "condition": "Clear",
       "wind": "8 mph · gusts 17",
       "gusts_mph": 17
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Shohei Ohtani",
+        "meta": "vs Aaron Nola"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-22T22:07:44.851Z",
+    "updated_at": "2026-07-22T22:23:39.639Z",
     "current_game_pk": 823438,
     "next_game_pk": 823434,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 17 mph",
+      "text": "81° · Clear · gusts 17 mph",
       "highlight": false
     }
   ]
