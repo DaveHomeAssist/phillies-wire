@@ -4,7 +4,7 @@
   "edition_date": "2026-07-21",
   "volume": 1,
   "edition": 112,
-  "generated_at": "2026-07-22T01:12:04.044Z",
+  "generated_at": "2026-07-22T01:56:45.930Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, LAD 2",
-    "dek": "Middle 5th · 3 outs",
-    "summary": "Bryson Stott is up against Justin Wrobleski. Series: PHI leads 1-0.",
+    "dek": "Top 8th · 1 out",
+    "summary": "Miguel Rojas is up against José Alvarado. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Eric Lauer · PHI vs LAD · Wed, Jul 22 · 6:40 PM"
   },
@@ -55,34 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 74,
+      "temp_f": 73,
       "condition": "Overcast",
-      "wind": "11 mph · gusts 28",
-      "gusts_mph": 28
+      "wind": "16 mph · gusts 35",
+      "gusts_mph": 35
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Justin Wrobleski"
+        "name": "Miguel Rojas",
+        "meta": "vs José Alvarado"
       },
       "pitches": [
+        "F",
         "S",
         "F",
-        "S"
+        "B"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 3,
-        "outs": 3
+        "balls": 1,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 5th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-22T01:12:04.544Z",
+    "updated_at": "2026-07-22T01:56:46.465Z",
     "current_game_pk": 823437,
     "next_game_pk": 823438,
     "next_game": {
@@ -127,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Overcast · gusts 28 mph",
+      "text": "73° · Overcast · gusts 35 mph",
       "highlight": false
     },
     {
