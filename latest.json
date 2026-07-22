@@ -4,21 +4,21 @@
   "edition_date": "2026-07-21",
   "volume": 1,
   "edition": 112,
-  "generated_at": "2026-07-22T01:58:28.182Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-22T03:09:12.173Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 56,
-    "losses": 45,
-    "streak": "W1",
+    "losses": 46,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, LAD 2",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Shohei Ohtani is up against José Alvarado. Series: PHI leads 1-0.",
+    "headline": "PHI 1, LAD 2.",
+    "dek": "LAD 2, PHI 1 · Zack Wheeler · 7.0 IP, 5 H, 2 ER, 9 K",
+    "summary": "PHI 1, LAD 2. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Eric Lauer · PHI vs LAD · Wed, Jul 22 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,59 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 73,
-      "condition": "Overcast",
-      "wind": "16 mph · gusts 35",
-      "gusts_mph": 35
+      "temp_f": 72,
+      "condition": "Rain",
+      "wind": "6 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Shohei Ohtani",
-        "meta": "vs José Alvarado"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 2
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-22T01:58:28.830Z",
-    "current_game_pk": 823437,
-    "next_game_pk": 823438,
+    "updated_at": "2026-07-22T03:09:12.667Z",
+    "current_game_pk": 823438,
+    "next_game_pk": 823434,
     "next_game": {
-      "game_pk": 823438,
-      "official_date": "2026-07-22",
-      "date_label": "Wed, Jul 22, 2026",
-      "time_label": "6:40 PM",
-      "title": "Los Angeles Dodgers at Phillies",
-      "matchup": "LAD at PHI",
+      "game_pk": 823434,
+      "official_date": "2026-07-24",
+      "date_label": "Fri, Jul 24, 2026",
+      "time_label": "6:45 PM",
+      "title": "New York Yankees at Phillies",
+      "matchup": "NYY at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823437,
-      "official_date": "2026-07-21",
+      "game_pk": 823438,
+      "official_date": "2026-07-22",
       "title": "Los Angeles Dodgers at Phillies",
       "matchup": "LAD at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 56-45",
+      "text": "PHI 56-46",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "73° · Overcast · gusts 35 mph",
+      "text": "72° · Rain · gusts 15 mph",
       "highlight": false
     },
     {

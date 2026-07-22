@@ -5,14 +5,14 @@
     "edition": 112,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-22T01:58:28.182Z",
+    "generated_at": "2026-07-22T03:09:12.173Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 21, 2026, 9:58 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 21, 2026, 11:09 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 56,
-    "losses": 45,
-    "streak": "W1",
+    "losses": 46,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, LAD 2",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Shohei Ohtani is up against José Alvarado. Series: PHI leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 1, LAD 2.",
+    "dek": "LAD 2, PHI 1 · Zack Wheeler · 7.0 IP, 5 H, 2 ER, 9 K",
+    "summary": "PHI 1, LAD 2. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "73° · Overcast"
+        "label": "Series",
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "Shohei Ohtani at the plate",
-      "José Alvarado on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Zack Wheeler: 7.0 IP, 5 H, 2 ER, 9 K",
+      "Justin Wrobleski: 6.1 IP, 5 H, 1 ER, 7 K",
+      "Max Muncy: 1-for-4, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Eric Lauer · PHI vs LAD · Wed, Jul 22 · 6:40 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's LAD at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:40 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Zack Wheeler",
-            "hand": "R"
-          },
-          "away": {
-            "team": "LAD",
-            "name": "Justin Wrobleski",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Zack Wheeler",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "LAD",
-            "name": "Justin Wrobleski",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Edmundo Sosa",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Shohei Ohtani",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Andy Pages",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Freddie Freeman",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Max Muncy",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Mookie Betts",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Kyle Tucker",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Tommy Edman",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Alex Call",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Eliezer Alfonzo",
-              "position": "C",
-              "bats": "S"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Edmundo Sosa",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Shohei Ohtani",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Andy Pages",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Freddie Freeman",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Max Muncy",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Mookie Betts",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Kyle Tucker",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Tommy Edman",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Alex Call",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Eliezer Alfonzo",
-              "position": "C",
-              "bats": "S"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Dodgers @ Phillies · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
-          "condition": "Overcast",
-          "wind": "16 mph · gusts 35",
-          "gusts_mph": 35
+          "temp_f": 72,
+          "condition": "Rain",
+          "wind": "6 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -360,7 +103,7 @@
             "name": "Zack Wheeler",
             "hand": "R",
             "era": "2.16",
-            "record": "10-1",
+            "record": "10-2",
             "whip": "0.88"
           },
           "away": {
@@ -368,16 +111,16 @@
             "name": "Justin Wrobleski",
             "hand": "L",
             "era": "2.62",
-            "record": "10-2",
+            "record": "11-2",
             "whip": "1.01"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 2,
@@ -386,7 +129,7 @@
             },
             "home": {
               "runs": 1,
-              "hits": 5,
+              "hits": 7,
               "errors": 0
             }
           },
@@ -485,13 +228,26 @@
             {
               "num": 8,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 2,
                 "errors": 0
               }
             }
@@ -1259,34 +1015,156 @@
             "inning": 8,
             "half": "top",
             "team": "LAD",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Shohei Ohtani",
             "actor_id": 660271,
-            "detail": "Play",
+            "detail": "Shohei Ohtani flies out to center fielder Derek Hill.",
             "score_after": "PHI 1, LAD 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823437:55",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, shortstop Mookie Betts to first baseman Freddie Freeman.",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823437:56",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823437:57",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper flies out to center fielder Andy Pages.",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823437:58",
+            "inning": 9,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Andy Pages",
+            "actor_id": 681624,
+            "detail": "Andy Pages strikes out swinging.",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823437:59",
+            "inning": 9,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Freddie Freeman",
+            "actor_id": 518692,
+            "detail": "Freddie Freeman grounds out, third baseman Alec Bohm to first baseman Bryce Harper.",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823437:60",
+            "inning": 9,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Max Muncy",
+            "actor_id": 571970,
+            "detail": "Max Muncy pops out to catcher J.T. Realmuto in foul territory.",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823437:61",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm singles on a sharp ground ball to left fielder Alex Call.",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823437:62",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa strikes out swinging.",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823437:63",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto doubles (12) on a sharp line drive to left fielder Alex Call. Justin Crawford to 3rd.",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823437:64",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh hit into a fielder's choice double play, third baseman Max Muncy to catcher Dalton Rushing to shortstop Mookie Betts…",
+            "score_after": "PHI 1, LAD 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Shohei Ohtani",
-            "meta": "vs José Alvarado"
-          },
-          "pitches": [],
-          "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 2
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Top 8th"
-        }
+        ]
       }
     },
     "injury_report": {
@@ -1302,8 +1180,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T01:58:28.182Z",
-            "freshness_label": "As of Jul 21, 2026, 9:58 PM ET"
+            "last_confirmed": "2026-07-22T03:09:12.173Z",
+            "freshness_label": "As of Jul 21, 2026, 11:09 PM ET"
           },
           {
             "name": "Adolis García",
@@ -1315,8 +1193,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T01:58:28.182Z",
-            "freshness_label": "As of Jul 21, 2026, 9:58 PM ET"
+            "last_confirmed": "2026-07-22T03:09:12.173Z",
+            "freshness_label": "As of Jul 21, 2026, 11:09 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1328,8 +1206,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T01:58:28.182Z",
-            "freshness_label": "As of Jul 21, 2026, 9:58 PM ET"
+            "last_confirmed": "2026-07-22T03:09:12.173Z",
+            "freshness_label": "As of Jul 21, 2026, 11:09 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1341,8 +1219,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T01:58:28.182Z",
-            "freshness_label": "As of Jul 21, 2026, 9:58 PM ET"
+            "last_confirmed": "2026-07-22T03:09:12.173Z",
+            "freshness_label": "As of Jul 21, 2026, 11:09 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1354,8 +1232,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T01:58:28.182Z",
-            "freshness_label": "As of Jul 21, 2026, 9:58 PM ET"
+            "last_confirmed": "2026-07-22T03:09:12.173Z",
+            "freshness_label": "As of Jul 21, 2026, 11:09 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1367,8 +1245,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T01:58:28.182Z",
-            "freshness_label": "As of Jul 21, 2026, 9:58 PM ET"
+            "last_confirmed": "2026-07-22T03:09:12.173Z",
+            "freshness_label": "As of Jul 21, 2026, 11:09 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
