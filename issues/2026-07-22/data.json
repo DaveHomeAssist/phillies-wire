@@ -5,14 +5,14 @@
     "edition": 113,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-22T22:36:25.266Z",
+    "generated_at": "2026-07-22T22:49:21.868Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 22, 2026, 6:36 PM ET",
+      "generated_at_et": "Jul 22, 2026, 6:49 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, LAD 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Shohei Ohtani is up against Aaron Nola. Series: Series tied 1-1.",
+    "dek": "Bottom 1st · 0 outs",
+    "summary": "Trea Turner is up against Eric Lauer. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "83° · Clear"
+        "value": "82° · Overcast"
       }
     ],
     "bullets": [
-      "Shohei Ohtani at the plate",
-      "Aaron Nola on the mound",
+      "Trea Turner at the plate",
+      "Eric Lauer on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 83,
-          "condition": "Clear",
-          "wind": "5 mph · gusts 10",
-          "gusts_mph": 10
+          "temp_f": 82,
+          "condition": "Overcast",
+          "wind": "5 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.68",
+            "era": "5.63",
             "record": "3-7",
-            "whip": "1.45"
+            "whip": "1.43"
           },
           "away": {
             "team": "LAD",
@@ -375,8 +375,8 @@
         "linescore": {
           "currentInning": 1,
           "currentInningOrdinal": "1st",
-          "inningState": "Top",
-          "isTopInning": true,
+          "inningState": "Bottom",
+          "isTopInning": false,
           "outs": 0,
           "teams": {
             "away": {
@@ -394,7 +394,7 @@
             {
               "num": 1,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -412,10 +412,52 @@
             "inning": 1,
             "half": "top",
             "team": "LAD",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Shohei Ohtani",
             "actor_id": 660271,
-            "detail": "Status Change - Warmup",
+            "detail": "Shohei Ohtani lines out to first baseman Bryce Harper.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:1",
+            "inning": 1,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Andy Pages",
+            "actor_id": 681624,
+            "detail": "Andy Pages strikes out swinging.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:2",
+            "inning": 1,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "out",
+            "actor": "Freddie Freeman",
+            "actor_id": 518692,
+            "detail": "Freddie Freeman grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "score_after": "PHI 0, LAD 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:3",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Play",
             "score_after": "PHI 0, LAD 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,13 +466,17 @@
         ],
         "situation": {
           "batter": {
-            "name": "Shohei Ohtani",
-            "meta": "vs Aaron Nola"
+            "name": "Trea Turner",
+            "meta": "vs Eric Lauer"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "S",
+            "S"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
+            "balls": 1,
+            "strikes": 2,
             "outs": 0
           },
           "bases": {
@@ -438,7 +484,7 @@
             "second": false,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "Bottom 1st"
         }
       }
     },
@@ -455,8 +501,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:36:25.266Z",
-            "freshness_label": "As of Jul 22, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-22T22:49:21.868Z",
+            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -468,8 +514,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:36:25.266Z",
-            "freshness_label": "As of Jul 22, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-22T22:49:21.868Z",
+            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -481,8 +527,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:36:25.266Z",
-            "freshness_label": "As of Jul 22, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-22T22:49:21.868Z",
+            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -494,8 +540,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:36:25.266Z",
-            "freshness_label": "As of Jul 22, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-22T22:49:21.868Z",
+            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -507,8 +553,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:36:25.266Z",
-            "freshness_label": "As of Jul 22, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-22T22:49:21.868Z",
+            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -520,8 +566,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T22:36:25.266Z",
-            "freshness_label": "As of Jul 22, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-22T22:49:21.868Z",
+            "freshness_label": "As of Jul 22, 2026, 6:49 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

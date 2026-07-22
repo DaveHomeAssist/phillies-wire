@@ -4,7 +4,7 @@
   "edition_date": "2026-07-22",
   "volume": 1,
   "edition": 113,
-  "generated_at": "2026-07-22T22:36:25.266Z",
+  "generated_at": "2026-07-22T22:49:21.868Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, LAD 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Shohei Ohtani is up against Aaron Nola. Series: Series tied 1-1.",
+    "dek": "Bottom 1st · 0 outs",
+    "summary": "Trea Turner is up against Eric Lauer. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Will Warren · PHI vs NYY · Fri, Jul 24 · 6:45 PM"
   },
@@ -55,22 +55,26 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
-      "condition": "Clear",
-      "wind": "5 mph · gusts 10",
-      "gusts_mph": 10
+      "temp_f": 82,
+      "condition": "Overcast",
+      "wind": "5 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Shohei Ohtani",
-        "meta": "vs Aaron Nola"
+        "name": "Trea Turner",
+        "meta": "vs Eric Lauer"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 2,
         "outs": 0
       },
       "bases": {
@@ -78,7 +82,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-22T22:36:25.791Z",
+    "updated_at": "2026-07-22T22:49:22.557Z",
     "current_game_pk": 823438,
     "next_game_pk": 823434,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 10 mph",
+      "text": "82° · Overcast · gusts 11 mph",
       "highlight": false
     }
   ]
