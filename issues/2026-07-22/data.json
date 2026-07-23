@@ -5,14 +5,14 @@
     "edition": 113,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-23T00:07:15.028Z",
+    "generated_at": "2026-07-23T00:37:33.528Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 22, 2026, 8:07 PM ET",
+      "generated_at_et": "Jul 22, 2026, 8:37 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 3, LAD 3",
-    "dek": "Bottom 5th · 0 outs",
-    "summary": "Rafael Marchán is up against Eric Lauer. Series: Series tied 1-1.",
+    "headline": "PHI 3, LAD 5",
+    "dek": "Top 7th · 0 outs",
+    "summary": "Tommy Edman is up against Seth Johnson. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "77° · Clear"
+        "value": "76° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Rafael Marchán at the plate",
-      "Eric Lauer on the mound",
+      "Tommy Edman at the plate",
+      "Seth Johnson on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 77,
-          "condition": "Clear",
-          "wind": "8 mph · gusts 17",
-          "gusts_mph": 17
+          "temp_f": 76,
+          "condition": "Partly cloudy",
+          "wind": "8 mph · gusts 18",
+          "gusts_mph": 18
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,29 +359,29 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.67",
+            "era": "5.82",
             "record": "3-7",
-            "whip": "1.44"
+            "whip": "1.45"
           },
           "away": {
             "team": "LAD",
             "name": "Eric Lauer",
             "hand": "L",
-            "era": "4.80",
+            "era": "4.83",
             "record": "4-5",
-            "whip": "1.25"
+            "whip": "1.26"
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "Bottom",
-          "isTopInning": false,
+          "currentInning": 7,
+          "currentInningOrdinal": "7th",
+          "inningState": "Top",
+          "isTopInning": true,
           "outs": 0,
           "teams": {
             "away": {
-              "runs": 3,
-              "hits": 5,
+              "runs": 5,
+              "hits": 7,
               "errors": 0
             },
             "home": {
@@ -453,6 +453,32 @@
               "home": {
                 "runs": 1,
                 "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 2,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -982,11 +1008,165 @@
             "inning": 5,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Rafael Marchán",
             "actor_id": 665561,
-            "detail": "Mound Visit.",
+            "detail": "Rafael Marchán bunt pops out softly to catcher Dalton Rushing in foul territory.",
             "score_after": "PHI 3, LAD 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:38",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner reaches on a fielder's choice out, third baseman Max Muncy unassisted. Bryson Stott out at 3rd.",
+            "score_after": "PHI 3, LAD 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:39",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber pops out to second baseman Tommy Edman.",
+            "score_after": "PHI 3, LAD 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:40",
+            "inning": 6,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "extra_base_hit",
+            "actor": "Freddie Freeman",
+            "actor_id": 518692,
+            "detail": "Freddie Freeman doubles (25) on a line drive to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 3, LAD 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823438:41",
+            "inning": 6,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "home_run",
+            "actor": "Max Muncy",
+            "actor_id": 571970,
+            "detail": "Max Muncy homers (20) on a fly ball to center field. Freddie Freeman scores.",
+            "score_after": "PHI 3, LAD 5",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823438:42",
+            "inning": 6,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Mookie Betts",
+            "actor_id": 605141,
+            "detail": "Mookie Betts called out on strikes.",
+            "score_after": "PHI 3, LAD 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:43",
+            "inning": 6,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Kyle Tucker",
+            "actor_id": 663656,
+            "detail": "Rafael Marchán challenged (pitch result), call on the field was overturned: Kyle Tucker called out on strikes.",
+            "score_after": "PHI 3, LAD 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:44",
+            "inning": 6,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "strikeout",
+            "actor": "Teoscar Hernández",
+            "actor_id": 606192,
+            "detail": "Teoscar Hernández strikes out swinging.",
+            "score_after": "PHI 3, LAD 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:45",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 3, LAD 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:46",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm lines out to right fielder Kyle Tucker.",
+            "score_after": "PHI 3, LAD 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:47",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa flies out to center fielder Andy Pages.",
+            "score_after": "PHI 3, LAD 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:48",
+            "inning": 7,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "other",
+            "actor": "Tommy Edman",
+            "actor_id": 669242,
+            "detail": "Play",
+            "score_after": "PHI 3, LAD 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -994,8 +1174,8 @@
         ],
         "situation": {
           "batter": {
-            "name": "Rafael Marchán",
-            "meta": "vs Eric Lauer"
+            "name": "Tommy Edman",
+            "meta": "vs Seth Johnson"
           },
           "pitches": [],
           "count": {
@@ -1005,10 +1185,10 @@
           },
           "bases": {
             "first": false,
-            "second": true,
+            "second": false,
             "third": false
           },
-          "status": "Bottom 5th"
+          "status": "Top 7th"
         }
       }
     },
@@ -1025,8 +1205,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-23T00:07:15.028Z",
-            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-07-23T00:37:33.528Z",
+            "freshness_label": "As of Jul 22, 2026, 8:37 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1038,8 +1218,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-23T00:07:15.028Z",
-            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-07-23T00:37:33.528Z",
+            "freshness_label": "As of Jul 22, 2026, 8:37 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1051,8 +1231,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-23T00:07:15.028Z",
-            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-07-23T00:37:33.528Z",
+            "freshness_label": "As of Jul 22, 2026, 8:37 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1064,8 +1244,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-23T00:07:15.028Z",
-            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-07-23T00:37:33.528Z",
+            "freshness_label": "As of Jul 22, 2026, 8:37 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1077,8 +1257,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-23T00:07:15.028Z",
-            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-07-23T00:37:33.528Z",
+            "freshness_label": "As of Jul 22, 2026, 8:37 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -1090,8 +1270,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-23T00:07:15.028Z",
-            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-07-23T00:37:33.528Z",
+            "freshness_label": "As of Jul 22, 2026, 8:37 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

@@ -4,7 +4,7 @@
   "edition_date": "2026-07-22",
   "volume": 1,
   "edition": 113,
-  "generated_at": "2026-07-23T00:07:15.028Z",
+  "generated_at": "2026-07-23T00:37:33.528Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, LAD 3",
-    "dek": "Bottom 5th · 0 outs",
-    "summary": "Rafael Marchán is up against Eric Lauer. Series: Series tied 1-1.",
+    "headline": "PHI 3, LAD 5",
+    "dek": "Top 7th · 0 outs",
+    "summary": "Tommy Edman is up against Seth Johnson. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Will Warren · PHI vs NYY · Fri, Jul 24 · 6:45 PM"
   },
@@ -55,17 +55,17 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 77,
-      "condition": "Clear",
-      "wind": "8 mph · gusts 17",
-      "gusts_mph": 17
+      "temp_f": 76,
+      "condition": "Partly cloudy",
+      "wind": "8 mph · gusts 18",
+      "gusts_mph": 18
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Rafael Marchán",
-        "meta": "vs Eric Lauer"
+        "name": "Tommy Edman",
+        "meta": "vs Seth Johnson"
       },
       "pitches": [],
       "count": {
@@ -75,10 +75,10 @@
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-23T00:07:15.635Z",
+    "updated_at": "2026-07-23T00:37:34.331Z",
     "current_game_pk": 823438,
     "next_game_pk": 823434,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Clear · gusts 17 mph",
+      "text": "76° · Partly cloudy · gusts 18 mph",
       "highlight": false
     }
   ]
