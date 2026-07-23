@@ -4,21 +4,21 @@
   "edition_date": "2026-07-22",
   "volume": 1,
   "edition": 113,
-  "generated_at": "2026-07-23T01:35:28.925Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-23T02:18:01.748Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 56,
-    "losses": 46,
-    "streak": "L1",
+    "losses": 47,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, LAD 9",
-    "dek": "Middle 9th · 3 outs",
-    "summary": "Derek Hill is up against Will Klein. Series: Series tied 1-1.",
+    "headline": "PHI 5, LAD 9.",
+    "dek": "LAD 9, PHI 5 · Eric Lauer · 5.1 IP, 4 H, 3 ER, 5 K",
+    "summary": "PHI 5, LAD 9. Final at Citizens Bank Park, Philadelphia. LAD wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Will Warren · PHI vs NYY · Fri, Jul 24 · 6:45 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "LAD wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,64 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 74,
-      "condition": "Partly cloudy",
-      "wind": "8 mph · gusts 16",
-      "gusts_mph": 16
+      "temp_f": 73,
+      "condition": "Overcast",
+      "wind": "7 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Derek Hill",
-        "meta": "vs Will Klein"
-      },
-      "pitches": [
-        "B",
-        "S",
-        "S",
-        "X"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 2,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Middle 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-23T01:35:29.568Z",
-    "current_game_pk": 823438,
-    "next_game_pk": 823434,
+    "updated_at": "2026-07-23T02:18:02.251Z",
+    "current_game_pk": 823434,
+    "next_game_pk": 823435,
     "next_game": {
-      "game_pk": 823434,
-      "official_date": "2026-07-24",
-      "date_label": "Fri, Jul 24, 2026",
-      "time_label": "6:45 PM",
+      "game_pk": 823435,
+      "official_date": "2026-07-25",
+      "date_label": "Sat, Jul 25, 2026",
+      "time_label": "6:05 PM",
       "title": "New York Yankees at Phillies",
       "matchup": "NYY at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823438,
-      "official_date": "2026-07-22",
-      "title": "Los Angeles Dodgers at Phillies",
-      "matchup": "LAD at PHI"
+      "game_pk": 823434,
+      "official_date": "2026-07-24",
+      "title": "New York Yankees at Phillies",
+      "matchup": "NYY at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 56-46",
+      "text": "PHI 56-47",
       "highlight": true
     },
     {
@@ -128,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Partly cloudy · gusts 16 mph",
+      "text": "73° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
