@@ -5,14 +5,14 @@
     "edition": 113,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-22T23:49:20.494Z",
+    "generated_at": "2026-07-23T00:07:15.028Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 22, 2026, 7:49 PM ET",
+      "generated_at_et": "Jul 22, 2026, 8:07 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 2, LAD 1",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Kyle Tucker is up against Aaron Nola. Series: Series tied 1-1.",
+    "headline": "PHI 3, LAD 3",
+    "dek": "Bottom 5th · 0 outs",
+    "summary": "Rafael Marchán is up against Eric Lauer. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "78° · Clear"
+        "value": "77° · Clear"
       }
     ],
     "bullets": [
-      "Kyle Tucker at the plate",
-      "Aaron Nola on the mound",
+      "Rafael Marchán at the plate",
+      "Eric Lauer on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,7 +346,7 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 78,
+          "temp_f": 77,
           "condition": "Clear",
           "wind": "8 mph · gusts 17",
           "gusts_mph": 17
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.55",
+            "era": "5.67",
             "record": "3-7",
-            "whip": "1.41"
+            "whip": "1.44"
           },
           "away": {
             "team": "LAD",
@@ -375,18 +375,18 @@
         "linescore": {
           "currentInning": 5,
           "currentInningOrdinal": "5th",
-          "inningState": "Top",
-          "isTopInning": true,
+          "inningState": "Bottom",
+          "isTopInning": false,
           "outs": 0,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 2,
+              "runs": 3,
+              "hits": 5,
               "errors": 0
             },
             "home": {
-              "runs": 2,
-              "hits": 2,
+              "runs": 3,
+              "hits": 4,
               "errors": 0
             }
           },
@@ -446,13 +446,13 @@
             {
               "num": 5,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 2,
+                "hits": 3,
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 1,
+                "hits": 2,
                 "errors": 0
               }
             }
@@ -870,11 +870,123 @@
             "inning": 5,
             "half": "top",
             "team": "LAD",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Kyle Tucker",
             "actor_id": 663656,
-            "detail": "Play",
+            "detail": "Kyle Tucker flies out to center fielder Derek Hill.",
             "score_after": "PHI 2, LAD 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:30",
+            "inning": 5,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "single",
+            "actor": "Teoscar Hernández",
+            "actor_id": 606192,
+            "detail": "Teoscar Hernández singles on a ground ball to shortstop Trea Turner.",
+            "score_after": "PHI 2, LAD 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:31",
+            "inning": 5,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "single",
+            "actor": "Tommy Edman",
+            "actor_id": 669242,
+            "detail": "Tommy Edman singles on a ground ball to right fielder Bryan De La Cruz. Teoscar Hernández to 3rd.",
+            "score_after": "PHI 2, LAD 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:32",
+            "inning": 5,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "extra_base_hit",
+            "actor": "Dalton Rushing",
+            "actor_id": 687221,
+            "detail": "Dalton Rushing doubles (11) on a line drive to right fielder Bryan De La Cruz. Teoscar Hernández scores. Tommy Edman scores.",
+            "score_after": "PHI 2, LAD 3",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823438:33",
+            "inning": 5,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "walk_hbp",
+            "actor": "Shohei Ohtani",
+            "actor_id": 660271,
+            "detail": "Aaron Nola intentionally walks Shohei Ohtani.",
+            "score_after": "PHI 2, LAD 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:34",
+            "inning": 5,
+            "half": "top",
+            "team": "LAD",
+            "event_type": "other",
+            "actor": "Andy Pages",
+            "actor_id": 681624,
+            "detail": "Andy Pages grounds into a double play, third baseman Alec Bohm to second baseman Bryson Stott to first baseman Bryce Harper. Shohei…",
+            "score_after": "PHI 2, LAD 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823438:35",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz homers (1) on a fly ball to center field.",
+            "score_after": "PHI 3, LAD 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823438:36",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott doubles (19) on a sharp line drive to center fielder Andy Pages.",
+            "score_after": "PHI 3, LAD 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823438:37",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Rafael Marchán",
+            "actor_id": 665561,
+            "detail": "Mound Visit.",
+            "score_after": "PHI 3, LAD 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -882,23 +994,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Kyle Tucker",
-            "meta": "vs Aaron Nola"
+            "name": "Rafael Marchán",
+            "meta": "vs Eric Lauer"
           },
-          "pitches": [
-            "S"
-          ],
+          "pitches": [],
           "count": {
             "balls": 0,
-            "strikes": 1,
+            "strikes": 0,
             "outs": 0
           },
           "bases": {
             "first": false,
-            "second": false,
+            "second": true,
             "third": false
           },
-          "status": "Top 5th"
+          "status": "Bottom 5th"
         }
       }
     },
@@ -915,8 +1025,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:49:20.494Z",
-            "freshness_label": "As of Jul 22, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-23T00:07:15.028Z",
+            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -928,8 +1038,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:49:20.494Z",
-            "freshness_label": "As of Jul 22, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-23T00:07:15.028Z",
+            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -941,8 +1051,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:49:20.494Z",
-            "freshness_label": "As of Jul 22, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-23T00:07:15.028Z",
+            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -954,8 +1064,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:49:20.494Z",
-            "freshness_label": "As of Jul 22, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-23T00:07:15.028Z",
+            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -967,8 +1077,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:49:20.494Z",
-            "freshness_label": "As of Jul 22, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-23T00:07:15.028Z",
+            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -980,8 +1090,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-22T23:49:20.494Z",
-            "freshness_label": "As of Jul 22, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-23T00:07:15.028Z",
+            "freshness_label": "As of Jul 22, 2026, 8:07 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

@@ -4,7 +4,7 @@
   "edition_date": "2026-07-22",
   "volume": 1,
   "edition": 113,
-  "generated_at": "2026-07-22T23:49:20.494Z",
+  "generated_at": "2026-07-23T00:07:15.028Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, LAD 1",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Kyle Tucker is up against Aaron Nola. Series: Series tied 1-1.",
+    "headline": "PHI 3, LAD 3",
+    "dek": "Bottom 5th · 0 outs",
+    "summary": "Rafael Marchán is up against Eric Lauer. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Will Warren · PHI vs NYY · Fri, Jul 24 · 6:45 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 77,
       "condition": "Clear",
       "wind": "8 mph · gusts 17",
       "gusts_mph": 17
@@ -64,23 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Tucker",
-        "meta": "vs Aaron Nola"
+        "name": "Rafael Marchán",
+        "meta": "vs Eric Lauer"
       },
-      "pitches": [
-        "S"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "outs": 0
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
-      "status": "Top 5th"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -88,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-22T23:49:21.353Z",
+    "updated_at": "2026-07-23T00:07:15.635Z",
     "current_game_pk": 823438,
     "next_game_pk": 823434,
     "next_game": {
@@ -125,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 17 mph",
+      "text": "77° · Clear · gusts 17 mph",
       "highlight": false
     }
   ]
