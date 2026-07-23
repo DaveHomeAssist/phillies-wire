@@ -4,7 +4,7 @@
   "edition_date": "2026-07-22",
   "volume": 1,
   "edition": 113,
-  "generated_at": "2026-07-23T01:15:22.017Z",
+  "generated_at": "2026-07-23T01:35:28.925Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, LAD 9",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "Trea Turner is up against Will Klein. Series: Series tied 1-1.",
+    "headline": "PHI 4, LAD 9",
+    "dek": "Middle 9th · 3 outs",
+    "summary": "Derek Hill is up against Will Klein. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Will Warren · PHI vs NYY · Fri, Jul 24 · 6:45 PM"
   },
@@ -55,33 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 75,
-      "condition": "Overcast",
-      "wind": "8 mph · gusts 15",
-      "gusts_mph": 15
+      "temp_f": 74,
+      "condition": "Partly cloudy",
+      "wind": "8 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
+        "name": "Derek Hill",
         "meta": "vs Will Klein"
       },
       "pitches": [
+        "B",
         "S",
-        "B"
+        "S",
+        "X"
       ],
       "count": {
         "balls": 1,
-        "strikes": 1,
-        "outs": 1
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 8th"
+      "status": "Middle 9th"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-23T01:15:22.882Z",
+    "updated_at": "2026-07-23T01:35:29.568Z",
     "current_game_pk": 823438,
     "next_game_pk": 823434,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "75° · Overcast · gusts 15 mph",
+      "text": "74° · Partly cloudy · gusts 16 mph",
       "highlight": false
     }
   ]
