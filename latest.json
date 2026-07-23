@@ -4,7 +4,7 @@
   "edition_date": "2026-07-22",
   "volume": 1,
   "edition": 113,
-  "generated_at": "2026-07-23T00:37:33.528Z",
+  "generated_at": "2026-07-23T00:54:20.448Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, LAD 5",
-    "dek": "Top 7th · 0 outs",
-    "summary": "Tommy Edman is up against Seth Johnson. Series: Series tied 1-1.",
+    "dek": "Top 8th · 0 outs",
+    "summary": "Freddie Freeman is up against Tim Mayza. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Will Warren · PHI vs NYY · Fri, Jul 24 · 6:45 PM"
   },
@@ -55,30 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
-      "condition": "Partly cloudy",
-      "wind": "8 mph · gusts 18",
-      "gusts_mph": 18
+      "temp_f": 75,
+      "condition": "Overcast",
+      "wind": "7 mph · gusts 17",
+      "gusts_mph": 17
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Tommy Edman",
-        "meta": "vs Seth Johnson"
+        "name": "Freddie Freeman",
+        "meta": "vs Tim Mayza"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B"
+      ],
       "count": {
-        "balls": 0,
+        "balls": 2,
         "strikes": 0,
         "outs": 0
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-23T00:37:34.331Z",
+    "updated_at": "2026-07-23T00:54:21.231Z",
     "current_game_pk": 823438,
     "next_game_pk": 823434,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Partly cloudy · gusts 18 mph",
+      "text": "75° · Overcast · gusts 17 mph",
       "highlight": false
     }
   ]
