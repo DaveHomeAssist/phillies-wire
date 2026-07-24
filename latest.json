@@ -4,7 +4,7 @@
   "edition_date": "2026-07-24",
   "volume": 1,
   "edition": 115,
-  "generated_at": "2026-07-24T23:08:03.743Z",
+  "generated_at": "2026-07-24T23:36:17.992Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYY 0",
-    "dek": "Bottom 2nd · 1 out",
-    "summary": "Brandon Marsh is up against Cam Schlittler. Series: Regular Season.",
+    "headline": "PHI 0, NYY 1",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "Trea Turner is up against Cam Schlittler. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Ryan Weathers · PHI vs NYY · Sat, Jul 25 · 6:05 PM"
   },
@@ -55,30 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 78,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "6 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
+        "name": "Trea Turner",
         "meta": "vs Cam Schlittler"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "F",
+        "B",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "balls": 3,
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "Middle 4th"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-24T23:08:04.042Z",
+    "updated_at": "2026-07-24T23:36:18.423Z",
     "current_game_pk": 823434,
     "next_game_pk": 823435,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Overcast · gusts 9 mph",
+      "text": "78° · Overcast · gusts 11 mph",
       "highlight": false
     },
     {
