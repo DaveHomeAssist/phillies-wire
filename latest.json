@@ -4,9 +4,9 @@
   "edition_date": "2026-07-24",
   "volume": 1,
   "edition": 115,
-  "generated_at": "2026-07-24T22:08:35.499Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-24T22:36:55.869Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 56,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Yankees @ Phillies · Game 1 of 3",
-    "dek": "Jesús Luzardo vs Cam Schlittler",
-    "summary": "Jesús Luzardo vs Cam Schlittler · Yankees @ Phillies · Game 1 of 3",
+    "headline": "PHI 0, NYY 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Paul Goldschmidt is up against Jesús Luzardo. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Ryan Weathers · PHI vs NYY · Sat, Jul 25 · 6:05 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
-      "condition": "Clear",
-      "wind": "4 mph · gusts 6",
-      "gusts_mph": 6
+      "temp_f": 80,
+      "condition": "Mostly sunny",
+      "wind": "7 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Paul Goldschmidt",
+        "meta": "vs Jesús Luzardo"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-24T22:08:36.214Z",
+    "updated_at": "2026-07-24T22:36:56.164Z",
     "current_game_pk": 823434,
     "next_game_pk": 823435,
     "next_game": {
@@ -106,15 +123,15 @@
       "highlight": false
     },
     {
-      "text": "81° · Clear · gusts 6 mph",
+      "text": "80° · Mostly sunny · gusts 9 mph",
       "highlight": false
     },
     {
-      "text": "signed free agent RHP Brendan Sweeney to a minor league contract.",
+      "text": "signed free agent LF Jack Hopko to a minor league contract.",
       "highlight": false
     },
     {
-      "text": "signed RHP Justin Lee.",
+      "text": "signed RHP Christian Coppola.",
       "highlight": false
     },
     {
@@ -122,7 +139,7 @@
       "highlight": false
     },
     {
-      "text": "signed free agent LHP Cal Higgins to a minor league contract.",
+      "text": "signed free agent RHP Brendan Sweeney to a minor league contract.",
       "highlight": false
     }
   ]
