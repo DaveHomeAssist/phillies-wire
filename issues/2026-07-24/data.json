@@ -5,14 +5,14 @@
     "edition": 115,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-24T22:36:55.869Z",
+    "generated_at": "2026-07-24T23:07:25.794Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 24, 2026, 6:36 PM ET",
+      "generated_at_et": "Jul 24, 2026, 7:07 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, NYY 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Paul Goldschmidt is up against Jesús Luzardo. Series: Regular Season.",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Brandon Marsh is up against Cam Schlittler. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Mostly sunny"
+        "value": "79° · Overcast"
       }
     ],
     "bullets": [
-      "Paul Goldschmidt at the plate",
-      "Jesús Luzardo on the mound",
+      "Brandon Marsh at the plate",
+      "Cam Schlittler on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
-          "condition": "Mostly sunny",
-          "wind": "7 mph · gusts 9",
+          "temp_f": 79,
+          "condition": "Overcast",
+          "wind": "6 mph · gusts 9",
           "gusts_mph": 9
         },
         "giveaway": "",
@@ -359,24 +359,24 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.43",
+            "era": "3.38",
             "record": "9-4",
-            "whip": "1.21"
+            "whip": "1.18"
           },
           "away": {
             "team": "NYY",
             "name": "Cam Schlittler",
             "hand": "R",
-            "era": "2.20",
+            "era": "2.18",
             "record": "9-6",
-            "whip": "0.96"
+            "whip": "0.95"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "Top",
-          "isTopInning": true,
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "Bottom",
+          "isTopInning": false,
           "outs": 0,
           "teams": {
             "away": {
@@ -394,7 +394,20 @@
             {
               "num": 1,
               "away": {
-                "runs": null,
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -412,10 +425,136 @@
             "inning": 1,
             "half": "top",
             "team": "NYY",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Paul Goldschmidt",
             "actor_id": 502671,
-            "detail": "Status Change - Warmup",
+            "detail": "Paul Goldschmidt called out on strikes.",
+            "score_after": "PHI 0, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823434:1",
+            "inning": 1,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "out",
+            "actor": "Ben Rice",
+            "actor_id": 700250,
+            "detail": "Ben Rice grounds out, first baseman Bryce Harper to pitcher Jesús Luzardo.",
+            "score_after": "PHI 0, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823434:2",
+            "inning": 1,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "out",
+            "actor": "Amed Rosario",
+            "actor_id": 642708,
+            "detail": "Amed Rosario grounds out, shortstop Trea Turner to first baseman Bryce Harper.",
+            "score_after": "PHI 0, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823434:3",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner strikes out swinging.",
+            "score_after": "PHI 0, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823434:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to left fielder Cody Bellinger.",
+            "score_after": "PHI 0, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823434:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 0, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823434:6",
+            "inning": 2,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "strikeout",
+            "actor": "Cody Bellinger",
+            "actor_id": 641355,
+            "detail": "Cody Bellinger strikes out swinging.",
+            "score_after": "PHI 0, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823434:7",
+            "inning": 2,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "strikeout",
+            "actor": "Jasson Domínguez",
+            "actor_id": 691176,
+            "detail": "Jasson Domínguez strikes out swinging.",
+            "score_after": "PHI 0, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823434:8",
+            "inning": 2,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "out",
+            "actor": "Anthony Volpe",
+            "actor_id": 683011,
+            "detail": "Anthony Volpe grounds out to first baseman Bryce Harper.",
+            "score_after": "PHI 0, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823434:9",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Play",
             "score_after": "PHI 0, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,13 +563,18 @@
         ],
         "situation": {
           "batter": {
-            "name": "Paul Goldschmidt",
-            "meta": "vs Jesús Luzardo"
+            "name": "Brandon Marsh",
+            "meta": "vs Cam Schlittler"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "F",
+            "B",
+            "S"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
+            "balls": 2,
+            "strikes": 2,
             "outs": 0
           },
           "bases": {
@@ -438,7 +582,7 @@
             "second": false,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -455,8 +599,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-24T22:36:55.869Z",
-            "freshness_label": "As of Jul 24, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-24T23:07:25.794Z",
+            "freshness_label": "As of Jul 24, 2026, 7:07 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -468,8 +612,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-24T22:36:55.869Z",
-            "freshness_label": "As of Jul 24, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-24T23:07:25.794Z",
+            "freshness_label": "As of Jul 24, 2026, 7:07 PM ET"
           },
           {
             "name": "Adolis García",
@@ -481,8 +625,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-24T22:36:55.869Z",
-            "freshness_label": "As of Jul 24, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-24T23:07:25.794Z",
+            "freshness_label": "As of Jul 24, 2026, 7:07 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -494,8 +638,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-24T22:36:55.869Z",
-            "freshness_label": "As of Jul 24, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-24T23:07:25.794Z",
+            "freshness_label": "As of Jul 24, 2026, 7:07 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -507,8 +651,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-24T22:36:55.869Z",
-            "freshness_label": "As of Jul 24, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-24T23:07:25.794Z",
+            "freshness_label": "As of Jul 24, 2026, 7:07 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -520,8 +664,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-24T22:36:55.869Z",
-            "freshness_label": "As of Jul 24, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-24T23:07:25.794Z",
+            "freshness_label": "As of Jul 24, 2026, 7:07 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -533,8 +677,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-24T22:36:55.869Z",
-            "freshness_label": "As of Jul 24, 2026, 6:36 PM ET"
+            "last_confirmed": "2026-07-24T23:07:25.794Z",
+            "freshness_label": "As of Jul 24, 2026, 7:07 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
