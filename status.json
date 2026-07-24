@@ -1,19 +1,21 @@
 {
   "publication": "Phillies Wire",
-  "date": "2026-07-23",
-  "generated_at": "2026-07-24T03:53:45.537Z",
-  "off_day": true,
-  "issue_path": "issues/2026-07-23/",
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24T04:21:58.268Z",
+  "off_day": false,
+  "issue_path": "issues/2026-07-24/",
   "archive_path": "archive/",
   "schedule_path": "data/phillies-2026.json",
-  "archive_entries": 114,
+  "archive_entries": 115,
   "status": {
-    "mode": "off_day",
-    "mode_label": "Off Day",
+    "mode": "pregame",
+    "mode_label": "Pregame",
     "crawl_state": "ok",
     "enrich_state": "skipped",
-    "enrich_label": "No game today. Archive and next-game mode published.",
-    "generated_at_et": "Jul 23, 2026, 11:53 PM ET",
-    "source_notes": []
+    "enrich_label": "Pregame edition",
+    "generated_at_et": "Jul 24, 2026, 12:21 AM ET",
+    "source_notes": [
+      "Farm system notes hidden because the editorial baseline is stale."
+    ]
   }
 }

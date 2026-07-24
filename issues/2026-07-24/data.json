@@ -1,0 +1,491 @@
+{
+  "schema_version": "1.4.0",
+  "meta": {
+    "date": "2026-07-24",
+    "edition": 115,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-07-24T04:21:58.268Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Jul 24, 2026, 12:21 AM ET",
+      "source_notes": [
+        "Farm system notes hidden because the editorial baseline is stale."
+      ]
+    }
+  },
+  "record": {
+    "wins": 56,
+    "losses": 47,
+    "streak": "L2",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Yankees @ Phillies · Game 1 of 3",
+    "dek": "Jesús Luzardo vs Will Warren",
+    "summary": "Jesús Luzardo vs Will Warren · Yankees @ Phillies · Game 1 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "6:45 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "Citizens Bank Park, Philadelphia"
+      },
+      {
+        "label": "Watch",
+        "value": "Apple TV · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "67° · Clear · 2 mph · gusts 9",
+      "Regular Season"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "Cam Schlittler · PHI vs NYY · Sat, Jul 25 · 6:05 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "6:45 PM",
+        "starters": {
+          "home": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "away": {
+            "team": "NYY",
+            "name": "Will Warren",
+            "hand": "R"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "team": "NYY",
+            "name": "Will Warren",
+            "hand": "R"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Yankees @ Phillies · Game 1 of 3",
+        "first_pitch": "6:45 PM",
+        "venue": "Citizens Bank Park, Philadelphia",
+        "starters": {
+          "home": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "away": {
+            "name": "Will Warren",
+            "hand": "R"
+          },
+          "phi": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "name": "Will Warren",
+            "hand": "R"
+          }
+        },
+        "series": {
+          "home_wins": 0,
+          "away_wins": 0,
+          "label": "Regular Season"
+        },
+        "broadcast": {
+          "tv": "Apple TV",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 67,
+          "condition": "Clear",
+          "wind": "2 mph · gusts 9",
+          "gusts_mph": 9
+        },
+        "giveaway": "",
+        "transit": "Broad Street Line to NRG Station",
+        "venue_is_home": true,
+        "matchup_tape": {
+          "home": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L",
+            "era": "3.43",
+            "record": "9-4",
+            "whip": "1.21"
+          },
+          "away": {
+            "team": "NYY",
+            "name": "Will Warren",
+            "hand": "R",
+            "era": "4.00",
+            "record": "7-4",
+            "whip": "1.37"
+          }
+        },
+        "linescore": {
+          "currentInning": null,
+          "currentInningOrdinal": "",
+          "inningState": "",
+          "isTopInning": false,
+          "outs": null,
+          "teams": {
+            "away": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            },
+            "home": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            }
+          },
+          "innings": []
+        },
+        "plays": []
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-24T04:21:58.268Z",
+            "freshness_label": "As of Jul 24, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-24T04:21:58.268Z",
+            "freshness_label": "As of Jul 24, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-24T04:21:58.268Z",
+            "freshness_label": "As of Jul 24, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Tanner Banks",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left forearm strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-24T04:21:58.268Z",
+            "freshness_label": "As of Jul 24, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Brad Keller",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right elbow UCL tear",
+            "status_note": "",
+            "retroactive_to": "2026-07-13",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-24T04:21:58.268Z",
+            "freshness_label": "As of Jul 24, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Garrett Stubbs",
+            "position": "C",
+            "il_type": "10-day",
+            "badge": "il",
+            "injury": "Left wrist inflammation",
+            "status_note": "",
+            "retroactive_to": "2026-07-18",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-24T04:21:58.268Z",
+            "freshness_label": "As of Jul 24, 2026, 12:21 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Tomorrow",
+    "matchup": "Cam Schlittler · PHI vs NYY",
+    "date": "Sat, Jul 25",
+    "time": "6:05 PM",
+    "broadcast": "NBCSP",
+    "venue": "Citizens Bank Park"
+  }
+}
