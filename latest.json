@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-24",
+  "edition_date": "2026-07-25",
   "volume": 1,
-  "edition": 115,
-  "generated_at": "2026-07-25T03:51:34.153Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 116,
+  "generated_at": "2026-07-25T05:03:30.593Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 56,
@@ -16,32 +16,32 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYY 1.",
-    "dek": "NYY 1, PHI 0 · Cam Schlittler · 7.1 IP, 3 H, 0 ER, 12 K",
-    "summary": "PHI 0, NYY 1. Final at Citizens Bank Park, Philadelphia. NYY leads 1-0.",
+    "headline": "Yankees @ Phillies · Game 2 of 3",
+    "dek": "TBD vs Ryan Weathers",
+    "summary": "TBD vs Ryan Weathers · Yankees @ Phillies · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Ryan Weathers · PHI vs NYY · Sat, Jul 25 · 6:05 PM"
+    "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
   },
   "game": {
-    "matchup": "Yankees @ Phillies · Game 1 of 3",
-    "first_pitch": "6:45 PM",
+    "matchup": "Yankees @ Phillies · Game 2 of 3",
+    "first_pitch": "6:05 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "TBD",
+        "hand": "R"
       },
       "away": {
-        "name": "Cam Schlittler",
-        "hand": "R"
-      },
-      "phi": {
-        "name": "Jesús Luzardo",
+        "name": "Ryan Weathers",
         "hand": "L"
       },
-      "opp": {
-        "name": "Cam Schlittler",
+      "phi": {
+        "name": "TBD",
         "hand": "R"
+      },
+      "opp": {
+        "name": "Ryan Weathers",
+        "hand": "L"
       }
     },
     "series": {
@@ -50,15 +50,15 @@
       "label": "NYY leads 1-0"
     },
     "broadcast": {
-      "tv": "Apple TV",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 69,
       "condition": "Overcast",
-      "wind": "2 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "2 mph · gusts 2",
+      "gusts_mph": 2
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-25T03:51:35.093Z",
+    "updated_at": "2026-07-25T05:03:31.026Z",
     "current_game_pk": 823435,
     "next_game_pk": 823433,
     "next_game": {
@@ -94,35 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Yankees @ Phillies · Game 1 of 3 · 6:45 PM",
+      "text": "Yankees @ Phillies · Game 2 of 3 · 6:05 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Cam Schlittler",
+      "text": "TBD vs Ryan Weathers",
       "highlight": true
     },
     {
-      "text": "Apple TV · 94 WIP",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "69° · Overcast · gusts 5 mph",
-      "highlight": false
-    },
-    {
-      "text": "signed free agent RHP Brendan Sweeney to a minor league contract.",
-      "highlight": false
-    },
-    {
-      "text": "signed RHP Justin Lee.",
-      "highlight": false
-    },
-    {
-      "text": "signed free agent RHP Kobe Minchey to a minor league contract.",
-      "highlight": false
-    },
-    {
-      "text": "signed free agent LHP Cal Higgins to a minor league contract.",
+      "text": "69° · Overcast · gusts 2 mph",
       "highlight": false
     }
   ]
