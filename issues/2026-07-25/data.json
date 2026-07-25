@@ -5,13 +5,13 @@
     "edition": 116,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-25T21:47:08.998Z",
+    "generated_at": "2026-07-25T21:47:49.913Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
+      "enrich_label": "Live update",
       "generated_at_et": "Jul 25, 2026, 5:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Yankees @ Phillies · Game 2 of 3",
-    "dek": "Tim Mayza vs Ryan Weathers",
-    "summary": "Tim Mayza vs Ryan Weathers · Yankees @ Phillies · Game 2 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, NYY 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Amed Rosario is up against Tim Mayza. Series: NYY leads 1-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "6:05 PM"
-      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "81° · Clear"
       }
     ],
     "bullets": [
-      "81° · Clear · 8 mph · gusts 10",
-      "NYY leads 1-0"
+      "Amed Rosario at the plate",
+      "Tim Mayza on the mound",
+      "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
@@ -420,7 +421,25 @@
             "is_scoring": false,
             "is_key": false
           }
-        ]
+        ],
+        "situation": {
+          "batter": {
+            "name": "Amed Rosario",
+            "meta": "vs Tim Mayza"
+          },
+          "pitches": [],
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "bases": {
+            "first": false,
+            "second": false,
+            "third": false
+          },
+          "status": "Top 1st"
+        }
       }
     },
     "injury_report": {
@@ -436,7 +455,7 @@
             "retroactive_to": "2026-07-25",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-25T21:47:08.998Z",
+            "last_confirmed": "2026-07-25T21:47:49.913Z",
             "freshness_label": "As of Jul 25, 2026, 5:47 PM ET"
           },
           {
@@ -449,7 +468,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-25T21:47:08.998Z",
+            "last_confirmed": "2026-07-25T21:47:49.913Z",
             "freshness_label": "As of Jul 25, 2026, 5:47 PM ET"
           },
           {
@@ -462,7 +481,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-25T21:47:08.998Z",
+            "last_confirmed": "2026-07-25T21:47:49.913Z",
             "freshness_label": "As of Jul 25, 2026, 5:47 PM ET"
           },
           {
@@ -475,7 +494,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-25T21:47:08.998Z",
+            "last_confirmed": "2026-07-25T21:47:49.913Z",
             "freshness_label": "As of Jul 25, 2026, 5:47 PM ET"
           },
           {
@@ -488,7 +507,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-25T21:47:08.998Z",
+            "last_confirmed": "2026-07-25T21:47:49.913Z",
             "freshness_label": "As of Jul 25, 2026, 5:47 PM ET"
           },
           {
@@ -501,7 +520,7 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-25T21:47:08.998Z",
+            "last_confirmed": "2026-07-25T21:47:49.913Z",
             "freshness_label": "As of Jul 25, 2026, 5:47 PM ET"
           },
           {
@@ -514,7 +533,7 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-25T21:47:08.998Z",
+            "last_confirmed": "2026-07-25T21:47:49.913Z",
             "freshness_label": "As of Jul 25, 2026, 5:47 PM ET"
           }
         ],

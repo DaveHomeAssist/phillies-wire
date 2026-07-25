@@ -4,9 +4,9 @@
   "edition_date": "2026-07-25",
   "volume": 1,
   "edition": 116,
-  "generated_at": "2026-07-25T21:47:08.998Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-25T21:47:49.913Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 56,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Yankees @ Phillies · Game 2 of 3",
-    "dek": "Tim Mayza vs Ryan Weathers",
-    "summary": "Tim Mayza vs Ryan Weathers · Yankees @ Phillies · Game 2 of 3",
+    "headline": "PHI 0, NYY 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Amed Rosario is up against Tim Mayza. Series: NYY leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
   },
@@ -62,14 +62,31 @@
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Amed Rosario",
+        "meta": "vs Tim Mayza"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-25T21:47:09.507Z",
+    "updated_at": "2026-07-25T21:47:50.338Z",
     "current_game_pk": 823435,
     "next_game_pk": 823433,
     "next_game": {
@@ -118,11 +135,11 @@
       "highlight": false
     },
     {
-      "text": "Kansas City Royals traded CF Kameron Misner to Philadelphia Phillies for cash.",
+      "text": "selected the contract of RHP Brian Keller from Lehigh Valley IronPigs.",
       "highlight": false
     },
     {
-      "text": "recalled LHP Kyle Backhus from Lehigh Valley IronPigs.",
+      "text": "optioned RHP Alex McFarlane to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
