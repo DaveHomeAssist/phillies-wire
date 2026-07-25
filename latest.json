@@ -4,7 +4,7 @@
   "edition_date": "2026-07-25",
   "volume": 1,
   "edition": 116,
-  "generated_at": "2026-07-25T22:19:37.855Z",
+  "generated_at": "2026-07-25T22:47:08.366Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, NYY 0",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Edmundo Sosa is up against Ryan Weathers. Series: NYY leads 1-0.",
+    "headline": "PHI 1, NYY 1",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Kyle Schwarber is up against Ryan Weathers. Series: NYY leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
   },
@@ -55,32 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "7 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "8 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Edmundo Sosa",
+        "name": "Kyle Schwarber",
         "meta": "vs Ryan Weathers"
       },
       "pitches": [
+        "B",
         "S"
       ],
       "count": {
         "balls": 1,
         "strikes": 1,
-        "outs": 2
+        "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -88,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-25T22:19:38.397Z",
+    "updated_at": "2026-07-25T22:47:08.877Z",
     "current_game_pk": 823435,
     "next_game_pk": 823433,
     "next_game": {
@@ -125,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 9 mph",
+      "text": "79° · Clear · gusts 10 mph",
       "highlight": false
     },
     {
@@ -137,11 +138,11 @@
       "highlight": false
     },
     {
-      "text": "Kansas City Royals traded CF Kameron Misner to Philadelphia Phillies for cash.",
+      "text": "selected the contract of RHP Brian Keller from Lehigh Valley IronPigs.",
       "highlight": false
     },
     {
-      "text": "recalled LHP Kyle Backhus from Lehigh Valley IronPigs.",
+      "text": "optioned RHP Alex McFarlane to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
