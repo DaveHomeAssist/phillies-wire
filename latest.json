@@ -4,7 +4,7 @@
   "edition_date": "2026-07-24",
   "volume": 1,
   "edition": 115,
-  "generated_at": "2026-07-25T00:08:37.203Z",
+  "generated_at": "2026-07-25T00:54:06.051Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, NYY 1",
-    "dek": "Top 6th · 1 out",
-    "summary": "Amed Rosario is up against Jesús Luzardo. Series: Regular Season.",
+    "dek": "Bottom 8th · 1 out",
+    "summary": "Justin Crawford is up against Brent Headrick. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Ryan Weathers · PHI vs NYY · Sat, Jul 25 · 6:05 PM"
   },
@@ -55,17 +55,17 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 73,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "3 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Amed Rosario",
-        "meta": "vs Jesús Luzardo"
+        "name": "Justin Crawford",
+        "meta": "vs Brent Headrick"
       },
       "pitches": [],
       "count": {
@@ -74,11 +74,11 @@
         "outs": 1
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Top 6th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-25T00:08:37.847Z",
+    "updated_at": "2026-07-25T00:54:06.906Z",
     "current_game_pk": 823434,
     "next_game_pk": 823435,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 13 mph",
+      "text": "73° · Overcast · gusts 10 mph",
       "highlight": false
     },
     {
