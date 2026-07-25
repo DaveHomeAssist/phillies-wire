@@ -4,7 +4,7 @@
   "edition_date": "2026-07-25",
   "volume": 1,
   "edition": 116,
-  "generated_at": "2026-07-25T22:18:35.248Z",
+  "generated_at": "2026-07-25T22:19:37.855Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, NYY 0",
-    "dek": "Bottom 1st · 1 out",
-    "summary": "Alec Bohm is up against Ryan Weathers. Series: NYY leads 1-0.",
+    "dek": "Bottom 1st · 2 outs",
+    "summary": "Edmundo Sosa is up against Ryan Weathers. Series: NYY leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
   },
@@ -64,18 +64,16 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
+        "name": "Edmundo Sosa",
         "meta": "vs Ryan Weathers"
       },
       "pitches": [
-        "B",
-        "F",
-        "B"
+        "S"
       ],
       "count": {
-        "balls": 2,
+        "balls": 1,
         "strikes": 1,
-        "outs": 1
+        "outs": 2
       },
       "bases": {
         "first": false,
@@ -90,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-25T22:18:36.067Z",
+    "updated_at": "2026-07-25T22:19:38.397Z",
     "current_game_pk": 823435,
     "next_game_pk": 823433,
     "next_game": {
