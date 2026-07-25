@@ -4,7 +4,7 @@
   "edition_date": "2026-07-25",
   "volume": 1,
   "edition": 116,
-  "generated_at": "2026-07-25T23:21:02.409Z",
+  "generated_at": "2026-07-25T23:48:17.621Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, NYY 1",
-    "dek": "Bottom 5th · 0 outs",
-    "summary": "Trea Turner is up against Ryan Weathers. Series: NYY leads 1-0.",
+    "headline": "PHI 1, NYY 2",
+    "dek": "Bottom 6th · 2 outs",
+    "summary": "J.T. Realmuto is up against Ryan Weathers. Series: NYY leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
   },
@@ -55,39 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 76,
       "condition": "Clear",
-      "wind": "8 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "7 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
+        "name": "J.T. Realmuto",
         "meta": "vs Ryan Weathers"
       },
-      "pitches": [
-        "F",
-        "B",
-        "F",
-        "B",
-        "F",
-        "B",
-        "F",
-        "F"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -95,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-25T23:21:02.673Z",
+    "updated_at": "2026-07-25T23:48:18.500Z",
     "current_game_pk": 823435,
     "next_game_pk": 823433,
     "next_game": {
@@ -132,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 12 mph",
+      "text": "76° · Clear · gusts 11 mph",
       "highlight": false
     },
     {
