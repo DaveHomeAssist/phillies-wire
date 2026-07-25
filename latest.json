@@ -4,7 +4,7 @@
   "edition_date": "2026-07-24",
   "volume": 1,
   "edition": 115,
-  "generated_at": "2026-07-24T23:36:17.992Z",
+  "generated_at": "2026-07-25T00:07:46.530Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, NYY 1",
-    "dek": "Middle 4th · 3 outs",
-    "summary": "Trea Turner is up against Cam Schlittler. Series: Regular Season.",
+    "dek": "End 5th · 3 outs",
+    "summary": "Ben Rice is up against Jesús Luzardo. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Ryan Weathers · PHI vs NYY · Sat, Jul 25 · 6:05 PM"
   },
@@ -55,27 +55,28 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 76,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "6 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Cam Schlittler"
+        "name": "Ben Rice",
+        "meta": "vs Jesús Luzardo"
       },
       "pitches": [
-        "S",
+        "F",
         "F",
         "B",
-        "B"
+        "F",
+        "S"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 2,
+        "balls": 2,
+        "strikes": 3,
         "outs": 3
       },
       "bases": {
@@ -83,7 +84,7 @@
         "second": false,
         "third": false
       },
-      "status": "Middle 4th"
+      "status": "End 5th"
     },
     "recap_line": null
   },
@@ -91,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-24T23:36:18.423Z",
+    "updated_at": "2026-07-25T00:07:47.321Z",
     "current_game_pk": 823434,
     "next_game_pk": 823435,
     "next_game": {
@@ -128,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 11 mph",
+      "text": "76° · Overcast · gusts 13 mph",
       "highlight": false
     },
     {
