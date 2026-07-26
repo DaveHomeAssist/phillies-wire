@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-25",
+  "edition_date": "2026-07-26",
   "volume": 1,
-  "edition": 116,
-  "generated_at": "2026-07-26T03:45:16.709Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 117,
+  "generated_at": "2026-07-26T04:39:23.476Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 56,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, NYY 3.",
-    "dek": "NYY 3, PHI 1 · Ryan Weathers · 5.2 IP, 6 H, 1 ER, 7 K",
-    "summary": "PHI 1, NYY 3. Final at Citizens Bank Park, Philadelphia. NYY wins 2-0.",
+    "headline": "Yankees @ Phillies · Game 3 of 3",
+    "dek": "Cristopher Sánchez vs Will Warren",
+    "summary": "Cristopher Sánchez vs Will Warren · Yankees @ Phillies · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
+    "next_value": "PHI @ MIA · Mon, Jul 27 · 6:40 PM"
   },
   "game": {
-    "matchup": "Yankees @ Phillies · Game 2 of 3",
-    "first_pitch": "6:05 PM",
+    "matchup": "Yankees @ Phillies · Game 3 of 3",
+    "first_pitch": "7:20 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Tim Mayza",
+        "name": "Cristopher Sánchez",
         "hand": "L"
       },
       "away": {
-        "name": "Ryan Weathers",
-        "hand": "L"
+        "name": "Will Warren",
+        "hand": "R"
       },
       "phi": {
-        "name": "Tim Mayza",
+        "name": "Cristopher Sánchez",
         "hand": "L"
       },
       "opp": {
-        "name": "Ryan Weathers",
-        "hand": "L"
+        "name": "Will Warren",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "NYY wins 2-0"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "NBC/Peacock",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 67,
+      "temp_f": 66,
       "condition": "Clear",
-      "wind": "2 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "3 mph · gusts 3",
+      "gusts_mph": 3
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-26T03:45:17.695Z",
+    "updated_at": "2026-07-26T04:39:24.232Z",
     "current_game_pk": 823433,
     "next_game_pk": 823839,
     "next_game": {
@@ -94,35 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Yankees @ Phillies · Game 2 of 3 · 6:05 PM",
+      "text": "Yankees @ Phillies · Game 3 of 3 · 7:20 PM",
       "highlight": false
     },
     {
-      "text": "Tim Mayza vs Ryan Weathers",
+      "text": "Cristopher Sánchez vs Will Warren",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "NBC/Peacock · 94 WIP",
       "highlight": false
     },
     {
-      "text": "67° · Clear · gusts 7 mph",
-      "highlight": false
-    },
-    {
-      "text": "transferred LHP Tanner Banks from the 15-day injured list to the 60-day injured list. Left forearm strain.",
-      "highlight": false
-    },
-    {
-      "text": "designated RF Steward Berroa for assignment.",
-      "highlight": false
-    },
-    {
-      "text": "Kansas City Royals traded CF Kameron Misner to Philadelphia Phillies for cash.",
-      "highlight": false
-    },
-    {
-      "text": "recalled LHP Kyle Backhus from Lehigh Valley IronPigs.",
+      "text": "66° · Clear · gusts 3 mph",
       "highlight": false
     }
   ]
