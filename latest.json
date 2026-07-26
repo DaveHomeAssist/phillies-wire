@@ -4,7 +4,7 @@
   "edition_date": "2026-07-25",
   "volume": 1,
   "edition": 116,
-  "generated_at": "2026-07-26T00:35:16.280Z",
+  "generated_at": "2026-07-26T00:41:18.734Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, NYY 3",
-    "dek": "Top 9th · 2 outs",
-    "summary": "José Caballero is up against Jhoan Duran. Series: NYY leads 1-0.",
+    "dek": "Bottom 9th · 1 out",
+    "summary": "J.T. Realmuto is up against David Bednar. Series: NYY leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
   },
@@ -64,21 +64,27 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "José Caballero",
-        "meta": "vs Jhoan Duran"
+        "name": "J.T. Realmuto",
+        "meta": "vs David Bednar"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "F",
+        "S",
+        "X"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 2
+        "balls": 2,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 9th"
+      "status": "Bottom 9th"
     },
     "recap_line": null
   },
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-26T00:35:16.839Z",
+    "updated_at": "2026-07-26T00:41:19.179Z",
     "current_game_pk": 823435,
     "next_game_pk": 823433,
     "next_game": {
@@ -135,11 +141,11 @@
       "highlight": false
     },
     {
-      "text": "Kansas City Royals traded CF Kameron Misner to Philadelphia Phillies for cash.",
+      "text": "selected the contract of RHP Brian Keller from Lehigh Valley IronPigs.",
       "highlight": false
     },
     {
-      "text": "recalled LHP Kyle Backhus from Lehigh Valley IronPigs.",
+      "text": "optioned RHP Alex McFarlane to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]

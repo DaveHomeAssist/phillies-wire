@@ -5,14 +5,14 @@
     "edition": 116,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-26T00:35:16.280Z",
+    "generated_at": "2026-07-26T00:41:18.734Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 25, 2026, 8:35 PM ET",
+      "generated_at_et": "Jul 25, 2026, 8:41 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, NYY 3",
-    "dek": "Top 9th · 2 outs",
-    "summary": "José Caballero is up against Jhoan Duran. Series: NYY leads 1-0.",
+    "dek": "Bottom 9th · 1 out",
+    "summary": "J.T. Realmuto is up against David Bednar. Series: NYY leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "José Caballero at the plate",
-      "Jhoan Duran on the mound",
+      "J.T. Realmuto at the plate",
+      "David Bednar on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 9,
           "currentInningOrdinal": "9th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 3,
@@ -498,7 +498,7 @@
             {
               "num": 9,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -589,7 +589,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper out on a sacrifice fly to center fielder Trent Grisham. Trea Turner scores. Kyle Schwarber to 3rd.",
+            "detail": "Bryce Harper out on a sacrifice fly to center fielder Trent Grisham. Trea Turner scores. Kyle S…",
             "score_after": "PHI 1, NYY 0",
             "runs": 1,
             "is_scoring": true,
@@ -715,7 +715,7 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill grounds into a force out, third baseman Amed Rosario to second baseman Jazz Chisholm Jr. J.T. Realmuto out at 2nd.",
+            "detail": "Derek Hill grounds into a force out, third baseman Amed Rosario to second baseman Jazz Chisholm…",
             "score_after": "PHI 1, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -799,7 +799,7 @@
             "event_type": "single",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber singles on a sharp line drive to right fielder Jasson Domínguez. Trea Turner to 2nd.",
+            "detail": "Kyle Schwarber singles on a sharp line drive to right fielder Jasson Domínguez. Trea Turner to…",
             "score_after": "PHI 1, NYY 1",
             "runs": 0,
             "is_scoring": false,
@@ -813,7 +813,7 @@
             "event_type": "other",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds into a double play, shortstop José Caballero to first baseman Paul Goldschmidt. Trea Turner to 3rd. Kyle Schwa…",
+            "detail": "Bryce Harper grounds into a double play, shortstop José Caballero to first baseman Paul Goldsch…",
             "score_after": "PHI 1, NYY 1",
             "runs": 0,
             "is_scoring": false,
@@ -925,7 +925,7 @@
             "event_type": "single",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto singles on a sharp line drive to left fielder Cody Bellinger. Bryan De La Cruz to 2nd.",
+            "detail": "J.T. Realmuto singles on a sharp line drive to left fielder Cody Bellinger. Bryan De La Cruz to…",
             "score_after": "PHI 1, NYY 1",
             "runs": 0,
             "is_scoring": false,
@@ -953,7 +953,7 @@
             "event_type": "strikeout",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill challenged (pitch result), call on the field was confirmed: Derek Hill called out on strikes.",
+            "detail": "Derek Hill challenged (pitch result), call on the field was confirmed: Derek Hill called out on…",
             "score_after": "PHI 1, NYY 1",
             "runs": 0,
             "is_scoring": false,
@@ -1107,7 +1107,7 @@
             "event_type": "single",
             "actor": "Cody Bellinger",
             "actor_id": 641355,
-            "detail": "Cody Bellinger singles on a line drive to center fielder Derek Hill. Austin Wells scores. Paul Goldschmidt to 2nd.",
+            "detail": "Cody Bellinger singles on a line drive to center fielder Derek Hill. Austin Wells scores. Paul…",
             "score_after": "PHI 1, NYY 2",
             "runs": 1,
             "is_scoring": true,
@@ -1233,7 +1233,7 @@
             "event_type": "single",
             "actor": "José Caballero",
             "actor_id": 676609,
-            "detail": "José Caballero singles on a soft bunt ground ball to third baseman Alec Bohm. José Caballero to 2nd. José Caballero advances to 2nd…",
+            "detail": "José Caballero singles on a soft bunt ground ball to third baseman Alec Bohm. José Caballero to…",
             "score_after": "PHI 1, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1247,7 +1247,7 @@
             "event_type": "out",
             "actor": "Austin Wells",
             "actor_id": 669224,
-            "detail": "Austin Wells grounds out, second baseman Bryson Stott to first baseman Bryce Harper. José Caballero to 3rd.",
+            "detail": "Austin Wells grounds out, second baseman Bryson Stott to first baseman Bryce Harper. José Cabal…",
             "score_after": "PHI 1, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1401,7 +1401,7 @@
             "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa grounds into a force out, third baseman Ryan McMahon to second baseman Jazz Chisholm Jr. Alec Bohm out at 2nd. Edmundo…",
+            "detail": "Edmundo Sosa grounds into a force out, third baseman Ryan McMahon to second baseman Jazz Chisho…",
             "score_after": "PHI 1, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1454,10 +1454,24 @@
             "inning": 9,
             "half": "top",
             "team": "NYY",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "José Caballero",
             "actor_id": 676609,
-            "detail": "Play",
+            "detail": "José Caballero strikes out swinging.",
+            "score_after": "PHI 1, NYY 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823435:68",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, shortstop José Caballero to first baseman Paul Goldschmidt.",
             "score_after": "PHI 1, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1466,21 +1480,27 @@
         ],
         "situation": {
           "batter": {
-            "name": "José Caballero",
-            "meta": "vs Jhoan Duran"
+            "name": "J.T. Realmuto",
+            "meta": "vs David Bednar"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "B",
+            "F",
+            "S",
+            "X"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 2
+            "balls": 2,
+            "strikes": 2,
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 9th"
+          "status": "Bottom 9th"
         }
       }
     },
