@@ -4,9 +4,9 @@
   "edition_date": "2026-07-26",
   "volume": 1,
   "edition": 117,
-  "generated_at": "2026-07-26T22:48:56.094Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-26T23:20:45.357Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 56,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Yankees @ Phillies · Game 3 of 3",
-    "dek": "Cristopher Sánchez vs Will Warren",
-    "summary": "Cristopher Sánchez vs Will Warren · Yankees @ Phillies · Game 3 of 3",
+    "headline": "PHI 0, NYY 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Paul Goldschmidt is up against Cristopher Sánchez. Series: NYY leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tyler Phillips · PHI @ MIA · Mon, Jul 27 · 6:40 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
+      "temp_f": 80,
       "condition": "Clear",
-      "wind": "8 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "7 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Paul Goldschmidt",
+        "meta": "vs Cristopher Sánchez"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-26T22:48:56.663Z",
+    "updated_at": "2026-07-26T23:20:46.087Z",
     "current_game_pk": 823433,
     "next_game_pk": 823839,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Clear · gusts 11 mph",
+      "text": "80° · Clear · gusts 10 mph",
       "highlight": false
     }
   ]
