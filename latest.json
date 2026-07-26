@@ -4,7 +4,7 @@
   "edition_date": "2026-07-25",
   "volume": 1,
   "edition": 116,
-  "generated_at": "2026-07-25T23:49:11.932Z",
+  "generated_at": "2026-07-26T00:35:16.280Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, NYY 2",
-    "dek": "Bottom 6th · 2 outs",
-    "summary": "J.T. Realmuto is up against Ryan Weathers. Series: NYY leads 1-0.",
+    "headline": "PHI 1, NYY 3",
+    "dek": "Top 9th · 2 outs",
+    "summary": "José Caballero is up against Jhoan Duran. Series: NYY leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
   },
@@ -55,17 +55,17 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 73,
       "condition": "Clear",
-      "wind": "7 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "7 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Ryan Weathers"
+        "name": "José Caballero",
+        "meta": "vs Jhoan Duran"
       },
       "pitches": [],
       "count": {
@@ -74,11 +74,11 @@
         "outs": 2
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Top 9th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-25T23:49:12.560Z",
+    "updated_at": "2026-07-26T00:35:16.839Z",
     "current_game_pk": 823435,
     "next_game_pk": 823433,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Clear · gusts 11 mph",
+      "text": "73° · Clear · gusts 16 mph",
       "highlight": false
     },
     {
