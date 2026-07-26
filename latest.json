@@ -4,7 +4,7 @@
   "edition_date": "2026-07-26",
   "volume": 1,
   "edition": 117,
-  "generated_at": "2026-07-26T23:21:39.685Z",
+  "generated_at": "2026-07-26T23:48:23.283Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYY 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Paul Goldschmidt is up against Cristopher Sánchez. Series: NYY leads 2-0.",
+    "headline": "PHI 1, NYY 0",
+    "dek": "Bottom 2nd · 0 outs",
+    "summary": "Alec Bohm is up against Will Warren. Series: NYY leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tyler Phillips · PHI @ MIA · Mon, Jul 27 · 6:40 PM"
   },
@@ -55,17 +55,17 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "7 mph · gusts 10",
+      "wind": "6 mph · gusts 10",
       "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Paul Goldschmidt",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Alec Bohm",
+        "meta": "vs Will Warren"
       },
       "pitches": [],
       "count": {
@@ -78,7 +78,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-26T23:21:40.239Z",
+    "updated_at": "2026-07-26T23:48:23.782Z",
     "current_game_pk": 823433,
     "next_game_pk": 823839,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 10 mph",
+      "text": "79° · Clear · gusts 10 mph",
       "highlight": false
     }
   ]
