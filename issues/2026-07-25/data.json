@@ -5,14 +5,14 @@
     "edition": 116,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-26T00:41:18.734Z",
+    "generated_at": "2026-07-26T01:15:18.264Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 25, 2026, 8:41 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 25, 2026, 9:15 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 56,
-    "losses": 48,
-    "streak": "L3",
+    "losses": 49,
+    "streak": "L4",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, NYY 3",
-    "dek": "Bottom 9th · 1 out",
-    "summary": "J.T. Realmuto is up against David Bednar. Series: NYY leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 1, NYY 3.",
+    "dek": "NYY 3, PHI 1 · Ryan Weathers · 5.2 IP, 6 H, 1 ER, 7 K",
+    "summary": "PHI 1, NYY 3. Final at Citizens Bank Park, Philadelphia. NYY wins 2-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "73° · Clear"
+        "label": "Series",
+        "value": "NYY wins 2-0"
       }
     ],
     "bullets": [
-      "J.T. Realmuto at the plate",
-      "David Bednar on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Ryan Weathers: 5.2 IP, 6 H, 1 ER, 7 K",
+      "Brian Keller: 3.0 IP, 2 H, 1 ER, 3 K",
+      "Jasson Domínguez: 1-for-4, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Will Warren · PHI vs NYY · Sun, Jul 26 · 7:20 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's NYY at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:05 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Tim Mayza",
-            "hand": "L"
-          },
-          "away": {
-            "team": "NYY",
-            "name": "Ryan Weathers",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Tim Mayza",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "NYY",
-            "name": "Ryan Weathers",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Edmundo Sosa",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Amed Rosario",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Ben Rice",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Paul Goldschmidt",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Cody Bellinger",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Trent Grisham",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Jasson Domínguez",
-              "position": "RF",
-              "bats": "S"
-            },
-            {
-              "slot": 7,
-              "name": "Jazz Chisholm Jr.",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "José Caballero",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Austin Wells",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Edmundo Sosa",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Amed Rosario",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Ben Rice",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Paul Goldschmidt",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Cody Bellinger",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Trent Grisham",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Jasson Domínguez",
-              "position": "RF",
-              "bats": "S"
-            },
-            {
-              "slot": 7,
-              "name": "Jazz Chisholm Jr.",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "José Caballero",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Austin Wells",
-              "position": "C",
-              "bats": "L"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Yankees @ Phillies · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "NYY leads 1-0"
+          "label": "NYY wins 2-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
+          "temp_f": 71,
           "condition": "Clear",
-          "wind": "7 mph · gusts 16",
-          "gusts_mph": 16
+          "wind": "6 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -368,7 +111,7 @@
             "name": "Ryan Weathers",
             "hand": "L",
             "era": "4.25",
-            "record": "3-7",
+            "record": "4-7",
             "whip": "1.27"
           }
         },
@@ -377,7 +120,7 @@
           "currentInningOrdinal": "9th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 1,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 3,
@@ -503,7 +246,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -589,7 +332,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper out on a sacrifice fly to center fielder Trent Grisham. Trea Turner scores. Kyle S…",
+            "detail": "Bryce Harper out on a sacrifice fly to center fielder Trent Grisham. Trea Turner scores. Kyle Schwarber to 3rd.",
             "score_after": "PHI 1, NYY 0",
             "runs": 1,
             "is_scoring": true,
@@ -715,7 +458,7 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill grounds into a force out, third baseman Amed Rosario to second baseman Jazz Chisholm…",
+            "detail": "Derek Hill grounds into a force out, third baseman Amed Rosario to second baseman Jazz Chisholm Jr. J.T. Realmuto out at 2nd.",
             "score_after": "PHI 1, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -799,7 +542,7 @@
             "event_type": "single",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber singles on a sharp line drive to right fielder Jasson Domínguez. Trea Turner to…",
+            "detail": "Kyle Schwarber singles on a sharp line drive to right fielder Jasson Domínguez. Trea Turner to 2nd.",
             "score_after": "PHI 1, NYY 1",
             "runs": 0,
             "is_scoring": false,
@@ -813,7 +556,7 @@
             "event_type": "other",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds into a double play, shortstop José Caballero to first baseman Paul Goldsch…",
+            "detail": "Bryce Harper grounds into a double play, shortstop José Caballero to first baseman Paul Goldschmidt. Trea Turner to 3rd. Kyle Schwa…",
             "score_after": "PHI 1, NYY 1",
             "runs": 0,
             "is_scoring": false,
@@ -925,7 +668,7 @@
             "event_type": "single",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto singles on a sharp line drive to left fielder Cody Bellinger. Bryan De La Cruz to…",
+            "detail": "J.T. Realmuto singles on a sharp line drive to left fielder Cody Bellinger. Bryan De La Cruz to 2nd.",
             "score_after": "PHI 1, NYY 1",
             "runs": 0,
             "is_scoring": false,
@@ -953,7 +696,7 @@
             "event_type": "strikeout",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill challenged (pitch result), call on the field was confirmed: Derek Hill called out on…",
+            "detail": "Derek Hill challenged (pitch result), call on the field was confirmed: Derek Hill called out on strikes.",
             "score_after": "PHI 1, NYY 1",
             "runs": 0,
             "is_scoring": false,
@@ -1107,7 +850,7 @@
             "event_type": "single",
             "actor": "Cody Bellinger",
             "actor_id": 641355,
-            "detail": "Cody Bellinger singles on a line drive to center fielder Derek Hill. Austin Wells scores. Paul…",
+            "detail": "Cody Bellinger singles on a line drive to center fielder Derek Hill. Austin Wells scores. Paul Goldschmidt to 2nd.",
             "score_after": "PHI 1, NYY 2",
             "runs": 1,
             "is_scoring": true,
@@ -1233,7 +976,7 @@
             "event_type": "single",
             "actor": "José Caballero",
             "actor_id": 676609,
-            "detail": "José Caballero singles on a soft bunt ground ball to third baseman Alec Bohm. José Caballero to…",
+            "detail": "José Caballero singles on a soft bunt ground ball to third baseman Alec Bohm. José Caballero to 2nd. José Caballero advances to 2nd…",
             "score_after": "PHI 1, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1247,7 +990,7 @@
             "event_type": "out",
             "actor": "Austin Wells",
             "actor_id": 669224,
-            "detail": "Austin Wells grounds out, second baseman Bryson Stott to first baseman Bryce Harper. José Cabal…",
+            "detail": "Austin Wells grounds out, second baseman Bryson Stott to first baseman Bryce Harper. José Caballero to 3rd.",
             "score_after": "PHI 1, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1401,7 +1144,7 @@
             "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa grounds into a force out, third baseman Ryan McMahon to second baseman Jazz Chisho…",
+            "detail": "Edmundo Sosa grounds into a force out, third baseman Ryan McMahon to second baseman Jazz Chisholm Jr. Alec Bohm out at 2nd. Edmundo…",
             "score_after": "PHI 1, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1476,32 +1219,36 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823435:69",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out softly to pitcher David Bednar.",
+            "score_after": "PHI 1, NYY 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823435:70",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh grounds out, shortstop José Caballero to first baseman Paul Goldschmidt.",
+            "score_after": "PHI 1, NYY 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "J.T. Realmuto",
-            "meta": "vs David Bednar"
-          },
-          "pitches": [
-            "B",
-            "B",
-            "F",
-            "S",
-            "X"
-          ],
-          "count": {
-            "balls": 2,
-            "strikes": 2,
-            "outs": 1
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Bottom 9th"
-        }
+        ]
       }
     },
     "injury_report": null
