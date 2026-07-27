@@ -5,14 +5,14 @@
     "edition": 117,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-27T00:40:35.055Z",
+    "generated_at": "2026-07-27T01:17:04.071Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 26, 2026, 8:40 PM ET",
+      "generated_at_et": "Jul 26, 2026, 9:17 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 6, NYY 0",
-    "dek": "Bottom 4th · 0 outs",
-    "summary": "Justin Crawford is up against Tim Hill. Series: NYY leads 2-0.",
+    "headline": "PHI 6, NYY 3",
+    "dek": "End 5th · 3 outs",
+    "summary": "Max Schuemann is up against Cristopher Sánchez. Series: NYY leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "77° · Clear"
+        "value": "76° · Clear"
       }
     ],
     "bullets": [
-      "Justin Crawford at the plate",
-      "Tim Hill on the mound",
+      "Max Schuemann at the plate",
+      "Cristopher Sánchez on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 77,
+          "temp_f": 76,
           "condition": "Clear",
-          "wind": "4 mph · gusts 7",
-          "gusts_mph": 7
+          "wind": "5 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.57",
+            "era": "2.75",
             "record": "12-4",
-            "whip": "1.19"
+            "whip": "1.21"
           },
           "away": {
             "team": "NYY",
@@ -369,25 +369,25 @@
             "hand": "R",
             "era": "4.41",
             "record": "7-4",
-            "whip": "1.40"
+            "whip": "1.41"
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
-          "inningState": "Bottom",
+          "currentInning": 5,
+          "currentInningOrdinal": "5th",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 2,
+              "runs": 3,
+              "hits": 5,
               "errors": 0
             },
             "home": {
               "runs": 6,
-              "hits": 6,
-              "errors": 1
+              "hits": 7,
+              "errors": 2
             }
           },
           "innings": [
@@ -438,7 +438,20 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
+                "hits": 1,
+                "errors": 1
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 3,
+                "hits": 3,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
                 "hits": 1,
                 "errors": 1
               }
@@ -927,11 +940,207 @@
             "inning": 4,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Pitching Change: Tim Hill replaces Will Warren.",
+            "detail": "Phillies challenged (hit by pitch), call on the field was overturned: Justin Crawford hit by pitch. Gabriel Rincones Jr. to 2nd.",
             "score_after": "PHI 6, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:35",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds into a double play, second baseman José Caballero to first baseman Paul Goldschmidt. Gabriel Rincones Jr. to 3r…",
+            "score_after": "PHI 6, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:36",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to left fielder Max Schuemann.",
+            "score_after": "PHI 6, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:37",
+            "inning": 5,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "single",
+            "actor": "Ali Sánchez",
+            "actor_id": 645305,
+            "detail": "Ali Sánchez singles on a line drive to left fielder Brandon Marsh.",
+            "score_after": "PHI 6, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:38",
+            "inning": 5,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "walk_hbp",
+            "actor": "Paul Goldschmidt",
+            "actor_id": 502671,
+            "detail": "Paul Goldschmidt walks. Ali Sánchez to 2nd.",
+            "score_after": "PHI 6, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:39",
+            "inning": 5,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "out",
+            "actor": "Ben Rice",
+            "actor_id": 700250,
+            "detail": "Ben Rice grounds into a force out, second baseman Bryson Stott to shortstop Trea Turner. Ali Sánchez to 3rd. Paul Goldschmidt out a…",
+            "score_after": "PHI 6, NYY 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:40",
+            "inning": 5,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "single",
+            "actor": "Amed Rosario",
+            "actor_id": 642708,
+            "detail": "Amed Rosario singles on a line drive to center fielder Justin Crawford. Ben Rice to 3rd. Amed Rosario to 2nd.",
+            "score_after": "PHI 6, NYY 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823433:41",
+            "inning": 5,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "out",
+            "actor": "Jasson Domínguez",
+            "actor_id": 691176,
+            "detail": "Jasson Domínguez grounds out, third baseman Alec Bohm to first baseman Bryce Harper. Ben Rice scores. Amed Rosario to 3rd.",
+            "score_after": "PHI 6, NYY 2",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823433:42",
+            "inning": 5,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "extra_base_hit",
+            "actor": "Anthony Volpe",
+            "actor_id": 683011,
+            "detail": "Anthony Volpe doubles (8) on a line drive to left fielder Brandon Marsh. Amed Rosario scores.",
+            "score_after": "PHI 6, NYY 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823433:43",
+            "inning": 5,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "out",
+            "actor": "Trent Grisham",
+            "actor_id": 663757,
+            "detail": "Trent Grisham grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
+            "score_after": "PHI 6, NYY 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:44",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper walks.",
+            "score_after": "PHI 6, NYY 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:45",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh singles on a line drive to left fielder Max Schuemann. Bryce Harper to 2nd.",
+            "score_after": "PHI 6, NYY 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:46",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm called out on strikes.",
+            "score_after": "PHI 6, NYY 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:47",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott strikes out swinging. Brandon Marsh to 2nd. Bryce Harper steals (6) 3rd base. Brandon Marsh steals (9) 2nd base.",
+            "score_after": "PHI 6, NYY 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:48",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto strikes out swinging.",
+            "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -939,21 +1148,27 @@
         ],
         "situation": {
           "batter": {
-            "name": "Justin Crawford",
-            "meta": "vs Tim Hill"
+            "name": "Max Schuemann",
+            "meta": "vs Cristopher Sánchez"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "F",
+            "B",
+            "F",
+            "S"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "balls": 3,
+            "strikes": 3,
+            "outs": 3
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 4th"
+          "status": "End 5th"
         }
       }
     },
@@ -970,8 +1185,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T00:40:35.055Z",
-            "freshness_label": "As of Jul 26, 2026, 8:40 PM ET"
+            "last_confirmed": "2026-07-27T01:17:04.071Z",
+            "freshness_label": "As of Jul 26, 2026, 9:17 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -983,8 +1198,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T00:40:35.055Z",
-            "freshness_label": "As of Jul 26, 2026, 8:40 PM ET"
+            "last_confirmed": "2026-07-27T01:17:04.071Z",
+            "freshness_label": "As of Jul 26, 2026, 9:17 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -996,8 +1211,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T00:40:35.055Z",
-            "freshness_label": "As of Jul 26, 2026, 8:40 PM ET"
+            "last_confirmed": "2026-07-27T01:17:04.071Z",
+            "freshness_label": "As of Jul 26, 2026, 9:17 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1009,8 +1224,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T00:40:35.055Z",
-            "freshness_label": "As of Jul 26, 2026, 8:40 PM ET"
+            "last_confirmed": "2026-07-27T01:17:04.071Z",
+            "freshness_label": "As of Jul 26, 2026, 9:17 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1022,8 +1237,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T00:40:35.055Z",
-            "freshness_label": "As of Jul 26, 2026, 8:40 PM ET"
+            "last_confirmed": "2026-07-27T01:17:04.071Z",
+            "freshness_label": "As of Jul 26, 2026, 9:17 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -1035,8 +1250,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T00:40:35.055Z",
-            "freshness_label": "As of Jul 26, 2026, 8:40 PM ET"
+            "last_confirmed": "2026-07-27T01:17:04.071Z",
+            "freshness_label": "As of Jul 26, 2026, 9:17 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1048,8 +1263,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T00:40:35.055Z",
-            "freshness_label": "As of Jul 26, 2026, 8:40 PM ET"
+            "last_confirmed": "2026-07-27T01:17:04.071Z",
+            "freshness_label": "As of Jul 26, 2026, 9:17 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
