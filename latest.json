@@ -4,7 +4,7 @@
   "edition_date": "2026-07-27",
   "volume": 1,
   "edition": 118,
-  "generated_at": "2026-07-27T22:47:58.850Z",
+  "generated_at": "2026-07-27T22:49:03.554Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, MIA 0",
-    "dek": "Middle 1st · 3 outs",
-    "summary": "Otto Lopez is up against Zack Wheeler. Series: Regular Season.",
+    "dek": "Bottom 1st · 0 outs",
+    "summary": "Kyle Stowers is up against Zack Wheeler. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI @ MIA · Tue, Jul 28 · 6:40 PM"
   },
@@ -69,20 +69,19 @@
       },
       "pitches": [
         "S",
-        "S",
-        "S"
+        "X"
       ],
       "count": {
         "balls": 0,
-        "strikes": 3,
-        "outs": 3
+        "strikes": 1,
+        "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Middle 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -90,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T22:47:59.547Z",
+    "updated_at": "2026-07-27T22:49:04.274Z",
     "current_game_pk": 823839,
     "next_game_pk": 823838,
     "next_game": {
