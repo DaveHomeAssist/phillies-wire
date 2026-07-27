@@ -5,7 +5,7 @@
     "edition": 117,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-27T02:18:05.924Z",
+    "generated_at": "2026-07-27T02:18:50.789Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -377,7 +377,7 @@
           "currentInningOrdinal": "9th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 4,
@@ -1594,10 +1594,10 @@
             "inning": 9,
             "half": "top",
             "team": "NYY",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Paul Goldschmidt",
             "actor_id": 502671,
-            "detail": "Play",
+            "detail": "Paul Goldschmidt strike…",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1611,12 +1611,16 @@
           },
           "pitches": [
             "B",
+            "S",
+            "S",
+            "B",
+            "B",
             "S"
           ],
           "count": {
-            "balls": 1,
-            "strikes": 1,
-            "outs": 0
+            "balls": 3,
+            "strikes": 3,
+            "outs": 1
           },
           "bases": {
             "first": false,

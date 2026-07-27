@@ -4,7 +4,7 @@
   "edition_date": "2026-07-26",
   "volume": 1,
   "edition": 117,
-  "generated_at": "2026-07-27T02:18:05.924Z",
+  "generated_at": "2026-07-27T02:18:50.789Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -69,12 +69,16 @@
       },
       "pitches": [
         "B",
+        "S",
+        "S",
+        "B",
+        "B",
         "S"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 0
+        "balls": 3,
+        "strikes": 3,
+        "outs": 1
       },
       "bases": {
         "first": false,
@@ -89,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T02:18:06.618Z",
+    "updated_at": "2026-07-27T02:18:51.326Z",
     "current_game_pk": 823433,
     "next_game_pk": 823839,
     "next_game": {
