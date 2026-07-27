@@ -4,7 +4,7 @@
   "edition_date": "2026-07-27",
   "volume": 1,
   "edition": 118,
-  "generated_at": "2026-07-27T23:49:35.740Z",
+  "generated_at": "2026-07-27T23:50:30.053Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,13 @@
         "name": "Joe Mack",
         "meta": "vs Kyle Backhus"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 2,
         "outs": 0
       },
       "bases": {
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T23:49:36.279Z",
+    "updated_at": "2026-07-27T23:50:30.843Z",
     "current_game_pk": 823839,
     "next_game_pk": 823838,
     "next_game": {
