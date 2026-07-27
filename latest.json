@@ -4,7 +4,7 @@
   "edition_date": "2026-07-27",
   "volume": 1,
   "edition": 118,
-  "generated_at": "2026-07-27T23:23:24.671Z",
+  "generated_at": "2026-07-27T23:24:43.169Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,7 +17,7 @@
   },
   "hero": {
     "headline": "PHI 2, MIA 5",
-    "dek": "End 2nd · 3 outs",
+    "dek": "Top 3rd · 0 outs",
     "summary": "Trea Turner is up against Tyler Phillips. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI @ MIA · Tue, Jul 28 · 6:40 PM"
@@ -68,23 +68,21 @@
         "meta": "vs Tyler Phillips"
       },
       "pitches": [
+        "B",
         "S",
-        "B",
-        "B",
-        "F",
-        "S"
+        "X"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 3,
-        "outs": 3
+        "balls": 1,
+        "strikes": 1,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -92,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T23:23:25.152Z",
+    "updated_at": "2026-07-27T23:24:50.547Z",
     "current_game_pk": 823839,
     "next_game_pk": 823838,
     "next_game": {
