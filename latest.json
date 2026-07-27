@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-26",
+  "edition_date": "2026-07-27",
   "volume": 1,
-  "edition": 117,
-  "generated_at": "2026-07-27T03:45:46.532Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 118,
+  "generated_at": "2026-07-27T05:02:10.461Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 57,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 11, NYY 4.",
-    "dek": "PHI 11, NYY 4 · Cristopher Sánchez · 6.0 IP, 6 H, 3 ER, 6 K",
-    "summary": "PHI 11, NYY 4. Final at Citizens Bank Park, Philadelphia. NYY wins 2-1.",
+    "headline": "Phillies @ Marlins · Game 1 of 3",
+    "dek": "Zack Wheeler vs Tyler Phillips",
+    "summary": "Zack Wheeler vs Tyler Phillips · Phillies @ Marlins · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Tyler Phillips · PHI @ MIA · Mon, Jul 27 · 6:40 PM"
+    "next_value": "Aaron Nola vs Sandy Alcantara · PHI @ MIA · Tue, Jul 28 · 6:40 PM"
   },
   "game": {
-    "matchup": "Yankees @ Phillies · Game 3 of 3",
-    "first_pitch": "7:20 PM",
-    "venue": "Citizens Bank Park, Philadelphia",
+    "matchup": "Phillies @ Marlins · Game 1 of 3",
+    "first_pitch": "6:40 PM",
+    "venue": "loanDepot park, Miami",
     "starters": {
       "home": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Tyler Phillips",
+        "hand": "R"
       },
       "away": {
-        "name": "Will Warren",
+        "name": "Zack Wheeler",
         "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Will Warren",
+        "name": "Tyler Phillips",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "NYY wins 2-1"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "NBC/Peacock",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 72,
-      "condition": "Clear",
-      "wind": "4 mph · gusts 8",
-      "gusts_mph": 8
+      "temp_f": 77,
+      "condition": "Mostly sunny",
+      "wind": "2 mph · gusts 4",
+      "gusts_mph": 4
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T03:45:47.002Z",
+    "updated_at": "2026-07-27T05:02:10.998Z",
     "current_game_pk": 823839,
     "next_game_pk": 823838,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Yankees @ Phillies · Game 3 of 3 · 7:20 PM",
+      "text": "Phillies @ Marlins · Game 1 of 3 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Will Warren",
+      "text": "Zack Wheeler vs Tyler Phillips",
       "highlight": true
     },
     {
-      "text": "NBC/Peacock · 94 WIP",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "72° · Clear · gusts 8 mph",
+      "text": "77° · Mostly sunny · gusts 4 mph",
       "highlight": false
     }
   ]
