@@ -5,313 +5,56 @@
     "edition": 117,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-27T02:18:50.789Z",
+    "generated_at": "2026-07-27T03:44:48.992Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 26, 2026, 10:18 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 26, 2026, 11:44 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 56,
+    "wins": 57,
     "losses": 49,
-    "streak": "L4",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 11, NYY 4",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Paul Goldschmidt is up against Chase Shugart. Series: NYY leads 2-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 11, NYY 4.",
+    "dek": "PHI 11, NYY 4 · Cristopher Sánchez · 6.0 IP, 6 H, 3 ER, 6 K",
+    "summary": "PHI 11, NYY 4. Final at Citizens Bank Park, Philadelphia. NYY wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBC/Peacock · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "75° · Clear"
+        "label": "Series",
+        "value": "NYY wins 2-1"
       }
     ],
     "bullets": [
-      "Paul Goldschmidt at the plate",
-      "Chase Shugart on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Cristopher Sánchez: 6.0 IP, 6 H, 3 ER, 6 K",
+      "Chase Shugart: 2.0 IP, 1 H, 0 ER, 5 K",
+      "Bryson Stott: 3-for-4, 1 HR, 5 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tyler Phillips · PHI @ MIA · Mon, Jul 27 · 6:40 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's NYY at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "7:20 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "away": {
-            "team": "NYY",
-            "name": "Will Warren",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "NYY",
-            "name": "Will Warren",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Paul Goldschmidt",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Ben Rice",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Amed Rosario",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Jasson Domínguez",
-              "position": "RF",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Anthony Volpe",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Trent Grisham",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Max Schuemann",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "José Caballero",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Ali Sánchez",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Gabriel Rincones Jr.",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Paul Goldschmidt",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Ben Rice",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Amed Rosario",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Jasson Domínguez",
-              "position": "RF",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Anthony Volpe",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Trent Grisham",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Max Schuemann",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "José Caballero",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Ali Sánchez",
-              "position": "C",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Yankees @ Phillies · Game 3 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "NYY leads 2-0"
+          "label": "NYY wins 2-1"
         },
         "broadcast": {
           "tv": "NBC/Peacock",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 75,
+          "temp_f": 72,
           "condition": "Clear",
-          "wind": "6 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "5 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -360,7 +103,7 @@
             "name": "Cristopher Sánchez",
             "hand": "L",
             "era": "2.73",
-            "record": "12-4",
+            "record": "13-4",
             "whip": "1.20"
           },
           "away": {
@@ -368,7 +111,7 @@
             "name": "Will Warren",
             "hand": "R",
             "era": "4.41",
-            "record": "7-4",
+            "record": "7-5",
             "whip": "1.41"
           }
         },
@@ -377,11 +120,11 @@
           "currentInningOrdinal": "9th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 1,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 4,
-              "hits": 7,
+              "hits": 8,
               "errors": 1
             },
             "home": {
@@ -498,8 +241,8 @@
             {
               "num": 9,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -519,7 +262,7 @@
             "event_type": "single",
             "actor": "Paul Goldschmidt",
             "actor_id": 502671,
-            "detail": "Paul Goldschmidt single…",
+            "detail": "Paul Goldschmidt singles on a ground ball to left fielder Brandon Marsh.",
             "score_after": "PHI 0, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -533,7 +276,7 @@
             "event_type": "out",
             "actor": "Ben Rice",
             "actor_id": 700250,
-            "detail": "Ben Rice lines out shar…",
+            "detail": "Ben Rice lines out sharply to center fielder Justin Crawford.",
             "score_after": "PHI 0, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -547,7 +290,7 @@
             "event_type": "strikeout",
             "actor": "Amed Rosario",
             "actor_id": 642708,
-            "detail": "Amed Rosario strikes ou…",
+            "detail": "Amed Rosario strikes out swinging.",
             "score_after": "PHI 0, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -561,7 +304,7 @@
             "event_type": "out",
             "actor": "Jasson Domínguez",
             "actor_id": 691176,
-            "detail": "Jasson Domínguez ground…",
+            "detail": "Jasson Domínguez grounds into a force out, third baseman Alec Bohm to s…",
             "score_after": "PHI 0, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -575,7 +318,7 @@
             "event_type": "extra_base_hit",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner triples (1)…",
+            "detail": "Trea Turner triples (1) on a line drive to center fielder Trent Grisham.",
             "score_after": "PHI 0, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -589,7 +332,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber out on a…",
+            "detail": "Kyle Schwarber out on a sacrifice fly to right fielder Jasson Domínguez…",
             "score_after": "PHI 1, NYY 0",
             "runs": 1,
             "is_scoring": true,
@@ -603,7 +346,7 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper strikes ou…",
+            "detail": "Bryce Harper strikes out swinging.",
             "score_after": "PHI 1, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -617,7 +360,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds o…",
+            "detail": "Brandon Marsh grounds out, second baseman José Caballero to first basem…",
             "score_after": "PHI 1, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -645,7 +388,7 @@
             "event_type": "out",
             "actor": "Trent Grisham",
             "actor_id": 663757,
-            "detail": "Trent Grisham grounds i…",
+            "detail": "Trent Grisham grounds into a force out, second baseman Bryson Stott to…",
             "score_after": "PHI 1, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -659,7 +402,7 @@
             "event_type": "out",
             "actor": "Max Schuemann",
             "actor_id": 680474,
-            "detail": "Max Schuemann grounds i…",
+            "detail": "Max Schuemann grounds into a force out, second baseman Bryson Stott to…",
             "score_after": "PHI 1, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -673,7 +416,7 @@
             "event_type": "strikeout",
             "actor": "José Caballero",
             "actor_id": 676609,
-            "detail": "José Caballero strikes…",
+            "detail": "José Caballero strikes out swinging.",
             "score_after": "PHI 1, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -687,7 +430,7 @@
             "event_type": "strikeout",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm strikes out s…",
+            "detail": "Alec Bohm strikes out swinging.",
             "score_after": "PHI 1, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -701,7 +444,7 @@
             "event_type": "home_run",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott homers (8)…",
+            "detail": "Bryson Stott homers (8) on a line drive to right field.",
             "score_after": "PHI 2, NYY 0",
             "runs": 1,
             "is_scoring": true,
@@ -715,7 +458,7 @@
             "event_type": "strikeout",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto called ou…",
+            "detail": "J.T. Realmuto called out on strikes.",
             "score_after": "PHI 2, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -729,7 +472,7 @@
             "event_type": "strikeout",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. st…",
+            "detail": "Gabriel Rincones Jr. strikes out swinging.",
             "score_after": "PHI 2, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -743,7 +486,7 @@
             "event_type": "strikeout",
             "actor": "Ali Sánchez",
             "actor_id": 645305,
-            "detail": "Ali Sánchez called out…",
+            "detail": "Ali Sánchez called out on strikes.",
             "score_after": "PHI 2, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -757,7 +500,7 @@
             "event_type": "out",
             "actor": "Paul Goldschmidt",
             "actor_id": 502671,
-            "detail": "Paul Goldschmidt ground…",
+            "detail": "Paul Goldschmidt grounds out, pitcher Cristopher Sánchez to first basem…",
             "score_after": "PHI 2, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -771,7 +514,7 @@
             "event_type": "strikeout",
             "actor": "Ben Rice",
             "actor_id": 700250,
-            "detail": "Ben Rice strikes out sw…",
+            "detail": "Ben Rice strikes out swinging.",
             "score_after": "PHI 2, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -785,7 +528,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds…",
+            "detail": "Justin Crawford grounds out, second baseman José Caballero to first bas…",
             "score_after": "PHI 2, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -799,7 +542,7 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner strikes out…",
+            "detail": "Trea Turner strikes out swinging.",
             "score_after": "PHI 2, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -827,7 +570,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper doubles (2…",
+            "detail": "Bryce Harper doubles (20) on a line drive to right fielder Jasson Domín…",
             "score_after": "PHI 2, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -841,7 +584,7 @@
             "event_type": "walk_hbp",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Will Warren intentional…",
+            "detail": "Will Warren intentionally walks Brandon Marsh.",
             "score_after": "PHI 2, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -855,7 +598,7 @@
             "event_type": "extra_base_hit",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm doubles (16)…",
+            "detail": "Alec Bohm doubles (16) on a line drive to center fielder Trent Grisham.…",
             "score_after": "PHI 5, NYY 0",
             "runs": 3,
             "is_scoring": true,
@@ -869,7 +612,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on…",
+            "detail": "Bryson Stott singles on a ground ball to right fielder Jasson Domínguez…",
             "score_after": "PHI 6, NYY 0",
             "runs": 1,
             "is_scoring": true,
@@ -883,7 +626,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds o…",
+            "detail": "J.T. Realmuto grounds out, second baseman José Caballero to first basem…",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -897,7 +640,7 @@
             "event_type": "reached_on_error",
             "actor": "Amed Rosario",
             "actor_id": 642708,
-            "detail": "Amed Rosario reaches on…",
+            "detail": "Amed Rosario reaches on a fielding error by shortstop Trea Turner.",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -911,7 +654,7 @@
             "event_type": "out",
             "actor": "Jasson Domínguez",
             "actor_id": 691176,
-            "detail": "Jasson Domínguez flies…",
+            "detail": "Jasson Domínguez flies out to right fielder Gabriel Rincones Jr.",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -925,7 +668,7 @@
             "event_type": "extra_base_hit",
             "actor": "Anthony Volpe",
             "actor_id": 683011,
-            "detail": "Anthony Volpe doubles (…",
+            "detail": "Anthony Volpe doubles (7) on a line drive to center fielder Justin Craw…",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -939,7 +682,7 @@
             "event_type": "strikeout",
             "actor": "Trent Grisham",
             "actor_id": 663757,
-            "detail": "Trent Grisham strikes o…",
+            "detail": "Trent Grisham strikes out swinging.",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -967,7 +710,7 @@
             "event_type": "out",
             "actor": "José Caballero",
             "actor_id": 676609,
-            "detail": "José Caballero grounds…",
+            "detail": "José Caballero grounds out, shortstop Trea Turner to first baseman Bryc…",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -981,7 +724,7 @@
             "event_type": "single",
             "actor": "Gabriel Rincones Jr.",
             "actor_id": 687282,
-            "detail": "Gabriel Rincones Jr. si…",
+            "detail": "Gabriel Rincones Jr. singles on a soft ground ball to third baseman Ame…",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -995,7 +738,7 @@
             "event_type": "walk_hbp",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Phillies challenged (hi…",
+            "detail": "Phillies challenged (hit by pitch), call on the field was overturned: J…",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -1009,7 +752,7 @@
             "event_type": "other",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds int…",
+            "detail": "Trea Turner grounds into a double play, second baseman José Caballero t…",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -1023,7 +766,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber flies ou…",
+            "detail": "Kyle Schwarber flies out to left fielder Max Schuemann.",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -1037,7 +780,7 @@
             "event_type": "single",
             "actor": "Ali Sánchez",
             "actor_id": 645305,
-            "detail": "Ali Sánchez singles on…",
+            "detail": "Ali Sánchez singles on a line drive to left fielder Brandon Marsh.",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -1051,7 +794,7 @@
             "event_type": "walk_hbp",
             "actor": "Paul Goldschmidt",
             "actor_id": 502671,
-            "detail": "Paul Goldschmidt walks.…",
+            "detail": "Paul Goldschmidt walks. Ali Sánchez to 2nd.",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -1065,7 +808,7 @@
             "event_type": "out",
             "actor": "Ben Rice",
             "actor_id": 700250,
-            "detail": "Ben Rice grounds into a…",
+            "detail": "Ben Rice grounds into a force out, second baseman Bryson Stott to short…",
             "score_after": "PHI 6, NYY 0",
             "runs": 0,
             "is_scoring": false,
@@ -1079,7 +822,7 @@
             "event_type": "single",
             "actor": "Amed Rosario",
             "actor_id": 642708,
-            "detail": "Amed Rosario singles on…",
+            "detail": "Amed Rosario singles on a line drive to center fielder Justin Crawford.…",
             "score_after": "PHI 6, NYY 1",
             "runs": 1,
             "is_scoring": true,
@@ -1093,7 +836,7 @@
             "event_type": "out",
             "actor": "Jasson Domínguez",
             "actor_id": 691176,
-            "detail": "Jasson Domínguez ground…",
+            "detail": "Jasson Domínguez grounds out, third baseman Alec Bohm to first baseman…",
             "score_after": "PHI 6, NYY 2",
             "runs": 1,
             "is_scoring": true,
@@ -1107,7 +850,7 @@
             "event_type": "extra_base_hit",
             "actor": "Anthony Volpe",
             "actor_id": 683011,
-            "detail": "Anthony Volpe doubles (…",
+            "detail": "Anthony Volpe doubles (8) on a line drive to left fielder Brandon Marsh…",
             "score_after": "PHI 6, NYY 3",
             "runs": 1,
             "is_scoring": true,
@@ -1121,7 +864,7 @@
             "event_type": "out",
             "actor": "Trent Grisham",
             "actor_id": 663757,
-            "detail": "Trent Grisham grounds o…",
+            "detail": "Trent Grisham grounds out, second baseman Bryson Stott to first baseman…",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1149,7 +892,7 @@
             "event_type": "single",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh singles o…",
+            "detail": "Brandon Marsh singles on a line drive to left fielder Max Schuemann. Br…",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1163,7 +906,7 @@
             "event_type": "strikeout",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm called out on…",
+            "detail": "Alec Bohm called out on strikes.",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1177,7 +920,7 @@
             "event_type": "strikeout",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott strikes ou…",
+            "detail": "Bryson Stott strikes out swinging. Brandon Marsh to 2nd. Bryce Harper s…",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1191,7 +934,7 @@
             "event_type": "strikeout",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto strikes o…",
+            "detail": "J.T. Realmuto strikes out swinging.",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1205,7 +948,7 @@
             "event_type": "out",
             "actor": "Max Schuemann",
             "actor_id": 680474,
-            "detail": "Max Schuemann grounds o…",
+            "detail": "Max Schuemann grounds out, shortstop Trea Turner to first baseman Bryce…",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1219,7 +962,7 @@
             "event_type": "out",
             "actor": "José Caballero",
             "actor_id": 676609,
-            "detail": "José Caballero lines ou…",
+            "detail": "José Caballero lines out to shortstop Trea Turner.",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1233,7 +976,7 @@
             "event_type": "single",
             "actor": "Ali Sánchez",
             "actor_id": 645305,
-            "detail": "Ali Sánchez singles on…",
+            "detail": "Ali Sánchez singles on a ground ball to left fielder Brandon Marsh.",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1247,7 +990,7 @@
             "event_type": "strikeout",
             "actor": "Paul Goldschmidt",
             "actor_id": 502671,
-            "detail": "Paul Goldschmidt strike…",
+            "detail": "Paul Goldschmidt strikes out swinging.",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1261,7 +1004,7 @@
             "event_type": "single",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz single…",
+            "detail": "Bryan De La Cruz singles on a ground ball to shortstop Anthony Volpe. B…",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1275,7 +1018,7 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford singles…",
+            "detail": "Justin Crawford singles on a bunt ground ball to third baseman Amed Ros…",
             "score_after": "PHI 6, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1289,7 +1032,7 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on…",
+            "detail": "Trea Turner singles on a line drive to left fielder Max Schuemann. Brya…",
             "score_after": "PHI 7, NYY 3",
             "runs": 1,
             "is_scoring": true,
@@ -1303,7 +1046,7 @@
             "event_type": "single",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber singles…",
+            "detail": "Kyle Schwarber singles on a line drive to center fielder Trent Grisham.…",
             "score_after": "PHI 7, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1317,7 +1060,7 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper called out…",
+            "detail": "Bryce Harper called out on strikes.",
             "score_after": "PHI 7, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1331,7 +1074,7 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes o…",
+            "detail": "Brandon Marsh strikes out swinging.",
             "score_after": "PHI 7, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1345,7 +1088,7 @@
             "event_type": "walk_hbp",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm hit by pitch.…",
+            "detail": "Alec Bohm hit by pitch. Justin Crawford scores. Trea Turner to 3rd. Kyl…",
             "score_after": "PHI 8, NYY 3",
             "runs": 1,
             "is_scoring": true,
@@ -1359,7 +1102,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott doubles (2…",
+            "detail": "Bryson Stott doubles (20) on a line drive to right fielder Jasson Domín…",
             "score_after": "PHI 11, NYY 3",
             "runs": 3,
             "is_scoring": true,
@@ -1373,7 +1116,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto flies out…",
+            "detail": "J.T. Realmuto flies out to left fielder Max Schuemann.",
             "score_after": "PHI 11, NYY 3",
             "runs": 0,
             "is_scoring": false,
@@ -1387,7 +1130,7 @@
             "event_type": "home_run",
             "actor": "Ben Rice",
             "actor_id": 700250,
-            "detail": "Ben Rice homers (31) on…",
+            "detail": "Ben Rice homers (31) on a fly ball to center field.",
             "score_after": "PHI 11, NYY 4",
             "runs": 1,
             "is_scoring": true,
@@ -1401,7 +1144,7 @@
             "event_type": "strikeout",
             "actor": "Amed Rosario",
             "actor_id": 642708,
-            "detail": "Amed Rosario strikes ou…",
+            "detail": "Amed Rosario strikes out swinging.",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1415,7 +1158,7 @@
             "event_type": "out",
             "actor": "Jasson Domínguez",
             "actor_id": 691176,
-            "detail": "Jasson Domínguez ground…",
+            "detail": "Jasson Domínguez grounds out, third baseman Alec Bohm to first baseman…",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1429,7 +1172,7 @@
             "event_type": "strikeout",
             "actor": "Anthony Volpe",
             "actor_id": 683011,
-            "detail": "Anthony Volpe strikes o…",
+            "detail": "Anthony Volpe strikes out swinging.",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1443,7 +1186,7 @@
             "event_type": "single",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz single…",
+            "detail": "Bryan De La Cruz singles on a line drive to center fielder Trent Grisha…",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1457,7 +1200,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford lines o…",
+            "detail": "Justin Crawford lines out to left fielder Max Schuemann.",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1471,7 +1214,7 @@
             "event_type": "other",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds int…",
+            "detail": "Trea Turner grounds into a double play, shortstop Anthony Volpe to seco…",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1485,7 +1228,7 @@
             "event_type": "out",
             "actor": "Trent Grisham",
             "actor_id": 663757,
-            "detail": "Trent Grisham grounds o…",
+            "detail": "Trent Grisham grounds out, first baseman Bryce Harper to pitcher Chase…",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1513,7 +1256,7 @@
             "event_type": "strikeout",
             "actor": "José Caballero",
             "actor_id": 676609,
-            "detail": "José Caballero strikes…",
+            "detail": "José Caballero strikes out swinging.",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1527,7 +1270,7 @@
             "event_type": "strikeout",
             "actor": "Austin Wells",
             "actor_id": 669224,
-            "detail": "Austin Wells strikes ou…",
+            "detail": "Austin Wells strikes out swinging.",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1541,7 +1284,7 @@
             "event_type": "walk_hbp",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Austin Wells challenged…",
+            "detail": "Austin Wells challenged (pitch result), call on the field was confirmed…",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1555,7 +1298,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper pops out t…",
+            "detail": "Bryce Harper pops out to shortstop Anthony Volpe.",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1569,7 +1312,7 @@
             "event_type": "walk_hbp",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh walks. Ky…",
+            "detail": "Brandon Marsh walks. Kyle Schwarber to 2nd.",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1583,7 +1326,7 @@
             "event_type": "other",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds into…",
+            "detail": "Alec Bohm grounds into a double play, shortstop Anthony Volpe to second…",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
@@ -1597,38 +1340,55 @@
             "event_type": "strikeout",
             "actor": "Paul Goldschmidt",
             "actor_id": 502671,
-            "detail": "Paul Goldschmidt strike…",
+            "detail": "Paul Goldschmidt strikes out swinging.",
+            "score_after": "PHI 11, NYY 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:78",
+            "inning": 9,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "extra_base_hit",
+            "actor": "Ben Rice",
+            "actor_id": 700250,
+            "detail": "Ben Rice doubles (18) on a fly ball to left fielder Brandon Marsh.",
+            "score_after": "PHI 11, NYY 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823433:79",
+            "inning": 9,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "strikeout",
+            "actor": "Ryan McMahon",
+            "actor_id": 641857,
+            "detail": "Ryan McMahon strikes out swinging.",
+            "score_after": "PHI 11, NYY 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823433:80",
+            "inning": 9,
+            "half": "top",
+            "team": "NYY",
+            "event_type": "strikeout",
+            "actor": "Jasson Domínguez",
+            "actor_id": 691176,
+            "detail": "Jasson Domínguez strikes out swinging.",
             "score_after": "PHI 11, NYY 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Paul Goldschmidt",
-            "meta": "vs Chase Shugart"
-          },
-          "pitches": [
-            "B",
-            "S",
-            "S",
-            "B",
-            "B",
-            "S"
-          ],
-          "count": {
-            "balls": 3,
-            "strikes": 3,
-            "outs": 1
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Top 9th"
-        }
+        ]
       }
     },
     "injury_report": null

@@ -4,21 +4,21 @@
   "edition_date": "2026-07-26",
   "volume": 1,
   "edition": 117,
-  "generated_at": "2026-07-27T02:18:50.789Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-27T03:44:48.992Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 56,
+    "wins": 57,
     "losses": 49,
-    "streak": "L4",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 11, NYY 4",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Paul Goldschmidt is up against Chase Shugart. Series: NYY leads 2-0.",
+    "headline": "PHI 11, NYY 4.",
+    "dek": "PHI 11, NYY 4 · Cristopher Sánchez · 6.0 IP, 6 H, 3 ER, 6 K",
+    "summary": "PHI 11, NYY 4. Final at Citizens Bank Park, Philadelphia. NYY wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tyler Phillips · PHI @ MIA · Mon, Jul 27 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "NYY leads 2-0"
+      "label": "NYY wins 2-1"
     },
     "broadcast": {
       "tv": "NBC/Peacock",
@@ -55,66 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 75,
+      "temp_f": 72,
       "condition": "Clear",
-      "wind": "6 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Paul Goldschmidt",
-        "meta": "vs Chase Shugart"
-      },
-      "pitches": [
-        "B",
-        "S",
-        "S",
-        "B",
-        "B",
-        "S"
-      ],
-      "count": {
-        "balls": 3,
-        "strikes": 3,
-        "outs": 1
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T02:18:51.326Z",
-    "current_game_pk": 823433,
-    "next_game_pk": 823839,
+    "updated_at": "2026-07-27T03:44:49.429Z",
+    "current_game_pk": 823839,
+    "next_game_pk": 823838,
     "next_game": {
-      "game_pk": 823839,
-      "official_date": "2026-07-27",
-      "date_label": "Mon, Jul 27, 2026",
+      "game_pk": 823838,
+      "official_date": "2026-07-28",
+      "date_label": "Tue, Jul 28, 2026",
       "time_label": "6:40 PM",
       "title": "Phillies at Miami Marlins",
       "matchup": "PHI at MIA",
       "venue": "loanDepot park"
     },
     "current_game": {
-      "game_pk": 823433,
-      "official_date": "2026-07-26",
-      "title": "New York Yankees at Phillies",
-      "matchup": "NYY at PHI"
+      "game_pk": 823839,
+      "official_date": "2026-07-27",
+      "title": "Phillies at Miami Marlins",
+      "matchup": "PHI at MIA"
     }
   },
   "ticker": [
     {
-      "text": "PHI 56-49",
+      "text": "PHI 57-49",
       "highlight": true
     },
     {
@@ -130,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "75° · Clear · gusts 11 mph",
+      "text": "72° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
