@@ -4,7 +4,7 @@
   "edition_date": "2026-07-26",
   "volume": 1,
   "edition": 117,
-  "generated_at": "2026-07-27T00:34:22.478Z",
+  "generated_at": "2026-07-27T00:40:35.055Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 6, NYY 0",
-    "dek": "Top 4th · 2 outs",
-    "summary": "José Caballero is up against Cristopher Sánchez. Series: NYY leads 2-0.",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "Justin Crawford is up against Tim Hill. Series: NYY leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tyler Phillips · PHI @ MIA · Mon, Jul 27 · 6:40 PM"
   },
@@ -64,21 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "José Caballero",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Justin Crawford",
+        "meta": "vs Tim Hill"
       },
       "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 2
+        "outs": 0
       },
       "bases": {
         "first": true,
-        "second": true,
-        "third": true
+        "second": false,
+        "third": false
       },
-      "status": "Top 4th"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T00:34:23.039Z",
+    "updated_at": "2026-07-27T00:40:35.721Z",
     "current_game_pk": 823433,
     "next_game_pk": 823839,
     "next_game": {
