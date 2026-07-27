@@ -4,7 +4,7 @@
   "edition_date": "2026-07-27",
   "volume": 1,
   "edition": 118,
-  "generated_at": "2026-07-27T23:24:43.169Z",
+  "generated_at": "2026-07-27T23:49:35.740Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, MIA 5",
-    "dek": "Top 3rd · 0 outs",
-    "summary": "Trea Turner is up against Tyler Phillips. Series: Regular Season.",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "Joe Mack is up against Kyle Backhus. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI @ MIA · Tue, Jul 28 · 6:40 PM"
   },
@@ -55,25 +55,21 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 76,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 18",
-      "gusts_mph": 18
+      "wind": "7 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Tyler Phillips"
+        "name": "Joe Mack",
+        "meta": "vs Kyle Backhus"
       },
-      "pitches": [
-        "B",
-        "S",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 1,
         "outs": 0
       },
@@ -82,7 +78,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T23:24:50.547Z",
+    "updated_at": "2026-07-27T23:49:36.279Z",
     "current_game_pk": 823839,
     "next_game_pk": 823838,
     "next_game": {
@@ -127,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Overcast · gusts 18 mph",
+      "text": "76° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
