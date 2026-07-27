@@ -4,7 +4,7 @@
   "edition_date": "2026-07-26",
   "volume": 1,
   "edition": 117,
-  "generated_at": "2026-07-26T23:49:08.493Z",
+  "generated_at": "2026-07-27T00:34:22.478Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, NYY 0",
-    "dek": "Bottom 2nd · 0 outs",
-    "summary": "Alec Bohm is up against Will Warren. Series: NYY leads 2-0.",
+    "headline": "PHI 6, NYY 0",
+    "dek": "Top 4th · 2 outs",
+    "summary": "José Caballero is up against Cristopher Sánchez. Series: NYY leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Tyler Phillips · PHI @ MIA · Mon, Jul 27 · 6:40 PM"
   },
@@ -55,34 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 77,
       "condition": "Clear",
-      "wind": "6 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "4 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Will Warren"
+        "name": "José Caballero",
+        "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [
-        "B",
-        "F",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 1,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
-        "third": false
+        "first": true,
+        "second": true,
+        "third": true
       },
-      "status": "Bottom 2nd"
+      "status": "Top 4th"
     },
     "recap_line": null
   },
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-26T23:49:09.088Z",
+    "updated_at": "2026-07-27T00:34:23.039Z",
     "current_game_pk": 823433,
     "next_game_pk": 823839,
     "next_game": {
@@ -127,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 10 mph",
+      "text": "77° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
