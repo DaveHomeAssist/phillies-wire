@@ -4,9 +4,9 @@
   "edition_date": "2026-07-27",
   "volume": 1,
   "edition": 118,
-  "generated_at": "2026-07-27T21:52:18.760Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-27T22:23:42.367Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 57,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Marlins · Game 1 of 3",
-    "dek": "Zack Wheeler vs Tyler Phillips",
-    "summary": "Zack Wheeler vs Tyler Phillips · Phillies @ Marlins · Game 1 of 3",
+    "headline": "PHI 0, MIA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Tyler Phillips. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI @ MIA · Tue, Jul 28 · 6:40 PM"
   },
@@ -57,19 +57,36 @@
     "weather": {
       "temp_f": 86,
       "condition": "Overcast",
-      "wind": "9 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "6 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Tyler Phillips"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T21:52:19.346Z",
+    "updated_at": "2026-07-27T22:23:42.710Z",
     "current_game_pk": 823839,
     "next_game_pk": 823838,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "86° · Overcast · gusts 13 mph",
+      "text": "86° · Overcast · gusts 10 mph",
       "highlight": false
     }
   ]
