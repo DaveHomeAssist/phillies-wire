@@ -5,14 +5,14 @@
     "edition": 118,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-27T22:24:53.801Z",
+    "generated_at": "2026-07-27T22:47:58.850Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 27, 2026, 6:24 PM ET",
+      "generated_at_et": "Jul 27, 2026, 6:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, MIA 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Tyler Phillips. Series: Regular Season.",
+    "headline": "PHI 2, MIA 0",
+    "dek": "Middle 1st · 3 outs",
+    "summary": "Otto Lopez is up against Zack Wheeler. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "86° · Overcast"
+        "value": "84° · Heavy showers"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Tyler Phillips on the mound",
+      "Otto Lopez at the plate",
+      "Zack Wheeler on the mound",
       "loanDepot park, Miami"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 86,
-          "condition": "Overcast",
-          "wind": "6 mph · gusts 10",
-          "gusts_mph": 10
+          "temp_f": 84,
+          "condition": "Heavy showers",
+          "wind": "5 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "",
@@ -359,9 +359,9 @@
             "team": "MIA",
             "name": "Tyler Phillips",
             "hand": "R",
-            "era": "3.52",
+            "era": "3.73",
             "record": "2-5",
-            "whip": "1.39"
+            "whip": "1.41"
           },
           "away": {
             "team": "PHI",
@@ -375,13 +375,13 @@
         "linescore": {
           "currentInning": 1,
           "currentInningOrdinal": "1st",
-          "inningState": "Top",
+          "inningState": "Middle",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 0,
+              "runs": 2,
+              "hits": 1,
               "errors": 0
             },
             "home": {
@@ -394,8 +394,8 @@
             {
               "num": 1,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 2,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -412,11 +412,67 @@
             "inning": 1,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Status Change - Warmup",
+            "detail": "Trea Turner called out on strikes.",
             "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:1",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber walks.",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:2",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper homers (22) on a line drive to center field. Kyle Schwarber scores.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823839:3",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out to right fielder Griffin Conine.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:4",
+            "inning": 1,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm strikes out swinging.",
+            "score_after": "PHI 2, MIA 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -424,21 +480,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
-            "meta": "vs Tyler Phillips"
+            "name": "Otto Lopez",
+            "meta": "vs Zack Wheeler"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "S",
+            "S"
+          ],
           "count": {
             "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "strikes": 3,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "Middle 1st"
         }
       }
     },
@@ -455,8 +515,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:24:53.801Z",
-            "freshness_label": "As of Jul 27, 2026, 6:24 PM ET"
+            "last_confirmed": "2026-07-27T22:47:58.850Z",
+            "freshness_label": "As of Jul 27, 2026, 6:47 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -468,8 +528,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:24:53.801Z",
-            "freshness_label": "As of Jul 27, 2026, 6:24 PM ET"
+            "last_confirmed": "2026-07-27T22:47:58.850Z",
+            "freshness_label": "As of Jul 27, 2026, 6:47 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -481,8 +541,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:24:53.801Z",
-            "freshness_label": "As of Jul 27, 2026, 6:24 PM ET"
+            "last_confirmed": "2026-07-27T22:47:58.850Z",
+            "freshness_label": "As of Jul 27, 2026, 6:47 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -494,8 +554,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:24:53.801Z",
-            "freshness_label": "As of Jul 27, 2026, 6:24 PM ET"
+            "last_confirmed": "2026-07-27T22:47:58.850Z",
+            "freshness_label": "As of Jul 27, 2026, 6:47 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -507,8 +567,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:24:53.801Z",
-            "freshness_label": "As of Jul 27, 2026, 6:24 PM ET"
+            "last_confirmed": "2026-07-27T22:47:58.850Z",
+            "freshness_label": "As of Jul 27, 2026, 6:47 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -520,8 +580,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:24:53.801Z",
-            "freshness_label": "As of Jul 27, 2026, 6:24 PM ET"
+            "last_confirmed": "2026-07-27T22:47:58.850Z",
+            "freshness_label": "As of Jul 27, 2026, 6:47 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -533,8 +593,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:24:53.801Z",
-            "freshness_label": "As of Jul 27, 2026, 6:24 PM ET"
+            "last_confirmed": "2026-07-27T22:47:58.850Z",
+            "freshness_label": "As of Jul 27, 2026, 6:47 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

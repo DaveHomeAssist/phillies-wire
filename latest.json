@@ -4,7 +4,7 @@
   "edition_date": "2026-07-27",
   "volume": 1,
   "edition": 118,
-  "generated_at": "2026-07-27T22:24:53.801Z",
+  "generated_at": "2026-07-27T22:47:58.850Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, MIA 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Tyler Phillips. Series: Regular Season.",
+    "headline": "PHI 2, MIA 0",
+    "dek": "Middle 1st · 3 outs",
+    "summary": "Otto Lopez is up against Zack Wheeler. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI @ MIA · Tue, Jul 28 · 6:40 PM"
   },
@@ -55,30 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 86,
-      "condition": "Overcast",
-      "wind": "6 mph · gusts 10",
-      "gusts_mph": 10
+      "temp_f": 84,
+      "condition": "Heavy showers",
+      "wind": "5 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Tyler Phillips"
+        "name": "Otto Lopez",
+        "meta": "vs Zack Wheeler"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S",
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Middle 1st"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-27T22:24:54.255Z",
+    "updated_at": "2026-07-27T22:47:59.547Z",
     "current_game_pk": 823839,
     "next_game_pk": 823838,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "86° · Overcast · gusts 10 mph",
+      "text": "84° · Heavy showers · gusts 11 mph",
       "highlight": false
     }
   ]
