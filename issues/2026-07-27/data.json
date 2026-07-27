@@ -5,14 +5,14 @@
     "edition": 118,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-27T22:49:03.554Z",
+    "generated_at": "2026-07-27T23:23:24.671Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 27, 2026, 6:49 PM ET",
+      "generated_at_et": "Jul 27, 2026, 7:23 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 2, MIA 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "Kyle Stowers is up against Zack Wheeler. Series: Regular Season.",
+    "headline": "PHI 2, MIA 5",
+    "dek": "End 2nd · 3 outs",
+    "summary": "Trea Turner is up against Tyler Phillips. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "84° · Heavy showers"
+        "value": "83° · Overcast"
       }
     ],
     "bullets": [
-      "Kyle Stowers at the plate",
-      "Zack Wheeler on the mound",
+      "Trea Turner at the plate",
+      "Tyler Phillips on the mound",
       "loanDepot park, Miami"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 84,
-          "condition": "Heavy showers",
-          "wind": "5 mph · gusts 11",
-          "gusts_mph": 11
+          "temp_f": 83,
+          "condition": "Overcast",
+          "wind": "6 mph · gusts 18",
+          "gusts_mph": 18
         },
         "giveaway": "",
         "transit": "",
@@ -359,34 +359,34 @@
             "team": "MIA",
             "name": "Tyler Phillips",
             "hand": "R",
-            "era": "3.73",
+            "era": "3.65",
             "record": "2-5",
-            "whip": "1.41"
+            "whip": "1.38"
           },
           "away": {
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.16",
+            "era": "2.58",
             "record": "10-2",
-            "whip": "0.88"
+            "whip": "0.93"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "Bottom",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 2,
               "hits": 1,
-              "errors": 0
+              "errors": 2
             },
             "home": {
-              "runs": 0,
-              "hits": 1,
+              "runs": 5,
+              "hits": 5,
               "errors": 0
             }
           },
@@ -396,11 +396,24 @@
               "away": {
                 "runs": 2,
                 "hits": 1,
+                "errors": 2
+              },
+              "home": {
+                "runs": 2,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 1,
+                "runs": 3,
+                "hits": 3,
                 "errors": 0
               }
             }
@@ -490,28 +503,241 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823839:6",
+            "inning": 1,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Kyle Stowers",
+            "actor_id": 669065,
+            "detail": "Kyle Stowers strikes out swinging.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:7",
+            "inning": 1,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "home_run",
+            "actor": "Heriberto Hernández",
+            "actor_id": 681715,
+            "detail": "Heriberto Hernández homers (15) on a fly ball to left field.",
+            "score_after": "PHI 2, MIA 2",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823839:8",
+            "inning": 1,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Xavier Edwards",
+            "actor_id": 669364,
+            "detail": "Xavier Edwards strikes out swinging.",
+            "score_after": "PHI 2, MIA 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:9",
+            "inning": 1,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Liam Hicks",
+            "actor_id": 689414,
+            "detail": "Liam Hicks strikes out swinging.",
+            "score_after": "PHI 2, MIA 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:10",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott called out on strikes.",
+            "score_after": "PHI 2, MIA 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:11",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto hit by pitch.",
+            "score_after": "PHI 2, MIA 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:12",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Gabriel Rincones Jr.",
+            "actor_id": 687282,
+            "detail": "Gabriel Rincones Jr. flies out to center fielder Jakob Marsee.",
+            "score_after": "PHI 2, MIA 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:13",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford flies out to right fielder Griffin Conine.",
+            "score_after": "PHI 2, MIA 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "home_run",
+            "actor": "Griffin Conine",
+            "actor_id": 665052,
+            "detail": "Griffin Conine homers (8) on a fly ball to right center field.",
+            "score_after": "PHI 2, MIA 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823839:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "walk_hbp",
+            "actor": "Javier Sanoja",
+            "actor_id": 691594,
+            "detail": "Javier Sanoja walks.",
+            "score_after": "PHI 2, MIA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:16",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Joe Mack",
+            "actor_id": 691788,
+            "detail": "Joe Mack flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 2, MIA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:17",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "extra_base_hit",
+            "actor": "Jakob Marsee",
+            "actor_id": 805300,
+            "detail": "Jakob Marsee doubles (12) on a sharp fly ball to right fielder Gabriel Rincones Jr. Javier Sanoja scores.",
+            "score_after": "PHI 2, MIA 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823839:18",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "extra_base_hit",
+            "actor": "Otto Lopez",
+            "actor_id": 672640,
+            "detail": "Otto Lopez triples (7) on a sharp line drive to right fielder Gabriel Rincones Jr. Jakob Marsee scores.",
+            "score_after": "PHI 2, MIA 5",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823839:19",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Kyle Stowers",
+            "actor_id": 669065,
+            "detail": "Kyle Stowers strikes out swinging.",
+            "score_after": "PHI 2, MIA 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823839:20",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Heriberto Hernández",
+            "actor_id": 681715,
+            "detail": "Heriberto Hernández strikes out swinging.",
+            "score_after": "PHI 2, MIA 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Otto Lopez",
-            "meta": "vs Zack Wheeler"
+            "name": "Trea Turner",
+            "meta": "vs Tyler Phillips"
           },
           "pitches": [
             "S",
-            "X"
+            "B",
+            "B",
+            "F",
+            "S"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 1,
-            "outs": 0
+            "balls": 2,
+            "strikes": 3,
+            "outs": 3
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 1st"
+          "status": "End 2nd"
         }
       }
     },
@@ -528,8 +754,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:49:03.554Z",
-            "freshness_label": "As of Jul 27, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-27T23:23:24.671Z",
+            "freshness_label": "As of Jul 27, 2026, 7:23 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -541,8 +767,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:49:03.554Z",
-            "freshness_label": "As of Jul 27, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-27T23:23:24.671Z",
+            "freshness_label": "As of Jul 27, 2026, 7:23 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -554,8 +780,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:49:03.554Z",
-            "freshness_label": "As of Jul 27, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-27T23:23:24.671Z",
+            "freshness_label": "As of Jul 27, 2026, 7:23 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -567,8 +793,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:49:03.554Z",
-            "freshness_label": "As of Jul 27, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-27T23:23:24.671Z",
+            "freshness_label": "As of Jul 27, 2026, 7:23 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -580,8 +806,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:49:03.554Z",
-            "freshness_label": "As of Jul 27, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-27T23:23:24.671Z",
+            "freshness_label": "As of Jul 27, 2026, 7:23 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -593,8 +819,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:49:03.554Z",
-            "freshness_label": "As of Jul 27, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-27T23:23:24.671Z",
+            "freshness_label": "As of Jul 27, 2026, 7:23 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -606,8 +832,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-27T22:49:03.554Z",
-            "freshness_label": "As of Jul 27, 2026, 6:49 PM ET"
+            "last_confirmed": "2026-07-27T23:23:24.671Z",
+            "freshness_label": "As of Jul 27, 2026, 7:23 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
