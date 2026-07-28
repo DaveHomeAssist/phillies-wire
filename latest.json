@@ -4,9 +4,9 @@
   "edition_date": "2026-07-28",
   "volume": 1,
   "edition": 119,
-  "generated_at": "2026-07-28T22:08:03.113Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-28T22:23:33.209Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 57,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Marlins · Game 2 of 3",
-    "dek": "Aaron Nola vs Sandy Alcantara",
-    "summary": "Aaron Nola vs Sandy Alcantara · Phillies @ Marlins · Game 2 of 3",
+    "headline": "PHI 0, MIA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Sandy Alcantara. Series: MIA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ MIA · Wed, Jul 29 · 12:10 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 86,
-      "condition": "Overcast",
-      "wind": "6 mph · gusts 13",
-      "gusts_mph": 13
+      "temp_f": 0,
+      "condition": "Weather unavailable",
+      "wind": "Calm",
+      "gusts_mph": 0
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Sandy Alcantara"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-28T22:08:03.760Z",
+    "updated_at": "2026-07-28T22:23:33.837Z",
     "current_game_pk": 823838,
     "next_game_pk": 823837,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "86° · Overcast · gusts 13 mph",
+      "text": "0° · Weather unavailable · gusts 0 mph",
       "highlight": false
     },
     {

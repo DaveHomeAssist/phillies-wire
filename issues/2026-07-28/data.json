@@ -5,15 +5,16 @@
     "edition": 119,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-28T22:08:03.113Z",
+    "generated_at": "2026-07-28T22:23:33.209Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
-      "crawl_state": "ok",
+      "mode": "live",
+      "mode_label": "Live",
+      "crawl_state": "degraded",
       "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Jul 28, 2026, 6:08 PM ET",
+      "enrich_label": "Live update",
+      "generated_at_et": "Jul 28, 2026, 6:23 PM ET",
       "source_notes": [
+        "One or more live data sources were unavailable; safe fallbacks were used.",
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
@@ -26,28 +27,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Marlins · Game 2 of 3",
-    "dek": "Aaron Nola vs Sandy Alcantara",
-    "summary": "Aaron Nola vs Sandy Alcantara · Phillies @ Marlins · Game 2 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, MIA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Sandy Alcantara. Series: MIA leads 1-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "6:40 PM"
-      },
       {
         "label": "Venue",
         "value": "loanDepot park, Miami"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "0° · Weather unavailable"
       }
     ],
     "bullets": [
-      "86° · Overcast · 6 mph · gusts 13",
-      "MIA leads 1-0"
+      "Trea Turner at the plate",
+      "Sandy Alcantara on the mound",
+      "loanDepot park, Miami"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ MIA · Wed, Jul 29 · 12:10 PM"
@@ -345,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 86,
-          "condition": "Overcast",
-          "wind": "6 mph · gusts 13",
-          "gusts_mph": 13
+          "temp_f": 0,
+          "condition": "Weather unavailable",
+          "wind": "Calm",
+          "gusts_mph": 0
         },
         "giveaway": "",
         "transit": "",
@@ -414,13 +416,31 @@
             "event_type": "other",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Status Change - Pre-Game",
+            "detail": "Status Change - Warmup",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ]
+        ],
+        "situation": {
+          "batter": {
+            "name": "Trea Turner",
+            "meta": "vs Sandy Alcantara"
+          },
+          "pitches": [],
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "bases": {
+            "first": false,
+            "second": false,
+            "third": false
+          },
+          "status": "Top 1st"
+        }
       }
     },
     "injury_report": {
@@ -436,8 +456,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T22:08:03.113Z",
-            "freshness_label": "As of Jul 28, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-28T22:23:33.209Z",
+            "freshness_label": "As of Jul 28, 2026, 6:23 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -449,8 +469,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T22:08:03.113Z",
-            "freshness_label": "As of Jul 28, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-28T22:23:33.209Z",
+            "freshness_label": "As of Jul 28, 2026, 6:23 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -462,8 +482,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T22:08:03.113Z",
-            "freshness_label": "As of Jul 28, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-28T22:23:33.209Z",
+            "freshness_label": "As of Jul 28, 2026, 6:23 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -475,8 +495,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T22:08:03.113Z",
-            "freshness_label": "As of Jul 28, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-28T22:23:33.209Z",
+            "freshness_label": "As of Jul 28, 2026, 6:23 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -488,8 +508,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T22:08:03.113Z",
-            "freshness_label": "As of Jul 28, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-28T22:23:33.209Z",
+            "freshness_label": "As of Jul 28, 2026, 6:23 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -501,8 +521,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T22:08:03.113Z",
-            "freshness_label": "As of Jul 28, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-28T22:23:33.209Z",
+            "freshness_label": "As of Jul 28, 2026, 6:23 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -514,8 +534,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T22:08:03.113Z",
-            "freshness_label": "As of Jul 28, 2026, 6:08 PM ET"
+            "last_confirmed": "2026-07-28T22:23:33.209Z",
+            "freshness_label": "As of Jul 28, 2026, 6:23 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
