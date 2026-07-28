@@ -4,7 +4,7 @@
   "edition_date": "2026-07-28",
   "volume": 1,
   "edition": 119,
-  "generated_at": "2026-07-28T19:31:04.328Z",
+  "generated_at": "2026-07-28T19:49:40.701Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -55,9 +55,9 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 87,
-      "condition": "Mostly sunny",
-      "wind": "10 mph · gusts 15",
+      "temp_f": 84,
+      "condition": "Clear",
+      "wind": "8 mph · gusts 15",
       "gusts_mph": 15
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-28T19:31:04.812Z",
+    "updated_at": "2026-07-28T19:49:41.229Z",
     "current_game_pk": 823838,
     "next_game_pk": 823837,
     "next_game": {
@@ -106,7 +106,11 @@
       "highlight": false
     },
     {
-      "text": "87° · Mostly sunny · gusts 15 mph",
+      "text": "84° · Clear · gusts 15 mph",
+      "highlight": false
+    },
+    {
+      "text": "optioned C Payton Henry to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
