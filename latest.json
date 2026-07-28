@@ -4,21 +4,21 @@
   "edition_date": "2026-07-27",
   "volume": 1,
   "edition": 118,
-  "generated_at": "2026-07-28T01:12:12.706Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-28T01:56:23.213Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 57,
-    "losses": 49,
-    "streak": "W1",
+    "losses": 50,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 7, MIA 5",
-    "dek": "Bottom 8th · 0 outs",
-    "summary": "Griffin Conine is up against Orion Kerkering. Series: Regular Season.",
+    "headline": "PHI 7, MIA 8.",
+    "dek": "MIA 8, PHI 7 · Tyler Phillips · 5.0 IP, 3 H, 2 ER, 5 K",
+    "summary": "PHI 7, MIA 8. Final at loanDepot park, Miami. MIA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI @ MIA · Tue, Jul 28 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "MIA leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,62 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
-      "condition": "Heavy drizzle",
-      "wind": "6 mph · gusts 12",
-      "gusts_mph": 12
+      "temp_f": 77,
+      "condition": "Overcast",
+      "wind": "5 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Griffin Conine",
-        "meta": "vs Orion Kerkering"
-      },
-      "pitches": [
-        "F",
-        "F"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 0
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-28T01:12:13.292Z",
-    "current_game_pk": 823839,
-    "next_game_pk": 823838,
+    "updated_at": "2026-07-28T01:56:23.999Z",
+    "current_game_pk": 823838,
+    "next_game_pk": 823837,
     "next_game": {
-      "game_pk": 823838,
-      "official_date": "2026-07-28",
-      "date_label": "Tue, Jul 28, 2026",
-      "time_label": "6:40 PM",
+      "game_pk": 823837,
+      "official_date": "2026-07-29",
+      "date_label": "Wed, Jul 29, 2026",
+      "time_label": "12:10 PM",
       "title": "Phillies at Miami Marlins",
       "matchup": "PHI at MIA",
       "venue": "loanDepot park"
     },
     "current_game": {
-      "game_pk": 823839,
-      "official_date": "2026-07-27",
+      "game_pk": 823838,
+      "official_date": "2026-07-28",
       "title": "Phillies at Miami Marlins",
       "matchup": "PHI at MIA"
     }
   },
   "ticker": [
     {
-      "text": "PHI 57-49",
+      "text": "PHI 57-50",
       "highlight": true
     },
     {
@@ -126,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Heavy drizzle · gusts 12 mph",
+      "text": "77° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
