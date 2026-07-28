@@ -4,7 +4,7 @@
   "edition_date": "2026-07-27",
   "volume": 1,
   "edition": 118,
-  "generated_at": "2026-07-28T00:36:32.838Z",
+  "generated_at": "2026-07-28T01:11:13.257Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, MIA 5",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Joe Mack is up against José Alvarado. Series: Regular Season.",
+    "headline": "PHI 7, MIA 5",
+    "dek": "Bottom 8th · 0 outs",
+    "summary": "Griffin Conine is up against Orion Kerkering. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI @ MIA · Tue, Jul 28 · 6:40 PM"
   },
@@ -55,34 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 77,
-      "condition": "Rain showers",
-      "wind": "9 mph · gusts 15",
-      "gusts_mph": 15
+      "temp_f": 76,
+      "condition": "Heavy drizzle",
+      "wind": "6 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Joe Mack",
-        "meta": "vs José Alvarado"
+        "name": "Griffin Conine",
+        "meta": "vs Orion Kerkering"
       },
       "pitches": [
-        "B",
-        "F",
         "F"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -90,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-28T00:36:33.528Z",
+    "updated_at": "2026-07-28T01:11:13.820Z",
     "current_game_pk": 823839,
     "next_game_pk": 823838,
     "next_game": {
@@ -127,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Rain showers · gusts 15 mph",
+      "text": "76° · Heavy drizzle · gusts 12 mph",
       "highlight": false
     }
   ]
