@@ -5,14 +5,14 @@
     "edition": 118,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-28T01:11:13.257Z",
+    "generated_at": "2026-07-28T01:12:12.706Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 27, 2026, 9:11 PM ET",
+      "generated_at_et": "Jul 27, 2026, 9:12 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -1455,10 +1455,10 @@
             "inning": 8,
             "half": "bottom",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Griffin Conine",
             "actor_id": 665052,
-            "detail": "Play",
+            "detail": "Batter Timeout.",
             "score_after": "PHI 7, MIA 5",
             "runs": 0,
             "is_scoring": false,
@@ -1471,11 +1471,12 @@
             "meta": "vs Orion Kerkering"
           },
           "pitches": [
+            "F",
             "F"
           ],
           "count": {
             "balls": 0,
-            "strikes": 1,
+            "strikes": 2,
             "outs": 0
           },
           "bases": {
