@@ -5,14 +5,14 @@
     "edition": 119,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-28T23:34:17.937Z",
+    "generated_at": "2026-07-28T23:49:02.042Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 28, 2026, 7:34 PM ET",
+      "generated_at_et": "Jul 28, 2026, 7:49 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, MIA 1",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "Heriberto Hernández is up against Aaron Nola. Series: MIA leads 1-0.",
+    "dek": "Top 5th · 0 outs",
+    "summary": "Edmundo Sosa is up against Sandy Alcantara. Series: MIA leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "84° · Overcast"
+        "value": "83° · Overcast"
       }
     ],
     "bullets": [
-      "Heriberto Hernández at the plate",
-      "Aaron Nola on the mound",
+      "Edmundo Sosa at the plate",
+      "Sandy Alcantara on the mound",
       "loanDepot park, Miami"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 84,
+          "temp_f": 83,
           "condition": "Overcast",
-          "wind": "4 mph · gusts 13",
-          "gusts_mph": 13
+          "wind": "5 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "",
@@ -359,7 +359,7 @@
             "team": "MIA",
             "name": "Sandy Alcantara",
             "hand": "R",
-            "era": "3.93",
+            "era": "3.90",
             "record": "10-6",
             "whip": "1.21"
           },
@@ -367,17 +367,17 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.77",
+            "era": "5.74",
             "record": "3-8",
-            "whip": "1.45"
+            "whip": "1.46"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 2,
+          "currentInning": 5,
+          "currentInningOrdinal": "5th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 1,
-              "hits": 2,
+              "hits": 3,
               "errors": 1
             }
           },
@@ -423,6 +423,32 @@
                 "runs": 0,
                 "hits": 0,
                 "errors": 1
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
               },
               "home": {
                 "runs": null,
@@ -746,9 +772,107 @@
             "inning": 3,
             "half": "bottom",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
+            "detail": "Heriberto Hernández strikes out swinging.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:23",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper flies out sharply to center fielder Jakob Marsee.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:24",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out to right fielder Griffin Conine.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:25",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh grounds out, second baseman Xavier Edwards to first baseman Kyle Stowers.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:26",
+            "inning": 4,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "single",
+            "actor": "Xavier Edwards",
+            "actor_id": 669364,
+            "detail": "Xavier Edwards singles on a sharp line drive to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:27",
+            "inning": 4,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "extra_base_hit",
+            "actor": "Liam Hicks",
+            "actor_id": 689414,
+            "detail": "Liam Hicks grounds into a double play, first baseman Alec Bohm to shortstop Trea Turner. Xavier Edwards out at 1st. Liam Hicks out…",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823838:28",
+            "inning": 4,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Griffin Conine",
+            "actor_id": 665052,
+            "detail": "Griffin Conine lines out to center fielder Justin Crawford.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:29",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
             "detail": "Play",
             "score_after": "PHI 0, MIA 1",
             "runs": 0,
@@ -758,21 +882,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Heriberto Hernández",
-            "meta": "vs Aaron Nola"
+            "name": "Edmundo Sosa",
+            "meta": "vs Sandy Alcantara"
           },
           "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 2
+            "outs": 0
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 3rd"
+          "status": "Top 5th"
         }
       }
     },
@@ -789,8 +913,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:34:17.937Z",
-            "freshness_label": "As of Jul 28, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-07-28T23:49:02.042Z",
+            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -802,8 +926,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:34:17.937Z",
-            "freshness_label": "As of Jul 28, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-07-28T23:49:02.042Z",
+            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -815,8 +939,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:34:17.937Z",
-            "freshness_label": "As of Jul 28, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-07-28T23:49:02.042Z",
+            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -828,8 +952,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:34:17.937Z",
-            "freshness_label": "As of Jul 28, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-07-28T23:49:02.042Z",
+            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -841,8 +965,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:34:17.937Z",
-            "freshness_label": "As of Jul 28, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-07-28T23:49:02.042Z",
+            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -854,8 +978,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:34:17.937Z",
-            "freshness_label": "As of Jul 28, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-07-28T23:49:02.042Z",
+            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -867,8 +991,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:34:17.937Z",
-            "freshness_label": "As of Jul 28, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-07-28T23:49:02.042Z",
+            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
