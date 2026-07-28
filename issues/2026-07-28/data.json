@@ -5,14 +5,14 @@
     "edition": 119,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-28T23:07:23.410Z",
+    "generated_at": "2026-07-28T23:22:46.678Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 28, 2026, 7:07 PM ET",
+      "generated_at_et": "Jul 28, 2026, 7:22 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, MIA 1",
-    "dek": "Bottom 2nd · 1 out",
-    "summary": "Griffin Conine is up against Aaron Nola. Series: MIA leads 1-0.",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Bryson Stott is up against Sandy Alcantara. Series: MIA leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Griffin Conine at the plate",
-      "Aaron Nola on the mound",
+      "Bryson Stott at the plate",
+      "Sandy Alcantara on the mound",
       "loanDepot park, Miami"
     ],
     "next_label": "Tomorrow",
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 84,
           "condition": "Overcast",
-          "wind": "5 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "5 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "",
@@ -367,17 +367,17 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.83",
+            "era": "5.79",
             "record": "3-8",
-            "whip": "1.44"
+            "whip": "1.45"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 1,
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 1,
-              "hits": 1,
+              "hits": 2,
               "errors": 1
             }
           },
@@ -412,9 +412,22 @@
                 "errors": 0
               },
               "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 1
+              }
+            },
+            {
+              "num": 3,
+              "away": {
                 "runs": null,
                 "hits": 0,
-                "errors": 1
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
               }
             }
           ]
@@ -607,9 +620,79 @@
             "inning": 2,
             "half": "bottom",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Griffin Conine",
             "actor_id": 665052,
+            "detail": "Griffin Conine singles on a ground ball to center fielder Justin Crawford.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "walk_hbp",
+            "actor": "Jakob Marsee",
+            "actor_id": 805300,
+            "detail": "Jakob Marsee walks. Griffin Conine to 2nd.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "extra_base_hit",
+            "actor": "Graham Pauley",
+            "actor_id": 688363,
+            "detail": "Graham Pauley lines into an unassisted double play, first baseman Alec Bohm. Jakob Marsee out at 1st.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823838:16",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs flies out to shortstop Otto Lopez.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:17",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner lines out sharply to left fielder Heriberto Hernández.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:18",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
             "detail": "Play",
             "score_after": "PHI 0, MIA 1",
             "runs": 0,
@@ -619,23 +702,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Griffin Conine",
-            "meta": "vs Aaron Nola"
+            "name": "Bryson Stott",
+            "meta": "vs Sandy Alcantara"
           },
-          "pitches": [
-            "B"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 1,
+            "balls": 0,
             "strikes": 0,
-            "outs": 1
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 2nd"
+          "status": "Top 3rd"
         }
       }
     },
@@ -652,8 +733,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:07:23.410Z",
-            "freshness_label": "As of Jul 28, 2026, 7:07 PM ET"
+            "last_confirmed": "2026-07-28T23:22:46.678Z",
+            "freshness_label": "As of Jul 28, 2026, 7:22 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -665,8 +746,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:07:23.410Z",
-            "freshness_label": "As of Jul 28, 2026, 7:07 PM ET"
+            "last_confirmed": "2026-07-28T23:22:46.678Z",
+            "freshness_label": "As of Jul 28, 2026, 7:22 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -678,8 +759,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:07:23.410Z",
-            "freshness_label": "As of Jul 28, 2026, 7:07 PM ET"
+            "last_confirmed": "2026-07-28T23:22:46.678Z",
+            "freshness_label": "As of Jul 28, 2026, 7:22 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -691,8 +772,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:07:23.410Z",
-            "freshness_label": "As of Jul 28, 2026, 7:07 PM ET"
+            "last_confirmed": "2026-07-28T23:22:46.678Z",
+            "freshness_label": "As of Jul 28, 2026, 7:22 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -704,8 +785,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:07:23.410Z",
-            "freshness_label": "As of Jul 28, 2026, 7:07 PM ET"
+            "last_confirmed": "2026-07-28T23:22:46.678Z",
+            "freshness_label": "As of Jul 28, 2026, 7:22 PM ET"
           },
           {
             "name": "Garrett Stubbs",
@@ -717,8 +798,8 @@
             "retroactive_to": "2026-07-18",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:07:23.410Z",
-            "freshness_label": "As of Jul 28, 2026, 7:07 PM ET"
+            "last_confirmed": "2026-07-28T23:22:46.678Z",
+            "freshness_label": "As of Jul 28, 2026, 7:22 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -730,8 +811,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:07:23.410Z",
-            "freshness_label": "As of Jul 28, 2026, 7:07 PM ET"
+            "last_confirmed": "2026-07-28T23:22:46.678Z",
+            "freshness_label": "As of Jul 28, 2026, 7:22 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
