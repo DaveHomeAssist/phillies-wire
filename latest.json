@@ -4,21 +4,21 @@
   "edition_date": "2026-07-28",
   "volume": 1,
   "edition": 119,
-  "generated_at": "2026-07-29T00:51:50.355Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-07-29T01:13:06.584Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 57,
-    "losses": 50,
-    "streak": "L1",
+    "losses": 51,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, MIA 1",
-    "dek": "Bottom 8th · 2 outs",
-    "summary": "Xavier Edwards is up against Orion Kerkering. Series: MIA leads 1-0.",
+    "headline": "PHI 0, MIA 1.",
+    "dek": "MIA 1, PHI 0 · Sandy Alcantara · 7.0 IP, 4 H, 0 ER, 5 K",
+    "summary": "PHI 0, MIA 1. Final at loanDepot park, Miami. MIA wins 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ MIA · Wed, Jul 29 · 12:10 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "MIA leads 1-0"
+      "label": "MIA wins 2-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,63 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
+      "temp_f": 80,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "6 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Xavier Edwards",
-        "meta": "vs Orion Kerkering"
-      },
-      "pitches": [
-        "S",
-        "B",
-        "B"
-      ],
-      "count": {
-        "balls": 2,
-        "strikes": 1,
-        "outs": 2
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T00:51:50.830Z",
-    "current_game_pk": 823838,
-    "next_game_pk": 823837,
+    "updated_at": "2026-07-29T01:13:07.390Z",
+    "current_game_pk": 823837,
+    "next_game_pk": 824809,
     "next_game": {
-      "game_pk": 823837,
-      "official_date": "2026-07-29",
-      "date_label": "Wed, Jul 29, 2026",
-      "time_label": "12:10 PM",
-      "title": "Phillies at Miami Marlins",
-      "matchup": "PHI at MIA",
-      "venue": "loanDepot park"
+      "game_pk": 824809,
+      "official_date": "2026-07-31",
+      "date_label": "Fri, Jul 31, 2026",
+      "time_label": "7:05 PM",
+      "title": "Phillies at Baltimore Orioles",
+      "matchup": "PHI at BAL",
+      "venue": "Oriole Park at Camden Yards"
     },
     "current_game": {
-      "game_pk": 823838,
-      "official_date": "2026-07-28",
+      "game_pk": 823837,
+      "official_date": "2026-07-29",
       "title": "Phillies at Miami Marlins",
       "matchup": "PHI at MIA"
     }
   },
   "ticker": [
     {
-      "text": "PHI 57-50",
+      "text": "PHI 57-51",
       "highlight": true
     },
     {
@@ -127,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Overcast · gusts 14 mph",
+      "text": "80° · Overcast · gusts 16 mph",
       "highlight": false
     },
     {

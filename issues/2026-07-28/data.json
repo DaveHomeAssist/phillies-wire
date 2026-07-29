@@ -5,14 +5,14 @@
     "edition": 119,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-29T00:51:50.355Z",
+    "generated_at": "2026-07-29T01:13:06.584Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 28, 2026, 8:51 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 28, 2026, 9:13 PM ET",
       "source_notes": [
         "Rehab assignment notes are refreshed from the MLB transactions feed.",
         "Farm system notes hidden because the editorial baseline is stale."
@@ -21,298 +21,41 @@
   },
   "record": {
     "wins": 57,
-    "losses": 50,
-    "streak": "L1",
+    "losses": 51,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 0, MIA 1",
-    "dek": "Bottom 8th · 2 outs",
-    "summary": "Xavier Edwards is up against Orion Kerkering. Series: MIA leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 0, MIA 1.",
+    "dek": "MIA 1, PHI 0 · Sandy Alcantara · 7.0 IP, 4 H, 0 ER, 5 K",
+    "summary": "PHI 0, MIA 1. Final at loanDepot park, Miami. MIA wins 2-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "loanDepot park, Miami"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "81° · Overcast"
+        "label": "Series",
+        "value": "MIA wins 2-0"
       }
     ],
     "bullets": [
-      "Xavier Edwards at the plate",
-      "Orion Kerkering on the mound",
-      "loanDepot park, Miami"
+      "Sandy Alcantara: 7.0 IP, 4 H, 0 ER, 5 K",
+      "Aaron Nola: 5.2 IP, 5 H, 1 ER, 4 K",
+      "Kyle Stowers: 1-for-3, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ MIA · Wed, Jul 29 · 12:10 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at MIA game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:40 PM",
-        "starters": {
-          "home": {
-            "team": "MIA",
-            "name": "Sandy Alcantara",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "MIA",
-            "name": "Sandy Alcantara",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Otto Lopez",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Stowers",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Heriberto Hernández",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Xavier Edwards",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Liam Hicks",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Griffin Conine",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Jakob Marsee",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Graham Pauley",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Joe Mack",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Garrett Stubbs",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Garrett Stubbs",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Otto Lopez",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Stowers",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Heriberto Hernández",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Xavier Edwards",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Liam Hicks",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Griffin Conine",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Jakob Marsee",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Graham Pauley",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Joe Mack",
-              "position": "C",
-              "bats": "L"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Marlins · Game 2 of 3",
@@ -339,7 +82,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "MIA leads 1-0"
+          "label": "MIA wins 2-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,10 +90,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 81,
+          "temp_f": 80,
           "condition": "Overcast",
-          "wind": "6 mph · gusts 14",
-          "gusts_mph": 14
+          "wind": "6 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "",
@@ -361,7 +104,7 @@
             "name": "Sandy Alcantara",
             "hand": "R",
             "era": "3.82",
-            "record": "10-6",
+            "record": "11-6",
             "whip": "1.21"
           },
           "away": {
@@ -369,16 +112,16 @@
             "name": "Aaron Nola",
             "hand": "R",
             "era": "5.61",
-            "record": "3-8",
+            "record": "3-9",
             "whip": "1.45"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 2,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 0,
@@ -387,7 +130,7 @@
             },
             "home": {
               "runs": 1,
-              "hits": 5,
+              "hits": 6,
               "errors": 1
             }
           },
@@ -485,6 +228,19 @@
             },
             {
               "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
               "away": {
                 "runs": 0,
                 "hits": 0,
@@ -731,7 +487,7 @@
             "event_type": "out",
             "actor": "Garrett Stubbs",
             "actor_id": 596117,
-            "detail": "Garrett Stubbs flies out to shortstop Otto Lopez.",
+            "detail": "Garrett Stubbs pops out to shortstop Otto Lopez.",
             "score_after": "PHI 0, MIA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1344,38 +1100,86 @@
             "inning": 8,
             "half": "bottom",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Play",
+            "detail": "Xavier Edwards walks.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:61",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "single",
+            "actor": "Liam Hicks",
+            "actor_id": 689414,
+            "detail": "Liam Hicks singles on a ground ball to second baseman Bryson Stott. Xavier Edwards to 3rd.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:62",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Esteury Ruiz",
+            "actor_id": 665923,
+            "detail": "Esteury Ruiz grounds into a force out, third baseman Edmundo Sosa to second baseman Bryson Stott. Liam Hicks out at 2nd.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:63",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm called out on strikes.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:64",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out to left fielder Heriberto Hernández.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:65",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa strikes out swinging.",
             "score_after": "PHI 0, MIA 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Xavier Edwards",
-            "meta": "vs Orion Kerkering"
-          },
-          "pitches": [
-            "S",
-            "B",
-            "B"
-          ],
-          "count": {
-            "balls": 2,
-            "strikes": 1,
-            "outs": 2
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Bottom 8th"
-        }
+        ]
       }
     },
     "injury_report": {
@@ -1391,8 +1195,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-29T00:51:50.355Z",
-            "freshness_label": "As of Jul 28, 2026, 8:51 PM ET"
+            "last_confirmed": "2026-07-29T01:13:06.584Z",
+            "freshness_label": "As of Jul 28, 2026, 9:13 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1404,8 +1208,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-29T00:51:50.355Z",
-            "freshness_label": "As of Jul 28, 2026, 8:51 PM ET"
+            "last_confirmed": "2026-07-29T01:13:06.584Z",
+            "freshness_label": "As of Jul 28, 2026, 9:13 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1417,8 +1221,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-29T00:51:50.355Z",
-            "freshness_label": "As of Jul 28, 2026, 8:51 PM ET"
+            "last_confirmed": "2026-07-29T01:13:06.584Z",
+            "freshness_label": "As of Jul 28, 2026, 9:13 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1430,8 +1234,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-29T00:51:50.355Z",
-            "freshness_label": "As of Jul 28, 2026, 8:51 PM ET"
+            "last_confirmed": "2026-07-29T01:13:06.584Z",
+            "freshness_label": "As of Jul 28, 2026, 9:13 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1443,8 +1247,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-29T00:51:50.355Z",
-            "freshness_label": "As of Jul 28, 2026, 8:51 PM ET"
+            "last_confirmed": "2026-07-29T01:13:06.584Z",
+            "freshness_label": "As of Jul 28, 2026, 9:13 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1456,8 +1260,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-29T00:51:50.355Z",
-            "freshness_label": "As of Jul 28, 2026, 8:51 PM ET"
+            "last_confirmed": "2026-07-29T01:13:06.584Z",
+            "freshness_label": "As of Jul 28, 2026, 9:13 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
