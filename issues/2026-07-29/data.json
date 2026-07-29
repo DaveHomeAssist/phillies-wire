@@ -5,14 +5,14 @@
     "edition": 120,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-29T18:11:54.439Z",
+    "generated_at": "2026-07-29T18:24:02.583Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 29, 2026, 2:11 PM ET",
+      "generated_at_et": "Jul 29, 2026, 2:24 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 6, MIA 6",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Javier Sanoja is up against Seth Johnson. Series: MIA leads 2-0.",
+    "dek": "Bottom 8th · 0 outs",
+    "summary": "Kyle Stowers is up against Jonathan Bowlan. Series: MIA leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Javier Sanoja at the plate",
-      "Seth Johnson on the mound",
+      "Kyle Stowers at the plate",
+      "Jonathan Bowlan on the mound",
       "loanDepot park, Miami"
     ],
     "next_label": "Tomorrow",
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 84,
           "condition": "Overcast",
-          "wind": "7 mph · gusts 13",
-          "gusts_mph": 13
+          "wind": "2 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "",
@@ -367,17 +367,17 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.43",
+            "era": "3.57",
             "record": "9-5",
             "whip": "1.18"
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 6,
@@ -479,6 +479,19 @@
               "home": {
                 "runs": 3,
                 "hits": 3,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -1358,10 +1371,66 @@
             "inning": 7,
             "half": "bottom",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Javier Sanoja",
             "actor_id": 691594,
-            "detail": "Play",
+            "detail": "Javier Sanoja pops out to first baseman Bryce Harper.",
+            "score_after": "PHI 6, MIA 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823837:63",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, shortstop Otto Lopez to first baseman Liam Hicks.",
+            "score_after": "PHI 6, MIA 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823837:64",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh strikes out swinging.",
+            "score_after": "PHI 6, MIA 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823837:65",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz strikes out swinging.",
+            "score_after": "PHI 6, MIA 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823837:66",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "other",
+            "actor": "Kyle Stowers",
+            "actor_id": 669065,
+            "detail": "Pitching Change: Jonathan Bowlan replaces Seth Johnson.",
             "score_after": "PHI 6, MIA 6",
             "runs": 0,
             "is_scoring": false,
@@ -1370,21 +1439,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Javier Sanoja",
-            "meta": "vs Seth Johnson"
+            "name": "Kyle Stowers",
+            "meta": "vs Jonathan Bowlan"
           },
           "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 2
+            "outs": 0
           },
           "bases": {
-            "first": true,
-            "second": true,
+            "first": false,
+            "second": false,
             "third": false
           },
-          "status": "Bottom 7th"
+          "status": "Bottom 8th"
         }
       }
     },
