@@ -4,7 +4,7 @@
   "edition_date": "2026-07-29",
   "volume": 1,
   "edition": 120,
-  "generated_at": "2026-07-29T17:56:20.224Z",
+  "generated_at": "2026-07-29T18:11:54.439Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, MIA 3",
-    "dek": "Bottom 7th · 0 outs",
-    "summary": "Brian Navarreto is up against Jesús Luzardo. Series: MIA leads 2-0.",
+    "headline": "PHI 6, MIA 6",
+    "dek": "Bottom 7th · 2 outs",
+    "summary": "Javier Sanoja is up against Seth Johnson. Series: MIA leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Brandon Young · PHI @ BAL · Fri, Jul 31 · 7:05 PM"
   },
@@ -55,31 +55,27 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 89,
-      "condition": "Weather unavailable",
-      "wind": "10 mph · gusts 15",
-      "gusts_mph": 15
+      "temp_f": 84,
+      "condition": "Overcast",
+      "wind": "7 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Esteury Ruiz",
-        "meta": "vs Jesús Luzardo"
+        "name": "Javier Sanoja",
+        "meta": "vs Seth Johnson"
       },
-      "pitches": [
-        "B",
-        "B",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
       "status": "Bottom 7th"
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T17:56:21.028Z",
+    "updated_at": "2026-07-29T18:11:54.943Z",
     "current_game_pk": 823837,
     "next_game_pk": 824809,
     "next_game": {
@@ -127,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Weather unavailable · gusts 15 mph",
+      "text": "84° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
