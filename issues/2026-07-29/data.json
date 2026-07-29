@@ -1,0 +1,491 @@
+{
+  "schema_version": "1.4.0",
+  "meta": {
+    "date": "2026-07-29",
+    "edition": 120,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-07-29T04:21:39.866Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Jul 29, 2026, 12:21 AM ET",
+      "source_notes": [
+        "Farm system notes hidden because the editorial baseline is stale."
+      ]
+    }
+  },
+  "record": {
+    "wins": 57,
+    "losses": 51,
+    "streak": "L2",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Phillies @ Marlins · Game 3 of 3",
+    "dek": "Jesús Luzardo vs Ryan Gusto",
+    "summary": "Jesús Luzardo vs Ryan Gusto · Phillies @ Marlins · Game 3 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "12:10 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "loanDepot park, Miami"
+      },
+      {
+        "label": "Watch",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "79° · Clear · 4 mph · gusts 15",
+      "MIA leads 2-0"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "PHI @ BAL · Fri, Jul 31 · 7:05 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "12:10 PM",
+        "starters": {
+          "home": {
+            "team": "MIA",
+            "name": "Ryan Gusto",
+            "hand": "R"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "team": "MIA",
+            "name": "Ryan Gusto",
+            "hand": "R"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Phillies @ Marlins · Game 3 of 3",
+        "first_pitch": "12:10 PM",
+        "venue": "loanDepot park, Miami",
+        "starters": {
+          "home": {
+            "name": "Ryan Gusto",
+            "hand": "R"
+          },
+          "away": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "phi": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "name": "Ryan Gusto",
+            "hand": "R"
+          }
+        },
+        "series": {
+          "home_wins": 0,
+          "away_wins": 0,
+          "label": "MIA leads 2-0"
+        },
+        "broadcast": {
+          "tv": "NBCSP",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 79,
+          "condition": "Clear",
+          "wind": "4 mph · gusts 15",
+          "gusts_mph": 15
+        },
+        "giveaway": "",
+        "transit": "",
+        "venue_is_home": false,
+        "matchup_tape": {
+          "home": {
+            "team": "MIA",
+            "name": "Ryan Gusto",
+            "hand": "R",
+            "era": "4.50",
+            "record": "0-2",
+            "whip": "1.32"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L",
+            "era": "3.31",
+            "record": "9-5",
+            "whip": "1.17"
+          }
+        },
+        "linescore": {
+          "currentInning": null,
+          "currentInningOrdinal": "",
+          "inningState": "",
+          "isTopInning": false,
+          "outs": null,
+          "teams": {
+            "away": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            },
+            "home": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            }
+          },
+          "innings": []
+        },
+        "plays": []
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-29T04:21:39.866Z",
+            "freshness_label": "As of Jul 29, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-29T04:21:39.866Z",
+            "freshness_label": "As of Jul 29, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-29T04:21:39.866Z",
+            "freshness_label": "As of Jul 29, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Tanner Banks",
+            "position": "LHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Left forearm strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-29T04:21:39.866Z",
+            "freshness_label": "As of Jul 29, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Brad Keller",
+            "position": "RHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL tear",
+            "status_note": "",
+            "retroactive_to": "2026-07-13",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-29T04:21:39.866Z",
+            "freshness_label": "As of Jul 29, 2026, 12:21 AM ET"
+          },
+          {
+            "name": "Rafael Marchán",
+            "position": "C",
+            "il_type": "10-day",
+            "badge": "il",
+            "injury": "Left knee patellar tendinitis",
+            "status_note": "",
+            "retroactive_to": "2026-07-23",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-07-29T04:21:39.866Z",
+            "freshness_label": "As of Jul 29, 2026, 12:21 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Tomorrow",
+    "matchup": "PHI @ BAL",
+    "date": "Fri, Jul 31",
+    "time": "7:05 PM",
+    "broadcast": "NBCSP",
+    "venue": "Oriole Park at Camden Yards"
+  }
+}

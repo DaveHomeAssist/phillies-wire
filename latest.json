@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-28",
+  "edition_date": "2026-07-29",
   "volume": 1,
-  "edition": 119,
-  "generated_at": "2026-07-29T03:52:06.294Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 120,
+  "generated_at": "2026-07-29T04:21:39.866Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 57,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, MIA 1.",
-    "dek": "MIA 1, PHI 0 · Sandy Alcantara · 7.0 IP, 4 H, 0 ER, 5 K",
-    "summary": "PHI 0, MIA 1. Final at loanDepot park, Miami. MIA wins 2-0.",
+    "headline": "Phillies @ Marlins · Game 3 of 3",
+    "dek": "Jesús Luzardo vs Ryan Gusto",
+    "summary": "Jesús Luzardo vs Ryan Gusto · Phillies @ Marlins · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Jesús Luzardo vs Ryan Gusto · PHI @ MIA · Wed, Jul 29 · 12:10 PM"
+    "next_value": "PHI @ BAL · Fri, Jul 31 · 7:05 PM"
   },
   "game": {
-    "matchup": "Phillies @ Marlins · Game 2 of 3",
-    "first_pitch": "6:40 PM",
+    "matchup": "Phillies @ Marlins · Game 3 of 3",
+    "first_pitch": "12:10 PM",
     "venue": "loanDepot park, Miami",
     "starters": {
       "home": {
-        "name": "Sandy Alcantara",
+        "name": "Ryan Gusto",
         "hand": "R"
       },
       "away": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Jesús Luzardo",
+        "hand": "L"
       },
       "phi": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Jesús Luzardo",
+        "hand": "L"
       },
       "opp": {
-        "name": "Sandy Alcantara",
+        "name": "Ryan Gusto",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "MIA wins 2-0"
+      "label": "MIA leads 2-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,8 +57,8 @@
     "weather": {
       "temp_f": 79,
       "condition": "Clear",
-      "wind": "4 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "4 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T03:52:06.745Z",
+    "updated_at": "2026-07-29T04:21:40.600Z",
     "current_game_pk": 823837,
     "next_game_pk": 824809,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Marlins · Game 2 of 3 · 6:40 PM",
+      "text": "Phillies @ Marlins · Game 3 of 3 · 12:10 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Sandy Alcantara",
+      "text": "Jesús Luzardo vs Ryan Gusto",
       "highlight": true
     },
     {
@@ -106,19 +106,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 14 mph",
-      "highlight": false
-    },
-    {
-      "text": "sent RHP Lou Trivino III on a rehab assignment to Lehigh Valley IronPigs.",
-      "highlight": true
-    },
-    {
-      "text": "activated C Garrett Stubbs from the 10-day injured list.",
-      "highlight": false
-    },
-    {
-      "text": "optioned C Payton Henry to Lehigh Valley IronPigs.",
+      "text": "79° · Clear · gusts 15 mph",
       "highlight": false
     }
   ]
