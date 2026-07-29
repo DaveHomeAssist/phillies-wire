@@ -4,7 +4,7 @@
   "edition_date": "2026-07-28",
   "volume": 1,
   "edition": 119,
-  "generated_at": "2026-07-29T00:34:29.046Z",
+  "generated_at": "2026-07-29T00:51:50.355Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIA 1",
-    "dek": "Bottom 7th · 1 out",
-    "summary": "Javier Sanoja is up against José Alvarado. Series: MIA leads 1-0.",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "Xavier Edwards is up against Orion Kerkering. Series: MIA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ MIA · Wed, Jul 29 · 12:10 PM"
   },
@@ -55,33 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
-      "condition": "Partly cloudy",
-      "wind": "5 mph · gusts 13",
-      "gusts_mph": 13
+      "temp_f": 81,
+      "condition": "Overcast",
+      "wind": "6 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jakob Marsee",
-        "meta": "vs Tim Mayza"
+        "name": "Xavier Edwards",
+        "meta": "vs Orion Kerkering"
       },
       "pitches": [
+        "S",
         "B",
-        "X"
+        "B"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
-        "outs": 3
+        "balls": 2,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 7th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T00:34:29.610Z",
+    "updated_at": "2026-07-29T00:51:50.830Z",
     "current_game_pk": 823838,
     "next_game_pk": 823837,
     "next_game": {
@@ -126,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Partly cloudy · gusts 13 mph",
+      "text": "81° · Overcast · gusts 14 mph",
       "highlight": false
     },
     {
