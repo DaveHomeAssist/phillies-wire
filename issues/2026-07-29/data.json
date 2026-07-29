@@ -5,14 +5,14 @@
     "edition": 120,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-29T18:36:42.772Z",
+    "generated_at": "2026-07-29T18:48:22.340Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Jul 29, 2026, 2:36 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Jul 29, 2026, 2:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 57,
-    "losses": 51,
-    "streak": "L2",
+    "losses": 52,
+    "streak": "L3",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 6, MIA 8",
-    "dek": "Top 9th · 1 out",
-    "summary": "Edmundo Sosa is up against Pete Fairbanks. Series: MIA leads 2-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 6, MIA 8.",
+    "dek": "MIA 8, PHI 6 · Jesús Luzardo · 6.1 IP, 6 H, 6 ER, 5 K",
+    "summary": "PHI 6, MIA 8. Final at loanDepot park, Miami. MIA wins 3-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "loanDepot park, Miami"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "91° · Overcast"
+        "label": "Series",
+        "value": "MIA wins 3-0"
       }
     ],
     "bullets": [
-      "Edmundo Sosa at the plate",
-      "Pete Fairbanks on the mound",
-      "loanDepot park, Miami"
+      "Jesús Luzardo: 6.1 IP, 6 H, 6 ER, 5 K",
+      "Ryan Gusto: 5.0 IP, 9 H, 6 ER, 3 K",
+      "Trea Turner: 2-for-5, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Brandon Young · PHI @ BAL · Fri, Jul 31 · 7:05 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at MIA game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "12:10 PM",
-        "starters": {
-          "home": {
-            "team": "MIA",
-            "name": "Ryan Gusto",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "MIA",
-            "name": "Ryan Gusto",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Otto Lopez",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Heriberto Hernández",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Liam Hicks",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Xavier Edwards",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Javier Sanoja",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Kyle Stowers",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Esteury Ruiz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Brian Navarreto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Jakob Marsee",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Edmundo Sosa",
-              "position": "SS",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Edmundo Sosa",
-              "position": "SS",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Otto Lopez",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Heriberto Hernández",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Liam Hicks",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Xavier Edwards",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Javier Sanoja",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Kyle Stowers",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Esteury Ruiz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Brian Navarreto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Jakob Marsee",
-              "position": "CF",
-              "bats": "L"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Marlins · Game 3 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "MIA leads 2-0"
+          "label": "MIA wins 3-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,8 +89,8 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 91,
-          "condition": "Overcast",
+          "temp_f": 92,
+          "condition": "Mostly sunny",
           "wind": "8 mph · gusts 14",
           "gusts_mph": 14
         },
@@ -377,7 +120,7 @@
           "currentInningOrdinal": "9th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 1,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 6,
@@ -498,7 +241,7 @@
             {
               "num": 9,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -519,7 +262,7 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a ground ball to center fielder…",
+            "detail": "Trea Turner singles on a ground ball to center fielder Jakob Marsee.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -547,7 +290,7 @@
             "event_type": "other",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds into a double play, second baseman…",
+            "detail": "Bryce Harper grounds into a double play, second baseman Xavier Edwards to shortstop Otto Lopez to first baseman Liam Hicks. Trea Tu…",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -561,7 +304,7 @@
             "event_type": "out",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Otto Lopez grounds out, shortstop Edmundo Sosa to first…",
+            "detail": "Otto Lopez grounds out, shortstop Edmundo Sosa to first baseman Bryce Harper.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -575,7 +318,7 @@
             "event_type": "out",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández grounds out, shortstop Edmundo Sosa…",
+            "detail": "Heriberto Hernández grounds out, shortstop Edmundo Sosa to first baseman Bryce Harper.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -603,7 +346,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, third baseman Javier Sanoja to f…",
+            "detail": "Alec Bohm grounds out, third baseman Javier Sanoja to first baseman Liam Hicks.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -631,7 +374,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out, second baseman Xavier Edward…",
+            "detail": "Brandon Marsh grounds out, second baseman Xavier Edwards to first baseman Liam Hicks.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -659,7 +402,7 @@
             "event_type": "out",
             "actor": "Javier Sanoja",
             "actor_id": 691594,
-            "detail": "Javier Sanoja lines out to right fielder Bryan De La Cr…",
+            "detail": "Javier Sanoja lines out to right fielder Bryan De La Cruz.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -673,7 +416,7 @@
             "event_type": "strikeout",
             "actor": "Kyle Stowers",
             "actor_id": 669065,
-            "detail": "Kyle Stowers called out on strikes. Xavier Edwards stea…",
+            "detail": "Kyle Stowers called out on strikes. Xavier Edwards steals (18) 2nd base.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -715,7 +458,7 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford singles on a ground ball to second base…",
+            "detail": "Justin Crawford singles on a ground ball to second baseman Xavier Edwards.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -729,7 +472,7 @@
             "event_type": "single",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa singles on a line drive to center fielder…",
+            "detail": "Edmundo Sosa singles on a line drive to center fielder Jakob Marsee. Justin Crawford to 2nd.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -743,7 +486,7 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds out softly, pitcher Ryan Gusto to f…",
+            "detail": "Trea Turner grounds out softly, pitcher Ryan Gusto to first baseman Liam Hicks. Justin Crawford to 3rd. Edmundo Sosa to 2nd.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -757,7 +500,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott doubles (21) on a ground ball to left fiel…",
+            "detail": "Bryson Stott doubles (21) on a ground ball to left fielder Heriberto Hernández. Justin Crawford scores. Edmundo Sosa scores.",
             "score_after": "PHI 2, MIA 0",
             "runs": 2,
             "is_scoring": true,
@@ -813,7 +556,7 @@
             "event_type": "single",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Otto Lopez singles on a line drive to center fielder Ju…",
+            "detail": "Otto Lopez singles on a line drive to center fielder Justin Crawford.",
             "score_after": "PHI 2, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -827,7 +570,7 @@
             "event_type": "out",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández grounds out, third baseman Alec Boh…",
+            "detail": "Heriberto Hernández grounds out, third baseman Alec Bohm to first baseman Bryce Harper.",
             "score_after": "PHI 2, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -841,7 +584,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm lines out sharply to center fielder Jakob Mar…",
+            "detail": "Alec Bohm lines out sharply to center fielder Jakob Marsee.",
             "score_after": "PHI 2, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -869,7 +612,7 @@
             "event_type": "single",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh singles on a line drive to center fielder…",
+            "detail": "Brandon Marsh singles on a line drive to center fielder Jakob Marsee. J.T. Realmuto to 3rd.",
             "score_after": "PHI 2, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -883,7 +626,7 @@
             "event_type": "out",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz out on a sacrifice fly to right fielde…",
+            "detail": "Bryan De La Cruz out on a sacrifice fly to right fielder Esteury Ruiz. J.T. Realmuto scores.",
             "score_after": "PHI 3, MIA 0",
             "runs": 1,
             "is_scoring": true,
@@ -897,7 +640,7 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford singles on a sharp line drive to center…",
+            "detail": "Justin Crawford singles on a sharp line drive to center fielder Jakob Marsee. Brandon Marsh to 2nd.",
             "score_after": "PHI 3, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -911,7 +654,7 @@
             "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa grounds into a force out, third baseman Ja…",
+            "detail": "Edmundo Sosa grounds into a force out, third baseman Javier Sanoja to second baseman Xavier Edwards. Justin Crawford out at 2nd.",
             "score_after": "PHI 3, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -925,7 +668,7 @@
             "event_type": "out",
             "actor": "Liam Hicks",
             "actor_id": 689414,
-            "detail": "Liam Hicks grounds out, first baseman Bryce Harper to p…",
+            "detail": "Liam Hicks grounds out, first baseman Bryce Harper to pitcher Jesús Luzardo.",
             "score_after": "PHI 3, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -939,7 +682,7 @@
             "event_type": "out",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Xavier Edwards grounds out, third baseman Alec Bohm to…",
+            "detail": "Xavier Edwards grounds out, third baseman Alec Bohm to first baseman Bryce Harper.",
             "score_after": "PHI 3, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -967,7 +710,7 @@
             "event_type": "out",
             "actor": "Kyle Stowers",
             "actor_id": 669065,
-            "detail": "Kyle Stowers flies out to center fielder Justin Crawfor…",
+            "detail": "Kyle Stowers flies out to center fielder Justin Crawford.",
             "score_after": "PHI 3, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -981,7 +724,7 @@
             "event_type": "home_run",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner homers (15) on a fly ball to left center fi…",
+            "detail": "Trea Turner homers (15) on a fly ball to left center field.",
             "score_after": "PHI 4, MIA 0",
             "runs": 1,
             "is_scoring": true,
@@ -1009,7 +752,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper triples (3) on a sharp line drive to right…",
+            "detail": "Bryce Harper triples (3) on a sharp line drive to right fielder Esteury Ruiz. Bryson Stott scores.",
             "score_after": "PHI 5, MIA 0",
             "runs": 1,
             "is_scoring": true,
@@ -1023,7 +766,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a ground ball to center fielder Ja…",
+            "detail": "Alec Bohm singles on a ground ball to center fielder Jakob Marsee. Bryce Harper scores.",
             "score_after": "PHI 6, MIA 0",
             "runs": 1,
             "is_scoring": true,
@@ -1037,7 +780,7 @@
             "event_type": "other",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds into a double play, shortstop Ott…",
+            "detail": "J.T. Realmuto grounds into a double play, shortstop Otto Lopez to second baseman Xavier Edwards to first baseman Liam Hicks. Alec B…",
             "score_after": "PHI 6, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -1065,7 +808,7 @@
             "event_type": "extra_base_hit",
             "actor": "Esteury Ruiz",
             "actor_id": 665923,
-            "detail": "Esteury Ruiz doubles (9) on a sharp line drive to left…",
+            "detail": "Esteury Ruiz doubles (9) on a sharp line drive to left fielder Brandon Marsh.",
             "score_after": "PHI 6, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -1093,7 +836,7 @@
             "event_type": "out",
             "actor": "Jakob Marsee",
             "actor_id": 805300,
-            "detail": "Jakob Marsee out on a sacrifice bunt, third baseman Ale…",
+            "detail": "Jakob Marsee out on a sacrifice bunt, third baseman Alec Bohm to first baseman Bryce Harper. Esteury Ruiz to 3rd. Brian Navarreto t…",
             "score_after": "PHI 6, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -1107,7 +850,7 @@
             "event_type": "out",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Otto Lopez grounds out, shortstop Edmundo Sosa to first…",
+            "detail": "Otto Lopez grounds out, shortstop Edmundo Sosa to first baseman Bryce Harper. Esteury Ruiz scores.",
             "score_after": "PHI 6, MIA 1",
             "runs": 1,
             "is_scoring": true,
@@ -1121,7 +864,7 @@
             "event_type": "home_run",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández homers (16) on a fly ball to left c…",
+            "detail": "Heriberto Hernández homers (16) on a fly ball to left center field. Brian Navarreto scores.",
             "score_after": "PHI 6, MIA 3",
             "runs": 2,
             "is_scoring": true,
@@ -1177,7 +920,7 @@
             "event_type": "other",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa grounds into a double play, shortstop Otto…",
+            "detail": "Edmundo Sosa grounds into a double play, shortstop Otto Lopez to second baseman Xavier Edwards to first baseman Liam Hicks. Justin…",
             "score_after": "PHI 6, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1191,7 +934,7 @@
             "event_type": "out",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Xavier Edwards grounds out, second baseman Bryson Stott…",
+            "detail": "Xavier Edwards grounds out, second baseman Bryson Stott to first baseman Bryce Harper.",
             "score_after": "PHI 6, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1205,7 +948,7 @@
             "event_type": "extra_base_hit",
             "actor": "Javier Sanoja",
             "actor_id": 691594,
-            "detail": "Javier Sanoja doubles (21) on a line drive to left fiel…",
+            "detail": "Javier Sanoja doubles (21) on a line drive to left fielder Brandon Marsh.",
             "score_after": "PHI 6, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1219,7 +962,7 @@
             "event_type": "extra_base_hit",
             "actor": "Kyle Stowers",
             "actor_id": 669065,
-            "detail": "Phillies challenged (tag play), call on the field was o…",
+            "detail": "Phillies challenged (tag play), call on the field was overturned: Kyle Stowers called out on strikes and Javier Sanoja caught steal…",
             "score_after": "PHI 6, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1275,7 +1018,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, second baseman Xavier Edwards to…",
+            "detail": "Alec Bohm grounds out, second baseman Xavier Edwards to first baseman Liam Hicks.",
             "score_after": "PHI 6, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1289,7 +1032,7 @@
             "event_type": "single",
             "actor": "Esteury Ruiz",
             "actor_id": 665923,
-            "detail": "Esteury Ruiz singles on a line drive to left fielder Br…",
+            "detail": "Esteury Ruiz singles on a line drive to left fielder Brandon Marsh.",
             "score_after": "PHI 6, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1331,7 +1074,7 @@
             "event_type": "single",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Otto Lopez singles on a line drive to center fielder Ju…",
+            "detail": "Otto Lopez singles on a line drive to center fielder Justin Crawford. Esteury Ruiz scores. Jakob Marsee to 2nd.",
             "score_after": "PHI 6, MIA 4",
             "runs": 1,
             "is_scoring": true,
@@ -1345,7 +1088,7 @@
             "event_type": "out",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández pops out to third baseman Alec Bohm…",
+            "detail": "Heriberto Hernández pops out to third baseman Alec Bohm on the infield fly rule.",
             "score_after": "PHI 6, MIA 4",
             "runs": 0,
             "is_scoring": false,
@@ -1359,7 +1102,7 @@
             "event_type": "walk_hbp",
             "actor": "Liam Hicks",
             "actor_id": 689414,
-            "detail": "Liam Hicks walks. Jakob Marsee to 3rd. Otto Lopez to 2n…",
+            "detail": "Liam Hicks walks. Jakob Marsee to 3rd. Otto Lopez to 2nd.",
             "score_after": "PHI 6, MIA 4",
             "runs": 0,
             "is_scoring": false,
@@ -1373,7 +1116,7 @@
             "event_type": "single",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Xavier Edwards singles on a line drive to left fielder…",
+            "detail": "Xavier Edwards singles on a line drive to left fielder Brandon Marsh. Jakob Marsee scores. Otto Lopez scores. Liam Hicks to 2nd.",
             "score_after": "PHI 6, MIA 6",
             "runs": 2,
             "is_scoring": true,
@@ -1401,7 +1144,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds out, shortstop Otto Lopez to firs…",
+            "detail": "J.T. Realmuto grounds out, shortstop Otto Lopez to first baseman Liam Hicks.",
             "score_after": "PHI 6, MIA 6",
             "runs": 0,
             "is_scoring": false,
@@ -1471,7 +1214,7 @@
             "event_type": "home_run",
             "actor": "Griffin Conine",
             "actor_id": 665052,
-            "detail": "Griffin Conine homers (9) on a fly ball to center field…",
+            "detail": "Griffin Conine homers (9) on a fly ball to center field. Kyle Stowers scores.",
             "score_after": "PHI 6, MIA 8",
             "runs": 2,
             "is_scoring": true,
@@ -1499,7 +1242,7 @@
             "event_type": "out",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Otto Lopez grounds out, shortstop Edmundo Sosa to first…",
+            "detail": "Otto Lopez grounds out, shortstop Edmundo Sosa to first baseman Bryce Harper.",
             "score_after": "PHI 6, MIA 8",
             "runs": 0,
             "is_scoring": false,
@@ -1524,34 +1267,30 @@
             "inning": 9,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Play",
+            "detail": "Edmundo Sosa flies out to center fielder Jakob Marsee.",
+            "score_after": "PHI 6, MIA 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823837:73",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner flies out to center fielder Jakob Marsee.",
             "score_after": "PHI 6, MIA 8",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Edmundo Sosa",
-            "meta": "vs Pete Fairbanks"
-          },
-          "pitches": [],
-          "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 1
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Top 9th"
-        }
+        ]
       }
     },
     "injury_report": null
