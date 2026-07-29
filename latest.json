@@ -4,7 +4,7 @@
   "edition_date": "2026-07-29",
   "volume": 1,
   "edition": 120,
-  "generated_at": "2026-07-29T17:10:21.754Z",
+  "generated_at": "2026-07-29T17:27:41.286Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, MIA 0",
-    "dek": "Bottom 4th · 2 outs",
-    "summary": "Kyle Stowers is up against Jesús Luzardo. Series: MIA leads 2-0.",
+    "headline": "PHI 6, MIA 0",
+    "dek": "Bottom 5th · 1 out",
+    "summary": "Otto Lopez is up against Jesús Luzardo. Series: MIA leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Brandon Young · PHI @ BAL · Fri, Jul 31 · 7:05 PM"
   },
@@ -57,28 +57,28 @@
     "weather": {
       "temp_f": 90,
       "condition": "Clear",
-      "wind": "8 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "8 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Stowers",
+        "name": "Otto Lopez",
         "meta": "vs Jesús Luzardo"
       },
       "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 2
+        "outs": 1
       },
       "bases": {
-        "first": true,
-        "second": false,
-        "third": false
+        "first": false,
+        "second": true,
+        "third": true
       },
-      "status": "Bottom 4th"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T17:10:22.654Z",
+    "updated_at": "2026-07-29T17:27:41.995Z",
     "current_game_pk": 823837,
     "next_game_pk": 824809,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "90° · Clear · gusts 14 mph",
+      "text": "90° · Clear · gusts 13 mph",
       "highlight": false
     }
   ]
