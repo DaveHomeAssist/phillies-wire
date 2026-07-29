@@ -4,7 +4,7 @@
   "edition_date": "2026-07-28",
   "volume": 1,
   "edition": 119,
-  "generated_at": "2026-07-29T00:05:50.187Z",
+  "generated_at": "2026-07-29T00:34:29.046Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIA 1",
-    "dek": "Top 6th · 2 outs",
-    "summary": "Bryce Harper is up against Sandy Alcantara. Series: MIA leads 1-0.",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Javier Sanoja is up against José Alvarado. Series: MIA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ MIA · Wed, Jul 29 · 12:10 PM"
   },
@@ -56,34 +56,32 @@
     },
     "weather": {
       "temp_f": 82,
-      "condition": "Overcast",
-      "wind": "6 mph · gusts 16",
-      "gusts_mph": 16
+      "condition": "Partly cloudy",
+      "wind": "5 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Sandy Alcantara"
+        "name": "Jakob Marsee",
+        "meta": "vs Tim Mayza"
       },
       "pitches": [
         "B",
-        "B",
-        "F",
-        "S"
+        "X"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 2
+        "balls": 1,
+        "strikes": 0,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 6th"
+      "status": "Middle 7th"
     },
     "recap_line": null
   },
@@ -91,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T00:05:50.876Z",
+    "updated_at": "2026-07-29T00:34:29.610Z",
     "current_game_pk": 823838,
     "next_game_pk": 823837,
     "next_game": {
@@ -128,12 +126,16 @@
       "highlight": false
     },
     {
-      "text": "82° · Overcast · gusts 16 mph",
+      "text": "82° · Partly cloudy · gusts 13 mph",
       "highlight": false
     },
     {
       "text": "sent RHP Lou Trivino III on a rehab assignment to Lehigh Valley IronPigs.",
       "highlight": true
+    },
+    {
+      "text": "activated C Garrett Stubbs from the 10-day injured list.",
+      "highlight": false
     },
     {
       "text": "optioned C Payton Henry to Lehigh Valley IronPigs.",
