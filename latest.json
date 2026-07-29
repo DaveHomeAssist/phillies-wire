@@ -4,7 +4,7 @@
   "edition_date": "2026-07-29",
   "volume": 1,
   "edition": 120,
-  "generated_at": "2026-07-29T18:24:02.583Z",
+  "generated_at": "2026-07-29T18:36:42.772Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, MIA 6",
-    "dek": "Bottom 8th · 0 outs",
-    "summary": "Kyle Stowers is up against Jonathan Bowlan. Series: MIA leads 2-0.",
+    "headline": "PHI 6, MIA 8",
+    "dek": "Top 9th · 1 out",
+    "summary": "Edmundo Sosa is up against Pete Fairbanks. Series: MIA leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Brandon Young · PHI @ BAL · Fri, Jul 31 · 7:05 PM"
   },
@@ -55,30 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 84,
+      "temp_f": 91,
       "condition": "Overcast",
-      "wind": "2 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "8 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Stowers",
-        "meta": "vs Jonathan Bowlan"
+        "name": "Edmundo Sosa",
+        "meta": "vs Pete Fairbanks"
       },
       "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 0
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 8th"
+      "status": "Top 9th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T18:24:03.095Z",
+    "updated_at": "2026-07-29T18:36:43.626Z",
     "current_game_pk": 823837,
     "next_game_pk": 824809,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Overcast · gusts 12 mph",
+      "text": "91° · Overcast · gusts 14 mph",
       "highlight": false
     }
   ]
