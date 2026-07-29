@@ -4,7 +4,7 @@
   "edition_date": "2026-07-29",
   "volume": 1,
   "edition": 120,
-  "generated_at": "2026-07-29T17:27:41.286Z",
+  "generated_at": "2026-07-29T17:43:09.368Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, MIA 0",
-    "dek": "Bottom 5th · 1 out",
-    "summary": "Otto Lopez is up against Jesús Luzardo. Series: MIA leads 2-0.",
+    "headline": "PHI 6, MIA 3",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Kyle Stowers is up against Jesús Luzardo. Series: MIA leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Brandon Young · PHI @ BAL · Fri, Jul 31 · 7:05 PM"
   },
@@ -56,29 +56,33 @@
     },
     "weather": {
       "temp_f": 90,
-      "condition": "Clear",
-      "wind": "8 mph · gusts 13",
-      "gusts_mph": 13
+      "condition": "Partly cloudy",
+      "wind": "7 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Otto Lopez",
+        "name": "Kyle Stowers",
         "meta": "vs Jesús Luzardo"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "F",
+        "F"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
+        "strikes": 2,
         "outs": 1
       },
       "bases": {
         "first": false,
         "second": true,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T17:27:41.995Z",
+    "updated_at": "2026-07-29T17:43:09.853Z",
     "current_game_pk": 823837,
     "next_game_pk": 824809,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "90° · Clear · gusts 13 mph",
+      "text": "90° · Partly cloudy · gusts 11 mph",
       "highlight": false
     }
   ]
