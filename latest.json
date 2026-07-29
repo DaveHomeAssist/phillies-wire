@@ -4,9 +4,9 @@
   "edition_date": "2026-07-29",
   "volume": 1,
   "edition": 120,
-  "generated_at": "2026-07-29T13:32:49.482Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-07-29T16:32:05.233Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 57,
@@ -16,11 +16,11 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Marlins · Game 3 of 3",
-    "dek": "Jesús Luzardo vs Ryan Gusto",
-    "summary": "Jesús Luzardo vs Ryan Gusto · Phillies @ Marlins · Game 3 of 3",
+    "headline": "PHI 0, MIA 0",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Kyle Stowers is up against Jesús Luzardo. Series: MIA leads 2-0.",
     "next_label": "Tomorrow",
-    "next_value": "PHI @ BAL · Fri, Jul 31 · 7:05 PM"
+    "next_value": "Brandon Young · PHI @ BAL · Fri, Jul 31 · 7:05 PM"
   },
   "game": {
     "matchup": "Phillies @ Marlins · Game 3 of 3",
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 84,
-      "condition": "Overcast",
-      "wind": "7 mph · gusts 14",
-      "gusts_mph": 14
+      "temp_f": 89,
+      "condition": "Clear",
+      "wind": "9 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Javier Sanoja",
+        "meta": "vs Jesús Luzardo"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": true,
+        "second": false,
+        "third": false
+      },
+      "status": "Bottom 2nd"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T13:32:56.925Z",
+    "updated_at": "2026-07-29T16:32:06.100Z",
     "current_game_pk": 823837,
     "next_game_pk": 824809,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Overcast · gusts 14 mph",
+      "text": "89° · Clear · gusts 15 mph",
       "highlight": false
     }
   ]
