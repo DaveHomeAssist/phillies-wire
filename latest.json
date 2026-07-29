@@ -4,7 +4,7 @@
   "edition_date": "2026-07-29",
   "volume": 1,
   "edition": 120,
-  "generated_at": "2026-07-29T17:43:09.368Z",
+  "generated_at": "2026-07-29T17:56:20.224Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 6, MIA 3",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Kyle Stowers is up against Jesús Luzardo. Series: MIA leads 2-0.",
+    "dek": "Bottom 7th · 0 outs",
+    "summary": "Brian Navarreto is up against Jesús Luzardo. Series: MIA leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Brandon Young · PHI @ BAL · Fri, Jul 31 · 7:05 PM"
   },
@@ -55,34 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 90,
-      "condition": "Partly cloudy",
-      "wind": "7 mph · gusts 11",
-      "gusts_mph": 11
+      "temp_f": 89,
+      "condition": "Weather unavailable",
+      "wind": "10 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Stowers",
+        "name": "Esteury Ruiz",
         "meta": "vs Jesús Luzardo"
       },
       "pitches": [
-        "S",
-        "F",
-        "F"
+        "B",
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 0,
+        "balls": 2,
         "strikes": 2,
-        "outs": 1
+        "outs": 0
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -90,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-29T17:43:09.853Z",
+    "updated_at": "2026-07-29T17:56:21.028Z",
     "current_game_pk": 823837,
     "next_game_pk": 824809,
     "next_game": {
@@ -127,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "90° · Partly cloudy · gusts 11 mph",
+      "text": "89° · Weather unavailable · gusts 15 mph",
       "highlight": false
     }
   ]
