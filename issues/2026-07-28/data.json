@@ -5,15 +5,16 @@
     "edition": 119,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-07-28T23:49:02.042Z",
+    "generated_at": "2026-07-29T00:05:50.187Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 28, 2026, 7:49 PM ET",
+      "generated_at_et": "Jul 28, 2026, 8:05 PM ET",
       "source_notes": [
+        "Rehab assignment notes are refreshed from the MLB transactions feed.",
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
@@ -29,8 +30,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, MIA 1",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Edmundo Sosa is up against Sandy Alcantara. Series: MIA leads 1-0.",
+    "dek": "Top 6th · 2 outs",
+    "summary": "Bryce Harper is up against Sandy Alcantara. Series: MIA leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +43,11 @@
       },
       {
         "label": "Weather",
-        "value": "83° · Overcast"
+        "value": "82° · Overcast"
       }
     ],
     "bullets": [
-      "Edmundo Sosa at the plate",
+      "Bryce Harper at the plate",
       "Sandy Alcantara on the mound",
       "loanDepot park, Miami"
     ],
@@ -346,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 83,
+          "temp_f": 82,
           "condition": "Overcast",
-          "wind": "5 mph · gusts 14",
-          "gusts_mph": 14
+          "wind": "6 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "",
@@ -359,34 +360,34 @@
             "team": "MIA",
             "name": "Sandy Alcantara",
             "hand": "R",
-            "era": "3.90",
+            "era": "3.87",
             "record": "10-6",
-            "whip": "1.21"
+            "whip": "1.20"
           },
           "away": {
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.74",
+            "era": "5.64",
             "record": "3-8",
-            "whip": "1.46"
+            "whip": "1.44"
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 1
             },
             "home": {
               "runs": 1,
-              "hits": 3,
+              "hits": 4,
               "errors": 1
             }
           },
@@ -445,6 +446,19 @@
             },
             {
               "num": 5,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
               "away": {
                 "runs": null,
                 "hits": 0,
@@ -870,9 +884,149 @@
             "inning": 5,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
+            "detail": "Edmundo Sosa pops out to first baseman Kyle Stowers.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:30",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford lines out to right fielder Griffin Conine.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:31",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz singles on a ground ball to first baseman Kyle Stowers.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:32",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs lines out to center fielder Jakob Marsee.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:33",
+            "inning": 5,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Jakob Marsee",
+            "actor_id": 805300,
+            "detail": "Jakob Marsee flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:34",
+            "inning": 5,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Graham Pauley",
+            "actor_id": 688363,
+            "detail": "Graham Pauley called out on strikes.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:35",
+            "inning": 5,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "single",
+            "actor": "Joe Mack",
+            "actor_id": 691788,
+            "detail": "Joe Mack singles on a sharp line drive to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:36",
+            "inning": 5,
+            "half": "bottom",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Otto Lopez",
+            "actor_id": 672640,
+            "detail": "Otto Lopez grounds out, second baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:37",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner lines out to shortstop Otto Lopez.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:38",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out, pitcher Sandy Alcantara to first baseman Kyle Stowers.",
+            "score_after": "PHI 0, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823838:39",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
             "detail": "Play",
             "score_after": "PHI 0, MIA 1",
             "runs": 0,
@@ -882,21 +1036,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "Edmundo Sosa",
+            "name": "Bryce Harper",
             "meta": "vs Sandy Alcantara"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "B",
+            "F",
+            "S"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "balls": 2,
+            "strikes": 2,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 5th"
+          "status": "Top 6th"
         }
       }
     },
@@ -913,8 +1072,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:49:02.042Z",
-            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-29T00:05:50.187Z",
+            "freshness_label": "As of Jul 28, 2026, 8:05 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -926,8 +1085,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:49:02.042Z",
-            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-29T00:05:50.187Z",
+            "freshness_label": "As of Jul 28, 2026, 8:05 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -935,12 +1094,12 @@
             "il_type": "15-day",
             "badge": "il",
             "injury": "Right thoracic muscle spasm",
-            "status_note": "",
+            "status_note": "sent RHP Lou Trivino III on a rehab assignment to Lehigh Valley IronPigs",
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:49:02.042Z",
-            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-29T00:05:50.187Z",
+            "freshness_label": "As of Jul 28, 2026, 8:05 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -952,8 +1111,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:49:02.042Z",
-            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-29T00:05:50.187Z",
+            "freshness_label": "As of Jul 28, 2026, 8:05 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -965,21 +1124,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:49:02.042Z",
-            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
-          },
-          {
-            "name": "Garrett Stubbs",
-            "position": "C",
-            "il_type": "10-day",
-            "badge": "il",
-            "injury": "Left wrist inflammation",
-            "status_note": "",
-            "retroactive_to": "2026-07-18",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-07-28T23:49:02.042Z",
-            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-29T00:05:50.187Z",
+            "freshness_label": "As of Jul 28, 2026, 8:05 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -991,8 +1137,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-07-28T23:49:02.042Z",
-            "freshness_label": "As of Jul 28, 2026, 7:49 PM ET"
+            "last_confirmed": "2026-07-29T00:05:50.187Z",
+            "freshness_label": "As of Jul 28, 2026, 8:05 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

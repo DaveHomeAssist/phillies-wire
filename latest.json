@@ -4,7 +4,7 @@
   "edition_date": "2026-07-28",
   "volume": 1,
   "edition": 119,
-  "generated_at": "2026-07-28T23:49:02.042Z",
+  "generated_at": "2026-07-29T00:05:50.187Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIA 1",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Edmundo Sosa is up against Sandy Alcantara. Series: MIA leads 1-0.",
+    "dek": "Top 6th · 2 outs",
+    "summary": "Bryce Harper is up against Sandy Alcantara. Series: MIA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI @ MIA · Wed, Jul 29 · 12:10 PM"
   },
@@ -55,30 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 82,
       "condition": "Overcast",
-      "wind": "5 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "6 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Edmundo Sosa",
+        "name": "Bryce Harper",
         "meta": "vs Sandy Alcantara"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "F",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 5th"
+      "status": "Top 6th"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-28T23:49:02.490Z",
+    "updated_at": "2026-07-29T00:05:50.876Z",
     "current_game_pk": 823838,
     "next_game_pk": 823837,
     "next_game": {
@@ -123,8 +128,12 @@
       "highlight": false
     },
     {
-      "text": "83° · Overcast · gusts 14 mph",
+      "text": "82° · Overcast · gusts 16 mph",
       "highlight": false
+    },
+    {
+      "text": "sent RHP Lou Trivino III on a rehab assignment to Lehigh Valley IronPigs.",
+      "highlight": true
     },
     {
       "text": "optioned C Payton Henry to Lehigh Valley IronPigs.",
