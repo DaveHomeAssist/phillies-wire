@@ -4,7 +4,7 @@
   "edition_date": "2026-07-31",
   "volume": 1,
   "edition": 122,
-  "generated_at": "2026-07-31T23:35:27.957Z",
+  "generated_at": "2026-07-31T23:36:13.998Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,7 +17,7 @@
   },
   "hero": {
     "headline": "PHI 2, BAL 2",
-    "dek": "Bottom 2nd · 0 outs",
+    "dek": "Bottom 2nd · 1 out",
     "summary": "Jackson Holliday is up against Andrew Painter. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Shane Baz · PHI @ BAL · Sat, Aug 1 · 7:05 PM"
@@ -68,23 +68,20 @@
         "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "F",
-        "F",
-        "B",
-        "B",
-        "X"
+        "S",
+        "F"
       ],
       "count": {
-        "balls": 2,
+        "balls": 0,
         "strikes": 2,
-        "outs": 3
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 2nd"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -92,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-31T23:35:28.836Z",
+    "updated_at": "2026-07-31T23:36:14.560Z",
     "current_game_pk": 824809,
     "next_game_pk": 824808,
     "next_game": {
@@ -133,11 +130,11 @@
       "highlight": false
     },
     {
-      "text": "recalled RHP Andrew Painter from Lehigh Valley IronPigs.",
+      "text": "optioned RHP Brian Keller to Lehigh Valley IronPigs.",
       "highlight": false
     },
     {
-      "text": "optioned RHP Brian Keller to Lehigh Valley IronPigs.",
+      "text": "recalled RHP Andrew Painter from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
