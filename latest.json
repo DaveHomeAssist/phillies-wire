@@ -1,34 +1,34 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-30",
+  "edition_date": "2026-07-31",
   "volume": 1,
-  "edition": 121,
-  "generated_at": "2026-07-31T03:56:35.095Z",
-  "mode": "off_day",
-  "mode_label": "Off Day",
-  "off_day": true,
+  "edition": 122,
+  "generated_at": "2026-07-31T05:00:22.346Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
+  "off_day": false,
   "record": {
-    "wins": 0,
-    "losses": 0,
-    "streak": "L1",
-    "division_rank": 0,
+    "wins": 57,
+    "losses": 52,
+    "streak": "L3",
+    "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "No Phillies game today",
-    "dek": "Next up: TBD vs Brandon Young · PHI @ BAL",
-    "summary": "Use the archive to catch up or check the next scheduled game window.",
-    "next_label": "Next Game",
-    "next_value": "TBD vs Brandon Young · PHI @ BAL · Fri, Jul 31 · 7:05 PM"
+    "headline": "Phillies @ Orioles · Game 1 of 3",
+    "dek": "TBD vs Brandon Young",
+    "summary": "TBD vs Brandon Young · Phillies @ Orioles · Game 1 of 3",
+    "next_label": "Tomorrow",
+    "next_value": "Cristopher Sánchez vs Shane Baz · PHI @ BAL · Sat, Aug 1 · 7:05 PM"
   },
   "game": {
-    "matchup": "Schedule refresh required",
-    "first_pitch": "TBD",
-    "venue": "TBD",
+    "matchup": "Phillies @ Orioles · Game 1 of 3",
+    "first_pitch": "7:05 PM",
+    "venue": "Oriole Park at Camden Yards, Baltimore",
     "starters": {
       "home": {
-        "name": "TBD",
+        "name": "Brandon Young",
         "hand": "R"
       },
       "away": {
@@ -40,25 +40,25 @@
         "hand": "R"
       },
       "opp": {
-        "name": "TBD",
+        "name": "Brandon Young",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series status pending"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "TV TBD",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
-      "radio": "Radio TBD"
+      "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": "",
-      "condition": "Weather unavailable",
-      "wind": "Weather unavailable",
-      "gusts_mph": ""
+      "temp_f": 71,
+      "condition": "Mostly sunny",
+      "wind": "5 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-31T03:56:35.633Z",
+    "updated_at": "2026-07-31T05:00:22.886Z",
     "current_game_pk": 824809,
     "next_game_pk": 824808,
     "next_game": {
@@ -90,19 +90,23 @@
   },
   "ticker": [
     {
-      "text": "PHI 0-0",
+      "text": "PHI 57-52",
       "highlight": true
     },
     {
-      "text": "TBD vs Brandon Young · PHI @ BAL · Fri, Jul 31 · 7:05 PM",
+      "text": "Phillies @ Orioles · Game 1 of 3 · 7:05 PM",
       "highlight": false
     },
     {
-      "text": "NBCSP",
+      "text": "TBD vs Brandon Young",
+      "highlight": true
+    },
+    {
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "Off day",
+      "text": "71° · Mostly sunny · gusts 10 mph",
       "highlight": false
     }
   ]
