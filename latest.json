@@ -4,7 +4,7 @@
   "edition_date": "2026-07-31",
   "volume": 1,
   "edition": 122,
-  "generated_at": "2026-07-31T19:32:19.266Z",
+  "generated_at": "2026-07-31T19:49:14.818Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -57,8 +57,8 @@
     "weather": {
       "temp_f": 86,
       "condition": "Mostly sunny",
-      "wind": "6 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "6 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-07-31T19:32:19.811Z",
+    "updated_at": "2026-07-31T19:49:15.913Z",
     "current_game_pk": 824809,
     "next_game_pk": 824808,
     "next_game": {
@@ -106,7 +106,15 @@
       "highlight": false
     },
     {
-      "text": "86° · Mostly sunny · gusts 7 mph",
+      "text": "86° · Mostly sunny · gusts 6 mph",
+      "highlight": false
+    },
+    {
+      "text": "recalled RHP Andrew Painter from Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "optioned RHP Brian Keller to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
