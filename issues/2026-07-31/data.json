@@ -5,14 +5,14 @@
     "edition": 122,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-01T01:35:39.100Z",
+    "generated_at": "2026-08-01T01:38:23.443Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Jul 31, 2026, 9:35 PM ET",
+      "generated_at_et": "Jul 31, 2026, 9:38 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 4, BAL 6",
-    "dek": "Bottom 8th · 2 outs",
-    "summary": "Colton Cowser is up against Chase Shugart. Series: Regular Season.",
+    "dek": "Top 9th · 0 outs",
+    "summary": "Bryson Stott is up against Tyler Wells. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Colton Cowser at the plate",
-      "Chase Shugart on the mound",
+      "Bryson Stott at the plate",
+      "Tyler Wells on the mound",
       "Oriole Park at Camden Yards, Baltimore"
     ],
     "next_label": "Tomorrow",
@@ -373,11 +373,11 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 2,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 4,
@@ -486,6 +486,19 @@
               "num": 8,
               "away": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               },
@@ -1441,10 +1454,24 @@
             "inning": 8,
             "half": "bottom",
             "team": "BAL",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Colton Cowser",
             "actor_id": 681297,
-            "detail": "Play",
+            "detail": "Colton Cowser called out on strikes.",
+            "score_after": "PHI 4, BAL 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824809:68",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Pitching Change: Tyler Wells replaces Yennier Cano.",
             "score_after": "PHI 4, BAL 6",
             "runs": 0,
             "is_scoring": false,
@@ -1453,21 +1480,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Colton Cowser",
-            "meta": "vs Chase Shugart"
+            "name": "Bryson Stott",
+            "meta": "vs Tyler Wells"
           },
           "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 2
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 8th"
+          "status": "Top 9th"
         }
       }
     },
