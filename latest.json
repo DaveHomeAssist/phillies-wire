@@ -4,7 +4,7 @@
   "edition_date": "2026-08-01",
   "volume": 1,
   "edition": 123,
-  "generated_at": "2026-08-01T23:19:32.724Z",
+  "generated_at": "2026-08-01T23:20:29.755Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, BAL 0",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Pete Alonso is up against Cristopher Sánchez. Series: BAL leads 1-0.",
+    "dek": "End 1st · 3 outs",
+    "summary": "Alec Bohm is up against Shane Baz. Series: BAL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Bradish · PHI @ BAL · Sun, Aug 2 · 1:35 PM"
   },
@@ -64,25 +64,28 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Pete Alonso",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Alec Bohm",
+        "meta": "vs Shane Baz"
       },
       "pitches": [
         "B",
         "S",
-        "B"
+        "B",
+        "B",
+        "F",
+        "S"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 1,
-        "outs": 2
+        "balls": 3,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "End 1st"
     },
     "recap_line": null
   },
@@ -90,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-01T23:19:33.262Z",
+    "updated_at": "2026-08-01T23:20:30.449Z",
     "current_game_pk": 824808,
     "next_game_pk": 824807,
     "next_game": {

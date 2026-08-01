@@ -5,14 +5,14 @@
     "edition": 123,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-01T23:19:32.724Z",
+    "generated_at": "2026-08-01T23:20:29.755Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 1, 2026, 7:19 PM ET",
+      "generated_at_et": "Aug 1, 2026, 7:20 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, BAL 0",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Pete Alonso is up against Cristopher Sánchez. Series: BAL leads 1-0.",
+    "dek": "End 1st · 3 outs",
+    "summary": "Alec Bohm is up against Shane Baz. Series: BAL leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Pete Alonso at the plate",
-      "Cristopher Sánchez on the mound",
+      "Alec Bohm at the plate",
+      "Shane Baz on the mound",
       "Oriole Park at Camden Yards, Baltimore"
     ],
     "next_label": "Tomorrow",
@@ -367,17 +367,17 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.72",
+            "era": "2.71",
             "record": "13-4",
-            "whip": "1.20"
+            "whip": "1.21"
           }
         },
         "linescore": {
           "currentInning": 1,
           "currentInningOrdinal": "1st",
-          "inningState": "Bottom",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 0,
@@ -399,7 +399,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
                 "errors": 0
               }
@@ -496,10 +496,10 @@
             "inning": 1,
             "half": "bottom",
             "team": "BAL",
-            "event_type": "out",
+            "event_type": "strikeout",
             "actor": "Pete Alonso",
             "actor_id": 624413,
-            "detail": "Batter Timeout.",
+            "detail": "Pete Alonso called out on strikes.",
             "score_after": "PHI 0, BAL 0",
             "runs": 0,
             "is_scoring": false,
@@ -508,25 +508,28 @@
         ],
         "situation": {
           "batter": {
-            "name": "Pete Alonso",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Alec Bohm",
+            "meta": "vs Shane Baz"
           },
           "pitches": [
             "B",
             "S",
-            "B"
+            "B",
+            "B",
+            "F",
+            "S"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 1,
-            "outs": 2
+            "balls": 3,
+            "strikes": 3,
+            "outs": 3
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 1st"
+          "status": "End 1st"
         }
       }
     },
@@ -543,8 +546,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:19:32.724Z",
-            "freshness_label": "As of Aug 1, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-08-01T23:20:29.755Z",
+            "freshness_label": "As of Aug 1, 2026, 7:20 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -556,8 +559,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:19:32.724Z",
-            "freshness_label": "As of Aug 1, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-08-01T23:20:29.755Z",
+            "freshness_label": "As of Aug 1, 2026, 7:20 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -569,8 +572,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:19:32.724Z",
-            "freshness_label": "As of Aug 1, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-08-01T23:20:29.755Z",
+            "freshness_label": "As of Aug 1, 2026, 7:20 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -582,8 +585,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:19:32.724Z",
-            "freshness_label": "As of Aug 1, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-08-01T23:20:29.755Z",
+            "freshness_label": "As of Aug 1, 2026, 7:20 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -595,8 +598,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:19:32.724Z",
-            "freshness_label": "As of Aug 1, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-08-01T23:20:29.755Z",
+            "freshness_label": "As of Aug 1, 2026, 7:20 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -608,8 +611,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:19:32.724Z",
-            "freshness_label": "As of Aug 1, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-08-01T23:20:29.755Z",
+            "freshness_label": "As of Aug 1, 2026, 7:20 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
