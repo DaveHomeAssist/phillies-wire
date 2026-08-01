@@ -4,9 +4,9 @@
   "edition_date": "2026-08-01",
   "volume": 1,
   "edition": 123,
-  "generated_at": "2026-08-01T22:19:53.010Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-01T22:47:13.917Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 57,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Orioles · Game 2 of 3",
-    "dek": "Cristopher Sánchez vs Shane Baz",
-    "summary": "Cristopher Sánchez vs Shane Baz · Phillies @ Orioles · Game 2 of 3",
+    "headline": "PHI 0, BAL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Trea Turner is up against Shane Baz. Series: BAL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Bradish · PHI @ BAL · Sun, Aug 2 · 1:35 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 86,
+      "temp_f": 83,
       "condition": "Overcast",
-      "wind": "10 mph · gusts 17",
+      "wind": "8 mph · gusts 17",
       "gusts_mph": 17
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Shane Baz"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-01T22:19:53.599Z",
+    "updated_at": "2026-08-01T22:47:14.843Z",
     "current_game_pk": 824808,
     "next_game_pk": 824807,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "86° · Overcast · gusts 17 mph",
+      "text": "83° · Overcast · gusts 17 mph",
       "highlight": false
     },
     {
