@@ -4,7 +4,7 @@
   "edition_date": "2026-08-01",
   "volume": 1,
   "edition": 123,
-  "generated_at": "2026-08-01T22:48:03.330Z",
+  "generated_at": "2026-08-01T23:19:32.724Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, BAL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Shane Baz. Series: BAL leads 1-0.",
+    "dek": "Bottom 1st · 2 outs",
+    "summary": "Pete Alonso is up against Cristopher Sánchez. Series: BAL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Bradish · PHI @ BAL · Sun, Aug 2 · 1:35 PM"
   },
@@ -55,30 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 82,
       "condition": "Overcast",
-      "wind": "8 mph · gusts 17",
-      "gusts_mph": 17
+      "wind": "10 mph · gusts 21",
+      "gusts_mph": 21
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Shane Baz"
+        "name": "Pete Alonso",
+        "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-01T22:48:03.836Z",
+    "updated_at": "2026-08-01T23:19:33.262Z",
     "current_game_pk": 824808,
     "next_game_pk": 824807,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Overcast · gusts 17 mph",
+      "text": "82° · Overcast · gusts 21 mph",
       "highlight": false
     },
     {
