@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-07-31",
+  "edition_date": "2026-08-01",
   "volume": 1,
-  "edition": 122,
-  "generated_at": "2026-08-01T03:57:20.938Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 123,
+  "generated_at": "2026-08-01T05:09:36.127Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 57,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, BAL 6.",
-    "dek": "BAL 6, PHI 4 · Andrew Painter · 6.0 IP, 3 H, 2 ER, 6 K",
-    "summary": "PHI 4, BAL 6. Final at Oriole Park at Camden Yards, Baltimore. BAL leads 1-0.",
+    "headline": "Phillies @ Orioles · Game 2 of 3",
+    "dek": "Cristopher Sánchez vs Shane Baz",
+    "summary": "Cristopher Sánchez vs Shane Baz · Phillies @ Orioles · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Shane Baz · PHI @ BAL · Sat, Aug 1 · 7:05 PM"
+    "next_value": "Zack Wheeler vs Kyle Bradish · PHI @ BAL · Sun, Aug 2 · 1:35 PM"
   },
   "game": {
-    "matchup": "Phillies @ Orioles · Game 1 of 3",
+    "matchup": "Phillies @ Orioles · Game 2 of 3",
     "first_pitch": "7:05 PM",
     "venue": "Oriole Park at Camden Yards, Baltimore",
     "starters": {
       "home": {
-        "name": "Brandon Young",
+        "name": "Shane Baz",
         "hand": "R"
       },
       "away": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "phi": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "opp": {
-        "name": "Brandon Young",
+        "name": "Shane Baz",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "BAL leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
-      "condition": "Partly cloudy",
-      "wind": "1 mph · gusts 1",
-      "gusts_mph": 1
+      "temp_f": 74,
+      "condition": "Overcast",
+      "wind": "1 mph · gusts 2",
+      "gusts_mph": 2
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-01T03:57:21.819Z",
+    "updated_at": "2026-08-01T05:09:36.656Z",
     "current_game_pk": 824808,
     "next_game_pk": 824807,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Orioles · Game 1 of 3 · 7:05 PM",
+      "text": "Phillies @ Orioles · Game 2 of 3 · 7:05 PM",
       "highlight": false
     },
     {
-      "text": "Andrew Painter vs Brandon Young",
+      "text": "Cristopher Sánchez vs Shane Baz",
       "highlight": true
     },
     {
@@ -106,15 +106,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Partly cloudy · gusts 1 mph",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Andrew Painter from Lehigh Valley IronPigs.",
-      "highlight": false
-    },
-    {
-      "text": "optioned RHP Brian Keller to Lehigh Valley IronPigs.",
+      "text": "74° · Overcast · gusts 2 mph",
       "highlight": false
     }
   ]
