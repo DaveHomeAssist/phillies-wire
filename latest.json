@@ -4,21 +4,21 @@
   "edition_date": "2026-07-31",
   "volume": 1,
   "edition": 122,
-  "generated_at": "2026-08-01T01:38:23.443Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-01T02:39:00.196Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 57,
-    "losses": 52,
-    "streak": "L3",
+    "losses": 53,
+    "streak": "L4",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, BAL 6",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Bryson Stott is up against Tyler Wells. Series: Regular Season.",
+    "headline": "PHI 4, BAL 6.",
+    "dek": "BAL 6, PHI 4 · Andrew Painter · 6.0 IP, 3 H, 2 ER, 6 K",
+    "summary": "PHI 4, BAL 6. Final at Oriole Park at Camden Yards, Baltimore. BAL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Shane Baz · PHI @ BAL · Sat, Aug 1 · 7:05 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "BAL leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,59 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 77,
       "condition": "Clear",
-      "wind": "2 mph · gusts 3",
-      "gusts_mph": 3
+      "wind": "3 mph · gusts 2",
+      "gusts_mph": 2
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Tyler Wells"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-01T01:38:23.904Z",
-    "current_game_pk": 824809,
-    "next_game_pk": 824808,
+    "updated_at": "2026-08-01T02:39:00.803Z",
+    "current_game_pk": 824808,
+    "next_game_pk": 824807,
     "next_game": {
-      "game_pk": 824808,
-      "official_date": "2026-08-01",
-      "date_label": "Sat, Aug 1, 2026",
-      "time_label": "7:05 PM",
+      "game_pk": 824807,
+      "official_date": "2026-08-02",
+      "date_label": "Sun, Aug 2, 2026",
+      "time_label": "1:35 PM",
       "title": "Phillies at Baltimore Orioles",
       "matchup": "PHI at BAL",
       "venue": "Oriole Park at Camden Yards"
     },
     "current_game": {
-      "game_pk": 824809,
-      "official_date": "2026-07-31",
+      "game_pk": 824808,
+      "official_date": "2026-08-01",
       "title": "Phillies at Baltimore Orioles",
       "matchup": "PHI at BAL"
     }
   },
   "ticker": [
     {
-      "text": "PHI 57-52",
+      "text": "PHI 57-53",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 3 mph",
+      "text": "77° · Clear · gusts 2 mph",
       "highlight": false
     },
     {
