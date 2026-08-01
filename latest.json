@@ -4,7 +4,7 @@
   "edition_date": "2026-08-01",
   "volume": 1,
   "edition": 123,
-  "generated_at": "2026-08-01T20:47:17.450Z",
+  "generated_at": "2026-08-01T21:18:13.248Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 88,
+      "temp_f": 87,
       "condition": "Overcast",
-      "wind": "9 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "10 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-01T20:47:18.004Z",
+    "updated_at": "2026-08-01T21:18:13.746Z",
     "current_game_pk": 824808,
     "next_game_pk": 824807,
     "next_game": {
@@ -106,7 +106,11 @@
       "highlight": false
     },
     {
-      "text": "88° · Overcast · gusts 15 mph",
+      "text": "87° · Overcast · gusts 14 mph",
+      "highlight": false
+    },
+    {
+      "text": "sent RF Steward Berroa outright to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
