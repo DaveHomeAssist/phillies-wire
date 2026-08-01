@@ -4,7 +4,7 @@
   "edition_date": "2026-07-31",
   "volume": 1,
   "edition": 122,
-  "generated_at": "2026-08-01T00:55:50.451Z",
+  "generated_at": "2026-08-01T01:35:39.100Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, BAL 2",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Kyle Schwarber is up against Anthony Nunez. Series: Regular Season.",
+    "headline": "PHI 4, BAL 6",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "Colton Cowser is up against Chase Shugart. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Shane Baz · PHI @ BAL · Sat, Aug 1 · 7:05 PM"
   },
@@ -57,31 +57,28 @@
     "weather": {
       "temp_f": 79,
       "condition": "Clear",
-      "wind": "3 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "2 mph · gusts 3",
+      "gusts_mph": 3
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Anthony Nunez"
+        "name": "Colton Cowser",
+        "meta": "vs Chase Shugart"
       },
-      "pitches": [
-        "B",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
+        "balls": 0,
         "strikes": 0,
         "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Top 7th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -89,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-01T00:55:50.952Z",
+    "updated_at": "2026-08-01T01:35:39.691Z",
     "current_game_pk": 824809,
     "next_game_pk": 824808,
     "next_game": {
@@ -126,15 +123,15 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 5 mph",
-      "highlight": false
-    },
-    {
-      "text": "optioned RHP Brian Keller to Lehigh Valley IronPigs.",
+      "text": "79° · Clear · gusts 3 mph",
       "highlight": false
     },
     {
       "text": "recalled RHP Andrew Painter from Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "optioned RHP Brian Keller to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
