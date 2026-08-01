@@ -4,7 +4,7 @@
   "edition_date": "2026-08-01",
   "volume": 1,
   "edition": 123,
-  "generated_at": "2026-08-01T23:20:29.755Z",
+  "generated_at": "2026-08-01T23:47:53.297Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, BAL 0",
-    "dek": "End 1st · 3 outs",
-    "summary": "Alec Bohm is up against Shane Baz. Series: BAL leads 1-0.",
+    "dek": "End 3rd · 3 outs",
+    "summary": "Kyle Schwarber is up against Shane Baz. Series: BAL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Bradish · PHI @ BAL · Sun, Aug 2 · 1:35 PM"
   },
@@ -55,28 +55,27 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 80,
       "condition": "Overcast",
-      "wind": "10 mph · gusts 21",
-      "gusts_mph": 21
+      "wind": "8 mph · gusts 18",
+      "gusts_mph": 18
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
+        "name": "Kyle Schwarber",
         "meta": "vs Shane Baz"
       },
       "pitches": [
         "B",
         "S",
         "B",
-        "B",
-        "F",
+        "S",
         "S"
       ],
       "count": {
-        "balls": 3,
+        "balls": 2,
         "strikes": 3,
         "outs": 3
       },
@@ -85,7 +84,7 @@
         "second": false,
         "third": false
       },
-      "status": "End 1st"
+      "status": "End 3rd"
     },
     "recap_line": null
   },
@@ -93,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-01T23:20:30.449Z",
+    "updated_at": "2026-08-01T23:47:54.040Z",
     "current_game_pk": 824808,
     "next_game_pk": 824807,
     "next_game": {
@@ -130,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Overcast · gusts 21 mph",
+      "text": "80° · Overcast · gusts 18 mph",
       "highlight": false
     },
     {
