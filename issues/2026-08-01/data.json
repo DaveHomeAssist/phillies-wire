@@ -5,14 +5,14 @@
     "edition": 123,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-01T23:47:53.297Z",
+    "generated_at": "2026-08-01T23:48:35.019Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 1, 2026, 7:47 PM ET",
+      "generated_at_et": "Aug 1, 2026, 7:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -373,11 +373,11 @@
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
-          "inningState": "End",
-          "isTopInning": false,
-          "outs": 3,
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
@@ -426,6 +426,19 @@
               },
               "home": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               }
@@ -712,6 +725,20 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "824808:20",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Play",
+            "score_after": "PHI 0, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
@@ -719,24 +746,18 @@
             "name": "Kyle Schwarber",
             "meta": "vs Shane Baz"
           },
-          "pitches": [
-            "B",
-            "S",
-            "B",
-            "S",
-            "S"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 2,
-            "strikes": 3,
-            "outs": 3
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 3rd"
+          "status": "Top 4th"
         }
       }
     },
@@ -753,8 +774,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:47:53.297Z",
-            "freshness_label": "As of Aug 1, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-01T23:48:35.019Z",
+            "freshness_label": "As of Aug 1, 2026, 7:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -766,8 +787,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:47:53.297Z",
-            "freshness_label": "As of Aug 1, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-01T23:48:35.019Z",
+            "freshness_label": "As of Aug 1, 2026, 7:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -779,8 +800,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:47:53.297Z",
-            "freshness_label": "As of Aug 1, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-01T23:48:35.019Z",
+            "freshness_label": "As of Aug 1, 2026, 7:48 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -792,8 +813,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:47:53.297Z",
-            "freshness_label": "As of Aug 1, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-01T23:48:35.019Z",
+            "freshness_label": "As of Aug 1, 2026, 7:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -805,8 +826,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:47:53.297Z",
-            "freshness_label": "As of Aug 1, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-01T23:48:35.019Z",
+            "freshness_label": "As of Aug 1, 2026, 7:48 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -818,8 +839,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-01T23:47:53.297Z",
-            "freshness_label": "As of Aug 1, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-01T23:48:35.019Z",
+            "freshness_label": "As of Aug 1, 2026, 7:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
