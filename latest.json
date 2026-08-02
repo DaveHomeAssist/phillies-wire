@@ -4,7 +4,7 @@
   "edition_date": "2026-08-01",
   "volume": 1,
   "edition": 123,
-  "generated_at": "2026-08-02T00:39:18.883Z",
+  "generated_at": "2026-08-02T01:16:05.557Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, BAL 0",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Gunnar Henderson is up against Cristopher Sánchez. Series: BAL leads 1-0.",
+    "dek": "Bottom 7th · 2 outs",
+    "summary": "Taylor Ward is up against Jonathan Bowlan. Series: BAL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Bradish · PHI @ BAL · Sun, Aug 2 · 1:35 PM"
   },
@@ -55,30 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
-      "condition": "Overcast",
-      "wind": "6 mph · gusts 17",
-      "gusts_mph": 17
+      "temp_f": 76,
+      "condition": "Light rain",
+      "wind": "6 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Gunnar Henderson",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Taylor Ward",
+        "meta": "vs Jonathan Bowlan"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": true,
-        "second": false,
+        "first": false,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T00:39:19.407Z",
+    "updated_at": "2026-08-02T01:16:06.071Z",
     "current_game_pk": 824808,
     "next_game_pk": 824807,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 17 mph",
+      "text": "76° · Light rain · gusts 14 mph",
       "highlight": false
     },
     {
