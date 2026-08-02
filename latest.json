@@ -4,7 +4,7 @@
   "edition_date": "2026-08-02",
   "volume": 1,
   "edition": 124,
-  "generated_at": "2026-08-02T18:21:00.185Z",
+  "generated_at": "2026-08-02T18:22:34.460Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, BAL 0",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Bryce Harper is up against Kyle Bradish. Series: Series tied 1-1.",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Colton Cowser is up against Zack Wheeler. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI vs WSH · Mon, Aug 3 · 6:40 PM"
   },
@@ -64,24 +64,26 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Kyle Bradish"
+        "name": "Colton Cowser",
+        "meta": "vs Zack Wheeler"
       },
       "pitches": [
         "F",
-        "F"
+        "F",
+        "B",
+        "S"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 2
+        "balls": 2,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "Middle 3rd"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T18:21:01.509Z",
+    "updated_at": "2026-08-02T18:22:34.997Z",
     "current_game_pk": 824807,
     "next_game_pk": 823431,
     "next_game": {
