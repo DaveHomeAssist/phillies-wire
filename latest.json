@@ -4,7 +4,7 @@
   "edition_date": "2026-08-02",
   "volume": 1,
   "edition": 124,
-  "generated_at": "2026-08-02T19:57:00.555Z",
+  "generated_at": "2026-08-02T20:24:35.288Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, BAL 0",
-    "dek": "Bottom 3rd · 0 outs",
-    "summary": "Colton Cowser is up against Zack Wheeler. Series: Series tied 1-1.",
+    "dek": "Bottom 3rd · 1 out",
+    "summary": "Pete Alonso is up against Kyle Backhus. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI vs WSH · Mon, Aug 3 · 6:40 PM"
   },
@@ -55,27 +55,29 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 77,
       "condition": "Overcast",
-      "wind": "11 mph · gusts 22",
+      "wind": "8 mph · gusts 22",
       "gusts_mph": 22
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Colton Cowser",
-        "meta": "vs Zack Wheeler"
+        "name": "Pete Alonso",
+        "meta": "vs Kyle Backhus"
       },
-      "pitches": [],
+      "pitches": [
+        "B"
+      ],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
-        "outs": 0
+        "outs": 1
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
       "status": "Bottom 3rd"
@@ -86,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T19:57:01.285Z",
+    "updated_at": "2026-08-02T20:24:35.808Z",
     "current_game_pk": 824807,
     "next_game_pk": 823431,
     "next_game": {
@@ -123,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 22 mph",
+      "text": "77° · Overcast · gusts 22 mph",
       "highlight": false
     }
   ]
