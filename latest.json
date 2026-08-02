@@ -4,7 +4,7 @@
   "edition_date": "2026-08-02",
   "volume": 1,
   "edition": 124,
-  "generated_at": "2026-08-02T18:22:34.460Z",
+  "generated_at": "2026-08-02T18:48:24.331Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,7 +17,7 @@
   },
   "hero": {
     "headline": "PHI 2, BAL 0",
-    "dek": "Middle 3rd · 3 outs",
+    "dek": "Bottom 3rd · 0 outs",
     "summary": "Colton Cowser is up against Zack Wheeler. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI vs WSH · Mon, Aug 3 · 6:40 PM"
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 84,
-      "condition": "Light drizzle",
-      "wind": "12 mph · gusts 22",
-      "gusts_mph": 22
+      "temp_f": 82,
+      "condition": "Heavy showers",
+      "wind": "6 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
@@ -67,23 +67,18 @@
         "name": "Colton Cowser",
         "meta": "vs Zack Wheeler"
       },
-      "pitches": [
-        "F",
-        "F",
-        "B",
-        "S"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 3,
-        "outs": 3
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 3rd"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T18:22:34.997Z",
+    "updated_at": "2026-08-02T18:48:25.146Z",
     "current_game_pk": 824807,
     "next_game_pk": 823431,
     "next_game": {
@@ -128,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Light drizzle · gusts 22 mph",
+      "text": "82° · Heavy showers · gusts 15 mph",
       "highlight": false
     }
   ]
