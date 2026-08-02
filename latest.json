@@ -4,7 +4,7 @@
   "edition_date": "2026-08-02",
   "volume": 1,
   "edition": 124,
-  "generated_at": "2026-08-02T21:19:06.625Z",
+  "generated_at": "2026-08-02T21:47:18.604Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 8, BAL 0",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "Pete Alonso is up against Tim Mayza. Series: Series tied 1-1.",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Pete Alonso is up against Orion Kerkering. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI vs WSH · Mon, Aug 3 · 6:40 PM"
   },
@@ -55,32 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
-      "condition": "Partly cloudy",
-      "wind": "10 mph · gusts 22",
-      "gusts_mph": 22
+      "temp_f": 77,
+      "condition": "Rain",
+      "wind": "10 mph · gusts 24",
+      "gusts_mph": 24
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
         "name": "Pete Alonso",
-        "meta": "vs Tim Mayza"
+        "meta": "vs Orion Kerkering"
       },
-      "pitches": [
-        "X"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 3
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 6th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -88,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T21:19:07.649Z",
+    "updated_at": "2026-08-02T21:47:19.119Z",
     "current_game_pk": 824807,
     "next_game_pk": 823431,
     "next_game": {
@@ -125,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Partly cloudy · gusts 22 mph",
+      "text": "77° · Rain · gusts 24 mph",
       "highlight": false
     }
   ]
