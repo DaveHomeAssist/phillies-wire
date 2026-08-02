@@ -4,7 +4,7 @@
   "edition_date": "2026-08-02",
   "volume": 1,
   "edition": 124,
-  "generated_at": "2026-08-02T17:22:37.179Z",
+  "generated_at": "2026-08-02T17:48:27.270Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, BAL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Trea Turner is up against Kyle Bradish. Series: Series tied 1-1.",
+    "dek": "Bottom 1st · 2 outs",
+    "summary": "Gunnar Henderson is up against Zack Wheeler. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI vs WSH · Mon, Aug 3 · 6:40 PM"
   },
@@ -55,30 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 85,
       "condition": "Overcast",
-      "wind": "9 mph · gusts 17",
-      "gusts_mph": 17
+      "wind": "12 mph · gusts 22",
+      "gusts_mph": 22
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Kyle Bradish"
+        "name": "Gunnar Henderson",
+        "meta": "vs Zack Wheeler"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S",
+        "X"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T17:22:37.400Z",
+    "updated_at": "2026-08-02T17:48:27.949Z",
     "current_game_pk": 824807,
     "next_game_pk": 823431,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Overcast · gusts 17 mph",
+      "text": "85° · Overcast · gusts 22 mph",
       "highlight": false
     }
   ]
