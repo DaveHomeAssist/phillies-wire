@@ -4,7 +4,7 @@
   "edition_date": "2026-08-02",
   "volume": 1,
   "edition": 124,
-  "generated_at": "2026-08-02T17:49:10.948Z",
+  "generated_at": "2026-08-02T18:21:00.185Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, BAL 0",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Taylor Ward is up against Zack Wheeler. Series: Series tied 1-1.",
+    "headline": "PHI 2, BAL 0",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Bryce Harper is up against Kyle Bradish. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI vs WSH · Mon, Aug 3 · 6:40 PM"
   },
@@ -55,8 +55,8 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 85,
-      "condition": "Overcast",
+      "temp_f": 84,
+      "condition": "Light drizzle",
       "wind": "12 mph · gusts 22",
       "gusts_mph": 22
     },
@@ -64,15 +64,16 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Taylor Ward",
-        "meta": "vs Zack Wheeler"
+        "name": "Bryce Harper",
+        "meta": "vs Kyle Bradish"
       },
       "pitches": [
-        "B"
+        "F",
+        "F"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
+        "balls": 0,
+        "strikes": 2,
         "outs": 2
       },
       "bases": {
@@ -80,7 +81,7 @@
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -88,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T17:49:11.447Z",
+    "updated_at": "2026-08-02T18:21:01.509Z",
     "current_game_pk": 824807,
     "next_game_pk": 823431,
     "next_game": {
@@ -125,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "85° · Overcast · gusts 22 mph",
+      "text": "84° · Light drizzle · gusts 22 mph",
       "highlight": false
     }
   ]
