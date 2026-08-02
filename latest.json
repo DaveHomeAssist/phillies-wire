@@ -4,7 +4,7 @@
   "edition_date": "2026-08-01",
   "volume": 1,
   "edition": 123,
-  "generated_at": "2026-08-02T00:34:01.460Z",
+  "generated_at": "2026-08-02T00:39:18.883Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, BAL 0",
-    "dek": "Top 6th · 2 outs",
-    "summary": "J.T. Realmuto is up against Shane Baz. Series: BAL leads 1-0.",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Gunnar Henderson is up against Cristopher Sánchez. Series: BAL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Bradish · PHI @ BAL · Sun, Aug 2 · 1:35 PM"
   },
@@ -64,23 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Shane Baz"
+        "name": "Gunnar Henderson",
+        "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 0,
-        "outs": 1
+        "outs": 0
       },
       "bases": {
         "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 6th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -88,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T00:34:01.957Z",
+    "updated_at": "2026-08-02T00:39:19.407Z",
     "current_game_pk": 824808,
     "next_game_pk": 824807,
     "next_game": {
