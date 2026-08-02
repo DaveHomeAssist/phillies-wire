@@ -4,21 +4,21 @@
   "edition_date": "2026-08-01",
   "volume": 1,
   "edition": 123,
-  "generated_at": "2026-08-02T01:16:05.557Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-02T02:17:21.496Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 57,
+    "wins": 58,
     "losses": 53,
-    "streak": "L4",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, BAL 0",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Taylor Ward is up against Jonathan Bowlan. Series: BAL leads 1-0.",
+    "headline": "PHI 5, BAL 0.",
+    "dek": "PHI 5, BAL 0 · Cristopher Sánchez · 6.0 IP, 2 H, 0 ER, 11 K",
+    "summary": "PHI 5, BAL 0. Final at Oriole Park at Camden Yards, Baltimore. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Bradish · PHI @ BAL · Sun, Aug 2 · 1:35 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "BAL leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,63 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
-      "condition": "Light rain",
-      "wind": "6 mph · gusts 14",
-      "gusts_mph": 14
+      "temp_f": 77,
+      "condition": "Overcast",
+      "wind": "3 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Taylor Ward",
-        "meta": "vs Jonathan Bowlan"
-      },
-      "pitches": [
-        "B",
-        "S",
-        "S"
-      ],
-      "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 2
-      },
-      "bases": {
-        "first": false,
-        "second": true,
-        "third": false
-      },
-      "status": "Bottom 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T01:16:06.071Z",
-    "current_game_pk": 824808,
-    "next_game_pk": 824807,
+    "updated_at": "2026-08-02T02:17:22.225Z",
+    "current_game_pk": 824807,
+    "next_game_pk": 823431,
     "next_game": {
-      "game_pk": 824807,
-      "official_date": "2026-08-02",
-      "date_label": "Sun, Aug 2, 2026",
-      "time_label": "1:35 PM",
-      "title": "Phillies at Baltimore Orioles",
-      "matchup": "PHI at BAL",
-      "venue": "Oriole Park at Camden Yards"
+      "game_pk": 823431,
+      "official_date": "2026-08-03",
+      "date_label": "Mon, Aug 3, 2026",
+      "time_label": "6:40 PM",
+      "title": "Washington Nationals at Phillies",
+      "matchup": "WSH at PHI",
+      "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 824808,
-      "official_date": "2026-08-01",
+      "game_pk": 824807,
+      "official_date": "2026-08-02",
       "title": "Phillies at Baltimore Orioles",
       "matchup": "PHI at BAL"
     }
   },
   "ticker": [
     {
-      "text": "PHI 57-53",
+      "text": "PHI 58-53",
       "highlight": true
     },
     {
@@ -127,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Light rain · gusts 14 mph",
+      "text": "77° · Overcast · gusts 12 mph",
       "highlight": false
     },
     {

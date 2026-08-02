@@ -5,313 +5,56 @@
     "edition": 123,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-02T01:16:05.557Z",
+    "generated_at": "2026-08-02T02:17:21.496Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Aug 1, 2026, 9:16 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Aug 1, 2026, 10:17 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 57,
+    "wins": 58,
     "losses": 53,
-    "streak": "L4",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, BAL 0",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Taylor Ward is up against Jonathan Bowlan. Series: BAL leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 5, BAL 0.",
+    "dek": "PHI 5, BAL 0 · Cristopher Sánchez · 6.0 IP, 2 H, 0 ER, 11 K",
+    "summary": "PHI 5, BAL 0. Final at Oriole Park at Camden Yards, Baltimore. Series tied 1-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Oriole Park at Camden Yards, Baltimore"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "76° · Light rain"
+        "label": "Series",
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "Taylor Ward at the plate",
-      "Jonathan Bowlan on the mound",
-      "Oriole Park at Camden Yards, Baltimore"
+      "Cristopher Sánchez: 6.0 IP, 2 H, 0 ER, 11 K",
+      "Shane Baz: 6.1 IP, 6 H, 1 ER, 4 K",
+      "Brandon Marsh: 2-for-4, 1 RBI, 1 R, 1 SB"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Bradish · PHI @ BAL · Sun, Aug 2 · 1:35 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at BAL game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "7:05 PM",
-        "starters": {
-          "home": {
-            "team": "BAL",
-            "name": "Shane Baz",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "BAL",
-            "name": "Shane Baz",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Coby Mayo",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Taylor Ward",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Gunnar Henderson",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Pete Alonso",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Tyler O'Neill",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Christian Encarnacion-Strand",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Leody Taveras",
-              "position": "CF",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Jackson Holliday",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Jake Rogers",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Alec Bohm",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Coby Mayo",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Taylor Ward",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Gunnar Henderson",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Pete Alonso",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Tyler O'Neill",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Christian Encarnacion-Strand",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Leody Taveras",
-              "position": "CF",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Jackson Holliday",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Jake Rogers",
-              "position": "C",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Orioles · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "BAL leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 76,
-          "condition": "Light rain",
-          "wind": "6 mph · gusts 14",
-          "gusts_mph": 14
+          "temp_f": 77,
+          "condition": "Overcast",
+          "wind": "3 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "",
@@ -360,7 +103,7 @@
             "name": "Shane Baz",
             "hand": "R",
             "era": "3.86",
-            "record": "4-9",
+            "record": "4-10",
             "whip": "1.37"
           },
           "away": {
@@ -368,20 +111,20 @@
             "name": "Cristopher Sánchez",
             "hand": "L",
             "era": "2.61",
-            "record": "13-4",
+            "record": "14-4",
             "whip": "1.20"
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 6,
+              "runs": 5,
+              "hits": 10,
               "errors": 0
             },
             "home": {
@@ -477,8 +220,34 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 4,
+                "hits": 3,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -1274,125 +1043,285 @@
             "inning": 7,
             "half": "bottom",
             "team": "BAL",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Taylor Ward",
             "actor_id": 621493,
-            "detail": "Play",
+            "detail": "Taylor Ward challenged (pitch result), call on the field was confirmed: Taylor Ward called out on strikes.",
             "score_after": "PHI 1, BAL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "824808:57",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, third baseman Christian Encarnacion-Strand to first baseman Pete Alonso.",
+            "score_after": "PHI 1, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:58",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber walks.",
+            "score_after": "PHI 1, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:59",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper walks. Kyle Schwarber to 2nd.",
+            "score_after": "PHI 1, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:60",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm singles on a ground ball to left fielder Taylor Ward. Kyle Schwarber scores. Bryce Harper to 3rd.",
+            "score_after": "PHI 2, BAL 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824808:61",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh singles on a line drive to right fielder Tyler O'Neill. Bryce Harper scores. Alec Bohm to 2nd.",
+            "score_after": "PHI 3, BAL 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824808:62",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto walks.",
+            "score_after": "PHI 3, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:63",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds into a force out, first baseman Pete Alonso to catcher Jake Rogers. Alec Bohm out at home. Brandon Marsh to 3r…",
+            "score_after": "PHI 3, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:64",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford singles on a ground ball to right fielder Tyler O'Neill. Brandon Marsh scores. J.T. Realmuto scores. Bryson Stott t…",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824808:65",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz strikes out swinging.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:66",
+            "inning": 8,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "out",
+            "actor": "Gunnar Henderson",
+            "actor_id": 683002,
+            "detail": "Gunnar Henderson grounds out to first baseman Bryce Harper.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:67",
+            "inning": 8,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "out",
+            "actor": "Pete Alonso",
+            "actor_id": 624413,
+            "detail": "Pete Alonso flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:68",
+            "inning": 8,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "out",
+            "actor": "Tyler O'Neill",
+            "actor_id": 641933,
+            "detail": "Tyler O'Neill pops out to first baseman Bryce Harper.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:69",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner doubles (19) on a ground ball to left fielder Taylor Ward.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "824808:70",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:71",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper pops out to shortstop Gunnar Henderson.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:72",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm strikes out swinging.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:73",
+            "inning": 9,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "out",
+            "actor": "Christian Encarnacion-Strand",
+            "actor_id": 687952,
+            "detail": "Christian Encarnacion-Strand pops out to first baseman Bryce Harper in foul territory.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:74",
+            "inning": 9,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "out",
+            "actor": "Leody Taveras",
+            "actor_id": 665750,
+            "detail": "Leody Taveras flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824808:75",
+            "inning": 9,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "out",
+            "actor": "Jackson Holliday",
+            "actor_id": 702616,
+            "detail": "Jackson Holliday flies out to right fielder Derek Hill.",
+            "score_after": "PHI 5, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Taylor Ward",
-            "meta": "vs Jonathan Bowlan"
-          },
-          "pitches": [
-            "B",
-            "S",
-            "S"
-          ],
-          "count": {
-            "balls": 2,
-            "strikes": 2,
-            "outs": 2
-          },
-          "bases": {
-            "first": false,
-            "second": true,
-            "third": false
-          },
-          "status": "Bottom 7th"
-        }
+        ]
       }
     },
-    "injury_report": {
-      "content": {
-        "il_entries": [
-          {
-            "name": "Adolis García",
-            "position": "RF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right latissimus dorsi tear",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-02T01:16:05.557Z",
-            "freshness_label": "As of Aug 1, 2026, 9:16 PM ET"
-          },
-          {
-            "name": "Johan Rojas",
-            "position": "CF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL repair",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-02T01:16:05.557Z",
-            "freshness_label": "As of Aug 1, 2026, 9:16 PM ET"
-          },
-          {
-            "name": "Lou Trivino III",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right thoracic muscle spasm",
-            "status_note": "",
-            "retroactive_to": "2026-07-07",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-02T01:16:05.557Z",
-            "freshness_label": "As of Aug 1, 2026, 9:16 PM ET"
-          },
-          {
-            "name": "Tanner Banks",
-            "position": "LHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Left forearm strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-02T01:16:05.557Z",
-            "freshness_label": "As of Aug 1, 2026, 9:16 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL tear",
-            "status_note": "",
-            "retroactive_to": "2026-07-13",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-02T01:16:05.557Z",
-            "freshness_label": "As of Aug 1, 2026, 9:16 PM ET"
-          },
-          {
-            "name": "Rafael Marchán",
-            "position": "C",
-            "il_type": "10-day",
-            "badge": "il",
-            "injury": "Left knee patellar tendinitis",
-            "status_note": "",
-            "retroactive_to": "2026-07-23",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-02T01:16:05.557Z",
-            "freshness_label": "As of Aug 1, 2026, 9:16 PM ET"
-          }
-        ],
-        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
-      }
-    }
+    "injury_report": null
   },
   "next_game": {
     "label": "Tomorrow",
