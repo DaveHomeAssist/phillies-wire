@@ -4,7 +4,7 @@
   "edition_date": "2026-08-02",
   "volume": 1,
   "edition": 124,
-  "generated_at": "2026-08-02T20:24:35.288Z",
+  "generated_at": "2026-08-02T20:47:01.181Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, BAL 0",
-    "dek": "Bottom 3rd · 1 out",
-    "summary": "Pete Alonso is up against Kyle Backhus. Series: Series tied 1-1.",
+    "headline": "PHI 4, BAL 0",
+    "dek": "End 4th · 3 outs",
+    "summary": "Kyle Schwarber is up against Anthony Nunez. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI vs WSH · Mon, Aug 3 · 6:40 PM"
   },
@@ -56,31 +56,32 @@
     },
     "weather": {
       "temp_f": 77,
-      "condition": "Overcast",
-      "wind": "8 mph · gusts 22",
-      "gusts_mph": 22
+      "condition": "Partly cloudy",
+      "wind": "9 mph · gusts 21",
+      "gusts_mph": 21
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Pete Alonso",
-        "meta": "vs Kyle Backhus"
+        "name": "Kyle Schwarber",
+        "meta": "vs Anthony Nunez"
       },
       "pitches": [
-        "B"
+        "B",
+        "X"
       ],
       "count": {
         "balls": 1,
         "strikes": 0,
-        "outs": 1
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -88,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T20:24:35.808Z",
+    "updated_at": "2026-08-02T20:47:02.048Z",
     "current_game_pk": 824807,
     "next_game_pk": 823431,
     "next_game": {
@@ -125,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Overcast · gusts 22 mph",
+      "text": "77° · Partly cloudy · gusts 21 mph",
       "highlight": false
     }
   ]

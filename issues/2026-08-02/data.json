@@ -5,14 +5,14 @@
     "edition": 124,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-02T20:24:35.288Z",
+    "generated_at": "2026-08-02T20:47:01.181Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 2, 2026, 4:24 PM ET",
+      "generated_at_et": "Aug 2, 2026, 4:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 2, BAL 0",
-    "dek": "Bottom 3rd · 1 out",
-    "summary": "Pete Alonso is up against Kyle Backhus. Series: Series tied 1-1.",
+    "headline": "PHI 4, BAL 0",
+    "dek": "End 4th · 3 outs",
+    "summary": "Kyle Schwarber is up against Anthony Nunez. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "77° · Overcast"
+        "value": "77° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Pete Alonso at the plate",
-      "Kyle Backhus on the mound",
+      "Kyle Schwarber at the plate",
+      "Anthony Nunez on the mound",
       "Oriole Park at Camden Yards, Baltimore"
     ],
     "next_label": "Tomorrow",
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 77,
-          "condition": "Overcast",
-          "wind": "8 mph · gusts 22",
-          "gusts_mph": 22
+          "condition": "Partly cloudy",
+          "wind": "9 mph · gusts 21",
+          "gusts_mph": 21
         },
         "giveaway": "",
         "transit": "",
@@ -373,20 +373,20 @@
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
-          "inningState": "Bottom",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 1,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 2,
-              "hits": 2,
+              "runs": 4,
+              "hits": 4,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 2,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -425,7 +425,20 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 2,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
                 "hits": 1,
                 "errors": 0
               }
@@ -721,7 +734,7 @@
             "event_type": "walk_hbp",
             "actor": "Jake Rogers",
             "actor_id": 668670,
-            "detail": "Phillies challenged (pitch result), call on the field was confirmed: Jake Rogers walks.",
+            "detail": "J.T. Realmuto challenged (pitch result), call on the field was confirmed: Jake Rogers walks.",
             "score_after": "PHI 2, BAL 0",
             "runs": 0,
             "is_scoring": false,
@@ -746,11 +759,165 @@
             "inning": 3,
             "half": "bottom",
             "team": "BAL",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Pete Alonso",
             "actor_id": 624413,
-            "detail": "Play",
+            "detail": "Pete Alonso lines out to first baseman Bryce Harper.",
             "score_after": "PHI 2, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824807:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "out",
+            "actor": "Gunnar Henderson",
+            "actor_id": 683002,
+            "detail": "Gunnar Henderson lines out to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 2, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824807:24",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm singles on a ground ball to second baseman Jackson Holliday.",
+            "score_after": "PHI 2, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824807:25",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh singles on a line drive to center fielder Colton Cowser. Alec Bohm to 2nd.",
+            "score_after": "PHI 2, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824807:26",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto walks. Alec Bohm to 3rd. Brandon Marsh to 2nd.",
+            "score_after": "PHI 2, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824807:27",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott walks. Alec Bohm scores. Brandon Marsh to 3rd. J.T. Realmuto to 2nd.",
+            "score_after": "PHI 3, BAL 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824807:28",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds out, second baseman Jackson Holliday to first baseman Pete Alonso. Brandon Marsh scores. J.T. Realmuto to 3…",
+            "score_after": "PHI 4, BAL 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824807:29",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz pops out to second baseman Jackson Holliday.",
+            "score_after": "PHI 4, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824807:30",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner lines out to left fielder Dylan Beavers.",
+            "score_after": "PHI 4, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824807:31",
+            "inning": 4,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "single",
+            "actor": "Taylor Ward",
+            "actor_id": 621493,
+            "detail": "Taylor Ward singles on a sharp line drive to center fielder Justin Crawford.",
+            "score_after": "PHI 4, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824807:32",
+            "inning": 4,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "strikeout",
+            "actor": "Jackson Holliday",
+            "actor_id": 702616,
+            "detail": "Jackson Holliday called out on strikes.",
+            "score_after": "PHI 4, BAL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824807:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "BAL",
+            "event_type": "other",
+            "actor": "Christian Encarnacion-Strand",
+            "actor_id": 687952,
+            "detail": "Christian Encarnacion-Strand grounds into a double play, third baseman Alec Bohm to second baseman Bryson Stott to first baseman Br…",
+            "score_after": "PHI 4, BAL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -758,23 +925,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Pete Alonso",
-            "meta": "vs Kyle Backhus"
+            "name": "Kyle Schwarber",
+            "meta": "vs Anthony Nunez"
           },
           "pitches": [
-            "B"
+            "B",
+            "X"
           ],
           "count": {
             "balls": 1,
             "strikes": 0,
-            "outs": 1
+            "outs": 3
           },
           "bases": {
-            "first": true,
-            "second": true,
+            "first": false,
+            "second": false,
             "third": false
           },
-          "status": "Bottom 3rd"
+          "status": "End 4th"
         }
       }
     },
@@ -791,8 +959,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-02T20:24:35.288Z",
-            "freshness_label": "As of Aug 2, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-08-02T20:47:01.181Z",
+            "freshness_label": "As of Aug 2, 2026, 4:47 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -804,8 +972,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-02T20:24:35.288Z",
-            "freshness_label": "As of Aug 2, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-08-02T20:47:01.181Z",
+            "freshness_label": "As of Aug 2, 2026, 4:47 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -817,8 +985,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-02T20:24:35.288Z",
-            "freshness_label": "As of Aug 2, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-08-02T20:47:01.181Z",
+            "freshness_label": "As of Aug 2, 2026, 4:47 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -830,8 +998,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-02T20:24:35.288Z",
-            "freshness_label": "As of Aug 2, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-08-02T20:47:01.181Z",
+            "freshness_label": "As of Aug 2, 2026, 4:47 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -843,8 +1011,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-02T20:24:35.288Z",
-            "freshness_label": "As of Aug 2, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-08-02T20:47:01.181Z",
+            "freshness_label": "As of Aug 2, 2026, 4:47 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -856,8 +1024,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-02T20:24:35.288Z",
-            "freshness_label": "As of Aug 2, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-08-02T20:47:01.181Z",
+            "freshness_label": "As of Aug 2, 2026, 4:47 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
