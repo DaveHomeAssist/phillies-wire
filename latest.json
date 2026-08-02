@@ -4,7 +4,7 @@
   "edition_date": "2026-08-02",
   "volume": 1,
   "edition": 124,
-  "generated_at": "2026-08-02T20:47:34.933Z",
+  "generated_at": "2026-08-02T21:17:57.699Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, BAL 0",
-    "dek": "End 4th · 3 outs",
-    "summary": "Kyle Schwarber is up against Anthony Nunez. Series: Series tied 1-1.",
+    "headline": "PHI 8, BAL 0",
+    "dek": "Middle 6th · 3 outs",
+    "summary": "Pete Alonso is up against Tim Mayza. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI vs WSH · Mon, Aug 3 · 6:40 PM"
   },
@@ -55,24 +55,23 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 77,
+      "temp_f": 79,
       "condition": "Partly cloudy",
-      "wind": "9 mph · gusts 21",
-      "gusts_mph": 21
+      "wind": "10 mph · gusts 22",
+      "gusts_mph": 22
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Anthony Nunez"
+        "name": "Pete Alonso",
+        "meta": "vs Tim Mayza"
       },
       "pitches": [
-        "B",
         "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 0,
         "outs": 3
       },
@@ -81,7 +80,7 @@
         "second": false,
         "third": false
       },
-      "status": "End 4th"
+      "status": "Middle 6th"
     },
     "recap_line": null
   },
@@ -89,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T20:47:35.437Z",
+    "updated_at": "2026-08-02T21:17:58.405Z",
     "current_game_pk": 824807,
     "next_game_pk": 823431,
     "next_game": {
@@ -126,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Partly cloudy · gusts 21 mph",
+      "text": "79° · Partly cloudy · gusts 22 mph",
       "highlight": false
     }
   ]
