@@ -4,7 +4,7 @@
   "edition_date": "2026-08-03",
   "volume": 1,
   "edition": 125,
-  "generated_at": "2026-08-03T13:50:39.132Z",
+  "generated_at": "2026-08-03T16:50:27.394Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "Nationals @ Phillies · Game 1 of 4",
-    "dek": "Aaron Nola vs TBD",
-    "summary": "Aaron Nola vs TBD · Nationals @ Phillies · Game 1 of 4",
+    "dek": "Aaron Nola vs Andrew Alvarez",
+    "summary": "Aaron Nola vs Andrew Alvarez · Nationals @ Phillies · Game 1 of 4",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Zack Littell · PHI vs WSH · Tue, Aug 4 · 6:40 PM"
   },
@@ -32,16 +32,16 @@
         "hand": "R"
       },
       "away": {
-        "name": "TBD",
-        "hand": "R"
+        "name": "Andrew Alvarez",
+        "hand": "L"
       },
       "phi": {
         "name": "Aaron Nola",
         "hand": "R"
       },
       "opp": {
-        "name": "TBD",
-        "hand": "R"
+        "name": "Andrew Alvarez",
+        "hand": "L"
       }
     },
     "series": {
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
-      "condition": "Drizzle",
-      "wind": "10 mph · gusts 17",
-      "gusts_mph": 17
+      "temp_f": 82,
+      "condition": "Overcast",
+      "wind": "10 mph · gusts 20",
+      "gusts_mph": 20
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-03T13:50:48.364Z",
+    "updated_at": "2026-08-03T16:50:27.827Z",
     "current_game_pk": 823431,
     "next_game_pk": 823432,
     "next_game": {
@@ -98,7 +98,7 @@
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs TBD",
+      "text": "Aaron Nola vs Andrew Alvarez",
       "highlight": true
     },
     {
@@ -106,7 +106,23 @@
       "highlight": false
     },
     {
-      "text": "78° · Drizzle · gusts 17 mph",
+      "text": "82° · Overcast · gusts 20 mph",
+      "highlight": false
+    },
+    {
+      "text": "designated RHP Nolan Hoffman for assignment.",
+      "highlight": false
+    },
+    {
+      "text": "designated RHP Lou Trivino III for assignment.",
+      "highlight": false
+    },
+    {
+      "text": "designated C Payton Henry for assignment.",
+      "highlight": false
+    },
+    {
+      "text": "San Francisco Giants traded 2B Luis Arraez and RHP Caleb Kilian to Philadelphia Phillies for RHP Marty Gair and RHP Ramon Marquez.",
       "highlight": false
     }
   ]

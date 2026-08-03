@@ -5,14 +5,14 @@
     "edition": 125,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-03T13:50:39.132Z",
+    "generated_at": "2026-08-03T16:50:27.394Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "Aug 3, 2026, 9:50 AM ET",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Aug 3, 2026, 12:50 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "pregame",
     "label": "Pregame",
     "headline": "Nationals @ Phillies · Game 1 of 4",
-    "dek": "Aaron Nola vs TBD",
-    "summary": "Aaron Nola vs TBD · Nationals @ Phillies · Game 1 of 4",
+    "dek": "Aaron Nola vs Andrew Alvarez",
+    "summary": "Aaron Nola vs Andrew Alvarez · Nationals @ Phillies · Game 1 of 4",
     "cards": [
       {
         "label": "First Pitch",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "78° · Drizzle · 10 mph · gusts 17",
+      "82° · Overcast · 10 mph · gusts 20",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -69,8 +69,8 @@
           },
           "away": {
             "team": "WSH",
-            "name": "TBD",
-            "hand": "R"
+            "name": "Andrew Alvarez",
+            "hand": "L"
           },
           "phi": {
             "team": "PHI",
@@ -79,8 +79,8 @@
           },
           "opp": {
             "team": "WSH",
-            "name": "TBD",
-            "hand": "R"
+            "name": "Andrew Alvarez",
+            "hand": "L"
           }
         },
         "batting_order": {
@@ -322,16 +322,16 @@
             "hand": "R"
           },
           "away": {
-            "name": "TBD",
-            "hand": "R"
+            "name": "Andrew Alvarez",
+            "hand": "L"
           },
           "phi": {
             "name": "Aaron Nola",
             "hand": "R"
           },
           "opp": {
-            "name": "TBD",
-            "hand": "R"
+            "name": "Andrew Alvarez",
+            "hand": "L"
           }
         },
         "series": {
@@ -345,15 +345,32 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 78,
-          "condition": "Drizzle",
-          "wind": "10 mph · gusts 17",
-          "gusts_mph": 17
+          "temp_f": 82,
+          "condition": "Overcast",
+          "wind": "10 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
         "venue_is_home": true,
-        "matchup_tape": null,
+        "matchup_tape": {
+          "home": {
+            "team": "PHI",
+            "name": "Aaron Nola",
+            "hand": "R",
+            "era": "5.61",
+            "record": "3-9",
+            "whip": "1.45"
+          },
+          "away": {
+            "team": "WSH",
+            "name": "Andrew Alvarez",
+            "hand": "L",
+            "era": "4.06",
+            "record": "2-3",
+            "whip": "1.51"
+          }
+        },
         "linescore": {
           "currentInning": null,
           "currentInningOrdinal": "",
@@ -390,8 +407,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-03T13:50:39.132Z",
-            "freshness_label": "As of Aug 3, 2026, 9:50 AM ET"
+            "last_confirmed": "2026-08-03T16:50:27.394Z",
+            "freshness_label": "As of Aug 3, 2026, 12:50 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -403,8 +420,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-03T13:50:39.132Z",
-            "freshness_label": "As of Aug 3, 2026, 9:50 AM ET"
+            "last_confirmed": "2026-08-03T16:50:27.394Z",
+            "freshness_label": "As of Aug 3, 2026, 12:50 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -416,8 +433,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-03T13:50:39.132Z",
-            "freshness_label": "As of Aug 3, 2026, 9:50 AM ET"
+            "last_confirmed": "2026-08-03T16:50:27.394Z",
+            "freshness_label": "As of Aug 3, 2026, 12:50 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -429,8 +446,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-03T13:50:39.132Z",
-            "freshness_label": "As of Aug 3, 2026, 9:50 AM ET"
+            "last_confirmed": "2026-08-03T16:50:27.394Z",
+            "freshness_label": "As of Aug 3, 2026, 12:50 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -442,8 +459,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-03T13:50:39.132Z",
-            "freshness_label": "As of Aug 3, 2026, 9:50 AM ET"
+            "last_confirmed": "2026-08-03T16:50:27.394Z",
+            "freshness_label": "As of Aug 3, 2026, 12:50 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -455,8 +472,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-03T13:50:39.132Z",
-            "freshness_label": "As of Aug 3, 2026, 9:50 AM ET"
+            "last_confirmed": "2026-08-03T16:50:27.394Z",
+            "freshness_label": "As of Aug 3, 2026, 12:50 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
