@@ -1,53 +1,53 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-02",
+  "edition_date": "2026-08-03",
   "volume": 1,
-  "edition": 124,
-  "generated_at": "2026-08-02T21:48:05.672Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "edition": 125,
+  "generated_at": "2026-08-03T05:00:52.378Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
-    "wins": 58,
+    "wins": 59,
     "losses": 53,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 8, BAL 0",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Pete Alonso is up against Orion Kerkering. Series: Series tied 1-1.",
+    "headline": "Nationals @ Phillies · Game 1 of 4",
+    "dek": "Aaron Nola vs TBD",
+    "summary": "Aaron Nola vs TBD · Nationals @ Phillies · Game 1 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola · PHI vs WSH · Mon, Aug 3 · 6:40 PM"
+    "next_value": "Jesús Luzardo vs Zack Littell · PHI vs WSH · Tue, Aug 4 · 6:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ Orioles · Game 3 of 3",
-    "first_pitch": "1:35 PM",
-    "venue": "Oriole Park at Camden Yards, Baltimore",
+    "matchup": "Nationals @ Phillies · Game 1 of 4",
+    "first_pitch": "6:40 PM",
+    "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Kyle Bradish",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "away": {
-        "name": "Zack Wheeler",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "opp": {
-        "name": "Kyle Bradish",
+        "name": "TBD",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,67 +55,50 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 77,
-      "condition": "Rain",
-      "wind": "10 mph · gusts 24",
-      "gusts_mph": 24
+      "temp_f": 76,
+      "condition": "Mostly sunny",
+      "wind": "6 mph · gusts 18",
+      "gusts_mph": 18
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Pete Alonso",
-        "meta": "vs Orion Kerkering"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 6th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-02T21:48:06.072Z",
-    "current_game_pk": 824807,
-    "next_game_pk": 823431,
+    "updated_at": "2026-08-03T05:00:52.957Z",
+    "current_game_pk": 823431,
+    "next_game_pk": 823432,
     "next_game": {
-      "game_pk": 823431,
-      "official_date": "2026-08-03",
-      "date_label": "Mon, Aug 3, 2026",
+      "game_pk": 823432,
+      "official_date": "2026-08-04",
+      "date_label": "Tue, Aug 4, 2026",
       "time_label": "6:40 PM",
       "title": "Washington Nationals at Phillies",
       "matchup": "WSH at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 824807,
-      "official_date": "2026-08-02",
-      "title": "Phillies at Baltimore Orioles",
-      "matchup": "PHI at BAL"
+      "game_pk": 823431,
+      "official_date": "2026-08-03",
+      "title": "Washington Nationals at Phillies",
+      "matchup": "WSH at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 58-53",
+      "text": "PHI 59-53",
       "highlight": true
     },
     {
-      "text": "Phillies @ Orioles · Game 3 of 3 · 1:35 PM",
+      "text": "Nationals @ Phillies · Game 1 of 4 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Kyle Bradish",
+      "text": "Aaron Nola vs TBD",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Rain · gusts 24 mph",
+      "text": "76° · Mostly sunny · gusts 18 mph",
       "highlight": false
     }
   ]
