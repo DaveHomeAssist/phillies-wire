@@ -4,7 +4,7 @@
   "edition_date": "2026-08-03",
   "volume": 1,
   "edition": 125,
-  "generated_at": "2026-08-03T23:07:48.627Z",
+  "generated_at": "2026-08-03T23:37:39.762Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, WSH 3",
-    "dek": "Bottom 2nd · 0 outs",
-    "summary": "Alec Bohm is up against Andrew Alvarez. Series: Regular Season.",
+    "dek": "Top 4th · 2 outs",
+    "summary": "Jorbit Vivas is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Zack Littell · PHI vs WSH · Tue, Aug 4 · 6:40 PM"
   },
@@ -55,30 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
-      "condition": "Overcast",
-      "wind": "2 mph · gusts 5",
-      "gusts_mph": 5
+      "temp_f": 81,
+      "condition": "Partly cloudy",
+      "wind": "3 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Andrew Alvarez"
+        "name": "Jorbit Vivas",
+        "meta": "vs Aaron Nola"
       },
-      "pitches": [],
+      "pitches": [
+        "B"
+      ],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
-        "outs": 0
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "Top 4th"
     },
     "recap_line": null
   },
@@ -86,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-03T23:07:49.013Z",
+    "updated_at": "2026-08-03T23:37:40.277Z",
     "current_game_pk": 823431,
     "next_game_pk": 823432,
     "next_game": {
@@ -123,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Overcast · gusts 5 mph",
+      "text": "81° · Partly cloudy · gusts 6 mph",
       "highlight": false
     },
     {
