@@ -4,9 +4,9 @@
   "edition_date": "2026-08-03",
   "volume": 1,
   "edition": 125,
-  "generated_at": "2026-08-03T22:08:28.516Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-03T22:35:28.210Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 59,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Nationals @ Phillies · Game 1 of 4",
-    "dek": "Aaron Nola vs Andrew Alvarez",
-    "summary": "Aaron Nola vs Andrew Alvarez · Nationals @ Phillies · Game 1 of 4",
+    "headline": "PHI 0, WSH 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "James Wood is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Zack Littell · PHI vs WSH · Tue, Aug 4 · 6:40 PM"
   },
@@ -62,14 +62,31 @@
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "James Wood",
+        "meta": "vs Aaron Nola"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-03T22:08:29.065Z",
+    "updated_at": "2026-08-03T22:35:28.744Z",
     "current_game_pk": 823431,
     "next_game_pk": 823432,
     "next_game": {
