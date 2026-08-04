@@ -4,7 +4,7 @@
   "edition_date": "2026-08-04",
   "volume": 1,
   "edition": 126,
-  "generated_at": "2026-08-04T23:35:43.200Z",
+  "generated_at": "2026-08-04T23:49:23.599Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, WSH 0",
-    "dek": "End 3rd · 3 outs",
-    "summary": "Andrés Chaparro is up against Jesús Luzardo. Series: PHI leads 1-0.",
+    "dek": "Bottom 4th · 1 out",
+    "summary": "Kyle Schwarber is up against Zack Littell. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Jake Irvin · PHI vs WSH · Wed, Aug 5 · 6:40 PM"
   },
@@ -55,33 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 84,
+      "temp_f": 82,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 6",
-      "gusts_mph": 6
+      "wind": "7 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Andrés Chaparro",
-        "meta": "vs Jesús Luzardo"
+        "name": "Kyle Schwarber",
+        "meta": "vs Zack Littell"
       },
       "pitches": [
-        "S",
-        "X"
+        "B",
+        "F",
+        "B"
       ],
       "count": {
-        "balls": 0,
+        "balls": 2,
         "strikes": 1,
-        "outs": 3
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 3rd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-04T23:35:44.030Z",
+    "updated_at": "2026-08-04T23:49:24.384Z",
     "current_game_pk": 823432,
     "next_game_pk": 823429,
     "next_game": {
@@ -126,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Overcast · gusts 6 mph",
+      "text": "82° · Overcast · gusts 12 mph",
       "highlight": false
     },
     {
