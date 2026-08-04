@@ -4,7 +4,7 @@
   "edition_date": "2026-08-04",
   "volume": 1,
   "edition": 126,
-  "generated_at": "2026-08-04T22:53:21.152Z",
+  "generated_at": "2026-08-04T23:07:23.662Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, WSH 0",
-    "dek": "Bottom 1st · 1 out",
-    "summary": "Luis Arraez is up against Carson Palmquist. Series: PHI leads 1-0.",
+    "dek": "Bottom 2nd · 0 outs",
+    "summary": "J.T. Realmuto is up against Zack Littell. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Jake Irvin · PHI vs WSH · Wed, Aug 5 · 6:40 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 85,
+      "temp_f": 84,
       "condition": "Overcast",
       "wind": "5 mph · gusts 7",
       "gusts_mph": 7
@@ -64,24 +64,25 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Carson Palmquist"
+        "name": "J.T. Realmuto",
+        "meta": "vs Zack Littell"
       },
       "pitches": [
-        "F",
+        "S",
+        "B",
         "X"
       ],
       "count": {
         "balls": 1,
         "strikes": 1,
-        "outs": 1
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Middle 2nd"
     },
     "recap_line": null
   },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-04T22:53:21.683Z",
+    "updated_at": "2026-08-04T23:07:23.979Z",
     "current_game_pk": 823432,
     "next_game_pk": 823429,
     "next_game": {
@@ -126,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "85° · Overcast · gusts 7 mph",
+      "text": "84° · Overcast · gusts 7 mph",
       "highlight": false
     },
     {
@@ -134,15 +135,15 @@
       "highlight": false
     },
     {
-      "text": "activated 2B Luis Arraez.",
-      "highlight": false
-    },
-    {
       "text": "activated LHP Brooks Raley.",
       "highlight": false
     },
     {
-      "text": "optioned RF Gabriel Rincones Jr. to Lehigh Valley IronPigs.",
+      "text": "activated 2B Luis Arraez.",
+      "highlight": false
+    },
+    {
+      "text": "optioned LHP Kyle Backhus to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
