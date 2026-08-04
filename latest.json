@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-03",
+  "edition_date": "2026-08-04",
   "volume": 1,
-  "edition": 125,
-  "generated_at": "2026-08-04T03:51:39.904Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 126,
+  "generated_at": "2026-08-04T05:03:48.487Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 60,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, WSH 3.",
-    "dek": "PHI 6, WSH 3 · Andrew Alvarez · 6.1 IP, 3 H, 2 ER, 5 K",
-    "summary": "PHI 6, WSH 3. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
+    "headline": "Nationals @ Phillies · Game 2 of 4",
+    "dek": "Jesús Luzardo vs Zack Littell",
+    "summary": "Jesús Luzardo vs Zack Littell · Nationals @ Phillies · Game 2 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Jesús Luzardo vs Zack Littell · PHI vs WSH · Tue, Aug 4 · 6:40 PM"
+    "next_value": "Andrew Painter vs Jake Irvin · PHI vs WSH · Wed, Aug 5 · 6:40 PM"
   },
   "game": {
-    "matchup": "Nationals @ Phillies · Game 1 of 4",
+    "matchup": "Nationals @ Phillies · Game 2 of 4",
     "first_pitch": "6:40 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Jesús Luzardo",
+        "hand": "L"
       },
       "away": {
-        "name": "Andrew Alvarez",
-        "hand": "L"
-      },
-      "phi": {
-        "name": "Aaron Nola",
+        "name": "Zack Littell",
         "hand": "R"
       },
-      "opp": {
-        "name": "Andrew Alvarez",
+      "phi": {
+        "name": "Jesús Luzardo",
         "hand": "L"
+      },
+      "opp": {
+        "name": "Zack Littell",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 74,
-      "condition": "Clear",
-      "wind": "4 mph · gusts 10",
-      "gusts_mph": 10
+      "temp_f": 71,
+      "condition": "Mostly sunny",
+      "wind": "5 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-04T03:51:40.246Z",
+    "updated_at": "2026-08-04T05:03:48.939Z",
     "current_game_pk": 823432,
     "next_game_pk": 823429,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Nationals @ Phillies · Game 1 of 4 · 6:40 PM",
+      "text": "Nationals @ Phillies · Game 2 of 4 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Andrew Alvarez",
+      "text": "Jesús Luzardo vs Zack Littell",
       "highlight": true
     },
     {
@@ -106,23 +106,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Clear · gusts 10 mph",
-      "highlight": false
-    },
-    {
-      "text": "designated C Payton Henry for assignment.",
-      "highlight": false
-    },
-    {
-      "text": "designated RHP Nolan Hoffman for assignment.",
-      "highlight": false
-    },
-    {
-      "text": "designated RHP Lou Trivino III for assignment.",
-      "highlight": false
-    },
-    {
-      "text": "traded RHP Nolan Hoffman to Kansas City Royals for RHP Manuel Colon.",
+      "text": "71° · Mostly sunny · gusts 11 mph",
       "highlight": false
     }
   ]
