@@ -4,7 +4,7 @@
   "edition_date": "2026-08-04",
   "volume": 1,
   "edition": 126,
-  "generated_at": "2026-08-04T18:48:39.480Z",
+  "generated_at": "2026-08-04T19:02:51.211Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -57,8 +57,8 @@
     "weather": {
       "temp_f": 86,
       "condition": "Clear",
-      "wind": "5 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "6 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-04T18:48:40.206Z",
+    "updated_at": "2026-08-04T19:02:51.971Z",
     "current_game_pk": 823432,
     "next_game_pk": 823429,
     "next_game": {
@@ -106,7 +106,23 @@
       "highlight": false
     },
     {
-      "text": "86° · Clear · gusts 5 mph",
+      "text": "86° · Clear · gusts 7 mph",
+      "highlight": false
+    },
+    {
+      "text": "activated RHP Caleb Kilian.",
+      "highlight": false
+    },
+    {
+      "text": "activated LHP Brooks Raley.",
+      "highlight": false
+    },
+    {
+      "text": "activated 2B Luis Arraez.",
+      "highlight": false
+    },
+    {
+      "text": "optioned LHP Kyle Backhus to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
