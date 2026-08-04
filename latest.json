@@ -4,7 +4,7 @@
   "edition_date": "2026-08-04",
   "volume": 1,
   "edition": 126,
-  "generated_at": "2026-08-04T23:07:23.662Z",
+  "generated_at": "2026-08-04T23:23:39.774Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, WSH 0",
-    "dek": "Bottom 2nd · 0 outs",
-    "summary": "J.T. Realmuto is up against Zack Littell. Series: PHI leads 1-0.",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Bryce Harper is up against Zack Littell. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Jake Irvin · PHI vs WSH · Wed, Aug 5 · 6:40 PM"
   },
@@ -64,25 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
+        "name": "Bryce Harper",
         "meta": "vs Zack Littell"
       },
       "pitches": [
-        "S",
         "B",
-        "X"
+        "B"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 3
+        "balls": 2,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Middle 2nd"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -90,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-04T23:07:23.979Z",
+    "updated_at": "2026-08-04T23:23:40.295Z",
     "current_game_pk": 823432,
     "next_game_pk": 823429,
     "next_game": {
@@ -135,15 +134,15 @@
       "highlight": false
     },
     {
-      "text": "activated LHP Brooks Raley.",
-      "highlight": false
-    },
-    {
       "text": "activated 2B Luis Arraez.",
       "highlight": false
     },
     {
-      "text": "optioned LHP Kyle Backhus to Lehigh Valley IronPigs.",
+      "text": "activated LHP Brooks Raley.",
+      "highlight": false
+    },
+    {
+      "text": "optioned RF Gabriel Rincones Jr. to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
