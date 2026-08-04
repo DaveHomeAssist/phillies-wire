@@ -4,7 +4,7 @@
   "edition_date": "2026-08-04",
   "volume": 1,
   "edition": 126,
-  "generated_at": "2026-08-04T23:23:39.774Z",
+  "generated_at": "2026-08-04T23:35:43.200Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, WSH 0",
-    "dek": "Bottom 3rd · 0 outs",
-    "summary": "Bryce Harper is up against Zack Littell. Series: PHI leads 1-0.",
+    "headline": "PHI 4, WSH 0",
+    "dek": "End 3rd · 3 outs",
+    "summary": "Andrés Chaparro is up against Jesús Luzardo. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Jake Irvin · PHI vs WSH · Wed, Aug 5 · 6:40 PM"
   },
@@ -57,31 +57,31 @@
     "weather": {
       "temp_f": 84,
       "condition": "Overcast",
-      "wind": "5 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "4 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Zack Littell"
+        "name": "Andrés Chaparro",
+        "meta": "vs Jesús Luzardo"
       },
       "pitches": [
-        "B",
-        "B"
+        "S",
+        "X"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 0,
-        "outs": 0
+        "balls": 0,
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "End 3rd"
     },
     "recap_line": null
   },
@@ -89,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-04T23:23:40.295Z",
+    "updated_at": "2026-08-04T23:35:44.030Z",
     "current_game_pk": 823432,
     "next_game_pk": 823429,
     "next_game": {
@@ -126,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Overcast · gusts 7 mph",
+      "text": "84° · Overcast · gusts 6 mph",
       "highlight": false
     },
     {
@@ -134,15 +134,15 @@
       "highlight": false
     },
     {
-      "text": "activated 2B Luis Arraez.",
-      "highlight": false
-    },
-    {
       "text": "activated LHP Brooks Raley.",
       "highlight": false
     },
     {
-      "text": "optioned RF Gabriel Rincones Jr. to Lehigh Valley IronPigs.",
+      "text": "activated 2B Luis Arraez.",
+      "highlight": false
+    },
+    {
+      "text": "optioned LHP Kyle Backhus to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
