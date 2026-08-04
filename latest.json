@@ -4,7 +4,7 @@
   "edition_date": "2026-08-03",
   "volume": 1,
   "edition": 125,
-  "generated_at": "2026-08-04T00:09:20.548Z",
+  "generated_at": "2026-08-04T00:53:54.270Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, WSH 3",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "Garrett Stubbs is up against Andrew Alvarez. Series: Regular Season.",
+    "headline": "PHI 4, WSH 3",
+    "dek": "Top 8th · 2 outs",
+    "summary": "Keibert Ruiz is up against Orion Kerkering. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Zack Littell · PHI vs WSH · Tue, Aug 4 · 6:40 PM"
   },
@@ -55,33 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
-      "condition": "Partly cloudy",
-      "wind": "3 mph · gusts 5",
-      "gusts_mph": 5
+      "temp_f": 79,
+      "condition": "Overcast",
+      "wind": "1 mph · gusts 2",
+      "gusts_mph": 2
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Garrett Stubbs",
-        "meta": "vs Andrew Alvarez"
+        "name": "Keibert Ruiz",
+        "meta": "vs Orion Kerkering"
       },
       "pitches": [
-        "B",
-        "X"
+        "F",
+        "B"
       ],
       "count": {
         "balls": 1,
-        "strikes": 0,
-        "outs": 3
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 6th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -89,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-04T00:09:21.020Z",
+    "updated_at": "2026-08-04T00:53:54.714Z",
     "current_game_pk": 823431,
     "next_game_pk": 823432,
     "next_game": {
@@ -126,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Partly cloudy · gusts 5 mph",
+      "text": "79° · Overcast · gusts 2 mph",
       "highlight": false
     },
     {
@@ -142,7 +142,7 @@
       "highlight": false
     },
     {
-      "text": "San Francisco Giants traded 2B Luis Arraez and RHP Caleb Kilian to Philadelphia Phillies for RHP Marty Gair and RHP Ramon Marquez.",
+      "text": "traded RHP Nolan Hoffman to Kansas City Royals for RHP Manuel Colon.",
       "highlight": false
     }
   ]

@@ -5,14 +5,14 @@
     "edition": 125,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-04T00:09:20.548Z",
+    "generated_at": "2026-08-04T00:53:54.270Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 3, 2026, 8:09 PM ET",
+      "generated_at_et": "Aug 3, 2026, 8:53 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, WSH 3",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "Garrett Stubbs is up against Andrew Alvarez. Series: Regular Season.",
+    "headline": "PHI 4, WSH 3",
+    "dek": "Top 8th · 2 outs",
+    "summary": "Keibert Ruiz is up against Orion Kerkering. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "81° · Partly cloudy"
+        "value": "79° · Overcast"
       }
     ],
     "bullets": [
-      "Garrett Stubbs at the plate",
-      "Andrew Alvarez on the mound",
+      "Keibert Ruiz at the plate",
+      "Orion Kerkering on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 81,
-          "condition": "Partly cloudy",
-          "wind": "3 mph · gusts 5",
-          "gusts_mph": 5
+          "temp_f": 79,
+          "condition": "Overcast",
+          "wind": "1 mph · gusts 2",
+          "gusts_mph": 2
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,25 +359,25 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.60",
+            "era": "5.55",
             "record": "3-9",
-            "whip": "1.45"
+            "whip": "1.44"
           },
           "away": {
             "team": "WSH",
             "name": "Andrew Alvarez",
             "hand": "L",
-            "era": "3.73",
+            "era": "3.94",
             "record": "2-3",
             "whip": "1.45"
           }
         },
         "linescore": {
-          "currentInning": 6,
-          "currentInningOrdinal": "6th",
-          "inningState": "Middle",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
+          "inningState": "Top",
           "isTopInning": true,
-          "outs": 3,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 3,
@@ -385,9 +385,9 @@
               "errors": 0
             },
             "home": {
-              "runs": 0,
-              "hits": 3,
-              "errors": 0
+              "runs": 4,
+              "hits": 4,
+              "errors": 1
             }
           },
           "innings": [
@@ -461,6 +461,32 @@
               "away": {
                 "runs": 0,
                 "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 4,
+                "hits": 1,
+                "errors": 1
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
@@ -1059,28 +1085,294 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823431:42",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs grounds out, second baseman Nasim Nuñez to first baseman Abimelec Ortiz.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:43",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner lines out to second baseman Nasim Nuñez.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:44",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber walks.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:45",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, second baseman Nasim Nuñez to first baseman Abimelec Ortiz.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:46",
+            "inning": 7,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "reached_on_error",
+            "actor": "Nasim Nuñez",
+            "actor_id": 683083,
+            "detail": "Nasim Nuñez reaches on a throwing error by pitcher Kyle Backhus. Nasim Nuñez to 3rd.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:47",
+            "inning": 7,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Brady House",
+            "actor_id": 691781,
+            "detail": "Brady House reaches on a fielder's choice out, pitcher Kyle Backhus to catcher Garrett Stubbs to third baseman Alec Bohm. Nasim Nuñ…",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:48",
+            "inning": 7,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "walk_hbp",
+            "actor": "Jacob Young",
+            "actor_id": 696285,
+            "detail": "Jacob Young walks. Brady House to 2nd.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:49",
+            "inning": 7,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "James Wood",
+            "actor_id": 695578,
+            "detail": "James Wood grounds out, first baseman Bryce Harper to pitcher Kyle Backhus. Brady House to 3rd. Jacob Young to 2nd.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:50",
+            "inning": 7,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "Andrés Chaparro",
+            "actor_id": 665953,
+            "detail": "Andrés Chaparro strikes out on a foul tip.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:51",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out to right fielder James Wood.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:52",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz hit by pitch.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:53",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott walks. Bryan De La Cruz to 2nd.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:54",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa walks. Bryan De La Cruz to 3rd. Bryson Stott to 2nd.",
+            "score_after": "PHI 0, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:55",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill hits a grand slam (9) to left center field. Bryan De La Cruz scores. Bryson Stott scores. Edmundo Sosa scores.",
+            "score_after": "PHI 4, WSH 3",
+            "runs": 4,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823431:56",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs grounds out, second baseman Nasim Nuñez to first baseman Andrés Chaparro.",
+            "score_after": "PHI 4, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:57",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner strikes out swinging.",
+            "score_after": "PHI 4, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:58",
+            "inning": 8,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "José Tena",
+            "actor_id": 677588,
+            "detail": "José Tena lines out sharply to center fielder Derek Hill.",
+            "score_after": "PHI 4, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:59",
+            "inning": 8,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "CJ Abrams",
+            "actor_id": 682928,
+            "detail": "CJ Abrams strikes out swinging.",
+            "score_after": "PHI 4, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823431:60",
+            "inning": 8,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "other",
+            "actor": "Keibert Ruiz",
+            "actor_id": 660688,
+            "detail": "Play",
+            "score_after": "PHI 4, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Garrett Stubbs",
-            "meta": "vs Andrew Alvarez"
+            "name": "Keibert Ruiz",
+            "meta": "vs Orion Kerkering"
           },
           "pitches": [
-            "B",
-            "X"
+            "F",
+            "B"
           ],
           "count": {
             "balls": 1,
-            "strikes": 0,
-            "outs": 3
+            "strikes": 1,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 6th"
+          "status": "Top 8th"
         }
       }
     },
@@ -1097,8 +1389,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-04T00:09:20.548Z",
-            "freshness_label": "As of Aug 3, 2026, 8:09 PM ET"
+            "last_confirmed": "2026-08-04T00:53:54.270Z",
+            "freshness_label": "As of Aug 3, 2026, 8:53 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1110,8 +1402,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-04T00:09:20.548Z",
-            "freshness_label": "As of Aug 3, 2026, 8:09 PM ET"
+            "last_confirmed": "2026-08-04T00:53:54.270Z",
+            "freshness_label": "As of Aug 3, 2026, 8:53 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1123,8 +1415,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-04T00:09:20.548Z",
-            "freshness_label": "As of Aug 3, 2026, 8:09 PM ET"
+            "last_confirmed": "2026-08-04T00:53:54.270Z",
+            "freshness_label": "As of Aug 3, 2026, 8:53 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1136,8 +1428,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-04T00:09:20.548Z",
-            "freshness_label": "As of Aug 3, 2026, 8:09 PM ET"
+            "last_confirmed": "2026-08-04T00:53:54.270Z",
+            "freshness_label": "As of Aug 3, 2026, 8:53 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1149,8 +1441,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-04T00:09:20.548Z",
-            "freshness_label": "As of Aug 3, 2026, 8:09 PM ET"
+            "last_confirmed": "2026-08-04T00:53:54.270Z",
+            "freshness_label": "As of Aug 3, 2026, 8:53 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1162,8 +1454,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-04T00:09:20.548Z",
-            "freshness_label": "As of Aug 3, 2026, 8:09 PM ET"
+            "last_confirmed": "2026-08-04T00:53:54.270Z",
+            "freshness_label": "As of Aug 3, 2026, 8:53 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
