@@ -4,7 +4,7 @@
   "edition_date": "2026-08-03",
   "volume": 1,
   "edition": 125,
-  "generated_at": "2026-08-03T23:38:20.391Z",
+  "generated_at": "2026-08-04T00:08:30.968Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, WSH 3",
-    "dek": "Top 4th · 2 outs",
-    "summary": "Jorbit Vivas is up against Aaron Nola. Series: Regular Season.",
+    "dek": "Middle 6th · 3 outs",
+    "summary": "Garrett Stubbs is up against Andrew Alvarez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Zack Littell · PHI vs WSH · Tue, Aug 4 · 6:40 PM"
   },
@@ -57,32 +57,31 @@
     "weather": {
       "temp_f": 81,
       "condition": "Partly cloudy",
-      "wind": "3 mph · gusts 6",
-      "gusts_mph": 6
+      "wind": "3 mph · gusts 5",
+      "gusts_mph": 5
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jorbit Vivas",
+        "name": "Daylen Lile",
         "meta": "vs Aaron Nola"
       },
       "pitches": [
         "B",
-        "B",
-        "F"
+        "X"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 0,
         "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "Top 6th"
     },
     "recap_line": null
   },
@@ -90,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-03T23:38:20.719Z",
+    "updated_at": "2026-08-04T00:08:31.688Z",
     "current_game_pk": 823431,
     "next_game_pk": 823432,
     "next_game": {
@@ -127,15 +126,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Partly cloudy · gusts 6 mph",
-      "highlight": false
-    },
-    {
-      "text": "designated RHP Lou Trivino III for assignment.",
-      "highlight": false
-    },
-    {
-      "text": "designated RHP Nolan Hoffman for assignment.",
+      "text": "81° · Partly cloudy · gusts 5 mph",
       "highlight": false
     },
     {
@@ -143,7 +134,15 @@
       "highlight": false
     },
     {
-      "text": "traded RHP Nolan Hoffman to Kansas City Royals for RHP Manuel Colon.",
+      "text": "designated RHP Nolan Hoffman for assignment.",
+      "highlight": false
+    },
+    {
+      "text": "designated RHP Lou Trivino III for assignment.",
+      "highlight": false
+    },
+    {
+      "text": "San Francisco Giants traded 2B Luis Arraez and RHP Caleb Kilian to Philadelphia Phillies for RHP Marty Gair and RHP Ramon Marquez.",
       "highlight": false
     }
   ]
