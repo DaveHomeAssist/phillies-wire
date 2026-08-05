@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-04",
+  "edition_date": "2026-08-05",
   "volume": 1,
-  "edition": 126,
-  "generated_at": "2026-08-05T03:47:59.402Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 127,
+  "generated_at": "2026-08-05T04:22:12.841Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 61,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, WSH 0.",
-    "dek": "PHI 5, WSH 0 · Jesús Luzardo · 8.0 IP, 4 H, 0 ER, 7 K",
-    "summary": "PHI 5, WSH 0. Final at Citizens Bank Park, Philadelphia. PHI leads 2-0.",
+    "headline": "Nationals @ Phillies · Game 3 of 4",
+    "dek": "Andrew Painter vs Jake Irvin",
+    "summary": "Andrew Painter vs Jake Irvin · Nationals @ Phillies · Game 3 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter vs Jake Irvin · PHI vs WSH · Wed, Aug 5 · 6:40 PM"
+    "next_value": "Cristopher Sánchez · PHI vs WSH · Thu, Aug 6 · 6:05 PM"
   },
   "game": {
-    "matchup": "Nationals @ Phillies · Game 2 of 4",
+    "matchup": "Nationals @ Phillies · Game 3 of 4",
     "first_pitch": "6:40 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "away": {
-        "name": "Carson Palmquist",
-        "hand": "L"
+        "name": "Jake Irvin",
+        "hand": "R"
       },
       "phi": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "opp": {
-        "name": "Carson Palmquist",
-        "hand": "L"
+        "name": "Jake Irvin",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 2-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,7 +57,7 @@
     "weather": {
       "temp_f": 74,
       "condition": "Overcast",
-      "wind": "3 mph · gusts 10",
+      "wind": "2 mph · gusts 10",
       "gusts_mph": 10
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-05T03:47:59.986Z",
+    "updated_at": "2026-08-05T04:22:13.225Z",
     "current_game_pk": 823429,
     "next_game_pk": 823430,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Nationals @ Phillies · Game 2 of 4 · 6:40 PM",
+      "text": "Nationals @ Phillies · Game 3 of 4 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Carson Palmquist",
+      "text": "Andrew Painter vs Jake Irvin",
       "highlight": true
     },
     {
@@ -107,22 +107,6 @@
     },
     {
       "text": "74° · Overcast · gusts 10 mph",
-      "highlight": false
-    },
-    {
-      "text": "activated RHP Caleb Kilian.",
-      "highlight": false
-    },
-    {
-      "text": "activated 2B Luis Arraez.",
-      "highlight": false
-    },
-    {
-      "text": "activated LHP Brooks Raley.",
-      "highlight": false
-    },
-    {
-      "text": "optioned RF Gabriel Rincones Jr. to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
