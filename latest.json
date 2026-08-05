@@ -4,7 +4,7 @@
   "edition_date": "2026-08-05",
   "volume": 1,
   "edition": 127,
-  "generated_at": "2026-08-05T23:08:07.545Z",
+  "generated_at": "2026-08-05T23:34:19.303Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, WSH 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Abimelec Ortiz is up against Andrew Painter. Series: PHI leads 2-0.",
+    "headline": "PHI 0, WSH 1",
+    "dek": "Middle 2nd · 3 outs",
+    "summary": "Luis Arraez is up against Jake Irvin. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Miles Mikolas · PHI vs WSH · Thu, Aug 6 · 6:05 PM"
   },
@@ -57,32 +57,33 @@
     "weather": {
       "temp_f": 80,
       "condition": "Mostly sunny",
-      "wind": "3 mph · gusts 4",
-      "gusts_mph": 4
+      "wind": "5 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Abimelec Ortiz",
-        "meta": "vs Andrew Painter"
+        "name": "Luis Arraez",
+        "meta": "vs Jake Irvin"
       },
       "pitches": [
         "S",
+        "F",
         "B",
-        "F"
+        "S"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 2,
-        "outs": 0
+        "balls": 2,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Middle 2nd"
     },
     "recap_line": null
   },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-05T23:08:08.098Z",
+    "updated_at": "2026-08-05T23:34:19.863Z",
     "current_game_pk": 823429,
     "next_game_pk": 823430,
     "next_game": {
@@ -127,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Mostly sunny · gusts 4 mph",
+      "text": "80° · Mostly sunny · gusts 7 mph",
       "highlight": false
     },
     {
