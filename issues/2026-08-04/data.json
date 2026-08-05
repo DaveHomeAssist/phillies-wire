@@ -5,14 +5,14 @@
     "edition": 126,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-05T00:07:38.518Z",
+    "generated_at": "2026-08-05T00:35:00.278Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 4, 2026, 8:07 PM ET",
+      "generated_at_et": "Aug 4, 2026, 8:35 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 4, WSH 0",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "J.T. Realmuto is up against Zack Littell. Series: PHI leads 1-0.",
+    "headline": "PHI 5, WSH 0",
+    "dek": "Top 8th · 1 out",
+    "summary": "Dylan Crews is up against Jesús Luzardo. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Overcast"
+        "value": "79° · Overcast"
       }
     ],
     "bullets": [
-      "J.T. Realmuto at the plate",
-      "Zack Littell on the mound",
+      "Dylan Crews at the plate",
+      "Jesús Luzardo on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
+          "temp_f": 79,
           "condition": "Overcast",
-          "wind": "8 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "8 mph · gusts 17",
+          "gusts_mph": 17
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.41",
+            "era": "3.38",
             "record": "9-5",
             "whip": "1.17"
           },
@@ -373,20 +373,20 @@
           }
         },
         "linescore": {
-          "currentInning": 6,
-          "currentInningOrdinal": "6th",
-          "inningState": "Middle",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
+          "inningState": "Top",
           "isTopInning": true,
-          "outs": 3,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 2,
+              "hits": 4,
               "errors": 0
             },
             "home": {
-              "runs": 4,
-              "hits": 7,
+              "runs": 5,
+              "hits": 9,
               "errors": 0
             }
           },
@@ -461,6 +461,32 @@
               "away": {
                 "runs": 0,
                 "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": null,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -1087,30 +1113,239 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823432:44",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, third baseman Brady House to first baseman Andrés Chaparro.",
+            "score_after": "PHI 4, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:45",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh grounds out, second baseman Jorbit Vivas to first baseman Andrés Chaparro.",
+            "score_after": "PHI 4, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:46",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to center fielder Jacob Young.",
+            "score_after": "PHI 4, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:47",
+            "inning": 7,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "CJ Abrams",
+            "actor_id": 682928,
+            "detail": "CJ Abrams strikes out swinging.",
+            "score_after": "PHI 4, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:48",
+            "inning": 7,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "extra_base_hit",
+            "actor": "Harry Ford",
+            "actor_id": 695670,
+            "detail": "Harry Ford doubles (2) on a fly ball to center fielder Justin Crawford.",
+            "score_after": "PHI 4, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823432:49",
+            "inning": 7,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Jacob Young",
+            "actor_id": 696285,
+            "detail": "Jacob Young grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 4, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:50",
+            "inning": 7,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "Daylen Lile",
+            "actor_id": 695734,
+            "detail": "Daylen Lile strikes out swinging.",
+            "score_after": "PHI 4, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:51",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford singles on a ground ball to shortstop Nasim Nuñez.",
+            "score_after": "PHI 4, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:52",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out, shortstop Nasim Nuñez to first baseman Andrés Chaparro. Justin Crawford to 3rd.",
+            "score_after": "PHI 4, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:53",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner singles on a line drive to right fielder Dylan Crews. Justin Crawford scores.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823432:54",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out on a foul tip.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:55",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez grounds out, second baseman Jorbit Vivas to first baseman Andrés Chaparro.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:56",
+            "inning": 8,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "single",
+            "actor": "Nasim Nuñez",
+            "actor_id": 683083,
+            "detail": "Nasim Nuñez singles on a fly ball to left fielder Brandon Marsh.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:57",
+            "inning": 8,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Jorbit Vivas",
+            "actor_id": 678391,
+            "detail": "Jorbit Vivas lines out, pitcher Jesús Luzardo to first baseman Alec Bohm. Nasim Nuñez to 2nd.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:58",
+            "inning": 8,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Dylan Crews",
+            "actor_id": 686611,
+            "detail": "Batter Timeout.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "J.T. Realmuto",
-            "meta": "vs Zack Littell"
+            "name": "Dylan Crews",
+            "meta": "vs Jesús Luzardo"
           },
           "pitches": [
-            "B",
-            "B",
             "S",
-            "X"
+            "B",
+            "F"
           ],
           "count": {
-            "balls": 2,
+            "balls": 1,
             "strikes": 2,
-            "outs": 3
+            "outs": 1
           },
           "bases": {
             "first": false,
-            "second": false,
+            "second": true,
             "third": false
           },
-          "status": "Middle 6th"
+          "status": "Top 8th"
         }
       }
     },
@@ -1127,8 +1362,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T00:07:38.518Z",
-            "freshness_label": "As of Aug 4, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-08-05T00:35:00.278Z",
+            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1140,8 +1375,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T00:07:38.518Z",
-            "freshness_label": "As of Aug 4, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-08-05T00:35:00.278Z",
+            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1153,8 +1388,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T00:07:38.518Z",
-            "freshness_label": "As of Aug 4, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-08-05T00:35:00.278Z",
+            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1166,8 +1401,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T00:07:38.518Z",
-            "freshness_label": "As of Aug 4, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-08-05T00:35:00.278Z",
+            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1179,8 +1414,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T00:07:38.518Z",
-            "freshness_label": "As of Aug 4, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-08-05T00:35:00.278Z",
+            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1192,8 +1427,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T00:07:38.518Z",
-            "freshness_label": "As of Aug 4, 2026, 8:07 PM ET"
+            "last_confirmed": "2026-08-05T00:35:00.278Z",
+            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

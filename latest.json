@@ -4,7 +4,7 @@
   "edition_date": "2026-08-04",
   "volume": 1,
   "edition": 126,
-  "generated_at": "2026-08-05T00:07:38.518Z",
+  "generated_at": "2026-08-05T00:35:00.278Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, WSH 0",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "J.T. Realmuto is up against Zack Littell. Series: PHI leads 1-0.",
+    "headline": "PHI 5, WSH 0",
+    "dek": "Top 8th · 1 out",
+    "summary": "Dylan Crews is up against Jesús Luzardo. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Jake Irvin · PHI vs WSH · Wed, Aug 5 · 6:40 PM"
   },
@@ -55,35 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Overcast",
-      "wind": "8 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "8 mph · gusts 17",
+      "gusts_mph": 17
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Zack Littell"
+        "name": "Dylan Crews",
+        "meta": "vs Jesús Luzardo"
       },
       "pitches": [
-        "B",
-        "B",
         "S",
-        "X"
+        "B",
+        "F"
       ],
       "count": {
-        "balls": 2,
+        "balls": 1,
         "strikes": 2,
-        "outs": 3
+        "outs": 1
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
-      "status": "Middle 6th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -91,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-05T00:07:39.292Z",
+    "updated_at": "2026-08-05T00:35:00.907Z",
     "current_game_pk": 823432,
     "next_game_pk": 823429,
     "next_game": {
@@ -128,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Overcast · gusts 15 mph",
+      "text": "79° · Overcast · gusts 17 mph",
       "highlight": false
     },
     {
@@ -136,15 +135,15 @@
       "highlight": false
     },
     {
-      "text": "activated LHP Brooks Raley.",
-      "highlight": false
-    },
-    {
       "text": "activated 2B Luis Arraez.",
       "highlight": false
     },
     {
-      "text": "optioned LHP Kyle Backhus to Lehigh Valley IronPigs.",
+      "text": "activated LHP Brooks Raley.",
+      "highlight": false
+    },
+    {
+      "text": "optioned RF Gabriel Rincones Jr. to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
