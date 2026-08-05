@@ -5,14 +5,14 @@
     "edition": 126,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-05T00:35:00.278Z",
+    "generated_at": "2026-08-05T00:48:47.213Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 4, 2026, 8:35 PM ET",
+      "generated_at_et": "Aug 4, 2026, 8:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 5, WSH 0",
-    "dek": "Top 8th · 1 out",
-    "summary": "Dylan Crews is up against Jesús Luzardo. Series: PHI leads 1-0.",
+    "dek": "Top 9th · 0 outs",
+    "summary": "Brady House is up against Caleb Kilian. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "79° · Overcast"
+        "value": "78° · Overcast"
       }
     ],
     "bullets": [
-      "Dylan Crews at the plate",
-      "Jesús Luzardo on the mound",
+      "Brady House at the plate",
+      "Caleb Kilian on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 79,
+          "temp_f": 78,
           "condition": "Overcast",
-          "wind": "8 mph · gusts 17",
+          "wind": "9 mph · gusts 17",
           "gusts_mph": 17
         },
         "giveaway": "",
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.38",
+            "era": "3.36",
             "record": "9-5",
-            "whip": "1.17"
+            "whip": "1.16"
           },
           "away": {
             "team": "WSH",
@@ -373,11 +373,11 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 1,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 5,
-              "hits": 9,
+              "hits": 11,
               "errors": 0
             }
           },
@@ -485,8 +485,21 @@
             {
               "num": 8,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
@@ -1318,7 +1331,105 @@
             "event_type": "out",
             "actor": "Dylan Crews",
             "actor_id": 686611,
-            "detail": "Batter Timeout.",
+            "detail": "Dylan Crews grounds out, second baseman Luis Arraez to first baseman Alec Bohm. Nasim Nuñez to 3rd.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:59",
+            "inning": 8,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Andrés Chaparro",
+            "actor_id": 665953,
+            "detail": "Andrés Chaparro grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:60",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm singles on a ground ball to left fielder Daylen Lile.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:61",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto strikes out swinging.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:62",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh pops into a force out, shortstop Nasim Nuñez to second baseman Jorbit Vivas. Alec Bohm out at 2nd. Brandon Marsh to 1…",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:63",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott doubles (22) on a sharp line drive to right fielder Dylan Crews. Brandon Marsh to 3rd.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823432:64",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford strikes out swinging.",
+            "score_after": "PHI 5, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823432:65",
+            "inning": 9,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "other",
+            "actor": "Brady House",
+            "actor_id": 691781,
+            "detail": "Defensive Substitution: Derek Hill replaces right fielder Bryce Harper, batting 3rd, playing right field.",
             "score_after": "PHI 5, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1327,113 +1438,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Dylan Crews",
-            "meta": "vs Jesús Luzardo"
+            "name": "Brady House",
+            "meta": "vs Caleb Kilian"
           },
-          "pitches": [
-            "S",
-            "B",
-            "F"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 1,
-            "strikes": 2,
-            "outs": 1
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
           },
           "bases": {
             "first": false,
-            "second": true,
+            "second": false,
             "third": false
           },
-          "status": "Top 8th"
+          "status": "Top 9th"
         }
       }
     },
-    "injury_report": {
-      "content": {
-        "il_entries": [
-          {
-            "name": "Adolis García",
-            "position": "RF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right latissimus dorsi tear",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-05T00:35:00.278Z",
-            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
-          },
-          {
-            "name": "Johan Rojas",
-            "position": "CF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL repair",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-05T00:35:00.278Z",
-            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
-          },
-          {
-            "name": "Lou Trivino III",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right thoracic muscle spasm",
-            "status_note": "",
-            "retroactive_to": "2026-07-07",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-05T00:35:00.278Z",
-            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
-          },
-          {
-            "name": "Tanner Banks",
-            "position": "LHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Left forearm strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-05T00:35:00.278Z",
-            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL tear",
-            "status_note": "",
-            "retroactive_to": "2026-07-13",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-05T00:35:00.278Z",
-            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
-          },
-          {
-            "name": "Rafael Marchán",
-            "position": "C",
-            "il_type": "10-day",
-            "badge": "il",
-            "injury": "Left knee patellar tendinitis",
-            "status_note": "",
-            "retroactive_to": "2026-07-23",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-05T00:35:00.278Z",
-            "freshness_label": "As of Aug 4, 2026, 8:35 PM ET"
-          }
-        ],
-        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
-      }
-    }
+    "injury_report": null
   },
   "next_game": {
     "label": "Tomorrow",
