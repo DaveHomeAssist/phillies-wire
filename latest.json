@@ -4,7 +4,7 @@
   "edition_date": "2026-08-05",
   "volume": 1,
   "edition": 127,
-  "generated_at": "2026-08-05T23:07:24.488Z",
+  "generated_at": "2026-08-05T23:08:07.545Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -68,16 +68,18 @@
         "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "S"
+        "S",
+        "B",
+        "F"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 2,
         "outs": 0
       },
       "bases": {
-        "first": true,
-        "second": false,
+        "first": false,
+        "second": true,
         "third": false
       },
       "status": "Top 1st"
@@ -88,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-05T23:07:25.390Z",
+    "updated_at": "2026-08-05T23:08:08.098Z",
     "current_game_pk": 823429,
     "next_game_pk": 823430,
     "next_game": {
