@@ -4,7 +4,7 @@
   "edition_date": "2026-08-04",
   "volume": 1,
   "edition": 126,
-  "generated_at": "2026-08-04T23:49:23.599Z",
+  "generated_at": "2026-08-05T00:07:38.518Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, WSH 0",
-    "dek": "Bottom 4th · 1 out",
-    "summary": "Kyle Schwarber is up against Zack Littell. Series: PHI leads 1-0.",
+    "dek": "Middle 6th · 3 outs",
+    "summary": "J.T. Realmuto is up against Zack Littell. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Jake Irvin · PHI vs WSH · Wed, Aug 5 · 6:40 PM"
   },
@@ -55,34 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 80,
       "condition": "Overcast",
-      "wind": "7 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "8 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "J.T. Realmuto",
         "meta": "vs Zack Littell"
       },
       "pitches": [
         "B",
-        "F",
-        "B"
+        "B",
+        "S",
+        "X"
       ],
       "count": {
         "balls": 2,
-        "strikes": 1,
-        "outs": 1
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 4th"
+      "status": "Middle 6th"
     },
     "recap_line": null
   },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-04T23:49:24.384Z",
+    "updated_at": "2026-08-05T00:07:39.292Z",
     "current_game_pk": 823432,
     "next_game_pk": 823429,
     "next_game": {
@@ -127,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Overcast · gusts 12 mph",
+      "text": "80° · Overcast · gusts 15 mph",
       "highlight": false
     },
     {
