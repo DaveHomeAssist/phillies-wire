@@ -4,7 +4,7 @@
   "edition_date": "2026-08-05",
   "volume": 1,
   "edition": 127,
-  "generated_at": "2026-08-05T22:39:32.296Z",
+  "generated_at": "2026-08-05T23:07:24.488Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -18,7 +18,7 @@
   "hero": {
     "headline": "PHI 0, WSH 0",
     "dek": "Top 1st · 0 outs",
-    "summary": "CJ Abrams is up against Andrew Painter. Series: PHI leads 2-0.",
+    "summary": "Abimelec Ortiz is up against Andrew Painter. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Miles Mikolas · PHI vs WSH · Thu, Aug 6 · 6:05 PM"
   },
@@ -57,24 +57,26 @@
     "weather": {
       "temp_f": 80,
       "condition": "Mostly sunny",
-      "wind": "5 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "3 mph · gusts 4",
+      "gusts_mph": 4
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "CJ Abrams",
+        "name": "Abimelec Ortiz",
         "meta": "vs Andrew Painter"
       },
-      "pitches": [],
+      "pitches": [
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
@@ -86,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-05T22:39:32.622Z",
+    "updated_at": "2026-08-05T23:07:25.390Z",
     "current_game_pk": 823429,
     "next_game_pk": 823430,
     "next_game": {
@@ -123,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Mostly sunny · gusts 5 mph",
+      "text": "80° · Mostly sunny · gusts 4 mph",
       "highlight": false
     },
     {
