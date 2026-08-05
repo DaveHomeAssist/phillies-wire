@@ -4,7 +4,7 @@
   "edition_date": "2026-08-05",
   "volume": 1,
   "edition": 127,
-  "generated_at": "2026-08-05T21:44:32.553Z",
+  "generated_at": "2026-08-05T22:10:46.693Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -56,9 +56,9 @@
     },
     "weather": {
       "temp_f": 82,
-      "condition": "Partly cloudy",
-      "wind": "2 mph · gusts 10",
-      "gusts_mph": 10
+      "condition": "Mostly sunny",
+      "wind": "5 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-05T21:44:32.775Z",
+    "updated_at": "2026-08-05T22:10:47.314Z",
     "current_game_pk": 823429,
     "next_game_pk": 823430,
     "next_game": {
@@ -106,7 +106,15 @@
       "highlight": false
     },
     {
-      "text": "82° · Partly cloudy · gusts 10 mph",
+      "text": "82° · Mostly sunny · gusts 11 mph",
+      "highlight": false
+    },
+    {
+      "text": "RHP Lou Trivino III elected free agency.",
+      "highlight": false
+    },
+    {
+      "text": "sent RHP Lou Trivino III outright to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
