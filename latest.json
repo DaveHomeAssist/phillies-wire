@@ -4,7 +4,7 @@
   "edition_date": "2026-08-05",
   "volume": 1,
   "edition": 127,
-  "generated_at": "2026-08-06T00:06:50.936Z",
+  "generated_at": "2026-08-06T00:46:47.512Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, WSH 1",
-    "dek": "Middle 4th · 3 outs",
-    "summary": "Alec Bohm is up against Jake Irvin. Series: PHI leads 2-0.",
+    "dek": "Top 7th · 2 outs",
+    "summary": "Nasim Nuñez is up against Brooks Raley. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Miles Mikolas · PHI vs WSH · Thu, Aug 6 · 6:05 PM"
   },
@@ -56,32 +56,35 @@
     },
     "weather": {
       "temp_f": 79,
-      "condition": "Overcast",
-      "wind": "5 mph · gusts 7",
-      "gusts_mph": 7
+      "condition": "Mostly sunny",
+      "wind": "4 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Jake Irvin"
+        "name": "Nasim Nuñez",
+        "meta": "vs Brooks Raley"
       },
       "pitches": [
         "B",
-        "X"
+        "S",
+        "F",
+        "B",
+        "F"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
-        "outs": 3
+        "balls": 2,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 4th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -89,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-06T00:06:51.555Z",
+    "updated_at": "2026-08-06T00:46:48.054Z",
     "current_game_pk": 823429,
     "next_game_pk": 823430,
     "next_game": {
@@ -126,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Overcast · gusts 7 mph",
+      "text": "79° · Mostly sunny · gusts 6 mph",
       "highlight": false
     },
     {
