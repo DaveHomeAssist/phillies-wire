@@ -4,7 +4,7 @@
   "edition_date": "2026-08-05",
   "volume": 1,
   "edition": 127,
-  "generated_at": "2026-08-06T00:46:47.512Z",
+  "generated_at": "2026-08-06T01:34:30.382Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, WSH 1",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Nasim Nuñez is up against Brooks Raley. Series: PHI leads 2-0.",
+    "headline": "PHI 3, WSH 3",
+    "dek": "Top 9th · 0 outs",
+    "summary": "Nasim Nuñez is up against Jhoan Duran. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Miles Mikolas · PHI vs WSH · Thu, Aug 6 · 6:05 PM"
   },
@@ -56,8 +56,8 @@
     },
     "weather": {
       "temp_f": 79,
-      "condition": "Mostly sunny",
-      "wind": "4 mph · gusts 6",
+      "condition": "Partly cloudy",
+      "wind": "2 mph · gusts 6",
       "gusts_mph": 6
     },
     "score": null,
@@ -65,26 +65,22 @@
     "situation": {
       "batter": {
         "name": "Nasim Nuñez",
-        "meta": "vs Brooks Raley"
+        "meta": "vs Jhoan Duran"
       },
       "pitches": [
-        "B",
-        "S",
-        "F",
-        "B",
-        "F"
+        "B"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 1
+        "balls": 1,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "Top 9th"
     },
     "recap_line": null
   },
@@ -92,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-06T00:46:48.054Z",
+    "updated_at": "2026-08-06T01:34:30.939Z",
     "current_game_pk": 823429,
     "next_game_pk": 823430,
     "next_game": {
@@ -129,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Mostly sunny · gusts 6 mph",
+      "text": "79° · Partly cloudy · gusts 6 mph",
       "highlight": false
     },
     {
