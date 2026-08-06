@@ -4,9 +4,9 @@
   "edition_date": "2026-08-06",
   "volume": 1,
   "edition": 128,
-  "generated_at": "2026-08-06T07:10:36.245Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-06T22:11:14.281Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 61,
@@ -16,11 +16,11 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Nationals @ Phillies · Game 4 of 4",
-    "dek": "Cristopher Sánchez vs Miles Mikolas",
-    "summary": "Cristopher Sánchez vs Miles Mikolas · Nationals @ Phillies · Game 4 of 4",
+    "headline": "PHI 0, WSH 0",
+    "dek": "Top 1st · 2 outs",
+    "summary": "Andrés Chaparro is up against Cristopher Sánchez. Series: PHI leads 2-1.",
     "next_label": "Tomorrow",
-    "next_value": "José Soriano · PHI vs TOR · Fri, Aug 7 · 6:40 PM"
+    "next_value": "Zack Wheeler vs José Soriano · PHI vs TOR · Fri, Aug 7 · 6:40 PM"
   },
   "game": {
     "matchup": "Nationals @ Phillies · Game 4 of 4",
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 2-0"
+      "label": "PHI leads 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,21 +55,40 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 77,
+      "temp_f": 87,
       "condition": "Clear",
-      "wind": "4 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "8 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Andrés Chaparro",
+        "meta": "vs Cristopher Sánchez"
+      },
+      "pitches": [
+        "X"
+      ],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 2
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-06T07:10:36.951Z",
+    "updated_at": "2026-08-06T22:11:14.881Z",
     "current_game_pk": 823430,
     "next_game_pk": 823428,
     "next_game": {
@@ -106,7 +125,11 @@
       "highlight": false
     },
     {
-      "text": "77° · Clear · gusts 11 mph",
+      "text": "87° · Clear · gusts 14 mph",
+      "highlight": false
+    },
+    {
+      "text": "sent C Payton Henry outright to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
