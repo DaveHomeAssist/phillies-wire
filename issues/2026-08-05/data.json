@@ -5,14 +5,14 @@
     "edition": 127,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-06T01:34:30.382Z",
+    "generated_at": "2026-08-06T01:35:53.562Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 5, 2026, 9:34 PM ET",
+      "generated_at_et": "Aug 5, 2026, 9:35 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 3, WSH 3",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Nasim Nuñez is up against Jhoan Duran. Series: PHI leads 2-0.",
+    "dek": "Top 9th · 1 out",
+    "summary": "Brady House is up against Jhoan Duran. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Nasim Nuñez at the plate",
+      "Brady House at the plate",
       "Jhoan Duran on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -377,7 +377,7 @@
           "currentInningOrdinal": "9th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 3,
@@ -1426,9 +1426,23 @@
             "inning": 9,
             "half": "top",
             "team": "WSH",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Nasim Nuñez",
             "actor_id": 683083,
+            "detail": "Nasim Nuñez lines out to left fielder Brandon Marsh.",
+            "score_after": "PHI 3, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:66",
+            "inning": 9,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "other",
+            "actor": "Brady House",
+            "actor_id": 691781,
             "detail": "Play",
             "score_after": "PHI 3, WSH 3",
             "runs": 0,
@@ -1438,16 +1452,17 @@
         ],
         "situation": {
           "batter": {
-            "name": "Nasim Nuñez",
+            "name": "Brady House",
             "meta": "vs Jhoan Duran"
           },
           "pitches": [
-            "B"
+            "B",
+            "F"
           ],
           "count": {
             "balls": 1,
-            "strikes": 0,
-            "outs": 0
+            "strikes": 1,
+            "outs": 1
           },
           "bases": {
             "first": false,
