@@ -5,14 +5,14 @@
     "edition": 127,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-05T23:34:19.303Z",
+    "generated_at": "2026-08-06T00:06:07.090Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 5, 2026, 7:34 PM ET",
+      "generated_at_et": "Aug 5, 2026, 8:06 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, WSH 1",
-    "dek": "Middle 2nd · 3 outs",
-    "summary": "Luis Arraez is up against Jake Irvin. Series: PHI leads 2-0.",
+    "headline": "PHI 2, WSH 1",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "Alec Bohm is up against Jake Irvin. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Mostly sunny"
+        "value": "79° · Overcast"
       }
     ],
     "bullets": [
-      "Luis Arraez at the plate",
+      "Alec Bohm at the plate",
       "Jake Irvin on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,8 +346,8 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
-          "condition": "Mostly sunny",
+          "temp_f": 79,
+          "condition": "Overcast",
           "wind": "5 mph · gusts 7",
           "gusts_mph": 7
         },
@@ -359,34 +359,34 @@
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "6.69",
+            "era": "6.57",
             "record": "1-8",
-            "whip": "1.61"
+            "whip": "1.59"
           },
           "away": {
             "team": "WSH",
             "name": "Jake Irvin",
             "hand": "R",
-            "era": "5.46",
+            "era": "5.58",
             "record": "2-5",
-            "whip": "1.32"
+            "whip": "1.34"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
           "inningState": "Middle",
           "isTopInning": true,
           "outs": 3,
           "teams": {
             "away": {
               "runs": 1,
-              "hits": 2,
+              "hits": 3,
               "errors": 0
             },
             "home": {
-              "runs": 0,
-              "hits": 0,
+              "runs": 2,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -406,6 +406,32 @@
             },
             {
               "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 2,
+                "hits": 3,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
               "away": {
                 "runs": 0,
                 "hits": 0,
@@ -601,22 +627,258 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823429:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez homers (5) on a fly ball to right field.",
+            "score_after": "PHI 1, WSH 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823429:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm singles on a line drive to right fielder Dylan Crews.",
+            "score_after": "PHI 1, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh ground bunts into a force out, catcher Keibert Ruiz to shortstop CJ Abrams. Alec Bohm out at 2nd. Brandon Marsh to 1s…",
+            "score_after": "PHI 1, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:16",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto singles on a fly ball to right fielder Dylan Crews. Brandon Marsh to 3rd.",
+            "score_after": "PHI 1, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:17",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott walks. J.T. Realmuto to 2nd.",
+            "score_after": "PHI 1, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:18",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford out on a sacrifice fly to center fielder Jacob Young. Brandon Marsh scores. J.T. Realmuto to 3rd.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823429:19",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:20",
+            "inning": 3,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "Abimelec Ortiz",
+            "actor_id": 694673,
+            "detail": "Abimelec Ortiz strikes out swinging.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:21",
+            "inning": 3,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "single",
+            "actor": "Dylan Crews",
+            "actor_id": 686611,
+            "detail": "Dylan Crews singles on a line drive to left fielder Brandon Marsh.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:22",
+            "inning": 3,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Daylen Lile",
+            "actor_id": 695734,
+            "detail": "Daylen Lile flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:23",
+            "inning": 3,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "Keibert Ruiz",
+            "actor_id": 660688,
+            "detail": "Keibert Ruiz strikes out swinging.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:24",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner pops out to third baseman Jorbit Vivas.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:25",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper flies out to center fielder Jacob Young.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:26",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez flies out to left fielder Daylen Lile.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:27",
+            "inning": 4,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "José Tena",
+            "actor_id": 677588,
+            "detail": "José Tena grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:28",
+            "inning": 4,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Nasim Nuñez",
+            "actor_id": 683083,
+            "detail": "Nasim Nuñez grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:29",
+            "inning": 4,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Jorbit Vivas",
+            "actor_id": 678391,
+            "detail": "Jorbit Vivas grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "score_after": "PHI 2, WSH 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Luis Arraez",
+            "name": "Alec Bohm",
             "meta": "vs Jake Irvin"
           },
           "pitches": [
-            "S",
-            "F",
             "B",
-            "S"
+            "X"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 3,
+            "balls": 1,
+            "strikes": 0,
             "outs": 3
           },
           "bases": {
@@ -624,7 +886,7 @@
             "second": false,
             "third": false
           },
-          "status": "Middle 2nd"
+          "status": "Middle 4th"
         }
       }
     },
@@ -641,8 +903,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T23:34:19.303Z",
-            "freshness_label": "As of Aug 5, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-08-06T00:06:07.090Z",
+            "freshness_label": "As of Aug 5, 2026, 8:06 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -654,8 +916,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T23:34:19.303Z",
-            "freshness_label": "As of Aug 5, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-08-06T00:06:07.090Z",
+            "freshness_label": "As of Aug 5, 2026, 8:06 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -667,8 +929,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T23:34:19.303Z",
-            "freshness_label": "As of Aug 5, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-08-06T00:06:07.090Z",
+            "freshness_label": "As of Aug 5, 2026, 8:06 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -680,8 +942,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T23:34:19.303Z",
-            "freshness_label": "As of Aug 5, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-08-06T00:06:07.090Z",
+            "freshness_label": "As of Aug 5, 2026, 8:06 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -693,8 +955,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T23:34:19.303Z",
-            "freshness_label": "As of Aug 5, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-08-06T00:06:07.090Z",
+            "freshness_label": "As of Aug 5, 2026, 8:06 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -706,8 +968,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-05T23:34:19.303Z",
-            "freshness_label": "As of Aug 5, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-08-06T00:06:07.090Z",
+            "freshness_label": "As of Aug 5, 2026, 8:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
