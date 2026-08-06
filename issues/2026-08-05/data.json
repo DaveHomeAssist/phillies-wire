@@ -5,14 +5,14 @@
     "edition": 127,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-06T01:35:53.562Z",
+    "generated_at": "2026-08-06T03:51:57.173Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Aug 5, 2026, 9:35 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Aug 5, 2026, 11:51 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 61,
-    "losses": 53,
-    "streak": "W4",
+    "losses": 54,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 3, WSH 3",
-    "dek": "Top 9th · 1 out",
-    "summary": "Brady House is up against Jhoan Duran. Series: PHI leads 2-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 4, WSH 10.",
+    "dek": "WSH 10, PHI 4 · Jake Irvin · 5.1 IP, 3 H, 2 ER, 3 K",
+    "summary": "PHI 4, WSH 10. Final at Citizens Bank Park, Philadelphia. PHI leads 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "79° · Partly cloudy"
+        "label": "Series",
+        "value": "PHI leads 2-1"
       }
     ],
     "bullets": [
-      "Brady House at the plate",
-      "Jhoan Duran on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Jake Irvin: 5.1 IP, 3 H, 2 ER, 3 K",
+      "Andrew Painter: 4.0 IP, 3 H, 1 ER, 4 K",
+      "CJ Abrams: 3-for-5, 3 RBI, 2 R, 1 SB"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Miles Mikolas · PHI vs WSH · Thu, Aug 6 · 6:05 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's WSH at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:40 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Andrew Painter",
-            "hand": "R"
-          },
-          "away": {
-            "team": "WSH",
-            "name": "Jake Irvin",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Andrew Painter",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "WSH",
-            "name": "Jake Irvin",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "CJ Abrams",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Abimelec Ortiz",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Dylan Crews",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Daylen Lile",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Keibert Ruiz",
-              "position": "C",
-              "bats": "S"
-            },
-            {
-              "slot": 6,
-              "name": "José Tena",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Nasim Nuñez",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Jorbit Vivas",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Jacob Young",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "CJ Abrams",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Abimelec Ortiz",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Dylan Crews",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Daylen Lile",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Keibert Ruiz",
-              "position": "C",
-              "bats": "S"
-            },
-            {
-              "slot": 6,
-              "name": "José Tena",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Nasim Nuñez",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Jorbit Vivas",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Jacob Young",
-              "position": "CF",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Nationals @ Phillies · Game 3 of 4",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 2-0"
+          "label": "PHI leads 2-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 79,
-          "condition": "Partly cloudy",
-          "wind": "2 mph · gusts 6",
-          "gusts_mph": 6
+          "temp_f": 78,
+          "condition": "Mostly sunny",
+          "wind": "5 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,19 +116,19 @@
           }
         },
         "linescore": {
-          "currentInning": 9,
-          "currentInningOrdinal": "9th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 1,
+          "currentInning": 11,
+          "currentInningOrdinal": "11th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 3,
-              "hits": 6,
+              "runs": 10,
+              "hits": 10,
               "errors": 0
             },
             "home": {
-              "runs": 3,
+              "runs": 4,
               "hits": 5,
               "errors": 0
             }
@@ -498,12 +241,38 @@
             {
               "num": 9,
               "away": {
-                "runs": null,
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 10,
+              "away": {
+                "runs": 1,
                 "hits": 0,
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 1,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 11,
+              "away": {
+                "runs": 6,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -520,7 +289,7 @@
             "actor": "CJ Abrams",
             "actor_id": 682928,
             "detail": "CJ Abrams hit by pitch.",
-            "score_after": "PHI 0, WSH 0",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -533,8 +302,8 @@
             "event_type": "single",
             "actor": "Abimelec Ortiz",
             "actor_id": 694673,
-            "detail": "Abimelec Ortiz singles on a line drive to right fielder Bryce Harper. CJ Abrams to 3rd.",
-            "score_after": "PHI 0, WSH 0",
+            "detail": "Abimelec Ortiz singles…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -547,8 +316,8 @@
             "event_type": "out",
             "actor": "Dylan Crews",
             "actor_id": 686611,
-            "detail": "Dylan Crews pops out to second baseman Luis Arraez.",
-            "score_after": "PHI 0, WSH 0",
+            "detail": "Dylan Crews pops out to…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -561,8 +330,8 @@
             "event_type": "strikeout",
             "actor": "Daylen Lile",
             "actor_id": 695734,
-            "detail": "Daylen Lile strikes out swinging.",
-            "score_after": "PHI 0, WSH 0",
+            "detail": "Daylen Lile strikes out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -575,7 +344,7 @@
             "event_type": "single",
             "actor": "Keibert Ruiz",
             "actor_id": 660688,
-            "detail": "Keibert Ruiz singles on a sharp line drive to right fielder Bryce Harper. CJ Abrams scores. Abimelec Ortiz to 2nd.",
+            "detail": "Keibert Ruiz singles on…",
             "score_after": "PHI 0, WSH 1",
             "runs": 1,
             "is_scoring": true,
@@ -589,8 +358,8 @@
             "event_type": "out",
             "actor": "José Tena",
             "actor_id": 677588,
-            "detail": "José Tena grounds out, pitcher Andrew Painter to first baseman Alec Bohm.",
-            "score_after": "PHI 0, WSH 1",
+            "detail": "José Tena grounds out,…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -604,7 +373,7 @@
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
             "detail": "Kyle Schwarber walks.",
-            "score_after": "PHI 0, WSH 1",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -617,8 +386,8 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner called out on strikes.",
-            "score_after": "PHI 0, WSH 1",
+            "detail": "Trea Turner called out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -631,8 +400,8 @@
             "event_type": "other",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds into a double play, pitcher Jake Irvin to shortstop CJ Abrams to first baseman Abimelec Ortiz. Kyle Schwarber…",
-            "score_after": "PHI 0, WSH 1",
+            "detail": "Bryce Harper grounds in…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -645,8 +414,8 @@
             "event_type": "out",
             "actor": "Nasim Nuñez",
             "actor_id": 683083,
-            "detail": "Nasim Nuñez grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
-            "score_after": "PHI 0, WSH 1",
+            "detail": "Nasim Nuñez grounds out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -660,7 +429,7 @@
             "actor": "Jorbit Vivas",
             "actor_id": 678391,
             "detail": "Jorbit Vivas walks.",
-            "score_after": "PHI 0, WSH 1",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -673,8 +442,8 @@
             "event_type": "out",
             "actor": "Jacob Young",
             "actor_id": 696285,
-            "detail": "Jacob Young grounds out, third baseman Bryson Stott to first baseman Alec Bohm. Jorbit Vivas to 2nd.",
-            "score_after": "PHI 0, WSH 1",
+            "detail": "Jacob Young grounds out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -687,8 +456,8 @@
             "event_type": "strikeout",
             "actor": "CJ Abrams",
             "actor_id": 682928,
-            "detail": "CJ Abrams strikes out swinging.",
-            "score_after": "PHI 0, WSH 1",
+            "detail": "CJ Abrams strikes out s…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -701,7 +470,7 @@
             "event_type": "home_run",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez homers (5) on a fly ball to right field.",
+            "detail": "Luis Arraez homers (5)…",
             "score_after": "PHI 1, WSH 1",
             "runs": 1,
             "is_scoring": true,
@@ -715,8 +484,8 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a line drive to right fielder Dylan Crews.",
-            "score_after": "PHI 1, WSH 1",
+            "detail": "Alec Bohm singles on a…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -729,8 +498,8 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh ground bunts into a force out, catcher Keibert Ruiz to shortstop CJ Abrams. Alec Bohm out at 2nd. Brandon Marsh to 1s…",
-            "score_after": "PHI 1, WSH 1",
+            "detail": "Brandon Marsh ground bu…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -743,8 +512,8 @@
             "event_type": "single",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto singles on a fly ball to right fielder Dylan Crews. Brandon Marsh to 3rd.",
-            "score_after": "PHI 1, WSH 1",
+            "detail": "J.T. Realmuto singles o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -757,8 +526,8 @@
             "event_type": "walk_hbp",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott walks. J.T. Realmuto to 2nd.",
-            "score_after": "PHI 1, WSH 1",
+            "detail": "Bryson Stott walks. J.T…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -771,7 +540,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford out on a sacrifice fly to center fielder Jacob Young. Brandon Marsh scores. J.T. Realmuto to 3rd.",
+            "detail": "Justin Crawford out on…",
             "score_after": "PHI 2, WSH 1",
             "runs": 1,
             "is_scoring": true,
@@ -785,8 +554,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes out swinging.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Kyle Schwarber strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -799,8 +568,8 @@
             "event_type": "strikeout",
             "actor": "Abimelec Ortiz",
             "actor_id": 694673,
-            "detail": "Abimelec Ortiz strikes out swinging.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Abimelec Ortiz strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -813,8 +582,8 @@
             "event_type": "single",
             "actor": "Dylan Crews",
             "actor_id": 686611,
-            "detail": "Dylan Crews singles on a line drive to left fielder Brandon Marsh.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Dylan Crews singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -827,8 +596,8 @@
             "event_type": "out",
             "actor": "Daylen Lile",
             "actor_id": 695734,
-            "detail": "Daylen Lile flies out to left fielder Brandon Marsh.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Daylen Lile flies out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -841,8 +610,8 @@
             "event_type": "strikeout",
             "actor": "Keibert Ruiz",
             "actor_id": 660688,
-            "detail": "Keibert Ruiz strikes out swinging.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Keibert Ruiz strikes ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -855,8 +624,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner pops out to third baseman Jorbit Vivas.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Trea Turner pops out to…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -869,8 +638,8 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper flies out to center fielder Jacob Young.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Bryce Harper flies out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -883,8 +652,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out to left fielder Daylen Lile.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Luis Arraez flies out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -897,8 +666,8 @@
             "event_type": "out",
             "actor": "José Tena",
             "actor_id": 677588,
-            "detail": "José Tena grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "José Tena grounds out,…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -911,8 +680,8 @@
             "event_type": "out",
             "actor": "Nasim Nuñez",
             "actor_id": 683083,
-            "detail": "Nasim Nuñez grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Nasim Nuñez grounds out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -925,8 +694,8 @@
             "event_type": "out",
             "actor": "Jorbit Vivas",
             "actor_id": 678391,
-            "detail": "Jorbit Vivas grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Jorbit Vivas grounds ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -939,8 +708,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, pitcher Jake Irvin to first baseman Abimelec Ortiz.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Alec Bohm grounds out,…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -953,8 +722,8 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out, second baseman Nasim Nuñez to first baseman Abimelec Ortiz.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Brandon Marsh grounds o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -967,8 +736,8 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto lines out sharply to center fielder Jacob Young.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "J.T. Realmuto lines out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -982,7 +751,7 @@
             "actor": "Jacob Young",
             "actor_id": 696285,
             "detail": "Jacob Young walks.",
-            "score_after": "PHI 2, WSH 1",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -995,8 +764,8 @@
             "event_type": "other",
             "actor": "CJ Abrams",
             "actor_id": 682928,
-            "detail": "CJ Abrams grounds into a double play, shortstop Trea Turner to first baseman Alec Bohm. Jacob Young out at 2nd. CJ Abrams out at 1s…",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "CJ Abrams grounds into…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1009,8 +778,8 @@
             "event_type": "out",
             "actor": "Abimelec Ortiz",
             "actor_id": 694673,
-            "detail": "Abimelec Ortiz grounds out to first baseman Alec Bohm.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Abimelec Ortiz grounds…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1023,8 +792,8 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott pops out to shortstop CJ Abrams.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Bryson Stott pops out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1037,8 +806,8 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford flies out to left fielder Daylen Lile.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Justin Crawford flies o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1051,8 +820,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes out swinging.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Kyle Schwarber strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1065,8 +834,8 @@
             "event_type": "out",
             "actor": "Dylan Crews",
             "actor_id": 686611,
-            "detail": "Dylan Crews grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Dylan Crews grounds out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1079,8 +848,8 @@
             "event_type": "out",
             "actor": "Daylen Lile",
             "actor_id": 695734,
-            "detail": "Daylen Lile flies out to right fielder Bryce Harper.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Daylen Lile flies out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1093,8 +862,8 @@
             "event_type": "out",
             "actor": "Keibert Ruiz",
             "actor_id": 660688,
-            "detail": "Keibert Ruiz flies out to left fielder Brandon Marsh.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Keibert Ruiz flies out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1107,8 +876,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds out, first baseman Abimelec Ortiz to pitcher Jake Irvin.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Trea Turner grounds out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1122,7 +891,7 @@
             "actor": "Bryce Harper",
             "actor_id": 547180,
             "detail": "Bryce Harper walks.",
-            "score_after": "PHI 2, WSH 1",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1135,8 +904,8 @@
             "event_type": "other",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez grounds into a double play, first baseman Abimelec Ortiz to shortstop CJ Abrams to pitcher Will Dion. Bryce Harper out…",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Luis Arraez grounds int…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1149,8 +918,8 @@
             "event_type": "out",
             "actor": "Andrés Chaparro",
             "actor_id": 665953,
-            "detail": "Andrés Chaparro pops out softly to pitcher Brooks Raley.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Andrés Chaparro pops ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1163,8 +932,8 @@
             "event_type": "strikeout",
             "actor": "Nasim Nuñez",
             "actor_id": 683083,
-            "detail": "Nasim Nuñez strikes out swinging.",
-            "score_after": "PHI 2, WSH 1",
+            "detail": "Nasim Nuñez strikes out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1177,7 +946,7 @@
             "event_type": "home_run",
             "actor": "Brady House",
             "actor_id": 691781,
-            "detail": "Brady House homers (8) on a fly ball to right center field.",
+            "detail": "Brady House homers (8)…",
             "score_after": "PHI 2, WSH 2",
             "runs": 1,
             "is_scoring": true,
@@ -1191,7 +960,7 @@
             "event_type": "extra_base_hit",
             "actor": "Jacob Young",
             "actor_id": 696285,
-            "detail": "Jacob Young doubles (15) on a fly ball to right fielder Bryce Harper.",
+            "detail": "Jacob Young doubles (15…",
             "score_after": "PHI 2, WSH 2",
             "runs": 0,
             "is_scoring": false,
@@ -1205,7 +974,7 @@
             "event_type": "single",
             "actor": "CJ Abrams",
             "actor_id": 682928,
-            "detail": "CJ Abrams singles on a ground ball to left fielder Brandon Marsh. Jacob Young scores. CJ Abrams to 2nd.",
+            "detail": "CJ Abrams singles on a…",
             "score_after": "PHI 2, WSH 3",
             "runs": 1,
             "is_scoring": true,
@@ -1219,8 +988,8 @@
             "event_type": "strikeout",
             "actor": "Abimelec Ortiz",
             "actor_id": 694673,
-            "detail": "Abimelec Ortiz called out on strikes.",
-            "score_after": "PHI 2, WSH 3",
+            "detail": "Abimelec Ortiz called o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1234,7 +1003,7 @@
             "actor": "Alec Bohm",
             "actor_id": 664761,
             "detail": "Alec Bohm walks.",
-            "score_after": "PHI 2, WSH 3",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1247,8 +1016,8 @@
             "event_type": "single",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh singles on a ground ball to center fielder Jacob Young. Alec Bohm to 2nd.",
-            "score_after": "PHI 2, WSH 3",
+            "detail": "Brandon Marsh singles o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1261,8 +1030,8 @@
             "event_type": "strikeout",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto called out on strikes.",
-            "score_after": "PHI 2, WSH 3",
+            "detail": "J.T. Realmuto called ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1275,7 +1044,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a sharp line drive to center fielder Jacob Young. Alec Bohm scores. Brandon Marsh to 2nd.",
+            "detail": "Bryson Stott singles on…",
             "score_after": "PHI 3, WSH 3",
             "runs": 1,
             "is_scoring": true,
@@ -1289,8 +1058,8 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill flies out to right fielder Dylan Crews. Brandon Marsh to 3rd.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Derek Hill flies out to…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1303,8 +1072,8 @@
             "event_type": "walk_hbp",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber hit by pitch. Bryson Stott to 2nd.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Kyle Schwarber hit by p…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1317,8 +1086,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner flies out to right fielder Dylan Crews.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Trea Turner flies out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1331,8 +1100,8 @@
             "event_type": "strikeout",
             "actor": "Dylan Crews",
             "actor_id": 686611,
-            "detail": "Dylan Crews strikes out swinging.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Dylan Crews strikes out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1345,8 +1114,8 @@
             "event_type": "out",
             "actor": "Daylen Lile",
             "actor_id": 695734,
-            "detail": "Daylen Lile flies out to right fielder Bryce Harper.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Daylen Lile flies out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1360,7 +1129,7 @@
             "actor": "Keibert Ruiz",
             "actor_id": 660688,
             "detail": "Keibert Ruiz walks.",
-            "score_after": "PHI 3, WSH 3",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1373,8 +1142,8 @@
             "event_type": "strikeout",
             "actor": "Andrés Chaparro",
             "actor_id": 665953,
-            "detail": "Andrés Chaparro strikes out swinging.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Andrés Chaparro strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1387,8 +1156,8 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper flies out to center fielder Jacob Young.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Bryce Harper flies out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1401,8 +1170,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out to center fielder Jacob Young.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Luis Arraez flies out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1415,8 +1184,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm flies out to right fielder Dylan Crews.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Alec Bohm flies out to…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1429,8 +1198,8 @@
             "event_type": "out",
             "actor": "Nasim Nuñez",
             "actor_id": 683083,
-            "detail": "Nasim Nuñez lines out to left fielder Brandon Marsh.",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Nasim Nuñez lines out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1440,37 +1209,422 @@
             "inning": 9,
             "half": "top",
             "team": "WSH",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Brady House",
             "actor_id": 691781,
-            "detail": "Play",
-            "score_after": "PHI 3, WSH 3",
+            "detail": "Brady House strikes out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:67",
+            "inning": 9,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "single",
+            "actor": "Jacob Young",
+            "actor_id": 696285,
+            "detail": "Jacob Young singles on…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:68",
+            "inning": 9,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "single",
+            "actor": "CJ Abrams",
+            "actor_id": 682928,
+            "detail": "CJ Abrams singles on a…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:69",
+            "inning": 9,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Abimelec Ortiz",
+            "actor_id": 694673,
+            "detail": "Abimelec Ortiz grounds…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:70",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:71",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds o…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:72",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Harry Ford challenged (…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:73",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill grounds out,…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:74",
+            "inning": 10,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Dylan Crews",
+            "actor_id": 686611,
+            "detail": "Dylan Crews flies out t…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:75",
+            "inning": 10,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "walk_hbp",
+            "actor": "Daylen Lile",
+            "actor_id": 695734,
+            "detail": "Daylen Lile hit by pitc…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:76",
+            "inning": 10,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Harry Ford",
+            "actor_id": 695670,
+            "detail": "Harry Ford flies out sh…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:77",
+            "inning": 10,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "walk_hbp",
+            "actor": "Andrés Chaparro",
+            "actor_id": 665953,
+            "detail": "Andrés Chaparro walks.…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:78",
+            "inning": 10,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "walk_hbp",
+            "actor": "Nasim Nuñez",
+            "actor_id": 683083,
+            "detail": "Nasim Nuñez walks. Andr…",
+            "score_after": "PHI 3, WSH 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823429:79",
+            "inning": 10,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "Brady House",
+            "actor_id": 691781,
+            "detail": "Brady House strikes out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:80",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber challeng…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:81",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner out on a sa…",
+            "score_after": "PHI 4, WSH 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823429:82",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper walks.",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:83",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Bryce Harper caught ste…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:84",
+            "inning": 11,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "walk_hbp",
+            "actor": "Jacob Young",
+            "actor_id": 696285,
+            "detail": "Jacob Young walks.",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:85",
+            "inning": 11,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "extra_base_hit",
+            "actor": "CJ Abrams",
+            "actor_id": 682928,
+            "detail": "CJ Abrams triples (3) o…",
+            "score_after": "PHI 4, WSH 6",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823429:86",
+            "inning": 11,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Miles Mikolas",
+            "actor_id": 571945,
+            "detail": "Miles Mikolas hits a sa…",
+            "score_after": "PHI 4, WSH 7",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823429:87",
+            "inning": 11,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "walk_hbp",
+            "actor": "Dylan Crews",
+            "actor_id": 686611,
+            "detail": "Dylan Crews walks. Mile…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:88",
+            "inning": 11,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "Daylen Lile",
+            "actor_id": 695734,
+            "detail": "Daylen Lile strikes out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:89",
+            "inning": 11,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "walk_hbp",
+            "actor": "Harry Ford",
+            "actor_id": 695670,
+            "detail": "Harry Ford walks. Miles…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:90",
+            "inning": 11,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "extra_base_hit",
+            "actor": "Andrés Chaparro",
+            "actor_id": 665953,
+            "detail": "Andrés Chaparro doubles…",
+            "score_after": "PHI 4, WSH 9",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823429:91",
+            "inning": 11,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Nasim Nuñez",
+            "actor_id": 683083,
+            "detail": "Nasim Nuñez grounds out…",
+            "score_after": "PHI 4, WSH 10",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823429:92",
+            "inning": 11,
+            "half": "top",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Brady House",
+            "actor_id": 691781,
+            "detail": "Brady House grounds out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:93",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez lines out t…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:94",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out sha…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823429:95",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Brady House",
-            "meta": "vs Jhoan Duran"
-          },
-          "pitches": [
-            "B",
-            "F"
-          ],
-          "count": {
-            "balls": 1,
-            "strikes": 1,
-            "outs": 1
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Top 9th"
-        }
+        ]
       }
     },
     "injury_report": null
