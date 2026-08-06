@@ -4,7 +4,7 @@
   "edition_date": "2026-08-06",
   "volume": 1,
   "edition": 128,
-  "generated_at": "2026-08-06T22:11:14.281Z",
+  "generated_at": "2026-08-06T23:44:07.668Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, WSH 0",
-    "dek": "Top 1st · 2 outs",
-    "summary": "Andrés Chaparro is up against Cristopher Sánchez. Series: PHI leads 2-1.",
+    "headline": "PHI 6, WSH 2",
+    "dek": "Bottom 5th · 0 outs",
+    "summary": "Alec Bohm is up against Miles Mikolas. Series: PHI leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs José Soriano · PHI vs TOR · Fri, Aug 7 · 6:40 PM"
   },
@@ -55,32 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 87,
+      "temp_f": 84,
       "condition": "Clear",
-      "wind": "8 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "6 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Andrés Chaparro",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Alec Bohm",
+        "meta": "vs Miles Mikolas"
       },
       "pitches": [
-        "X"
+        "B",
+        "S",
+        "S",
+        "B"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 2
+        "balls": 2,
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -88,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-06T22:11:14.881Z",
+    "updated_at": "2026-08-06T23:44:08.246Z",
     "current_game_pk": 823430,
     "next_game_pk": 823428,
     "next_game": {
@@ -125,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Clear · gusts 14 mph",
+      "text": "84° · Clear · gusts 15 mph",
       "highlight": false
     },
     {
