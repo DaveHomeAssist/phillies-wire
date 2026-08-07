@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-06",
+  "edition_date": "2026-08-07",
   "volume": 1,
-  "edition": 128,
-  "generated_at": "2026-08-07T03:41:05.002Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 129,
+  "generated_at": "2026-08-07T04:09:40.233Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 62,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 7, WSH 3.",
-    "dek": "PHI 7, WSH 3 · Cristopher Sánchez · 5.0 IP, 6 H, 2 ER, 6 K",
-    "summary": "PHI 7, WSH 3. Final at Citizens Bank Park, Philadelphia. PHI wins 3-1.",
+    "headline": "Blue Jays @ Phillies · Game 1 of 3",
+    "dek": "Zack Wheeler vs José Soriano",
+    "summary": "Zack Wheeler vs José Soriano · Blue Jays @ Phillies · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs José Soriano · PHI vs TOR · Fri, Aug 7 · 6:40 PM"
+    "next_value": "Aaron Nola vs Max Scherzer · PHI vs TOR · Sat, Aug 8 · 6:05 PM"
   },
   "game": {
-    "matchup": "Nationals @ Phillies · Game 4 of 4",
-    "first_pitch": "6:05 PM",
+    "matchup": "Blue Jays @ Phillies · Game 1 of 3",
+    "first_pitch": "6:40 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "away": {
-        "name": "Miles Mikolas",
+        "name": "José Soriano",
         "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Miles Mikolas",
+        "name": "José Soriano",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI wins 3-1"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,7 +57,7 @@
     "weather": {
       "temp_f": 79,
       "condition": "Clear",
-      "wind": "6 mph · gusts 13",
+      "wind": "4 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-07T03:41:05.575Z",
+    "updated_at": "2026-08-07T04:09:41.022Z",
     "current_game_pk": 823428,
     "next_game_pk": 823426,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Nationals @ Phillies · Game 4 of 4 · 6:05 PM",
+      "text": "Blue Jays @ Phillies · Game 1 of 3 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Miles Mikolas",
+      "text": "Zack Wheeler vs José Soriano",
       "highlight": true
     },
     {
@@ -107,10 +107,6 @@
     },
     {
       "text": "79° · Clear · gusts 13 mph",
-      "highlight": false
-    },
-    {
-      "text": "sent C Payton Henry outright to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
