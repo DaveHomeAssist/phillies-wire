@@ -4,21 +4,21 @@
   "edition_date": "2026-08-06",
   "volume": 1,
   "edition": 128,
-  "generated_at": "2026-08-07T00:15:36.976Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-07T01:02:30.025Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 61,
+    "wins": 62,
     "losses": 54,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 7, WSH 3",
-    "dek": "Top 7th · 0 outs",
-    "summary": "Brady House is up against José Alvarado. Series: PHI leads 2-1.",
+    "headline": "PHI 7, WSH 3.",
+    "dek": "PHI 7, WSH 3 · Cristopher Sánchez · 5.0 IP, 6 H, 2 ER, 6 K",
+    "summary": "PHI 7, WSH 3. Final at Citizens Bank Park, Philadelphia. PHI wins 3-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs José Soriano · PHI vs TOR · Fri, Aug 7 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 2-1"
+      "label": "PHI wins 3-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -56,58 +56,41 @@
     },
     "weather": {
       "temp_f": 83,
-      "condition": "Mostly sunny",
-      "wind": "5 mph · gusts 15",
+      "condition": "Partly cloudy",
+      "wind": "6 mph · gusts 15",
       "gusts_mph": 15
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Brady House",
-        "meta": "vs José Alvarado"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-07T00:15:37.354Z",
-    "current_game_pk": 823430,
-    "next_game_pk": 823428,
+    "updated_at": "2026-08-07T01:02:30.752Z",
+    "current_game_pk": 823428,
+    "next_game_pk": 823426,
     "next_game": {
-      "game_pk": 823428,
-      "official_date": "2026-08-07",
-      "date_label": "Fri, Aug 7, 2026",
-      "time_label": "6:40 PM",
+      "game_pk": 823426,
+      "official_date": "2026-08-08",
+      "date_label": "Sat, Aug 8, 2026",
+      "time_label": "6:05 PM",
       "title": "Toronto Blue Jays at Phillies",
       "matchup": "TOR at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823430,
-      "official_date": "2026-08-06",
-      "title": "Washington Nationals at Phillies",
-      "matchup": "WSH at PHI"
+      "game_pk": 823428,
+      "official_date": "2026-08-07",
+      "title": "Toronto Blue Jays at Phillies",
+      "matchup": "TOR at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 61-54",
+      "text": "PHI 62-54",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Mostly sunny · gusts 15 mph",
+      "text": "83° · Partly cloudy · gusts 15 mph",
       "highlight": false
     },
     {
