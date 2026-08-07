@@ -4,7 +4,7 @@
   "edition_date": "2026-08-06",
   "volume": 1,
   "edition": 128,
-  "generated_at": "2026-08-06T23:44:07.668Z",
+  "generated_at": "2026-08-07T00:15:36.976Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, WSH 2",
-    "dek": "Bottom 5th · 0 outs",
-    "summary": "Alec Bohm is up against Miles Mikolas. Series: PHI leads 2-1.",
+    "headline": "PHI 7, WSH 3",
+    "dek": "Top 7th · 0 outs",
+    "summary": "Brady House is up against José Alvarado. Series: PHI leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs José Soriano · PHI vs TOR · Fri, Aug 7 · 6:40 PM"
   },
@@ -55,27 +55,22 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 84,
-      "condition": "Clear",
-      "wind": "6 mph · gusts 15",
+      "temp_f": 83,
+      "condition": "Mostly sunny",
+      "wind": "5 mph · gusts 15",
       "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Miles Mikolas"
+        "name": "Brady House",
+        "meta": "vs José Alvarado"
       },
-      "pitches": [
-        "B",
-        "S",
-        "S",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "outs": 0
       },
       "bases": {
@@ -83,7 +78,7 @@
         "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-06T23:44:08.246Z",
+    "updated_at": "2026-08-07T00:15:37.354Z",
     "current_game_pk": 823430,
     "next_game_pk": 823428,
     "next_game": {
@@ -128,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Clear · gusts 15 mph",
+      "text": "83° · Mostly sunny · gusts 15 mph",
       "highlight": false
     },
     {
