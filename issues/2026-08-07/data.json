@@ -5,14 +5,14 @@
     "edition": 129,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-08T03:03:48.656Z",
+    "generated_at": "2026-08-08T03:05:04.426Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 7, 2026, 11:03 PM ET",
+      "generated_at_et": "Aug 7, 2026, 11:05 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -1319,7 +1319,7 @@
             "event_type": "other",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Mound Visit.",
+            "detail": "Play",
             "score_after": "PHI 2, TOR 4",
             "runs": 0,
             "is_scoring": false,
@@ -1331,10 +1331,15 @@
             "name": "Justin Crawford",
             "meta": "vs Lazaro Estrada"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "S",
+            "S",
+            "B"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
+            "balls": 2,
+            "strikes": 2,
             "outs": 1
           },
           "bases": {
@@ -1359,8 +1364,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T03:03:48.656Z",
-            "freshness_label": "As of Aug 7, 2026, 11:03 PM ET"
+            "last_confirmed": "2026-08-08T03:05:04.426Z",
+            "freshness_label": "As of Aug 7, 2026, 11:05 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1372,8 +1377,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T03:03:48.656Z",
-            "freshness_label": "As of Aug 7, 2026, 11:03 PM ET"
+            "last_confirmed": "2026-08-08T03:05:04.426Z",
+            "freshness_label": "As of Aug 7, 2026, 11:05 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1385,8 +1390,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T03:03:48.656Z",
-            "freshness_label": "As of Aug 7, 2026, 11:03 PM ET"
+            "last_confirmed": "2026-08-08T03:05:04.426Z",
+            "freshness_label": "As of Aug 7, 2026, 11:05 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1398,8 +1403,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T03:03:48.656Z",
-            "freshness_label": "As of Aug 7, 2026, 11:03 PM ET"
+            "last_confirmed": "2026-08-08T03:05:04.426Z",
+            "freshness_label": "As of Aug 7, 2026, 11:05 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1411,8 +1416,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T03:03:48.656Z",
-            "freshness_label": "As of Aug 7, 2026, 11:03 PM ET"
+            "last_confirmed": "2026-08-08T03:05:04.426Z",
+            "freshness_label": "As of Aug 7, 2026, 11:05 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1424,8 +1429,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T03:03:48.656Z",
-            "freshness_label": "As of Aug 7, 2026, 11:03 PM ET"
+            "last_confirmed": "2026-08-08T03:05:04.426Z",
+            "freshness_label": "As of Aug 7, 2026, 11:05 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

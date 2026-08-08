@@ -4,7 +4,7 @@
   "edition_date": "2026-08-07",
   "volume": 1,
   "edition": 129,
-  "generated_at": "2026-08-08T03:03:48.656Z",
+  "generated_at": "2026-08-08T03:05:04.426Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,15 @@
         "name": "Justin Crawford",
         "meta": "vs Lazaro Estrada"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "S",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 2,
         "outs": 1
       },
       "bases": {
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-08T03:03:49.410Z",
+    "updated_at": "2026-08-08T03:05:06.312Z",
     "current_game_pk": 823428,
     "next_game_pk": 823426,
     "next_game": {
