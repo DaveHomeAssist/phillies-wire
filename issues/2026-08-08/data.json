@@ -5,14 +5,14 @@
     "edition": 130,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-08T22:10:23.118Z",
+    "generated_at": "2026-08-08T22:24:06.198Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 8, 2026, 6:10 PM ET",
+      "generated_at_et": "Aug 8, 2026, 6:24 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, TOR 0",
-    "dek": "Top 1st · 2 outs",
-    "summary": "Brett Bateman is up against Aaron Nola. Series: TOR leads 1-0.",
+    "headline": "PHI 0, TOR 1",
+    "dek": "End 1st · 3 outs",
+    "summary": "Ernie Clement is up against Aaron Nola. Series: TOR leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Brett Bateman at the plate",
+      "Ernie Clement at the plate",
       "Aaron Nola on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.53",
+            "era": "5.58",
             "record": "3-9",
             "whip": "1.44"
           },
@@ -367,7 +367,7 @@
             "team": "TOR",
             "name": "Max Scherzer",
             "hand": "R",
-            "era": "7.92",
+            "era": "7.76",
             "record": "1-4",
             "whip": "1.63"
           }
@@ -375,18 +375,18 @@
         "linescore": {
           "currentInning": 1,
           "currentInningOrdinal": "1st",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "inningState": "End",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 0,
+              "runs": 1,
+              "hits": 1,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 0
             }
           },
@@ -394,13 +394,13 @@
             {
               "num": 1,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 1,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -434,32 +434,111 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823426:2",
+            "inning": 1,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "home_run",
+            "actor": "Vladimir Guerrero Jr.",
+            "actor_id": 665489,
+            "detail": "Vladimir Guerrero Jr. homers (7) on a line drive to left field.",
+            "score_after": "PHI 0, TOR 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823426:3",
+            "inning": 1,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "strikeout",
+            "actor": "Jesús Sánchez",
+            "actor_id": 660821,
+            "detail": "Jesús Sánchez called out on strikes.",
+            "score_after": "PHI 0, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out, first baseman Vladimir Guerrero Jr. to pitcher Max Scherzer.",
+            "score_after": "PHI 0, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner singles on a line drive to center fielder Brett Bateman.",
+            "score_after": "PHI 0, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:6",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 0, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:7",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez flies out to left fielder Myles Straw.",
+            "score_after": "PHI 0, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Brett Bateman",
+            "name": "Ernie Clement",
             "meta": "vs Aaron Nola"
           },
           "pitches": [
-            "S",
-            "B",
-            "B",
-            "S",
-            "B",
             "X"
           ],
           "count": {
-            "balls": 3,
-            "strikes": 2,
-            "outs": 2
+            "balls": 0,
+            "strikes": 0,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "End 1st"
         }
       }
     },
@@ -476,8 +555,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:10:23.118Z",
-            "freshness_label": "As of Aug 8, 2026, 6:10 PM ET"
+            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -489,8 +568,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:10:23.118Z",
-            "freshness_label": "As of Aug 8, 2026, 6:10 PM ET"
+            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -502,8 +581,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:10:23.118Z",
-            "freshness_label": "As of Aug 8, 2026, 6:10 PM ET"
+            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -515,8 +594,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:10:23.118Z",
-            "freshness_label": "As of Aug 8, 2026, 6:10 PM ET"
+            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -528,8 +607,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:10:23.118Z",
-            "freshness_label": "As of Aug 8, 2026, 6:10 PM ET"
+            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -541,8 +620,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:10:23.118Z",
-            "freshness_label": "As of Aug 8, 2026, 6:10 PM ET"
+            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
