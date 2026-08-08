@@ -4,7 +4,7 @@
   "edition_date": "2026-08-07",
   "volume": 1,
   "edition": 129,
-  "generated_at": "2026-08-08T00:48:40.339Z",
+  "generated_at": "2026-08-08T00:50:45.442Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,7 +17,7 @@
   },
   "hero": {
     "headline": "PHI 0, TOR 0",
-    "dek": "Middle 1st · 3 outs",
+    "dek": "Bottom 1st · 1 out",
     "summary": "Kyle Schwarber is up against José Soriano. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Max Scherzer · PHI vs TOR · Sat, Aug 8 · 6:05 PM"
@@ -70,19 +70,20 @@
       "pitches": [
         "S",
         "F",
+        "F",
         "S"
       ],
       "count": {
         "balls": 0,
         "strikes": 3,
-        "outs": 3
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-08T00:48:41.188Z",
+    "updated_at": "2026-08-08T00:50:45.948Z",
     "current_game_pk": 823428,
     "next_game_pk": 823426,
     "next_game": {
