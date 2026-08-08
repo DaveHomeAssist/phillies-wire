@@ -4,7 +4,7 @@
   "edition_date": "2026-08-08",
   "volume": 1,
   "edition": 130,
-  "generated_at": "2026-08-08T23:42:26.643Z",
+  "generated_at": "2026-08-08T23:54:55.323Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, TOR 2",
-    "dek": "End 5th · 3 outs",
-    "summary": "Jesús Sánchez is up against Aaron Nola. Series: TOR leads 1-0.",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Kyle Schwarber is up against Max Scherzer. Series: TOR leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Shane Bieber · PHI vs TOR · Sun, Aug 9 · 1:35 PM"
   },
@@ -56,7 +56,7 @@
     },
     "weather": {
       "temp_f": 79,
-      "condition": "Clear",
+      "condition": "Mostly sunny",
       "wind": "4 mph · gusts 11",
       "gusts_mph": 11
     },
@@ -64,29 +64,25 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jesús Sánchez",
-        "meta": "vs Aaron Nola"
+        "name": "Kyle Schwarber",
+        "meta": "vs Max Scherzer"
       },
       "pitches": [
         "B",
         "F",
-        "F",
-        "F",
-        "F",
-        "B",
-        "X"
+        "F"
       ],
       "count": {
-        "balls": 2,
+        "balls": 1,
         "strikes": 2,
-        "outs": 3
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -94,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-08T23:42:27.317Z",
+    "updated_at": "2026-08-08T23:54:56.210Z",
     "current_game_pk": 823426,
     "next_game_pk": 823425,
     "next_game": {
@@ -131,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 11 mph",
+      "text": "79° · Mostly sunny · gusts 11 mph",
       "highlight": false
     }
   ]
