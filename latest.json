@@ -4,7 +4,7 @@
   "edition_date": "2026-08-08",
   "volume": 1,
   "edition": 130,
-  "generated_at": "2026-08-08T22:08:05.129Z",
+  "generated_at": "2026-08-08T22:10:23.118Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,7 +17,7 @@
   },
   "hero": {
     "headline": "PHI 0, TOR 0",
-    "dek": "Top 1st · 1 out",
+    "dek": "Top 1st · 2 outs",
     "summary": "Brett Bateman is up against Aaron Nola. Series: TOR leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Shane Bieber · PHI vs TOR · Sun, Aug 9 · 1:35 PM"
@@ -67,11 +67,18 @@
         "name": "Brett Bateman",
         "meta": "vs Aaron Nola"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "B",
+        "S",
+        "B",
+        "X"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "balls": 3,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
@@ -86,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-08T22:08:05.725Z",
+    "updated_at": "2026-08-08T22:10:23.430Z",
     "current_game_pk": 823426,
     "next_game_pk": 823425,
     "next_game": {
