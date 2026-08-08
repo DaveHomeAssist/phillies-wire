@@ -4,7 +4,7 @@
   "edition_date": "2026-08-08",
   "volume": 1,
   "edition": 130,
-  "generated_at": "2026-08-08T23:26:01.460Z",
+  "generated_at": "2026-08-08T23:41:00.562Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, TOR 2",
-    "dek": "End 4th · 3 outs",
-    "summary": "Nathan Lukes is up against Aaron Nola. Series: TOR leads 1-0.",
+    "dek": "End 5th · 3 outs",
+    "summary": "Jesús Sánchez is up against Aaron Nola. Series: TOR leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Shane Bieber · PHI vs TOR · Sun, Aug 9 · 1:35 PM"
   },
@@ -55,24 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "5 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "4 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Nathan Lukes",
+        "name": "Jesús Sánchez",
         "meta": "vs Aaron Nola"
       },
       "pitches": [
+        "B",
+        "F",
+        "F",
+        "F",
+        "F",
+        "B",
         "X"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 2,
         "outs": 3
       },
       "bases": {
@@ -80,7 +86,7 @@
         "second": false,
         "third": false
       },
-      "status": "End 4th"
+      "status": "End 5th"
     },
     "recap_line": null
   },
@@ -88,7 +94,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-08T23:26:02.104Z",
+    "updated_at": "2026-08-08T23:41:01.393Z",
     "current_game_pk": 823426,
     "next_game_pk": 823425,
     "next_game": {
@@ -125,7 +131,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 14 mph",
+      "text": "79° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
