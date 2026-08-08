@@ -4,7 +4,7 @@
   "edition_date": "2026-08-07",
   "volume": 1,
   "edition": 129,
-  "generated_at": "2026-08-08T00:50:45.442Z",
+  "generated_at": "2026-08-08T01:31:56.842Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, TOR 0",
-    "dek": "Bottom 1st · 1 out",
-    "summary": "Kyle Schwarber is up against José Soriano. Series: Regular Season.",
+    "headline": "PHI 2, TOR 2",
+    "dek": "Bottom 3rd · 2 outs",
+    "summary": "Luis Arraez is up against José Soriano. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Max Scherzer · PHI vs TOR · Sat, Aug 8 · 6:05 PM"
   },
@@ -57,33 +57,34 @@
     "weather": {
       "temp_f": 76,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "1 mph · gusts 2",
+      "gusts_mph": 2
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Bryce Harper",
         "meta": "vs José Soriano"
       },
       "pitches": [
         "S",
+        "B",
         "F",
         "F",
-        "S"
+        "X"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 3,
-        "outs": 1
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -91,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-08T00:50:45.948Z",
+    "updated_at": "2026-08-08T01:31:57.347Z",
     "current_game_pk": 823428,
     "next_game_pk": 823426,
     "next_game": {
@@ -128,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 10 mph",
+      "text": "76° · Overcast · gusts 2 mph",
       "highlight": false
     },
     {
