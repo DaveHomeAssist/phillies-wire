@@ -5,14 +5,14 @@
     "edition": 129,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-08T01:32:56.968Z",
+    "generated_at": "2026-08-08T02:25:42.557Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 7, 2026, 9:32 PM ET",
+      "generated_at_et": "Aug 7, 2026, 10:25 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 2, TOR 2",
-    "dek": "End 3rd · 3 outs",
-    "summary": "Andrés Giménez is up against Zack Wheeler. Series: Regular Season.",
+    "headline": "PHI 2, TOR 3",
+    "dek": "Top 6th · 1 out",
+    "summary": "Josh Smith is up against Zack Wheeler. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Andrés Giménez at the plate",
+      "Josh Smith at the plate",
       "Zack Wheeler on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 76,
           "condition": "Overcast",
-          "wind": "1 mph · gusts 2",
-          "gusts_mph": 2
+          "wind": "2 mph · gusts 3",
+          "gusts_mph": 3
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,34 +359,34 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.58",
+            "era": "2.61",
             "record": "10-2",
-            "whip": "0.94"
+            "whip": "0.95"
           },
           "away": {
             "team": "TOR",
             "name": "José Soriano",
             "hand": "R",
-            "era": "3.23",
+            "era": "3.24",
             "record": "9-6",
-            "whip": "1.24"
+            "whip": "1.26"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
-          "inningState": "End",
-          "isTopInning": false,
-          "outs": 3,
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 1,
           "teams": {
             "away": {
-              "runs": 2,
-              "hits": 2,
+              "runs": 3,
+              "hits": 5,
               "errors": 1
             },
             "home": {
               "runs": 2,
-              "hits": 3,
+              "hits": 4,
               "errors": 0
             }
           },
@@ -427,6 +427,45 @@
               "home": {
                 "runs": 1,
                 "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 1,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -810,28 +849,308 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823428:27",
+            "inning": 4,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "strikeout",
+            "actor": "Andrés Giménez",
+            "actor_id": 665926,
+            "detail": "Andrés Giménez strikes out swinging.",
+            "score_after": "PHI 2, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:28",
+            "inning": 4,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Ernie Clement",
+            "actor_id": 676391,
+            "detail": "Ernie Clement grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "score_after": "PHI 2, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:29",
+            "inning": 4,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "single",
+            "actor": "Josh Smith",
+            "actor_id": 669701,
+            "detail": "Josh Smith singles on a sharp line drive to right fielder Bryce Harper.",
+            "score_after": "PHI 2, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:30",
+            "inning": 4,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "walk_hbp",
+            "actor": "Brett Bateman",
+            "actor_id": 703520,
+            "detail": "Brett Bateman walks. Josh Smith to 2nd.",
+            "score_after": "PHI 2, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:31",
+            "inning": 4,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "single",
+            "actor": "Nathan Lukes",
+            "actor_id": 664770,
+            "detail": "Nathan Lukes singles on a ground ball to right fielder Bryce Harper. Josh Smith scores. Brett Bateman to 3rd.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823428:32",
+            "inning": 4,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Alejandro Kirk",
+            "actor_id": 672386,
+            "detail": "Alejandro Kirk grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm walks.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:34",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh lines out to left fielder Jesús Sánchez.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:35",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds into a double play, third baseman Josh Smith to second baseman Ernie Clement to first baseman Kazuma Okamoto.…",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:36",
+            "inning": 5,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "extra_base_hit",
+            "actor": "Jesús Sánchez",
+            "actor_id": 660821,
+            "detail": "Jesús Sánchez doubles (15) on a sharp line drive to right fielder Bryce Harper.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823428:37",
+            "inning": 5,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "George Springer",
+            "actor_id": 543807,
+            "detail": "George Springer grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:38",
+            "inning": 5,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Kazuma Okamoto",
+            "actor_id": 672960,
+            "detail": "Kazuma Okamoto pops out to third baseman Bryson Stott in foul territory.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:39",
+            "inning": 5,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Andrés Giménez",
+            "actor_id": 665926,
+            "detail": "Andrés Giménez lines out to shortstop Trea Turner.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:40",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott walks.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:41",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford doubles (14) on a line drive to center fielder Brett Bateman. Bryson Stott to 3rd.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823428:42",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:43",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner strikes out swinging.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:44",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out on a foul tip.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:45",
+            "inning": 6,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Ernie Clement",
+            "actor_id": 676391,
+            "detail": "Ernie Clement pops out to catcher J.T. Realmuto.",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823428:46",
+            "inning": 6,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "other",
+            "actor": "Josh Smith",
+            "actor_id": 669701,
+            "detail": "Play",
+            "score_after": "PHI 2, TOR 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Andrés Giménez",
+            "name": "Josh Smith",
             "meta": "vs Zack Wheeler"
           },
           "pitches": [
-            "F",
-            "X"
+            "S",
+            "S"
           ],
           "count": {
             "balls": 0,
-            "strikes": 1,
-            "outs": 3
+            "strikes": 2,
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 3rd"
+          "status": "Top 6th"
         }
       }
     },
@@ -848,8 +1167,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T01:32:56.968Z",
-            "freshness_label": "As of Aug 7, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-08-08T02:25:42.557Z",
+            "freshness_label": "As of Aug 7, 2026, 10:25 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -861,8 +1180,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T01:32:56.968Z",
-            "freshness_label": "As of Aug 7, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-08-08T02:25:42.557Z",
+            "freshness_label": "As of Aug 7, 2026, 10:25 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -874,8 +1193,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T01:32:56.968Z",
-            "freshness_label": "As of Aug 7, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-08-08T02:25:42.557Z",
+            "freshness_label": "As of Aug 7, 2026, 10:25 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -887,8 +1206,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T01:32:56.968Z",
-            "freshness_label": "As of Aug 7, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-08-08T02:25:42.557Z",
+            "freshness_label": "As of Aug 7, 2026, 10:25 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -900,8 +1219,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T01:32:56.968Z",
-            "freshness_label": "As of Aug 7, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-08-08T02:25:42.557Z",
+            "freshness_label": "As of Aug 7, 2026, 10:25 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -913,8 +1232,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T01:32:56.968Z",
-            "freshness_label": "As of Aug 7, 2026, 9:32 PM ET"
+            "last_confirmed": "2026-08-08T02:25:42.557Z",
+            "freshness_label": "As of Aug 7, 2026, 10:25 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
