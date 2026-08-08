@@ -4,7 +4,7 @@
   "edition_date": "2026-08-07",
   "volume": 1,
   "edition": 129,
-  "generated_at": "2026-08-08T00:27:14.678Z",
+  "generated_at": "2026-08-08T00:48:40.339Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, TOR 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Nathan Lukes is up against Zack Wheeler. Series: Regular Season.",
+    "dek": "Middle 1st · 3 outs",
+    "summary": "Kyle Schwarber is up against José Soriano. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Max Scherzer · PHI vs TOR · Sat, Aug 8 · 6:05 PM"
   },
@@ -55,30 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 76,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "4 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Nathan Lukes",
-        "meta": "vs Zack Wheeler"
+        "name": "Kyle Schwarber",
+        "meta": "vs José Soriano"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "F",
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Middle 1st"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-08T00:27:15.294Z",
+    "updated_at": "2026-08-08T00:48:41.188Z",
     "current_game_pk": 823428,
     "next_game_pk": 823426,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 11 mph",
+      "text": "76° · Overcast · gusts 10 mph",
       "highlight": false
     },
     {
