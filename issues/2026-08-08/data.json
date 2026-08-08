@@ -5,7 +5,7 @@
     "edition": 130,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-08T22:24:06.198Z",
+    "generated_at": "2026-08-08T22:24:49.216Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -29,7 +29,7 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, TOR 1",
-    "dek": "End 1st · 3 outs",
+    "dek": "Top 2nd · 0 outs",
     "summary": "Ernie Clement is up against Aaron Nola. Series: TOR leads 1-0.",
     "cards": [
       {
@@ -367,17 +367,17 @@
             "team": "TOR",
             "name": "Max Scherzer",
             "hand": "R",
-            "era": "7.76",
+            "era": "7.84",
             "record": "1-4",
-            "whip": "1.63"
+            "whip": "1.65"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "End",
-          "isTopInning": false,
-          "outs": 3,
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 1,
@@ -401,6 +401,19 @@
               "home": {
                 "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -518,6 +531,20 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823426:8",
+            "inning": 2,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "other",
+            "actor": "Ernie Clement",
+            "actor_id": 676391,
+            "detail": "Play",
+            "score_after": "PHI 0, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
@@ -525,20 +552,18 @@
             "name": "Ernie Clement",
             "meta": "vs Aaron Nola"
           },
-          "pitches": [
-            "X"
-          ],
+          "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 3
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 1st"
+          "status": "Top 2nd"
         }
       }
     },
@@ -555,7 +580,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "last_confirmed": "2026-08-08T22:24:49.216Z",
             "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
@@ -568,7 +593,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "last_confirmed": "2026-08-08T22:24:49.216Z",
             "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
@@ -581,7 +606,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "last_confirmed": "2026-08-08T22:24:49.216Z",
             "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
@@ -594,7 +619,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "last_confirmed": "2026-08-08T22:24:49.216Z",
             "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
@@ -607,7 +632,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "last_confirmed": "2026-08-08T22:24:49.216Z",
             "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           },
           {
@@ -620,7 +645,7 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:24:06.198Z",
+            "last_confirmed": "2026-08-08T22:24:49.216Z",
             "freshness_label": "As of Aug 8, 2026, 6:24 PM ET"
           }
         ],
