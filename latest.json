@@ -4,9 +4,9 @@
   "edition_date": "2026-08-08",
   "volume": 1,
   "edition": 130,
-  "generated_at": "2026-08-08T21:42:21.030Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-08T21:44:07.887Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 62,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Blue Jays @ Phillies · Game 2 of 3",
-    "dek": "Aaron Nola vs Max Scherzer",
-    "summary": "Aaron Nola vs Max Scherzer · Blue Jays @ Phillies · Game 2 of 3",
+    "headline": "PHI 0, TOR 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Nathan Lukes is up against Aaron Nola. Series: TOR leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Shane Bieber · PHI vs TOR · Sun, Aug 9 · 1:35 PM"
   },
@@ -62,14 +62,31 @@
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Nathan Lukes",
+        "meta": "vs Aaron Nola"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-08T21:42:21.548Z",
+    "updated_at": "2026-08-08T21:44:08.167Z",
     "current_game_pk": 823426,
     "next_game_pk": 823425,
     "next_game": {
