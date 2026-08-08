@@ -5,14 +5,14 @@
     "edition": 130,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-08T21:57:35.084Z",
+    "generated_at": "2026-08-08T22:08:05.129Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 8, 2026, 5:57 PM ET",
+      "generated_at_et": "Aug 8, 2026, 6:08 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, TOR 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Nathan Lukes is up against Aaron Nola. Series: TOR leads 1-0.",
+    "dek": "Top 1st · 1 out",
+    "summary": "Brett Bateman is up against Aaron Nola. Series: TOR leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Nathan Lukes at the plate",
+      "Brett Bateman at the plate",
       "Aaron Nola on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 81,
           "condition": "Clear",
-          "wind": "8 mph · gusts 17",
+          "wind": "7 mph · gusts 17",
           "gusts_mph": 17
         },
         "giveaway": "",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.55",
+            "era": "5.53",
             "record": "3-9",
             "whip": "1.44"
           },
@@ -377,7 +377,7 @@
           "currentInningOrdinal": "1st",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
@@ -412,10 +412,24 @@
             "inning": 1,
             "half": "top",
             "team": "TOR",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Nathan Lukes",
             "actor_id": 664770,
-            "detail": "Status Change - Warmup",
+            "detail": "Nathan Lukes grounds out, first baseman Kyle Schwarber to pitcher Aaron Nola.",
+            "score_after": "PHI 0, TOR 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:1",
+            "inning": 1,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "other",
+            "actor": "Brett Bateman",
+            "actor_id": 703520,
+            "detail": "Play",
             "score_after": "PHI 0, TOR 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,14 +438,14 @@
         ],
         "situation": {
           "batter": {
-            "name": "Nathan Lukes",
+            "name": "Brett Bateman",
             "meta": "vs Aaron Nola"
           },
           "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 0
+            "outs": 1
           },
           "bases": {
             "first": false,
@@ -455,8 +469,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T21:57:35.084Z",
-            "freshness_label": "As of Aug 8, 2026, 5:57 PM ET"
+            "last_confirmed": "2026-08-08T22:08:05.129Z",
+            "freshness_label": "As of Aug 8, 2026, 6:08 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -468,8 +482,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T21:57:35.084Z",
-            "freshness_label": "As of Aug 8, 2026, 5:57 PM ET"
+            "last_confirmed": "2026-08-08T22:08:05.129Z",
+            "freshness_label": "As of Aug 8, 2026, 6:08 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -481,8 +495,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T21:57:35.084Z",
-            "freshness_label": "As of Aug 8, 2026, 5:57 PM ET"
+            "last_confirmed": "2026-08-08T22:08:05.129Z",
+            "freshness_label": "As of Aug 8, 2026, 6:08 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -494,8 +508,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T21:57:35.084Z",
-            "freshness_label": "As of Aug 8, 2026, 5:57 PM ET"
+            "last_confirmed": "2026-08-08T22:08:05.129Z",
+            "freshness_label": "As of Aug 8, 2026, 6:08 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -507,8 +521,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T21:57:35.084Z",
-            "freshness_label": "As of Aug 8, 2026, 5:57 PM ET"
+            "last_confirmed": "2026-08-08T22:08:05.129Z",
+            "freshness_label": "As of Aug 8, 2026, 6:08 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -520,8 +534,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T21:57:35.084Z",
-            "freshness_label": "As of Aug 8, 2026, 5:57 PM ET"
+            "last_confirmed": "2026-08-08T22:08:05.129Z",
+            "freshness_label": "As of Aug 8, 2026, 6:08 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
