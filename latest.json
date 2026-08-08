@@ -1,46 +1,46 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-07",
+  "edition_date": "2026-08-08",
   "volume": 1,
-  "edition": 129,
-  "generated_at": "2026-08-08T03:45:00.152Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "edition": 130,
+  "generated_at": "2026-08-08T04:13:25.924Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 62,
-    "losses": 54,
-    "streak": "W1",
+    "losses": 55,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, TOR 5",
-    "dek": "Bottom 9th · 0 outs",
-    "summary": "Bryson Stott is up against Tyler Rogers. Series: Regular Season.",
+    "headline": "Blue Jays @ Phillies · Game 2 of 3",
+    "dek": "Aaron Nola vs Max Scherzer",
+    "summary": "Aaron Nola vs Max Scherzer · Blue Jays @ Phillies · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Max Scherzer · PHI vs TOR · Sat, Aug 8 · 6:05 PM"
+    "next_value": "Jesús Luzardo · PHI vs TOR · Sun, Aug 9 · 1:35 PM"
   },
   "game": {
-    "matchup": "Blue Jays @ Phillies · Game 1 of 3",
-    "first_pitch": "6:40 PM",
+    "matchup": "Blue Jays @ Phillies · Game 2 of 3",
+    "first_pitch": "6:05 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "away": {
-        "name": "José Soriano",
+        "name": "Max Scherzer",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "opp": {
-        "name": "José Soriano",
+        "name": "Max Scherzer",
         "hand": "R"
       }
     },
@@ -57,70 +57,48 @@
     "weather": {
       "temp_f": 76,
       "condition": "Overcast",
-      "wind": "2 mph · gusts 4",
+      "wind": "1 mph · gusts 4",
       "gusts_mph": 4
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Tyler Rogers"
-      },
-      "pitches": [
-        "B",
-        "B",
-        "S",
-        "B"
-      ],
-      "count": {
-        "balls": 4,
-        "strikes": 1,
-        "outs": 0
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-08T03:45:01.410Z",
-    "current_game_pk": 823428,
-    "next_game_pk": 823426,
+    "updated_at": "2026-08-08T04:13:26.676Z",
+    "current_game_pk": 823426,
+    "next_game_pk": 823425,
     "next_game": {
-      "game_pk": 823426,
-      "official_date": "2026-08-08",
-      "date_label": "Sat, Aug 8, 2026",
-      "time_label": "6:05 PM",
+      "game_pk": 823425,
+      "official_date": "2026-08-09",
+      "date_label": "Sun, Aug 9, 2026",
+      "time_label": "1:35 PM",
       "title": "Toronto Blue Jays at Phillies",
       "matchup": "TOR at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823428,
-      "official_date": "2026-08-07",
+      "game_pk": 823426,
+      "official_date": "2026-08-08",
       "title": "Toronto Blue Jays at Phillies",
       "matchup": "TOR at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 62-54",
+      "text": "PHI 62-55",
       "highlight": true
     },
     {
-      "text": "Blue Jays @ Phillies · Game 1 of 3 · 6:40 PM",
+      "text": "Blue Jays @ Phillies · Game 2 of 3 · 6:05 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs José Soriano",
+      "text": "Aaron Nola vs Max Scherzer",
       "highlight": true
     },
     {
@@ -129,10 +107,6 @@
     },
     {
       "text": "76° · Overcast · gusts 4 mph",
-      "highlight": false
-    },
-    {
-      "text": "signed free agent RHP Lou Trivino III to a minor league contract.",
       "highlight": false
     }
   ]
