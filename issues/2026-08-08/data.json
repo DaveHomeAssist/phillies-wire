@@ -5,14 +5,14 @@
     "edition": 130,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-08T22:57:37.772Z",
+    "generated_at": "2026-08-08T23:10:05.632Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 8, 2026, 6:57 PM ET",
+      "generated_at_et": "Aug 8, 2026, 7:10 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, TOR 2",
-    "dek": "Top 3rd · 1 out",
-    "summary": "Jesús Sánchez is up against Aaron Nola. Series: TOR leads 1-0.",
+    "dek": "Top 4th · 0 outs",
+    "summary": "Andrés Giménez is up against Aaron Nola. Series: TOR leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Mostly sunny"
+        "value": "80° · Clear"
       }
     ],
     "bullets": [
-      "Jesús Sánchez at the plate",
+      "Andrés Giménez at the plate",
       "Aaron Nola on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 80,
-          "condition": "Mostly sunny",
-          "wind": "6 mph · gusts 16",
-          "gusts_mph": 16
+          "condition": "Clear",
+          "wind": "5 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.53",
+            "era": "5.56",
             "record": "3-9",
             "whip": "1.45"
           },
@@ -367,7 +367,7 @@
             "team": "TOR",
             "name": "Max Scherzer",
             "hand": "R",
-            "era": "7.44",
+            "era": "7.29",
             "record": "1-4",
             "whip": "1.59"
           }
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 3,
           "currentInningOrdinal": "3rd",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 1,
+          "inningState": "End",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 2,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 0,
-              "hits": 2,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -425,8 +425,8 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -718,10 +718,80 @@
             "inning": 3,
             "half": "top",
             "team": "TOR",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Jesús Sánchez",
             "actor_id": 660821,
-            "detail": "Mound Visit.",
+            "detail": "Jesús Sánchez flies out to right fielder Bryan De La Cruz. Brett Bateman to 3rd.",
+            "score_after": "PHI 0, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:21",
+            "inning": 3,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "strikeout",
+            "actor": "Ernie Clement",
+            "actor_id": 676391,
+            "detail": "Ernie Clement strikes out on a foul tip.",
+            "score_after": "PHI 0, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs strikes out swinging.",
+            "score_after": "PHI 0, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber singles on a soft ground ball to third baseman Josh Smith.",
+            "score_after": "PHI 0, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:24",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, third baseman Josh Smith to first baseman Vladimir Guerrero Jr. Kyle Schwarber to 2nd.",
+            "score_after": "PHI 0, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:25",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper flies out to left fielder Myles Straw.",
             "score_after": "PHI 0, TOR 2",
             "runs": 0,
             "is_scoring": false,
@@ -730,21 +800,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "Jesús Sánchez",
+            "name": "Andrés Giménez",
             "meta": "vs Aaron Nola"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "B",
+            "S",
+            "X"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 1
+            "balls": 3,
+            "strikes": 1,
+            "outs": 3
           },
           "bases": {
-            "first": true,
-            "second": true,
+            "first": false,
+            "second": false,
             "third": false
           },
-          "status": "Top 3rd"
+          "status": "End 3rd"
         }
       }
     },
@@ -761,8 +836,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:57:37.772Z",
-            "freshness_label": "As of Aug 8, 2026, 6:57 PM ET"
+            "last_confirmed": "2026-08-08T23:10:05.632Z",
+            "freshness_label": "As of Aug 8, 2026, 7:10 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -774,8 +849,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:57:37.772Z",
-            "freshness_label": "As of Aug 8, 2026, 6:57 PM ET"
+            "last_confirmed": "2026-08-08T23:10:05.632Z",
+            "freshness_label": "As of Aug 8, 2026, 7:10 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -787,8 +862,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:57:37.772Z",
-            "freshness_label": "As of Aug 8, 2026, 6:57 PM ET"
+            "last_confirmed": "2026-08-08T23:10:05.632Z",
+            "freshness_label": "As of Aug 8, 2026, 7:10 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -800,8 +875,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:57:37.772Z",
-            "freshness_label": "As of Aug 8, 2026, 6:57 PM ET"
+            "last_confirmed": "2026-08-08T23:10:05.632Z",
+            "freshness_label": "As of Aug 8, 2026, 7:10 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -813,8 +888,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:57:37.772Z",
-            "freshness_label": "As of Aug 8, 2026, 6:57 PM ET"
+            "last_confirmed": "2026-08-08T23:10:05.632Z",
+            "freshness_label": "As of Aug 8, 2026, 7:10 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -826,8 +901,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-08T22:57:37.772Z",
-            "freshness_label": "As of Aug 8, 2026, 6:57 PM ET"
+            "last_confirmed": "2026-08-08T23:10:05.632Z",
+            "freshness_label": "As of Aug 8, 2026, 7:10 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
