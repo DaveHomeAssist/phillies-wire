@@ -5,14 +5,14 @@
     "edition": 129,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-08T03:44:26.075Z",
+    "generated_at": "2026-08-08T03:45:00.152Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 7, 2026, 11:44 PM ET",
+      "generated_at_et": "Aug 7, 2026, 11:45 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 76,
           "condition": "Overcast",
-          "wind": "2 mph · gusts 5",
-          "gusts_mph": 5
+          "wind": "2 mph · gusts 4",
+          "gusts_mph": 4
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -1566,10 +1566,10 @@
             "inning": 9,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Play",
+            "detail": "Bryson Stott walks.",
             "score_after": "PHI 2, TOR 5",
             "runs": 0,
             "is_scoring": false,
@@ -1584,15 +1584,16 @@
           "pitches": [
             "B",
             "B",
-            "S"
+            "S",
+            "B"
           ],
           "count": {
-            "balls": 2,
+            "balls": 4,
             "strikes": 1,
             "outs": 0
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
