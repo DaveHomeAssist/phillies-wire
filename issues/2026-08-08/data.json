@@ -5,14 +5,14 @@
     "edition": 130,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-09T01:32:36.052Z",
+    "generated_at": "2026-08-09T02:29:53.215Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Aug 8, 2026, 9:32 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Aug 8, 2026, 10:29 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 62,
-    "losses": 55,
-    "streak": "L1",
+    "losses": 56,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 4, TOR 5",
-    "dek": "Middle 10th · 3 outs",
-    "summary": "Bryce Harper is up against Louis Varland. Series: TOR leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 5, TOR 7.",
+    "dek": "TOR 7, PHI 5 · Aaron Nola · 5.0 IP, 6 H, 2 ER, 8 K",
+    "summary": "PHI 5, TOR 7. Final at Citizens Bank Park, Philadelphia. TOR wins 2-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "78° · Clear"
+        "label": "Series",
+        "value": "TOR wins 2-0"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
-      "Louis Varland on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Aaron Nola: 5.0 IP, 6 H, 2 ER, 8 K",
+      "Max Scherzer: 5.1 IP, 5 H, 2 ER, 4 K",
+      "Nathan Lukes: 3-for-6, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Shane Bieber · PHI vs TOR · Sun, Aug 9 · 1:35 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's TOR at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:05 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "away": {
-            "team": "TOR",
-            "name": "Max Scherzer",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "TOR",
-            "name": "Max Scherzer",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Garrett Stubbs",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Nathan Lukes",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Brett Bateman",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Vladimir Guerrero Jr.",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Jesús Sánchez",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Ernie Clement",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Andrés Giménez",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Valenzuela",
-              "position": "C",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Josh Smith",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Myles Straw",
-              "position": "LF",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Garrett Stubbs",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Nathan Lukes",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Brett Bateman",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Vladimir Guerrero Jr.",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Jesús Sánchez",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Ernie Clement",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Andrés Giménez",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Valenzuela",
-              "position": "C",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Josh Smith",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Myles Straw",
-              "position": "LF",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Blue Jays @ Phillies · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "TOR leads 1-0"
+          "label": "TOR wins 2-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,7 +91,7 @@
         "weather": {
           "temp_f": 78,
           "condition": "Clear",
-          "wind": "4 mph · gusts 11",
+          "wind": "5 mph · gusts 11",
           "gusts_mph": 11
         },
         "giveaway": "",
@@ -373,19 +116,19 @@
           }
         },
         "linescore": {
-          "currentInning": 10,
-          "currentInningOrdinal": "10th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "currentInning": 11,
+          "currentInningOrdinal": "11th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 5,
-              "hits": 9,
+              "runs": 7,
+              "hits": 10,
               "errors": 0
             },
             "home": {
-              "runs": 4,
+              "runs": 5,
               "hits": 9,
               "errors": 0
             }
@@ -516,7 +259,20 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 1,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 11,
+              "away": {
+                "runs": 2,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -1649,39 +1405,170 @@
             "inning": 10,
             "half": "top",
             "team": "TOR",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Brandon Valenzuela",
             "actor_id": 678218,
-            "detail": "Play",
+            "detail": "Garrett Stubbs challeng…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:81",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds ou…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:82",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez out on a sa…",
+            "score_after": "PHI 5, TOR 5",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823426:83",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott walks.",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:84",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh lines out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:85",
+            "inning": 11,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Kazuma Okamoto",
+            "actor_id": 672960,
+            "detail": "Kazuma Okamoto flies ou…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:86",
+            "inning": 11,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Myles Straw",
+            "actor_id": 664702,
+            "detail": "Myles Straw grounds out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:87",
+            "inning": 11,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "home_run",
+            "actor": "Nathan Lukes",
+            "actor_id": 664770,
+            "detail": "Nathan Lukes homers (6)…",
+            "score_after": "PHI 5, TOR 7",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823426:88",
+            "inning": 11,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Brett Bateman",
+            "actor_id": 703520,
+            "detail": "Brett Bateman flies out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:89",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford flies o…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:90",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz called…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823426:91",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa flies out…",
             "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Brandon Valenzuela",
-            "meta": "vs Chase Shugart"
-          },
-          "pitches": [
-            "B",
-            "S",
-            "B",
-            "F"
-          ],
-          "count": {
-            "balls": 2,
-            "strikes": 2,
-            "outs": 2
-          },
-          "bases": {
-            "first": true,
-            "second": true,
-            "third": false
-          },
-          "status": "Top 10th"
-        }
+        ]
       }
     },
     "injury_report": null
