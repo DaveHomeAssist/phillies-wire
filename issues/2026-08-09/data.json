@@ -5,14 +5,14 @@
     "edition": 131,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-09T19:43:39.022Z",
+    "generated_at": "2026-08-09T19:47:02.019Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 9, 2026, 3:43 PM ET",
+      "generated_at_et": "Aug 9, 2026, 3:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -30,7 +30,7 @@
     "label": "Live",
     "headline": "PHI 5, TOR 2",
     "dek": "Top 8th · 2 outs",
-    "summary": "Kazuma Okamoto is up against Orion Kerkering. Series: TOR leads 2-0.",
+    "summary": "Ernie Clement is up against Orion Kerkering. Series: TOR leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Kazuma Okamoto at the plate",
+      "Ernie Clement at the plate",
       "Orion Kerkering on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -381,7 +381,7 @@
           "teams": {
             "away": {
               "runs": 2,
-              "hits": 5,
+              "hits": 6,
               "errors": 0
             },
             "home": {
@@ -486,7 +486,7 @@
               "num": 8,
               "away": {
                 "runs": null,
-                "hits": 1,
+                "hits": 2,
                 "errors": 0
               },
               "home": {
@@ -1371,10 +1371,24 @@
             "inning": 8,
             "half": "top",
             "team": "TOR",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Kazuma Okamoto",
             "actor_id": 672960,
-            "detail": "Play",
+            "detail": "Kazuma Okamoto singles on a fly ball to left fielder Brandon Marsh. Alejandro Kirk to 2nd.",
+            "score_after": "PHI 5, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:63",
+            "inning": 8,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "other",
+            "actor": "Ernie Clement",
+            "actor_id": 676391,
+            "detail": "Mound Visit.",
             "score_after": "PHI 5, TOR 2",
             "runs": 0,
             "is_scoring": false,
@@ -1383,22 +1397,18 @@
         ],
         "situation": {
           "batter": {
-            "name": "Kazuma Okamoto",
+            "name": "Ernie Clement",
             "meta": "vs Orion Kerkering"
           },
-          "pitches": [
-            "S",
-            "S",
-            "B"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 1,
-            "strikes": 2,
+            "balls": 0,
+            "strikes": 0,
             "outs": 2
           },
           "bases": {
             "first": true,
-            "second": false,
+            "second": true,
             "third": false
           },
           "status": "Top 8th"
