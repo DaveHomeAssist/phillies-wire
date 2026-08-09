@@ -5,14 +5,14 @@
     "edition": 131,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-09T17:43:49.958Z",
+    "generated_at": "2026-08-09T17:57:18.329Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 9, 2026, 1:43 PM ET",
+      "generated_at_et": "Aug 9, 2026, 1:57 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, TOR 0",
-    "dek": "Bottom 1st · 1 out",
-    "summary": "Trea Turner is up against Shane Bieber. Series: TOR leads 2-0.",
+    "dek": "Bottom 2nd · 2 outs",
+    "summary": "Brandon Marsh is up against Shane Bieber. Series: TOR leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
+      "Brandon Marsh at the plate",
       "Shane Bieber on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 92,
           "condition": "Mostly sunny",
-          "wind": "4 mph · gusts 8",
+          "wind": "6 mph · gusts 8",
           "gusts_mph": 8
         },
         "giveaway": "",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.33",
+            "era": "3.31",
             "record": "10-5",
             "whip": "1.15"
           },
@@ -367,17 +367,17 @@
             "team": "TOR",
             "name": "Shane Bieber",
             "hand": "R",
-            "era": "5.06",
+            "era": "4.93",
             "record": "3-2",
-            "whip": "1.66"
+            "whip": "1.62"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 1,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 0
             }
           },
@@ -399,8 +399,21 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -468,9 +481,121 @@
             "inning": 1,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
+            "detail": "Alejandro Kirk challenged (pitch result), call on the field was overturned: Trea Turner called out on strikes.",
+            "score_after": "PHI 0, TOR 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 0, TOR 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:6",
+            "inning": 2,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Kazuma Okamoto",
+            "actor_id": 672960,
+            "detail": "Kazuma Okamoto pops out to first baseman Alec Bohm.",
+            "score_after": "PHI 0, TOR 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:7",
+            "inning": 2,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Ernie Clement",
+            "actor_id": 676391,
+            "detail": "Ernie Clement flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 0, TOR 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:8",
+            "inning": 2,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "strikeout",
+            "actor": "Andrés Giménez",
+            "actor_id": 665926,
+            "detail": "Andrés Giménez strikes out swinging.",
+            "score_after": "PHI 0, TOR 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:9",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez pops out to first baseman Kazuma Okamoto in foul territory.",
+            "score_after": "PHI 0, TOR 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:10",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, shortstop Andrés Giménez to first baseman Kazuma Okamoto.",
+            "score_after": "PHI 0, TOR 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:11",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott singles on a ground ball to center fielder Brett Bateman, deflected by shortstop Andrés Giménez.",
+            "score_after": "PHI 0, TOR 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
             "detail": "Play",
             "score_after": "PHI 0, TOR 0",
             "runs": 0,
@@ -480,25 +605,23 @@
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
+            "name": "Brandon Marsh",
             "meta": "vs Shane Bieber"
           },
           "pitches": [
-            "S",
-            "B",
-            "S"
+            "B"
           ],
           "count": {
             "balls": 1,
-            "strikes": 2,
-            "outs": 1
+            "strikes": 0,
+            "outs": 2
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
-          "status": "Bottom 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -515,8 +638,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:43:49.958Z",
-            "freshness_label": "As of Aug 9, 2026, 1:43 PM ET"
+            "last_confirmed": "2026-08-09T17:57:18.329Z",
+            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -528,8 +651,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:43:49.958Z",
-            "freshness_label": "As of Aug 9, 2026, 1:43 PM ET"
+            "last_confirmed": "2026-08-09T17:57:18.329Z",
+            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -541,8 +664,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:43:49.958Z",
-            "freshness_label": "As of Aug 9, 2026, 1:43 PM ET"
+            "last_confirmed": "2026-08-09T17:57:18.329Z",
+            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -554,8 +677,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:43:49.958Z",
-            "freshness_label": "As of Aug 9, 2026, 1:43 PM ET"
+            "last_confirmed": "2026-08-09T17:57:18.329Z",
+            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -567,8 +690,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:43:49.958Z",
-            "freshness_label": "As of Aug 9, 2026, 1:43 PM ET"
+            "last_confirmed": "2026-08-09T17:57:18.329Z",
+            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -580,8 +703,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:43:49.958Z",
-            "freshness_label": "As of Aug 9, 2026, 1:43 PM ET"
+            "last_confirmed": "2026-08-09T17:57:18.329Z",
+            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
