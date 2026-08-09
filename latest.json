@@ -4,7 +4,7 @@
   "edition_date": "2026-08-09",
   "volume": 1,
   "edition": 131,
-  "generated_at": "2026-08-09T19:25:48.826Z",
+  "generated_at": "2026-08-09T19:30:16.889Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 5, TOR 2",
-    "dek": "Middle 7th · 3 outs",
-    "summary": "Kyle Schwarber is up against Brendon Little. Series: TOR leads 2-0.",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Bryce Harper is up against Brendon Little. Series: TOR leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Hunter Dobbins · PHI @ STL · Mon, Aug 10 · 7:45 PM"
   },
@@ -55,35 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 94,
-      "condition": "Mostly sunny",
-      "wind": "10 mph · gusts 13",
-      "gusts_mph": 13
+      "temp_f": 93,
+      "condition": "Clear",
+      "wind": "10 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Bryce Harper",
         "meta": "vs Brendon Little"
       },
       "pitches": [
         "S",
-        "B",
-        "S",
-        "S"
+        "B"
       ],
       "count": {
         "balls": 1,
-        "strikes": 3,
-        "outs": 3
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Middle 7th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -91,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-09T19:25:49.425Z",
+    "updated_at": "2026-08-09T19:30:17.341Z",
     "current_game_pk": 823425,
     "next_game_pk": 823018,
     "next_game": {
@@ -128,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "94° · Mostly sunny · gusts 13 mph",
+      "text": "93° · Clear · gusts 12 mph",
       "highlight": false
     },
     {

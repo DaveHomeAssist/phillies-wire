@@ -5,14 +5,14 @@
     "edition": 131,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-09T19:25:48.826Z",
+    "generated_at": "2026-08-09T19:30:16.889Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 9, 2026, 3:25 PM ET",
+      "generated_at_et": "Aug 9, 2026, 3:30 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 5, TOR 2",
-    "dek": "Middle 7th · 3 outs",
-    "summary": "Kyle Schwarber is up against Brendon Little. Series: TOR leads 2-0.",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Bryce Harper is up against Brendon Little. Series: TOR leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "94° · Mostly sunny"
+        "value": "93° · Clear"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
+      "Bryce Harper at the plate",
       "Brendon Little on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 94,
-          "condition": "Mostly sunny",
-          "wind": "10 mph · gusts 13",
-          "gusts_mph": 13
+          "temp_f": 93,
+          "condition": "Clear",
+          "wind": "10 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.33",
+            "era": "3.32",
             "record": "10-5",
             "whip": "1.14"
           },
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 7,
           "currentInningOrdinal": "7th",
-          "inningState": "Middle",
-          "isTopInning": true,
-          "outs": 3,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 2,
@@ -1240,30 +1240,70 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823425:54",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber walks.",
+            "score_after": "PHI 5, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:55",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner strikes out on a foul tip.",
+            "score_after": "PHI 5, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:56",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Play",
+            "score_after": "PHI 5, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Kyle Schwarber",
+            "name": "Bryce Harper",
             "meta": "vs Brendon Little"
           },
           "pitches": [
             "S",
-            "B",
-            "S",
-            "S"
+            "B"
           ],
           "count": {
             "balls": 1,
-            "strikes": 3,
-            "outs": 3
+            "strikes": 1,
+            "outs": 1
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
-          "status": "Middle 7th"
+          "status": "Bottom 7th"
         }
       }
     },
@@ -1280,8 +1320,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T19:25:48.826Z",
-            "freshness_label": "As of Aug 9, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-08-09T19:30:16.889Z",
+            "freshness_label": "As of Aug 9, 2026, 3:30 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1293,8 +1333,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T19:25:48.826Z",
-            "freshness_label": "As of Aug 9, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-08-09T19:30:16.889Z",
+            "freshness_label": "As of Aug 9, 2026, 3:30 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1306,8 +1346,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T19:25:48.826Z",
-            "freshness_label": "As of Aug 9, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-08-09T19:30:16.889Z",
+            "freshness_label": "As of Aug 9, 2026, 3:30 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1319,8 +1359,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T19:25:48.826Z",
-            "freshness_label": "As of Aug 9, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-08-09T19:30:16.889Z",
+            "freshness_label": "As of Aug 9, 2026, 3:30 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1332,8 +1372,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T19:25:48.826Z",
-            "freshness_label": "As of Aug 9, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-08-09T19:30:16.889Z",
+            "freshness_label": "As of Aug 9, 2026, 3:30 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1345,8 +1385,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T19:25:48.826Z",
-            "freshness_label": "As of Aug 9, 2026, 3:25 PM ET"
+            "last_confirmed": "2026-08-09T19:30:16.889Z",
+            "freshness_label": "As of Aug 9, 2026, 3:30 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
