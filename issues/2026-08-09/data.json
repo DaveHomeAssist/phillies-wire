@@ -5,14 +5,14 @@
     "edition": 131,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-09T19:47:02.019Z",
+    "generated_at": "2026-08-09T19:58:35.780Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 9, 2026, 3:47 PM ET",
+      "generated_at_et": "Aug 9, 2026, 3:58 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 5, TOR 2",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Ernie Clement is up against Orion Kerkering. Series: TOR leads 2-0.",
+    "headline": "PHI 5, TOR 5",
+    "dek": "Bottom 8th · 1 out",
+    "summary": "Alec Bohm is up against Tyler Rogers. Series: TOR leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Ernie Clement at the plate",
-      "Orion Kerkering on the mound",
+      "Alec Bohm at the plate",
+      "Tyler Rogers on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -375,18 +375,18 @@
         "linescore": {
           "currentInning": 8,
           "currentInningOrdinal": "8th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
-              "runs": 2,
-              "hits": 6,
+              "runs": 5,
+              "hits": 8,
               "errors": 0
             },
             "home": {
               "runs": 5,
-              "hits": 6,
+              "hits": 7,
               "errors": 1
             }
           },
@@ -485,13 +485,13 @@
             {
               "num": 8,
               "away": {
-                "runs": null,
-                "hits": 2,
+                "runs": 3,
+                "hits": 4,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -562,7 +562,7 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Alejandro Kirk challenged (pitch result), call on the field was overturned: Trea Turner called out on strikes.",
+            "detail": "Alejandro Kirk challenged (pitch result), call on the field was overturned: Trea Turner called…",
             "score_after": "PHI 0, TOR 0",
             "runs": 0,
             "is_scoring": false,
@@ -660,7 +660,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a ground ball to left fielder Davis Schneider, deflected by shortstop Andrés Giménez.",
+            "detail": "Bryson Stott singles on a ground ball to left fielder Davis Schneider, deflected by shortstop A…",
             "score_after": "PHI 0, TOR 0",
             "runs": 0,
             "is_scoring": false,
@@ -758,7 +758,7 @@
             "event_type": "home_run",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber homers (34) on a fly ball to left center field. Alec Bohm scores. Justin Crawford scores.",
+            "detail": "Kyle Schwarber homers (34) on a fly ball to left center field. Alec Bohm scores. Justin Crawfor…",
             "score_after": "PHI 3, TOR 0",
             "runs": 3,
             "is_scoring": true,
@@ -856,7 +856,7 @@
             "event_type": "single",
             "actor": "Alejandro Kirk",
             "actor_id": 672386,
-            "detail": "Alejandro Kirk singles on a line drive to left fielder Brandon Marsh. Vladimir Guerrero Jr. scores.",
+            "detail": "Alejandro Kirk singles on a line drive to left fielder Brandon Marsh. Vladimir Guerrero Jr. sco…",
             "score_after": "PHI 3, TOR 1",
             "runs": 1,
             "is_scoring": true,
@@ -884,7 +884,7 @@
             "event_type": "out",
             "actor": "Ernie Clement",
             "actor_id": 676391,
-            "detail": "Ernie Clement grounds into a force out, third baseman Bryson Stott to second baseman Luis Arraez. Alejandro Kirk out at 2nd.",
+            "detail": "Ernie Clement grounds into a force out, third baseman Bryson Stott to second baseman Luis Arrae…",
             "score_after": "PHI 3, TOR 1",
             "runs": 0,
             "is_scoring": false,
@@ -968,7 +968,7 @@
             "event_type": "out",
             "actor": "Josh Smith",
             "actor_id": 669701,
-            "detail": "Josh Smith out on a sacrifice bunt, pitcher Jesús Luzardo to first baseman Alec Bohm. Myles Straw to 2nd.",
+            "detail": "Josh Smith out on a sacrifice bunt, pitcher Jesús Luzardo to first baseman Alec Bohm. Myles Str…",
             "score_after": "PHI 3, TOR 1",
             "runs": 0,
             "is_scoring": false,
@@ -982,7 +982,7 @@
             "event_type": "walk_hbp",
             "actor": "Davis Schneider",
             "actor_id": 676914,
-            "detail": "Davis Schneider walks. Myles Straw to 3rd. Wild pitch by pitcher Jesús Luzardo. Myles Straw to 3rd.",
+            "detail": "Davis Schneider walks. Myles Straw to 3rd. Wild pitch by pitcher Jesús Luzardo. Myles Straw to…",
             "score_after": "PHI 3, TOR 1",
             "runs": 0,
             "is_scoring": false,
@@ -996,7 +996,7 @@
             "event_type": "single",
             "actor": "Brett Bateman",
             "actor_id": 703520,
-            "detail": "Brett Bateman singles on a ground ball to left fielder Brandon Marsh. Myles Straw scores. Davis Schneider to 2nd.",
+            "detail": "Brett Bateman singles on a ground ball to left fielder Brandon Marsh. Myles Straw scores. Davis…",
             "score_after": "PHI 3, TOR 2",
             "runs": 1,
             "is_scoring": true,
@@ -1094,7 +1094,7 @@
             "event_type": "reached_on_error",
             "actor": "Alejandro Kirk",
             "actor_id": 672386,
-            "detail": "Alejandro Kirk reaches on a missed catch error by first baseman Alec Bohm, assist to pitcher Jesús Luzardo.",
+            "detail": "Alejandro Kirk reaches on a missed catch error by first baseman Alec Bohm, assist to pitcher Je…",
             "score_after": "PHI 4, TOR 2",
             "runs": 0,
             "is_scoring": false,
@@ -1122,7 +1122,7 @@
             "event_type": "out",
             "actor": "Ernie Clement",
             "actor_id": 676391,
-            "detail": "Ernie Clement grounds into a force out, pitcher Jesús Luzardo to second baseman Luis Arraez. Alejandro Kirk out at 2nd. Ernie Cleme…",
+            "detail": "Ernie Clement grounds into a force out, pitcher Jesús Luzardo to second baseman Luis Arraez. Al…",
             "score_after": "PHI 4, TOR 2",
             "runs": 0,
             "is_scoring": false,
@@ -1150,7 +1150,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto lines out, pitcher Shane Bieber to second baseman Ernie Clement to first baseman Kazuma Okamoto.",
+            "detail": "J.T. Realmuto lines out, pitcher Shane Bieber to second baseman Ernie Clement to first baseman…",
             "score_after": "PHI 4, TOR 2",
             "runs": 0,
             "is_scoring": false,
@@ -1192,7 +1192,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a line drive to center fielder Brett Bateman. Bryson Stott scores. Alec Bohm to 2nd.",
+            "detail": "Alec Bohm singles on a line drive to center fielder Brett Bateman. Bryson Stott scores. Alec Bo…",
             "score_after": "PHI 5, TOR 2",
             "runs": 1,
             "is_scoring": true,
@@ -1304,7 +1304,7 @@
             "event_type": "strikeout",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez strikes out swinging. Bryce Harper to 2nd. Kyle Schwarber steals (3) 3rd base. Bryce Harper steals (7) 2nd base.",
+            "detail": "Luis Arraez strikes out swinging. Bryce Harper to 2nd. Kyle Schwarber steals (3) 3rd base. Bryc…",
             "score_after": "PHI 5, TOR 2",
             "runs": 0,
             "is_scoring": false,
@@ -1385,11 +1385,81 @@
             "inning": 8,
             "half": "top",
             "team": "TOR",
-            "event_type": "other",
+            "event_type": "extra_base_hit",
             "actor": "Ernie Clement",
             "actor_id": 676391,
-            "detail": "Mound Visit.",
-            "score_after": "PHI 5, TOR 2",
+            "detail": "Ernie Clement doubles (28) on a fly ball to left fielder Brandon Marsh. Alejandro Kirk scores.…",
+            "score_after": "PHI 5, TOR 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823425:64",
+            "inning": 8,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "single",
+            "actor": "Andrés Giménez",
+            "actor_id": 665926,
+            "detail": "Andrés Giménez singles on a fly ball to right fielder Bryce Harper. Kazuma Okamoto scores. Erni…",
+            "score_after": "PHI 5, TOR 5",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823425:65",
+            "inning": 8,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Myles Straw",
+            "actor_id": 664702,
+            "detail": "Myles Straw grounds out, pitcher Orion Kerkering to second baseman Luis Arraez to first baseman…",
+            "score_after": "PHI 5, TOR 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:66",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out to first baseman Kazuma Okamoto.",
+            "score_after": "PHI 5, TOR 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:67",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh singles on a ground ball to center fielder Brett Bateman.",
+            "score_after": "PHI 5, TOR 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:68",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Play",
+            "score_after": "PHI 5, TOR 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1397,21 +1467,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "Ernie Clement",
-            "meta": "vs Orion Kerkering"
+            "name": "Alec Bohm",
+            "meta": "vs Tyler Rogers"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "B",
+            "B",
+            "S"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 2
+            "balls": 3,
+            "strikes": 1,
+            "outs": 1
           },
           "bases": {
             "first": true,
-            "second": true,
+            "second": false,
             "third": false
           },
-          "status": "Top 8th"
+          "status": "Bottom 8th"
         }
       }
     },
