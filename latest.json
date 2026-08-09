@@ -4,7 +4,7 @@
   "edition_date": "2026-08-09",
   "volume": 1,
   "edition": 131,
-  "generated_at": "2026-08-09T19:58:35.780Z",
+  "generated_at": "2026-08-09T20:07:39.517Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 5, TOR 5",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "Alec Bohm is up against Tyler Rogers. Series: TOR leads 2-0.",
+    "dek": "Top 9th · 1 out",
+    "summary": "Brett Bateman is up against Jhoan Duran. Series: TOR leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Hunter Dobbins · PHI @ STL · Mon, Aug 10 · 7:45 PM"
   },
@@ -64,26 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Tyler Rogers"
+        "name": "Brett Bateman",
+        "meta": "vs Jhoan Duran"
       },
       "pitches": [
-        "B",
-        "B",
-        "B",
+        "S",
         "S"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 1,
+        "balls": 0,
+        "strikes": 3,
         "outs": 1
       },
       "bases": {
         "first": true,
-        "second": false,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 8th"
+      "status": "Top 9th"
     },
     "recap_line": null
   },
@@ -91,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-09T19:58:36.113Z",
+    "updated_at": "2026-08-09T20:07:40.043Z",
     "current_game_pk": 823425,
     "next_game_pk": 823018,
     "next_game": {
