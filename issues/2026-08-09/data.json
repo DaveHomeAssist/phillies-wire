@@ -5,14 +5,14 @@
     "edition": 131,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-09T17:57:18.329Z",
+    "generated_at": "2026-08-09T17:58:59.386Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 9, 2026, 1:57 PM ET",
+      "generated_at_et": "Aug 9, 2026, 1:58 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, TOR 0",
-    "dek": "Bottom 2nd · 2 outs",
-    "summary": "Brandon Marsh is up against Shane Bieber. Series: TOR leads 2-0.",
+    "dek": "End 2nd · 3 outs",
+    "summary": "Myles Straw is up against Jesús Luzardo. Series: TOR leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Brandon Marsh at the plate",
-      "Shane Bieber on the mound",
+      "Myles Straw at the plate",
+      "Jesús Luzardo on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -367,7 +367,7 @@
             "team": "TOR",
             "name": "Shane Bieber",
             "hand": "R",
-            "era": "4.93",
+            "era": "4.85",
             "record": "3-2",
             "whip": "1.62"
           }
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 2,
           "currentInningOrdinal": "2nd",
-          "inningState": "Bottom",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 0,
@@ -412,7 +412,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
                 "errors": 0
               }
@@ -593,10 +593,10 @@
             "inning": 2,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Play",
+            "detail": "Brandon Marsh grounds out, second baseman Ernie Clement to first baseman Kazuma Okamoto.",
             "score_after": "PHI 0, TOR 0",
             "runs": 0,
             "is_scoring": false,
@@ -605,23 +605,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Brandon Marsh",
-            "meta": "vs Shane Bieber"
+            "name": "Myles Straw",
+            "meta": "vs Jesús Luzardo"
           },
           "pitches": [
-            "B"
+            "B",
+            "X"
           ],
           "count": {
             "balls": 1,
             "strikes": 0,
-            "outs": 2
+            "outs": 3
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 2nd"
+          "status": "End 2nd"
         }
       }
     },
@@ -638,8 +639,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:57:18.329Z",
-            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
+            "last_confirmed": "2026-08-09T17:58:59.386Z",
+            "freshness_label": "As of Aug 9, 2026, 1:58 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -651,8 +652,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:57:18.329Z",
-            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
+            "last_confirmed": "2026-08-09T17:58:59.386Z",
+            "freshness_label": "As of Aug 9, 2026, 1:58 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -664,8 +665,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:57:18.329Z",
-            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
+            "last_confirmed": "2026-08-09T17:58:59.386Z",
+            "freshness_label": "As of Aug 9, 2026, 1:58 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -677,8 +678,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:57:18.329Z",
-            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
+            "last_confirmed": "2026-08-09T17:58:59.386Z",
+            "freshness_label": "As of Aug 9, 2026, 1:58 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -690,8 +691,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:57:18.329Z",
-            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
+            "last_confirmed": "2026-08-09T17:58:59.386Z",
+            "freshness_label": "As of Aug 9, 2026, 1:58 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -703,8 +704,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T17:57:18.329Z",
-            "freshness_label": "As of Aug 9, 2026, 1:57 PM ET"
+            "last_confirmed": "2026-08-09T17:58:59.386Z",
+            "freshness_label": "As of Aug 9, 2026, 1:58 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
