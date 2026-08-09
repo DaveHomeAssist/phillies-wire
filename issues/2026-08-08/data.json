@@ -5,14 +5,14 @@
     "edition": 130,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-09T00:48:10.925Z",
+    "generated_at": "2026-08-09T00:49:38.218Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 8, 2026, 8:48 PM ET",
+      "generated_at_et": "Aug 8, 2026, 8:49 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -30,7 +30,7 @@
     "label": "Live",
     "headline": "PHI 4, TOR 4",
     "dek": "Top 8th · 2 outs",
-    "summary": "Andrés Giménez is up against José Alvarado. Series: TOR leads 1-0.",
+    "summary": "Brandon Valenzuela is up against Orion Kerkering. Series: TOR leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Andrés Giménez at the plate",
-      "José Alvarado on the mound",
+      "Brandon Valenzuela at the plate",
+      "Orion Kerkering on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -1379,21 +1379,31 @@
             "runs": 2,
             "is_scoring": true,
             "is_key": true
+          },
+          {
+            "id": "823426:63",
+            "inning": 8,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "other",
+            "actor": "Brandon Valenzuela",
+            "actor_id": 678218,
+            "detail": "Pitching Change: Orion Kerkering replaces José Alvarado.",
+            "score_after": "PHI 4, TOR 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Andrés Giménez",
-            "meta": "vs José Alvarado"
+            "name": "Brandon Valenzuela",
+            "meta": "vs Orion Kerkering"
           },
-          "pitches": [
-            "S",
-            "S",
-            "X"
-          ],
+          "pitches": [],
           "count": {
             "balls": 0,
-            "strikes": 2,
+            "strikes": 0,
             "outs": 2
           },
           "bases": {
