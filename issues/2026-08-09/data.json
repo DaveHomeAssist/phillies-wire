@@ -5,313 +5,56 @@
     "edition": 131,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-09T20:28:13.330Z",
+    "generated_at": "2026-08-09T21:10:23.216Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Aug 9, 2026, 4:28 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Aug 9, 2026, 5:10 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 62,
+    "wins": 63,
     "losses": 56,
-    "streak": "L2",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 5, TOR 5",
-    "dek": "Bottom 10th · 1 out",
-    "summary": "Alec Bohm is up against Braydon Fisher. Series: TOR leads 2-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 7, TOR 6.",
+    "dek": "PHI 7, TOR 6 · Jesús Luzardo · 7.0 IP, 4 H, 2 ER, 12 K",
+    "summary": "PHI 7, TOR 6. Final at Citizens Bank Park, Philadelphia. TOR wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "94° · Clear"
+        "label": "Series",
+        "value": "TOR wins 2-1"
       }
     ],
     "bullets": [
-      "Alec Bohm at the plate",
-      "Braydon Fisher on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Jesús Luzardo: 7.0 IP, 4 H, 2 ER, 12 K",
+      "Shane Bieber: 5.2 IP, 6 H, 5 ER, 4 K",
+      "Kyle Schwarber: 2-for-3, 2 HR, 4 RBI, 2 R, 1 SB"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Hunter Dobbins · PHI @ STL · Mon, Aug 10 · 7:45 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's TOR at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "1:35 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "away": {
-            "team": "TOR",
-            "name": "Shane Bieber",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "TOR",
-            "name": "Shane Bieber",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Brett Bateman",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Vladimir Guerrero Jr.",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Alejandro Kirk",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Kazuma Okamoto",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Ernie Clement",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Andrés Giménez",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Myles Straw",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Josh Smith",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Davis Schneider",
-              "position": "LF",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Brett Bateman",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Vladimir Guerrero Jr.",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Alejandro Kirk",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Kazuma Okamoto",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Ernie Clement",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Andrés Giménez",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Myles Straw",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Josh Smith",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Davis Schneider",
-              "position": "LF",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Blue Jays @ Phillies · Game 3 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "TOR leads 2-0"
+          "label": "TOR wins 2-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 94,
+          "temp_f": 93,
           "condition": "Clear",
-          "wind": "11 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "10 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,20 +116,20 @@
           }
         },
         "linescore": {
-          "currentInning": 10,
-          "currentInningOrdinal": "10th",
+          "currentInning": 12,
+          "currentInningOrdinal": "12th",
           "inningState": "Bottom",
           "isTopInning": false,
           "outs": 1,
           "teams": {
             "away": {
-              "runs": 5,
-              "hits": 9,
+              "runs": 6,
+              "hits": 10,
               "errors": 0
             },
             "home": {
-              "runs": 5,
-              "hits": 7,
+              "runs": 7,
+              "hits": 10,
               "errors": 1
             }
           },
@@ -516,8 +259,34 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 11,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 12,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 2,
+                "hits": 3,
                 "errors": 0
               }
             }
@@ -1719,36 +1488,240 @@
             "inning": 10,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Play",
+            "detail": "Out",
             "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823425:86",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:87",
+            "inning": 11,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Myles Straw",
+            "actor_id": 664702,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:88",
+            "inning": 11,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Josh Smith",
+            "actor_id": 669701,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:89",
+            "inning": 11,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Nathan Lukes",
+            "actor_id": 664770,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:90",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Walk / HBP",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:91",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:92",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Walk / HBP",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:93",
+            "inning": 11,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Extra-base hit",
+            "score_after": "PHI 5, TOR 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823425:94",
+            "inning": 12,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "single",
+            "actor": "Brett Bateman",
+            "actor_id": 703520,
+            "detail": "Single",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:95",
+            "inning": 12,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "other",
+            "actor": "Jesús Sánchez",
+            "actor_id": 660821,
+            "detail": "Play",
+            "score_after": "PHI 5, TOR 6",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823425:96",
+            "inning": 12,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Alejandro Kirk",
+            "actor_id": 672386,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:97",
+            "inning": 12,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "Single",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:98",
+            "inning": 12,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Single",
+            "score_after": "PHI 6, TOR 6",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823425:99",
+            "inning": 12,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Out",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:100",
+            "inning": 12,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Walk / HBP",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:101",
+            "inning": 12,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Single",
+            "score_after": "PHI 7, TOR 6",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Alec Bohm",
-            "meta": "vs Braydon Fisher"
-          },
-          "pitches": [
-            "B"
-          ],
-          "count": {
-            "balls": 1,
-            "strikes": 0,
-            "outs": 1
-          },
-          "bases": {
-            "first": true,
-            "second": false,
-            "third": true
-          },
-          "status": "Bottom 10th"
-        }
+        ]
       }
     },
     "injury_report": null
