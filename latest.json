@@ -4,7 +4,7 @@
   "edition_date": "2026-08-08",
   "volume": 1,
   "edition": 130,
-  "generated_at": "2026-08-09T00:16:18.486Z",
+  "generated_at": "2026-08-09T00:25:47.754Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, TOR 2",
-    "dek": "Top 7th · 0 outs",
-    "summary": "Kazuma Okamoto is up against Brooks Raley. Series: TOR leads 1-0.",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Garrett Stubbs is up against Matt Waldron. Series: TOR leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Shane Bieber · PHI vs TOR · Sun, Aug 9 · 1:35 PM"
   },
@@ -64,21 +64,25 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kazuma Okamoto",
-        "meta": "vs Brooks Raley"
+        "name": "Garrett Stubbs",
+        "meta": "vs Matt Waldron"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-09T00:16:19.474Z",
+    "updated_at": "2026-08-09T00:25:48.148Z",
     "current_game_pk": 823426,
     "next_game_pk": 823425,
     "next_game": {
