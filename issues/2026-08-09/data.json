@@ -5,14 +5,14 @@
     "edition": 131,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-09T18:31:35.996Z",
+    "generated_at": "2026-08-09T18:50:17.185Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 9, 2026, 2:31 PM ET",
+      "generated_at_et": "Aug 9, 2026, 2:50 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 3, TOR 1",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Andrés Giménez is up against Jesús Luzardo. Series: TOR leads 2-0.",
+    "headline": "PHI 4, TOR 2",
+    "dek": "Bottom 5th · 2 outs",
+    "summary": "Bryce Harper is up against Shane Bieber. Series: TOR leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Andrés Giménez at the plate",
-      "Jesús Luzardo on the mound",
+      "Bryce Harper at the plate",
+      "Shane Bieber on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 94,
           "condition": "Mostly sunny",
-          "wind": "7 mph · gusts 13",
+          "wind": "8 mph · gusts 13",
           "gusts_mph": 13
         },
         "giveaway": "",
@@ -359,34 +359,34 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.33",
+            "era": "3.37",
             "record": "10-5",
-            "whip": "1.14"
+            "whip": "1.16"
           },
           "away": {
             "team": "TOR",
             "name": "Shane Bieber",
             "hand": "R",
-            "era": "5.27",
+            "era": "5.44",
             "record": "3-2",
-            "whip": "1.63"
+            "whip": "1.65"
           }
         },
         "linescore": {
           "currentInning": 5,
           "currentInningOrdinal": "5th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 2,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 2,
+              "runs": 2,
+              "hits": 4,
               "errors": 0
             },
             "home": {
-              "runs": 3,
-              "hits": 4,
+              "runs": 4,
+              "hits": 5,
               "errors": 0
             }
           },
@@ -446,13 +446,13 @@
             {
               "num": 5,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 1,
+                "hits": 2,
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 1,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -898,11 +898,137 @@
             "inning": 5,
             "half": "top",
             "team": "TOR",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Andrés Giménez",
             "actor_id": 665926,
-            "detail": "Play",
+            "detail": "Andrés Giménez called out on strikes.",
             "score_after": "PHI 3, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:32",
+            "inning": 5,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "single",
+            "actor": "Myles Straw",
+            "actor_id": 664702,
+            "detail": "Myles Straw singles on a line drive to center fielder Justin Crawford.",
+            "score_after": "PHI 3, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:33",
+            "inning": 5,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Josh Smith",
+            "actor_id": 669701,
+            "detail": "Josh Smith out on a sacrifice bunt, pitcher Jesús Luzardo to first baseman Alec Bohm. Myles Straw to 2nd.",
+            "score_after": "PHI 3, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:34",
+            "inning": 5,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "walk_hbp",
+            "actor": "Davis Schneider",
+            "actor_id": 676914,
+            "detail": "Davis Schneider walks. Myles Straw to 3rd. Wild pitch by pitcher Jesús Luzardo. Myles Straw to 3rd.",
+            "score_after": "PHI 3, TOR 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:35",
+            "inning": 5,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "single",
+            "actor": "Brett Bateman",
+            "actor_id": 703520,
+            "detail": "Brett Bateman singles on a ground ball to left fielder Brandon Marsh. Myles Straw scores. Davis Schneider to 2nd.",
+            "score_after": "PHI 3, TOR 2",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823425:36",
+            "inning": 5,
+            "half": "top",
+            "team": "TOR",
+            "event_type": "out",
+            "actor": "Vladimir Guerrero Jr.",
+            "actor_id": 665489,
+            "detail": "Vladimir Guerrero Jr. grounds out, pitcher Jesús Luzardo to first baseman Alec Bohm.",
+            "score_after": "PHI 3, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:37",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds out, shortstop Andrés Giménez to first baseman Kazuma Okamoto.",
+            "score_after": "PHI 3, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:38",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber homers (35) on a fly ball to right field.",
+            "score_after": "PHI 4, TOR 2",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823425:39",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner flies out to center fielder Brett Bateman.",
+            "score_after": "PHI 4, TOR 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823425:40",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Play",
+            "score_after": "PHI 4, TOR 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -910,21 +1036,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "Andrés Giménez",
-            "meta": "vs Jesús Luzardo"
+            "name": "Bryce Harper",
+            "meta": "vs Shane Bieber"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "S",
+            "B",
+            "B"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "balls": 2,
+            "strikes": 2,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 5th"
+          "status": "Bottom 5th"
         }
       }
     },
@@ -941,8 +1072,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T18:31:35.996Z",
-            "freshness_label": "As of Aug 9, 2026, 2:31 PM ET"
+            "last_confirmed": "2026-08-09T18:50:17.185Z",
+            "freshness_label": "As of Aug 9, 2026, 2:50 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -954,8 +1085,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T18:31:35.996Z",
-            "freshness_label": "As of Aug 9, 2026, 2:31 PM ET"
+            "last_confirmed": "2026-08-09T18:50:17.185Z",
+            "freshness_label": "As of Aug 9, 2026, 2:50 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -967,8 +1098,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T18:31:35.996Z",
-            "freshness_label": "As of Aug 9, 2026, 2:31 PM ET"
+            "last_confirmed": "2026-08-09T18:50:17.185Z",
+            "freshness_label": "As of Aug 9, 2026, 2:50 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -980,8 +1111,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T18:31:35.996Z",
-            "freshness_label": "As of Aug 9, 2026, 2:31 PM ET"
+            "last_confirmed": "2026-08-09T18:50:17.185Z",
+            "freshness_label": "As of Aug 9, 2026, 2:50 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -993,8 +1124,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T18:31:35.996Z",
-            "freshness_label": "As of Aug 9, 2026, 2:31 PM ET"
+            "last_confirmed": "2026-08-09T18:50:17.185Z",
+            "freshness_label": "As of Aug 9, 2026, 2:50 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1006,8 +1137,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-09T18:31:35.996Z",
-            "freshness_label": "As of Aug 9, 2026, 2:31 PM ET"
+            "last_confirmed": "2026-08-09T18:50:17.185Z",
+            "freshness_label": "As of Aug 9, 2026, 2:50 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

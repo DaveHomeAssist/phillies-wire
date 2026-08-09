@@ -4,7 +4,7 @@
   "edition_date": "2026-08-09",
   "volume": 1,
   "edition": 131,
-  "generated_at": "2026-08-09T18:31:35.996Z",
+  "generated_at": "2026-08-09T18:50:17.185Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, TOR 1",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Andrés Giménez is up against Jesús Luzardo. Series: TOR leads 2-0.",
+    "headline": "PHI 4, TOR 2",
+    "dek": "Bottom 5th · 2 outs",
+    "summary": "Bryce Harper is up against Shane Bieber. Series: TOR leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Hunter Dobbins · PHI @ STL · Mon, Aug 10 · 7:45 PM"
   },
@@ -57,28 +57,33 @@
     "weather": {
       "temp_f": 94,
       "condition": "Mostly sunny",
-      "wind": "7 mph · gusts 13",
+      "wind": "8 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Andrés Giménez",
-        "meta": "vs Jesús Luzardo"
+        "name": "Bryce Harper",
+        "meta": "vs Shane Bieber"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S",
+        "B",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 5th"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-09T18:31:36.659Z",
+    "updated_at": "2026-08-09T18:50:17.983Z",
     "current_game_pk": 823425,
     "next_game_pk": 823018,
     "next_game": {
