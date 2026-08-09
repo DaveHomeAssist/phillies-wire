@@ -4,7 +4,7 @@
   "edition_date": "2026-08-08",
   "volume": 1,
   "edition": 130,
-  "generated_at": "2026-08-09T00:49:38.218Z",
+  "generated_at": "2026-08-09T01:31:42.849Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, TOR 4",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Brandon Valenzuela is up against Orion Kerkering. Series: TOR leads 1-0.",
+    "headline": "PHI 4, TOR 5",
+    "dek": "Top 10th · 2 outs",
+    "summary": "Brandon Valenzuela is up against Chase Shugart. Series: TOR leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Shane Bieber · PHI vs TOR · Sun, Aug 9 · 1:35 PM"
   },
@@ -57,28 +57,33 @@
     "weather": {
       "temp_f": 78,
       "condition": "Clear",
-      "wind": "5 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "4 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
         "name": "Brandon Valenzuela",
-        "meta": "vs Orion Kerkering"
+        "meta": "vs Chase Shugart"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "B",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 2,
         "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": true,
         "third": false
       },
-      "status": "Top 8th"
+      "status": "Top 10th"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-09T00:49:38.882Z",
+    "updated_at": "2026-08-09T01:31:43.454Z",
     "current_game_pk": 823426,
     "next_game_pk": 823425,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 12 mph",
+      "text": "78° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
