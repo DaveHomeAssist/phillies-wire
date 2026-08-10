@@ -89,9 +89,11 @@ a:hover { text-decoration: underline; }
 /* ── SHELL NAV ──────────────────────────────────────────────*/
 .pw-shell-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   gap: var(--space-2);
   padding: var(--space-3) var(--space-4) 0;
+  min-width: 0;
 }
 
 .pw-main {
@@ -109,6 +111,7 @@ a:hover { text-decoration: underline; }
   border-radius: var(--radius-pill);
   padding: var(--space-2) var(--space-3);
   min-height: 44px;
+  min-width: 0;
   display: inline-flex;
   align-items: center;
   transition:
@@ -1465,6 +1468,13 @@ a:hover { text-decoration: underline; }
 @media (max-width: 480px) {
   .pw-shell-nav {
     justify-content: flex-start;
+    gap: var(--space-1);
+    padding-inline: var(--space-3);
+  }
+
+  .pw-shell-link {
+    padding-inline: var(--space-2);
+    letter-spacing: var(--tracking-wide);
   }
 
   .pw-hero {

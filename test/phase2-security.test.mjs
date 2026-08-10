@@ -32,12 +32,28 @@ runTest("2.2: crawl.mjs override loader statSyncs the file before reading it", (
   assert.ok(readIndex > statIndex, "statSync(path) must come before readFileSync(path,...)");
 });
 
-runTest("2.3: CSP meta tag is present with frame-ancestors and base-uri", () => {
+runTest("2.3: CSP meta tag blocks objects and constrains base URLs", () => {
   const html = readFileSync(new URL("../phillies-wire-v2.html", import.meta.url), "utf8");
   assert.match(html, /http-equiv="Content-Security-Policy"/);
-  assert.match(html, /frame-ancestors 'none'/);
+  assert.match(html, /object-src 'none'/);
   assert.match(html, /base-uri 'self'/);
+  assert.doesNotMatch(html, /frame-ancestors/);
   assert.ok(!/default-src \*|script-src .*\*/.test(html), "CSP must not use wildcard source");
+});
+
+runTest("2.6: SMTP transports and messages disable file and URL access", () => {
+  for (const filename of ["../deliver.mjs", "../factcheck.mjs"]) {
+    const source = readFileSync(new URL(filename, import.meta.url), "utf8");
+    assert.match(source, /disableFileAccess:\s*true/);
+    assert.match(source, /disableUrlAccess:\s*true/);
+  }
+});
+
+runTest("2.7: compact navigation wraps instead of overflowing narrow screens", () => {
+  const source = readFileSync(new URL("../phillies-wire.css", import.meta.url), "utf8");
+  const nav = source.slice(source.indexOf(".pw-shell-nav {"), source.indexOf(".pw-main {"));
+  assert.match(nav, /flex-wrap:\s*wrap/);
+  assert.match(nav, /min-width:\s*0/);
 });
 
 runTest("2.4: isValidLinescore accepts the expected MLB shape", () => {

@@ -7,7 +7,7 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#e81828">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://statsapi.mlb.com https://api.open-meteo.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://statsapi.mlb.com https://api.open-meteo.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <title>{{meta.page_title}}</title>
 <meta name="robots" content="index,follow">
 <meta name="description" content="{{meta.page_description}}">
@@ -64,7 +64,7 @@
     <a class="pw-shell-link" href="{{meta.assets_prefix}}schedule/">Schedule</a>
     <a class="pw-shell-link" href="{{meta.assets_prefix}}dashboard/innings/">Inning by inning</a>
     <a class="pw-shell-link" href="{{meta.assets_prefix}}feed.xml" rel="alternate">RSS</a>
-    <a class="pw-shell-link pw-shell-link--subscribe" href="{{meta.subscribe_url}}" target="_blank" rel="noopener">Subscribe</a>
+    <a class="pw-shell-link pw-shell-link--subscribe" href="{{meta.subscribe_url}}" target="_blank" rel="noopener noreferrer">Subscribe</a>
   </nav>
 
   <div class="pw-masthead">
@@ -192,7 +192,7 @@
         <h2 class="pw-subscribe-title" id="pw-subscribe-heading">Get the Wire in your inbox</h2>
         <p class="pw-subscribe-dek">A fresh Phillies Wire every morning &mdash; the matchup, lineups, standings, injuries, and what&rsquo;s next.</p>
       </div>
-      <a class="pw-subscribe-cta" href="{{meta.subscribe_url}}" target="_blank" rel="noopener">Subscribe &#8594;</a>
+      <a class="pw-subscribe-cta" href="{{meta.subscribe_url}}" target="_blank" rel="noopener noreferrer">Subscribe &#8594;</a>
     </div>
   </section>
 
@@ -544,8 +544,8 @@
 
   <nav class="pw-share" aria-label="Share">
     <span class="pw-share-label">Share</span>
-    <a class="pw-share-link" href="{{meta.share.twitter_url}}" rel="noopener" target="_blank">X / Twitter</a>
-    <a class="pw-share-link" href="{{meta.share.bluesky_url}}" rel="noopener" target="_blank">Bluesky</a>
+    <a class="pw-share-link" href="{{meta.share.twitter_url}}" rel="noopener noreferrer" target="_blank">X / Twitter</a>
+    <a class="pw-share-link" href="{{meta.share.bluesky_url}}" rel="noopener noreferrer" target="_blank">Bluesky</a>
     <a class="pw-share-link" href="{{meta.share.mailto_url}}">Email</a>
     <button type="button" class="pw-share-link pw-share-copy" data-pw-copy data-copy-url="{{meta.canonical_url}}">Copy link</button>
   </nav>

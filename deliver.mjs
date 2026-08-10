@@ -77,6 +77,10 @@ export async function main({ createTransportImpl = null, fetchSubscribersImpl = 
     tls: {
       minVersion: "TLSv1.2",
     },
+    // Newsletter content is generated in memory. Never let a template or
+    // dependency turn a file path or URL into an attachment/body fetch.
+    disableFileAccess: true,
+    disableUrlAccess: true,
   });
 
   const delivery = await sendDelivery(transport, {
@@ -85,6 +89,8 @@ export async function main({ createTransportImpl = null, fetchSubscribersImpl = 
     subject,
     text: plainText,
     html,
+    disableFileAccess: true,
+    disableUrlAccess: true,
   });
   writeDeliveryStatus({
     state: delivery.delivered === 0 ? "failed" : delivery.failed > 0 ? "partial" : "sent",

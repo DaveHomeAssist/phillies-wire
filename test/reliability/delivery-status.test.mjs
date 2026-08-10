@@ -43,14 +43,24 @@ test("G4: deliver writes delivery-status.json after a successful send", async ()
     process.env.DELIVERY_RECIPIENTS = "fan@example.com";
     process.env.SMTP_USER = "wire@example.com";
     process.env.SMTP_PASS = "stub-password";
+    let transportOptions;
+    let sentMessage;
 
     await deliverMain({
-      createTransportImpl: () => ({
+      createTransportImpl: (options) => {
+        transportOptions = options;
+        return {
         verify: async () => {},
-        sendMail: async () => {},
+        sendMail: async (message) => { sentMessage = message; },
         close: () => {},
-      }),
+        };
+      },
     });
+
+    assert.equal(transportOptions.disableFileAccess, true);
+    assert.equal(transportOptions.disableUrlAccess, true);
+    assert.equal(sentMessage.disableFileAccess, true);
+    assert.equal(sentMessage.disableUrlAccess, true);
 
     assert.equal(existsSync("delivery-status.json"), true);
     assert.equal(existsSync("site/delivery-status.json"), true);

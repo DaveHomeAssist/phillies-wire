@@ -587,11 +587,7 @@ function buildJsonLd(data, context) {
       name: hero.headline ?? "Philadelphia Phillies game",
       startDate: firstPitchIso,
       sport: "Baseball",
-      location: {
-        "@type": "Place",
-        name: venue.split(",")[0] ?? venue,
-        address: { "@type": "PostalAddress", addressLocality: "Philadelphia", addressRegion: "PA" },
-      },
+      location: buildEventLocation(venue),
       description: homeStarter && awayStarter ? `Probable starters: ${homeStarter} vs ${awayStarter}.` : hero.dek ?? "",
     };
     nodes.push(sportsEventNode);
@@ -607,6 +603,32 @@ function buildJsonLd(data, context) {
     .replace(/&/g, "\\u0026")
     .replace(/\u2028/g, "\\u2028")
     .replace(/\u2029/g, "\\u2029");
+}
+
+export function buildEventLocation(venueValue) {
+  const venue = String(venueValue ?? "Citizens Bank Park, Philadelphia")
+    .split(",")
+    .map((part) => part.trim())
+    .filter(Boolean);
+  const name = venue[0] || "Citizens Bank Park";
+  const location = { "@type": "Place", name };
+
+  if (/^Citizens Bank Park$/i.test(name)) {
+    location.address = {
+      "@type": "PostalAddress",
+      addressLocality: "Philadelphia",
+      addressRegion: "PA",
+    };
+  } else if (venue.length > 1) {
+    // The feed often supplies a city but not a state. Include only what the
+    // source actually knows; never label an away park as Philadelphia.
+    location.address = {
+      "@type": "PostalAddress",
+      addressLocality: venue.slice(1).join(", "),
+    };
+  }
+
+  return location;
 }
 
 function formatIssueDateLong(dateString) {
@@ -747,7 +769,7 @@ ${itemsHtml}
     <a class="pw-shell-link" href="../schedule/">Schedule</a>
     <a class="pw-shell-link" href="../dashboard/innings/">Inning by inning</a>
     <a class="pw-shell-link" href="../feed.xml" rel="alternate">RSS</a>
-    <a class="pw-shell-link pw-shell-link--subscribe" href="https://buttondown.com/phillieswire" target="_blank" rel="noopener">Subscribe</a>
+    <a class="pw-shell-link pw-shell-link--subscribe" href="https://buttondown.com/phillieswire" target="_blank" rel="noopener noreferrer">Subscribe</a>
   </nav>
 
   <main id="pw-archive-main" class="pw-main">

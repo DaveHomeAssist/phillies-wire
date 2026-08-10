@@ -1021,6 +1021,8 @@ async function emailReport(report) {
     requireTLS: true,
     auth: { user, pass },
     tls: { minVersion: "TLSv1.2" },
+    disableFileAccess: true,
+    disableUrlAccess: true,
   });
 
   const subject = `[Wire Fact-check] ${report.editionDate} — ${report.status} (${report.findings.errors.length}E / ${report.findings.stale.length}S / ${report.findings.pipeline.length}P / ${report.findings.unverified.length}U)`;
@@ -1032,6 +1034,8 @@ async function emailReport(report) {
     subject,
     text: report.markdown,
     html,
+    disableFileAccess: true,
+    disableUrlAccess: true,
   });
 }
 

@@ -1,10 +1,23 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 
-import { buildFeedXml, buildIssueDataJson, populate, ISSUE_DATA_BUDGET_BYTES } from "../render.mjs";
+import { buildEventLocation, buildFeedXml, buildIssueDataJson, populate, ISSUE_DATA_BUDGET_BYTES } from "../render.mjs";
 
 const template = readFileSync(new URL("../phillies-wire-v2.html", import.meta.url), "utf8");
 const fixture = JSON.parse(readFileSync(new URL("../phillies-wire-schema.json", import.meta.url), "utf8"));
+
+runTest("SportsEvent locations never assign Philadelphia to an away park", () => {
+  assert.deepEqual(buildEventLocation("Busch Stadium, St. Louis"), {
+    "@type": "Place",
+    name: "Busch Stadium",
+    address: { "@type": "PostalAddress", addressLocality: "St. Louis" },
+  });
+  assert.deepEqual(buildEventLocation("Citizens Bank Park"), {
+    "@type": "Place",
+    name: "Citizens Bank Park",
+    address: { "@type": "PostalAddress", addressLocality: "Philadelphia", addressRegion: "PA" },
+  });
+});
 
 runTest("feed builder emits RSS 2.0, not Atom", () => {
   const data = JSON.parse(JSON.stringify(fixture));
