@@ -4,7 +4,7 @@
   "edition_date": "2026-08-10",
   "volume": 1,
   "edition": 132,
-  "generated_at": "2026-08-10T23:54:33.404Z",
+  "generated_at": "2026-08-10T23:59:33.645Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 0",
-    "dek": "Top 1st · 1 out",
-    "summary": "Luis Arraez is up against Hunter Dobbins. Series: Regular Season.",
+    "dek": "Bottom 1st · 0 outs",
+    "summary": "JJ Wetherholt is up against Andrew Painter. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Andre Pallante · PHI @ STL · Tue, Aug 11 · 7:45 PM"
   },
@@ -64,27 +64,25 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Hunter Dobbins"
+        "name": "JJ Wetherholt",
+        "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "B",
         "S",
-        "B",
-        "F",
-        "X"
+        "S",
+        "F"
       ],
       "count": {
-        "balls": 3,
+        "balls": 0,
         "strikes": 2,
-        "outs": 1
+        "outs": 0
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -92,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-10T23:54:34.081Z",
+    "updated_at": "2026-08-10T23:59:34.151Z",
     "current_game_pk": 823018,
     "next_game_pk": 823019,
     "next_game": {
