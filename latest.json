@@ -4,7 +4,7 @@
   "edition_date": "2026-08-10",
   "volume": 1,
   "edition": 132,
-  "generated_at": "2026-08-10T23:44:24.979Z",
+  "generated_at": "2026-08-10T23:54:33.404Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Kyle Schwarber is up against Hunter Dobbins. Series: Regular Season.",
+    "dek": "Top 1st · 1 out",
+    "summary": "Luis Arraez is up against Hunter Dobbins. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Andre Pallante · PHI @ STL · Tue, Aug 11 · 7:45 PM"
   },
@@ -64,18 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Luis Arraez",
         "meta": "vs Hunter Dobbins"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "B",
+        "F",
+        "X"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 3,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
       "status": "Top 1st"
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-10T23:44:25.547Z",
+    "updated_at": "2026-08-10T23:54:34.081Z",
     "current_game_pk": 823018,
     "next_game_pk": 823019,
     "next_game": {
