@@ -5,313 +5,56 @@
     "edition": 132,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-11T02:44:27.718Z",
+    "generated_at": "2026-08-11T02:53:06.619Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Aug 10, 2026, 10:44 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Aug 10, 2026, 10:53 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 63,
+    "wins": 64,
     "losses": 56,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 6, STL 5",
-    "dek": "Middle 9th · 3 outs",
-    "summary": "JJ Wetherholt is up against Alan Rangel. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 6, STL 5.",
+    "dek": "PHI 6, STL 5 · Hunter Dobbins · 5.0 IP, 4 H, 1 ER, 6 K",
+    "summary": "PHI 6, STL 5. Final at Busch Stadium, St. Louis. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Busch Stadium, St. Louis"
       },
       {
-        "label": "Broadcast",
-        "value": "FS1 · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "85° · Mostly sunny"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "JJ Wetherholt at the plate",
-      "Alan Rangel on the mound",
-      "Busch Stadium, St. Louis"
+      "Hunter Dobbins: 5.0 IP, 4 H, 1 ER, 6 K",
+      "Andrew Painter: 5.1 IP, 2 H, 2 ER, 6 K",
+      "Alec Burleson: 2-for-4, 3 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Andre Pallante · PHI @ STL · Tue, Aug 11 · 7:45 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at STL game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "7:45 PM",
-        "starters": {
-          "home": {
-            "team": "STL",
-            "name": "Hunter Dobbins",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Andrew Painter",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Andrew Painter",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "STL",
-            "name": "Hunter Dobbins",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "JJ Wetherholt",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Iván Herrera",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Alec Burleson",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Jordan Walker",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nathan Church",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Masyn Winn",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "José Fermín",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Jimmy Crooks",
-              "position": "C",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "César Prieto",
-              "position": "3B",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Derek Hill",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Edmundo Sosa",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Garrett Stubbs",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Derek Hill",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Edmundo Sosa",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Garrett Stubbs",
-              "position": "C",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "JJ Wetherholt",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Iván Herrera",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Alec Burleson",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Jordan Walker",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Nathan Church",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Masyn Winn",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "José Fermín",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Jimmy Crooks",
-              "position": "C",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "César Prieto",
-              "position": "3B",
-              "bats": "L"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Cardinals · Game 1 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "FS1",
@@ -346,9 +89,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 85,
-          "condition": "Mostly sunny",
-          "wind": "8 mph · gusts 15",
+          "temp_f": 84,
+          "condition": "Clear",
+          "wind": "7 mph · gusts 15",
           "gusts_mph": 15
         },
         "giveaway": "",
@@ -375,8 +118,8 @@
         "linescore": {
           "currentInning": 9,
           "currentInningOrdinal": "9th",
-          "inningState": "Middle",
-          "isTopInning": true,
+          "inningState": "Bottom",
+          "isTopInning": false,
           "outs": 3,
           "teams": {
             "away": {
@@ -503,7 +246,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -533,7 +276,7 @@
             "event_type": "strikeout",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott strikes out swingi…",
+            "detail": "Bryson Stott strikes out swinging.",
             "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -547,7 +290,7 @@
             "event_type": "walk_hbp",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper walks. Kyle Schwar…",
+            "detail": "Bryce Harper walks. Kyle Schwarber to 2nd.",
             "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -561,7 +304,7 @@
             "event_type": "extra_base_hit",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Cardinals challenged (tag play)…",
+            "detail": "Cardinals challenged (tag play), call on the field was overturned: Luis Arraez lines into an un…",
             "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -575,7 +318,7 @@
             "event_type": "strikeout",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "JJ Wetherholt strikes out swing…",
+            "detail": "JJ Wetherholt strikes out swinging.",
             "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -589,7 +332,7 @@
             "event_type": "out",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Iván Herrera flies out to left…",
+            "detail": "Iván Herrera flies out to left fielder Brandon Marsh.",
             "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -617,7 +360,7 @@
             "event_type": "strikeout",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker strikes out swing…",
+            "detail": "Jordan Walker strikes out swinging.",
             "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -631,7 +374,7 @@
             "event_type": "single",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh singles on a shar…",
+            "detail": "Brandon Marsh singles on a sharp line drive to right fielder Jordan Walker.",
             "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -645,7 +388,7 @@
             "event_type": "reached_on_error",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill reaches on a throwin…",
+            "detail": "Derek Hill reaches on a throwing error by pitcher Hunter Dobbins. Brandon Marsh scores. Derek H…",
             "score_after": "PHI 1, STL 0",
             "runs": 1,
             "is_scoring": true,
@@ -659,7 +402,7 @@
             "event_type": "strikeout",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford strikes out swi…",
+            "detail": "Justin Crawford strikes out swinging, catcher Jimmy Crooks to first baseman Alec Burleson.",
             "score_after": "PHI 1, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -673,7 +416,7 @@
             "event_type": "single",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa singles on a sharp…",
+            "detail": "Edmundo Sosa singles on a sharp line drive to left fielder José Fermín. Derek Hill scores.",
             "score_after": "PHI 2, STL 0",
             "runs": 1,
             "is_scoring": true,
@@ -687,7 +430,7 @@
             "event_type": "strikeout",
             "actor": "Garrett Stubbs",
             "actor_id": 596117,
-            "detail": "Garrett Stubbs strikes out swin…",
+            "detail": "Garrett Stubbs strikes out swinging.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -701,7 +444,7 @@
             "event_type": "walk_hbp",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Jimmy Crooks challenged (pitch…",
+            "detail": "Jimmy Crooks challenged (pitch result), call on the field was confirmed: Kyle Schwarber walks.…",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -715,7 +458,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott flies out to left…",
+            "detail": "Bryson Stott flies out to left fielder José Fermín.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -729,7 +472,7 @@
             "event_type": "out",
             "actor": "Nathan Church",
             "actor_id": 701675,
-            "detail": "Nathan Church grounds out, shor…",
+            "detail": "Nathan Church grounds out, shortstop Edmundo Sosa to first baseman Kyle Schwarber.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -743,7 +486,7 @@
             "event_type": "out",
             "actor": "Masyn Winn",
             "actor_id": 691026,
-            "detail": "Masyn Winn pops out to second b…",
+            "detail": "Masyn Winn pops out to second baseman Luis Arraez.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -757,7 +500,7 @@
             "event_type": "out",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "José Fermín lines out to center…",
+            "detail": "José Fermín lines out to center fielder Justin Crawford.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -771,7 +514,7 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper strikes out swingi…",
+            "detail": "Bryce Harper strikes out swinging.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -785,7 +528,7 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out to left f…",
+            "detail": "Luis Arraez flies out to left fielder José Fermín.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -799,7 +542,7 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes out swing…",
+            "detail": "Brandon Marsh strikes out swinging.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -813,7 +556,7 @@
             "event_type": "out",
             "actor": "Jimmy Crooks",
             "actor_id": 699625,
-            "detail": "Jimmy Crooks grounds out, pitch…",
+            "detail": "Jimmy Crooks grounds out, pitcher Andrew Painter to first baseman Kyle Schwarber.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -827,7 +570,7 @@
             "event_type": "out",
             "actor": "César Prieto",
             "actor_id": 693409,
-            "detail": "César Prieto grounds out, first…",
+            "detail": "César Prieto grounds out, first baseman Kyle Schwarber to pitcher Andrew Painter.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -841,7 +584,7 @@
             "event_type": "out",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "JJ Wetherholt flies out to left…",
+            "detail": "JJ Wetherholt flies out to left fielder Brandon Marsh.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -855,7 +598,7 @@
             "event_type": "strikeout",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill called out on strike…",
+            "detail": "Derek Hill called out on strikes.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -869,7 +612,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds out sha…",
+            "detail": "Justin Crawford grounds out sharply, third baseman César Prieto to first baseman Alec Burleson.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -897,7 +640,7 @@
             "event_type": "out",
             "actor": "Garrett Stubbs",
             "actor_id": 596117,
-            "detail": "Garrett Stubbs flies out to lef…",
+            "detail": "Garrett Stubbs flies out to left fielder José Fermín.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -911,7 +654,7 @@
             "event_type": "out",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Iván Herrera grounds out, secon…",
+            "detail": "Iván Herrera grounds out, second baseman Luis Arraez to first baseman Kyle Schwarber.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -925,7 +668,7 @@
             "event_type": "strikeout",
             "actor": "Alec Burleson",
             "actor_id": 676475,
-            "detail": "Alec Burleson strikes out swing…",
+            "detail": "Alec Burleson strikes out swinging.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -939,7 +682,7 @@
             "event_type": "strikeout",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker strikes out swing…",
+            "detail": "Jordan Walker strikes out swinging.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -953,7 +696,7 @@
             "event_type": "single",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber singles on a lin…",
+            "detail": "Kyle Schwarber singles on a line drive to right fielder Jordan Walker. Kyle Schwarber to 2nd. K…",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -967,7 +710,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a line…",
+            "detail": "Bryson Stott singles on a line drive to right fielder Jordan Walker. Kyle Schwarber to 3rd.",
             "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -981,7 +724,7 @@
             "event_type": "other",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds into a dou…",
+            "detail": "Bryce Harper grounds into a double play, shortstop Masyn Winn to first baseman Alec Burleson. K…",
             "score_after": "PHI 3, STL 0",
             "runs": 1,
             "is_scoring": true,
@@ -995,7 +738,7 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out to left f…",
+            "detail": "Luis Arraez flies out to left fielder José Fermín.",
             "score_after": "PHI 3, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -1009,7 +752,7 @@
             "event_type": "out",
             "actor": "Nathan Church",
             "actor_id": 701675,
-            "detail": "Nathan Church flies out to left…",
+            "detail": "Nathan Church flies out to left fielder Brandon Marsh.",
             "score_after": "PHI 3, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -1037,7 +780,7 @@
             "event_type": "walk_hbp",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "Garrett Stubbs challenged (pitc…",
+            "detail": "Garrett Stubbs challenged (pitch result), call on the field was confirmed: José Fermín walks.",
             "score_after": "PHI 3, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -1051,7 +794,7 @@
             "event_type": "strikeout",
             "actor": "Jimmy Crooks",
             "actor_id": 699625,
-            "detail": "Jimmy Crooks strikes out swingi…",
+            "detail": "Jimmy Crooks strikes out swinging.",
             "score_after": "PHI 3, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -1065,7 +808,7 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes out swing…",
+            "detail": "Brandon Marsh strikes out swinging.",
             "score_after": "PHI 3, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -1079,7 +822,7 @@
             "event_type": "strikeout",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill called out on strike…",
+            "detail": "Derek Hill called out on strikes.",
             "score_after": "PHI 3, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -1093,7 +836,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds out to…",
+            "detail": "Justin Crawford grounds out to first baseman Alec Burleson.",
             "score_after": "PHI 3, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -1107,7 +850,7 @@
             "event_type": "out",
             "actor": "César Prieto",
             "actor_id": 693409,
-            "detail": "César Prieto grounds out, first…",
+            "detail": "César Prieto grounds out, first baseman Kyle Schwarber to pitcher Andrew Painter.",
             "score_after": "PHI 3, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -1135,7 +878,7 @@
             "event_type": "extra_base_hit",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Iván Herrera doubles (22) on a…",
+            "detail": "Iván Herrera doubles (22) on a ground ball to left fielder Brandon Marsh. JJ Wetherholt to 3rd.",
             "score_after": "PHI 3, STL 0",
             "runs": 0,
             "is_scoring": false,
@@ -1149,7 +892,7 @@
             "event_type": "single",
             "actor": "Alec Burleson",
             "actor_id": 676475,
-            "detail": "Alec Burleson singles on a grou…",
+            "detail": "Alec Burleson singles on a ground ball to center fielder Justin Crawford. JJ Wetherholt scores.…",
             "score_after": "PHI 3, STL 2",
             "runs": 2,
             "is_scoring": true,
@@ -1163,7 +906,7 @@
             "event_type": "strikeout",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker strikes out swing…",
+            "detail": "Jordan Walker strikes out swinging.",
             "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1177,7 +920,7 @@
             "event_type": "single",
             "actor": "Nathan Church",
             "actor_id": 701675,
-            "detail": "Nathan Church singles on a line…",
+            "detail": "Nathan Church singles on a line drive to right fielder Derek Hill. Alec Burleson to 2nd.",
             "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1205,7 +948,7 @@
             "event_type": "strikeout",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa strikes out swingi…",
+            "detail": "Edmundo Sosa strikes out swinging.",
             "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1233,7 +976,7 @@
             "event_type": "extra_base_hit",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber doubles (14) on…",
+            "detail": "Kyle Schwarber doubles (14) on a sharp fly ball to center fielder Nathan Church. Garrett Stubbs…",
             "score_after": "PHI 4, STL 2",
             "runs": 1,
             "is_scoring": true,
@@ -1261,7 +1004,7 @@
             "event_type": "walk_hbp",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper walks. Kyle Schwar…",
+            "detail": "Bryce Harper walks. Kyle Schwarber to 3rd. Bryson Stott to 2nd.",
             "score_after": "PHI 4, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1275,7 +1018,7 @@
             "event_type": "other",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez grounds into a doub…",
+            "detail": "Luis Arraez grounds into a double play, shortstop Masyn Winn to first baseman Alec Burleson. Br…",
             "score_after": "PHI 4, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1303,7 +1046,7 @@
             "event_type": "out",
             "actor": "Jimmy Crooks",
             "actor_id": 699625,
-            "detail": "Jimmy Crooks pops out to third…",
+            "detail": "Jimmy Crooks pops out to third baseman Bryson Stott in foul territory.",
             "score_after": "PHI 4, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1317,7 +1060,7 @@
             "event_type": "out",
             "actor": "César Prieto",
             "actor_id": 693409,
-            "detail": "César Prieto lines out to right…",
+            "detail": "César Prieto lines out to right fielder Derek Hill.",
             "score_after": "PHI 4, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1331,7 +1074,7 @@
             "event_type": "out",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "JJ Wetherholt flies out to cent…",
+            "detail": "JJ Wetherholt flies out to center fielder Justin Crawford.",
             "score_after": "PHI 4, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1359,7 +1102,7 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill flies out to center…",
+            "detail": "Derek Hill flies out to center fielder Nathan Church.",
             "score_after": "PHI 4, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1373,7 +1116,7 @@
             "event_type": "extra_base_hit",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford doubles (15) on…",
+            "detail": "Justin Crawford doubles (15) on a ground ball to right fielder Jordan Walker. Brandon Marsh to…",
             "score_after": "PHI 4, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1387,7 +1130,7 @@
             "event_type": "extra_base_hit",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa doubles (6) on a s…",
+            "detail": "Edmundo Sosa doubles (6) on a sharp line drive to center fielder Nathan Church. Brandon Marsh s…",
             "score_after": "PHI 6, STL 2",
             "runs": 2,
             "is_scoring": true,
@@ -1401,7 +1144,7 @@
             "event_type": "out",
             "actor": "Garrett Stubbs",
             "actor_id": 596117,
-            "detail": "Garrett Stubbs grounds out, thi…",
+            "detail": "Garrett Stubbs grounds out, third baseman César Prieto to first baseman Alec Burleson. Edmundo…",
             "score_after": "PHI 6, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1415,7 +1158,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber flies out to rig…",
+            "detail": "Kyle Schwarber flies out to right fielder Jordan Walker.",
             "score_after": "PHI 6, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1429,7 +1172,7 @@
             "event_type": "extra_base_hit",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Iván Herrera doubles (23) on a…",
+            "detail": "Iván Herrera doubles (23) on a sharp line drive to left fielder Brandon Marsh.",
             "score_after": "PHI 6, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1443,7 +1186,7 @@
             "event_type": "extra_base_hit",
             "actor": "Alec Burleson",
             "actor_id": 676475,
-            "detail": "Alec Burleson doubles (29) on a…",
+            "detail": "Alec Burleson doubles (29) on a line drive to right fielder Derek Hill. Iván Herrera scores.",
             "score_after": "PHI 6, STL 3",
             "runs": 1,
             "is_scoring": true,
@@ -1457,7 +1200,7 @@
             "event_type": "single",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker singles on a grou…",
+            "detail": "Jordan Walker singles on a ground ball to center fielder Justin Crawford. Alec Burleson to 3rd.",
             "score_after": "PHI 6, STL 3",
             "runs": 0,
             "is_scoring": false,
@@ -1471,7 +1214,7 @@
             "event_type": "out",
             "actor": "Nathan Church",
             "actor_id": 701675,
-            "detail": "Nathan Church pops out to short…",
+            "detail": "Nathan Church pops out to shortstop Edmundo Sosa.",
             "score_after": "PHI 6, STL 3",
             "runs": 0,
             "is_scoring": false,
@@ -1485,7 +1228,7 @@
             "event_type": "extra_base_hit",
             "actor": "Masyn Winn",
             "actor_id": 691026,
-            "detail": "Masyn Winn doubles (17) on a gr…",
+            "detail": "Masyn Winn doubles (17) on a ground ball to right fielder Derek Hill, deflected by pitcher Alan…",
             "score_after": "PHI 6, STL 4",
             "runs": 1,
             "is_scoring": true,
@@ -1499,7 +1242,7 @@
             "event_type": "single",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "José Fermín singles on a line d…",
+            "detail": "José Fermín singles on a line drive to center fielder Justin Crawford. Jordan Walker scores. Ma…",
             "score_after": "PHI 6, STL 5",
             "runs": 1,
             "is_scoring": true,
@@ -1513,7 +1256,7 @@
             "event_type": "strikeout",
             "actor": "Jimmy Crooks",
             "actor_id": 699625,
-            "detail": "Jimmy Crooks strikes out on a f…",
+            "detail": "Jimmy Crooks strikes out on a foul tip. José Fermín steals (6) 2nd base.",
             "score_after": "PHI 6, STL 5",
             "runs": 0,
             "is_scoring": false,
@@ -1527,7 +1270,7 @@
             "event_type": "out",
             "actor": "Bryan Torres",
             "actor_id": 663494,
-            "detail": "Bryan Torres lines out to cente…",
+            "detail": "Bryan Torres lines out to center fielder Justin Crawford.",
             "score_after": "PHI 6, STL 5",
             "runs": 0,
             "is_scoring": false,
@@ -1541,7 +1284,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a groun…",
+            "detail": "Bryson Stott singles on a ground ball to left fielder Bryan Torres.",
             "score_after": "PHI 6, STL 5",
             "runs": 0,
             "is_scoring": false,
@@ -1555,7 +1298,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper pops out to third…",
+            "detail": "Bryce Harper pops out to third baseman José Fermín.",
             "score_after": "PHI 6, STL 5",
             "runs": 0,
             "is_scoring": false,
@@ -1569,7 +1312,7 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez grounds out, third…",
+            "detail": "Luis Arraez grounds out, third baseman José Fermín to first baseman Alec Burleson. Bryson Stott…",
             "score_after": "PHI 6, STL 5",
             "runs": 0,
             "is_scoring": false,
@@ -1583,37 +1326,55 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes out swing…",
+            "detail": "Brandon Marsh strikes out swinging.",
+            "score_after": "PHI 6, STL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:77",
+            "inning": 9,
+            "half": "bottom",
+            "team": "STL",
+            "event_type": "strikeout",
+            "actor": "JJ Wetherholt",
+            "actor_id": 802139,
+            "detail": "JJ Wetherholt strikes out swinging.",
+            "score_after": "PHI 6, STL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:78",
+            "inning": 9,
+            "half": "bottom",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Iván Herrera",
+            "actor_id": 671056,
+            "detail": "Iván Herrera flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 6, STL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:79",
+            "inning": 9,
+            "half": "bottom",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Alec Burleson",
+            "actor_id": 676475,
+            "detail": "Alec Burleson lines out sharply to right fielder Derek Hill.",
             "score_after": "PHI 6, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "JJ Wetherholt",
-            "meta": "vs Alan Rangel"
-          },
-          "pitches": [
-            "S",
-            "S",
-            "F",
-            "B",
-            "S"
-          ],
-          "count": {
-            "balls": 1,
-            "strikes": 3,
-            "outs": 3
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Middle 9th"
-        }
+        ]
       }
     },
     "injury_report": null
