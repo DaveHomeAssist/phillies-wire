@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-10",
+  "edition_date": "2026-08-11",
   "volume": 1,
-  "edition": 132,
-  "generated_at": "2026-08-11T03:52:16.549Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 133,
+  "generated_at": "2026-08-11T04:00:58.793Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 64,
@@ -16,41 +16,41 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, STL 5.",
-    "dek": "PHI 6, STL 5 · Hunter Dobbins · 5.0 IP, 4 H, 1 ER, 6 K",
-    "summary": "PHI 6, STL 5. Final at Busch Stadium, St. Louis. PHI leads 1-0.",
+    "headline": "Phillies @ Cardinals · Game 2 of 3",
+    "dek": "Cristopher Sánchez vs Andre Pallante",
+    "summary": "Cristopher Sánchez vs Andre Pallante · Phillies @ Cardinals · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Andre Pallante · PHI @ STL · Tue, Aug 11 · 7:45 PM"
+    "next_value": "Zack Wheeler vs Kyle Leahy · PHI @ STL · Wed, Aug 12 · 2:15 PM"
   },
   "game": {
-    "matchup": "Phillies @ Cardinals · Game 1 of 3",
+    "matchup": "Phillies @ Cardinals · Game 2 of 3",
     "first_pitch": "7:45 PM",
     "venue": "Busch Stadium, St. Louis",
     "starters": {
       "home": {
-        "name": "Hunter Dobbins",
+        "name": "Andre Pallante",
         "hand": "R"
       },
       "away": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "phi": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "opp": {
-        "name": "Hunter Dobbins",
+        "name": "Andre Pallante",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "FS1",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-11T03:52:17.284Z",
+    "updated_at": "2026-08-11T04:00:59.224Z",
     "current_game_pk": 823019,
     "next_game_pk": 823017,
     "next_game": {
@@ -94,27 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Cardinals · Game 1 of 3 · 7:45 PM",
+      "text": "Phillies @ Cardinals · Game 2 of 3 · 7:45 PM",
       "highlight": false
     },
     {
-      "text": "Andrew Painter vs Hunter Dobbins",
+      "text": "Cristopher Sánchez vs Andre Pallante",
       "highlight": true
     },
     {
-      "text": "FS1 · 94 WIP",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
       "text": "83° · Clear · gusts 13 mph",
-      "highlight": false
-    },
-    {
-      "text": "placed RHP Caleb Kilian on the 15-day injured list. Left oblique strain.",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Chase Shugart from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
