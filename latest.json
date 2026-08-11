@@ -4,7 +4,7 @@
   "edition_date": "2026-08-10",
   "volume": 1,
   "edition": 132,
-  "generated_at": "2026-08-10T23:59:33.645Z",
+  "generated_at": "2026-08-11T00:00:14.362Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -57,25 +57,21 @@
     "weather": {
       "temp_f": 93,
       "condition": "Clear",
-      "wind": "4 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "5 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "JJ Wetherholt",
+        "name": "Iván Herrera",
         "meta": "vs Andrew Painter"
       },
-      "pitches": [
-        "S",
-        "S",
-        "F"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 0
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
         "first": false,
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-10T23:59:34.151Z",
+    "updated_at": "2026-08-11T00:00:14.590Z",
     "current_game_pk": 823018,
     "next_game_pk": 823019,
     "next_game": {
@@ -127,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "93° · Clear · gusts 7 mph",
+      "text": "93° · Clear · gusts 8 mph",
       "highlight": false
     },
     {
