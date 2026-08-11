@@ -4,9 +4,9 @@
   "edition_date": "2026-08-11",
   "volume": 1,
   "edition": 133,
-  "generated_at": "2026-08-11T23:16:36.818Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-11T23:45:10.288Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 64,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Cardinals · Game 2 of 3",
-    "dek": "Cristopher Sánchez vs Andre Pallante",
-    "summary": "Cristopher Sánchez vs Andre Pallante · Phillies @ Cardinals · Game 2 of 3",
+    "headline": "PHI 0, STL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Andre Pallante. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Leahy · PHI @ STL · Wed, Aug 12 · 2:15 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 96,
+      "temp_f": 95,
       "condition": "Clear",
-      "wind": "10 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "9 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Andre Pallante"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-11T23:16:37.332Z",
+    "updated_at": "2026-08-11T23:45:10.755Z",
     "current_game_pk": 823019,
     "next_game_pk": 823017,
     "next_game": {
@@ -106,15 +123,15 @@
       "highlight": false
     },
     {
-      "text": "96° · Clear · gusts 15 mph",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Alex McFarlane from Lehigh Valley IronPigs.",
+      "text": "95° · Clear · gusts 16 mph",
       "highlight": false
     },
     {
       "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "recalled RHP Alex McFarlane from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
