@@ -5,14 +5,14 @@
     "edition": 132,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-11T00:00:14.362Z",
+    "generated_at": "2026-08-11T00:21:25.706Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 10, 2026, 8:00 PM ET",
+      "generated_at_et": "Aug 10, 2026, 8:21 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, STL 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "JJ Wetherholt is up against Andrew Painter. Series: Regular Season.",
+    "headline": "PHI 2, STL 0",
+    "dek": "Middle 2nd · 3 outs",
+    "summary": "Nathan Church is up against Andrew Painter. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "93° · Clear"
+        "value": "92° · Clear"
       }
     ],
     "bullets": [
-      "JJ Wetherholt at the plate",
+      "Nathan Church at the plate",
       "Andrew Painter on the mound",
       "Busch Stadium, St. Louis"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 93,
+          "temp_f": 92,
           "condition": "Clear",
-          "wind": "5 mph · gusts 8",
-          "gusts_mph": 8
+          "wind": "5 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "",
@@ -359,35 +359,35 @@
             "team": "STL",
             "name": "Hunter Dobbins",
             "hand": "R",
-            "era": "3.51",
+            "era": "3.67",
             "record": "2-2",
-            "whip": "1.32"
+            "whip": "1.37"
           },
           "away": {
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "6.45",
+            "era": "6.39",
             "record": "1-8",
             "whip": "1.57"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 1,
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "Middle",
+          "isTopInning": true,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 0,
+              "runs": 2,
+              "hits": 2,
               "errors": 0
             },
             "home": {
               "runs": 0,
               "hits": 0,
-              "errors": 0
+              "errors": 1
             }
           },
           "innings": [
@@ -399,9 +399,22 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 2,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 1
               }
             }
           ]
@@ -482,11 +495,137 @@
             "inning": 1,
             "half": "bottom",
             "team": "STL",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Play",
+            "detail": "Iván Herrera flies out to left fielder Brandon Marsh.",
             "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:6",
+            "inning": 1,
+            "half": "bottom",
+            "team": "STL",
+            "event_type": "walk_hbp",
+            "actor": "Alec Burleson",
+            "actor_id": 676475,
+            "detail": "Alec Burleson walks.",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:7",
+            "inning": 1,
+            "half": "bottom",
+            "team": "STL",
+            "event_type": "strikeout",
+            "actor": "Jordan Walker",
+            "actor_id": 691023,
+            "detail": "Jordan Walker strikes out swinging.",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:8",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh singles on a sharp line drive to right fielder Jordan Walker.",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:9",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "reached_on_error",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill reaches on a throwing error by pitcher Hunter Dobbins. Brandon Marsh scores. Derek Hill to 3rd.",
+            "score_after": "PHI 1, STL 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823018:10",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford strikes out swinging, catcher Jimmy Crooks to first baseman Alec Burleson.",
+            "score_after": "PHI 1, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:11",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa singles on a sharp line drive to left fielder José Fermín. Derek Hill scores.",
+            "score_after": "PHI 2, STL 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823018:12",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs strikes out swinging.",
+            "score_after": "PHI 2, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:13",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Jimmy Crooks challenged (pitch result), call on the field was confirmed: Kyle Schwarber walks. Edmundo Sosa to 2nd.",
+            "score_after": "PHI 2, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823018:14",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to left fielder José Fermín.",
+            "score_after": "PHI 2, STL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -494,21 +633,29 @@
         ],
         "situation": {
           "batter": {
-            "name": "Iván Herrera",
+            "name": "Nathan Church",
             "meta": "vs Andrew Painter"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "B",
+            "F",
+            "F",
+            "F",
+            "B",
+            "X"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 1
+            "balls": 2,
+            "strikes": 2,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 1st"
+          "status": "Middle 2nd"
         }
       }
     },
@@ -525,8 +672,8 @@
             "retroactive_to": "2026-08-10",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-11T00:00:14.362Z",
-            "freshness_label": "As of Aug 10, 2026, 8:00 PM ET"
+            "last_confirmed": "2026-08-11T00:21:25.706Z",
+            "freshness_label": "As of Aug 10, 2026, 8:21 PM ET"
           },
           {
             "name": "Adolis García",
@@ -538,8 +685,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-11T00:00:14.362Z",
-            "freshness_label": "As of Aug 10, 2026, 8:00 PM ET"
+            "last_confirmed": "2026-08-11T00:21:25.706Z",
+            "freshness_label": "As of Aug 10, 2026, 8:21 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -551,8 +698,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-11T00:00:14.362Z",
-            "freshness_label": "As of Aug 10, 2026, 8:00 PM ET"
+            "last_confirmed": "2026-08-11T00:21:25.706Z",
+            "freshness_label": "As of Aug 10, 2026, 8:21 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -564,8 +711,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-11T00:00:14.362Z",
-            "freshness_label": "As of Aug 10, 2026, 8:00 PM ET"
+            "last_confirmed": "2026-08-11T00:21:25.706Z",
+            "freshness_label": "As of Aug 10, 2026, 8:21 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -577,8 +724,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-11T00:00:14.362Z",
-            "freshness_label": "As of Aug 10, 2026, 8:00 PM ET"
+            "last_confirmed": "2026-08-11T00:21:25.706Z",
+            "freshness_label": "As of Aug 10, 2026, 8:21 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -590,8 +737,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-11T00:00:14.362Z",
-            "freshness_label": "As of Aug 10, 2026, 8:00 PM ET"
+            "last_confirmed": "2026-08-11T00:21:25.706Z",
+            "freshness_label": "As of Aug 10, 2026, 8:21 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -603,8 +750,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-11T00:00:14.362Z",
-            "freshness_label": "As of Aug 10, 2026, 8:00 PM ET"
+            "last_confirmed": "2026-08-11T00:21:25.706Z",
+            "freshness_label": "As of Aug 10, 2026, 8:21 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

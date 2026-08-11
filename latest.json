@@ -4,7 +4,7 @@
   "edition_date": "2026-08-10",
   "volume": 1,
   "edition": 132,
-  "generated_at": "2026-08-11T00:00:14.362Z",
+  "generated_at": "2026-08-11T00:21:25.706Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, STL 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "JJ Wetherholt is up against Andrew Painter. Series: Regular Season.",
+    "headline": "PHI 2, STL 0",
+    "dek": "Middle 2nd · 3 outs",
+    "summary": "Nathan Church is up against Andrew Painter. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Andre Pallante · PHI @ STL · Tue, Aug 11 · 7:45 PM"
   },
@@ -55,30 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 93,
+      "temp_f": 92,
       "condition": "Clear",
-      "wind": "5 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Iván Herrera",
+        "name": "Nathan Church",
         "meta": "vs Andrew Painter"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "F",
+        "F",
+        "F",
+        "B",
+        "X"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "balls": 2,
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Middle 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +94,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-11T00:00:14.590Z",
+    "updated_at": "2026-08-11T00:21:26.402Z",
     "current_game_pk": 823018,
     "next_game_pk": 823019,
     "next_game": {
@@ -123,7 +131,7 @@
       "highlight": false
     },
     {
-      "text": "93° · Clear · gusts 8 mph",
+      "text": "92° · Clear · gusts 9 mph",
       "highlight": false
     },
     {
