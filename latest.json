@@ -4,7 +4,7 @@
   "edition_date": "2026-08-10",
   "volume": 1,
   "edition": 132,
-  "generated_at": "2026-08-11T00:30:36.406Z",
+  "generated_at": "2026-08-11T00:55:16.446Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, STL 0",
-    "dek": "Top 3rd · 0 outs",
-    "summary": "Bryce Harper is up against Hunter Dobbins. Series: Regular Season.",
+    "dek": "End 4th · 3 outs",
+    "summary": "Kyle Schwarber is up against Hunter Dobbins. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Andre Pallante · PHI @ STL · Tue, Aug 11 · 7:45 PM"
   },
@@ -55,36 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 91,
-      "condition": "Clear",
-      "wind": "5 mph · gusts 9",
-      "gusts_mph": 9
+      "temp_f": 88,
+      "condition": "Mostly sunny",
+      "wind": "7 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
+        "name": "Kyle Schwarber",
         "meta": "vs Hunter Dobbins"
       },
       "pitches": [
-        "B",
+        "S",
         "B",
         "S",
-        "F",
+        "B",
         "S"
       ],
       "count": {
         "balls": 2,
         "strikes": 3,
-        "outs": 1
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -92,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-11T00:30:36.893Z",
+    "updated_at": "2026-08-11T00:55:17.773Z",
     "current_game_pk": 823018,
     "next_game_pk": 823019,
     "next_game": {
@@ -129,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "91° · Clear · gusts 9 mph",
+      "text": "88° · Mostly sunny · gusts 13 mph",
       "highlight": false
     },
     {
