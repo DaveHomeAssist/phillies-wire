@@ -56,6 +56,19 @@ runTest("2.7: compact navigation wraps instead of overflowing narrow screens", (
   assert.match(nav, /min-width:\s*0/);
 });
 
+runTest("2.8: small interface text uses contrast-safe tokens and motion", () => {
+  const tokens = readFileSync(new URL("../tokens.css", import.meta.url), "utf8");
+  const core = readFileSync(new URL("../phillies-wire.css", import.meta.url), "utf8");
+  const enhancements = readFileSync(new URL("../pw-enhance.css", import.meta.url), "utf8");
+
+  assert.match(tokens, /--color-strip-sub:\s+rgba\(255, 255, 255, 0\.65\)/);
+  assert.match(core, /\.pw-record-label[\s\S]*?color:\s+var\(--color-text-inverse\)/);
+  assert.match(core, /\.pw-info-label[\s\S]*?color:\s+var\(--color-text-muted\)/);
+  assert.doesNotMatch(core, /@keyframes pw-pulse[\s\S]*?opacity:\s*0\.5/);
+  assert.match(enhancements, /\.pw-shell-link--subscribe[\s\S]*?var\(--color-accent-hover\)/);
+  assert.match(enhancements, /\.pwx-ring[\s\S]*?var\(--primitive-gold-700\)/);
+});
+
 runTest("2.4: isValidLinescore accepts the expected MLB shape", () => {
   assert.equal(isValidLinescore({ teams: { home: {}, away: {} }, currentInning: 3 }), true);
   assert.equal(isValidLinescore({}), true);

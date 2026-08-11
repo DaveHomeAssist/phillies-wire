@@ -365,9 +365,13 @@
   font-size: var(--text-2xs);
   letter-spacing: var(--tracking-widest);
   text-transform: uppercase;
-  color: var(--color-brand-gold);
+  color: var(--primitive-gold-700);
 }
 .pwx-ring svg { width: 13px; height: 13px; }
+[data-theme="dark"] .pwx-ring { color: var(--primitive-gold-300); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .pwx-ring { color: var(--primitive-gold-300); }
+}
 
 /* Keystone bullets in the hero (Pennsylvania, the Keystone State) */
 .pw-hero-bullet::before {
@@ -380,7 +384,7 @@
 
 /* ── EMAIL-LIST SUBSCRIBE CTA ──────────────────────────────*/
 .pw-shell-link--subscribe {
-  color: var(--color-brand-red);
+  color: var(--color-accent-hover);
   font-weight: var(--weight-bold);
 }
 .pw-subscribe {
