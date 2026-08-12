@@ -4,21 +4,21 @@
   "edition_date": "2026-08-12",
   "volume": 1,
   "edition": 134,
-  "generated_at": "2026-08-12T20:31:14.945Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-12T21:01:45.645Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 64,
-    "losses": 57,
-    "streak": "L1",
+    "losses": 58,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, STL 7",
-    "dek": "Middle 8th · 3 outs",
-    "summary": "Blaze Jordan is up against Chase Shugart. Series: Series tied 1-1.",
+    "headline": "PHI 1, STL 7.",
+    "dek": "STL 7, PHI 1 · Kyle Leahy · 5.0 IP, 6 H, 1 ER, 6 K",
+    "summary": "PHI 1, STL 7. Final at Busch Stadium, St. Louis. STL wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Taj Bradley · PHI @ MIN · Thu, Aug 13 · 7:30 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "STL wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,63 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 93,
-      "condition": "Overcast",
-      "wind": "4 mph · gusts 8",
+      "temp_f": 94,
+      "condition": "Clear",
+      "wind": "7 mph · gusts 8",
       "gusts_mph": 8
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Blaze Jordan",
-        "meta": "vs Chase Shugart"
-      },
-      "pitches": [
-        "B",
-        "F",
-        "X"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Middle 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T20:31:15.414Z",
-    "current_game_pk": 823017,
-    "next_game_pk": 823669,
+    "updated_at": "2026-08-12T21:01:46.321Z",
+    "current_game_pk": 823669,
+    "next_game_pk": 823671,
     "next_game": {
-      "game_pk": 823669,
-      "official_date": "2026-08-13",
-      "date_label": "Thu, Aug 13, 2026",
-      "time_label": "7:30 PM",
+      "game_pk": 823671,
+      "official_date": "2026-08-15",
+      "date_label": "Sat, Aug 15, 2026",
+      "time_label": "7:10 PM",
       "title": "Phillies at Minnesota Twins",
       "matchup": "PHI at MIN",
-      "venue": "Field of Dreams"
+      "venue": "Target Field"
     },
     "current_game": {
-      "game_pk": 823017,
-      "official_date": "2026-08-12",
-      "title": "Phillies at St. Louis Cardinals",
-      "matchup": "PHI at STL"
+      "game_pk": 823669,
+      "official_date": "2026-08-13",
+      "title": "Phillies at Minnesota Twins",
+      "matchup": "PHI at MIN"
     }
   },
   "ticker": [
     {
-      "text": "PHI 64-57",
+      "text": "PHI 64-58",
       "highlight": true
     },
     {
@@ -127,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "93° · Overcast · gusts 8 mph",
+      "text": "94° · Clear · gusts 8 mph",
       "highlight": false
     }
   ]
