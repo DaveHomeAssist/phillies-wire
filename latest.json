@@ -4,7 +4,7 @@
   "edition_date": "2026-08-11",
   "volume": 1,
   "edition": 133,
-  "generated_at": "2026-08-12T01:34:02.770Z",
+  "generated_at": "2026-08-12T01:53:34.645Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, STL 0",
-    "dek": "Top 7th · 1 out",
-    "summary": "Bryson Stott is up against George Soriano. Series: PHI leads 1-0.",
+    "headline": "PHI 0, STL 1",
+    "dek": "End 7th · 3 outs",
+    "summary": "Kyle Schwarber is up against George Soriano. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Leahy · PHI @ STL · Wed, Aug 12 · 2:15 PM"
   },
@@ -64,26 +64,27 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
+        "name": "Kyle Schwarber",
         "meta": "vs George Soriano"
       },
       "pitches": [
         "S",
-        "S",
         "B",
-        "F"
+        "S",
+        "F",
+        "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 2,
         "strikes": 2,
-        "outs": 1
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "End 7th"
     },
     "recap_line": null
   },
@@ -91,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T01:34:03.212Z",
+    "updated_at": "2026-08-12T01:53:35.255Z",
     "current_game_pk": 823019,
     "next_game_pk": 823017,
     "next_game": {
@@ -132,11 +133,11 @@
       "highlight": false
     },
     {
-      "text": "recalled RHP Alex McFarlane from Lehigh Valley IronPigs.",
+      "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
       "highlight": false
     },
     {
-      "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
+      "text": "recalled RHP Alex McFarlane from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
