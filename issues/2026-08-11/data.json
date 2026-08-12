@@ -5,14 +5,14 @@
     "edition": 133,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-12T01:10:04.438Z",
+    "generated_at": "2026-08-12T01:34:02.770Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 11, 2026, 9:10 PM ET",
+      "generated_at_et": "Aug 11, 2026, 9:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, STL 0",
-    "dek": "Bottom 5th · 2 outs",
-    "summary": "Everson Pereira is up against Cristopher Sánchez. Series: PHI leads 1-0.",
+    "dek": "Top 7th · 1 out",
+    "summary": "Bryson Stott is up against George Soriano. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "90° · Clear"
+        "value": "88° · Clear"
       }
     ],
     "bullets": [
-      "Everson Pereira at the plate",
-      "Cristopher Sánchez on the mound",
+      "Bryson Stott at the plate",
+      "George Soriano on the mound",
       "Busch Stadium, St. Louis"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 90,
+          "temp_f": 88,
           "condition": "Clear",
-          "wind": "4 mph · gusts 9",
+          "wind": "5 mph · gusts 9",
           "gusts_mph": 9
         },
         "giveaway": "",
@@ -359,7 +359,7 @@
             "team": "STL",
             "name": "Andre Pallante",
             "hand": "R",
-            "era": "3.49",
+            "era": "3.46",
             "record": "12-6",
             "whip": "1.22"
           },
@@ -367,21 +367,21 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.57",
+            "era": "2.54",
             "record": "15-4",
-            "whip": "1.21"
+            "whip": "1.19"
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 2,
+          "currentInning": 7,
+          "currentInningOrdinal": "7th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 3,
+              "hits": 4,
               "errors": 0
             },
             "home": {
@@ -447,6 +447,32 @@
               "num": 5,
               "away": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               },
@@ -954,9 +980,121 @@
             "inning": 5,
             "half": "bottom",
             "team": "STL",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Everson Pereira",
             "actor_id": 677592,
+            "detail": "Everson Pereira strikes out swinging.",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823019:36",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner singles on a line drive to left fielder José Fermín.",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823019:37",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds into a double play, second baseman JJ Wetherholt to shortstop Masyn Winn to first baseman Alec Burleson. Trea…",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823019:38",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez grounds out, second baseman JJ Wetherholt to first baseman Alec Burleson.",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823019:39",
+            "inning": 6,
+            "half": "bottom",
+            "team": "STL",
+            "event_type": "strikeout",
+            "actor": "Pedro Pagés",
+            "actor_id": 686780,
+            "detail": "Pedro Pagés strikes out swinging.",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823019:40",
+            "inning": 6,
+            "half": "bottom",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "JJ Wetherholt",
+            "actor_id": 802139,
+            "detail": "JJ Wetherholt grounds out, pitcher Cristopher Sánchez to first baseman Alec Bohm.",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823019:41",
+            "inning": 6,
+            "half": "bottom",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Iván Herrera",
+            "actor_id": 671056,
+            "detail": "Phillies challenged (play at 1st), call on the field was overturned: Iván Herrera grounds out, third baseman Bryson Stott to first…",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823019:42",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto called out on strikes.",
+            "score_after": "PHI 0, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823019:43",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
             "detail": "Play",
             "score_after": "PHI 0, STL 0",
             "runs": 0,
@@ -966,23 +1104,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "Everson Pereira",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Bryson Stott",
+            "meta": "vs George Soriano"
           },
           "pitches": [
-            "S"
+            "S",
+            "S",
+            "B",
+            "F"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 1,
-            "outs": 2
+            "balls": 1,
+            "strikes": 2,
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 5th"
+          "status": "Top 7th"
         }
       }
     },
@@ -999,8 +1140,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T01:10:04.438Z",
-            "freshness_label": "As of Aug 11, 2026, 9:10 PM ET"
+            "last_confirmed": "2026-08-12T01:34:02.770Z",
+            "freshness_label": "As of Aug 11, 2026, 9:34 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1012,8 +1153,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T01:10:04.438Z",
-            "freshness_label": "As of Aug 11, 2026, 9:10 PM ET"
+            "last_confirmed": "2026-08-12T01:34:02.770Z",
+            "freshness_label": "As of Aug 11, 2026, 9:34 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1025,8 +1166,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T01:10:04.438Z",
-            "freshness_label": "As of Aug 11, 2026, 9:10 PM ET"
+            "last_confirmed": "2026-08-12T01:34:02.770Z",
+            "freshness_label": "As of Aug 11, 2026, 9:34 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1038,8 +1179,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T01:10:04.438Z",
-            "freshness_label": "As of Aug 11, 2026, 9:10 PM ET"
+            "last_confirmed": "2026-08-12T01:34:02.770Z",
+            "freshness_label": "As of Aug 11, 2026, 9:34 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1051,8 +1192,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T01:10:04.438Z",
-            "freshness_label": "As of Aug 11, 2026, 9:10 PM ET"
+            "last_confirmed": "2026-08-12T01:34:02.770Z",
+            "freshness_label": "As of Aug 11, 2026, 9:34 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1064,8 +1205,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T01:10:04.438Z",
-            "freshness_label": "As of Aug 11, 2026, 9:10 PM ET"
+            "last_confirmed": "2026-08-12T01:34:02.770Z",
+            "freshness_label": "As of Aug 11, 2026, 9:34 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1077,8 +1218,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T01:10:04.438Z",
-            "freshness_label": "As of Aug 11, 2026, 9:10 PM ET"
+            "last_confirmed": "2026-08-12T01:34:02.770Z",
+            "freshness_label": "As of Aug 11, 2026, 9:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
