@@ -4,7 +4,7 @@
   "edition_date": "2026-08-11",
   "volume": 1,
   "edition": 133,
-  "generated_at": "2026-08-11T23:46:07.051Z",
+  "generated_at": "2026-08-12T00:03:33.132Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Kyle Schwarber is up against Andre Pallante. Series: PHI leads 1-0.",
+    "dek": "Bottom 1st · 2 outs",
+    "summary": "Jordan Walker is up against Cristopher Sánchez. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Leahy · PHI @ STL · Wed, Aug 12 · 2:15 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 95,
+      "temp_f": 94,
       "condition": "Clear",
       "wind": "9 mph · gusts 16",
       "gusts_mph": 16
@@ -64,21 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Andre Pallante"
+        "name": "Jordan Walker",
+        "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "X"
+      ],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
-        "outs": 0
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-11T23:46:07.819Z",
+    "updated_at": "2026-08-12T00:03:33.970Z",
     "current_game_pk": 823019,
     "next_game_pk": 823017,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "95° · Clear · gusts 16 mph",
+      "text": "94° · Clear · gusts 16 mph",
       "highlight": false
     },
     {
