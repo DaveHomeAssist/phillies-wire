@@ -4,7 +4,7 @@
   "edition_date": "2026-08-11",
   "volume": 1,
   "edition": 133,
-  "generated_at": "2026-08-12T00:49:43.028Z",
+  "generated_at": "2026-08-12T01:10:04.438Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 0",
-    "dek": "Middle 4th · 3 outs",
-    "summary": "Iván Herrera is up against Cristopher Sánchez. Series: PHI leads 1-0.",
+    "dek": "Bottom 5th · 2 outs",
+    "summary": "Everson Pereira is up against Cristopher Sánchez. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Leahy · PHI @ STL · Wed, Aug 12 · 2:15 PM"
   },
@@ -55,37 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 91,
+      "temp_f": 90,
       "condition": "Clear",
-      "wind": "6 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "4 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Iván Herrera",
+        "name": "Everson Pereira",
         "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
-        "B",
-        "B",
-        "S",
-        "B",
-        "S",
-        "X"
+        "S"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 3
+        "balls": 0,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 4th"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -93,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T00:49:43.867Z",
+    "updated_at": "2026-08-12T01:10:04.962Z",
     "current_game_pk": 823019,
     "next_game_pk": 823017,
     "next_game": {
@@ -130,15 +125,15 @@
       "highlight": false
     },
     {
-      "text": "91° · Clear · gusts 12 mph",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Alex McFarlane from Lehigh Valley IronPigs.",
+      "text": "90° · Clear · gusts 9 mph",
       "highlight": false
     },
     {
       "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "recalled RHP Alex McFarlane from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
