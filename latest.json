@@ -4,9 +4,9 @@
   "edition_date": "2026-08-12",
   "volume": 1,
   "edition": 134,
-  "generated_at": "2026-08-12T17:48:56.895Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-12T18:18:43.545Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 64,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Cardinals · Game 3 of 3",
-    "dek": "Zack Wheeler vs Kyle Leahy",
-    "summary": "Zack Wheeler vs Kyle Leahy · Phillies @ Cardinals · Game 3 of 3",
+    "headline": "PHI 0, STL 0",
+    "dek": "Top 1st · 1 out",
+    "summary": "Trea Turner is up against Kyle Leahy. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Taj Bradley · PHI @ MIN · Thu, Aug 13 · 7:30 PM"
   },
@@ -55,21 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 97,
+      "temp_f": 91,
       "condition": "Overcast",
-      "wind": "10 mph · gusts 17",
+      "wind": "13 mph · gusts 17",
       "gusts_mph": 17
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Trea Turner",
+        "meta": "vs Kyle Leahy"
+      },
+      "pitches": [
+        "B",
+        "B",
+        "S"
+      ],
+      "count": {
+        "balls": 2,
+        "strikes": 1,
+        "outs": 1
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T17:48:57.714Z",
+    "updated_at": "2026-08-12T18:18:43.960Z",
     "current_game_pk": 823017,
     "next_game_pk": 823669,
     "next_game": {
@@ -106,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "97° · Overcast · gusts 17 mph",
+      "text": "91° · Overcast · gusts 17 mph",
       "highlight": false
     }
   ]
