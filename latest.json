@@ -4,7 +4,7 @@
   "edition_date": "2026-08-12",
   "volume": 1,
   "edition": 134,
-  "generated_at": "2026-08-12T20:14:03.792Z",
+  "generated_at": "2026-08-12T20:15:35.213Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -57,7 +57,7 @@
     "weather": {
       "temp_f": 93,
       "condition": "Overcast",
-      "wind": "2 mph · gusts 9",
+      "wind": "3 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
@@ -68,16 +68,19 @@
         "meta": "vs José Alvarado"
       },
       "pitches": [
+        "B",
+        "S",
+        "S",
         "B"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
+        "balls": 3,
+        "strikes": 2,
         "outs": 1
       },
       "bases": {
-        "first": true,
-        "second": false,
+        "first": false,
+        "second": true,
         "third": false
       },
       "status": "Bottom 7th"
@@ -88,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T20:14:04.448Z",
+    "updated_at": "2026-08-12T20:15:35.715Z",
     "current_game_pk": 823017,
     "next_game_pk": 823669,
     "next_game": {

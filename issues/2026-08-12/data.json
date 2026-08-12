@@ -5,14 +5,14 @@
     "edition": 134,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-12T20:14:03.792Z",
+    "generated_at": "2026-08-12T20:15:35.213Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 12, 2026, 4:14 PM ET",
+      "generated_at_et": "Aug 12, 2026, 4:15 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 93,
           "condition": "Overcast",
-          "wind": "2 mph · gusts 9",
+          "wind": "3 mph · gusts 9",
           "gusts_mph": 9
         },
         "giveaway": "",
@@ -1246,10 +1246,10 @@
             "inning": 7,
             "half": "bottom",
             "team": "STL",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Play",
+            "detail": "Batter Timeout.",
             "score_after": "PHI 1, STL 5",
             "runs": 0,
             "is_scoring": false,
@@ -1262,16 +1262,19 @@
             "meta": "vs José Alvarado"
           },
           "pitches": [
+            "B",
+            "S",
+            "S",
             "B"
           ],
           "count": {
-            "balls": 1,
-            "strikes": 0,
+            "balls": 3,
+            "strikes": 2,
             "outs": 1
           },
           "bases": {
-            "first": true,
-            "second": false,
+            "first": false,
+            "second": true,
             "third": false
           },
           "status": "Bottom 7th"
@@ -1291,8 +1294,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T20:14:03.792Z",
-            "freshness_label": "As of Aug 12, 2026, 4:14 PM ET"
+            "last_confirmed": "2026-08-12T20:15:35.213Z",
+            "freshness_label": "As of Aug 12, 2026, 4:15 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1304,8 +1307,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T20:14:03.792Z",
-            "freshness_label": "As of Aug 12, 2026, 4:14 PM ET"
+            "last_confirmed": "2026-08-12T20:15:35.213Z",
+            "freshness_label": "As of Aug 12, 2026, 4:15 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1317,8 +1320,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T20:14:03.792Z",
-            "freshness_label": "As of Aug 12, 2026, 4:14 PM ET"
+            "last_confirmed": "2026-08-12T20:15:35.213Z",
+            "freshness_label": "As of Aug 12, 2026, 4:15 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1330,8 +1333,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T20:14:03.792Z",
-            "freshness_label": "As of Aug 12, 2026, 4:14 PM ET"
+            "last_confirmed": "2026-08-12T20:15:35.213Z",
+            "freshness_label": "As of Aug 12, 2026, 4:15 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1343,8 +1346,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T20:14:03.792Z",
-            "freshness_label": "As of Aug 12, 2026, 4:14 PM ET"
+            "last_confirmed": "2026-08-12T20:15:35.213Z",
+            "freshness_label": "As of Aug 12, 2026, 4:15 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1356,8 +1359,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T20:14:03.792Z",
-            "freshness_label": "As of Aug 12, 2026, 4:14 PM ET"
+            "last_confirmed": "2026-08-12T20:15:35.213Z",
+            "freshness_label": "As of Aug 12, 2026, 4:15 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1369,8 +1372,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T20:14:03.792Z",
-            "freshness_label": "As of Aug 12, 2026, 4:14 PM ET"
+            "last_confirmed": "2026-08-12T20:15:35.213Z",
+            "freshness_label": "As of Aug 12, 2026, 4:15 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
