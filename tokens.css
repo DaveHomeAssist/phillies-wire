@@ -203,8 +203,8 @@
    Two families: Barlow Condensed (display/UI) + Inter (body)
    ---------------------------------------------------------- */
 :root {
-  --font-display: 'Barlow Condensed', sans-serif;
-  --font-body:    'Inter', sans-serif;
+  --font-display: 'Barlow Condensed', 'Arial Narrow', 'Roboto Condensed', sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --text-2xl: 32px;
   --text-xl:  24px;

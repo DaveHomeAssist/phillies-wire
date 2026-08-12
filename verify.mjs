@@ -47,6 +47,8 @@ const requiredFiles = [
   "./site/pw-enhance.css",
   "./fonts.css",
   "./site/fonts.css",
+  "./site.css",
+  "./site/site.css",
   "./robots.txt",
   "./sitemap.xml",
   "./feed.xml",
@@ -253,13 +255,17 @@ if (!/pw-hero/.test(latestHtml)) {
   fail("Latest issue page is missing the hero section.");
 }
 
-// Enhancement layer (Liberty Bell / broadsheet) must be wired in and the
-// fonts self-hosted, not loaded from Google Fonts.
-if (!/pw-enhance\.css/.test(latestHtml)) {
-  fail("Latest issue page does not link pw-enhance.css (enhancement layer missing).");
+// The compiled stylesheet must contain the enhancement layer and self-hosted
+// fonts while the page pays for only one render-blocking stylesheet request.
+if (!/site\.css/.test(latestHtml)) {
+  fail("Latest issue page does not link the compiled site.css.");
 }
-if (!/fonts\.css/.test(latestHtml)) {
-  fail("Latest issue page does not link the self-hosted fonts.css.");
+if ((latestHtml.match(/rel="stylesheet"/g) ?? []).length !== 1) {
+  fail("Latest issue page must use exactly one render-blocking stylesheet.");
+}
+const siteCss = readFileSync("./site.css", "utf8");
+if (!/source: pw-enhance\.css/.test(siteCss) || !/source: fonts\.css/.test(siteCss)) {
+  fail("Compiled site.css is missing the enhancement or self-hosted font source.");
 }
 if (/fonts\.googleapis\.com/.test(latestHtml)) {
   fail("Latest issue page still loads Google Fonts; fonts must be self-hosted.");

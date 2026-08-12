@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "css:build": "node scripts/build-css.mjs",
     "crawl": "node crawl.mjs",
     "enrich": "node enrich.mjs",
     "render": "node render.mjs",

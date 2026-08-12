@@ -23,6 +23,7 @@ try {
     "phillies-wire-schema.json",
     "tokens.css",
     "phillies-wire.css",
+    "pw-enhance.css",
     "live-feed.js",
     "fonts.css",
     "render.mjs",
@@ -97,6 +98,7 @@ try {
     "site/feed.xml",
     "site/robots.txt",
     "site/fonts.css",
+    "site/site.css",
     "data/phillies-2026.json",
     "calendar/phillies-2026-all.ics",
     "site/data/phillies-2026.json",
@@ -117,7 +119,8 @@ try {
   assert.ok(html.includes("<main"), "main landmark present");
   assert.ok(!/\{\{[^}]+\}\}/.test(html), "no unresolved tokens");
   assert.ok(html.includes(fixture.hero.headline), "hero headline stamped");
-  assert.ok(html.includes("fonts.css"), "fonts.css linked from template");
+  assert.ok(html.includes("site.css"), "compiled site.css linked from template");
+  assert.equal((html.match(/rel="stylesheet"/g) ?? []).length, 1, "one render-blocking stylesheet");
 
   // Status payload should reflect the fixture.
   const status = JSON.parse(readFileSync(join(work, "status.json"), "utf8"));
