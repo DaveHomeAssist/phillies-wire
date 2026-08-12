@@ -4,7 +4,7 @@
   "edition_date": "2026-08-11",
   "volume": 1,
   "edition": 133,
-  "generated_at": "2026-08-12T00:25:28.091Z",
+  "generated_at": "2026-08-12T00:38:13.656Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 0",
-    "dek": "Top 3rd · 1 out",
-    "summary": "Kyle Schwarber is up against Andre Pallante. Series: PHI leads 1-0.",
+    "dek": "End 3rd · 3 outs",
+    "summary": "Luis Arraez is up against Andre Pallante. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Leahy · PHI @ STL · Wed, Aug 12 · 2:15 PM"
   },
@@ -55,33 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 94,
+      "temp_f": 93,
       "condition": "Clear",
-      "wind": "8 mph · gusts 16",
-      "gusts_mph": 16
+      "wind": "7 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Luis Arraez",
         "meta": "vs Andre Pallante"
       },
       "pitches": [
         "B",
+        "S",
         "X"
       ],
       "count": {
         "balls": 1,
-        "strikes": 0,
-        "outs": 1
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "End 3rd"
     },
     "recap_line": null
   },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T00:25:28.734Z",
+    "updated_at": "2026-08-12T00:38:14.185Z",
     "current_game_pk": 823019,
     "next_game_pk": 823017,
     "next_game": {
@@ -126,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "94° · Clear · gusts 16 mph",
+      "text": "93° · Clear · gusts 15 mph",
       "highlight": false
     },
     {
