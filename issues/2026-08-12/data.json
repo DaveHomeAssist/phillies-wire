@@ -5,14 +5,14 @@
     "edition": 134,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-12T18:47:48.159Z",
+    "generated_at": "2026-08-12T18:48:38.968Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 12, 2026, 2:47 PM ET",
+      "generated_at_et": "Aug 12, 2026, 2:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,7 +29,7 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, STL 1",
-    "dek": "Top 3rd · 0 outs",
+    "dek": "Top 3rd · 1 out",
     "summary": "J.T. Realmuto is up against Kyle Leahy. Series: Series tied 1-1.",
     "cards": [
       {
@@ -634,10 +634,10 @@
             "inning": 3,
             "half": "top",
             "team": "PHI",
-            "event_type": "out",
+            "event_type": "other",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "Batter Timeout.",
+            "detail": "Play",
             "score_after": "PHI 0, STL 1",
             "runs": 0,
             "is_scoring": false,
@@ -649,10 +649,14 @@
             "name": "J.T. Realmuto",
             "meta": "vs Kyle Leahy"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "F",
+            "B"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
+            "balls": 1,
+            "strikes": 2,
             "outs": 0
           },
           "bases": {
@@ -677,8 +681,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T18:47:48.159Z",
-            "freshness_label": "As of Aug 12, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-08-12T18:48:38.968Z",
+            "freshness_label": "As of Aug 12, 2026, 2:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -690,8 +694,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T18:47:48.159Z",
-            "freshness_label": "As of Aug 12, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-08-12T18:48:38.968Z",
+            "freshness_label": "As of Aug 12, 2026, 2:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -703,8 +707,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T18:47:48.159Z",
-            "freshness_label": "As of Aug 12, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-08-12T18:48:38.968Z",
+            "freshness_label": "As of Aug 12, 2026, 2:48 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -716,8 +720,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T18:47:48.159Z",
-            "freshness_label": "As of Aug 12, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-08-12T18:48:38.968Z",
+            "freshness_label": "As of Aug 12, 2026, 2:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -729,8 +733,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T18:47:48.159Z",
-            "freshness_label": "As of Aug 12, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-08-12T18:48:38.968Z",
+            "freshness_label": "As of Aug 12, 2026, 2:48 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -742,8 +746,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T18:47:48.159Z",
-            "freshness_label": "As of Aug 12, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-08-12T18:48:38.968Z",
+            "freshness_label": "As of Aug 12, 2026, 2:48 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -755,8 +759,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-12T18:47:48.159Z",
-            "freshness_label": "As of Aug 12, 2026, 2:47 PM ET"
+            "last_confirmed": "2026-08-12T18:48:38.968Z",
+            "freshness_label": "As of Aug 12, 2026, 2:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
