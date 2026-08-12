@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-11",
+  "edition_date": "2026-08-12",
   "volume": 1,
-  "edition": 133,
-  "generated_at": "2026-08-12T03:44:26.702Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 134,
+  "generated_at": "2026-08-12T04:16:51.992Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 64,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, STL 2.",
-    "dek": "STL 2, PHI 0 · Cristopher Sánchez · 6.0 IP, 4 H, 0 ER, 7 K",
-    "summary": "PHI 0, STL 2. Final at Busch Stadium, St. Louis. Series tied 1-1.",
+    "headline": "Phillies @ Cardinals · Game 3 of 3",
+    "dek": "Zack Wheeler vs Kyle Leahy",
+    "summary": "Zack Wheeler vs Kyle Leahy · Phillies @ Cardinals · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Kyle Leahy · PHI @ STL · Wed, Aug 12 · 2:15 PM"
+    "next_value": "Aaron Nola · PHI @ MIN · Thu, Aug 13 · 7:30 PM"
   },
   "game": {
-    "matchup": "Phillies @ Cardinals · Game 2 of 3",
-    "first_pitch": "7:45 PM",
+    "matchup": "Phillies @ Cardinals · Game 3 of 3",
+    "first_pitch": "2:15 PM",
     "venue": "Busch Stadium, St. Louis",
     "starters": {
       "home": {
-        "name": "Andre Pallante",
+        "name": "Kyle Leahy",
         "hand": "R"
       },
       "away": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Andre Pallante",
+        "name": "Kyle Leahy",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "PHI leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 85,
+      "temp_f": 84,
       "condition": "Clear",
-      "wind": "4 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T03:44:27.322Z",
+    "updated_at": "2026-08-12T04:16:52.500Z",
     "current_game_pk": 823017,
     "next_game_pk": 823669,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Cardinals · Game 2 of 3 · 7:45 PM",
+      "text": "Phillies @ Cardinals · Game 3 of 3 · 2:15 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Andre Pallante",
+      "text": "Zack Wheeler vs Kyle Leahy",
       "highlight": true
     },
     {
@@ -106,15 +106,7 @@
       "highlight": false
     },
     {
-      "text": "85° · Clear · gusts 8 mph",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Alex McFarlane from Lehigh Valley IronPigs.",
-      "highlight": false
-    },
-    {
-      "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
+      "text": "84° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
