@@ -4,21 +4,21 @@
   "edition_date": "2026-08-11",
   "volume": 1,
   "edition": 133,
-  "generated_at": "2026-08-12T01:53:34.645Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-12T02:36:32.786Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 64,
-    "losses": 56,
-    "streak": "W2",
+    "losses": 57,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, STL 1",
-    "dek": "End 7th · 3 outs",
-    "summary": "Kyle Schwarber is up against George Soriano. Series: PHI leads 1-0.",
+    "headline": "PHI 0, STL 2.",
+    "dek": "STL 2, PHI 0 · Cristopher Sánchez · 6.0 IP, 4 H, 0 ER, 7 K",
+    "summary": "PHI 0, STL 2. Final at Busch Stadium, St. Louis. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Kyle Leahy · PHI @ STL · Wed, Aug 12 · 2:15 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,65 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 88,
+      "temp_f": 87,
       "condition": "Clear",
-      "wind": "5 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "5 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs George Soriano"
-      },
-      "pitches": [
-        "S",
-        "B",
-        "S",
-        "F",
-        "X"
-      ],
-      "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "End 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T01:53:35.255Z",
-    "current_game_pk": 823019,
-    "next_game_pk": 823017,
+    "updated_at": "2026-08-12T02:36:33.622Z",
+    "current_game_pk": 823017,
+    "next_game_pk": 823669,
     "next_game": {
-      "game_pk": 823017,
-      "official_date": "2026-08-12",
-      "date_label": "Wed, Aug 12, 2026",
-      "time_label": "2:15 PM",
-      "title": "Phillies at St. Louis Cardinals",
-      "matchup": "PHI at STL",
-      "venue": "Busch Stadium"
+      "game_pk": 823669,
+      "official_date": "2026-08-13",
+      "date_label": "Thu, Aug 13, 2026",
+      "time_label": "7:30 PM",
+      "title": "Phillies at Minnesota Twins",
+      "matchup": "PHI at MIN",
+      "venue": "Field of Dreams"
     },
     "current_game": {
-      "game_pk": 823019,
-      "official_date": "2026-08-11",
+      "game_pk": 823017,
+      "official_date": "2026-08-12",
       "title": "Phillies at St. Louis Cardinals",
       "matchup": "PHI at STL"
     }
   },
   "ticker": [
     {
-      "text": "PHI 64-56",
+      "text": "PHI 64-57",
       "highlight": true
     },
     {
@@ -129,15 +106,15 @@
       "highlight": false
     },
     {
-      "text": "88° · Clear · gusts 9 mph",
-      "highlight": false
-    },
-    {
-      "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
+      "text": "87° · Clear · gusts 12 mph",
       "highlight": false
     },
     {
       "text": "recalled RHP Alex McFarlane from Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "optioned RHP Alan Rangel to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
