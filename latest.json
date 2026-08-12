@@ -4,7 +4,7 @@
   "edition_date": "2026-08-12",
   "volume": 1,
   "edition": 134,
-  "generated_at": "2026-08-12T19:23:15.559Z",
+  "generated_at": "2026-08-12T19:24:14.035Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, STL 1",
-    "dek": "Top 5th · 0 outs",
-    "summary": "Alec Bohm is up against Kyle Leahy. Series: Series tied 1-1.",
+    "dek": "Top 5th · 1 out",
+    "summary": "Justin Crawford is up against Kyle Leahy. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Taj Bradley · PHI @ MIN · Thu, Aug 13 · 7:30 PM"
   },
@@ -64,25 +64,20 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
+        "name": "Justin Crawford",
         "meta": "vs Kyle Leahy"
       },
       "pitches": [
-        "F",
-        "B",
-        "B",
-        "F",
-        "B",
-        "F"
+        "X"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
       "status": "Top 5th"
@@ -93,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T19:23:16.395Z",
+    "updated_at": "2026-08-12T19:24:14.492Z",
     "current_game_pk": 823017,
     "next_game_pk": 823669,
     "next_game": {
