@@ -4,7 +4,7 @@
   "edition_date": "2026-08-12",
   "volume": 1,
   "edition": 134,
-  "generated_at": "2026-08-12T18:48:38.968Z",
+  "generated_at": "2026-08-12T19:23:15.559Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, STL 1",
-    "dek": "Top 3rd · 1 out",
-    "summary": "J.T. Realmuto is up against Kyle Leahy. Series: Series tied 1-1.",
+    "headline": "PHI 1, STL 1",
+    "dek": "Top 5th · 0 outs",
+    "summary": "Alec Bohm is up against Kyle Leahy. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Taj Bradley · PHI @ MIN · Thu, Aug 13 · 7:30 PM"
   },
@@ -55,25 +55,28 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 87,
+      "temp_f": 90,
       "condition": "Overcast",
-      "wind": "11 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "8 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
+        "name": "Alec Bohm",
         "meta": "vs Kyle Leahy"
       },
       "pitches": [
-        "S",
         "F",
-        "B"
+        "B",
+        "B",
+        "F",
+        "B",
+        "F"
       ],
       "count": {
-        "balls": 1,
+        "balls": 3,
         "strikes": 2,
         "outs": 0
       },
@@ -82,7 +85,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -90,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-12T18:48:39.469Z",
+    "updated_at": "2026-08-12T19:23:16.395Z",
     "current_game_pk": 823017,
     "next_game_pk": 823669,
     "next_game": {
@@ -127,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Overcast · gusts 14 mph",
+      "text": "90° · Overcast · gusts 11 mph",
       "highlight": false
     }
   ]
