@@ -4,7 +4,7 @@
   "edition_date": "2026-08-13",
   "volume": 1,
   "edition": 135,
-  "generated_at": "2026-08-13T23:45:52.915Z",
+  "generated_at": "2026-08-13T23:47:09.876Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, MIN 0",
-    "dek": "Top 1st · 2 outs",
-    "summary": "J.T. Realmuto is up against Taj Bradley. Series: Regular Season.",
+    "dek": "Middle 1st · 3 outs",
+    "summary": "Trevor Larnach is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Connor Prielipp · PHI @ MIN · Sat, Aug 15 · 7:10 PM"
   },
@@ -64,26 +64,28 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Taj Bradley"
+        "name": "Trevor Larnach",
+        "meta": "vs Aaron Nola"
       },
       "pitches": [
         "S",
         "F",
         "B",
-        "F"
+        "F",
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 2,
         "strikes": 2,
-        "outs": 2
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
-        "third": true
+        "first": false,
+        "second": false,
+        "third": false
       },
-      "status": "Top 1st"
+      "status": "Middle 1st"
     },
     "recap_line": null
   },
@@ -91,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-13T23:45:53.586Z",
+    "updated_at": "2026-08-13T23:47:10.418Z",
     "current_game_pk": 823669,
     "next_game_pk": 823671,
     "next_game": {
