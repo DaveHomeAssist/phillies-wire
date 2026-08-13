@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-12",
+  "edition_date": "2026-08-13",
   "volume": 1,
-  "edition": 134,
-  "generated_at": "2026-08-13T03:32:43.957Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 135,
+  "generated_at": "2026-08-13T04:24:26.542Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 64,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, STL 7.",
-    "dek": "STL 7, PHI 1 · Kyle Leahy · 5.0 IP, 6 H, 1 ER, 6 K",
-    "summary": "PHI 1, STL 7. Final at Busch Stadium, St. Louis. STL wins 2-1.",
+    "headline": "Phillies @ Twins · Game 1 of 3",
+    "dek": "Aaron Nola vs Taj Bradley",
+    "summary": "Aaron Nola vs Taj Bradley · Phillies @ Twins · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Taj Bradley · PHI @ MIN · Thu, Aug 13 · 7:30 PM"
+    "next_value": "Jesús Luzardo vs Connor Prielipp · PHI @ MIN · Sat, Aug 15 · 7:10 PM"
   },
   "game": {
-    "matchup": "Phillies @ Cardinals · Game 3 of 3",
-    "first_pitch": "2:15 PM",
-    "venue": "Busch Stadium, St. Louis",
+    "matchup": "Phillies @ Twins · Game 1 of 3",
+    "first_pitch": "7:30 PM",
+    "venue": "Field of Dreams, Minneapolis",
     "starters": {
       "home": {
-        "name": "Kyle Leahy",
+        "name": "Taj Bradley",
         "hand": "R"
       },
       "away": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "opp": {
-        "name": "Kyle Leahy",
+        "name": "Taj Bradley",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "STL wins 2-1"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "Netflix",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
-      "condition": "Partly cloudy",
-      "wind": "1 mph · gusts 6",
-      "gusts_mph": 6
+      "temp_f": 72,
+      "condition": "Clear",
+      "wind": "5 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-13T03:32:44.193Z",
+    "updated_at": "2026-08-13T04:24:27.263Z",
     "current_game_pk": 823669,
     "next_game_pk": 823671,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Cardinals · Game 3 of 3 · 2:15 PM",
+      "text": "Phillies @ Twins · Game 1 of 3 · 7:30 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Kyle Leahy",
+      "text": "Aaron Nola vs Taj Bradley",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "Netflix · 94 WIP",
       "highlight": false
     },
     {
-      "text": "80° · Partly cloudy · gusts 6 mph",
+      "text": "72° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
