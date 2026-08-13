@@ -4,9 +4,9 @@
   "edition_date": "2026-08-13",
   "volume": 1,
   "edition": 135,
-  "generated_at": "2026-08-13T22:46:14.309Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-13T23:06:02.325Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 64,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Twins · Game 1 of 3",
-    "dek": "Aaron Nola vs Taj Bradley",
-    "summary": "Aaron Nola vs Taj Bradley · Phillies @ Twins · Game 1 of 3",
+    "headline": "PHI 0, MIN 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Taj Bradley. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Connor Prielipp · PHI @ MIN · Sat, Aug 15 · 7:10 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 75,
+      "temp_f": 76,
       "condition": "Overcast",
-      "wind": "10 mph · gusts 16",
+      "wind": "9 mph · gusts 16",
       "gusts_mph": 16
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Taj Bradley"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-13T22:46:14.589Z",
+    "updated_at": "2026-08-13T23:06:03.429Z",
     "current_game_pk": 823669,
     "next_game_pk": 823671,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "75° · Overcast · gusts 16 mph",
+      "text": "76° · Overcast · gusts 16 mph",
       "highlight": false
     },
     {
