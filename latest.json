@@ -4,7 +4,7 @@
   "edition_date": "2026-08-13",
   "volume": 1,
   "edition": 135,
-  "generated_at": "2026-08-14T00:48:22.955Z",
+  "generated_at": "2026-08-14T00:51:27.868Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 5, MIN 1",
-    "dek": "Top 4th · 2 outs",
-    "summary": "Bryson Stott is up against Taj Bradley. Series: Regular Season.",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "Royce Lewis is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Connor Prielipp · PHI @ MIN · Sat, Aug 15 · 7:10 PM"
   },
@@ -64,24 +64,28 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Taj Bradley"
+        "name": "Royce Lewis",
+        "meta": "vs Aaron Nola"
       },
       "pitches": [
         "B",
-        "S"
+        "S",
+        "B",
+        "B",
+        "S",
+        "X"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 2
+        "balls": 3,
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "Middle 4th"
     },
     "recap_line": null
   },
@@ -89,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-14T00:48:23.298Z",
+    "updated_at": "2026-08-14T00:51:28.558Z",
     "current_game_pk": 823669,
     "next_game_pk": 823671,
     "next_game": {
