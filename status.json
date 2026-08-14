@@ -1,22 +1,19 @@
 {
   "publication": "Phillies Wire",
-  "date": "2026-08-13",
-  "generated_at": "2026-08-14T03:30:10.521Z",
-  "off_day": false,
-  "issue_path": "issues/2026-08-13/",
+  "date": "2026-08-14",
+  "generated_at": "2026-08-14T04:17:15.631Z",
+  "off_day": true,
+  "issue_path": "issues/2026-08-14/",
   "archive_path": "archive/",
   "schedule_path": "data/phillies-2026.json",
-  "archive_entries": 135,
+  "archive_entries": 136,
   "status": {
-    "mode": "final",
-    "mode_label": "Final",
+    "mode": "off_day",
+    "mode_label": "Off Day",
     "crawl_state": "ok",
     "enrich_state": "skipped",
-    "enrich_label": "Final edition",
-    "generated_at_et": "Aug 13, 2026, 11:30 PM ET",
-    "source_notes": [
-      "Rehab assignment notes are refreshed from the MLB transactions feed.",
-      "Farm system notes hidden because the editorial baseline is stale."
-    ]
+    "enrich_label": "No game today. Archive and next-game mode published.",
+    "generated_at_et": "Aug 14, 2026, 12:17 AM ET",
+    "source_notes": []
   }
 }
