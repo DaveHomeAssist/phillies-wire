@@ -4,7 +4,7 @@
   "edition_date": "2026-08-13",
   "volume": 1,
   "edition": 135,
-  "generated_at": "2026-08-14T00:26:34.111Z",
+  "generated_at": "2026-08-14T00:48:22.955Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, MIN 1",
-    "dek": "Bottom 3rd · 0 outs",
-    "summary": "Trevor Larnach is up against Aaron Nola. Series: Regular Season.",
+    "headline": "PHI 5, MIN 1",
+    "dek": "Top 4th · 2 outs",
+    "summary": "Bryson Stott is up against Taj Bradley. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Connor Prielipp · PHI @ MIN · Sat, Aug 15 · 7:10 PM"
   },
@@ -55,37 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 74,
-      "condition": "Overcast",
-      "wind": "10 mph · gusts 15",
-      "gusts_mph": 15
+      "temp_f": 73,
+      "condition": "Clear",
+      "wind": "8 mph · gusts 17",
+      "gusts_mph": 17
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trevor Larnach",
-        "meta": "vs Aaron Nola"
+        "name": "Bryson Stott",
+        "meta": "vs Taj Bradley"
       },
       "pitches": [
-        "S",
         "B",
-        "F",
-        "B",
-        "B",
-        "F"
+        "S"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 0
+        "balls": 1,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Top 4th"
     },
     "recap_line": null
   },
@@ -93,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-14T00:26:34.706Z",
+    "updated_at": "2026-08-14T00:48:23.298Z",
     "current_game_pk": 823669,
     "next_game_pk": 823671,
     "next_game": {
@@ -130,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Overcast · gusts 15 mph",
+      "text": "73° · Clear · gusts 17 mph",
       "highlight": false
     },
     {
