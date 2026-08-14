@@ -5,14 +5,14 @@
     "edition": 135,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-13T23:47:09.876Z",
+    "generated_at": "2026-08-14T00:22:46.187Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 13, 2026, 7:47 PM ET",
+      "generated_at_et": "Aug 13, 2026, 8:22 PM ET",
       "source_notes": [
         "Rehab assignment notes are refreshed from the MLB transactions feed.",
         "Farm system notes hidden because the editorial baseline is stale."
@@ -29,8 +29,8 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 2, MIN 0",
-    "dek": "Middle 1st · 3 outs",
+    "headline": "PHI 2, MIN 1",
+    "dek": "Middle 3rd · 3 outs",
     "summary": "Trevor Larnach is up against Aaron Nola. Series: Regular Season.",
     "cards": [
       {
@@ -43,7 +43,7 @@
       },
       {
         "label": "Weather",
-        "value": "76° · Overcast"
+        "value": "74° · Overcast"
       }
     ],
     "bullets": [
@@ -347,10 +347,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 76,
+          "temp_f": 74,
           "condition": "Overcast",
-          "wind": "9 mph · gusts 14",
-          "gusts_mph": 14
+          "wind": "10 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "",
@@ -360,7 +360,7 @@
             "team": "MIN",
             "name": "Taj Bradley",
             "hand": "R",
-            "era": "3.88",
+            "era": "3.84",
             "record": "9-4",
             "whip": "1.27"
           },
@@ -368,14 +368,14 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.47",
+            "era": "5.46",
             "record": "3-9",
             "whip": "1.45"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
           "inningState": "Middle",
           "isTopInning": true,
           "outs": 3,
@@ -386,8 +386,8 @@
               "errors": 0
             },
             "home": {
-              "runs": 0,
-              "hits": 0,
+              "runs": 1,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -397,6 +397,32 @@
               "away": {
                 "runs": 2,
                 "hits": 3,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 0,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
@@ -519,6 +545,230 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823669:8",
+            "inning": 1,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "single",
+            "actor": "Trevor Larnach",
+            "actor_id": 663616,
+            "detail": "Trevor Larnach singles on a sharp line drive to right fielder Bryce Harper.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:9",
+            "inning": 1,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "out",
+            "actor": "Byron Buxton",
+            "actor_id": 621439,
+            "detail": "Byron Buxton pops out to catcher J.T. Realmuto in foul territory.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:10",
+            "inning": 1,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "single",
+            "actor": "Ryan Jeffers",
+            "actor_id": 680777,
+            "detail": "Ryan Jeffers singles on a soft ground ball to third baseman Bryson Stott. Trevor Larnach to 2nd.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:11",
+            "inning": 1,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "strikeout",
+            "actor": "Josh Bell",
+            "actor_id": 605137,
+            "detail": "Josh Bell strikes out swinging.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:12",
+            "inning": 1,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "out",
+            "actor": "Royce Lewis",
+            "actor_id": 668904,
+            "detail": "Royce Lewis lines out to shortstop Trea Turner.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:13",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford strikes out on a foul tip.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:14",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to center fielder Byron Buxton.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:15",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner walks.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:16",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper called out on strikes.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:17",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "strikeout",
+            "actor": "Kody Clemens",
+            "actor_id": 665019,
+            "detail": "Kody Clemens strikes out swinging.",
+            "score_after": "PHI 2, MIN 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:18",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "home_run",
+            "actor": "Luke Keaschall",
+            "actor_id": 807712,
+            "detail": "Luke Keaschall homers (7) on a fly ball to left field.",
+            "score_after": "PHI 2, MIN 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823669:19",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "out",
+            "actor": "Brooks Lee",
+            "actor_id": 686797,
+            "detail": "Brooks Lee grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 2, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:20",
+            "inning": 2,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "strikeout",
+            "actor": "Kaelen Culpepper",
+            "actor_id": 701785,
+            "detail": "Kaelen Culpepper strikes out swinging.",
+            "score_after": "PHI 2, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:21",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez flies out to right fielder Luke Keaschall.",
+            "score_after": "PHI 2, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:22",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out, pitcher Taj Bradley to first baseman Royce Lewis.",
+            "score_after": "PHI 2, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823669:23",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds out, second baseman Kody Clemens to first baseman Royce Lewis.",
+            "score_after": "PHI 2, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
@@ -527,16 +777,11 @@
             "meta": "vs Aaron Nola"
           },
           "pitches": [
-            "S",
-            "F",
-            "B",
-            "F",
-            "B",
             "X"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 2,
+            "balls": 0,
+            "strikes": 0,
             "outs": 3
           },
           "bases": {
@@ -544,7 +789,7 @@
             "second": false,
             "third": false
           },
-          "status": "Middle 1st"
+          "status": "Middle 3rd"
         }
       }
     },
@@ -561,8 +806,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-13T23:47:09.876Z",
-            "freshness_label": "As of Aug 13, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-14T00:22:46.187Z",
+            "freshness_label": "As of Aug 13, 2026, 8:22 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -574,8 +819,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-13T23:47:09.876Z",
-            "freshness_label": "As of Aug 13, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-14T00:22:46.187Z",
+            "freshness_label": "As of Aug 13, 2026, 8:22 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -587,8 +832,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-13T23:47:09.876Z",
-            "freshness_label": "As of Aug 13, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-14T00:22:46.187Z",
+            "freshness_label": "As of Aug 13, 2026, 8:22 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -600,8 +845,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-13T23:47:09.876Z",
-            "freshness_label": "As of Aug 13, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-14T00:22:46.187Z",
+            "freshness_label": "As of Aug 13, 2026, 8:22 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -613,8 +858,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-13T23:47:09.876Z",
-            "freshness_label": "As of Aug 13, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-14T00:22:46.187Z",
+            "freshness_label": "As of Aug 13, 2026, 8:22 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -626,8 +871,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-13T23:47:09.876Z",
-            "freshness_label": "As of Aug 13, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-14T00:22:46.187Z",
+            "freshness_label": "As of Aug 13, 2026, 8:22 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -639,8 +884,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-13T23:47:09.876Z",
-            "freshness_label": "As of Aug 13, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-08-14T00:22:46.187Z",
+            "freshness_label": "As of Aug 13, 2026, 8:22 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

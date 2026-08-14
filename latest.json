@@ -4,7 +4,7 @@
   "edition_date": "2026-08-13",
   "volume": 1,
   "edition": 135,
-  "generated_at": "2026-08-13T23:47:09.876Z",
+  "generated_at": "2026-08-14T00:22:46.187Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,8 +16,8 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, MIN 0",
-    "dek": "Middle 1st · 3 outs",
+    "headline": "PHI 2, MIN 1",
+    "dek": "Middle 3rd · 3 outs",
     "summary": "Trevor Larnach is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Connor Prielipp · PHI @ MIN · Sat, Aug 15 · 7:10 PM"
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 74,
       "condition": "Overcast",
-      "wind": "9 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "10 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
@@ -68,16 +68,11 @@
         "meta": "vs Aaron Nola"
       },
       "pitches": [
-        "S",
-        "F",
-        "B",
-        "F",
-        "B",
         "X"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "outs": 3
       },
       "bases": {
@@ -85,7 +80,7 @@
         "second": false,
         "third": false
       },
-      "status": "Middle 1st"
+      "status": "Middle 3rd"
     },
     "recap_line": null
   },
@@ -93,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-13T23:47:10.418Z",
+    "updated_at": "2026-08-14T00:22:46.844Z",
     "current_game_pk": 823669,
     "next_game_pk": 823671,
     "next_game": {
@@ -130,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 14 mph",
+      "text": "74° · Overcast · gusts 15 mph",
       "highlight": false
     },
     {
