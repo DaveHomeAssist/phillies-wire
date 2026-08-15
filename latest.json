@@ -4,7 +4,7 @@
   "edition_date": "2026-08-15",
   "volume": 1,
   "edition": 137,
-  "generated_at": "2026-08-15T23:23:43.275Z",
+  "generated_at": "2026-08-15T23:37:17.936Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, MIN 0",
-    "dek": "End 1st · 3 outs",
-    "summary": "Luis Arraez is up against Connor Prielipp. Series: PHI leads 1-0.",
+    "headline": "PHI 1, MIN 0",
+    "dek": "Middle 2nd · 3 outs",
+    "summary": "Josh Bell is up against Jesús Luzardo. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Dean Kremer · PHI @ MIN · Sun, Aug 16 · 2:10 PM"
   },
@@ -57,20 +57,18 @@
     "weather": {
       "temp_f": 79,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Connor Prielipp"
+        "name": "Josh Bell",
+        "meta": "vs Jesús Luzardo"
       },
       "pitches": [
         "S",
-        "S",
-        "F",
         "S"
       ],
       "count": {
@@ -83,7 +81,7 @@
         "second": false,
         "third": false
       },
-      "status": "End 1st"
+      "status": "Middle 2nd"
     },
     "recap_line": null
   },
@@ -91,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-15T23:23:43.594Z",
+    "updated_at": "2026-08-15T23:37:18.254Z",
     "current_game_pk": 823671,
     "next_game_pk": 823670,
     "next_game": {
@@ -128,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Overcast · gusts 7 mph",
+      "text": "79° · Overcast · gusts 9 mph",
       "highlight": false
     }
   ]
