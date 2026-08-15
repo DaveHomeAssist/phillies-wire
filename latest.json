@@ -4,7 +4,7 @@
   "edition_date": "2026-08-15",
   "volume": 1,
   "edition": 137,
-  "generated_at": "2026-08-15T23:37:17.936Z",
+  "generated_at": "2026-08-15T23:50:54.818Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, MIN 0",
-    "dek": "Middle 2nd · 3 outs",
-    "summary": "Josh Bell is up against Jesús Luzardo. Series: PHI leads 1-0.",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Kaelen Culpepper is up against Jesús Luzardo. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Dean Kremer · PHI @ MIN · Sun, Aug 16 · 2:10 PM"
   },
@@ -64,16 +64,19 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Josh Bell",
+        "name": "Kaelen Culpepper",
         "meta": "vs Jesús Luzardo"
       },
       "pitches": [
+        "B",
         "S",
-        "S"
+        "F",
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 3,
+        "balls": 2,
+        "strikes": 2,
         "outs": 3
       },
       "bases": {
@@ -81,7 +84,7 @@
         "second": false,
         "third": false
       },
-      "status": "Middle 2nd"
+      "status": "Middle 3rd"
     },
     "recap_line": null
   },
@@ -89,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-15T23:37:18.254Z",
+    "updated_at": "2026-08-15T23:50:55.610Z",
     "current_game_pk": 823671,
     "next_game_pk": 823670,
     "next_game": {
