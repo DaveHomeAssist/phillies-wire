@@ -4,7 +4,7 @@
   "edition_date": "2026-08-15",
   "volume": 1,
   "edition": 137,
-  "generated_at": "2026-08-15T23:22:38.799Z",
+  "generated_at": "2026-08-15T23:23:43.275Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIN 0",
-    "dek": "Bottom 1st · 1 out",
-    "summary": "Ryan Jeffers is up against Jesús Luzardo. Series: PHI leads 1-0.",
+    "dek": "End 1st · 3 outs",
+    "summary": "Luis Arraez is up against Connor Prielipp. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Dean Kremer · PHI @ MIN · Sun, Aug 16 · 2:10 PM"
   },
@@ -64,25 +64,26 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ryan Jeffers",
-        "meta": "vs Jesús Luzardo"
+        "name": "Luis Arraez",
+        "meta": "vs Connor Prielipp"
       },
       "pitches": [
-        "F",
         "S",
-        "F"
+        "S",
+        "F",
+        "S"
       ],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 1
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "End 1st"
     },
     "recap_line": null
   },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-15T23:22:39.532Z",
+    "updated_at": "2026-08-15T23:23:43.594Z",
     "current_game_pk": 823671,
     "next_game_pk": 823670,
     "next_game": {
