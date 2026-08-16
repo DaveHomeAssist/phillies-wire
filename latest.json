@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T18:05:27.101Z",
+  "generated_at": "2026-08-16T18:23:48.235Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIN 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Kyle Schwarber is up against Dean Kremer. Series: PHI leads 2-0.",
+    "dek": "Bottom 1st · 0 outs",
+    "summary": "Byron Buxton is up against Andrew Painter. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 79,
       "condition": "Mostly sunny",
       "wind": "12 mph · gusts 17",
       "gusts_mph": 17
@@ -64,8 +64,8 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Dean Kremer"
+        "name": "Byron Buxton",
+        "meta": "vs Andrew Painter"
       },
       "pitches": [],
       "count": {
@@ -74,11 +74,11 @@
         "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T18:05:27.627Z",
+    "updated_at": "2026-08-16T18:23:48.769Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Mostly sunny · gusts 17 mph",
+      "text": "79° · Mostly sunny · gusts 17 mph",
       "highlight": false
     }
   ]
