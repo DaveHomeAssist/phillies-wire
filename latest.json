@@ -4,9 +4,9 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T17:37:07.938Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-16T17:51:20.379Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 66,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Twins · Game 3 of 3",
-    "dek": "Andrew Painter vs Dean Kremer",
-    "summary": "Andrew Painter vs Dean Kremer · Phillies @ Twins · Game 3 of 3",
+    "headline": "PHI 0, MIN 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Dean Kremer. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -57,19 +57,36 @@
     "weather": {
       "temp_f": 78,
       "condition": "Mostly sunny",
-      "wind": "10 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "11 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Dean Kremer"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T17:37:08.389Z",
+    "updated_at": "2026-08-16T17:51:20.816Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Mostly sunny · gusts 15 mph",
+      "text": "78° · Mostly sunny · gusts 16 mph",
       "highlight": false
     }
   ]
