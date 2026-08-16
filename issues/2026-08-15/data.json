@@ -5,313 +5,56 @@
     "edition": 137,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-16T01:31:45.709Z",
+    "generated_at": "2026-08-16T02:12:17.169Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Aug 15, 2026, 9:31 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Aug 15, 2026, 10:12 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 65,
+    "wins": 66,
     "losses": 58,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 8, MIN 1",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Luis Arraez is up against A.J. Minter. Series: PHI leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 9, MIN 1.",
+    "dek": "PHI 9, MIN 1 · Jesús Luzardo · 6.2 IP, 7 H, 1 ER, 9 K",
+    "summary": "PHI 9, MIN 1. Final at Target Field, Minneapolis. PHI wins 2-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Target Field, Minneapolis"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 1210 WPHT"
-      },
-      {
-        "label": "Weather",
-        "value": "74° · Rain showers"
+        "label": "Series",
+        "value": "PHI wins 2-0"
       }
     ],
     "bullets": [
-      "Luis Arraez at the plate",
-      "A.J. Minter on the mound",
-      "Target Field, Minneapolis"
+      "Jesús Luzardo: 6.2 IP, 7 H, 1 ER, 9 K",
+      "Connor Prielipp: 5.0 IP, 8 H, 8 ER, 6 K",
+      "Alec Bohm: 5-for-5, 1 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Dean Kremer · PHI @ MIN · Sun, Aug 16 · 2:10 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at MIN game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "7:10 PM",
-        "starters": {
-          "home": {
-            "team": "MIN",
-            "name": "Connor Prielipp",
-            "hand": "L"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "MIN",
-            "name": "Connor Prielipp",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Austin Martin",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Byron Buxton",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Ryan Jeffers",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Royce Lewis",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Josh Bell",
-              "position": "DH",
-              "bats": "S"
-            },
-            {
-              "slot": 6,
-              "name": "Luke Keaschall",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Brooks Lee",
-              "position": "3B",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Ryan Kreidler",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Kaelen Culpepper",
-              "position": "SS",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Austin Martin",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Byron Buxton",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Ryan Jeffers",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Royce Lewis",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Josh Bell",
-              "position": "DH",
-              "bats": "S"
-            },
-            {
-              "slot": 6,
-              "name": "Luke Keaschall",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Brooks Lee",
-              "position": "3B",
-              "bats": "S"
-            },
-            {
-              "slot": 8,
-              "name": "Ryan Kreidler",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Kaelen Culpepper",
-              "position": "SS",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Twins · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 1-0"
+          "label": "PHI wins 2-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -347,9 +90,9 @@
         },
         "weather": {
           "temp_f": 74,
-          "condition": "Rain showers",
-          "wind": "3 mph · gusts 7",
-          "gusts_mph": 7
+          "condition": "Partly cloudy",
+          "wind": "4 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "",
@@ -360,7 +103,7 @@
             "name": "Connor Prielipp",
             "hand": "L",
             "era": "5.34",
-            "record": "3-5",
+            "record": "3-6",
             "whip": "1.38"
           },
           "away": {
@@ -368,25 +111,25 @@
             "name": "Jesús Luzardo",
             "hand": "L",
             "era": "3.23",
-            "record": "10-5",
+            "record": "11-5",
             "whip": "1.15"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 8,
-              "hits": 12,
+              "runs": 9,
+              "hits": 13,
               "errors": 0
             },
             "home": {
               "runs": 1,
-              "hits": 7,
+              "hits": 9,
               "errors": 0
             }
           },
@@ -485,13 +228,26 @@
             {
               "num": 8,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -506,7 +262,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber grounds out, second baseman Ryan Kreidler to first baseman Royce Lewis.",
+            "detail": "Kyle Schwarber grounds out, second baseman Ryan Kreidle…",
             "score_after": "PHI 0, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -548,7 +304,7 @@
             "event_type": "extra_base_hit",
             "actor": "Austin Martin",
             "actor_id": 668885,
-            "detail": "Austin Martin doubles (17) on a fly ball to left fielder Edmundo Sosa.",
+            "detail": "Austin Martin doubles (17) on a fly ball to left fielde…",
             "score_after": "PHI 0, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -604,7 +360,7 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez singles on a line drive to center fielder Byron Buxton.",
+            "detail": "Luis Arraez singles on a line drive to center fielder B…",
             "score_after": "PHI 0, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -618,7 +374,7 @@
             "event_type": "extra_base_hit",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm doubles (19) on a fly ball to left fielder Austin Martin. Luis Arraez to 3rd.",
+            "detail": "Alec Bohm doubles (19) on a fly ball to left fielder Au…",
             "score_after": "PHI 0, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -660,7 +416,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto out on a sacrifice fly to center fielder Byron Buxton. Luis Arraez scores. Alec Bohm to 3rd.",
+            "detail": "J.T. Realmuto out on a sacrifice fly to center fielder…",
             "score_after": "PHI 1, MIN 0",
             "runs": 1,
             "is_scoring": true,
@@ -702,7 +458,7 @@
             "event_type": "extra_base_hit",
             "actor": "Luke Keaschall",
             "actor_id": 807712,
-            "detail": "Luke Keaschall doubles (18) on a sharp line drive to right fielder Bryce Harper.",
+            "detail": "Luke Keaschall doubles (18) on a sharp line drive to ri…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -772,7 +528,7 @@
             "event_type": "single",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper singles on a line drive to left fielder Austin Martin. Bryce Harper out at 2nd on the throw, left fielder Austin Marti…",
+            "detail": "Bryce Harper singles on a line drive to left fielder Au…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -786,7 +542,7 @@
             "event_type": "out",
             "actor": "Kaelen Culpepper",
             "actor_id": 701785,
-            "detail": "Kaelen Culpepper grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "detail": "Kaelen Culpepper grounds out, third baseman Bryson Stot…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -856,7 +612,7 @@
             "event_type": "extra_base_hit",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm doubles (20) on a sharp line drive to left fielder Austin Martin.",
+            "detail": "Alec Bohm doubles (20) on a sharp line drive to left fi…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -870,7 +626,7 @@
             "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa reaches on a fielder's choice out, shortstop Kaelen Culpepper to third baseman Brooks Lee. Alec Bohm out at 3rd.",
+            "detail": "Edmundo Sosa reaches on a fielder's choice out, shortst…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -884,7 +640,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out softly, third baseman Brooks Lee to first baseman Royce Lewis.",
+            "detail": "Bryson Stott grounds out softly, third baseman Brooks L…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -898,7 +654,7 @@
             "event_type": "out",
             "actor": "Royce Lewis",
             "actor_id": 668904,
-            "detail": "Royce Lewis pops out to catcher J.T. Realmuto in foul territory.",
+            "detail": "Royce Lewis pops out to catcher J.T. Realmuto in foul t…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -926,7 +682,7 @@
             "event_type": "single",
             "actor": "Luke Keaschall",
             "actor_id": 807712,
-            "detail": "Luke Keaschall singles on a sharp line drive to center fielder Derek Hill.",
+            "detail": "Luke Keaschall singles on a sharp line drive to center…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -940,7 +696,7 @@
             "event_type": "single",
             "actor": "Brooks Lee",
             "actor_id": 686797,
-            "detail": "Phillies challenged (tag play), call on the field was overturned: Brooks Lee singles on a ground ball to center fielder Derek Hill.…",
+            "detail": "Phillies challenged (tag play), call on the field was o…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -954,7 +710,7 @@
             "event_type": "single",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto singles on a line drive to left fielder Austin Martin.",
+            "detail": "J.T. Realmuto singles on a line drive to left fielder A…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -1010,7 +766,7 @@
             "event_type": "walk_hbp",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper walks. J.T. Realmuto to 3rd. Trea Turner to 2nd.",
+            "detail": "Bryce Harper walks. J.T. Realmuto to 3rd. Trea Turner t…",
             "score_after": "PHI 1, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -1024,7 +780,7 @@
             "event_type": "walk_hbp",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez walks. J.T. Realmuto scores. Trea Turner to 3rd. Bryce Harper to 2nd.",
+            "detail": "Luis Arraez walks. J.T. Realmuto scores. Trea Turner to…",
             "score_after": "PHI 2, MIN 0",
             "runs": 1,
             "is_scoring": true,
@@ -1038,7 +794,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a sharp line drive to center fielder Byron Buxton. Trea Turner scores. Bryce Harper to 3rd. Luis Arraez to 2nd.",
+            "detail": "Alec Bohm singles on a sharp line drive to center field…",
             "score_after": "PHI 3, MIN 0",
             "runs": 1,
             "is_scoring": true,
@@ -1052,7 +808,7 @@
             "event_type": "single",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa singles on a ground ball to left fielder Austin Martin. Bryce Harper scores. Luis Arraez scores. Alec Bohm to 2nd.",
+            "detail": "Edmundo Sosa singles on a ground ball to left fielder A…",
             "score_after": "PHI 5, MIN 0",
             "runs": 2,
             "is_scoring": true,
@@ -1066,7 +822,7 @@
             "event_type": "home_run",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott homers (9) on a fly ball to right field. Alec Bohm scores. Edmundo Sosa scores.",
+            "detail": "Bryson Stott homers (9) on a fly ball to right field. A…",
             "score_after": "PHI 8, MIN 0",
             "runs": 3,
             "is_scoring": true,
@@ -1108,7 +864,7 @@
             "event_type": "extra_base_hit",
             "actor": "Kaelen Culpepper",
             "actor_id": 701785,
-            "detail": "Kaelen Culpepper doubles (1) on a sharp line drive to left fielder Edmundo Sosa.",
+            "detail": "Kaelen Culpepper doubles (1) on a sharp line drive to l…",
             "score_after": "PHI 8, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -1150,7 +906,7 @@
             "event_type": "single",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill singles on a ground ball to left fielder Austin Martin.",
+            "detail": "Derek Hill singles on a ground ball to left fielder Aus…",
             "score_after": "PHI 8, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -1164,7 +920,7 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber challenged (pitch result), call on the field was confirmed: Kyle Schwarber called out on strikes.",
+            "detail": "Kyle Schwarber challenged (pitch result), call on the f…",
             "score_after": "PHI 8, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -1178,7 +934,7 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a ground ball to left fielder Austin Martin. Derek Hill to 2nd.",
+            "detail": "Trea Turner singles on a ground ball to left fielder Au…",
             "score_after": "PHI 8, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -1192,7 +948,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds into a force out, second baseman Ryan Kreidler to shortstop Kaelen Culpepper. Derek Hill to 3rd. Trea Turner o…",
+            "detail": "Bryce Harper grounds into a force out, second baseman R…",
             "score_after": "PHI 8, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -1206,7 +962,7 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out to left fielder Austin Martin in foul territory.",
+            "detail": "Luis Arraez flies out to left fielder Austin Martin in…",
             "score_after": "PHI 8, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -1220,7 +976,7 @@
             "event_type": "extra_base_hit",
             "actor": "Ryan Jeffers",
             "actor_id": 680777,
-            "detail": "Ryan Jeffers doubles (12) on a sharp line drive to left fielder Edmundo Sosa.",
+            "detail": "Ryan Jeffers doubles (12) on a sharp line drive to left…",
             "score_after": "PHI 8, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -1234,7 +990,7 @@
             "event_type": "extra_base_hit",
             "actor": "Royce Lewis",
             "actor_id": 668904,
-            "detail": "Umpire reviewed (home run), call on the field was upheld: Royce Lewis doubles (20) on a line drive to left fielder Edmundo Sosa. Ry…",
+            "detail": "Umpire reviewed (home run), call on the field was uphel…",
             "score_after": "PHI 8, MIN 1",
             "runs": 1,
             "is_scoring": true,
@@ -1276,7 +1032,7 @@
             "event_type": "out",
             "actor": "Brooks Lee",
             "actor_id": 686797,
-            "detail": "Brooks Lee grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "detail": "Brooks Lee grounds out, third baseman Bryson Stott to f…",
             "score_after": "PHI 8, MIN 1",
             "runs": 0,
             "is_scoring": false,
@@ -1290,7 +1046,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a sharp line drive to center fielder Byron Buxton.",
+            "detail": "Alec Bohm singles on a sharp line drive to center field…",
             "score_after": "PHI 8, MIN 1",
             "runs": 0,
             "is_scoring": false,
@@ -1374,7 +1130,7 @@
             "event_type": "strikeout",
             "actor": "Kaelen Culpepper",
             "actor_id": 701785,
-            "detail": "Kaelen Culpepper challenged (pitch result), call on the field was confirmed: Kaelen Culpepper called out on strikes.",
+            "detail": "Kaelen Culpepper challenged (pitch result), call on the…",
             "score_after": "PHI 8, MIN 1",
             "runs": 0,
             "is_scoring": false,
@@ -1416,7 +1172,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber pops out to third baseman Brooks Lee in foul territory.",
+            "detail": "Kyle Schwarber pops out to third baseman Brooks Lee in…",
             "score_after": "PHI 8, MIN 1",
             "runs": 0,
             "is_scoring": false,
@@ -1430,7 +1186,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds out, third baseman Brooks Lee to first baseman Royce Lewis.",
+            "detail": "Justin Crawford grounds out, third baseman Brooks Lee t…",
             "score_after": "PHI 8, MIN 1",
             "runs": 0,
             "is_scoring": false,
@@ -1444,7 +1200,7 @@
             "event_type": "single",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper singles on a line drive to left fielder Austin Martin.",
+            "detail": "Bryce Harper singles on a line drive to left fielder Au…",
             "score_after": "PHI 8, MIN 1",
             "runs": 0,
             "is_scoring": false,
@@ -1458,34 +1214,223 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Batter Timeout.",
+            "detail": "Luis Arraez pops out to second baseman Ryan Kreidler.",
             "score_after": "PHI 8, MIN 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823671:69",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "walk_hbp",
+            "actor": "Ryan Jeffers",
+            "actor_id": 680777,
+            "detail": "Ryan Jeffers walks.",
+            "score_after": "PHI 8, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:70",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "strikeout",
+            "actor": "Royce Lewis",
+            "actor_id": 668904,
+            "detail": "Royce Lewis strikes out swinging.",
+            "score_after": "PHI 8, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:71",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "single",
+            "actor": "Josh Bell",
+            "actor_id": 605137,
+            "detail": "Josh Bell singles on a sharp ground ball to right field…",
+            "score_after": "PHI 8, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:72",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "out",
+            "actor": "Luke Keaschall",
+            "actor_id": 807712,
+            "detail": "Luke Keaschall lines out to center fielder Justin Crawf…",
+            "score_after": "PHI 8, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:73",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "strikeout",
+            "actor": "Brooks Lee",
+            "actor_id": 686797,
+            "detail": "Brooks Lee called out on strikes.",
+            "score_after": "PHI 8, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:74",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm doubles (21) on a sharp line drive to center…",
+            "score_after": "PHI 8, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823671:75",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa grounds out softly, catcher Ryan Jeffers t…",
+            "score_after": "PHI 8, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:76",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott walks.",
+            "score_after": "PHI 8, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:77",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto out on a sacrifice fly to left fielder Au…",
+            "score_after": "PHI 9, MIN 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823671:78",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill flies out to right fielder Luke Keaschall.",
+            "score_after": "PHI 9, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:79",
+            "inning": 9,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "strikeout",
+            "actor": "Ryan Kreidler",
+            "actor_id": 668952,
+            "detail": "Ryan Kreidler strikes out swinging.",
+            "score_after": "PHI 9, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:80",
+            "inning": 9,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "single",
+            "actor": "Kaelen Culpepper",
+            "actor_id": 701785,
+            "detail": "Kaelen Culpepper singles on a line drive to left fielde…",
+            "score_after": "PHI 9, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:81",
+            "inning": 9,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "strikeout",
+            "actor": "Austin Martin",
+            "actor_id": 668885,
+            "detail": "Austin Martin called out on strikes.",
+            "score_after": "PHI 9, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:82",
+            "inning": 9,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "walk_hbp",
+            "actor": "Byron Buxton",
+            "actor_id": 621439,
+            "detail": "Byron Buxton walks. Kaelen Culpepper to 2nd.",
+            "score_after": "PHI 9, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823671:83",
+            "inning": 9,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "out",
+            "actor": "Ryan Jeffers",
+            "actor_id": 680777,
+            "detail": "Ryan Jeffers flies out to right fielder Derek Hill.",
+            "score_after": "PHI 9, MIN 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Luis Arraez",
-            "meta": "vs A.J. Minter"
-          },
-          "pitches": [
-            "S",
-            "S"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 2,
-            "outs": 2
-          },
-          "bases": {
-            "first": true,
-            "second": false,
-            "third": false
-          },
-          "status": "Top 8th"
-        }
+        ]
       }
     },
     "injury_report": null

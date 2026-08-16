@@ -4,21 +4,21 @@
   "edition_date": "2026-08-15",
   "volume": 1,
   "edition": 137,
-  "generated_at": "2026-08-16T01:31:45.709Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-16T02:12:17.169Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 65,
+    "wins": 66,
     "losses": 58,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 8, MIN 1",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Luis Arraez is up against A.J. Minter. Series: PHI leads 1-0.",
+    "headline": "PHI 9, MIN 1.",
+    "dek": "PHI 9, MIN 1 · Jesús Luzardo · 6.2 IP, 7 H, 1 ER, 9 K",
+    "summary": "PHI 9, MIN 1. Final at Target Field, Minneapolis. PHI wins 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Dean Kremer · PHI @ MIN · Sun, Aug 16 · 2:10 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "PHI wins 2-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -56,61 +56,41 @@
     },
     "weather": {
       "temp_f": 74,
-      "condition": "Rain showers",
-      "wind": "3 mph · gusts 7",
-      "gusts_mph": 7
+      "condition": "Partly cloudy",
+      "wind": "4 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs A.J. Minter"
-      },
-      "pitches": [
-        "S",
-        "S"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 2
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T01:31:46.132Z",
-    "current_game_pk": 823671,
-    "next_game_pk": 823670,
+    "updated_at": "2026-08-16T02:12:17.981Z",
+    "current_game_pk": 823670,
+    "next_game_pk": 823427,
     "next_game": {
-      "game_pk": 823670,
-      "official_date": "2026-08-16",
-      "date_label": "Sun, Aug 16, 2026",
-      "time_label": "2:10 PM",
-      "title": "Phillies at Minnesota Twins",
-      "matchup": "PHI at MIN",
-      "venue": "Target Field"
+      "game_pk": 823427,
+      "official_date": "2026-08-17",
+      "date_label": "Mon, Aug 17, 2026",
+      "time_label": "6:40 PM",
+      "title": "Miami Marlins at Phillies",
+      "matchup": "MIA at PHI",
+      "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823671,
-      "official_date": "2026-08-15",
+      "game_pk": 823670,
+      "official_date": "2026-08-16",
       "title": "Phillies at Minnesota Twins",
       "matchup": "PHI at MIN"
     }
   },
   "ticker": [
     {
-      "text": "PHI 65-58",
+      "text": "PHI 66-58",
       "highlight": true
     },
     {
@@ -126,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Rain showers · gusts 7 mph",
+      "text": "74° · Partly cloudy · gusts 9 mph",
       "highlight": false
     }
   ]
