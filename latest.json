@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T20:03:43.308Z",
+  "generated_at": "2026-08-16T20:04:22.403Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,13 @@
         "name": "Luke Keaschall",
         "meta": "vs Tim Mayza"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
+        "strikes": 2,
         "outs": 1
       },
       "bases": {
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T20:03:43.877Z",
+    "updated_at": "2026-08-16T20:04:22.670Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
