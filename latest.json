@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T18:42:39.582Z",
+  "generated_at": "2026-08-16T18:56:14.313Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIN 4",
-    "dek": "Top 2nd · 2 outs",
-    "summary": "J.T. Realmuto is up against Dean Kremer. Series: PHI leads 2-0.",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Bryson Stott is up against Dean Kremer. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 79,
       "condition": "Mostly sunny",
       "wind": "10 mph · gusts 14",
       "gusts_mph": 14
@@ -64,21 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
+        "name": "Bryson Stott",
         "meta": "vs Dean Kremer"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B"
+      ],
       "count": {
-        "balls": 0,
+        "balls": 2,
         "strikes": 0,
         "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Top 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T18:42:41.195Z",
+    "updated_at": "2026-08-16T18:56:15.279Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Mostly sunny · gusts 14 mph",
+      "text": "79° · Mostly sunny · gusts 14 mph",
       "highlight": false
     }
   ]
