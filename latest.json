@@ -4,7 +4,7 @@
   "edition_date": "2026-08-15",
   "volume": 1,
   "edition": 137,
-  "generated_at": "2026-08-16T00:51:32.817Z",
+  "generated_at": "2026-08-16T01:30:28.389Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 8, MIN 1",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Josh Bell is up against Jesús Luzardo. Series: PHI leads 1-0.",
+    "dek": "Top 8th · 2 outs",
+    "summary": "Luis Arraez is up against A.J. Minter. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Dean Kremer · PHI @ MIN · Sun, Aug 16 · 2:10 PM"
   },
@@ -55,32 +55,30 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 75,
-      "condition": "Overcast",
-      "wind": "5 mph · gusts 13",
-      "gusts_mph": 13
+      "temp_f": 74,
+      "condition": "Rain showers",
+      "wind": "3 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Josh Bell",
-        "meta": "vs Jesús Luzardo"
+        "name": "Luis Arraez",
+        "meta": "vs A.J. Minter"
       },
-      "pitches": [
-        "S"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 1,
-        "outs": 0
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": true,
+        "first": true,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -88,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T00:51:33.497Z",
+    "updated_at": "2026-08-16T01:30:29.011Z",
     "current_game_pk": 823671,
     "next_game_pk": 823670,
     "next_game": {
@@ -125,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "75° · Overcast · gusts 13 mph",
+      "text": "74° · Rain showers · gusts 7 mph",
       "highlight": false
     }
   ]
