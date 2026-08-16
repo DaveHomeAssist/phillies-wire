@@ -4,7 +4,7 @@
   "edition_date": "2026-08-15",
   "volume": 1,
   "edition": 137,
-  "generated_at": "2026-08-16T01:30:28.389Z",
+  "generated_at": "2026-08-16T01:31:45.709Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,13 @@
         "name": "Luis Arraez",
         "meta": "vs A.J. Minter"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
+        "strikes": 2,
         "outs": 2
       },
       "bases": {
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T01:30:29.011Z",
+    "updated_at": "2026-08-16T01:31:46.132Z",
     "current_game_pk": 823671,
     "next_game_pk": 823670,
     "next_game": {

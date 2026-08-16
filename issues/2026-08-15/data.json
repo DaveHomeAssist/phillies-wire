@@ -5,14 +5,14 @@
     "edition": 137,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-16T01:30:28.389Z",
+    "generated_at": "2026-08-16T01:31:45.709Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 15, 2026, 9:30 PM ET",
+      "generated_at_et": "Aug 15, 2026, 9:31 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -1455,10 +1455,10 @@
             "inning": 8,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Offensive Substitution: Pinch-runner Bryan De La Cruz replaces Bryce Harper.",
+            "detail": "Batter Timeout.",
             "score_after": "PHI 8, MIN 1",
             "runs": 0,
             "is_scoring": false,
@@ -1470,10 +1470,13 @@
             "name": "Luis Arraez",
             "meta": "vs A.J. Minter"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "S"
+          ],
           "count": {
             "balls": 0,
-            "strikes": 0,
+            "strikes": 2,
             "outs": 2
           },
           "bases": {
