@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T19:22:46.957Z",
+  "generated_at": "2026-08-16T19:23:32.836Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIN 5",
-    "dek": "Bottom 4th · 2 outs",
-    "summary": "Byron Buxton is up against Andrew Painter. Series: PHI leads 2-0.",
+    "dek": "End 4th · 3 outs",
+    "summary": "Brandon Marsh is up against Dean Kremer. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -64,25 +64,27 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Byron Buxton",
-        "meta": "vs Andrew Painter"
+        "name": "Brandon Marsh",
+        "meta": "vs Dean Kremer"
       },
       "pitches": [
         "F",
         "S",
-        "B"
+        "B",
+        "B",
+        "S"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 2,
-        "outs": 2
+        "balls": 2,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 4th"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -90,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T19:22:47.388Z",
+    "updated_at": "2026-08-16T19:23:33.577Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
