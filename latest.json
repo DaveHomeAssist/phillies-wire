@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T20:51:43.089Z",
+  "generated_at": "2026-08-16T21:04:15.407Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 7, MIN 5",
-    "dek": "Top 9th · 1 out",
-    "summary": "Bryson Stott is up against Taylor Rogers. Series: PHI leads 2-0.",
+    "dek": "Bottom 9th · 1 out",
+    "summary": "Kaelen Culpepper is up against Jhoan Duran. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -55,36 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
+      "temp_f": 80,
       "condition": "Mostly sunny",
-      "wind": "9 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "9 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Taylor Rogers"
+        "name": "Kaelen Culpepper",
+        "meta": "vs Jhoan Duran"
       },
       "pitches": [
+        "F",
         "S",
         "F",
-        "B",
-        "B",
-        "B"
+        "F",
+        "F"
       ],
       "count": {
-        "balls": 3,
+        "balls": 1,
         "strikes": 2,
         "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 9th"
+      "status": "Bottom 9th"
     },
     "recap_line": null
   },
@@ -92,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T20:51:43.583Z",
+    "updated_at": "2026-08-16T21:04:15.985Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -129,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Mostly sunny · gusts 15 mph",
+      "text": "80° · Mostly sunny · gusts 13 mph",
       "highlight": false
     }
   ]
