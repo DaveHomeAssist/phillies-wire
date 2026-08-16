@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T20:04:22.403Z",
+  "generated_at": "2026-08-16T20:23:12.691Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, MIN 5",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Luke Keaschall is up against Tim Mayza. Series: PHI leads 2-0.",
+    "dek": "Top 8th · 0 outs",
+    "summary": "Bryson Stott is up against Andrew Morris. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -57,31 +57,30 @@
     "weather": {
       "temp_f": 80,
       "condition": "Mostly sunny",
-      "wind": "10 mph · gusts 13",
+      "wind": "9 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luke Keaschall",
-        "meta": "vs Tim Mayza"
+        "name": "Bryson Stott",
+        "meta": "vs Andrew Morris"
       },
       "pitches": [
-        "S",
         "S"
       ],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 1
+        "strikes": 1,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -89,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T20:04:22.670Z",
+    "updated_at": "2026-08-16T20:23:13.587Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
