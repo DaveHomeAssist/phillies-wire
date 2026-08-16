@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T19:23:32.836Z",
+  "generated_at": "2026-08-16T19:36:26.876Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIN 5",
-    "dek": "End 4th · 3 outs",
-    "summary": "Brandon Marsh is up against Dean Kremer. Series: PHI leads 2-0.",
+    "dek": "Bottom 5th · 1 out",
+    "summary": "Kody Clemens is up against Andrew Painter. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -55,36 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
-      "condition": "Clear",
-      "wind": "9 mph · gusts 14",
+      "temp_f": 79,
+      "condition": "Mostly sunny",
+      "wind": "10 mph · gusts 14",
       "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Dean Kremer"
+        "name": "Kody Clemens",
+        "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "F",
-        "S",
-        "B",
-        "B",
-        "S"
+        "F"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 3,
-        "outs": 3
+        "balls": 0,
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 4th"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -92,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T19:23:33.577Z",
+    "updated_at": "2026-08-16T19:36:27.524Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -129,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 14 mph",
+      "text": "79° · Mostly sunny · gusts 14 mph",
       "highlight": false
     }
   ]
