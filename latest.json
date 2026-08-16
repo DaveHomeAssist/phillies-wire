@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T18:24:40.206Z",
+  "generated_at": "2026-08-16T18:42:39.582Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, MIN 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "Byron Buxton is up against Andrew Painter. Series: PHI leads 2-0.",
+    "headline": "PHI 0, MIN 4",
+    "dek": "Top 2nd · 2 outs",
+    "summary": "J.T. Realmuto is up against Dean Kremer. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -55,32 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 78,
       "condition": "Mostly sunny",
-      "wind": "12 mph · gusts 17",
-      "gusts_mph": 17
+      "wind": "10 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Byron Buxton",
-        "meta": "vs Andrew Painter"
+        "name": "J.T. Realmuto",
+        "meta": "vs Dean Kremer"
       },
-      "pitches": [
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 0,
-        "outs": 0
+        "outs": 2
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -88,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T18:24:40.652Z",
+    "updated_at": "2026-08-16T18:42:41.195Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -125,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Mostly sunny · gusts 17 mph",
+      "text": "78° · Mostly sunny · gusts 14 mph",
       "highlight": false
     }
   ]
