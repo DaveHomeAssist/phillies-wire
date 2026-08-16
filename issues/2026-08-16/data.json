@@ -5,14 +5,14 @@
     "edition": 138,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-16T20:23:56.390Z",
+    "generated_at": "2026-08-16T20:51:43.089Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 16, 2026, 4:23 PM ET",
+      "generated_at_et": "Aug 16, 2026, 4:51 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 4, MIN 5",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Bryson Stott is up against Andrew Morris. Series: PHI leads 2-0.",
+    "headline": "PHI 7, MIN 5",
+    "dek": "Top 9th · 1 out",
+    "summary": "Bryson Stott is up against Taylor Rogers. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Mostly sunny"
+        "value": "81° · Mostly sunny"
       }
     ],
     "bullets": [
       "Bryson Stott at the plate",
-      "Andrew Morris on the mound",
+      "Taylor Rogers on the mound",
       "Target Field, Minneapolis"
     ],
     "next_label": "Tomorrow",
@@ -107,7 +107,7 @@
             {
               "slot": 4,
               "name": "Kody Clemens",
-              "position": "2B",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -151,13 +151,13 @@
             {
               "slot": 2,
               "name": "Bryson Stott",
-              "position": "3B",
+              "position": "2B",
               "bats": "L"
             },
             {
               "slot": 3,
               "name": "Bryce Harper",
-              "position": "RF",
+              "position": "1B",
               "bats": "L"
             },
             {
@@ -169,13 +169,13 @@
             {
               "slot": 5,
               "name": "Alec Bohm",
-              "position": "1B",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 6,
               "name": "Brandon Marsh",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -207,13 +207,13 @@
             {
               "slot": 2,
               "name": "Bryson Stott",
-              "position": "3B",
+              "position": "2B",
               "bats": "L"
             },
             {
               "slot": 3,
               "name": "Bryce Harper",
-              "position": "RF",
+              "position": "1B",
               "bats": "L"
             },
             {
@@ -225,13 +225,13 @@
             {
               "slot": 5,
               "name": "Alec Bohm",
-              "position": "1B",
+              "position": "3B",
               "bats": "R"
             },
             {
               "slot": 6,
               "name": "Brandon Marsh",
-              "position": "CF",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -275,7 +275,7 @@
             {
               "slot": 4,
               "name": "Kody Clemens",
-              "position": "2B",
+              "position": "LF",
               "bats": "L"
             },
             {
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
+          "temp_f": 81,
           "condition": "Mostly sunny",
-          "wind": "9 mph · gusts 13",
-          "gusts_mph": 13
+          "wind": "9 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "",
@@ -373,21 +373,21 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
-              "runs": 4,
-              "hits": 5,
+              "runs": 7,
+              "hits": 9,
               "errors": 0
             },
             "home": {
               "runs": 5,
               "hits": 6,
-              "errors": 0
+              "errors": 1
             }
           },
           "innings": [
@@ -485,6 +485,19 @@
             {
               "num": 8,
               "away": {
+                "runs": 3,
+                "hits": 4,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 1
+              }
+            },
+            {
+              "num": 9,
+              "away": {
                 "runs": null,
                 "hits": 0,
                 "errors": 0
@@ -506,7 +519,7 @@
             "event_type": "extra_base_hit",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber doubles (15) on a fly ball to right fielder Luke Keaschall.",
+            "detail": "Kyle Schwarber doubles (15) on a fly ball to right fiel…",
             "score_after": "PHI 0, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -576,7 +589,7 @@
             "event_type": "other",
             "actor": "Byron Buxton",
             "actor_id": 621439,
-            "detail": "Byron Buxton grounds into a double play, third baseman Bryson Stott to second baseman Luis Arraez to first baseman Alec Bohm. Trevo…",
+            "detail": "Byron Buxton grounds into a double play, third baseman…",
             "score_after": "PHI 0, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -590,7 +603,7 @@
             "event_type": "single",
             "actor": "Josh Bell",
             "actor_id": 605137,
-            "detail": "Josh Bell singles on a line drive to right fielder Bryce Harper.",
+            "detail": "Josh Bell singles on a line drive to right fielder Bryc…",
             "score_after": "PHI 0, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -604,7 +617,7 @@
             "event_type": "single",
             "actor": "Kody Clemens",
             "actor_id": 665019,
-            "detail": "Kody Clemens singles on a sharp line drive to center fielder Justin Crawford. Josh Bell to 3rd.",
+            "detail": "Kody Clemens singles on a sharp line drive to center fi…",
             "score_after": "PHI 0, MIN 0",
             "runs": 0,
             "is_scoring": false,
@@ -632,7 +645,7 @@
             "event_type": "home_run",
             "actor": "Brooks Lee",
             "actor_id": 686797,
-            "detail": "Brooks Lee hits a grand slam (18) to right field. Josh Bell scores. Kody Clemens scores. Royce Lewis scores.",
+            "detail": "Brooks Lee hits a grand slam (18) to right field. Josh…",
             "score_after": "PHI 0, MIN 4",
             "runs": 4,
             "is_scoring": true,
@@ -660,7 +673,7 @@
             "event_type": "other",
             "actor": "Victor Caratini",
             "actor_id": 605170,
-            "detail": "Luke Keaschall caught stealing 2nd base, catcher J.T. Realmuto to shortstop Edmundo Sosa.",
+            "detail": "Luke Keaschall caught stealing 2nd base, catcher J.T. R…",
             "score_after": "PHI 0, MIN 4",
             "runs": 0,
             "is_scoring": false,
@@ -674,7 +687,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, shortstop Kaelen Culpepper to first baseman Royce Lewis.",
+            "detail": "Alec Bohm grounds out, shortstop Kaelen Culpepper to fi…",
             "score_after": "PHI 0, MIN 4",
             "runs": 0,
             "is_scoring": false,
@@ -744,7 +757,7 @@
             "event_type": "out",
             "actor": "Trevor Larnach",
             "actor_id": 663616,
-            "detail": "Trevor Larnach grounds out, first baseman Alec Bohm to pitcher Andrew Painter.",
+            "detail": "Trevor Larnach grounds out, first baseman Alec Bohm to…",
             "score_after": "PHI 0, MIN 4",
             "runs": 0,
             "is_scoring": false,
@@ -758,7 +771,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds out, first baseman Royce Lewis to pitcher Dean Kremer.",
+            "detail": "Justin Crawford grounds out, first baseman Royce Lewis…",
             "score_after": "PHI 0, MIN 4",
             "runs": 0,
             "is_scoring": false,
@@ -772,7 +785,7 @@
             "event_type": "extra_base_hit",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa triples (2) on a sharp ground ball to right fielder Luke Keaschall.",
+            "detail": "Edmundo Sosa triples (2) on a sharp ground ball to righ…",
             "score_after": "PHI 0, MIN 4",
             "runs": 0,
             "is_scoring": false,
@@ -800,7 +813,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out, second baseman Kody Clemens to first baseman Royce Lewis.",
+            "detail": "Bryson Stott grounds out, second baseman Kody Clemens t…",
             "score_after": "PHI 0, MIN 4",
             "runs": 0,
             "is_scoring": false,
@@ -828,7 +841,7 @@
             "event_type": "out",
             "actor": "Josh Bell",
             "actor_id": 605137,
-            "detail": "Josh Bell grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "detail": "Josh Bell grounds out, second baseman Luis Arraez to fi…",
             "score_after": "PHI 0, MIN 4",
             "runs": 0,
             "is_scoring": false,
@@ -856,7 +869,7 @@
             "event_type": "single",
             "actor": "Royce Lewis",
             "actor_id": 668904,
-            "detail": "Royce Lewis singles on a line drive to center fielder Justin Crawford.",
+            "detail": "Royce Lewis singles on a line drive to center fielder J…",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -940,7 +953,7 @@
             "event_type": "out",
             "actor": "Victor Caratini",
             "actor_id": 605170,
-            "detail": "Victor Caratini grounds out, pitcher Andrew Painter to first baseman Alec Bohm.",
+            "detail": "Victor Caratini grounds out, pitcher Andrew Painter to…",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -968,7 +981,7 @@
             "event_type": "single",
             "actor": "Trevor Larnach",
             "actor_id": 663616,
-            "detail": "Trevor Larnach singles on a line drive to center fielder Justin Crawford. Kaelen Culpepper to 3rd.",
+            "detail": "Trevor Larnach singles on a line drive to center fielde…",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -996,7 +1009,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out, second baseman Kody Clemens to first baseman Royce Lewis.",
+            "detail": "Brandon Marsh grounds out, second baseman Kody Clemens…",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1024,7 +1037,7 @@
             "event_type": "extra_base_hit",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford doubles (16) on a fly ball to right fielder Luke Keaschall.",
+            "detail": "Justin Crawford doubles (16) on a fly ball to right fie…",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1052,7 +1065,7 @@
             "event_type": "out",
             "actor": "Josh Bell",
             "actor_id": 605137,
-            "detail": "Josh Bell grounds out, first baseman Alec Bohm to pitcher Andrew Painter.",
+            "detail": "Josh Bell grounds out, first baseman Alec Bohm to pitch…",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1080,7 +1093,7 @@
             "event_type": "out",
             "actor": "Royce Lewis",
             "actor_id": 668904,
-            "detail": "Royce Lewis grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "detail": "Royce Lewis grounds out, third baseman Bryson Stott to…",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1108,7 +1121,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a line drive to center fielder Byron Buxton. Kyle Schwarber to 2nd.",
+            "detail": "Bryson Stott singles on a line drive to center fielder…",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1122,7 +1135,7 @@
             "event_type": "walk_hbp",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper walks. Kyle Schwarber to 3rd. Bryson Stott to 2nd.",
+            "detail": "Bryce Harper walks. Kyle Schwarber to 3rd. Bryson Stott…",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1136,7 +1149,7 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez grounds out, second baseman Kody Clemens to first baseman Royce Lewis. Kyle Schwarber scores. Bryson Stott to 3rd. Bryc…",
+            "detail": "Luis Arraez grounds out, second baseman Kody Clemens to…",
             "score_after": "PHI 1, MIN 5",
             "runs": 1,
             "is_scoring": true,
@@ -1150,7 +1163,7 @@
             "event_type": "home_run",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm homers (14) on a fly ball to left field. Bryson Stott scores. Bryce Harper scores.",
+            "detail": "Alec Bohm homers (14) on a fly ball to left field. Brys…",
             "score_after": "PHI 4, MIN 5",
             "runs": 3,
             "is_scoring": true,
@@ -1164,7 +1177,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out softly, pitcher Kody Funderburk to first baseman Royce Lewis.",
+            "detail": "Brandon Marsh grounds out softly, pitcher Kody Funderbu…",
             "score_after": "PHI 4, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1178,7 +1191,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds out, third baseman Brooks Lee to first baseman Royce Lewis.",
+            "detail": "J.T. Realmuto grounds out, third baseman Brooks Lee to…",
             "score_after": "PHI 4, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1220,7 +1233,7 @@
             "event_type": "out",
             "actor": "Victor Caratini",
             "actor_id": 605170,
-            "detail": "Victor Caratini grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "detail": "Victor Caratini grounds out, third baseman Bryson Stott…",
             "score_after": "PHI 4, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1234,7 +1247,7 @@
             "event_type": "out",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz grounds out, third baseman Brooks Lee to first baseman Royce Lewis.",
+            "detail": "Bryan De La Cruz grounds out, third baseman Brooks Lee…",
             "score_after": "PHI 4, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1276,7 +1289,7 @@
             "event_type": "out",
             "actor": "Kaelen Culpepper",
             "actor_id": 701785,
-            "detail": "Kaelen Culpepper grounds out, shortstop Edmundo Sosa to first baseman Alec Bohm.",
+            "detail": "Kaelen Culpepper grounds out, shortstop Edmundo Sosa to…",
             "score_after": "PHI 4, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1290,7 +1303,7 @@
             "event_type": "out",
             "actor": "Trevor Larnach",
             "actor_id": 663616,
-            "detail": "Trevor Larnach flies out to left fielder Bryan De La Cruz.",
+            "detail": "Trevor Larnach flies out to left fielder Bryan De La Cr…",
             "score_after": "PHI 4, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1304,7 +1317,7 @@
             "event_type": "out",
             "actor": "Byron Buxton",
             "actor_id": 621439,
-            "detail": "Byron Buxton grounds out, shortstop Edmundo Sosa to first baseman Alec Bohm.",
+            "detail": "Byron Buxton grounds out, shortstop Edmundo Sosa to fir…",
             "score_after": "PHI 4, MIN 5",
             "runs": 0,
             "is_scoring": false,
@@ -1315,11 +1328,193 @@
             "inning": 8,
             "half": "top",
             "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out, second baseman Kody Clemens t…",
+            "score_after": "PHI 4, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:59",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper singles on a sharp line drive to center fi…",
+            "score_after": "PHI 4, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:60",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez hits a ground-rule double (27) on a line dr…",
+            "score_after": "PHI 4, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823670:61",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm singles on a fly ball to right fielder Luke K…",
+            "score_after": "PHI 5, MIN 5",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823670:62",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Andrew Morris intentionally walks Brandon Marsh.",
+            "score_after": "PHI 5, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:63",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto pops out to first baseman Royce Lewis in…",
+            "score_after": "PHI 5, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:64",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz singles on a ground ball to right fiel…",
+            "score_after": "PHI 7, MIN 5",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823670:65",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa grounds out, second baseman Ryan Kreidler…",
+            "score_after": "PHI 7, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:66",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "strikeout",
+            "actor": "Josh Bell",
+            "actor_id": 605137,
+            "detail": "Josh Bell strikes out on a foul tip.",
+            "score_after": "PHI 7, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:67",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "strikeout",
+            "actor": "Kody Clemens",
+            "actor_id": 665019,
+            "detail": "Kody Clemens strikes out on a foul tip.",
+            "score_after": "PHI 7, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:68",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "walk_hbp",
+            "actor": "Royce Lewis",
+            "actor_id": 668904,
+            "detail": "Royce Lewis walks.",
+            "score_after": "PHI 7, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:69",
+            "inning": 8,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "out",
+            "actor": "Brooks Lee",
+            "actor_id": 686797,
+            "detail": "Brooks Lee grounds into a force out, second baseman Bry…",
+            "score_after": "PHI 7, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:70",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out to first baseman Royce Lewis.",
+            "score_after": "PHI 7, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:71",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
             "event_type": "other",
             "actor": "Bryson Stott",
             "actor_id": 681082,
             "detail": "Play",
-            "score_after": "PHI 4, MIN 5",
+            "score_after": "PHI 7, MIN 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1328,125 +1523,30 @@
         "situation": {
           "batter": {
             "name": "Bryson Stott",
-            "meta": "vs Andrew Morris"
+            "meta": "vs Taylor Rogers"
           },
           "pitches": [
             "S",
+            "F",
+            "B",
             "B",
             "B"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 1,
-            "outs": 0
+            "balls": 3,
+            "strikes": 2,
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 8th"
+          "status": "Top 9th"
         }
       }
     },
-    "injury_report": {
-      "content": {
-        "il_entries": [
-          {
-            "name": "Adolis García",
-            "position": "RF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right latissimus dorsi tear",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-16T20:23:56.390Z",
-            "freshness_label": "As of Aug 16, 2026, 4:23 PM ET"
-          },
-          {
-            "name": "Johan Rojas",
-            "position": "CF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL repair",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-16T20:23:56.390Z",
-            "freshness_label": "As of Aug 16, 2026, 4:23 PM ET"
-          },
-          {
-            "name": "Lou Trivino III",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right thoracic muscle spasm",
-            "status_note": "",
-            "retroactive_to": "2026-07-07",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-16T20:23:56.390Z",
-            "freshness_label": "As of Aug 16, 2026, 4:23 PM ET"
-          },
-          {
-            "name": "Tanner Banks",
-            "position": "LHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Left forearm strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-16T20:23:56.390Z",
-            "freshness_label": "As of Aug 16, 2026, 4:23 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL tear",
-            "status_note": "",
-            "retroactive_to": "2026-07-13",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-16T20:23:56.390Z",
-            "freshness_label": "As of Aug 16, 2026, 4:23 PM ET"
-          },
-          {
-            "name": "Rafael Marchán",
-            "position": "C",
-            "il_type": "10-day",
-            "badge": "il",
-            "injury": "Left knee patellar tendinitis",
-            "status_note": "",
-            "retroactive_to": "2026-07-23",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-16T20:23:56.390Z",
-            "freshness_label": "As of Aug 16, 2026, 4:23 PM ET"
-          },
-          {
-            "name": "Caleb Kilian",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Left oblique strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-16T20:23:56.390Z",
-            "freshness_label": "As of Aug 16, 2026, 4:23 PM ET"
-          }
-        ],
-        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
-      }
-    }
+    "injury_report": null
   },
   "next_game": {
     "label": "Tomorrow",

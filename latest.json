@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T20:23:56.390Z",
+  "generated_at": "2026-08-16T20:51:43.089Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, MIN 5",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Bryson Stott is up against Andrew Morris. Series: PHI leads 2-0.",
+    "headline": "PHI 7, MIN 5",
+    "dek": "Top 9th · 1 out",
+    "summary": "Bryson Stott is up against Taylor Rogers. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -55,34 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 81,
       "condition": "Mostly sunny",
-      "wind": "9 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "9 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
         "name": "Bryson Stott",
-        "meta": "vs Andrew Morris"
+        "meta": "vs Taylor Rogers"
       },
       "pitches": [
         "S",
+        "F",
+        "B",
         "B",
         "B"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 1,
-        "outs": 0
+        "balls": 3,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 8th"
+      "status": "Top 9th"
     },
     "recap_line": null
   },
@@ -90,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T20:23:56.915Z",
+    "updated_at": "2026-08-16T20:51:43.583Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -127,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Mostly sunny · gusts 13 mph",
+      "text": "81° · Mostly sunny · gusts 15 mph",
       "highlight": false
     }
   ]
