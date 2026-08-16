@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T19:37:04.770Z",
+  "generated_at": "2026-08-16T19:49:54.254Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIN 5",
-    "dek": "Bottom 5th · 1 out",
-    "summary": "Kody Clemens is up against Andrew Painter. Series: PHI leads 2-0.",
+    "dek": "Top 6th · 0 outs",
+    "summary": "Bryce Harper is up against Dean Kremer. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -57,30 +57,30 @@
     "weather": {
       "temp_f": 79,
       "condition": "Mostly sunny",
-      "wind": "10 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "10 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kody Clemens",
-        "meta": "vs Andrew Painter"
+        "name": "Bryce Harper",
+        "meta": "vs Dean Kremer"
       },
       "pitches": [
-        "F"
+        "B"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 1,
-        "outs": 1
+        "balls": 1,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Top 6th"
     },
     "recap_line": null
   },
@@ -88,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T19:37:05.314Z",
+    "updated_at": "2026-08-16T19:49:54.849Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -125,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Mostly sunny · gusts 14 mph",
+      "text": "79° · Mostly sunny · gusts 15 mph",
       "highlight": false
     }
   ]
