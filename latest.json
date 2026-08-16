@@ -4,7 +4,7 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T19:08:47.829Z",
+  "generated_at": "2026-08-16T19:22:46.957Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIN 5",
-    "dek": "Top 4th · 0 outs",
-    "summary": "Bryce Harper is up against Dean Kremer. Series: PHI leads 2-0.",
+    "dek": "Bottom 4th · 2 outs",
+    "summary": "Byron Buxton is up against Andrew Painter. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -55,33 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
-      "condition": "Mostly sunny",
-      "wind": "10 mph · gusts 15",
-      "gusts_mph": 15
+      "temp_f": 78,
+      "condition": "Clear",
+      "wind": "9 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Dean Kremer"
+        "name": "Byron Buxton",
+        "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "B",
-        "F"
+        "F",
+        "S",
+        "B"
       ],
       "count": {
         "balls": 1,
-        "strikes": 1,
-        "outs": 0
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Top 4th"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T19:08:48.323Z",
+    "updated_at": "2026-08-16T19:22:47.388Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -126,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Mostly sunny · gusts 15 mph",
+      "text": "78° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]

@@ -5,14 +5,14 @@
     "edition": 138,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-16T19:08:47.829Z",
+    "generated_at": "2026-08-16T19:22:46.957Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 16, 2026, 3:08 PM ET",
+      "generated_at_et": "Aug 16, 2026, 3:22 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, MIN 5",
-    "dek": "Top 4th · 0 outs",
-    "summary": "Bryce Harper is up against Dean Kremer. Series: PHI leads 2-0.",
+    "dek": "Bottom 4th · 2 outs",
+    "summary": "Byron Buxton is up against Andrew Painter. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Mostly sunny"
+        "value": "78° · Clear"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
-      "Dean Kremer on the mound",
+      "Byron Buxton at the plate",
+      "Andrew Painter on the mound",
       "Target Field, Minneapolis"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
-          "condition": "Mostly sunny",
-          "wind": "10 mph · gusts 15",
-          "gusts_mph": 15
+          "temp_f": 78,
+          "condition": "Clear",
+          "wind": "9 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "",
@@ -359,25 +359,25 @@
             "team": "MIN",
             "name": "Dean Kremer",
             "hand": "R",
-            "era": "4.94",
+            "era": "4.85",
             "record": "2-4",
-            "whip": "1.14"
+            "whip": "1.12"
           },
           "away": {
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "6.61",
+            "era": "6.54",
             "record": "2-8",
-            "whip": "1.55"
+            "whip": "1.57"
           }
         },
         "linescore": {
           "currentInning": 4,
           "currentInningOrdinal": "4th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 5,
-              "hits": 5,
+              "hits": 6,
               "errors": 0
             }
           },
@@ -433,13 +433,13 @@
             {
               "num": 4,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -829,9 +829,107 @@
             "inning": 4,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
+            "detail": "Bryce Harper flies out to center fielder Byron Buxton.",
+            "score_after": "PHI 0, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:28",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez lines out to left fielder Trevor Larnach.",
+            "score_after": "PHI 0, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:29",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm called out on strikes.",
+            "score_after": "PHI 0, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:30",
+            "inning": 4,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "out",
+            "actor": "Luke Keaschall",
+            "actor_id": 807712,
+            "detail": "Luke Keaschall pops out to shortstop Edmundo Sosa.",
+            "score_after": "PHI 0, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:31",
+            "inning": 4,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "out",
+            "actor": "Victor Caratini",
+            "actor_id": 605170,
+            "detail": "Victor Caratini grounds out, pitcher Andrew Painter to first baseman Alec Bohm.",
+            "score_after": "PHI 0, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:32",
+            "inning": 4,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "walk_hbp",
+            "actor": "Kaelen Culpepper",
+            "actor_id": 701785,
+            "detail": "Kaelen Culpepper walks.",
+            "score_after": "PHI 0, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "single",
+            "actor": "Trevor Larnach",
+            "actor_id": 663616,
+            "detail": "Trevor Larnach singles on a line drive to center fielder Justin Crawford. Kaelen Culpepper to 3rd.",
+            "score_after": "PHI 0, MIN 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823670:34",
+            "inning": 4,
+            "half": "bottom",
+            "team": "MIN",
+            "event_type": "other",
+            "actor": "Byron Buxton",
+            "actor_id": 621439,
             "detail": "Play",
             "score_after": "PHI 0, MIN 5",
             "runs": 0,
@@ -841,24 +939,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryce Harper",
-            "meta": "vs Dean Kremer"
+            "name": "Byron Buxton",
+            "meta": "vs Andrew Painter"
           },
           "pitches": [
-            "B",
-            "F"
+            "F",
+            "S",
+            "B"
           ],
           "count": {
             "balls": 1,
-            "strikes": 1,
-            "outs": 0
+            "strikes": 2,
+            "outs": 2
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
-            "third": false
+            "third": true
           },
-          "status": "Top 4th"
+          "status": "Bottom 4th"
         }
       }
     },
@@ -875,8 +974,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-16T19:08:47.829Z",
-            "freshness_label": "As of Aug 16, 2026, 3:08 PM ET"
+            "last_confirmed": "2026-08-16T19:22:46.957Z",
+            "freshness_label": "As of Aug 16, 2026, 3:22 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -888,8 +987,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-16T19:08:47.829Z",
-            "freshness_label": "As of Aug 16, 2026, 3:08 PM ET"
+            "last_confirmed": "2026-08-16T19:22:46.957Z",
+            "freshness_label": "As of Aug 16, 2026, 3:22 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -901,8 +1000,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-16T19:08:47.829Z",
-            "freshness_label": "As of Aug 16, 2026, 3:08 PM ET"
+            "last_confirmed": "2026-08-16T19:22:46.957Z",
+            "freshness_label": "As of Aug 16, 2026, 3:22 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -914,8 +1013,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-16T19:08:47.829Z",
-            "freshness_label": "As of Aug 16, 2026, 3:08 PM ET"
+            "last_confirmed": "2026-08-16T19:22:46.957Z",
+            "freshness_label": "As of Aug 16, 2026, 3:22 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -927,8 +1026,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-16T19:08:47.829Z",
-            "freshness_label": "As of Aug 16, 2026, 3:08 PM ET"
+            "last_confirmed": "2026-08-16T19:22:46.957Z",
+            "freshness_label": "As of Aug 16, 2026, 3:22 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -940,8 +1039,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-16T19:08:47.829Z",
-            "freshness_label": "As of Aug 16, 2026, 3:08 PM ET"
+            "last_confirmed": "2026-08-16T19:22:46.957Z",
+            "freshness_label": "As of Aug 16, 2026, 3:22 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -953,8 +1052,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-16T19:08:47.829Z",
-            "freshness_label": "As of Aug 16, 2026, 3:08 PM ET"
+            "last_confirmed": "2026-08-16T19:22:46.957Z",
+            "freshness_label": "As of Aug 16, 2026, 3:22 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
