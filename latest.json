@@ -4,7 +4,7 @@
   "edition_date": "2026-08-15",
   "volume": 1,
   "edition": 137,
-  "generated_at": "2026-08-16T00:27:48.110Z",
+  "generated_at": "2026-08-16T00:48:22.277Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 8, MIN 0",
-    "dek": "Middle 5th · 3 outs",
-    "summary": "Ryan Kreidler is up against Jesús Luzardo. Series: PHI leads 1-0.",
+    "headline": "PHI 8, MIN 1",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Royce Lewis is up against Jesús Luzardo. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Dean Kremer · PHI @ MIN · Sun, Aug 16 · 2:10 PM"
   },
@@ -55,35 +55,32 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 75,
       "condition": "Overcast",
-      "wind": "7 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "5 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ryan Kreidler",
+        "name": "Royce Lewis",
         "meta": "vs Jesús Luzardo"
       },
       "pitches": [
-        "S",
-        "S",
-        "F",
         "X"
       ],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 3
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
-      "status": "Middle 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -91,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T00:27:48.554Z",
+    "updated_at": "2026-08-16T00:48:22.833Z",
     "current_game_pk": 823671,
     "next_game_pk": 823670,
     "next_game": {
@@ -128,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 15 mph",
+      "text": "75° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
