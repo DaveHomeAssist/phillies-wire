@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-15",
+  "edition_date": "2026-08-16",
   "volume": 1,
-  "edition": 137,
-  "generated_at": "2026-08-16T03:32:08.813Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 138,
+  "generated_at": "2026-08-16T04:00:39.804Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 66,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 9, MIN 1.",
-    "dek": "PHI 9, MIN 1 · Jesús Luzardo · 6.2 IP, 7 H, 1 ER, 9 K",
-    "summary": "PHI 9, MIN 1. Final at Target Field, Minneapolis. PHI wins 2-0.",
+    "headline": "Phillies @ Twins · Game 3 of 3",
+    "dek": "Andrew Painter vs Dean Kremer",
+    "summary": "Andrew Painter vs Dean Kremer · Phillies @ Twins · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter vs Dean Kremer · PHI @ MIN · Sun, Aug 16 · 2:10 PM"
+    "next_value": "PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ Twins · Game 2 of 3",
-    "first_pitch": "7:10 PM",
+    "matchup": "Phillies @ Twins · Game 3 of 3",
+    "first_pitch": "2:10 PM",
     "venue": "Target Field, Minneapolis",
     "starters": {
       "home": {
-        "name": "Connor Prielipp",
-        "hand": "L"
+        "name": "Dean Kremer",
+        "hand": "R"
       },
       "away": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "phi": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "opp": {
-        "name": "Connor Prielipp",
-        "hand": "L"
+        "name": "Dean Kremer",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI wins 2-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
       "stream": "MLB.TV",
-      "radio": "1210 WPHT"
+      "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 73,
       "condition": "Clear",
-      "wind": "6 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "4 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T03:32:09.627Z",
+    "updated_at": "2026-08-16T04:00:43.809Z",
     "current_game_pk": 823670,
     "next_game_pk": 823427,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Twins · Game 2 of 3 · 7:10 PM",
+      "text": "Phillies @ Twins · Game 3 of 3 · 2:10 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Connor Prielipp",
+      "text": "Andrew Painter vs Dean Kremer",
       "highlight": true
     },
     {
-      "text": "NBCSP · 1210 WPHT",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "73° · Clear · gusts 13 mph",
+      "text": "73° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
