@@ -4,21 +4,21 @@
   "edition_date": "2026-08-16",
   "volume": 1,
   "edition": 138,
-  "generated_at": "2026-08-16T21:05:00.744Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-16T21:22:42.442Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 66,
+    "wins": 67,
     "losses": 58,
-    "streak": "W2",
+    "streak": "W3",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 7, MIN 5",
-    "dek": "Bottom 9th · 1 out",
-    "summary": "Kaelen Culpepper is up against Jhoan Duran. Series: PHI leads 2-0.",
+    "headline": "PHI 7, MIN 5.",
+    "dek": "PHI 7, MIN 5 · Dean Kremer · 5.1 IP, 5 H, 4 ER, 6 K",
+    "summary": "PHI 7, MIN 5. Final at Target Field, Minneapolis. PHI wins 3-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 2-0"
+      "label": "PHI wins 3-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,64 +57,40 @@
     "weather": {
       "temp_f": 80,
       "condition": "Mostly sunny",
-      "wind": "9 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "9 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Kaelen Culpepper",
-        "meta": "vs Jhoan Duran"
-      },
-      "pitches": [
-        "F",
-        "S",
-        "F",
-        "F",
-        "F",
-        "F"
-      ],
-      "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 1
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-16T21:05:01.193Z",
-    "current_game_pk": 823670,
-    "next_game_pk": 823427,
+    "updated_at": "2026-08-16T21:22:43.308Z",
+    "current_game_pk": 823427,
+    "next_game_pk": 823423,
     "next_game": {
-      "game_pk": 823427,
-      "official_date": "2026-08-17",
-      "date_label": "Mon, Aug 17, 2026",
+      "game_pk": 823423,
+      "official_date": "2026-08-18",
+      "date_label": "Tue, Aug 18, 2026",
       "time_label": "6:40 PM",
       "title": "Miami Marlins at Phillies",
       "matchup": "MIA at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823670,
-      "official_date": "2026-08-16",
-      "title": "Phillies at Minnesota Twins",
-      "matchup": "PHI at MIN"
+      "game_pk": 823427,
+      "official_date": "2026-08-17",
+      "title": "Miami Marlins at Phillies",
+      "matchup": "MIA at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 66-58",
+      "text": "PHI 67-58",
       "highlight": true
     },
     {
@@ -130,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Mostly sunny · gusts 13 mph",
+      "text": "80° · Mostly sunny · gusts 15 mph",
       "highlight": false
     }
   ]
