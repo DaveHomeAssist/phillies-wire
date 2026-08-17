@@ -4,7 +4,7 @@
   "edition_date": "2026-08-17",
   "volume": 1,
   "edition": 139,
-  "generated_at": "2026-08-17T22:39:10.398Z",
+  "generated_at": "2026-08-17T22:52:02.368Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIA 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Esteury Ruiz is up against Cristopher Sánchez. Series: Regular Season.",
+    "dek": "Bottom 1st · 2 outs",
+    "summary": "Bryce Harper is up against Janson Junk. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIA · Tue, Aug 18 · 6:40 PM"
   },
@@ -57,28 +57,28 @@
     "weather": {
       "temp_f": 85,
       "condition": "Clear",
-      "wind": "3 mph · gusts 4",
-      "gusts_mph": 4
+      "wind": "4 mph · gusts 3",
+      "gusts_mph": 3
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Esteury Ruiz",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Bryce Harper",
+        "meta": "vs Janson Junk"
       },
       "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 0
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-17T22:39:10.937Z",
+    "updated_at": "2026-08-17T22:52:03.110Z",
     "current_game_pk": 823427,
     "next_game_pk": 823423,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "85° · Clear · gusts 4 mph",
+      "text": "85° · Clear · gusts 3 mph",
       "highlight": false
     }
   ]
