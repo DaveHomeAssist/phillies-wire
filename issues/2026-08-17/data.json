@@ -5,7 +5,7 @@
     "edition": 139,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-17T22:52:02.368Z",
+    "generated_at": "2026-08-17T22:52:35.909Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -482,10 +482,10 @@
             "inning": 1,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "out",
+            "event_type": "other",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Batter Timeout.",
+            "detail": "Play",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -497,10 +497,14 @@
             "name": "Bryce Harper",
             "meta": "vs Janson Junk"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "B",
+            "S"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
+            "balls": 2,
+            "strikes": 1,
             "outs": 2
           },
           "bases": {
@@ -525,7 +529,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:52:02.368Z",
+            "last_confirmed": "2026-08-17T22:52:35.909Z",
             "freshness_label": "As of Aug 17, 2026, 6:52 PM ET"
           },
           {
@@ -538,7 +542,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:52:02.368Z",
+            "last_confirmed": "2026-08-17T22:52:35.909Z",
             "freshness_label": "As of Aug 17, 2026, 6:52 PM ET"
           },
           {
@@ -551,7 +555,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:52:02.368Z",
+            "last_confirmed": "2026-08-17T22:52:35.909Z",
             "freshness_label": "As of Aug 17, 2026, 6:52 PM ET"
           },
           {
@@ -564,7 +568,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:52:02.368Z",
+            "last_confirmed": "2026-08-17T22:52:35.909Z",
             "freshness_label": "As of Aug 17, 2026, 6:52 PM ET"
           },
           {
@@ -577,7 +581,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:52:02.368Z",
+            "last_confirmed": "2026-08-17T22:52:35.909Z",
             "freshness_label": "As of Aug 17, 2026, 6:52 PM ET"
           },
           {
@@ -590,7 +594,7 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:52:02.368Z",
+            "last_confirmed": "2026-08-17T22:52:35.909Z",
             "freshness_label": "As of Aug 17, 2026, 6:52 PM ET"
           },
           {
@@ -603,7 +607,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:52:02.368Z",
+            "last_confirmed": "2026-08-17T22:52:35.909Z",
             "freshness_label": "As of Aug 17, 2026, 6:52 PM ET"
           }
         ],
