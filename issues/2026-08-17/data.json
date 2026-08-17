@@ -5,7 +5,7 @@
     "edition": 139,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-17T23:23:05.044Z",
+    "generated_at": "2026-08-17T23:23:56.739Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -29,7 +29,7 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, MIA 0",
-    "dek": "Middle 3rd · 3 outs",
+    "dek": "Bottom 3rd · 0 outs",
     "summary": "Justin Crawford is up against Janson Junk. Series: Regular Season.",
     "cards": [
       {
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 3,
           "currentInningOrdinal": "3rd",
-          "inningState": "Middle",
-          "isTopInning": true,
-          "outs": 3,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
@@ -712,6 +712,20 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823427:20",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Play",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
@@ -720,23 +734,19 @@
             "meta": "vs Janson Junk"
           },
           "pitches": [
-            "B",
-            "B",
-            "S",
-            "S",
-            "S"
+            "B"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 3,
-            "outs": 3
+            "balls": 1,
+            "strikes": 0,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 3rd"
+          "status": "Bottom 3rd"
         }
       }
     },
@@ -753,7 +763,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:23:05.044Z",
+            "last_confirmed": "2026-08-17T23:23:56.739Z",
             "freshness_label": "As of Aug 17, 2026, 7:23 PM ET"
           },
           {
@@ -766,7 +776,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:23:05.044Z",
+            "last_confirmed": "2026-08-17T23:23:56.739Z",
             "freshness_label": "As of Aug 17, 2026, 7:23 PM ET"
           },
           {
@@ -779,7 +789,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:23:05.044Z",
+            "last_confirmed": "2026-08-17T23:23:56.739Z",
             "freshness_label": "As of Aug 17, 2026, 7:23 PM ET"
           },
           {
@@ -792,7 +802,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:23:05.044Z",
+            "last_confirmed": "2026-08-17T23:23:56.739Z",
             "freshness_label": "As of Aug 17, 2026, 7:23 PM ET"
           },
           {
@@ -805,7 +815,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:23:05.044Z",
+            "last_confirmed": "2026-08-17T23:23:56.739Z",
             "freshness_label": "As of Aug 17, 2026, 7:23 PM ET"
           },
           {
@@ -818,7 +828,7 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:23:05.044Z",
+            "last_confirmed": "2026-08-17T23:23:56.739Z",
             "freshness_label": "As of Aug 17, 2026, 7:23 PM ET"
           },
           {
@@ -831,7 +841,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:23:05.044Z",
+            "last_confirmed": "2026-08-17T23:23:56.739Z",
             "freshness_label": "As of Aug 17, 2026, 7:23 PM ET"
           }
         ],
