@@ -5,14 +5,14 @@
     "edition": 139,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-17T23:05:18.855Z",
+    "generated_at": "2026-08-17T23:06:14.531Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 17, 2026, 7:05 PM ET",
+      "generated_at_et": "Aug 17, 2026, 7:06 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, MIA 0",
-    "dek": "Bottom 2nd · 0 outs",
-    "summary": "Alec Bohm is up against Janson Junk. Series: Regular Season.",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Bryson Stott is up against Janson Junk. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Alec Bohm at the plate",
+      "Bryson Stott at the plate",
       "Janson Junk on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.51",
+            "era": "2.52",
             "record": "15-4",
             "whip": "1.19"
           },
@@ -377,7 +377,7 @@
           "currentInningOrdinal": "2nd",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
@@ -593,9 +593,23 @@
             "inning": 2,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
+            "detail": "Alec Bohm grounds out, shortstop Otto Lopez to first baseman Leo Jiménez.",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
             "detail": "Play",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
@@ -605,17 +619,16 @@
         ],
         "situation": {
           "batter": {
-            "name": "Alec Bohm",
+            "name": "Bryson Stott",
             "meta": "vs Janson Junk"
           },
           "pitches": [
-            "B",
-            "F"
+            "S"
           ],
           "count": {
-            "balls": 1,
+            "balls": 0,
             "strikes": 1,
-            "outs": 0
+            "outs": 1
           },
           "bases": {
             "first": false,
@@ -639,8 +652,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:05:18.855Z",
-            "freshness_label": "As of Aug 17, 2026, 7:05 PM ET"
+            "last_confirmed": "2026-08-17T23:06:14.531Z",
+            "freshness_label": "As of Aug 17, 2026, 7:06 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -652,8 +665,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:05:18.855Z",
-            "freshness_label": "As of Aug 17, 2026, 7:05 PM ET"
+            "last_confirmed": "2026-08-17T23:06:14.531Z",
+            "freshness_label": "As of Aug 17, 2026, 7:06 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -665,8 +678,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:05:18.855Z",
-            "freshness_label": "As of Aug 17, 2026, 7:05 PM ET"
+            "last_confirmed": "2026-08-17T23:06:14.531Z",
+            "freshness_label": "As of Aug 17, 2026, 7:06 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -678,8 +691,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:05:18.855Z",
-            "freshness_label": "As of Aug 17, 2026, 7:05 PM ET"
+            "last_confirmed": "2026-08-17T23:06:14.531Z",
+            "freshness_label": "As of Aug 17, 2026, 7:06 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -691,8 +704,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:05:18.855Z",
-            "freshness_label": "As of Aug 17, 2026, 7:05 PM ET"
+            "last_confirmed": "2026-08-17T23:06:14.531Z",
+            "freshness_label": "As of Aug 17, 2026, 7:06 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -704,8 +717,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:05:18.855Z",
-            "freshness_label": "As of Aug 17, 2026, 7:05 PM ET"
+            "last_confirmed": "2026-08-17T23:06:14.531Z",
+            "freshness_label": "As of Aug 17, 2026, 7:06 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -717,8 +730,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:05:18.855Z",
-            "freshness_label": "As of Aug 17, 2026, 7:05 PM ET"
+            "last_confirmed": "2026-08-17T23:06:14.531Z",
+            "freshness_label": "As of Aug 17, 2026, 7:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
