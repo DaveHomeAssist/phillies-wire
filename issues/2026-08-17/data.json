@@ -5,14 +5,14 @@
     "edition": 139,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-17T22:06:08.131Z",
+    "generated_at": "2026-08-17T22:23:23.822Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Aug 17, 2026, 6:06 PM ET",
+      "enrich_label": "Live update",
+      "generated_at_et": "Aug 17, 2026, 6:23 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -26,28 +26,29 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Marlins @ Phillies · Game 1 of 3",
-    "dek": "Cristopher Sánchez vs Janson Junk",
-    "summary": "Cristopher Sánchez vs Janson Junk · Marlins @ Phillies · Game 1 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, MIA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Esteury Ruiz is up against Cristopher Sánchez. Series: Regular Season.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "6:40 PM"
-      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP · MLB.TV · 94 WIP"
+      },
+      {
+        "label": "Weather",
+        "value": "85° · Mostly sunny"
       }
     ],
     "bullets": [
-      "85° · Clear · 3 mph · gusts 7",
-      "Regular Season"
+      "Esteury Ruiz at the plate",
+      "Cristopher Sánchez on the mound",
+      "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIA · Tue, Aug 18 · 6:40 PM"
@@ -346,7 +347,7 @@
         },
         "weather": {
           "temp_f": 85,
-          "condition": "Clear",
+          "condition": "Mostly sunny",
           "wind": "3 mph · gusts 7",
           "gusts_mph": 7
         },
@@ -414,13 +415,31 @@
             "event_type": "other",
             "actor": "Esteury Ruiz",
             "actor_id": 665923,
-            "detail": "Status Change - Pre-Game",
+            "detail": "Status Change - Warmup",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ]
+        ],
+        "situation": {
+          "batter": {
+            "name": "Esteury Ruiz",
+            "meta": "vs Cristopher Sánchez"
+          },
+          "pitches": [],
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "bases": {
+            "first": false,
+            "second": false,
+            "third": false
+          },
+          "status": "Top 1st"
+        }
       }
     },
     "injury_report": {
@@ -436,8 +455,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:06:08.131Z",
-            "freshness_label": "As of Aug 17, 2026, 6:06 PM ET"
+            "last_confirmed": "2026-08-17T22:23:23.822Z",
+            "freshness_label": "As of Aug 17, 2026, 6:23 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -449,8 +468,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:06:08.131Z",
-            "freshness_label": "As of Aug 17, 2026, 6:06 PM ET"
+            "last_confirmed": "2026-08-17T22:23:23.822Z",
+            "freshness_label": "As of Aug 17, 2026, 6:23 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -462,8 +481,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:06:08.131Z",
-            "freshness_label": "As of Aug 17, 2026, 6:06 PM ET"
+            "last_confirmed": "2026-08-17T22:23:23.822Z",
+            "freshness_label": "As of Aug 17, 2026, 6:23 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -475,8 +494,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:06:08.131Z",
-            "freshness_label": "As of Aug 17, 2026, 6:06 PM ET"
+            "last_confirmed": "2026-08-17T22:23:23.822Z",
+            "freshness_label": "As of Aug 17, 2026, 6:23 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -488,8 +507,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:06:08.131Z",
-            "freshness_label": "As of Aug 17, 2026, 6:06 PM ET"
+            "last_confirmed": "2026-08-17T22:23:23.822Z",
+            "freshness_label": "As of Aug 17, 2026, 6:23 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -501,8 +520,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:06:08.131Z",
-            "freshness_label": "As of Aug 17, 2026, 6:06 PM ET"
+            "last_confirmed": "2026-08-17T22:23:23.822Z",
+            "freshness_label": "As of Aug 17, 2026, 6:23 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -514,8 +533,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T22:06:08.131Z",
-            "freshness_label": "As of Aug 17, 2026, 6:06 PM ET"
+            "last_confirmed": "2026-08-17T22:23:23.822Z",
+            "freshness_label": "As of Aug 17, 2026, 6:23 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
