@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-16",
+  "edition_date": "2026-08-17",
   "volume": 1,
-  "edition": 138,
-  "generated_at": "2026-08-17T03:47:09.842Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 139,
+  "generated_at": "2026-08-17T04:01:17.588Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 67,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 7, MIN 5.",
-    "dek": "PHI 7, MIN 5 · Dean Kremer · 5.1 IP, 5 H, 4 ER, 6 K",
-    "summary": "PHI 7, MIN 5. Final at Target Field, Minneapolis. PHI wins 3-0.",
+    "headline": "Marlins @ Phillies · Game 1 of 3",
+    "dek": "Cristopher Sánchez vs Janson Junk",
+    "summary": "Cristopher Sánchez vs Janson Junk · Marlins @ Phillies · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Janson Junk · PHI vs MIA · Mon, Aug 17 · 6:40 PM"
+    "next_value": "Zack Wheeler · PHI vs MIA · Tue, Aug 18 · 6:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ Twins · Game 3 of 3",
-    "first_pitch": "2:10 PM",
-    "venue": "Target Field, Minneapolis",
+    "matchup": "Marlins @ Phillies · Game 1 of 3",
+    "first_pitch": "6:40 PM",
+    "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Dean Kremer",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "away": {
-        "name": "Andrew Painter",
+        "name": "Janson Junk",
         "hand": "R"
       },
       "phi": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "opp": {
-        "name": "Dean Kremer",
+        "name": "Janson Junk",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI wins 3-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 68,
-      "condition": "Clear",
-      "wind": "3 mph · gusts 6",
-      "gusts_mph": 6
+      "temp_f": 70,
+      "condition": "Heavy rain",
+      "wind": "4 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-17T03:47:10.272Z",
+    "updated_at": "2026-08-17T04:01:17.936Z",
     "current_game_pk": 823427,
     "next_game_pk": 823423,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Twins · Game 3 of 3 · 2:10 PM",
+      "text": "Marlins @ Phillies · Game 1 of 3 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Andrew Painter vs Dean Kremer",
+      "text": "Cristopher Sánchez vs Janson Junk",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "68° · Clear · gusts 6 mph",
+      "text": "70° · Heavy rain · gusts 9 mph",
       "highlight": false
     }
   ]
