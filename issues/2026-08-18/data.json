@@ -5,14 +5,14 @@
     "edition": 140,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-18T22:40:06.690Z",
+    "generated_at": "2026-08-18T22:52:30.213Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 18, 2026, 6:40 PM ET",
+      "generated_at_et": "Aug 18, 2026, 6:52 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, MIA 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Jakob Marsee is up against Zack Wheeler. Series: PHI leads 1-0.",
+    "dek": "Bottom 1st · 2 outs",
+    "summary": "Alec Bohm is up against Cade Gibson. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "84° · Clear"
+        "value": "83° · Clear"
       }
     ],
     "bullets": [
-      "Jakob Marsee at the plate",
-      "Zack Wheeler on the mound",
+      "Alec Bohm at the plate",
+      "Cade Gibson on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 84,
+          "temp_f": 83,
           "condition": "Clear",
-          "wind": "8 mph · gusts 11",
-          "gusts_mph": 11
+          "wind": "7 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,25 +359,25 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.89",
+            "era": "2.86",
             "record": "10-4",
-            "whip": "1.00"
+            "whip": "0.99"
           },
           "away": {
             "team": "MIA",
             "name": "Cade Gibson",
             "hand": "L",
-            "era": "5.61",
+            "era": "5.50",
             "record": "2-0",
-            "whip": "1.54"
+            "whip": "1.51"
           }
         },
         "linescore": {
           "currentInning": 1,
           "currentInningOrdinal": "1st",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 0
             }
           },
@@ -394,13 +394,13 @@
             {
               "num": 1,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -412,10 +412,108 @@
             "inning": 1,
             "half": "top",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Jakob Marsee",
             "actor_id": 805300,
-            "detail": "Status Change - Warmup",
+            "detail": "Jakob Marsee pops out to shortstop Trea Turner.",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:1",
+            "inning": 1,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Xavier Edwards",
+            "actor_id": 669364,
+            "detail": "Xavier Edwards strikes out swinging.",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:2",
+            "inning": 1,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Otto Lopez",
+            "actor_id": 672640,
+            "detail": "Otto Lopez flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:3",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to right fielder Owen Caissie.",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, shortstop Otto Lopez to first baseman Griffin Conine.",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper walks.",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:6",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez singles on a fly ball to center fielder Jakob Marsee. Bryce Harper to 2nd.",
+            "score_after": "PHI 0, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:7",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Play",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,21 +522,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Jakob Marsee",
-            "meta": "vs Zack Wheeler"
+            "name": "Alec Bohm",
+            "meta": "vs Cade Gibson"
           },
           "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 0
+            "outs": 2
           },
           "bases": {
-            "first": false,
-            "second": false,
+            "first": true,
+            "second": true,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "Bottom 1st"
         }
       }
     },
@@ -455,8 +553,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T22:40:06.690Z",
-            "freshness_label": "As of Aug 18, 2026, 6:40 PM ET"
+            "last_confirmed": "2026-08-18T22:52:30.213Z",
+            "freshness_label": "As of Aug 18, 2026, 6:52 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -468,8 +566,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T22:40:06.690Z",
-            "freshness_label": "As of Aug 18, 2026, 6:40 PM ET"
+            "last_confirmed": "2026-08-18T22:52:30.213Z",
+            "freshness_label": "As of Aug 18, 2026, 6:52 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -481,8 +579,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T22:40:06.690Z",
-            "freshness_label": "As of Aug 18, 2026, 6:40 PM ET"
+            "last_confirmed": "2026-08-18T22:52:30.213Z",
+            "freshness_label": "As of Aug 18, 2026, 6:52 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -494,8 +592,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T22:40:06.690Z",
-            "freshness_label": "As of Aug 18, 2026, 6:40 PM ET"
+            "last_confirmed": "2026-08-18T22:52:30.213Z",
+            "freshness_label": "As of Aug 18, 2026, 6:52 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -507,8 +605,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T22:40:06.690Z",
-            "freshness_label": "As of Aug 18, 2026, 6:40 PM ET"
+            "last_confirmed": "2026-08-18T22:52:30.213Z",
+            "freshness_label": "As of Aug 18, 2026, 6:52 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -520,8 +618,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T22:40:06.690Z",
-            "freshness_label": "As of Aug 18, 2026, 6:40 PM ET"
+            "last_confirmed": "2026-08-18T22:52:30.213Z",
+            "freshness_label": "As of Aug 18, 2026, 6:52 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -533,8 +631,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T22:40:06.690Z",
-            "freshness_label": "As of Aug 18, 2026, 6:40 PM ET"
+            "last_confirmed": "2026-08-18T22:52:30.213Z",
+            "freshness_label": "As of Aug 18, 2026, 6:52 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
