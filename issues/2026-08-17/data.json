@@ -5,14 +5,14 @@
     "edition": 139,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-17T23:51:29.586Z",
+    "generated_at": "2026-08-18T00:11:39.885Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 17, 2026, 7:51 PM ET",
+      "generated_at_et": "Aug 17, 2026, 8:11 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 2, MIA 0",
-    "dek": "Top 4th · 1 out",
-    "summary": "Leo Jiménez is up against Cristopher Sánchez. Series: Regular Season.",
+    "dek": "Bottom 5th · 0 outs",
+    "summary": "Bryce Harper is up against Janson Junk. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "84° · Overcast"
+        "value": "83° · Weather unavailable"
       }
     ],
     "bullets": [
-      "Leo Jiménez at the plate",
-      "Cristopher Sánchez on the mound",
+      "Bryce Harper at the plate",
+      "Janson Junk on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 84,
-          "condition": "Overcast",
-          "wind": "6 mph · gusts 11",
-          "gusts_mph": 11
+          "temp_f": 83,
+          "condition": "Weather unavailable",
+          "wind": "12 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.49",
+            "era": "2.46",
             "record": "15-4",
             "whip": "1.21"
           },
@@ -367,26 +367,26 @@
             "team": "MIA",
             "name": "Janson Junk",
             "hand": "R",
-            "era": "4.47",
+            "era": "4.42",
             "record": "6-7",
             "whip": "1.36"
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
-          "inningState": "Top",
+          "currentInning": 5,
+          "currentInningOrdinal": "5th",
+          "inningState": "Middle",
           "isTopInning": true,
-          "outs": 1,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 4,
+              "hits": 6,
               "errors": 0
             },
             "home": {
               "runs": 2,
-              "hits": 5,
+              "hits": 7,
               "errors": 0
             }
           },
@@ -433,8 +433,21 @@
             {
               "num": 4,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 0,
+                "hits": 2,
                 "errors": 0
               },
               "home": {
@@ -885,10 +898,136 @@
             "inning": 4,
             "half": "top",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Leo Jiménez",
             "actor_id": 677870,
-            "detail": "Play",
+            "detail": "Leo Jiménez strikes out swinging.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:32",
+            "inning": 4,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Griffin Conine",
+            "actor_id": 665052,
+            "detail": "Griffin Conine pops out to second baseman Luis Arraez.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto singles on a sharp line drive to center fielder Esteury Ruiz.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:34",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford out on a sacrifice bunt, catcher Brian Navarreto to first baseman Leo Jiménez. J.T. Realmuto to 2nd.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:35",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber singles on a sharp line drive to right fielder Griffin Conine. J.T. Realmuto to 3rd.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:36",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds into a double play, third baseman Javier Sanoja to second baseman Xavier Edwards to first baseman Leo Jiménez.…",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:37",
+            "inning": 5,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "single",
+            "actor": "Brian Navarreto",
+            "actor_id": 640459,
+            "detail": "Brian Navarreto singles on a ground ball to left fielder Brandon Marsh.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:38",
+            "inning": 5,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "single",
+            "actor": "Esteury Ruiz",
+            "actor_id": 665923,
+            "detail": "Esteury Ruiz singles on a bunt ground ball to pitcher Cristopher Sánchez. Brian Navarreto to 2nd.",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:39",
+            "inning": 5,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "extra_base_hit",
+            "actor": "Heriberto Hernández",
+            "actor_id": 681715,
+            "detail": "Heriberto Hernández grounds into a double play, third baseman Bryson Stott to second baseman Luis Arraez. Brian Navarreto out at 3r…",
+            "score_after": "PHI 2, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823427:40",
+            "inning": 5,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Xavier Edwards",
+            "actor_id": 669364,
+            "detail": "Xavier Edwards grounds out, pitcher Cristopher Sánchez to first baseman Alec Bohm.",
             "score_after": "PHI 2, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -897,23 +1036,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "Leo Jiménez",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Bryce Harper",
+            "meta": "vs Janson Junk"
           },
           "pitches": [
-            "B"
+            "S",
+            "B",
+            "B",
+            "X"
           ],
           "count": {
-            "balls": 1,
-            "strikes": 0,
-            "outs": 1
+            "balls": 2,
+            "strikes": 1,
+            "outs": 3
           },
           "bases": {
             "first": false,
-            "second": true,
-            "third": true
+            "second": false,
+            "third": false
           },
-          "status": "Top 4th"
+          "status": "Middle 5th"
         }
       }
     },
@@ -930,8 +1072,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:51:29.586Z",
-            "freshness_label": "As of Aug 17, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-18T00:11:39.885Z",
+            "freshness_label": "As of Aug 17, 2026, 8:11 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -943,8 +1085,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:51:29.586Z",
-            "freshness_label": "As of Aug 17, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-18T00:11:39.885Z",
+            "freshness_label": "As of Aug 17, 2026, 8:11 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -956,8 +1098,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:51:29.586Z",
-            "freshness_label": "As of Aug 17, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-18T00:11:39.885Z",
+            "freshness_label": "As of Aug 17, 2026, 8:11 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -969,8 +1111,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:51:29.586Z",
-            "freshness_label": "As of Aug 17, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-18T00:11:39.885Z",
+            "freshness_label": "As of Aug 17, 2026, 8:11 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -982,8 +1124,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:51:29.586Z",
-            "freshness_label": "As of Aug 17, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-18T00:11:39.885Z",
+            "freshness_label": "As of Aug 17, 2026, 8:11 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -995,8 +1137,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:51:29.586Z",
-            "freshness_label": "As of Aug 17, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-18T00:11:39.885Z",
+            "freshness_label": "As of Aug 17, 2026, 8:11 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1008,8 +1150,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-17T23:51:29.586Z",
-            "freshness_label": "As of Aug 17, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-18T00:11:39.885Z",
+            "freshness_label": "As of Aug 17, 2026, 8:11 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
