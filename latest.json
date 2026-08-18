@@ -4,7 +4,7 @@
   "edition_date": "2026-08-18",
   "volume": 1,
   "edition": 140,
-  "generated_at": "2026-08-18T23:23:44.480Z",
+  "generated_at": "2026-08-18T23:38:18.291Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, MIA 1",
-    "dek": "Middle 3rd · 3 outs",
-    "summary": "Kyle Schwarber is up against Tyler Zuber. Series: PHI leads 1-0.",
+    "dek": "Top 4th · 1 out",
+    "summary": "Heriberto Hernández is up against Zack Wheeler. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
@@ -57,34 +57,31 @@
     "weather": {
       "temp_f": 82,
       "condition": "Clear",
-      "wind": "5 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "4 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Tyler Zuber"
+        "name": "Heriberto Hernández",
+        "meta": "vs Zack Wheeler"
       },
       "pitches": [
-        "B",
-        "S",
         "F",
-        "F",
-        "X"
+        "B"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 3
+        "balls": 1,
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 3rd"
+      "status": "Top 4th"
     },
     "recap_line": null
   },
@@ -92,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-18T23:23:45.180Z",
+    "updated_at": "2026-08-18T23:38:18.793Z",
     "current_game_pk": 823423,
     "next_game_pk": 823424,
     "next_game": {
@@ -129,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 8 mph",
+      "text": "82° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
