@@ -5,14 +5,14 @@
     "edition": 140,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-18T23:38:18.291Z",
+    "generated_at": "2026-08-18T23:51:04.546Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 18, 2026, 7:38 PM ET",
+      "generated_at_et": "Aug 18, 2026, 7:51 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, MIA 1",
-    "dek": "Top 4th · 1 out",
-    "summary": "Heriberto Hernández is up against Zack Wheeler. Series: PHI leads 1-0.",
+    "dek": "End 4th · 3 outs",
+    "summary": "Owen Caissie is up against Zack Wheeler. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Clear"
+        "value": "82° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Heriberto Hernández at the plate",
+      "Owen Caissie at the plate",
       "Zack Wheeler on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -347,7 +347,7 @@
         },
         "weather": {
           "temp_f": 82,
-          "condition": "Clear",
+          "condition": "Partly cloudy",
           "wind": "4 mph · gusts 7",
           "gusts_mph": 7
         },
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.88",
+            "era": "2.87",
             "record": "10-4",
             "whip": "0.99"
           },
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 4,
           "currentInningOrdinal": "4th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 1,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 1,
@@ -433,7 +433,7 @@
             {
               "num": 4,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -815,9 +815,65 @@
             "inning": 4,
             "half": "top",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
+            "detail": "Heriberto Hernández called out on strikes.",
+            "score_after": "PHI 1, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:27",
+            "inning": 4,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Agustín Ramírez",
+            "actor_id": 682663,
+            "detail": "Agustín Ramírez called out on strikes.",
+            "score_after": "PHI 1, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:28",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds out, pitcher Josh Ekness to second baseman Xavier Edwards to first baseman Griffin Conine.",
+            "score_after": "PHI 1, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:29",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to left fielder Heriberto Hernández.",
+            "score_after": "PHI 1, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:30",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
             "detail": "Play",
             "score_after": "PHI 1, MIA 1",
             "runs": 0,
@@ -827,24 +883,28 @@
         ],
         "situation": {
           "batter": {
-            "name": "Heriberto Hernández",
-            "meta": "vs Zack Wheeler"
+            "name": "Brandon Marsh",
+            "meta": "vs Josh Ekness"
           },
           "pitches": [
+            "S",
+            "S",
             "F",
-            "B"
+            "B",
+            "F",
+            "X"
           ],
           "count": {
             "balls": 1,
-            "strikes": 1,
-            "outs": 1
+            "strikes": 2,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 4th"
+          "status": "Bottom 4th"
         }
       }
     },
@@ -861,8 +921,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:38:18.291Z",
-            "freshness_label": "As of Aug 18, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -874,8 +934,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:38:18.291Z",
-            "freshness_label": "As of Aug 18, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -887,8 +947,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:38:18.291Z",
-            "freshness_label": "As of Aug 18, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -900,8 +960,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:38:18.291Z",
-            "freshness_label": "As of Aug 18, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -913,8 +973,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:38:18.291Z",
-            "freshness_label": "As of Aug 18, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -926,8 +986,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:38:18.291Z",
-            "freshness_label": "As of Aug 18, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -939,8 +999,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:38:18.291Z",
-            "freshness_label": "As of Aug 18, 2026, 7:38 PM ET"
+            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

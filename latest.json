@@ -4,7 +4,7 @@
   "edition_date": "2026-08-18",
   "volume": 1,
   "edition": 140,
-  "generated_at": "2026-08-18T23:38:18.291Z",
+  "generated_at": "2026-08-18T23:51:04.546Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, MIA 1",
-    "dek": "Top 4th · 1 out",
-    "summary": "Heriberto Hernández is up against Zack Wheeler. Series: PHI leads 1-0.",
+    "dek": "End 4th · 3 outs",
+    "summary": "Owen Caissie is up against Zack Wheeler. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
@@ -56,7 +56,7 @@
     },
     "weather": {
       "temp_f": 82,
-      "condition": "Clear",
+      "condition": "Partly cloudy",
       "wind": "4 mph · gusts 7",
       "gusts_mph": 7
     },
@@ -64,24 +64,28 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Heriberto Hernández",
-        "meta": "vs Zack Wheeler"
+        "name": "Brandon Marsh",
+        "meta": "vs Josh Ekness"
       },
       "pitches": [
+        "S",
+        "S",
         "F",
-        "B"
+        "B",
+        "F",
+        "X"
       ],
       "count": {
         "balls": 1,
-        "strikes": 1,
-        "outs": 1
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -89,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-18T23:38:18.793Z",
+    "updated_at": "2026-08-18T23:51:06.267Z",
     "current_game_pk": 823423,
     "next_game_pk": 823424,
     "next_game": {
@@ -126,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 7 mph",
+      "text": "82° · Partly cloudy · gusts 7 mph",
       "highlight": false
     }
   ]
