@@ -5,7 +5,7 @@
     "edition": 140,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-18T23:51:04.546Z",
+    "generated_at": "2026-08-18T23:51:38.462Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 4,
           "currentInningOrdinal": "4th",
-          "inningState": "Bottom",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 1,
@@ -438,7 +438,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -871,10 +871,10 @@
             "inning": 4,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Play",
+            "detail": "Brandon Marsh grounds out, third baseman Javier Sanoja to first baseman Griffin Conine.",
             "score_after": "PHI 1, MIA 1",
             "runs": 0,
             "is_scoring": false,
@@ -883,8 +883,8 @@
         ],
         "situation": {
           "batter": {
-            "name": "Brandon Marsh",
-            "meta": "vs Josh Ekness"
+            "name": "Owen Caissie",
+            "meta": "vs Zack Wheeler"
           },
           "pitches": [
             "S",
@@ -897,14 +897,14 @@
           "count": {
             "balls": 1,
             "strikes": 2,
-            "outs": 2
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 4th"
+          "status": "End 4th"
         }
       }
     },
@@ -921,7 +921,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "last_confirmed": "2026-08-18T23:51:38.462Z",
             "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
@@ -934,7 +934,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "last_confirmed": "2026-08-18T23:51:38.462Z",
             "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
@@ -947,7 +947,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "last_confirmed": "2026-08-18T23:51:38.462Z",
             "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
@@ -960,7 +960,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "last_confirmed": "2026-08-18T23:51:38.462Z",
             "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
@@ -973,7 +973,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "last_confirmed": "2026-08-18T23:51:38.462Z",
             "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
@@ -986,7 +986,7 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "last_confirmed": "2026-08-18T23:51:38.462Z",
             "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           },
           {
@@ -999,7 +999,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:04.546Z",
+            "last_confirmed": "2026-08-18T23:51:38.462Z",
             "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
           }
         ],
