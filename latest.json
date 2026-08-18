@@ -4,7 +4,7 @@
   "edition_date": "2026-08-17",
   "volume": 1,
   "edition": 139,
-  "generated_at": "2026-08-18T00:51:07.336Z",
+  "generated_at": "2026-08-18T01:09:25.429Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, MIA 1",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Xavier Edwards is up against Jonathan Bowlan. Series: Regular Season.",
+    "headline": "PHI 4, MIA 3",
+    "dek": "Bottom 7th · 0 outs",
+    "summary": "Luis Arraez is up against Victor Vodnik. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIA · Tue, Aug 18 · 6:40 PM"
   },
@@ -56,35 +56,36 @@
     },
     "weather": {
       "temp_f": 77,
-      "condition": "Heavy drizzle",
-      "wind": "5 mph · gusts 17",
-      "gusts_mph": 17
+      "condition": "Overcast",
+      "wind": "3 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Xavier Edwards",
-        "meta": "vs Jonathan Bowlan"
+        "name": "Luis Arraez",
+        "meta": "vs Victor Vodnik"
       },
       "pitches": [
         "S",
-        "F",
+        "B",
+        "S",
         "B",
         "B",
         "F"
       ],
       "count": {
-        "balls": 2,
+        "balls": 3,
         "strikes": 2,
-        "outs": 2
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -92,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-18T00:51:07.793Z",
+    "updated_at": "2026-08-18T01:09:25.948Z",
     "current_game_pk": 823427,
     "next_game_pk": 823423,
     "next_game": {
@@ -129,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Heavy drizzle · gusts 17 mph",
+      "text": "77° · Overcast · gusts 15 mph",
       "highlight": false
     }
   ]
