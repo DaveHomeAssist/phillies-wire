@@ -4,7 +4,7 @@
   "edition_date": "2026-08-17",
   "volume": 1,
   "edition": 139,
-  "generated_at": "2026-08-18T00:27:48.769Z",
+  "generated_at": "2026-08-18T00:32:16.496Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, MIA 1",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Bryson Stott is up against John King. Series: Regular Season.",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "J.T. Realmuto is up against John King. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIA · Tue, Aug 18 · 6:40 PM"
   },
@@ -55,27 +55,27 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
-      "condition": "Weather unavailable",
-      "wind": "1 mph · gusts 13",
-      "gusts_mph": 13
+      "temp_f": 77,
+      "condition": "Rain",
+      "wind": "1 mph · gusts 21",
+      "gusts_mph": 21
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
+        "name": "J.T. Realmuto",
         "meta": "vs John King"
       },
       "pitches": [],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
-        "outs": 0
+        "outs": 1
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
       "status": "Bottom 6th"
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-18T00:27:49.580Z",
+    "updated_at": "2026-08-18T00:32:17.116Z",
     "current_game_pk": 823427,
     "next_game_pk": 823423,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Weather unavailable · gusts 13 mph",
+      "text": "77° · Rain · gusts 21 mph",
       "highlight": false
     }
   ]
