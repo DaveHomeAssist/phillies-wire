@@ -5,14 +5,14 @@
     "edition": 139,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-18T01:30:30.064Z",
+    "generated_at": "2026-08-18T01:48:21.622Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 17, 2026, 9:30 PM ET",
+      "generated_at_et": "Aug 17, 2026, 9:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 5, MIA 4",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Heriberto Hernández is up against Orion Kerkering. Series: Regular Season.",
+    "headline": "PHI 6, MIA 4",
+    "dek": "Top 9th · 0 outs",
+    "summary": "Xavier Edwards is up against Jhoan Duran. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "77° · Partly cloudy"
+        "value": "76° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Heriberto Hernández at the plate",
-      "Orion Kerkering on the mound",
+      "Xavier Edwards at the plate",
+      "Jhoan Duran on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 77,
+          "temp_f": 76,
           "condition": "Partly cloudy",
-          "wind": "7 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "3 mph · gusts 6",
+          "gusts_mph": 6
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,20 +373,20 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 2,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 4,
-              "hits": 12,
+              "hits": 13,
               "errors": 1
             },
             "home": {
-              "runs": 5,
-              "hits": 9,
+              "runs": 6,
+              "hits": 11,
               "errors": 0
             }
           },
@@ -490,6 +490,19 @@
                 "errors": 0
               },
               "home": {
+                "runs": 1,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": null,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
                 "runs": null,
                 "hits": 0,
                 "errors": 0
@@ -506,8 +519,8 @@
             "event_type": "out",
             "actor": "Esteury Ruiz",
             "actor_id": 665923,
-            "detail": "Esteury Ruiz grounds out, shortstop Tre…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Esteury Ruiz grounds ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -520,8 +533,8 @@
             "event_type": "strikeout",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández called out on strik…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Heriberto Hernández cal…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -534,8 +547,8 @@
             "event_type": "out",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Xavier Edwards pops out to first basema…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Xavier Edwards pops out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -548,8 +561,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber called out on strikes.",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Kyle Schwarber called o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -562,8 +575,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner pops out to catcher Brian N…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Trea Turner pops out to…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -576,8 +589,8 @@
             "event_type": "single",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper singles on a ground ball t…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Bryce Harper singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -590,8 +603,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out to center fielder…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Luis Arraez flies out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -604,8 +617,8 @@
             "event_type": "out",
             "actor": "Agustín Ramírez",
             "actor_id": 682663,
-            "detail": "Agustín Ramírez grounds out, third base…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Agustín Ramírez grounds…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -618,8 +631,8 @@
             "event_type": "strikeout",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Otto Lopez challenged (pitch result), c…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Otto Lopez challenged (…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -632,8 +645,8 @@
             "event_type": "single",
             "actor": "Javier Sanoja",
             "actor_id": 691594,
-            "detail": "Javier Sanoja singles on a ground ball…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Javier Sanoja singles o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -646,8 +659,8 @@
             "event_type": "single",
             "actor": "Leo Jiménez",
             "actor_id": 677870,
-            "detail": "Leo Jiménez singles on a line drive to…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Leo Jiménez singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -660,8 +673,8 @@
             "event_type": "strikeout",
             "actor": "Griffin Conine",
             "actor_id": 665052,
-            "detail": "Griffin Conine strikes out swinging.",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Griffin Conine strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -674,8 +687,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, shortstop Otto L…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Alec Bohm grounds out,…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -688,8 +701,8 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a sharp line dr…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Bryson Stott singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -702,8 +715,8 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh flies out to left fielder…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Brandon Marsh flies out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -716,8 +729,8 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds into a force out,…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "J.T. Realmuto grounds i…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -730,8 +743,8 @@
             "event_type": "strikeout",
             "actor": "Brian Navarreto",
             "actor_id": 640459,
-            "detail": "J.T. Realmuto challenged (pitch result)…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "J.T. Realmuto challenge…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -744,8 +757,8 @@
             "event_type": "single",
             "actor": "Esteury Ruiz",
             "actor_id": 665923,
-            "detail": "Esteury Ruiz singles on a sharp line dr…",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Esteury Ruiz singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -758,8 +771,8 @@
             "event_type": "walk_hbp",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández walks.",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Heriberto Hernández wal…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -772,8 +785,8 @@
             "event_type": "strikeout",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Xavier Edwards called out on strikes.",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Xavier Edwards called o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -786,7 +799,7 @@
             "event_type": "extra_base_hit",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford doubles (17) on a groun…",
+            "detail": "Justin Crawford doubles…",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -800,8 +813,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes out swinging.",
-            "score_after": "PHI 0, MIA 0",
+            "detail": "Kyle Schwarber strikes…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -814,7 +827,7 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a ground ball to…",
+            "detail": "Trea Turner singles on…",
             "score_after": "PHI 1, MIA 0",
             "runs": 1,
             "is_scoring": true,
@@ -828,8 +841,8 @@
             "event_type": "walk_hbp",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper walks. Trea Turner to 2nd.",
-            "score_after": "PHI 1, MIA 0",
+            "detail": "Bryce Harper walks. Tre…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -842,7 +855,7 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez singles on a ground ball to…",
+            "detail": "Luis Arraez singles on…",
             "score_after": "PHI 2, MIA 0",
             "runs": 1,
             "is_scoring": true,
@@ -856,8 +869,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds into a force out, thi…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Alec Bohm grounds into…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -870,8 +883,8 @@
             "event_type": "walk_hbp",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott walks. Alec Bohm to 2nd.",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Bryson Stott walks. Ale…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -884,8 +897,8 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds into a force out,…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Brandon Marsh grounds i…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -899,7 +912,7 @@
             "actor": "Agustín Ramírez",
             "actor_id": 682663,
             "detail": "Agustín Ramírez walks.",
-            "score_after": "PHI 2, MIA 0",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -912,8 +925,8 @@
             "event_type": "single",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Otto Lopez singles on a line drive to c…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Otto Lopez singles on a…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -926,8 +939,8 @@
             "event_type": "out",
             "actor": "Javier Sanoja",
             "actor_id": 691594,
-            "detail": "Javier Sanoja grounds out, pitcher Cris…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Javier Sanoja grounds o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -940,8 +953,8 @@
             "event_type": "strikeout",
             "actor": "Leo Jiménez",
             "actor_id": 677870,
-            "detail": "Leo Jiménez strikes out swinging.",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Leo Jiménez strikes out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -954,8 +967,8 @@
             "event_type": "out",
             "actor": "Griffin Conine",
             "actor_id": 665052,
-            "detail": "Griffin Conine pops out to second basem…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Griffin Conine pops out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -968,8 +981,8 @@
             "event_type": "single",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto singles on a sharp line d…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "J.T. Realmuto singles o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -982,8 +995,8 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford out on a sacrifice bunt…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Justin Crawford out on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -996,8 +1009,8 @@
             "event_type": "single",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber singles on a sharp line…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Kyle Schwarber singles…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1010,8 +1023,8 @@
             "event_type": "other",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds into a double play,…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Trea Turner grounds int…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1024,8 +1037,8 @@
             "event_type": "single",
             "actor": "Brian Navarreto",
             "actor_id": 640459,
-            "detail": "Brian Navarreto singles on a ground bal…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Brian Navarreto singles…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1038,8 +1051,8 @@
             "event_type": "single",
             "actor": "Esteury Ruiz",
             "actor_id": 665923,
-            "detail": "Esteury Ruiz singles on a bunt ground b…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Esteury Ruiz singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1052,7 +1065,7 @@
             "event_type": "extra_base_hit",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández grounds into a doub…",
+            "detail": "Heriberto Hernández gro…",
             "score_after": "PHI 2, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -1066,8 +1079,8 @@
             "event_type": "out",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Xavier Edwards grounds out, pitcher Cri…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Xavier Edwards grounds…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1080,8 +1093,8 @@
             "event_type": "single",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper singles on a sharp line dr…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Bryce Harper singles on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1094,8 +1107,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez lines out to right fielder…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Luis Arraez lines out t…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1108,8 +1121,8 @@
             "event_type": "other",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds into a double play, t…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Alec Bohm grounds into…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1122,7 +1135,7 @@
             "event_type": "extra_base_hit",
             "actor": "Agustín Ramírez",
             "actor_id": 682663,
-            "detail": "Agustín Ramírez doubles (8) on a ground…",
+            "detail": "Agustín Ramírez doubles…",
             "score_after": "PHI 2, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -1136,8 +1149,8 @@
             "event_type": "out",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Otto Lopez reaches on a fielder's choic…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Otto Lopez reaches on a…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1150,8 +1163,8 @@
             "event_type": "out",
             "actor": "Javier Sanoja",
             "actor_id": 691594,
-            "detail": "Javier Sanoja flies out to shortstop Tr…",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Javier Sanoja flies out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1164,8 +1177,8 @@
             "event_type": "walk_hbp",
             "actor": "Leo Jiménez",
             "actor_id": 677870,
-            "detail": "Leo Jiménez walks. Otto Lopez to 2nd.",
-            "score_after": "PHI 2, MIA 0",
+            "detail": "Leo Jiménez walks. Otto…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1178,7 +1191,7 @@
             "event_type": "single",
             "actor": "Griffin Conine",
             "actor_id": 665052,
-            "detail": "Griffin Conine singles on a line drive…",
+            "detail": "Griffin Conine singles…",
             "score_after": "PHI 2, MIA 1",
             "runs": 1,
             "is_scoring": true,
@@ -1192,8 +1205,8 @@
             "event_type": "out",
             "actor": "Brian Navarreto",
             "actor_id": 640459,
-            "detail": "Brian Navarreto grounds out, second bas…",
-            "score_after": "PHI 2, MIA 1",
+            "detail": "Brian Navarreto grounds…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1207,7 +1220,7 @@
             "actor": "Bryson Stott",
             "actor_id": 681082,
             "detail": "Bryson Stott walks.",
-            "score_after": "PHI 2, MIA 1",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1220,8 +1233,8 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh out on a sacrifice bunt,…",
-            "score_after": "PHI 2, MIA 1",
+            "detail": "Brandon Marsh out on a…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1235,7 +1248,7 @@
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
             "detail": "J.T. Realmuto walks.",
-            "score_after": "PHI 2, MIA 1",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1248,7 +1261,7 @@
             "event_type": "single",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill singles on a ground ball to…",
+            "detail": "Derek Hill singles on a…",
             "score_after": "PHI 3, MIA 1",
             "runs": 1,
             "is_scoring": true,
@@ -1262,7 +1275,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber out on a sacrifice fly t…",
+            "detail": "Kyle Schwarber out on a…",
             "score_after": "PHI 4, MIA 1",
             "runs": 1,
             "is_scoring": true,
@@ -1276,8 +1289,8 @@
             "event_type": "walk_hbp",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "John King intentionally walks Trea Turn…",
-            "score_after": "PHI 4, MIA 1",
+            "detail": "John King intentionally…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1290,8 +1303,8 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds out, second basema…",
-            "score_after": "PHI 4, MIA 1",
+            "detail": "Bryce Harper grounds ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1304,8 +1317,8 @@
             "event_type": "strikeout",
             "actor": "Jakob Marsee",
             "actor_id": 805300,
-            "detail": "Jakob Marsee strikes out swinging.",
-            "score_after": "PHI 4, MIA 1",
+            "detail": "Jakob Marsee strikes ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1318,8 +1331,8 @@
             "event_type": "out",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández grounds out softly,…",
-            "score_after": "PHI 4, MIA 1",
+            "detail": "Heriberto Hernández gro…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1332,8 +1345,8 @@
             "event_type": "single",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Xavier Edwards singles on a ground ball…",
-            "score_after": "PHI 4, MIA 1",
+            "detail": "Xavier Edwards singles…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1346,8 +1359,8 @@
             "event_type": "single",
             "actor": "Agustín Ramírez",
             "actor_id": 682663,
-            "detail": "Agustín Ramírez singles on a line drive…",
-            "score_after": "PHI 4, MIA 1",
+            "detail": "Agustín Ramírez singles…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1360,8 +1373,8 @@
             "event_type": "walk_hbp",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Otto Lopez walks. Xavier Edwards to 3rd…",
-            "score_after": "PHI 4, MIA 1",
+            "detail": "Otto Lopez walks. Xavie…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1374,7 +1387,7 @@
             "event_type": "extra_base_hit",
             "actor": "Javier Sanoja",
             "actor_id": 691594,
-            "detail": "Marlins challenged (fair or foul in out…",
+            "detail": "Marlins challenged (fai…",
             "score_after": "PHI 4, MIA 3",
             "runs": 2,
             "is_scoring": true,
@@ -1388,8 +1401,8 @@
             "event_type": "strikeout",
             "actor": "Leo Jiménez",
             "actor_id": 677870,
-            "detail": "Leo Jiménez strikes out swinging.",
-            "score_after": "PHI 4, MIA 3",
+            "detail": "Leo Jiménez strikes out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1402,8 +1415,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez grounds out to first basema…",
-            "score_after": "PHI 4, MIA 3",
+            "detail": "Luis Arraez grounds out…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1417,7 +1430,7 @@
             "actor": "Alec Bohm",
             "actor_id": 664761,
             "detail": "Alec Bohm hit by pitch.",
-            "score_after": "PHI 4, MIA 3",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1430,8 +1443,8 @@
             "event_type": "other",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott reaches on a fielder's cho…",
-            "score_after": "PHI 4, MIA 3",
+            "detail": "Bryson Stott reaches on…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1444,8 +1457,8 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out, second basem…",
-            "score_after": "PHI 4, MIA 3",
+            "detail": "Brandon Marsh grounds o…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1458,8 +1471,8 @@
             "event_type": "walk_hbp",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto challenged (pitch result)…",
-            "score_after": "PHI 4, MIA 3",
+            "detail": "J.T. Realmuto challenge…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1472,7 +1485,7 @@
             "event_type": "walk_hbp",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Victor Vodnik challenged (pitch result)…",
+            "detail": "Victor Vodnik challenge…",
             "score_after": "PHI 5, MIA 3",
             "runs": 1,
             "is_scoring": true,
@@ -1486,8 +1499,8 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber grounds out, second base…",
-            "score_after": "PHI 5, MIA 3",
+            "detail": "Kyle Schwarber grounds…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1500,8 +1513,8 @@
             "event_type": "out",
             "actor": "Griffin Conine",
             "actor_id": 665052,
-            "detail": "Griffin Conine flies out to right field…",
-            "score_after": "PHI 5, MIA 3",
+            "detail": "Griffin Conine flies ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1514,7 +1527,7 @@
             "event_type": "home_run",
             "actor": "Brian Navarreto",
             "actor_id": 640459,
-            "detail": "Brian Navarreto homers (1) on a fly bal…",
+            "detail": "Brian Navarreto homers…",
             "score_after": "PHI 5, MIA 4",
             "runs": 1,
             "is_scoring": true,
@@ -1528,8 +1541,8 @@
             "event_type": "out",
             "actor": "Jakob Marsee",
             "actor_id": 805300,
-            "detail": "Jakob Marsee grounds out to first basem…",
-            "score_after": "PHI 5, MIA 4",
+            "detail": "Jakob Marsee grounds ou…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1539,11 +1552,95 @@
             "inning": 8,
             "half": "top",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Pitching Change: Orion Kerkering replac…",
-            "score_after": "PHI 5, MIA 4",
+            "detail": "Heriberto Hernández str…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:75",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner flies out t…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:76",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper singles on…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:77",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez grounds out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:78",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm singles on a…",
+            "score_after": "PHI 6, MIA 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823427:79",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott lines out…",
+            "score_after": "",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823427:80",
+            "inning": 9,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "single",
+            "actor": "Xavier Edwards",
+            "actor_id": 669364,
+            "detail": "Xavier Edwards singles…",
+            "score_after": "",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1551,21 +1648,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Heriberto Hernández",
-            "meta": "vs Orion Kerkering"
+            "name": "Xavier Edwards",
+            "meta": "vs Jhoan Duran"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "B",
+            "X"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 2
+            "balls": 1,
+            "strikes": 1,
+            "outs": 0
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
-          "status": "Top 8th"
+          "status": "Top 9th"
         }
       }
     },
