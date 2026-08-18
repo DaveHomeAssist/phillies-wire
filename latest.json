@@ -4,21 +4,21 @@
   "edition_date": "2026-08-17",
   "volume": 1,
   "edition": 139,
-  "generated_at": "2026-08-18T01:48:21.622Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-18T02:10:07.741Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 67,
+    "wins": 68,
     "losses": 58,
-    "streak": "W3",
+    "streak": "W4",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, MIA 4",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Xavier Edwards is up against Jhoan Duran. Series: Regular Season.",
+    "headline": "PHI 6, MIA 5.",
+    "dek": "PHI 6, MIA 5 · Cristopher Sánchez · 6.0 IP, 8 H, 1 ER, 6 K",
+    "summary": "PHI 6, MIA 5. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIA · Tue, Aug 18 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "PHI leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -56,62 +56,41 @@
     },
     "weather": {
       "temp_f": 76,
-      "condition": "Partly cloudy",
-      "wind": "3 mph · gusts 6",
-      "gusts_mph": 6
+      "condition": "Mostly sunny",
+      "wind": "3 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Xavier Edwards",
-        "meta": "vs Jhoan Duran"
-      },
-      "pitches": [
-        "S",
-        "B",
-        "X"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 0
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-18T01:48:22.549Z",
-    "current_game_pk": 823427,
-    "next_game_pk": 823423,
+    "updated_at": "2026-08-18T02:10:08.419Z",
+    "current_game_pk": 823423,
+    "next_game_pk": 823424,
     "next_game": {
-      "game_pk": 823423,
-      "official_date": "2026-08-18",
-      "date_label": "Tue, Aug 18, 2026",
-      "time_label": "6:40 PM",
+      "game_pk": 823424,
+      "official_date": "2026-08-19",
+      "date_label": "Wed, Aug 19, 2026",
+      "time_label": "6:05 PM",
       "title": "Miami Marlins at Phillies",
       "matchup": "MIA at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823427,
-      "official_date": "2026-08-17",
+      "game_pk": 823423,
+      "official_date": "2026-08-18",
       "title": "Miami Marlins at Phillies",
       "matchup": "MIA at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 67-58",
+      "text": "PHI 68-58",
       "highlight": true
     },
     {
@@ -127,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Partly cloudy · gusts 6 mph",
+      "text": "76° · Mostly sunny · gusts 8 mph",
       "highlight": false
     }
   ]
