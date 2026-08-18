@@ -5,7 +5,7 @@
     "edition": 140,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-18T23:23:05.404Z",
+    "generated_at": "2026-08-18T23:23:44.480Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, MIA 1",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Otto Lopez is up against Zack Wheeler. Series: PHI leads 1-0.",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Kyle Schwarber is up against Tyler Zuber. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Otto Lopez at the plate",
-      "Zack Wheeler on the mound",
+      "Kyle Schwarber at the plate",
+      "Tyler Zuber on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -361,7 +361,7 @@
             "hand": "R",
             "era": "2.90",
             "record": "10-4",
-            "whip": "0.98"
+            "whip": "1.00"
           },
           "away": {
             "team": "MIA",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 3,
           "currentInningOrdinal": "3rd",
-          "inningState": "Top",
+          "inningState": "Middle",
           "isTopInning": true,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 1,
@@ -420,7 +420,7 @@
             {
               "num": 3,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -718,10 +718,10 @@
             "inning": 3,
             "half": "top",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Otto Lopez",
             "actor_id": 672640,
-            "detail": "Play",
+            "detail": "Otto Lopez grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
             "score_after": "PHI 1, MIA 1",
             "runs": 0,
             "is_scoring": false,
@@ -730,26 +730,27 @@
         ],
         "situation": {
           "batter": {
-            "name": "Otto Lopez",
-            "meta": "vs Zack Wheeler"
+            "name": "Kyle Schwarber",
+            "meta": "vs Tyler Zuber"
           },
           "pitches": [
             "B",
             "S",
             "F",
-            "F"
+            "F",
+            "X"
           ],
           "count": {
             "balls": 2,
             "strikes": 2,
-            "outs": 2
+            "outs": 3
           },
           "bases": {
-            "first": true,
-            "second": true,
+            "first": false,
+            "second": false,
             "third": false
           },
-          "status": "Top 3rd"
+          "status": "Middle 3rd"
         }
       }
     },
@@ -766,7 +767,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:23:05.404Z",
+            "last_confirmed": "2026-08-18T23:23:44.480Z",
             "freshness_label": "As of Aug 18, 2026, 7:23 PM ET"
           },
           {
@@ -779,7 +780,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:23:05.404Z",
+            "last_confirmed": "2026-08-18T23:23:44.480Z",
             "freshness_label": "As of Aug 18, 2026, 7:23 PM ET"
           },
           {
@@ -792,7 +793,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:23:05.404Z",
+            "last_confirmed": "2026-08-18T23:23:44.480Z",
             "freshness_label": "As of Aug 18, 2026, 7:23 PM ET"
           },
           {
@@ -805,7 +806,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:23:05.404Z",
+            "last_confirmed": "2026-08-18T23:23:44.480Z",
             "freshness_label": "As of Aug 18, 2026, 7:23 PM ET"
           },
           {
@@ -818,7 +819,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:23:05.404Z",
+            "last_confirmed": "2026-08-18T23:23:44.480Z",
             "freshness_label": "As of Aug 18, 2026, 7:23 PM ET"
           },
           {
@@ -831,7 +832,7 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:23:05.404Z",
+            "last_confirmed": "2026-08-18T23:23:44.480Z",
             "freshness_label": "As of Aug 18, 2026, 7:23 PM ET"
           },
           {
@@ -844,7 +845,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:23:05.404Z",
+            "last_confirmed": "2026-08-18T23:23:44.480Z",
             "freshness_label": "As of Aug 18, 2026, 7:23 PM ET"
           }
         ],

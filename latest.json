@@ -4,7 +4,7 @@
   "edition_date": "2026-08-18",
   "volume": 1,
   "edition": 140,
-  "generated_at": "2026-08-18T23:23:05.404Z",
+  "generated_at": "2026-08-18T23:23:44.480Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, MIA 1",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Otto Lopez is up against Zack Wheeler. Series: PHI leads 1-0.",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Kyle Schwarber is up against Tyler Zuber. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
@@ -64,26 +64,27 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Otto Lopez",
-        "meta": "vs Zack Wheeler"
+        "name": "Kyle Schwarber",
+        "meta": "vs Tyler Zuber"
       },
       "pitches": [
         "B",
         "S",
         "F",
-        "F"
+        "F",
+        "X"
       ],
       "count": {
         "balls": 2,
         "strikes": 2,
-        "outs": 2
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "Middle 3rd"
     },
     "recap_line": null
   },
@@ -91,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-18T23:23:06.053Z",
+    "updated_at": "2026-08-18T23:23:45.180Z",
     "current_game_pk": 823423,
     "next_game_pk": 823424,
     "next_game": {
