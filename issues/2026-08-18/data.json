@@ -5,313 +5,56 @@
     "edition": 140,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-19T01:30:20.535Z",
+    "generated_at": "2026-08-19T01:49:32.374Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Aug 18, 2026, 9:30 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Aug 18, 2026, 9:49 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 68,
+    "wins": 69,
     "losses": 58,
-    "streak": "W4",
+    "streak": "W5",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 5, MIA 4",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "Justin Crawford is up against Calvin Faucher. Series: PHI leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 6, MIA 4.",
+    "dek": "PHI 6, MIA 4 · Zack Wheeler · 5.0 IP, 2 H, 2 ER, 7 K",
+    "summary": "PHI 6, MIA 4. Final at Citizens Bank Park, Philadelphia. PHI wins 2-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "78° · Overcast"
+        "label": "Series",
+        "value": "PHI wins 2-0"
       }
     ],
     "bullets": [
-      "Justin Crawford at the plate",
-      "Calvin Faucher on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Zack Wheeler: 5.0 IP, 2 H, 2 ER, 7 K",
+      "Tyler Phillips: 2.0 IP, 2 H, 1 ER, 3 K",
+      "Griffin Conine: 2-for-4, 1 HR, 1 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's MIA at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:40 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Zack Wheeler",
-            "hand": "R"
-          },
-          "away": {
-            "team": "MIA",
-            "name": "Cade Gibson",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Zack Wheeler",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "MIA",
-            "name": "Cade Gibson",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Jakob Marsee",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Xavier Edwards",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 3,
-              "name": "Otto Lopez",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Griffin Conine",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Heriberto Hernández",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Agustín Ramírez",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Owen Caissie",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Javier Sanoja",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Brian Navarreto",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Jakob Marsee",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Xavier Edwards",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 3,
-              "name": "Otto Lopez",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Griffin Conine",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Heriberto Hernández",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Agustín Ramírez",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Owen Caissie",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Javier Sanoja",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Brian Navarreto",
-              "position": "C",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Marlins @ Phillies · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 1-0"
+          "label": "PHI wins 2-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 78,
           "condition": "Overcast",
-          "wind": "6 mph · gusts 12",
-          "gusts_mph": 12
+          "wind": "6 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,11 +116,11 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 1,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 4,
@@ -385,8 +128,8 @@
               "errors": 0
             },
             "home": {
-              "runs": 5,
-              "hits": 9,
+              "runs": 6,
+              "hits": 10,
               "errors": 2
             }
           },
@@ -490,9 +233,22 @@
                 "errors": 0
               },
               "home": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 1
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
                 "runs": null,
                 "hits": 0,
-                "errors": 1
+                "errors": 0
               }
             }
           ]
@@ -590,7 +346,7 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez singles on a fly ball to center fielder Jakob Marsee, deflected by shortstop Otto L…",
+            "detail": "Luis Arraez singles on a fly ball to center fielder Jakob Marsee, deflected by shortstop Otto Lopez. Bryce Harper to 2nd.",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -604,7 +360,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a sharp line drive to left fielder Heriberto Hernández. Bryce Harper score…",
+            "detail": "Alec Bohm singles on a sharp line drive to left fielder Heriberto Hernández. Bryce Harper scores. Luis Arraez to 3rd.",
             "score_after": "PHI 1, MIA 0",
             "runs": 1,
             "is_scoring": true,
@@ -660,7 +416,7 @@
             "event_type": "strikeout",
             "actor": "Agustín Ramírez",
             "actor_id": 682663,
-            "detail": "Agustín Ramírez challenged (pitch result), call on the field was confirmed: Agustín Ramírez cal…",
+            "detail": "Agustín Ramírez challenged (pitch result), call on the field was confirmed: Agustín Ramírez called out on strikes.",
             "score_after": "PHI 1, MIA 1",
             "runs": 0,
             "is_scoring": false,
@@ -898,7 +654,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, pitcher Josh Ekness to second baseman Xavier Edwards to first baseman Gr…",
+            "detail": "Alec Bohm grounds out, pitcher Josh Ekness to second baseman Xavier Edwards to first baseman Griffin Conine.",
             "score_after": "PHI 1, MIA 1",
             "runs": 0,
             "is_scoring": false,
@@ -996,7 +752,7 @@
             "event_type": "single",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Xavier Edwards singles on a line drive to center fielder Justin Crawford. Brian Navarreto score…",
+            "detail": "Xavier Edwards singles on a line drive to center fielder Justin Crawford. Brian Navarreto scores. Xavier Edwards out at 2nd on the…",
             "score_after": "PHI 1, MIA 2",
             "runs": 1,
             "is_scoring": true,
@@ -1066,7 +822,7 @@
             "event_type": "single",
             "actor": "Griffin Conine",
             "actor_id": 665052,
-            "detail": "Griffin Conine singles on a ground ball to right fielder Bryce Harper, deflected by second base…",
+            "detail": "Griffin Conine singles on a ground ball to right fielder Bryce Harper, deflected by second baseman Luis Arraez. Otto Lopez to 2nd.",
             "score_after": "PHI 1, MIA 2",
             "runs": 0,
             "is_scoring": false,
@@ -1080,7 +836,7 @@
             "event_type": "out",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández grounds into a force out, third baseman Bryson Stott to second baseman Luis…",
+            "detail": "Heriberto Hernández grounds into a force out, third baseman Bryson Stott to second baseman Luis Arraez. Otto Lopez scores. Griffin…",
             "score_after": "PHI 1, MIA 3",
             "runs": 1,
             "is_scoring": true,
@@ -1094,7 +850,7 @@
             "event_type": "out",
             "actor": "Agustín Ramírez",
             "actor_id": 682663,
-            "detail": "Agustín Ramírez grounds out, pitcher Alex McFarlane to first baseman Alec Bohm. Heriberto Herná…",
+            "detail": "Agustín Ramírez grounds out, pitcher Alex McFarlane to first baseman Alec Bohm. Heriberto Hernández to 2nd.",
             "score_after": "PHI 1, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1164,7 +920,7 @@
             "event_type": "extra_base_hit",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm doubles (22) on a line drive to left fielder Heriberto Hernández. Trea Turner scores.…",
+            "detail": "Alec Bohm doubles (22) on a line drive to left fielder Heriberto Hernández. Trea Turner scores. Luis Arraez to 3rd.",
             "score_after": "PHI 2, MIA 3",
             "runs": 1,
             "is_scoring": true,
@@ -1178,7 +934,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a ground ball to center fielder Jakob Marsee. Luis Arraez scores. Alec…",
+            "detail": "Bryson Stott singles on a ground ball to center fielder Jakob Marsee. Luis Arraez scores. Alec Bohm scores.",
             "score_after": "PHI 4, MIA 3",
             "runs": 2,
             "is_scoring": true,
@@ -1220,7 +976,7 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford singles on a ground ball to left fielder Heriberto Hernández. Bryson Stott scor…",
+            "detail": "Justin Crawford singles on a ground ball to left fielder Heriberto Hernández. Bryson Stott scores. Brandon Marsh to 2nd.",
             "score_after": "PHI 5, MIA 3",
             "runs": 1,
             "is_scoring": true,
@@ -1276,7 +1032,7 @@
             "event_type": "extra_base_hit",
             "actor": "Jakob Marsee",
             "actor_id": 805300,
-            "detail": "Jakob Marsee lines into an unassisted double play, first baseman Alec Bohm. Javier Sanoja out a…",
+            "detail": "Jakob Marsee lines into an unassisted double play, first baseman Alec Bohm. Javier Sanoja out at 1st.",
             "score_after": "PHI 5, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1290,7 +1046,7 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Phillies challenged (hit by pitch), call on the field was overturned: Trea Turner strikes out s…",
+            "detail": "Phillies challenged (hit by pitch), call on the field was overturned: Trea Turner strikes out swinging.",
             "score_after": "PHI 5, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1388,7 +1144,7 @@
             "event_type": "single",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández singles on a line drive to center fielder Justin Crawford. Griffin Conine s…",
+            "detail": "Heriberto Hernández singles on a line drive to center fielder Justin Crawford. Griffin Conine scores.",
             "score_after": "PHI 5, MIA 4",
             "runs": 1,
             "is_scoring": true,
@@ -1402,7 +1158,7 @@
             "event_type": "out",
             "actor": "Agustín Ramírez",
             "actor_id": 682663,
-            "detail": "Agustín Ramírez grounds into a force out, shortstop Trea Turner to second baseman Luis Arraez.…",
+            "detail": "Agustín Ramírez grounds into a force out, shortstop Trea Turner to second baseman Luis Arraez. Heriberto Hernández out at 2nd.",
             "score_after": "PHI 5, MIA 4",
             "runs": 0,
             "is_scoring": false,
@@ -1455,34 +1211,86 @@
             "inning": 8,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Pitching Change: Calvin Faucher replaces Tyler Phillips.",
+            "detail": "Justin Crawford strikes out swinging.",
             "score_after": "PHI 5, MIA 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823423:69",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber singles on a line drive to left fielder Heriberto Hernández. Bryson Stott scores. J.T. Realmuto to 2nd.",
+            "score_after": "PHI 6, MIA 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823423:70",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner called out on strikes.",
+            "score_after": "PHI 6, MIA 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:71",
+            "inning": 9,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Leo Jiménez",
+            "actor_id": 677870,
+            "detail": "Leo Jiménez grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 6, MIA 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:72",
+            "inning": 9,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Javier Sanoja",
+            "actor_id": 691594,
+            "detail": "Javier Sanoja strikes out swinging.",
+            "score_after": "PHI 6, MIA 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:73",
+            "inning": 9,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Esteury Ruiz",
+            "actor_id": 665923,
+            "detail": "Esteury Ruiz grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 6, MIA 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Justin Crawford",
-            "meta": "vs Calvin Faucher"
-          },
-          "pitches": [],
-          "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 1
-          },
-          "bases": {
-            "first": true,
-            "second": true,
-            "third": false
-          },
-          "status": "Bottom 8th"
-        }
+        ]
       }
     },
     "injury_report": null

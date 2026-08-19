@@ -4,21 +4,21 @@
   "edition_date": "2026-08-18",
   "volume": 1,
   "edition": 140,
-  "generated_at": "2026-08-19T01:30:20.535Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-19T01:49:32.374Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 68,
+    "wins": 69,
     "losses": 58,
-    "streak": "W4",
+    "streak": "W5",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, MIA 4",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "Justin Crawford is up against Calvin Faucher. Series: PHI leads 1-0.",
+    "headline": "PHI 6, MIA 4.",
+    "dek": "PHI 6, MIA 4 · Zack Wheeler · 5.0 IP, 2 H, 2 ER, 7 K",
+    "summary": "PHI 6, MIA 4. Final at Citizens Bank Park, Philadelphia. PHI wins 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "PHI wins 2-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,57 +57,40 @@
     "weather": {
       "temp_f": 78,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "6 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Justin Crawford",
-        "meta": "vs Calvin Faucher"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
-      },
-      "bases": {
-        "first": true,
-        "second": true,
-        "third": false
-      },
-      "status": "Bottom 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T01:30:21.084Z",
-    "current_game_pk": 823423,
-    "next_game_pk": 823424,
+    "updated_at": "2026-08-19T01:49:33.141Z",
+    "current_game_pk": 823424,
+    "next_game_pk": 823420,
     "next_game": {
-      "game_pk": 823424,
-      "official_date": "2026-08-19",
-      "date_label": "Wed, Aug 19, 2026",
-      "time_label": "6:05 PM",
-      "title": "Miami Marlins at Phillies",
-      "matchup": "MIA at PHI",
+      "game_pk": 823420,
+      "official_date": "2026-08-21",
+      "date_label": "Fri, Aug 21, 2026",
+      "time_label": "6:40 PM",
+      "title": "St. Louis Cardinals at Phillies",
+      "matchup": "STL at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823423,
-      "official_date": "2026-08-18",
+      "game_pk": 823424,
+      "official_date": "2026-08-19",
       "title": "Miami Marlins at Phillies",
       "matchup": "MIA at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 68-58",
+      "text": "PHI 69-58",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 12 mph",
+      "text": "78° · Overcast · gusts 11 mph",
       "highlight": false
     }
   ]
