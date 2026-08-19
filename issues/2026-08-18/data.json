@@ -5,14 +5,14 @@
     "edition": 140,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-19T01:09:45.600Z",
+    "generated_at": "2026-08-19T01:30:20.535Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 18, 2026, 9:09 PM ET",
+      "generated_at_et": "Aug 18, 2026, 9:30 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 5, MIA 3",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Luis Arraez is up against Tyler Phillips. Series: PHI leads 1-0.",
+    "headline": "PHI 5, MIA 4",
+    "dek": "Bottom 8th · 1 out",
+    "summary": "Justin Crawford is up against Calvin Faucher. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Partly cloudy"
+        "value": "78° · Overcast"
       }
     ],
     "bullets": [
-      "Luis Arraez at the plate",
-      "Tyler Phillips on the mound",
+      "Justin Crawford at the plate",
+      "Calvin Faucher on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
-          "condition": "Partly cloudy",
-          "wind": "2 mph · gusts 4",
-          "gusts_mph": 4
+          "temp_f": 78,
+          "condition": "Overcast",
+          "wind": "6 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,21 +373,21 @@
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 1,
           "teams": {
             "away": {
-              "runs": 3,
-              "hits": 4,
+              "runs": 4,
+              "hits": 5,
               "errors": 0
             },
             "home": {
               "runs": 5,
-              "hits": 8,
-              "errors": 1
+              "hits": 9,
+              "errors": 2
             }
           },
           "innings": [
@@ -477,9 +477,22 @@
                 "errors": 0
               },
               "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
                 "runs": null,
                 "hits": 0,
-                "errors": 0
+                "errors": 1
               }
             }
           ]
@@ -577,7 +590,7 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez singles on a fly ball to center fielder Jakob Marsee, deflected by shortstop Otto Lopez. Bryce Harper to 2nd.",
+            "detail": "Luis Arraez singles on a fly ball to center fielder Jakob Marsee, deflected by shortstop Otto L…",
             "score_after": "PHI 0, MIA 0",
             "runs": 0,
             "is_scoring": false,
@@ -591,7 +604,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a sharp line drive to left fielder Heriberto Hernández. Bryce Harper scores. Luis Arraez to 3rd.",
+            "detail": "Alec Bohm singles on a sharp line drive to left fielder Heriberto Hernández. Bryce Harper score…",
             "score_after": "PHI 1, MIA 0",
             "runs": 1,
             "is_scoring": true,
@@ -647,7 +660,7 @@
             "event_type": "strikeout",
             "actor": "Agustín Ramírez",
             "actor_id": 682663,
-            "detail": "Agustín Ramírez challenged (pitch result), call on the field was confirmed: Agustín Ramírez called out on strikes.",
+            "detail": "Agustín Ramírez challenged (pitch result), call on the field was confirmed: Agustín Ramírez cal…",
             "score_after": "PHI 1, MIA 1",
             "runs": 0,
             "is_scoring": false,
@@ -885,7 +898,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds out, pitcher Josh Ekness to second baseman Xavier Edwards to first baseman Griffin Conine.",
+            "detail": "Alec Bohm grounds out, pitcher Josh Ekness to second baseman Xavier Edwards to first baseman Gr…",
             "score_after": "PHI 1, MIA 1",
             "runs": 0,
             "is_scoring": false,
@@ -983,7 +996,7 @@
             "event_type": "single",
             "actor": "Xavier Edwards",
             "actor_id": 669364,
-            "detail": "Xavier Edwards singles on a line drive to center fielder Justin Crawford. Brian Navarreto scores. Xavier Edwards out at 2nd on the…",
+            "detail": "Xavier Edwards singles on a line drive to center fielder Justin Crawford. Brian Navarreto score…",
             "score_after": "PHI 1, MIA 2",
             "runs": 1,
             "is_scoring": true,
@@ -1053,7 +1066,7 @@
             "event_type": "single",
             "actor": "Griffin Conine",
             "actor_id": 665052,
-            "detail": "Griffin Conine singles on a ground ball to right fielder Bryce Harper, deflected by second baseman Luis Arraez. Otto Lopez to 2nd.",
+            "detail": "Griffin Conine singles on a ground ball to right fielder Bryce Harper, deflected by second base…",
             "score_after": "PHI 1, MIA 2",
             "runs": 0,
             "is_scoring": false,
@@ -1067,7 +1080,7 @@
             "event_type": "out",
             "actor": "Heriberto Hernández",
             "actor_id": 681715,
-            "detail": "Heriberto Hernández grounds into a force out, third baseman Bryson Stott to second baseman Luis Arraez. Otto Lopez scores. Griffin…",
+            "detail": "Heriberto Hernández grounds into a force out, third baseman Bryson Stott to second baseman Luis…",
             "score_after": "PHI 1, MIA 3",
             "runs": 1,
             "is_scoring": true,
@@ -1081,7 +1094,7 @@
             "event_type": "out",
             "actor": "Agustín Ramírez",
             "actor_id": 682663,
-            "detail": "Agustín Ramírez grounds out, pitcher Alex McFarlane to first baseman Alec Bohm. Heriberto Hernández to 2nd.",
+            "detail": "Agustín Ramírez grounds out, pitcher Alex McFarlane to first baseman Alec Bohm. Heriberto Herná…",
             "score_after": "PHI 1, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1151,7 +1164,7 @@
             "event_type": "extra_base_hit",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm doubles (22) on a line drive to left fielder Heriberto Hernández. Trea Turner scores. Luis Arraez to 3rd.",
+            "detail": "Alec Bohm doubles (22) on a line drive to left fielder Heriberto Hernández. Trea Turner scores.…",
             "score_after": "PHI 2, MIA 3",
             "runs": 1,
             "is_scoring": true,
@@ -1165,7 +1178,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a ground ball to center fielder Jakob Marsee. Luis Arraez scores. Alec Bohm scores.",
+            "detail": "Bryson Stott singles on a ground ball to center fielder Jakob Marsee. Luis Arraez scores. Alec…",
             "score_after": "PHI 4, MIA 3",
             "runs": 2,
             "is_scoring": true,
@@ -1207,7 +1220,7 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford singles on a ground ball to left fielder Heriberto Hernández. Bryson Stott scores. Brandon Marsh to 2nd.",
+            "detail": "Justin Crawford singles on a ground ball to left fielder Heriberto Hernández. Bryson Stott scor…",
             "score_after": "PHI 5, MIA 3",
             "runs": 1,
             "is_scoring": true,
@@ -1263,7 +1276,7 @@
             "event_type": "extra_base_hit",
             "actor": "Jakob Marsee",
             "actor_id": 805300,
-            "detail": "Jakob Marsee lines into an unassisted double play, first baseman Alec Bohm. Javier Sanoja out at 1st.",
+            "detail": "Jakob Marsee lines into an unassisted double play, first baseman Alec Bohm. Javier Sanoja out a…",
             "score_after": "PHI 5, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1277,7 +1290,7 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Phillies challenged (hit by pitch), call on the field was overturned: Trea Turner strikes out swinging.",
+            "detail": "Phillies challenged (hit by pitch), call on the field was overturned: Trea Turner strikes out s…",
             "score_after": "PHI 5, MIA 3",
             "runs": 0,
             "is_scoring": false,
@@ -1302,11 +1315,151 @@
             "inning": 7,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Play",
+            "detail": "Luis Arraez singles on a line drive to left fielder Heriberto Hernández.",
             "score_after": "PHI 5, MIA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:59",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out to right fielder Owen Caissie.",
+            "score_after": "PHI 5, MIA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:60",
+            "inning": 8,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Xavier Edwards",
+            "actor_id": 669364,
+            "detail": "Xavier Edwards strikes out swinging.",
+            "score_after": "PHI 5, MIA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:61",
+            "inning": 8,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Otto Lopez",
+            "actor_id": 672640,
+            "detail": "Otto Lopez grounds out, first baseman Alec Bohm to pitcher Orion Kerkering.",
+            "score_after": "PHI 5, MIA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:62",
+            "inning": 8,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "reached_on_error",
+            "actor": "Griffin Conine",
+            "actor_id": 665052,
+            "detail": "Griffin Conine reaches on a throwing error by pitcher Orion Kerkering. Griffin Conine to 2nd.",
+            "score_after": "PHI 5, MIA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:63",
+            "inning": 8,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "single",
+            "actor": "Heriberto Hernández",
+            "actor_id": 681715,
+            "detail": "Heriberto Hernández singles on a line drive to center fielder Justin Crawford. Griffin Conine s…",
+            "score_after": "PHI 5, MIA 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823423:64",
+            "inning": 8,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Agustín Ramírez",
+            "actor_id": 682663,
+            "detail": "Agustín Ramírez grounds into a force out, shortstop Trea Turner to second baseman Luis Arraez.…",
+            "score_after": "PHI 5, MIA 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:65",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott walks.",
+            "score_after": "PHI 5, MIA 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:66",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out to center fielder Jakob Marsee.",
+            "score_after": "PHI 5, MIA 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:67",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto walks.",
+            "score_after": "PHI 5, MIA 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:68",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Pitching Change: Calvin Faucher replaces Tyler Phillips.",
+            "score_after": "PHI 5, MIA 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1314,124 +1467,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Luis Arraez",
-            "meta": "vs Tyler Phillips"
+            "name": "Justin Crawford",
+            "meta": "vs Calvin Faucher"
           },
-          "pitches": [
-            "S"
-          ],
+          "pitches": [],
           "count": {
             "balls": 0,
-            "strikes": 1,
-            "outs": 2
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
-            "first": false,
-            "second": false,
+            "first": true,
+            "second": true,
             "third": false
           },
-          "status": "Bottom 7th"
+          "status": "Bottom 8th"
         }
       }
     },
-    "injury_report": {
-      "content": {
-        "il_entries": [
-          {
-            "name": "Adolis García",
-            "position": "RF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right latissimus dorsi tear",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-19T01:09:45.600Z",
-            "freshness_label": "As of Aug 18, 2026, 9:09 PM ET"
-          },
-          {
-            "name": "Johan Rojas",
-            "position": "CF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL repair",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-19T01:09:45.600Z",
-            "freshness_label": "As of Aug 18, 2026, 9:09 PM ET"
-          },
-          {
-            "name": "Lou Trivino III",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right thoracic muscle spasm",
-            "status_note": "",
-            "retroactive_to": "2026-07-07",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-19T01:09:45.600Z",
-            "freshness_label": "As of Aug 18, 2026, 9:09 PM ET"
-          },
-          {
-            "name": "Tanner Banks",
-            "position": "LHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Left forearm strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-19T01:09:45.600Z",
-            "freshness_label": "As of Aug 18, 2026, 9:09 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL tear",
-            "status_note": "",
-            "retroactive_to": "2026-07-13",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-19T01:09:45.600Z",
-            "freshness_label": "As of Aug 18, 2026, 9:09 PM ET"
-          },
-          {
-            "name": "Rafael Marchán",
-            "position": "C",
-            "il_type": "10-day",
-            "badge": "il",
-            "injury": "Left knee patellar tendinitis",
-            "status_note": "",
-            "retroactive_to": "2026-07-23",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-19T01:09:45.600Z",
-            "freshness_label": "As of Aug 18, 2026, 9:09 PM ET"
-          },
-          {
-            "name": "Caleb Kilian",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Left oblique strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-19T01:09:45.600Z",
-            "freshness_label": "As of Aug 18, 2026, 9:09 PM ET"
-          }
-        ],
-        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
-      }
-    }
+    "injury_report": null
   },
   "next_game": {
     "label": "Tomorrow",
