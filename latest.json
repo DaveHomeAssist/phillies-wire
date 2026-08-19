@@ -4,7 +4,7 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-19T22:24:13.168Z",
+  "generated_at": "2026-08-19T22:39:17.329Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, MIA 0",
-    "dek": "Middle 2nd · 3 outs",
-    "summary": "Luis Arraez is up against Sandy Alcantara. Series: PHI leads 2-0.",
+    "headline": "PHI 1, MIA 0",
+    "dek": "End 2nd · 3 outs",
+    "summary": "Esteury Ruiz is up against Aaron Nola. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
@@ -57,25 +57,24 @@
     "weather": {
       "temp_f": 85,
       "condition": "Clear",
-      "wind": "7 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "8 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Sandy Alcantara"
+        "name": "Esteury Ruiz",
+        "meta": "vs Aaron Nola"
       },
       "pitches": [
-        "B",
         "F",
-        "S",
-        "S"
+        "B",
+        "X"
       ],
       "count": {
         "balls": 1,
-        "strikes": 3,
+        "strikes": 1,
         "outs": 3
       },
       "bases": {
@@ -83,7 +82,7 @@
         "second": false,
         "third": false
       },
-      "status": "Middle 2nd"
+      "status": "End 2nd"
     },
     "recap_line": null
   },
@@ -91,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T22:24:13.932Z",
+    "updated_at": "2026-08-19T22:39:17.745Z",
     "current_game_pk": 823424,
     "next_game_pk": 823420,
     "next_game": {
@@ -128,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "85° · Clear · gusts 12 mph",
+      "text": "85° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
