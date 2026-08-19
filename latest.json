@@ -4,7 +4,7 @@
   "edition_date": "2026-08-18",
   "volume": 1,
   "edition": 140,
-  "generated_at": "2026-08-19T00:10:49.742Z",
+  "generated_at": "2026-08-19T00:14:03.532Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, MIA 2",
-    "dek": "Bottom 5th · 0 outs",
-    "summary": "J.T. Realmuto is up against Josh Ekness. Series: PHI leads 1-0.",
+    "dek": "Bottom 5th · 1 out",
+    "summary": "Kyle Schwarber is up against Michael Petersen. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
@@ -64,22 +64,17 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Josh Ekness"
+        "name": "Kyle Schwarber",
+        "meta": "vs Michael Petersen"
       },
-      "pitches": [
-        "S",
-        "B",
-        "B",
-        "F"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T00:10:50.594Z",
+    "updated_at": "2026-08-19T00:14:04.113Z",
     "current_game_pk": 823423,
     "next_game_pk": 823424,
     "next_game": {
