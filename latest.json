@@ -4,7 +4,7 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-19T23:38:23.629Z",
+  "generated_at": "2026-08-19T23:50:59.888Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, MIA 1",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "Alec Bohm is up against Sandy Alcantara. Series: PHI leads 2-0.",
+    "dek": "Top 7th · 2 outs",
+    "summary": "Esteury Ruiz is up against Aaron Nola. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
@@ -55,35 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 82,
       "condition": "Clear",
-      "wind": "6 mph · gusts 11",
+      "wind": "5 mph · gusts 11",
       "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Sandy Alcantara"
+        "name": "Esteury Ruiz",
+        "meta": "vs Aaron Nola"
       },
       "pitches": [
-        "S",
-        "B",
         "S",
         "S"
       ],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 3,
-        "outs": 3
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 6th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -91,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T23:38:24.140Z",
+    "updated_at": "2026-08-19T23:51:00.420Z",
     "current_game_pk": 823424,
     "next_game_pk": 823420,
     "next_game": {
@@ -128,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 11 mph",
+      "text": "82° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
