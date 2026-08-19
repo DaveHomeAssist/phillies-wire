@@ -4,7 +4,7 @@
   "edition_date": "2026-08-18",
   "volume": 1,
   "edition": 140,
-  "generated_at": "2026-08-19T00:49:07.409Z",
+  "generated_at": "2026-08-19T01:09:45.600Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 8, MIA 3",
-    "dek": "Bottom 6th · 2 outs",
-    "summary": "Kyle Schwarber is up against Tyler Phillips. Series: PHI leads 1-0.",
+    "headline": "PHI 5, MIA 3",
+    "dek": "Bottom 7th · 2 outs",
+    "summary": "Luis Arraez is up against Tyler Phillips. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
@@ -56,7 +56,7 @@
     },
     "weather": {
       "temp_f": 80,
-      "condition": "Mostly sunny",
+      "condition": "Partly cloudy",
       "wind": "2 mph · gusts 4",
       "gusts_mph": 4
     },
@@ -64,12 +64,11 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Luis Arraez",
         "meta": "vs Tyler Phillips"
       },
       "pitches": [
-        "S",
-        "X"
+        "S"
       ],
       "count": {
         "balls": 0,
@@ -81,7 +80,7 @@
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -89,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T00:49:07.838Z",
+    "updated_at": "2026-08-19T01:09:46.213Z",
     "current_game_pk": 823423,
     "next_game_pk": 823424,
     "next_game": {
@@ -126,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Mostly sunny · gusts 4 mph",
+      "text": "80° · Partly cloudy · gusts 4 mph",
       "highlight": false
     }
   ]
