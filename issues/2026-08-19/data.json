@@ -5,7 +5,7 @@
     "edition": 141,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-19T23:23:02.600Z",
+    "generated_at": "2026-08-19T23:23:46.663Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -30,7 +30,7 @@
     "label": "Live",
     "headline": "PHI 3, MIA 0",
     "dek": "Bottom 5th · 2 outs",
-    "summary": "Trea Turner is up against Sandy Alcantara. Series: PHI leads 2-0.",
+    "summary": "Bryce Harper is up against Sandy Alcantara. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
+      "Bryce Harper at the plate",
       "Sandy Alcantara on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -976,22 +976,34 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823424:37",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Play",
+            "score_after": "PHI 3, MIA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Trea Turner",
+            "name": "Bryce Harper",
             "meta": "vs Sandy Alcantara"
           },
           "pitches": [
-            "S",
-            "B",
-            "S",
-            "S"
+            "F",
+            "B"
           ],
           "count": {
             "balls": 1,
-            "strikes": 3,
+            "strikes": 1,
             "outs": 2
           },
           "bases": {
@@ -1016,7 +1028,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-19T23:23:02.600Z",
+            "last_confirmed": "2026-08-19T23:23:46.663Z",
             "freshness_label": "As of Aug 19, 2026, 7:23 PM ET"
           },
           {
@@ -1029,7 +1041,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-19T23:23:02.600Z",
+            "last_confirmed": "2026-08-19T23:23:46.663Z",
             "freshness_label": "As of Aug 19, 2026, 7:23 PM ET"
           },
           {
@@ -1042,7 +1054,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-19T23:23:02.600Z",
+            "last_confirmed": "2026-08-19T23:23:46.663Z",
             "freshness_label": "As of Aug 19, 2026, 7:23 PM ET"
           },
           {
@@ -1055,7 +1067,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-19T23:23:02.600Z",
+            "last_confirmed": "2026-08-19T23:23:46.663Z",
             "freshness_label": "As of Aug 19, 2026, 7:23 PM ET"
           },
           {
@@ -1068,7 +1080,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-19T23:23:02.600Z",
+            "last_confirmed": "2026-08-19T23:23:46.663Z",
             "freshness_label": "As of Aug 19, 2026, 7:23 PM ET"
           },
           {
@@ -1081,7 +1093,7 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-19T23:23:02.600Z",
+            "last_confirmed": "2026-08-19T23:23:46.663Z",
             "freshness_label": "As of Aug 19, 2026, 7:23 PM ET"
           },
           {
@@ -1094,7 +1106,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-19T23:23:02.600Z",
+            "last_confirmed": "2026-08-19T23:23:46.663Z",
             "freshness_label": "As of Aug 19, 2026, 7:23 PM ET"
           }
         ],
