@@ -4,7 +4,7 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-19T22:40:02.193Z",
+  "generated_at": "2026-08-19T22:52:26.251Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, MIA 0",
-    "dek": "Top 3rd · 0 outs",
-    "summary": "Esteury Ruiz is up against Aaron Nola. Series: PHI leads 2-0.",
+    "dek": "Bottom 3rd · 1 out",
+    "summary": "Bryce Harper is up against Sandy Alcantara. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
@@ -57,28 +57,35 @@
     "weather": {
       "temp_f": 85,
       "condition": "Clear",
-      "wind": "8 mph · gusts 11",
+      "wind": "7 mph · gusts 11",
       "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Esteury Ruiz",
-        "meta": "vs Aaron Nola"
+        "name": "Bryce Harper",
+        "meta": "vs Sandy Alcantara"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "F",
+        "B",
+        "S",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 3,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -86,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T22:40:03.394Z",
+    "updated_at": "2026-08-19T22:52:27.080Z",
     "current_game_pk": 823424,
     "next_game_pk": 823420,
     "next_game": {
