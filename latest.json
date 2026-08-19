@@ -4,7 +4,7 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-19T22:05:41.828Z",
+  "generated_at": "2026-08-19T22:06:41.340Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,12 @@
         "name": "Jakob Marsee",
         "meta": "vs Aaron Nola"
       },
-      "pitches": [],
+      "pitches": [
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
@@ -86,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T22:05:42.221Z",
+    "updated_at": "2026-08-19T22:06:41.874Z",
     "current_game_pk": 823424,
     "next_game_pk": 823420,
     "next_game": {
