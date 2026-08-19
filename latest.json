@@ -4,7 +4,7 @@
   "edition_date": "2026-08-18",
   "volume": 1,
   "edition": 140,
-  "generated_at": "2026-08-19T00:14:03.532Z",
+  "generated_at": "2026-08-19T00:26:40.798Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, MIA 2",
-    "dek": "Bottom 5th · 1 out",
-    "summary": "Kyle Schwarber is up against Michael Petersen. Series: PHI leads 1-0.",
+    "headline": "PHI 1, MIA 3",
+    "dek": "Top 6th · 2 outs",
+    "summary": "Owen Caissie is up against Alex McFarlane. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
@@ -55,8 +55,8 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
-      "condition": "Overcast",
+      "temp_f": 81,
+      "condition": "Partly cloudy",
       "wind": "3 mph · gusts 7",
       "gusts_mph": 7
     },
@@ -64,21 +64,27 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Michael Petersen"
+        "name": "Owen Caissie",
+        "meta": "vs Alex McFarlane"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "F",
+        "F",
+        "B",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "balls": 1,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": true,
-        "second": false,
+        "first": false,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Top 6th"
     },
     "recap_line": null
   },
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T00:14:04.113Z",
+    "updated_at": "2026-08-19T00:26:41.591Z",
     "current_game_pk": 823423,
     "next_game_pk": 823424,
     "next_game": {
@@ -123,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Overcast · gusts 7 mph",
+      "text": "81° · Partly cloudy · gusts 7 mph",
       "highlight": false
     }
   ]
