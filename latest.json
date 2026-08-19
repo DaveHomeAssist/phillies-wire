@@ -4,7 +4,7 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-19T23:05:56.664Z",
+  "generated_at": "2026-08-19T23:06:56.836Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, MIA 0",
-    "dek": "Top 4th · 2 outs",
-    "summary": "Heriberto Hernández is up against Aaron Nola. Series: PHI leads 2-0.",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "Brandon Marsh is up against Sandy Alcantara. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
@@ -64,25 +64,26 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Heriberto Hernández",
-        "meta": "vs Aaron Nola"
+        "name": "Brandon Marsh",
+        "meta": "vs Sandy Alcantara"
       },
       "pitches": [
         "S",
         "B",
-        "F"
+        "F",
+        "X"
       ],
       "count": {
         "balls": 1,
         "strikes": 2,
-        "outs": 2
+        "outs": 3
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "Middle 4th"
     },
     "recap_line": null
   },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T23:05:57.484Z",
+    "updated_at": "2026-08-19T23:06:57.275Z",
     "current_game_pk": 823424,
     "next_game_pk": 823420,
     "next_game": {
