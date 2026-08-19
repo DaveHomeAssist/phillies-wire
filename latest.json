@@ -4,7 +4,7 @@
   "edition_date": "2026-08-18",
   "volume": 1,
   "edition": 140,
-  "generated_at": "2026-08-19T00:32:16.401Z",
+  "generated_at": "2026-08-19T00:49:07.409Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, MIA 3",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Luis Arraez is up against Michael Petersen. Series: PHI leads 1-0.",
+    "headline": "PHI 8, MIA 3",
+    "dek": "Bottom 6th · 2 outs",
+    "summary": "Kyle Schwarber is up against Tyler Phillips. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
@@ -55,28 +55,29 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
-      "condition": "Partly cloudy",
-      "wind": "2 mph · gusts 6",
-      "gusts_mph": 6
+      "temp_f": 80,
+      "condition": "Mostly sunny",
+      "wind": "2 mph · gusts 4",
+      "gusts_mph": 4
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Michael Petersen"
+        "name": "Kyle Schwarber",
+        "meta": "vs Tyler Phillips"
       },
       "pitches": [
-        "B"
+        "S",
+        "X"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
-        "outs": 1
+        "balls": 0,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
@@ -88,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T00:32:16.811Z",
+    "updated_at": "2026-08-19T00:49:07.838Z",
     "current_game_pk": 823423,
     "next_game_pk": 823424,
     "next_game": {
@@ -125,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Partly cloudy · gusts 6 mph",
+      "text": "80° · Mostly sunny · gusts 4 mph",
       "highlight": false
     }
   ]
