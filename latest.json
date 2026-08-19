@@ -4,7 +4,7 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-19T23:23:46.663Z",
+  "generated_at": "2026-08-19T23:37:46.533Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, MIA 0",
-    "dek": "Bottom 5th · 2 outs",
-    "summary": "Bryce Harper is up against Sandy Alcantara. Series: PHI leads 2-0.",
+    "headline": "PHI 3, MIA 1",
+    "dek": "Middle 6th · 3 outs",
+    "summary": "Alec Bohm is up against Sandy Alcantara. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
@@ -57,31 +57,33 @@
     "weather": {
       "temp_f": 83,
       "condition": "Clear",
-      "wind": "7 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "6 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
+        "name": "Alec Bohm",
         "meta": "vs Sandy Alcantara"
       },
       "pitches": [
-        "F",
-        "B"
+        "S",
+        "B",
+        "S",
+        "S"
       ],
       "count": {
         "balls": 1,
-        "strikes": 1,
-        "outs": 2
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Middle 6th"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T23:23:47.143Z",
+    "updated_at": "2026-08-19T23:37:47.400Z",
     "current_game_pk": 823424,
     "next_game_pk": 823420,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 12 mph",
+      "text": "83° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
