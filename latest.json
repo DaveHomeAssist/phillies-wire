@@ -4,7 +4,7 @@
   "edition_date": "2026-08-18",
   "volume": 1,
   "edition": 140,
-  "generated_at": "2026-08-18T23:51:38.462Z",
+  "generated_at": "2026-08-19T00:10:49.742Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, MIA 1",
-    "dek": "End 4th · 3 outs",
-    "summary": "Owen Caissie is up against Zack Wheeler. Series: PHI leads 1-0.",
+    "headline": "PHI 1, MIA 2",
+    "dek": "Bottom 5th · 0 outs",
+    "summary": "J.T. Realmuto is up against Josh Ekness. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Sandy Alcantara · PHI vs MIA · Wed, Aug 19 · 6:05 PM"
   },
@@ -56,36 +56,34 @@
     },
     "weather": {
       "temp_f": 82,
-      "condition": "Partly cloudy",
-      "wind": "4 mph · gusts 7",
+      "condition": "Overcast",
+      "wind": "3 mph · gusts 7",
       "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Owen Caissie",
-        "meta": "vs Zack Wheeler"
+        "name": "J.T. Realmuto",
+        "meta": "vs Josh Ekness"
       },
       "pitches": [
         "S",
-        "S",
-        "F",
         "B",
-        "F",
-        "X"
+        "B",
+        "F"
       ],
       "count": {
-        "balls": 1,
+        "balls": 2,
         "strikes": 2,
-        "outs": 3
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 4th"
+      "status": "Bottom 5th"
     },
     "recap_line": null
   },
@@ -93,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-18T23:51:38.888Z",
+    "updated_at": "2026-08-19T00:10:50.594Z",
     "current_game_pk": 823423,
     "next_game_pk": 823424,
     "next_game": {
@@ -130,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Partly cloudy · gusts 7 mph",
+      "text": "82° · Overcast · gusts 7 mph",
       "highlight": false
     }
   ]

@@ -5,14 +5,14 @@
     "edition": 140,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-18T23:51:38.462Z",
+    "generated_at": "2026-08-19T00:10:49.742Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 18, 2026, 7:51 PM ET",
+      "generated_at_et": "Aug 18, 2026, 8:10 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, MIA 1",
-    "dek": "End 4th · 3 outs",
-    "summary": "Owen Caissie is up against Zack Wheeler. Series: PHI leads 1-0.",
+    "headline": "PHI 1, MIA 2",
+    "dek": "Bottom 5th · 0 outs",
+    "summary": "J.T. Realmuto is up against Josh Ekness. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Partly cloudy"
+        "value": "82° · Overcast"
       }
     ],
     "bullets": [
-      "Owen Caissie at the plate",
-      "Zack Wheeler on the mound",
+      "J.T. Realmuto at the plate",
+      "Josh Ekness on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -347,8 +347,8 @@
         },
         "weather": {
           "temp_f": 82,
-          "condition": "Partly cloudy",
-          "wind": "4 mph · gusts 7",
+          "condition": "Overcast",
+          "wind": "3 mph · gusts 7",
           "gusts_mph": 7
         },
         "giveaway": "",
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "2.87",
+            "era": "2.92",
             "record": "10-4",
-            "whip": "0.99"
+            "whip": "1.01"
           },
           "away": {
             "team": "MIA",
@@ -373,15 +373,15 @@
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
-          "inningState": "End",
+          "currentInning": 5,
+          "currentInningOrdinal": "5th",
+          "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 3,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 1,
+              "runs": 2,
+              "hits": 2,
               "errors": 0
             },
             "home": {
@@ -439,6 +439,19 @@
               },
               "home": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               }
@@ -879,32 +892,114 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823423:31",
+            "inning": 5,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Owen Caissie",
+            "actor_id": 683357,
+            "detail": "Owen Caissie strikes out on a foul tip.",
+            "score_after": "PHI 1, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:32",
+            "inning": 5,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Javier Sanoja",
+            "actor_id": 691594,
+            "detail": "Javier Sanoja flies out to right fielder Bryce Harper.",
+            "score_after": "PHI 1, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:33",
+            "inning": 5,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "walk_hbp",
+            "actor": "Brian Navarreto",
+            "actor_id": 640459,
+            "detail": "Brian Navarreto walks.",
+            "score_after": "PHI 1, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:34",
+            "inning": 5,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "walk_hbp",
+            "actor": "Jakob Marsee",
+            "actor_id": 805300,
+            "detail": "Jakob Marsee walks. Brian Navarreto to 2nd.",
+            "score_after": "PHI 1, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823423:35",
+            "inning": 5,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "single",
+            "actor": "Xavier Edwards",
+            "actor_id": 669364,
+            "detail": "Xavier Edwards singles on a line drive to center fielder Justin Crawford. Brian Navarreto scores. Xavier Edwards out at 2nd on the…",
+            "score_after": "PHI 1, MIA 2",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823423:36",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "Play",
+            "score_after": "PHI 1, MIA 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Owen Caissie",
-            "meta": "vs Zack Wheeler"
+            "name": "J.T. Realmuto",
+            "meta": "vs Josh Ekness"
           },
           "pitches": [
             "S",
-            "S",
-            "F",
             "B",
-            "F",
-            "X"
+            "B",
+            "F"
           ],
           "count": {
-            "balls": 1,
+            "balls": 2,
             "strikes": 2,
-            "outs": 3
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 4th"
+          "status": "Bottom 5th"
         }
       }
     },
@@ -921,8 +1016,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:38.462Z",
-            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-19T00:10:49.742Z",
+            "freshness_label": "As of Aug 18, 2026, 8:10 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -934,8 +1029,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:38.462Z",
-            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-19T00:10:49.742Z",
+            "freshness_label": "As of Aug 18, 2026, 8:10 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -947,8 +1042,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:38.462Z",
-            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-19T00:10:49.742Z",
+            "freshness_label": "As of Aug 18, 2026, 8:10 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -960,8 +1055,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:38.462Z",
-            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-19T00:10:49.742Z",
+            "freshness_label": "As of Aug 18, 2026, 8:10 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -973,8 +1068,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:38.462Z",
-            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-19T00:10:49.742Z",
+            "freshness_label": "As of Aug 18, 2026, 8:10 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -986,8 +1081,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:38.462Z",
-            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-19T00:10:49.742Z",
+            "freshness_label": "As of Aug 18, 2026, 8:10 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -999,8 +1094,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-18T23:51:38.462Z",
-            "freshness_label": "As of Aug 18, 2026, 7:51 PM ET"
+            "last_confirmed": "2026-08-19T00:10:49.742Z",
+            "freshness_label": "As of Aug 18, 2026, 8:10 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
