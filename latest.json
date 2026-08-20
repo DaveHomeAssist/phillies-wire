@@ -4,7 +4,7 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-19T23:51:47.525Z",
+  "generated_at": "2026-08-20T00:11:37.224Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, MIA 1",
-    "dek": "Top 7th · 1 out",
-    "summary": "Esteury Ruiz is up against Aaron Nola. Series: PHI leads 2-0.",
+    "headline": "PHI 4, MIA 1",
+    "dek": "Top 8th · 0 outs",
+    "summary": "Javier Sanoja is up against Jonathan Bowlan. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
@@ -57,31 +57,34 @@
     "weather": {
       "temp_f": 82,
       "condition": "Clear",
-      "wind": "5 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "4 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Esteury Ruiz",
-        "meta": "vs Aaron Nola"
+        "name": "Javier Sanoja",
+        "meta": "vs Jonathan Bowlan"
       },
       "pitches": [
+        "B",
+        "B",
         "S",
+        "F",
         "B"
       ],
       "count": {
-        "balls": 1,
+        "balls": 3,
         "strikes": 2,
-        "outs": 1
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -89,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-19T23:51:48.385Z",
+    "updated_at": "2026-08-20T00:11:38.045Z",
     "current_game_pk": 823424,
     "next_game_pk": 823420,
     "next_game": {
@@ -126,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 11 mph",
+      "text": "82° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
