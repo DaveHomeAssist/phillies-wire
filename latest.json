@@ -4,7 +4,7 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-20T00:14:51.213Z",
+  "generated_at": "2026-08-20T00:27:35.098Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, MIA 1",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Jakob Marsee is up against Jonathan Bowlan. Series: PHI leads 2-0.",
+    "dek": "Bottom 8th · 1 out",
+    "summary": "Bryson Stott is up against Victor Vodnik. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
@@ -55,36 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 81,
       "condition": "Clear",
-      "wind": "4 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "3 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jakob Marsee",
-        "meta": "vs Jonathan Bowlan"
+        "name": "Bryson Stott",
+        "meta": "vs Victor Vodnik"
       },
-      "pitches": [
-        "B",
-        "S",
-        "S",
-        "B",
-        "F"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 8th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -92,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-20T00:14:52.190Z",
+    "updated_at": "2026-08-20T00:27:35.944Z",
     "current_game_pk": 823424,
     "next_game_pk": 823420,
     "next_game": {
@@ -129,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 9 mph",
+      "text": "81° · Clear · gusts 6 mph",
       "highlight": false
     }
   ]

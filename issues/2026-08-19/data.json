@@ -5,14 +5,14 @@
     "edition": 141,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-20T00:14:51.213Z",
+    "generated_at": "2026-08-20T00:27:35.098Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 19, 2026, 8:14 PM ET",
+      "generated_at_et": "Aug 19, 2026, 8:27 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 4, MIA 1",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Jakob Marsee is up against Jonathan Bowlan. Series: PHI leads 2-0.",
+    "dek": "Bottom 8th · 1 out",
+    "summary": "Bryson Stott is up against Victor Vodnik. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Clear"
+        "value": "81° · Clear"
       }
     ],
     "bullets": [
-      "Jakob Marsee at the plate",
-      "Jonathan Bowlan on the mound",
+      "Bryson Stott at the plate",
+      "Victor Vodnik on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 82,
+          "temp_f": 81,
           "condition": "Clear",
-          "wind": "4 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "3 mph · gusts 6",
+          "gusts_mph": 6
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 8,
           "currentInningOrdinal": "8th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 1,
@@ -485,7 +485,7 @@
             {
               "num": 8,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
                 "errors": 0
               },
@@ -1315,9 +1315,79 @@
             "inning": 8,
             "half": "top",
             "team": "MIA",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Jakob Marsee",
             "actor_id": 805300,
+            "detail": "Jakob Marsee lines out to center fielder Justin Crawford.",
+            "score_after": "PHI 4, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823424:59",
+            "inning": 8,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "walk_hbp",
+            "actor": "Otto Lopez",
+            "actor_id": 672640,
+            "detail": "Otto Lopez walks. Javier Sanoja to 2nd.",
+            "score_after": "PHI 4, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823424:60",
+            "inning": 8,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "out",
+            "actor": "Xavier Edwards",
+            "actor_id": 669364,
+            "detail": "Xavier Edwards flies out to left fielder Brandon Marsh in foul territory.",
+            "score_after": "PHI 4, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823424:61",
+            "inning": 8,
+            "half": "top",
+            "team": "MIA",
+            "event_type": "strikeout",
+            "actor": "Griffin Conine",
+            "actor_id": 665052,
+            "detail": "Griffin Conine strikes out swinging.",
+            "score_after": "PHI 4, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823424:62",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds out, shortstop Otto Lopez to first baseman Griffin Conine.",
+            "score_after": "PHI 4, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823424:63",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
             "detail": "Play",
             "score_after": "PHI 4, MIA 1",
             "runs": 0,
@@ -1327,128 +1397,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Jakob Marsee",
-            "meta": "vs Jonathan Bowlan"
+            "name": "Bryson Stott",
+            "meta": "vs Victor Vodnik"
           },
-          "pitches": [
-            "B",
-            "S",
-            "S",
-            "B",
-            "F"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 3,
-            "strikes": 2,
-            "outs": 0
+            "balls": 0,
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 8th"
+          "status": "Bottom 8th"
         }
       }
     },
-    "injury_report": {
-      "content": {
-        "il_entries": [
-          {
-            "name": "Adolis García",
-            "position": "RF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right latissimus dorsi tear",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-20T00:14:51.213Z",
-            "freshness_label": "As of Aug 19, 2026, 8:14 PM ET"
-          },
-          {
-            "name": "Johan Rojas",
-            "position": "CF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL repair",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-20T00:14:51.213Z",
-            "freshness_label": "As of Aug 19, 2026, 8:14 PM ET"
-          },
-          {
-            "name": "Lou Trivino III",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right thoracic muscle spasm",
-            "status_note": "",
-            "retroactive_to": "2026-07-07",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-20T00:14:51.213Z",
-            "freshness_label": "As of Aug 19, 2026, 8:14 PM ET"
-          },
-          {
-            "name": "Tanner Banks",
-            "position": "LHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Left forearm strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-20T00:14:51.213Z",
-            "freshness_label": "As of Aug 19, 2026, 8:14 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL tear",
-            "status_note": "",
-            "retroactive_to": "2026-07-13",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-20T00:14:51.213Z",
-            "freshness_label": "As of Aug 19, 2026, 8:14 PM ET"
-          },
-          {
-            "name": "Rafael Marchán",
-            "position": "C",
-            "il_type": "10-day",
-            "badge": "il",
-            "injury": "Left knee patellar tendinitis",
-            "status_note": "",
-            "retroactive_to": "2026-07-23",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-20T00:14:51.213Z",
-            "freshness_label": "As of Aug 19, 2026, 8:14 PM ET"
-          },
-          {
-            "name": "Caleb Kilian",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Left oblique strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-20T00:14:51.213Z",
-            "freshness_label": "As of Aug 19, 2026, 8:14 PM ET"
-          }
-        ],
-        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
-      }
-    }
+    "injury_report": null
   },
   "next_game": {
     "label": "Tomorrow",
