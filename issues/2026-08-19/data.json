@@ -5,14 +5,14 @@
     "edition": 141,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-20T00:27:35.098Z",
+    "generated_at": "2026-08-20T00:33:16.324Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 19, 2026, 8:27 PM ET",
+      "generated_at_et": "Aug 19, 2026, 8:33 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 4, MIA 1",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "Bryson Stott is up against Victor Vodnik. Series: PHI leads 2-0.",
+    "dek": "Top 9th · 0 outs",
+    "summary": "Heriberto Hernández is up against Jhoan Duran. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Bryson Stott at the plate",
-      "Victor Vodnik on the mound",
+      "Heriberto Hernández at the plate",
+      "Jhoan Duran on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 81,
           "condition": "Clear",
-          "wind": "3 mph · gusts 6",
-          "gusts_mph": 6
+          "wind": "4 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 8,
           "currentInningOrdinal": "8th",
-          "inningState": "Bottom",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 1,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 1,
@@ -490,7 +490,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -1385,10 +1385,24 @@
             "inning": 8,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Play",
+            "detail": "Bryson Stott grounds out, first baseman Griffin Conine to pitcher Victor Vodnik.",
+            "score_after": "PHI 4, MIA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823424:64",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh grounds out, shortstop Otto Lopez to first baseman Griffin Conine.",
             "score_after": "PHI 4, MIA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1397,21 +1411,30 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryson Stott",
-            "meta": "vs Victor Vodnik"
+            "name": "Heriberto Hernández",
+            "meta": "vs Jonathan Bowlan"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "B",
+            "S",
+            "F",
+            "B",
+            "F",
+            "F",
+            "X"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 1
+            "balls": 2,
+            "strikes": 2,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 8th"
+          "status": "End 8th"
         }
       }
     },
