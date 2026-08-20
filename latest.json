@@ -1,64 +1,64 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-19",
+  "edition_date": "2026-08-20",
   "volume": 1,
-  "edition": 141,
-  "generated_at": "2026-08-20T03:59:43.203Z",
-  "mode": "final",
-  "mode_label": "Final",
-  "off_day": false,
+  "edition": 142,
+  "generated_at": "2026-08-20T04:15:14.956Z",
+  "mode": "off_day",
+  "mode_label": "Off Day",
+  "off_day": true,
   "record": {
-    "wins": 70,
-    "losses": 58,
-    "streak": "W6",
-    "division_rank": 2,
+    "wins": 0,
+    "losses": 0,
+    "streak": "W1",
+    "division_rank": 0,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, MIA 1.",
-    "dek": "PHI 4, MIA 1 · Aaron Nola · 7.0 IP, 5 H, 1 ER, 8 K",
-    "summary": "PHI 4, MIA 1. Final at Citizens Bank Park, Philadelphia. PHI wins 3-0.",
-    "next_label": "Tomorrow",
-    "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
+    "headline": "No Phillies game today",
+    "dek": "Next up: Jesús Luzardo vs TBD · PHI vs STL",
+    "summary": "Use the archive to catch up or check the next scheduled game window.",
+    "next_label": "Next Game",
+    "next_value": "Jesús Luzardo vs TBD · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
   "game": {
-    "matchup": "Marlins @ Phillies · Game 3 of 3",
-    "first_pitch": "6:05 PM",
-    "venue": "Citizens Bank Park, Philadelphia",
+    "matchup": "Schedule refresh required",
+    "first_pitch": "TBD",
+    "venue": "TBD",
     "starters": {
       "home": {
-        "name": "Aaron Nola",
+        "name": "TBD",
         "hand": "R"
       },
       "away": {
-        "name": "Sandy Alcantara",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Aaron Nola",
+        "name": "TBD",
         "hand": "R"
       },
       "opp": {
-        "name": "Sandy Alcantara",
+        "name": "TBD",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI wins 3-0"
+      "label": "Series status pending"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "TV TBD",
       "stream": "MLB.TV",
-      "radio": "94 WIP"
+      "radio": "Radio TBD"
     },
     "weather": {
-      "temp_f": 76,
-      "condition": "Clear",
-      "wind": "2 mph · gusts 6",
-      "gusts_mph": 6
+      "temp_f": "",
+      "condition": "Weather unavailable",
+      "wind": "Weather unavailable",
+      "gusts_mph": ""
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-20T03:59:43.790Z",
+    "updated_at": "2026-08-20T04:15:15.633Z",
     "current_game_pk": 823420,
     "next_game_pk": 823422,
     "next_game": {
@@ -90,35 +90,19 @@
   },
   "ticker": [
     {
-      "text": "PHI 70-58",
+      "text": "PHI 0-0",
       "highlight": true
     },
     {
-      "text": "Marlins @ Phillies · Game 3 of 3 · 6:05 PM",
+      "text": "Jesús Luzardo vs TBD · PHI vs STL · Fri, Aug 21 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Sandy Alcantara",
-      "highlight": true
-    },
-    {
-      "text": "NBCSP · 94 WIP",
+      "text": "NBCSP",
       "highlight": false
     },
     {
-      "text": "76° · Clear · gusts 6 mph",
-      "highlight": false
-    },
-    {
-      "text": "signed free agent LHP Nestor Cortes.",
-      "highlight": false
-    },
-    {
-      "text": "designated RHP Brian Keller for assignment.",
-      "highlight": false
-    },
-    {
-      "text": "optioned LHP Nestor Cortes to Clearwater Threshers.",
+      "text": "Off day",
       "highlight": false
     }
   ]
