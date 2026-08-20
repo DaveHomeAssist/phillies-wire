@@ -4,21 +4,21 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-20T00:33:16.324Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-20T00:50:37.895Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 69,
+    "wins": 70,
     "losses": 58,
-    "streak": "W5",
+    "streak": "W6",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, MIA 1",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Heriberto Hernández is up against Jhoan Duran. Series: PHI leads 2-0.",
+    "headline": "PHI 4, MIA 1.",
+    "dek": "PHI 4, MIA 1 · Aaron Nola · 7.0 IP, 5 H, 1 ER, 8 K",
+    "summary": "PHI 4, MIA 1. Final at Citizens Bank Park, Philadelphia. PHI wins 3-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 2-0"
+      "label": "PHI wins 3-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -62,61 +62,35 @@
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Heriberto Hernández",
-        "meta": "vs Jonathan Bowlan"
-      },
-      "pitches": [
-        "S",
-        "B",
-        "S",
-        "F",
-        "B",
-        "F",
-        "F",
-        "X"
-      ],
-      "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "End 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-20T00:33:16.930Z",
-    "current_game_pk": 823424,
-    "next_game_pk": 823420,
+    "updated_at": "2026-08-20T00:50:38.812Z",
+    "current_game_pk": 823420,
+    "next_game_pk": 823422,
     "next_game": {
-      "game_pk": 823420,
-      "official_date": "2026-08-21",
-      "date_label": "Fri, Aug 21, 2026",
-      "time_label": "6:40 PM",
+      "game_pk": 823422,
+      "official_date": "2026-08-22",
+      "date_label": "Sat, Aug 22, 2026",
+      "time_label": "6:05 PM",
       "title": "St. Louis Cardinals at Phillies",
       "matchup": "STL at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823424,
-      "official_date": "2026-08-19",
-      "title": "Miami Marlins at Phillies",
-      "matchup": "MIA at PHI"
+      "game_pk": 823420,
+      "official_date": "2026-08-21",
+      "title": "St. Louis Cardinals at Phillies",
+      "matchup": "STL at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 69-58",
+      "text": "PHI 70-58",
       "highlight": true
     },
     {
@@ -133,6 +107,18 @@
     },
     {
       "text": "81° · Clear · gusts 7 mph",
+      "highlight": false
+    },
+    {
+      "text": "signed free agent LHP Nestor Cortes.",
+      "highlight": false
+    },
+    {
+      "text": "designated RHP Brian Keller for assignment.",
+      "highlight": false
+    },
+    {
+      "text": "optioned LHP Nestor Cortes to Clearwater Threshers.",
       "highlight": false
     }
   ]
