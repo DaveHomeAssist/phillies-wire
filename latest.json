@@ -4,7 +4,7 @@
   "edition_date": "2026-08-19",
   "volume": 1,
   "edition": 141,
-  "generated_at": "2026-08-20T00:11:37.224Z",
+  "generated_at": "2026-08-20T00:14:51.213Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -18,7 +18,7 @@
   "hero": {
     "headline": "PHI 4, MIA 1",
     "dek": "Top 8th · 0 outs",
-    "summary": "Javier Sanoja is up against Jonathan Bowlan. Series: PHI leads 2-0.",
+    "summary": "Jakob Marsee is up against Jonathan Bowlan. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo · PHI vs STL · Fri, Aug 21 · 6:40 PM"
   },
@@ -64,15 +64,15 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Javier Sanoja",
+        "name": "Jakob Marsee",
         "meta": "vs Jonathan Bowlan"
       },
       "pitches": [
         "B",
-        "B",
         "S",
-        "F",
-        "B"
+        "S",
+        "B",
+        "F"
       ],
       "count": {
         "balls": 3,
@@ -80,7 +80,7 @@
         "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
@@ -92,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-20T00:11:38.045Z",
+    "updated_at": "2026-08-20T00:14:52.190Z",
     "current_game_pk": 823424,
     "next_game_pk": 823420,
     "next_game": {
