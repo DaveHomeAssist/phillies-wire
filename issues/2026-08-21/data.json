@@ -5,14 +5,14 @@
     "edition": 143,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-21T22:52:56.123Z",
+    "generated_at": "2026-08-21T23:06:07.502Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 21, 2026, 6:52 PM ET",
+      "generated_at_et": "Aug 21, 2026, 7:06 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, STL 2",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Bryce Harper is up against Hunter Dobbins. Series: Regular Season.",
+    "dek": "Top 2nd · 2 outs",
+    "summary": "JJ Wetherholt is up against Jesús Luzardo. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Overcast"
+        "value": "79° · Overcast"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
-      "Hunter Dobbins on the mound",
+      "JJ Wetherholt at the plate",
+      "Jesús Luzardo on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
+          "temp_f": 79,
           "condition": "Overcast",
-          "wind": "2 mph · gusts 3",
+          "wind": "3 mph · gusts 3",
           "gusts_mph": 3
         },
         "giveaway": "",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.33",
+            "era": "3.32",
             "record": "11-5",
             "whip": "1.16"
           },
@@ -367,26 +367,26 @@
             "team": "STL",
             "name": "Hunter Dobbins",
             "hand": "R",
-            "era": "3.42",
+            "era": "3.35",
             "record": "3-3",
-            "whip": "1.30"
+            "whip": "1.31"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "Bottom",
-          "isTopInning": false,
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "Top",
+          "isTopInning": true,
           "outs": 2,
           "teams": {
             "away": {
               "runs": 2,
-              "hits": 2,
+              "hits": 3,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 1
             }
           },
@@ -399,9 +399,22 @@
                 "errors": 0
               },
               "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 1
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": null,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
                 "runs": null,
                 "hits": 0,
-                "errors": 1
+                "errors": 0
               }
             }
           ]
@@ -510,10 +523,108 @@
             "inning": 1,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Play",
+            "detail": "Bryce Harper walks.",
+            "score_after": "PHI 0, STL 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823420:8",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez singles on a ground ball to center fielder Everson Pereira. Bryce Harper to 3rd.",
+            "score_after": "PHI 0, STL 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823420:9",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out to left fielder Joshua Báez.",
+            "score_after": "PHI 0, STL 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823420:10",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "extra_base_hit",
+            "actor": "José Fermín",
+            "actor_id": 665877,
+            "detail": "José Fermín doubles (14) on a sharp line drive to left fielder Brandon Marsh.",
+            "score_after": "PHI 0, STL 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823420:11",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Everson Pereira",
+            "actor_id": 677592,
+            "detail": "Everson Pereira out on a sacrifice bunt, third baseman Bryson Stott to second baseman Luis Arraez. José Fermín to 3rd.",
+            "score_after": "PHI 0, STL 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823420:12",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "strikeout",
+            "actor": "Bryan Torres",
+            "actor_id": 663494,
+            "detail": "Bryan Torres strikes out on a foul tip.",
+            "score_after": "PHI 0, STL 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823420:13",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "walk_hbp",
+            "actor": "Pedro Pagés",
+            "actor_id": 686780,
+            "detail": "Pedro Pagés walks.",
+            "score_after": "PHI 0, STL 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823420:14",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "other",
+            "actor": "JJ Wetherholt",
+            "actor_id": 802139,
+            "detail": "Mound Visit.",
             "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -522,25 +633,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryce Harper",
-            "meta": "vs Hunter Dobbins"
+            "name": "JJ Wetherholt",
+            "meta": "vs Jesús Luzardo"
           },
-          "pitches": [
-            "S",
-            "B",
-            "B"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 2,
-            "strikes": 1,
+            "balls": 0,
+            "strikes": 0,
             "outs": 2
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
-            "third": false
+            "third": true
           },
-          "status": "Bottom 1st"
+          "status": "Top 2nd"
         }
       }
     },
@@ -557,8 +664,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-21T22:52:56.123Z",
-            "freshness_label": "As of Aug 21, 2026, 6:52 PM ET"
+            "last_confirmed": "2026-08-21T23:06:07.502Z",
+            "freshness_label": "As of Aug 21, 2026, 7:06 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -570,8 +677,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-21T22:52:56.123Z",
-            "freshness_label": "As of Aug 21, 2026, 6:52 PM ET"
+            "last_confirmed": "2026-08-21T23:06:07.502Z",
+            "freshness_label": "As of Aug 21, 2026, 7:06 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -583,8 +690,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-21T22:52:56.123Z",
-            "freshness_label": "As of Aug 21, 2026, 6:52 PM ET"
+            "last_confirmed": "2026-08-21T23:06:07.502Z",
+            "freshness_label": "As of Aug 21, 2026, 7:06 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -596,8 +703,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-21T22:52:56.123Z",
-            "freshness_label": "As of Aug 21, 2026, 6:52 PM ET"
+            "last_confirmed": "2026-08-21T23:06:07.502Z",
+            "freshness_label": "As of Aug 21, 2026, 7:06 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -609,8 +716,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-21T22:52:56.123Z",
-            "freshness_label": "As of Aug 21, 2026, 6:52 PM ET"
+            "last_confirmed": "2026-08-21T23:06:07.502Z",
+            "freshness_label": "As of Aug 21, 2026, 7:06 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -622,8 +729,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-21T22:52:56.123Z",
-            "freshness_label": "As of Aug 21, 2026, 6:52 PM ET"
+            "last_confirmed": "2026-08-21T23:06:07.502Z",
+            "freshness_label": "As of Aug 21, 2026, 7:06 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -635,8 +742,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-21T22:52:56.123Z",
-            "freshness_label": "As of Aug 21, 2026, 6:52 PM ET"
+            "last_confirmed": "2026-08-21T23:06:07.502Z",
+            "freshness_label": "As of Aug 21, 2026, 7:06 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -648,8 +755,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-21T22:52:56.123Z",
-            "freshness_label": "As of Aug 21, 2026, 6:52 PM ET"
+            "last_confirmed": "2026-08-21T23:06:07.502Z",
+            "freshness_label": "As of Aug 21, 2026, 7:06 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

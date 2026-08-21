@@ -4,7 +4,7 @@
   "edition_date": "2026-08-21",
   "volume": 1,
   "edition": 143,
-  "generated_at": "2026-08-21T22:52:56.123Z",
+  "generated_at": "2026-08-21T23:06:07.502Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 2",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Bryce Harper is up against Hunter Dobbins. Series: Regular Season.",
+    "dek": "Top 2nd · 2 outs",
+    "summary": "JJ Wetherholt is up against Jesús Luzardo. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs STL · Sat, Aug 22 · 6:05 PM"
   },
@@ -55,34 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Overcast",
-      "wind": "2 mph · gusts 3",
+      "wind": "3 mph · gusts 3",
       "gusts_mph": 3
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Hunter Dobbins"
+        "name": "JJ Wetherholt",
+        "meta": "vs Jesús Luzardo"
       },
-      "pitches": [
-        "S",
-        "B",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 1,
+        "balls": 0,
+        "strikes": 0,
         "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Bottom 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-21T22:52:56.529Z",
+    "updated_at": "2026-08-21T23:06:08.535Z",
     "current_game_pk": 823420,
     "next_game_pk": 823422,
     "next_game": {
@@ -127,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Overcast · gusts 3 mph",
+      "text": "79° · Overcast · gusts 3 mph",
       "highlight": false
     },
     {
