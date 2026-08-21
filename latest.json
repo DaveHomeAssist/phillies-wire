@@ -4,7 +4,7 @@
   "edition_date": "2026-08-21",
   "volume": 1,
   "edition": 143,
-  "generated_at": "2026-08-21T21:52:23.714Z",
+  "generated_at": "2026-08-21T22:04:55.836Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -55,9 +55,9 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
+      "temp_f": 80,
       "condition": "Partly cloudy",
-      "wind": "3 mph · gusts 4",
+      "wind": "4 mph · gusts 4",
       "gusts_mph": 4
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-21T21:52:24.541Z",
+    "updated_at": "2026-08-21T22:04:56.451Z",
     "current_game_pk": 823420,
     "next_game_pk": 823422,
     "next_game": {
@@ -106,7 +106,11 @@
       "highlight": false
     },
     {
-      "text": "81° · Partly cloudy · gusts 4 mph",
+      "text": "80° · Partly cloudy · gusts 4 mph",
+      "highlight": false
+    },
+    {
+      "text": "sent RHP Brian Keller outright to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
