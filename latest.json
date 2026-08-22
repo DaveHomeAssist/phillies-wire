@@ -4,7 +4,7 @@
   "edition_date": "2026-08-22",
   "volume": 1,
   "edition": 144,
-  "generated_at": "2026-08-22T23:05:14.636Z",
+  "generated_at": "2026-08-22T23:22:53.147Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 7, STL 0",
-    "dek": "End 3rd · 3 outs",
-    "summary": "Alec Burleson is up against Andrew Painter. Series: PHI leads 1-0.",
+    "dek": "Top 5th · 2 outs",
+    "summary": "Jimmy Crooks is up against Andrew Painter. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Kyle Leahy · PHI vs STL · Sun, Aug 23 · 1:35 PM"
   },
@@ -55,33 +55,30 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 74,
+      "temp_f": 73,
       "condition": "Partly cloudy",
-      "wind": "5 mph · gusts 9",
+      "wind": "4 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Burleson",
+        "name": "Jimmy Crooks",
         "meta": "vs Andrew Painter"
       },
-      "pitches": [
-        "B",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
+        "balls": 0,
         "strikes": 0,
-        "outs": 3
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 3rd"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -89,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-22T23:05:15.160Z",
+    "updated_at": "2026-08-22T23:22:53.894Z",
     "current_game_pk": 823422,
     "next_game_pk": 823421,
     "next_game": {
@@ -126,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Partly cloudy · gusts 9 mph",
+      "text": "73° · Partly cloudy · gusts 9 mph",
       "highlight": false
     }
   ]
