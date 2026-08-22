@@ -4,7 +4,7 @@
   "edition_date": "2026-08-21",
   "volume": 1,
   "edition": 143,
-  "generated_at": "2026-08-21T23:51:58.393Z",
+  "generated_at": "2026-08-22T00:11:51.932Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, STL 2",
-    "dek": "End 4th · 3 outs",
-    "summary": "Bryan Torres is up against Jesús Luzardo. Series: Regular Season.",
+    "dek": "Top 6th · 0 outs",
+    "summary": "Iván Herrera is up against Jesús Luzardo. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs STL · Sat, Aug 22 · 6:05 PM"
   },
@@ -57,20 +57,24 @@
     "weather": {
       "temp_f": 76,
       "condition": "Clear",
-      "wind": "3 mph · gusts 4",
-      "gusts_mph": 4
+      "wind": "3 mph · gusts 5",
+      "gusts_mph": 5
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryan Torres",
+        "name": "Iván Herrera",
         "meta": "vs Jesús Luzardo"
       },
-      "pitches": [],
+      "pitches": [
+        "F",
+        "B",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
@@ -78,7 +82,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 5th"
+      "status": "Top 6th"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-21T23:51:58.874Z",
+    "updated_at": "2026-08-22T00:11:52.512Z",
     "current_game_pk": 823420,
     "next_game_pk": 823422,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Clear · gusts 4 mph",
+      "text": "76° · Clear · gusts 5 mph",
       "highlight": false
     },
     {
