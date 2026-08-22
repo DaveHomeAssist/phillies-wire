@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-21",
+  "edition_date": "2026-08-22",
   "volume": 1,
-  "edition": 143,
-  "generated_at": "2026-08-22T03:48:42.694Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 144,
+  "generated_at": "2026-08-22T04:12:11.208Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 71,
@@ -16,43 +16,43 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 7, STL 6.",
-    "dek": "PHI 7, STL 6 · Jesús Luzardo · 5.2 IP, 6 H, 4 ER, 9 K",
-    "summary": "PHI 7, STL 6. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
+    "headline": "Cardinals @ Phillies · Game 2 of 3",
+    "dek": "Andrew Painter vs TBD",
+    "summary": "Andrew Painter vs TBD · Cardinals @ Phillies · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter · PHI vs STL · Sat, Aug 22 · 6:05 PM"
+    "next_value": "Cristopher Sánchez · PHI vs STL · Sun, Aug 23 · 1:35 PM"
   },
   "game": {
-    "matchup": "Cardinals @ Phillies · Game 1 of 3",
-    "first_pitch": "6:40 PM",
+    "matchup": "Cardinals @ Phillies · Game 2 of 3",
+    "first_pitch": "6:05 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "away": {
-        "name": "Hunter Dobbins",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "opp": {
-        "name": "Hunter Dobbins",
+        "name": "TBD",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
       "stream": "MLB.TV",
-      "radio": "94 WIP"
+      "radio": "1210 WPHT"
     },
     "weather": {
       "temp_f": 70,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-22T03:48:43.332Z",
+    "updated_at": "2026-08-22T04:12:11.685Z",
     "current_game_pk": 823422,
     "next_game_pk": 823421,
     "next_game": {
@@ -94,23 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Cardinals @ Phillies · Game 1 of 3 · 6:40 PM",
+      "text": "Cardinals @ Phillies · Game 2 of 3 · 6:05 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Hunter Dobbins",
+      "text": "Andrew Painter vs TBD",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "NBCSP · 1210 WPHT",
       "highlight": false
     },
     {
       "text": "70° · Overcast · gusts 12 mph",
-      "highlight": false
-    },
-    {
-      "text": "sent RHP Brian Keller outright to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
