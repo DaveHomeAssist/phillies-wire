@@ -5,14 +5,14 @@
     "edition": 144,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-22T23:50:28.332Z",
+    "generated_at": "2026-08-22T23:51:16.347Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 22, 2026, 7:50 PM ET",
+      "generated_at_et": "Aug 22, 2026, 7:51 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,8 +28,8 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 7, STL 1",
-    "dek": "Bottom 6th · 0 outs",
+    "headline": "PHI 8, STL 1",
+    "dek": "Bottom 6th · 1 out",
     "summary": "Kyle Schwarber is up against Ryan Fernandez. Series: PHI leads 1-0.",
     "cards": [
       {
@@ -377,7 +377,7 @@
           "currentInningOrdinal": "6th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 1,
@@ -385,7 +385,7 @@
               "errors": 0
             },
             "home": {
-              "runs": 7,
+              "runs": 8,
               "hits": 12,
               "errors": 0
             }
@@ -464,7 +464,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 1,
                 "hits": 2,
                 "errors": 0
               }
@@ -1163,14 +1163,14 @@
             "inning": 6,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Play",
-            "score_after": "PHI 7, STL 1",
-            "runs": 0,
-            "is_scoring": false,
-            "is_key": false
+            "detail": "Kyle Schwarber out on a sacrifice fly to right fielder Jordan Walker. J.T. Realmuto scores.",
+            "score_after": "PHI 8, STL 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
           }
         ],
         "situation": {
@@ -1180,17 +1180,18 @@
           },
           "pitches": [
             "S",
-            "S"
+            "S",
+            "X"
           ],
           "count": {
             "balls": 0,
             "strikes": 2,
-            "outs": 0
+            "outs": 1
           },
           "bases": {
             "first": true,
             "second": false,
-            "third": true
+            "third": false
           },
           "status": "Bottom 6th"
         }
@@ -1209,8 +1210,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T23:50:28.332Z",
-            "freshness_label": "As of Aug 22, 2026, 7:50 PM ET"
+            "last_confirmed": "2026-08-22T23:51:16.347Z",
+            "freshness_label": "As of Aug 22, 2026, 7:51 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1222,8 +1223,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T23:50:28.332Z",
-            "freshness_label": "As of Aug 22, 2026, 7:50 PM ET"
+            "last_confirmed": "2026-08-22T23:51:16.347Z",
+            "freshness_label": "As of Aug 22, 2026, 7:51 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1235,8 +1236,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T23:50:28.332Z",
-            "freshness_label": "As of Aug 22, 2026, 7:50 PM ET"
+            "last_confirmed": "2026-08-22T23:51:16.347Z",
+            "freshness_label": "As of Aug 22, 2026, 7:51 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1248,8 +1249,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T23:50:28.332Z",
-            "freshness_label": "As of Aug 22, 2026, 7:50 PM ET"
+            "last_confirmed": "2026-08-22T23:51:16.347Z",
+            "freshness_label": "As of Aug 22, 2026, 7:51 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1261,8 +1262,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T23:50:28.332Z",
-            "freshness_label": "As of Aug 22, 2026, 7:50 PM ET"
+            "last_confirmed": "2026-08-22T23:51:16.347Z",
+            "freshness_label": "As of Aug 22, 2026, 7:51 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1274,8 +1275,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T23:50:28.332Z",
-            "freshness_label": "As of Aug 22, 2026, 7:50 PM ET"
+            "last_confirmed": "2026-08-22T23:51:16.347Z",
+            "freshness_label": "As of Aug 22, 2026, 7:51 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1287,8 +1288,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T23:50:28.332Z",
-            "freshness_label": "As of Aug 22, 2026, 7:50 PM ET"
+            "last_confirmed": "2026-08-22T23:51:16.347Z",
+            "freshness_label": "As of Aug 22, 2026, 7:51 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1300,8 +1301,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T23:50:28.332Z",
-            "freshness_label": "As of Aug 22, 2026, 7:50 PM ET"
+            "last_confirmed": "2026-08-22T23:51:16.347Z",
+            "freshness_label": "As of Aug 22, 2026, 7:51 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
