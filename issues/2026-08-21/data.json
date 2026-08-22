@@ -5,313 +5,56 @@
     "edition": 143,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-22T01:48:12.050Z",
+    "generated_at": "2026-08-22T02:09:52.433Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Aug 21, 2026, 9:48 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Aug 21, 2026, 10:09 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 70,
+    "wins": 71,
     "losses": 58,
-    "streak": "W6",
+    "streak": "W7",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 5, STL 6",
-    "dek": "Bottom 10th · 0 outs",
-    "summary": "Luis Arraez is up against Luis Gastelum. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 7, STL 6.",
+    "dek": "PHI 7, STL 6 · Jesús Luzardo · 5.2 IP, 6 H, 4 ER, 9 K",
+    "summary": "PHI 7, STL 6. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "72° · Overcast"
+        "label": "Series",
+        "value": "PHI leads 1-0"
       }
     ],
     "bullets": [
-      "Luis Arraez at the plate",
-      "Luis Gastelum on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Jesús Luzardo: 5.2 IP, 6 H, 4 ER, 9 K",
+      "Hunter Dobbins: 4.0 IP, 5 H, 3 ER, 3 K",
+      "Jordan Walker: 3-for-5, 1 HR, 2 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs STL · Sat, Aug 22 · 6:05 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's STL at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:40 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "away": {
-            "team": "STL",
-            "name": "Hunter Dobbins",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "STL",
-            "name": "Hunter Dobbins",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "JJ Wetherholt",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Iván Herrera",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Jordan Walker",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Joshua Báez",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Blaze Jordan",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "José Fermín",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Everson Pereira",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Bryan Torres",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Pedro Pagés",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "JJ Wetherholt",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Iván Herrera",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Jordan Walker",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Joshua Báez",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Blaze Jordan",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "José Fermín",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Everson Pereira",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Bryan Torres",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Pedro Pagés",
-              "position": "C",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Cardinals @ Phillies · Game 1 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "PHI leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 72,
           "condition": "Overcast",
-          "wind": "7 mph · gusts 18",
-          "gusts_mph": 18
+          "wind": "6 mph · gusts 17",
+          "gusts_mph": 17
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -385,8 +128,8 @@
               "errors": 0
             },
             "home": {
-              "runs": 5,
-              "hits": 10,
+              "runs": 7,
+              "hits": 11,
               "errors": 1
             }
           },
@@ -516,8 +259,8 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 1,
+                "runs": 2,
+                "hits": 2,
                 "errors": 0
               }
             }
@@ -532,8 +275,8 @@
             "event_type": "strikeout",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "JJ Wetherholt called ou…",
-            "score_after": "",
+            "detail": "JJ Wetherholt called out on strikes.",
+            "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -546,8 +289,8 @@
             "event_type": "out",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Iván Herrera lines out…",
-            "score_after": "",
+            "detail": "Iván Herrera lines out to first baseman Alec Bo…",
+            "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -560,8 +303,8 @@
             "event_type": "single",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker singles o…",
-            "score_after": "",
+            "detail": "Jordan Walker singles on a ground ball to third…",
+            "score_after": "PHI 0, STL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -574,7 +317,7 @@
             "event_type": "home_run",
             "actor": "Joshua Báez",
             "actor_id": 695491,
-            "detail": "Joshua Báez homers (4)…",
+            "detail": "Joshua Báez homers (4) on a fly ball to right c…",
             "score_after": "PHI 0, STL 2",
             "runs": 2,
             "is_scoring": true,
@@ -588,8 +331,8 @@
             "event_type": "out",
             "actor": "Blaze Jordan",
             "actor_id": 691458,
-            "detail": "Blaze Jordan grounds ou…",
-            "score_after": "",
+            "detail": "Blaze Jordan grounds out, shortstop Trea Turner…",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -602,8 +345,8 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber lines ou…",
-            "score_after": "",
+            "detail": "Kyle Schwarber lines out sharply to center fiel…",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -616,8 +359,8 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner strikes out…",
-            "score_after": "",
+            "detail": "Trea Turner strikes out swinging.",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -631,7 +374,7 @@
             "actor": "Bryce Harper",
             "actor_id": 547180,
             "detail": "Bryce Harper walks.",
-            "score_after": "",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -644,8 +387,8 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez singles on…",
-            "score_after": "",
+            "detail": "Luis Arraez singles on a ground ball to center…",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -658,8 +401,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm flies out to…",
-            "score_after": "",
+            "detail": "Alec Bohm flies out to left fielder Joshua Báez.",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -672,7 +415,7 @@
             "event_type": "extra_base_hit",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "José Fermín doubles (14…",
+            "detail": "José Fermín doubles (14) on a sharp line drive…",
             "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -686,8 +429,8 @@
             "event_type": "out",
             "actor": "Everson Pereira",
             "actor_id": 677592,
-            "detail": "Everson Pereira out on…",
-            "score_after": "",
+            "detail": "Everson Pereira out on a sacrifice bunt, third…",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -700,8 +443,8 @@
             "event_type": "strikeout",
             "actor": "Bryan Torres",
             "actor_id": 663494,
-            "detail": "Bryan Torres strikes ou…",
-            "score_after": "",
+            "detail": "Bryan Torres strikes out on a foul tip.",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -715,7 +458,7 @@
             "actor": "Pedro Pagés",
             "actor_id": 686780,
             "detail": "Pedro Pagés walks.",
-            "score_after": "",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -728,8 +471,8 @@
             "event_type": "out",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "JJ Wetherholt flies out…",
-            "score_after": "",
+            "detail": "JJ Wetherholt flies out sharply to center field…",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -743,7 +486,7 @@
             "actor": "Bryson Stott",
             "actor_id": 681082,
             "detail": "Bryson Stott walks.",
-            "score_after": "",
+            "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -756,7 +499,7 @@
             "event_type": "extra_base_hit",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh doubles (…",
+            "detail": "Brandon Marsh doubles (18) on a line drive to r…",
             "score_after": "PHI 1, STL 2",
             "runs": 1,
             "is_scoring": true,
@@ -770,7 +513,7 @@
             "event_type": "extra_base_hit",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto doubles (…",
+            "detail": "J.T. Realmuto doubles (15) on a sharp line driv…",
             "score_after": "PHI 2, STL 2",
             "runs": 1,
             "is_scoring": true,
@@ -784,8 +527,8 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford out on…",
-            "score_after": "",
+            "detail": "Justin Crawford out on a sacrifice bunt, third…",
+            "score_after": "PHI 2, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -798,8 +541,8 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber grounds…",
-            "score_after": "",
+            "detail": "Kyle Schwarber grounds out, second baseman Brya…",
+            "score_after": "PHI 2, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -812,8 +555,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner flies out t…",
-            "score_after": "",
+            "detail": "Trea Turner flies out to right fielder Jordan W…",
+            "score_after": "PHI 2, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -826,8 +569,8 @@
             "event_type": "strikeout",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Iván Herrera strikes ou…",
-            "score_after": "",
+            "detail": "Iván Herrera strikes out swinging.",
+            "score_after": "PHI 2, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -840,8 +583,8 @@
             "event_type": "strikeout",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker called ou…",
-            "score_after": "",
+            "detail": "Jordan Walker called out on strikes.",
+            "score_after": "PHI 2, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -854,8 +597,8 @@
             "event_type": "strikeout",
             "actor": "Joshua Báez",
             "actor_id": 695491,
-            "detail": "Joshua Báez strikes out…",
-            "score_after": "",
+            "detail": "Joshua Báez strikes out on a foul tip.",
+            "score_after": "PHI 2, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -868,8 +611,8 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper strikes ou…",
-            "score_after": "",
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 2, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -882,7 +625,7 @@
             "event_type": "extra_base_hit",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez doubles (28…",
+            "detail": "Luis Arraez doubles (28) on a sharp fly ball to…",
             "score_after": "PHI 2, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -896,7 +639,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a…",
+            "detail": "Alec Bohm singles on a sharp line drive to righ…",
             "score_after": "PHI 3, STL 2",
             "runs": 1,
             "is_scoring": true,
@@ -910,8 +653,8 @@
             "event_type": "other",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Cardinals challenged (p…",
-            "score_after": "",
+            "detail": "Cardinals challenged (play at 1st), call on the…",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -924,8 +667,8 @@
             "event_type": "strikeout",
             "actor": "Blaze Jordan",
             "actor_id": 691458,
-            "detail": "Blaze Jordan strikes ou…",
-            "score_after": "",
+            "detail": "Blaze Jordan strikes out swinging.",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -938,8 +681,8 @@
             "event_type": "out",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "José Fermín grounds out…",
-            "score_after": "",
+            "detail": "José Fermín grounds out, third baseman Bryson S…",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -952,8 +695,8 @@
             "event_type": "strikeout",
             "actor": "Everson Pereira",
             "actor_id": 677592,
-            "detail": "Everson Pereira strikes…",
-            "score_after": "",
+            "detail": "Everson Pereira strikes out swinging.",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -966,8 +709,8 @@
             "event_type": "strikeout",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh strikes o…",
-            "score_after": "",
+            "detail": "Brandon Marsh strikes out swinging.",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -981,7 +724,7 @@
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
             "detail": "J.T. Realmuto walks.",
-            "score_after": "",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -994,8 +737,8 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford flies o…",
-            "score_after": "",
+            "detail": "Justin Crawford flies out to left fielder Joshu…",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1008,8 +751,8 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber pops out…",
-            "score_after": "",
+            "detail": "Kyle Schwarber pops out to catcher Pedro Pagés…",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1022,8 +765,8 @@
             "event_type": "out",
             "actor": "Bryan Torres",
             "actor_id": 663494,
-            "detail": "Bryan Torres flies out…",
-            "score_after": "",
+            "detail": "Bryan Torres flies out to right fielder Bryce H…",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1036,8 +779,8 @@
             "event_type": "out",
             "actor": "Pedro Pagés",
             "actor_id": 686780,
-            "detail": "Pedro Pagés flies out t…",
-            "score_after": "",
+            "detail": "Pedro Pagés flies out to right fielder Bryce Ha…",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1050,8 +793,8 @@
             "event_type": "strikeout",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "JJ Wetherholt strikes o…",
-            "score_after": "",
+            "detail": "JJ Wetherholt strikes out swinging.",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1065,7 +808,7 @@
             "actor": "Trea Turner",
             "actor_id": 607208,
             "detail": "Trea Turner walks.",
-            "score_after": "",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1078,8 +821,8 @@
             "event_type": "other",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds in…",
-            "score_after": "",
+            "detail": "Bryce Harper grounds into a double play, second…",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1092,8 +835,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out t…",
-            "score_after": "",
+            "detail": "Luis Arraez flies out to center fielder Everson…",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1106,8 +849,8 @@
             "event_type": "single",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Iván Herrera singles on…",
-            "score_after": "",
+            "detail": "Iván Herrera singles on a ground ball to third…",
+            "score_after": "PHI 3, STL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1120,7 +863,7 @@
             "event_type": "home_run",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker homers (2…",
+            "detail": "Jordan Walker homers (27) on a fly ball to righ…",
             "score_after": "PHI 3, STL 4",
             "runs": 2,
             "is_scoring": true,
@@ -1134,8 +877,8 @@
             "event_type": "strikeout",
             "actor": "Joshua Báez",
             "actor_id": 695491,
-            "detail": "Joshua Báez strikes out…",
-            "score_after": "",
+            "detail": "Joshua Báez strikes out swinging.",
+            "score_after": "PHI 3, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1148,8 +891,8 @@
             "event_type": "single",
             "actor": "Blaze Jordan",
             "actor_id": 691458,
-            "detail": "Blaze Jordan singles on…",
-            "score_after": "",
+            "detail": "Blaze Jordan singles on a fly ball to right fie…",
+            "score_after": "PHI 3, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1162,8 +905,8 @@
             "event_type": "out",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "José Fermín pops out to…",
-            "score_after": "",
+            "detail": "José Fermín pops out to shortstop Trea Turner.",
+            "score_after": "PHI 3, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1176,8 +919,8 @@
             "event_type": "single",
             "actor": "Everson Pereira",
             "actor_id": 677592,
-            "detail": "Everson Pereira singles…",
-            "score_after": "",
+            "detail": "Everson Pereira singles on a sharp line drive t…",
+            "score_after": "PHI 3, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1190,8 +933,8 @@
             "event_type": "out",
             "actor": "Bryan Torres",
             "actor_id": 663494,
-            "detail": "Bryan Torres grounds ou…",
-            "score_after": "",
+            "detail": "Bryan Torres grounds out, catcher J.T. Realmuto…",
+            "score_after": "PHI 3, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1204,8 +947,8 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a…",
-            "score_after": "",
+            "detail": "Alec Bohm singles on a sharp line drive to cent…",
+            "score_after": "PHI 3, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1218,8 +961,8 @@
             "event_type": "strikeout",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott challenged…",
-            "score_after": "",
+            "detail": "Bryson Stott challenged (pitch result), call on…",
+            "score_after": "PHI 3, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1232,8 +975,8 @@
             "event_type": "single",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh singles o…",
-            "score_after": "",
+            "detail": "Brandon Marsh singles on a ground ball to left…",
+            "score_after": "PHI 3, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1246,7 +989,7 @@
             "event_type": "extra_base_hit",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto doubles (…",
+            "detail": "J.T. Realmuto doubles (16) on a line drive to l…",
             "score_after": "PHI 4, STL 4",
             "runs": 1,
             "is_scoring": true,
@@ -1260,7 +1003,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford out on…",
+            "detail": "Justin Crawford out on a sacrifice fly to cente…",
             "score_after": "PHI 5, STL 4",
             "runs": 1,
             "is_scoring": true,
@@ -1274,8 +1017,8 @@
             "event_type": "walk_hbp",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Gordon Graceffo intenti…",
-            "score_after": "",
+            "detail": "Gordon Graceffo intentionally walks Kyle Schwar…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1288,8 +1031,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner flies out t…",
-            "score_after": "",
+            "detail": "Trea Turner flies out to center fielder Everson…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1302,8 +1045,8 @@
             "event_type": "single",
             "actor": "Pedro Pagés",
             "actor_id": 686780,
-            "detail": "Pedro Pagés singles on…",
-            "score_after": "",
+            "detail": "Pedro Pagés singles on a ground ball to left fi…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1316,8 +1059,8 @@
             "event_type": "strikeout",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "JJ Wetherholt called ou…",
-            "score_after": "",
+            "detail": "JJ Wetherholt called out on strikes.",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1330,8 +1073,8 @@
             "event_type": "strikeout",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Iván Herrera strikes ou…",
-            "score_after": "",
+            "detail": "Iván Herrera strikes out swinging.",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1344,8 +1087,8 @@
             "event_type": "out",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker pops out…",
-            "score_after": "",
+            "detail": "Jordan Walker pops out to first baseman Alec Bo…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1358,8 +1101,8 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds ou…",
-            "score_after": "",
+            "detail": "Bryce Harper grounds out, second baseman Bryan…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1372,8 +1115,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez grounds out…",
-            "score_after": "",
+            "detail": "Luis Arraez grounds out, shortstop JJ Wetherhol…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1386,8 +1129,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm pops out to s…",
-            "score_after": "",
+            "detail": "Alec Bohm pops out to second baseman Bryan Torr…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1400,8 +1143,8 @@
             "event_type": "single",
             "actor": "Alec Burleson",
             "actor_id": 676475,
-            "detail": "Alec Burleson singles o…",
-            "score_after": "",
+            "detail": "Alec Burleson singles on a ground ball to right…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1414,8 +1157,8 @@
             "event_type": "out",
             "actor": "Blaze Jordan",
             "actor_id": 691458,
-            "detail": "Blaze Jordan grounds ou…",
-            "score_after": "",
+            "detail": "Blaze Jordan grounds out, second baseman Luis A…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1428,8 +1171,8 @@
             "event_type": "out",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "José Fermín pops out to…",
-            "score_after": "",
+            "detail": "José Fermín pops out to third baseman Bryson St…",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1442,8 +1185,8 @@
             "event_type": "walk_hbp",
             "actor": "Everson Pereira",
             "actor_id": 677592,
-            "detail": "Everson Pereira hit by…",
-            "score_after": "",
+            "detail": "Everson Pereira hit by pitch.",
+            "score_after": "PHI 5, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1456,7 +1199,7 @@
             "event_type": "single",
             "actor": "Bryan Torres",
             "actor_id": 663494,
-            "detail": "Bryan Torres singles on…",
+            "detail": "Bryan Torres singles on a line drive to center…",
             "score_after": "PHI 5, STL 5",
             "runs": 1,
             "is_scoring": true,
@@ -1470,8 +1213,8 @@
             "event_type": "out",
             "actor": "Jimmy Crooks",
             "actor_id": 699625,
-            "detail": "Jimmy Crooks lines out…",
-            "score_after": "",
+            "detail": "Jimmy Crooks lines out to center fielder Justin…",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1484,8 +1227,8 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds ou…",
-            "score_after": "",
+            "detail": "Bryson Stott grounds out, second baseman Bryan…",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1498,8 +1241,8 @@
             "event_type": "single",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz single…",
-            "score_after": "",
+            "detail": "Bryan De La Cruz singles on a sharp line drive…",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1512,8 +1255,8 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds i…",
-            "score_after": "",
+            "detail": "J.T. Realmuto grounds into a force out, shortst…",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1526,8 +1269,8 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill grounds into…",
-            "score_after": "",
+            "detail": "Derek Hill grounds into a force out, shortstop…",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1540,8 +1283,8 @@
             "event_type": "strikeout",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "JJ Wetherholt strikes o…",
-            "score_after": "",
+            "detail": "JJ Wetherholt strikes out swinging.",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1554,8 +1297,8 @@
             "event_type": "strikeout",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Iván Herrera called out…",
-            "score_after": "",
+            "detail": "Iván Herrera called out on strikes.",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1568,8 +1311,8 @@
             "event_type": "single",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker singles o…",
-            "score_after": "",
+            "detail": "Jordan Walker singles on a ground ball to short…",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1582,8 +1325,8 @@
             "event_type": "out",
             "actor": "Alec Burleson",
             "actor_id": 676475,
-            "detail": "Alec Burleson grounds i…",
-            "score_after": "",
+            "detail": "Alec Burleson grounds into a force out, fielded…",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1596,8 +1339,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes…",
-            "score_after": "",
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1610,8 +1353,8 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner strikes out…",
-            "score_after": "",
+            "detail": "Trea Turner strikes out swinging.",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1624,8 +1367,8 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper grounds ou…",
-            "score_after": "",
+            "detail": "Bryce Harper grounds out, second baseman Bryan…",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1638,8 +1381,8 @@
             "event_type": "out",
             "actor": "Blaze Jordan",
             "actor_id": 691458,
-            "detail": "Blaze Jordan lines out…",
-            "score_after": "",
+            "detail": "Blaze Jordan lines out to second baseman Luis A…",
+            "score_after": "PHI 5, STL 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1652,7 +1395,7 @@
             "event_type": "single",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "José Fermín singles on…",
+            "detail": "José Fermín singles on a line drive to left fie…",
             "score_after": "PHI 5, STL 6",
             "runs": 1,
             "is_scoring": true,
@@ -1666,8 +1409,8 @@
             "event_type": "other",
             "actor": "Everson Pereira",
             "actor_id": 677592,
-            "detail": "Everson Pereira grounds…",
-            "score_after": "",
+            "detail": "Everson Pereira grounds into a double play, pit…",
+            "score_after": "PHI 5, STL 6",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1680,35 +1423,27 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez singles on…",
-            "score_after": "",
+            "detail": "Luis Arraez singles on a line drive to right fi…",
+            "score_after": "PHI 5, STL 6",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823420:83",
+            "inning": 10,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm triples (1) on a sharp fly ball to ce…",
+            "score_after": "PHI 7, STL 6",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Luis Arraez",
-            "meta": "vs Luis Gastelum"
-          },
-          "pitches": [
-            "S",
-            "S",
-            "X"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 2,
-            "outs": 0
-          },
-          "bases": {
-            "first": true,
-            "second": false,
-            "third": true
-          },
-          "status": "Bottom 10th"
-        }
+        ]
       }
     },
     "injury_report": null
