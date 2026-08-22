@@ -4,7 +4,7 @@
   "edition_date": "2026-08-21",
   "volume": 1,
   "edition": 143,
-  "generated_at": "2026-08-22T00:32:58.111Z",
+  "generated_at": "2026-08-22T00:51:51.878Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, STL 4",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Bryson Stott is up against Caleb Ferguson. Series: Regular Season.",
+    "headline": "PHI 5, STL 4",
+    "dek": "Top 7th · 1 out",
+    "summary": "Iván Herrera is up against Orion Kerkering. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs STL · Sat, Aug 22 · 6:05 PM"
   },
@@ -56,7 +56,7 @@
     },
     "weather": {
       "temp_f": 76,
-      "condition": "Partly cloudy",
+      "condition": "Overcast",
       "wind": "3 mph · gusts 3",
       "gusts_mph": 3
     },
@@ -64,25 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Caleb Ferguson"
+        "name": "Iván Herrera",
+        "meta": "vs Orion Kerkering"
       },
-      "pitches": [
-        "S",
-        "B",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
-        "first": true,
-        "second": false,
+        "first": false,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-22T00:32:58.838Z",
+    "updated_at": "2026-08-22T00:51:52.572Z",
     "current_game_pk": 823420,
     "next_game_pk": 823422,
     "next_game": {
@@ -127,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Partly cloudy · gusts 3 mph",
+      "text": "76° · Overcast · gusts 3 mph",
       "highlight": false
     },
     {
