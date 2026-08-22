@@ -5,7 +5,7 @@
     "edition": 144,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-22T22:23:00.996Z",
+    "generated_at": "2026-08-22T22:23:47.461Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, STL 0",
+    "headline": "PHI 3, STL 0",
     "dek": "Bottom 1st · 2 outs",
-    "summary": "Edmundo Sosa is up against Quinn Mathews. Series: PHI leads 1-0.",
+    "summary": "Bryan De La Cruz is up against Quinn Mathews. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Edmundo Sosa at the plate",
+      "Bryan De La Cruz at the plate",
       "Quinn Mathews on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -367,9 +367,9 @@
             "team": "STL",
             "name": "Quinn Mathews",
             "hand": "L",
-            "era": "3.72",
+            "era": "2.79",
             "record": "0-1",
-            "whip": "1.76"
+            "whip": "1.66"
           }
         },
         "linescore": {
@@ -385,8 +385,8 @@
               "errors": 0
             },
             "home": {
-              "runs": 1,
-              "hits": 2,
+              "runs": 3,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -399,8 +399,8 @@
                 "errors": 0
               },
               "home": {
-                "runs": 1,
-                "hits": 2,
+                "runs": 3,
+                "hits": 3,
                 "errors": 0
               }
             }
@@ -524,14 +524,14 @@
             "inning": 1,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "extra_base_hit",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Play",
-            "score_after": "PHI 1, STL 0",
-            "runs": 0,
-            "is_scoring": false,
-            "is_key": false
+            "detail": "Edmundo Sosa doubles (7) on a sharp line drive to center fielder Nathan Church. Trea Turner scores. Alec Bohm scores. Edmundo Sosa…",
+            "score_after": "PHI 3, STL 0",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
           }
         ],
         "situation": {
@@ -548,9 +548,9 @@
             "outs": 2
           },
           "bases": {
-            "first": true,
-            "second": true,
-            "third": false
+            "first": false,
+            "second": false,
+            "third": true
           },
           "status": "Bottom 1st"
         }
@@ -569,7 +569,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:00.996Z",
+            "last_confirmed": "2026-08-22T22:23:47.461Z",
             "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
           },
           {
@@ -582,7 +582,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:00.996Z",
+            "last_confirmed": "2026-08-22T22:23:47.461Z",
             "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
           },
           {
@@ -595,7 +595,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:00.996Z",
+            "last_confirmed": "2026-08-22T22:23:47.461Z",
             "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
           },
           {
@@ -608,7 +608,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:00.996Z",
+            "last_confirmed": "2026-08-22T22:23:47.461Z",
             "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
           },
           {
@@ -621,7 +621,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:00.996Z",
+            "last_confirmed": "2026-08-22T22:23:47.461Z",
             "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
           },
           {
@@ -634,7 +634,7 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:00.996Z",
+            "last_confirmed": "2026-08-22T22:23:47.461Z",
             "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
           },
           {
@@ -647,7 +647,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:00.996Z",
+            "last_confirmed": "2026-08-22T22:23:47.461Z",
             "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
           },
           {
@@ -660,7 +660,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:00.996Z",
+            "last_confirmed": "2026-08-22T22:23:47.461Z",
             "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
           }
         ],
