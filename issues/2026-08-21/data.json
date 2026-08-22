@@ -5,14 +5,14 @@
     "edition": 143,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-22T00:11:51.932Z",
+    "generated_at": "2026-08-22T00:14:27.025Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 21, 2026, 8:11 PM ET",
+      "generated_at_et": "Aug 21, 2026, 8:14 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -30,7 +30,7 @@
     "label": "Live",
     "headline": "PHI 3, STL 2",
     "dek": "Top 6th · 0 outs",
-    "summary": "Iván Herrera is up against Jesús Luzardo. Series: Regular Season.",
+    "summary": "Jordan Walker is up against Jesús Luzardo. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Iván Herrera at the plate",
+      "Jordan Walker at the plate",
       "Jesús Luzardo on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -381,7 +381,7 @@
           "teams": {
             "away": {
               "runs": 2,
-              "hits": 3,
+              "hits": 4,
               "errors": 0
             },
             "home": {
@@ -460,7 +460,7 @@
               "num": 6,
               "away": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -1051,9 +1051,23 @@
             "inning": 6,
             "half": "top",
             "team": "STL",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Iván Herrera",
             "actor_id": 671056,
+            "detail": "Iván Herrera singles on a ground ball to third baseman Bryson Stott.",
+            "score_after": "PHI 3, STL 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823420:42",
+            "inning": 6,
+            "half": "top",
+            "team": "STL",
+            "event_type": "other",
+            "actor": "Jordan Walker",
+            "actor_id": 691023,
             "detail": "Play",
             "score_after": "PHI 3, STL 2",
             "runs": 0,
@@ -1063,21 +1077,22 @@
         ],
         "situation": {
           "batter": {
-            "name": "Iván Herrera",
+            "name": "Jordan Walker",
             "meta": "vs Jesús Luzardo"
           },
           "pitches": [
+            "S",
+            "S",
             "F",
-            "B",
             "B"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 1,
+            "balls": 1,
+            "strikes": 2,
             "outs": 0
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
@@ -1098,8 +1113,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T00:11:51.932Z",
-            "freshness_label": "As of Aug 21, 2026, 8:11 PM ET"
+            "last_confirmed": "2026-08-22T00:14:27.025Z",
+            "freshness_label": "As of Aug 21, 2026, 8:14 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1111,8 +1126,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T00:11:51.932Z",
-            "freshness_label": "As of Aug 21, 2026, 8:11 PM ET"
+            "last_confirmed": "2026-08-22T00:14:27.025Z",
+            "freshness_label": "As of Aug 21, 2026, 8:14 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1124,8 +1139,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T00:11:51.932Z",
-            "freshness_label": "As of Aug 21, 2026, 8:11 PM ET"
+            "last_confirmed": "2026-08-22T00:14:27.025Z",
+            "freshness_label": "As of Aug 21, 2026, 8:14 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1137,8 +1152,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T00:11:51.932Z",
-            "freshness_label": "As of Aug 21, 2026, 8:11 PM ET"
+            "last_confirmed": "2026-08-22T00:14:27.025Z",
+            "freshness_label": "As of Aug 21, 2026, 8:14 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1150,8 +1165,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T00:11:51.932Z",
-            "freshness_label": "As of Aug 21, 2026, 8:11 PM ET"
+            "last_confirmed": "2026-08-22T00:14:27.025Z",
+            "freshness_label": "As of Aug 21, 2026, 8:14 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1163,8 +1178,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T00:11:51.932Z",
-            "freshness_label": "As of Aug 21, 2026, 8:11 PM ET"
+            "last_confirmed": "2026-08-22T00:14:27.025Z",
+            "freshness_label": "As of Aug 21, 2026, 8:14 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1176,8 +1191,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T00:11:51.932Z",
-            "freshness_label": "As of Aug 21, 2026, 8:11 PM ET"
+            "last_confirmed": "2026-08-22T00:14:27.025Z",
+            "freshness_label": "As of Aug 21, 2026, 8:14 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1189,8 +1204,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T00:11:51.932Z",
-            "freshness_label": "As of Aug 21, 2026, 8:11 PM ET"
+            "last_confirmed": "2026-08-22T00:14:27.025Z",
+            "freshness_label": "As of Aug 21, 2026, 8:14 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

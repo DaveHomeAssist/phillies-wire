@@ -4,7 +4,7 @@
   "edition_date": "2026-08-21",
   "volume": 1,
   "edition": 143,
-  "generated_at": "2026-08-22T00:11:51.932Z",
+  "generated_at": "2026-08-22T00:14:27.025Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -18,7 +18,7 @@
   "hero": {
     "headline": "PHI 3, STL 2",
     "dek": "Top 6th · 0 outs",
-    "summary": "Iván Herrera is up against Jesús Luzardo. Series: Regular Season.",
+    "summary": "Jordan Walker is up against Jesús Luzardo. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs STL · Sat, Aug 22 · 6:05 PM"
   },
@@ -64,21 +64,22 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Iván Herrera",
+        "name": "Jordan Walker",
         "meta": "vs Jesús Luzardo"
       },
       "pitches": [
+        "S",
+        "S",
         "F",
-        "B",
         "B"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 2,
         "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-22T00:11:52.512Z",
+    "updated_at": "2026-08-22T00:14:27.388Z",
     "current_game_pk": 823420,
     "next_game_pk": 823422,
     "next_game": {
