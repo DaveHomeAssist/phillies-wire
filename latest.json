@@ -4,7 +4,7 @@
   "edition_date": "2026-08-21",
   "volume": 1,
   "edition": 143,
-  "generated_at": "2026-08-22T01:30:28.253Z",
+  "generated_at": "2026-08-22T01:48:12.050Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, STL 5",
-    "dek": "Top 9th · 2 outs",
-    "summary": "Jordan Walker is up against Jhoan Duran. Series: Regular Season.",
+    "headline": "PHI 5, STL 6",
+    "dek": "Bottom 10th · 0 outs",
+    "summary": "Luis Arraez is up against Luis Gastelum. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs STL · Sat, Aug 22 · 6:05 PM"
   },
@@ -64,24 +64,25 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jordan Walker",
-        "meta": "vs Jhoan Duran"
+        "name": "Luis Arraez",
+        "meta": "vs Luis Gastelum"
       },
       "pitches": [
         "S",
-        "F"
+        "S",
+        "X"
       ],
       "count": {
         "balls": 0,
         "strikes": 2,
-        "outs": 2
+        "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Top 9th"
+      "status": "Bottom 10th"
     },
     "recap_line": null
   },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-22T01:30:28.713Z",
+    "updated_at": "2026-08-22T01:48:12.844Z",
     "current_game_pk": 823420,
     "next_game_pk": 823422,
     "next_game": {
