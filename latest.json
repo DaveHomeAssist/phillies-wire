@@ -4,7 +4,7 @@
   "edition_date": "2026-08-21",
   "volume": 1,
   "edition": 143,
-  "generated_at": "2026-08-22T00:51:51.878Z",
+  "generated_at": "2026-08-22T01:09:28.076Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 5, STL 4",
-    "dek": "Top 7th · 1 out",
-    "summary": "Iván Herrera is up against Orion Kerkering. Series: Regular Season.",
+    "dek": "Top 8th · 2 outs",
+    "summary": "Bryan Torres is up against Orion Kerkering. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs STL · Sat, Aug 22 · 6:05 PM"
   },
@@ -55,30 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 75,
       "condition": "Overcast",
-      "wind": "3 mph · gusts 3",
-      "gusts_mph": 3
+      "wind": "3 mph · gusts 5",
+      "gusts_mph": 5
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Iván Herrera",
+        "name": "Bryan Torres",
         "meta": "vs Orion Kerkering"
       },
       "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 1
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": true,
-        "third": false
+        "first": true,
+        "second": false,
+        "third": true
       },
-      "status": "Top 7th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-22T00:51:52.572Z",
+    "updated_at": "2026-08-22T01:09:28.536Z",
     "current_game_pk": 823420,
     "next_game_pk": 823422,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 3 mph",
+      "text": "75° · Overcast · gusts 5 mph",
       "highlight": false
     },
     {
