@@ -4,7 +4,7 @@
   "edition_date": "2026-08-22",
   "volume": 1,
   "edition": 144,
-  "generated_at": "2026-08-22T23:22:53.147Z",
+  "generated_at": "2026-08-22T23:23:33.523Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -67,10 +67,13 @@
         "name": "Jimmy Crooks",
         "meta": "vs Andrew Painter"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
+        "strikes": 2,
         "outs": 2
       },
       "bases": {
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-22T23:22:53.894Z",
+    "updated_at": "2026-08-22T23:23:33.755Z",
     "current_game_pk": 823422,
     "next_game_pk": 823421,
     "next_game": {
