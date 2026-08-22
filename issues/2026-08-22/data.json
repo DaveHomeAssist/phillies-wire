@@ -5,14 +5,14 @@
     "edition": 144,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-22T22:23:47.461Z",
+    "generated_at": "2026-08-22T22:38:18.507Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 22, 2026, 6:23 PM ET",
+      "generated_at_et": "Aug 22, 2026, 6:38 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 3, STL 0",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Bryan De La Cruz is up against Quinn Mathews. Series: PHI leads 1-0.",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Kyle Schwarber is up against Quinn Mathews. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "75° · Mostly sunny"
+        "value": "74° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Bryan De La Cruz at the plate",
+      "Kyle Schwarber at the plate",
       "Quinn Mathews on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,10 +346,10 @@
           "radio": "1210 WPHT"
         },
         "weather": {
-          "temp_f": 75,
-          "condition": "Mostly sunny",
-          "wind": "6 mph · gusts 8",
-          "gusts_mph": 8
+          "temp_f": 74,
+          "condition": "Partly cloudy",
+          "wind": "7 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,25 +359,25 @@
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "6.36",
+            "era": "6.29",
             "record": "2-8",
-            "whip": "1.53"
+            "whip": "1.51"
           },
           "away": {
             "team": "STL",
             "name": "Quinn Mathews",
             "hand": "L",
-            "era": "2.79",
+            "era": "5.23",
             "record": "0-1",
-            "whip": "1.66"
+            "whip": "1.84"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 3,
-              "hits": 3,
+              "hits": 4,
               "errors": 0
             }
           },
@@ -401,6 +401,19 @@
               "home": {
                 "runs": 3,
                 "hits": 3,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -532,27 +545,126 @@
             "runs": 2,
             "is_scoring": true,
             "is_key": true
+          },
+          {
+            "id": "823422:9",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz grounds out, third baseman Blaze Jordan to first baseman Alec Burleson.",
+            "score_after": "PHI 3, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823422:10",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Jordan Walker",
+            "actor_id": 691023,
+            "detail": "Jordan Walker flies out to right fielder Bryce Harper in foul territory.",
+            "score_after": "PHI 3, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823422:11",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "strikeout",
+            "actor": "Joshua Báez",
+            "actor_id": 695491,
+            "detail": "Joshua Báez strikes out swinging.",
+            "score_after": "PHI 3, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823422:12",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Nathan Church",
+            "actor_id": 701675,
+            "detail": "Nathan Church grounds out, first baseman Alec Bohm to pitcher Andrew Painter.",
+            "score_after": "PHI 3, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823422:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto singles on a ground ball to left fielder Joshua Báez.",
+            "score_after": "PHI 3, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823422:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill flies out to right fielder Jordan Walker.",
+            "score_after": "PHI 3, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823422:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Play",
+            "score_after": "PHI 3, STL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Edmundo Sosa",
+            "name": "Kyle Schwarber",
             "meta": "vs Quinn Mathews"
           },
           "pitches": [
-            "X"
+            "B",
+            "F"
           ],
           "count": {
             "balls": 1,
-            "strikes": 0,
-            "outs": 2
+            "strikes": 2,
+            "outs": 1
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
-            "third": true
+            "third": false
           },
-          "status": "Bottom 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -569,8 +681,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:47.461Z",
-            "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
+            "last_confirmed": "2026-08-22T22:38:18.507Z",
+            "freshness_label": "As of Aug 22, 2026, 6:38 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -582,8 +694,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:47.461Z",
-            "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
+            "last_confirmed": "2026-08-22T22:38:18.507Z",
+            "freshness_label": "As of Aug 22, 2026, 6:38 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -595,8 +707,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:47.461Z",
-            "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
+            "last_confirmed": "2026-08-22T22:38:18.507Z",
+            "freshness_label": "As of Aug 22, 2026, 6:38 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -608,8 +720,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:47.461Z",
-            "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
+            "last_confirmed": "2026-08-22T22:38:18.507Z",
+            "freshness_label": "As of Aug 22, 2026, 6:38 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -621,8 +733,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:47.461Z",
-            "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
+            "last_confirmed": "2026-08-22T22:38:18.507Z",
+            "freshness_label": "As of Aug 22, 2026, 6:38 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -634,8 +746,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:47.461Z",
-            "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
+            "last_confirmed": "2026-08-22T22:38:18.507Z",
+            "freshness_label": "As of Aug 22, 2026, 6:38 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -647,8 +759,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:47.461Z",
-            "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
+            "last_confirmed": "2026-08-22T22:38:18.507Z",
+            "freshness_label": "As of Aug 22, 2026, 6:38 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -660,8 +772,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-22T22:23:47.461Z",
-            "freshness_label": "As of Aug 22, 2026, 6:23 PM ET"
+            "last_confirmed": "2026-08-22T22:38:18.507Z",
+            "freshness_label": "As of Aug 22, 2026, 6:38 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
