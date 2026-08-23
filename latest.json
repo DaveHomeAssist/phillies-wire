@@ -4,7 +4,7 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T18:06:07.058Z",
+  "generated_at": "2026-08-23T18:24:01.557Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 1",
-    "dek": "Bottom 2nd · 2 outs",
-    "summary": "Justin Crawford is up against Kyle Leahy. Series: PHI leads 2-0.",
+    "dek": "End 3rd · 3 outs",
+    "summary": "Jordan Walker is up against Cristopher Sánchez. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
@@ -55,36 +55,37 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
-      "condition": "Mostly sunny",
-      "wind": "10 mph · gusts 14",
-      "gusts_mph": 14
+      "temp_f": 80,
+      "condition": "Clear",
+      "wind": "9 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Kyle Leahy"
+        "name": "Jordan Walker",
+        "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
-        "F",
+        "S",
+        "B",
+        "S",
         "B",
         "B",
-        "B",
-        "X"
+        "S"
       ],
       "count": {
         "balls": 3,
-        "strikes": 1,
-        "outs": 2
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "End 3rd"
     },
     "recap_line": null
   },
@@ -92,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T18:06:07.624Z",
+    "updated_at": "2026-08-23T18:24:02.994Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
@@ -129,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Mostly sunny · gusts 14 mph",
+      "text": "80° · Clear · gusts 13 mph",
       "highlight": false
     }
   ]
