@@ -5,14 +5,14 @@
     "edition": 145,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-23T19:23:45.281Z",
+    "generated_at": "2026-08-23T19:37:25.753Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 23, 2026, 3:23 PM ET",
+      "generated_at_et": "Aug 23, 2026, 3:37 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, STL 4",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Iván Herrera is up against Cristopher Sánchez. Series: PHI leads 2-0.",
+    "dek": "End 7th · 3 outs",
+    "summary": "Alec Burleson is up against Tim Mayza. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Clear"
+        "value": "83° · Clear"
       }
     ],
     "bullets": [
-      "Iván Herrera at the plate",
-      "Cristopher Sánchez on the mound",
+      "Alec Burleson at the plate",
+      "Tim Mayza on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 82,
+          "temp_f": 83,
           "condition": "Clear",
-          "wind": "10 mph · gusts 16",
-          "gusts_mph": 16
+          "wind": "10 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.57",
+            "era": "2.62",
             "record": "16-4",
             "whip": "1.22"
           },
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 7,
           "currentInningOrdinal": "7th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "inningState": "End",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 4,
@@ -477,7 +477,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -1204,10 +1204,66 @@
             "inning": 7,
             "half": "top",
             "team": "STL",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Iván Herrera",
             "actor_id": 671056,
-            "detail": "Mound Visit.",
+            "detail": "Iván Herrera walks. Pedro Pagés to 3rd. JJ Wetherholt to 2nd.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:52",
+            "inning": 7,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Jordan Walker",
+            "actor_id": 691023,
+            "detail": "Jordan Walker flies out to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:53",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, shortstop JJ Wetherholt to first baseman Alec Burleson.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:54",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds out, third baseman Blaze Jordan to first baseman Alec Burleson.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:55",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa grounds out, second baseman Ramón Urías to first baseman Alec Burleson.",
             "score_after": "PHI 0, STL 4",
             "runs": 0,
             "is_scoring": false,
@@ -1216,21 +1272,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "Iván Herrera",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Alec Burleson",
+            "meta": "vs Tim Mayza"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "B",
+            "F",
+            "X"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 2
+            "balls": 1,
+            "strikes": 2,
+            "outs": 3
           },
           "bases": {
-            "first": true,
-            "second": true,
+            "first": false,
+            "second": false,
             "third": false
           },
-          "status": "Top 7th"
+          "status": "End 7th"
         }
       }
     },
@@ -1247,8 +1308,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:23:45.281Z",
-            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
+            "last_confirmed": "2026-08-23T19:37:25.753Z",
+            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1260,8 +1321,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:23:45.281Z",
-            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
+            "last_confirmed": "2026-08-23T19:37:25.753Z",
+            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1273,8 +1334,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:23:45.281Z",
-            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
+            "last_confirmed": "2026-08-23T19:37:25.753Z",
+            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1286,8 +1347,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:23:45.281Z",
-            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
+            "last_confirmed": "2026-08-23T19:37:25.753Z",
+            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1299,8 +1360,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:23:45.281Z",
-            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
+            "last_confirmed": "2026-08-23T19:37:25.753Z",
+            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1312,8 +1373,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:23:45.281Z",
-            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
+            "last_confirmed": "2026-08-23T19:37:25.753Z",
+            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1325,8 +1386,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:23:45.281Z",
-            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
+            "last_confirmed": "2026-08-23T19:37:25.753Z",
+            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1338,8 +1399,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:23:45.281Z",
-            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
+            "last_confirmed": "2026-08-23T19:37:25.753Z",
+            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
