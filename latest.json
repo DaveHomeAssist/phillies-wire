@@ -4,7 +4,7 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T19:09:56.181Z",
+  "generated_at": "2026-08-23T19:22:54.118Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 3",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Bryson Stott is up against Justin Bruihl. Series: PHI leads 2-0.",
+    "dek": "Top 7th · 2 outs",
+    "summary": "JJ Wetherholt is up against Cristopher Sánchez. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Logan Gilbert · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
@@ -55,33 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
+      "temp_f": 82,
       "condition": "Clear",
-      "wind": "10 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "10 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Justin Bruihl"
+        "name": "JJ Wetherholt",
+        "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
-        "S",
-        "F"
+        "F",
+        "F",
+        "B"
       ],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 2,
-        "outs": 1
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": true,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T19:09:57.050Z",
+    "updated_at": "2026-08-23T19:22:54.501Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
@@ -126,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Clear · gusts 14 mph",
+      "text": "82° · Clear · gusts 16 mph",
       "highlight": false
     }
   ]
