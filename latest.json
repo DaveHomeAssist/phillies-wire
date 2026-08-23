@@ -4,21 +4,21 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T20:04:53.101Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-23T20:23:21.636Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 72,
+    "wins": 73,
     "losses": 58,
-    "streak": "W8",
+    "streak": "W9",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, STL 4",
-    "dek": "Bottom 9th · 2 outs",
-    "summary": "Brandon Marsh is up against Riley O'Brien. Series: PHI leads 2-0.",
+    "headline": "PHI 6, STL 4.",
+    "dek": "PHI 6, STL 4 · Cristopher Sánchez · 6.2 IP, 9 H, 4 ER, 7 K",
+    "summary": "PHI 6, STL 4. Final at Citizens Bank Park, Philadelphia. PHI wins 3-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Logan Gilbert · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 2-0"
+      "label": "PHI wins 3-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,62 +57,40 @@
     "weather": {
       "temp_f": 83,
       "condition": "Clear",
-      "wind": "10 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "10 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Riley O'Brien"
-      },
-      "pitches": [
-        "B",
-        "B",
-        "S",
-        "X"
-      ],
-      "count": {
-        "balls": 2,
-        "strikes": 1,
-        "outs": 2
-      },
-      "bases": {
-        "first": false,
-        "second": true,
-        "third": false
-      },
-      "status": "Bottom 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T20:04:53.997Z",
-    "current_game_pk": 823421,
-    "next_game_pk": 823097,
+    "updated_at": "2026-08-23T20:23:22.221Z",
+    "current_game_pk": 823097,
+    "next_game_pk": 823098,
     "next_game": {
-      "game_pk": 823097,
-      "official_date": "2026-08-24",
-      "date_label": "Mon, Aug 24, 2026",
+      "game_pk": 823098,
+      "official_date": "2026-08-25",
+      "date_label": "Tue, Aug 25, 2026",
       "time_label": "9:40 PM",
       "title": "Phillies at Seattle Mariners",
       "matchup": "PHI at SEA",
       "venue": "T-Mobile Park"
     },
     "current_game": {
-      "game_pk": 823421,
-      "official_date": "2026-08-23",
-      "title": "St. Louis Cardinals at Phillies",
-      "matchup": "STL at PHI"
+      "game_pk": 823097,
+      "official_date": "2026-08-24",
+      "title": "Phillies at Seattle Mariners",
+      "matchup": "PHI at SEA"
     }
   },
   "ticker": [
     {
-      "text": "PHI 72-58",
+      "text": "PHI 73-58",
       "highlight": true
     },
     {
@@ -128,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 15 mph",
+      "text": "83° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]
