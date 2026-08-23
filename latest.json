@@ -4,7 +4,7 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T20:03:57.358Z",
+  "generated_at": "2026-08-23T20:04:53.101Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,7 +17,7 @@
   },
   "hero": {
     "headline": "PHI 0, STL 4",
-    "dek": "Bottom 9th · 1 out",
+    "dek": "Bottom 9th · 2 outs",
     "summary": "Brandon Marsh is up against Riley O'Brien. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Logan Gilbert · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
@@ -69,12 +69,14 @@
       },
       "pitches": [
         "B",
-        "B"
+        "B",
+        "S",
+        "X"
       ],
       "count": {
         "balls": 2,
-        "strikes": 0,
-        "outs": 1
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
         "first": false,
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T20:03:57.744Z",
+    "updated_at": "2026-08-23T20:04:53.997Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
