@@ -4,7 +4,7 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T17:37:28.184Z",
+  "generated_at": "2026-08-23T17:50:45.310Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, STL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "JJ Wetherholt is up against Cristopher Sánchez. Series: PHI leads 2-0.",
+    "headline": "PHI 0, STL 1",
+    "dek": "Bottom 1st · 2 outs",
+    "summary": "Bryce Harper is up against Kyle Leahy. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
@@ -57,28 +57,33 @@
     "weather": {
       "temp_f": 79,
       "condition": "Mostly sunny",
-      "wind": "7 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "9 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "JJ Wetherholt",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Bryce Harper",
+        "meta": "vs Kyle Leahy"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "B",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T17:37:28.645Z",
+    "updated_at": "2026-08-23T17:50:46.261Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Mostly sunny · gusts 11 mph",
+      "text": "79° · Mostly sunny · gusts 13 mph",
       "highlight": false
     }
   ]
