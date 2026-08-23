@@ -4,7 +4,7 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T17:50:45.310Z",
+  "generated_at": "2026-08-23T18:04:49.771Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 1",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Bryce Harper is up against Kyle Leahy. Series: PHI leads 2-0.",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "J.T. Realmuto is up against Kyle Leahy. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
@@ -57,33 +57,31 @@
     "weather": {
       "temp_f": 79,
       "condition": "Mostly sunny",
-      "wind": "9 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "10 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
+        "name": "J.T. Realmuto",
         "meta": "vs Kyle Leahy"
       },
       "pitches": [
-        "S",
-        "B",
-        "B",
-        "F"
+        "F",
+        "B"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 2
+        "balls": 1,
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -91,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T17:50:46.261Z",
+    "updated_at": "2026-08-23T18:04:50.535Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
@@ -128,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Mostly sunny · gusts 13 mph",
+      "text": "79° · Mostly sunny · gusts 14 mph",
       "highlight": false
     }
   ]

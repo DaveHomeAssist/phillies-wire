@@ -5,14 +5,14 @@
     "edition": 145,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-23T17:50:45.310Z",
+    "generated_at": "2026-08-23T18:04:49.771Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 23, 2026, 1:50 PM ET",
+      "generated_at_et": "Aug 23, 2026, 2:04 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, STL 1",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Bryce Harper is up against Kyle Leahy. Series: PHI leads 2-0.",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "J.T. Realmuto is up against Kyle Leahy. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
+      "J.T. Realmuto at the plate",
       "Kyle Leahy on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 79,
           "condition": "Mostly sunny",
-          "wind": "9 mph · gusts 13",
-          "gusts_mph": 13
+          "wind": "10 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.55",
+            "era": "2.53",
             "record": "16-4",
             "whip": "1.22"
           },
@@ -367,17 +367,17 @@
             "team": "STL",
             "name": "Kyle Leahy",
             "hand": "R",
-            "era": "3.23",
+            "era": "3.20",
             "record": "10-4",
-            "whip": "1.30"
+            "whip": "1.29"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 1,
@@ -396,6 +396,19 @@
               "away": {
                 "runs": 1,
                 "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
@@ -510,9 +523,93 @@
             "inning": 1,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
+            "detail": "Bryce Harper called out on strikes.",
+            "score_after": "PHI 0, STL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:8",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Blaze Jordan",
+            "actor_id": 691458,
+            "detail": "Blaze Jordan lines out to center fielder Justin Crawford.",
+            "score_after": "PHI 0, STL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:9",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "José Fermín",
+            "actor_id": 665877,
+            "detail": "José Fermín grounds out, third baseman Edmundo Sosa to first baseman Kyle Schwarber.",
+            "score_after": "PHI 0, STL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:10",
+            "inning": 2,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Ramón Urías",
+            "actor_id": 602104,
+            "detail": "Ramón Urías lines out sharply to center fielder Justin Crawford.",
+            "score_after": "PHI 0, STL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:11",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out, second baseman Ramón Urías to first baseman Alec Burleson.",
+            "score_after": "PHI 0, STL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh walks.",
+            "score_after": "PHI 0, STL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
             "detail": "Play",
             "score_after": "PHI 0, STL 1",
             "runs": 0,
@@ -522,26 +619,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryce Harper",
+            "name": "J.T. Realmuto",
             "meta": "vs Kyle Leahy"
           },
           "pitches": [
-            "S",
-            "B",
-            "B",
-            "F"
+            "F",
+            "B"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 2,
-            "outs": 2
+            "balls": 1,
+            "strikes": 1,
+            "outs": 1
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
-          "status": "Bottom 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -558,8 +653,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T17:50:45.310Z",
-            "freshness_label": "As of Aug 23, 2026, 1:50 PM ET"
+            "last_confirmed": "2026-08-23T18:04:49.771Z",
+            "freshness_label": "As of Aug 23, 2026, 2:04 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -571,8 +666,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T17:50:45.310Z",
-            "freshness_label": "As of Aug 23, 2026, 1:50 PM ET"
+            "last_confirmed": "2026-08-23T18:04:49.771Z",
+            "freshness_label": "As of Aug 23, 2026, 2:04 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -584,8 +679,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T17:50:45.310Z",
-            "freshness_label": "As of Aug 23, 2026, 1:50 PM ET"
+            "last_confirmed": "2026-08-23T18:04:49.771Z",
+            "freshness_label": "As of Aug 23, 2026, 2:04 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -597,8 +692,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T17:50:45.310Z",
-            "freshness_label": "As of Aug 23, 2026, 1:50 PM ET"
+            "last_confirmed": "2026-08-23T18:04:49.771Z",
+            "freshness_label": "As of Aug 23, 2026, 2:04 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -610,8 +705,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T17:50:45.310Z",
-            "freshness_label": "As of Aug 23, 2026, 1:50 PM ET"
+            "last_confirmed": "2026-08-23T18:04:49.771Z",
+            "freshness_label": "As of Aug 23, 2026, 2:04 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -623,8 +718,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T17:50:45.310Z",
-            "freshness_label": "As of Aug 23, 2026, 1:50 PM ET"
+            "last_confirmed": "2026-08-23T18:04:49.771Z",
+            "freshness_label": "As of Aug 23, 2026, 2:04 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -636,8 +731,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T17:50:45.310Z",
-            "freshness_label": "As of Aug 23, 2026, 1:50 PM ET"
+            "last_confirmed": "2026-08-23T18:04:49.771Z",
+            "freshness_label": "As of Aug 23, 2026, 2:04 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -649,8 +744,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T17:50:45.310Z",
-            "freshness_label": "As of Aug 23, 2026, 1:50 PM ET"
+            "last_confirmed": "2026-08-23T18:04:49.771Z",
+            "freshness_label": "As of Aug 23, 2026, 2:04 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
