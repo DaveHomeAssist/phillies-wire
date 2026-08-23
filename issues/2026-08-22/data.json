@@ -5,14 +5,14 @@
     "edition": 144,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-23T00:11:38.471Z",
+    "generated_at": "2026-08-23T00:15:10.781Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 22, 2026, 8:11 PM ET",
+      "generated_at_et": "Aug 22, 2026, 8:15 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 11, STL 1",
-    "dek": "End 7th · 3 outs",
-    "summary": "JJ Wetherholt is up against Andrew Painter. Series: PHI leads 1-0.",
+    "headline": "PHI 11, STL 2",
+    "dek": "Top 8th · 0 outs",
+    "summary": "Iván Herrera is up against José Alvarado. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "71° · Clear"
+        "value": "70° · Clear"
       }
     ],
     "bullets": [
-      "JJ Wetherholt at the plate",
-      "Andrew Painter on the mound",
+      "Iván Herrera at the plate",
+      "José Alvarado on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "1210 WPHT"
         },
         "weather": {
-          "temp_f": 71,
+          "temp_f": 70,
           "condition": "Clear",
-          "wind": "5 mph · gusts 12",
-          "gusts_mph": 12
+          "wind": "5 mph · gusts 13",
+          "gusts_mph": 13
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,15 +373,15 @@
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
-          "inningState": "End",
-          "isTopInning": false,
-          "outs": 3,
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 5,
+              "runs": 2,
+              "hits": 6,
               "errors": 0
             },
             "home": {
@@ -480,6 +480,19 @@
                 "runs": 0,
                 "hits": 0,
                 "errors": 1
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
               }
             }
           ]
@@ -1352,30 +1365,55 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823422:62",
+            "inning": 8,
+            "half": "top",
+            "team": "STL",
+            "event_type": "home_run",
+            "actor": "JJ Wetherholt",
+            "actor_id": 802139,
+            "detail": "JJ Wetherholt homers (17) on a fly ball to center field.",
+            "score_after": "PHI 11, STL 2",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823422:63",
+            "inning": 8,
+            "half": "top",
+            "team": "STL",
+            "event_type": "other",
+            "actor": "Iván Herrera",
+            "actor_id": 671056,
+            "detail": "Play",
+            "score_after": "PHI 11, STL 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "JJ Wetherholt",
-            "meta": "vs Andrew Painter"
+            "name": "Iván Herrera",
+            "meta": "vs José Alvarado"
           },
           "pitches": [
-            "B",
-            "S",
-            "S",
-            "F"
+            "S"
           ],
           "count": {
-            "balls": 1,
-            "strikes": 3,
-            "outs": 3
+            "balls": 0,
+            "strikes": 1,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 7th"
+          "status": "Top 8th"
         }
       }
     },
