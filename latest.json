@@ -4,21 +4,21 @@
   "edition_date": "2026-08-22",
   "volume": 1,
   "edition": 144,
-  "generated_at": "2026-08-23T00:27:43.876Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-23T00:34:02.835Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 71,
+    "wins": 72,
     "losses": 58,
-    "streak": "W7",
+    "streak": "W8",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 12, STL 2",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Joshua Báez is up against Chase Shugart. Series: PHI leads 1-0.",
+    "headline": "PHI 12, STL 3.",
+    "dek": "PHI 12, STL 3 · Andrew Painter · 7.0 IP, 5 H, 1 ER, 8 K",
+    "summary": "PHI 12, STL 3. Final at Citizens Bank Park, Philadelphia. PHI wins 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Kyle Leahy · PHI vs STL · Sun, Aug 23 · 1:35 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "PHI wins 2-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,57 +57,40 @@
     "weather": {
       "temp_f": 70,
       "condition": "Clear",
-      "wind": "5 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "5 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Joshua Báez",
-        "meta": "vs Chase Shugart"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T00:27:44.403Z",
-    "current_game_pk": 823422,
-    "next_game_pk": 823421,
+    "updated_at": "2026-08-23T00:34:03.111Z",
+    "current_game_pk": 823421,
+    "next_game_pk": 823097,
     "next_game": {
-      "game_pk": 823421,
-      "official_date": "2026-08-23",
-      "date_label": "Sun, Aug 23, 2026",
-      "time_label": "1:35 PM",
-      "title": "St. Louis Cardinals at Phillies",
-      "matchup": "STL at PHI",
-      "venue": "Citizens Bank Park"
+      "game_pk": 823097,
+      "official_date": "2026-08-24",
+      "date_label": "Mon, Aug 24, 2026",
+      "time_label": "9:40 PM",
+      "title": "Phillies at Seattle Mariners",
+      "matchup": "PHI at SEA",
+      "venue": "T-Mobile Park"
     },
     "current_game": {
-      "game_pk": 823422,
-      "official_date": "2026-08-22",
+      "game_pk": 823421,
+      "official_date": "2026-08-23",
       "title": "St. Louis Cardinals at Phillies",
       "matchup": "STL at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 71-58",
+      "text": "PHI 72-58",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "70° · Clear · gusts 13 mph",
+      "text": "70° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]
