@@ -4,7 +4,7 @@
   "edition_date": "2026-08-22",
   "volume": 1,
   "edition": 144,
-  "generated_at": "2026-08-22T23:51:16.347Z",
+  "generated_at": "2026-08-23T00:11:38.471Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 8, STL 1",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Kyle Schwarber is up against Ryan Fernandez. Series: PHI leads 1-0.",
+    "headline": "PHI 11, STL 1",
+    "dek": "End 7th · 3 outs",
+    "summary": "JJ Wetherholt is up against Andrew Painter. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Kyle Leahy · PHI vs STL · Sun, Aug 23 · 1:35 PM"
   },
@@ -64,25 +64,26 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Ryan Fernandez"
+        "name": "JJ Wetherholt",
+        "meta": "vs Andrew Painter"
       },
       "pitches": [
+        "B",
         "S",
         "S",
-        "X"
+        "F"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 1
+        "balls": 1,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "End 7th"
     },
     "recap_line": null
   },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-22T23:51:16.887Z",
+    "updated_at": "2026-08-23T00:11:39.042Z",
     "current_game_pk": 823422,
     "next_game_pk": 823421,
     "next_game": {
