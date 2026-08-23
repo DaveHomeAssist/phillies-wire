@@ -5,14 +5,14 @@
     "edition": 145,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-23T19:22:54.118Z",
+    "generated_at": "2026-08-23T19:23:45.281Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 23, 2026, 3:22 PM ET",
+      "generated_at_et": "Aug 23, 2026, 3:23 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, STL 3",
+    "headline": "PHI 0, STL 4",
     "dek": "Top 7th · 2 outs",
-    "summary": "JJ Wetherholt is up against Cristopher Sánchez. Series: PHI leads 2-0.",
+    "summary": "Iván Herrera is up against Cristopher Sánchez. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "JJ Wetherholt at the plate",
+      "Iván Herrera at the plate",
       "Cristopher Sánchez on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -361,7 +361,7 @@
             "hand": "L",
             "era": "2.57",
             "record": "16-4",
-            "whip": "1.21"
+            "whip": "1.22"
           },
           "away": {
             "team": "STL",
@@ -380,8 +380,8 @@
           "outs": 2,
           "teams": {
             "away": {
-              "runs": 3,
-              "hits": 8,
+              "runs": 4,
+              "hits": 9,
               "errors": 0
             },
             "home": {
@@ -472,8 +472,8 @@
             {
               "num": 7,
               "away": {
-                "runs": null,
-                "hits": 2,
+                "runs": 1,
+                "hits": 3,
                 "errors": 0
               },
               "home": {
@@ -1190,11 +1190,25 @@
             "inning": 7,
             "half": "top",
             "team": "STL",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "Play",
-            "score_after": "PHI 0, STL 3",
+            "detail": "JJ Wetherholt singles on a sharp line drive to right fielder Bryan De La Cruz. Ramón Urías scores. Pedro Pagés to 2nd.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823421:51",
+            "inning": 7,
+            "half": "top",
+            "team": "STL",
+            "event_type": "other",
+            "actor": "Iván Herrera",
+            "actor_id": 671056,
+            "detail": "Mound Visit.",
+            "score_after": "PHI 0, STL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1202,17 +1216,13 @@
         ],
         "situation": {
           "batter": {
-            "name": "JJ Wetherholt",
+            "name": "Iván Herrera",
             "meta": "vs Cristopher Sánchez"
           },
-          "pitches": [
-            "F",
-            "F",
-            "B"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 1,
-            "strikes": 2,
+            "balls": 0,
+            "strikes": 0,
             "outs": 2
           },
           "bases": {
@@ -1237,8 +1247,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:22:54.118Z",
-            "freshness_label": "As of Aug 23, 2026, 3:22 PM ET"
+            "last_confirmed": "2026-08-23T19:23:45.281Z",
+            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1250,8 +1260,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:22:54.118Z",
-            "freshness_label": "As of Aug 23, 2026, 3:22 PM ET"
+            "last_confirmed": "2026-08-23T19:23:45.281Z",
+            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1263,8 +1273,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:22:54.118Z",
-            "freshness_label": "As of Aug 23, 2026, 3:22 PM ET"
+            "last_confirmed": "2026-08-23T19:23:45.281Z",
+            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1276,8 +1286,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:22:54.118Z",
-            "freshness_label": "As of Aug 23, 2026, 3:22 PM ET"
+            "last_confirmed": "2026-08-23T19:23:45.281Z",
+            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1289,8 +1299,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:22:54.118Z",
-            "freshness_label": "As of Aug 23, 2026, 3:22 PM ET"
+            "last_confirmed": "2026-08-23T19:23:45.281Z",
+            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1302,8 +1312,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:22:54.118Z",
-            "freshness_label": "As of Aug 23, 2026, 3:22 PM ET"
+            "last_confirmed": "2026-08-23T19:23:45.281Z",
+            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1315,8 +1325,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:22:54.118Z",
-            "freshness_label": "As of Aug 23, 2026, 3:22 PM ET"
+            "last_confirmed": "2026-08-23T19:23:45.281Z",
+            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1328,8 +1338,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T19:22:54.118Z",
-            "freshness_label": "As of Aug 23, 2026, 3:22 PM ET"
+            "last_confirmed": "2026-08-23T19:23:45.281Z",
+            "freshness_label": "As of Aug 23, 2026, 3:23 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
