@@ -4,7 +4,7 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T18:04:49.771Z",
+  "generated_at": "2026-08-23T18:06:07.058Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 1",
-    "dek": "Bottom 2nd · 1 out",
-    "summary": "J.T. Realmuto is up against Kyle Leahy. Series: PHI leads 2-0.",
+    "dek": "Bottom 2nd · 2 outs",
+    "summary": "Justin Crawford is up against Kyle Leahy. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
@@ -69,12 +69,15 @@
       },
       "pitches": [
         "F",
-        "B"
+        "B",
+        "B",
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 3,
         "strikes": 1,
-        "outs": 1
+        "outs": 2
       },
       "bases": {
         "first": true,
@@ -89,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T18:04:50.535Z",
+    "updated_at": "2026-08-23T18:06:07.624Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
