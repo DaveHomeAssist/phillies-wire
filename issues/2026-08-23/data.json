@@ -5,14 +5,14 @@
     "edition": 145,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-23T19:37:25.753Z",
+    "generated_at": "2026-08-23T19:50:05.405Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 23, 2026, 3:37 PM ET",
+      "generated_at_et": "Aug 23, 2026, 3:50 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, STL 4",
-    "dek": "End 7th · 3 outs",
-    "summary": "Alec Burleson is up against Tim Mayza. Series: PHI leads 2-0.",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "Kyle Schwarber is up against George Soriano. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "83° · Clear"
+        "value": "82° · Clear"
       }
     ],
     "bullets": [
-      "Alec Burleson at the plate",
-      "Tim Mayza on the mound",
+      "Kyle Schwarber at the plate",
+      "George Soriano on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -181,7 +181,7 @@
             {
               "slot": 7,
               "name": "José Fermín",
-              "position": "CF",
+              "position": "LF",
               "bats": "R"
             },
             {
@@ -293,7 +293,7 @@
             {
               "slot": 7,
               "name": "José Fermín",
-              "position": "CF",
+              "position": "LF",
               "bats": "R"
             },
             {
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 83,
+          "temp_f": 82,
           "condition": "Clear",
-          "wind": "10 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "11 mph · gusts 16",
+          "gusts_mph": 16
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,15 +373,15 @@
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
-          "inningState": "End",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
+          "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 3,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 4,
-              "hits": 9,
+              "hits": 10,
               "errors": 0
             },
             "home": {
@@ -478,6 +478,19 @@
               },
               "home": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               }
@@ -1268,144 +1281,119 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823421:56",
+            "inning": 8,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Alec Burleson",
+            "actor_id": 676475,
+            "detail": "Alec Burleson lines out sharply to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:57",
+            "inning": 8,
+            "half": "top",
+            "team": "STL",
+            "event_type": "strikeout",
+            "actor": "Joshua Báez",
+            "actor_id": 695491,
+            "detail": "Joshua Báez strikes out swinging.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:58",
+            "inning": 8,
+            "half": "top",
+            "team": "STL",
+            "event_type": "single",
+            "actor": "Blaze Jordan",
+            "actor_id": 691458,
+            "detail": "Blaze Jordan singles on a line drive to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:59",
+            "inning": 8,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "José Fermín",
+            "actor_id": 665877,
+            "detail": "José Fermín grounds into a force out, third baseman Edmundo Sosa to second baseman Luis Arraez. Blaze Jordan out at 2nd.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:60",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz flies out to right fielder Jordan Walker.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:61",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out to first baseman Alec Burleson.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Alec Burleson",
-            "meta": "vs Tim Mayza"
+            "name": "Kyle Schwarber",
+            "meta": "vs George Soriano"
           },
           "pitches": [
+            "B",
+            "B",
             "S",
             "B",
-            "F",
             "X"
           ],
           "count": {
-            "balls": 1,
-            "strikes": 2,
-            "outs": 3
+            "balls": 3,
+            "strikes": 1,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 7th"
+          "status": "Bottom 8th"
         }
       }
     },
-    "injury_report": {
-      "content": {
-        "il_entries": [
-          {
-            "name": "Adolis García",
-            "position": "RF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right latissimus dorsi tear",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-23T19:37:25.753Z",
-            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
-          },
-          {
-            "name": "Johan Rojas",
-            "position": "CF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL repair",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-23T19:37:25.753Z",
-            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
-          },
-          {
-            "name": "Lou Trivino III",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right thoracic muscle spasm",
-            "status_note": "",
-            "retroactive_to": "2026-07-07",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-23T19:37:25.753Z",
-            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
-          },
-          {
-            "name": "Tanner Banks",
-            "position": "LHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Left forearm strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-23T19:37:25.753Z",
-            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL tear",
-            "status_note": "",
-            "retroactive_to": "2026-07-13",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-23T19:37:25.753Z",
-            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
-          },
-          {
-            "name": "Rafael Marchán",
-            "position": "C",
-            "il_type": "10-day",
-            "badge": "il",
-            "injury": "Left knee patellar tendinitis",
-            "status_note": "",
-            "retroactive_to": "2026-07-23",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-23T19:37:25.753Z",
-            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
-          },
-          {
-            "name": "Caleb Kilian",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Left oblique strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-23T19:37:25.753Z",
-            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
-          },
-          {
-            "name": "Felix Reyes",
-            "position": "LF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right wrist fracture",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-08-23T19:37:25.753Z",
-            "freshness_label": "As of Aug 23, 2026, 3:37 PM ET"
-          }
-        ],
-        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
-      }
-    }
+    "injury_report": null
   },
   "next_game": {
     "label": "Tomorrow",

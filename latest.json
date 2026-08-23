@@ -4,7 +4,7 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T19:37:25.753Z",
+  "generated_at": "2026-08-23T19:50:05.405Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, STL 4",
-    "dek": "End 7th · 3 outs",
-    "summary": "Alec Burleson is up against Tim Mayza. Series: PHI leads 2-0.",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "Kyle Schwarber is up against George Soriano. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Logan Gilbert · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
@@ -55,35 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 82,
       "condition": "Clear",
-      "wind": "10 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "11 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Burleson",
-        "meta": "vs Tim Mayza"
+        "name": "Kyle Schwarber",
+        "meta": "vs George Soriano"
       },
       "pitches": [
+        "B",
+        "B",
         "S",
         "B",
-        "F",
         "X"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 2,
-        "outs": 3
+        "balls": 3,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 7th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -91,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T19:37:26.295Z",
+    "updated_at": "2026-08-23T19:50:06.337Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
@@ -128,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 15 mph",
+      "text": "82° · Clear · gusts 16 mph",
       "highlight": false
     }
   ]
