@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-22",
+  "edition_date": "2026-08-23",
   "volume": 1,
-  "edition": 144,
-  "generated_at": "2026-08-23T03:33:47.071Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 145,
+  "generated_at": "2026-08-23T04:00:48.029Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 72,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 12, STL 3.",
-    "dek": "PHI 12, STL 3 · Andrew Painter · 7.0 IP, 5 H, 1 ER, 8 K",
-    "summary": "PHI 12, STL 3. Final at Citizens Bank Park, Philadelphia. PHI wins 2-0.",
+    "headline": "Cardinals @ Phillies · Game 3 of 3",
+    "dek": "Cristopher Sánchez vs Kyle Leahy",
+    "summary": "Cristopher Sánchez vs Kyle Leahy · Cardinals @ Phillies · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Kyle Leahy · PHI vs STL · Sun, Aug 23 · 1:35 PM"
+    "next_value": "PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
   "game": {
-    "matchup": "Cardinals @ Phillies · Game 2 of 3",
-    "first_pitch": "6:05 PM",
+    "matchup": "Cardinals @ Phillies · Game 3 of 3",
+    "first_pitch": "1:35 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "away": {
-        "name": "Quinn Mathews",
-        "hand": "L"
-      },
-      "phi": {
-        "name": "Andrew Painter",
+        "name": "Kyle Leahy",
         "hand": "R"
       },
-      "opp": {
-        "name": "Quinn Mathews",
+      "phi": {
+        "name": "Cristopher Sánchez",
         "hand": "L"
+      },
+      "opp": {
+        "name": "Kyle Leahy",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI wins 2-0"
+      "label": "PHI leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
       "stream": "MLB.TV",
-      "radio": "1210 WPHT"
+      "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 69,
       "condition": "Clear",
-      "wind": "4 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "6 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T03:33:47.789Z",
+    "updated_at": "2026-08-23T04:00:48.469Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Cardinals @ Phillies · Game 2 of 3 · 6:05 PM",
+      "text": "Cardinals @ Phillies · Game 3 of 3 · 1:35 PM",
       "highlight": false
     },
     {
-      "text": "Andrew Painter vs Quinn Mathews",
+      "text": "Cristopher Sánchez vs Kyle Leahy",
       "highlight": true
     },
     {
-      "text": "NBCSP · 1210 WPHT",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "69° · Clear · gusts 11 mph",
+      "text": "69° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]
