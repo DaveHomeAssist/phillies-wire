@@ -5,14 +5,14 @@
     "edition": 145,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-23T19:50:53.345Z",
+    "generated_at": "2026-08-23T20:03:57.358Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 23, 2026, 3:50 PM ET",
+      "generated_at_et": "Aug 23, 2026, 4:03 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, STL 4",
-    "dek": "Bottom 8th · 2 outs",
-    "summary": "Kyle Schwarber is up against George Soriano. Series: PHI leads 2-0.",
+    "dek": "Bottom 9th · 1 out",
+    "summary": "Brandon Marsh is up against Riley O'Brien. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Clear"
+        "value": "83° · Clear"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
-      "George Soriano on the mound",
+      "Brandon Marsh at the plate",
+      "Riley O'Brien on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 82,
+          "temp_f": 83,
           "condition": "Clear",
-          "wind": "11 mph · gusts 16",
-          "gusts_mph": 16
+          "wind": "10 mph · gusts 15",
+          "gusts_mph": 15
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,11 +373,11 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "End",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 3,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 4,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 0,
-              "hits": 4,
+              "hits": 5,
               "errors": 0
             }
           },
@@ -494,6 +494,19 @@
                 "hits": 0,
                 "errors": 0
               }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 1,
+                "errors": 0
+              }
             }
           ]
         },
@@ -548,7 +561,7 @@
             "event_type": "single",
             "actor": "Alec Burleson",
             "actor_id": 676475,
-            "detail": "Alec Burleson singles on a sharp line drive to center fielder Justin Crawford. JJ Wetherholt scores.",
+            "detail": "Alec Burleson singles on a sharp line drive to center fielder Justin Crawford. JJ Wetherholt sc…",
             "score_after": "PHI 0, STL 1",
             "runs": 1,
             "is_scoring": true,
@@ -814,7 +827,7 @@
             "event_type": "single",
             "actor": "Jordan Walker",
             "actor_id": 691023,
-            "detail": "Jordan Walker singles on a ground ball to shortstop Trea Turner, deflected by pitcher Cristopher Sánchez.",
+            "detail": "Jordan Walker singles on a ground ball to shortstop Trea Turner, deflected by pitcher Cristophe…",
             "score_after": "PHI 0, STL 1",
             "runs": 0,
             "is_scoring": false,
@@ -828,7 +841,7 @@
             "event_type": "single",
             "actor": "Alec Burleson",
             "actor_id": 676475,
-            "detail": "Alec Burleson singles on a ground ball to right fielder Bryan De La Cruz, deflected by first baseman Kyle Schwarber. Jordan Walker…",
+            "detail": "Alec Burleson singles on a ground ball to right fielder Bryan De La Cruz, deflected by first ba…",
             "score_after": "PHI 0, STL 2",
             "runs": 1,
             "is_scoring": true,
@@ -856,7 +869,7 @@
             "event_type": "other",
             "actor": "Blaze Jordan",
             "actor_id": 691458,
-            "detail": "Blaze Jordan grounds into a double play, shortstop Trea Turner to second baseman Bryson Stott to first baseman Kyle Schwarber. Alec…",
+            "detail": "Blaze Jordan grounds into a double play, shortstop Trea Turner to second baseman Bryson Stott t…",
             "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -912,7 +925,7 @@
             "event_type": "other",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds into a double play, third baseman Blaze Jordan to second baseman Ramón Urías to first baseman Alec Burleson.…",
+            "detail": "J.T. Realmuto grounds into a double play, third baseman Blaze Jordan to second baseman Ramón Ur…",
             "score_after": "PHI 0, STL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1206,7 +1219,7 @@
             "event_type": "single",
             "actor": "JJ Wetherholt",
             "actor_id": 802139,
-            "detail": "JJ Wetherholt singles on a sharp line drive to right fielder Bryan De La Cruz. Ramón Urías scores. Pedro Pagés to 2nd.",
+            "detail": "JJ Wetherholt singles on a sharp line drive to right fielder Bryan De La Cruz. Ramón Urías scor…",
             "score_after": "PHI 0, STL 4",
             "runs": 1,
             "is_scoring": true,
@@ -1332,7 +1345,7 @@
             "event_type": "out",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "José Fermín grounds into a force out, third baseman Edmundo Sosa to second baseman Luis Arraez. Blaze Jordan out at 2nd.",
+            "detail": "José Fermín grounds into a force out, third baseman Edmundo Sosa to second baseman Luis Arraez.…",
             "score_after": "PHI 0, STL 4",
             "runs": 0,
             "is_scoring": false,
@@ -1379,29 +1392,112 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823421:63",
+            "inning": 9,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Ramón Urías",
+            "actor_id": 602104,
+            "detail": "Ramón Urías lines out to left fielder Brandon Marsh.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:64",
+            "inning": 9,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Pedro Pagés",
+            "actor_id": 686780,
+            "detail": "Pedro Pagés grounds out, shortstop Trea Turner to first baseman Kyle Schwarber.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:65",
+            "inning": 9,
+            "half": "top",
+            "team": "STL",
+            "event_type": "strikeout",
+            "actor": "JJ Wetherholt",
+            "actor_id": 802139,
+            "detail": "JJ Wetherholt called out on strikes.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:66",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper doubles (25) on a line drive to left fielder José Fermín.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823421:67",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez flies out to left fielder José Fermín.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:68",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Play",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Ramón Urías",
-            "meta": "vs Tim Mayza"
+            "name": "Brandon Marsh",
+            "meta": "vs Riley O'Brien"
           },
           "pitches": [
-            "S",
             "B",
-            "X"
+            "B"
           ],
           "count": {
-            "balls": 1,
-            "strikes": 1,
-            "outs": 3
+            "balls": 2,
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
             "first": false,
-            "second": false,
+            "second": true,
             "third": false
           },
-          "status": "End 8th"
+          "status": "Bottom 9th"
         }
       }
     },
