@@ -5,7 +5,7 @@
     "edition": 145,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-23T18:57:00.387Z",
+    "generated_at": "2026-08-23T18:57:57.824Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -29,7 +29,7 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, STL 3",
-    "dek": "End 5th · 3 outs",
+    "dek": "Top 6th · 0 outs",
     "summary": "Iván Herrera is up against Cristopher Sánchez. Series: PHI leads 2-0.",
     "cards": [
       {
@@ -373,11 +373,11 @@
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "End",
-          "isTopInning": false,
-          "outs": 3,
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 3,
@@ -453,6 +453,19 @@
               "home": {
                 "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -990,6 +1003,20 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823421:38",
+            "inning": 6,
+            "half": "top",
+            "team": "STL",
+            "event_type": "other",
+            "actor": "Iván Herrera",
+            "actor_id": 671056,
+            "detail": "Play",
+            "score_after": "PHI 0, STL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
@@ -998,23 +1025,21 @@
             "meta": "vs Cristopher Sánchez"
           },
           "pitches": [
-            "S",
-            "F",
-            "F",
             "B",
-            "X"
+            "B",
+            "S"
           ],
           "count": {
             "balls": 2,
-            "strikes": 2,
-            "outs": 3
+            "strikes": 1,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 5th"
+          "status": "Top 6th"
         }
       }
     },
@@ -1031,7 +1056,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "last_confirmed": "2026-08-23T18:57:57.824Z",
             "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
@@ -1044,7 +1069,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "last_confirmed": "2026-08-23T18:57:57.824Z",
             "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
@@ -1057,7 +1082,7 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "last_confirmed": "2026-08-23T18:57:57.824Z",
             "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
@@ -1070,7 +1095,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "last_confirmed": "2026-08-23T18:57:57.824Z",
             "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
@@ -1083,7 +1108,7 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "last_confirmed": "2026-08-23T18:57:57.824Z",
             "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
@@ -1096,7 +1121,7 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "last_confirmed": "2026-08-23T18:57:57.824Z",
             "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
@@ -1109,7 +1134,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "last_confirmed": "2026-08-23T18:57:57.824Z",
             "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
@@ -1122,7 +1147,7 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "last_confirmed": "2026-08-23T18:57:57.824Z",
             "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           }
         ],
