@@ -4,9 +4,9 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T17:06:34.084Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-23T17:22:51.793Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 72,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Cardinals @ Phillies · Game 3 of 3",
-    "dek": "Cristopher Sánchez vs Kyle Leahy",
-    "summary": "Cristopher Sánchez vs Kyle Leahy · Cardinals @ Phillies · Game 3 of 3",
+    "headline": "PHI 0, STL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "JJ Wetherholt is up against Cristopher Sánchez. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
@@ -56,20 +56,37 @@
     },
     "weather": {
       "temp_f": 77,
-      "condition": "Mostly sunny",
-      "wind": "7 mph · gusts 13",
-      "gusts_mph": 13
+      "condition": "Clear",
+      "wind": "6 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "JJ Wetherholt",
+        "meta": "vs Cristopher Sánchez"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T17:06:34.574Z",
+    "updated_at": "2026-08-23T17:22:52.332Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Mostly sunny · gusts 13 mph",
+      "text": "77° · Clear · gusts 12 mph",
       "highlight": false
     }
   ]
