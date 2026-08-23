@@ -5,7 +5,7 @@
     "edition": 145,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-23T19:50:05.405Z",
+    "generated_at": "2026-08-23T19:50:53.345Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 8,
           "currentInningOrdinal": "8th",
-          "inningState": "Bottom",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 4,
@@ -490,7 +490,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -1365,31 +1365,43 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823421:62",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, second baseman Ramón Urías to first baseman Alec Burleson.",
+            "score_after": "PHI 0, STL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Kyle Schwarber",
-            "meta": "vs George Soriano"
+            "name": "Ramón Urías",
+            "meta": "vs Tim Mayza"
           },
           "pitches": [
-            "B",
-            "B",
             "S",
             "B",
             "X"
           ],
           "count": {
-            "balls": 3,
+            "balls": 1,
             "strikes": 1,
-            "outs": 2
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 8th"
+          "status": "End 8th"
         }
       }
     },

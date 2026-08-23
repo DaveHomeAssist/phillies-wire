@@ -4,7 +4,7 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T19:50:05.405Z",
+  "generated_at": "2026-08-23T19:50:53.345Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -64,27 +64,25 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs George Soriano"
+        "name": "Ramón Urías",
+        "meta": "vs Tim Mayza"
       },
       "pitches": [
-        "B",
-        "B",
         "S",
         "B",
         "X"
       ],
       "count": {
-        "balls": 3,
+        "balls": 1,
         "strikes": 1,
-        "outs": 2
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 8th"
+      "status": "End 8th"
     },
     "recap_line": null
   },
@@ -92,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T19:50:06.337Z",
+    "updated_at": "2026-08-23T19:50:53.839Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
