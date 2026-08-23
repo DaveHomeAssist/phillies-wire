@@ -5,14 +5,14 @@
     "edition": 145,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-23T18:43:28.830Z",
+    "generated_at": "2026-08-23T18:57:00.387Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 23, 2026, 2:43 PM ET",
+      "generated_at_et": "Aug 23, 2026, 2:57 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, STL 2",
-    "dek": "End 4th · 3 outs",
-    "summary": "José Fermín is up against Cristopher Sánchez. Series: PHI leads 2-0.",
+    "headline": "PHI 0, STL 3",
+    "dek": "End 5th · 3 outs",
+    "summary": "Iván Herrera is up against Cristopher Sánchez. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "79° · Mostly sunny"
+        "value": "80° · Clear"
       }
     ],
     "bullets": [
-      "José Fermín at the plate",
+      "Iván Herrera at the plate",
       "Cristopher Sánchez on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 79,
-          "condition": "Mostly sunny",
-          "wind": "9 mph · gusts 13",
-          "gusts_mph": 13
+          "temp_f": 80,
+          "condition": "Clear",
+          "wind": "10 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.55",
+            "era": "2.59",
             "record": "16-4",
             "whip": "1.21"
           },
@@ -367,26 +367,26 @@
             "team": "STL",
             "name": "Kyle Leahy",
             "hand": "R",
-            "era": "3.15",
+            "era": "3.13",
             "record": "10-4",
-            "whip": "1.31"
+            "whip": "1.30"
           }
         },
         "linescore": {
           "currentInning": 5,
           "currentInningOrdinal": "5th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "End",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 2,
-              "hits": 4,
+              "runs": 3,
+              "hits": 5,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 2,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -446,13 +446,13 @@
             {
               "num": 5,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 1,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -884,11 +884,109 @@
             "inning": 5,
             "half": "top",
             "team": "STL",
-            "event_type": "other",
+            "event_type": "home_run",
             "actor": "José Fermín",
             "actor_id": 665877,
-            "detail": "Play",
-            "score_after": "PHI 0, STL 2",
+            "detail": "José Fermín homers (6) on a fly ball to left center field.",
+            "score_after": "PHI 0, STL 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823421:31",
+            "inning": 5,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Ramón Urías",
+            "actor_id": 602104,
+            "detail": "Ramón Urías grounds out, shortstop Trea Turner to first baseman Kyle Schwarber.",
+            "score_after": "PHI 0, STL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:32",
+            "inning": 5,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "Pedro Pagés",
+            "actor_id": 686780,
+            "detail": "Pedro Pagés grounds out, shortstop Trea Turner to first baseman Kyle Schwarber.",
+            "score_after": "PHI 0, STL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:33",
+            "inning": 5,
+            "half": "top",
+            "team": "STL",
+            "event_type": "out",
+            "actor": "JJ Wetherholt",
+            "actor_id": 802139,
+            "detail": "JJ Wetherholt lines out to shortstop Trea Turner.",
+            "score_after": "PHI 0, STL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:34",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds out, second baseman Ramón Urías to first baseman Alec Burleson.",
+            "score_after": "PHI 0, STL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:35",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa singles on a line drive to right fielder Jordan Walker.",
+            "score_after": "PHI 0, STL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:36",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz strikes out swinging.",
+            "score_after": "PHI 0, STL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823421:37",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out, second baseman Ramón Urías to first baseman Alec Burleson.",
+            "score_after": "PHI 0, STL 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -896,21 +994,27 @@
         ],
         "situation": {
           "batter": {
-            "name": "José Fermín",
+            "name": "Iván Herrera",
             "meta": "vs Cristopher Sánchez"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "F",
+            "F",
+            "B",
+            "X"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 0
+            "balls": 2,
+            "strikes": 2,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 5th"
+          "status": "End 5th"
         }
       }
     },
@@ -927,8 +1031,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:43:28.830Z",
-            "freshness_label": "As of Aug 23, 2026, 2:43 PM ET"
+            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -940,8 +1044,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:43:28.830Z",
-            "freshness_label": "As of Aug 23, 2026, 2:43 PM ET"
+            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -953,8 +1057,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:43:28.830Z",
-            "freshness_label": "As of Aug 23, 2026, 2:43 PM ET"
+            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -966,8 +1070,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:43:28.830Z",
-            "freshness_label": "As of Aug 23, 2026, 2:43 PM ET"
+            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -979,8 +1083,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:43:28.830Z",
-            "freshness_label": "As of Aug 23, 2026, 2:43 PM ET"
+            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -992,8 +1096,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:43:28.830Z",
-            "freshness_label": "As of Aug 23, 2026, 2:43 PM ET"
+            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1005,8 +1109,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:43:28.830Z",
-            "freshness_label": "As of Aug 23, 2026, 2:43 PM ET"
+            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1018,8 +1122,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-23T18:43:28.830Z",
-            "freshness_label": "As of Aug 23, 2026, 2:43 PM ET"
+            "last_confirmed": "2026-08-23T18:57:00.387Z",
+            "freshness_label": "As of Aug 23, 2026, 2:57 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
