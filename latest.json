@@ -4,7 +4,7 @@
   "edition_date": "2026-08-23",
   "volume": 1,
   "edition": 145,
-  "generated_at": "2026-08-23T18:24:44.641Z",
+  "generated_at": "2026-08-23T18:43:28.830Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, STL 1",
-    "dek": "End 3rd · 3 outs",
-    "summary": "Jordan Walker is up against Cristopher Sánchez. Series: PHI leads 2-0.",
+    "headline": "PHI 0, STL 2",
+    "dek": "End 4th · 3 outs",
+    "summary": "José Fermín is up against Cristopher Sánchez. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
   },
@@ -55,8 +55,8 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
-      "condition": "Clear",
+      "temp_f": 79,
+      "condition": "Mostly sunny",
       "wind": "9 mph · gusts 13",
       "gusts_mph": 13
     },
@@ -64,28 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jordan Walker",
+        "name": "José Fermín",
         "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [
-        "S",
-        "B",
-        "S",
-        "B",
-        "B",
-        "S"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 3,
-        "strikes": 3,
-        "outs": 3
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 3rd"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -93,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-23T18:24:45.211Z",
+    "updated_at": "2026-08-23T18:43:29.129Z",
     "current_game_pk": 823421,
     "next_game_pk": 823097,
     "next_game": {
@@ -130,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 13 mph",
+      "text": "79° · Mostly sunny · gusts 13 mph",
       "highlight": false
     }
   ]
