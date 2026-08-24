@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-23",
+  "edition_date": "2026-08-24",
   "volume": 1,
-  "edition": 145,
-  "generated_at": "2026-08-24T03:34:44.501Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 146,
+  "generated_at": "2026-08-24T04:02:59.649Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 73,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, STL 4.",
-    "dek": "PHI 6, STL 4 · Cristopher Sánchez · 6.2 IP, 9 H, 4 ER, 7 K",
-    "summary": "PHI 6, STL 4. Final at Citizens Bank Park, Philadelphia. PHI wins 3-0.",
+    "headline": "Phillies @ Mariners · Game 1 of 3",
+    "dek": "Zack Wheeler vs Logan Gilbert",
+    "summary": "Zack Wheeler vs Logan Gilbert · Phillies @ Mariners · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Logan Gilbert · PHI @ SEA · Mon, Aug 24 · 9:40 PM"
+    "next_value": "Aaron Nola vs George Kirby · PHI @ SEA · Tue, Aug 25 · 9:40 PM"
   },
   "game": {
-    "matchup": "Cardinals @ Phillies · Game 3 of 3",
-    "first_pitch": "1:35 PM",
-    "venue": "Citizens Bank Park, Philadelphia",
+    "matchup": "Phillies @ Mariners · Game 1 of 3",
+    "first_pitch": "9:40 PM",
+    "venue": "T-Mobile Park, Seattle",
     "starters": {
       "home": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Logan Gilbert",
+        "hand": "R"
       },
       "away": {
-        "name": "Kyle Leahy",
+        "name": "Zack Wheeler",
         "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Kyle Leahy",
+        "name": "Logan Gilbert",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI wins 3-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 68,
+      "temp_f": 63,
       "condition": "Clear",
-      "wind": "3 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "4 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-24T03:34:45.084Z",
+    "updated_at": "2026-08-24T04:03:00.273Z",
     "current_game_pk": 823097,
     "next_game_pk": 823098,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Cardinals @ Phillies · Game 3 of 3 · 1:35 PM",
+      "text": "Phillies @ Mariners · Game 1 of 3 · 9:40 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Kyle Leahy",
+      "text": "Zack Wheeler vs Logan Gilbert",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "68° · Clear · gusts 7 mph",
+      "text": "63° · Clear · gusts 13 mph",
       "highlight": false
     }
   ]
