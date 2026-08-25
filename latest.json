@@ -4,9 +4,9 @@
   "edition_date": "2026-08-24",
   "volume": 1,
   "edition": 146,
-  "generated_at": "2026-08-25T01:09:39.430Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-25T01:30:28.886Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 73,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Mariners · Game 1 of 3",
-    "dek": "Zack Wheeler vs Logan Gilbert",
-    "summary": "Zack Wheeler vs Logan Gilbert · Phillies @ Mariners · Game 1 of 3",
+    "headline": "PHI 0, SEA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Logan Gilbert. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs George Kirby · PHI @ SEA · Tue, Aug 25 · 9:40 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 77,
+      "temp_f": 75,
       "condition": "Clear",
-      "wind": "7 mph · gusts 11",
+      "wind": "6 mph · gusts 11",
       "gusts_mph": 11
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Logan Gilbert"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-25T01:09:39.997Z",
+    "updated_at": "2026-08-25T01:30:29.465Z",
     "current_game_pk": 823097,
     "next_game_pk": 823098,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Clear · gusts 11 mph",
+      "text": "75° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
