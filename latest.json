@@ -4,7 +4,7 @@
   "edition_date": "2026-08-24",
   "volume": 1,
   "edition": 146,
-  "generated_at": "2026-08-25T03:30:59.392Z",
+  "generated_at": "2026-08-25T03:47:01.786Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, SEA 8",
-    "dek": "Bottom 5th · 1 out",
-    "summary": "Brock Rodden is up against Alex McFarlane. Series: Regular Season.",
+    "dek": "End 6th · 3 outs",
+    "summary": "J.T. Realmuto is up against Seranthony Domínguez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs George Kirby · PHI @ SEA · Tue, Aug 25 · 9:40 PM"
   },
@@ -55,33 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 68,
+      "temp_f": 67,
       "condition": "Clear",
-      "wind": "4 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "3 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Weston Wilson",
-        "meta": "vs Alex McFarlane"
+        "name": "J.T. Realmuto",
+        "meta": "vs Seranthony Domínguez"
       },
       "pitches": [
-        "B",
         "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 0,
-        "outs": 1
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "End 6th"
     },
     "recap_line": null
   },
@@ -89,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-25T03:30:59.907Z",
+    "updated_at": "2026-08-25T03:47:02.266Z",
     "current_game_pk": 823097,
     "next_game_pk": 823098,
     "next_game": {
@@ -126,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "68° · Clear · gusts 12 mph",
+      "text": "67° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
