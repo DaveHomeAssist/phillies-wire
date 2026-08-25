@@ -5,14 +5,14 @@
     "edition": 146,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-25T02:10:35.660Z",
+    "generated_at": "2026-08-25T02:27:12.987Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 24, 2026, 10:10 PM ET",
+      "generated_at_et": "Aug 24, 2026, 10:27 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, SEA 5",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Weston Wilson is up against Zack Wheeler. Series: Regular Season.",
+    "headline": "PHI 2, SEA 5",
+    "dek": "End 2nd · 3 outs",
+    "summary": "Trea Turner is up against Logan Gilbert. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "73° · Clear"
+        "value": "72° · Clear"
       }
     ],
     "bullets": [
-      "Weston Wilson at the plate",
-      "Zack Wheeler on the mound",
+      "Trea Turner at the plate",
+      "Logan Gilbert on the mound",
       "T-Mobile Park, Seattle"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
+          "temp_f": 72,
           "condition": "Clear",
-          "wind": "6 mph · gusts 12",
+          "wind": "5 mph · gusts 12",
           "gusts_mph": 12
         },
         "giveaway": "",
@@ -359,7 +359,7 @@
             "team": "SEA",
             "name": "Logan Gilbert",
             "hand": "R",
-            "era": "3.39",
+            "era": "3.43",
             "record": "10-7",
             "whip": "1.02"
           },
@@ -367,21 +367,21 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "3.13",
+            "era": "3.25",
             "record": "10-4",
             "whip": "1.04"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "Bottom",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 2,
+              "runs": 2,
+              "hits": 3,
               "errors": 0
             },
             "home": {
@@ -401,6 +401,19 @@
               "home": {
                 "runs": 5,
                 "hits": 4,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -594,11 +607,109 @@
             "inning": 1,
             "half": "bottom",
             "team": "SEA",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Weston Wilson",
             "actor_id": 642215,
-            "detail": "Play",
+            "detail": "Weston Wilson called out on strikes.",
             "score_after": "PHI 1, SEA 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823097:14",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out to center fielder Julio Rodríguez.",
+            "score_after": "PHI 1, SEA 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823097:15",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto homers (9) on a line drive to left center field.",
+            "score_after": "PHI 2, SEA 5",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823097:16",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford lines out to center fielder Julio Rodríguez.",
+            "score_after": "PHI 2, SEA 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823097:17",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out, second baseman Cole Young to first baseman Josh Naylor.",
+            "score_after": "PHI 2, SEA 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823097:18",
+            "inning": 2,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "strikeout",
+            "actor": "Brock Rodden",
+            "actor_id": 801126,
+            "detail": "Brock Rodden strikes out swinging.",
+            "score_after": "PHI 2, SEA 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823097:19",
+            "inning": 2,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "out",
+            "actor": "Randy Arozarena",
+            "actor_id": 668227,
+            "detail": "Randy Arozarena flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 2, SEA 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823097:20",
+            "inning": 2,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "strikeout",
+            "actor": "Dominic Canzone",
+            "actor_id": 686527,
+            "detail": "Dominic Canzone strikes out swinging.",
+            "score_after": "PHI 2, SEA 5",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -606,25 +717,28 @@
         ],
         "situation": {
           "batter": {
-            "name": "Weston Wilson",
-            "meta": "vs Zack Wheeler"
+            "name": "Trea Turner",
+            "meta": "vs Logan Gilbert"
           },
           "pitches": [
+            "B",
+            "B",
             "S",
+            "B",
             "S",
-            "F"
+            "S"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 2,
-            "outs": 2
+            "balls": 3,
+            "strikes": 3,
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 1st"
+          "status": "End 2nd"
         }
       }
     },
@@ -641,8 +755,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-25T02:10:35.660Z",
-            "freshness_label": "As of Aug 24, 2026, 10:10 PM ET"
+            "last_confirmed": "2026-08-25T02:27:12.987Z",
+            "freshness_label": "As of Aug 24, 2026, 10:27 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -654,8 +768,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-25T02:10:35.660Z",
-            "freshness_label": "As of Aug 24, 2026, 10:10 PM ET"
+            "last_confirmed": "2026-08-25T02:27:12.987Z",
+            "freshness_label": "As of Aug 24, 2026, 10:27 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -667,8 +781,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-25T02:10:35.660Z",
-            "freshness_label": "As of Aug 24, 2026, 10:10 PM ET"
+            "last_confirmed": "2026-08-25T02:27:12.987Z",
+            "freshness_label": "As of Aug 24, 2026, 10:27 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -680,8 +794,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-25T02:10:35.660Z",
-            "freshness_label": "As of Aug 24, 2026, 10:10 PM ET"
+            "last_confirmed": "2026-08-25T02:27:12.987Z",
+            "freshness_label": "As of Aug 24, 2026, 10:27 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -693,8 +807,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-25T02:10:35.660Z",
-            "freshness_label": "As of Aug 24, 2026, 10:10 PM ET"
+            "last_confirmed": "2026-08-25T02:27:12.987Z",
+            "freshness_label": "As of Aug 24, 2026, 10:27 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -706,8 +820,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-25T02:10:35.660Z",
-            "freshness_label": "As of Aug 24, 2026, 10:10 PM ET"
+            "last_confirmed": "2026-08-25T02:27:12.987Z",
+            "freshness_label": "As of Aug 24, 2026, 10:27 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -719,8 +833,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-25T02:10:35.660Z",
-            "freshness_label": "As of Aug 24, 2026, 10:10 PM ET"
+            "last_confirmed": "2026-08-25T02:27:12.987Z",
+            "freshness_label": "As of Aug 24, 2026, 10:27 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -732,8 +846,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-25T02:10:35.660Z",
-            "freshness_label": "As of Aug 24, 2026, 10:10 PM ET"
+            "last_confirmed": "2026-08-25T02:27:12.987Z",
+            "freshness_label": "As of Aug 24, 2026, 10:27 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
