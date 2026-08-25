@@ -4,7 +4,7 @@
   "edition_date": "2026-08-24",
   "volume": 1,
   "edition": 146,
-  "generated_at": "2026-08-25T02:27:12.987Z",
+  "generated_at": "2026-08-25T02:38:44.310Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, SEA 5",
-    "dek": "End 2nd · 3 outs",
-    "summary": "Trea Turner is up against Logan Gilbert. Series: Regular Season.",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Julio Rodríguez is up against Zack Wheeler. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs George Kirby · PHI @ SEA · Tue, Aug 25 · 9:40 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 72,
+      "temp_f": 71,
       "condition": "Clear",
       "wind": "5 mph · gusts 12",
       "gusts_mph": 12
@@ -64,28 +64,23 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Logan Gilbert"
+        "name": "Julio Rodríguez",
+        "meta": "vs Zack Wheeler"
       },
       "pitches": [
-        "B",
-        "B",
-        "S",
-        "B",
-        "S",
-        "S"
+        "B"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 3,
-        "outs": 3
+        "balls": 1,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 2nd"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -93,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-25T02:27:13.997Z",
+    "updated_at": "2026-08-25T02:38:45.109Z",
     "current_game_pk": 823097,
     "next_game_pk": 823098,
     "next_game": {
@@ -130,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "72° · Clear · gusts 12 mph",
+      "text": "71° · Clear · gusts 12 mph",
       "highlight": false
     }
   ]
