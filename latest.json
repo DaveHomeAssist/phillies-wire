@@ -4,7 +4,7 @@
   "edition_date": "2026-08-24",
   "volume": 1,
   "edition": 146,
-  "generated_at": "2026-08-25T02:38:44.310Z",
+  "generated_at": "2026-08-25T02:51:04.687Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, SEA 5",
-    "dek": "Bottom 3rd · 0 outs",
-    "summary": "Julio Rodríguez is up against Zack Wheeler. Series: Regular Season.",
+    "headline": "PHI 2, SEA 6",
+    "dek": "Bottom 3rd · 2 outs",
+    "summary": "Brock Rodden is up against Zack Wheeler. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs George Kirby · PHI @ SEA · Tue, Aug 25 · 9:40 PM"
   },
@@ -55,30 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 71,
+      "temp_f": 70,
       "condition": "Clear",
-      "wind": "5 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "5 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Julio Rodríguez",
+        "name": "Brock Rodden",
         "meta": "vs Zack Wheeler"
       },
       "pitches": [
+        "S",
+        "S",
         "B"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
-        "third": false
+        "first": true,
+        "second": true,
+        "third": true
       },
       "status": "Bottom 3rd"
     },
@@ -88,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-25T02:38:45.109Z",
+    "updated_at": "2026-08-25T02:51:05.126Z",
     "current_game_pk": 823097,
     "next_game_pk": 823098,
     "next_game": {
@@ -125,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "71° · Clear · gusts 12 mph",
+      "text": "70° · Clear · gusts 13 mph",
       "highlight": false
     }
   ]
