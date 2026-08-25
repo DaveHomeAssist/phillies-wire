@@ -4,7 +4,7 @@
   "edition_date": "2026-08-24",
   "volume": 1,
   "edition": 146,
-  "generated_at": "2026-08-25T03:07:07.626Z",
+  "generated_at": "2026-08-25T03:20:19.045Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, SEA 6",
-    "dek": "Bottom 4th · 0 outs",
-    "summary": "Dominic Canzone is up against Zack Wheeler. Series: Regular Season.",
+    "dek": "Top 5th · 2 outs",
+    "summary": "Luis Arraez is up against Logan Gilbert. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs George Kirby · PHI @ SEA · Tue, Aug 25 · 9:40 PM"
   },
@@ -55,33 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 69,
+      "temp_f": 68,
       "condition": "Clear",
-      "wind": "5 mph · gusts 13",
+      "wind": "4 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Dominic Canzone",
-        "meta": "vs Zack Wheeler"
+        "name": "Luis Arraez",
+        "meta": "vs Logan Gilbert"
       },
       "pitches": [
         "S",
+        "B",
+        "S",
+        "F",
         "F"
       ],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 2,
-        "outs": 0
+        "outs": 2
       },
       "bases": {
         "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 4th"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -89,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-25T03:07:08.210Z",
+    "updated_at": "2026-08-25T03:20:19.520Z",
     "current_game_pk": 823097,
     "next_game_pk": 823098,
     "next_game": {
@@ -126,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "69° · Clear · gusts 13 mph",
+      "text": "68° · Clear · gusts 13 mph",
       "highlight": false
     }
   ]
