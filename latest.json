@@ -4,7 +4,7 @@
   "edition_date": "2026-08-24",
   "volume": 1,
   "edition": 146,
-  "generated_at": "2026-08-25T01:30:28.886Z",
+  "generated_at": "2026-08-25T01:49:04.600Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, SEA 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Kyle Schwarber is up against Logan Gilbert. Series: Regular Season.",
+    "dek": "Top 1st · 1 out",
+    "summary": "Luis Arraez is up against Logan Gilbert. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs George Kirby · PHI @ SEA · Tue, Aug 25 · 9:40 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 75,
+      "temp_f": 74,
       "condition": "Clear",
       "wind": "6 mph · gusts 11",
       "gusts_mph": 11
@@ -64,18 +64,23 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Luis Arraez",
         "meta": "vs Logan Gilbert"
       },
-      "pitches": [],
+      "pitches": [
+        "F",
+        "B",
+        "F",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 1,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
       "status": "Top 1st"
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-25T01:30:29.465Z",
+    "updated_at": "2026-08-25T01:49:05.003Z",
     "current_game_pk": 823097,
     "next_game_pk": 823098,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "75° · Clear · gusts 11 mph",
+      "text": "74° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
