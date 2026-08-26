@@ -4,7 +4,7 @@
   "edition_date": "2026-08-25",
   "volume": 1,
   "edition": 147,
-  "generated_at": "2026-08-26T03:13:17.871Z",
+  "generated_at": "2026-08-26T03:35:27.148Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, SEA 1",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Josh Naylor is up against Aaron Nola. Series: SEA leads 1-0.",
+    "headline": "PHI 1, SEA 2",
+    "dek": "Bottom 7th · 2 outs",
+    "summary": "Dominic Canzone is up against Brooks Raley. Series: SEA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Bryan Woo · PHI @ SEA · Wed, Aug 26 · 4:10 PM"
   },
@@ -55,8 +55,8 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 70,
-      "condition": "Clear",
+      "temp_f": 68,
+      "condition": "Mostly sunny",
       "wind": "7 mph · gusts 18",
       "gusts_mph": 18
     },
@@ -64,27 +64,23 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Josh Naylor",
-        "meta": "vs Aaron Nola"
+        "name": "Dominic Canzone",
+        "meta": "vs Brooks Raley"
       },
       "pitches": [
-        "B",
-        "S",
-        "B",
-        "S",
-        "X"
+        "B"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 1
+        "balls": 1,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": true,
-        "third": false
+        "third": true
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -92,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-26T03:13:18.490Z",
+    "updated_at": "2026-08-26T03:35:27.524Z",
     "current_game_pk": 823098,
     "next_game_pk": 823096,
     "next_game": {
@@ -129,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "70° · Clear · gusts 18 mph",
+      "text": "68° · Mostly sunny · gusts 18 mph",
       "highlight": false
     }
   ]
