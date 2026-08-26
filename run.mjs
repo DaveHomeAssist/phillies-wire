@@ -57,8 +57,18 @@ export function main() {
   }
 
   if (IS_LIVE_REFRESH) {
-    writeDeliveryStatus({ state: "skipped", required: false, reason: "live refresh skips email delivery" });
-    console.log("Delivery skipped: game-window refresh does not send email.");
+    // A live refresh must not erase the evidence of a failed required
+    // delivery: the morning run's failed/partial status stays in place
+    // (re-emitted so the site copy carries it too) until the next run
+    // that actually attempts delivery overwrites it with a real outcome.
+    const existingStatus = readJson("./delivery-status.json");
+    if (existingStatus?.required && ["failed", "partial"].includes(existingStatus.state)) {
+      writeDeliveryStatus(existingStatus);
+      console.log(`Delivery status preserved: last required delivery was ${existingStatus.state}.`);
+    } else {
+      writeDeliveryStatus({ state: "skipped", required: false, reason: "live refresh skips email delivery" });
+      console.log("Delivery skipped: game-window refresh does not send email.");
+    }
     return;
   }
 

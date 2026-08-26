@@ -19,14 +19,15 @@ on:
   schedule:
     # Daily morning publish. 13:00 UTC = 09:00 ET (EDT) / 08:00 ET (EST).
     - cron: "0 13 * * *"
-    # Game-window refresh every 15 minutes. The two crons below cover
-    # both EST and EDT so the site stays fresh year-round:
+    # Game-window refresh every 15 minutes. A single cron covers the union
+    # of the EST and EDT windows so the site stays fresh year-round:
     #   EDT (Mar 2nd Sunday - Nov 1st Sunday): 12:00-01:00 ET == 16:00-05:00 UTC
     #   EST (Nov 1st Sunday - Mar 2nd Sunday): 12:00-01:00 ET == 17:00-06:00 UTC
-    # The pipeline is idempotent and cheap, so overlapping runs are harmless
-    # and the concurrency group prevents races.
-    - cron: "*/15 16-23,0-5 * * *"
-    - cron: "*/15 17-23,0-6 * * *"
+    #   union: 16:00-06:00 UTC.
+    # One entry, not two: separate EDT/EST crons double-fired every 15
+    # minutes across their overlapping hours, doubling Actions runs and
+    # archive commits for no extra freshness.
+    - cron: "*/15 16-23,0-6 * * *"
 
 permissions:
   contents: write
@@ -159,8 +160,24 @@ jobs:
           echo "::warning::Persist archive snapshot could not push after 3 attempts; deploy already shipped. Next cron will catch up."
           exit 0
 
-      - name: Publish summary
-        if: always()
+      # A required delivery that failed must turn the run red. Deploy and
+      # the archive commit-back have already happened above, so the site
+      # still ships — this gate only stops the workflow from reporting
+      # success when the newsletter did not actually go out. Only the
+      # daily (delivery-attempting) mode is gated; live refreshes preserve
+      # a prior failed status without re-failing every 15 minutes.
+      - name: Fail on required delivery failure
+        if: steps.mode.outputs.mode == 'daily'
+        run: |
+          node -e '
+            const { existsSync, readFileSync } = require("node:fs");
+            if (!existsSync("delivery-status.json")) process.exit(0);
+            const status = JSON.parse(readFileSync("delivery-status.json", "utf8"));
+            if (status.required && ["failed", "partial"].includes(status.state)) {
+              console.error(`Required email delivery ${status.state}: delivered ${status.delivered}, failed ${status.failed}.`);
+              process.exit(1);
+            }
+          '
         run: |
           echo "## Phillies Wire publish" >> "$GITHUB_STEP_SUMMARY"
           echo "- Run date: $(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_STEP_SUMMARY"
