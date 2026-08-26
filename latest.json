@@ -4,7 +4,7 @@
   "edition_date": "2026-08-25",
   "volume": 1,
   "edition": 147,
-  "generated_at": "2026-08-26T03:35:27.148Z",
+  "generated_at": "2026-08-26T03:37:01.936Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, SEA 2",
+    "headline": "PHI 1, SEA 4",
     "dek": "Bottom 7th · 2 outs",
-    "summary": "Dominic Canzone is up against Brooks Raley. Series: SEA leads 1-0.",
+    "summary": "Julio Rodríguez is up against Brooks Raley. Series: SEA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Bryan Woo · PHI @ SEA · Wed, Aug 26 · 4:10 PM"
   },
@@ -64,20 +64,20 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Dominic Canzone",
+        "name": "Julio Rodríguez",
         "meta": "vs Brooks Raley"
       },
       "pitches": [
-        "B"
+        "S"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
+        "balls": 0,
+        "strikes": 1,
         "outs": 2
       },
       "bases": {
         "first": true,
-        "second": true,
+        "second": false,
         "third": true
       },
       "status": "Bottom 7th"
@@ -88,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-26T03:35:27.524Z",
+    "updated_at": "2026-08-26T03:37:02.190Z",
     "current_game_pk": 823098,
     "next_game_pk": 823096,
     "next_game": {
