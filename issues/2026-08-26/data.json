@@ -5,313 +5,56 @@
     "edition": 148,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-26T22:14:27.777Z",
+    "generated_at": "2026-08-26T23:25:34.534Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Aug 26, 2026, 6:14 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Aug 26, 2026, 7:25 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 73,
+    "wins": 74,
     "losses": 60,
-    "streak": "L2",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 6, SEA 0",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Bryson Stott is up against Carlos Vargas. Series: SEA leads 2-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 6, SEA 0.",
+    "dek": "PHI 6, SEA 0 · Jesús Luzardo · 7.0 IP, 1 H, 0 ER, 9 K",
+    "summary": "PHI 6, SEA 0. Final at T-Mobile Park, Seattle. SEA wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "T-Mobile Park, Seattle"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "72° · Clear"
+        "label": "Series",
+        "value": "SEA wins 2-1"
       }
     ],
     "bullets": [
-      "Bryson Stott at the plate",
-      "Carlos Vargas on the mound",
-      "T-Mobile Park, Seattle"
+      "Jesús Luzardo: 7.0 IP, 1 H, 0 ER, 9 K",
+      "Bryan Woo: 4.0 IP, 5 H, 6 ER, 5 K",
+      "Kyle Schwarber: 2-for-5, 1 HR, 3 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Reid Detmers · PHI @ LAA · Fri, Aug 28 · 9:38 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at SEA game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "4:10 PM",
-        "starters": {
-          "home": {
-            "team": "SEA",
-            "name": "Bryan Woo",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Jesús Luzardo",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "SEA",
-            "name": "Bryan Woo",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Taylor Ward",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Randy Arozarena",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Julio Rodríguez",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Cal Raleigh",
-              "position": "DH",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Patrick Wisdom",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.P. Crawford",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Weston Wilson",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Jhonny Pereda",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Brock Rodden",
-              "position": "2B",
-              "bats": "S"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Taylor Ward",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Randy Arozarena",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Julio Rodríguez",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Cal Raleigh",
-              "position": "DH",
-              "bats": "S"
-            },
-            {
-              "slot": 5,
-              "name": "Patrick Wisdom",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "J.P. Crawford",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Weston Wilson",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Jhonny Pereda",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Brock Rodden",
-              "position": "2B",
-              "bats": "S"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Mariners · Game 3 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "SEA leads 2-0"
+          "label": "SEA wins 2-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,9 +89,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 72,
+          "temp_f": 75,
           "condition": "Clear",
-          "wind": "5 mph · gusts 9",
+          "wind": "4 mph · gusts 9",
           "gusts_mph": 9
         },
         "giveaway": "",
@@ -360,7 +103,7 @@
             "name": "Bryan Woo",
             "hand": "R",
             "era": "4.36",
-            "record": "9-8",
+            "record": "9-9",
             "whip": "1.10"
           },
           "away": {
@@ -368,25 +111,25 @@
             "name": "Jesús Luzardo",
             "hand": "L",
             "era": "3.09",
-            "record": "11-5",
+            "record": "12-5",
             "whip": "1.12"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 6,
-              "hits": 8,
+              "hits": 10,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 1,
+              "hits": 2,
               "errors": 0
             }
           },
@@ -485,13 +228,26 @@
             {
               "num": 8,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -786,7 +542,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out, second baseman Brock Rodden to first baseman Patrick Wisdom.",
+            "detail": "Bryson Stott grounds out sharply, second baseman Brock Rodden to first baseman Patrick Wisdom.",
             "score_after": "PHI 6, SEA 0",
             "runs": 0,
             "is_scoring": false,
@@ -800,7 +556,7 @@
             "event_type": "out",
             "actor": "Weston Wilson",
             "actor_id": 642215,
-            "detail": "Weston Wilson grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "detail": "Weston Wilson grounds out sharply, third baseman Bryson Stott to first baseman Alec Bohm.",
             "score_after": "PHI 6, SEA 0",
             "runs": 0,
             "is_scoring": false,
@@ -884,7 +640,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds out, third baseman Weston Wilson to first baseman Patrick Wisdom.",
+            "detail": "Justin Crawford grounds out sharply, third baseman Weston Wilson to first baseman Patrick Wisdom.",
             "score_after": "PHI 6, SEA 0",
             "runs": 0,
             "is_scoring": false,
@@ -1010,7 +766,7 @@
             "event_type": "out",
             "actor": "J.P. Crawford",
             "actor_id": 641487,
-            "detail": "Mariners challenged (play at 1st), call on the field was upheld: J.P. Crawford grounds out, shortstop Trea Turner to first baseman…",
+            "detail": "Mariners challenged (play at 1st), call on the field was upheld: J.P. Crawford grounds out sharply, shortstop Trea Turner to first…",
             "score_after": "PHI 6, SEA 0",
             "runs": 0,
             "is_scoring": false,
@@ -1164,7 +920,7 @@
             "event_type": "out",
             "actor": "Julio Rodríguez",
             "actor_id": 677594,
-            "detail": "Julio Rodríguez grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "detail": "Julio Rodríguez grounds out sharply, shortstop Trea Turner to first baseman Alec Bohm.",
             "score_after": "PHI 6, SEA 0",
             "runs": 0,
             "is_scoring": false,
@@ -1301,37 +1057,184 @@
             "inning": 8,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Play",
+            "detail": "Bryson Stott singles on a line drive to center fielder Julio Rodríguez.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:58",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh challenged (pitch result), call on the field was confirmed: Brandon Marsh called out on strikes.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:59",
+            "inning": 8,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "strikeout",
+            "actor": "Jhonny Pereda",
+            "actor_id": 640902,
+            "detail": "Jhonny Pereda strikes out swinging.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:60",
+            "inning": 8,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "out",
+            "actor": "Brock Rodden",
+            "actor_id": 801126,
+            "detail": "Brock Rodden flies out to right fielder Bryce Harper.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:61",
+            "inning": 8,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "out",
+            "actor": "Taylor Ward",
+            "actor_id": 621493,
+            "detail": "Taylor Ward lines out sharply to center fielder Justin Crawford.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:62",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto singles on a sharp line drive to left fielder Randy Arozarena.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:63",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds out, pitcher Carlos Vargas to first baseman Patrick Wisdom. J.T. Realmuto to 2nd.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:64",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber called out on strikes.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:65",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner flies out sharply to center fielder Julio Rodríguez.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:66",
+            "inning": 9,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "single",
+            "actor": "Randy Arozarena",
+            "actor_id": 668227,
+            "detail": "Randy Arozarena singles on a ground ball to left fielder Brandon Marsh.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:67",
+            "inning": 9,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "strikeout",
+            "actor": "Julio Rodríguez",
+            "actor_id": 677594,
+            "detail": "Julio Rodríguez strikes out swinging.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:68",
+            "inning": 9,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "strikeout",
+            "actor": "Cal Raleigh",
+            "actor_id": 663728,
+            "detail": "Cal Raleigh strikes out swinging.",
+            "score_after": "PHI 6, SEA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823096:69",
+            "inning": 9,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "out",
+            "actor": "Patrick Wisdom",
+            "actor_id": 621550,
+            "detail": "Patrick Wisdom lines out to left fielder Brandon Marsh.",
             "score_after": "PHI 6, SEA 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Bryson Stott",
-            "meta": "vs Carlos Vargas"
-          },
-          "pitches": [
-            "S",
-            "F"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 2,
-            "outs": 2
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Top 8th"
-        }
+        ]
       }
     },
     "injury_report": {
@@ -1347,8 +1250,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T22:14:27.777Z",
-            "freshness_label": "As of Aug 26, 2026, 6:14 PM ET"
+            "last_confirmed": "2026-08-26T23:25:34.534Z",
+            "freshness_label": "As of Aug 26, 2026, 7:25 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1360,8 +1263,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T22:14:27.777Z",
-            "freshness_label": "As of Aug 26, 2026, 6:14 PM ET"
+            "last_confirmed": "2026-08-26T23:25:34.534Z",
+            "freshness_label": "As of Aug 26, 2026, 7:25 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1373,8 +1276,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T22:14:27.777Z",
-            "freshness_label": "As of Aug 26, 2026, 6:14 PM ET"
+            "last_confirmed": "2026-08-26T23:25:34.534Z",
+            "freshness_label": "As of Aug 26, 2026, 7:25 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1386,8 +1289,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T22:14:27.777Z",
-            "freshness_label": "As of Aug 26, 2026, 6:14 PM ET"
+            "last_confirmed": "2026-08-26T23:25:34.534Z",
+            "freshness_label": "As of Aug 26, 2026, 7:25 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1399,8 +1302,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T22:14:27.777Z",
-            "freshness_label": "As of Aug 26, 2026, 6:14 PM ET"
+            "last_confirmed": "2026-08-26T23:25:34.534Z",
+            "freshness_label": "As of Aug 26, 2026, 7:25 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1412,8 +1315,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T22:14:27.777Z",
-            "freshness_label": "As of Aug 26, 2026, 6:14 PM ET"
+            "last_confirmed": "2026-08-26T23:25:34.534Z",
+            "freshness_label": "As of Aug 26, 2026, 7:25 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1425,8 +1328,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T22:14:27.777Z",
-            "freshness_label": "As of Aug 26, 2026, 6:14 PM ET"
+            "last_confirmed": "2026-08-26T23:25:34.534Z",
+            "freshness_label": "As of Aug 26, 2026, 7:25 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1438,8 +1341,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T22:14:27.777Z",
-            "freshness_label": "As of Aug 26, 2026, 6:14 PM ET"
+            "last_confirmed": "2026-08-26T23:25:34.534Z",
+            "freshness_label": "As of Aug 26, 2026, 7:25 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

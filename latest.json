@@ -4,21 +4,21 @@
   "edition_date": "2026-08-26",
   "volume": 1,
   "edition": 148,
-  "generated_at": "2026-08-26T22:14:27.777Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-26T23:25:34.534Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 73,
+    "wins": 74,
     "losses": 60,
-    "streak": "L2",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, SEA 0",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Bryson Stott is up against Carlos Vargas. Series: SEA leads 2-0.",
+    "headline": "PHI 6, SEA 0.",
+    "dek": "PHI 6, SEA 0 · Jesús Luzardo · 7.0 IP, 1 H, 0 ER, 9 K",
+    "summary": "PHI 6, SEA 0. Final at T-Mobile Park, Seattle. SEA wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Reid Detmers · PHI @ LAA · Fri, Aug 28 · 9:38 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "SEA leads 2-0"
+      "label": "SEA wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,62 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 72,
+      "temp_f": 75,
       "condition": "Clear",
-      "wind": "5 mph · gusts 9",
+      "wind": "4 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Carlos Vargas"
-      },
-      "pitches": [
-        "S",
-        "F"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 2
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-26T22:14:28.177Z",
-    "current_game_pk": 823096,
-    "next_game_pk": 823985,
+    "updated_at": "2026-08-26T23:25:35.154Z",
+    "current_game_pk": 823985,
+    "next_game_pk": 823986,
     "next_game": {
-      "game_pk": 823985,
-      "official_date": "2026-08-28",
-      "date_label": "Fri, Aug 28, 2026",
-      "time_label": "9:38 PM",
+      "game_pk": 823986,
+      "official_date": "2026-08-29",
+      "date_label": "Sat, Aug 29, 2026",
+      "time_label": "10:07 PM",
       "title": "Phillies at Los Angeles Angels",
       "matchup": "PHI at LAA",
       "venue": "Angel Stadium"
     },
     "current_game": {
-      "game_pk": 823096,
-      "official_date": "2026-08-26",
-      "title": "Phillies at Seattle Mariners",
-      "matchup": "PHI at SEA"
+      "game_pk": 823985,
+      "official_date": "2026-08-28",
+      "title": "Phillies at Los Angeles Angels",
+      "matchup": "PHI at LAA"
     }
   },
   "ticker": [
     {
-      "text": "PHI 73-60",
+      "text": "PHI 74-60",
       "highlight": true
     },
     {
@@ -126,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "72° · Clear · gusts 9 mph",
+      "text": "75° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
