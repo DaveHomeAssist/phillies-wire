@@ -2,6 +2,13 @@
 
 All material Phillies Wire changes are recorded here, newest first.
 
+## 2026-08-26
+
+### Reliability and operations (audit remediation)
+
+- Daily publish now fails when a required newsletter delivery fails, instead of reporting success without sending (H-1); the two refresh cron workflows were merged into one schedule (M-1) (`db678db07`).
+- The `user_data` wrapping test assertion now tolerates CRLF checkouts (M-2) (`3e26190f5`).
+
 ## 2026-08-12
 
 ### Performance and stability
