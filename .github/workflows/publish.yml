@@ -142,6 +142,7 @@ jobs:
           git add -A \
             index.html archive.json archive issues \
             status.json latest.json delivery-status.json \
+            dashboard/accuracy/accuracy.json \
             robots.txt sitemap.xml feed.xml manifest.webmanifest favicon.svg og-default.svg
           if git diff --cached --quiet; then
             echo "No archive snapshot changes to commit."
@@ -178,6 +179,9 @@ jobs:
               process.exit(1);
             }
           '
+
+      - name: Publish summary
+        if: always()
         run: |
           echo "## Phillies Wire publish" >> "$GITHUB_STEP_SUMMARY"
           echo "- Run date: $(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_STEP_SUMMARY"
