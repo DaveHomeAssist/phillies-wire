@@ -4,7 +4,7 @@
   "edition_date": "2026-08-25",
   "volume": 1,
   "edition": 147,
-  "generated_at": "2026-08-26T03:08:45.929Z",
+  "generated_at": "2026-08-26T03:13:17.871Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -18,7 +18,7 @@
   "hero": {
     "headline": "PHI 1, SEA 1",
     "dek": "Bottom 6th · 1 out",
-    "summary": "Julio Rodríguez is up against Aaron Nola. Series: SEA leads 1-0.",
+    "summary": "Josh Naylor is up against Aaron Nola. Series: SEA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Bryan Woo · PHI @ SEA · Wed, Aug 26 · 4:10 PM"
   },
@@ -64,18 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Julio Rodríguez",
+        "name": "Josh Naylor",
         "meta": "vs Aaron Nola"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "B",
+        "S",
+        "X"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 3,
+        "strikes": 2,
         "outs": 1
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
       "status": "Bottom 6th"
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-26T03:08:46.656Z",
+    "updated_at": "2026-08-26T03:13:18.490Z",
     "current_game_pk": 823098,
     "next_game_pk": 823096,
     "next_game": {
