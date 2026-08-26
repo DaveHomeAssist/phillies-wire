@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.4.0",
+  "meta": {
+    "date": "2026-08-26",
+    "edition": 148,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-08-26T04:02:10.767Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Aug 26, 2026, 12:02 AM ET",
+      "source_notes": [
+        "Farm system notes hidden because the editorial baseline is stale."
+      ]
+    }
+  },
+  "record": {
+    "wins": 73,
+    "losses": 59,
+    "streak": "L1",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Phillies @ Mariners · Game 3 of 3",
+    "dek": "Jesús Luzardo vs Bryan Woo",
+    "summary": "Jesús Luzardo vs Bryan Woo · Phillies @ Mariners · Game 3 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "4:10 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "T-Mobile Park, Seattle"
+      },
+      {
+        "label": "Watch",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "66° · Clear · 6 mph · gusts 17",
+      "Game 3 of 3"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "PHI @ LAA · Fri, Aug 28 · 9:38 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "4:10 PM",
+        "starters": {
+          "home": {
+            "team": "SEA",
+            "name": "Bryan Woo",
+            "hand": "R"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "team": "SEA",
+            "name": "Bryan Woo",
+            "hand": "R"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Phillies @ Mariners · Game 3 of 3",
+        "first_pitch": "4:10 PM",
+        "venue": "T-Mobile Park, Seattle",
+        "starters": {
+          "home": {
+            "name": "Bryan Woo",
+            "hand": "R"
+          },
+          "away": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "phi": {
+            "name": "Jesús Luzardo",
+            "hand": "L"
+          },
+          "opp": {
+            "name": "Bryan Woo",
+            "hand": "R"
+          }
+        },
+        "series": {
+          "home_wins": 0,
+          "away_wins": 0,
+          "label": "Game 3 of 3"
+        },
+        "broadcast": {
+          "tv": "NBCSP",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 66,
+          "condition": "Clear",
+          "wind": "6 mph · gusts 17",
+          "gusts_mph": 17
+        },
+        "giveaway": "",
+        "transit": "",
+        "venue_is_home": false,
+        "matchup_tape": {
+          "home": {
+            "team": "SEA",
+            "name": "Bryan Woo",
+            "hand": "R",
+            "era": "4.10",
+            "record": "9-8",
+            "whip": "1.08"
+          },
+          "away": {
+            "team": "PHI",
+            "name": "Jesús Luzardo",
+            "hand": "L",
+            "era": "3.23",
+            "record": "11-5",
+            "whip": "1.15"
+          }
+        },
+        "linescore": {
+          "currentInning": null,
+          "currentInningOrdinal": "",
+          "inningState": "",
+          "isTopInning": false,
+          "outs": null,
+          "teams": {
+            "away": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            },
+            "home": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            }
+          },
+          "innings": []
+        },
+        "plays": []
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-08-26T04:02:10.767Z",
+            "freshness_label": "As of Aug 26, 2026, 12:02 AM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-08-26T04:02:10.767Z",
+            "freshness_label": "As of Aug 26, 2026, 12:02 AM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-08-26T04:02:10.767Z",
+            "freshness_label": "As of Aug 26, 2026, 12:02 AM ET"
+          },
+          {
+            "name": "Tanner Banks",
+            "position": "LHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Left forearm strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-08-26T04:02:10.767Z",
+            "freshness_label": "As of Aug 26, 2026, 12:02 AM ET"
+          },
+          {
+            "name": "Brad Keller",
+            "position": "RHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL tear",
+            "status_note": "",
+            "retroactive_to": "2026-07-13",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-08-26T04:02:10.767Z",
+            "freshness_label": "As of Aug 26, 2026, 12:02 AM ET"
+          },
+          {
+            "name": "Rafael Marchán",
+            "position": "C",
+            "il_type": "10-day",
+            "badge": "il",
+            "injury": "Left knee patellar tendinitis",
+            "status_note": "",
+            "retroactive_to": "2026-07-23",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-08-26T04:02:10.767Z",
+            "freshness_label": "As of Aug 26, 2026, 12:02 AM ET"
+          },
+          {
+            "name": "Caleb Kilian",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left oblique strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-08-26T04:02:10.767Z",
+            "freshness_label": "As of Aug 26, 2026, 12:02 AM ET"
+          },
+          {
+            "name": "Felix Reyes",
+            "position": "LF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right wrist fracture",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-08-26T04:02:10.767Z",
+            "freshness_label": "As of Aug 26, 2026, 12:02 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Tomorrow",
+    "matchup": "PHI @ LAA",
+    "date": "Fri, Aug 28",
+    "time": "9:38 PM",
+    "broadcast": "NBCSP",
+    "venue": "Angel Stadium"
+  }
+}

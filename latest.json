@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-25",
+  "edition_date": "2026-08-26",
   "volume": 1,
-  "edition": 147,
-  "generated_at": "2026-08-26T03:37:01.936Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "edition": 148,
+  "generated_at": "2026-08-26T04:02:10.767Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 73,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, SEA 4",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Julio Rodríguez is up against Brooks Raley. Series: SEA leads 1-0.",
+    "headline": "Phillies @ Mariners · Game 3 of 3",
+    "dek": "Jesús Luzardo vs Bryan Woo",
+    "summary": "Jesús Luzardo vs Bryan Woo · Phillies @ Mariners · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Jesús Luzardo vs Bryan Woo · PHI @ SEA · Wed, Aug 26 · 4:10 PM"
+    "next_value": "PHI @ LAA · Fri, Aug 28 · 9:38 PM"
   },
   "game": {
-    "matchup": "Phillies @ Mariners · Game 2 of 3",
-    "first_pitch": "9:40 PM",
+    "matchup": "Phillies @ Mariners · Game 3 of 3",
+    "first_pitch": "4:10 PM",
     "venue": "T-Mobile Park, Seattle",
     "starters": {
       "home": {
-        "name": "George Kirby",
+        "name": "Bryan Woo",
         "hand": "R"
       },
       "away": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Jesús Luzardo",
+        "hand": "L"
       },
       "phi": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Jesús Luzardo",
+        "hand": "L"
       },
       "opp": {
-        "name": "George Kirby",
+        "name": "Bryan Woo",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "SEA leads 1-0"
+      "label": "Game 3 of 3"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,40 +55,21 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 68,
-      "condition": "Mostly sunny",
-      "wind": "7 mph · gusts 18",
-      "gusts_mph": 18
+      "temp_f": 66,
+      "condition": "Clear",
+      "wind": "6 mph · gusts 17",
+      "gusts_mph": 17
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Julio Rodríguez",
-        "meta": "vs Brooks Raley"
-      },
-      "pitches": [
-        "S"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 1,
-        "outs": 2
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": true
-      },
-      "status": "Bottom 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-26T03:37:02.190Z",
+    "updated_at": "2026-08-26T04:02:11.299Z",
     "current_game_pk": 823098,
     "next_game_pk": 823096,
     "next_game": {
@@ -113,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Mariners · Game 2 of 3 · 9:40 PM",
+      "text": "Phillies @ Mariners · Game 3 of 3 · 4:10 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs George Kirby",
+      "text": "Jesús Luzardo vs Bryan Woo",
       "highlight": true
     },
     {
@@ -125,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "68° · Mostly sunny · gusts 18 mph",
+      "text": "66° · Clear · gusts 17 mph",
       "highlight": false
     }
   ]
