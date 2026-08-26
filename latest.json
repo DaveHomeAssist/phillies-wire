@@ -4,9 +4,9 @@
   "edition_date": "2026-08-26",
   "volume": 1,
   "edition": 148,
-  "generated_at": "2026-08-26T19:25:05.437Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-26T20:07:53.783Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 73,
@@ -16,11 +16,11 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Mariners · Game 3 of 3",
-    "dek": "Jesús Luzardo vs Bryan Woo",
-    "summary": "Jesús Luzardo vs Bryan Woo · Phillies @ Mariners · Game 3 of 3",
+    "headline": "PHI 0, SEA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Bryan Woo. Series: SEA leads 2-0.",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter · PHI @ LAA · Fri, Aug 28 · 9:38 PM"
+    "next_value": "Andrew Painter vs Reid Detmers · PHI @ LAA · Fri, Aug 28 · 9:38 PM"
   },
   "game": {
     "matchup": "Phillies @ Mariners · Game 3 of 3",
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 65,
-      "condition": "Partly cloudy",
+      "temp_f": 67,
+      "condition": "Mostly sunny",
       "wind": "4 mph · gusts 8",
       "gusts_mph": 8
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Bryan Woo"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-26T19:25:06.052Z",
+    "updated_at": "2026-08-26T20:07:54.501Z",
     "current_game_pk": 823096,
     "next_game_pk": 823985,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "65° · Partly cloudy · gusts 8 mph",
+      "text": "67° · Mostly sunny · gusts 8 mph",
       "highlight": false
     }
   ]
