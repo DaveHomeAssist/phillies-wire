@@ -17,7 +17,9 @@ runTest("2.1: enrich.mjs system prompt tells Claude to ignore instructions in <u
 
 runTest("2.1: enrich.mjs user prompt wraps the payload in <user_data> tags", () => {
   const source = readFileSync(new URL("../enrich.mjs", import.meta.url), "utf8");
-  assert.match(source, /<user_data>\n\$\{JSON\.stringify/);
+  // \r?\n keeps the assertion true on Windows checkouts where git's
+  // autocrlf rewrites the file with CRLF line endings.
+  assert.match(source, /<user_data>\r?\n\$\{JSON\.stringify/);
   assert.match(source, /<\/user_data>/);
 });
 
