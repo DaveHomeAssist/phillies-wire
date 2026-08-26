@@ -4,7 +4,7 @@
   "edition_date": "2026-08-25",
   "volume": 1,
   "edition": 147,
-  "generated_at": "2026-08-26T02:31:57.348Z",
+  "generated_at": "2026-08-26T02:44:59.631Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, SEA 1",
-    "dek": "Top 4th · 0 outs",
-    "summary": "Brandon Marsh is up against George Kirby. Series: SEA leads 1-0.",
+    "dek": "End 4th · 3 outs",
+    "summary": "Kyle Schwarber is up against George Kirby. Series: SEA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Bryan Woo · PHI @ SEA · Wed, Aug 26 · 4:10 PM"
   },
@@ -64,21 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
+        "name": "Kyle Schwarber",
         "meta": "vs George Kirby"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "X"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-26T02:31:58.123Z",
+    "updated_at": "2026-08-26T02:45:00.318Z",
     "current_game_pk": 823098,
     "next_game_pk": 823096,
     "next_game": {
