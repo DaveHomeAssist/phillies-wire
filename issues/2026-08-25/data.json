@@ -5,14 +5,14 @@
     "edition": 147,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-26T02:44:59.631Z",
+    "generated_at": "2026-08-26T03:08:45.929Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 25, 2026, 10:44 PM ET",
+      "generated_at_et": "Aug 25, 2026, 11:08 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, SEA 1",
-    "dek": "End 4th · 3 outs",
-    "summary": "Kyle Schwarber is up against George Kirby. Series: SEA leads 1-0.",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Julio Rodríguez is up against Aaron Nola. Series: SEA leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "73° · Clear"
+        "value": "70° · Clear"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
-      "George Kirby on the mound",
+      "Julio Rodríguez at the plate",
+      "Aaron Nola on the mound",
       "T-Mobile Park, Seattle"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
+          "temp_f": 70,
           "condition": "Clear",
-          "wind": "6 mph · gusts 15",
-          "gusts_mph": 15
+          "wind": "7 mph · gusts 18",
+          "gusts_mph": 18
         },
         "giveaway": "",
         "transit": "",
@@ -359,25 +359,25 @@
             "team": "SEA",
             "name": "George Kirby",
             "hand": "R",
-            "era": "4.13",
+            "era": "4.08",
             "record": "8-10",
-            "whip": "1.36"
+            "whip": "1.35"
           },
           "away": {
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "5.07",
+            "era": "5.01",
             "record": "5-9",
-            "whip": "1.40"
+            "whip": "1.39"
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
-          "inningState": "End",
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
+          "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 3,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 1,
@@ -439,6 +439,32 @@
               },
               "home": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               }
@@ -907,28 +933,193 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823098:33",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber pops out to first baseman Josh Naylor.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:34",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, catcher Cal Raleigh to first baseman Josh Naylor.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:35",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, second baseman Cole Young to first baseman Josh Naylor.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:36",
+            "inning": 5,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "out",
+            "actor": "Taylor Ward",
+            "actor_id": 621493,
+            "detail": "Taylor Ward grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:37",
+            "inning": 5,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "out",
+            "actor": "J.P. Crawford",
+            "actor_id": 641487,
+            "detail": "J.P. Crawford grounds out to first baseman Alec Bohm.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:38",
+            "inning": 5,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "walk_hbp",
+            "actor": "Brock Rodden",
+            "actor_id": 801126,
+            "detail": "Brock Rodden walks.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:39",
+            "inning": 5,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "strikeout",
+            "actor": "Randy Arozarena",
+            "actor_id": 668227,
+            "detail": "Randy Arozarena strikes out swinging.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:40",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez lines out to left fielder Randy Arozarena.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:41",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm strikes out swinging.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:42",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott strikes out swinging.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:43",
+            "inning": 6,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "out",
+            "actor": "Dominic Canzone",
+            "actor_id": 686527,
+            "detail": "Dominic Canzone lines out sharply to right fielder Bryce Harper.",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823098:44",
+            "inning": 6,
+            "half": "bottom",
+            "team": "SEA",
+            "event_type": "other",
+            "actor": "Julio Rodríguez",
+            "actor_id": 677594,
+            "detail": "Play",
+            "score_after": "PHI 1, SEA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Kyle Schwarber",
-            "meta": "vs George Kirby"
+            "name": "Julio Rodríguez",
+            "meta": "vs Aaron Nola"
           },
-          "pitches": [
-            "S",
-            "X"
-          ],
+          "pitches": [],
           "count": {
             "balls": 0,
-            "strikes": 1,
-            "outs": 3
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 4th"
+          "status": "Bottom 6th"
         }
       }
     },
@@ -945,8 +1136,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T02:44:59.631Z",
-            "freshness_label": "As of Aug 25, 2026, 10:44 PM ET"
+            "last_confirmed": "2026-08-26T03:08:45.929Z",
+            "freshness_label": "As of Aug 25, 2026, 11:08 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -958,8 +1149,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T02:44:59.631Z",
-            "freshness_label": "As of Aug 25, 2026, 10:44 PM ET"
+            "last_confirmed": "2026-08-26T03:08:45.929Z",
+            "freshness_label": "As of Aug 25, 2026, 11:08 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -971,8 +1162,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T02:44:59.631Z",
-            "freshness_label": "As of Aug 25, 2026, 10:44 PM ET"
+            "last_confirmed": "2026-08-26T03:08:45.929Z",
+            "freshness_label": "As of Aug 25, 2026, 11:08 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -984,8 +1175,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T02:44:59.631Z",
-            "freshness_label": "As of Aug 25, 2026, 10:44 PM ET"
+            "last_confirmed": "2026-08-26T03:08:45.929Z",
+            "freshness_label": "As of Aug 25, 2026, 11:08 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -997,8 +1188,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T02:44:59.631Z",
-            "freshness_label": "As of Aug 25, 2026, 10:44 PM ET"
+            "last_confirmed": "2026-08-26T03:08:45.929Z",
+            "freshness_label": "As of Aug 25, 2026, 11:08 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1010,8 +1201,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T02:44:59.631Z",
-            "freshness_label": "As of Aug 25, 2026, 10:44 PM ET"
+            "last_confirmed": "2026-08-26T03:08:45.929Z",
+            "freshness_label": "As of Aug 25, 2026, 11:08 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1023,8 +1214,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T02:44:59.631Z",
-            "freshness_label": "As of Aug 25, 2026, 10:44 PM ET"
+            "last_confirmed": "2026-08-26T03:08:45.929Z",
+            "freshness_label": "As of Aug 25, 2026, 11:08 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1036,8 +1227,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-26T02:44:59.631Z",
-            "freshness_label": "As of Aug 25, 2026, 10:44 PM ET"
+            "last_confirmed": "2026-08-26T03:08:45.929Z",
+            "freshness_label": "As of Aug 25, 2026, 11:08 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

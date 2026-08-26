@@ -4,7 +4,7 @@
   "edition_date": "2026-08-25",
   "volume": 1,
   "edition": 147,
-  "generated_at": "2026-08-26T02:44:59.631Z",
+  "generated_at": "2026-08-26T03:08:45.929Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, SEA 1",
-    "dek": "End 4th · 3 outs",
-    "summary": "Kyle Schwarber is up against George Kirby. Series: SEA leads 1-0.",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Julio Rodríguez is up against Aaron Nola. Series: SEA leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Bryan Woo · PHI @ SEA · Wed, Aug 26 · 4:10 PM"
   },
@@ -55,33 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 73,
+      "temp_f": 70,
       "condition": "Clear",
-      "wind": "6 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "7 mph · gusts 18",
+      "gusts_mph": 18
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs George Kirby"
+        "name": "Julio Rodríguez",
+        "meta": "vs Aaron Nola"
       },
-      "pitches": [
-        "S",
-        "X"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 1,
-        "outs": 3
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 4th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -89,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-26T02:45:00.318Z",
+    "updated_at": "2026-08-26T03:08:46.656Z",
     "current_game_pk": 823098,
     "next_game_pk": 823096,
     "next_game": {
@@ -126,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "73° · Clear · gusts 15 mph",
+      "text": "70° · Clear · gusts 18 mph",
       "highlight": false
     }
   ]
