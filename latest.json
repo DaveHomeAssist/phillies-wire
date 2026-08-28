@@ -4,7 +4,7 @@
   "edition_date": "2026-08-28",
   "volume": 1,
   "edition": 150,
-  "generated_at": "2026-08-28T23:18:53.622Z",
+  "generated_at": "2026-08-28T23:34:19.171Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -55,7 +55,7 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 98,
+      "temp_f": 91,
       "condition": "Overcast",
       "wind": "9 mph · gusts 11",
       "gusts_mph": 11
@@ -69,23 +69,23 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-28T23:18:54.262Z",
-    "current_game_pk": 823608,
-    "next_game_pk": 823444,
+    "updated_at": "2026-08-28T23:34:19.932Z",
+    "current_game_pk": 823985,
+    "next_game_pk": 823986,
     "next_game": {
-      "game_pk": 823444,
-      "official_date": "2026-06-29",
-      "date_label": "Mon, Jun 29, 2026",
-      "time_label": "6:40 PM",
-      "title": "Pittsburgh Pirates at Phillies",
-      "matchup": "PIT at PHI",
-      "venue": "Citizens Bank Park"
+      "game_pk": 823986,
+      "official_date": "2026-08-29",
+      "date_label": "Sat, Aug 29, 2026",
+      "time_label": "10:07 PM",
+      "title": "Phillies at Los Angeles Angels",
+      "matchup": "PHI at LAA",
+      "venue": "Angel Stadium"
     },
     "current_game": {
-      "game_pk": 823608,
-      "official_date": "2026-06-28",
-      "title": "Phillies at New York Mets",
-      "matchup": "PHI at NYM"
+      "game_pk": 823985,
+      "official_date": "2026-08-28",
+      "title": "Phillies at Los Angeles Angels",
+      "matchup": "PHI at LAA"
     }
   },
   "ticker": [
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "98° · Overcast · gusts 11 mph",
+      "text": "91° · Overcast · gusts 11 mph",
       "highlight": false
     }
   ]
