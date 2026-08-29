@@ -4,7 +4,7 @@
   "edition_date": "2026-08-28",
   "volume": 1,
   "edition": 150,
-  "generated_at": "2026-08-29T02:40:17.139Z",
+  "generated_at": "2026-08-29T02:47:27.321Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, LAA 3",
-    "dek": "Bottom 4th · 2 outs",
-    "summary": "Josh Lowe is up against Andrew Painter. Series: Regular Season.",
+    "dek": "Top 5th · 0 outs",
+    "summary": "Bryson Stott is up against Reid Detmers. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Ryan Johnson · PHI @ LAA · Sat, Aug 29 · 10:07 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 81,
       "condition": "Clear",
       "wind": "7 mph · gusts 10",
       "gusts_mph": 10
@@ -64,24 +64,26 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Josh Lowe",
-        "meta": "vs Andrew Painter"
+        "name": "Bryson Stott",
+        "meta": "vs Reid Detmers"
       },
       "pitches": [
         "B",
-        "S"
+        "S",
+        "S",
+        "B"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 2
+        "balls": 3,
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 4th"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-29T02:40:17.958Z",
+    "updated_at": "2026-08-29T02:47:27.895Z",
     "current_game_pk": 823985,
     "next_game_pk": 823986,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 10 mph",
+      "text": "81° · Clear · gusts 10 mph",
       "highlight": false
     }
   ]
