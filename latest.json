@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-28",
+  "edition_date": "2026-08-29",
   "volume": 1,
-  "edition": 150,
-  "generated_at": "2026-08-29T03:48:20.451Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "edition": 151,
+  "generated_at": "2026-08-29T04:10:26.150Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 74,
@@ -16,32 +16,32 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, LAA 3",
-    "dek": "Bottom 8th · 0 outs",
-    "summary": "Tyler Heineman is up against Alex McFarlane. Series: Regular Season.",
+    "headline": "Phillies @ Angels · Game 2 of 3",
+    "dek": "Cristopher Sánchez vs Ryan Johnson",
+    "summary": "Cristopher Sánchez vs Ryan Johnson · Phillies @ Angels · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Ryan Johnson · PHI @ LAA · Sat, Aug 29 · 10:07 PM"
+    "next_value": "Zack Wheeler vs Yusei Kikuchi · PHI @ LAA · Sun, Aug 30 · 4:07 PM"
   },
   "game": {
-    "matchup": "Phillies @ Angels · Game 1 of 3",
-    "first_pitch": "9:38 PM",
+    "matchup": "Phillies @ Angels · Game 2 of 3",
+    "first_pitch": "10:07 PM",
     "venue": "Angel Stadium, Anaheim",
     "starters": {
       "home": {
-        "name": "Reid Detmers",
-        "hand": "L"
+        "name": "Ryan Johnson",
+        "hand": "R"
       },
       "away": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "phi": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "opp": {
-        "name": "Reid Detmers",
-        "hand": "L"
+        "name": "Ryan Johnson",
+        "hand": "R"
       }
     },
     "series": {
@@ -52,41 +52,24 @@
     "broadcast": {
       "tv": "NBCSP",
       "stream": "MLB.TV",
-      "radio": "1210 WPHT"
+      "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 79,
       "condition": "Clear",
-      "wind": "5 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "5 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Tyler Heineman",
-        "meta": "vs Alex McFarlane"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-29T03:48:20.955Z",
+    "updated_at": "2026-08-29T04:10:26.615Z",
     "current_game_pk": 823985,
     "next_game_pk": 823986,
     "next_game": {
@@ -111,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Angels · Game 1 of 3 · 9:38 PM",
+      "text": "Phillies @ Angels · Game 2 of 3 · 10:07 PM",
       "highlight": false
     },
     {
-      "text": "Andrew Painter vs Reid Detmers",
+      "text": "Cristopher Sánchez vs Ryan Johnson",
       "highlight": true
     },
     {
-      "text": "NBCSP · 1210 WPHT",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 7 mph",
+      "text": "79° · Clear · gusts 6 mph",
       "highlight": false
     }
   ]
