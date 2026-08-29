@@ -4,7 +4,7 @@
   "edition_date": "2026-08-28",
   "volume": 1,
   "edition": 150,
-  "generated_at": "2026-08-29T03:37:08.909Z",
+  "generated_at": "2026-08-29T03:48:20.451Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, LAA 3",
-    "dek": "Top 8th · 1 out",
-    "summary": "Kyle Schwarber is up against Ryan Watson. Series: Regular Season.",
+    "dek": "Bottom 8th · 0 outs",
+    "summary": "Tyler Heineman is up against Alex McFarlane. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Ryan Johnson · PHI @ LAA · Sat, Aug 29 · 10:07 PM"
   },
@@ -55,33 +55,30 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "6 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "5 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Ryan Watson"
+        "name": "Tyler Heineman",
+        "meta": "vs Alex McFarlane"
       },
-      "pitches": [
-        "S",
-        "S"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 1
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 8th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -89,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-29T03:37:09.642Z",
+    "updated_at": "2026-08-29T03:48:20.955Z",
     "current_game_pk": 823985,
     "next_game_pk": 823986,
     "next_game": {
@@ -126,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 8 mph",
+      "text": "79° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
