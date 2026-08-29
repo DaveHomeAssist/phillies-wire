@@ -4,9 +4,9 @@
   "edition_date": "2026-08-28",
   "volume": 1,
   "edition": 150,
-  "generated_at": "2026-08-29T00:57:27.274Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-29T01:18:18.407Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 74,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Angels · Game 1 of 3",
-    "dek": "Andrew Painter vs Reid Detmers",
-    "summary": "Andrew Painter vs Reid Detmers · Phillies @ Angels · Game 1 of 3",
+    "headline": "PHI 0, LAA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Reid Detmers. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Ryan Johnson · PHI @ LAA · Sat, Aug 29 · 10:07 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 88,
+      "temp_f": 89,
       "condition": "Clear",
-      "wind": "8 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "6 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Reid Detmers"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-29T00:57:28.283Z",
+    "updated_at": "2026-08-29T01:18:19.263Z",
     "current_game_pk": 823985,
     "next_game_pk": 823986,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "88° · Clear · gusts 11 mph",
+      "text": "89° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
