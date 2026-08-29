@@ -4,14 +4,14 @@
   "edition_date": "2026-08-29",
   "volume": 1,
   "edition": 151,
-  "generated_at": "2026-08-29T04:25:49.482Z",
+  "generated_at": "2026-08-29T04:36:41.051Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
   "record": {
-    "wins": 74,
+    "wins": 75,
     "losses": 60,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "4 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "4 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
@@ -69,28 +69,28 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-29T04:25:49.908Z",
-    "current_game_pk": 823985,
-    "next_game_pk": 823986,
+    "updated_at": "2026-08-29T04:36:41.452Z",
+    "current_game_pk": 823986,
+    "next_game_pk": 823987,
     "next_game": {
-      "game_pk": 823986,
-      "official_date": "2026-08-29",
-      "date_label": "Sat, Aug 29, 2026",
-      "time_label": "10:07 PM",
+      "game_pk": 823987,
+      "official_date": "2026-08-30",
+      "date_label": "Sun, Aug 30, 2026",
+      "time_label": "4:07 PM",
       "title": "Phillies at Los Angeles Angels",
       "matchup": "PHI at LAA",
       "venue": "Angel Stadium"
     },
     "current_game": {
-      "game_pk": 823985,
-      "official_date": "2026-08-28",
+      "game_pk": 823986,
+      "official_date": "2026-08-29",
       "title": "Phillies at Los Angeles Angels",
       "matchup": "PHI at LAA"
     }
   },
   "ticker": [
     {
-      "text": "PHI 74-60",
+      "text": "PHI 75-60",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 5 mph",
+      "text": "79° · Clear · gusts 6 mph",
       "highlight": false
     }
   ]
