@@ -5,14 +5,14 @@
     "edition": 150,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-29T02:12:05.824Z",
+    "generated_at": "2026-08-29T02:29:27.172Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 28, 2026, 10:12 PM ET",
+      "generated_at_et": "Aug 28, 2026, 10:29 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, LAA 3",
-    "dek": "Bottom 2nd · 2 outs",
-    "summary": "Zach Neto is up against Andrew Painter. Series: Regular Season.",
+    "dek": "Top 4th · 0 outs",
+    "summary": "Kyle Schwarber is up against Reid Detmers. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "84° · Clear"
+        "value": "83° · Clear"
       }
     ],
     "bullets": [
-      "Zach Neto at the plate",
-      "Andrew Painter on the mound",
+      "Kyle Schwarber at the plate",
+      "Reid Detmers on the mound",
       "Angel Stadium, Anaheim"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "1210 WPHT"
         },
         "weather": {
-          "temp_f": 84,
+          "temp_f": 83,
           "condition": "Clear",
-          "wind": "7 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "6 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "",
@@ -359,7 +359,7 @@
             "team": "LAA",
             "name": "Reid Detmers",
             "hand": "L",
-            "era": "3.58",
+            "era": "3.55",
             "record": "4-8",
             "whip": "1.05"
           },
@@ -367,17 +367,17 @@
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "6.27",
+            "era": "6.14",
             "record": "3-8",
-            "whip": "1.51"
+            "whip": "1.48"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 2,
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
@@ -409,6 +409,32 @@
               "away": {
                 "runs": 0,
                 "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
@@ -635,9 +661,107 @@
             "inning": 2,
             "half": "bottom",
             "team": "LAA",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Zach Neto",
             "actor_id": 687263,
+            "detail": "Zach Neto strikes out swinging.",
+            "score_after": "PHI 0, LAA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823985:16",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out, second baseman Christian Moore to first baseman Vaughn Grissom.",
+            "score_after": "PHI 0, LAA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823985:17",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, third baseman Denzer Guzman to first baseman Vaughn Grissom.",
+            "score_after": "PHI 0, LAA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823985:18",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill grounds out, second baseman Christian Moore to first baseman Vaughn Grissom.",
+            "score_after": "PHI 0, LAA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823985:19",
+            "inning": 3,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "strikeout",
+            "actor": "Mike Trout",
+            "actor_id": 545361,
+            "detail": "Mike Trout strikes out swinging.",
+            "score_after": "PHI 0, LAA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823985:20",
+            "inning": 3,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "out",
+            "actor": "Wade Meckler",
+            "actor_id": 685133,
+            "detail": "Wade Meckler bunt grounds out softly, catcher J.T. Realmuto to first baseman Alec Bohm.",
+            "score_after": "PHI 0, LAA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823985:21",
+            "inning": 3,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "out",
+            "actor": "Vaughn Grissom",
+            "actor_id": 687093,
+            "detail": "Vaughn Grissom grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "score_after": "PHI 0, LAA 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823985:22",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
             "detail": "Play",
             "score_after": "PHI 0, LAA 3",
             "runs": 0,
@@ -647,21 +771,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Zach Neto",
-            "meta": "vs Andrew Painter"
+            "name": "Kyle Schwarber",
+            "meta": "vs Reid Detmers"
           },
           "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 2
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 2nd"
+          "status": "Top 4th"
         }
       }
     },
@@ -678,8 +802,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-29T02:12:05.824Z",
-            "freshness_label": "As of Aug 28, 2026, 10:12 PM ET"
+            "last_confirmed": "2026-08-29T02:29:27.172Z",
+            "freshness_label": "As of Aug 28, 2026, 10:29 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -691,8 +815,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-29T02:12:05.824Z",
-            "freshness_label": "As of Aug 28, 2026, 10:12 PM ET"
+            "last_confirmed": "2026-08-29T02:29:27.172Z",
+            "freshness_label": "As of Aug 28, 2026, 10:29 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -704,8 +828,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-29T02:12:05.824Z",
-            "freshness_label": "As of Aug 28, 2026, 10:12 PM ET"
+            "last_confirmed": "2026-08-29T02:29:27.172Z",
+            "freshness_label": "As of Aug 28, 2026, 10:29 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -717,8 +841,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-29T02:12:05.824Z",
-            "freshness_label": "As of Aug 28, 2026, 10:12 PM ET"
+            "last_confirmed": "2026-08-29T02:29:27.172Z",
+            "freshness_label": "As of Aug 28, 2026, 10:29 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -730,8 +854,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-29T02:12:05.824Z",
-            "freshness_label": "As of Aug 28, 2026, 10:12 PM ET"
+            "last_confirmed": "2026-08-29T02:29:27.172Z",
+            "freshness_label": "As of Aug 28, 2026, 10:29 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -743,8 +867,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-29T02:12:05.824Z",
-            "freshness_label": "As of Aug 28, 2026, 10:12 PM ET"
+            "last_confirmed": "2026-08-29T02:29:27.172Z",
+            "freshness_label": "As of Aug 28, 2026, 10:29 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -756,8 +880,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-29T02:12:05.824Z",
-            "freshness_label": "As of Aug 28, 2026, 10:12 PM ET"
+            "last_confirmed": "2026-08-29T02:29:27.172Z",
+            "freshness_label": "As of Aug 28, 2026, 10:29 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -769,8 +893,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-29T02:12:05.824Z",
-            "freshness_label": "As of Aug 28, 2026, 10:12 PM ET"
+            "last_confirmed": "2026-08-29T02:29:27.172Z",
+            "freshness_label": "As of Aug 28, 2026, 10:29 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
