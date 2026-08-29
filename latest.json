@@ -4,7 +4,7 @@
   "edition_date": "2026-08-28",
   "volume": 1,
   "edition": 150,
-  "generated_at": "2026-08-29T03:10:32.375Z",
+  "generated_at": "2026-08-29T03:25:58.872Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, LAA 3",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Wade Meckler is up against Andrew Painter. Series: Regular Season.",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Moisés Ballesteros is up against José Alvarado. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Ryan Johnson · PHI @ LAA · Sat, Aug 29 · 10:07 PM"
   },
@@ -55,24 +55,24 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "7 mph · gusts 9",
+      "wind": "6 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Wade Meckler",
-        "meta": "vs Andrew Painter"
+        "name": "Moisés Ballesteros",
+        "meta": "vs José Alvarado"
       },
       "pitches": [
         "B",
-        "S",
         "F",
+        "S",
         "B",
-        "F"
+        "X"
       ],
       "count": {
         "balls": 2,
@@ -84,7 +84,7 @@
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -92,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-29T03:10:32.825Z",
+    "updated_at": "2026-08-29T03:25:59.388Z",
     "current_game_pk": 823985,
     "next_game_pk": 823986,
     "next_game": {
@@ -129,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 9 mph",
+      "text": "79° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
