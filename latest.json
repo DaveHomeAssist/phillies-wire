@@ -4,7 +4,7 @@
   "edition_date": "2026-08-28",
   "volume": 1,
   "edition": 150,
-  "generated_at": "2026-08-29T02:29:27.172Z",
+  "generated_at": "2026-08-29T02:40:17.139Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, LAA 3",
-    "dek": "Top 4th · 0 outs",
-    "summary": "Kyle Schwarber is up against Reid Detmers. Series: Regular Season.",
+    "dek": "Bottom 4th · 2 outs",
+    "summary": "Josh Lowe is up against Andrew Painter. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Ryan Johnson · PHI @ LAA · Sat, Aug 29 · 10:07 PM"
   },
@@ -55,30 +55,33 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 82,
       "condition": "Clear",
-      "wind": "6 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "7 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Reid Detmers"
+        "name": "Josh Lowe",
+        "meta": "vs Andrew Painter"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 1,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-29T02:29:27.976Z",
+    "updated_at": "2026-08-29T02:40:17.958Z",
     "current_game_pk": 823985,
     "next_game_pk": 823986,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 7 mph",
+      "text": "82° · Clear · gusts 10 mph",
       "highlight": false
     }
   ]
