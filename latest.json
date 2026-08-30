@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-29",
+  "edition_date": "2026-08-30",
   "volume": 1,
-  "edition": 151,
-  "generated_at": "2026-08-30T03:49:58.584Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "edition": 152,
+  "generated_at": "2026-08-30T04:11:02.138Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 75,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, LAA 0",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Justin Crawford is up against Luke Murphy. Series: PHI leads 1-0.",
+    "headline": "Phillies @ Angels · Game 3 of 3",
+    "dek": "Zack Wheeler vs Yusei Kikuchi",
+    "summary": "Zack Wheeler vs Yusei Kikuchi · Phillies @ Angels · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Yusei Kikuchi · PHI @ LAA · Sun, Aug 30 · 4:07 PM"
+    "next_value": "PHI @ AZ · Mon, Aug 31 · 9:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ Angels · Game 2 of 3",
-    "first_pitch": "10:07 PM",
+    "matchup": "Phillies @ Angels · Game 3 of 3",
+    "first_pitch": "4:07 PM",
     "venue": "Angel Stadium, Anaheim",
     "starters": {
       "home": {
-        "name": "Ryan Johnson",
-        "hand": "R"
+        "name": "Yusei Kikuchi",
+        "hand": "L"
       },
       "away": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Ryan Johnson",
-        "hand": "R"
+        "name": "Yusei Kikuchi",
+        "hand": "L"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,41 +57,19 @@
     "weather": {
       "temp_f": 80,
       "condition": "Clear",
-      "wind": "3 mph · gusts 4",
-      "gusts_mph": 4
+      "wind": "3 mph · gusts 3",
+      "gusts_mph": 3
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Justin Crawford",
-        "meta": "vs Luke Murphy"
-      },
-      "pitches": [
-        "S",
-        "B",
-        "F",
-        "S"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 3,
-        "outs": 2
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T03:49:59.137Z",
+    "updated_at": "2026-08-30T04:11:02.802Z",
     "current_game_pk": 823986,
     "next_game_pk": 823987,
     "next_game": {
@@ -116,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Angels · Game 2 of 3 · 10:07 PM",
+      "text": "Phillies @ Angels · Game 3 of 3 · 4:07 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Ryan Johnson",
+      "text": "Zack Wheeler vs Yusei Kikuchi",
       "highlight": true
     },
     {
@@ -128,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 4 mph",
+      "text": "80° · Clear · gusts 3 mph",
       "highlight": false
     }
   ]
