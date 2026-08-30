@@ -5,14 +5,14 @@
     "edition": 152,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-30T22:33:47.613Z",
+    "generated_at": "2026-08-30T22:47:52.150Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 30, 2026, 6:33 PM ET",
+      "generated_at_et": "Aug 30, 2026, 6:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 4, LAA 1",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "Christian Moore is up against José Alvarado. Series: PHI leads 2-0.",
+    "dek": "Top 9th · 1 out",
+    "summary": "Trea Turner is up against Mitch Farris. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "87° · Partly cloudy"
+        "value": "87° · Clear"
       }
     ],
     "bullets": [
-      "Christian Moore at the plate",
-      "José Alvarado on the mound",
+      "Trea Turner at the plate",
+      "Mitch Farris on the mound",
       "Angel Stadium, Anaheim"
     ],
     "next_label": "Tomorrow",
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 87,
-          "condition": "Partly cloudy",
-          "wind": "9 mph · gusts 10",
-          "gusts_mph": 10
+          "condition": "Clear",
+          "wind": "9 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "",
@@ -373,20 +373,20 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Bottom",
-          "isTopInning": false,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
+          "isTopInning": true,
           "outs": 1,
           "teams": {
             "away": {
               "runs": 4,
-              "hits": 8,
+              "hits": 9,
               "errors": 0
             },
             "home": {
               "runs": 1,
-              "hits": 5,
+              "hits": 6,
               "errors": 0
             }
           },
@@ -490,8 +490,21 @@
                 "errors": 0
               },
               "home": {
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
                 "runs": null,
                 "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -506,7 +519,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber grounds out, second baseman Christian Moore to first baseman Vaughn Grissom.",
+            "detail": "Kyle Schwarber grounds out, second baseman Christian Moore to first bas…",
             "score_after": "PHI 0, LAA 0",
             "runs": 0,
             "is_scoring": false,
@@ -590,7 +603,7 @@
             "event_type": "single",
             "actor": "Vaughn Grissom",
             "actor_id": 687093,
-            "detail": "Vaughn Grissom singles on a line drive to left fielder Bryan De La Cruz. Wade Meckler to 3rd. Mike Trout to 2nd.",
+            "detail": "Vaughn Grissom singles on a line drive to left fielder Bryan De La Cruz…",
             "score_after": "PHI 0, LAA 0",
             "runs": 0,
             "is_scoring": false,
@@ -604,7 +617,7 @@
             "event_type": "other",
             "actor": "Moisés Ballesteros",
             "actor_id": 694208,
-            "detail": "Moisés Ballesteros grounds into a double play, pitcher Zack Wheeler to shortstop Trea Turner to first baseman Alec Bohm. Wade Meckl…",
+            "detail": "Moisés Ballesteros grounds into a double play, pitcher Zack Wheeler to…",
             "score_after": "PHI 0, LAA 1",
             "runs": 1,
             "is_scoring": true,
@@ -646,7 +659,7 @@
             "event_type": "out",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz grounds out sharply, shortstop Oswald Peraza to first baseman Vaughn Grissom.",
+            "detail": "Bryan De La Cruz grounds out sharply, shortstop Oswald Peraza to first…",
             "score_after": "PHI 0, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -716,7 +729,7 @@
             "event_type": "out",
             "actor": "Denzer Guzman",
             "actor_id": 694203,
-            "detail": "Denzer Guzman grounds out softly, shortstop Trea Turner to first baseman Alec Bohm.",
+            "detail": "Denzer Guzman grounds out softly, shortstop Trea Turner to first basema…",
             "score_after": "PHI 0, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -744,7 +757,7 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Derek Hill grounds out, pitcher Yusei Kikuchi to first baseman Vaughn Grissom.",
+            "detail": "Derek Hill grounds out, pitcher Yusei Kikuchi to first baseman Vaughn G…",
             "score_after": "PHI 1, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -940,7 +953,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out, second baseman Christian Moore to first baseman Vaughn Grissom.",
+            "detail": "Bryson Stott grounds out, second baseman Christian Moore to first basem…",
             "score_after": "PHI 1, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -982,7 +995,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber grounds into a force out, fielded by shortstop Oswald Peraza. J.T. Realmuto out at 2nd.",
+            "detail": "Kyle Schwarber grounds into a force out, fielded by shortstop Oswald Pe…",
             "score_after": "PHI 1, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1066,7 +1079,7 @@
             "event_type": "single",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper singles on a ground ball to left fielder Wade Meckler, deflected by shortstop Oswald Peraza.",
+            "detail": "Bryce Harper singles on a ground ball to left fielder Wade Meckler, def…",
             "score_after": "PHI 1, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1080,7 +1093,7 @@
             "event_type": "other",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds into a double play, shortstop Oswald Peraza to second baseman Christian Moore to first baseman Vaughn Grissom. Br…",
+            "detail": "Alec Bohm grounds into a double play, shortstop Oswald Peraza to second…",
             "score_after": "PHI 1, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1094,7 +1107,7 @@
             "event_type": "out",
             "actor": "Vaughn Grissom",
             "actor_id": 687093,
-            "detail": "Vaughn Grissom grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "detail": "Vaughn Grissom grounds out, shortstop Trea Turner to first baseman Alec…",
             "score_after": "PHI 1, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1192,7 +1205,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott doubles (27) on a sharp line drive to center fielder Jose Siri.",
+            "detail": "Bryson Stott doubles (27) on a sharp line drive to center fielder Jose…",
             "score_after": "PHI 2, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1206,7 +1219,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds out sharply, third baseman Denzer Guzman to first baseman Vaughn Grissom.",
+            "detail": "J.T. Realmuto grounds out sharply, third baseman Denzer Guzman to first…",
             "score_after": "PHI 2, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1248,7 +1261,7 @@
             "event_type": "out",
             "actor": "Denzer Guzman",
             "actor_id": 694203,
-            "detail": "Denzer Guzman out on a sacrifice bunt, pitcher Alex McFarlane to first baseman Alec Bohm. Oswald Peraza to 2nd.",
+            "detail": "Denzer Guzman out on a sacrifice bunt, pitcher Alex McFarlane to first…",
             "score_after": "PHI 2, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1304,7 +1317,7 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a ground ball to right fielder Josh Lowe. Kyle Schwarber to 2nd.",
+            "detail": "Trea Turner singles on a ground ball to right fielder Josh Lowe. Kyle S…",
             "score_after": "PHI 2, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1346,7 +1359,7 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez out on a sacrifice fly to left fielder Wade Meckler. Kyle Schwarber scores.",
+            "detail": "Luis Arraez out on a sacrifice fly to left fielder Wade Meckler. Kyle S…",
             "score_after": "PHI 3, LAA 1",
             "runs": 1,
             "is_scoring": true,
@@ -1360,7 +1373,7 @@
             "event_type": "single",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh singles on a ground ball to right fielder Josh Lowe. Trea Turner scores. Alec Bohm to 2nd.",
+            "detail": "Brandon Marsh singles on a ground ball to right fielder Josh Lowe. Trea…",
             "score_after": "PHI 4, LAA 1",
             "runs": 1,
             "is_scoring": true,
@@ -1402,7 +1415,7 @@
             "event_type": "single",
             "actor": "Moisés Ballesteros",
             "actor_id": 694208,
-            "detail": "Moisés Ballesteros singles on a line drive to left fielder Brandon Marsh.",
+            "detail": "Moisés Ballesteros singles on a line drive to left fielder Brandon Mars…",
             "score_after": "PHI 4, LAA 1",
             "runs": 0,
             "is_scoring": false,
@@ -1413,9 +1426,93 @@
             "inning": 8,
             "half": "bottom",
             "team": "LAA",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Christian Moore",
             "actor_id": 695681,
+            "detail": "Christian Moore singles on a line drive to left fielder Brandon Marsh.…",
+            "score_after": "PHI 4, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:66",
+            "inning": 8,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "strikeout",
+            "actor": "Josh Lowe",
+            "actor_id": 666139,
+            "detail": "Josh Lowe strikes out swinging.",
+            "score_after": "PHI 4, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:67",
+            "inning": 8,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "out",
+            "actor": "Jose Siri",
+            "actor_id": 642350,
+            "detail": "Jose Siri grounds into a force out, shortstop Trea Turner to second bas…",
+            "score_after": "PHI 4, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:68",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto walks.",
+            "score_after": "PHI 4, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:69",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill singles on a bunt ground ball to first baseman Vaughn Grisso…",
+            "score_after": "PHI 4, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:70",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 4, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:71",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
             "detail": "Play",
             "score_after": "PHI 4, LAA 1",
             "runs": 0,
@@ -1425,26 +1522,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Christian Moore",
-            "meta": "vs José Alvarado"
+            "name": "Trea Turner",
+            "meta": "vs Mitch Farris"
           },
           "pitches": [
-            "B",
-            "B",
-            "B",
-            "S"
+            "S",
+            "B"
           ],
           "count": {
-            "balls": 3,
+            "balls": 1,
             "strikes": 1,
             "outs": 1
           },
           "bases": {
             "first": true,
-            "second": false,
+            "second": true,
             "third": false
           },
-          "status": "Bottom 8th"
+          "status": "Top 9th"
         }
       }
     },
