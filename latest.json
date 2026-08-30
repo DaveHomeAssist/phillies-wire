@@ -4,7 +4,7 @@
   "edition_date": "2026-08-30",
   "volume": 1,
   "edition": 152,
-  "generated_at": "2026-08-30T21:20:26.316Z",
+  "generated_at": "2026-08-30T21:34:02.017Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, LAA 1",
-    "dek": "Middle 5th · 3 outs",
-    "summary": "Oswald Peraza is up against Zack Wheeler. Series: PHI leads 2-0.",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Vaughn Grissom is up against Zack Wheeler. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI @ AZ · Mon, Aug 31 · 9:40 PM"
   },
@@ -56,33 +56,29 @@
     },
     "weather": {
       "temp_f": 89,
-      "condition": "Mostly sunny",
-      "wind": "9 mph · gusts 11",
-      "gusts_mph": 11
+      "condition": "Partly cloudy",
+      "wind": "10 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Oswald Peraza",
+        "name": "Vaughn Grissom",
         "meta": "vs Zack Wheeler"
       },
-      "pitches": [
-        "B",
-        "S",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 3
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T21:20:27.067Z",
+    "updated_at": "2026-08-30T21:34:02.360Z",
     "current_game_pk": 823987,
     "next_game_pk": 825040,
     "next_game": {
@@ -127,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Mostly sunny · gusts 11 mph",
+      "text": "89° · Partly cloudy · gusts 12 mph",
       "highlight": false
     }
   ]

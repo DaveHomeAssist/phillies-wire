@@ -5,14 +5,14 @@
     "edition": 152,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-30T21:20:26.316Z",
+    "generated_at": "2026-08-30T21:34:02.017Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 30, 2026, 5:20 PM ET",
+      "generated_at_et": "Aug 30, 2026, 5:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, LAA 1",
-    "dek": "Middle 5th · 3 outs",
-    "summary": "Oswald Peraza is up against Zack Wheeler. Series: PHI leads 2-0.",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Vaughn Grissom is up against Zack Wheeler. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "89° · Mostly sunny"
+        "value": "89° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Oswald Peraza at the plate",
+      "Vaughn Grissom at the plate",
       "Zack Wheeler on the mound",
       "Angel Stadium, Anaheim"
     ],
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 89,
-          "condition": "Mostly sunny",
-          "wind": "9 mph · gusts 11",
-          "gusts_mph": 11
+          "condition": "Partly cloudy",
+          "wind": "10 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "",
@@ -359,34 +359,34 @@
             "team": "LAA",
             "name": "Yusei Kikuchi",
             "hand": "L",
-            "era": "5.75",
+            "era": "5.57",
             "record": "0-4",
-            "whip": "1.50"
+            "whip": "1.48"
           },
           "away": {
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "3.37",
+            "era": "3.34",
             "record": "10-5",
             "whip": "1.08"
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "Middle",
-          "isTopInning": true,
-          "outs": 3,
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 1,
-              "hits": 3,
+              "hits": 4,
               "errors": 0
             },
             "home": {
               "runs": 1,
-              "hits": 3,
+              "hits": 4,
               "errors": 0
             }
           },
@@ -445,6 +445,19 @@
             },
             {
               "num": 5,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
               "away": {
                 "runs": 0,
                 "hits": 1,
@@ -948,29 +961,137 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823987:35",
+            "inning": 5,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "strikeout",
+            "actor": "Oswald Peraza",
+            "actor_id": 672724,
+            "detail": "Oswald Peraza strikes out swinging.",
+            "score_after": "PHI 1, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:36",
+            "inning": 5,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "strikeout",
+            "actor": "Denzer Guzman",
+            "actor_id": 694203,
+            "detail": "Denzer Guzman strikes out swinging.",
+            "score_after": "PHI 1, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:37",
+            "inning": 5,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "single",
+            "actor": "Wade Meckler",
+            "actor_id": 685133,
+            "detail": "Wade Meckler singles on a ground ball to center fielder Derek Hill.",
+            "score_after": "PHI 1, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:38",
+            "inning": 5,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "out",
+            "actor": "Mike Trout",
+            "actor_id": 545361,
+            "detail": "Mike Trout flies out to center fielder Derek Hill.",
+            "score_after": "PHI 1, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:39",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner pops out to shortstop Oswald Peraza.",
+            "score_after": "PHI 1, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:40",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper singles on a ground ball to left fielder Wade Meckler, deflected by shortstop Oswald Peraza.",
+            "score_after": "PHI 1, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:41",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds into a double play, shortstop Oswald Peraza to second baseman Christian Moore to first baseman Vaughn Grissom. Br…",
+            "score_after": "PHI 1, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:42",
+            "inning": 6,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "other",
+            "actor": "Vaughn Grissom",
+            "actor_id": 687093,
+            "detail": "Play",
+            "score_after": "PHI 1, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Oswald Peraza",
+            "name": "Vaughn Grissom",
             "meta": "vs Zack Wheeler"
           },
-          "pitches": [
-            "B",
-            "S",
-            "X"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 1,
-            "strikes": 1,
-            "outs": 3
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 5th"
+          "status": "Bottom 6th"
         }
       }
     },
@@ -987,8 +1108,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T21:20:26.316Z",
-            "freshness_label": "As of Aug 30, 2026, 5:20 PM ET"
+            "last_confirmed": "2026-08-30T21:34:02.017Z",
+            "freshness_label": "As of Aug 30, 2026, 5:34 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1000,8 +1121,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T21:20:26.316Z",
-            "freshness_label": "As of Aug 30, 2026, 5:20 PM ET"
+            "last_confirmed": "2026-08-30T21:34:02.017Z",
+            "freshness_label": "As of Aug 30, 2026, 5:34 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1013,8 +1134,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T21:20:26.316Z",
-            "freshness_label": "As of Aug 30, 2026, 5:20 PM ET"
+            "last_confirmed": "2026-08-30T21:34:02.017Z",
+            "freshness_label": "As of Aug 30, 2026, 5:34 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1026,8 +1147,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T21:20:26.316Z",
-            "freshness_label": "As of Aug 30, 2026, 5:20 PM ET"
+            "last_confirmed": "2026-08-30T21:34:02.017Z",
+            "freshness_label": "As of Aug 30, 2026, 5:34 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1039,8 +1160,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T21:20:26.316Z",
-            "freshness_label": "As of Aug 30, 2026, 5:20 PM ET"
+            "last_confirmed": "2026-08-30T21:34:02.017Z",
+            "freshness_label": "As of Aug 30, 2026, 5:34 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -1052,8 +1173,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T21:20:26.316Z",
-            "freshness_label": "As of Aug 30, 2026, 5:20 PM ET"
+            "last_confirmed": "2026-08-30T21:34:02.017Z",
+            "freshness_label": "As of Aug 30, 2026, 5:34 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1065,8 +1186,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T21:20:26.316Z",
-            "freshness_label": "As of Aug 30, 2026, 5:20 PM ET"
+            "last_confirmed": "2026-08-30T21:34:02.017Z",
+            "freshness_label": "As of Aug 30, 2026, 5:34 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1078,8 +1199,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T21:20:26.316Z",
-            "freshness_label": "As of Aug 30, 2026, 5:20 PM ET"
+            "last_confirmed": "2026-08-30T21:34:02.017Z",
+            "freshness_label": "As of Aug 30, 2026, 5:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
