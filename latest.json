@@ -4,7 +4,7 @@
   "edition_date": "2026-08-29",
   "volume": 1,
   "edition": 151,
-  "generated_at": "2026-08-30T02:35:01.147Z",
+  "generated_at": "2026-08-30T02:48:53.204Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, LAA 0",
-    "dek": "Top 2nd · 1 out",
-    "summary": "Justin Crawford is up against Ryan Johnson. Series: PHI leads 1-0.",
+    "dek": "Bottom 2nd · 2 outs",
+    "summary": "Denzer Guzman is up against Cristopher Sánchez. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Yusei Kikuchi · PHI @ LAA · Sun, Aug 30 · 4:07 PM"
   },
@@ -57,32 +57,31 @@
     "weather": {
       "temp_f": 80,
       "condition": "Clear",
-      "wind": "5 mph · gusts 9",
+      "wind": "4 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Justin Crawford",
-        "meta": "vs Ryan Johnson"
+        "name": "Denzer Guzman",
+        "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
-        "B",
-        "B",
+        "S",
         "F"
       ],
       "count": {
-        "balls": 2,
+        "balls": 1,
         "strikes": 2,
-        "outs": 1
+        "outs": 2
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": true
       },
-      "status": "Top 2nd"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -90,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T02:35:01.872Z",
+    "updated_at": "2026-08-30T02:48:53.581Z",
     "current_game_pk": 823986,
     "next_game_pk": 823987,
     "next_game": {

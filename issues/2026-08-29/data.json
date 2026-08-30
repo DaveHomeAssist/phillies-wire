@@ -5,14 +5,14 @@
     "edition": 151,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-30T02:35:01.147Z",
+    "generated_at": "2026-08-30T02:48:53.204Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 29, 2026, 10:35 PM ET",
+      "generated_at_et": "Aug 29, 2026, 10:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, LAA 0",
-    "dek": "Top 2nd · 1 out",
-    "summary": "Justin Crawford is up against Ryan Johnson. Series: PHI leads 1-0.",
+    "dek": "Bottom 2nd · 2 outs",
+    "summary": "Denzer Guzman is up against Cristopher Sánchez. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Justin Crawford at the plate",
-      "Ryan Johnson on the mound",
+      "Denzer Guzman at the plate",
+      "Cristopher Sánchez on the mound",
       "Angel Stadium, Anaheim"
     ],
     "next_label": "Tomorrow",
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 80,
           "condition": "Clear",
-          "wind": "5 mph · gusts 9",
+          "wind": "4 mph · gusts 9",
           "gusts_mph": 9
         },
         "giveaway": "",
@@ -359,9 +359,9 @@
             "team": "LAA",
             "name": "Ryan Johnson",
             "hand": "R",
-            "era": "5.80",
+            "era": "5.71",
             "record": "3-7",
-            "whip": "1.48"
+            "whip": "1.47"
           },
           "away": {
             "team": "PHI",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 2,
           "currentInningOrdinal": "2nd",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 1,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 1,
@@ -579,9 +579,93 @@
             "inning": 2,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Justin Crawford",
             "actor_id": 702222,
+            "detail": "Justin Crawford walks. Brandon Marsh to 2nd.",
+            "score_after": "PHI 1, LAA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823986:12",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to left fielder Jose Siri.",
+            "score_after": "PHI 1, LAA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823986:13",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner flies out to left fielder Jose Siri.",
+            "score_after": "PHI 1, LAA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823986:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "walk_hbp",
+            "actor": "Jose Siri",
+            "actor_id": 642350,
+            "detail": "Jose Siri walks.",
+            "score_after": "PHI 1, LAA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823986:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "out",
+            "actor": "Christian Moore",
+            "actor_id": 695681,
+            "detail": "Christian Moore grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "score_after": "PHI 1, LAA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823986:16",
+            "inning": 2,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "out",
+            "actor": "Oswald Peraza",
+            "actor_id": 672724,
+            "detail": "Oswald Peraza out on a sacrifice bunt, pitcher Cristopher Sánchez to first baseman Alec Bohm. Jose Siri to 3rd.",
+            "score_after": "PHI 1, LAA 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823986:17",
+            "inning": 2,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "other",
+            "actor": "Denzer Guzman",
+            "actor_id": 694203,
             "detail": "Play",
             "score_after": "PHI 1, LAA 0",
             "runs": 0,
@@ -591,25 +675,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Justin Crawford",
-            "meta": "vs Ryan Johnson"
+            "name": "Denzer Guzman",
+            "meta": "vs Cristopher Sánchez"
           },
           "pitches": [
-            "B",
-            "B",
+            "S",
             "F"
           ],
           "count": {
-            "balls": 2,
+            "balls": 1,
             "strikes": 2,
-            "outs": 1
+            "outs": 2
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
             "third": true
           },
-          "status": "Top 2nd"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -626,8 +709,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T02:35:01.147Z",
-            "freshness_label": "As of Aug 29, 2026, 10:35 PM ET"
+            "last_confirmed": "2026-08-30T02:48:53.204Z",
+            "freshness_label": "As of Aug 29, 2026, 10:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -639,8 +722,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T02:35:01.147Z",
-            "freshness_label": "As of Aug 29, 2026, 10:35 PM ET"
+            "last_confirmed": "2026-08-30T02:48:53.204Z",
+            "freshness_label": "As of Aug 29, 2026, 10:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -652,8 +735,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T02:35:01.147Z",
-            "freshness_label": "As of Aug 29, 2026, 10:35 PM ET"
+            "last_confirmed": "2026-08-30T02:48:53.204Z",
+            "freshness_label": "As of Aug 29, 2026, 10:48 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -665,8 +748,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T02:35:01.147Z",
-            "freshness_label": "As of Aug 29, 2026, 10:35 PM ET"
+            "last_confirmed": "2026-08-30T02:48:53.204Z",
+            "freshness_label": "As of Aug 29, 2026, 10:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -678,8 +761,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T02:35:01.147Z",
-            "freshness_label": "As of Aug 29, 2026, 10:35 PM ET"
+            "last_confirmed": "2026-08-30T02:48:53.204Z",
+            "freshness_label": "As of Aug 29, 2026, 10:48 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -691,8 +774,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T02:35:01.147Z",
-            "freshness_label": "As of Aug 29, 2026, 10:35 PM ET"
+            "last_confirmed": "2026-08-30T02:48:53.204Z",
+            "freshness_label": "As of Aug 29, 2026, 10:48 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -704,8 +787,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T02:35:01.147Z",
-            "freshness_label": "As of Aug 29, 2026, 10:35 PM ET"
+            "last_confirmed": "2026-08-30T02:48:53.204Z",
+            "freshness_label": "As of Aug 29, 2026, 10:48 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -717,8 +800,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T02:35:01.147Z",
-            "freshness_label": "As of Aug 29, 2026, 10:35 PM ET"
+            "last_confirmed": "2026-08-30T02:48:53.204Z",
+            "freshness_label": "As of Aug 29, 2026, 10:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
