@@ -4,7 +4,7 @@
   "edition_date": "2026-08-30",
   "volume": 1,
   "edition": 152,
-  "generated_at": "2026-08-30T20:33:48.584Z",
+  "generated_at": "2026-08-30T20:48:02.503Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, LAA 1",
-    "dek": "Bottom 2nd · 1 out",
-    "summary": "Jose Siri is up against Zack Wheeler. Series: PHI leads 2-0.",
+    "headline": "PHI 1, LAA 1",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Bryce Harper is up against Yusei Kikuchi. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI @ AZ · Mon, Aug 31 · 9:40 PM"
   },
@@ -56,7 +56,7 @@
     },
     "weather": {
       "temp_f": 90,
-      "condition": "Partly cloudy",
+      "condition": "Clear",
       "wind": "9 mph · gusts 10",
       "gusts_mph": 10
     },
@@ -64,21 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jose Siri",
-        "meta": "vs Zack Wheeler"
+        "name": "Bryce Harper",
+        "meta": "vs Yusei Kikuchi"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "balls": 1,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T20:33:49.298Z",
+    "updated_at": "2026-08-30T20:48:03.379Z",
     "current_game_pk": 823987,
     "next_game_pk": 825040,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "90° · Partly cloudy · gusts 10 mph",
+      "text": "90° · Clear · gusts 10 mph",
       "highlight": false
     }
   ]
