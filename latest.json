@@ -4,7 +4,7 @@
   "edition_date": "2026-08-30",
   "volume": 1,
   "edition": 152,
-  "generated_at": "2026-08-30T21:34:02.017Z",
+  "generated_at": "2026-08-30T21:47:52.817Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, LAA 1",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Vaughn Grissom is up against Zack Wheeler. Series: PHI leads 2-0.",
+    "headline": "PHI 2, LAA 1",
+    "dek": "Top 7th · 0 outs",
+    "summary": "Edmundo Sosa is up against Yusei Kikuchi. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI @ AZ · Mon, Aug 31 · 9:40 PM"
   },
@@ -55,22 +55,25 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 89,
-      "condition": "Partly cloudy",
-      "wind": "10 mph · gusts 12",
-      "gusts_mph": 12
+      "temp_f": 88,
+      "condition": "Clear",
+      "wind": "10 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Vaughn Grissom",
-        "meta": "vs Zack Wheeler"
+        "name": "Edmundo Sosa",
+        "meta": "vs Yusei Kikuchi"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "X"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
@@ -78,7 +81,7 @@
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T21:34:02.360Z",
+    "updated_at": "2026-08-30T21:47:53.628Z",
     "current_game_pk": 823987,
     "next_game_pk": 825040,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Partly cloudy · gusts 12 mph",
+      "text": "88° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
