@@ -5,14 +5,14 @@
     "edition": 152,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-08-30T20:23:01.547Z",
+    "generated_at": "2026-08-30T20:33:48.584Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 30, 2026, 4:23 PM ET",
+      "generated_at_et": "Aug 30, 2026, 4:33 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, LAA 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "Moisés Ballesteros is up against Zack Wheeler. Series: PHI leads 2-0.",
+    "headline": "PHI 0, LAA 1",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Jose Siri is up against Zack Wheeler. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "89° · Mostly sunny"
+        "value": "90° · Partly cloudy"
       }
     ],
     "bullets": [
-      "Moisés Ballesteros at the plate",
+      "Jose Siri at the plate",
       "Zack Wheeler on the mound",
       "Angel Stadium, Anaheim"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 89,
-          "condition": "Mostly sunny",
-          "wind": "9 mph · gusts 11",
-          "gusts_mph": 11
+          "temp_f": 90,
+          "condition": "Partly cloudy",
+          "wind": "9 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "",
@@ -359,25 +359,25 @@
             "team": "LAA",
             "name": "Yusei Kikuchi",
             "hand": "L",
-            "era": "6.08",
+            "era": "5.92",
             "record": "0-4",
-            "whip": "1.57"
+            "whip": "1.53"
           },
           "away": {
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "3.40",
+            "era": "3.44",
             "record": "10-5",
             "whip": "1.09"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
@@ -385,7 +385,7 @@
               "errors": 0
             },
             "home": {
-              "runs": 0,
+              "runs": 1,
               "hits": 1,
               "errors": 0
             }
@@ -399,8 +399,21 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 1,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -513,8 +526,92 @@
             "event_type": "other",
             "actor": "Moisés Ballesteros",
             "actor_id": 694208,
+            "detail": "Moisés Ballesteros grounds into a double play, pitcher Zack Wheeler to shortstop Trea Turner to first baseman Alec Bohm. Wade Meckl…",
+            "score_after": "PHI 0, LAA 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823987:8",
+            "inning": 1,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "strikeout",
+            "actor": "Christian Moore",
+            "actor_id": 695681,
+            "detail": "Christian Moore strikes out swinging.",
+            "score_after": "PHI 0, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:9",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa strikes out swinging.",
+            "score_after": "PHI 0, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:10",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz grounds out sharply, shortstop Oswald Peraza to first baseman Vaughn Grissom.",
+            "score_after": "PHI 0, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:11",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott strikes out on a foul tip.",
+            "score_after": "PHI 0, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "out",
+            "actor": "Josh Lowe",
+            "actor_id": 666139,
+            "detail": "Josh Lowe flies out to right fielder Bryce Harper.",
+            "score_after": "PHI 0, LAA 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823987:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "LAA",
+            "event_type": "other",
+            "actor": "Jose Siri",
+            "actor_id": 642350,
             "detail": "Play",
-            "score_after": "PHI 0, LAA 0",
+            "score_after": "PHI 0, LAA 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -522,29 +619,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Moisés Ballesteros",
+            "name": "Jose Siri",
             "meta": "vs Zack Wheeler"
           },
-          "pitches": [
-            "B",
-            "S",
-            "F",
-            "B",
-            "F",
-            "F",
-            "X"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 2,
-            "strikes": 2,
-            "outs": 0
+            "balls": 0,
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
-            "first": true,
-            "second": true,
-            "third": true
+            "first": false,
+            "second": false,
+            "third": false
           },
-          "status": "Bottom 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -561,8 +650,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T20:23:01.547Z",
-            "freshness_label": "As of Aug 30, 2026, 4:23 PM ET"
+            "last_confirmed": "2026-08-30T20:33:48.584Z",
+            "freshness_label": "As of Aug 30, 2026, 4:33 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -574,8 +663,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T20:23:01.547Z",
-            "freshness_label": "As of Aug 30, 2026, 4:23 PM ET"
+            "last_confirmed": "2026-08-30T20:33:48.584Z",
+            "freshness_label": "As of Aug 30, 2026, 4:33 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -587,8 +676,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T20:23:01.547Z",
-            "freshness_label": "As of Aug 30, 2026, 4:23 PM ET"
+            "last_confirmed": "2026-08-30T20:33:48.584Z",
+            "freshness_label": "As of Aug 30, 2026, 4:33 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -600,8 +689,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T20:23:01.547Z",
-            "freshness_label": "As of Aug 30, 2026, 4:23 PM ET"
+            "last_confirmed": "2026-08-30T20:33:48.584Z",
+            "freshness_label": "As of Aug 30, 2026, 4:33 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -613,8 +702,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T20:23:01.547Z",
-            "freshness_label": "As of Aug 30, 2026, 4:23 PM ET"
+            "last_confirmed": "2026-08-30T20:33:48.584Z",
+            "freshness_label": "As of Aug 30, 2026, 4:33 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -626,8 +715,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T20:23:01.547Z",
-            "freshness_label": "As of Aug 30, 2026, 4:23 PM ET"
+            "last_confirmed": "2026-08-30T20:33:48.584Z",
+            "freshness_label": "As of Aug 30, 2026, 4:33 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -639,8 +728,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T20:23:01.547Z",
-            "freshness_label": "As of Aug 30, 2026, 4:23 PM ET"
+            "last_confirmed": "2026-08-30T20:33:48.584Z",
+            "freshness_label": "As of Aug 30, 2026, 4:33 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -652,8 +741,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-08-30T20:23:01.547Z",
-            "freshness_label": "As of Aug 30, 2026, 4:23 PM ET"
+            "last_confirmed": "2026-08-30T20:33:48.584Z",
+            "freshness_label": "As of Aug 30, 2026, 4:33 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
