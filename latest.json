@@ -4,7 +4,7 @@
   "edition_date": "2026-08-30",
   "volume": 1,
   "edition": 152,
-  "generated_at": "2026-08-30T22:21:42.114Z",
+  "generated_at": "2026-08-30T22:33:47.613Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, LAA 1",
-    "dek": "Top 8th · 2 outs",
-    "summary": "Luis Arraez is up against José Fermin. Series: PHI leads 2-0.",
+    "headline": "PHI 4, LAA 1",
+    "dek": "Bottom 8th · 1 out",
+    "summary": "Christian Moore is up against José Alvarado. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI @ AZ · Mon, Aug 31 · 9:40 PM"
   },
@@ -56,36 +56,34 @@
     },
     "weather": {
       "temp_f": 87,
-      "condition": "Mostly sunny",
-      "wind": "9 mph · gusts 11",
-      "gusts_mph": 11
+      "condition": "Partly cloudy",
+      "wind": "9 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs José Fermin"
+        "name": "Christian Moore",
+        "meta": "vs José Alvarado"
       },
       "pitches": [
-        "F",
-        "S",
         "B",
         "B",
-        "F",
-        "X"
+        "B",
+        "S"
       ],
       "count": {
         "balls": 3,
-        "strikes": 2,
+        "strikes": 1,
         "outs": 1
       },
       "bases": {
         "first": true,
-        "second": true,
-        "third": true
+        "second": false,
+        "third": false
       },
-      "status": "Top 8th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -93,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T22:21:42.552Z",
+    "updated_at": "2026-08-30T22:33:48.060Z",
     "current_game_pk": 823987,
     "next_game_pk": 825040,
     "next_game": {
@@ -130,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Mostly sunny · gusts 11 mph",
+      "text": "87° · Partly cloudy · gusts 10 mph",
       "highlight": false
     }
   ]
