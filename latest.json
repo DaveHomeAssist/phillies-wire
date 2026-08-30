@@ -4,21 +4,21 @@
   "edition_date": "2026-08-30",
   "volume": 1,
   "edition": 152,
-  "generated_at": "2026-08-30T22:47:52.150Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-08-30T23:07:50.075Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 76,
+    "wins": 77,
     "losses": 60,
-    "streak": "W3",
+    "streak": "W4",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, LAA 1",
-    "dek": "Top 9th · 1 out",
-    "summary": "Trea Turner is up against Mitch Farris. Series: PHI leads 2-0.",
+    "headline": "PHI 5, LAA 2.",
+    "dek": "PHI 5, LAA 2 · Yusei Kikuchi · 7.0 IP, 6 H, 2 ER, 6 K",
+    "summary": "PHI 5, LAA 2. Final at Angel Stadium, Anaheim. PHI wins 3-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI @ AZ · Mon, Aug 31 · 9:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 2-0"
+      "label": "PHI wins 3-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,62 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 87,
+      "temp_f": 86,
       "condition": "Clear",
       "wind": "9 mph · gusts 11",
       "gusts_mph": 11
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Mitch Farris"
-      },
-      "pitches": [
-        "S",
-        "B"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 1
-      },
-      "bases": {
-        "first": true,
-        "second": true,
-        "third": false
-      },
-      "status": "Top 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T22:47:52.940Z",
-    "current_game_pk": 823987,
-    "next_game_pk": 825040,
+    "updated_at": "2026-08-30T23:07:50.971Z",
+    "current_game_pk": 823608,
+    "next_game_pk": 823444,
     "next_game": {
-      "game_pk": 825040,
-      "official_date": "2026-08-31",
-      "date_label": "Mon, Aug 31, 2026",
-      "time_label": "9:40 PM",
-      "title": "Phillies at Arizona Diamondbacks",
-      "matchup": "PHI at ARI",
-      "venue": "Chase Field"
+      "game_pk": 823444,
+      "official_date": "2026-06-29",
+      "date_label": "Mon, Jun 29, 2026",
+      "time_label": "6:40 PM",
+      "title": "Pittsburgh Pirates at Phillies",
+      "matchup": "PIT at PHI",
+      "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823987,
-      "official_date": "2026-08-30",
-      "title": "Phillies at Los Angeles Angels",
-      "matchup": "PHI at LAA"
+      "game_pk": 823608,
+      "official_date": "2026-06-28",
+      "title": "Phillies at New York Mets",
+      "matchup": "PHI at NYM"
     }
   },
   "ticker": [
     {
-      "text": "PHI 76-60",
+      "text": "PHI 77-60",
       "highlight": true
     },
     {
@@ -126,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Clear · gusts 11 mph",
+      "text": "86° · Clear · gusts 11 mph",
       "highlight": false
     }
   ]
