@@ -4,7 +4,7 @@
   "edition_date": "2026-08-30",
   "volume": 1,
   "edition": 152,
-  "generated_at": "2026-08-30T22:08:28.653Z",
+  "generated_at": "2026-08-30T22:21:42.114Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, LAA 1",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Kyle Schwarber is up against Sammy Peralta. Series: PHI leads 2-0.",
+    "headline": "PHI 3, LAA 1",
+    "dek": "Top 8th · 2 outs",
+    "summary": "Luis Arraez is up against José Fermin. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI @ AZ · Mon, Aug 31 · 9:40 PM"
   },
@@ -56,30 +56,34 @@
     },
     "weather": {
       "temp_f": 87,
-      "condition": "Clear",
-      "wind": "10 mph · gusts 11",
+      "condition": "Mostly sunny",
+      "wind": "9 mph · gusts 11",
       "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Sammy Peralta"
+        "name": "Luis Arraez",
+        "meta": "vs José Fermin"
       },
       "pitches": [
+        "F",
+        "S",
         "B",
-        "S"
+        "B",
+        "F",
+        "X"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 0
+        "balls": 3,
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
-        "first": false,
-        "second": false,
-        "third": false
+        "first": true,
+        "second": true,
+        "third": true
       },
       "status": "Top 8th"
     },
@@ -89,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T22:08:29.121Z",
+    "updated_at": "2026-08-30T22:21:42.552Z",
     "current_game_pk": 823987,
     "next_game_pk": 825040,
     "next_game": {
@@ -126,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Clear · gusts 11 mph",
+      "text": "87° · Mostly sunny · gusts 11 mph",
       "highlight": false
     }
   ]
