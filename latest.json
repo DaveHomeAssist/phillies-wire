@@ -4,14 +4,14 @@
   "edition_date": "2026-08-30",
   "volume": 1,
   "edition": 152,
-  "generated_at": "2026-08-30T04:48:04.419Z",
+  "generated_at": "2026-08-30T05:22:57.061Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
   "record": {
-    "wins": 75,
+    "wins": 76,
     "losses": 60,
-    "streak": "W2",
+    "streak": "W3",
     "division_rank": 2,
     "division": "NL East"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 78,
       "condition": "Clear",
       "wind": "3 mph · gusts 3",
       "gusts_mph": 3
@@ -69,28 +69,28 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T04:48:04.989Z",
-    "current_game_pk": 823986,
-    "next_game_pk": 823987,
+    "updated_at": "2026-08-30T05:22:57.521Z",
+    "current_game_pk": 823987,
+    "next_game_pk": 825040,
     "next_game": {
-      "game_pk": 823987,
-      "official_date": "2026-08-30",
-      "date_label": "Sun, Aug 30, 2026",
-      "time_label": "4:07 PM",
-      "title": "Phillies at Los Angeles Angels",
-      "matchup": "PHI at LAA",
-      "venue": "Angel Stadium"
+      "game_pk": 825040,
+      "official_date": "2026-08-31",
+      "date_label": "Mon, Aug 31, 2026",
+      "time_label": "9:40 PM",
+      "title": "Phillies at Arizona Diamondbacks",
+      "matchup": "PHI at ARI",
+      "venue": "Chase Field"
     },
     "current_game": {
-      "game_pk": 823986,
-      "official_date": "2026-08-29",
+      "game_pk": 823987,
+      "official_date": "2026-08-30",
       "title": "Phillies at Los Angeles Angels",
       "matchup": "PHI at LAA"
     }
   },
   "ticker": [
     {
-      "text": "PHI 75-60",
+      "text": "PHI 76-60",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 3 mph",
+      "text": "78° · Clear · gusts 3 mph",
       "highlight": false
     }
   ]
