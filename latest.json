@@ -4,7 +4,7 @@
   "edition_date": "2026-08-29",
   "volume": 1,
   "edition": 151,
-  "generated_at": "2026-08-30T02:48:53.204Z",
+  "generated_at": "2026-08-30T03:11:42.921Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, LAA 0",
-    "dek": "Bottom 2nd · 2 outs",
-    "summary": "Denzer Guzman is up against Cristopher Sánchez. Series: PHI leads 1-0.",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "Jose Siri is up against Cristopher Sánchez. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Yusei Kikuchi · PHI @ LAA · Sun, Aug 30 · 4:07 PM"
   },
@@ -57,31 +57,32 @@
     "weather": {
       "temp_f": 80,
       "condition": "Clear",
-      "wind": "4 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "3 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Denzer Guzman",
+        "name": "Jose Siri",
         "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
-        "S",
-        "F"
+        "B",
+        "F",
+        "X"
       ],
       "count": {
         "balls": 1,
-        "strikes": 2,
-        "outs": 2
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "Middle 4th"
     },
     "recap_line": null
   },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T02:48:53.581Z",
+    "updated_at": "2026-08-30T03:11:43.632Z",
     "current_game_pk": 823986,
     "next_game_pk": 823987,
     "next_game": {
@@ -126,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 9 mph",
+      "text": "80° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
