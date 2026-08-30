@@ -4,9 +4,9 @@
   "edition_date": "2026-08-30",
   "volume": 1,
   "edition": 152,
-  "generated_at": "2026-08-30T19:34:07.307Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-08-30T19:48:00.580Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 76,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Angels · Game 3 of 3",
-    "dek": "Zack Wheeler vs Yusei Kikuchi",
-    "summary": "Zack Wheeler vs Yusei Kikuchi · Phillies @ Angels · Game 3 of 3",
+    "headline": "PHI 0, LAA 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Yusei Kikuchi. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola · PHI @ AZ · Mon, Aug 31 · 9:40 PM"
   },
@@ -62,14 +62,31 @@
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Yusei Kikuchi"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T19:34:08.294Z",
+    "updated_at": "2026-08-30T19:48:01.019Z",
     "current_game_pk": 823987,
     "next_game_pk": 825040,
     "next_game": {
