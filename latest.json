@@ -4,7 +4,7 @@
   "edition_date": "2026-08-29",
   "volume": 1,
   "edition": 151,
-  "generated_at": "2026-08-30T02:13:55.467Z",
+  "generated_at": "2026-08-30T02:35:01.147Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, LAA 0",
-    "dek": "Top 1st · 1 out",
-    "summary": "Bryce Harper is up against Ryan Johnson. Series: PHI leads 1-0.",
+    "headline": "PHI 1, LAA 0",
+    "dek": "Top 2nd · 1 out",
+    "summary": "Justin Crawford is up against Ryan Johnson. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Yusei Kikuchi · PHI @ LAA · Sun, Aug 30 · 4:07 PM"
   },
@@ -55,37 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
+      "temp_f": 80,
       "condition": "Clear",
-      "wind": "6 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
+        "name": "Justin Crawford",
         "meta": "vs Ryan Johnson"
       },
       "pitches": [
-        "B",
-        "F",
-        "F",
         "B",
         "B",
         "F"
       ],
       "count": {
-        "balls": 3,
+        "balls": 2,
         "strikes": 2,
         "outs": 1
       },
       "bases": {
         "first": true,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Top 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -93,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-30T02:13:56.011Z",
+    "updated_at": "2026-08-30T02:35:01.872Z",
     "current_game_pk": 823986,
     "next_game_pk": 823987,
     "next_game": {
@@ -130,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Clear · gusts 10 mph",
+      "text": "80° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
