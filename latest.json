@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-30",
+  "edition_date": "2026-08-31",
   "volume": 1,
-  "edition": 152,
-  "generated_at": "2026-08-31T03:49:57.892Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 153,
+  "generated_at": "2026-08-31T04:12:35.683Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 77,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, LAA 2.",
-    "dek": "PHI 5, LAA 2 · Yusei Kikuchi · 7.0 IP, 6 H, 2 ER, 6 K",
-    "summary": "PHI 5, LAA 2. Final at Angel Stadium, Anaheim. PHI wins 3-0.",
+    "headline": "Phillies @ D-backs · Game 1 of 3",
+    "dek": "Aaron Nola vs TBD",
+    "summary": "Aaron Nola vs TBD · Phillies @ D-backs · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola · PHI @ AZ · Mon, Aug 31 · 9:40 PM"
+    "next_value": "Jesús Luzardo · PHI @ AZ · Tue, Sep 1 · 9:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ Angels · Game 3 of 3",
-    "first_pitch": "4:07 PM",
-    "venue": "Angel Stadium, Anaheim",
+    "matchup": "Phillies @ D-backs · Game 1 of 3",
+    "first_pitch": "9:40 PM",
+    "venue": "Chase Field, Phoenix",
     "starters": {
       "home": {
-        "name": "Yusei Kikuchi",
-        "hand": "L"
+        "name": "TBD",
+        "hand": "R"
       },
       "away": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "opp": {
-        "name": "Yusei Kikuchi",
-        "hand": "L"
+        "name": "TBD",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI wins 3-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 74,
-      "condition": "Clear",
-      "wind": "5 mph · gusts 8",
-      "gusts_mph": 8
+      "temp_f": 91,
+      "condition": "Overcast",
+      "wind": "15 mph · gusts 28",
+      "gusts_mph": 28
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-08-31T03:49:58.351Z",
+    "updated_at": "2026-08-31T04:12:36.141Z",
     "current_game_pk": 825040,
     "next_game_pk": 825038,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Angels · Game 3 of 3 · 4:07 PM",
+      "text": "Phillies @ D-backs · Game 1 of 3 · 9:40 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Yusei Kikuchi",
+      "text": "Aaron Nola vs TBD",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Clear · gusts 8 mph",
+      "text": "91° · Overcast · gusts 28 mph",
       "highlight": false
     }
   ]
