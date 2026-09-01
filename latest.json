@@ -4,7 +4,7 @@
   "edition_date": "2026-08-31",
   "volume": 1,
   "edition": 153,
-  "generated_at": "2026-09-01T02:42:23.370Z",
+  "generated_at": "2026-09-01T02:52:15.329Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, AZ 1",
-    "dek": "Top 4th · 0 outs",
-    "summary": "Bryson Stott is up against Brandon Pfaadt. Series: Regular Season.",
+    "dek": "Bottom 4th · 1 out",
+    "summary": "Nolan Arenado is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Eduardo Rodriguez · PHI @ AZ · Tue, Sep 1 · 9:40 PM"
   },
@@ -57,34 +57,30 @@
     "weather": {
       "temp_f": 85,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 6",
-      "gusts_mph": 6
+      "wind": "2 mph · gusts 4",
+      "gusts_mph": 4
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Brandon Pfaadt"
+        "name": "Nolan Arenado",
+        "meta": "vs Aaron Nola"
       },
       "pitches": [
-        "S",
-        "B",
-        "B",
-        "S",
-        "F"
+        "S"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 0
+        "balls": 0,
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -92,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-01T02:42:24.124Z",
+    "updated_at": "2026-09-01T02:52:15.623Z",
     "current_game_pk": 825040,
     "next_game_pk": 825038,
     "next_game": {
@@ -129,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "85° · Overcast · gusts 6 mph",
+      "text": "85° · Overcast · gusts 4 mph",
       "highlight": false
     },
     {
