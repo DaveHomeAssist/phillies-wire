@@ -5,14 +5,14 @@
     "edition": 153,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-01T02:15:25.083Z",
+    "generated_at": "2026-09-01T02:42:23.370Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Aug 31, 2026, 10:15 PM ET",
+      "generated_at_et": "Aug 31, 2026, 10:42 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, AZ 0",
-    "dek": "End 2nd · 3 outs",
-    "summary": "Garrett Stubbs is up against Brandon Pfaadt. Series: Regular Season.",
+    "headline": "PHI 2, AZ 1",
+    "dek": "Top 4th · 0 outs",
+    "summary": "Bryson Stott is up against Brandon Pfaadt. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "86° · Overcast"
+        "value": "85° · Overcast"
       }
     ],
     "bullets": [
-      "Garrett Stubbs at the plate",
+      "Bryson Stott at the plate",
       "Brandon Pfaadt on the mound",
       "Chase Field, Phoenix"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 86,
+          "temp_f": 85,
           "condition": "Overcast",
-          "wind": "3 mph · gusts 4",
-          "gusts_mph": 4
+          "wind": "4 mph · gusts 6",
+          "gusts_mph": 6
         },
         "giveaway": "",
         "transit": "",
@@ -359,34 +359,34 @@
             "team": "AZ",
             "name": "Brandon Pfaadt",
             "hand": "R",
-            "era": "3.53",
+            "era": "3.58",
             "record": "7-1",
-            "whip": "1.13"
+            "whip": "1.15"
           },
           "away": {
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "4.97",
+            "era": "4.99",
             "record": "5-10",
-            "whip": "1.39"
+            "whip": "1.40"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "End",
-          "isTopInning": false,
-          "outs": 3,
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 1,
+              "runs": 2,
+              "hits": 3,
               "errors": 0
             },
             "home": {
-              "runs": 0,
-              "hits": 1,
+              "runs": 1,
+              "hits": 3,
               "errors": 1
             }
           },
@@ -414,6 +414,32 @@
               "home": {
                 "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 1,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -643,28 +669,199 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "825040:16",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs singles on a ground ball to right fielder Corbin Carroll.",
+            "score_after": "PHI 1, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825040:17",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber walks. Garrett Stubbs to 2nd.",
+            "score_after": "PHI 1, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825040:18",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner flies out to right fielder Corbin Carroll. Garrett Stubbs to 3rd.",
+            "score_after": "PHI 1, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825040:19",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper doubles (28) on a sharp line drive to center fielder Ryan Waldschmidt. Garrett Stubbs scores. Kyle Schwarber to 3rd.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "825040:20",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez reaches on a fielder's choice out, second baseman Ildemaro Vargas to catcher Gabriel Moreno. Kyle Schwarber out at home…",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825040:21",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out to center fielder Ryan Waldschmidt.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825040:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Ryan Waldschmidt",
+            "actor_id": 814439,
+            "detail": "Ryan Waldschmidt grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825040:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "single",
+            "actor": "Geraldo Perdomo",
+            "actor_id": 672695,
+            "detail": "Geraldo Perdomo singles on a line drive to left fielder Brandon Marsh.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825040:24",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Corbin Carroll",
+            "actor_id": 682998,
+            "detail": "Corbin Carroll flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825040:25",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "extra_base_hit",
+            "actor": "Gabriel Moreno",
+            "actor_id": 672515,
+            "detail": "Gabriel Moreno doubles (29) on a ground ball to left fielder Brandon Marsh. Geraldo Perdomo scores.",
+            "score_after": "PHI 2, AZ 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "825040:26",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Ketel Marte",
+            "actor_id": 606466,
+            "detail": "Ketel Marte lines out to right fielder Bryce Harper.",
+            "score_after": "PHI 2, AZ 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825040:27",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Play",
+            "score_after": "PHI 2, AZ 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Garrett Stubbs",
+            "name": "Bryson Stott",
             "meta": "vs Brandon Pfaadt"
           },
           "pitches": [
             "S",
-            "X"
+            "B",
+            "B",
+            "S",
+            "F"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 1,
-            "outs": 3
+            "balls": 2,
+            "strikes": 2,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 2nd"
+          "status": "Top 4th"
         }
       }
     },
@@ -681,8 +878,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-01T02:15:25.083Z",
-            "freshness_label": "As of Aug 31, 2026, 10:15 PM ET"
+            "last_confirmed": "2026-09-01T02:42:23.370Z",
+            "freshness_label": "As of Aug 31, 2026, 10:42 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -694,8 +891,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-01T02:15:25.083Z",
-            "freshness_label": "As of Aug 31, 2026, 10:15 PM ET"
+            "last_confirmed": "2026-09-01T02:42:23.370Z",
+            "freshness_label": "As of Aug 31, 2026, 10:42 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -707,8 +904,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-01T02:15:25.083Z",
-            "freshness_label": "As of Aug 31, 2026, 10:15 PM ET"
+            "last_confirmed": "2026-09-01T02:42:23.370Z",
+            "freshness_label": "As of Aug 31, 2026, 10:42 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -720,8 +917,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-01T02:15:25.083Z",
-            "freshness_label": "As of Aug 31, 2026, 10:15 PM ET"
+            "last_confirmed": "2026-09-01T02:42:23.370Z",
+            "freshness_label": "As of Aug 31, 2026, 10:42 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -733,8 +930,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-01T02:15:25.083Z",
-            "freshness_label": "As of Aug 31, 2026, 10:15 PM ET"
+            "last_confirmed": "2026-09-01T02:42:23.370Z",
+            "freshness_label": "As of Aug 31, 2026, 10:42 PM ET"
           },
           {
             "name": "Rafael Marchán",
@@ -746,8 +943,8 @@
             "retroactive_to": "2026-07-23",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-01T02:15:25.083Z",
-            "freshness_label": "As of Aug 31, 2026, 10:15 PM ET"
+            "last_confirmed": "2026-09-01T02:42:23.370Z",
+            "freshness_label": "As of Aug 31, 2026, 10:42 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -759,8 +956,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-01T02:15:25.083Z",
-            "freshness_label": "As of Aug 31, 2026, 10:15 PM ET"
+            "last_confirmed": "2026-09-01T02:42:23.370Z",
+            "freshness_label": "As of Aug 31, 2026, 10:42 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -772,8 +969,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-01T02:15:25.083Z",
-            "freshness_label": "As of Aug 31, 2026, 10:15 PM ET"
+            "last_confirmed": "2026-09-01T02:42:23.370Z",
+            "freshness_label": "As of Aug 31, 2026, 10:42 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
