@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-08-31",
+  "edition_date": "2026-09-01",
   "volume": 1,
-  "edition": 153,
-  "generated_at": "2026-09-01T03:50:06.778Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "edition": 154,
+  "generated_at": "2026-09-01T04:11:35.225Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 77,
@@ -16,32 +16,32 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, AZ 1",
-    "dek": "Bottom 7th · 2 outs",
-    "summary": "Corbin Carroll is up against Brooks Raley. Series: Regular Season.",
+    "headline": "Phillies @ D-backs · Game 2 of 3",
+    "dek": "Jesús Luzardo vs Eduardo Rodriguez",
+    "summary": "Jesús Luzardo vs Eduardo Rodriguez · Phillies @ D-backs · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Jesús Luzardo vs Eduardo Rodriguez · PHI @ AZ · Tue, Sep 1 · 9:40 PM"
+    "next_value": "Andrew Painter · PHI @ AZ · Wed, Sep 2 · 3:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ D-backs · Game 1 of 3",
+    "matchup": "Phillies @ D-backs · Game 2 of 3",
     "first_pitch": "9:40 PM",
     "venue": "Chase Field, Phoenix",
     "starters": {
       "home": {
-        "name": "Brandon Pfaadt",
-        "hand": "R"
+        "name": "Eduardo Rodriguez",
+        "hand": "L"
       },
       "away": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Jesús Luzardo",
+        "hand": "L"
       },
       "phi": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Jesús Luzardo",
+        "hand": "L"
       },
       "opp": {
-        "name": "Brandon Pfaadt",
-        "hand": "R"
+        "name": "Eduardo Rodriguez",
+        "hand": "L"
       }
     },
     "series": {
@@ -57,36 +57,19 @@
     "weather": {
       "temp_f": 83,
       "condition": "Overcast",
-      "wind": "2 mph · gusts 2",
-      "gusts_mph": 2
+      "wind": "3 mph · gusts 3",
+      "gusts_mph": 3
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Corbin Carroll",
-        "meta": "vs Brooks Raley"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 2
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 7th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-01T03:50:07.279Z",
+    "updated_at": "2026-09-01T04:11:35.950Z",
     "current_game_pk": 825040,
     "next_game_pk": 825038,
     "next_game": {
@@ -111,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ D-backs · Game 1 of 3 · 9:40 PM",
+      "text": "Phillies @ D-backs · Game 2 of 3 · 9:40 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Brandon Pfaadt",
+      "text": "Jesús Luzardo vs Eduardo Rodriguez",
       "highlight": true
     },
     {
@@ -123,15 +106,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Overcast · gusts 2 mph",
-      "highlight": false
-    },
-    {
-      "text": "traded LF Tommy Pham to Chicago White Sox for cash.",
-      "highlight": false
-    },
-    {
-      "text": "traded LF Tommy Pham to Chicago White Sox for cash.",
+      "text": "83° · Overcast · gusts 3 mph",
       "highlight": false
     }
   ]
