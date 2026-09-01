@@ -4,14 +4,14 @@
   "edition_date": "2026-09-01",
   "volume": 1,
   "edition": 154,
-  "generated_at": "2026-09-01T04:30:08.048Z",
+  "generated_at": "2026-09-01T04:43:26.369Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
   "record": {
-    "wins": 77,
+    "wins": 78,
     "losses": 60,
-    "streak": "W4",
+    "streak": "W5",
     "division_rank": 2,
     "division": "NL East"
   },
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 83,
       "condition": "Partly cloudy",
-      "wind": "4 mph · gusts 6",
-      "gusts_mph": 6
+      "wind": "5 mph · gusts 12",
+      "gusts_mph": 12
     },
     "score": null,
     "inning": null,
@@ -69,28 +69,28 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-01T04:30:08.692Z",
-    "current_game_pk": 825040,
-    "next_game_pk": 825038,
+    "updated_at": "2026-09-01T04:43:26.839Z",
+    "current_game_pk": 825038,
+    "next_game_pk": 825037,
     "next_game": {
-      "game_pk": 825038,
-      "official_date": "2026-09-01",
-      "date_label": "Tue, Sep 1, 2026",
-      "time_label": "9:40 PM",
+      "game_pk": 825037,
+      "official_date": "2026-09-02",
+      "date_label": "Wed, Sep 2, 2026",
+      "time_label": "3:40 PM",
       "title": "Phillies at Arizona Diamondbacks",
       "matchup": "PHI at ARI",
       "venue": "Chase Field"
     },
     "current_game": {
-      "game_pk": 825040,
-      "official_date": "2026-08-31",
+      "game_pk": 825038,
+      "official_date": "2026-09-01",
       "title": "Phillies at Arizona Diamondbacks",
       "matchup": "PHI at ARI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 77-60",
+      "text": "PHI 78-60",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Partly cloudy · gusts 6 mph",
+      "text": "83° · Partly cloudy · gusts 12 mph",
       "highlight": false
     }
   ]
