@@ -4,7 +4,7 @@
   "edition_date": "2026-08-31",
   "volume": 1,
   "edition": 153,
-  "generated_at": "2026-09-01T03:33:54.969Z",
+  "generated_at": "2026-09-01T03:50:06.778Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, AZ 1",
-    "dek": "End 6th · 3 outs",
-    "summary": "Brandon Marsh is up against Brandon Pfaadt. Series: Regular Season.",
+    "dek": "Bottom 7th · 2 outs",
+    "summary": "Corbin Carroll is up against Brooks Raley. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Eduardo Rodriguez · PHI @ AZ · Tue, Sep 1 · 9:40 PM"
   },
@@ -55,35 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 84,
-      "condition": "Partly cloudy",
-      "wind": "0 mph · gusts 1",
-      "gusts_mph": 1
+      "temp_f": 83,
+      "condition": "Overcast",
+      "wind": "2 mph · gusts 2",
+      "gusts_mph": 2
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Brandon Pfaadt"
+        "name": "Corbin Carroll",
+        "meta": "vs Brooks Raley"
       },
-      "pitches": [
-        "S",
-        "S",
-        "F",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
-        "strikes": 2,
-        "outs": 3
+        "balls": 0,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "End 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-01T03:33:55.513Z",
+    "updated_at": "2026-09-01T03:50:07.279Z",
     "current_game_pk": 825040,
     "next_game_pk": 825038,
     "next_game": {
@@ -128,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Partly cloudy · gusts 1 mph",
+      "text": "83° · Overcast · gusts 2 mph",
       "highlight": false
     },
     {
