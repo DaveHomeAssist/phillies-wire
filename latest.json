@@ -4,21 +4,21 @@
   "edition_date": "2026-09-02",
   "volume": 1,
   "edition": 155,
-  "generated_at": "2026-09-02T21:34:40.152Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-02T21:48:28.427Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 79,
-    "losses": 60,
-    "streak": "W6",
+    "losses": 61,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, AZ 1",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "Jordan Lawlar is up against Jonathan Bowlan. Series: PHI leads 2-0.",
+    "headline": "PHI 0, AZ 1.",
+    "dek": "AZ 1, PHI 0 · Andrew Painter · 7.0 IP, 2 H, 0 ER, 6 K",
+    "summary": "PHI 0, AZ 1. Final at Chase Field, Phoenix. PHI wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Chris Sale · PHI vs ATL · Fri, Sep 4 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 2-0"
+      "label": "PHI wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,60 +57,40 @@
     "weather": {
       "temp_f": 102,
       "condition": "Clear",
-      "wind": "5 mph · gusts 14",
+      "wind": "7 mph · gusts 14",
       "gusts_mph": 14
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Jordan Lawlar",
-        "meta": "vs Jonathan Bowlan"
-      },
-      "pitches": [
-        "B",
-        "F"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 1
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T21:34:40.966Z",
-    "current_game_pk": 825037,
-    "next_game_pk": 823418,
+    "updated_at": "2026-09-02T21:48:29.314Z",
+    "current_game_pk": 823418,
+    "next_game_pk": 823419,
     "next_game": {
-      "game_pk": 823418,
-      "official_date": "2026-09-04",
-      "date_label": "Fri, Sep 4, 2026",
-      "time_label": "6:40 PM",
+      "game_pk": 823419,
+      "official_date": "2026-09-05",
+      "date_label": "Sat, Sep 5, 2026",
+      "time_label": "6:05 PM",
       "title": "Atlanta Braves at Phillies",
       "matchup": "ATL at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 825037,
-      "official_date": "2026-09-02",
-      "title": "Phillies at Arizona Diamondbacks",
-      "matchup": "PHI at ARI"
+      "game_pk": 823418,
+      "official_date": "2026-09-04",
+      "title": "Atlanta Braves at Phillies",
+      "matchup": "ATL at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 79-60",
+      "text": "PHI 79-61",
       "highlight": true
     },
     {
