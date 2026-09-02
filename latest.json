@@ -4,7 +4,7 @@
   "edition_date": "2026-09-02",
   "volume": 1,
   "edition": 155,
-  "generated_at": "2026-09-02T21:22:16.038Z",
+  "generated_at": "2026-09-02T21:34:40.152Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, AZ 0",
-    "dek": "End 7th · 3 outs",
-    "summary": "Justin Crawford is up against Brandyn Garcia. Series: PHI leads 2-0.",
+    "headline": "PHI 0, AZ 1",
+    "dek": "Bottom 8th · 1 out",
+    "summary": "Jordan Lawlar is up against Jonathan Bowlan. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Chris Sale · PHI vs ATL · Fri, Sep 4 · 6:40 PM"
   },
@@ -57,34 +57,31 @@
     "weather": {
       "temp_f": 102,
       "condition": "Clear",
-      "wind": "6 mph · gusts 14",
+      "wind": "5 mph · gusts 14",
       "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Justin Crawford",
-        "meta": "vs Brandyn Garcia"
+        "name": "Jordan Lawlar",
+        "meta": "vs Jonathan Bowlan"
       },
       "pitches": [
-        "S",
         "B",
-        "B",
-        "F",
-        "S"
+        "F"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 3,
-        "outs": 3
+        "balls": 1,
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 7th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -92,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T21:22:17.074Z",
+    "updated_at": "2026-09-02T21:34:40.966Z",
     "current_game_pk": 825037,
     "next_game_pk": 823418,
     "next_game": {
