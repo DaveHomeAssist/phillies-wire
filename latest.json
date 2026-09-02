@@ -4,7 +4,7 @@
   "edition_date": "2026-09-01",
   "volume": 1,
   "edition": 154,
-  "generated_at": "2026-09-02T03:31:59.074Z",
+  "generated_at": "2026-09-02T03:48:30.570Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, AZ 1",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Brandon Marsh is up against Justin Martinez. Series: PHI leads 1-0.",
+    "dek": "Top 8th · 0 outs",
+    "summary": "Bryson Stott is up against Gerardo Carrillo. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI @ AZ · Wed, Sep 2 · 3:40 PM"
   },
@@ -55,32 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 92,
+      "temp_f": 91,
       "condition": "Clear",
-      "wind": "4 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "5 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Justin Martinez"
+        "name": "Bryson Stott",
+        "meta": "vs Gerardo Carrillo"
       },
       "pitches": [
-        "F"
+        "B",
+        "S",
+        "F",
+        "B"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 1,
-        "outs": 2
+        "balls": 2,
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -88,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T03:31:59.468Z",
+    "updated_at": "2026-09-02T03:48:31.327Z",
     "current_game_pk": 825038,
     "next_game_pk": 825037,
     "next_game": {
@@ -125,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "92° · Clear · gusts 5 mph",
+      "text": "91° · Clear · gusts 7 mph",
       "highlight": false
     },
     {

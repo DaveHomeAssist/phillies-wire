@@ -5,14 +5,14 @@
     "edition": 154,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-02T03:31:59.074Z",
+    "generated_at": "2026-09-02T03:48:30.570Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 1, 2026, 11:31 PM ET",
+      "generated_at_et": "Sep 1, 2026, 11:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 3, AZ 1",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Brandon Marsh is up against Justin Martinez. Series: PHI leads 1-0.",
+    "dek": "Top 8th · 0 outs",
+    "summary": "Bryson Stott is up against Gerardo Carrillo. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "92° · Clear"
+        "value": "91° · Clear"
       }
     ],
     "bullets": [
-      "Brandon Marsh at the plate",
-      "Justin Martinez on the mound",
+      "Bryson Stott at the plate",
+      "Gerardo Carrillo on the mound",
       "Chase Field, Phoenix"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 92,
+          "temp_f": 91,
           "condition": "Clear",
-          "wind": "4 mph · gusts 5",
-          "gusts_mph": 5
+          "wind": "5 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "",
@@ -367,17 +367,17 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.04",
+            "era": "3.02",
             "record": "12-5",
-            "whip": "1.11"
+            "whip": "1.12"
           }
         },
         "linescore": {
-          "currentInning": 7,
-          "currentInningOrdinal": "7th",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 2,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 3,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 1,
-              "hits": 5,
+              "hits": 6,
               "errors": 0
             }
           },
@@ -472,8 +472,21 @@
             {
               "num": 7,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
@@ -1260,9 +1273,93 @@
             "inning": 7,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
+            "detail": "Brandon Marsh lines out to center fielder Jordan Lawlar.",
+            "score_after": "PHI 3, AZ 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:56",
+            "inning": 7,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "single",
+            "actor": "Ildemaro Vargas",
+            "actor_id": 545121,
+            "detail": "Ildemaro Vargas singles on a line drive to center fielder Derek Hill.",
+            "score_after": "PHI 3, AZ 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:57",
+            "inning": 7,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Tim Tawa",
+            "actor_id": 694374,
+            "detail": "Tim Tawa ground bunts into a force out, pitcher Jesús Luzardo to second baseman Luis Arraez. Ildemaro Vargas out at 2nd. Tim Tawa t…",
+            "score_after": "PHI 3, AZ 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:58",
+            "inning": 7,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Jordan Lawlar",
+            "actor_id": 691783,
+            "detail": "Jordan Lawlar grounds into a force out, shortstop Trea Turner to second baseman Luis Arraez. Tim Tawa out at 2nd. Jordan Lawlar to…",
+            "score_after": "PHI 3, AZ 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:59",
+            "inning": 7,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "walk_hbp",
+            "actor": "Ryan Waldschmidt",
+            "actor_id": 814439,
+            "detail": "Ryan Waldschmidt walks. Jordan Lawlar to 2nd.",
+            "score_after": "PHI 3, AZ 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:60",
+            "inning": 7,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "strikeout",
+            "actor": "Geraldo Perdomo",
+            "actor_id": 672695,
+            "detail": "Geraldo Perdomo challenged (pitch result), call on the field was confirmed: Geraldo Perdomo called out on strikes.",
+            "score_after": "PHI 3, AZ 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:61",
+            "inning": 8,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
             "detail": "Play",
             "score_after": "PHI 3, AZ 1",
             "runs": 0,
@@ -1272,23 +1369,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "Brandon Marsh",
-            "meta": "vs Justin Martinez"
+            "name": "Bryson Stott",
+            "meta": "vs Gerardo Carrillo"
           },
           "pitches": [
-            "F"
+            "B",
+            "S",
+            "F",
+            "B"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 1,
-            "outs": 2
+            "balls": 2,
+            "strikes": 2,
+            "outs": 0
           },
           "bases": {
-            "first": true,
-            "second": true,
+            "first": false,
+            "second": false,
             "third": false
           },
-          "status": "Top 7th"
+          "status": "Top 8th"
         }
       }
     },
@@ -1305,8 +1405,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T03:31:59.074Z",
-            "freshness_label": "As of Sep 1, 2026, 11:31 PM ET"
+            "last_confirmed": "2026-09-02T03:48:30.570Z",
+            "freshness_label": "As of Sep 1, 2026, 11:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1318,8 +1418,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T03:31:59.074Z",
-            "freshness_label": "As of Sep 1, 2026, 11:31 PM ET"
+            "last_confirmed": "2026-09-02T03:48:30.570Z",
+            "freshness_label": "As of Sep 1, 2026, 11:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1331,8 +1431,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T03:31:59.074Z",
-            "freshness_label": "As of Sep 1, 2026, 11:31 PM ET"
+            "last_confirmed": "2026-09-02T03:48:30.570Z",
+            "freshness_label": "As of Sep 1, 2026, 11:48 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1344,8 +1444,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T03:31:59.074Z",
-            "freshness_label": "As of Sep 1, 2026, 11:31 PM ET"
+            "last_confirmed": "2026-09-02T03:48:30.570Z",
+            "freshness_label": "As of Sep 1, 2026, 11:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1357,8 +1457,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T03:31:59.074Z",
-            "freshness_label": "As of Sep 1, 2026, 11:31 PM ET"
+            "last_confirmed": "2026-09-02T03:48:30.570Z",
+            "freshness_label": "As of Sep 1, 2026, 11:48 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1370,8 +1470,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T03:31:59.074Z",
-            "freshness_label": "As of Sep 1, 2026, 11:31 PM ET"
+            "last_confirmed": "2026-09-02T03:48:30.570Z",
+            "freshness_label": "As of Sep 1, 2026, 11:48 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1383,8 +1483,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T03:31:59.074Z",
-            "freshness_label": "As of Sep 1, 2026, 11:31 PM ET"
+            "last_confirmed": "2026-09-02T03:48:30.570Z",
+            "freshness_label": "As of Sep 1, 2026, 11:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
