@@ -4,9 +4,9 @@
   "edition_date": "2026-09-01",
   "volume": 1,
   "edition": 154,
-  "generated_at": "2026-09-02T01:07:54.170Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-02T01:33:43.806Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 78,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ D-backs · Game 2 of 3",
-    "dek": "Jesús Luzardo vs Eduardo Rodriguez",
-    "summary": "Jesús Luzardo vs Eduardo Rodriguez · Phillies @ D-backs · Game 2 of 3",
+    "headline": "PHI 0, AZ 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Eduardo Rodriguez. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI @ AZ · Wed, Sep 2 · 3:40 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 98,
+      "temp_f": 96,
       "condition": "Clear",
-      "wind": "2 mph · gusts 6",
-      "gusts_mph": 6
+      "wind": "5 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Eduardo Rodriguez"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T01:07:54.639Z",
+    "updated_at": "2026-09-02T01:33:44.600Z",
     "current_game_pk": 825038,
     "next_game_pk": 825037,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "98° · Clear · gusts 6 mph",
+      "text": "96° · Clear · gusts 8 mph",
       "highlight": false
     },
     {
