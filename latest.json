@@ -4,7 +4,7 @@
   "edition_date": "2026-09-02",
   "volume": 1,
   "edition": 155,
-  "generated_at": "2026-09-02T21:09:01.106Z",
+  "generated_at": "2026-09-02T21:22:16.038Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, AZ 0",
-    "dek": "Top 7th · 0 outs",
-    "summary": "Bryce Harper is up against Brandyn Garcia. Series: PHI leads 2-0.",
+    "dek": "End 7th · 3 outs",
+    "summary": "Justin Crawford is up against Brandyn Garcia. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Chris Sale · PHI vs ATL · Fri, Sep 4 · 6:40 PM"
   },
@@ -55,30 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 101,
+      "temp_f": 102,
       "condition": "Clear",
-      "wind": "6 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "6 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
+        "name": "Justin Crawford",
         "meta": "vs Brandyn Garcia"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "B",
+        "F",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "End 7th"
     },
     "recap_line": null
   },
@@ -86,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T21:09:01.920Z",
+    "updated_at": "2026-09-02T21:22:17.074Z",
     "current_game_pk": 825037,
     "next_game_pk": 823418,
     "next_game": {
@@ -123,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "101° · Clear · gusts 13 mph",
+      "text": "102° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]
