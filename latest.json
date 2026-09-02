@@ -4,14 +4,14 @@
   "edition_date": "2026-09-02",
   "volume": 1,
   "edition": 155,
-  "generated_at": "2026-09-02T04:13:18.264Z",
+  "generated_at": "2026-09-02T04:33:31.172Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
   "record": {
-    "wins": 78,
+    "wins": 79,
     "losses": 60,
-    "streak": "W5",
+    "streak": "W6",
     "division_rank": 2,
     "division": "NL East"
   },
@@ -57,8 +57,8 @@
     "weather": {
       "temp_f": 91,
       "condition": "Clear",
-      "wind": "4 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "4 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
@@ -69,28 +69,28 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T04:13:18.664Z",
-    "current_game_pk": 825038,
-    "next_game_pk": 825037,
+    "updated_at": "2026-09-02T04:33:31.890Z",
+    "current_game_pk": 825037,
+    "next_game_pk": 823418,
     "next_game": {
-      "game_pk": 825037,
-      "official_date": "2026-09-02",
-      "date_label": "Wed, Sep 2, 2026",
-      "time_label": "3:40 PM",
-      "title": "Phillies at Arizona Diamondbacks",
-      "matchup": "PHI at ARI",
-      "venue": "Chase Field"
+      "game_pk": 823418,
+      "official_date": "2026-09-04",
+      "date_label": "Fri, Sep 4, 2026",
+      "time_label": "6:40 PM",
+      "title": "Atlanta Braves at Phillies",
+      "matchup": "ATL at PHI",
+      "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 825038,
-      "official_date": "2026-09-01",
+      "game_pk": 825037,
+      "official_date": "2026-09-02",
       "title": "Phillies at Arizona Diamondbacks",
       "matchup": "PHI at ARI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 78-60",
+      "text": "PHI 79-60",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "91° · Clear · gusts 8 mph",
+      "text": "91° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
