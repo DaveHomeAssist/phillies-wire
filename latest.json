@@ -4,7 +4,7 @@
   "edition_date": "2026-09-02",
   "volume": 1,
   "edition": 155,
-  "generated_at": "2026-09-02T20:25:52.833Z",
+  "generated_at": "2026-09-02T20:36:55.864Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, AZ 0",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "Lars Nootbaar is up against Andrew Painter. Series: PHI leads 2-0.",
+    "dek": "Bottom 4th · 1 out",
+    "summary": "Gabriel Moreno is up against Andrew Painter. Series: PHI leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Chris Sale · PHI vs ATL · Fri, Sep 4 · 6:40 PM"
   },
@@ -57,31 +57,30 @@
     "weather": {
       "temp_f": 101,
       "condition": "Clear",
-      "wind": "7 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "8 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Lars Nootbaar",
+        "name": "Gabriel Moreno",
         "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "S",
         "S"
       ],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 2
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -89,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T20:25:53.376Z",
+    "updated_at": "2026-09-02T20:36:56.590Z",
     "current_game_pk": 825037,
     "next_game_pk": 823418,
     "next_game": {
@@ -126,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "101° · Clear · gusts 13 mph",
+      "text": "101° · Clear · gusts 15 mph",
       "highlight": false
     }
   ]
