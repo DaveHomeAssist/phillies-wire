@@ -5,14 +5,14 @@
     "edition": 155,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-02T20:48:07.880Z",
+    "generated_at": "2026-09-02T21:09:01.106Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 2, 2026, 4:48 PM ET",
+      "generated_at_et": "Sep 2, 2026, 5:09 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, AZ 0",
-    "dek": "Bottom 5th · 0 outs",
-    "summary": "Tim Tawa is up against Andrew Painter. Series: PHI leads 2-0.",
+    "dek": "Top 7th · 0 outs",
+    "summary": "Bryce Harper is up against Brandyn Garcia. Series: PHI leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Tim Tawa at the plate",
-      "Andrew Painter on the mound",
+      "Bryce Harper at the plate",
+      "Brandyn Garcia on the mound",
       "Chase Field, Phoenix"
     ],
     "next_label": "Tomorrow",
@@ -367,21 +367,21 @@
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "5.72",
+            "era": "5.63",
             "record": "3-8",
-            "whip": "1.40"
+            "whip": "1.38"
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "Bottom",
-          "isTopInning": false,
+          "currentInning": 7,
+          "currentInningOrdinal": "7th",
+          "inningState": "Top",
+          "isTopInning": true,
           "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 1,
+              "hits": 2,
               "errors": 1
             },
             "home": {
@@ -447,6 +447,32 @@
               "num": 5,
               "away": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               },
@@ -898,10 +924,136 @@
             "inning": 5,
             "half": "bottom",
             "team": "AZ",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Tim Tawa",
             "actor_id": 694374,
-            "detail": "Play",
+            "detail": "Tim Tawa grounds out, third baseman Bryson Stott to first baseman Kyle Schwarber.",
+            "score_after": "PHI 0, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825037:32",
+            "inning": 5,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "strikeout",
+            "actor": "James McCann",
+            "actor_id": 543510,
+            "detail": "James McCann strikes out swinging.",
+            "score_after": "PHI 0, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825037:33",
+            "inning": 5,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Ildemaro Vargas",
+            "actor_id": 545121,
+            "detail": "Ildemaro Vargas grounds out, second baseman Luis Arraez to first baseman Kyle Schwarber.",
+            "score_after": "PHI 0, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825037:34",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz singles on a ground ball to center fielder Jordan Lawlar.",
+            "score_after": "PHI 0, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825037:35",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 0, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825037:36",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds into a double play, second baseman Ildemaro Vargas to first baseman Tim Tawa. Bryan De La Cruz out at 2nd. Trea…",
+            "score_after": "PHI 0, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825037:37",
+            "inning": 6,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Jordan Lawlar",
+            "actor_id": 691783,
+            "detail": "Jordan Lawlar flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 0, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825037:38",
+            "inning": 6,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Lars Nootbaar",
+            "actor_id": 663457,
+            "detail": "Lars Nootbaar grounds out, second baseman Luis Arraez to first baseman Kyle Schwarber.",
+            "score_after": "PHI 0, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825037:39",
+            "inning": 6,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Corbin Carroll",
+            "actor_id": 682998,
+            "detail": "Corbin Carroll flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 0, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825037:40",
+            "inning": 7,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Pitching Change: Brandyn Garcia replaces Jose Cabrera.",
             "score_after": "PHI 0, AZ 0",
             "runs": 0,
             "is_scoring": false,
@@ -910,14 +1062,12 @@
         ],
         "situation": {
           "batter": {
-            "name": "Tim Tawa",
-            "meta": "vs Andrew Painter"
+            "name": "Bryce Harper",
+            "meta": "vs Brandyn Garcia"
           },
-          "pitches": [
-            "B"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 1,
+            "balls": 0,
             "strikes": 0,
             "outs": 0
           },
@@ -926,7 +1076,7 @@
             "second": false,
             "third": false
           },
-          "status": "Bottom 5th"
+          "status": "Top 7th"
         }
       }
     },
@@ -943,8 +1093,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T20:48:07.880Z",
-            "freshness_label": "As of Sep 2, 2026, 4:48 PM ET"
+            "last_confirmed": "2026-09-02T21:09:01.106Z",
+            "freshness_label": "As of Sep 2, 2026, 5:09 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -956,8 +1106,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T20:48:07.880Z",
-            "freshness_label": "As of Sep 2, 2026, 4:48 PM ET"
+            "last_confirmed": "2026-09-02T21:09:01.106Z",
+            "freshness_label": "As of Sep 2, 2026, 5:09 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -969,8 +1119,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T20:48:07.880Z",
-            "freshness_label": "As of Sep 2, 2026, 4:48 PM ET"
+            "last_confirmed": "2026-09-02T21:09:01.106Z",
+            "freshness_label": "As of Sep 2, 2026, 5:09 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -982,8 +1132,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T20:48:07.880Z",
-            "freshness_label": "As of Sep 2, 2026, 4:48 PM ET"
+            "last_confirmed": "2026-09-02T21:09:01.106Z",
+            "freshness_label": "As of Sep 2, 2026, 5:09 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -995,8 +1145,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T20:48:07.880Z",
-            "freshness_label": "As of Sep 2, 2026, 4:48 PM ET"
+            "last_confirmed": "2026-09-02T21:09:01.106Z",
+            "freshness_label": "As of Sep 2, 2026, 5:09 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1008,8 +1158,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T20:48:07.880Z",
-            "freshness_label": "As of Sep 2, 2026, 4:48 PM ET"
+            "last_confirmed": "2026-09-02T21:09:01.106Z",
+            "freshness_label": "As of Sep 2, 2026, 5:09 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1021,8 +1171,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T20:48:07.880Z",
-            "freshness_label": "As of Sep 2, 2026, 4:48 PM ET"
+            "last_confirmed": "2026-09-02T21:09:01.106Z",
+            "freshness_label": "As of Sep 2, 2026, 5:09 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
