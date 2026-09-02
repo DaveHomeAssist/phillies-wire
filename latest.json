@@ -4,7 +4,7 @@
   "edition_date": "2026-09-01",
   "volume": 1,
   "edition": 154,
-  "generated_at": "2026-09-02T01:33:43.806Z",
+  "generated_at": "2026-09-02T02:06:39.614Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, AZ 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Kyle Schwarber is up against Eduardo Rodriguez. Series: PHI leads 1-0.",
+    "headline": "PHI 2, AZ 0",
+    "dek": "Top 2nd · 2 outs",
+    "summary": "Derek Hill is up against Eduardo Rodriguez. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI @ AZ · Wed, Sep 2 · 3:40 PM"
   },
@@ -55,30 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 96,
+      "temp_f": 94,
       "condition": "Clear",
-      "wind": "5 mph · gusts 8",
+      "wind": "4 mph · gusts 8",
       "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Derek Hill",
         "meta": "vs Eduardo Rodriguez"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "S",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T01:33:44.600Z",
+    "updated_at": "2026-09-02T02:06:40.435Z",
     "current_game_pk": 825038,
     "next_game_pk": 825037,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "96° · Clear · gusts 8 mph",
+      "text": "94° · Clear · gusts 8 mph",
       "highlight": false
     },
     {
