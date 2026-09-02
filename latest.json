@@ -4,7 +4,7 @@
   "edition_date": "2026-09-01",
   "volume": 1,
   "edition": 154,
-  "generated_at": "2026-09-02T03:12:37.239Z",
+  "generated_at": "2026-09-02T03:31:59.074Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, AZ 1",
-    "dek": "End 5th · 3 outs",
-    "summary": "J.T. Realmuto is up against Eduardo Rodriguez. Series: PHI leads 1-0.",
+    "dek": "Top 7th · 2 outs",
+    "summary": "Brandon Marsh is up against Justin Martinez. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI @ AZ · Wed, Sep 2 · 3:40 PM"
   },
@@ -57,35 +57,30 @@
     "weather": {
       "temp_f": 92,
       "condition": "Clear",
-      "wind": "4 mph · gusts 6",
-      "gusts_mph": 6
+      "wind": "4 mph · gusts 5",
+      "gusts_mph": 5
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Eduardo Rodriguez"
+        "name": "Brandon Marsh",
+        "meta": "vs Justin Martinez"
       },
       "pitches": [
-        "B",
-        "S",
-        "S",
-        "F",
-        "F",
-        "X"
+        "F"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 2,
-        "outs": 3
+        "balls": 0,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "End 5th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -93,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T03:12:37.841Z",
+    "updated_at": "2026-09-02T03:31:59.468Z",
     "current_game_pk": 825038,
     "next_game_pk": 825037,
     "next_game": {
@@ -130,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "92° · Clear · gusts 6 mph",
+      "text": "92° · Clear · gusts 5 mph",
       "highlight": false
     },
     {
