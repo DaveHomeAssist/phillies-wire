@@ -5,14 +5,14 @@
     "edition": 154,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-02T02:06:39.614Z",
+    "generated_at": "2026-09-02T02:48:28.846Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 1, 2026, 10:06 PM ET",
+      "generated_at_et": "Sep 1, 2026, 10:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 2, AZ 0",
-    "dek": "Top 2nd · 2 outs",
-    "summary": "Derek Hill is up against Eduardo Rodriguez. Series: PHI leads 1-0.",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "Gabriel Moreno is up against Jesús Luzardo. Series: PHI leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "94° · Clear"
+        "value": "92° · Clear"
       }
     ],
     "bullets": [
-      "Derek Hill at the plate",
-      "Eduardo Rodriguez on the mound",
+      "Gabriel Moreno at the plate",
+      "Jesús Luzardo on the mound",
       "Chase Field, Phoenix"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 94,
+          "temp_f": 92,
           "condition": "Clear",
-          "wind": "4 mph · gusts 8",
-          "gusts_mph": 8
+          "wind": "4 mph · gusts 5",
+          "gusts_mph": 5
         },
         "giveaway": "",
         "transit": "",
@@ -359,34 +359,34 @@
             "team": "AZ",
             "name": "Eduardo Rodriguez",
             "hand": "L",
-            "era": "2.58",
+            "era": "2.55",
             "record": "14-4",
-            "whip": "1.20"
+            "whip": "1.21"
           },
           "away": {
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "3.07",
+            "era": "3.04",
             "record": "12-5",
             "whip": "1.12"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 2,
-              "hits": 2,
+              "hits": 6,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 0,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -407,7 +407,33 @@
             {
               "num": 2,
               "away": {
-                "runs": null,
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 0,
+                "hits": 3,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -579,9 +605,275 @@
             "inning": 2,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Derek Hill",
             "actor_id": 656537,
+            "detail": "Derek Hill singles on a ground ball to right fielder Corbin Carroll.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:12",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out to first baseman Tim Tawa.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "single",
+            "actor": "Ketel Marte",
+            "actor_id": 606466,
+            "detail": "Ketel Marte singles on a ground ball to left fielder Edmundo Sosa.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "strikeout",
+            "actor": "Nolan Arenado",
+            "actor_id": 571448,
+            "detail": "Nolan Arenado strikes out swinging.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "other",
+            "actor": "Ildemaro Vargas",
+            "actor_id": 545121,
+            "detail": "Ildemaro Vargas grounds into a double play, pitcher Jesús Luzardo to second baseman Luis Arraez to first baseman Alec Bohm. Ketel M…",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:16",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, pitcher Eduardo Rodriguez to first baseman Tim Tawa.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:17",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper singles on a line drive to right fielder Corbin Carroll.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:18",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez singles on a line drive to center fielder Jordan Lawlar. Bryce Harper to 2nd.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:19",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm called out on strikes.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:20",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa singles on a line drive to left fielder Ryan Waldschmidt. Bryce Harper to 3rd. Luis Arraez to 2nd.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:21",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to center fielder Jordan Lawlar.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "single",
+            "actor": "Tim Tawa",
+            "actor_id": 694374,
+            "detail": "Tim Tawa singles on a ground ball to right fielder Bryce Harper.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "single",
+            "actor": "Jordan Lawlar",
+            "actor_id": 691783,
+            "detail": "Jordan Lawlar singles on a line drive to right fielder Bryce Harper. Tim Tawa to 2nd.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:24",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "strikeout",
+            "actor": "Ryan Waldschmidt",
+            "actor_id": 814439,
+            "detail": "Ryan Waldschmidt called out on strikes.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:25",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "out",
+            "actor": "Geraldo Perdomo",
+            "actor_id": 672695,
+            "detail": "Geraldo Perdomo lines out to third baseman Bryson Stott.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:26",
+            "inning": 3,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "strikeout",
+            "actor": "Corbin Carroll",
+            "actor_id": 682998,
+            "detail": "Corbin Carroll called out on strikes.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:27",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto pops out to catcher Gabriel Moreno in foul territory.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:28",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill flies out to left fielder Ryan Waldschmidt.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:29",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber called out on strikes.",
+            "score_after": "PHI 2, AZ 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "825038:30",
+            "inning": 4,
+            "half": "bottom",
+            "team": "AZ",
+            "event_type": "other",
+            "actor": "Gabriel Moreno",
+            "actor_id": 672515,
             "detail": "Play",
             "score_after": "PHI 2, AZ 0",
             "runs": 0,
@@ -591,26 +883,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Derek Hill",
-            "meta": "vs Eduardo Rodriguez"
+            "name": "Gabriel Moreno",
+            "meta": "vs Jesús Luzardo"
           },
           "pitches": [
-            "B",
-            "B",
             "S",
-            "F"
+            "B",
+            "S"
           ],
           "count": {
-            "balls": 2,
+            "balls": 1,
             "strikes": 2,
-            "outs": 2
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 2nd"
+          "status": "Bottom 4th"
         }
       }
     },
@@ -627,8 +918,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T02:06:39.614Z",
-            "freshness_label": "As of Sep 1, 2026, 10:06 PM ET"
+            "last_confirmed": "2026-09-02T02:48:28.846Z",
+            "freshness_label": "As of Sep 1, 2026, 10:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -640,8 +931,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T02:06:39.614Z",
-            "freshness_label": "As of Sep 1, 2026, 10:06 PM ET"
+            "last_confirmed": "2026-09-02T02:48:28.846Z",
+            "freshness_label": "As of Sep 1, 2026, 10:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -653,8 +944,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T02:06:39.614Z",
-            "freshness_label": "As of Sep 1, 2026, 10:06 PM ET"
+            "last_confirmed": "2026-09-02T02:48:28.846Z",
+            "freshness_label": "As of Sep 1, 2026, 10:48 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -666,8 +957,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T02:06:39.614Z",
-            "freshness_label": "As of Sep 1, 2026, 10:06 PM ET"
+            "last_confirmed": "2026-09-02T02:48:28.846Z",
+            "freshness_label": "As of Sep 1, 2026, 10:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -679,8 +970,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T02:06:39.614Z",
-            "freshness_label": "As of Sep 1, 2026, 10:06 PM ET"
+            "last_confirmed": "2026-09-02T02:48:28.846Z",
+            "freshness_label": "As of Sep 1, 2026, 10:48 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -692,8 +983,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T02:06:39.614Z",
-            "freshness_label": "As of Sep 1, 2026, 10:06 PM ET"
+            "last_confirmed": "2026-09-02T02:48:28.846Z",
+            "freshness_label": "As of Sep 1, 2026, 10:48 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -705,8 +996,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-02T02:06:39.614Z",
-            "freshness_label": "As of Sep 1, 2026, 10:06 PM ET"
+            "last_confirmed": "2026-09-02T02:48:28.846Z",
+            "freshness_label": "As of Sep 1, 2026, 10:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
