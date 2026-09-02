@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-01",
+  "edition_date": "2026-09-02",
   "volume": 1,
-  "edition": 154,
-  "generated_at": "2026-09-02T03:48:30.570Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "edition": 155,
+  "generated_at": "2026-09-02T04:13:18.264Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 78,
@@ -16,32 +16,32 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, AZ 1",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Bryson Stott is up against Gerardo Carrillo. Series: PHI leads 1-0.",
+    "headline": "Phillies @ D-backs · Game 3 of 3",
+    "dek": "Andrew Painter vs TBD",
+    "summary": "Andrew Painter vs TBD · Phillies @ D-backs · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter · PHI @ AZ · Wed, Sep 2 · 3:40 PM"
+    "next_value": "PHI vs ATL · Fri, Sep 4 · 6:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ D-backs · Game 2 of 3",
-    "first_pitch": "9:40 PM",
+    "matchup": "Phillies @ D-backs · Game 3 of 3",
+    "first_pitch": "3:40 PM",
     "venue": "Chase Field, Phoenix",
     "starters": {
       "home": {
-        "name": "Eduardo Rodriguez",
-        "hand": "L"
+        "name": "TBD",
+        "hand": "R"
       },
       "away": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "phi": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "opp": {
-        "name": "Eduardo Rodriguez",
-        "hand": "L"
+        "name": "TBD",
+        "hand": "R"
       }
     },
     "series": {
@@ -57,41 +57,19 @@
     "weather": {
       "temp_f": 91,
       "condition": "Clear",
-      "wind": "5 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "4 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Gerardo Carrillo"
-      },
-      "pitches": [
-        "B",
-        "S",
-        "F",
-        "B"
-      ],
-      "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-02T03:48:31.327Z",
+    "updated_at": "2026-09-02T04:13:18.664Z",
     "current_game_pk": 825038,
     "next_game_pk": 825037,
     "next_game": {
@@ -116,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ D-backs · Game 2 of 3 · 9:40 PM",
+      "text": "Phillies @ D-backs · Game 3 of 3 · 3:40 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Eduardo Rodriguez",
+      "text": "Andrew Painter vs TBD",
       "highlight": true
     },
     {
@@ -128,19 +106,7 @@
       "highlight": false
     },
     {
-      "text": "91° · Clear · gusts 7 mph",
-      "highlight": false
-    },
-    {
-      "text": "activated C Rafael Marchán from the 10-day injured list.",
-      "highlight": false
-    },
-    {
-      "text": "signed free agent RHP Sam Carlson to a minor league contract.",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Grant Holman from Lehigh Valley IronPigs.",
+      "text": "91° · Clear · gusts 8 mph",
       "highlight": false
     }
   ]
