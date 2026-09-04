@@ -4,7 +4,7 @@
   "edition_date": "2026-09-04",
   "volume": 1,
   "edition": 157,
-  "generated_at": "2026-09-04T23:21:14.837Z",
+  "generated_at": "2026-09-04T23:33:57.146Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, ATL 3",
-    "dek": "Top 3rd · 0 outs",
-    "summary": "Ozzie Albies is up against Cristopher Sánchez. Series: Regular Season.",
+    "dek": "Bottom 3rd · 2 outs",
+    "summary": "Kyle Schwarber is up against Chris Sale. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Martín Pérez · PHI vs ATL · Sat, Sep 5 · 6:05 PM"
   },
@@ -64,25 +64,31 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ozzie Albies",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Kyle Schwarber",
+        "meta": "vs Chris Sale"
       },
       "pitches": [
         "S",
         "B",
-        "F"
+        "B",
+        "S",
+        "F",
+        "F",
+        "F",
+        "F",
+        "B"
       ],
       "count": {
-        "balls": 1,
+        "balls": 3,
         "strikes": 2,
-        "outs": 0
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -90,7 +96,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-04T23:21:15.787Z",
+    "updated_at": "2026-09-04T23:33:57.651Z",
     "current_game_pk": 823418,
     "next_game_pk": 823419,
     "next_game": {

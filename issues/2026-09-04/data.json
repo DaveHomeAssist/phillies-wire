@@ -5,14 +5,14 @@
     "edition": 157,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-04T23:21:14.837Z",
+    "generated_at": "2026-09-04T23:33:57.146Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 4, 2026, 7:21 PM ET",
+      "generated_at_et": "Sep 4, 2026, 7:33 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, ATL 3",
-    "dek": "Top 3rd · 0 outs",
-    "summary": "Ozzie Albies is up against Cristopher Sánchez. Series: Regular Season.",
+    "dek": "Bottom 3rd · 2 outs",
+    "summary": "Kyle Schwarber is up against Chris Sale. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Ozzie Albies at the plate",
-      "Cristopher Sánchez on the mound",
+      "Kyle Schwarber at the plate",
+      "Chris Sale on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -359,15 +359,15 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.64",
+            "era": "2.62",
             "record": "16-4",
-            "whip": "1.21"
+            "whip": "1.20"
           },
           "away": {
             "team": "ATL",
             "name": "Chris Sale",
             "hand": "L",
-            "era": "2.10",
+            "era": "2.09",
             "record": "13-9",
             "whip": "1.00"
           }
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 3,
           "currentInningOrdinal": "3rd",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 3,
@@ -420,7 +420,7 @@
             {
               "num": 3,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
@@ -704,9 +704,65 @@
             "inning": 3,
             "half": "top",
             "team": "ATL",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Ozzie Albies",
             "actor_id": 645277,
+            "detail": "Ozzie Albies strikes out swinging.",
+            "score_after": "PHI 1, ATL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:20",
+            "inning": 3,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Matt Olson",
+            "actor_id": 621566,
+            "detail": "Matt Olson strikes out swinging.",
+            "score_after": "PHI 1, ATL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:21",
+            "inning": 3,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Lane Thomas",
+            "actor_id": 657041,
+            "detail": "Lane Thomas grounds out, third baseman Edmundo Sosa to first baseman Alec Bohm.",
+            "score_after": "PHI 1, ATL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill lines out to left fielder Lane Thomas.",
+            "score_after": "PHI 1, ATL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
             "detail": "Play",
             "score_after": "PHI 1, ATL 3",
             "runs": 0,
@@ -716,25 +772,31 @@
         ],
         "situation": {
           "batter": {
-            "name": "Ozzie Albies",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Kyle Schwarber",
+            "meta": "vs Chris Sale"
           },
           "pitches": [
             "S",
             "B",
-            "F"
+            "B",
+            "S",
+            "F",
+            "F",
+            "F",
+            "F",
+            "B"
           ],
           "count": {
-            "balls": 1,
+            "balls": 3,
             "strikes": 2,
-            "outs": 0
+            "outs": 1
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 3rd"
+          "status": "Bottom 3rd"
         }
       }
     },
@@ -751,8 +813,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T23:21:14.837Z",
-            "freshness_label": "As of Sep 4, 2026, 7:21 PM ET"
+            "last_confirmed": "2026-09-04T23:33:57.146Z",
+            "freshness_label": "As of Sep 4, 2026, 7:33 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -764,8 +826,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T23:21:14.837Z",
-            "freshness_label": "As of Sep 4, 2026, 7:21 PM ET"
+            "last_confirmed": "2026-09-04T23:33:57.146Z",
+            "freshness_label": "As of Sep 4, 2026, 7:33 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -777,8 +839,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T23:21:14.837Z",
-            "freshness_label": "As of Sep 4, 2026, 7:21 PM ET"
+            "last_confirmed": "2026-09-04T23:33:57.146Z",
+            "freshness_label": "As of Sep 4, 2026, 7:33 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -790,8 +852,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T23:21:14.837Z",
-            "freshness_label": "As of Sep 4, 2026, 7:21 PM ET"
+            "last_confirmed": "2026-09-04T23:33:57.146Z",
+            "freshness_label": "As of Sep 4, 2026, 7:33 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -803,8 +865,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T23:21:14.837Z",
-            "freshness_label": "As of Sep 4, 2026, 7:21 PM ET"
+            "last_confirmed": "2026-09-04T23:33:57.146Z",
+            "freshness_label": "As of Sep 4, 2026, 7:33 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -816,8 +878,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T23:21:14.837Z",
-            "freshness_label": "As of Sep 4, 2026, 7:21 PM ET"
+            "last_confirmed": "2026-09-04T23:33:57.146Z",
+            "freshness_label": "As of Sep 4, 2026, 7:33 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -829,8 +891,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T23:21:14.837Z",
-            "freshness_label": "As of Sep 4, 2026, 7:21 PM ET"
+            "last_confirmed": "2026-09-04T23:33:57.146Z",
+            "freshness_label": "As of Sep 4, 2026, 7:33 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
