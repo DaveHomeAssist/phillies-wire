@@ -4,7 +4,7 @@
   "edition_date": "2026-09-04",
   "volume": 1,
   "edition": 157,
-  "generated_at": "2026-09-04T23:08:20.410Z",
+  "generated_at": "2026-09-04T23:21:14.837Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, ATL 3",
-    "dek": "Top 2nd · 2 outs",
-    "summary": "Drake Baldwin is up against Cristopher Sánchez. Series: Regular Season.",
+    "headline": "PHI 1, ATL 3",
+    "dek": "Top 3rd · 0 outs",
+    "summary": "Ozzie Albies is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Martín Pérez · PHI vs ATL · Sat, Sep 5 · 6:05 PM"
   },
@@ -57,30 +57,32 @@
     "weather": {
       "temp_f": 80,
       "condition": "Clear",
-      "wind": "4 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "4 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Drake Baldwin",
+        "name": "Ozzie Albies",
         "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
-        "X"
+        "S",
+        "B",
+        "F"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 2
+        "balls": 1,
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -88,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-04T23:08:21.073Z",
+    "updated_at": "2026-09-04T23:21:15.787Z",
     "current_game_pk": 823418,
     "next_game_pk": 823419,
     "next_game": {
@@ -125,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 9 mph",
+      "text": "80° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
