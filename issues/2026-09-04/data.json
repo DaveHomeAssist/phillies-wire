@@ -5,14 +5,14 @@
     "edition": 157,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-04T22:33:50.427Z",
+    "generated_at": "2026-09-04T22:47:57.682Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 4, 2026, 6:33 PM ET",
+      "generated_at_et": "Sep 4, 2026, 6:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, ATL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Ronald Acuña Jr. is up against Cristopher Sánchez. Series: Regular Season.",
+    "dek": "Top 1st · 2 outs",
+    "summary": "Matt Olson is up against Cristopher Sánchez. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "81° · Clear"
+        "value": "80° · Clear"
       }
     ],
     "bullets": [
-      "Ronald Acuña Jr. at the plate",
+      "Matt Olson at the plate",
       "Cristopher Sánchez on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 81,
+          "temp_f": 80,
           "condition": "Clear",
-          "wind": "6 mph · gusts 10",
+          "wind": "5 mph · gusts 10",
           "gusts_mph": 10
         },
         "giveaway": "",
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.52",
+            "era": "2.51",
             "record": "16-4",
-            "whip": "1.19"
+            "whip": "1.20"
           },
           "away": {
             "team": "ATL",
@@ -377,11 +377,11 @@
           "currentInningOrdinal": "1st",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 0
             },
             "home": {
@@ -395,7 +395,7 @@
               "num": 1,
               "away": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -412,10 +412,52 @@
             "inning": 1,
             "half": "top",
             "team": "ATL",
-            "event_type": "other",
+            "event_type": "extra_base_hit",
             "actor": "Ronald Acuña Jr.",
             "actor_id": 660670,
-            "detail": "Status Change - Warmup",
+            "detail": "Ronald Acuña Jr. doubles (14) on a sharp line drive to center fielder Derek Hill.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823418:1",
+            "inning": 1,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Drake Baldwin",
+            "actor_id": 686948,
+            "detail": "Drake Baldwin grounds out, shortstop Trea Turner to first baseman Alec Bohm. Ronald Acuña Jr. to 3rd.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:2",
+            "inning": 1,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Ozzie Albies",
+            "actor_id": 645277,
+            "detail": "Ozzie Albies grounds out, pitcher Cristopher Sánchez to first baseman Alec Bohm.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:3",
+            "inning": 1,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "other",
+            "actor": "Matt Olson",
+            "actor_id": 621566,
+            "detail": "Play",
             "score_after": "PHI 0, ATL 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,19 +466,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Ronald Acuña Jr.",
+            "name": "Matt Olson",
             "meta": "vs Cristopher Sánchez"
           },
-          "pitches": [],
+          "pitches": [
+            "B"
+          ],
           "count": {
-            "balls": 0,
+            "balls": 1,
             "strikes": 0,
-            "outs": 0
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
-            "third": false
+            "third": true
           },
           "status": "Top 1st"
         }
@@ -455,8 +499,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T22:33:50.427Z",
-            "freshness_label": "As of Sep 4, 2026, 6:33 PM ET"
+            "last_confirmed": "2026-09-04T22:47:57.682Z",
+            "freshness_label": "As of Sep 4, 2026, 6:47 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -468,8 +512,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T22:33:50.427Z",
-            "freshness_label": "As of Sep 4, 2026, 6:33 PM ET"
+            "last_confirmed": "2026-09-04T22:47:57.682Z",
+            "freshness_label": "As of Sep 4, 2026, 6:47 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -481,8 +525,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T22:33:50.427Z",
-            "freshness_label": "As of Sep 4, 2026, 6:33 PM ET"
+            "last_confirmed": "2026-09-04T22:47:57.682Z",
+            "freshness_label": "As of Sep 4, 2026, 6:47 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -494,8 +538,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T22:33:50.427Z",
-            "freshness_label": "As of Sep 4, 2026, 6:33 PM ET"
+            "last_confirmed": "2026-09-04T22:47:57.682Z",
+            "freshness_label": "As of Sep 4, 2026, 6:47 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -507,8 +551,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T22:33:50.427Z",
-            "freshness_label": "As of Sep 4, 2026, 6:33 PM ET"
+            "last_confirmed": "2026-09-04T22:47:57.682Z",
+            "freshness_label": "As of Sep 4, 2026, 6:47 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -520,8 +564,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T22:33:50.427Z",
-            "freshness_label": "As of Sep 4, 2026, 6:33 PM ET"
+            "last_confirmed": "2026-09-04T22:47:57.682Z",
+            "freshness_label": "As of Sep 4, 2026, 6:47 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -533,8 +577,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-04T22:33:50.427Z",
-            "freshness_label": "As of Sep 4, 2026, 6:33 PM ET"
+            "last_confirmed": "2026-09-04T22:47:57.682Z",
+            "freshness_label": "As of Sep 4, 2026, 6:47 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
