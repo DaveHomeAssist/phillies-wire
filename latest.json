@@ -4,7 +4,7 @@
   "edition_date": "2026-09-04",
   "volume": 1,
   "edition": 157,
-  "generated_at": "2026-09-04T23:33:57.146Z",
+  "generated_at": "2026-09-04T23:47:53.099Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, ATL 3",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "Kyle Schwarber is up against Chris Sale. Series: Regular Season.",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "Bryce Harper is up against Chris Sale. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Martín Pérez · PHI vs ATL · Sat, Sep 5 · 6:05 PM"
   },
@@ -56,39 +56,31 @@
     },
     "weather": {
       "temp_f": 80,
-      "condition": "Clear",
-      "wind": "4 mph · gusts 7",
-      "gusts_mph": 7
+      "condition": "Overcast",
+      "wind": "4 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Bryce Harper",
         "meta": "vs Chris Sale"
       },
       "pitches": [
-        "S",
-        "B",
-        "B",
-        "S",
-        "F",
-        "F",
-        "F",
-        "F",
-        "B"
+        "S"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 1
+        "balls": 0,
+        "strikes": 1,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -96,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-04T23:33:57.651Z",
+    "updated_at": "2026-09-04T23:47:53.944Z",
     "current_game_pk": 823418,
     "next_game_pk": 823419,
     "next_game": {
@@ -133,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 7 mph",
+      "text": "80° · Overcast · gusts 6 mph",
       "highlight": false
     }
   ]
