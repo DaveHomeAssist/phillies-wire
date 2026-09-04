@@ -4,7 +4,7 @@
   "edition_date": "2026-09-04",
   "volume": 1,
   "edition": 157,
-  "generated_at": "2026-09-04T22:47:57.682Z",
+  "generated_at": "2026-09-04T23:08:20.410Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, ATL 0",
-    "dek": "Top 1st · 2 outs",
-    "summary": "Matt Olson is up against Cristopher Sánchez. Series: Regular Season.",
+    "headline": "PHI 0, ATL 3",
+    "dek": "Top 2nd · 2 outs",
+    "summary": "Drake Baldwin is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Martín Pérez · PHI vs ATL · Sat, Sep 5 · 6:05 PM"
   },
@@ -57,30 +57,30 @@
     "weather": {
       "temp_f": 80,
       "condition": "Clear",
-      "wind": "5 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "4 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Matt Olson",
+        "name": "Drake Baldwin",
         "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
-        "B"
+        "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 0,
         "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Top 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -88,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-04T22:47:58.313Z",
+    "updated_at": "2026-09-04T23:08:21.073Z",
     "current_game_pk": 823418,
     "next_game_pk": 823419,
     "next_game": {
@@ -125,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 10 mph",
+      "text": "80° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
