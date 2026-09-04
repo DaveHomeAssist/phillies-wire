@@ -4,9 +4,9 @@
   "edition_date": "2026-09-04",
   "volume": 1,
   "edition": 157,
-  "generated_at": "2026-09-04T22:08:54.919Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-04T22:22:29.436Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 79,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Braves @ Phillies · Game 1 of 4",
-    "dek": "Cristopher Sánchez vs Chris Sale",
-    "summary": "Cristopher Sánchez vs Chris Sale · Braves @ Phillies · Game 1 of 4",
+    "headline": "PHI 0, ATL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Ronald Acuña Jr. is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Martín Pérez · PHI vs ATL · Sat, Sep 5 · 6:05 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
+      "temp_f": 80,
       "condition": "Mostly sunny",
       "wind": "6 mph · gusts 12",
       "gusts_mph": 12
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Ronald Acuña Jr.",
+        "meta": "vs Cristopher Sánchez"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-04T22:08:55.745Z",
+    "updated_at": "2026-09-04T22:22:30.362Z",
     "current_game_pk": 823418,
     "next_game_pk": 823419,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Mostly sunny · gusts 12 mph",
+      "text": "80° · Mostly sunny · gusts 12 mph",
       "highlight": false
     }
   ]
