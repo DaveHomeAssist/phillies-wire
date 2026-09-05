@@ -5,14 +5,14 @@
     "edition": 158,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-05T23:19:50.560Z",
+    "generated_at": "2026-09-05T23:34:12.393Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 5, 2026, 7:19 PM ET",
+      "generated_at_et": "Sep 5, 2026, 7:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 4, ATL 1",
-    "dek": "Bottom 4th · 2 outs",
-    "summary": "Alec Bohm is up against Ray Kerr. Series: ATL leads 1-0.",
+    "dek": "Bottom 5th · 1 out",
+    "summary": "J.T. Realmuto is up against Ray Kerr. Series: ATL leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "77° · Clear"
+        "value": "78° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Alec Bohm at the plate",
+      "J.T. Realmuto at the plate",
       "Ray Kerr on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 77,
-          "condition": "Clear",
-          "wind": "4 mph · gusts 7",
-          "gusts_mph": 7
+          "temp_f": 78,
+          "condition": "Mostly sunny",
+          "wind": "4 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "3.28",
+            "era": "3.27",
             "record": "11-5",
             "whip": "1.09"
           },
@@ -369,15 +369,15 @@
             "hand": "L",
             "era": "3.25",
             "record": "8-8",
-            "whip": "1.25"
+            "whip": "1.27"
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
+          "currentInning": 5,
+          "currentInningOrdinal": "5th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 1,
@@ -440,6 +440,19 @@
               "home": {
                 "runs": 1,
                 "hits": 3,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -997,10 +1010,80 @@
             "inning": 4,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Pitching Change: Ray Kerr replaces Martín Pérez.",
+            "detail": "Alec Bohm grounds into a force out, shortstop Ha-Seong Kim to second baseman Ozzie Albies. Luis Arraez out at 2nd.",
+            "score_after": "PHI 4, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823419:40",
+            "inning": 5,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Ha-Seong Kim",
+            "actor_id": 673490,
+            "detail": "Ha-Seong Kim called out on strikes.",
+            "score_after": "PHI 4, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823419:41",
+            "inning": 5,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Drake Baldwin",
+            "actor_id": 686948,
+            "detail": "Drake Baldwin strikes out swinging.",
+            "score_after": "PHI 4, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823419:42",
+            "inning": 5,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Ronald Acuña Jr.",
+            "actor_id": 660670,
+            "detail": "Ronald Acuña Jr. strikes out swinging.",
+            "score_after": "PHI 4, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823419:43",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa grounds out, third baseman Austin Riley to first baseman Matt Olson.",
+            "score_after": "PHI 4, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823419:44",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "Play",
             "score_after": "PHI 4, ATL 1",
             "runs": 0,
             "is_scoring": false,
@@ -1009,21 +1092,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Alec Bohm",
+            "name": "J.T. Realmuto",
             "meta": "vs Ray Kerr"
           },
           "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 2
+            "outs": 1
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
-            "third": true
+            "third": false
           },
-          "status": "Bottom 4th"
+          "status": "Bottom 5th"
         }
       }
     },
@@ -1040,8 +1123,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T23:19:50.560Z",
-            "freshness_label": "As of Sep 5, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-09-05T23:34:12.393Z",
+            "freshness_label": "As of Sep 5, 2026, 7:34 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1053,8 +1136,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T23:19:50.560Z",
-            "freshness_label": "As of Sep 5, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-09-05T23:34:12.393Z",
+            "freshness_label": "As of Sep 5, 2026, 7:34 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1066,8 +1149,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T23:19:50.560Z",
-            "freshness_label": "As of Sep 5, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-09-05T23:34:12.393Z",
+            "freshness_label": "As of Sep 5, 2026, 7:34 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1079,8 +1162,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T23:19:50.560Z",
-            "freshness_label": "As of Sep 5, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-09-05T23:34:12.393Z",
+            "freshness_label": "As of Sep 5, 2026, 7:34 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1092,8 +1175,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T23:19:50.560Z",
-            "freshness_label": "As of Sep 5, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-09-05T23:34:12.393Z",
+            "freshness_label": "As of Sep 5, 2026, 7:34 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1105,8 +1188,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T23:19:50.560Z",
-            "freshness_label": "As of Sep 5, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-09-05T23:34:12.393Z",
+            "freshness_label": "As of Sep 5, 2026, 7:34 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1118,8 +1201,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T23:19:50.560Z",
-            "freshness_label": "As of Sep 5, 2026, 7:19 PM ET"
+            "last_confirmed": "2026-09-05T23:34:12.393Z",
+            "freshness_label": "As of Sep 5, 2026, 7:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
