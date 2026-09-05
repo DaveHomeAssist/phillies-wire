@@ -5,14 +5,14 @@
     "edition": 157,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-05T01:04:06.175Z",
+    "generated_at": "2026-09-05T01:29:47.008Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 4, 2026, 9:04 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 4, 2026, 9:29 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 79,
-    "losses": 61,
-    "streak": "L1",
+    "losses": 62,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 2, ATL 5",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Michael Harris II is up against Tim Mayza. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 2, ATL 5.",
+    "dek": "ATL 5, PHI 2 · Chris Sale · 6.0 IP, 6 H, 2 ER, 7 K",
+    "summary": "PHI 2, ATL 5. Final at Citizens Bank Park, Philadelphia. ATL leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "79° · Overcast"
+        "label": "Series",
+        "value": "ATL leads 1-0"
       }
     ],
     "bullets": [
-      "Michael Harris II at the plate",
-      "Tim Mayza on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Chris Sale: 6.0 IP, 6 H, 2 ER, 7 K",
+      "Cristopher Sánchez: 6.0 IP, 5 H, 3 ER, 5 K",
+      "Alec Bohm: 2-for-4, 1 HR, 2 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Martín Pérez · PHI vs ATL · Sat, Sep 5 · 6:05 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's ATL at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:40 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "away": {
-            "team": "ATL",
-            "name": "Chris Sale",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "ATL",
-            "name": "Chris Sale",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryan De La Cruz",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Ronald Acuña Jr.",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Drake Baldwin",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Ozzie Albies",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 4,
-              "name": "Matt Olson",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Lane Thomas",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Mauricio Dubón",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Sean Murphy",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Austin Riley",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Ha-Seong Kim",
-              "position": "SS",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryan De La Cruz",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Ronald Acuña Jr.",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Drake Baldwin",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Ozzie Albies",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 4,
-              "name": "Matt Olson",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Lane Thomas",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Mauricio Dubón",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Sean Murphy",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Austin Riley",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Ha-Seong Kim",
-              "position": "SS",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Braves @ Phillies · Game 1 of 4",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "ATL leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 79,
           "condition": "Overcast",
-          "wind": "3 mph · gusts 7",
-          "gusts_mph": 7
+          "wind": "3 mph · gusts 6",
+          "gusts_mph": 6
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -360,7 +103,7 @@
             "name": "Cristopher Sánchez",
             "hand": "L",
             "era": "2.58",
-            "record": "16-4",
+            "record": "16-5",
             "whip": "1.20"
           },
           "away": {
@@ -368,20 +111,20 @@
             "name": "Chris Sale",
             "hand": "L",
             "era": "2.10",
-            "record": "13-9",
+            "record": "14-9",
             "whip": "1.01"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "End",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Bottom",
           "isTopInning": false,
           "outs": 3,
           "teams": {
             "away": {
               "runs": 5,
-              "hits": 7,
+              "hits": 8,
               "errors": 0
             },
             "home": {
@@ -486,6 +229,19 @@
               "num": 8,
               "away": {
                 "runs": 2,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
                 "hits": 1,
                 "errors": 0
               },
@@ -1421,30 +1177,106 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823418:66",
+            "inning": 9,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Michael Harris II",
+            "actor_id": 671739,
+            "detail": "Michael Harris II pops out to third baseman Edmundo Sosa in foul territory.",
+            "score_after": "PHI 2, ATL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:67",
+            "inning": 9,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Ronald Acuña Jr.",
+            "actor_id": 660670,
+            "detail": "Ronald Acuña Jr. pops out to first baseman Alec Bohm.",
+            "score_after": "PHI 2, ATL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:68",
+            "inning": 9,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "single",
+            "actor": "Drake Baldwin",
+            "actor_id": 686948,
+            "detail": "Drake Baldwin singles on a line drive to left fielder Bryan De La Cruz.",
+            "score_after": "PHI 2, ATL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:69",
+            "inning": 9,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Ozzie Albies",
+            "actor_id": 645277,
+            "detail": "Ozzie Albies grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 2, ATL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:70",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm strikes out swinging.",
+            "score_after": "PHI 2, ATL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:71",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa strikes out swinging.",
+            "score_after": "PHI 2, ATL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823418:72",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh pops out to third baseman Austin Riley in foul territory.",
+            "score_after": "PHI 2, ATL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Michael Harris II",
-            "meta": "vs Orion Kerkering"
-          },
-          "pitches": [
-            "S",
-            "S",
-            "X"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 2,
-            "outs": 3
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "End 8th"
-        }
+        ]
       }
     },
     "injury_report": null
