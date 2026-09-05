@@ -4,7 +4,7 @@
   "edition_date": "2026-09-05",
   "volume": 1,
   "edition": 158,
-  "generated_at": "2026-09-05T22:33:56.162Z",
+  "generated_at": "2026-09-05T22:48:15.189Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, ATL 0",
-    "dek": "Top 2nd · 1 out",
-    "summary": "Austin Riley is up against Zack Wheeler. Series: ATL leads 1-0.",
+    "headline": "PHI 3, ATL 0",
+    "dek": "Top 3rd · 1 out",
+    "summary": "Ronald Acuña Jr. is up against Zack Wheeler. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Tyler Mahle · PHI vs ATL · Sun, Sep 6 · 1:10 PM"
   },
@@ -64,17 +64,13 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Austin Riley",
+        "name": "Ronald Acuña Jr.",
         "meta": "vs Zack Wheeler"
       },
-      "pitches": [
-        "S",
-        "S",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "outs": 1
       },
       "bases": {
@@ -82,7 +78,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -90,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-05T22:33:57.116Z",
+    "updated_at": "2026-09-05T22:48:16.043Z",
     "current_game_pk": 823419,
     "next_game_pk": 823417,
     "next_game": {
