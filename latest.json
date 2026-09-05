@@ -4,7 +4,7 @@
   "edition_date": "2026-09-04",
   "volume": 1,
   "edition": 157,
-  "generated_at": "2026-09-05T00:25:03.540Z",
+  "generated_at": "2026-09-05T01:04:06.175Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, ATL 3",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "Luis Arraez is up against Chris Sale. Series: Regular Season.",
+    "headline": "PHI 2, ATL 5",
+    "dek": "Top 9th · 0 outs",
+    "summary": "Michael Harris II is up against Tim Mayza. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Martín Pérez · PHI vs ATL · Sat, Sep 5 · 6:05 PM"
   },
@@ -57,25 +57,24 @@
     "weather": {
       "temp_f": 79,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 6",
-      "gusts_mph": 6
+      "wind": "3 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Chris Sale"
+        "name": "Michael Harris II",
+        "meta": "vs Orion Kerkering"
       },
       "pitches": [
-        "B",
-        "F",
-        "F",
-        "S"
+        "S",
+        "S",
+        "X"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 3,
+        "balls": 0,
+        "strikes": 2,
         "outs": 3
       },
       "bases": {
@@ -83,7 +82,7 @@
         "second": false,
         "third": false
       },
-      "status": "Middle 6th"
+      "status": "End 8th"
     },
     "recap_line": null
   },
@@ -91,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-05T00:25:04.441Z",
+    "updated_at": "2026-09-05T01:04:07.202Z",
     "current_game_pk": 823418,
     "next_game_pk": 823419,
     "next_game": {
@@ -128,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Overcast · gusts 6 mph",
+      "text": "79° · Overcast · gusts 7 mph",
       "highlight": false
     }
   ]
