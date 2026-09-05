@@ -4,7 +4,7 @@
   "edition_date": "2026-09-05",
   "volume": 1,
   "edition": 158,
-  "generated_at": "2026-09-05T22:48:15.189Z",
+  "generated_at": "2026-09-05T23:07:50.583Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, ATL 0",
-    "dek": "Top 3rd · 1 out",
-    "summary": "Ronald Acuña Jr. is up against Zack Wheeler. Series: ATL leads 1-0.",
+    "headline": "PHI 3, ATL 1",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "Derek Hill is up against Martín Pérez. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Tyler Mahle · PHI vs ATL · Sun, Sep 6 · 1:10 PM"
   },
@@ -55,30 +55,37 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
+      "temp_f": 78,
       "condition": "Clear",
-      "wind": "5 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "4 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ronald Acuña Jr.",
-        "meta": "vs Zack Wheeler"
+        "name": "Derek Hill",
+        "meta": "vs Martín Pérez"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S",
+        "F",
+        "B",
+        "F",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "balls": 1,
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "Middle 4th"
     },
     "recap_line": null
   },
@@ -86,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-05T22:48:16.043Z",
+    "updated_at": "2026-09-05T23:07:51.019Z",
     "current_game_pk": 823419,
     "next_game_pk": 823417,
     "next_game": {
@@ -123,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 9 mph",
+      "text": "78° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
