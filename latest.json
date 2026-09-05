@@ -4,7 +4,7 @@
   "edition_date": "2026-09-05",
   "volume": 1,
   "edition": 158,
-  "generated_at": "2026-09-05T23:07:50.583Z",
+  "generated_at": "2026-09-05T23:19:50.560Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, ATL 1",
-    "dek": "Middle 4th · 3 outs",
-    "summary": "Derek Hill is up against Martín Pérez. Series: ATL leads 1-0.",
+    "headline": "PHI 4, ATL 1",
+    "dek": "Bottom 4th · 2 outs",
+    "summary": "Alec Bohm is up against Ray Kerr. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Tyler Mahle · PHI vs ATL · Sun, Sep 6 · 1:10 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 77,
       "condition": "Clear",
       "wind": "4 mph · gusts 7",
       "gusts_mph": 7
@@ -64,28 +64,21 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Derek Hill",
-        "meta": "vs Martín Pérez"
+        "name": "Alec Bohm",
+        "meta": "vs Ray Kerr"
       },
-      "pitches": [
-        "S",
-        "S",
-        "F",
-        "B",
-        "F",
-        "S"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 1,
-        "strikes": 3,
-        "outs": 3
+        "balls": 0,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Middle 4th"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -93,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-05T23:07:51.019Z",
+    "updated_at": "2026-09-05T23:19:51.481Z",
     "current_game_pk": 823419,
     "next_game_pk": 823417,
     "next_game": {
@@ -130,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 7 mph",
+      "text": "77° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
