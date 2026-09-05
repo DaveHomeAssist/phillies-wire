@@ -4,7 +4,7 @@
   "edition_date": "2026-09-05",
   "volume": 1,
   "edition": 158,
-  "generated_at": "2026-09-05T23:34:12.393Z",
+  "generated_at": "2026-09-05T23:48:13.827Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, ATL 1",
-    "dek": "Bottom 5th · 1 out",
-    "summary": "J.T. Realmuto is up against Ray Kerr. Series: ATL leads 1-0.",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Trea Turner is up against Ray Kerr. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Tyler Mahle · PHI vs ATL · Sun, Sep 6 · 1:10 PM"
   },
@@ -55,16 +55,16 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
-      "condition": "Mostly sunny",
-      "wind": "4 mph · gusts 9",
-      "gusts_mph": 9
+      "temp_f": 77,
+      "condition": "Overcast",
+      "wind": "4 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
+        "name": "Trea Turner",
         "meta": "vs Ray Kerr"
       },
       "pitches": [],
@@ -74,11 +74,11 @@
         "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-05T23:34:13.342Z",
+    "updated_at": "2026-09-05T23:48:14.652Z",
     "current_game_pk": 823419,
     "next_game_pk": 823417,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Mostly sunny · gusts 9 mph",
+      "text": "77° · Overcast · gusts 8 mph",
       "highlight": false
     }
   ]
