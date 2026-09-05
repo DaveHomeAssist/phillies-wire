@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-04",
+  "edition_date": "2026-09-05",
   "volume": 1,
-  "edition": 157,
-  "generated_at": "2026-09-05T03:48:59.117Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 158,
+  "generated_at": "2026-09-05T04:10:39.073Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 79,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, ATL 5.",
-    "dek": "ATL 5, PHI 2 · Chris Sale · 6.0 IP, 6 H, 2 ER, 7 K",
-    "summary": "PHI 2, ATL 5. Final at Citizens Bank Park, Philadelphia. ATL leads 1-0.",
+    "headline": "Braves @ Phillies · Game 2 of 4",
+    "dek": "Zack Wheeler vs Martín Pérez",
+    "summary": "Zack Wheeler vs Martín Pérez · Braves @ Phillies · Game 2 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Martín Pérez · PHI vs ATL · Sat, Sep 5 · 6:05 PM"
+    "next_value": "Aaron Nola vs Tyler Mahle · PHI vs ATL · Sun, Sep 6 · 1:10 PM"
   },
   "game": {
-    "matchup": "Braves @ Phillies · Game 1 of 4",
-    "first_pitch": "6:40 PM",
+    "matchup": "Braves @ Phillies · Game 2 of 4",
+    "first_pitch": "6:05 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "away": {
-        "name": "Chris Sale",
+        "name": "Martín Pérez",
         "hand": "L"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Chris Sale",
+        "name": "Martín Pérez",
         "hand": "L"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "ATL leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 77,
       "condition": "Overcast",
-      "wind": "3 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "5 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-05T03:49:01.755Z",
+    "updated_at": "2026-09-05T04:10:40.000Z",
     "current_game_pk": 823419,
     "next_game_pk": 823417,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Braves @ Phillies · Game 1 of 4 · 6:40 PM",
+      "text": "Braves @ Phillies · Game 2 of 4 · 6:05 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Chris Sale",
+      "text": "Zack Wheeler vs Martín Pérez",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 5 mph",
+      "text": "77° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
