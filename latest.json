@@ -4,7 +4,7 @@
   "edition_date": "2026-09-05",
   "volume": 1,
   "edition": 158,
-  "generated_at": "2026-09-05T22:20:39.469Z",
+  "generated_at": "2026-09-05T22:33:56.162Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, ATL 0",
-    "dek": "Bottom 1st · 0 outs",
-    "summary": "Bryce Harper is up against Martín Pérez. Series: ATL leads 1-0.",
+    "headline": "PHI 2, ATL 0",
+    "dek": "Top 2nd · 1 out",
+    "summary": "Austin Riley is up against Zack Wheeler. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Tyler Mahle · PHI vs ATL · Sun, Sep 6 · 1:10 PM"
   },
@@ -55,35 +55,34 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "6 mph · gusts 9",
+      "wind": "5 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Martín Pérez"
+        "name": "Austin Riley",
+        "meta": "vs Zack Wheeler"
       },
       "pitches": [
         "S",
         "S",
-        "B",
         "B"
       ],
       "count": {
-        "balls": 2,
+        "balls": 1,
         "strikes": 2,
-        "outs": 0
+        "outs": 1
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -91,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-05T22:20:40.398Z",
+    "updated_at": "2026-09-05T22:33:57.116Z",
     "current_game_pk": 823419,
     "next_game_pk": 823417,
     "next_game": {
@@ -128,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 9 mph",
+      "text": "79° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
