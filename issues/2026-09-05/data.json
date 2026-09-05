@@ -5,14 +5,14 @@
     "edition": 158,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-05T13:15:35.090Z",
+    "generated_at": "2026-09-05T16:09:11.315Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "Sep 5, 2026, 9:15 AM ET",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Sep 5, 2026, 12:09 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "73° · Overcast · 8 mph · gusts 17",
+      "77° · Clear · 6 mph · gusts 12",
       "Regular Season"
     ],
     "next_label": "Tomorrow",
@@ -345,10 +345,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
-          "condition": "Overcast",
-          "wind": "8 mph · gusts 17",
-          "gusts_mph": 17
+          "temp_f": 77,
+          "condition": "Clear",
+          "wind": "6 mph · gusts 12",
+          "gusts_mph": 12
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -407,8 +407,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T13:15:35.090Z",
-            "freshness_label": "As of Sep 5, 2026, 9:15 AM ET"
+            "last_confirmed": "2026-09-05T16:09:11.315Z",
+            "freshness_label": "As of Sep 5, 2026, 12:09 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -420,8 +420,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T13:15:35.090Z",
-            "freshness_label": "As of Sep 5, 2026, 9:15 AM ET"
+            "last_confirmed": "2026-09-05T16:09:11.315Z",
+            "freshness_label": "As of Sep 5, 2026, 12:09 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -433,8 +433,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T13:15:35.090Z",
-            "freshness_label": "As of Sep 5, 2026, 9:15 AM ET"
+            "last_confirmed": "2026-09-05T16:09:11.315Z",
+            "freshness_label": "As of Sep 5, 2026, 12:09 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -446,8 +446,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T13:15:35.090Z",
-            "freshness_label": "As of Sep 5, 2026, 9:15 AM ET"
+            "last_confirmed": "2026-09-05T16:09:11.315Z",
+            "freshness_label": "As of Sep 5, 2026, 12:09 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -459,8 +459,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T13:15:35.090Z",
-            "freshness_label": "As of Sep 5, 2026, 9:15 AM ET"
+            "last_confirmed": "2026-09-05T16:09:11.315Z",
+            "freshness_label": "As of Sep 5, 2026, 12:09 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -472,8 +472,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T13:15:35.090Z",
-            "freshness_label": "As of Sep 5, 2026, 9:15 AM ET"
+            "last_confirmed": "2026-09-05T16:09:11.315Z",
+            "freshness_label": "As of Sep 5, 2026, 12:09 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -485,8 +485,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-05T13:15:35.090Z",
-            "freshness_label": "As of Sep 5, 2026, 9:15 AM ET"
+            "last_confirmed": "2026-09-05T16:09:11.315Z",
+            "freshness_label": "As of Sep 5, 2026, 12:09 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
