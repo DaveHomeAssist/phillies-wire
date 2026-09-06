@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-05",
+  "edition_date": "2026-09-06",
   "volume": 1,
-  "edition": 158,
-  "generated_at": "2026-09-06T03:50:41.990Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 159,
+  "generated_at": "2026-09-06T04:11:06.195Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 80,
@@ -16,48 +16,48 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, ATL 2.",
-    "dek": "PHI 4, ATL 2 · Zack Wheeler · 6.0 IP, 3 H, 1 ER, 9 K",
-    "summary": "PHI 4, ATL 2. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
+    "headline": "Braves @ Phillies · Game 3 of 4",
+    "dek": "Aaron Nola vs Tyler Mahle",
+    "summary": "Aaron Nola vs Tyler Mahle · Braves @ Phillies · Game 3 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Tyler Mahle · PHI vs ATL · Sun, Sep 6 · 1:10 PM"
+    "next_value": "Jesús Luzardo vs Bryce Elder · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
   },
   "game": {
-    "matchup": "Braves @ Phillies · Game 2 of 4",
-    "first_pitch": "6:05 PM",
+    "matchup": "Braves @ Phillies · Game 3 of 4",
+    "first_pitch": "1:10 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "away": {
-        "name": "Martín Pérez",
-        "hand": "L"
+        "name": "Tyler Mahle",
+        "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "opp": {
-        "name": "Martín Pérez",
-        "hand": "L"
+        "name": "Tyler Mahle",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "ATL leads 1-0"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "NBC/Peacock",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 70,
       "condition": "Clear",
-      "wind": "3 mph · gusts 6",
+      "wind": "4 mph · gusts 6",
       "gusts_mph": 6
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-06T03:50:42.301Z",
+    "updated_at": "2026-09-06T04:11:06.778Z",
     "current_game_pk": 823417,
     "next_game_pk": 823415,
     "next_game": {
@@ -94,15 +94,15 @@
       "highlight": true
     },
     {
-      "text": "Braves @ Phillies · Game 2 of 4 · 6:05 PM",
+      "text": "Braves @ Phillies · Game 3 of 4 · 1:10 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Martín Pérez",
+      "text": "Aaron Nola vs Tyler Mahle",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "NBC/Peacock · 94 WIP",
       "highlight": false
     },
     {
