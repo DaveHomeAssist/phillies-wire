@@ -4,7 +4,7 @@
   "edition_date": "2026-09-06",
   "volume": 1,
   "edition": 159,
-  "generated_at": "2026-09-06T17:07:02.691Z",
+  "generated_at": "2026-09-06T17:19:18.425Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, ATL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Drake Baldwin is up against Aaron Nola. Series: Series tied 1-1.",
+    "dek": "Bottom 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Tyler Mahle. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Bryce Elder · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 75,
+      "temp_f": 76,
       "condition": "Mostly sunny",
       "wind": "6 mph · gusts 9",
       "gusts_mph": 9
@@ -64,13 +64,18 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Drake Baldwin",
-        "meta": "vs Aaron Nola"
+        "name": "Kyle Schwarber",
+        "meta": "vs Tyler Mahle"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "S",
+        "B",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 3,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
@@ -78,7 +83,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -86,23 +91,23 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-06T17:07:03.752Z",
-    "current_game_pk": 823417,
-    "next_game_pk": 823415,
+    "updated_at": "2026-09-06T17:19:19.465Z",
+    "current_game_pk": 823608,
+    "next_game_pk": 823444,
     "next_game": {
-      "game_pk": 823415,
-      "official_date": "2026-09-07",
-      "date_label": "Mon, Sep 7, 2026",
-      "time_label": "1:05 PM",
-      "title": "Atlanta Braves at Phillies",
-      "matchup": "ATL at PHI",
+      "game_pk": 823444,
+      "official_date": "2026-06-29",
+      "date_label": "Mon, Jun 29, 2026",
+      "time_label": "6:40 PM",
+      "title": "Pittsburgh Pirates at Phillies",
+      "matchup": "PIT at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823417,
-      "official_date": "2026-09-06",
-      "title": "Atlanta Braves at Phillies",
-      "matchup": "ATL at PHI"
+      "game_pk": 823608,
+      "official_date": "2026-06-28",
+      "title": "Phillies at New York Mets",
+      "matchup": "PHI at NYM"
     }
   },
   "ticker": [
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "75° · Mostly sunny · gusts 9 mph",
+      "text": "76° · Mostly sunny · gusts 9 mph",
       "highlight": false
     }
   ]
