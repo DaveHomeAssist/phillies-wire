@@ -4,7 +4,7 @@
   "edition_date": "2026-09-06",
   "volume": 1,
   "edition": 159,
-  "generated_at": "2026-09-06T19:18:42.626Z",
+  "generated_at": "2026-09-06T19:34:21.594Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, ATL 1",
-    "dek": "Top 8th · 1 out",
-    "summary": "Drake Baldwin is up against Alex McFarlane. Series: Series tied 1-1.",
+    "headline": "PHI 4, ATL 4",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "Alec Bohm is up against Dylan Lee. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Grant Holmes · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
   },
@@ -57,30 +57,32 @@
     "weather": {
       "temp_f": 79,
       "condition": "Mostly sunny",
-      "wind": "6 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "7 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Drake Baldwin",
-        "meta": "vs Alex McFarlane"
+        "name": "Alec Bohm",
+        "meta": "vs Dylan Lee"
       },
       "pitches": [
+        "B",
+        "S",
         "B"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
-        "outs": 1
+        "balls": 2,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 8th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -88,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-06T19:18:43.700Z",
+    "updated_at": "2026-09-06T19:34:22.607Z",
     "current_game_pk": 823417,
     "next_game_pk": 823415,
     "next_game": {
@@ -125,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Mostly sunny · gusts 8 mph",
+      "text": "79° · Mostly sunny · gusts 9 mph",
       "highlight": false
     }
   ]
