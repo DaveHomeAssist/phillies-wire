@@ -4,21 +4,21 @@
   "edition_date": "2026-09-06",
   "volume": 1,
   "edition": 159,
-  "generated_at": "2026-09-06T19:47:45.322Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-06T20:23:04.847Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 80,
-    "losses": 62,
-    "streak": "W1",
+    "losses": 63,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, ATL 5",
-    "dek": "Middle 9th · 3 outs",
-    "summary": "Bryson Stott is up against Dylan Lee. Series: Series tied 1-1.",
+    "headline": "PHI 4, ATL 5.",
+    "dek": "ATL 5, PHI 4 · Aaron Nola · 7.0 IP, 4 H, 1 ER, 5 K",
+    "summary": "PHI 4, ATL 5. Final at Citizens Bank Park, Philadelphia. ATL leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Grant Holmes · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "ATL leads 2-1"
     },
     "broadcast": {
       "tv": "NBC/Peacock",
@@ -56,62 +56,41 @@
     },
     "weather": {
       "temp_f": 79,
-      "condition": "Mostly sunny",
+      "condition": "Clear",
       "wind": "7 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Dylan Lee"
-      },
-      "pitches": [
-        "S",
-        "S",
-        "S"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 3,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Middle 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-06T19:47:46.111Z",
-    "current_game_pk": 823417,
-    "next_game_pk": 823415,
+    "updated_at": "2026-09-06T20:23:05.832Z",
+    "current_game_pk": 823415,
+    "next_game_pk": 823414,
     "next_game": {
-      "game_pk": 823415,
-      "official_date": "2026-09-07",
-      "date_label": "Mon, Sep 7, 2026",
-      "time_label": "1:05 PM",
-      "title": "Atlanta Braves at Phillies",
-      "matchup": "ATL at PHI",
+      "game_pk": 823414,
+      "official_date": "2026-09-08",
+      "date_label": "Tue, Sep 8, 2026",
+      "time_label": "6:40 PM",
+      "title": "Houston Astros at Phillies",
+      "matchup": "HOU at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823417,
-      "official_date": "2026-09-06",
+      "game_pk": 823415,
+      "official_date": "2026-09-07",
       "title": "Atlanta Braves at Phillies",
       "matchup": "ATL at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 80-62",
+      "text": "PHI 80-63",
       "highlight": true
     },
     {
@@ -127,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Mostly sunny · gusts 9 mph",
+      "text": "79° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
