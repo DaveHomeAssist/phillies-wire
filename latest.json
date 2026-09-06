@@ -4,7 +4,7 @@
   "edition_date": "2026-09-06",
   "volume": 1,
   "edition": 159,
-  "generated_at": "2026-09-06T18:47:57.969Z",
+  "generated_at": "2026-09-06T19:06:41.511Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, ATL 1",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Alec Bohm is up against Tyler Mahle. Series: Series tied 1-1.",
+    "headline": "PHI 3, ATL 1",
+    "dek": "Bottom 7th · 0 outs",
+    "summary": "Bryan De La Cruz is up against Dylan Dodd. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Grant Holmes · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
   },
@@ -57,32 +57,31 @@
     "weather": {
       "temp_f": 78,
       "condition": "Mostly sunny",
-      "wind": "6 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "6 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Tyler Mahle"
+        "name": "Bryan De La Cruz",
+        "meta": "vs Dylan Dodd"
       },
       "pitches": [
         "F",
-        "B",
-        "F"
+        "S"
       ],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 2,
-        "outs": 1
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -90,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-06T18:47:58.843Z",
+    "updated_at": "2026-09-06T19:06:41.892Z",
     "current_game_pk": 823417,
     "next_game_pk": 823415,
     "next_game": {
@@ -127,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Mostly sunny · gusts 9 mph",
+      "text": "78° · Mostly sunny · gusts 8 mph",
       "highlight": false
     }
   ]
