@@ -4,7 +4,7 @@
   "edition_date": "2026-09-06",
   "volume": 1,
   "edition": 159,
-  "generated_at": "2026-09-06T17:34:22.451Z",
+  "generated_at": "2026-09-06T17:47:57.455Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,10 +17,10 @@
   },
   "hero": {
     "headline": "PHI 2, ATL 0",
-    "dek": "Middle 2nd · 3 outs",
-    "summary": "Brandon Marsh is up against Tyler Mahle. Series: Series tied 1-1.",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Mike Yastrzemski is up against Aaron Nola. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
-    "next_value": "Jesús Luzardo vs Bryce Elder · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
+    "next_value": "Jesús Luzardo vs Grant Holmes · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
   },
   "game": {
     "matchup": "Braves @ Phillies · Game 3 of 4",
@@ -55,32 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 77,
       "condition": "Mostly sunny",
-      "wind": "6 mph · gusts 10",
+      "wind": "7 mph · gusts 10",
       "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Tyler Mahle"
+        "name": "Mike Yastrzemski",
+        "meta": "vs Aaron Nola"
       },
       "pitches": [
-        "X"
+        "F",
+        "B",
+        "F",
+        "F",
+        "B"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 3
+        "balls": 2,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -88,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-06T17:34:22.998Z",
+    "updated_at": "2026-09-06T17:47:58.326Z",
     "current_game_pk": 823417,
     "next_game_pk": 823415,
     "next_game": {
@@ -125,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Mostly sunny · gusts 10 mph",
+      "text": "77° · Mostly sunny · gusts 10 mph",
       "highlight": false
     }
   ]

@@ -5,14 +5,14 @@
     "edition": 159,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-06T17:34:22.451Z",
+    "generated_at": "2026-09-06T17:47:57.455Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 6, 2026, 1:34 PM ET",
+      "generated_at_et": "Sep 6, 2026, 1:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 2, ATL 0",
-    "dek": "Middle 2nd · 3 outs",
-    "summary": "Brandon Marsh is up against Tyler Mahle. Series: Series tied 1-1.",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Mike Yastrzemski is up against Aaron Nola. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,16 +42,16 @@
       },
       {
         "label": "Weather",
-        "value": "76° · Mostly sunny"
+        "value": "77° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Brandon Marsh at the plate",
-      "Tyler Mahle on the mound",
+      "Mike Yastrzemski at the plate",
+      "Aaron Nola on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Jesús Luzardo vs Bryce Elder · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
+    "next_value": "Jesús Luzardo vs Grant Holmes · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
   },
   "sections": {
     "lineup": {
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 76,
+          "temp_f": 77,
           "condition": "Mostly sunny",
-          "wind": "6 mph · gusts 10",
+          "wind": "7 mph · gusts 10",
           "gusts_mph": 10
         },
         "giveaway": "",
@@ -359,25 +359,25 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "4.89",
+            "era": "4.84",
             "record": "6-10",
-            "whip": "1.39"
+            "whip": "1.37"
           },
           "away": {
             "team": "ATL",
             "name": "Tyler Mahle",
             "hand": "R",
-            "era": "4.21",
+            "era": "4.18",
             "record": "5-10",
             "whip": "1.29"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "Middle",
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
+          "inningState": "Top",
           "isTopInning": true,
-          "outs": 3,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 2,
-              "hits": 1,
+              "hits": 2,
               "errors": 0
             }
           },
@@ -408,6 +408,19 @@
               "num": 2,
               "away": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               },
@@ -587,27 +600,129 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823417:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh grounds out, second baseman Ozzie Albies to first baseman Matt Olson.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds out, shortstop Mauricio Dubón to first baseman Matt Olson.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Garrett Stubbs",
+            "actor_id": 596117,
+            "detail": "Garrett Stubbs singles on a ground ball to left fielder Mike Yastrzemski.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out, second baseman Ozzie Albies to first baseman Matt Olson.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:16",
+            "inning": 3,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Sean Murphy",
+            "actor_id": 669221,
+            "detail": "Sean Murphy grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:17",
+            "inning": 3,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Austin Riley",
+            "actor_id": 663586,
+            "detail": "Austin Riley lines out sharply to center fielder Justin Crawford.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:18",
+            "inning": 3,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "other",
+            "actor": "Mike Yastrzemski",
+            "actor_id": 573262,
+            "detail": "Play",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Brandon Marsh",
-            "meta": "vs Tyler Mahle"
+            "name": "Mike Yastrzemski",
+            "meta": "vs Aaron Nola"
           },
           "pitches": [
-            "X"
+            "F",
+            "B",
+            "F",
+            "F",
+            "B"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 3
+            "balls": 2,
+            "strikes": 2,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 2nd"
+          "status": "Top 3rd"
         }
       }
     },
@@ -624,8 +739,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:34:22.451Z",
-            "freshness_label": "As of Sep 6, 2026, 1:34 PM ET"
+            "last_confirmed": "2026-09-06T17:47:57.455Z",
+            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -637,8 +752,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:34:22.451Z",
-            "freshness_label": "As of Sep 6, 2026, 1:34 PM ET"
+            "last_confirmed": "2026-09-06T17:47:57.455Z",
+            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -650,8 +765,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:34:22.451Z",
-            "freshness_label": "As of Sep 6, 2026, 1:34 PM ET"
+            "last_confirmed": "2026-09-06T17:47:57.455Z",
+            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -663,8 +778,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:34:22.451Z",
-            "freshness_label": "As of Sep 6, 2026, 1:34 PM ET"
+            "last_confirmed": "2026-09-06T17:47:57.455Z",
+            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -676,8 +791,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:34:22.451Z",
-            "freshness_label": "As of Sep 6, 2026, 1:34 PM ET"
+            "last_confirmed": "2026-09-06T17:47:57.455Z",
+            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -689,8 +804,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:34:22.451Z",
-            "freshness_label": "As of Sep 6, 2026, 1:34 PM ET"
+            "last_confirmed": "2026-09-06T17:47:57.455Z",
+            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -702,8 +817,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:34:22.451Z",
-            "freshness_label": "As of Sep 6, 2026, 1:34 PM ET"
+            "last_confirmed": "2026-09-06T17:47:57.455Z",
+            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -712,7 +827,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Jesús Luzardo vs Bryce Elder · PHI vs ATL",
+    "matchup": "Jesús Luzardo vs Grant Holmes · PHI vs ATL",
     "date": "Mon, Sep 7",
     "time": "1:05 PM",
     "broadcast": "NBC 10",
