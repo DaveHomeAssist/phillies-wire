@@ -5,14 +5,14 @@
     "edition": 159,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-06T17:47:57.455Z",
+    "generated_at": "2026-09-06T18:10:29.325Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 6, 2026, 1:47 PM ET",
+      "generated_at_et": "Sep 6, 2026, 2:10 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 2, ATL 0",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Mike Yastrzemski is up against Aaron Nola. Series: Series tied 1-1.",
+    "dek": "Top 4th · 1 out",
+    "summary": "Matt Olson is up against Aaron Nola. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Mike Yastrzemski at the plate",
+      "Matt Olson at the plate",
       "Aaron Nola on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "4.84",
+            "era": "4.83",
             "record": "6-10",
             "whip": "1.37"
           },
@@ -367,26 +367,26 @@
             "team": "ATL",
             "name": "Tyler Mahle",
             "hand": "R",
-            "era": "4.18",
+            "era": "4.15",
             "record": "5-10",
-            "whip": "1.29"
+            "whip": "1.30"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 2,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 1
             },
             "home": {
               "runs": 2,
-              "hits": 2,
+              "hits": 4,
               "errors": 0
             }
           },
@@ -420,8 +420,21 @@
             {
               "num": 3,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": null,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -690,9 +703,121 @@
             "inning": 3,
             "half": "top",
             "team": "ATL",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Mike Yastrzemski",
             "actor_id": 573262,
+            "detail": "Mike Yastrzemski strikes out on a foul tip.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:19",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner doubles (25) on a line drive to left fielder Mike Yastrzemski.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823417:20",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper lines out to second baseman Ozzie Albies.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:21",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez singles on a line drive to right fielder Ronald Acuña Jr. Trea Turner to 3rd.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm challenged (pitch result), call on the field was confirmed: Alec Bohm called out on strikes.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to center fielder Michael Harris II.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:24",
+            "inning": 4,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Drake Baldwin",
+            "actor_id": 686948,
+            "detail": "Drake Baldwin grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823417:25",
+            "inning": 4,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "extra_base_hit",
+            "actor": "Ronald Acuña Jr.",
+            "actor_id": 660670,
+            "detail": "Ronald Acuña Jr. doubles (15) on a fly ball to right fielder Bryce Harper.",
+            "score_after": "PHI 2, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823417:26",
+            "inning": 4,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "other",
+            "actor": "Matt Olson",
+            "actor_id": 621566,
             "detail": "Play",
             "score_after": "PHI 2, ATL 0",
             "runs": 0,
@@ -702,27 +827,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Mike Yastrzemski",
+            "name": "Matt Olson",
             "meta": "vs Aaron Nola"
           },
           "pitches": [
-            "F",
-            "B",
-            "F",
-            "F",
-            "B"
+            "S",
+            "S"
           ],
           "count": {
-            "balls": 2,
+            "balls": 0,
             "strikes": 2,
-            "outs": 2
+            "outs": 1
           },
           "bases": {
             "first": false,
-            "second": false,
+            "second": true,
             "third": false
           },
-          "status": "Top 3rd"
+          "status": "Top 4th"
         }
       }
     },
@@ -739,8 +861,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:47:57.455Z",
-            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
+            "last_confirmed": "2026-09-06T18:10:29.325Z",
+            "freshness_label": "As of Sep 6, 2026, 2:10 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -752,8 +874,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:47:57.455Z",
-            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
+            "last_confirmed": "2026-09-06T18:10:29.325Z",
+            "freshness_label": "As of Sep 6, 2026, 2:10 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -765,8 +887,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:47:57.455Z",
-            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
+            "last_confirmed": "2026-09-06T18:10:29.325Z",
+            "freshness_label": "As of Sep 6, 2026, 2:10 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -778,8 +900,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:47:57.455Z",
-            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
+            "last_confirmed": "2026-09-06T18:10:29.325Z",
+            "freshness_label": "As of Sep 6, 2026, 2:10 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -791,8 +913,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:47:57.455Z",
-            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
+            "last_confirmed": "2026-09-06T18:10:29.325Z",
+            "freshness_label": "As of Sep 6, 2026, 2:10 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -804,8 +926,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:47:57.455Z",
-            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
+            "last_confirmed": "2026-09-06T18:10:29.325Z",
+            "freshness_label": "As of Sep 6, 2026, 2:10 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -817,8 +939,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-06T17:47:57.455Z",
-            "freshness_label": "As of Sep 6, 2026, 1:47 PM ET"
+            "last_confirmed": "2026-09-06T18:10:29.325Z",
+            "freshness_label": "As of Sep 6, 2026, 2:10 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
