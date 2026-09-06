@@ -4,7 +4,7 @@
   "edition_date": "2026-09-06",
   "volume": 1,
   "edition": 159,
-  "generated_at": "2026-09-06T18:35:27.244Z",
+  "generated_at": "2026-09-06T18:47:57.969Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, ATL 0",
-    "dek": "Top 6th · 1 out",
-    "summary": "Mike Yastrzemski is up against Aaron Nola. Series: Series tied 1-1.",
+    "headline": "PHI 2, ATL 1",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Alec Bohm is up against Tyler Mahle. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Grant Holmes · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
   },
@@ -57,24 +57,24 @@
     "weather": {
       "temp_f": 78,
       "condition": "Mostly sunny",
-      "wind": "7 mph · gusts 9",
+      "wind": "6 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Mike Yastrzemski",
-        "meta": "vs Aaron Nola"
+        "name": "Alec Bohm",
+        "meta": "vs Tyler Mahle"
       },
       "pitches": [
+        "F",
         "B",
-        "B",
-        "B"
+        "F"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 2,
         "outs": 1
       },
       "bases": {
@@ -82,7 +82,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 6th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -90,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-06T18:35:27.716Z",
+    "updated_at": "2026-09-06T18:47:58.843Z",
     "current_game_pk": 823417,
     "next_game_pk": 823415,
     "next_game": {
