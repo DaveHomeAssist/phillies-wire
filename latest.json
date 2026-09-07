@@ -4,21 +4,21 @@
   "edition_date": "2026-09-07",
   "volume": 1,
   "edition": 160,
-  "generated_at": "2026-09-07T18:50:49.280Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-07T19:07:40.905Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 80,
+    "wins": 81,
     "losses": 63,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, ATL 0",
-    "dek": "End 8th · 3 outs",
-    "summary": "Ha-Seong Kim is up against Jesús Luzardo. Series: ATL leads 2-1.",
+    "headline": "PHI 1, ATL 0.",
+    "dek": "PHI 1, ATL 0 · Jesús Luzardo · 9.0 IP, 2 H, 0 ER, 12 K",
+    "summary": "PHI 1, ATL 0. Final at Citizens Bank Park, Philadelphia. Series tied 2-2.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Hayden Wesneski · PHI vs HOU · Tue, Sep 8 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "ATL leads 2-1"
+      "label": "Series tied 2-2"
     },
     "broadcast": {
       "tv": "NBC 10",
@@ -62,57 +62,35 @@
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Ha-Seong Kim",
-        "meta": "vs Jesús Luzardo"
-      },
-      "pitches": [
-        "B",
-        "S",
-        "F",
-        "X"
-      ],
-      "count": {
-        "balls": 1,
-        "strikes": 2,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "End 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-07T18:50:49.744Z",
-    "current_game_pk": 823415,
-    "next_game_pk": 823414,
+    "updated_at": "2026-09-07T19:07:41.320Z",
+    "current_game_pk": 823414,
+    "next_game_pk": 823416,
     "next_game": {
-      "game_pk": 823414,
-      "official_date": "2026-09-08",
-      "date_label": "Tue, Sep 8, 2026",
+      "game_pk": 823416,
+      "official_date": "2026-09-09",
+      "date_label": "Wed, Sep 9, 2026",
       "time_label": "6:40 PM",
       "title": "Houston Astros at Phillies",
       "matchup": "HOU at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823415,
-      "official_date": "2026-09-07",
-      "title": "Atlanta Braves at Phillies",
-      "matchup": "ATL at PHI"
+      "game_pk": 823414,
+      "official_date": "2026-09-08",
+      "title": "Houston Astros at Phillies",
+      "matchup": "HOU at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 80-63",
+      "text": "PHI 81-63",
       "highlight": true
     },
     {
