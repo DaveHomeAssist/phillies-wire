@@ -4,7 +4,7 @@
   "edition_date": "2026-09-07",
   "volume": 1,
   "edition": 160,
-  "generated_at": "2026-09-07T18:43:25.247Z",
+  "generated_at": "2026-09-07T18:50:49.280Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, ATL 0",
-    "dek": "Middle 8th · 3 outs",
-    "summary": "J.T. Realmuto is up against Didier Fuentes. Series: ATL leads 2-1.",
+    "headline": "PHI 1, ATL 0",
+    "dek": "End 8th · 3 outs",
+    "summary": "Ha-Seong Kim is up against Jesús Luzardo. Series: ATL leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Hayden Wesneski · PHI vs HOU · Tue, Sep 8 · 6:40 PM"
   },
@@ -57,24 +57,25 @@
     "weather": {
       "temp_f": 81,
       "condition": "Clear",
-      "wind": "7 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "6 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Didier Fuentes"
+        "name": "Ha-Seong Kim",
+        "meta": "vs Jesús Luzardo"
       },
       "pitches": [
+        "B",
         "S",
         "F",
-        "S"
+        "X"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 3,
+        "balls": 1,
+        "strikes": 2,
         "outs": 3
       },
       "bases": {
@@ -82,7 +83,7 @@
         "second": false,
         "third": false
       },
-      "status": "Middle 8th"
+      "status": "End 8th"
     },
     "recap_line": null
   },
@@ -90,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-07T18:43:26.059Z",
+    "updated_at": "2026-09-07T18:50:49.744Z",
     "current_game_pk": 823415,
     "next_game_pk": 823414,
     "next_game": {
@@ -127,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Clear · gusts 9 mph",
+      "text": "81° · Clear · gusts 8 mph",
       "highlight": false
     }
   ]
