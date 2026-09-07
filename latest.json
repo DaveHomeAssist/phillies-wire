@@ -4,7 +4,7 @@
   "edition_date": "2026-09-07",
   "volume": 1,
   "edition": 160,
-  "generated_at": "2026-09-07T18:11:45.776Z",
+  "generated_at": "2026-09-07T18:29:58.295Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, ATL 0",
-    "dek": "End 5th · 3 outs",
-    "summary": "Ha-Seong Kim is up against Jesús Luzardo. Series: ATL leads 2-1.",
+    "dek": "Top 7th · 2 outs",
+    "summary": "Lane Thomas is up against Jesús Luzardo. Series: ATL leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Hayden Wesneski · PHI vs HOU · Tue, Sep 8 · 6:40 PM"
   },
@@ -57,33 +57,33 @@
     "weather": {
       "temp_f": 80,
       "condition": "Clear",
-      "wind": "8 mph · gusts 10",
+      "wind": "7 mph · gusts 10",
       "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ha-Seong Kim",
+        "name": "Lane Thomas",
         "meta": "vs Jesús Luzardo"
       },
       "pitches": [
-        "F",
+        "S",
         "B",
-        "B",
-        "X"
+        "S",
+        "F"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 1,
-        "outs": 3
+        "balls": 1,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 5th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -91,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-07T18:11:46.051Z",
+    "updated_at": "2026-09-07T18:29:59.058Z",
     "current_game_pk": 823415,
     "next_game_pk": 823414,
     "next_game": {

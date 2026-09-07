@@ -5,14 +5,14 @@
     "edition": 160,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-07T18:11:45.776Z",
+    "generated_at": "2026-09-07T18:29:58.295Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 7, 2026, 2:11 PM ET",
+      "generated_at_et": "Sep 7, 2026, 2:29 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, ATL 0",
-    "dek": "End 5th · 3 outs",
-    "summary": "Ha-Seong Kim is up against Jesús Luzardo. Series: ATL leads 2-1.",
+    "dek": "Top 7th · 2 outs",
+    "summary": "Lane Thomas is up against Jesús Luzardo. Series: ATL leads 2-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Ha-Seong Kim at the plate",
+      "Lane Thomas at the plate",
       "Jesús Luzardo on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 80,
           "condition": "Clear",
-          "wind": "8 mph · gusts 10",
+          "wind": "7 mph · gusts 10",
           "gusts_mph": 10
         },
         "giveaway": "",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Jesús Luzardo",
             "hand": "L",
-            "era": "2.94",
+            "era": "2.92",
             "record": "13-5",
             "whip": "1.09"
           },
@@ -367,17 +367,17 @@
             "team": "ATL",
             "name": "Grant Holmes",
             "hand": "R",
-            "era": "3.51",
+            "era": "3.47",
             "record": "9-5",
             "whip": "1.29"
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "End",
-          "isTopInning": false,
-          "outs": 3,
+          "currentInning": 7,
+          "currentInningOrdinal": "7th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 0,
-              "hits": 2,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -453,6 +453,32 @@
               "home": {
                 "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -948,30 +974,170 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823415:35",
+            "inning": 6,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Ha-Seong Kim",
+            "actor_id": 673490,
+            "detail": "Ha-Seong Kim strikes out swinging.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823415:36",
+            "inning": 6,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Ronald Acuña Jr.",
+            "actor_id": 660670,
+            "detail": "Ronald Acuña Jr. strikes out swinging.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823415:37",
+            "inning": 6,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Drake Baldwin",
+            "actor_id": 686948,
+            "detail": "Drake Baldwin grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823415:38",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to center fielder Michael Harris II.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823415:39",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner doubles (26) on a sharp line drive to left fielder Mauricio Dubón.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823415:40",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, second baseman Ozzie Albies to first baseman Matt Olson. Trea Turner to 3rd.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823415:41",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez flies out to left fielder Mauricio Dubón.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823415:42",
+            "inning": 7,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Ozzie Albies",
+            "actor_id": 645277,
+            "detail": "Ozzie Albies flies out to second baseman Luis Arraez.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823415:43",
+            "inning": 7,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Matt Olson",
+            "actor_id": 621566,
+            "detail": "Matt Olson grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823415:44",
+            "inning": 7,
+            "half": "top",
+            "team": "ATL",
+            "event_type": "other",
+            "actor": "Lane Thomas",
+            "actor_id": 657041,
+            "detail": "Injury Delay.",
+            "score_after": "PHI 0, ATL 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Ha-Seong Kim",
+            "name": "Lane Thomas",
             "meta": "vs Jesús Luzardo"
           },
           "pitches": [
-            "F",
+            "S",
             "B",
-            "B",
-            "X"
+            "S",
+            "F"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 1,
-            "outs": 3
+            "balls": 1,
+            "strikes": 2,
+            "outs": 2
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 5th"
+          "status": "Top 7th"
         }
       }
     },
@@ -988,8 +1154,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-07T18:11:45.776Z",
-            "freshness_label": "As of Sep 7, 2026, 2:11 PM ET"
+            "last_confirmed": "2026-09-07T18:29:58.295Z",
+            "freshness_label": "As of Sep 7, 2026, 2:29 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1001,8 +1167,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-07T18:11:45.776Z",
-            "freshness_label": "As of Sep 7, 2026, 2:11 PM ET"
+            "last_confirmed": "2026-09-07T18:29:58.295Z",
+            "freshness_label": "As of Sep 7, 2026, 2:29 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1014,8 +1180,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-07T18:11:45.776Z",
-            "freshness_label": "As of Sep 7, 2026, 2:11 PM ET"
+            "last_confirmed": "2026-09-07T18:29:58.295Z",
+            "freshness_label": "As of Sep 7, 2026, 2:29 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1027,8 +1193,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-07T18:11:45.776Z",
-            "freshness_label": "As of Sep 7, 2026, 2:11 PM ET"
+            "last_confirmed": "2026-09-07T18:29:58.295Z",
+            "freshness_label": "As of Sep 7, 2026, 2:29 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1040,8 +1206,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-07T18:11:45.776Z",
-            "freshness_label": "As of Sep 7, 2026, 2:11 PM ET"
+            "last_confirmed": "2026-09-07T18:29:58.295Z",
+            "freshness_label": "As of Sep 7, 2026, 2:29 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1053,8 +1219,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-07T18:11:45.776Z",
-            "freshness_label": "As of Sep 7, 2026, 2:11 PM ET"
+            "last_confirmed": "2026-09-07T18:29:58.295Z",
+            "freshness_label": "As of Sep 7, 2026, 2:29 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1066,8 +1232,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-07T18:11:45.776Z",
-            "freshness_label": "As of Sep 7, 2026, 2:11 PM ET"
+            "last_confirmed": "2026-09-07T18:29:58.295Z",
+            "freshness_label": "As of Sep 7, 2026, 2:29 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
