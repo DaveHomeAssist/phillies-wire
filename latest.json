@@ -4,7 +4,7 @@
   "edition_date": "2026-09-07",
   "volume": 1,
   "edition": 160,
-  "generated_at": "2026-09-07T20:09:38.829Z",
+  "generated_at": "2026-09-07T20:24:15.141Z",
   "mode": "final",
   "mode_label": "Final",
   "off_day": false,
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 0,
-      "condition": "Weather unavailable",
-      "wind": "Calm",
-      "gusts_mph": 0
+      "temp_f": 80,
+      "condition": "Clear",
+      "wind": "5 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-07T20:09:39.297Z",
+    "updated_at": "2026-09-07T20:24:16.140Z",
     "current_game_pk": 823414,
     "next_game_pk": 823416,
     "next_game": {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "0° · Weather unavailable · gusts 0 mph",
+      "text": "80° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
