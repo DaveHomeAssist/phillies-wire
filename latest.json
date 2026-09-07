@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-06",
+  "edition_date": "2026-09-07",
   "volume": 1,
-  "edition": 159,
-  "generated_at": "2026-09-07T03:50:26.720Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 160,
+  "generated_at": "2026-09-07T04:12:05.979Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 80,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, ATL 5.",
-    "dek": "ATL 5, PHI 4 · Aaron Nola · 7.0 IP, 4 H, 1 ER, 5 K",
-    "summary": "PHI 4, ATL 5. Final at Citizens Bank Park, Philadelphia. ATL leads 2-1.",
+    "headline": "Braves @ Phillies · Game 4 of 4",
+    "dek": "Jesús Luzardo vs Grant Holmes",
+    "summary": "Jesús Luzardo vs Grant Holmes · Braves @ Phillies · Game 4 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Jesús Luzardo vs Grant Holmes · PHI vs ATL · Mon, Sep 7 · 1:05 PM"
+    "next_value": "Andrew Painter vs Hayden Wesneski · PHI vs HOU · Tue, Sep 8 · 6:40 PM"
   },
   "game": {
-    "matchup": "Braves @ Phillies · Game 3 of 4",
-    "first_pitch": "1:10 PM",
+    "matchup": "Braves @ Phillies · Game 4 of 4",
+    "first_pitch": "1:05 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Jesús Luzardo",
+        "hand": "L"
       },
       "away": {
-        "name": "Tyler Mahle",
+        "name": "Grant Holmes",
         "hand": "R"
       },
       "phi": {
-        "name": "Aaron Nola",
-        "hand": "R"
+        "name": "Jesús Luzardo",
+        "hand": "L"
       },
       "opp": {
-        "name": "Tyler Mahle",
+        "name": "Grant Holmes",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "ATL leads 2-1"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
-      "tv": "NBC/Peacock",
+      "tv": "NBC 10",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 68,
       "condition": "Clear",
-      "wind": "2 mph · gusts 4",
-      "gusts_mph": 4
+      "wind": "2 mph · gusts 3",
+      "gusts_mph": 3
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-07T03:50:27.607Z",
+    "updated_at": "2026-09-07T04:12:06.280Z",
     "current_game_pk": 823415,
     "next_game_pk": 823414,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Braves @ Phillies · Game 3 of 4 · 1:10 PM",
+      "text": "Braves @ Phillies · Game 4 of 4 · 1:05 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Tyler Mahle",
+      "text": "Jesús Luzardo vs Grant Holmes",
       "highlight": true
     },
     {
-      "text": "NBC/Peacock · 94 WIP",
+      "text": "NBC 10 · 94 WIP",
       "highlight": false
     },
     {
-      "text": "68° · Clear · gusts 4 mph",
+      "text": "68° · Clear · gusts 3 mph",
       "highlight": false
     }
   ]
