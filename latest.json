@@ -4,9 +4,9 @@
   "edition_date": "2026-09-08",
   "volume": 1,
   "edition": 161,
-  "generated_at": "2026-09-08T22:08:57.644Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-08T22:22:36.903Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 81,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Astros @ Phillies · Game 1 of 3",
-    "dek": "Andrew Painter vs Hayden Wesneski",
-    "summary": "Andrew Painter vs Hayden Wesneski · Astros @ Phillies · Game 1 of 3",
+    "headline": "PHI 0, HOU 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Jeremy Peña is up against Andrew Painter. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Hunter Brown · PHI vs HOU · Wed, Sep 9 · 6:40 PM"
   },
@@ -62,14 +62,31 @@
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Jeremy Peña",
+        "meta": "vs Andrew Painter"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-08T22:08:58.473Z",
+    "updated_at": "2026-09-08T22:22:37.355Z",
     "current_game_pk": 823414,
     "next_game_pk": 823416,
     "next_game": {
