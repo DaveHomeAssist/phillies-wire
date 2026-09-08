@@ -4,7 +4,7 @@
   "edition_date": "2026-09-08",
   "volume": 1,
   "edition": 161,
-  "generated_at": "2026-09-08T23:22:07.092Z",
+  "generated_at": "2026-09-08T23:34:19.741Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, HOU 4",
-    "dek": "Top 3rd · 1 out",
-    "summary": "Yainer Diaz is up against Andrew Painter. Series: Regular Season.",
+    "dek": "End 3rd · 3 outs",
+    "summary": "Cam Smith is up against Andrew Painter. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Hunter Brown · PHI vs HOU · Wed, Sep 9 · 6:40 PM"
   },
@@ -55,33 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 79,
       "condition": "Mostly sunny",
-      "wind": "5 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "1 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Yainer Diaz",
+        "name": "Cam Smith",
         "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "F",
-        "F"
+        "X"
       ],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 1
+        "strikes": 0,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 3rd"
+      "status": "End 3rd"
     },
     "recap_line": null
   },
@@ -89,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-08T23:22:07.580Z",
+    "updated_at": "2026-09-08T23:34:20.526Z",
     "current_game_pk": 823414,
     "next_game_pk": 823416,
     "next_game": {
@@ -126,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Mostly sunny · gusts 10 mph",
+      "text": "79° · Mostly sunny · gusts 6 mph",
       "highlight": false
     }
   ]
