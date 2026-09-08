@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-07",
+  "edition_date": "2026-09-08",
   "volume": 1,
-  "edition": 160,
-  "generated_at": "2026-09-08T03:52:09.012Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 161,
+  "generated_at": "2026-09-08T04:11:06.139Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 81,
@@ -16,48 +16,48 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, ATL 0.",
-    "dek": "PHI 1, ATL 0 · Jesús Luzardo · 9.0 IP, 2 H, 0 ER, 12 K",
-    "summary": "PHI 1, ATL 0. Final at Citizens Bank Park, Philadelphia. Series tied 2-2.",
+    "headline": "Astros @ Phillies · Game 1 of 3",
+    "dek": "Andrew Painter vs Hayden Wesneski",
+    "summary": "Andrew Painter vs Hayden Wesneski · Astros @ Phillies · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter vs Hayden Wesneski · PHI vs HOU · Tue, Sep 8 · 6:40 PM"
+    "next_value": "Cristopher Sánchez vs Hunter Brown · PHI vs HOU · Wed, Sep 9 · 6:40 PM"
   },
   "game": {
-    "matchup": "Braves @ Phillies · Game 4 of 4",
-    "first_pitch": "1:05 PM",
+    "matchup": "Astros @ Phillies · Game 1 of 3",
+    "first_pitch": "6:40 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "away": {
-        "name": "Grant Holmes",
+        "name": "Hayden Wesneski",
         "hand": "R"
       },
       "phi": {
-        "name": "Jesús Luzardo",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "opp": {
-        "name": "Grant Holmes",
+        "name": "Hayden Wesneski",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 2-2"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "NBC 10",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 65,
       "condition": "Clear",
-      "wind": "1 mph · gusts 2",
+      "wind": "2 mph · gusts 2",
       "gusts_mph": 2
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-08T03:52:09.932Z",
+    "updated_at": "2026-09-08T04:11:06.704Z",
     "current_game_pk": 823414,
     "next_game_pk": 823416,
     "next_game": {
@@ -94,15 +94,15 @@
       "highlight": true
     },
     {
-      "text": "Braves @ Phillies · Game 4 of 4 · 1:05 PM",
+      "text": "Astros @ Phillies · Game 1 of 3 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Jesús Luzardo vs Grant Holmes",
+      "text": "Andrew Painter vs Hayden Wesneski",
       "highlight": true
     },
     {
-      "text": "NBC 10 · 94 WIP",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
