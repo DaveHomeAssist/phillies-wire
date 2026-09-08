@@ -5,14 +5,14 @@
     "edition": 161,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-08T23:34:19.741Z",
+    "generated_at": "2026-09-08T23:48:13.368Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 8, 2026, 7:34 PM ET",
+      "generated_at_et": "Sep 8, 2026, 7:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, HOU 4",
-    "dek": "End 3rd · 3 outs",
-    "summary": "Cam Smith is up against Andrew Painter. Series: Regular Season.",
+    "headline": "PHI 0, HOU 5",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "Kyle Schwarber is up against Hayden Wesneski. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "79° · Mostly sunny"
+        "value": "78° · Clear"
       }
     ],
     "bullets": [
-      "Cam Smith at the plate",
-      "Andrew Painter on the mound",
+      "Kyle Schwarber at the plate",
+      "Hayden Wesneski on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 79,
-          "condition": "Mostly sunny",
-          "wind": "1 mph · gusts 6",
-          "gusts_mph": 6
+          "temp_f": 78,
+          "condition": "Clear",
+          "wind": "1 mph · gusts 3",
+          "gusts_mph": 3
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,29 +359,29 @@
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "5.73",
+            "era": "5.76",
             "record": "3-8",
-            "whip": "1.40"
+            "whip": "1.41"
           },
           "away": {
             "team": "HOU",
             "name": "Hayden Wesneski",
             "hand": "R",
-            "era": "3.02",
+            "era": "2.95",
             "record": "4-1",
-            "whip": "1.03"
+            "whip": "1.01"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
-          "inningState": "End",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
+          "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 3,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 4,
-              "hits": 7,
+              "runs": 5,
+              "hits": 8,
               "errors": 0
             },
             "home": {
@@ -426,6 +426,19 @@
               },
               "home": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               }
@@ -796,27 +809,118 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823414:26",
+            "inning": 4,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "home_run",
+            "actor": "Cam Smith",
+            "actor_id": 701358,
+            "detail": "Cam Smith homers (18) on a fly ball to left center field.",
+            "score_after": "PHI 0, HOU 5",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823414:27",
+            "inning": 4,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Jeremy Peña",
+            "actor_id": 665161,
+            "detail": "Jeremy Peña grounds out, third baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 0, HOU 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:28",
+            "inning": 4,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Yordan Alvarez",
+            "actor_id": 670541,
+            "detail": "Yordan Alvarez grounds out, first baseman Alec Bohm to pitcher Andrew Painter.",
+            "score_after": "PHI 0, HOU 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:29",
+            "inning": 4,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "walk_hbp",
+            "actor": "Isaac Paredes",
+            "actor_id": 670623,
+            "detail": "Isaac Paredes walks.",
+            "score_after": "PHI 0, HOU 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:30",
+            "inning": 4,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Jose Altuve",
+            "actor_id": 514888,
+            "detail": "Jose Altuve grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 0, HOU 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:31",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Play",
+            "score_after": "PHI 0, HOU 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Cam Smith",
-            "meta": "vs Andrew Painter"
+            "name": "Kyle Schwarber",
+            "meta": "vs Hayden Wesneski"
           },
           "pitches": [
-            "X"
+            "S",
+            "B",
+            "F",
+            "F",
+            "F",
+            "F",
+            "B",
+            "F"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 3
+            "balls": 2,
+            "strikes": 2,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "End 3rd"
+          "status": "Bottom 4th"
         }
       }
     },
@@ -833,8 +937,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-08T23:34:19.741Z",
-            "freshness_label": "As of Sep 8, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-08T23:48:13.368Z",
+            "freshness_label": "As of Sep 8, 2026, 7:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -846,8 +950,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-08T23:34:19.741Z",
-            "freshness_label": "As of Sep 8, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-08T23:48:13.368Z",
+            "freshness_label": "As of Sep 8, 2026, 7:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -859,8 +963,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-08T23:34:19.741Z",
-            "freshness_label": "As of Sep 8, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-08T23:48:13.368Z",
+            "freshness_label": "As of Sep 8, 2026, 7:48 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -872,8 +976,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-08T23:34:19.741Z",
-            "freshness_label": "As of Sep 8, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-08T23:48:13.368Z",
+            "freshness_label": "As of Sep 8, 2026, 7:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -885,8 +989,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-08T23:34:19.741Z",
-            "freshness_label": "As of Sep 8, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-08T23:48:13.368Z",
+            "freshness_label": "As of Sep 8, 2026, 7:48 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -898,8 +1002,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-08T23:34:19.741Z",
-            "freshness_label": "As of Sep 8, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-08T23:48:13.368Z",
+            "freshness_label": "As of Sep 8, 2026, 7:48 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -911,8 +1015,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-08T23:34:19.741Z",
-            "freshness_label": "As of Sep 8, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-08T23:48:13.368Z",
+            "freshness_label": "As of Sep 8, 2026, 7:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
