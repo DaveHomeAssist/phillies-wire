@@ -4,7 +4,7 @@
   "edition_date": "2026-09-08",
   "volume": 1,
   "edition": 161,
-  "generated_at": "2026-09-08T22:48:19.322Z",
+  "generated_at": "2026-09-08T23:08:35.523Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, HOU 0",
-    "dek": "Middle 1st · 3 outs",
-    "summary": "Kyle Schwarber is up against Hayden Wesneski. Series: Regular Season.",
+    "headline": "PHI 0, HOU 4",
+    "dek": "Top 2nd · 2 outs",
+    "summary": "Isaac Paredes is up against Andrew Painter. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Hunter Brown · PHI vs HOU · Wed, Sep 9 · 6:40 PM"
   },
@@ -55,35 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
-      "condition": "Partly cloudy",
-      "wind": "5 mph · gusts 8",
-      "gusts_mph": 8
+      "temp_f": 79,
+      "condition": "Mostly sunny",
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Hayden Wesneski"
+        "name": "Isaac Paredes",
+        "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "F",
-        "F",
         "B",
-        "X"
+        "S",
+        "S",
+        "B",
+        "F"
       ],
       "count": {
-        "balls": 1,
+        "balls": 2,
         "strikes": 2,
-        "outs": 3
+        "outs": 2
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
-      "status": "Middle 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -91,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-08T22:48:20.239Z",
+    "updated_at": "2026-09-08T23:08:36.075Z",
     "current_game_pk": 823414,
     "next_game_pk": 823416,
     "next_game": {
@@ -128,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Partly cloudy · gusts 8 mph",
+      "text": "79° · Mostly sunny · gusts 9 mph",
       "highlight": false
     }
   ]
