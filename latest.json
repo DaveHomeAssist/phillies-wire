@@ -4,7 +4,7 @@
   "edition_date": "2026-09-09",
   "volume": 1,
   "edition": 162,
-  "generated_at": "2026-09-09T23:34:17.267Z",
+  "generated_at": "2026-09-09T23:47:57.338Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, HOU 4",
-    "dek": "Bottom 3rd · 0 outs",
-    "summary": "Kyle Schwarber is up against Hunter Brown. Series: HOU leads 1-0.",
+    "headline": "PHI 4, HOU 4",
+    "dek": "Top 4th · 0 outs",
+    "summary": "Daulton Varsho is up against Cristopher Sánchez. Series: HOU leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
   },
@@ -57,31 +57,33 @@
     "weather": {
       "temp_f": 80,
       "condition": "Clear",
-      "wind": "10 mph · gusts 19",
-      "gusts_mph": 19
+      "wind": "10 mph · gusts 20",
+      "gusts_mph": 20
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Hunter Brown"
+        "name": "Daulton Varsho",
+        "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
         "B",
-        "F"
+        "B",
+        "S",
+        "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 2,
         "strikes": 1,
         "outs": 0
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Top 4th"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-09T23:34:18.013Z",
+    "updated_at": "2026-09-09T23:47:58.106Z",
     "current_game_pk": 823416,
     "next_game_pk": 823413,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 19 mph",
+      "text": "80° · Clear · gusts 20 mph",
       "highlight": false
     }
   ]
