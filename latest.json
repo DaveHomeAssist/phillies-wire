@@ -4,7 +4,7 @@
   "edition_date": "2026-09-09",
   "volume": 1,
   "edition": 162,
-  "generated_at": "2026-09-09T22:47:50.647Z",
+  "generated_at": "2026-09-09T23:08:21.234Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, HOU 0",
-    "dek": "Middle 1st · 3 outs",
-    "summary": "Kyle Schwarber is up against Hunter Brown. Series: HOU leads 1-0.",
+    "dek": "Bottom 2nd · 0 outs",
+    "summary": "Luis Arraez is up against Hunter Brown. Series: HOU leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
   },
@@ -55,33 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 82,
+      "temp_f": 81,
       "condition": "Mostly sunny",
-      "wind": "9 mph · gusts 21",
-      "gusts_mph": 21
+      "wind": "9 mph · gusts 20",
+      "gusts_mph": 20
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Luis Arraez",
         "meta": "vs Hunter Brown"
       },
       "pitches": [
+        "S",
         "B",
-        "X"
+        "F",
+        "F"
       ],
       "count": {
         "balls": 1,
-        "strikes": 0,
-        "outs": 3
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-09T22:47:51.437Z",
+    "updated_at": "2026-09-09T23:08:22.264Z",
     "current_game_pk": 823416,
     "next_game_pk": 823413,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Mostly sunny · gusts 21 mph",
+      "text": "81° · Mostly sunny · gusts 20 mph",
       "highlight": false
     }
   ]

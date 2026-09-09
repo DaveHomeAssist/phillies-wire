@@ -5,14 +5,14 @@
     "edition": 162,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-09T22:47:50.647Z",
+    "generated_at": "2026-09-09T23:08:21.234Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 9, 2026, 6:47 PM ET",
+      "generated_at_et": "Sep 9, 2026, 7:08 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, HOU 0",
-    "dek": "Middle 1st · 3 outs",
-    "summary": "Kyle Schwarber is up against Hunter Brown. Series: HOU leads 1-0.",
+    "dek": "Bottom 2nd · 0 outs",
+    "summary": "Luis Arraez is up against Hunter Brown. Series: HOU leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "82° · Mostly sunny"
+        "value": "81° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Kyle Schwarber at the plate",
+      "Luis Arraez at the plate",
       "Hunter Brown on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 82,
+          "temp_f": 81,
           "condition": "Mostly sunny",
-          "wind": "9 mph · gusts 21",
-          "gusts_mph": 21
+          "wind": "9 mph · gusts 20",
+          "gusts_mph": 20
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.58",
+            "era": "2.56",
             "record": "16-5",
             "whip": "1.20"
           },
@@ -367,21 +367,21 @@
             "team": "HOU",
             "name": "Hunter Brown",
             "hand": "R",
-            "era": "3.31",
+            "era": "3.27",
             "record": "5-3",
-            "whip": "1.30"
+            "whip": "1.28"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "Middle",
-          "isTopInning": true,
-          "outs": 3,
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 1,
+              "hits": 2,
               "errors": 0
             },
             "home": {
@@ -393,6 +393,19 @@
           "innings": [
             {
               "num": 1,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
               "away": {
                 "runs": 0,
                 "hits": 1,
@@ -448,28 +461,142 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823416:3",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber called out on strikes.",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:4",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, second baseman Jose Altuve to first baseman Christian Walker.",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:5",
+            "inning": 1,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:6",
+            "inning": 2,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "strikeout",
+            "actor": "Jose Altuve",
+            "actor_id": 514888,
+            "detail": "Jose Altuve strikes out swinging.",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:7",
+            "inning": 2,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "extra_base_hit",
+            "actor": "Yainer Diaz",
+            "actor_id": 673237,
+            "detail": "Yainer Diaz doubles (13) on a sharp line drive to left fielder Brandon Marsh.",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823416:8",
+            "inning": 2,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Christian Walker",
+            "actor_id": 572233,
+            "detail": "Christian Walker pops out to shortstop Trea Turner.",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:9",
+            "inning": 2,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Daulton Varsho",
+            "actor_id": 662139,
+            "detail": "Daulton Varsho grounds out, first baseman Kyle Schwarber to pitcher Cristopher Sánchez.",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:10",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Play",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Kyle Schwarber",
+            "name": "Luis Arraez",
             "meta": "vs Hunter Brown"
           },
           "pitches": [
+            "S",
             "B",
-            "X"
+            "F",
+            "F"
           ],
           "count": {
             "balls": 1,
-            "strikes": 0,
-            "outs": 3
+            "strikes": 2,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -486,8 +613,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:47:50.647Z",
-            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-09-09T23:08:21.234Z",
+            "freshness_label": "As of Sep 9, 2026, 7:08 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -499,8 +626,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:47:50.647Z",
-            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-09-09T23:08:21.234Z",
+            "freshness_label": "As of Sep 9, 2026, 7:08 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -512,8 +639,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:47:50.647Z",
-            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-09-09T23:08:21.234Z",
+            "freshness_label": "As of Sep 9, 2026, 7:08 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -525,8 +652,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:47:50.647Z",
-            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-09-09T23:08:21.234Z",
+            "freshness_label": "As of Sep 9, 2026, 7:08 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -538,8 +665,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:47:50.647Z",
-            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-09-09T23:08:21.234Z",
+            "freshness_label": "As of Sep 9, 2026, 7:08 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -551,8 +678,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:47:50.647Z",
-            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-09-09T23:08:21.234Z",
+            "freshness_label": "As of Sep 9, 2026, 7:08 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -564,8 +691,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:47:50.647Z",
-            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
+            "last_confirmed": "2026-09-09T23:08:21.234Z",
+            "freshness_label": "As of Sep 9, 2026, 7:08 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
