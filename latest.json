@@ -4,7 +4,7 @@
   "edition_date": "2026-09-09",
   "volume": 1,
   "edition": 162,
-  "generated_at": "2026-09-09T22:34:08.788Z",
+  "generated_at": "2026-09-09T22:47:50.647Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, HOU 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Jeremy Peña is up against Cristopher Sánchez. Series: HOU leads 1-0.",
+    "dek": "Middle 1st · 3 outs",
+    "summary": "Kyle Schwarber is up against Hunter Brown. Series: HOU leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
   },
@@ -55,30 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
-      "condition": "Partly cloudy",
-      "wind": "10 mph · gusts 21",
+      "temp_f": 82,
+      "condition": "Mostly sunny",
+      "wind": "9 mph · gusts 21",
       "gusts_mph": 21
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jeremy Peña",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Kyle Schwarber",
+        "meta": "vs Hunter Brown"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "X"
+      ],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
-        "outs": 0
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Middle 1st"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-09T22:34:09.513Z",
+    "updated_at": "2026-09-09T22:47:51.437Z",
     "current_game_pk": 823416,
     "next_game_pk": 823413,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Partly cloudy · gusts 21 mph",
+      "text": "82° · Mostly sunny · gusts 21 mph",
       "highlight": false
     }
   ]

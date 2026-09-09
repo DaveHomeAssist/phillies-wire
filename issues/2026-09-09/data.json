@@ -5,14 +5,14 @@
     "edition": 162,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-09T22:34:08.788Z",
+    "generated_at": "2026-09-09T22:47:50.647Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 9, 2026, 6:34 PM ET",
+      "generated_at_et": "Sep 9, 2026, 6:47 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 0, HOU 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Jeremy Peña is up against Cristopher Sánchez. Series: HOU leads 1-0.",
+    "dek": "Middle 1st · 3 outs",
+    "summary": "Kyle Schwarber is up against Hunter Brown. Series: HOU leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "83° · Partly cloudy"
+        "value": "82° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Jeremy Peña at the plate",
-      "Cristopher Sánchez on the mound",
+      "Kyle Schwarber at the plate",
+      "Hunter Brown on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,9 +346,9 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 83,
-          "condition": "Partly cloudy",
-          "wind": "10 mph · gusts 21",
+          "temp_f": 82,
+          "condition": "Mostly sunny",
+          "wind": "9 mph · gusts 21",
           "gusts_mph": 21
         },
         "giveaway": "",
@@ -375,13 +375,13 @@
         "linescore": {
           "currentInning": 1,
           "currentInningOrdinal": "1st",
-          "inningState": "Top",
+          "inningState": "Middle",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 0
             },
             "home": {
@@ -394,8 +394,8 @@
             {
               "num": 1,
               "away": {
-                "runs": null,
-                "hits": 0,
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -412,10 +412,38 @@
             "inning": 1,
             "half": "top",
             "team": "HOU",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Jeremy Peña",
             "actor_id": 665161,
-            "detail": "Status Change - Warmup",
+            "detail": "Jeremy Peña strikes out swinging.",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:1",
+            "inning": 1,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "single",
+            "actor": "Yordan Alvarez",
+            "actor_id": 670541,
+            "detail": "Yordan Alvarez singles on a line drive to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 0, HOU 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:2",
+            "inning": 1,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "other",
+            "actor": "Isaac Paredes",
+            "actor_id": 670623,
+            "detail": "Isaac Paredes grounds into a double play, third baseman Bryson Stott to second baseman Luis Arraez to first baseman Kyle Schwarber.…",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -424,21 +452,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Jeremy Peña",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Kyle Schwarber",
+            "meta": "vs Hunter Brown"
           },
-          "pitches": [],
+          "pitches": [
+            "B",
+            "X"
+          ],
           "count": {
-            "balls": 0,
+            "balls": 1,
             "strikes": 0,
-            "outs": 0
+            "outs": 3
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Top 1st"
+          "status": "Middle 1st"
         }
       }
     },
@@ -455,8 +486,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:34:08.788Z",
-            "freshness_label": "As of Sep 9, 2026, 6:34 PM ET"
+            "last_confirmed": "2026-09-09T22:47:50.647Z",
+            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -468,8 +499,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:34:08.788Z",
-            "freshness_label": "As of Sep 9, 2026, 6:34 PM ET"
+            "last_confirmed": "2026-09-09T22:47:50.647Z",
+            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -481,8 +512,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:34:08.788Z",
-            "freshness_label": "As of Sep 9, 2026, 6:34 PM ET"
+            "last_confirmed": "2026-09-09T22:47:50.647Z",
+            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -494,8 +525,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:34:08.788Z",
-            "freshness_label": "As of Sep 9, 2026, 6:34 PM ET"
+            "last_confirmed": "2026-09-09T22:47:50.647Z",
+            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -507,8 +538,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:34:08.788Z",
-            "freshness_label": "As of Sep 9, 2026, 6:34 PM ET"
+            "last_confirmed": "2026-09-09T22:47:50.647Z",
+            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -520,8 +551,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:34:08.788Z",
-            "freshness_label": "As of Sep 9, 2026, 6:34 PM ET"
+            "last_confirmed": "2026-09-09T22:47:50.647Z",
+            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -533,8 +564,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T22:34:08.788Z",
-            "freshness_label": "As of Sep 9, 2026, 6:34 PM ET"
+            "last_confirmed": "2026-09-09T22:47:50.647Z",
+            "freshness_label": "As of Sep 9, 2026, 6:47 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
