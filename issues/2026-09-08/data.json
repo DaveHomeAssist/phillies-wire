@@ -5,14 +5,14 @@
     "edition": 161,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-09T00:26:38.540Z",
+    "generated_at": "2026-09-09T01:07:37.150Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 8, 2026, 8:26 PM ET",
+      "generated_at_et": "Sep 8, 2026, 9:07 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 3, HOU 5",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Bryce Harper is up against Hayden Wesneski. Series: Regular Season.",
+    "headline": "PHI 4, HOU 6",
+    "dek": "Bottom 8th · 0 outs",
+    "summary": "Kyle Schwarber is up against Bryan Abreu. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "76° · Mostly sunny"
+        "value": "74° · Overcast"
       }
     ],
     "bullets": [
-      "Bryce Harper at the plate",
-      "Hayden Wesneski on the mound",
+      "Kyle Schwarber at the plate",
+      "Bryan Abreu on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 76,
-          "condition": "Mostly sunny",
-          "wind": "3 mph · gusts 3",
-          "gusts_mph": 3
+          "temp_f": 74,
+          "condition": "Overcast",
+          "wind": "3 mph · gusts 4",
+          "gusts_mph": 4
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -367,26 +367,26 @@
             "team": "HOU",
             "name": "Hayden Wesneski",
             "hand": "R",
-            "era": "3.40",
+            "era": "3.35",
             "record": "4-1",
-            "whip": "1.04"
+            "whip": "1.03"
           }
         },
         "linescore": {
-          "currentInning": 6,
-          "currentInningOrdinal": "6th",
+          "currentInning": 8,
+          "currentInningOrdinal": "8th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 1,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 5,
-              "hits": 10,
+              "runs": 6,
+              "hits": 11,
               "errors": 0
             },
             "home": {
-              "runs": 3,
-              "hits": 5,
+              "runs": 4,
+              "hits": 7,
               "errors": 0
             }
           },
@@ -466,6 +466,32 @@
               "home": {
                 "runs": 3,
                 "hits": 3,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -1177,11 +1203,221 @@
             "inning": 6,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Mound Visit.",
+            "detail": "Bryce Harper grounds out, second baseman Jose Altuve to first baseman Christian Walker.",
             "score_after": "PHI 3, HOU 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:51",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez flies out to right fielder Cam Smith.",
+            "score_after": "PHI 3, HOU 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:52",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Jose Altuve",
+            "actor_id": 514888,
+            "detail": "Jose Altuve flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 3, HOU 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:53",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "home_run",
+            "actor": "Daulton Varsho",
+            "actor_id": 662139,
+            "detail": "Daulton Varsho homers (11) on a fly ball to right center field.",
+            "score_after": "PHI 3, HOU 6",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823414:54",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Yainer Diaz",
+            "actor_id": 673237,
+            "detail": "Yainer Diaz grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 3, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:55",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "walk_hbp",
+            "actor": "Christian Walker",
+            "actor_id": 572233,
+            "detail": "Christian Walker walks.",
+            "score_after": "PHI 3, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:56",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "strikeout",
+            "actor": "Taylor Trammell",
+            "actor_id": 666211,
+            "detail": "Taylor Trammell strikes out swinging.",
+            "score_after": "PHI 3, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:57",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm doubles (26) on a sharp line drive to left fielder Taylor Trammell.",
+            "score_after": "PHI 3, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823414:58",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott hit by pitch.",
+            "score_after": "PHI 3, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:59",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh doubles (19) on a sharp line drive to right fielder Cam Smith. Alec Bohm scores. Bryson Stott to 3rd.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823414:60",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto lines into a double play, shortstop Jeremy Peña to second baseman Jose Altuve. Brandon Marsh out at 2nd.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823414:61",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill strikes out swinging.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:62",
+            "inning": 8,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "strikeout",
+            "actor": "Cam Smith",
+            "actor_id": 701358,
+            "detail": "Cam Smith called out on strikes.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:63",
+            "inning": 8,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Jeremy Peña",
+            "actor_id": 665161,
+            "detail": "Jeremy Peña flies out to center fielder Derek Hill.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:64",
+            "inning": 8,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Yordan Alvarez",
+            "actor_id": 670541,
+            "detail": "Yordan Alvarez grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823414:65",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Play",
+            "score_after": "PHI 4, HOU 6",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1189,122 +1425,28 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryce Harper",
-            "meta": "vs Hayden Wesneski"
+            "name": "Kyle Schwarber",
+            "meta": "vs Bryan Abreu"
           },
-          "pitches": [],
+          "pitches": [
+            "S",
+            "B"
+          ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 1
+            "balls": 1,
+            "strikes": 1,
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Bottom 6th"
+          "status": "Bottom 8th"
         }
       }
     },
-    "injury_report": {
-      "content": {
-        "il_entries": [
-          {
-            "name": "Adolis García",
-            "position": "RF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right latissimus dorsi tear",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-09T00:26:38.540Z",
-            "freshness_label": "As of Sep 8, 2026, 8:26 PM ET"
-          },
-          {
-            "name": "Johan Rojas",
-            "position": "CF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL repair",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-09T00:26:38.540Z",
-            "freshness_label": "As of Sep 8, 2026, 8:26 PM ET"
-          },
-          {
-            "name": "Lou Trivino III",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right thoracic muscle spasm",
-            "status_note": "",
-            "retroactive_to": "2026-07-07",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-09T00:26:38.540Z",
-            "freshness_label": "As of Sep 8, 2026, 8:26 PM ET"
-          },
-          {
-            "name": "Tanner Banks",
-            "position": "LHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Left forearm strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-09T00:26:38.540Z",
-            "freshness_label": "As of Sep 8, 2026, 8:26 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL tear",
-            "status_note": "",
-            "retroactive_to": "2026-07-13",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-09T00:26:38.540Z",
-            "freshness_label": "As of Sep 8, 2026, 8:26 PM ET"
-          },
-          {
-            "name": "Caleb Kilian",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Left oblique strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-09T00:26:38.540Z",
-            "freshness_label": "As of Sep 8, 2026, 8:26 PM ET"
-          },
-          {
-            "name": "Felix Reyes",
-            "position": "LF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right wrist fracture",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-09T00:26:38.540Z",
-            "freshness_label": "As of Sep 8, 2026, 8:26 PM ET"
-          }
-        ],
-        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
-      }
-    }
+    "injury_report": null
   },
   "next_game": {
     "label": "Tomorrow",
