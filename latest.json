@@ -4,7 +4,7 @@
   "edition_date": "2026-09-09",
   "volume": 1,
   "edition": 162,
-  "generated_at": "2026-09-09T23:08:21.234Z",
+  "generated_at": "2026-09-09T23:22:14.315Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, HOU 0",
-    "dek": "Bottom 2nd · 0 outs",
-    "summary": "Luis Arraez is up against Hunter Brown. Series: HOU leads 1-0.",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Yordan Alvarez is up against Cristopher Sánchez. Series: HOU leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
   },
@@ -55,35 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 81,
-      "condition": "Mostly sunny",
-      "wind": "9 mph · gusts 20",
-      "gusts_mph": 20
+      "temp_f": 80,
+      "condition": "Clear",
+      "wind": "9 mph · gusts 18",
+      "gusts_mph": 18
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Hunter Brown"
+        "name": "Yordan Alvarez",
+        "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
+        "B",
+        "B",
         "S",
         "B",
-        "F",
         "F"
       ],
       "count": {
-        "balls": 1,
+        "balls": 3,
         "strikes": 2,
-        "outs": 0
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Bottom 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -91,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-09T23:08:22.264Z",
+    "updated_at": "2026-09-09T23:22:15.406Z",
     "current_game_pk": 823416,
     "next_game_pk": 823413,
     "next_game": {
@@ -128,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Mostly sunny · gusts 20 mph",
+      "text": "80° · Clear · gusts 18 mph",
       "highlight": false
     }
   ]
