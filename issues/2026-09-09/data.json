@@ -5,14 +5,14 @@
     "edition": 162,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-09T23:22:14.315Z",
+    "generated_at": "2026-09-09T23:34:17.267Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 9, 2026, 7:22 PM ET",
+      "generated_at_et": "Sep 9, 2026, 7:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, HOU 0",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Yordan Alvarez is up against Cristopher Sánchez. Series: HOU leads 1-0.",
+    "headline": "PHI 0, HOU 4",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Kyle Schwarber is up against Hunter Brown. Series: HOU leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Yordan Alvarez at the plate",
-      "Cristopher Sánchez on the mound",
+      "Kyle Schwarber at the plate",
+      "Hunter Brown on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 80,
           "condition": "Clear",
-          "wind": "9 mph · gusts 18",
-          "gusts_mph": 18
+          "wind": "10 mph · gusts 19",
+          "gusts_mph": 19
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.55",
+            "era": "2.73",
             "record": "16-5",
-            "whip": "1.19"
+            "whip": "1.22"
           },
           "away": {
             "team": "HOU",
@@ -375,18 +375,18 @@
         "linescore": {
           "currentInning": 3,
           "currentInningOrdinal": "3rd",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 3,
+              "runs": 4,
+              "hits": 7,
               "errors": 0
             },
             "home": {
               "runs": 0,
-              "hits": 1,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -420,13 +420,13 @@
             {
               "num": 3,
               "away": {
-                "runs": null,
-                "hits": 1,
+                "runs": 4,
+                "hits": 5,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 0,
+                "hits": 2,
                 "errors": 0
               }
             }
@@ -676,11 +676,109 @@
             "inning": 3,
             "half": "top",
             "team": "HOU",
-            "event_type": "other",
+            "event_type": "extra_base_hit",
             "actor": "Yordan Alvarez",
             "actor_id": 670541,
+            "detail": "Yordan Alvarez doubles (30) on a line drive to center fielder Justin Crawford. Cam Smith scores.",
+            "score_after": "PHI 0, HOU 1",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823416:18",
+            "inning": 3,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "home_run",
+            "actor": "Isaac Paredes",
+            "actor_id": 670623,
+            "detail": "Isaac Paredes homers (19) on a fly ball to left center field. Yordan Alvarez scores.",
+            "score_after": "PHI 0, HOU 3",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823416:19",
+            "inning": 3,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "extra_base_hit",
+            "actor": "Jose Altuve",
+            "actor_id": 514888,
+            "detail": "Jose Altuve doubles (21) on a sharp line drive to center fielder Justin Crawford.",
+            "score_after": "PHI 0, HOU 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823416:20",
+            "inning": 3,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "single",
+            "actor": "Yainer Diaz",
+            "actor_id": 673237,
+            "detail": "Yainer Diaz singles on a sharp ground ball to center fielder Justin Crawford. Jose Altuve scores.",
+            "score_after": "PHI 0, HOU 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823416:21",
+            "inning": 3,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Christian Walker",
+            "actor_id": 572233,
+            "detail": "Christian Walker grounds into a force out, third baseman Bryson Stott to second baseman Luis Arraez. Yainer Diaz out at 2nd.",
+            "score_after": "PHI 0, HOU 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto singles on a ground ball to center fielder Daulton Varsho.",
+            "score_after": "PHI 0, HOU 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz singles on a ground ball to right fielder Cam Smith. J.T. Realmuto to 3rd.",
+            "score_after": "PHI 0, HOU 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:24",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
             "detail": "Play",
-            "score_after": "PHI 0, HOU 0",
+            "score_after": "PHI 0, HOU 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -688,27 +786,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Yordan Alvarez",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Kyle Schwarber",
+            "meta": "vs Hunter Brown"
           },
           "pitches": [
-            "B",
-            "B",
-            "S",
             "B",
             "F"
           ],
           "count": {
-            "balls": 3,
-            "strikes": 2,
-            "outs": 2
+            "balls": 1,
+            "strikes": 1,
+            "outs": 0
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": true
           },
-          "status": "Top 3rd"
+          "status": "Bottom 3rd"
         }
       }
     },
@@ -725,8 +820,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:22:14.315Z",
-            "freshness_label": "As of Sep 9, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-09T23:34:17.267Z",
+            "freshness_label": "As of Sep 9, 2026, 7:34 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -738,8 +833,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:22:14.315Z",
-            "freshness_label": "As of Sep 9, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-09T23:34:17.267Z",
+            "freshness_label": "As of Sep 9, 2026, 7:34 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -751,8 +846,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:22:14.315Z",
-            "freshness_label": "As of Sep 9, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-09T23:34:17.267Z",
+            "freshness_label": "As of Sep 9, 2026, 7:34 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -764,8 +859,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:22:14.315Z",
-            "freshness_label": "As of Sep 9, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-09T23:34:17.267Z",
+            "freshness_label": "As of Sep 9, 2026, 7:34 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -777,8 +872,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:22:14.315Z",
-            "freshness_label": "As of Sep 9, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-09T23:34:17.267Z",
+            "freshness_label": "As of Sep 9, 2026, 7:34 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -790,8 +885,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:22:14.315Z",
-            "freshness_label": "As of Sep 9, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-09T23:34:17.267Z",
+            "freshness_label": "As of Sep 9, 2026, 7:34 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -803,8 +898,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:22:14.315Z",
-            "freshness_label": "As of Sep 9, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-09T23:34:17.267Z",
+            "freshness_label": "As of Sep 9, 2026, 7:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
