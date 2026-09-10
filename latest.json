@@ -4,7 +4,7 @@
   "edition_date": "2026-09-09",
   "volume": 1,
   "edition": 162,
-  "generated_at": "2026-09-10T00:24:50.650Z",
+  "generated_at": "2026-09-10T01:05:11.497Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, HOU 6",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Bryson Stott is up against Bryan King. Series: HOU leads 1-0.",
+    "headline": "PHI 11, HOU 7",
+    "dek": "Bottom 7th · 0 outs",
+    "summary": "Edmundo Sosa is up against Tatsuya Imai. Series: HOU leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
   },
@@ -55,35 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 79,
-      "condition": "Clear",
-      "wind": "10 mph · gusts 20",
-      "gusts_mph": 20
+      "temp_f": 78,
+      "condition": "Overcast",
+      "wind": "10 mph · gusts 21",
+      "gusts_mph": 21
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Bryan King"
+        "name": "Edmundo Sosa",
+        "meta": "vs Tatsuya Imai"
       },
-      "pitches": [
-        "B",
-        "S",
-        "B",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 1,
+        "balls": 0,
+        "strikes": 0,
         "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": true,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-10T00:24:51.043Z",
+    "updated_at": "2026-09-10T01:05:11.993Z",
     "current_game_pk": 823416,
     "next_game_pk": 823413,
     "next_game": {
@@ -128,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "79° · Clear · gusts 20 mph",
+      "text": "78° · Overcast · gusts 21 mph",
       "highlight": false
     }
   ]

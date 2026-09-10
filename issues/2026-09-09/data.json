@@ -5,14 +5,14 @@
     "edition": 162,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-10T00:24:50.650Z",
+    "generated_at": "2026-09-10T01:05:11.497Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 9, 2026, 8:24 PM ET",
+      "generated_at_et": "Sep 9, 2026, 9:05 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 5, HOU 6",
-    "dek": "Bottom 6th · 0 outs",
-    "summary": "Bryson Stott is up against Bryan King. Series: HOU leads 1-0.",
+    "headline": "PHI 11, HOU 7",
+    "dek": "Bottom 7th · 0 outs",
+    "summary": "Edmundo Sosa is up against Tatsuya Imai. Series: HOU leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "79° · Clear"
+        "value": "78° · Overcast"
       }
     ],
     "bullets": [
-      "Bryson Stott at the plate",
-      "Bryan King on the mound",
+      "Edmundo Sosa at the plate",
+      "Tatsuya Imai on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 79,
-          "condition": "Clear",
-          "wind": "10 mph · gusts 20",
-          "gusts_mph": 20
+          "temp_f": 78,
+          "condition": "Overcast",
+          "wind": "10 mph · gusts 21",
+          "gusts_mph": 21
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,20 +373,20 @@
           }
         },
         "linescore": {
-          "currentInning": 6,
-          "currentInningOrdinal": "6th",
+          "currentInning": 7,
+          "currentInningOrdinal": "7th",
           "inningState": "Bottom",
           "isTopInning": false,
           "outs": 0,
           "teams": {
             "away": {
-              "runs": 6,
-              "hits": 10,
-              "errors": 1
+              "runs": 7,
+              "hits": 12,
+              "errors": 2
             },
             "home": {
-              "runs": 5,
-              "hits": 8,
+              "runs": 11,
+              "hits": 11,
               "errors": 1
             }
           },
@@ -461,11 +461,24 @@
               "away": {
                 "runs": 0,
                 "hits": 0,
+                "errors": 1
+              },
+              "home": {
+                "runs": 6,
+                "hits": 4,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": 1,
+                "hits": 2,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 1,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -1149,11 +1162,221 @@
             "inning": 6,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "reached_on_error",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Play",
+            "detail": "Bryson Stott reaches on a fielding error by first baseman Christian Walker. Luis Arraez to 3rd.",
             "score_after": "PHI 5, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:49",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa singles on a ground ball to right fielder Cam Smith. Luis Arraez scores. Bryson Stott to 2nd.",
+            "score_after": "PHI 6, HOU 6",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823416:50",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Phillies challenged (play at 1st), call on the field was overturned: Justin Crawford singles on a ground ball to shortstop Jeremy P…",
+            "score_after": "PHI 6, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:51",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto strikes out swinging.",
+            "score_after": "PHI 6, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:52",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz walks. Bryson Stott scores. Edmundo Sosa to 3rd. Justin Crawford to 2nd.",
+            "score_after": "PHI 7, HOU 6",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823416:53",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber hits a grand slam (44) to right field. Edmundo Sosa scores. Justin Crawford scores. Bryan De La Cruz scores.",
+            "score_after": "PHI 11, HOU 6",
+            "runs": 4,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823416:54",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner lines out to right fielder Cam Smith.",
+            "score_after": "PHI 11, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:55",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 11, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:56",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "strikeout",
+            "actor": "Jorge Barrosa",
+            "actor_id": 678489,
+            "detail": "Jorge Barrosa strikes out swinging.",
+            "score_after": "PHI 11, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:57",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "extra_base_hit",
+            "actor": "Jeremy Peña",
+            "actor_id": 665161,
+            "detail": "Jeremy Peña doubles (18) on a sharp line drive to center fielder Justin Crawford.",
+            "score_after": "PHI 11, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823416:58",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Yordan Alvarez",
+            "actor_id": 670541,
+            "detail": "Yordan Alvarez lines out to right fielder Bryan De La Cruz. Jeremy Peña to 3rd.",
+            "score_after": "PHI 11, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:59",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "single",
+            "actor": "Isaac Paredes",
+            "actor_id": 670623,
+            "detail": "Isaac Paredes singles on a sharp line drive to center fielder Justin Crawford. Jeremy Peña scores.",
+            "score_after": "PHI 11, HOU 7",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823416:60",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Jose Altuve",
+            "actor_id": 514888,
+            "detail": "Jose Altuve flies out to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 11, HOU 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:61",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez walks.",
+            "score_after": "PHI 11, HOU 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:62",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott walks. Luis Arraez to 2nd.",
+            "score_after": "PHI 11, HOU 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:63",
+            "inning": 7,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Mound Visit.",
+            "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1161,127 +1384,25 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryson Stott",
-            "meta": "vs Bryan King"
+            "name": "Edmundo Sosa",
+            "meta": "vs Tatsuya Imai"
           },
-          "pitches": [
-            "B",
-            "S",
-            "B",
-            "X"
-          ],
+          "pitches": [],
           "count": {
-            "balls": 2,
-            "strikes": 1,
+            "balls": 0,
+            "strikes": 0,
             "outs": 0
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": true,
             "third": false
           },
-          "status": "Bottom 6th"
+          "status": "Bottom 7th"
         }
       }
     },
-    "injury_report": {
-      "content": {
-        "il_entries": [
-          {
-            "name": "Adolis García",
-            "position": "RF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right latissimus dorsi tear",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-10T00:24:50.650Z",
-            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
-          },
-          {
-            "name": "Johan Rojas",
-            "position": "CF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL repair",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-10T00:24:50.650Z",
-            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
-          },
-          {
-            "name": "Lou Trivino III",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right thoracic muscle spasm",
-            "status_note": "",
-            "retroactive_to": "2026-07-07",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-10T00:24:50.650Z",
-            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
-          },
-          {
-            "name": "Tanner Banks",
-            "position": "LHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Left forearm strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-10T00:24:50.650Z",
-            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL tear",
-            "status_note": "",
-            "retroactive_to": "2026-07-13",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-10T00:24:50.650Z",
-            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
-          },
-          {
-            "name": "Caleb Kilian",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Left oblique strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-10T00:24:50.650Z",
-            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
-          },
-          {
-            "name": "Felix Reyes",
-            "position": "LF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right wrist fracture",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-10T00:24:50.650Z",
-            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
-          }
-        ],
-        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
-      }
-    }
+    "injury_report": null
   },
   "next_game": {
     "label": "Tomorrow",
