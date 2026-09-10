@@ -47,6 +47,10 @@ const OUTPUT_HTML = join(__dirname, "phillies-wire-output.html");
 const REPORTS_DIR = join(__dirname, "reports");
 const WHITELIST_DEFAULT = join(__dirname, "factcheck-whitelist.json");
 const ACCURACY_REPORT_FILE = join(__dirname, "dashboard", "accuracy", "accuracy.json");
+// The deployable site tree render.mjs builds. The export runs after render so
+// it can inspect the rendered HTML, so it has to refresh the site mirror of
+// the report itself (verify.mjs requires the two copies to be identical).
+const SITE_ACCURACY_REPORT_FILE = join(__dirname, "site", "dashboard", "accuracy", "accuracy.json");
 const ACCURACY_SCHEMA_VERSION = "accuracy-1.0.0";
 
 const MLB_TEAM_ID_PHI = 143;
@@ -864,9 +868,17 @@ export function buildAccuracyReport({ data, findings, coverage, generatedAt = ne
   };
 }
 
-function writeAccuracyReport(report, path = ACCURACY_REPORT_FILE) {
+export function writeAccuracyReport(report, path = ACCURACY_REPORT_FILE, sitePath = SITE_ACCURACY_REPORT_FILE) {
+  const text = `${JSON.stringify(report, null, 2)}\n`;
   mkdirSync(dirname(path), { recursive: true });
-  writeFileSync(path, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  writeFileSync(path, text, "utf8");
+  // Mirror into the site artifact only when render has already built it;
+  // a standalone factcheck run before render must not conjure a site tree.
+  if (sitePath && existsSync(dirname(dirname(dirname(sitePath))))) {
+    mkdirSync(dirname(sitePath), { recursive: true });
+    writeFileSync(sitePath, text, "utf8");
+  }
+  return text;
 }
 
 function addSection(sections, id, title, items) {
