@@ -32,7 +32,8 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { FETCH_TIMEOUT_MS } from "./config.mjs";
+import { FETCH_TIMEOUT_MS, MLB_API_BASE, TEAM_ID } from "./config.mjs";
+import { getTeamAbbr } from "./shared/phillies-schedule.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -53,18 +54,16 @@ const ACCURACY_REPORT_FILE = join(__dirname, "dashboard", "accuracy", "accuracy.
 const SITE_ACCURACY_REPORT_FILE = join(__dirname, "site", "dashboard", "accuracy", "accuracy.json");
 const ACCURACY_SCHEMA_VERSION = "accuracy-1.0.0";
 
-const MLB_TEAM_ID_PHI = 143;
-const MLB_API = "https://statsapi.mlb.com/api/v1";
+// Team id and API base come from config.mjs, the documented single source
+// for these constants; a second copy here drifted from it once already.
+const MLB_TEAM_ID_PHI = TEAM_ID;
+const MLB_API = MLB_API_BASE;
 const FACTCHECK_FETCH_TIMEOUT_MS = Number(process.env.FACTCHECK_FETCH_TIMEOUT_MS ?? FETCH_TIMEOUT_MS);
 
-// NL East team IDs — used for standings reconciliation
-const NL_EAST_IDS = {
-  PHI: 143,
-  ATL: 144,
-  NYM: 121,
-  MIA: 146,
-  WSH: 120,
-};
+// NL East team ids, used to pick the division rows out of the standings feed.
+// Abbreviations resolve through the shared team table so factcheck and the
+// canonical schedule cannot disagree on a code.
+const NL_EAST_IDS = new Set([143, 144, 121, 146, 120]);
 
 // ---------- Main ----------
 
@@ -684,8 +683,7 @@ function extractNLEast(standings) {
 }
 
 function teamCode(id) {
-  const map = { 143: "PHI", 144: "ATL", 121: "NYM", 146: "MIA", 120: "WSH" };
-  return map[id] ?? null;
+  return NL_EAST_IDS.has(Number(id)) ? getTeamAbbr({ id }) : null;
 }
 
 function getStandingsRows(data) {
