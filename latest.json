@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-09",
+  "edition_date": "2026-09-10",
   "volume": 1,
-  "edition": 162,
-  "generated_at": "2026-09-10T03:48:52.826Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 163,
+  "generated_at": "2026-09-10T04:11:23.768Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 82,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 11, HOU 7.",
-    "dek": "PHI 11, HOU 7 · Hunter Brown · 5.0 IP, 7 H, 4 ER, 7 K",
-    "summary": "PHI 11, HOU 7. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
+    "headline": "Astros @ Phillies · Game 3 of 3",
+    "dek": "Zack Wheeler vs Cristian Javier",
+    "summary": "Zack Wheeler vs Cristian Javier · Astros @ Phillies · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
+    "next_value": "Chris Sale · PHI @ ATL · Fri, Sep 11 · 7:15 PM"
   },
   "game": {
-    "matchup": "Astros @ Phillies · Game 2 of 3",
-    "first_pitch": "6:40 PM",
+    "matchup": "Astros @ Phillies · Game 3 of 3",
+    "first_pitch": "1:05 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "away": {
-        "name": "Hunter Brown",
+        "name": "Cristian Javier",
         "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Hunter Brown",
+        "name": "Cristian Javier",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "HOU leads 1-0"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "NBC 10",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 74,
       "condition": "Clear",
-      "wind": "9 mph · gusts 23",
-      "gusts_mph": 23
+      "wind": "9 mph · gusts 24",
+      "gusts_mph": 24
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-10T03:48:53.513Z",
+    "updated_at": "2026-09-10T04:11:24.296Z",
     "current_game_pk": 823413,
     "next_game_pk": 824873,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Astros @ Phillies · Game 2 of 3 · 6:40 PM",
+      "text": "Astros @ Phillies · Game 3 of 3 · 1:05 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Hunter Brown",
+      "text": "Zack Wheeler vs Cristian Javier",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "NBC 10 · 94 WIP",
       "highlight": false
     },
     {
-      "text": "74° · Clear · gusts 23 mph",
+      "text": "74° · Clear · gusts 24 mph",
       "highlight": false
     }
   ]

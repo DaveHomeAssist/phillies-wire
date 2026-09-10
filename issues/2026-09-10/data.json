@@ -1,0 +1,504 @@
+{
+  "schema_version": "1.4.0",
+  "meta": {
+    "date": "2026-09-10",
+    "edition": 163,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-09-10T04:11:23.768Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Sep 10, 2026, 12:11 AM ET",
+      "source_notes": [
+        "Farm system notes hidden because the editorial baseline is stale."
+      ]
+    }
+  },
+  "record": {
+    "wins": 82,
+    "losses": 64,
+    "streak": "W1",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Astros @ Phillies · Game 3 of 3",
+    "dek": "Zack Wheeler vs Cristian Javier",
+    "summary": "Zack Wheeler vs Cristian Javier · Astros @ Phillies · Game 3 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "1:05 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "Citizens Bank Park, Philadelphia"
+      },
+      {
+        "label": "Watch",
+        "value": "NBC 10 · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "74° · Clear · 9 mph · gusts 24",
+      "HOU leads 1-0"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "Chris Sale · PHI @ ATL · Fri, Sep 11 · 7:15 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "1:05 PM",
+        "starters": {
+          "home": {
+            "team": "PHI",
+            "name": "Zack Wheeler",
+            "hand": "R"
+          },
+          "away": {
+            "team": "HOU",
+            "name": "Cristian Javier",
+            "hand": "R"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Zack Wheeler",
+            "hand": "R"
+          },
+          "opp": {
+            "team": "HOU",
+            "name": "Cristian Javier",
+            "hand": "R"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Astros @ Phillies · Game 3 of 3",
+        "first_pitch": "1:05 PM",
+        "venue": "Citizens Bank Park, Philadelphia",
+        "starters": {
+          "home": {
+            "name": "Zack Wheeler",
+            "hand": "R"
+          },
+          "away": {
+            "name": "Cristian Javier",
+            "hand": "R"
+          },
+          "phi": {
+            "name": "Zack Wheeler",
+            "hand": "R"
+          },
+          "opp": {
+            "name": "Cristian Javier",
+            "hand": "R"
+          }
+        },
+        "series": {
+          "home_wins": 0,
+          "away_wins": 0,
+          "label": "HOU leads 1-0"
+        },
+        "broadcast": {
+          "tv": "NBC 10",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 74,
+          "condition": "Clear",
+          "wind": "9 mph · gusts 24",
+          "gusts_mph": 24
+        },
+        "giveaway": "",
+        "transit": "Broad Street Line to NRG Station",
+        "venue_is_home": true,
+        "matchup_tape": {
+          "home": {
+            "team": "PHI",
+            "name": "Zack Wheeler",
+            "hand": "R",
+            "era": "3.23",
+            "record": "12-5",
+            "whip": "1.08"
+          },
+          "away": {
+            "team": "HOU",
+            "name": "Cristian Javier",
+            "hand": "R",
+            "era": "5.98",
+            "record": "2-5",
+            "whip": "1.55"
+          }
+        },
+        "linescore": {
+          "currentInning": null,
+          "currentInningOrdinal": "",
+          "inningState": "",
+          "isTopInning": false,
+          "outs": null,
+          "teams": {
+            "away": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            },
+            "home": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            }
+          },
+          "innings": []
+        },
+        "plays": []
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-10T04:11:23.768Z",
+            "freshness_label": "As of Sep 10, 2026, 12:11 AM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-10T04:11:23.768Z",
+            "freshness_label": "As of Sep 10, 2026, 12:11 AM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-10T04:11:23.768Z",
+            "freshness_label": "As of Sep 10, 2026, 12:11 AM ET"
+          },
+          {
+            "name": "Tanner Banks",
+            "position": "LHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Left forearm strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-10T04:11:23.768Z",
+            "freshness_label": "As of Sep 10, 2026, 12:11 AM ET"
+          },
+          {
+            "name": "Brad Keller",
+            "position": "RHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL tear",
+            "status_note": "",
+            "retroactive_to": "2026-07-13",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-10T04:11:23.768Z",
+            "freshness_label": "As of Sep 10, 2026, 12:11 AM ET"
+          },
+          {
+            "name": "Caleb Kilian",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left oblique strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-10T04:11:23.768Z",
+            "freshness_label": "As of Sep 10, 2026, 12:11 AM ET"
+          },
+          {
+            "name": "Felix Reyes",
+            "position": "LF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right wrist fracture",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-10T04:11:23.768Z",
+            "freshness_label": "As of Sep 10, 2026, 12:11 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Tomorrow",
+    "matchup": "Chris Sale · PHI @ ATL",
+    "date": "Fri, Sep 11",
+    "time": "7:15 PM",
+    "broadcast": "NBCSP",
+    "venue": "Truist Park"
+  }
+}
