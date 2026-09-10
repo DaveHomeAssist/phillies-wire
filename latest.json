@@ -4,7 +4,7 @@
   "edition_date": "2026-09-10",
   "volume": 1,
   "edition": 163,
-  "generated_at": "2026-09-10T19:19:12.716Z",
+  "generated_at": "2026-09-10T19:34:40.029Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, HOU 1",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "Brandon Marsh is up against Bryan Abreu. Series: Series tied 1-1.",
+    "headline": "PHI 1, HOU 2",
+    "dek": "Bottom 9th · 0 outs",
+    "summary": "Edmundo Sosa is up against Josh Hader. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Chris Sale · PHI @ ATL · Fri, Sep 11 · 7:15 PM"
   },
@@ -55,30 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 89,
+      "temp_f": 88,
       "condition": "Clear",
-      "wind": "11 mph · gusts 16",
-      "gusts_mph": 16
+      "wind": "10 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Bryan Abreu"
+        "name": "Edmundo Sosa",
+        "meta": "vs Josh Hader"
       },
-      "pitches": [],
+      "pitches": [
+        "F",
+        "F"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 8th"
+      "status": "Bottom 9th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-10T19:19:13.237Z",
+    "updated_at": "2026-09-10T19:34:40.772Z",
     "current_game_pk": 823413,
     "next_game_pk": 824873,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "89° · Clear · gusts 16 mph",
+      "text": "88° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]
