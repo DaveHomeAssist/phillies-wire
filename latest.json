@@ -4,7 +4,7 @@
   "edition_date": "2026-09-10",
   "volume": 1,
   "edition": 163,
-  "generated_at": "2026-09-10T17:22:38.891Z",
+  "generated_at": "2026-09-10T17:34:36.649Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, HOU 0",
-    "dek": "Top 2nd · 1 out",
-    "summary": "Daulton Varsho is up against Zack Wheeler. Series: Series tied 1-1.",
+    "headline": "PHI 0, HOU 1",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Luis Arraez is up against Cristian Javier. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Chris Sale · PHI @ ATL · Fri, Sep 11 · 7:15 PM"
   },
@@ -55,33 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 87,
+      "temp_f": 88,
       "condition": "Overcast",
-      "wind": "10 mph · gusts 16",
-      "gusts_mph": 16
+      "wind": "9 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Daulton Varsho",
-        "meta": "vs Zack Wheeler"
+        "name": "Luis Arraez",
+        "meta": "vs Cristian Javier"
       },
       "pitches": [
         "S",
-        "B"
+        "B",
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 2,
         "strikes": 1,
-        "outs": 0
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 2nd"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-10T17:22:39.528Z",
+    "updated_at": "2026-09-10T17:34:37.431Z",
     "current_game_pk": 823413,
     "next_game_pk": 824873,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "87° · Overcast · gusts 16 mph",
+      "text": "88° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
