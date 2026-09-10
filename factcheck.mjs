@@ -32,7 +32,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { FETCH_TIMEOUT_MS, MLB_API_BASE, TEAM_ID } from "./config.mjs";
+import { FETCH_TIMEOUT_MS, MLB_API_BASE, SITE_URL, TEAM_ID } from "./config.mjs";
 import { getTeamAbbr } from "./shared/phillies-schedule.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -40,8 +40,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // ---------- Config ----------
 
 const DEFAULT_DS_ID = "f67f24d7-9acf-4598-8a8b-6c74a61ae7bb";
-const DEFAULT_WIRE_ROOT = "https://davehomeassist.github.io/phillies-wire/";
-const DEFAULT_DASHBOARD = "https://davehomeassist.github.io/phillies-wire/dashboard/";
+const DEFAULT_WIRE_ROOT = `${SITE_URL}/`;
+const DEFAULT_DASHBOARD = `${SITE_URL}/dashboard/`;
 
 const DATA_FILE = join(__dirname, "phillies-wire-data.json");
 const OUTPUT_HTML = join(__dirname, "phillies-wire-output.html");

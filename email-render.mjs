@@ -7,11 +7,10 @@
 // design project's email.html. Track A correctness is preserved: transit is
 // shown only on home games; broadcast/weather come straight from the data.
 
-import { SUBSCRIBE_URL } from "./config.mjs";
+import { SITE_URL, SUBSCRIBE_URL } from "./config.mjs";
 
 const DISPLAY = "'Barlow Condensed','Arial Narrow',Arial,sans-serif";
 const BODY = "'Inter',Helvetica,Arial,sans-serif";
-const SITE_URL = "https://phillieswire.com";
 
 const EMAIL = {
   page: "#e7e0d3",

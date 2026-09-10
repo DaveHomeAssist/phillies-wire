@@ -22,6 +22,13 @@ export const WEATHER_URL = buildWeatherUrl();
 
 export const SCHEMA_VERSION = "1.2.0";
 
+// Public origin of the published site (CNAME). Every generated absolute URL
+// (sitemap, feed, JSON-LD, email links, accuracy report sources, health probe)
+// must derive from this one constant. PHILLIES_WIRE_BASE_URL overrides it
+// for preview deploys and the post-deploy health check.
+export const DEFAULT_SITE_URL = "https://phillieswire.com";
+export const SITE_URL = (process.env.PHILLIES_WIRE_BASE_URL?.trim() || DEFAULT_SITE_URL).replace(/\/$/, "");
+
 export const CLAUDE_MODEL = process.env.ENRICH_MODEL?.trim() || "claude-sonnet-4-5";
 
 export const CLAUDE_MAX_TOKENS = Number(process.env.ENRICH_MAX_TOKENS || 4000);

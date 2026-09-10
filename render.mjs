@@ -13,7 +13,7 @@ import { pathToFileURL } from "node:url";
 
 import { ensureCanonicalScheduleArtifacts } from "./canonical-schedule.mjs";
 import { CANONICAL_SCHEDULE_PATH } from "./shared/phillies-schedule.mjs";
-import { SUBSCRIBE_URL } from "./config.mjs";
+import { SITE_URL, SUBSCRIBE_URL } from "./config.mjs";
 
 const DATA_FILE = "./phillies-wire-data.json";
 const TEMPLATE_FILE = "./phillies-wire-v2.html";
@@ -36,7 +36,6 @@ const ISSUE_DATA_SCHEMA_VERSION = "1.4.0";
 // leaves headroom above the largest observed plays-less payload (20,494 bytes
 // on 2026-07-02 blocked four deploys at the old 20 KB gate).
 export const ISSUE_DATA_BUDGET_BYTES = 24 * 1024;
-const SITE_URL = process.env.PHILLIES_WIRE_BASE_URL ?? "https://phillieswire.com";
 const DEFAULT_OG_IMAGE_PATH = "og-default.svg";
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
