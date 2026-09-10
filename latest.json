@@ -4,9 +4,9 @@
   "edition_date": "2026-09-10",
   "volume": 1,
   "edition": 163,
-  "generated_at": "2026-09-10T16:35:49.767Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-10T16:48:16.915Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 82,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Astros @ Phillies · Game 3 of 3",
-    "dek": "Zack Wheeler vs Cristian Javier",
-    "summary": "Zack Wheeler vs Cristian Javier · Astros @ Phillies · Game 3 of 3",
+    "headline": "PHI 0, HOU 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Jeremy Peña is up against Zack Wheeler. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Chris Sale · PHI @ ATL · Fri, Sep 11 · 7:15 PM"
   },
@@ -62,14 +62,31 @@
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Jeremy Peña",
+        "meta": "vs Zack Wheeler"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-10T16:35:50.003Z",
+    "updated_at": "2026-09-10T16:48:17.692Z",
     "current_game_pk": 823413,
     "next_game_pk": 824873,
     "next_game": {
