@@ -4,7 +4,7 @@
   "edition_date": "2026-09-09",
   "volume": 1,
   "edition": 162,
-  "generated_at": "2026-09-09T23:47:57.338Z",
+  "generated_at": "2026-09-10T00:24:50.650Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, HOU 4",
-    "dek": "Top 4th · 0 outs",
-    "summary": "Daulton Varsho is up against Cristopher Sánchez. Series: HOU leads 1-0.",
+    "headline": "PHI 5, HOU 6",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Bryson Stott is up against Bryan King. Series: HOU leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Clear",
       "wind": "10 mph · gusts 20",
       "gusts_mph": 20
@@ -64,13 +64,13 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Daulton Varsho",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Bryson Stott",
+        "meta": "vs Bryan King"
       },
       "pitches": [
         "B",
-        "B",
         "S",
+        "B",
         "X"
       ],
       "count": {
@@ -80,10 +80,10 @@
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": false
       },
-      "status": "Top 4th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -91,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-09T23:47:58.106Z",
+    "updated_at": "2026-09-10T00:24:51.043Z",
     "current_game_pk": 823416,
     "next_game_pk": 823413,
     "next_game": {
@@ -128,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 20 mph",
+      "text": "79° · Clear · gusts 20 mph",
       "highlight": false
     }
   ]

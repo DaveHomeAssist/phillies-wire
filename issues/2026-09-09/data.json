@@ -5,14 +5,14 @@
     "edition": 162,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-09T23:47:57.338Z",
+    "generated_at": "2026-09-10T00:24:50.650Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 9, 2026, 7:47 PM ET",
+      "generated_at_et": "Sep 9, 2026, 8:24 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 4, HOU 4",
-    "dek": "Top 4th · 0 outs",
-    "summary": "Daulton Varsho is up against Cristopher Sánchez. Series: HOU leads 1-0.",
+    "headline": "PHI 5, HOU 6",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Bryson Stott is up against Bryan King. Series: HOU leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "80° · Clear"
+        "value": "79° · Clear"
       }
     ],
     "bullets": [
-      "Daulton Varsho at the plate",
-      "Cristopher Sánchez on the mound",
+      "Bryson Stott at the plate",
+      "Bryan King on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -346,7 +346,7 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 80,
+          "temp_f": 79,
           "condition": "Clear",
           "wind": "10 mph · gusts 20",
           "gusts_mph": 20
@@ -359,35 +359,35 @@
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.73",
+            "era": "2.79",
             "record": "16-5",
-            "whip": "1.22"
+            "whip": "1.21"
           },
           "away": {
             "team": "HOU",
             "name": "Hunter Brown",
             "hand": "R",
-            "era": "3.50",
+            "era": "3.52",
             "record": "5-3",
-            "whip": "1.32"
+            "whip": "1.30"
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
-          "inningState": "Top",
-          "isTopInning": true,
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
+          "inningState": "Bottom",
+          "isTopInning": false,
           "outs": 0,
           "teams": {
             "away": {
-              "runs": 4,
-              "hits": 7,
+              "runs": 6,
+              "hits": 10,
               "errors": 1
             },
             "home": {
-              "runs": 4,
-              "hits": 6,
-              "errors": 0
+              "runs": 5,
+              "hits": 8,
+              "errors": 1
             }
           },
           "innings": [
@@ -433,13 +433,39 @@
             {
               "num": 4,
               "away": {
-                "runs": null,
+                "runs": 2,
+                "hits": 3,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 1
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -857,11 +883,277 @@
             "inning": 4,
             "half": "top",
             "team": "HOU",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Daulton Varsho",
             "actor_id": 662139,
-            "detail": "Play",
+            "detail": "Daulton Varsho singles on a bunt ground ball to second baseman Luis Arraez. Daulton Varsho to 2nd. Daulton Varsho advances to 2nd,…",
             "score_after": "PHI 4, HOU 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:30",
+            "inning": 4,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "home_run",
+            "actor": "Cam Smith",
+            "actor_id": 701358,
+            "detail": "Cam Smith homers (19) on a fly ball to center field. Daulton Varsho scores.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823416:31",
+            "inning": 4,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Jorge Barrosa",
+            "actor_id": 678489,
+            "detail": "Jorge Barrosa grounds out to first baseman Kyle Schwarber.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:32",
+            "inning": 4,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "single",
+            "actor": "Jeremy Peña",
+            "actor_id": 665161,
+            "detail": "Jeremy Peña singles on a sharp line drive to center fielder Justin Crawford.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:33",
+            "inning": 4,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "other",
+            "actor": "Yordan Alvarez",
+            "actor_id": 670541,
+            "detail": "Yordan Alvarez grounds into a double play, second baseman Luis Arraez to shortstop Trea Turner to first baseman Kyle Schwarber. Jer…",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:34",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh grounds out, second baseman Jose Altuve to first baseman Christian Walker.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:35",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford strikes out swinging.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:36",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto called out on strikes.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:37",
+            "inning": 5,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "strikeout",
+            "actor": "Isaac Paredes",
+            "actor_id": 670623,
+            "detail": "Isaac Paredes strikes out swinging.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:38",
+            "inning": 5,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Jose Altuve",
+            "actor_id": 514888,
+            "detail": "Jose Altuve grounds out, shortstop Trea Turner to first baseman Kyle Schwarber.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:39",
+            "inning": 5,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Yainer Diaz",
+            "actor_id": 673237,
+            "detail": "Yainer Diaz grounds out sharply, second baseman Luis Arraez to first baseman Kyle Schwarber.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:40",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz flies out to right fielder Cam Smith.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:41",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to left fielder Jorge Barrosa.",
+            "score_after": "PHI 4, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:42",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner homers (19) on a fly ball to right center field.",
+            "score_after": "PHI 5, HOU 6",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823416:43",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper called out on strikes.",
+            "score_after": "PHI 5, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:44",
+            "inning": 6,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Christian Walker",
+            "actor_id": 572233,
+            "detail": "Christian Walker grounds out, third baseman Bryson Stott to first baseman Kyle Schwarber.",
+            "score_after": "PHI 5, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:45",
+            "inning": 6,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Daulton Varsho",
+            "actor_id": 662139,
+            "detail": "Daulton Varsho grounds out, first baseman Kyle Schwarber to pitcher Cristopher Sánchez.",
+            "score_after": "PHI 5, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:46",
+            "inning": 6,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Cam Smith",
+            "actor_id": 701358,
+            "detail": "Cam Smith flies out to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 5, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:47",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez doubles (30) on a line drive to left fielder Jorge Barrosa.",
+            "score_after": "PHI 5, HOU 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823416:48",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Play",
+            "score_after": "PHI 5, HOU 6",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -869,13 +1161,13 @@
         ],
         "situation": {
           "batter": {
-            "name": "Daulton Varsho",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Bryson Stott",
+            "meta": "vs Bryan King"
           },
           "pitches": [
             "B",
-            "B",
             "S",
+            "B",
             "X"
           ],
           "count": {
@@ -885,10 +1177,10 @@
           },
           "bases": {
             "first": false,
-            "second": false,
+            "second": true,
             "third": false
           },
-          "status": "Top 4th"
+          "status": "Bottom 6th"
         }
       }
     },
@@ -905,8 +1197,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:47:57.338Z",
-            "freshness_label": "As of Sep 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-10T00:24:50.650Z",
+            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -918,8 +1210,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:47:57.338Z",
-            "freshness_label": "As of Sep 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-10T00:24:50.650Z",
+            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -931,8 +1223,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:47:57.338Z",
-            "freshness_label": "As of Sep 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-10T00:24:50.650Z",
+            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -944,8 +1236,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:47:57.338Z",
-            "freshness_label": "As of Sep 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-10T00:24:50.650Z",
+            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -957,8 +1249,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:47:57.338Z",
-            "freshness_label": "As of Sep 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-10T00:24:50.650Z",
+            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -970,8 +1262,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:47:57.338Z",
-            "freshness_label": "As of Sep 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-10T00:24:50.650Z",
+            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -983,8 +1275,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-09T23:47:57.338Z",
-            "freshness_label": "As of Sep 9, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-10T00:24:50.650Z",
+            "freshness_label": "As of Sep 9, 2026, 8:24 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
