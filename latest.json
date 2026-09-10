@@ -4,7 +4,7 @@
   "edition_date": "2026-09-09",
   "volume": 1,
   "edition": 162,
-  "generated_at": "2026-09-10T01:05:11.497Z",
+  "generated_at": "2026-09-10T01:31:46.277Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 11, HOU 7",
-    "dek": "Bottom 7th · 0 outs",
-    "summary": "Edmundo Sosa is up against Tatsuya Imai. Series: HOU leads 1-0.",
+    "dek": "End 8th · 3 outs",
+    "summary": "Jorge Barrosa is up against Alex McFarlane. Series: HOU leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
   },
@@ -57,28 +57,32 @@
     "weather": {
       "temp_f": 78,
       "condition": "Overcast",
-      "wind": "10 mph · gusts 21",
-      "gusts_mph": 21
+      "wind": "11 mph · gusts 28",
+      "gusts_mph": 28
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Edmundo Sosa",
-        "meta": "vs Tatsuya Imai"
+        "name": "Jorge Barrosa",
+        "meta": "vs Alex McFarlane"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "F",
+        "X"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 7th"
+      "status": "End 8th"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-10T01:05:11.993Z",
+    "updated_at": "2026-09-10T01:31:46.509Z",
     "current_game_pk": 823416,
     "next_game_pk": 823413,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 21 mph",
+      "text": "78° · Overcast · gusts 28 mph",
       "highlight": false
     }
   ]
