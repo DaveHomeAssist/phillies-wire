@@ -4,21 +4,21 @@
   "edition_date": "2026-09-09",
   "volume": 1,
   "edition": 162,
-  "generated_at": "2026-09-10T01:31:46.277Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-10T01:54:46.698Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 81,
+    "wins": 82,
     "losses": 64,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 11, HOU 7",
-    "dek": "End 8th · 3 outs",
-    "summary": "Jorge Barrosa is up against Alex McFarlane. Series: HOU leads 1-0.",
+    "headline": "PHI 11, HOU 7.",
+    "dek": "PHI 11, HOU 7 · Hunter Brown · 5.0 IP, 7 H, 4 ER, 7 K",
+    "summary": "PHI 11, HOU 7. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "HOU leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,61 +57,40 @@
     "weather": {
       "temp_f": 78,
       "condition": "Overcast",
-      "wind": "11 mph · gusts 28",
-      "gusts_mph": 28
+      "wind": "12 mph · gusts 29",
+      "gusts_mph": 29
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Jorge Barrosa",
-        "meta": "vs Alex McFarlane"
-      },
-      "pitches": [
-        "S",
-        "F",
-        "X"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "End 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-10T01:31:46.509Z",
-    "current_game_pk": 823416,
-    "next_game_pk": 823413,
+    "updated_at": "2026-09-10T01:54:47.185Z",
+    "current_game_pk": 823413,
+    "next_game_pk": 824873,
     "next_game": {
-      "game_pk": 823413,
-      "official_date": "2026-09-10",
-      "date_label": "Thu, Sep 10, 2026",
-      "time_label": "1:05 PM",
-      "title": "Houston Astros at Phillies",
-      "matchup": "HOU at PHI",
-      "venue": "Citizens Bank Park"
+      "game_pk": 824873,
+      "official_date": "2026-09-11",
+      "date_label": "Fri, Sep 11, 2026",
+      "time_label": "7:15 PM",
+      "title": "Phillies at Atlanta Braves",
+      "matchup": "PHI at ATL",
+      "venue": "Truist Park"
     },
     "current_game": {
-      "game_pk": 823416,
-      "official_date": "2026-09-09",
+      "game_pk": 823413,
+      "official_date": "2026-09-10",
       "title": "Houston Astros at Phillies",
       "matchup": "HOU at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 81-64",
+      "text": "PHI 82-64",
       "highlight": true
     },
     {
@@ -127,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 28 mph",
+      "text": "78° · Overcast · gusts 29 mph",
       "highlight": false
     }
   ]

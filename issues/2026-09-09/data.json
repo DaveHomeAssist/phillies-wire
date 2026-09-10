@@ -5,313 +5,56 @@
     "edition": 162,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-10T01:31:46.277Z",
+    "generated_at": "2026-09-10T01:54:46.698Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 9, 2026, 9:31 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 9, 2026, 9:54 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 81,
+    "wins": 82,
     "losses": 64,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 11, HOU 7",
-    "dek": "End 8th · 3 outs",
-    "summary": "Jorge Barrosa is up against Alex McFarlane. Series: HOU leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 11, HOU 7.",
+    "dek": "PHI 11, HOU 7 · Hunter Brown · 5.0 IP, 7 H, 4 ER, 7 K",
+    "summary": "PHI 11, HOU 7. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "78° · Overcast"
+        "label": "Series",
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "Jorge Barrosa at the plate",
-      "Alex McFarlane on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Hunter Brown: 5.0 IP, 7 H, 4 ER, 7 K",
+      "Cristopher Sánchez: 6.0 IP, 10 H, 6 ER, 3 K",
+      "Isaac Paredes: 2-for-4, 1 HR, 3 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cristian Javier · PHI vs HOU · Thu, Sep 10 · 1:05 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's HOU at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:40 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "away": {
-            "team": "HOU",
-            "name": "Hunter Brown",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "HOU",
-            "name": "Hunter Brown",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Jeremy Peña",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Yordan Alvarez",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Isaac Paredes",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Jose Altuve",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Yainer Diaz",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Christian Walker",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Daulton Varsho",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Cam Smith",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Jorge Barrosa",
-              "position": "LF",
-              "bats": "S"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Bryan De La Cruz",
-              "position": "RF",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Jeremy Peña",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Yordan Alvarez",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Isaac Paredes",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Jose Altuve",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Yainer Diaz",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Christian Walker",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Daulton Varsho",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Cam Smith",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Jorge Barrosa",
-              "position": "LF",
-              "bats": "S"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Astros @ Phillies · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "HOU leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 78,
           "condition": "Overcast",
-          "wind": "11 mph · gusts 28",
-          "gusts_mph": 28
+          "wind": "12 mph · gusts 29",
+          "gusts_mph": 29
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -360,7 +103,7 @@
             "name": "Cristopher Sánchez",
             "hand": "L",
             "era": "2.79",
-            "record": "16-5",
+            "record": "17-5",
             "whip": "1.21"
           },
           "away": {
@@ -373,10 +116,10 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "End",
-          "isTopInning": false,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
+          "isTopInning": true,
           "outs": 3,
           "teams": {
             "away": {
@@ -494,6 +237,19 @@
                 "hits": 1,
                 "errors": 1
               }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              }
             }
           ]
         },
@@ -520,7 +276,7 @@
             "event_type": "single",
             "actor": "Yordan Alvarez",
             "actor_id": 670541,
-            "detail": "Yordan Alvarez singles on a line drive…",
+            "detail": "Yordan Alvarez singles on a line drive to right fielder Bryan De La Cruz.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -534,7 +290,7 @@
             "event_type": "other",
             "actor": "Isaac Paredes",
             "actor_id": 670623,
-            "detail": "Isaac Paredes grounds into a double pla…",
+            "detail": "Isaac Paredes grounds into a double play, third baseman Bryson Stott to second baseman Luis Arr…",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -562,7 +318,7 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds out, second baseman…",
+            "detail": "Trea Turner grounds out, second baseman Jose Altuve to first baseman Christian Walker.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -604,7 +360,7 @@
             "event_type": "extra_base_hit",
             "actor": "Yainer Diaz",
             "actor_id": 673237,
-            "detail": "Yainer Diaz doubles (13) on a sharp lin…",
+            "detail": "Yainer Diaz doubles (13) on a sharp line drive to left fielder Brandon Marsh.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -618,7 +374,7 @@
             "event_type": "out",
             "actor": "Christian Walker",
             "actor_id": 572233,
-            "detail": "Christian Walker pops out to shortstop…",
+            "detail": "Christian Walker pops out to shortstop Trea Turner.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -632,7 +388,7 @@
             "event_type": "out",
             "actor": "Daulton Varsho",
             "actor_id": 662139,
-            "detail": "Daulton Varsho grounds out, first basem…",
+            "detail": "Daulton Varsho grounds out, first baseman Kyle Schwarber to pitcher Cristopher Sánchez.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -646,7 +402,7 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out to center fielder…",
+            "detail": "Luis Arraez flies out to center fielder Daulton Varsho.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -660,7 +416,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out, second basema…",
+            "detail": "Bryson Stott grounds out, second baseman Jose Altuve to first baseman Christian Walker.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -674,7 +430,7 @@
             "event_type": "single",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh singles on a sharp line d…",
+            "detail": "Brandon Marsh singles on a sharp line drive to right fielder Cam Smith.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -688,7 +444,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds out sharply, sh…",
+            "detail": "Justin Crawford grounds out sharply, shortstop Jeremy Peña to first baseman Christian Walker.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -702,7 +458,7 @@
             "event_type": "single",
             "actor": "Cam Smith",
             "actor_id": 701358,
-            "detail": "Cam Smith singles on a ground ball to r…",
+            "detail": "Cam Smith singles on a ground ball to right fielder Bryan De La Cruz.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -716,7 +472,7 @@
             "event_type": "out",
             "actor": "Jorge Barrosa",
             "actor_id": 678489,
-            "detail": "Jorge Barrosa out on a sacrifice bunt,…",
+            "detail": "Jorge Barrosa out on a sacrifice bunt, first baseman Kyle Schwarber to second baseman Luis Arra…",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -730,7 +486,7 @@
             "event_type": "out",
             "actor": "Jeremy Peña",
             "actor_id": 665161,
-            "detail": "Jeremy Peña grounds out to first basema…",
+            "detail": "Jeremy Peña grounds out to first baseman Kyle Schwarber. Cam Smith to 3rd.",
             "score_after": "PHI 0, HOU 0",
             "runs": 0,
             "is_scoring": false,
@@ -744,7 +500,7 @@
             "event_type": "extra_base_hit",
             "actor": "Yordan Alvarez",
             "actor_id": 670541,
-            "detail": "Yordan Alvarez doubles (30) on a line d…",
+            "detail": "Yordan Alvarez doubles (30) on a line drive to center fielder Justin Crawford. Cam Smith scores.",
             "score_after": "PHI 0, HOU 1",
             "runs": 1,
             "is_scoring": true,
@@ -758,7 +514,7 @@
             "event_type": "home_run",
             "actor": "Isaac Paredes",
             "actor_id": 670623,
-            "detail": "Isaac Paredes homers (19) on a fly ball…",
+            "detail": "Isaac Paredes homers (19) on a fly ball to left center field. Yordan Alvarez scores.",
             "score_after": "PHI 0, HOU 3",
             "runs": 2,
             "is_scoring": true,
@@ -772,7 +528,7 @@
             "event_type": "extra_base_hit",
             "actor": "Jose Altuve",
             "actor_id": 514888,
-            "detail": "Jose Altuve doubles (21) on a sharp lin…",
+            "detail": "Jose Altuve doubles (21) on a sharp line drive to center fielder Justin Crawford.",
             "score_after": "PHI 0, HOU 3",
             "runs": 0,
             "is_scoring": false,
@@ -786,7 +542,7 @@
             "event_type": "single",
             "actor": "Yainer Diaz",
             "actor_id": 673237,
-            "detail": "Yainer Diaz singles on a sharp ground b…",
+            "detail": "Yainer Diaz singles on a sharp ground ball to center fielder Justin Crawford. Jose Altuve score…",
             "score_after": "PHI 0, HOU 4",
             "runs": 1,
             "is_scoring": true,
@@ -800,7 +556,7 @@
             "event_type": "out",
             "actor": "Christian Walker",
             "actor_id": 572233,
-            "detail": "Christian Walker grounds into a force o…",
+            "detail": "Christian Walker grounds into a force out, third baseman Bryson Stott to second baseman Luis Ar…",
             "score_after": "PHI 0, HOU 4",
             "runs": 0,
             "is_scoring": false,
@@ -814,7 +570,7 @@
             "event_type": "single",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto singles on a ground ball…",
+            "detail": "J.T. Realmuto singles on a ground ball to center fielder Daulton Varsho.",
             "score_after": "PHI 0, HOU 4",
             "runs": 0,
             "is_scoring": false,
@@ -828,7 +584,7 @@
             "event_type": "single",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz singles on a ground ba…",
+            "detail": "Bryan De La Cruz singles on a ground ball to right fielder Cam Smith. J.T. Realmuto to 3rd.",
             "score_after": "PHI 0, HOU 4",
             "runs": 0,
             "is_scoring": false,
@@ -856,7 +612,7 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a ground ball to…",
+            "detail": "Trea Turner singles on a ground ball to right fielder Cam Smith. J.T. Realmuto scores. Bryan De…",
             "score_after": "PHI 1, HOU 4",
             "runs": 1,
             "is_scoring": true,
@@ -870,7 +626,7 @@
             "event_type": "single",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper singles on a ground ball t…",
+            "detail": "Bryce Harper singles on a ground ball to right fielder Cam Smith. Bryan De La Cruz scores. Trea…",
             "score_after": "PHI 3, HOU 4",
             "runs": 2,
             "is_scoring": true,
@@ -884,7 +640,7 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez singles on a ground ball to…",
+            "detail": "Luis Arraez singles on a ground ball to center fielder Daulton Varsho. Bryce Harper scores.",
             "score_after": "PHI 4, HOU 4",
             "runs": 1,
             "is_scoring": true,
@@ -912,7 +668,7 @@
             "event_type": "single",
             "actor": "Daulton Varsho",
             "actor_id": 662139,
-            "detail": "Daulton Varsho singles on a bunt ground…",
+            "detail": "Daulton Varsho singles on a bunt ground ball to second baseman Luis Arraez. Daulton Varsho to 2…",
             "score_after": "PHI 4, HOU 4",
             "runs": 0,
             "is_scoring": false,
@@ -926,7 +682,7 @@
             "event_type": "home_run",
             "actor": "Cam Smith",
             "actor_id": 701358,
-            "detail": "Cam Smith homers (19) on a fly ball to…",
+            "detail": "Cam Smith homers (19) on a fly ball to center field. Daulton Varsho scores.",
             "score_after": "PHI 4, HOU 6",
             "runs": 2,
             "is_scoring": true,
@@ -940,7 +696,7 @@
             "event_type": "out",
             "actor": "Jorge Barrosa",
             "actor_id": 678489,
-            "detail": "Jorge Barrosa grounds out to first base…",
+            "detail": "Jorge Barrosa grounds out to first baseman Kyle Schwarber.",
             "score_after": "PHI 4, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -954,7 +710,7 @@
             "event_type": "single",
             "actor": "Jeremy Peña",
             "actor_id": 665161,
-            "detail": "Jeremy Peña singles on a sharp line dri…",
+            "detail": "Jeremy Peña singles on a sharp line drive to center fielder Justin Crawford.",
             "score_after": "PHI 4, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -968,7 +724,7 @@
             "event_type": "other",
             "actor": "Yordan Alvarez",
             "actor_id": 670541,
-            "detail": "Yordan Alvarez grounds into a double pl…",
+            "detail": "Yordan Alvarez grounds into a double play, second baseman Luis Arraez to shortstop Trea Turner…",
             "score_after": "PHI 4, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -982,7 +738,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out, second basem…",
+            "detail": "Brandon Marsh grounds out, second baseman Jose Altuve to first baseman Christian Walker.",
             "score_after": "PHI 4, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1038,7 +794,7 @@
             "event_type": "out",
             "actor": "Jose Altuve",
             "actor_id": 514888,
-            "detail": "Jose Altuve grounds out, shortstop Trea…",
+            "detail": "Jose Altuve grounds out, shortstop Trea Turner to first baseman Kyle Schwarber.",
             "score_after": "PHI 4, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1052,7 +808,7 @@
             "event_type": "out",
             "actor": "Yainer Diaz",
             "actor_id": 673237,
-            "detail": "Yainer Diaz grounds out sharply, second…",
+            "detail": "Yainer Diaz grounds out sharply, second baseman Luis Arraez to first baseman Kyle Schwarber.",
             "score_after": "PHI 4, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1066,7 +822,7 @@
             "event_type": "out",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz flies out to right fie…",
+            "detail": "Bryan De La Cruz flies out to right fielder Cam Smith.",
             "score_after": "PHI 4, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1080,7 +836,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber flies out to left fielde…",
+            "detail": "Kyle Schwarber flies out to left fielder Jorge Barrosa.",
             "score_after": "PHI 4, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1094,7 +850,7 @@
             "event_type": "home_run",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner homers (19) on a fly ball t…",
+            "detail": "Trea Turner homers (19) on a fly ball to right center field.",
             "score_after": "PHI 5, HOU 6",
             "runs": 1,
             "is_scoring": true,
@@ -1122,7 +878,7 @@
             "event_type": "out",
             "actor": "Christian Walker",
             "actor_id": 572233,
-            "detail": "Christian Walker grounds out, third bas…",
+            "detail": "Christian Walker grounds out, third baseman Bryson Stott to first baseman Kyle Schwarber.",
             "score_after": "PHI 5, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1136,7 +892,7 @@
             "event_type": "out",
             "actor": "Daulton Varsho",
             "actor_id": 662139,
-            "detail": "Daulton Varsho grounds out, first basem…",
+            "detail": "Daulton Varsho grounds out, first baseman Kyle Schwarber to pitcher Cristopher Sánchez.",
             "score_after": "PHI 5, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1150,7 +906,7 @@
             "event_type": "out",
             "actor": "Cam Smith",
             "actor_id": 701358,
-            "detail": "Cam Smith flies out to right fielder Br…",
+            "detail": "Cam Smith flies out to right fielder Bryan De La Cruz.",
             "score_after": "PHI 5, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1164,7 +920,7 @@
             "event_type": "extra_base_hit",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez doubles (30) on a line driv…",
+            "detail": "Luis Arraez doubles (30) on a line drive to left fielder Jorge Barrosa.",
             "score_after": "PHI 5, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1178,7 +934,7 @@
             "event_type": "reached_on_error",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott reaches on a fielding erro…",
+            "detail": "Bryson Stott reaches on a fielding error by first baseman Christian Walker. Luis Arraez to 3rd.",
             "score_after": "PHI 5, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1192,7 +948,7 @@
             "event_type": "single",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa singles on a ground ball t…",
+            "detail": "Edmundo Sosa singles on a ground ball to right fielder Cam Smith. Luis Arraez scores. Bryson St…",
             "score_after": "PHI 6, HOU 6",
             "runs": 1,
             "is_scoring": true,
@@ -1206,7 +962,7 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Phillies challenged (play at 1st), call…",
+            "detail": "Phillies challenged (play at 1st), call on the field was overturned: Justin Crawford singles on…",
             "score_after": "PHI 6, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1234,7 +990,7 @@
             "event_type": "walk_hbp",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz walks. Bryson Stott sc…",
+            "detail": "Bryan De La Cruz walks. Bryson Stott scores. Edmundo Sosa to 3rd. Justin Crawford to 2nd.",
             "score_after": "PHI 7, HOU 6",
             "runs": 1,
             "is_scoring": true,
@@ -1248,7 +1004,7 @@
             "event_type": "home_run",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber hits a grand slam (44) t…",
+            "detail": "Kyle Schwarber hits a grand slam (44) to right field. Edmundo Sosa scores. Justin Crawford scor…",
             "score_after": "PHI 11, HOU 6",
             "runs": 4,
             "is_scoring": true,
@@ -1262,7 +1018,7 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner lines out to right fielder…",
+            "detail": "Trea Turner lines out to right fielder Cam Smith.",
             "score_after": "PHI 11, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1304,7 +1060,7 @@
             "event_type": "extra_base_hit",
             "actor": "Jeremy Peña",
             "actor_id": 665161,
-            "detail": "Jeremy Peña doubles (18) on a sharp lin…",
+            "detail": "Jeremy Peña doubles (18) on a sharp line drive to center fielder Justin Crawford.",
             "score_after": "PHI 11, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1318,7 +1074,7 @@
             "event_type": "out",
             "actor": "Yordan Alvarez",
             "actor_id": 670541,
-            "detail": "Yordan Alvarez lines out to right field…",
+            "detail": "Yordan Alvarez lines out to right fielder Bryan De La Cruz. Jeremy Peña to 3rd.",
             "score_after": "PHI 11, HOU 6",
             "runs": 0,
             "is_scoring": false,
@@ -1332,7 +1088,7 @@
             "event_type": "single",
             "actor": "Isaac Paredes",
             "actor_id": 670623,
-            "detail": "Isaac Paredes singles on a sharp line d…",
+            "detail": "Isaac Paredes singles on a sharp line drive to center fielder Justin Crawford. Jeremy Peña scor…",
             "score_after": "PHI 11, HOU 7",
             "runs": 1,
             "is_scoring": true,
@@ -1346,7 +1102,7 @@
             "event_type": "out",
             "actor": "Jose Altuve",
             "actor_id": 514888,
-            "detail": "Jose Altuve flies out to right fielder…",
+            "detail": "Jose Altuve flies out to right fielder Bryan De La Cruz.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1402,7 +1158,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford lines out sharply to fi…",
+            "detail": "Justin Crawford lines out sharply to first baseman Christian Walker.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1416,7 +1172,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto grounds out softly, short…",
+            "detail": "J.T. Realmuto grounds out softly, shortstop Jeremy Peña to first baseman Christian Walker.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1430,7 +1186,7 @@
             "event_type": "out",
             "actor": "Yainer Diaz",
             "actor_id": 673237,
-            "detail": "Yainer Diaz grounds out to first basema…",
+            "detail": "Yainer Diaz grounds out to first baseman Kyle Schwarber.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1444,7 +1200,7 @@
             "event_type": "out",
             "actor": "Christian Walker",
             "actor_id": 572233,
-            "detail": "Christian Walker flies out sharply to l…",
+            "detail": "Christian Walker flies out sharply to left fielder Edmundo Sosa.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1458,7 +1214,7 @@
             "event_type": "reached_on_error",
             "actor": "Daulton Varsho",
             "actor_id": 662139,
-            "detail": "Daulton Varsho reaches on a fielding er…",
+            "detail": "Daulton Varsho reaches on a fielding error by first baseman Kyle Schwarber.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1472,7 +1228,7 @@
             "event_type": "out",
             "actor": "Cam Smith",
             "actor_id": 701358,
-            "detail": "Cam Smith grounds out to first baseman…",
+            "detail": "Cam Smith grounds out to first baseman Kyle Schwarber.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1486,7 +1242,7 @@
             "event_type": "single",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Bryan De La Cruz singles on a soft grou…",
+            "detail": "Bryan De La Cruz singles on a soft ground ball to third baseman Isaac Paredes.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1500,7 +1256,7 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber strikes out on a foul ti…",
+            "detail": "Kyle Schwarber strikes out on a foul tip.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1514,7 +1270,7 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner strikes out swinging, catch…",
+            "detail": "Trea Turner strikes out swinging, catcher Yainer Diaz to first baseman Christian Walker.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
@@ -1542,35 +1298,55 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out to left fielder J…",
+            "detail": "Luis Arraez flies out to left fielder Jorge Barrosa.",
+            "score_after": "PHI 11, HOU 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:75",
+            "inning": 9,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "strikeout",
+            "actor": "LaMonte Wade Jr.",
+            "actor_id": 664774,
+            "detail": "LaMonte Wade Jr. strikes out swinging.",
+            "score_after": "PHI 11, HOU 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:76",
+            "inning": 9,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "strikeout",
+            "actor": "Jeremy Peña",
+            "actor_id": 665161,
+            "detail": "Jeremy Peña strikes out swinging.",
+            "score_after": "PHI 11, HOU 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823416:77",
+            "inning": 9,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Yordan Alvarez",
+            "actor_id": 670541,
+            "detail": "Yordan Alvarez pops out to third baseman Bryson Stott in foul territory.",
             "score_after": "PHI 11, HOU 7",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Jorge Barrosa",
-            "meta": "vs Alex McFarlane"
-          },
-          "pitches": [
-            "S",
-            "F",
-            "X"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 2,
-            "outs": 3
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "End 8th"
-        }
+        ]
       }
     },
     "injury_report": null
