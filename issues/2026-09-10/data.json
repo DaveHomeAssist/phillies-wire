@@ -5,14 +5,14 @@
     "edition": 163,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-10T18:42:42.397Z",
+    "generated_at": "2026-09-10T18:50:36.697Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 10, 2026, 2:42 PM ET",
+      "generated_at_et": "Sep 10, 2026, 2:50 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, HOU 1",
-    "dek": "Top 7th · 0 outs",
-    "summary": "Daulton Varsho is up against Zack Wheeler. Series: Series tied 1-1.",
+    "dek": "Top 7th · 2 outs",
+    "summary": "Taylor Trammell is up against Zack Wheeler. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "88° · Partly cloudy"
+        "value": "89° · Mostly sunny"
       }
     ],
     "bullets": [
-      "Daulton Varsho at the plate",
+      "Taylor Trammell at the plate",
       "Zack Wheeler on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,8 +346,8 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 88,
-          "condition": "Partly cloudy",
+          "temp_f": 89,
+          "condition": "Mostly sunny",
           "wind": "10 mph · gusts 15",
           "gusts_mph": 15
         },
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "3.16",
+            "era": "3.15",
             "record": "12-5",
             "whip": "1.06"
           },
@@ -377,7 +377,7 @@
           "currentInningOrdinal": "7th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 0,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 1,
@@ -1078,9 +1078,51 @@
             "inning": 7,
             "half": "top",
             "team": "HOU",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Daulton Varsho",
             "actor_id": 662139,
+            "detail": "Daulton Varsho flies out to center fielder Justin Crawford. Jose Altuve to 2nd.",
+            "score_after": "PHI 1, HOU 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823413:43",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "out",
+            "actor": "Christian Walker",
+            "actor_id": 572233,
+            "detail": "Christian Walker grounds out, second baseman Luis Arraez to pitcher Zack Wheeler. Jose Altuve to 3rd.",
+            "score_after": "PHI 1, HOU 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823413:44",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "walk_hbp",
+            "actor": "Cam Smith",
+            "actor_id": 701358,
+            "detail": "Cam Smith walks.",
+            "score_after": "PHI 1, HOU 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823413:45",
+            "inning": 7,
+            "half": "top",
+            "team": "HOU",
+            "event_type": "other",
+            "actor": "Taylor Trammell",
+            "actor_id": 666211,
             "detail": "Play",
             "score_after": "PHI 1, HOU 1",
             "runs": 0,
@@ -1090,23 +1132,21 @@
         ],
         "situation": {
           "batter": {
-            "name": "Daulton Varsho",
+            "name": "Taylor Trammell",
             "meta": "vs Zack Wheeler"
           },
           "pitches": [
-            "B",
-            "F",
-            "F"
+            "S"
           ],
           "count": {
             "balls": 1,
-            "strikes": 2,
-            "outs": 0
+            "strikes": 1,
+            "outs": 2
           },
           "bases": {
             "first": true,
             "second": false,
-            "third": false
+            "third": true
           },
           "status": "Top 7th"
         }
@@ -1125,8 +1165,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-10T18:42:42.397Z",
-            "freshness_label": "As of Sep 10, 2026, 2:42 PM ET"
+            "last_confirmed": "2026-09-10T18:50:36.697Z",
+            "freshness_label": "As of Sep 10, 2026, 2:50 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1138,8 +1178,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-10T18:42:42.397Z",
-            "freshness_label": "As of Sep 10, 2026, 2:42 PM ET"
+            "last_confirmed": "2026-09-10T18:50:36.697Z",
+            "freshness_label": "As of Sep 10, 2026, 2:50 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1151,8 +1191,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-10T18:42:42.397Z",
-            "freshness_label": "As of Sep 10, 2026, 2:42 PM ET"
+            "last_confirmed": "2026-09-10T18:50:36.697Z",
+            "freshness_label": "As of Sep 10, 2026, 2:50 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -1164,8 +1204,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-10T18:42:42.397Z",
-            "freshness_label": "As of Sep 10, 2026, 2:42 PM ET"
+            "last_confirmed": "2026-09-10T18:50:36.697Z",
+            "freshness_label": "As of Sep 10, 2026, 2:50 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1177,8 +1217,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-10T18:42:42.397Z",
-            "freshness_label": "As of Sep 10, 2026, 2:42 PM ET"
+            "last_confirmed": "2026-09-10T18:50:36.697Z",
+            "freshness_label": "As of Sep 10, 2026, 2:50 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1190,8 +1230,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-10T18:42:42.397Z",
-            "freshness_label": "As of Sep 10, 2026, 2:42 PM ET"
+            "last_confirmed": "2026-09-10T18:50:36.697Z",
+            "freshness_label": "As of Sep 10, 2026, 2:50 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1203,8 +1243,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-10T18:42:42.397Z",
-            "freshness_label": "As of Sep 10, 2026, 2:42 PM ET"
+            "last_confirmed": "2026-09-10T18:50:36.697Z",
+            "freshness_label": "As of Sep 10, 2026, 2:50 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
