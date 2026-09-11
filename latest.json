@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-10",
+  "edition_date": "2026-09-11",
   "volume": 1,
-  "edition": 163,
-  "generated_at": "2026-09-11T03:52:08.721Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 164,
+  "generated_at": "2026-09-11T04:11:59.150Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 82,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, HOU 2.",
-    "dek": "HOU 2, PHI 1 · Zack Wheeler · 7.0 IP, 5 H, 1 ER, 9 K",
-    "summary": "PHI 1, HOU 2. Final at Citizens Bank Park, Philadelphia. HOU wins 2-1.",
+    "headline": "Phillies @ Braves · Game 1 of 3",
+    "dek": "Aaron Nola vs Chris Sale",
+    "summary": "Aaron Nola vs Chris Sale · Phillies @ Braves · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Chris Sale · PHI @ ATL · Fri, Sep 11 · 7:15 PM"
+    "next_value": "Jesús Luzardo vs Tyler Mahle · PHI @ ATL · Sat, Sep 12 · 7:15 PM"
   },
   "game": {
-    "matchup": "Astros @ Phillies · Game 3 of 3",
-    "first_pitch": "1:05 PM",
-    "venue": "Citizens Bank Park, Philadelphia",
+    "matchup": "Phillies @ Braves · Game 1 of 3",
+    "first_pitch": "7:15 PM",
+    "venue": "Truist Park, Atlanta",
     "starters": {
       "home": {
-        "name": "Zack Wheeler",
-        "hand": "R"
+        "name": "Chris Sale",
+        "hand": "L"
       },
       "away": {
-        "name": "Cristian Javier",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "opp": {
-        "name": "Cristian Javier",
-        "hand": "R"
+        "name": "Chris Sale",
+        "hand": "L"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "HOU wins 2-1"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "NBC 10",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
-      "condition": "Overcast",
-      "wind": "3 mph · gusts 7",
-      "gusts_mph": 7
+      "temp_f": 76,
+      "condition": "Clear",
+      "wind": "3 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-11T03:52:09.153Z",
+    "updated_at": "2026-09-11T04:11:59.656Z",
     "current_game_pk": 824873,
     "next_game_pk": 824870,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Astros @ Phillies · Game 3 of 3 · 1:05 PM",
+      "text": "Phillies @ Braves · Game 1 of 3 · 7:15 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Cristian Javier",
+      "text": "Aaron Nola vs Chris Sale",
       "highlight": true
     },
     {
-      "text": "NBC 10 · 94 WIP",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "78° · Overcast · gusts 7 mph",
+      "text": "76° · Clear · gusts 6 mph",
       "highlight": false
     }
   ]
