@@ -4,7 +4,7 @@
   "edition_date": "2026-09-12",
   "volume": 1,
   "edition": 165,
-  "generated_at": "2026-09-12T23:07:42.100Z",
+  "generated_at": "2026-09-12T23:21:21.947Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,7 +17,7 @@
   },
   "hero": {
     "headline": "PHI 0, ATL 0",
-    "dek": "Top 1st · 0 outs",
+    "dek": "Top 1st · 1 out",
     "summary": "Kyle Schwarber is up against Tyler Mahle. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Grant Holmes · PHI @ ATL · Sun, Sep 13 · 1:35 PM"
@@ -67,11 +67,21 @@
         "name": "Kyle Schwarber",
         "meta": "vs Tyler Mahle"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S",
+        "B",
+        "B",
+        "B",
+        "F",
+        "F",
+        "F",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 3,
+        "strikes": 3,
+        "outs": 1
       },
       "bases": {
         "first": false,
@@ -86,7 +96,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-12T23:07:42.545Z",
+    "updated_at": "2026-09-12T23:21:22.523Z",
     "current_game_pk": 824870,
     "next_game_pk": 824869,
     "next_game": {
