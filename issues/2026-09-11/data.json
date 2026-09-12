@@ -5,14 +5,14 @@
     "edition": 164,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-12T00:25:06.002Z",
+    "generated_at": "2026-09-12T01:03:45.793Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 11, 2026, 8:25 PM ET",
+      "generated_at_et": "Sep 11, 2026, 9:03 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, ATL 1",
-    "dek": "Top 2nd · 2 outs",
-    "summary": "Bryan De La Cruz is up against Chris Sale. Series: Regular Season.",
+    "headline": "PHI 3, ATL 1",
+    "dek": "Top 4th · 0 outs",
+    "summary": "Edmundo Sosa is up against Chris Sale. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "73° · Overcast"
+        "value": "74° · Overcast"
       }
     ],
     "bullets": [
-      "Bryan De La Cruz at the plate",
+      "Edmundo Sosa at the plate",
       "Chris Sale on the mound",
       "Truist Park, Atlanta"
     ],
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
+          "temp_f": 74,
           "condition": "Overcast",
-          "wind": "1 mph · gusts 8",
-          "gusts_mph": 8
+          "wind": "2 mph · gusts 5",
+          "gusts_mph": 5
         },
         "giveaway": "",
         "transit": "",
@@ -359,34 +359,34 @@
             "team": "ATL",
             "name": "Chris Sale",
             "hand": "L",
-            "era": "2.08",
+            "era": "2.24",
             "record": "14-9",
-            "whip": "1.00"
+            "whip": "1.01"
           },
           "away": {
             "team": "PHI",
             "name": "Aaron Nola",
             "hand": "R",
-            "era": "4.79",
+            "era": "4.74",
             "record": "6-10",
-            "whip": "1.37"
+            "whip": "1.38"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
           "inningState": "Top",
           "isTopInning": true,
-          "outs": 2,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 0,
-              "hits": 1,
+              "runs": 3,
+              "hits": 2,
               "errors": 0
             },
             "home": {
               "runs": 1,
-              "hits": 1,
+              "hits": 3,
               "errors": 0
             }
           },
@@ -407,8 +407,34 @@
             {
               "num": 2,
               "away": {
-                "runs": null,
+                "runs": 3,
+                "hits": 2,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
@@ -565,11 +591,263 @@
             "inning": 2,
             "half": "top",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Play",
+            "detail": "Bryan De La Cruz walks. Edmundo Sosa to 2nd.",
             "score_after": "PHI 0, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:11",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto hit by pitch. Edmundo Sosa to 3rd. Bryan De La Cruz to 2nd.",
+            "score_after": "PHI 0, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:12",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill doubles (5) on a sharp line drive to center fielder Michael Harris II. Edmundo Sosa scores. Bryan De La Cruz scores. J.T…",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 3,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824873:13",
+            "inning": 2,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber called out on strikes.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Mauricio Dubón",
+            "actor_id": 643289,
+            "detail": "Mauricio Dubón grounds out, third baseman Edmundo Sosa to first baseman Alec Bohm.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Ozzie Albies",
+            "actor_id": 645277,
+            "detail": "Ozzie Albies strikes out swinging.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:16",
+            "inning": 2,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "walk_hbp",
+            "actor": "Austin Riley",
+            "actor_id": 663586,
+            "detail": "Austin Riley walks.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:17",
+            "inning": 2,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "single",
+            "actor": "Mike Yastrzemski",
+            "actor_id": 573262,
+            "detail": "Mike Yastrzemski singles on a line drive to center fielder Derek Hill. Austin Riley to 2nd.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:18",
+            "inning": 2,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Sean Murphy",
+            "actor_id": 669221,
+            "detail": "Sean Murphy strikes out swinging.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:19",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, pitcher Chris Sale to first baseman Matt Olson.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:20",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:21",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez grounds out, shortstop Mauricio Dubón to first baseman Matt Olson.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Drake Baldwin",
+            "actor_id": 686948,
+            "detail": "Drake Baldwin pops out to third baseman Edmundo Sosa.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "extra_base_hit",
+            "actor": "Ronald Acuña Jr.",
+            "actor_id": 660670,
+            "detail": "Ronald Acuña Jr. doubles (17) on a line drive to right fielder Bryce Harper.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "824873:24",
+            "inning": 3,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "walk_hbp",
+            "actor": "Matt Olson",
+            "actor_id": 621566,
+            "detail": "Matt Olson walks.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:25",
+            "inning": 3,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Michael Harris II",
+            "actor_id": 671739,
+            "detail": "Michael Harris II grounds out, first baseman Alec Bohm to pitcher Aaron Nola. Ronald Acuña Jr. to 3rd. Matt Olson to 2nd.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:26",
+            "inning": 3,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Mauricio Dubón",
+            "actor_id": 643289,
+            "detail": "Mauricio Dubón lines out to right fielder Bryce Harper.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:27",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm walks.",
+            "score_after": "PHI 3, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824873:28",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Batter Timeout.",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -577,27 +855,23 @@
         ],
         "situation": {
           "batter": {
-            "name": "Bryan De La Cruz",
+            "name": "Edmundo Sosa",
             "meta": "vs Chris Sale"
           },
           "pitches": [
-            "B",
-            "F",
-            "B",
-            "B",
             "F"
           ],
           "count": {
-            "balls": 3,
-            "strikes": 2,
-            "outs": 2
+            "balls": 0,
+            "strikes": 1,
+            "outs": 0
           },
           "bases": {
             "first": true,
             "second": false,
             "third": false
           },
-          "status": "Top 2nd"
+          "status": "Top 4th"
         }
       }
     },
@@ -614,8 +888,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-12T00:25:06.002Z",
-            "freshness_label": "As of Sep 11, 2026, 8:25 PM ET"
+            "last_confirmed": "2026-09-12T01:03:45.793Z",
+            "freshness_label": "As of Sep 11, 2026, 9:03 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -627,8 +901,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-12T00:25:06.002Z",
-            "freshness_label": "As of Sep 11, 2026, 8:25 PM ET"
+            "last_confirmed": "2026-09-12T01:03:45.793Z",
+            "freshness_label": "As of Sep 11, 2026, 9:03 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -640,8 +914,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-12T00:25:06.002Z",
-            "freshness_label": "As of Sep 11, 2026, 8:25 PM ET"
+            "last_confirmed": "2026-09-12T01:03:45.793Z",
+            "freshness_label": "As of Sep 11, 2026, 9:03 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -653,8 +927,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-12T00:25:06.002Z",
-            "freshness_label": "As of Sep 11, 2026, 8:25 PM ET"
+            "last_confirmed": "2026-09-12T01:03:45.793Z",
+            "freshness_label": "As of Sep 11, 2026, 9:03 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -666,8 +940,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-12T00:25:06.002Z",
-            "freshness_label": "As of Sep 11, 2026, 8:25 PM ET"
+            "last_confirmed": "2026-09-12T01:03:45.793Z",
+            "freshness_label": "As of Sep 11, 2026, 9:03 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -679,8 +953,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-12T00:25:06.002Z",
-            "freshness_label": "As of Sep 11, 2026, 8:25 PM ET"
+            "last_confirmed": "2026-09-12T01:03:45.793Z",
+            "freshness_label": "As of Sep 11, 2026, 9:03 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -692,8 +966,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-12T00:25:06.002Z",
-            "freshness_label": "As of Sep 11, 2026, 8:25 PM ET"
+            "last_confirmed": "2026-09-12T01:03:45.793Z",
+            "freshness_label": "As of Sep 11, 2026, 9:03 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
