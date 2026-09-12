@@ -4,7 +4,7 @@
   "edition_date": "2026-09-12",
   "volume": 1,
   "edition": 165,
-  "generated_at": "2026-09-12T23:34:11.291Z",
+  "generated_at": "2026-09-12T23:48:01.983Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, ATL 0",
-    "dek": "Top 2nd · 1 out",
-    "summary": "Bryson Stott is up against Tyler Mahle. Series: ATL leads 1-0.",
+    "dek": "Top 3rd · 1 out",
+    "summary": "Kyle Schwarber is up against Tyler Mahle. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Grant Holmes · PHI @ ATL · Sun, Sep 13 · 1:35 PM"
   },
@@ -64,21 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
+        "name": "Kyle Schwarber",
         "meta": "vs Tyler Mahle"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 1,
         "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 2nd"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-12T23:34:11.954Z",
+    "updated_at": "2026-09-12T23:48:02.478Z",
     "current_game_pk": 824870,
     "next_game_pk": 824869,
     "next_game": {
