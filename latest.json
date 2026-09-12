@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-11",
+  "edition_date": "2026-09-12",
   "volume": 1,
-  "edition": 164,
-  "generated_at": "2026-09-12T03:49:32.141Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 165,
+  "generated_at": "2026-09-12T04:10:48.725Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 82,
@@ -16,32 +16,32 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 5, ATL 6.",
-    "dek": "ATL 6, PHI 5 · Chris Sale · 7.0 IP, 3 H, 3 ER, 6 K",
-    "summary": "PHI 5, ATL 6. Final at Truist Park, Atlanta. ATL leads 1-0.",
+    "headline": "Phillies @ Braves · Game 2 of 3",
+    "dek": "TBD vs Tyler Mahle",
+    "summary": "TBD vs Tyler Mahle · Phillies @ Braves · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Tyler Mahle · PHI @ ATL · Sat, Sep 12 · 7:15 PM"
+    "next_value": "Andrew Painter vs Grant Holmes · PHI @ ATL · Sun, Sep 13 · 1:35 PM"
   },
   "game": {
-    "matchup": "Phillies @ Braves · Game 1 of 3",
+    "matchup": "Phillies @ Braves · Game 2 of 3",
     "first_pitch": "7:15 PM",
     "venue": "Truist Park, Atlanta",
     "starters": {
       "home": {
-        "name": "Chris Sale",
-        "hand": "L"
+        "name": "Tyler Mahle",
+        "hand": "R"
       },
       "away": {
-        "name": "Aaron Nola",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Aaron Nola",
+        "name": "TBD",
         "hand": "R"
       },
       "opp": {
-        "name": "Chris Sale",
-        "hand": "L"
+        "name": "Tyler Mahle",
+        "hand": "R"
       }
     },
     "series": {
@@ -57,7 +57,7 @@
     "weather": {
       "temp_f": 73,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 10",
+      "wind": "3 mph · gusts 10",
       "gusts_mph": 10
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-12T03:49:32.884Z",
+    "updated_at": "2026-09-12T04:10:49.611Z",
     "current_game_pk": 824870,
     "next_game_pk": 824869,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Braves · Game 1 of 3 · 7:15 PM",
+      "text": "Phillies @ Braves · Game 2 of 3 · 7:15 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Chris Sale",
+      "text": "TBD vs Tyler Mahle",
       "highlight": true
     },
     {
