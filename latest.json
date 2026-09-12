@@ -4,9 +4,9 @@
   "edition_date": "2026-09-12",
   "volume": 1,
   "edition": 165,
-  "generated_at": "2026-09-12T22:48:41.071Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-12T23:07:42.100Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 82,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Braves · Game 2 of 3",
-    "dek": "Tim Mayza vs Tyler Mahle",
-    "summary": "Tim Mayza vs Tyler Mahle · Phillies @ Braves · Game 2 of 3",
+    "headline": "PHI 0, ATL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Tyler Mahle. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Grant Holmes · PHI @ ATL · Sun, Sep 13 · 1:35 PM"
   },
@@ -56,20 +56,37 @@
     },
     "weather": {
       "temp_f": 81,
-      "condition": "Partly cloudy",
-      "wind": "3 mph · gusts 6",
-      "gusts_mph": 6
+      "condition": "Mostly sunny",
+      "wind": "1 mph · gusts 5",
+      "gusts_mph": 5
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Tyler Mahle"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-12T22:48:41.970Z",
+    "updated_at": "2026-09-12T23:07:42.545Z",
     "current_game_pk": 824870,
     "next_game_pk": 824869,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "81° · Partly cloudy · gusts 6 mph",
+      "text": "81° · Mostly sunny · gusts 5 mph",
       "highlight": false
     }
   ]
