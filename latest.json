@@ -4,7 +4,7 @@
   "edition_date": "2026-09-11",
   "volume": 1,
   "edition": 164,
-  "generated_at": "2026-09-12T01:29:49.349Z",
+  "generated_at": "2026-09-12T01:47:54.156Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, ATL 1",
-    "dek": "Top 6th · 0 outs",
-    "summary": "Trea Turner is up against Chris Sale. Series: Regular Season.",
+    "dek": "Middle 7th · 3 outs",
+    "summary": "Austin Riley is up against Aaron Nola. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Tyler Mahle · PHI @ ATL · Sat, Sep 12 · 7:15 PM"
   },
@@ -57,28 +57,31 @@
     "weather": {
       "temp_f": 73,
       "condition": "Overcast",
-      "wind": "2 mph · gusts 8",
+      "wind": "3 mph · gusts 8",
       "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Trea Turner",
-        "meta": "vs Chris Sale"
+        "name": "Austin Riley",
+        "meta": "vs Aaron Nola"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "X"
+      ],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
-        "outs": 0
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 6th"
+      "status": "Middle 7th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-12T01:29:49.779Z",
+    "updated_at": "2026-09-12T01:47:54.574Z",
     "current_game_pk": 824873,
     "next_game_pk": 824870,
     "next_game": {
