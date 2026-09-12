@@ -5,14 +5,14 @@
     "edition": 164,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-12T03:10:59.908Z",
+    "generated_at": "2026-09-12T03:28:03.850Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 11, 2026, 11:10 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 11, 2026, 11:28 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 82,
-    "losses": 65,
-    "streak": "L1",
+    "losses": 66,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 5, ATL 6",
-    "dek": "Bottom 11th · 2 outs",
-    "summary": "Drake Baldwin is up against Brooks Raley. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 5, ATL 6.",
+    "dek": "ATL 6, PHI 5 · Chris Sale · 7.0 IP, 3 H, 3 ER, 6 K",
+    "summary": "PHI 5, ATL 6. Final at Truist Park, Atlanta. ATL leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Truist Park, Atlanta"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "73° · Overcast"
+        "label": "Series",
+        "value": "ATL leads 1-0"
       }
     ],
     "bullets": [
-      "Drake Baldwin at the plate",
-      "Brooks Raley on the mound",
-      "Truist Park, Atlanta"
+      "Chris Sale: 7.0 IP, 3 H, 3 ER, 6 K",
+      "Aaron Nola: 6.1 IP, 6 H, 2 ER, 3 K",
+      "Matt Olson: 1-for-4, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Jesús Luzardo vs Tyler Mahle · PHI @ ATL · Sat, Sep 12 · 7:15 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at ATL game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "7:15 PM",
-        "starters": {
-          "home": {
-            "team": "ATL",
-            "name": "Chris Sale",
-            "hand": "L"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "ATL",
-            "name": "Chris Sale",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Drake Baldwin",
-              "position": "C",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Ronald Acuña Jr.",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Matt Olson",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Michael Harris II",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Mauricio Dubón",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Ozzie Albies",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 7,
-              "name": "Austin Riley",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Mike Yastrzemski",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Sean Murphy",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryan De La Cruz",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryan De La Cruz",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Drake Baldwin",
-              "position": "C",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Ronald Acuña Jr.",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Matt Olson",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Michael Harris II",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Mauricio Dubón",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Ozzie Albies",
-              "position": "2B",
-              "bats": "S"
-            },
-            {
-              "slot": 7,
-              "name": "Austin Riley",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Mike Yastrzemski",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Sean Murphy",
-              "position": "C",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Braves · Game 1 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "ATL leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 73,
           "condition": "Overcast",
-          "wind": "2 mph · gusts 9",
-          "gusts_mph": 9
+          "wind": "4 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "",
@@ -545,8 +288,8 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Kyle Schwarber flies out sharpl…",
+            "score_after": "PHI 0, ATL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -559,8 +302,8 @@
             "event_type": "strikeout",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Trea Turner strikes out swingin…",
+            "score_after": "PHI 0, ATL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -573,8 +316,8 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Bryce Harper strikes out swingi…",
+            "score_after": "PHI 0, ATL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -587,8 +330,8 @@
             "event_type": "out",
             "actor": "Drake Baldwin",
             "actor_id": 686948,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Drake Baldwin pops out to short…",
+            "score_after": "PHI 0, ATL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -601,8 +344,8 @@
             "event_type": "out",
             "actor": "Ronald Acuña Jr.",
             "actor_id": 660670,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Ronald Acuña Jr. grounds out, t…",
+            "score_after": "PHI 0, ATL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -615,7 +358,7 @@
             "event_type": "home_run",
             "actor": "Matt Olson",
             "actor_id": 621566,
-            "detail": "Home run",
+            "detail": "Matt Olson homers (38) on a fly…",
             "score_after": "PHI 0, ATL 1",
             "runs": 1,
             "is_scoring": true,
@@ -629,8 +372,8 @@
             "event_type": "strikeout",
             "actor": "Michael Harris II",
             "actor_id": 671739,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Michael Harris II strikes out s…",
+            "score_after": "PHI 0, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -643,8 +386,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Luis Arraez grounds out to firs…",
+            "score_after": "PHI 0, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -657,8 +400,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Alec Bohm lines out to right fi…",
+            "score_after": "PHI 0, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -671,8 +414,8 @@
             "event_type": "single",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Single",
-            "score_after": "",
+            "detail": "Edmundo Sosa singles on a line…",
+            "score_after": "PHI 0, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -685,8 +428,8 @@
             "event_type": "walk_hbp",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "Bryan De La Cruz walks. Edmundo…",
+            "score_after": "PHI 0, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -699,8 +442,8 @@
             "event_type": "walk_hbp",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "J.T. Realmuto hit by pitch. Edm…",
+            "score_after": "PHI 0, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -713,7 +456,7 @@
             "event_type": "extra_base_hit",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Extra-base hit",
+            "detail": "Derek Hill doubles (5) on a sha…",
             "score_after": "PHI 3, ATL 1",
             "runs": 3,
             "is_scoring": true,
@@ -727,8 +470,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Kyle Schwarber called out on st…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -741,8 +484,8 @@
             "event_type": "out",
             "actor": "Mauricio Dubón",
             "actor_id": 643289,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Mauricio Dubón grounds out, thi…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -755,8 +498,8 @@
             "event_type": "strikeout",
             "actor": "Ozzie Albies",
             "actor_id": 645277,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Ozzie Albies strikes out swingi…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -769,8 +512,8 @@
             "event_type": "walk_hbp",
             "actor": "Austin Riley",
             "actor_id": 663586,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "Austin Riley walks.",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -783,8 +526,8 @@
             "event_type": "single",
             "actor": "Mike Yastrzemski",
             "actor_id": 573262,
-            "detail": "Single",
-            "score_after": "",
+            "detail": "Mike Yastrzemski singles on a l…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -797,8 +540,8 @@
             "event_type": "strikeout",
             "actor": "Sean Murphy",
             "actor_id": 669221,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Sean Murphy strikes out swingin…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -811,8 +554,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Trea Turner grounds out, pitche…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -825,8 +568,8 @@
             "event_type": "strikeout",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Bryce Harper strikes out swingi…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -839,8 +582,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Luis Arraez grounds out, shorts…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -853,8 +596,8 @@
             "event_type": "out",
             "actor": "Drake Baldwin",
             "actor_id": 686948,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Drake Baldwin pops out to third…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -867,7 +610,7 @@
             "event_type": "extra_base_hit",
             "actor": "Ronald Acuña Jr.",
             "actor_id": 660670,
-            "detail": "Extra-base hit",
+            "detail": "Ronald Acuña Jr. doubles (17) o…",
             "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
@@ -881,8 +624,8 @@
             "event_type": "walk_hbp",
             "actor": "Matt Olson",
             "actor_id": 621566,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "Matt Olson walks.",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -895,8 +638,8 @@
             "event_type": "out",
             "actor": "Michael Harris II",
             "actor_id": 671739,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Michael Harris II grounds out,…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -909,8 +652,8 @@
             "event_type": "out",
             "actor": "Mauricio Dubón",
             "actor_id": 643289,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Mauricio Dubón lines out to rig…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -923,8 +666,8 @@
             "event_type": "walk_hbp",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "Alec Bohm walks.",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -937,8 +680,8 @@
             "event_type": "other",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Play",
-            "score_after": "",
+            "detail": "Edmundo Sosa grounds into a dou…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -951,8 +694,8 @@
             "event_type": "out",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Bryan De La Cruz grounds out, s…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -965,8 +708,8 @@
             "event_type": "out",
             "actor": "Ozzie Albies",
             "actor_id": 645277,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Ozzie Albies grounds out, secon…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -979,8 +722,8 @@
             "event_type": "out",
             "actor": "Austin Riley",
             "actor_id": 663586,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Austin Riley lines out to right…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -993,8 +736,8 @@
             "event_type": "walk_hbp",
             "actor": "Mike Yastrzemski",
             "actor_id": 573262,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "Mike Yastrzemski walks.",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1007,8 +750,8 @@
             "event_type": "out",
             "actor": "Sean Murphy",
             "actor_id": 669221,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Sean Murphy grounds into a forc…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1021,8 +764,8 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "J.T. Realmuto flies out to righ…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1035,8 +778,8 @@
             "event_type": "out",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Derek Hill grounds out, second…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1049,8 +792,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Kyle Schwarber strikes out swin…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1063,8 +806,8 @@
             "event_type": "single",
             "actor": "Drake Baldwin",
             "actor_id": 686948,
-            "detail": "Single",
-            "score_after": "",
+            "detail": "Drake Baldwin singles on a shar…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1077,8 +820,8 @@
             "event_type": "other",
             "actor": "Ronald Acuña Jr.",
             "actor_id": 660670,
-            "detail": "Play",
-            "score_after": "",
+            "detail": "Ronald Acuña Jr. grounds into a…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1091,8 +834,8 @@
             "event_type": "out",
             "actor": "Matt Olson",
             "actor_id": 621566,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Matt Olson flies out to center…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1105,8 +848,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Trea Turner flies out to center…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1119,8 +862,8 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Bryce Harper grounds out, secon…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1133,8 +876,8 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Single",
-            "score_after": "",
+            "detail": "Luis Arraez singles on a ground…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1147,8 +890,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Alec Bohm grounds out softly to…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1161,8 +904,8 @@
             "event_type": "out",
             "actor": "Michael Harris II",
             "actor_id": 671739,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Michael Harris II flies out to…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1175,8 +918,8 @@
             "event_type": "walk_hbp",
             "actor": "Mauricio Dubón",
             "actor_id": 643289,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "Mauricio Dubón hit by pitch.",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1189,8 +932,8 @@
             "event_type": "other",
             "actor": "Ozzie Albies",
             "actor_id": 645277,
-            "detail": "Play",
-            "score_after": "",
+            "detail": "Ozzie Albies grounds into a dou…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1203,8 +946,8 @@
             "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Edmundo Sosa pops out to shorts…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1217,8 +960,8 @@
             "event_type": "strikeout",
             "actor": "Bryan De La Cruz",
             "actor_id": 650559,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Bryan De La Cruz strikes out sw…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1231,8 +974,8 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "J.T. Realmuto grounds out, thir…",
+            "score_after": "PHI 3, ATL 1",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1245,7 +988,7 @@
             "event_type": "home_run",
             "actor": "Austin Riley",
             "actor_id": 663586,
-            "detail": "Home run",
+            "detail": "Austin Riley homers (17) on a f…",
             "score_after": "PHI 3, ATL 2",
             "runs": 1,
             "is_scoring": true,
@@ -1259,8 +1002,8 @@
             "event_type": "single",
             "actor": "Mike Yastrzemski",
             "actor_id": 573262,
-            "detail": "Single",
-            "score_after": "",
+            "detail": "Mike Yastrzemski singles on a f…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1273,8 +1016,8 @@
             "event_type": "out",
             "actor": "Sean Murphy",
             "actor_id": 669221,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Sean Murphy flies out sharply t…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1287,8 +1030,8 @@
             "event_type": "strikeout",
             "actor": "Drake Baldwin",
             "actor_id": 686948,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Drake Baldwin strikes out swing…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1301,8 +1044,8 @@
             "event_type": "strikeout",
             "actor": "Ronald Acuña Jr.",
             "actor_id": 660670,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Ronald Acuña Jr. strikes out sw…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1315,8 +1058,8 @@
             "event_type": "walk_hbp",
             "actor": "Derek Hill",
             "actor_id": 656537,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "Sean Murphy challenged (pitch r…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1329,8 +1072,8 @@
             "event_type": "other",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Play",
-            "score_after": "",
+            "detail": "Kyle Schwarber grounds into a d…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1343,8 +1086,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Trea Turner flies out to center…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1357,8 +1100,8 @@
             "event_type": "out",
             "actor": "Matt Olson",
             "actor_id": 621566,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Matt Olson lines out to center…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1371,8 +1114,8 @@
             "event_type": "out",
             "actor": "Michael Harris II",
             "actor_id": 671739,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Michael Harris II lines out to…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1385,8 +1128,8 @@
             "event_type": "single",
             "actor": "Mauricio Dubón",
             "actor_id": 643289,
-            "detail": "Single",
-            "score_after": "",
+            "detail": "Mauricio Dubón singles on a fly…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1399,8 +1142,8 @@
             "event_type": "out",
             "actor": "Ozzie Albies",
             "actor_id": 645277,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Ozzie Albies flies out to cente…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1413,7 +1156,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Extra-base hit",
+            "detail": "Bryce Harper doubles (29) on a…",
             "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
@@ -1427,8 +1170,8 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Luis Arraez flies out to center…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1441,8 +1184,8 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Alec Bohm reaches on a fielder'…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1455,8 +1198,8 @@
             "event_type": "strikeout",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Bryson Stott strikes out swingi…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1469,8 +1212,8 @@
             "event_type": "strikeout",
             "actor": "Austin Riley",
             "actor_id": 663586,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Austin Riley strikes out swingi…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1483,8 +1226,8 @@
             "event_type": "single",
             "actor": "Mike Yastrzemski",
             "actor_id": 573262,
-            "detail": "Single",
-            "score_after": "",
+            "detail": "Mike Yastrzemski singles on a g…",
+            "score_after": "PHI 3, ATL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1497,7 +1240,7 @@
             "event_type": "single",
             "actor": "Sean Murphy",
             "actor_id": 669221,
-            "detail": "Single",
+            "detail": "Sean Murphy singles on a ground…",
             "score_after": "PHI 3, ATL 3",
             "runs": 1,
             "is_scoring": true,
@@ -1511,8 +1254,8 @@
             "event_type": "walk_hbp",
             "actor": "Drake Baldwin",
             "actor_id": 686948,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "Drake Baldwin hit by pitch.",
+            "score_after": "PHI 3, ATL 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1525,8 +1268,8 @@
             "event_type": "out",
             "actor": "Ronald Acuña Jr.",
             "actor_id": 660670,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Ronald Acuña Jr. flies out to c…",
+            "score_after": "PHI 3, ATL 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1539,8 +1282,8 @@
             "event_type": "out",
             "actor": "Matt Olson",
             "actor_id": 621566,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Matt Olson grounds out, shortst…",
+            "score_after": "PHI 3, ATL 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1553,7 +1296,7 @@
             "event_type": "single",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Single",
+            "detail": "Justin Crawford singles on a li…",
             "score_after": "PHI 4, ATL 3",
             "runs": 1,
             "is_scoring": true,
@@ -1567,8 +1310,8 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "J.T. Realmuto grounds into a fo…",
+            "score_after": "PHI 4, ATL 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1581,8 +1324,8 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Brandon Marsh flies out to righ…",
+            "score_after": "PHI 4, ATL 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1595,8 +1338,8 @@
             "event_type": "strikeout",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Kyle Schwarber called out on st…",
+            "score_after": "PHI 4, ATL 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1609,8 +1352,8 @@
             "event_type": "out",
             "actor": "Michael Harris II",
             "actor_id": 671739,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Michael Harris II grounds out,…",
+            "score_after": "PHI 4, ATL 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1623,7 +1366,7 @@
             "event_type": "out",
             "actor": "Mauricio Dubón",
             "actor_id": 643289,
-            "detail": "Out",
+            "detail": "Mauricio Dubón out on a sacrifi…",
             "score_after": "PHI 4, ATL 4",
             "runs": 1,
             "is_scoring": true,
@@ -1637,8 +1380,8 @@
             "event_type": "out",
             "actor": "Ozzie Albies",
             "actor_id": 645277,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Ozzie Albies grounds out, secon…",
+            "score_after": "PHI 4, ATL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1651,8 +1394,8 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Trea Turner pops out to third b…",
+            "score_after": "PHI 4, ATL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1665,8 +1408,8 @@
             "event_type": "single",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Single",
-            "score_after": "",
+            "detail": "Bryce Harper singles on a groun…",
+            "score_after": "PHI 4, ATL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1679,7 +1422,7 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Single",
+            "detail": "Luis Arraez singles on a line d…",
             "score_after": "PHI 5, ATL 4",
             "runs": 1,
             "is_scoring": true,
@@ -1693,8 +1436,8 @@
             "event_type": "strikeout",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Strikeout",
-            "score_after": "",
+            "detail": "Alec Bohm strikes out swinging.",
+            "score_after": "PHI 5, ATL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1707,8 +1450,8 @@
             "event_type": "walk_hbp",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Walk / HBP",
-            "score_after": "",
+            "detail": "Bryson Stott walks. Bryce Harpe…",
+            "score_after": "PHI 5, ATL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1721,8 +1464,8 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Justin Crawford grounds out, se…",
+            "score_after": "PHI 5, ATL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1735,8 +1478,8 @@
             "event_type": "out",
             "actor": "Austin Riley",
             "actor_id": 663586,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Austin Riley grounds out, short…",
+            "score_after": "PHI 5, ATL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1749,8 +1492,8 @@
             "event_type": "out",
             "actor": "Dominic Smith",
             "actor_id": 642086,
-            "detail": "Out",
-            "score_after": "",
+            "detail": "Dominic Smith pops out to third…",
+            "score_after": "PHI 5, ATL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -1763,7 +1506,7 @@
             "event_type": "single",
             "actor": "Ha-Seong Kim",
             "actor_id": 673490,
-            "detail": "Single",
+            "detail": "Ha-Seong Kim singles on a line…",
             "score_after": "PHI 5, ATL 5",
             "runs": 1,
             "is_scoring": true,
@@ -1777,37 +1520,13 @@
             "event_type": "extra_base_hit",
             "actor": "Drake Baldwin",
             "actor_id": 686948,
-            "detail": "Extra-base hit",
+            "detail": "Drake Baldwin doubles (17) on a…",
             "score_after": "PHI 5, ATL 6",
             "runs": 1,
             "is_scoring": true,
             "is_key": true
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Drake Baldwin",
-            "meta": "vs Brooks Raley"
-          },
-          "pitches": [
-            "B",
-            "B",
-            "S",
-            "F",
-            "X"
-          ],
-          "count": {
-            "balls": 2,
-            "strikes": 2,
-            "outs": 2
-          },
-          "bases": {
-            "first": false,
-            "second": true,
-            "third": false
-          },
-          "status": "Bottom 11th"
-        }
+        ]
       }
     },
     "injury_report": null
