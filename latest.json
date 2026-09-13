@@ -4,7 +4,7 @@
   "edition_date": "2026-09-13",
   "volume": 1,
   "edition": 166,
-  "generated_at": "2026-09-13T17:48:05.346Z",
+  "generated_at": "2026-09-13T18:10:43.224Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, ATL 0",
-    "dek": "Bottom 1st · 1 out",
-    "summary": "Ronald Acuña Jr. is up against Andrew Painter. Series: ATL leads 2-0.",
+    "headline": "PHI 2, ATL 1",
+    "dek": "Bottom 2nd · 2 outs",
+    "summary": "Michael Harris II is up against Andrew Painter. Series: ATL leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 84,
+      "temp_f": 83,
       "condition": "Clear",
       "wind": "7 mph · gusts 9",
       "gusts_mph": 9
@@ -64,26 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ronald Acuña Jr.",
+        "name": "Michael Harris II",
         "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "B",
         "S",
-        "S",
-        "S"
+        "B"
       ],
       "count": {
         "balls": 1,
-        "strikes": 3,
-        "outs": 1
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
         "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -91,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T17:48:06.107Z",
+    "updated_at": "2026-09-13T18:10:43.810Z",
     "current_game_pk": 824869,
     "next_game_pk": 822683,
     "next_game": {
@@ -128,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Clear · gusts 9 mph",
+      "text": "83° · Clear · gusts 9 mph",
       "highlight": false
     },
     {
