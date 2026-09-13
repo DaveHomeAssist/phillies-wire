@@ -4,7 +4,7 @@
   "edition_date": "2026-09-12",
   "volume": 1,
   "edition": 165,
-  "generated_at": "2026-09-12T23:48:01.983Z",
+  "generated_at": "2026-09-13T00:29:19.418Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, ATL 0",
-    "dek": "Top 3rd · 1 out",
-    "summary": "Kyle Schwarber is up against Tyler Mahle. Series: ATL leads 1-0.",
+    "headline": "PHI 1, ATL 4",
+    "dek": "Bottom 4th · 2 outs",
+    "summary": "Ha-Seong Kim is up against Grant Holman. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Grant Holmes · PHI @ ATL · Sun, Sep 13 · 1:35 PM"
   },
@@ -55,33 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 78,
       "condition": "Clear",
-      "wind": "1 mph · gusts 4",
-      "gusts_mph": 4
+      "wind": "4 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Tyler Mahle"
+        "name": "Ha-Seong Kim",
+        "meta": "vs Grant Holman"
       },
       "pitches": [
-        "S",
+        "B",
         "B"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 1
+        "balls": 2,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
         "first": true,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Top 3rd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -89,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-12T23:48:02.478Z",
+    "updated_at": "2026-09-13T00:29:19.837Z",
     "current_game_pk": 824870,
     "next_game_pk": 824869,
     "next_game": {
@@ -126,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 4 mph",
+      "text": "78° · Clear · gusts 7 mph",
       "highlight": false
     }
   ]
