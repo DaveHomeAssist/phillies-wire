@@ -5,14 +5,14 @@
     "edition": 165,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-13T00:29:19.418Z",
+    "generated_at": "2026-09-13T01:13:00.757Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 12, 2026, 8:29 PM ET",
+      "generated_at_et": "Sep 12, 2026, 9:13 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, ATL 4",
-    "dek": "Bottom 4th · 2 outs",
-    "summary": "Ha-Seong Kim is up against Grant Holman. Series: ATL leads 1-0.",
+    "headline": "PHI 1, ATL 9",
+    "dek": "End 6th · 3 outs",
+    "summary": "Luis Arraez is up against Tyler Mahle. Series: ATL leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "78° · Clear"
+        "value": "77° · Clear"
       }
     ],
     "bullets": [
-      "Ha-Seong Kim at the plate",
-      "Grant Holman on the mound",
+      "Luis Arraez at the plate",
+      "Tyler Mahle on the mound",
       "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 78,
+          "temp_f": 77,
           "condition": "Clear",
-          "wind": "4 mph · gusts 7",
-          "gusts_mph": 7
+          "wind": "3 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "",
@@ -359,9 +359,9 @@
             "team": "ATL",
             "name": "Tyler Mahle",
             "hand": "R",
-            "era": "4.00",
+            "era": "3.94",
             "record": "5-10",
-            "whip": "1.26"
+            "whip": "1.25"
           },
           "away": {
             "team": "PHI",
@@ -373,20 +373,20 @@
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
-          "inningState": "Bottom",
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
+          "inningState": "End",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 1,
-              "hits": 4,
-              "errors": 1
+              "hits": 5,
+              "errors": 2
             },
             "home": {
-              "runs": 4,
-              "hits": 6,
+              "runs": 9,
+              "hits": 9,
               "errors": 0
             }
           },
@@ -438,8 +438,34 @@
                 "errors": 1
               },
               "home": {
-                "runs": 4,
-                "hits": 4,
+                "runs": 8,
+                "hits": 6,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 1
+              },
+              "home": {
+                "runs": 1,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -899,11 +925,291 @@
             "inning": 4,
             "half": "bottom",
             "team": "ATL",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Ha-Seong Kim",
             "actor_id": 673490,
-            "detail": "Play",
+            "detail": "Ha-Seong Kim walks. Sean Murphy to 2nd.",
             "score_after": "PHI 1, ATL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "extra_base_hit",
+            "actor": "Drake Baldwin",
+            "actor_id": 686948,
+            "detail": "Drake Baldwin doubles (18) on a sharp fly ball to right fielder Bryce Harper. Sean Murphy scores. Ha-Seong Kim scores.",
+            "score_after": "PHI 1, ATL 7",
+            "runs": 3,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824870:34",
+            "inning": 4,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "single",
+            "actor": "Ronald Acuña Jr.",
+            "actor_id": 660670,
+            "detail": "Ronald Acuña Jr. singles on a line drive to center fielder Justin Crawford. Drake Baldwin scores.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824870:35",
+            "inning": 4,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Matt Olson",
+            "actor_id": 621566,
+            "detail": "Matt Olson flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:36",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh lines out to third baseman Austin Riley.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:37",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto singles on a line drive to shortstop Ha-Seong Kim, deflected by pitcher Tyler Mahle.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:38",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds into a double play, second baseman Ozzie Albies to shortstop Ha-Seong Kim to first baseman Matt Olson. J.T.…",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:39",
+            "inning": 5,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Ozzie Albies",
+            "actor_id": 645277,
+            "detail": "Ozzie Albies strikes out swinging.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:40",
+            "inning": 5,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "single",
+            "actor": "Michael Harris II",
+            "actor_id": 671739,
+            "detail": "Michael Harris II singles on a line drive to right fielder Bryce Harper.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:41",
+            "inning": 5,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "strikeout",
+            "actor": "Mauricio Dubón",
+            "actor_id": 643289,
+            "detail": "Mauricio Dubón strikes out swinging.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:42",
+            "inning": 5,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "walk_hbp",
+            "actor": "Austin Riley",
+            "actor_id": 663586,
+            "detail": "Austin Riley walks. Michael Harris II to 2nd.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:43",
+            "inning": 5,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "walk_hbp",
+            "actor": "Sean Murphy",
+            "actor_id": 669221,
+            "detail": "Sean Murphy walks. Michael Harris II to 3rd. Austin Riley to 2nd.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:44",
+            "inning": 5,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Ha-Seong Kim",
+            "actor_id": 673490,
+            "detail": "Ha-Seong Kim lines out to left fielder Brandon Marsh.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:45",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out to first baseman Matt Olson.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:46",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, shortstop Ha-Seong Kim to first baseman Matt Olson.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:47",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, second baseman Ozzie Albies to first baseman Matt Olson.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:48",
+            "inning": 6,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Drake Baldwin",
+            "actor_id": 686948,
+            "detail": "Drake Baldwin flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:49",
+            "inning": 6,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "walk_hbp",
+            "actor": "Ronald Acuña Jr.",
+            "actor_id": 660670,
+            "detail": "Ronald Acuña Jr. challenged (pitch result), call on the field was overturned: Ronald Acuña Jr. walks.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:50",
+            "inning": 6,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "reached_on_error",
+            "actor": "Matt Olson",
+            "actor_id": 621566,
+            "detail": "Matt Olson reaches on a fielding error by first baseman Alec Bohm. Ronald Acuña Jr. to 3rd.",
+            "score_after": "PHI 1, ATL 8",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824870:51",
+            "inning": 6,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Ozzie Albies",
+            "actor_id": 645277,
+            "detail": "Ozzie Albies out on a sacrifice fly to center fielder Justin Crawford. Ronald Acuña Jr. scores.",
+            "score_after": "PHI 1, ATL 9",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "824870:52",
+            "inning": 6,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Michael Harris II",
+            "actor_id": 671739,
+            "detail": "Michael Harris II flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 1, ATL 9",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -911,24 +1217,26 @@
         ],
         "situation": {
           "batter": {
-            "name": "Ha-Seong Kim",
-            "meta": "vs Grant Holman"
+            "name": "Luis Arraez",
+            "meta": "vs Tyler Mahle"
           },
           "pitches": [
+            "S",
             "B",
-            "B"
+            "B",
+            "X"
           ],
           "count": {
             "balls": 2,
-            "strikes": 0,
-            "outs": 2
+            "strikes": 1,
+            "outs": 3
           },
           "bases": {
-            "first": true,
+            "first": false,
             "second": false,
-            "third": true
+            "third": false
           },
-          "status": "Bottom 4th"
+          "status": "End 6th"
         }
       }
     },
@@ -945,8 +1253,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T00:29:19.418Z",
-            "freshness_label": "As of Sep 12, 2026, 8:29 PM ET"
+            "last_confirmed": "2026-09-13T01:13:00.757Z",
+            "freshness_label": "As of Sep 12, 2026, 9:13 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -958,8 +1266,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T00:29:19.418Z",
-            "freshness_label": "As of Sep 12, 2026, 8:29 PM ET"
+            "last_confirmed": "2026-09-13T01:13:00.757Z",
+            "freshness_label": "As of Sep 12, 2026, 9:13 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -971,8 +1279,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T00:29:19.418Z",
-            "freshness_label": "As of Sep 12, 2026, 8:29 PM ET"
+            "last_confirmed": "2026-09-13T01:13:00.757Z",
+            "freshness_label": "As of Sep 12, 2026, 9:13 PM ET"
           },
           {
             "name": "Tanner Banks",
@@ -984,8 +1292,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T00:29:19.418Z",
-            "freshness_label": "As of Sep 12, 2026, 8:29 PM ET"
+            "last_confirmed": "2026-09-13T01:13:00.757Z",
+            "freshness_label": "As of Sep 12, 2026, 9:13 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -997,8 +1305,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T00:29:19.418Z",
-            "freshness_label": "As of Sep 12, 2026, 8:29 PM ET"
+            "last_confirmed": "2026-09-13T01:13:00.757Z",
+            "freshness_label": "As of Sep 12, 2026, 9:13 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1010,8 +1318,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T00:29:19.418Z",
-            "freshness_label": "As of Sep 12, 2026, 8:29 PM ET"
+            "last_confirmed": "2026-09-13T01:13:00.757Z",
+            "freshness_label": "As of Sep 12, 2026, 9:13 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1023,8 +1331,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T00:29:19.418Z",
-            "freshness_label": "As of Sep 12, 2026, 8:29 PM ET"
+            "last_confirmed": "2026-09-13T01:13:00.757Z",
+            "freshness_label": "As of Sep 12, 2026, 9:13 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

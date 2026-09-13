@@ -4,7 +4,7 @@
   "edition_date": "2026-09-12",
   "volume": 1,
   "edition": 165,
-  "generated_at": "2026-09-13T00:29:19.418Z",
+  "generated_at": "2026-09-13T01:13:00.757Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, ATL 4",
-    "dek": "Bottom 4th · 2 outs",
-    "summary": "Ha-Seong Kim is up against Grant Holman. Series: ATL leads 1-0.",
+    "headline": "PHI 1, ATL 9",
+    "dek": "End 6th · 3 outs",
+    "summary": "Luis Arraez is up against Tyler Mahle. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Grant Holmes · PHI @ ATL · Sun, Sep 13 · 1:35 PM"
   },
@@ -55,33 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 78,
+      "temp_f": 77,
       "condition": "Clear",
-      "wind": "4 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "3 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ha-Seong Kim",
-        "meta": "vs Grant Holman"
+        "name": "Luis Arraez",
+        "meta": "vs Tyler Mahle"
       },
       "pitches": [
+        "S",
         "B",
-        "B"
+        "B",
+        "X"
       ],
       "count": {
         "balls": 2,
-        "strikes": 0,
-        "outs": 2
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 4th"
+      "status": "End 6th"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T00:29:19.837Z",
+    "updated_at": "2026-09-13T01:13:01.577Z",
     "current_game_pk": 824870,
     "next_game_pk": 824869,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 7 mph",
+      "text": "77° · Clear · gusts 9 mph",
       "highlight": false
     }
   ]
