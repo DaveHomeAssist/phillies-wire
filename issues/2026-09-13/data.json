@@ -5,14 +5,14 @@
     "edition": 166,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-13T17:07:24.603Z",
+    "generated_at": "2026-09-13T17:20:12.313Z",
     "status": {
-      "mode": "pregame",
-      "mode_label": "Pregame",
+      "mode": "live",
+      "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Pregame edition",
-      "generated_at_et": "Sep 13, 2026, 1:07 PM ET",
+      "enrich_label": "Live update",
+      "generated_at_et": "Sep 13, 2026, 1:20 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -26,31 +26,32 @@
     "division": "NL East"
   },
   "hero": {
-    "mode": "pregame",
-    "label": "Pregame",
-    "headline": "Phillies @ Braves · Game 3 of 3",
-    "dek": "Andrew Painter vs Grant Holmes",
-    "summary": "Andrew Painter vs Grant Holmes · Phillies @ Braves · Game 3 of 3",
+    "mode": "live",
+    "label": "Live",
+    "headline": "PHI 0, ATL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Grant Holmes. Series: ATL leads 2-0.",
     "cards": [
-      {
-        "label": "First Pitch",
-        "value": "1:35 PM"
-      },
       {
         "label": "Venue",
         "value": "Truist Park, Atlanta"
       },
       {
-        "label": "Watch",
+        "label": "Broadcast",
         "value": "NBCSP · MLB.TV · 1210 WPHT"
+      },
+      {
+        "label": "Weather",
+        "value": "82° · Clear"
       }
     ],
     "bullets": [
-      "82° · Clear · 7 mph · gusts 10",
-      "ATL leads 2-0"
+      "Kyle Schwarber at the plate",
+      "Grant Holmes on the mound",
+      "Truist Park, Atlanta"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
+    "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
   "sections": {
     "lineup": {
@@ -347,8 +348,8 @@
         "weather": {
           "temp_f": 82,
           "condition": "Clear",
-          "wind": "7 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "7 mph · gusts 9",
+          "gusts_mph": 9
         },
         "giveaway": "",
         "transit": "",
@@ -414,13 +415,31 @@
             "event_type": "other",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Status Change - Pre-Game",
+            "detail": "Status Change - Warmup",
             "score_after": "PHI 0, ATL 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ]
+        ],
+        "situation": {
+          "batter": {
+            "name": "Kyle Schwarber",
+            "meta": "vs Grant Holmes"
+          },
+          "pitches": [],
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "bases": {
+            "first": false,
+            "second": false,
+            "third": false
+          },
+          "status": "Top 1st"
+        }
       }
     },
     "injury_report": {
@@ -436,8 +455,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T17:07:24.603Z",
-            "freshness_label": "As of Sep 13, 2026, 1:07 PM ET"
+            "last_confirmed": "2026-09-13T17:20:12.313Z",
+            "freshness_label": "As of Sep 13, 2026, 1:20 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -449,8 +468,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T17:07:24.603Z",
-            "freshness_label": "As of Sep 13, 2026, 1:07 PM ET"
+            "last_confirmed": "2026-09-13T17:20:12.313Z",
+            "freshness_label": "As of Sep 13, 2026, 1:20 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -462,8 +481,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T17:07:24.603Z",
-            "freshness_label": "As of Sep 13, 2026, 1:07 PM ET"
+            "last_confirmed": "2026-09-13T17:20:12.313Z",
+            "freshness_label": "As of Sep 13, 2026, 1:20 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -475,8 +494,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T17:07:24.603Z",
-            "freshness_label": "As of Sep 13, 2026, 1:07 PM ET"
+            "last_confirmed": "2026-09-13T17:20:12.313Z",
+            "freshness_label": "As of Sep 13, 2026, 1:20 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -488,8 +507,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T17:07:24.603Z",
-            "freshness_label": "As of Sep 13, 2026, 1:07 PM ET"
+            "last_confirmed": "2026-09-13T17:20:12.313Z",
+            "freshness_label": "As of Sep 13, 2026, 1:20 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -501,8 +520,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T17:07:24.603Z",
-            "freshness_label": "As of Sep 13, 2026, 1:07 PM ET"
+            "last_confirmed": "2026-09-13T17:20:12.313Z",
+            "freshness_label": "As of Sep 13, 2026, 1:20 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -511,7 +530,7 @@
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Jackson Kent · PHI @ WSH",
+    "matchup": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH",
     "date": "Tue, Sep 15",
     "time": "6:45 PM",
     "broadcast": "NBCSP",

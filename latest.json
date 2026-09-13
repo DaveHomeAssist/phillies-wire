@@ -4,9 +4,9 @@
   "edition_date": "2026-09-13",
   "volume": 1,
   "edition": 166,
-  "generated_at": "2026-09-13T17:07:24.603Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-13T17:20:12.313Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 82,
@@ -16,11 +16,11 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Braves · Game 3 of 3",
-    "dek": "Andrew Painter vs Grant Holmes",
-    "summary": "Andrew Painter vs Grant Holmes · Phillies @ Braves · Game 3 of 3",
+    "headline": "PHI 0, ATL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Grant Holmes. Series: ATL leads 2-0.",
     "next_label": "Tomorrow",
-    "next_value": "Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
+    "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
   "game": {
     "matchup": "Phillies @ Braves · Game 3 of 3",
@@ -57,19 +57,36 @@
     "weather": {
       "temp_f": 82,
       "condition": "Clear",
-      "wind": "7 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "7 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Grant Holmes"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T17:07:25.269Z",
+    "updated_at": "2026-09-13T17:20:12.807Z",
     "current_game_pk": 824869,
     "next_game_pk": 822683,
     "next_game": {
@@ -106,15 +123,15 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 10 mph",
-      "highlight": false
-    },
-    {
-      "text": "designated SS Christian Cairo for assignment.",
+      "text": "82° · Clear · gusts 9 mph",
       "highlight": false
     },
     {
       "text": "activated LHP Tanner Banks from the 60-day injured list.",
+      "highlight": false
+    },
+    {
+      "text": "designated SS Christian Cairo for assignment.",
       "highlight": false
     },
     {
