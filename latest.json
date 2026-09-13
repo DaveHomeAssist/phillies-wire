@@ -4,21 +4,21 @@
   "edition_date": "2026-09-13",
   "volume": 1,
   "edition": 166,
-  "generated_at": "2026-09-13T20:23:58.398Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-13T20:35:06.441Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 82,
+    "wins": 83,
     "losses": 67,
-    "streak": "L3",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 9, ATL 2",
-    "dek": "Bottom 9th · 1 out",
-    "summary": "Ronald Acuña Jr. is up against Tanner Banks. Series: ATL leads 2-0.",
+    "headline": "PHI 9, ATL 4.",
+    "dek": "PHI 9, ATL 4 · Andrew Painter · 5.0 IP, 6 H, 1 ER, 3 K",
+    "summary": "PHI 9, ATL 4. Final at Truist Park, Atlanta. ATL wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "ATL leads 2-0"
+      "label": "ATL wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,57 +57,40 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "5 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "5 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Ronald Acuña Jr.",
-        "meta": "vs Tanner Banks"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 1
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T20:23:59.147Z",
-    "current_game_pk": 824869,
-    "next_game_pk": 822683,
+    "updated_at": "2026-09-13T20:35:07.307Z",
+    "current_game_pk": 822683,
+    "next_game_pk": 822680,
     "next_game": {
-      "game_pk": 822683,
-      "official_date": "2026-09-15",
-      "date_label": "Tue, Sep 15, 2026",
+      "game_pk": 822680,
+      "official_date": "2026-09-16",
+      "date_label": "Wed, Sep 16, 2026",
       "time_label": "6:45 PM",
       "title": "Phillies at Washington Nationals",
       "matchup": "PHI at WSH",
       "venue": "Nationals Park"
     },
     "current_game": {
-      "game_pk": 824869,
-      "official_date": "2026-09-13",
-      "title": "Phillies at Atlanta Braves",
-      "matchup": "PHI at ATL"
+      "game_pk": 822683,
+      "official_date": "2026-09-15",
+      "title": "Phillies at Washington Nationals",
+      "matchup": "PHI at WSH"
     }
   },
   "ticker": [
     {
-      "text": "PHI 82-67",
+      "text": "PHI 83-67",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Clear · gusts 14 mph",
+      "text": "84° · Clear · gusts 13 mph",
       "highlight": false
     },
     {
