@@ -4,21 +4,21 @@
   "edition_date": "2026-09-12",
   "volume": 1,
   "edition": 165,
-  "generated_at": "2026-09-13T01:39:23.671Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-13T01:57:39.719Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 82,
-    "losses": 66,
-    "streak": "L2",
+    "losses": 67,
+    "streak": "L3",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, ATL 9",
-    "dek": "Top 8th · 0 outs",
-    "summary": "Edmundo Sosa is up against Brent Suter. Series: ATL leads 1-0.",
+    "headline": "PHI 2, ATL 12.",
+    "dek": "ATL 12, PHI 2 · Tyler Mahle · 7.0 IP, 6 H, 1 ER, 3 K",
+    "summary": "PHI 2, ATL 12. Final at Truist Park, Atlanta. ATL wins 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Grant Holmes · PHI @ ATL · Sun, Sep 13 · 1:35 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "ATL leads 1-0"
+      "label": "ATL wins 2-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -56,58 +56,41 @@
     },
     "weather": {
       "temp_f": 77,
-      "condition": "Partly cloudy",
-      "wind": "2 mph · gusts 7",
+      "condition": "Overcast",
+      "wind": "3 mph · gusts 7",
       "gusts_mph": 7
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Edmundo Sosa",
-        "meta": "vs Brent Suter"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T01:39:24.173Z",
-    "current_game_pk": 824870,
-    "next_game_pk": 824869,
+    "updated_at": "2026-09-13T01:57:40.629Z",
+    "current_game_pk": 824869,
+    "next_game_pk": 822683,
     "next_game": {
-      "game_pk": 824869,
-      "official_date": "2026-09-13",
-      "date_label": "Sun, Sep 13, 2026",
-      "time_label": "1:35 PM",
-      "title": "Phillies at Atlanta Braves",
-      "matchup": "PHI at ATL",
-      "venue": "Truist Park"
+      "game_pk": 822683,
+      "official_date": "2026-09-15",
+      "date_label": "Tue, Sep 15, 2026",
+      "time_label": "6:45 PM",
+      "title": "Phillies at Washington Nationals",
+      "matchup": "PHI at WSH",
+      "venue": "Nationals Park"
     },
     "current_game": {
-      "game_pk": 824870,
-      "official_date": "2026-09-12",
+      "game_pk": 824869,
+      "official_date": "2026-09-13",
       "title": "Phillies at Atlanta Braves",
       "matchup": "PHI at ATL"
     }
   },
   "ticker": [
     {
-      "text": "PHI 82-66",
+      "text": "PHI 82-67",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Partly cloudy · gusts 7 mph",
+      "text": "77° · Overcast · gusts 7 mph",
       "highlight": false
     }
   ]
