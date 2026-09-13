@@ -4,7 +4,7 @@
   "edition_date": "2026-09-13",
   "volume": 1,
   "edition": 166,
-  "generated_at": "2026-09-13T19:34:29.412Z",
+  "generated_at": "2026-09-13T19:47:52.332Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, ATL 1",
-    "dek": "Bottom 7th · 1 out",
-    "summary": "Matt Olson is up against José Alvarado. Series: ATL leads 2-0.",
+    "headline": "PHI 2, ATL 2",
+    "dek": "Top 8th · 1 out",
+    "summary": "Luis Arraez is up against Dylan Lee. Series: ATL leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
@@ -57,15 +57,15 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "5 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "6 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Matt Olson",
-        "meta": "vs José Alvarado"
+        "name": "Luis Arraez",
+        "meta": "vs Dylan Lee"
       },
       "pitches": [],
       "count": {
@@ -75,10 +75,10 @@
       },
       "bases": {
         "first": false,
-        "second": false,
+        "second": true,
         "third": true
       },
-      "status": "Bottom 7th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T19:34:29.841Z",
+    "updated_at": "2026-09-13T19:47:53.108Z",
     "current_game_pk": 824869,
     "next_game_pk": 822683,
     "next_game": {
@@ -123,15 +123,15 @@
       "highlight": false
     },
     {
-      "text": "84° · Clear · gusts 11 mph",
-      "highlight": false
-    },
-    {
-      "text": "activated LHP Tanner Banks from the 60-day injured list.",
+      "text": "84° · Clear · gusts 13 mph",
       "highlight": false
     },
     {
       "text": "designated SS Christian Cairo for assignment.",
+      "highlight": false
+    },
+    {
+      "text": "activated LHP Tanner Banks from the 60-day injured list.",
       "highlight": false
     },
     {
