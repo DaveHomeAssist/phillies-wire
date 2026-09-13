@@ -4,7 +4,7 @@
   "edition_date": "2026-09-13",
   "volume": 1,
   "edition": 166,
-  "generated_at": "2026-09-13T18:39:34.599Z",
+  "generated_at": "2026-09-13T18:47:43.620Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, ATL 1",
-    "dek": "Bottom 4th · 1 out",
-    "summary": "Ha-Seong Kim is up against Andrew Painter. Series: ATL leads 2-0.",
+    "dek": "End 4th · 3 outs",
+    "summary": "J.T. Realmuto is up against Grant Holmes. Series: ATL leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
@@ -57,30 +57,33 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "5 mph · gusts 9",
-      "gusts_mph": 9
+      "wind": "5 mph · gusts 8",
+      "gusts_mph": 8
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ha-Seong Kim",
-        "meta": "vs Andrew Painter"
+        "name": "J.T. Realmuto",
+        "meta": "vs Grant Holmes"
       },
       "pitches": [
-        "B"
+        "F",
+        "B",
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 0,
-        "outs": 1
+        "balls": 2,
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 4th"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -88,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T18:39:35.294Z",
+    "updated_at": "2026-09-13T18:47:44.333Z",
     "current_game_pk": 824869,
     "next_game_pk": 822683,
     "next_game": {
@@ -125,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Clear · gusts 9 mph",
+      "text": "84° · Clear · gusts 8 mph",
       "highlight": false
     },
     {
