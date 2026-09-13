@@ -4,7 +4,7 @@
   "edition_date": "2026-09-13",
   "volume": 1,
   "edition": 166,
-  "generated_at": "2026-09-13T20:09:09.820Z",
+  "generated_at": "2026-09-13T20:23:58.398Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 9, ATL 2",
-    "dek": "Bottom 8th · 0 outs",
-    "summary": "Austin Riley is up against Tanner Banks. Series: ATL leads 2-0.",
+    "dek": "Bottom 9th · 1 out",
+    "summary": "Ronald Acuña Jr. is up against Tanner Banks. Series: ATL leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
@@ -57,31 +57,28 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "5 mph · gusts 13",
-      "gusts_mph": 13
+      "wind": "5 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Austin Riley",
+        "name": "Ronald Acuña Jr.",
         "meta": "vs Tanner Banks"
       },
-      "pitches": [
-        "F",
-        "S"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 0
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 8th"
+      "status": "Bottom 9th"
     },
     "recap_line": null
   },
@@ -89,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T20:09:10.697Z",
+    "updated_at": "2026-09-13T20:23:59.147Z",
     "current_game_pk": 824869,
     "next_game_pk": 822683,
     "next_game": {
@@ -126,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Clear · gusts 13 mph",
+      "text": "84° · Clear · gusts 14 mph",
       "highlight": false
     },
     {
