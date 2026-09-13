@@ -4,7 +4,7 @@
   "edition_date": "2026-09-13",
   "volume": 1,
   "edition": 166,
-  "generated_at": "2026-09-13T19:47:52.332Z",
+  "generated_at": "2026-09-13T20:09:09.820Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, ATL 2",
-    "dek": "Top 8th · 1 out",
-    "summary": "Luis Arraez is up against Dylan Lee. Series: ATL leads 2-0.",
+    "headline": "PHI 9, ATL 2",
+    "dek": "Bottom 8th · 0 outs",
+    "summary": "Austin Riley is up against Tanner Banks. Series: ATL leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
@@ -57,28 +57,31 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "6 mph · gusts 13",
+      "wind": "5 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Dylan Lee"
+        "name": "Austin Riley",
+        "meta": "vs Tanner Banks"
       },
-      "pitches": [],
+      "pitches": [
+        "F",
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
         "first": false,
-        "second": true,
-        "third": true
+        "second": false,
+        "third": false
       },
-      "status": "Top 8th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T19:47:53.108Z",
+    "updated_at": "2026-09-13T20:09:10.697Z",
     "current_game_pk": 824869,
     "next_game_pk": 822683,
     "next_game": {
