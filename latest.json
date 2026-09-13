@@ -4,7 +4,7 @@
   "edition_date": "2026-09-13",
   "volume": 1,
   "edition": 166,
-  "generated_at": "2026-09-13T19:06:48.229Z",
+  "generated_at": "2026-09-13T19:19:21.965Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, ATL 1",
-    "dek": "End 5th · 3 outs",
-    "summary": "Bryce Harper is up against Ray Kerr. Series: ATL leads 2-0.",
+    "dek": "Bottom 6th · 2 outs",
+    "summary": "Mike Yastrzemski is up against Alex McFarlane. Series: ATL leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
@@ -57,32 +57,38 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "6 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "6 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Ray Kerr"
+        "name": "Mike Yastrzemski",
+        "meta": "vs Alex McFarlane"
       },
       "pitches": [
         "B",
+        "B",
+        "B",
         "S",
-        "X"
+        "S",
+        "F",
+        "F",
+        "F",
+        "S"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 1,
-        "outs": 3
+        "balls": 3,
+        "strikes": 3,
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -90,7 +96,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T19:06:48.966Z",
+    "updated_at": "2026-09-13T19:19:22.853Z",
     "current_game_pk": 824869,
     "next_game_pk": 822683,
     "next_game": {
@@ -127,7 +133,7 @@
       "highlight": false
     },
     {
-      "text": "84° · Clear · gusts 10 mph",
+      "text": "84° · Clear · gusts 11 mph",
       "highlight": false
     },
     {
