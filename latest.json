@@ -4,7 +4,7 @@
   "edition_date": "2026-09-12",
   "volume": 1,
   "edition": 165,
-  "generated_at": "2026-09-13T01:13:00.757Z",
+  "generated_at": "2026-09-13T01:39:23.671Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, ATL 9",
-    "dek": "End 6th · 3 outs",
-    "summary": "Luis Arraez is up against Tyler Mahle. Series: ATL leads 1-0.",
+    "dek": "Top 8th · 0 outs",
+    "summary": "Edmundo Sosa is up against Brent Suter. Series: ATL leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Grant Holmes · PHI @ ATL · Sun, Sep 13 · 1:35 PM"
   },
@@ -56,34 +56,29 @@
     },
     "weather": {
       "temp_f": 77,
-      "condition": "Clear",
-      "wind": "3 mph · gusts 9",
-      "gusts_mph": 9
+      "condition": "Partly cloudy",
+      "wind": "2 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Tyler Mahle"
+        "name": "Edmundo Sosa",
+        "meta": "vs Brent Suter"
       },
-      "pitches": [
-        "S",
-        "B",
-        "B",
-        "X"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 1,
-        "outs": 3
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 6th"
+      "status": "Top 8th"
     },
     "recap_line": null
   },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T01:13:01.577Z",
+    "updated_at": "2026-09-13T01:39:24.173Z",
     "current_game_pk": 824870,
     "next_game_pk": 824869,
     "next_game": {
@@ -128,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Clear · gusts 9 mph",
+      "text": "77° · Partly cloudy · gusts 7 mph",
       "highlight": false
     }
   ]
