@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-12",
+  "edition_date": "2026-09-13",
   "volume": 1,
-  "edition": 165,
-  "generated_at": "2026-09-13T03:49:17.870Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 166,
+  "generated_at": "2026-09-13T04:10:52.743Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 82,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, ATL 12.",
-    "dek": "ATL 12, PHI 2 · Tyler Mahle · 7.0 IP, 6 H, 1 ER, 3 K",
-    "summary": "PHI 2, ATL 12. Final at Truist Park, Atlanta. ATL wins 2-0.",
+    "headline": "Phillies @ Braves · Game 3 of 3",
+    "dek": "Andrew Painter vs Grant Holmes",
+    "summary": "Andrew Painter vs Grant Holmes · Phillies @ Braves · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter vs Grant Holmes · PHI @ ATL · Sun, Sep 13 · 1:35 PM"
+    "next_value": "PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
   "game": {
-    "matchup": "Phillies @ Braves · Game 2 of 3",
-    "first_pitch": "7:15 PM",
+    "matchup": "Phillies @ Braves · Game 3 of 3",
+    "first_pitch": "1:35 PM",
     "venue": "Truist Park, Atlanta",
     "starters": {
       "home": {
-        "name": "Tyler Mahle",
+        "name": "Grant Holmes",
         "hand": "R"
       },
       "away": {
-        "name": "Tim Mayza",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "phi": {
-        "name": "Tim Mayza",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "opp": {
-        "name": "Tyler Mahle",
+        "name": "Grant Holmes",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "ATL wins 2-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
       "stream": "MLB.TV",
-      "radio": "94 WIP"
+      "radio": "1210 WPHT"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 75,
       "condition": "Clear",
-      "wind": "2 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "2 mph · gusts 3",
+      "gusts_mph": 3
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T03:49:18.511Z",
+    "updated_at": "2026-09-13T04:10:53.547Z",
     "current_game_pk": 824869,
     "next_game_pk": 822683,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Braves · Game 2 of 3 · 7:15 PM",
+      "text": "Phillies @ Braves · Game 3 of 3 · 1:35 PM",
       "highlight": false
     },
     {
-      "text": "Tim Mayza vs Tyler Mahle",
+      "text": "Andrew Painter vs Grant Holmes",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "NBCSP · 1210 WPHT",
       "highlight": false
     },
     {
-      "text": "76° · Clear · gusts 5 mph",
+      "text": "75° · Clear · gusts 3 mph",
       "highlight": false
     }
   ]
