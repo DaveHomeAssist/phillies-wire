@@ -5,14 +5,14 @@
     "edition": 166,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-13T18:27:01.048Z",
+    "generated_at": "2026-09-13T18:39:34.599Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 13, 2026, 2:27 PM ET",
+      "generated_at_et": "Sep 13, 2026, 2:39 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 2, ATL 1",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "Mauricio Dubón is up against Andrew Painter. Series: ATL leads 2-0.",
+    "dek": "Bottom 4th · 1 out",
+    "summary": "Ha-Seong Kim is up against Andrew Painter. Series: ATL leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,7 +46,7 @@
       }
     ],
     "bullets": [
-      "Mauricio Dubón at the plate",
+      "Ha-Seong Kim at the plate",
       "Andrew Painter on the mound",
       "Truist Park, Atlanta"
     ],
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 84,
           "condition": "Clear",
-          "wind": "6 mph · gusts 9",
+          "wind": "5 mph · gusts 9",
           "gusts_mph": 9
         },
         "giveaway": "",
@@ -359,25 +359,25 @@
             "team": "ATL",
             "name": "Grant Holmes",
             "hand": "R",
-            "era": "3.52",
+            "era": "3.49",
             "record": "9-5",
-            "whip": "1.29"
+            "whip": "1.28"
           },
           "away": {
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "5.69",
+            "era": "5.64",
             "record": "3-9",
-            "whip": "1.42"
+            "whip": "1.44"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 2,
@@ -425,8 +425,21 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -777,7 +790,7 @@
             "event_type": "other",
             "actor": "Matt Olson",
             "actor_id": 621566,
-            "detail": "Matt Olson grounds into a double play, third baseman Bryson Stott to second baseman Luis Arraez to first baseman Alec Bohm. Ronald…",
+            "detail": "Matt Olson grounds into a double play, third baseman Bryson Stott to shortstop Trea Turner to first baseman Alec Bohm. Ronald Acuña…",
             "score_after": "PHI 2, ATL 1",
             "runs": 0,
             "is_scoring": false,
@@ -802,9 +815,107 @@
             "inning": 3,
             "half": "bottom",
             "team": "ATL",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Mauricio Dubón",
             "actor_id": 643289,
+            "detail": "Mauricio Dubón walks. Drake Baldwin to 2nd.",
+            "score_after": "PHI 2, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824869:27",
+            "inning": 3,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Ozzie Albies",
+            "actor_id": 645277,
+            "detail": "Ozzie Albies pops out to shortstop Trea Turner.",
+            "score_after": "PHI 2, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824869:28",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm flies out to right fielder Mike Yastrzemski in foul territory.",
+            "score_after": "PHI 2, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824869:29",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out, first baseman Matt Olson to pitcher Grant Holmes.",
+            "score_after": "PHI 2, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824869:30",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh grounds out to first baseman Matt Olson.",
+            "score_after": "PHI 2, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824869:31",
+            "inning": 4,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "walk_hbp",
+            "actor": "Austin Riley",
+            "actor_id": 663586,
+            "detail": "Austin Riley walks.",
+            "score_after": "PHI 2, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824869:32",
+            "inning": 4,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "out",
+            "actor": "Mike Yastrzemski",
+            "actor_id": 573262,
+            "detail": "Mike Yastrzemski grounds into a force out, pitcher Andrew Painter to shortstop Trea Turner. Austin Riley out at 2nd. Mike Yastrzems…",
+            "score_after": "PHI 2, ATL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "824869:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "ATL",
+            "event_type": "other",
+            "actor": "Ha-Seong Kim",
+            "actor_id": 673490,
             "detail": "Play",
             "score_after": "PHI 2, ATL 1",
             "runs": 0,
@@ -814,26 +925,23 @@
         ],
         "situation": {
           "batter": {
-            "name": "Mauricio Dubón",
+            "name": "Ha-Seong Kim",
             "meta": "vs Andrew Painter"
           },
           "pitches": [
-            "S",
-            "B",
-            "B",
             "B"
           ],
           "count": {
-            "balls": 3,
-            "strikes": 1,
-            "outs": 2
+            "balls": 1,
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
             "first": true,
             "second": false,
             "third": false
           },
-          "status": "Bottom 3rd"
+          "status": "Bottom 4th"
         }
       }
     },
@@ -850,8 +958,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T18:27:01.048Z",
-            "freshness_label": "As of Sep 13, 2026, 2:27 PM ET"
+            "last_confirmed": "2026-09-13T18:39:34.599Z",
+            "freshness_label": "As of Sep 13, 2026, 2:39 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -863,8 +971,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T18:27:01.048Z",
-            "freshness_label": "As of Sep 13, 2026, 2:27 PM ET"
+            "last_confirmed": "2026-09-13T18:39:34.599Z",
+            "freshness_label": "As of Sep 13, 2026, 2:39 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -876,8 +984,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T18:27:01.048Z",
-            "freshness_label": "As of Sep 13, 2026, 2:27 PM ET"
+            "last_confirmed": "2026-09-13T18:39:34.599Z",
+            "freshness_label": "As of Sep 13, 2026, 2:39 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -889,8 +997,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T18:27:01.048Z",
-            "freshness_label": "As of Sep 13, 2026, 2:27 PM ET"
+            "last_confirmed": "2026-09-13T18:39:34.599Z",
+            "freshness_label": "As of Sep 13, 2026, 2:39 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -902,8 +1010,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T18:27:01.048Z",
-            "freshness_label": "As of Sep 13, 2026, 2:27 PM ET"
+            "last_confirmed": "2026-09-13T18:39:34.599Z",
+            "freshness_label": "As of Sep 13, 2026, 2:39 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -915,8 +1023,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-13T18:27:01.048Z",
-            "freshness_label": "As of Sep 13, 2026, 2:27 PM ET"
+            "last_confirmed": "2026-09-13T18:39:34.599Z",
+            "freshness_label": "As of Sep 13, 2026, 2:39 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

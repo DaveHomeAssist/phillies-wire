@@ -4,7 +4,7 @@
   "edition_date": "2026-09-13",
   "volume": 1,
   "edition": 166,
-  "generated_at": "2026-09-13T18:27:01.048Z",
+  "generated_at": "2026-09-13T18:39:34.599Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, ATL 1",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "Mauricio Dubón is up against Andrew Painter. Series: ATL leads 2-0.",
+    "dek": "Bottom 4th · 1 out",
+    "summary": "Ha-Seong Kim is up against Andrew Painter. Series: ATL leads 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
@@ -57,33 +57,30 @@
     "weather": {
       "temp_f": 84,
       "condition": "Clear",
-      "wind": "6 mph · gusts 9",
+      "wind": "5 mph · gusts 9",
       "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Mauricio Dubón",
+        "name": "Ha-Seong Kim",
         "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "S",
-        "B",
-        "B",
         "B"
       ],
       "count": {
-        "balls": 3,
-        "strikes": 1,
-        "outs": 2
+        "balls": 1,
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
         "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -91,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-13T18:27:01.692Z",
+    "updated_at": "2026-09-13T18:39:35.294Z",
     "current_game_pk": 824869,
     "next_game_pk": 822683,
     "next_game": {
