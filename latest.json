@@ -1,64 +1,64 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-13",
+  "edition_date": "2026-09-14",
   "volume": 1,
-  "edition": 166,
-  "generated_at": "2026-09-14T03:51:59.238Z",
-  "mode": "final",
-  "mode_label": "Final",
-  "off_day": false,
+  "edition": 167,
+  "generated_at": "2026-09-14T04:12:34.788Z",
+  "mode": "off_day",
+  "mode_label": "Off Day",
+  "off_day": true,
   "record": {
-    "wins": 83,
-    "losses": 67,
+    "wins": 0,
+    "losses": 0,
     "streak": "W1",
-    "division_rank": 2,
+    "division_rank": 0,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 9, ATL 4.",
-    "dek": "PHI 9, ATL 4 · Andrew Painter · 5.0 IP, 6 H, 1 ER, 3 K",
-    "summary": "PHI 9, ATL 4. Final at Truist Park, Atlanta. ATL wins 2-1.",
-    "next_label": "Tomorrow",
+    "headline": "No Phillies game today",
+    "dek": "Next up: Cristopher Sánchez vs Jackson Kent · PHI @ WSH",
+    "summary": "Use the archive to catch up or check the next scheduled game window.",
+    "next_label": "Next Game",
     "next_value": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM"
   },
   "game": {
-    "matchup": "Phillies @ Braves · Game 3 of 3",
-    "first_pitch": "1:35 PM",
-    "venue": "Truist Park, Atlanta",
+    "matchup": "Schedule refresh required",
+    "first_pitch": "TBD",
+    "venue": "TBD",
     "starters": {
       "home": {
-        "name": "Grant Holmes",
+        "name": "TBD",
         "hand": "R"
       },
       "away": {
-        "name": "Andrew Painter",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Andrew Painter",
+        "name": "TBD",
         "hand": "R"
       },
       "opp": {
-        "name": "Grant Holmes",
+        "name": "TBD",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "ATL wins 2-1"
+      "label": "Series status pending"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "TV TBD",
       "stream": "MLB.TV",
-      "radio": "1210 WPHT"
+      "radio": "Radio TBD"
     },
     "weather": {
-      "temp_f": 73,
-      "condition": "Clear",
-      "wind": "4 mph · gusts 6",
-      "gusts_mph": 6
+      "temp_f": "",
+      "condition": "Weather unavailable",
+      "wind": "Weather unavailable",
+      "gusts_mph": ""
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-14T03:51:59.721Z",
+    "updated_at": "2026-09-14T04:12:35.398Z",
     "current_game_pk": 822683,
     "next_game_pk": 822680,
     "next_game": {
@@ -90,35 +90,19 @@
   },
   "ticker": [
     {
-      "text": "PHI 83-67",
+      "text": "PHI 0-0",
       "highlight": true
     },
     {
-      "text": "Phillies @ Braves · Game 3 of 3 · 1:35 PM",
+      "text": "Cristopher Sánchez vs Jackson Kent · PHI @ WSH · Tue, Sep 15 · 6:45 PM",
       "highlight": false
     },
     {
-      "text": "Andrew Painter vs Grant Holmes",
-      "highlight": true
-    },
-    {
-      "text": "NBCSP · 1210 WPHT",
+      "text": "NBCSP",
       "highlight": false
     },
     {
-      "text": "73° · Clear · gusts 6 mph",
-      "highlight": false
-    },
-    {
-      "text": "designated SS Christian Cairo for assignment.",
-      "highlight": false
-    },
-    {
-      "text": "activated LHP Tanner Banks from the 60-day injured list.",
-      "highlight": false
-    },
-    {
-      "text": "optioned RHP Grant Holman to Lehigh Valley IronPigs.",
+      "text": "Off day",
       "highlight": false
     }
   ]
