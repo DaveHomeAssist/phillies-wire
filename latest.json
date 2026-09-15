@@ -4,7 +4,7 @@
   "edition_date": "2026-09-15",
   "volume": 1,
   "edition": 168,
-  "generated_at": "2026-09-15T22:34:30.203Z",
+  "generated_at": "2026-09-15T22:48:06.918Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 77,
+      "temp_f": 76,
       "condition": "Clear",
       "wind": "4 mph · gusts 5",
       "gusts_mph": 5
@@ -67,10 +67,15 @@
         "name": "Kyle Schwarber",
         "meta": "vs Jackson Kent"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "S",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 3,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-15T22:34:31.053Z",
+    "updated_at": "2026-09-15T22:48:07.806Z",
     "current_game_pk": 822683,
     "next_game_pk": 822680,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Clear · gusts 5 mph",
+      "text": "76° · Clear · gusts 5 mph",
       "highlight": false
     },
     {
