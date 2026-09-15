@@ -5,14 +5,14 @@
     "edition": 168,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-15T23:22:36.753Z",
+    "generated_at": "2026-09-15T23:33:56.980Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 15, 2026, 7:22 PM ET",
+      "generated_at_et": "Sep 15, 2026, 7:33 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, WSH 2",
-    "dek": "Bottom 2nd · 1 out",
-    "summary": "Nasim Nuñez is up against Cristopher Sánchez. Series: Regular Season.",
+    "headline": "PHI 2, WSH 2",
+    "dek": "Top 3rd · 2 outs",
+    "summary": "Alec Bohm is up against Jackson Kent. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "74° · Clear"
+        "value": "73° · Clear"
       }
     ],
     "bullets": [
-      "Nasim Nuñez at the plate",
-      "Cristopher Sánchez on the mound",
+      "Alec Bohm at the plate",
+      "Jackson Kent on the mound",
       "Nationals Park, Washington"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 74,
+          "temp_f": 73,
           "condition": "Clear",
-          "wind": "3 mph · gusts 5",
-          "gusts_mph": 5
+          "wind": "4 mph · gusts 6",
+          "gusts_mph": 6
         },
         "giveaway": "",
         "transit": "",
@@ -359,29 +359,29 @@
             "team": "WSH",
             "name": "Jackson Kent",
             "hand": "L",
-            "era": "6.44",
+            "era": "6.60",
             "record": "1-4",
-            "whip": "1.81"
+            "whip": "1.83"
           },
           "away": {
             "team": "PHI",
             "name": "Cristopher Sánchez",
             "hand": "L",
-            "era": "2.87",
+            "era": "2.85",
             "record": "17-5",
             "whip": "1.22"
           }
         },
         "linescore": {
-          "currentInning": 2,
-          "currentInningOrdinal": "2nd",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 1,
+          "currentInning": 3,
+          "currentInningOrdinal": "3rd",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 2,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 1,
+              "runs": 2,
+              "hits": 3,
               "errors": 0
             },
             "home": {
@@ -409,6 +409,19 @@
               "away": {
                 "runs": 0,
                 "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 3,
+              "away": {
+                "runs": 1,
+                "hits": 2,
                 "errors": 0
               },
               "home": {
@@ -663,11 +676,95 @@
             "inning": 2,
             "half": "bottom",
             "team": "WSH",
-            "event_type": "other",
+            "event_type": "walk_hbp",
             "actor": "Nasim Nuñez",
             "actor_id": 683083,
-            "detail": "Play",
+            "detail": "Nasim Nuñez walks.",
             "score_after": "PHI 1, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:18",
+            "inning": 2,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "other",
+            "actor": "Dylan Crews",
+            "actor_id": 686611,
+            "detail": "Dylan Crews grounds into a double play, third baseman Bryson Stott to second baseman Luis Arraez to first baseman Alec Bohm. Nasim…",
+            "score_after": "PHI 1, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:19",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber flies out to left fielder Andrew Pinckney.",
+            "score_after": "PHI 1, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:20",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner singles on a line drive to left fielder Andrew Pinckney.",
+            "score_after": "PHI 1, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:21",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, pitcher Jackson Kent to first baseman Yohandy Morales. Trea Turner to 2nd.",
+            "score_after": "PHI 1, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:22",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez doubles (31) on a ground ball to left fielder Andrew Pinckney. Trea Turner scores.",
+            "score_after": "PHI 2, WSH 2",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "822683:23",
+            "inning": 3,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Play",
+            "score_after": "PHI 2, WSH 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -675,26 +772,23 @@
         ],
         "situation": {
           "batter": {
-            "name": "Nasim Nuñez",
-            "meta": "vs Cristopher Sánchez"
+            "name": "Alec Bohm",
+            "meta": "vs Jackson Kent"
           },
           "pitches": [
-            "S",
-            "B",
-            "B",
-            "B"
+            "S"
           ],
           "count": {
-            "balls": 3,
+            "balls": 2,
             "strikes": 1,
-            "outs": 1
+            "outs": 2
           },
           "bases": {
             "first": false,
-            "second": false,
+            "second": true,
             "third": false
           },
-          "status": "Bottom 2nd"
+          "status": "Top 3rd"
         }
       }
     },
@@ -711,8 +805,8 @@
             "retroactive_to": "2026-09-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:22:36.753Z",
-            "freshness_label": "As of Sep 15, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-15T23:33:56.980Z",
+            "freshness_label": "As of Sep 15, 2026, 7:33 PM ET"
           },
           {
             "name": "Adolis García",
@@ -724,8 +818,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:22:36.753Z",
-            "freshness_label": "As of Sep 15, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-15T23:33:56.980Z",
+            "freshness_label": "As of Sep 15, 2026, 7:33 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -737,8 +831,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:22:36.753Z",
-            "freshness_label": "As of Sep 15, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-15T23:33:56.980Z",
+            "freshness_label": "As of Sep 15, 2026, 7:33 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -750,8 +844,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:22:36.753Z",
-            "freshness_label": "As of Sep 15, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-15T23:33:56.980Z",
+            "freshness_label": "As of Sep 15, 2026, 7:33 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -763,8 +857,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:22:36.753Z",
-            "freshness_label": "As of Sep 15, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-15T23:33:56.980Z",
+            "freshness_label": "As of Sep 15, 2026, 7:33 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -776,8 +870,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:22:36.753Z",
-            "freshness_label": "As of Sep 15, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-15T23:33:56.980Z",
+            "freshness_label": "As of Sep 15, 2026, 7:33 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -789,8 +883,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:22:36.753Z",
-            "freshness_label": "As of Sep 15, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-15T23:33:56.980Z",
+            "freshness_label": "As of Sep 15, 2026, 7:33 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
