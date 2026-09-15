@@ -4,7 +4,7 @@
   "edition_date": "2026-09-15",
   "volume": 1,
   "edition": 168,
-  "generated_at": "2026-09-15T23:08:38.125Z",
+  "generated_at": "2026-09-15T23:22:36.753Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, WSH 2",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "Harry Ford is up against Cristopher Sánchez. Series: Regular Season.",
+    "dek": "Bottom 2nd · 1 out",
+    "summary": "Nasim Nuñez is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cade Cavalli · PHI @ WSH · Wed, Sep 16 · 6:45 PM"
   },
@@ -55,7 +55,7 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 75,
+      "temp_f": 74,
       "condition": "Clear",
       "wind": "3 mph · gusts 5",
       "gusts_mph": 5
@@ -64,21 +64,26 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Harry Ford",
+        "name": "Nasim Nuñez",
         "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "B",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 2
+        "balls": 3,
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-15T23:08:38.923Z",
+    "updated_at": "2026-09-15T23:22:37.058Z",
     "current_game_pk": 822683,
     "next_game_pk": 822680,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "75° · Clear · gusts 5 mph",
+      "text": "74° · Clear · gusts 5 mph",
       "highlight": false
     },
     {
