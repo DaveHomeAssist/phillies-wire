@@ -4,7 +4,7 @@
   "edition_date": "2026-09-15",
   "volume": 1,
   "edition": 168,
-  "generated_at": "2026-09-15T22:48:06.918Z",
+  "generated_at": "2026-09-15T23:08:38.125Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, WSH 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Kyle Schwarber is up against Jackson Kent. Series: Regular Season.",
+    "headline": "PHI 1, WSH 2",
+    "dek": "Bottom 1st · 2 outs",
+    "summary": "Harry Ford is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cade Cavalli · PHI @ WSH · Wed, Sep 16 · 6:45 PM"
   },
@@ -55,35 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 76,
+      "temp_f": 75,
       "condition": "Clear",
-      "wind": "4 mph · gusts 5",
+      "wind": "3 mph · gusts 5",
       "gusts_mph": 5
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Jackson Kent"
+        "name": "Harry Ford",
+        "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [
-        "B",
-        "B",
-        "S",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 3,
-        "strikes": 1,
-        "outs": 0
+        "balls": 0,
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 1st"
     },
     "recap_line": null
   },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-15T22:48:07.806Z",
+    "updated_at": "2026-09-15T23:08:38.923Z",
     "current_game_pk": 822683,
     "next_game_pk": 822680,
     "next_game": {
@@ -128,7 +123,11 @@
       "highlight": false
     },
     {
-      "text": "76° · Clear · gusts 5 mph",
+      "text": "75° · Clear · gusts 5 mph",
+      "highlight": false
+    },
+    {
+      "text": "DH Kyle Schwarber changed number to 21.",
       "highlight": false
     },
     {
