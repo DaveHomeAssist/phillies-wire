@@ -4,9 +4,9 @@
   "edition_date": "2026-09-15",
   "volume": 1,
   "edition": 168,
-  "generated_at": "2026-09-15T22:09:28.005Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-15T22:23:53.506Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 83,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Nationals · Game 1 of 2",
-    "dek": "Cristopher Sánchez vs Jackson Kent",
-    "summary": "Cristopher Sánchez vs Jackson Kent · Phillies @ Nationals · Game 1 of 2",
+    "headline": "PHI 0, WSH 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Jackson Kent. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Cade Cavalli · PHI @ WSH · Wed, Sep 16 · 6:45 PM"
   },
@@ -57,19 +57,36 @@
     "weather": {
       "temp_f": 77,
       "condition": "Clear",
-      "wind": "4 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "5 mph · gusts 6",
+      "gusts_mph": 6
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Jackson Kent"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-15T22:09:28.675Z",
+    "updated_at": "2026-09-15T22:23:54.153Z",
     "current_game_pk": 822683,
     "next_game_pk": 822680,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "77° · Clear · gusts 5 mph",
+      "text": "77° · Clear · gusts 6 mph",
       "highlight": false
     },
     {
