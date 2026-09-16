@@ -5,14 +5,14 @@
     "edition": 168,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-16T01:07:22.953Z",
+    "generated_at": "2026-09-16T01:34:01.866Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 15, 2026, 9:07 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 15, 2026, 9:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 83,
-    "losses": 67,
-    "streak": "W1",
+    "losses": 68,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 3, WSH 6",
-    "dek": "End 8th · 3 outs",
-    "summary": "Bryan De La Cruz is up against Brad Lord. Series: Regular Season.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 3, WSH 6.",
+    "dek": "WSH 6, PHI 3 · Cristopher Sánchez · 6.1 IP, 8 H, 5 ER, 5 K",
+    "summary": "PHI 3, WSH 6. Final at Nationals Park, Washington. WSH leads 1-0.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Nationals Park, Washington"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "71° · Clear"
+        "label": "Series",
+        "value": "WSH leads 1-0"
       }
     ],
     "bullets": [
-      "Bryan De La Cruz at the plate",
-      "Brad Lord on the mound",
-      "Nationals Park, Washington"
+      "Cristopher Sánchez: 6.1 IP, 8 H, 5 ER, 5 K",
+      "Jackson Kent: 5.0 IP, 4 H, 3 ER, 4 K",
+      "Andrés Chaparro: 2-for-3, 1 HR, 1 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Cade Cavalli · PHI @ WSH · Wed, Sep 16 · 6:45 PM"
+    "next_value": "Zack Wheeler vs Jared Simpson · PHI @ WSH · Wed, Sep 16 · 6:45 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at WSH game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:45 PM",
-        "starters": {
-          "home": {
-            "team": "WSH",
-            "name": "Jackson Kent",
-            "hand": "L"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Cristopher Sánchez",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "WSH",
-            "name": "Jackson Kent",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Dylan Crews",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Andrés Chaparro",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Brady House",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Yohandy Morales",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Jacob Young",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Jorbit Vivas",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Harry Ford",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Andrew Pinckney",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Nasim Nuñez",
-              "position": "SS",
-              "bats": "S"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryan De La Cruz",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryan De La Cruz",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Dylan Crews",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Andrés Chaparro",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Brady House",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Yohandy Morales",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Jacob Young",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Jorbit Vivas",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Harry Ford",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Andrew Pinckney",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Nasim Nuñez",
-              "position": "SS",
-              "bats": "S"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Nationals · Game 1 of 2",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "WSH leads 1-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 71,
+          "temp_f": 69,
           "condition": "Clear",
-          "wind": "6 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "2 mph · gusts 7",
+          "gusts_mph": 7
         },
         "giveaway": "",
         "transit": "",
@@ -368,15 +111,15 @@
             "name": "Cristopher Sánchez",
             "hand": "L",
             "era": "2.93",
-            "record": "17-5",
+            "record": "17-6",
             "whip": "1.22"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "End",
-          "isTopInning": false,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
+          "isTopInning": true,
           "outs": 3,
           "teams": {
             "away": {
@@ -491,6 +234,19 @@
               },
               "home": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               }
@@ -1407,38 +1163,154 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "822683:65",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz grounds out, shortstop Nasim Nuñez to first baseman Abimelec Ortiz.",
+            "score_after": "PHI 3, WSH 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:66",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to left fielder Daylen Lile.",
+            "score_after": "PHI 3, WSH 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:67",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto lines out sharply to third baseman Brady House.",
+            "score_after": "PHI 3, WSH 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Bryan De La Cruz",
-            "meta": "vs Brad Lord"
-          },
-          "pitches": [
-            "S",
-            "S",
-            "F",
-            "S"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 3,
-            "outs": 3
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "End 8th"
-        }
+        ]
       }
     },
-    "injury_report": null
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Jesús Luzardo",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left shoulder inflammation",
+            "status_note": "",
+            "retroactive_to": "2026-09-12",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-16T01:34:01.866Z",
+            "freshness_label": "As of Sep 15, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-16T01:34:01.866Z",
+            "freshness_label": "As of Sep 15, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-16T01:34:01.866Z",
+            "freshness_label": "As of Sep 15, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-16T01:34:01.866Z",
+            "freshness_label": "As of Sep 15, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Brad Keller",
+            "position": "RHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL tear",
+            "status_note": "",
+            "retroactive_to": "2026-07-13",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-16T01:34:01.866Z",
+            "freshness_label": "As of Sep 15, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Caleb Kilian",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left oblique strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-16T01:34:01.866Z",
+            "freshness_label": "As of Sep 15, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Felix Reyes",
+            "position": "LF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right wrist fracture",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-16T01:34:01.866Z",
+            "freshness_label": "As of Sep 15, 2026, 9:34 PM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
   },
   "next_game": {
     "label": "Tomorrow",
-    "matchup": "Zack Wheeler vs Cade Cavalli · PHI @ WSH",
+    "matchup": "Zack Wheeler vs Jared Simpson · PHI @ WSH",
     "date": "Wed, Sep 16",
     "time": "6:45 PM",
     "broadcast": "NBCSP",

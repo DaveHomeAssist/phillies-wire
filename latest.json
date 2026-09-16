@@ -4,23 +4,23 @@
   "edition_date": "2026-09-15",
   "volume": 1,
   "edition": 168,
-  "generated_at": "2026-09-16T01:07:22.953Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-16T01:34:01.866Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 83,
-    "losses": 67,
-    "streak": "W1",
+    "losses": 68,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, WSH 6",
-    "dek": "End 8th · 3 outs",
-    "summary": "Bryan De La Cruz is up against Brad Lord. Series: Regular Season.",
+    "headline": "PHI 3, WSH 6.",
+    "dek": "WSH 6, PHI 3 · Cristopher Sánchez · 6.1 IP, 8 H, 5 ER, 5 K",
+    "summary": "PHI 3, WSH 6. Final at Nationals Park, Washington. WSH leads 1-0.",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Cade Cavalli · PHI @ WSH · Wed, Sep 16 · 6:45 PM"
+    "next_value": "Zack Wheeler vs Jared Simpson · PHI @ WSH · Wed, Sep 16 · 6:45 PM"
   },
   "game": {
     "matchup": "Phillies @ Nationals · Game 1 of 2",
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "WSH leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,64 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 71,
+      "temp_f": 69,
       "condition": "Clear",
-      "wind": "6 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "2 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Bryan De La Cruz",
-        "meta": "vs Brad Lord"
-      },
-      "pitches": [
-        "S",
-        "S",
-        "F",
-        "S"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 3,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "End 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-16T01:07:23.713Z",
-    "current_game_pk": 822683,
-    "next_game_pk": 822680,
+    "updated_at": "2026-09-16T01:34:02.785Z",
+    "current_game_pk": 822680,
+    "next_game_pk": 823573,
     "next_game": {
-      "game_pk": 822680,
-      "official_date": "2026-09-16",
-      "date_label": "Wed, Sep 16, 2026",
-      "time_label": "6:45 PM",
-      "title": "Phillies at Washington Nationals",
-      "matchup": "PHI at WSH",
-      "venue": "Nationals Park"
+      "game_pk": 823573,
+      "official_date": "2026-09-17",
+      "date_label": "Thu, Sep 17, 2026",
+      "time_label": "7:15 PM",
+      "title": "Phillies at New York Mets",
+      "matchup": "PHI at NYM",
+      "venue": "Citi Field"
     },
     "current_game": {
-      "game_pk": 822683,
-      "official_date": "2026-09-15",
+      "game_pk": 822680,
+      "official_date": "2026-09-16",
       "title": "Phillies at Washington Nationals",
       "matchup": "PHI at WSH"
     }
   },
   "ticker": [
     {
-      "text": "PHI 83-67",
+      "text": "PHI 83-68",
       "highlight": true
     },
     {
@@ -128,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "71° · Clear · gusts 10 mph",
+      "text": "69° · Clear · gusts 7 mph",
       "highlight": false
     },
     {
