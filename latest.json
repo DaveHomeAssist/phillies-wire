@@ -4,7 +4,7 @@
   "edition_date": "2026-09-16",
   "volume": 1,
   "edition": 169,
-  "generated_at": "2026-09-16T23:08:30.283Z",
+  "generated_at": "2026-09-16T23:22:14.583Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, WSH 0",
-    "dek": "Bottom 1st · 2 outs",
-    "summary": "CJ Abrams is up against Zack Wheeler. Series: WSH leads 1-0.",
+    "dek": "Top 3rd · 0 outs",
+    "summary": "Bryce Harper is up against Riley Cornelio. Series: WSH leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Nolan McLean · PHI @ NYM · Thu, Sep 17 · 7:15 PM"
   },
@@ -55,35 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 80,
+      "temp_f": 79,
       "condition": "Clear",
-      "wind": "4 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "4 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "CJ Abrams",
-        "meta": "vs Zack Wheeler"
+        "name": "Bryce Harper",
+        "meta": "vs Riley Cornelio"
       },
-      "pitches": [
-        "B",
-        "B",
-        "F",
-        "F"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 2
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
-        "second": true,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 1st"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-16T23:08:30.971Z",
+    "updated_at": "2026-09-16T23:22:14.815Z",
     "current_game_pk": 822680,
     "next_game_pk": 823573,
     "next_game": {
@@ -128,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "80° · Clear · gusts 8 mph",
+      "text": "79° · Clear · gusts 7 mph",
       "highlight": false
     },
     {
