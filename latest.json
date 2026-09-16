@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-15",
+  "edition_date": "2026-09-16",
   "volume": 1,
-  "edition": 168,
-  "generated_at": "2026-09-16T03:50:20.768Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 169,
+  "generated_at": "2026-09-16T04:11:22.424Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 83,
@@ -16,31 +16,31 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, WSH 6.",
-    "dek": "WSH 6, PHI 3 · Cristopher Sánchez · 6.1 IP, 8 H, 5 ER, 5 K",
-    "summary": "PHI 3, WSH 6. Final at Nationals Park, Washington. WSH leads 1-0.",
+    "headline": "Phillies @ Nationals · Game 2 of 2",
+    "dek": "Zack Wheeler vs Jared Simpson",
+    "summary": "Zack Wheeler vs Jared Simpson · Phillies @ Nationals · Game 2 of 2",
     "next_label": "Tomorrow",
-    "next_value": "Zack Wheeler vs Jared Simpson · PHI @ WSH · Wed, Sep 16 · 6:45 PM"
+    "next_value": "Nolan McLean · PHI @ NYM · Thu, Sep 17 · 7:15 PM"
   },
   "game": {
-    "matchup": "Phillies @ Nationals · Game 1 of 2",
+    "matchup": "Phillies @ Nationals · Game 2 of 2",
     "first_pitch": "6:45 PM",
     "venue": "Nationals Park, Washington",
     "starters": {
       "home": {
-        "name": "Jackson Kent",
+        "name": "Jared Simpson",
         "hand": "L"
       },
       "away": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "phi": {
-        "name": "Cristopher Sánchez",
-        "hand": "L"
+        "name": "Zack Wheeler",
+        "hand": "R"
       },
       "opp": {
-        "name": "Jackson Kent",
+        "name": "Jared Simpson",
         "hand": "L"
       }
     },
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-16T03:50:21.778Z",
+    "updated_at": "2026-09-16T04:11:23.086Z",
     "current_game_pk": 822680,
     "next_game_pk": 823573,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Nationals · Game 1 of 2 · 6:45 PM",
+      "text": "Phillies @ Nationals · Game 2 of 2 · 6:45 PM",
       "highlight": false
     },
     {
-      "text": "Cristopher Sánchez vs Jackson Kent",
+      "text": "Zack Wheeler vs Jared Simpson",
       "highlight": true
     },
     {
@@ -107,22 +107,6 @@
     },
     {
       "text": "64° · Clear · gusts 7 mph",
-      "highlight": false
-    },
-    {
-      "text": "DH Kyle Schwarber changed number to 21.",
-      "highlight": false
-    },
-    {
-      "text": "placed LHP Jesús Luzardo on the 15-day injured list retroactive to September 12, 2026. Left shoulder inflammation.",
-      "highlight": false
-    },
-    {
-      "text": "recalled LHP Kyle Backhus from Lehigh Valley IronPigs.",
-      "highlight": false
-    },
-    {
-      "text": "New York Mets claimed SS Christian Cairo off waivers from Philadelphia Phillies.",
       "highlight": false
     }
   ]
