@@ -4,7 +4,7 @@
   "edition_date": "2026-09-16",
   "volume": 1,
   "edition": 169,
-  "generated_at": "2026-09-16T23:33:54.236Z",
+  "generated_at": "2026-09-16T23:47:55.255Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, WSH 0",
-    "dek": "Bottom 3rd · 0 outs",
-    "summary": "Nasim Nuñez is up against Zack Wheeler. Series: WSH leads 1-0.",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "CJ Abrams is up against Zack Wheeler. Series: WSH leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Nolan McLean · PHI @ NYM · Thu, Sep 17 · 7:15 PM"
   },
@@ -57,30 +57,32 @@
     "weather": {
       "temp_f": 78,
       "condition": "Clear",
-      "wind": "5 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Nasim Nuñez",
+        "name": "CJ Abrams",
         "meta": "vs Zack Wheeler"
       },
       "pitches": [
-        "F"
+        "S",
+        "S",
+        "S"
       ],
       "count": {
         "balls": 0,
-        "strikes": 1,
-        "outs": 0
+        "strikes": 3,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Middle 4th"
     },
     "recap_line": null
   },
@@ -88,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-16T23:33:54.545Z",
+    "updated_at": "2026-09-16T23:47:55.969Z",
     "current_game_pk": 822680,
     "next_game_pk": 823573,
     "next_game": {
@@ -125,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "78° · Clear · gusts 8 mph",
+      "text": "78° · Clear · gusts 9 mph",
       "highlight": false
     },
     {
