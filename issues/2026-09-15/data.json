@@ -5,14 +5,14 @@
     "edition": 168,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-15T23:47:56.689Z",
+    "generated_at": "2026-09-16T00:25:26.798Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 15, 2026, 7:47 PM ET",
+      "generated_at_et": "Sep 15, 2026, 8:25 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 2, WSH 2",
-    "dek": "End 3rd · 3 outs",
-    "summary": "Bryson Stott is up against Jackson Kent. Series: Regular Season.",
+    "headline": "PHI 3, WSH 3",
+    "dek": "End 6th · 3 outs",
+    "summary": "J.T. Realmuto is up against Yovanny Cruz. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "73° · Clear"
+        "value": "71° · Clear"
       }
     ],
     "bullets": [
-      "Bryson Stott at the plate",
-      "Jackson Kent on the mound",
+      "J.T. Realmuto at the plate",
+      "Yovanny Cruz on the mound",
       "Nationals Park, Washington"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 73,
+          "temp_f": 71,
           "condition": "Clear",
-          "wind": "5 mph · gusts 8",
-          "gusts_mph": 8
+          "wind": "6 mph · gusts 10",
+          "gusts_mph": 10
         },
         "giveaway": "",
         "transit": "",
@@ -359,9 +359,9 @@
             "team": "WSH",
             "name": "Jackson Kent",
             "hand": "L",
-            "era": "6.53",
+            "era": "6.40",
             "record": "1-4",
-            "whip": "1.85"
+            "whip": "1.76"
           },
           "away": {
             "team": "PHI",
@@ -369,24 +369,24 @@
             "hand": "L",
             "era": "2.85",
             "record": "17-5",
-            "whip": "1.23"
+            "whip": "1.22"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
           "inningState": "End",
           "isTopInning": false,
           "outs": 3,
           "teams": {
             "away": {
-              "runs": 2,
-              "hits": 3,
+              "runs": 3,
+              "hits": 4,
               "errors": 0
             },
             "home": {
-              "runs": 2,
-              "hits": 4,
+              "runs": 3,
+              "hits": 6,
               "errors": 0
             }
           },
@@ -427,6 +427,45 @@
               "home": {
                 "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
+              "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -838,19 +877,301 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "822683:29",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott grounds out to first baseman Yohandy Morales.",
+            "score_after": "PHI 2, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:30",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto called out on strikes.",
+            "score_after": "PHI 2, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:31",
+            "inning": 4,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill strikes out swinging.",
+            "score_after": "PHI 2, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:32",
+            "inning": 4,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "Jorbit Vivas",
+            "actor_id": 678391,
+            "detail": "Jorbit Vivas strikes out swinging.",
+            "score_after": "PHI 2, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:33",
+            "inning": 4,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Harry Ford",
+            "actor_id": 695670,
+            "detail": "Harry Ford grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "score_after": "PHI 2, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:34",
+            "inning": 4,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "Andrew Pinckney",
+            "actor_id": 687605,
+            "detail": "Andrew Pinckney strikes out swinging.",
+            "score_after": "PHI 2, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:35",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "home_run",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber homers (45) on a fly ball to right field.",
+            "score_after": "PHI 3, WSH 2",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "822683:36",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner pops out to shortstop Nasim Nuñez.",
+            "score_after": "PHI 3, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:37",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, second baseman Jorbit Vivas to first baseman Yohandy Morales.",
+            "score_after": "PHI 3, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:38",
+            "inning": 5,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez grounds out to first baseman Yohandy Morales.",
+            "score_after": "PHI 3, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:39",
+            "inning": 5,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "single",
+            "actor": "Nasim Nuñez",
+            "actor_id": 683083,
+            "detail": "Nasim Nuñez singles on a ground ball to third baseman Bryson Stott.",
+            "score_after": "PHI 3, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:40",
+            "inning": 5,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Dylan Crews",
+            "actor_id": 686611,
+            "detail": "Dylan Crews flies out to center fielder Derek Hill.",
+            "score_after": "PHI 3, WSH 2",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:41",
+            "inning": 5,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "home_run",
+            "actor": "Andrés Chaparro",
+            "actor_id": 665953,
+            "detail": "Andrés Chaparro homers (11) on a fly ball to center field.",
+            "score_after": "PHI 3, WSH 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "822683:42",
+            "inning": 5,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Brady House",
+            "actor_id": 691781,
+            "detail": "Brady House grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
+            "score_after": "PHI 3, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:43",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm grounds out, third baseman Brady House to first baseman Yohandy Morales.",
+            "score_after": "PHI 3, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:44",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz flies out to right fielder Dylan Crews.",
+            "score_after": "PHI 3, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:45",
+            "inning": 6,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to center fielder Jacob Young.",
+            "score_after": "PHI 3, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:46",
+            "inning": 6,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Yohandy Morales",
+            "actor_id": 691002,
+            "detail": "Yohandy Morales grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "score_after": "PHI 3, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:47",
+            "inning": 6,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Jacob Young",
+            "actor_id": 696285,
+            "detail": "Jacob Young flies out to right fielder Bryce Harper.",
+            "score_after": "PHI 3, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822683:48",
+            "inning": 6,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "Jorbit Vivas",
+            "actor_id": 678391,
+            "detail": "Jorbit Vivas grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "score_after": "PHI 3, WSH 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Bryson Stott",
-            "meta": "vs Jackson Kent"
+            "name": "J.T. Realmuto",
+            "meta": "vs Yovanny Cruz"
           },
           "pitches": [
+            "F",
+            "B",
             "X"
           ],
           "count": {
-            "balls": 0,
-            "strikes": 0,
+            "balls": 1,
+            "strikes": 1,
             "outs": 3
           },
           "bases": {
@@ -858,7 +1179,7 @@
             "second": false,
             "third": false
           },
-          "status": "End 3rd"
+          "status": "End 6th"
         }
       }
     },
@@ -875,8 +1196,8 @@
             "retroactive_to": "2026-09-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:47:56.689Z",
-            "freshness_label": "As of Sep 15, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-16T00:25:26.798Z",
+            "freshness_label": "As of Sep 15, 2026, 8:25 PM ET"
           },
           {
             "name": "Adolis García",
@@ -888,8 +1209,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:47:56.689Z",
-            "freshness_label": "As of Sep 15, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-16T00:25:26.798Z",
+            "freshness_label": "As of Sep 15, 2026, 8:25 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -901,8 +1222,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:47:56.689Z",
-            "freshness_label": "As of Sep 15, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-16T00:25:26.798Z",
+            "freshness_label": "As of Sep 15, 2026, 8:25 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -914,8 +1235,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:47:56.689Z",
-            "freshness_label": "As of Sep 15, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-16T00:25:26.798Z",
+            "freshness_label": "As of Sep 15, 2026, 8:25 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -927,8 +1248,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:47:56.689Z",
-            "freshness_label": "As of Sep 15, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-16T00:25:26.798Z",
+            "freshness_label": "As of Sep 15, 2026, 8:25 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -940,8 +1261,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:47:56.689Z",
-            "freshness_label": "As of Sep 15, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-16T00:25:26.798Z",
+            "freshness_label": "As of Sep 15, 2026, 8:25 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -953,8 +1274,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-15T23:47:56.689Z",
-            "freshness_label": "As of Sep 15, 2026, 7:47 PM ET"
+            "last_confirmed": "2026-09-16T00:25:26.798Z",
+            "freshness_label": "As of Sep 15, 2026, 8:25 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
