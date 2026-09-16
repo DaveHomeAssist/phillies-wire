@@ -4,9 +4,9 @@
   "edition_date": "2026-09-16",
   "volume": 1,
   "edition": 169,
-  "generated_at": "2026-09-16T22:23:13.524Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-16T22:34:41.255Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 83,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Nationals · Game 2 of 2",
-    "dek": "Zack Wheeler vs Jared Simpson",
-    "summary": "Zack Wheeler vs Jared Simpson · Phillies @ Nationals · Game 2 of 2",
+    "headline": "PHI 0, WSH 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Jared Simpson. Series: WSH leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Nolan McLean · PHI @ NYM · Thu, Sep 17 · 7:15 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 83,
+      "temp_f": 82,
       "condition": "Clear",
-      "wind": "5 mph · gusts 7",
+      "wind": "4 mph · gusts 7",
       "gusts_mph": 7
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Jared Simpson"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-16T22:23:13.871Z",
+    "updated_at": "2026-09-16T22:34:42.085Z",
     "current_game_pk": 822680,
     "next_game_pk": 823573,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "83° · Clear · gusts 7 mph",
+      "text": "82° · Clear · gusts 7 mph",
       "highlight": false
     },
     {
