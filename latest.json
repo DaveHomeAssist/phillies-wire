@@ -4,21 +4,21 @@
   "edition_date": "2026-09-16",
   "volume": 1,
   "edition": 169,
-  "generated_at": "2026-09-17T01:34:56.559Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-17T01:58:00.322Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 83,
+    "wins": 84,
     "losses": 68,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, WSH 0",
-    "dek": "Bottom 9th · 1 out",
-    "summary": "CJ Abrams is up against Jhoan Duran. Series: WSH leads 1-0.",
+    "headline": "PHI 3, WSH 0.",
+    "dek": "PHI 3, WSH 0 · Zack Wheeler · 7.0 IP, 4 H, 0 ER, 5 K",
+    "summary": "PHI 3, WSH 0. Final at Nationals Park, Washington. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Nolan McLean · PHI @ NYM · Thu, Sep 17 · 7:15 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "WSH leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,64 +57,40 @@
     "weather": {
       "temp_f": 74,
       "condition": "Clear",
-      "wind": "4 mph · gusts 13",
+      "wind": "5 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Abimelec Ortiz",
-        "meta": "vs Jhoan Duran"
-      },
-      "pitches": [
-        "B",
-        "S",
-        "F",
-        "F",
-        "B",
-        "B"
-      ],
-      "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-17T01:34:57.178Z",
-    "current_game_pk": 822680,
-    "next_game_pk": 823573,
+    "updated_at": "2026-09-17T01:58:00.640Z",
+    "current_game_pk": 823573,
+    "next_game_pk": 823572,
     "next_game": {
-      "game_pk": 823573,
-      "official_date": "2026-09-17",
-      "date_label": "Thu, Sep 17, 2026",
+      "game_pk": 823572,
+      "official_date": "2026-09-18",
+      "date_label": "Fri, Sep 18, 2026",
       "time_label": "7:15 PM",
       "title": "Phillies at New York Mets",
       "matchup": "PHI at NYM",
       "venue": "Citi Field"
     },
     "current_game": {
-      "game_pk": 822680,
-      "official_date": "2026-09-16",
-      "title": "Phillies at Washington Nationals",
-      "matchup": "PHI at WSH"
+      "game_pk": 823573,
+      "official_date": "2026-09-17",
+      "title": "Phillies at New York Mets",
+      "matchup": "PHI at NYM"
     }
   },
   "ticker": [
     {
-      "text": "PHI 83-68",
+      "text": "PHI 84-68",
       "highlight": true
     },
     {

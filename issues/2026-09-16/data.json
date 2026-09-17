@@ -5,313 +5,56 @@
     "edition": 169,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-17T01:34:56.559Z",
+    "generated_at": "2026-09-17T01:58:00.322Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 16, 2026, 9:34 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 16, 2026, 9:58 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 83,
+    "wins": 84,
     "losses": 68,
-    "streak": "L1",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 3, WSH 0",
-    "dek": "Bottom 9th · 1 out",
-    "summary": "CJ Abrams is up against Jhoan Duran. Series: WSH leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 3, WSH 0.",
+    "dek": "PHI 3, WSH 0 · Zack Wheeler · 7.0 IP, 4 H, 0 ER, 5 K",
+    "summary": "PHI 3, WSH 0. Final at Nationals Park, Washington. Series tied 1-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Nationals Park, Washington"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "74° · Clear"
+        "label": "Series",
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "CJ Abrams at the plate",
-      "Jhoan Duran on the mound",
-      "Nationals Park, Washington"
+      "Zack Wheeler: 7.0 IP, 4 H, 0 ER, 5 K",
+      "Will Dion: 2.2 IP, 2 H, 0 ER, 3 K",
+      "Alec Bohm: 2-for-2, 1 RBI"
     ],
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Nolan McLean · PHI @ NYM · Thu, Sep 17 · 7:15 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at WSH game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:45 PM",
-        "starters": {
-          "home": {
-            "team": "WSH",
-            "name": "Jared Simpson",
-            "hand": "L"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Zack Wheeler",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Zack Wheeler",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "WSH",
-            "name": "Jared Simpson",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "James Wood",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Daylen Lile",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Abimelec Ortiz",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "CJ Abrams",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "José Tena",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Jorbit Vivas",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Dylan Crews",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Keibert Ruiz",
-              "position": "C",
-              "bats": "S"
-            },
-            {
-              "slot": 9,
-              "name": "Nasim Nuñez",
-              "position": "SS",
-              "bats": "S"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "James Wood",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Daylen Lile",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Abimelec Ortiz",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "CJ Abrams",
-              "position": "SS",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "José Tena",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Jorbit Vivas",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Dylan Crews",
-              "position": "CF",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Keibert Ruiz",
-              "position": "C",
-              "bats": "S"
-            },
-            {
-              "slot": 9,
-              "name": "Nasim Nuñez",
-              "position": "SS",
-              "bats": "S"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Nationals · Game 2 of 2",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "WSH leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,7 +91,7 @@
         "weather": {
           "temp_f": 74,
           "condition": "Clear",
-          "wind": "4 mph · gusts 13",
+          "wind": "5 mph · gusts 13",
           "gusts_mph": 13
         },
         "giveaway": "",
@@ -360,7 +103,7 @@
             "name": "Jared Simpson",
             "hand": "L",
             "era": "10.38",
-            "record": "1-0",
+            "record": "1-1",
             "whip": "1.85"
           },
           "away": {
@@ -368,7 +111,7 @@
             "name": "Zack Wheeler",
             "hand": "R",
             "era": "2.99",
-            "record": "12-5",
+            "record": "13-5",
             "whip": "1.06"
           }
         },
@@ -377,7 +120,7 @@
           "currentInningOrdinal": "9th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 0,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 3,
@@ -503,7 +246,7 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -575,7 +318,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a line drive to center fielder Dylan Crews. Trea T…",
+            "detail": "Alec Bohm singles on a line drive to center fielder Dylan Crews. Trea Turner scores. Bryce Harper to 3rd. Luis Arraez to 2nd.",
             "score_after": "PHI 1, WSH 0",
             "runs": 1,
             "is_scoring": true,
@@ -589,7 +332,7 @@
             "event_type": "walk_hbp",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott walks. Bryce Harper scores. Luis Arraez to 3rd. Alec Bohm…",
+            "detail": "Bryson Stott walks. Bryce Harper scores. Luis Arraez to 3rd. Alec Bohm to 2nd.",
             "score_after": "PHI 2, WSH 0",
             "runs": 1,
             "is_scoring": true,
@@ -645,7 +388,7 @@
             "event_type": "single",
             "actor": "Daylen Lile",
             "actor_id": 695734,
-            "detail": "Daylen Lile singles on a sharp line drive to center fielder Justin Craw…",
+            "detail": "Daylen Lile singles on a sharp line drive to center fielder Justin Crawford.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -659,7 +402,7 @@
             "event_type": "out",
             "actor": "Abimelec Ortiz",
             "actor_id": 694673,
-            "detail": "Abimelec Ortiz grounds out, second baseman Luis Arraez to first baseman…",
+            "detail": "Abimelec Ortiz grounds out, second baseman Luis Arraez to first baseman Alec Bohm. Daylen Lile to 2nd.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -673,7 +416,7 @@
             "event_type": "out",
             "actor": "CJ Abrams",
             "actor_id": 682928,
-            "detail": "CJ Abrams grounds out, second baseman Luis Arraez to first baseman Alec…",
+            "detail": "CJ Abrams grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -715,7 +458,7 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds out softly, pitcher Riley Cornelio to first baseman…",
+            "detail": "Trea Turner grounds out softly, pitcher Riley Cornelio to first baseman Abimelec Ortiz.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -771,7 +514,7 @@
             "event_type": "out",
             "actor": "Keibert Ruiz",
             "actor_id": 660688,
-            "detail": "Keibert Ruiz grounds out, second baseman Luis Arraez to first baseman A…",
+            "detail": "Keibert Ruiz grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -827,7 +570,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds into a force out, second baseman CJ Abrams to shor…",
+            "detail": "Bryson Stott grounds into a force out, second baseman CJ Abrams to shortstop Nasim Nuñez. Luis Arraez to 3rd. Alec Bohm out at 2nd.…",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -869,7 +612,7 @@
             "event_type": "out",
             "actor": "James Wood",
             "actor_id": 695578,
-            "detail": "James Wood grounds out, shortstop Trea Turner to first baseman Alec Boh…",
+            "detail": "James Wood grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -925,7 +668,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds out, pitcher Will Dion to first baseman Abimele…",
+            "detail": "Justin Crawford grounds out, pitcher Will Dion to first baseman Abimelec Ortiz.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -967,7 +710,7 @@
             "event_type": "extra_base_hit",
             "actor": "CJ Abrams",
             "actor_id": 682928,
-            "detail": "CJ Abrams doubles (30) on a sharp line drive to center fielder Justin C…",
+            "detail": "CJ Abrams doubles (30) on a sharp line drive to center fielder Justin Crawford.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -981,7 +724,7 @@
             "event_type": "out",
             "actor": "José Tena",
             "actor_id": 677588,
-            "detail": "José Tena grounds out, pitcher Zack Wheeler to first baseman Alec Bohm.…",
+            "detail": "José Tena grounds out, pitcher Zack Wheeler to first baseman Alec Bohm. CJ Abrams to 3rd.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1037,7 +780,7 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez grounds out, shortstop Nasim Nuñez to first baseman Abimele…",
+            "detail": "Luis Arraez grounds out, shortstop Nasim Nuñez to first baseman Abimelec Ortiz.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1093,7 +836,7 @@
             "event_type": "out",
             "actor": "Nasim Nuñez",
             "actor_id": 683083,
-            "detail": "Nasim Nuñez grounds out softly, shortstop Trea Turner to first baseman…",
+            "detail": "Nasim Nuñez grounds out softly, shortstop Trea Turner to first baseman Alec Bohm.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1107,7 +850,7 @@
             "event_type": "out",
             "actor": "James Wood",
             "actor_id": 695578,
-            "detail": "James Wood grounds out, second baseman Luis Arraez to first baseman Ale…",
+            "detail": "James Wood grounds out, second baseman Luis Arraez to first baseman Alec Bohm.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1149,7 +892,7 @@
             "event_type": "extra_base_hit",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford doubles (19) on a fly ball to center fielder Dylan Crew…",
+            "detail": "Justin Crawford doubles (19) on a fly ball to center fielder Dylan Crews.",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1205,7 +948,7 @@
             "event_type": "other",
             "actor": "CJ Abrams",
             "actor_id": 682928,
-            "detail": "CJ Abrams grounds into a double play, first baseman Alec Bohm to shorts…",
+            "detail": "CJ Abrams grounds into a double play, first baseman Alec Bohm to shortstop Trea Turner. Abimelec Ortiz out at 2nd. CJ Abrams out at…",
             "score_after": "PHI 2, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1247,7 +990,7 @@
             "event_type": "extra_base_hit",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez doubles (33) on a line drive to center fielder Dylan Crews.…",
+            "detail": "Luis Arraez doubles (33) on a line drive to center fielder Dylan Crews. Bryce Harper scores.",
             "score_after": "PHI 3, WSH 0",
             "runs": 1,
             "is_scoring": true,
@@ -1275,7 +1018,7 @@
             "event_type": "other",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds into a double play, second baseman CJ Abrams to sh…",
+            "detail": "Bryson Stott grounds into a double play, second baseman CJ Abrams to shortstop Nasim Nuñez to first baseman Abimelec Ortiz. Alec Bo…",
             "score_after": "PHI 3, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1289,7 +1032,7 @@
             "event_type": "strikeout",
             "actor": "José Tena",
             "actor_id": 677588,
-            "detail": "José Tena challenged (pitch result), call on the field was confirmed: J…",
+            "detail": "José Tena challenged (pitch result), call on the field was confirmed: José Tena called out on strikes.",
             "score_after": "PHI 3, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1303,7 +1046,7 @@
             "event_type": "out",
             "actor": "Jorbit Vivas",
             "actor_id": 678391,
-            "detail": "Jorbit Vivas grounds out, shortstop Trea Turner to first baseman Alec B…",
+            "detail": "Jorbit Vivas grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
             "score_after": "PHI 3, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1513,7 +1256,7 @@
             "event_type": "extra_base_hit",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto lines into a double play, pitcher Yovanny Cruz to first b…",
+            "detail": "J.T. Realmuto lines into a double play, pitcher Yovanny Cruz to first baseman Abimelec Ortiz. Bryson Stott out at 1st.",
             "score_after": "PHI 3, WSH 0",
             "runs": 0,
             "is_scoring": false,
@@ -1524,41 +1267,44 @@
             "inning": 9,
             "half": "bottom",
             "team": "WSH",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Abimelec Ortiz",
             "actor_id": 694673,
-            "detail": "Play",
+            "detail": "Abimelec Ortiz strikes out on a foul tip.",
+            "score_after": "PHI 3, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822680:73",
+            "inning": 9,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "out",
+            "actor": "CJ Abrams",
+            "actor_id": 682928,
+            "detail": "CJ Abrams pops out to third baseman Bryson Stott.",
+            "score_after": "PHI 3, WSH 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "822680:74",
+            "inning": 9,
+            "half": "bottom",
+            "team": "WSH",
+            "event_type": "strikeout",
+            "actor": "José Tena",
+            "actor_id": 677588,
+            "detail": "José Tena strikes out swinging.",
             "score_after": "PHI 3, WSH 0",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Abimelec Ortiz",
-            "meta": "vs Jhoan Duran"
-          },
-          "pitches": [
-            "B",
-            "S",
-            "F",
-            "F",
-            "B",
-            "B"
-          ],
-          "count": {
-            "balls": 3,
-            "strikes": 2,
-            "outs": 0
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Bottom 9th"
-        }
+        ]
       }
     },
     "injury_report": null
