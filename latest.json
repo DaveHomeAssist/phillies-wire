@@ -4,7 +4,7 @@
   "edition_date": "2026-09-16",
   "volume": 1,
   "edition": 169,
-  "generated_at": "2026-09-17T01:07:48.560Z",
+  "generated_at": "2026-09-17T01:34:56.559Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, WSH 0",
-    "dek": "Bottom 8th · 0 outs",
-    "summary": "Brady House is up against José Alvarado. Series: WSH leads 1-0.",
+    "dek": "Bottom 9th · 1 out",
+    "summary": "CJ Abrams is up against Jhoan Duran. Series: WSH leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Nolan McLean · PHI @ NYM · Thu, Sep 17 · 7:15 PM"
   },
@@ -57,23 +57,27 @@
     "weather": {
       "temp_f": 74,
       "condition": "Clear",
-      "wind": "6 mph · gusts 12",
-      "gusts_mph": 12
+      "wind": "4 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brady House",
-        "meta": "vs José Alvarado"
+        "name": "Abimelec Ortiz",
+        "meta": "vs Jhoan Duran"
       },
       "pitches": [
         "B",
-        "S"
+        "S",
+        "F",
+        "F",
+        "B",
+        "B"
       ],
       "count": {
-        "balls": 1,
-        "strikes": 1,
+        "balls": 3,
+        "strikes": 2,
         "outs": 0
       },
       "bases": {
@@ -81,7 +85,7 @@
         "second": false,
         "third": false
       },
-      "status": "Bottom 8th"
+      "status": "Bottom 9th"
     },
     "recap_line": null
   },
@@ -89,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-17T01:07:49.116Z",
+    "updated_at": "2026-09-17T01:34:57.178Z",
     "current_game_pk": 822680,
     "next_game_pk": 823573,
     "next_game": {
@@ -126,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "74° · Clear · gusts 12 mph",
+      "text": "74° · Clear · gusts 13 mph",
       "highlight": false
     },
     {
