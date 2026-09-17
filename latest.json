@@ -4,7 +4,7 @@
   "edition_date": "2026-09-17",
   "volume": 1,
   "edition": 170,
-  "generated_at": "2026-09-17T13:19:01.047Z",
+  "generated_at": "2026-09-17T16:11:21.547Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -50,15 +50,15 @@
       "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "FOX / FOX ONE",
+      "tv": "FOX/ FOX ONE",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 73,
-      "condition": "Overcast",
-      "wind": "5 mph · gusts 10",
-      "gusts_mph": 10
+      "temp_f": 80,
+      "condition": "Clear",
+      "wind": "8 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-17T13:19:06.604Z",
+    "updated_at": "2026-09-17T16:11:22.181Z",
     "current_game_pk": 823573,
     "next_game_pk": 823572,
     "next_game": {
@@ -102,11 +102,11 @@
       "highlight": true
     },
     {
-      "text": "FOX / FOX ONE · 94 WIP",
+      "text": "FOX/ FOX ONE · 94 WIP",
       "highlight": false
     },
     {
-      "text": "73° · Overcast · gusts 10 mph",
+      "text": "80° · Clear · gusts 13 mph",
       "highlight": false
     }
   ]
