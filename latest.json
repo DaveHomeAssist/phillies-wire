@@ -4,7 +4,7 @@
   "edition_date": "2026-09-17",
   "volume": 1,
   "edition": 170,
-  "generated_at": "2026-09-17T16:42:01.378Z",
+  "generated_at": "2026-09-17T16:50:24.376Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -56,8 +56,8 @@
     },
     "weather": {
       "temp_f": 82,
-      "condition": "Clear",
-      "wind": "8 mph · gusts 13",
+      "condition": "Mostly sunny",
+      "wind": "9 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
@@ -69,21 +69,21 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-17T16:42:02.202Z",
-    "current_game_pk": 823573,
-    "next_game_pk": 823572,
+    "updated_at": "2026-09-17T16:50:24.868Z",
+    "current_game_pk": 823608,
+    "next_game_pk": 823444,
     "next_game": {
-      "game_pk": 823572,
-      "official_date": "2026-09-18",
-      "date_label": "Fri, Sep 18, 2026",
-      "time_label": "7:15 PM",
-      "title": "Phillies at New York Mets",
-      "matchup": "PHI at NYM",
-      "venue": "Citi Field"
+      "game_pk": 823444,
+      "official_date": "2026-06-29",
+      "date_label": "Mon, Jun 29, 2026",
+      "time_label": "6:40 PM",
+      "title": "Pittsburgh Pirates at Phillies",
+      "matchup": "PIT at PHI",
+      "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823573,
-      "official_date": "2026-09-17",
+      "game_pk": 823608,
+      "official_date": "2026-06-28",
       "title": "Phillies at New York Mets",
       "matchup": "PHI at NYM"
     }
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "82° · Clear · gusts 13 mph",
+      "text": "82° · Mostly sunny · gusts 13 mph",
       "highlight": false
     }
   ]
