@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-16",
+  "edition_date": "2026-09-17",
   "volume": 1,
-  "edition": 169,
-  "generated_at": "2026-09-17T03:50:17.546Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 170,
+  "generated_at": "2026-09-17T04:12:03.328Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 84,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, WSH 0.",
-    "dek": "PHI 3, WSH 0 · Zack Wheeler · 7.0 IP, 4 H, 0 ER, 5 K",
-    "summary": "PHI 3, WSH 0. Final at Nationals Park, Washington. Series tied 1-1.",
+    "headline": "Phillies @ Mets · Game 1 of 4",
+    "dek": "Aaron Nola vs Nolan McLean",
+    "summary": "Aaron Nola vs Nolan McLean · Phillies @ Mets · Game 1 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Nolan McLean · PHI @ NYM · Thu, Sep 17 · 7:15 PM"
+    "next_value": "Zac Thornton · PHI @ NYM · Fri, Sep 18 · 7:15 PM"
   },
   "game": {
-    "matchup": "Phillies @ Nationals · Game 2 of 2",
-    "first_pitch": "6:45 PM",
-    "venue": "Nationals Park, Washington",
+    "matchup": "Phillies @ Mets · Game 1 of 4",
+    "first_pitch": "7:15 PM",
+    "venue": "Citi Field, Flushing",
     "starters": {
       "home": {
-        "name": "Jared Simpson",
-        "hand": "L"
+        "name": "Nolan McLean",
+        "hand": "R"
       },
       "away": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "opp": {
-        "name": "Jared Simpson",
-        "hand": "L"
+        "name": "Nolan McLean",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "FOX / FOX ONE",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 71,
+      "temp_f": 70,
       "condition": "Clear",
-      "wind": "5 mph · gusts 8",
-      "gusts_mph": 8
+      "wind": "6 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-17T03:50:18.368Z",
+    "updated_at": "2026-09-17T04:12:03.547Z",
     "current_game_pk": 823573,
     "next_game_pk": 823572,
     "next_game": {
@@ -94,23 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Nationals · Game 2 of 2 · 6:45 PM",
+      "text": "Phillies @ Mets · Game 1 of 4 · 7:15 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Jared Simpson",
+      "text": "Aaron Nola vs Nolan McLean",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "FOX / FOX ONE · 94 WIP",
       "highlight": false
     },
     {
-      "text": "71° · Clear · gusts 8 mph",
-      "highlight": false
-    },
-    {
-      "text": "DH Kyle Schwarber changed number to 12.",
+      "text": "70° · Clear · gusts 14 mph",
       "highlight": false
     }
   ]
