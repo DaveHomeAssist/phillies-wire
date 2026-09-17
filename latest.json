@@ -4,7 +4,7 @@
   "edition_date": "2026-09-17",
   "volume": 1,
   "edition": 170,
-  "generated_at": "2026-09-17T23:07:45.022Z",
+  "generated_at": "2026-09-17T23:20:36.186Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, NYM 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Kyle Schwarber is up against Nolan McLean. Series: Regular Season.",
+    "dek": "Top 1st · 2 outs",
+    "summary": "Alec Bohm is up against Nolan McLean. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Zac Thornton · PHI @ NYM · Fri, Sep 18 · 7:15 PM"
   },
@@ -57,25 +57,27 @@
     "weather": {
       "temp_f": 76,
       "condition": "Overcast",
-      "wind": "7 mph · gusts 11",
-      "gusts_mph": 11
+      "wind": "6 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Alec Bohm",
         "meta": "vs Nolan McLean"
       },
-      "pitches": [],
+      "pitches": [
+        "F"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
       "status": "Top 1st"
@@ -86,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-17T23:07:45.722Z",
+    "updated_at": "2026-09-17T23:20:36.758Z",
     "current_game_pk": 823573,
     "next_game_pk": 823572,
     "next_game": {
@@ -123,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "76° · Overcast · gusts 11 mph",
+      "text": "76° · Overcast · gusts 10 mph",
       "highlight": false
     },
     {
