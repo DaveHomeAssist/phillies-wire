@@ -4,9 +4,9 @@
   "edition_date": "2026-09-18",
   "volume": 1,
   "edition": 171,
-  "generated_at": "2026-09-18T22:48:38.024Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-18T23:08:31.252Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 85,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Phillies @ Mets · Game 2 of 4",
-    "dek": "Tim Mayza vs Zac Thornton",
-    "summary": "Tim Mayza vs Zac Thornton · Phillies @ Mets · Game 2 of 4",
+    "headline": "PHI 0, NYM 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Kyle Schwarber is up against Zac Thornton. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Christian Scott · PHI @ NYM · Sat, Sep 19 · 4:10 PM"
   },
@@ -57,19 +57,36 @@
     "weather": {
       "temp_f": 76,
       "condition": "Clear",
-      "wind": "7 mph · gusts 13",
+      "wind": "6 mph · gusts 13",
       "gusts_mph": 13
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Kyle Schwarber",
+        "meta": "vs Zac Thornton"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-18T22:48:38.851Z",
+    "updated_at": "2026-09-18T23:08:31.981Z",
     "current_game_pk": 823572,
     "next_game_pk": 823571,
     "next_game": {
