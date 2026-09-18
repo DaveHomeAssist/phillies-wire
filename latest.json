@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-17",
+  "edition_date": "2026-09-18",
   "volume": 1,
-  "edition": 170,
-  "generated_at": "2026-09-18T03:52:47.505Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 171,
+  "generated_at": "2026-09-18T04:11:10.444Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 85,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, NYM 0.",
-    "dek": "PHI 3, NYM 0 · Aaron Nola · 7.0 IP, 3 H, 0 ER, 4 K",
-    "summary": "PHI 3, NYM 0. Final at Citi Field, Flushing. PHI leads 1-0.",
+    "headline": "Phillies @ Mets · Game 2 of 4",
+    "dek": "TBD vs Zac Thornton",
+    "summary": "TBD vs Zac Thornton · Phillies @ Mets · Game 2 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Zac Thornton · PHI @ NYM · Fri, Sep 18 · 7:15 PM"
+    "next_value": "Christian Scott · PHI @ NYM · Sat, Sep 19 · 4:10 PM"
   },
   "game": {
-    "matchup": "Phillies @ Mets · Game 1 of 4",
+    "matchup": "Phillies @ Mets · Game 2 of 4",
     "first_pitch": "7:15 PM",
     "venue": "Citi Field, Flushing",
     "starters": {
       "home": {
-        "name": "Nolan McLean",
-        "hand": "R"
+        "name": "Zac Thornton",
+        "hand": "L"
       },
       "away": {
-        "name": "Aaron Nola",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Aaron Nola",
+        "name": "TBD",
         "hand": "R"
       },
       "opp": {
-        "name": "Nolan McLean",
-        "hand": "R"
+        "name": "Zac Thornton",
+        "hand": "L"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "FOX/ FOX ONE",
+      "tv": "Apple TV",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 74,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "6 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-18T03:52:47.814Z",
+    "updated_at": "2026-09-18T04:11:11.114Z",
     "current_game_pk": 823572,
     "next_game_pk": 823571,
     "next_game": {
@@ -94,27 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Mets · Game 1 of 4 · 7:15 PM",
+      "text": "Phillies @ Mets · Game 2 of 4 · 7:15 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Nolan McLean",
+      "text": "TBD vs Zac Thornton",
       "highlight": true
     },
     {
-      "text": "FOX/ FOX ONE · 94 WIP",
+      "text": "Apple TV · 94 WIP",
       "highlight": false
     },
     {
-      "text": "74° · Overcast · gusts 10 mph",
-      "highlight": false
-    },
-    {
-      "text": "transferred RHP Caleb Kilian from the 15-day injured list to the 60-day injured list. Left oblique strain.",
-      "highlight": false
-    },
-    {
-      "text": "claimed RHP José Urquidy off waivers from Chicago White Sox.",
+      "text": "74° · Overcast · gusts 11 mph",
       "highlight": false
     }
   ]
