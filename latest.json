@@ -4,21 +4,21 @@
   "edition_date": "2026-09-17",
   "volume": 1,
   "edition": 170,
-  "generated_at": "2026-09-18T01:56:28.573Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-18T02:19:59.288Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 84,
+    "wins": 85,
     "losses": 68,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, NYM 0",
-    "dek": "Bottom 9th · 1 out",
-    "summary": "Mark Vientos is up against Jhoan Duran. Series: Regular Season.",
+    "headline": "PHI 3, NYM 0.",
+    "dek": "PHI 3, NYM 0 · Aaron Nola · 7.0 IP, 3 H, 0 ER, 4 K",
+    "summary": "PHI 3, NYM 0. Final at Citi Field, Flushing. PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zac Thornton · PHI @ NYM · Fri, Sep 18 · 7:15 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "PHI leads 1-0"
     },
     "broadcast": {
       "tv": "FOX/ FOX ONE",
@@ -56,61 +56,41 @@
     },
     "weather": {
       "temp_f": 75,
-      "condition": "Light rain",
-      "wind": "4 mph · gusts 11",
-      "gusts_mph": 11
+      "condition": "Overcast",
+      "wind": "5 mph · gusts 9",
+      "gusts_mph": 9
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Mark Vientos",
-        "meta": "vs Jhoan Duran"
-      },
-      "pitches": [
-        "S",
-        "F"
-      ],
-      "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 1
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-18T01:56:29.508Z",
-    "current_game_pk": 823573,
-    "next_game_pk": 823572,
+    "updated_at": "2026-09-18T02:19:59.869Z",
+    "current_game_pk": 823572,
+    "next_game_pk": 823571,
     "next_game": {
-      "game_pk": 823572,
-      "official_date": "2026-09-18",
-      "date_label": "Fri, Sep 18, 2026",
-      "time_label": "7:15 PM",
+      "game_pk": 823571,
+      "official_date": "2026-09-19",
+      "date_label": "Sat, Sep 19, 2026",
+      "time_label": "4:10 PM",
       "title": "Phillies at New York Mets",
       "matchup": "PHI at NYM",
       "venue": "Citi Field"
     },
     "current_game": {
-      "game_pk": 823573,
-      "official_date": "2026-09-17",
+      "game_pk": 823572,
+      "official_date": "2026-09-18",
       "title": "Phillies at New York Mets",
       "matchup": "PHI at NYM"
     }
   },
   "ticker": [
     {
-      "text": "PHI 84-68",
+      "text": "PHI 85-68",
       "highlight": true
     },
     {
@@ -126,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "75° · Light rain · gusts 11 mph",
+      "text": "75° · Overcast · gusts 9 mph",
       "highlight": false
     },
     {
