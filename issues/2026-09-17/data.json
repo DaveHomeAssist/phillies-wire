@@ -5,14 +5,14 @@
     "edition": 170,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-18T01:33:39.314Z",
+    "generated_at": "2026-09-18T01:56:28.573Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 17, 2026, 9:33 PM ET",
+      "generated_at_et": "Sep 17, 2026, 9:56 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 3, NYM 0",
-    "dek": "Bottom 8th · 2 outs",
-    "summary": "Nick Morabito is up against Jonathan Bowlan. Series: Regular Season.",
+    "dek": "Bottom 9th · 1 out",
+    "summary": "Mark Vientos is up against Jhoan Duran. Series: Regular Season.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "76° · Drizzle"
+        "value": "75° · Light rain"
       }
     ],
     "bullets": [
-      "Nick Morabito at the plate",
-      "Jonathan Bowlan on the mound",
+      "Mark Vientos at the plate",
+      "Jhoan Duran on the mound",
       "Citi Field, Flushing"
     ],
     "next_label": "Tomorrow",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 76,
-          "condition": "Drizzle",
-          "wind": "6 mph · gusts 13",
-          "gusts_mph": 13
+          "temp_f": 75,
+          "condition": "Light rain",
+          "wind": "4 mph · gusts 11",
+          "gusts_mph": 11
         },
         "giveaway": "",
         "transit": "",
@@ -373,11 +373,11 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 2,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 3,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 0,
-              "hits": 3,
+              "hits": 4,
               "errors": 1
             }
           },
@@ -490,8 +490,21 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -562,7 +575,7 @@
             "event_type": "out",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm grounds into a force out, fielded by first baseman Jared Young. Luis Arraez out at 2nd.",
+            "detail": "Alec Bohm grounds into a force out, fielded by first baseman Jared Young. Luis Arraez out at 2n…",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -646,7 +659,7 @@
             "event_type": "other",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds into a double play, shortstop Francisco Lindor to second baseman Brett Baty to first baseman Jared Young. B…",
+            "detail": "Justin Crawford grounds into a double play, shortstop Francisco Lindor to second baseman Brett…",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -800,7 +813,7 @@
             "event_type": "strikeout",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez challenged (pitch result), call on the field was confirmed: Luis Arraez called out on strikes.",
+            "detail": "Luis Arraez challenged (pitch result), call on the field was confirmed: Luis Arraez called out…",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -870,7 +883,7 @@
             "event_type": "other",
             "actor": "Bo Bichette",
             "actor_id": 666182,
-            "detail": "Bo Bichette grounds into a double play, third baseman Bryson Stott to second baseman Luis Arraez to first baseman Alec Bohm. Juan S…",
+            "detail": "Bo Bichette grounds into a double play, third baseman Bryson Stott to second baseman Luis Arrae…",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -912,7 +925,7 @@
             "event_type": "out",
             "actor": "Garrett Stubbs",
             "actor_id": 596117,
-            "detail": "Garrett Stubbs grounds out, second baseman Brett Baty to first baseman Jared Young. Brandon Marsh to 3rd.",
+            "detail": "Garrett Stubbs grounds out, second baseman Brett Baty to first baseman Jared Young. Brandon Mar…",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -954,7 +967,7 @@
             "event_type": "single",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Phillies challenged (force play), call on the field was overturned: Bryce Harper singles on a ground ball to shortstop Francisco Li…",
+            "detail": "Phillies challenged (force play), call on the field was overturned: Bryce Harper singles on a g…",
             "score_after": "PHI 1, NYM 0",
             "runs": 1,
             "is_scoring": true,
@@ -1038,7 +1051,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott out on a sacrifice bunt, third baseman Bo Bichette to first baseman Jared Young. Alec Bohm to 2nd.",
+            "detail": "Bryson Stott out on a sacrifice bunt, third baseman Bo Bichette to first baseman Jared Young. A…",
             "score_after": "PHI 1, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -1136,7 +1149,7 @@
             "event_type": "other",
             "actor": "Francisco Lindor",
             "actor_id": 596019,
-            "detail": "Francisco Lindor grounds into a double play, second baseman Luis Arraez to shortstop Trea Turner to first baseman Alec Bohm. Nick M…",
+            "detail": "Francisco Lindor grounds into a double play, second baseman Luis Arraez to shortstop Trea Turne…",
             "score_after": "PHI 1, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -1262,7 +1275,7 @@
             "event_type": "single",
             "actor": "Mark Vientos",
             "actor_id": 668901,
-            "detail": "Mark Vientos singles on a sharp line drive to center fielder Justin Crawford. Carson Benge to 2nd.",
+            "detail": "Mark Vientos singles on a sharp line drive to center fielder Justin Crawford. Carson Benge to 2…",
             "score_after": "PHI 2, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -1304,7 +1317,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh out on a sacrifice bunt, third baseman Bo Bichette to second baseman Brett Baty. Bryson Stott to 3rd.",
+            "detail": "Brandon Marsh out on a sacrifice bunt, third baseman Bo Bichette to second baseman Brett Baty.…",
             "score_after": "PHI 2, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -1379,33 +1392,140 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823573:63",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Francisco Lindor",
+            "actor_id": 596019,
+            "detail": "Francisco Lindor walks. Brett Baty to 2nd.",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823573:64",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Juan Soto",
+            "actor_id": 665742,
+            "detail": "Juan Soto grounds out to first baseman Alec Bohm.",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823573:65",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber pops out to catcher Francisco Alvarez.",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823573:66",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner grounds out, first baseman Mark Vientos to pitcher Austin Warren.",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823573:67",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper strikes out swinging.",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823573:68",
+            "inning": 9,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "single",
+            "actor": "Bo Bichette",
+            "actor_id": 666182,
+            "detail": "Bo Bichette singles on a sharp line drive to center fielder Justin Crawford.",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823573:69",
+            "inning": 9,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Carson Benge",
+            "actor_id": 701807,
+            "detail": "Carson Benge flies out to right fielder Derek Hill.",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823573:70",
+            "inning": 9,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "other",
+            "actor": "Mark Vientos",
+            "actor_id": 668901,
+            "detail": "Play",
+            "score_after": "PHI 3, NYM 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Nick Morabito",
-            "meta": "vs Jonathan Bowlan"
+            "name": "Mark Vientos",
+            "meta": "vs Jhoan Duran"
           },
           "pitches": [
             "S",
-            "S",
-            "B",
-            "B",
-            "F",
-            "B",
-            "S"
+            "F"
           ],
           "count": {
-            "balls": 3,
-            "strikes": 3,
-            "outs": 2
+            "balls": 2,
+            "strikes": 2,
+            "outs": 1
           },
           "bases": {
             "first": true,
             "second": false,
             "third": false
           },
-          "status": "Bottom 8th"
+          "status": "Bottom 9th"
         }
       }
     },
