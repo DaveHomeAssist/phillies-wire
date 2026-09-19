@@ -4,7 +4,7 @@
   "edition_date": "2026-09-19",
   "volume": 1,
   "edition": 172,
-  "generated_at": "2026-09-19T22:21:49.029Z",
+  "generated_at": "2026-09-19T22:33:55.994Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, NYM 4",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Marcus Semien is up against Brooks Raley. Series: Series tied 1-1.",
+    "headline": "PHI 3, NYM 6",
+    "dek": "Top 7th · 0 outs",
+    "summary": "Kyle Schwarber is up against Cionel Pérez. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jonah Tong · PHI @ NYM · Sun, Sep 20 · 1:10 PM"
   },
@@ -55,33 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 68,
+      "temp_f": 67,
       "condition": "Clear",
-      "wind": "7 mph · gusts 10",
+      "wind": "6 mph · gusts 10",
       "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Marcus Semien",
-        "meta": "vs Brooks Raley"
+        "name": "Kyle Schwarber",
+        "meta": "vs Cionel Pérez"
       },
       "pitches": [
-        "B",
-        "B"
+        "S",
+        "F"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 0,
-        "outs": 1
+        "balls": 0,
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
-        "third": true
+        "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -89,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-19T22:21:49.318Z",
+    "updated_at": "2026-09-19T22:33:56.558Z",
     "current_game_pk": 823571,
     "next_game_pk": 823570,
     "next_game": {
@@ -126,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "68° · Clear · gusts 10 mph",
+      "text": "67° · Clear · gusts 10 mph",
       "highlight": false
     }
   ]
