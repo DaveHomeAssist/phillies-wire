@@ -4,7 +4,7 @@
   "edition_date": "2026-09-19",
   "volume": 1,
   "edition": 172,
-  "generated_at": "2026-09-19T22:07:58.960Z",
+  "generated_at": "2026-09-19T22:21:49.029Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, NYM 4",
-    "dek": "Top 6th · 2 outs",
-    "summary": "Justin Crawford is up against Jefry Yan. Series: Series tied 1-1.",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Marcus Semien is up against Brooks Raley. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jonah Tong · PHI @ NYM · Sun, Sep 20 · 1:10 PM"
   },
@@ -64,21 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Justin Crawford",
-        "meta": "vs Jefry Yan"
+        "name": "Marcus Semien",
+        "meta": "vs Brooks Raley"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B"
+      ],
       "count": {
-        "balls": 0,
+        "balls": 2,
         "strikes": 0,
-        "outs": 2
+        "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
-        "third": false
+        "third": true
       },
-      "status": "Top 6th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-19T22:07:59.535Z",
+    "updated_at": "2026-09-19T22:21:49.318Z",
     "current_game_pk": 823571,
     "next_game_pk": 823570,
     "next_game": {
