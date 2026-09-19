@@ -4,7 +4,7 @@
   "edition_date": "2026-09-19",
   "volume": 1,
   "edition": 172,
-  "generated_at": "2026-09-19T22:33:55.994Z",
+  "generated_at": "2026-09-19T22:47:59.596Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 3, NYM 6",
-    "dek": "Top 7th · 0 outs",
-    "summary": "Kyle Schwarber is up against Cionel Pérez. Series: Series tied 1-1.",
+    "dek": "Top 7th · 2 outs",
+    "summary": "Bryson Stott is up against Jonathan Pintaro. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jonah Tong · PHI @ NYM · Sun, Sep 20 · 1:10 PM"
   },
@@ -55,31 +55,28 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 67,
-      "condition": "Clear",
-      "wind": "6 mph · gusts 10",
-      "gusts_mph": 10
+      "temp_f": 66,
+      "condition": "Mostly sunny",
+      "wind": "6 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Cionel Pérez"
+        "name": "Bryson Stott",
+        "meta": "vs Jonathan Pintaro"
       },
-      "pitches": [
-        "S",
-        "F"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 0
+        "strikes": 0,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
-        "third": false
+        "first": true,
+        "second": true,
+        "third": true
       },
       "status": "Top 7th"
     },
@@ -89,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-19T22:33:56.558Z",
+    "updated_at": "2026-09-19T22:48:00.377Z",
     "current_game_pk": 823571,
     "next_game_pk": 823570,
     "next_game": {
@@ -126,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "67° · Clear · gusts 10 mph",
+      "text": "66° · Mostly sunny · gusts 11 mph",
       "highlight": false
     }
   ]
