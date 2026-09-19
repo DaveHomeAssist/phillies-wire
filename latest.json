@@ -4,7 +4,7 @@
   "edition_date": "2026-09-19",
   "volume": 1,
   "edition": 172,
-  "generated_at": "2026-09-19T21:21:25.167Z",
+  "generated_at": "2026-09-19T21:34:06.005Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, NYM 1",
-    "dek": "Middle 4th · 3 outs",
-    "summary": "Bo Bichette is up against Andrew Painter. Series: Series tied 1-1.",
+    "dek": "Top 5th · 1 out",
+    "summary": "Kyle Schwarber is up against Christian Scott. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jonah Tong · PHI @ NYM · Sun, Sep 20 · 1:10 PM"
   },
@@ -56,7 +56,7 @@
     },
     "weather": {
       "temp_f": 69,
-      "condition": "Overcast",
+      "condition": "Mostly sunny",
       "wind": "5 mph · gusts 7",
       "gusts_mph": 7
     },
@@ -64,24 +64,25 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bo Bichette",
-        "meta": "vs Andrew Painter"
+        "name": "Kyle Schwarber",
+        "meta": "vs Christian Scott"
       },
       "pitches": [
+        "S",
         "B",
-        "X"
+        "F"
       ],
       "count": {
         "balls": 1,
-        "strikes": 0,
-        "outs": 3
+        "strikes": 2,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 4th"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -89,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-19T21:21:25.437Z",
+    "updated_at": "2026-09-19T21:34:06.611Z",
     "current_game_pk": 823571,
     "next_game_pk": 823570,
     "next_game": {
@@ -126,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "69° · Overcast · gusts 7 mph",
+      "text": "69° · Mostly sunny · gusts 7 mph",
       "highlight": false
     }
   ]
