@@ -5,14 +5,14 @@
     "edition": 171,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-19T01:32:27.121Z",
+    "generated_at": "2026-09-19T01:54:21.992Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 18, 2026, 9:32 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 18, 2026, 9:54 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 85,
-    "losses": 68,
-    "streak": "W2",
+    "losses": 69,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 3, NYM 6",
-    "dek": "Middle 8th · 3 outs",
-    "summary": "Brett Baty is up against Tanner Banks. Series: PHI leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 3, NYM 6.",
+    "dek": "NYM 6, PHI 3 · José Urquidy · 4.2 IP, 5 H, 0 ER, 6 K",
+    "summary": "PHI 3, NYM 6. Final at Citi Field, Flushing. Series tied 1-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citi Field, Flushing"
       },
       {
-        "label": "Broadcast",
-        "value": "Apple TV · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "73° · Overcast"
+        "label": "Series",
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "Brett Baty at the plate",
-      "Tanner Banks on the mound",
-      "Citi Field, Flushing"
+      "José Urquidy: 4.2 IP, 5 H, 0 ER, 6 K",
+      "Zac Thornton: 6.0 IP, 5 H, 2 ER, 4 K",
+      "Juan Soto: 3-for-5, 1 HR, 3 RBI, 1 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Christian Scott · PHI @ NYM · Sat, Sep 19 · 4:10 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at NYM game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "7:15 PM",
-        "starters": {
-          "home": {
-            "team": "NYM",
-            "name": "Zac Thornton",
-            "hand": "L"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Tim Mayza",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Tim Mayza",
-            "hand": "L"
-          },
-          "opp": {
-            "team": "NYM",
-            "name": "Zac Thornton",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Francisco Lindor",
-              "position": "SS",
-              "bats": "S"
-            },
-            {
-              "slot": 2,
-              "name": "Juan Soto",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bo Bichette",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Carson Benge",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Mark Vientos",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "A.J. Ewing",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Marcus Semien",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Brett Baty",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Luis Torrens",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Edmundo Sosa",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Derek Hill",
-              "position": "CF",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Francisco Lindor",
-              "position": "SS",
-              "bats": "S"
-            },
-            {
-              "slot": 2,
-              "name": "Juan Soto",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bo Bichette",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Carson Benge",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Mark Vientos",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "A.J. Ewing",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Marcus Semien",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Brett Baty",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Luis Torrens",
-              "position": "C",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Mets · Game 2 of 4",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "Apple TV",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 73,
           "condition": "Overcast",
-          "wind": "6 mph · gusts 10",
-          "gusts_mph": 10
+          "wind": "8 mph · gusts 17",
+          "gusts_mph": 17
         },
         "giveaway": "",
         "transit": "",
@@ -360,7 +103,7 @@
             "name": "Zac Thornton",
             "hand": "L",
             "era": "3.40",
-            "record": "4-5",
+            "record": "5-5",
             "whip": "1.15"
           },
           "away": {
@@ -368,14 +111,14 @@
             "name": "Tim Mayza",
             "hand": "L",
             "era": "3.46",
-            "record": "3-3",
+            "record": "3-4",
             "whip": "1.11"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Middle",
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
           "isTopInning": true,
           "outs": 3,
           "teams": {
@@ -386,7 +129,7 @@
             },
             "home": {
               "runs": 6,
-              "hits": 11,
+              "hits": 13,
               "errors": 0
             }
           },
@@ -484,6 +227,19 @@
             },
             {
               "num": 8,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
               "away": {
                 "runs": 0,
                 "hits": 0,
@@ -1421,29 +1177,120 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823572:66",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "walk_hbp",
+            "actor": "Brett Baty",
+            "actor_id": 683146,
+            "detail": "Brett Baty walks.",
+            "score_after": "PHI 3, NYM 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823572:67",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Luis Torrens",
+            "actor_id": 620443,
+            "detail": "Luis Torrens flies out to second baseman Luis Arraez.",
+            "score_after": "PHI 3, NYM 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823572:68",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "single",
+            "actor": "Francisco Lindor",
+            "actor_id": 596019,
+            "detail": "Francisco Lindor singles on a sharp line drive to left fielder Edmundo Sosa. Brett Baty to 2nd.",
+            "score_after": "PHI 3, NYM 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823572:69",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "single",
+            "actor": "Juan Soto",
+            "actor_id": 665742,
+            "detail": "Juan Soto singles on a ground ball to right fielder Bryce Harper. Brett Baty to 3rd. Francisco Lindor to 2nd.",
+            "score_after": "PHI 3, NYM 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823572:70",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "other",
+            "actor": "Bo Bichette",
+            "actor_id": 666182,
+            "detail": "Bo Bichette grounds into a double play, pitcher Tanner Banks to catcher J.T. Realmuto to first baseman Alec Bohm. Brett Baty out at…",
+            "score_after": "PHI 3, NYM 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823572:71",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out to left fielder Juan Soto.",
+            "score_after": "PHI 3, NYM 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823572:72",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott lines out sharply to center fielder A.J. Ewing.",
+            "score_after": "PHI 3, NYM 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823572:73",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto flies out to center fielder A.J. Ewing.",
+            "score_after": "PHI 3, NYM 6",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Brett Baty",
-            "meta": "vs Tanner Banks"
-          },
-          "pitches": [
-            "S",
-            "X"
-          ],
-          "count": {
-            "balls": 0,
-            "strikes": 1,
-            "outs": 3
-          },
-          "bases": {
-            "first": false,
-            "second": false,
-            "third": false
-          },
-          "status": "Middle 8th"
-        }
+        ]
       }
     },
     "injury_report": null

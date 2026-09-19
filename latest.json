@@ -4,21 +4,21 @@
   "edition_date": "2026-09-18",
   "volume": 1,
   "edition": 171,
-  "generated_at": "2026-09-19T01:32:27.121Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-19T01:54:21.992Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 85,
-    "losses": 68,
-    "streak": "W2",
+    "losses": 69,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, NYM 6",
-    "dek": "Middle 8th · 3 outs",
-    "summary": "Brett Baty is up against Tanner Banks. Series: PHI leads 1-0.",
+    "headline": "PHI 3, NYM 6.",
+    "dek": "NYM 6, PHI 3 · José Urquidy · 4.2 IP, 5 H, 0 ER, 6 K",
+    "summary": "PHI 3, NYM 6. Final at Citi Field, Flushing. Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Christian Scott · PHI @ NYM · Sat, Sep 19 · 4:10 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "Apple TV",
@@ -57,60 +57,40 @@
     "weather": {
       "temp_f": 73,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 10",
-      "gusts_mph": 10
+      "wind": "8 mph · gusts 17",
+      "gusts_mph": 17
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Brett Baty",
-        "meta": "vs Tanner Banks"
-      },
-      "pitches": [
-        "S",
-        "X"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 1,
-        "outs": 3
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Middle 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-19T01:32:27.646Z",
-    "current_game_pk": 823572,
-    "next_game_pk": 823571,
+    "updated_at": "2026-09-19T01:54:22.729Z",
+    "current_game_pk": 823571,
+    "next_game_pk": 823570,
     "next_game": {
-      "game_pk": 823571,
-      "official_date": "2026-09-19",
-      "date_label": "Sat, Sep 19, 2026",
-      "time_label": "4:10 PM",
+      "game_pk": 823570,
+      "official_date": "2026-09-20",
+      "date_label": "Sun, Sep 20, 2026",
+      "time_label": "1:10 PM",
       "title": "Phillies at New York Mets",
       "matchup": "PHI at NYM",
       "venue": "Citi Field"
     },
     "current_game": {
-      "game_pk": 823572,
-      "official_date": "2026-09-18",
+      "game_pk": 823571,
+      "official_date": "2026-09-19",
       "title": "Phillies at New York Mets",
       "matchup": "PHI at NYM"
     }
   },
   "ticker": [
     {
-      "text": "PHI 85-68",
+      "text": "PHI 85-69",
       "highlight": true
     },
     {
@@ -126,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "73° · Overcast · gusts 10 mph",
+      "text": "73° · Overcast · gusts 17 mph",
       "highlight": false
     },
     {
