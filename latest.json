@@ -4,7 +4,7 @@
   "edition_date": "2026-09-18",
   "volume": 1,
   "edition": 171,
-  "generated_at": "2026-09-18T23:49:06.214Z",
+  "generated_at": "2026-09-19T00:25:16.670Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYM 3",
-    "dek": "Top 2nd · 1 out",
-    "summary": "Bryson Stott is up against Zac Thornton. Series: PHI leads 1-0.",
+    "headline": "PHI 1, NYM 3",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "Marcus Semien is up against José Urquidy. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Christian Scott · PHI @ NYM · Sat, Sep 19 · 4:10 PM"
   },
@@ -56,7 +56,7 @@
     },
     "weather": {
       "temp_f": 73,
-      "condition": "Clear",
+      "condition": "Mostly sunny",
       "wind": "4 mph · gusts 9",
       "gusts_mph": 9
     },
@@ -64,21 +64,24 @@
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs Zac Thornton"
+        "name": "Marcus Semien",
+        "meta": "vs José Urquidy"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "X"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 2nd"
+      "status": "Middle 4th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-18T23:49:07.132Z",
+    "updated_at": "2026-09-19T00:25:17.308Z",
     "current_game_pk": 823572,
     "next_game_pk": 823571,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "73° · Clear · gusts 9 mph",
+      "text": "73° · Mostly sunny · gusts 9 mph",
       "highlight": false
     },
     {
