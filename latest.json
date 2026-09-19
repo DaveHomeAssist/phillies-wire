@@ -4,7 +4,7 @@
   "edition_date": "2026-09-19",
   "volume": 1,
   "edition": 172,
-  "generated_at": "2026-09-19T21:07:43.486Z",
+  "generated_at": "2026-09-19T21:21:25.167Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, NYM 1",
-    "dek": "Bottom 3rd · 0 outs",
-    "summary": "Ronny Mauricio is up against Andrew Painter. Series: Series tied 1-1.",
+    "headline": "PHI 1, NYM 1",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "Bo Bichette is up against Andrew Painter. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jonah Tong · PHI @ NYM · Sun, Sep 20 · 1:10 PM"
   },
@@ -57,28 +57,31 @@
     "weather": {
       "temp_f": 69,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 5",
-      "gusts_mph": 5
+      "wind": "5 mph · gusts 7",
+      "gusts_mph": 7
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ronny Mauricio",
+        "name": "Bo Bichette",
         "meta": "vs Andrew Painter"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "X"
+      ],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
-        "outs": 0
+        "outs": 3
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Middle 4th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-19T21:07:43.729Z",
+    "updated_at": "2026-09-19T21:21:25.437Z",
     "current_game_pk": 823571,
     "next_game_pk": 823570,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "69° · Overcast · gusts 5 mph",
+      "text": "69° · Overcast · gusts 7 mph",
       "highlight": false
     }
   ]
