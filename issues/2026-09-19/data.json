@@ -5,14 +5,14 @@
     "edition": 172,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-19T23:20:34.347Z",
+    "generated_at": "2026-09-19T23:34:13.020Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 19, 2026, 7:20 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 19, 2026, 7:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 85,
-    "losses": 69,
-    "streak": "L1",
+    "losses": 70,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 3, NYM 10",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "A.J. Ewing is up against Orion Kerkering. Series: Series tied 1-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 3, NYM 10.",
+    "dek": "NYM 10, PHI 3 · Andrew Painter · 5.1 IP, 4 H, 4 ER, 7 K",
+    "summary": "PHI 3, NYM 10. Final at Citi Field, Flushing. NYM leads 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citi Field, Flushing"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "64° · Clear"
+        "label": "Series",
+        "value": "NYM leads 2-1"
       }
     ],
     "bullets": [
-      "A.J. Ewing at the plate",
-      "Orion Kerkering on the mound",
-      "Citi Field, Flushing"
+      "Andrew Painter: 5.1 IP, 4 H, 4 ER, 7 K",
+      "Christian Scott: 4.2 IP, 6 H, 3 ER, 7 K",
+      "Carson Benge: 3-for-4, 1 HR, 2 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Jonah Tong · PHI @ NYM · Sun, Sep 20 · 1:10 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's PHI at NYM game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "4:10 PM",
-        "starters": {
-          "home": {
-            "team": "NYM",
-            "name": "Christian Scott",
-            "hand": "R"
-          },
-          "away": {
-            "team": "PHI",
-            "name": "Andrew Painter",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Andrew Painter",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "NYM",
-            "name": "Christian Scott",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Francisco Lindor",
-              "position": "SS",
-              "bats": "S"
-            },
-            {
-              "slot": 2,
-              "name": "Juan Soto",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bo Bichette",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Carson Benge",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "A.J. Ewing",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Marcus Semien",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Brett Baty",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Francisco Alvarez",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Ronny Mauricio",
-              "position": "DH",
-              "bats": "S"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Francisco Lindor",
-              "position": "SS",
-              "bats": "S"
-            },
-            {
-              "slot": 2,
-              "name": "Juan Soto",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bo Bichette",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Carson Benge",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "A.J. Ewing",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Marcus Semien",
-              "position": "2B",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Brett Baty",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Francisco Alvarez",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Ronny Mauricio",
-              "position": "DH",
-              "bats": "S"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Phillies @ Mets · Game 3 of 4",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Series tied 1-1"
+          "label": "NYM leads 2-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -368,16 +111,16 @@
             "name": "Andrew Painter",
             "hand": "R",
             "era": "5.59",
-            "record": "3-9",
+            "record": "3-10",
             "whip": "1.42"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 1,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 3,
@@ -494,6 +237,19 @@
                 "hits": 4,
                 "errors": 0
               }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
+                "errors": 0
+              }
             }
           ]
         },
@@ -520,7 +276,7 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a line drive to…",
+            "detail": "Trea Turner singles on a line drive to left fielder Juan Soto.",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -534,7 +290,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper lines out sharply to right…",
+            "detail": "Bryce Harper lines out sharply to right fielder Carson Benge.",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -562,7 +318,7 @@
             "event_type": "out",
             "actor": "Francisco Lindor",
             "actor_id": 596019,
-            "detail": "Francisco Lindor grounds out, second ba…",
+            "detail": "Francisco Lindor grounds out, second baseman Luis Arraez to first basem…",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -632,7 +388,7 @@
             "event_type": "out",
             "actor": "Brandon Marsh",
             "actor_id": 669016,
-            "detail": "Brandon Marsh grounds out, shortstop Fr…",
+            "detail": "Brandon Marsh grounds out, shortstop Francisco Lindor to first baseman…",
             "score_after": "PHI 0, NYM 0",
             "runs": 0,
             "is_scoring": false,
@@ -646,7 +402,7 @@
             "event_type": "home_run",
             "actor": "Carson Benge",
             "actor_id": 701807,
-            "detail": "Carson Benge homers (19) on a fly ball…",
+            "detail": "Carson Benge homers (19) on a fly ball to right field.",
             "score_after": "PHI 0, NYM 1",
             "runs": 1,
             "is_scoring": true,
@@ -660,7 +416,7 @@
             "event_type": "out",
             "actor": "A.J. Ewing",
             "actor_id": 805999,
-            "detail": "A.J. Ewing grounds out to catcher J.T.…",
+            "detail": "A.J. Ewing grounds out to catcher J.T. Realmuto.",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -674,7 +430,7 @@
             "event_type": "out",
             "actor": "Marcus Semien",
             "actor_id": 543760,
-            "detail": "Marcus Semien flies out to center field…",
+            "detail": "Marcus Semien flies out to center fielder Justin Crawford.",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -716,7 +472,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford pops out to second base…",
+            "detail": "Justin Crawford pops out to second baseman Marcus Semien.",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -744,7 +500,7 @@
             "event_type": "out",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner grounds into a force out, t…",
+            "detail": "Trea Turner grounds into a force out, third baseman Bo Bichette to seco…",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -758,7 +514,7 @@
             "event_type": "single",
             "actor": "Francisco Alvarez",
             "actor_id": 682626,
-            "detail": "Francisco Alvarez singles on a ground b…",
+            "detail": "Francisco Alvarez singles on a ground ball to left fielder Brandon Mars…",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -772,7 +528,7 @@
             "event_type": "out",
             "actor": "Ronny Mauricio",
             "actor_id": 677595,
-            "detail": "Mets challenged (play at 1st), call on…",
+            "detail": "Mets challenged (play at 1st), call on the field was overturned: Ronny…",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -786,7 +542,7 @@
             "event_type": "out",
             "actor": "Francisco Lindor",
             "actor_id": 596019,
-            "detail": "Francisco Lindor grounds into a force o…",
+            "detail": "Francisco Lindor grounds into a force out, second baseman Luis Arraez t…",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -800,7 +556,7 @@
             "event_type": "out",
             "actor": "Juan Soto",
             "actor_id": 665742,
-            "detail": "Juan Soto pops out to second baseman Lu…",
+            "detail": "Juan Soto pops out to second baseman Luis Arraez.",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -814,7 +570,7 @@
             "event_type": "extra_base_hit",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper hits a ground-rule double…",
+            "detail": "Bryce Harper hits a ground-rule double (32) on a fly ball .",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -828,7 +584,7 @@
             "event_type": "out",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez flies out to right fielder…",
+            "detail": "Luis Arraez flies out to right fielder Carson Benge. Bryce Harper to 3r…",
             "score_after": "PHI 0, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -842,7 +598,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a line drive to ce…",
+            "detail": "Alec Bohm singles on a line drive to center fielder A.J. Ewing. Bryce H…",
             "score_after": "PHI 1, NYM 1",
             "runs": 1,
             "is_scoring": true,
@@ -856,7 +612,7 @@
             "event_type": "single",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott singles on a line drive to…",
+            "detail": "Bryson Stott singles on a line drive to left fielder Juan Soto. Alec Bo…",
             "score_after": "PHI 1, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -884,7 +640,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto lines out to left fielder…",
+            "detail": "J.T. Realmuto lines out to left fielder Juan Soto.",
             "score_after": "PHI 1, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -898,7 +654,7 @@
             "event_type": "out",
             "actor": "Bo Bichette",
             "actor_id": 666182,
-            "detail": "Bo Bichette lines out sharply to center…",
+            "detail": "Bo Bichette lines out sharply to center fielder Justin Crawford.",
             "score_after": "PHI 1, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -912,7 +668,7 @@
             "event_type": "out",
             "actor": "Carson Benge",
             "actor_id": 701807,
-            "detail": "Carson Benge flies out to left fielder…",
+            "detail": "Carson Benge flies out to left fielder Brandon Marsh.",
             "score_after": "PHI 1, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -926,7 +682,7 @@
             "event_type": "out",
             "actor": "A.J. Ewing",
             "actor_id": 805999,
-            "detail": "A.J. Ewing grounds out, first baseman A…",
+            "detail": "A.J. Ewing grounds out, first baseman Alec Bohm to pitcher Andrew Paint…",
             "score_after": "PHI 1, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -954,7 +710,7 @@
             "event_type": "extra_base_hit",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber doubles (18) on a line d…",
+            "detail": "Kyle Schwarber doubles (18) on a line drive to left fielder Juan Soto.",
             "score_after": "PHI 1, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -968,7 +724,7 @@
             "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Trea Turner singles on a line drive to…",
+            "detail": "Trea Turner singles on a line drive to center fielder A.J. Ewing. Kyle…",
             "score_after": "PHI 1, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -982,7 +738,7 @@
             "event_type": "out",
             "actor": "Bryce Harper",
             "actor_id": 547180,
-            "detail": "Bryce Harper out on a sacrifice fly to…",
+            "detail": "Bryce Harper out on a sacrifice fly to center fielder A.J. Ewing. Kyle…",
             "score_after": "PHI 2, NYM 1",
             "runs": 1,
             "is_scoring": true,
@@ -996,7 +752,7 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez singles on a line drive to…",
+            "detail": "Luis Arraez singles on a line drive to left fielder Juan Soto. Trea Tur…",
             "score_after": "PHI 2, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -1010,7 +766,7 @@
             "event_type": "single",
             "actor": "Alec Bohm",
             "actor_id": 664761,
-            "detail": "Alec Bohm singles on a ground ball to l…",
+            "detail": "Alec Bohm singles on a ground ball to left fielder Juan Soto, deflected…",
             "score_after": "PHI 3, NYM 1",
             "runs": 1,
             "is_scoring": true,
@@ -1052,7 +808,7 @@
             "event_type": "single",
             "actor": "Brett Baty",
             "actor_id": 683146,
-            "detail": "Brett Baty singles on a line drive to r…",
+            "detail": "Brett Baty singles on a line drive to right fielder Bryce Harper. Marcu…",
             "score_after": "PHI 3, NYM 1",
             "runs": 0,
             "is_scoring": false,
@@ -1066,7 +822,7 @@
             "event_type": "home_run",
             "actor": "Francisco Alvarez",
             "actor_id": 682626,
-            "detail": "Francisco Alvarez homers (16) on a fly…",
+            "detail": "Francisco Alvarez homers (16) on a fly ball to right center field. Marc…",
             "score_after": "PHI 3, NYM 4",
             "runs": 3,
             "is_scoring": true,
@@ -1094,7 +850,7 @@
             "event_type": "strikeout",
             "actor": "Francisco Lindor",
             "actor_id": 596019,
-            "detail": "Francisco Lindor strikes out swinging,…",
+            "detail": "Francisco Lindor strikes out swinging, catcher J.T. Realmuto to first b…",
             "score_after": "PHI 3, NYM 4",
             "runs": 0,
             "is_scoring": false,
@@ -1122,7 +878,7 @@
             "event_type": "strikeout",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa strikes out swinging, catc…",
+            "detail": "Edmundo Sosa strikes out swinging, catcher Francisco Alvarez to first b…",
             "score_after": "PHI 3, NYM 4",
             "runs": 0,
             "is_scoring": false,
@@ -1150,7 +906,7 @@
             "event_type": "out",
             "actor": "Justin Crawford",
             "actor_id": 702222,
-            "detail": "Justin Crawford grounds out, first base…",
+            "detail": "Justin Crawford grounds out, first baseman Brett Baty to pitcher Jefry…",
             "score_after": "PHI 3, NYM 4",
             "runs": 0,
             "is_scoring": false,
@@ -1192,7 +948,7 @@
             "event_type": "single",
             "actor": "A.J. Ewing",
             "actor_id": 805999,
-            "detail": "A.J. Ewing singles on a ground ball to…",
+            "detail": "A.J. Ewing singles on a ground ball to right fielder Bryce Harper. Cars…",
             "score_after": "PHI 3, NYM 4",
             "runs": 0,
             "is_scoring": false,
@@ -1220,7 +976,7 @@
             "event_type": "single",
             "actor": "Brett Baty",
             "actor_id": 683146,
-            "detail": "Brett Baty singles on a line drive to c…",
+            "detail": "Brett Baty singles on a line drive to center fielder Justin Crawford. C…",
             "score_after": "PHI 3, NYM 5",
             "runs": 1,
             "is_scoring": true,
@@ -1234,7 +990,7 @@
             "event_type": "out",
             "actor": "Francisco Alvarez",
             "actor_id": 682626,
-            "detail": "Francisco Alvarez pops out to second ba…",
+            "detail": "Francisco Alvarez pops out to second baseman Luis Arraez on the infield…",
             "score_after": "PHI 3, NYM 5",
             "runs": 0,
             "is_scoring": false,
@@ -1248,7 +1004,7 @@
             "event_type": "walk_hbp",
             "actor": "Ronny Mauricio",
             "actor_id": 677595,
-            "detail": "Ronny Mauricio walks. A.J. Ewing scores…",
+            "detail": "Ronny Mauricio walks. A.J. Ewing scores. Marcus Semien to 3rd. Brett Ba…",
             "score_after": "PHI 3, NYM 6",
             "runs": 1,
             "is_scoring": true,
@@ -1262,7 +1018,7 @@
             "event_type": "out",
             "actor": "Francisco Lindor",
             "actor_id": 596019,
-            "detail": "Francisco Lindor flies out sharply to c…",
+            "detail": "Francisco Lindor flies out sharply to center fielder Justin Crawford.",
             "score_after": "PHI 3, NYM 6",
             "runs": 0,
             "is_scoring": false,
@@ -1276,7 +1032,7 @@
             "event_type": "out",
             "actor": "Kyle Schwarber",
             "actor_id": 656941,
-            "detail": "Kyle Schwarber grounds out to first bas…",
+            "detail": "Kyle Schwarber grounds out to first baseman Brett Baty.",
             "score_after": "PHI 3, NYM 6",
             "runs": 0,
             "is_scoring": false,
@@ -1318,7 +1074,7 @@
             "event_type": "single",
             "actor": "Luis Arraez",
             "actor_id": 650333,
-            "detail": "Luis Arraez singles on a line drive to…",
+            "detail": "Luis Arraez singles on a line drive to left fielder Juan Soto. Trea Tur…",
             "score_after": "PHI 3, NYM 6",
             "runs": 0,
             "is_scoring": false,
@@ -1346,7 +1102,7 @@
             "event_type": "out",
             "actor": "Bryson Stott",
             "actor_id": 681082,
-            "detail": "Bryson Stott grounds out, second basema…",
+            "detail": "Bryson Stott grounds out, second baseman Marcus Semien to first baseman…",
             "score_after": "PHI 3, NYM 6",
             "runs": 0,
             "is_scoring": false,
@@ -1388,7 +1144,7 @@
             "event_type": "single",
             "actor": "Carson Benge",
             "actor_id": 701807,
-            "detail": "Carson Benge singles on a line drive to…",
+            "detail": "Carson Benge singles on a line drive to right fielder Bryce Harper. Bo…",
             "score_after": "PHI 3, NYM 6",
             "runs": 0,
             "is_scoring": false,
@@ -1402,7 +1158,7 @@
             "event_type": "other",
             "actor": "A.J. Ewing",
             "actor_id": 805999,
-            "detail": "A.J. Ewing grounds into a double play,…",
+            "detail": "A.J. Ewing grounds into a double play, shortstop Trea Turner to first b…",
             "score_after": "PHI 3, NYM 6",
             "runs": 0,
             "is_scoring": false,
@@ -1416,7 +1172,7 @@
             "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
-            "detail": "Edmundo Sosa lines out to left fielder…",
+            "detail": "Edmundo Sosa lines out to left fielder Juan Soto.",
             "score_after": "PHI 3, NYM 6",
             "runs": 0,
             "is_scoring": false,
@@ -1430,7 +1186,7 @@
             "event_type": "out",
             "actor": "J.T. Realmuto",
             "actor_id": 592663,
-            "detail": "J.T. Realmuto lines out to right fielde…",
+            "detail": "J.T. Realmuto lines out to right fielder Carson Benge.",
             "score_after": "PHI 3, NYM 6",
             "runs": 0,
             "is_scoring": false,
@@ -1458,7 +1214,7 @@
             "event_type": "single",
             "actor": "Marcus Semien",
             "actor_id": 543760,
-            "detail": "Marcus Semien singles on a fly ball to…",
+            "detail": "Marcus Semien singles on a fly ball to right fielder Bryce Harper.",
             "score_after": "PHI 3, NYM 6",
             "runs": 0,
             "is_scoring": false,
@@ -1514,7 +1270,7 @@
             "event_type": "walk_hbp",
             "actor": "Francisco Lindor",
             "actor_id": 596019,
-            "detail": "Francisco Lindor walks. Marcus Semien s…",
+            "detail": "Francisco Lindor walks. Marcus Semien scores. Brett Baty to 3rd. Nick M…",
             "score_after": "PHI 3, NYM 7",
             "runs": 1,
             "is_scoring": true,
@@ -1528,7 +1284,7 @@
             "event_type": "single",
             "actor": "Juan Soto",
             "actor_id": 665742,
-            "detail": "Juan Soto singles on a line drive to le…",
+            "detail": "Juan Soto singles on a line drive to left fielder Edmundo Sosa. Brett B…",
             "score_after": "PHI 3, NYM 8",
             "runs": 1,
             "is_scoring": true,
@@ -1542,7 +1298,7 @@
             "event_type": "single",
             "actor": "Bo Bichette",
             "actor_id": 666182,
-            "detail": "Bo Bichette singles on a line drive to…",
+            "detail": "Bo Bichette singles on a line drive to right fielder Bryce Harper. Nick…",
             "score_after": "PHI 3, NYM 9",
             "runs": 1,
             "is_scoring": true,
@@ -1556,7 +1312,7 @@
             "event_type": "single",
             "actor": "Carson Benge",
             "actor_id": 701807,
-            "detail": "Carson Benge singles on a soft ground b…",
+            "detail": "Carson Benge singles on a soft ground ball to third baseman Bryson Stot…",
             "score_after": "PHI 3, NYM 10",
             "runs": 1,
             "is_scoring": true,
@@ -1567,36 +1323,86 @@
             "inning": 8,
             "half": "bottom",
             "team": "NYM",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "A.J. Ewing",
             "actor_id": 805999,
-            "detail": "Play",
+            "detail": "A.J. Ewing called out on strikes.",
+            "score_after": "PHI 3, NYM 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823571:77",
+            "inning": 8,
+            "half": "bottom",
+            "team": "NYM",
+            "event_type": "out",
+            "actor": "Marcus Semien",
+            "actor_id": 543760,
+            "detail": "Marcus Semien flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 3, NYM 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823571:78",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber strikes out swinging.",
+            "score_after": "PHI 3, NYM 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823571:79",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner challenged (pitch result), call on the field was overturned…",
+            "score_after": "PHI 3, NYM 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823571:80",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper pops out to third baseman Bo Bichette.",
+            "score_after": "PHI 3, NYM 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823571:81",
+            "inning": 9,
+            "half": "top",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez grounds out, first baseman Brett Baty to pitcher Tobias Mye…",
             "score_after": "PHI 3, NYM 10",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "A.J. Ewing",
-            "meta": "vs Orion Kerkering"
-          },
-          "pitches": [
-            "B"
-          ],
-          "count": {
-            "balls": 2,
-            "strikes": 0,
-            "outs": 1
-          },
-          "bases": {
-            "first": true,
-            "second": true,
-            "third": true
-          },
-          "status": "Bottom 8th"
-        }
+        ]
       }
     },
     "injury_report": null
