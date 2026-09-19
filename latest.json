@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-18",
+  "edition_date": "2026-09-19",
   "volume": 1,
-  "edition": 171,
-  "generated_at": "2026-09-19T03:51:09.215Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 172,
+  "generated_at": "2026-09-19T04:10:52.341Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 85,
@@ -16,48 +16,48 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, NYM 6.",
-    "dek": "NYM 6, PHI 3 · José Urquidy · 4.2 IP, 5 H, 0 ER, 6 K",
-    "summary": "PHI 3, NYM 6. Final at Citi Field, Flushing. Series tied 1-1.",
+    "headline": "Phillies @ Mets · Game 3 of 4",
+    "dek": "Andrew Painter vs Christian Scott",
+    "summary": "Andrew Painter vs Christian Scott · Phillies @ Mets · Game 3 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter vs Christian Scott · PHI @ NYM · Sat, Sep 19 · 4:10 PM"
+    "next_value": "Cristopher Sánchez vs Jonah Tong · PHI @ NYM · Sun, Sep 20 · 1:10 PM"
   },
   "game": {
-    "matchup": "Phillies @ Mets · Game 2 of 4",
-    "first_pitch": "7:15 PM",
+    "matchup": "Phillies @ Mets · Game 3 of 4",
+    "first_pitch": "4:10 PM",
     "venue": "Citi Field, Flushing",
     "starters": {
       "home": {
-        "name": "Zac Thornton",
-        "hand": "L"
+        "name": "Christian Scott",
+        "hand": "R"
       },
       "away": {
-        "name": "Tim Mayza",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "phi": {
-        "name": "Tim Mayza",
-        "hand": "L"
+        "name": "Andrew Painter",
+        "hand": "R"
       },
       "opp": {
-        "name": "Zac Thornton",
-        "hand": "L"
+        "name": "Christian Scott",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "PHI leads 1-0"
     },
     "broadcast": {
-      "tv": "Apple TV",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 69,
       "condition": "Overcast",
-      "wind": "9 mph · gusts 15",
+      "wind": "8 mph · gusts 15",
       "gusts_mph": 15
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-19T03:51:09.912Z",
+    "updated_at": "2026-09-19T04:10:53.287Z",
     "current_game_pk": 823571,
     "next_game_pk": 823570,
     "next_game": {
@@ -94,27 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Mets · Game 2 of 4 · 7:15 PM",
+      "text": "Phillies @ Mets · Game 3 of 4 · 4:10 PM",
       "highlight": false
     },
     {
-      "text": "Tim Mayza vs Zac Thornton",
+      "text": "Andrew Painter vs Christian Scott",
       "highlight": true
     },
     {
-      "text": "Apple TV · 94 WIP",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
       "text": "69° · Overcast · gusts 15 mph",
-      "highlight": false
-    },
-    {
-      "text": "activated RHP José Urquidy.",
-      "highlight": false
-    },
-    {
-      "text": "optioned LHP Kyle Backhus to Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
