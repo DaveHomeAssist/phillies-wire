@@ -4,7 +4,7 @@
   "edition_date": "2026-09-18",
   "volume": 1,
   "edition": 171,
-  "generated_at": "2026-09-19T01:05:11.873Z",
+  "generated_at": "2026-09-19T01:32:27.121Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, NYM 3",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Francisco Lindor is up against Orion Kerkering. Series: PHI leads 1-0.",
+    "headline": "PHI 3, NYM 6",
+    "dek": "Middle 8th · 3 outs",
+    "summary": "Brett Baty is up against Tanner Banks. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter vs Christian Scott · PHI @ NYM · Sat, Sep 19 · 4:10 PM"
   },
@@ -55,30 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 72,
+      "temp_f": 73,
       "condition": "Overcast",
-      "wind": "5 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "6 mph · gusts 10",
+      "gusts_mph": 10
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Francisco Lindor",
-        "meta": "vs Orion Kerkering"
+        "name": "Brett Baty",
+        "meta": "vs Tanner Banks"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "X"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Middle 8th"
     },
     "recap_line": null
   },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-19T01:05:12.735Z",
+    "updated_at": "2026-09-19T01:32:27.646Z",
     "current_game_pk": 823572,
     "next_game_pk": 823571,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "72° · Overcast · gusts 7 mph",
+      "text": "73° · Overcast · gusts 10 mph",
       "highlight": false
     },
     {
