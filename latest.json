@@ -4,7 +4,7 @@
   "edition_date": "2026-09-20",
   "volume": 1,
   "edition": 173,
-  "generated_at": "2026-09-20T17:33:51.984Z",
+  "generated_at": "2026-09-20T17:48:07.021Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 2, NYM 0",
-    "dek": "Top 2nd · 0 outs",
-    "summary": "Brandon Marsh is up against Jonah Tong. Series: NYM leads 2-1.",
+    "dek": "Bottom 2nd · 2 outs",
+    "summary": "Nick Morabito is up against Cristopher Sánchez. Series: NYM leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIL · Tue, Sep 22 · 6:40 PM"
   },
@@ -57,28 +57,30 @@
     "weather": {
       "temp_f": 66,
       "condition": "Overcast",
-      "wind": "7 mph · gusts 20",
-      "gusts_mph": 20
+      "wind": "8 mph · gusts 21",
+      "gusts_mph": 21
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
-        "meta": "vs Jonah Tong"
+        "name": "Nick Morabito",
+        "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [],
+      "pitches": [
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Top 2nd"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -86,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-20T17:33:52.253Z",
+    "updated_at": "2026-09-20T17:48:07.944Z",
     "current_game_pk": 823570,
     "next_game_pk": 823412,
     "next_game": {
@@ -123,15 +125,15 @@
       "highlight": false
     },
     {
-      "text": "66° · Overcast · gusts 20 mph",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Max Lazar from Lehigh Valley IronPigs.",
+      "text": "66° · Overcast · gusts 21 mph",
       "highlight": false
     },
     {
       "text": "optioned RHP Orion Kerkering to Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "recalled RHP Max Lazar from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
