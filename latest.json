@@ -4,7 +4,7 @@
   "edition_date": "2026-09-20",
   "volume": 1,
   "edition": 173,
-  "generated_at": "2026-09-20T18:27:47.747Z",
+  "generated_at": "2026-09-20T18:41:05.806Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, NYM 0",
-    "dek": "Bottom 4th · 1 out",
-    "summary": "Marcus Semien is up against Cristopher Sánchez. Series: NYM leads 2-1.",
+    "dek": "Top 5th · 2 outs",
+    "summary": "Bryson Stott is up against Jack Weisenburger. Series: NYM leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIL · Tue, Sep 22 · 6:40 PM"
   },
@@ -57,28 +57,28 @@
     "weather": {
       "temp_f": 68,
       "condition": "Overcast",
-      "wind": "8 mph · gusts 22",
+      "wind": "7 mph · gusts 22",
       "gusts_mph": 22
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Marcus Semien",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Bryson Stott",
+        "meta": "vs Jack Weisenburger"
       },
       "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 1
+        "outs": 2
       },
       "bases": {
-        "first": false,
-        "second": false,
+        "first": true,
+        "second": true,
         "third": false
       },
-      "status": "Bottom 4th"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-20T18:27:48.455Z",
+    "updated_at": "2026-09-20T18:41:06.638Z",
     "current_game_pk": 823570,
     "next_game_pk": 823412,
     "next_game": {
