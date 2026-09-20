@@ -4,7 +4,7 @@
   "edition_date": "2026-09-20",
   "volume": 1,
   "edition": 173,
-  "generated_at": "2026-09-20T18:48:23.675Z",
+  "generated_at": "2026-09-20T19:06:58.239Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, NYM 0",
-    "dek": "Bottom 5th · 1 out",
-    "summary": "Luis Torrens is up against Cristopher Sánchez. Series: NYM leads 2-1.",
+    "headline": "PHI 4, NYM 1",
+    "dek": "Bottom 6th · 2 outs",
+    "summary": "Carson Benge is up against Cristopher Sánchez. Series: NYM leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIL · Tue, Sep 22 · 6:40 PM"
   },
@@ -56,29 +56,29 @@
     },
     "weather": {
       "temp_f": 68,
-      "condition": "Overcast",
-      "wind": "5 mph · gusts 20",
-      "gusts_mph": 20
+      "condition": "Heavy drizzle",
+      "wind": "3 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Torrens",
+        "name": "Carson Benge",
         "meta": "vs Cristopher Sánchez"
       },
       "pitches": [],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 1
+        "outs": 2
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -86,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-20T18:48:23.934Z",
+    "updated_at": "2026-09-20T19:06:58.489Z",
     "current_game_pk": 823570,
     "next_game_pk": 823412,
     "next_game": {
@@ -123,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "68° · Overcast · gusts 20 mph",
+      "text": "68° · Heavy drizzle · gusts 16 mph",
       "highlight": false
     },
     {
