@@ -4,7 +4,7 @@
   "edition_date": "2026-09-20",
   "volume": 1,
   "edition": 173,
-  "generated_at": "2026-09-20T19:19:32.436Z",
+  "generated_at": "2026-09-20T19:34:28.310Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, NYM 1",
-    "dek": "Top 7th · 2 outs",
-    "summary": "Luis Arraez is up against Jefry Yan. Series: NYM leads 2-1.",
+    "dek": "Bottom 7th · 1 out",
+    "summary": "Brett Baty is up against Alex McFarlane. Series: NYM leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIL · Tue, Sep 22 · 6:40 PM"
   },
@@ -56,32 +56,29 @@
     },
     "weather": {
       "temp_f": 67,
-      "condition": "Light rain",
-      "wind": "4 mph · gusts 17",
-      "gusts_mph": 17
+      "condition": "Light drizzle",
+      "wind": "5 mph · gusts 18",
+      "gusts_mph": 18
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Luis Arraez",
-        "meta": "vs Jefry Yan"
+        "name": "Brett Baty",
+        "meta": "vs Alex McFarlane"
       },
-      "pitches": [
-        "S",
-        "F"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 2,
-        "outs": 2
+        "strikes": 0,
+        "outs": 1
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": true,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "Bottom 7th"
     },
     "recap_line": null
   },
@@ -89,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-20T19:19:32.841Z",
+    "updated_at": "2026-09-20T19:34:29.258Z",
     "current_game_pk": 823570,
     "next_game_pk": 823412,
     "next_game": {
@@ -126,15 +123,15 @@
       "highlight": false
     },
     {
-      "text": "67° · Light rain · gusts 17 mph",
-      "highlight": false
-    },
-    {
-      "text": "recalled RHP Max Lazar from Lehigh Valley IronPigs.",
+      "text": "67° · Light drizzle · gusts 18 mph",
       "highlight": false
     },
     {
       "text": "optioned RHP Orion Kerkering to Lehigh Valley IronPigs.",
+      "highlight": false
+    },
+    {
+      "text": "recalled RHP Max Lazar from Lehigh Valley IronPigs.",
       "highlight": false
     }
   ]
