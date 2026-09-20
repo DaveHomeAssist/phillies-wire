@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-19",
+  "edition_date": "2026-09-20",
   "volume": 1,
-  "edition": 172,
-  "generated_at": "2026-09-20T03:49:57.059Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 173,
+  "generated_at": "2026-09-20T04:11:13.333Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 85,
@@ -16,49 +16,49 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 3, NYM 10.",
-    "dek": "NYM 10, PHI 3 · Andrew Painter · 5.1 IP, 4 H, 4 ER, 7 K",
-    "summary": "PHI 3, NYM 10. Final at Citi Field, Flushing. NYM leads 2-1.",
+    "headline": "Phillies @ Mets · Game 4 of 4",
+    "dek": "Cristopher Sánchez vs Jonah Tong",
+    "summary": "Cristopher Sánchez vs Jonah Tong · Phillies @ Mets · Game 4 of 4",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Jonah Tong · PHI @ NYM · Sun, Sep 20 · 1:10 PM"
+    "next_value": "PHI vs MIL · Tue, Sep 22 · 6:40 PM"
   },
   "game": {
-    "matchup": "Phillies @ Mets · Game 3 of 4",
-    "first_pitch": "4:10 PM",
+    "matchup": "Phillies @ Mets · Game 4 of 4",
+    "first_pitch": "1:10 PM",
     "venue": "Citi Field, Flushing",
     "starters": {
       "home": {
-        "name": "Christian Scott",
+        "name": "Jonah Tong",
         "hand": "R"
       },
       "away": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "phi": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "opp": {
-        "name": "Christian Scott",
+        "name": "Jonah Tong",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "NYM leads 2-1"
+      "label": "Series tied 1-1"
     },
     "broadcast": {
       "tv": "NBCSP",
       "stream": "MLB.TV",
-      "radio": "94 WIP"
+      "radio": "1210 WPHT"
     },
     "weather": {
       "temp_f": 63,
       "condition": "Overcast",
-      "wind": "3 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "2 mph · gusts 13",
+      "gusts_mph": 13
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-20T03:49:57.580Z",
+    "updated_at": "2026-09-20T04:11:13.797Z",
     "current_game_pk": 823570,
     "next_game_pk": 823412,
     "next_game": {
@@ -94,19 +94,19 @@
       "highlight": true
     },
     {
-      "text": "Phillies @ Mets · Game 3 of 4 · 4:10 PM",
+      "text": "Phillies @ Mets · Game 4 of 4 · 1:10 PM",
       "highlight": false
     },
     {
-      "text": "Andrew Painter vs Christian Scott",
+      "text": "Cristopher Sánchez vs Jonah Tong",
       "highlight": true
     },
     {
-      "text": "NBCSP · 94 WIP",
+      "text": "NBCSP · 1210 WPHT",
       "highlight": false
     },
     {
-      "text": "63° · Overcast · gusts 14 mph",
+      "text": "63° · Overcast · gusts 13 mph",
       "highlight": false
     }
   ]
