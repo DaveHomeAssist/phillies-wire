@@ -4,7 +4,7 @@
   "edition_date": "2026-09-20",
   "volume": 1,
   "edition": 173,
-  "generated_at": "2026-09-20T19:48:12.189Z",
+  "generated_at": "2026-09-20T20:08:55.108Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, NYM 2",
-    "dek": "Top 8th · 1 out",
-    "summary": "J.T. Realmuto is up against Kodai Senga. Series: NYM leads 2-1.",
+    "headline": "PHI 7, NYM 2",
+    "dek": "Bottom 8th · 2 outs",
+    "summary": "Marcus Semien is up against Chase Shugart. Series: NYM leads 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler · PHI vs MIL · Tue, Sep 22 · 6:40 PM"
   },
@@ -57,30 +57,31 @@
     "weather": {
       "temp_f": 67,
       "condition": "Light drizzle",
-      "wind": "5 mph · gusts 17",
-      "gusts_mph": 17
+      "wind": "5 mph · gusts 18",
+      "gusts_mph": 18
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Kodai Senga"
+        "name": "Marcus Semien",
+        "meta": "vs Chase Shugart"
       },
       "pitches": [
+        "S",
         "S"
       ],
       "count": {
         "balls": 0,
-        "strikes": 1,
-        "outs": 1
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": true,
+        "first": false,
         "second": true,
         "third": false
       },
-      "status": "Top 8th"
+      "status": "Bottom 8th"
     },
     "recap_line": null
   },
@@ -88,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-20T19:48:13.209Z",
+    "updated_at": "2026-09-20T20:08:55.477Z",
     "current_game_pk": 823570,
     "next_game_pk": 823412,
     "next_game": {
@@ -125,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "67° · Light drizzle · gusts 17 mph",
+      "text": "67° · Light drizzle · gusts 18 mph",
       "highlight": false
     },
     {
