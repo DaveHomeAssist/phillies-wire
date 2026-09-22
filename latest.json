@@ -4,7 +4,7 @@
   "edition_date": "2026-09-22",
   "volume": 1,
   "edition": 175,
-  "generated_at": "2026-09-22T23:22:20.561Z",
+  "generated_at": "2026-09-22T23:34:04.837Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 2, MIL 0",
-    "dek": "Middle 3rd · 3 outs",
-    "summary": "Kyle Schwarber is up against Dustin May. Series: Regular Season.",
+    "headline": "PHI 3, MIL 0",
+    "dek": "Top 4th · 0 outs",
+    "summary": "Garrett Mitchell is up against Zack Wheeler. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Logan Henderson · PHI vs MIL · Wed, Sep 23 · 6:40 PM"
   },
@@ -57,33 +57,34 @@
     "weather": {
       "temp_f": 61,
       "condition": "Overcast",
-      "wind": "7 mph · gusts 16",
-      "gusts_mph": 16
+      "wind": "8 mph · gusts 18",
+      "gusts_mph": 18
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
-        "meta": "vs Dustin May"
+        "name": "Garrett Mitchell",
+        "meta": "vs Zack Wheeler"
       },
       "pitches": [
+        "S",
         "B",
-        "F",
+        "S",
         "B",
-        "X"
+        "B"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 1,
-        "outs": 3
+        "balls": 3,
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 3rd"
+      "status": "Top 4th"
     },
     "recap_line": null
   },
@@ -91,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-22T23:22:21.365Z",
+    "updated_at": "2026-09-22T23:34:05.432Z",
     "current_game_pk": 823412,
     "next_game_pk": 823410,
     "next_game": {
@@ -128,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "61° · Overcast · gusts 16 mph",
+      "text": "61° · Overcast · gusts 18 mph",
       "highlight": false
     }
   ]
