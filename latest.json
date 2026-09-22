@@ -1,64 +1,64 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-21",
+  "edition_date": "2026-09-22",
   "volume": 1,
-  "edition": 174,
-  "generated_at": "2026-09-22T03:50:20.230Z",
-  "mode": "off_day",
-  "mode_label": "Off Day",
-  "off_day": true,
+  "edition": 175,
+  "generated_at": "2026-09-22T04:11:26.377Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
+  "off_day": false,
   "record": {
-    "wins": 0,
-    "losses": 0,
+    "wins": 86,
+    "losses": 70,
     "streak": "W1",
-    "division_rank": 0,
+    "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "No Phillies game today",
-    "dek": "Next up: Zack Wheeler vs Dustin May · PHI vs MIL",
-    "summary": "Use the archive to catch up or check the next scheduled game window.",
-    "next_label": "Next Game",
-    "next_value": "Zack Wheeler vs Dustin May · PHI vs MIL · Tue, Sep 22 · 6:40 PM"
+    "headline": "Brewers @ Phillies · Game 1 of 3",
+    "dek": "Zack Wheeler vs Dustin May",
+    "summary": "Zack Wheeler vs Dustin May · Brewers @ Phillies · Game 1 of 3",
+    "next_label": "Tomorrow",
+    "next_value": "Aaron Nola vs Logan Henderson · PHI vs MIL · Wed, Sep 23 · 6:40 PM"
   },
   "game": {
-    "matchup": "Schedule refresh required",
-    "first_pitch": "TBD",
-    "venue": "TBD",
+    "matchup": "Brewers @ Phillies · Game 1 of 3",
+    "first_pitch": "6:40 PM",
+    "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "TBD",
+        "name": "Zack Wheeler",
         "hand": "R"
       },
       "away": {
-        "name": "TBD",
+        "name": "Dustin May",
         "hand": "R"
       },
       "phi": {
-        "name": "TBD",
+        "name": "Zack Wheeler",
         "hand": "R"
       },
       "opp": {
-        "name": "TBD",
+        "name": "Dustin May",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series status pending"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "TV TBD",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
-      "radio": "Radio TBD"
+      "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": "",
-      "condition": "Weather unavailable",
-      "wind": "Weather unavailable",
-      "gusts_mph": ""
+      "temp_f": 65,
+      "condition": "Overcast",
+      "wind": "6 mph · gusts 19",
+      "gusts_mph": 19
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-22T03:50:20.726Z",
+    "updated_at": "2026-09-22T04:11:27.023Z",
     "current_game_pk": 823412,
     "next_game_pk": 823410,
     "next_game": {
@@ -90,19 +90,23 @@
   },
   "ticker": [
     {
-      "text": "PHI 0-0",
+      "text": "PHI 86-70",
       "highlight": true
     },
     {
-      "text": "Zack Wheeler vs Dustin May · PHI vs MIL · Tue, Sep 22 · 6:40 PM",
+      "text": "Brewers @ Phillies · Game 1 of 3 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "NBCSP",
+      "text": "Zack Wheeler vs Dustin May",
+      "highlight": true
+    },
+    {
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "Off day",
+      "text": "65° · Overcast · gusts 19 mph",
       "highlight": false
     }
   ]
