@@ -4,7 +4,7 @@
   "edition_date": "2026-09-22",
   "volume": 1,
   "edition": 175,
-  "generated_at": "2026-09-22T23:08:32.629Z",
+  "generated_at": "2026-09-22T23:22:20.561Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, MIL 0",
-    "dek": "Bottom 2nd · 2 outs",
-    "summary": "Brandon Marsh is up against Dustin May. Series: Regular Season.",
+    "headline": "PHI 2, MIL 0",
+    "dek": "Middle 3rd · 3 outs",
+    "summary": "Kyle Schwarber is up against Dustin May. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Logan Henderson · PHI vs MIL · Wed, Sep 23 · 6:40 PM"
   },
@@ -57,31 +57,33 @@
     "weather": {
       "temp_f": 61,
       "condition": "Overcast",
-      "wind": "7 mph · gusts 15",
-      "gusts_mph": 15
+      "wind": "7 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brandon Marsh",
+        "name": "Kyle Schwarber",
         "meta": "vs Dustin May"
       },
       "pitches": [
-        "S",
-        "S"
+        "B",
+        "F",
+        "B",
+        "X"
       ],
       "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 2
+        "balls": 2,
+        "strikes": 1,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 2nd"
+      "status": "Middle 3rd"
     },
     "recap_line": null
   },
@@ -89,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-22T23:08:32.898Z",
+    "updated_at": "2026-09-22T23:22:21.365Z",
     "current_game_pk": 823412,
     "next_game_pk": 823410,
     "next_game": {
@@ -126,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "61° · Overcast · gusts 15 mph",
+      "text": "61° · Overcast · gusts 16 mph",
       "highlight": false
     }
   ]
