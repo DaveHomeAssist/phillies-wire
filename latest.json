@@ -4,21 +4,21 @@
   "edition_date": "2026-09-22",
   "volume": 1,
   "edition": 175,
-  "generated_at": "2026-09-23T01:06:14.949Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-23T01:33:42.644Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
-    "wins": 86,
+    "wins": 87,
     "losses": 70,
-    "streak": "W1",
+    "streak": "W2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, MIL 3",
-    "dek": "Top 9th · 0 outs",
-    "summary": "William Contreras is up against Jhoan Duran. Series: Regular Season.",
+    "headline": "PHI 6, MIL 4.",
+    "dek": "PHI 6, MIL 4 · Zack Wheeler · 5.2 IP, 5 H, 3 ER, 11 K",
+    "summary": "PHI 6, MIL 4. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Aaron Nola vs Logan Henderson · PHI vs MIL · Wed, Sep 23 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "PHI leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,57 +57,40 @@
     "weather": {
       "temp_f": 60,
       "condition": "Overcast",
-      "wind": "8 mph · gusts 19",
-      "gusts_mph": 19
+      "wind": "7 mph · gusts 15",
+      "gusts_mph": 15
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "William Contreras",
-        "meta": "vs Jhoan Duran"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-23T01:06:15.495Z",
-    "current_game_pk": 823412,
-    "next_game_pk": 823410,
+    "updated_at": "2026-09-23T01:33:43.089Z",
+    "current_game_pk": 823410,
+    "next_game_pk": 823411,
     "next_game": {
-      "game_pk": 823410,
-      "official_date": "2026-09-23",
-      "date_label": "Wed, Sep 23, 2026",
-      "time_label": "6:40 PM",
+      "game_pk": 823411,
+      "official_date": "2026-09-24",
+      "date_label": "Thu, Sep 24, 2026",
+      "time_label": "6:05 PM",
       "title": "Milwaukee Brewers at Phillies",
       "matchup": "MIL at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823412,
-      "official_date": "2026-09-22",
+      "game_pk": 823410,
+      "official_date": "2026-09-23",
       "title": "Milwaukee Brewers at Phillies",
       "matchup": "MIL at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 86-70",
+      "text": "PHI 87-70",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "60° · Overcast · gusts 19 mph",
+      "text": "60° · Overcast · gusts 15 mph",
       "highlight": false
     }
   ]
