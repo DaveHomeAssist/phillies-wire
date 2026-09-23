@@ -4,7 +4,7 @@
   "edition_date": "2026-09-23",
   "volume": 1,
   "edition": 176,
-  "generated_at": "2026-09-23T23:20:40.682Z",
+  "generated_at": "2026-09-23T23:34:41.387Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, MIL 2",
-    "dek": "End 2nd · 3 outs",
-    "summary": "David Hamilton is up against Aaron Nola. Series: PHI leads 1-0.",
+    "headline": "PHI 1, MIL 4",
+    "dek": "Bottom 3rd · 0 outs",
+    "summary": "Trea Turner is up against Logan Henderson. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs MIL · Thu, Sep 24 · 6:05 PM"
   },
@@ -57,32 +57,30 @@
     "weather": {
       "temp_f": 62,
       "condition": "Partly cloudy",
-      "wind": "9 mph · gusts 19",
-      "gusts_mph": 19
+      "wind": "11 mph · gusts 21",
+      "gusts_mph": 21
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "David Hamilton",
-        "meta": "vs Aaron Nola"
+        "name": "Trea Turner",
+        "meta": "vs Logan Henderson"
       },
       "pitches": [
-        "F",
-        "F",
-        "X"
+        "B"
       ],
       "count": {
         "balls": 1,
-        "strikes": 2,
-        "outs": 3
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "End 2nd"
+      "status": "Bottom 3rd"
     },
     "recap_line": null
   },
@@ -90,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-23T23:20:41.454Z",
+    "updated_at": "2026-09-23T23:34:41.806Z",
     "current_game_pk": 823410,
     "next_game_pk": 823411,
     "next_game": {
@@ -127,7 +125,7 @@
       "highlight": false
     },
     {
-      "text": "62° · Partly cloudy · gusts 19 mph",
+      "text": "62° · Partly cloudy · gusts 21 mph",
       "highlight": false
     }
   ]
