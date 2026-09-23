@@ -4,7 +4,7 @@
   "edition_date": "2026-09-23",
   "volume": 1,
   "edition": 176,
-  "generated_at": "2026-09-23T22:34:29.419Z",
+  "generated_at": "2026-09-23T22:48:46.852Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, MIL 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Garrett Mitchell is up against Aaron Nola. Series: PHI leads 1-0.",
+    "headline": "PHI 0, MIL 1",
+    "dek": "Top 1st · 2 outs",
+    "summary": "William Contreras is up against Aaron Nola. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs MIL · Thu, Sep 24 · 6:05 PM"
   },
@@ -55,23 +55,27 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 65,
-      "condition": "Overcast",
-      "wind": "10 mph · gusts 24",
+      "temp_f": 63,
+      "condition": "Mostly sunny",
+      "wind": "9 mph · gusts 24",
       "gusts_mph": 24
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Garrett Mitchell",
+        "name": "William Contreras",
         "meta": "vs Aaron Nola"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "S"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 1,
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
         "first": false,
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-23T22:34:29.781Z",
+    "updated_at": "2026-09-23T22:48:47.123Z",
     "current_game_pk": 823410,
     "next_game_pk": 823411,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "65° · Overcast · gusts 24 mph",
+      "text": "63° · Mostly sunny · gusts 24 mph",
       "highlight": false
     }
   ]
