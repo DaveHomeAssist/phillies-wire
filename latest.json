@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-22",
+  "edition_date": "2026-09-23",
   "volume": 1,
-  "edition": 175,
-  "generated_at": "2026-09-23T03:50:43.703Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 176,
+  "generated_at": "2026-09-23T04:12:02.493Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 87,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 6, MIL 4.",
-    "dek": "PHI 6, MIL 4 · Zack Wheeler · 5.2 IP, 5 H, 3 ER, 11 K",
-    "summary": "PHI 6, MIL 4. Final at Citizens Bank Park, Philadelphia. PHI leads 1-0.",
+    "headline": "Brewers @ Phillies · Game 2 of 3",
+    "dek": "Aaron Nola vs Logan Henderson",
+    "summary": "Aaron Nola vs Logan Henderson · Brewers @ Phillies · Game 2 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Aaron Nola vs Logan Henderson · PHI vs MIL · Wed, Sep 23 · 6:40 PM"
+    "next_value": "PHI vs MIL · Thu, Sep 24 · 6:05 PM"
   },
   "game": {
-    "matchup": "Brewers @ Phillies · Game 1 of 3",
+    "matchup": "Brewers @ Phillies · Game 2 of 3",
     "first_pitch": "6:40 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "away": {
-        "name": "Dustin May",
+        "name": "Logan Henderson",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "Aaron Nola",
         "hand": "R"
       },
       "opp": {
-        "name": "Dustin May",
+        "name": "Logan Henderson",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "PHI leads 1-0"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,8 +57,8 @@
     "weather": {
       "temp_f": 58,
       "condition": "Overcast",
-      "wind": "9 mph · gusts 20",
-      "gusts_mph": 20
+      "wind": "9 mph · gusts 21",
+      "gusts_mph": 21
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-23T03:50:44.188Z",
+    "updated_at": "2026-09-23T04:12:03.266Z",
     "current_game_pk": 823410,
     "next_game_pk": 823411,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Brewers @ Phillies · Game 1 of 3 · 6:40 PM",
+      "text": "Brewers @ Phillies · Game 2 of 3 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Dustin May",
+      "text": "Aaron Nola vs Logan Henderson",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "58° · Overcast · gusts 20 mph",
+      "text": "58° · Overcast · gusts 21 mph",
       "highlight": false
     }
   ]

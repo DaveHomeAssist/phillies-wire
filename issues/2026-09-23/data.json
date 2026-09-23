@@ -1,0 +1,504 @@
+{
+  "schema_version": "1.4.0",
+  "meta": {
+    "date": "2026-09-23",
+    "edition": 176,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-09-23T04:12:02.493Z",
+    "status": {
+      "mode": "pregame",
+      "mode_label": "Pregame",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Sep 23, 2026, 12:12 AM ET",
+      "source_notes": [
+        "Farm system notes hidden because the editorial baseline is stale."
+      ]
+    }
+  },
+  "record": {
+    "wins": 87,
+    "losses": 70,
+    "streak": "W2",
+    "division_rank": 2,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "pregame",
+    "label": "Pregame",
+    "headline": "Brewers @ Phillies · Game 2 of 3",
+    "dek": "Aaron Nola vs Logan Henderson",
+    "summary": "Aaron Nola vs Logan Henderson · Brewers @ Phillies · Game 2 of 3",
+    "cards": [
+      {
+        "label": "First Pitch",
+        "value": "6:40 PM"
+      },
+      {
+        "label": "Venue",
+        "value": "Citizens Bank Park, Philadelphia"
+      },
+      {
+        "label": "Watch",
+        "value": "NBCSP · MLB.TV · 94 WIP"
+      }
+    ],
+    "bullets": [
+      "58° · Overcast · 9 mph · gusts 21",
+      "Regular Season"
+    ],
+    "next_label": "Tomorrow",
+    "next_value": "PHI vs MIL · Thu, Sep 24 · 6:05 PM"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "6:40 PM",
+        "starters": {
+          "home": {
+            "team": "PHI",
+            "name": "Aaron Nola",
+            "hand": "R"
+          },
+          "away": {
+            "team": "MIL",
+            "name": "Logan Henderson",
+            "hand": "R"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "Aaron Nola",
+            "hand": "R"
+          },
+          "opp": {
+            "team": "MIL",
+            "name": "Logan Henderson",
+            "hand": "R"
+          }
+        },
+        "batting_order": {
+          "home": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "away": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "phi": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ],
+          "opp": [
+            {
+              "slot": 1,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 2,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 3,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 4,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 5,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 6,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 7,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 8,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            },
+            {
+              "slot": 9,
+              "name": "Pending",
+              "position": "",
+              "bats": ""
+            }
+          ]
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Brewers @ Phillies · Game 2 of 3",
+        "first_pitch": "6:40 PM",
+        "venue": "Citizens Bank Park, Philadelphia",
+        "starters": {
+          "home": {
+            "name": "Aaron Nola",
+            "hand": "R"
+          },
+          "away": {
+            "name": "Logan Henderson",
+            "hand": "R"
+          },
+          "phi": {
+            "name": "Aaron Nola",
+            "hand": "R"
+          },
+          "opp": {
+            "name": "Logan Henderson",
+            "hand": "R"
+          }
+        },
+        "series": {
+          "home_wins": 0,
+          "away_wins": 0,
+          "label": "Regular Season"
+        },
+        "broadcast": {
+          "tv": "NBCSP",
+          "stream": "MLB.TV",
+          "radio": "94 WIP"
+        },
+        "weather": {
+          "temp_f": 58,
+          "condition": "Overcast",
+          "wind": "9 mph · gusts 21",
+          "gusts_mph": 21
+        },
+        "giveaway": "",
+        "transit": "Broad Street Line to NRG Station",
+        "venue_is_home": true,
+        "matchup_tape": {
+          "home": {
+            "team": "PHI",
+            "name": "Aaron Nola",
+            "hand": "R",
+            "era": "4.49",
+            "record": "7-10",
+            "whip": "1.35"
+          },
+          "away": {
+            "team": "MIL",
+            "name": "Logan Henderson",
+            "hand": "R",
+            "era": "2.51",
+            "record": "10-3",
+            "whip": "0.81"
+          }
+        },
+        "linescore": {
+          "currentInning": null,
+          "currentInningOrdinal": "",
+          "inningState": "",
+          "isTopInning": false,
+          "outs": null,
+          "teams": {
+            "away": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            },
+            "home": {
+              "runs": null,
+              "hits": null,
+              "errors": null
+            }
+          },
+          "innings": []
+        },
+        "plays": []
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-23T04:12:02.493Z",
+            "freshness_label": "As of Sep 23, 2026, 12:12 AM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-23T04:12:02.493Z",
+            "freshness_label": "As of Sep 23, 2026, 12:12 AM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-23T04:12:02.493Z",
+            "freshness_label": "As of Sep 23, 2026, 12:12 AM ET"
+          },
+          {
+            "name": "Brad Keller",
+            "position": "RHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL tear",
+            "status_note": "",
+            "retroactive_to": "2026-07-13",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-23T04:12:02.493Z",
+            "freshness_label": "As of Sep 23, 2026, 12:12 AM ET"
+          },
+          {
+            "name": "Caleb Kilian",
+            "position": "RHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Left oblique strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-23T04:12:02.493Z",
+            "freshness_label": "As of Sep 23, 2026, 12:12 AM ET"
+          },
+          {
+            "name": "Felix Reyes",
+            "position": "LF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right wrist fracture",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-23T04:12:02.493Z",
+            "freshness_label": "As of Sep 23, 2026, 12:12 AM ET"
+          },
+          {
+            "name": "Jesús Luzardo",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left shoulder inflammation",
+            "status_note": "",
+            "retroactive_to": "2026-09-12",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-23T04:12:02.493Z",
+            "freshness_label": "As of Sep 23, 2026, 12:12 AM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Tomorrow",
+    "matchup": "PHI vs MIL",
+    "date": "Thu, Sep 24",
+    "time": "6:05 PM",
+    "broadcast": "NBCSP",
+    "venue": "Citizens Bank Park"
+  }
+}
