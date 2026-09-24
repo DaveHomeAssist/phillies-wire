@@ -5,14 +5,14 @@
     "edition": 177,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-24T23:22:54.754Z",
+    "generated_at": "2026-09-24T23:34:22.301Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 24, 2026, 7:22 PM ET",
+      "generated_at_et": "Sep 24, 2026, 7:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, MIL 1",
-    "dek": "End 4th · 3 outs",
-    "summary": "Garrett Mitchell is up against Andrew Painter. Series: Series tied 1-1.",
+    "dek": "End 5th · 3 outs",
+    "summary": "Jake Bauers is up against Andrew Painter. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -42,11 +42,11 @@
       },
       {
         "label": "Weather",
-        "value": "60° · Overcast"
+        "value": "59° · Overcast"
       }
     ],
     "bullets": [
-      "Garrett Mitchell at the plate",
+      "Jake Bauers at the plate",
       "Andrew Painter on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
@@ -346,7 +346,7 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 60,
+          "temp_f": 59,
           "condition": "Overcast",
           "wind": "5 mph · gusts 11",
           "gusts_mph": 11
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "5.49",
+            "era": "5.44",
             "record": "3-10",
-            "whip": "1.43"
+            "whip": "1.42"
           },
           "away": {
             "team": "MIL",
@@ -373,15 +373,15 @@
           }
         },
         "linescore": {
-          "currentInning": 4,
-          "currentInningOrdinal": "4th",
+          "currentInning": 5,
+          "currentInningOrdinal": "5th",
           "inningState": "End",
           "isTopInning": false,
           "outs": 3,
           "teams": {
             "away": {
               "runs": 1,
-              "hits": 4,
+              "hits": 5,
               "errors": 0
             },
             "home": {
@@ -432,6 +432,19 @@
             },
             {
               "num": 4,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 5,
               "away": {
                 "runs": 0,
                 "hits": 1,
@@ -949,20 +962,106 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823411:36",
+            "inning": 5,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "single",
+            "actor": "Garrett Mitchell",
+            "actor_id": 669003,
+            "detail": "Garrett Mitchell singles on a line drive to center fielder Justin Crawford.",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:37",
+            "inning": 5,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "other",
+            "actor": "Brice Turang",
+            "actor_id": 668930,
+            "detail": "Brice Turang grounds into a double play, shortstop Trea Turner to second baseman Luis Arraez to first baseman Alec Bohm. Garrett Mi…",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:38",
+            "inning": 5,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "out",
+            "actor": "William Contreras",
+            "actor_id": 661388,
+            "detail": "William Contreras grounds out, shortstop Trea Turner to first baseman Alec Bohm.",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:39",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out to first baseman Jake Bauers.",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:40",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner called out on strikes.",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:41",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, first baseman Jake Bauers to pitcher Aaron Ashby.",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Garrett Mitchell",
+            "name": "Jake Bauers",
             "meta": "vs Andrew Painter"
           },
           "pitches": [
             "S",
+            "S",
+            "F",
             "X"
           ],
           "count": {
             "balls": 0,
-            "strikes": 1,
+            "strikes": 2,
             "outs": 3
           },
           "bases": {
@@ -970,7 +1069,7 @@
             "second": false,
             "third": false
           },
-          "status": "End 4th"
+          "status": "End 5th"
         }
       }
     },
@@ -987,8 +1086,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:22:54.754Z",
-            "freshness_label": "As of Sep 24, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-24T23:34:22.301Z",
+            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1000,8 +1099,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:22:54.754Z",
-            "freshness_label": "As of Sep 24, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-24T23:34:22.301Z",
+            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1013,8 +1112,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:22:54.754Z",
-            "freshness_label": "As of Sep 24, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-24T23:34:22.301Z",
+            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1026,8 +1125,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:22:54.754Z",
-            "freshness_label": "As of Sep 24, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-24T23:34:22.301Z",
+            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1039,8 +1138,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:22:54.754Z",
-            "freshness_label": "As of Sep 24, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-24T23:34:22.301Z",
+            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1052,8 +1151,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:22:54.754Z",
-            "freshness_label": "As of Sep 24, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-24T23:34:22.301Z",
+            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
           },
           {
             "name": "Jesús Luzardo",
@@ -1065,8 +1164,8 @@
             "retroactive_to": "2026-09-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:22:54.754Z",
-            "freshness_label": "As of Sep 24, 2026, 7:22 PM ET"
+            "last_confirmed": "2026-09-24T23:34:22.301Z",
+            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
