@@ -4,7 +4,7 @@
   "edition_date": "2026-09-24",
   "volume": 1,
   "edition": 177,
-  "generated_at": "2026-09-24T22:09:11.055Z",
+  "generated_at": "2026-09-24T22:24:53.337Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, MIL 0",
-    "dek": "Top 1st · 2 outs",
-    "summary": "William Contreras is up against Andrew Painter. Series: Series tied 1-1.",
+    "dek": "Top 2nd · 0 outs",
+    "summary": "Gary Sánchez is up against Andrew Painter. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Freddy Peralta · PHI vs TB · Fri, Sep 25 · 6:40 PM"
   },
@@ -55,33 +55,30 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 64,
+      "temp_f": 63,
       "condition": "Overcast",
-      "wind": "10 mph · gusts 19",
-      "gusts_mph": 19
+      "wind": "10 mph · gusts 20",
+      "gusts_mph": 20
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Brice Turang",
+        "name": "Gary Sánchez",
         "meta": "vs Andrew Painter"
       },
-      "pitches": [
-        "F",
-        "S"
-      ],
+      "pitches": [],
       "count": {
         "balls": 0,
-        "strikes": 3,
-        "outs": 2
+        "strikes": 0,
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Top 2nd"
     },
     "recap_line": null
   },
@@ -89,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-24T22:09:11.273Z",
+    "updated_at": "2026-09-24T22:24:54.273Z",
     "current_game_pk": 823411,
     "next_game_pk": 823409,
     "next_game": {
@@ -126,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "64° · Overcast · gusts 19 mph",
+      "text": "63° · Overcast · gusts 20 mph",
       "highlight": false
     }
   ]
