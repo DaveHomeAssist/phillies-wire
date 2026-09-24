@@ -5,14 +5,14 @@
     "edition": 176,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-24T01:07:36.036Z",
+    "generated_at": "2026-09-24T01:34:29.719Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 23, 2026, 9:07 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 23, 2026, 9:34 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 87,
-    "losses": 70,
-    "streak": "W2",
+    "losses": 71,
+    "streak": "L1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, MIL 4",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Jake Bauers is up against Max Lazar. Series: PHI leads 1-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 1, MIL 4.",
+    "dek": "MIL 4, PHI 1 · Aaron Nola · 6.0 IP, 4 H, 4 ER, 8 K",
+    "summary": "PHI 1, MIL 4. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "61° · Overcast"
+        "label": "Series",
+        "value": "Series tied 1-1"
       }
     ],
     "bullets": [
-      "Jake Bauers at the plate",
-      "Max Lazar on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Aaron Nola: 6.0 IP, 4 H, 4 ER, 8 K",
+      "Logan Henderson: 5.0 IP, 4 H, 1 ER, 3 K",
+      "Brice Turang: 2-for-4, 1 HR, 1 RBI, 2 R"
     ],
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs MIL · Thu, Sep 24 · 6:05 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's MIL at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:40 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "away": {
-            "team": "MIL",
-            "name": "Logan Henderson",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Aaron Nola",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "MIL",
-            "name": "Logan Henderson",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Garrett Mitchell",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Jackson Chourio",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Brice Turang",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "William Contreras",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Jake Bauers",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Joey Ortiz",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Christian Yelich",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Sal Frelick",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "David Hamilton",
-              "position": "3B",
-              "bats": "L"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryson Stott",
-              "position": "3B",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Garrett Mitchell",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Jackson Chourio",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Brice Turang",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "William Contreras",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 5,
-              "name": "Jake Bauers",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Joey Ortiz",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Christian Yelich",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Sal Frelick",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "David Hamilton",
-              "position": "3B",
-              "bats": "L"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Brewers @ Phillies · Game 2 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "PHI leads 1-0"
+          "label": "Series tied 1-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 61,
           "condition": "Overcast",
-          "wind": "12 mph · gusts 24",
-          "gusts_mph": 24
+          "wind": "10 mph · gusts 19",
+          "gusts_mph": 19
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -360,7 +103,7 @@
             "name": "Aaron Nola",
             "hand": "R",
             "era": "4.54",
-            "record": "7-10",
+            "record": "7-11",
             "whip": "1.33"
           },
           "away": {
@@ -368,26 +111,26 @@
             "name": "Logan Henderson",
             "hand": "R",
             "era": "2.47",
-            "record": "10-3",
+            "record": "11-3",
             "whip": "0.84"
           }
         },
         "linescore": {
           "currentInning": 9,
           "currentInningOrdinal": "9th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 4,
-              "hits": 7,
+              "hits": 6,
               "errors": 0
             },
             "home": {
               "runs": 1,
               "hits": 6,
-              "errors": 0
+              "errors": 1
             }
           },
           "innings": [
@@ -498,14 +241,14 @@
             {
               "num": 9,
               "away": {
-                "runs": null,
-                "hits": 1,
+                "runs": 0,
+                "hits": 0,
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
-                "errors": 0
+                "errors": 1
               }
             }
           ]
@@ -1426,10 +1169,10 @@
             "inning": 9,
             "half": "top",
             "team": "MIL",
-            "event_type": "single",
+            "event_type": "reached_on_error",
             "actor": "William Contreras",
             "actor_id": 661388,
-            "detail": "William Contreras singles on a ground ball to first baseman Alec Bohm.",
+            "detail": "William Contreras reaches on a throwing error by first baseman Alec Bohm.",
             "score_after": "PHI 1, MIL 4",
             "runs": 0,
             "is_scoring": false,
@@ -1440,44 +1183,172 @@
             "inning": 9,
             "half": "top",
             "team": "MIL",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Jake Bauers",
             "actor_id": 641343,
-            "detail": "Play",
+            "detail": "Jake Bauers strikes out swinging.",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823410:67",
+            "inning": 9,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "other",
+            "actor": "Joey Ortiz",
+            "actor_id": 687401,
+            "detail": "Joey Ortiz grounds into a double play, shortstop Trea Turner to second baseman Luis Arraez to first baseman Alec Bohm. William Cont…",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823410:68",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Derek Hill",
+            "actor_id": 656537,
+            "detail": "Derek Hill grounds out, third baseman David Hamilton to first baseman Jake Bauers.",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823410:69",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber pops out to shortstop Joey Ortiz.",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823410:70",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner strikes out swinging.",
             "score_after": "PHI 1, MIL 4",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Jake Bauers",
-            "meta": "vs Max Lazar"
-          },
-          "pitches": [
-            "B",
-            "F",
-            "B",
-            "B",
-            "S",
-            "S"
-          ],
-          "count": {
-            "balls": 3,
-            "strikes": 3,
-            "outs": 0
-          },
-          "bases": {
-            "first": true,
-            "second": false,
-            "third": false
-          },
-          "status": "Top 9th"
-        }
+        ]
       }
     },
-    "injury_report": null
+    "injury_report": {
+      "content": {
+        "il_entries": [
+          {
+            "name": "Adolis García",
+            "position": "RF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right latissimus dorsi tear",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-24T01:34:29.719Z",
+            "freshness_label": "As of Sep 23, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Johan Rojas",
+            "position": "CF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL repair",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-24T01:34:29.719Z",
+            "freshness_label": "As of Sep 23, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Lou Trivino III",
+            "position": "RHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Right thoracic muscle spasm",
+            "status_note": "",
+            "retroactive_to": "2026-07-07",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-24T01:34:29.719Z",
+            "freshness_label": "As of Sep 23, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Brad Keller",
+            "position": "RHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right elbow UCL tear",
+            "status_note": "",
+            "retroactive_to": "2026-07-13",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-24T01:34:29.719Z",
+            "freshness_label": "As of Sep 23, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Caleb Kilian",
+            "position": "RHP",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Left oblique strain",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-24T01:34:29.719Z",
+            "freshness_label": "As of Sep 23, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Felix Reyes",
+            "position": "LF",
+            "il_type": "60-day",
+            "badge": "il",
+            "injury": "Right wrist fracture",
+            "status_note": "",
+            "retroactive_to": null,
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-24T01:34:29.719Z",
+            "freshness_label": "As of Sep 23, 2026, 9:34 PM ET"
+          },
+          {
+            "name": "Jesús Luzardo",
+            "position": "LHP",
+            "il_type": "15-day",
+            "badge": "il",
+            "injury": "Left shoulder inflammation",
+            "status_note": "",
+            "retroactive_to": "2026-09-12",
+            "first_eligible": null,
+            "source": "live",
+            "last_confirmed": "2026-09-24T01:34:29.719Z",
+            "freshness_label": "As of Sep 23, 2026, 9:34 PM ET"
+          }
+        ],
+        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
+      }
+    }
   },
   "next_game": {
     "label": "Tomorrow",
