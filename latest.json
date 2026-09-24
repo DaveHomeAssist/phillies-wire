@@ -4,7 +4,7 @@
   "edition_date": "2026-09-24",
   "volume": 1,
   "edition": 177,
-  "generated_at": "2026-09-24T23:08:44.633Z",
+  "generated_at": "2026-09-24T23:22:54.754Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, MIL 1",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "Bryan De La Cruz is up against Chad Patrick. Series: Series tied 1-1.",
+    "dek": "End 4th · 3 outs",
+    "summary": "Garrett Mitchell is up against Andrew Painter. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Freddy Peralta · PHI vs TB · Fri, Sep 25 · 6:40 PM"
   },
@@ -55,33 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 61,
+      "temp_f": 60,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "5 mph · gusts 11",
+      "gusts_mph": 11
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryan De La Cruz",
-        "meta": "vs Chad Patrick"
+        "name": "Garrett Mitchell",
+        "meta": "vs Andrew Painter"
       },
       "pitches": [
-        "B",
-        "S"
+        "S",
+        "X"
       ],
       "count": {
-        "balls": 1,
+        "balls": 0,
         "strikes": 1,
-        "outs": 2
+        "outs": 3
       },
       "bases": {
-        "first": true,
-        "second": true,
+        "first": false,
+        "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "End 4th"
     },
     "recap_line": null
   },
@@ -89,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-24T23:08:45.613Z",
+    "updated_at": "2026-09-24T23:22:55.010Z",
     "current_game_pk": 823411,
     "next_game_pk": 823409,
     "next_game": {
@@ -126,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "61° · Overcast · gusts 14 mph",
+      "text": "60° · Overcast · gusts 11 mph",
       "highlight": false
     }
   ]
