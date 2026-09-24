@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-23",
+  "edition_date": "2026-09-24",
   "volume": 1,
-  "edition": 176,
-  "generated_at": "2026-09-24T03:50:34.471Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 177,
+  "generated_at": "2026-09-24T04:11:35.803Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 87,
@@ -16,31 +16,31 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, MIL 4.",
-    "dek": "MIL 4, PHI 1 · Aaron Nola · 6.0 IP, 4 H, 4 ER, 8 K",
-    "summary": "PHI 1, MIL 4. Final at Citizens Bank Park, Philadelphia. Series tied 1-1.",
+    "headline": "Brewers @ Phillies · Game 3 of 3",
+    "dek": "Andrew Painter vs Bryse Wilson",
+    "summary": "Andrew Painter vs Bryse Wilson · Brewers @ Phillies · Game 3 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Andrew Painter vs Bryse Wilson · PHI vs MIL · Thu, Sep 24 · 6:05 PM"
+    "next_value": "Cristopher Sánchez vs Freddy Peralta · PHI vs TB · Fri, Sep 25 · 6:40 PM"
   },
   "game": {
-    "matchup": "Brewers @ Phillies · Game 2 of 3",
-    "first_pitch": "6:40 PM",
+    "matchup": "Brewers @ Phillies · Game 3 of 3",
+    "first_pitch": "6:05 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Aaron Nola",
+        "name": "Andrew Painter",
         "hand": "R"
       },
       "away": {
-        "name": "Logan Henderson",
+        "name": "Bryse Wilson",
         "hand": "R"
       },
       "phi": {
-        "name": "Aaron Nola",
+        "name": "Andrew Painter",
         "hand": "R"
       },
       "opp": {
-        "name": "Logan Henderson",
+        "name": "Bryse Wilson",
         "hand": "R"
       }
     },
@@ -55,10 +55,10 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 59,
+      "temp_f": 58,
       "condition": "Mostly sunny",
-      "wind": "12 mph · gusts 23",
-      "gusts_mph": 23
+      "wind": "13 mph · gusts 31",
+      "gusts_mph": 31
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-24T03:50:35.065Z",
+    "updated_at": "2026-09-24T04:11:36.679Z",
     "current_game_pk": 823411,
     "next_game_pk": 823409,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Brewers @ Phillies · Game 2 of 3 · 6:40 PM",
+      "text": "Brewers @ Phillies · Game 3 of 3 · 6:05 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Logan Henderson",
+      "text": "Andrew Painter vs Bryse Wilson",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "59° · Mostly sunny · gusts 23 mph",
+      "text": "58° · Mostly sunny · gusts 31 mph",
       "highlight": false
     }
   ]
