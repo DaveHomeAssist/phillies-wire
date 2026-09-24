@@ -4,7 +4,7 @@
   "edition_date": "2026-09-23",
   "volume": 1,
   "edition": 176,
-  "generated_at": "2026-09-24T00:25:35.572Z",
+  "generated_at": "2026-09-24T01:07:36.036Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, MIL 4",
-    "dek": "Bottom 6th · 1 out",
-    "summary": "Bryson Stott is up against DL Hall. Series: PHI leads 1-0.",
+    "dek": "Top 9th · 0 outs",
+    "summary": "Jake Bauers is up against Max Lazar. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs MIL · Thu, Sep 24 · 6:05 PM"
   },
@@ -57,33 +57,35 @@
     "weather": {
       "temp_f": 61,
       "condition": "Overcast",
-      "wind": "10 mph · gusts 20",
-      "gusts_mph": 20
+      "wind": "12 mph · gusts 24",
+      "gusts_mph": 24
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryson Stott",
-        "meta": "vs DL Hall"
+        "name": "Jake Bauers",
+        "meta": "vs Max Lazar"
       },
       "pitches": [
+        "B",
+        "F",
+        "B",
+        "B",
         "S",
-        "B",
-        "B",
-        "B"
+        "S"
       ],
       "count": {
         "balls": 3,
-        "strikes": 1,
-        "outs": 1
+        "strikes": 3,
+        "outs": 0
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Bottom 6th"
+      "status": "Top 9th"
     },
     "recap_line": null
   },
@@ -91,7 +93,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-24T00:25:36.148Z",
+    "updated_at": "2026-09-24T01:07:36.578Z",
     "current_game_pk": 823410,
     "next_game_pk": 823411,
     "next_game": {
@@ -128,7 +130,7 @@
       "highlight": false
     },
     {
-      "text": "61° · Overcast · gusts 20 mph",
+      "text": "61° · Overcast · gusts 24 mph",
       "highlight": false
     }
   ]
