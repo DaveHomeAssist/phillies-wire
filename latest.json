@@ -4,9 +4,9 @@
   "edition_date": "2026-09-24",
   "volume": 1,
   "edition": 177,
-  "generated_at": "2026-09-24T21:34:30.942Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-24T21:48:04.084Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 87,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Brewers @ Phillies · Game 3 of 3",
-    "dek": "Andrew Painter vs Shane Drohan",
-    "summary": "Andrew Painter vs Shane Drohan · Brewers @ Phillies · Game 3 of 3",
+    "headline": "PHI 0, MIL 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Garrett Mitchell is up against Andrew Painter. Series: Series tied 1-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Freddy Peralta · PHI vs TB · Fri, Sep 25 · 6:40 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 65,
+      "temp_f": 64,
       "condition": "Overcast",
-      "wind": "11 mph · gusts 18",
-      "gusts_mph": 18
+      "wind": "11 mph · gusts 19",
+      "gusts_mph": 19
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Garrett Mitchell",
+        "meta": "vs Andrew Painter"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-24T21:34:31.768Z",
+    "updated_at": "2026-09-24T21:48:04.342Z",
     "current_game_pk": 823411,
     "next_game_pk": 823409,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "65° · Overcast · gusts 18 mph",
+      "text": "64° · Overcast · gusts 19 mph",
       "highlight": false
     }
   ]
