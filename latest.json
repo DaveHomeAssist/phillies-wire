@@ -4,7 +4,7 @@
   "edition_date": "2026-09-23",
   "volume": 1,
   "edition": 176,
-  "generated_at": "2026-09-23T23:47:54.009Z",
+  "generated_at": "2026-09-24T00:25:35.572Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 1, MIL 4",
-    "dek": "Bottom 4th · 0 outs",
-    "summary": "Alec Bohm is up against Logan Henderson. Series: PHI leads 1-0.",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Bryson Stott is up against DL Hall. Series: PHI leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Andrew Painter · PHI vs MIL · Thu, Sep 24 · 6:05 PM"
   },
@@ -55,30 +55,35 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 62,
+      "temp_f": 61,
       "condition": "Overcast",
-      "wind": "12 mph · gusts 23",
-      "gusts_mph": 23
+      "wind": "10 mph · gusts 20",
+      "gusts_mph": 20
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Logan Henderson"
+        "name": "Bryson Stott",
+        "meta": "vs DL Hall"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "B",
+        "B",
+        "B"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "balls": 3,
+        "strikes": 1,
+        "outs": 1
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 4th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -86,7 +91,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-23T23:47:54.853Z",
+    "updated_at": "2026-09-24T00:25:36.148Z",
     "current_game_pk": 823410,
     "next_game_pk": 823411,
     "next_game": {
@@ -123,7 +128,7 @@
       "highlight": false
     },
     {
-      "text": "62° · Overcast · gusts 23 mph",
+      "text": "61° · Overcast · gusts 20 mph",
       "highlight": false
     }
   ]
