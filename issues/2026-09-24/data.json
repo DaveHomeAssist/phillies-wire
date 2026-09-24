@@ -5,14 +5,14 @@
     "edition": 177,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-24T23:34:22.301Z",
+    "generated_at": "2026-09-24T23:48:03.186Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 24, 2026, 7:34 PM ET",
+      "generated_at_et": "Sep 24, 2026, 7:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 1, MIL 1",
-    "dek": "End 5th · 3 outs",
-    "summary": "Jake Bauers is up against Andrew Painter. Series: Series tied 1-1.",
+    "dek": "Bottom 6th · 0 outs",
+    "summary": "Alec Bohm is up against Aaron Ashby. Series: Series tied 1-1.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Jake Bauers at the plate",
-      "Andrew Painter on the mound",
+      "Alec Bohm at the plate",
+      "Aaron Ashby on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -348,7 +348,7 @@
         "weather": {
           "temp_f": 59,
           "condition": "Overcast",
-          "wind": "5 mph · gusts 11",
+          "wind": "4 mph · gusts 11",
           "gusts_mph": 11
         },
         "giveaway": "",
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Andrew Painter",
             "hand": "R",
-            "era": "5.44",
+            "era": "5.40",
             "record": "3-10",
-            "whip": "1.42"
+            "whip": "1.41"
           },
           "away": {
             "team": "MIL",
@@ -373,11 +373,11 @@
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "End",
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
+          "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 3,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 1,
@@ -452,6 +452,19 @@
               },
               "home": {
                 "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
                 "hits": 0,
                 "errors": 0
               }
@@ -1046,30 +1059,97 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823411:42",
+            "inning": 6,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "out",
+            "actor": "Jake Bauers",
+            "actor_id": 641343,
+            "detail": "Jake Bauers grounds out to first baseman Alec Bohm.",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:43",
+            "inning": 6,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "strikeout",
+            "actor": "Gary Sánchez",
+            "actor_id": 596142,
+            "detail": "Gary Sánchez strikes out swinging.",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:44",
+            "inning": 6,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "out",
+            "actor": "Luis Lara",
+            "actor_id": 800325,
+            "detail": "Luis Lara flies out to left fielder Bryan De La Cruz.",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:45",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Luis Arraez",
+            "actor_id": 650333,
+            "detail": "Luis Arraez reaches on a ground ball to shortstop Cooper Pratt. Official Scorer ruling pending.",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:46",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Play",
+            "score_after": "PHI 1, MIL 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Jake Bauers",
-            "meta": "vs Andrew Painter"
+            "name": "Alec Bohm",
+            "meta": "vs Aaron Ashby"
           },
           "pitches": [
-            "S",
-            "S",
-            "F",
-            "X"
+            "F"
           ],
           "count": {
             "balls": 0,
-            "strikes": 2,
-            "outs": 3
+            "strikes": 1,
+            "outs": 0
           },
           "bases": {
-            "first": false,
+            "first": true,
             "second": false,
             "third": false
           },
-          "status": "End 5th"
+          "status": "Bottom 6th"
         }
       }
     },
@@ -1086,8 +1166,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:34:22.301Z",
-            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-24T23:48:03.186Z",
+            "freshness_label": "As of Sep 24, 2026, 7:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1099,8 +1179,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:34:22.301Z",
-            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-24T23:48:03.186Z",
+            "freshness_label": "As of Sep 24, 2026, 7:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1112,8 +1192,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:34:22.301Z",
-            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-24T23:48:03.186Z",
+            "freshness_label": "As of Sep 24, 2026, 7:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1125,8 +1205,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:34:22.301Z",
-            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-24T23:48:03.186Z",
+            "freshness_label": "As of Sep 24, 2026, 7:48 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1138,8 +1218,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:34:22.301Z",
-            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-24T23:48:03.186Z",
+            "freshness_label": "As of Sep 24, 2026, 7:48 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1151,8 +1231,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:34:22.301Z",
-            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-24T23:48:03.186Z",
+            "freshness_label": "As of Sep 24, 2026, 7:48 PM ET"
           },
           {
             "name": "Jesús Luzardo",
@@ -1164,8 +1244,8 @@
             "retroactive_to": "2026-09-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-24T23:34:22.301Z",
-            "freshness_label": "As of Sep 24, 2026, 7:34 PM ET"
+            "last_confirmed": "2026-09-24T23:48:03.186Z",
+            "freshness_label": "As of Sep 24, 2026, 7:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
