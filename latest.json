@@ -4,7 +4,7 @@
   "edition_date": "2026-09-25",
   "volume": 1,
   "edition": 178,
-  "generated_at": "2026-09-25T22:35:58.274Z",
+  "generated_at": "2026-09-25T22:47:55.194Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, TB 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Yandy Díaz is up against Cristopher Sánchez. Series: Regular Season.",
+    "dek": "Top 1st · 2 outs",
+    "summary": "Ryan Vilade is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Griffin Jax · PHI vs TB · Sat, Sep 26 · 7:15 PM"
   },
@@ -55,26 +55,29 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 69,
+      "temp_f": 68,
       "condition": "Overcast",
-      "wind": "14 mph · gusts 29",
-      "gusts_mph": 29
+      "wind": "14 mph · gusts 25",
+      "gusts_mph": 25
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Yandy Díaz",
+        "name": "Ryan Vilade",
         "meta": "vs Cristopher Sánchez"
       },
-      "pitches": [],
+      "pitches": [
+        "S",
+        "S"
+      ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 0
+        "strikes": 2,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
@@ -86,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-25T22:35:58.330Z",
+    "updated_at": "2026-09-25T22:47:55.325Z",
     "current_game_pk": 823409,
     "next_game_pk": 823407,
     "next_game": {
@@ -123,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "69° · Overcast · gusts 29 mph",
+      "text": "68° · Overcast · gusts 25 mph",
       "highlight": false
     }
   ]
