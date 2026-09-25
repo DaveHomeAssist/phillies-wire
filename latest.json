@@ -4,9 +4,9 @@
   "edition_date": "2026-09-25",
   "volume": 1,
   "edition": 178,
-  "generated_at": "2026-09-25T22:09:23.913Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-25T22:24:31.303Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 87,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Rays @ Phillies · Game 1 of 3",
-    "dek": "Cristopher Sánchez vs Freddy Peralta",
-    "summary": "Cristopher Sánchez vs Freddy Peralta · Rays @ Phillies · Game 1 of 3",
+    "headline": "PHI 0, TB 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Yandy Díaz is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Griffin Jax · PHI vs TB · Sat, Sep 26 · 7:15 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 71,
+      "temp_f": 70,
       "condition": "Overcast",
-      "wind": "15 mph · gusts 31",
+      "wind": "14 mph · gusts 31",
       "gusts_mph": 31
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Yandy Díaz",
+        "meta": "vs Cristopher Sánchez"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-25T22:09:23.968Z",
+    "updated_at": "2026-09-25T22:24:31.359Z",
     "current_game_pk": 823409,
     "next_game_pk": 823407,
     "next_game": {
@@ -106,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "71° · Overcast · gusts 31 mph",
+      "text": "70° · Overcast · gusts 31 mph",
       "highlight": false
     }
   ]
