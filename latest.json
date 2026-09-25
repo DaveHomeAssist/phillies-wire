@@ -4,21 +4,21 @@
   "edition_date": "2026-09-24",
   "volume": 1,
   "edition": 177,
-  "generated_at": "2026-09-25T00:27:02.734Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-25T01:09:11.017Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 87,
-    "losses": 71,
-    "streak": "L1",
+    "losses": 72,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, MIL 2",
-    "dek": "Top 8th · 1 out",
-    "summary": "Luis Lara is up against José Alvarado. Series: Series tied 1-1.",
+    "headline": "PHI 1, MIL 5.",
+    "dek": "MIL 5, PHI 1 · Andrew Painter · 6.0 IP, 5 H, 1 ER, 8 K",
+    "summary": "PHI 1, MIL 5. Final at Citizens Bank Park, Philadelphia. MIL wins 2-1.",
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Freddy Peralta · PHI vs TB · Fri, Sep 25 · 6:40 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Series tied 1-1"
+      "label": "MIL wins 2-1"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,67 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 59,
+      "temp_f": 58,
       "condition": "Overcast",
-      "wind": "4 mph · gusts 7",
-      "gusts_mph": 7
+      "wind": "6 mph · gusts 14",
+      "gusts_mph": 14
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Luis Lara",
-        "meta": "vs José Alvarado"
-      },
-      "pitches": [
-        "F",
-        "F",
-        "B",
-        "F",
-        "B",
-        "B",
-        "X"
-      ],
-      "count": {
-        "balls": 3,
-        "strikes": 2,
-        "outs": 0
-      },
-      "bases": {
-        "first": true,
-        "second": false,
-        "third": true
-      },
-      "status": "Top 8th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-25T00:27:03.216Z",
-    "current_game_pk": 823411,
-    "next_game_pk": 823409,
+    "updated_at": "2026-09-25T01:09:11.924Z",
+    "current_game_pk": 823409,
+    "next_game_pk": 823407,
     "next_game": {
-      "game_pk": 823409,
-      "official_date": "2026-09-25",
-      "date_label": "Fri, Sep 25, 2026",
-      "time_label": "6:40 PM",
+      "game_pk": 823407,
+      "official_date": "2026-09-26",
+      "date_label": "Sat, Sep 26, 2026",
+      "time_label": "7:15 PM",
       "title": "Tampa Bay Rays at Phillies",
       "matchup": "TB at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823411,
-      "official_date": "2026-09-24",
-      "title": "Milwaukee Brewers at Phillies",
-      "matchup": "MIL at PHI"
+      "game_pk": 823409,
+      "official_date": "2026-09-25",
+      "title": "Tampa Bay Rays at Phillies",
+      "matchup": "TB at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 87-71",
+      "text": "PHI 87-72",
       "highlight": true
     },
     {
@@ -131,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "59° · Overcast · gusts 7 mph",
+      "text": "58° · Overcast · gusts 14 mph",
       "highlight": false
     }
   ]

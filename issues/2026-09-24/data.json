@@ -5,14 +5,14 @@
     "edition": 177,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-25T00:27:02.734Z",
+    "generated_at": "2026-09-25T01:09:11.017Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 24, 2026, 8:27 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 24, 2026, 9:09 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -20,298 +20,41 @@
   },
   "record": {
     "wins": 87,
-    "losses": 71,
-    "streak": "L1",
+    "losses": 72,
+    "streak": "L2",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 1, MIL 2",
-    "dek": "Top 8th · 1 out",
-    "summary": "Luis Lara is up against José Alvarado. Series: Series tied 1-1.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 1, MIL 5.",
+    "dek": "MIL 5, PHI 1 · Andrew Painter · 6.0 IP, 5 H, 1 ER, 8 K",
+    "summary": "PHI 1, MIL 5. Final at Citizens Bank Park, Philadelphia. MIL wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "59° · Overcast"
+        "label": "Series",
+        "value": "MIL wins 2-1"
       }
     ],
     "bullets": [
-      "Luis Lara at the plate",
-      "José Alvarado on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Andrew Painter: 6.0 IP, 5 H, 1 ER, 8 K",
+      "Aaron Ashby: 2.0 IP, 0 H, 0 ER, 2 K",
+      "Jackson Chourio: 1-for-1, 1 HR, 1 RBI, 2 R, 1 SB"
     ],
     "next_label": "Tomorrow",
     "next_value": "Cristopher Sánchez vs Freddy Peralta · PHI vs TB · Fri, Sep 25 · 6:40 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's MIL at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "6:05 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Andrew Painter",
-            "hand": "R"
-          },
-          "away": {
-            "team": "MIL",
-            "name": "Shane Drohan",
-            "hand": "L"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Andrew Painter",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "MIL",
-            "name": "Shane Drohan",
-            "hand": "L"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryan De La Cruz",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Garrett Mitchell",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Brice Turang",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "William Contreras",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Jake Bauers",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Gary Sánchez",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Luis Lara",
-              "position": "RF",
-              "bats": "S"
-            },
-            {
-              "slot": 7,
-              "name": "Cooper Pratt",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Sal Frelick",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Joey Ortiz",
-              "position": "3B",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Luis Arraez",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Bryan De La Cruz",
-              "position": "LF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Garrett Mitchell",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Brice Turang",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "William Contreras",
-              "position": "DH",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Jake Bauers",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Gary Sánchez",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Luis Lara",
-              "position": "RF",
-              "bats": "S"
-            },
-            {
-              "slot": 7,
-              "name": "Cooper Pratt",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Sal Frelick",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "Joey Ortiz",
-              "position": "3B",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Brewers @ Phillies · Game 3 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Series tied 1-1"
+          "label": "MIL wins 2-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -346,10 +89,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 59,
+          "temp_f": 58,
           "condition": "Overcast",
-          "wind": "4 mph · gusts 7",
-          "gusts_mph": 7
+          "wind": "6 mph · gusts 14",
+          "gusts_mph": 14
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,15 +116,15 @@
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 0,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 3,
           "teams": {
             "away": {
-              "runs": 2,
-              "hits": 7,
+              "runs": 5,
+              "hits": 11,
               "errors": 1
             },
             "home": {
@@ -485,12 +228,25 @@
             {
               "num": 8,
               "away": {
+                "runs": 3,
+                "hits": 4,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
                 "runs": 1,
                 "hits": 2,
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               }
@@ -1357,142 +1113,243 @@
             "inning": 8,
             "half": "top",
             "team": "MIL",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Luis Lara",
             "actor_id": 800325,
-            "detail": "Play",
+            "detail": "Luis Lara lines out to center fielder Derek Hill.",
             "score_after": "PHI 1, MIL 2",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823411:62",
+            "inning": 8,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "single",
+            "actor": "Cooper Pratt",
+            "actor_id": 806198,
+            "detail": "Cooper Pratt singles on a ground ball to center fielder Derek Hill. Jake Bauers scores. Gary Sánchez to 2nd.",
+            "score_after": "PHI 1, MIL 3",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823411:63",
+            "inning": 8,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "out",
+            "actor": "Sal Frelick",
+            "actor_id": 686217,
+            "detail": "Sal Frelick pops out to third baseman Edmundo Sosa in foul territory.",
+            "score_after": "PHI 1, MIL 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:64",
+            "inning": 8,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "single",
+            "actor": "Joey Ortiz",
+            "actor_id": 687401,
+            "detail": "Joey Ortiz singles on a line drive to center fielder Derek Hill. Gary Sánchez scores. Cooper Pratt to 2nd.",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823411:65",
+            "inning": 8,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "strikeout",
+            "actor": "Garrett Mitchell",
+            "actor_id": 669003,
+            "detail": "Garrett Mitchell called out on strikes.",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:66",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper pops out to third baseman Joey Ortiz.",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:67",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa grounds out, third baseman Joey Ortiz to first baseman Jake Bauers.",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:68",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm called out on strikes.",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:69",
+            "inning": 9,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "out",
+            "actor": "Brice Turang",
+            "actor_id": 668930,
+            "detail": "Brice Turang grounds out, second baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 1, MIL 4",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:70",
+            "inning": 9,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "home_run",
+            "actor": "Jackson Chourio",
+            "actor_id": 694192,
+            "detail": "Jackson Chourio homers (25) on a fly ball to left center field.",
+            "score_after": "PHI 1, MIL 5",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823411:71",
+            "inning": 9,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "extra_base_hit",
+            "actor": "Jake Bauers",
+            "actor_id": 641343,
+            "detail": "Jake Bauers doubles (22) on a fly ball to left fielder Bryan De La Cruz.",
+            "score_after": "PHI 1, MIL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823411:72",
+            "inning": 9,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "out",
+            "actor": "Gary Sánchez",
+            "actor_id": 596142,
+            "detail": "Gary Sánchez grounds out, first baseman Alec Bohm to pitcher Tim Mayza. Jake Bauers to 3rd.",
+            "score_after": "PHI 1, MIL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:73",
+            "inning": 9,
+            "half": "top",
+            "team": "MIL",
+            "event_type": "out",
+            "actor": "Luis Lara",
+            "actor_id": 800325,
+            "detail": "Luis Lara grounds out, second baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 1, MIL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:74",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz lines out to second baseman Brice Turang.",
+            "score_after": "PHI 1, MIL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:75",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott walks.",
+            "score_after": "PHI 1, MIL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:76",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto flies out to right fielder Luis Lara.",
+            "score_after": "PHI 1, MIL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823411:77",
+            "inning": 9,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh grounds out, pitcher Antonio Senzatela to first baseman Jake Bauers.",
+            "score_after": "PHI 1, MIL 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Luis Lara",
-            "meta": "vs José Alvarado"
-          },
-          "pitches": [
-            "F",
-            "F",
-            "B",
-            "F",
-            "B",
-            "B",
-            "X"
-          ],
-          "count": {
-            "balls": 3,
-            "strikes": 2,
-            "outs": 0
-          },
-          "bases": {
-            "first": true,
-            "second": false,
-            "third": true
-          },
-          "status": "Top 8th"
-        }
+        ]
       }
     },
-    "injury_report": {
-      "content": {
-        "il_entries": [
-          {
-            "name": "Adolis García",
-            "position": "RF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right latissimus dorsi tear",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-25T00:27:02.734Z",
-            "freshness_label": "As of Sep 24, 2026, 8:27 PM ET"
-          },
-          {
-            "name": "Johan Rojas",
-            "position": "CF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL repair",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-25T00:27:02.734Z",
-            "freshness_label": "As of Sep 24, 2026, 8:27 PM ET"
-          },
-          {
-            "name": "Lou Trivino III",
-            "position": "RHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Right thoracic muscle spasm",
-            "status_note": "",
-            "retroactive_to": "2026-07-07",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-25T00:27:02.734Z",
-            "freshness_label": "As of Sep 24, 2026, 8:27 PM ET"
-          },
-          {
-            "name": "Brad Keller",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right elbow UCL tear",
-            "status_note": "",
-            "retroactive_to": "2026-07-13",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-25T00:27:02.734Z",
-            "freshness_label": "As of Sep 24, 2026, 8:27 PM ET"
-          },
-          {
-            "name": "Caleb Kilian",
-            "position": "RHP",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Left oblique strain",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-25T00:27:02.734Z",
-            "freshness_label": "As of Sep 24, 2026, 8:27 PM ET"
-          },
-          {
-            "name": "Felix Reyes",
-            "position": "LF",
-            "il_type": "60-day",
-            "badge": "il",
-            "injury": "Right wrist fracture",
-            "status_note": "",
-            "retroactive_to": null,
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-25T00:27:02.734Z",
-            "freshness_label": "As of Sep 24, 2026, 8:27 PM ET"
-          },
-          {
-            "name": "Jesús Luzardo",
-            "position": "LHP",
-            "il_type": "15-day",
-            "badge": "il",
-            "injury": "Left shoulder inflammation",
-            "status_note": "",
-            "retroactive_to": "2026-09-12",
-            "first_eligible": null,
-            "source": "live",
-            "last_confirmed": "2026-09-25T00:27:02.734Z",
-            "freshness_label": "As of Sep 24, 2026, 8:27 PM ET"
-          }
-        ],
-        "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
-      }
-    }
+    "injury_report": null
   },
   "next_game": {
     "label": "Tomorrow",
