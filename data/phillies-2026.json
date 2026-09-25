@@ -2,10 +2,10 @@
   "schema_version": "1.0.0",
   "publication": "Phillies Wire",
   "season": 2026,
-  "generated_at": "2026-09-25T19:48:27.034Z",
+  "generated_at": "2026-09-25T20:08:29.338Z",
   "source": {
     "provider": "MLB Stats API",
-    "fetched_at": "2026-09-25T19:48:27.496Z",
+    "fetched_at": "2026-09-25T20:08:29.668Z",
     "query": {
       "sportId": "1",
       "teamId": "143",
@@ -17869,7 +17869,7 @@
       "phillies": {
         "team_id": 143,
         "side": "home",
-        "score": null,
+        "score": 0,
         "probable_pitcher": {
           "id": 650911,
           "name": "Cristopher Sánchez"
@@ -17886,7 +17886,7 @@
         "side": "away",
         "name": "Tampa Bay Rays",
         "abbr": "TB",
-        "score": null,
+        "score": 0,
         "probable_pitcher": {
           "id": 642547,
           "name": "Freddy Peralta"
@@ -17903,7 +17903,7 @@
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": null,
+          "score": 0,
           "is_winner": false,
           "probable_pitcher": {
             "id": 650911,
@@ -17920,7 +17920,7 @@
           "team_id": 139,
           "name": "Tampa Bay Rays",
           "abbr": "TB",
-          "score": null,
+          "score": 0,
           "is_winner": false,
           "probable_pitcher": {
             "id": 642547,
@@ -17945,10 +17945,10 @@
         "start_time_tbd": false
       },
       "score": {
-        "phillies": null,
-        "opponent": null,
-        "home": null,
-        "away": null
+        "phillies": 0,
+        "opponent": 0,
+        "home": 0,
+        "away": 0
       },
       "result": null,
       "series": {
