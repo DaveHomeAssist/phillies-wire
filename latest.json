@@ -4,7 +4,7 @@
   "edition_date": "2026-09-25",
   "volume": 1,
   "edition": 178,
-  "generated_at": "2026-09-25T23:22:30.168Z",
+  "generated_at": "2026-09-25T23:34:03.877Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, TB 2",
-    "dek": "Bottom 3rd · 2 outs",
-    "summary": "Kyle Schwarber is up against Freddy Peralta. Series: Regular Season.",
+    "dek": "Middle 4th · 3 outs",
+    "summary": "Bryce Harper is up against Freddy Peralta. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Griffin Jax · PHI vs TB · Sat, Sep 26 · 7:15 PM"
   },
@@ -57,32 +57,36 @@
     "weather": {
       "temp_f": 67,
       "condition": "Overcast",
-      "wind": "13 mph · gusts 24",
-      "gusts_mph": 24
+      "wind": "13 mph · gusts 25",
+      "gusts_mph": 25
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Kyle Schwarber",
+        "name": "Bryce Harper",
         "meta": "vs Freddy Peralta"
       },
       "pitches": [
+        "S",
+        "S",
         "B",
         "B",
-        "F"
+        "F",
+        "F",
+        "X"
       ],
       "count": {
         "balls": 2,
-        "strikes": 1,
-        "outs": 2
+        "strikes": 2,
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Middle 4th"
     },
     "recap_line": null
   },
@@ -90,7 +94,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-25T23:22:30.257Z",
+    "updated_at": "2026-09-25T23:34:03.962Z",
     "current_game_pk": 823409,
     "next_game_pk": 823407,
     "next_game": {
@@ -127,7 +131,7 @@
       "highlight": false
     },
     {
-      "text": "67° · Overcast · gusts 24 mph",
+      "text": "67° · Overcast · gusts 25 mph",
       "highlight": false
     }
   ]
