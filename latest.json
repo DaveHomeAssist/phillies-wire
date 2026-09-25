@@ -4,7 +4,7 @@
   "edition_date": "2026-09-25",
   "volume": 1,
   "edition": 178,
-  "generated_at": "2026-09-25T22:47:55.194Z",
+  "generated_at": "2026-09-25T23:08:34.709Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, TB 0",
-    "dek": "Top 1st · 2 outs",
-    "summary": "Ryan Vilade is up against Cristopher Sánchez. Series: Regular Season.",
+    "headline": "PHI 0, TB 2",
+    "dek": "Bottom 2nd · 0 outs",
+    "summary": "Brandon Marsh is up against Freddy Peralta. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Griffin Jax · PHI vs TB · Sat, Sep 26 · 7:15 PM"
   },
@@ -55,33 +55,36 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 68,
+      "temp_f": 67,
       "condition": "Overcast",
-      "wind": "14 mph · gusts 25",
-      "gusts_mph": 25
+      "wind": "13 mph · gusts 24",
+      "gusts_mph": 24
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ryan Vilade",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Brandon Marsh",
+        "meta": "vs Freddy Peralta"
       },
       "pitches": [
         "S",
-        "S"
+        "S",
+        "B",
+        "F",
+        "F"
       ],
       "count": {
-        "balls": 0,
+        "balls": 1,
         "strikes": 2,
-        "outs": 2
+        "outs": 0
       },
       "bases": {
         "first": true,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Bottom 2nd"
     },
     "recap_line": null
   },
@@ -89,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-25T22:47:55.325Z",
+    "updated_at": "2026-09-25T23:08:34.774Z",
     "current_game_pk": 823409,
     "next_game_pk": 823407,
     "next_game": {
@@ -126,7 +129,7 @@
       "highlight": false
     },
     {
-      "text": "68° · Overcast · gusts 25 mph",
+      "text": "67° · Overcast · gusts 24 mph",
       "highlight": false
     }
   ]

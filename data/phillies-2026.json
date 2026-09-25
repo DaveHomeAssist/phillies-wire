@@ -2,10 +2,10 @@
   "schema_version": "1.0.0",
   "publication": "Phillies Wire",
   "season": 2026,
-  "generated_at": "2026-09-25T22:47:55.325Z",
+  "generated_at": "2026-09-25T23:08:34.774Z",
   "source": {
     "provider": "MLB Stats API",
-    "fetched_at": "2026-09-25T22:47:55.772Z",
+    "fetched_at": "2026-09-25T23:08:35.211Z",
     "query": {
       "sportId": "1",
       "teamId": "143",
@@ -17886,7 +17886,7 @@
         "side": "away",
         "name": "Tampa Bay Rays",
         "abbr": "TB",
-        "score": 0,
+        "score": 2,
         "probable_pitcher": {
           "id": 642547,
           "name": "Freddy Peralta"
@@ -17920,7 +17920,7 @@
           "team_id": 139,
           "name": "Tampa Bay Rays",
           "abbr": "TB",
-          "score": 0,
+          "score": 2,
           "is_winner": false,
           "probable_pitcher": {
             "id": 642547,
@@ -17946,9 +17946,9 @@
       },
       "score": {
         "phillies": 0,
-        "opponent": 0,
+        "opponent": 2,
         "home": 0,
-        "away": 0
+        "away": 2
       },
       "result": null,
       "series": {
