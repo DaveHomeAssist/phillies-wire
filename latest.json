@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-24",
+  "edition_date": "2026-09-25",
   "volume": 1,
-  "edition": 177,
-  "generated_at": "2026-09-25T03:46:06.660Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 178,
+  "generated_at": "2026-09-25T04:11:55.677Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 87,
@@ -16,38 +16,38 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, MIL 5.",
-    "dek": "MIL 5, PHI 1 · Andrew Painter · 6.0 IP, 5 H, 1 ER, 8 K",
-    "summary": "PHI 1, MIL 5. Final at Citizens Bank Park, Philadelphia. MIL wins 2-1.",
+    "headline": "Rays @ Phillies · Game 1 of 3",
+    "dek": "Cristopher Sánchez vs Freddy Peralta",
+    "summary": "Cristopher Sánchez vs Freddy Peralta · Rays @ Phillies · Game 1 of 3",
     "next_label": "Tomorrow",
-    "next_value": "Cristopher Sánchez vs Freddy Peralta · PHI vs TB · Fri, Sep 25 · 6:40 PM"
+    "next_value": "Griffin Jax · PHI vs TB · Sat, Sep 26 · 7:15 PM"
   },
   "game": {
-    "matchup": "Brewers @ Phillies · Game 3 of 3",
-    "first_pitch": "6:05 PM",
+    "matchup": "Rays @ Phillies · Game 1 of 3",
+    "first_pitch": "6:40 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Andrew Painter",
-        "hand": "R"
+        "name": "Cristopher Sánchez",
+        "hand": "L"
       },
       "away": {
-        "name": "Shane Drohan",
-        "hand": "L"
-      },
-      "phi": {
-        "name": "Andrew Painter",
+        "name": "Freddy Peralta",
         "hand": "R"
       },
-      "opp": {
-        "name": "Shane Drohan",
+      "phi": {
+        "name": "Cristopher Sánchez",
         "hand": "L"
+      },
+      "opp": {
+        "name": "Freddy Peralta",
+        "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "MIL wins 2-1"
+      "label": "Regular Season"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -57,8 +57,8 @@
     "weather": {
       "temp_f": 56,
       "condition": "Overcast",
-      "wind": "6 mph · gusts 14",
-      "gusts_mph": 14
+      "wind": "8 mph · gusts 16",
+      "gusts_mph": 16
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-25T03:46:06.730Z",
+    "updated_at": "2026-09-25T04:11:55.846Z",
     "current_game_pk": 823409,
     "next_game_pk": 823407,
     "next_game": {
@@ -94,11 +94,11 @@
       "highlight": true
     },
     {
-      "text": "Brewers @ Phillies · Game 3 of 3 · 6:05 PM",
+      "text": "Rays @ Phillies · Game 1 of 3 · 6:40 PM",
       "highlight": false
     },
     {
-      "text": "Andrew Painter vs Shane Drohan",
+      "text": "Cristopher Sánchez vs Freddy Peralta",
       "highlight": true
     },
     {
@@ -106,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "56° · Overcast · gusts 14 mph",
+      "text": "56° · Overcast · gusts 16 mph",
       "highlight": false
     }
   ]
