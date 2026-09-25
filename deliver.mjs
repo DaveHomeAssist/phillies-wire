@@ -41,8 +41,10 @@ export async function main({ createTransportImpl = null, fetchSubscribersImpl = 
     ...subscriberEmails,
   ]).join(", ");
   if (!recipients) {
+    // Nothing went out, so the status must say so. "sent" with zero
+    // recipients would read as a successful send on the health check.
     console.log("No recipients (DELIVERY_RECIPIENTS unset and no Buttondown subscribers) — skipping delivery.");
-    writeDeliveryStatus({ state: "sent", required: false });
+    writeDeliveryStatus({ state: "skipped", required: false, reason: "no recipients: DELIVERY_RECIPIENTS unset and no Buttondown subscribers" });
     return;
   }
 
@@ -50,7 +52,7 @@ export async function main({ createTransportImpl = null, fetchSubscribersImpl = 
   const smtpPass = process.env.SMTP_PASS;
   if (!smtpUser || !smtpPass) {
     console.error("SMTP_USER and SMTP_PASS are required for delivery; skipping delivery.");
-    writeDeliveryStatus({ state: "failed", required: true });
+    writeDeliveryStatus({ state: "failed", required: true, reason: "SMTP_USER and SMTP_PASS are not set" });
     return;
   }
 
@@ -119,6 +121,12 @@ export function writeDeliveryStatus(status = {}) {
     delivered: Number(status.delivered ?? 0),
     failed: Number(status.failed ?? 0),
   };
+  // Optional: why a run skipped or failed. run.mjs and deliver.mjs supply it
+  // and scripts/health-check.mjs prints it; dropping it here left the health
+  // check reading a field the producer never wrote.
+  if (typeof status.reason === "string" && status.reason.trim()) {
+    payload.reason = status.reason.trim();
+  }
   const text = `${JSON.stringify(payload, null, 2)}\n`;
   writeFileSync("./delivery-status.json", text, "utf8");
   if (existsSync("./site")) {

@@ -71,7 +71,10 @@ const TEAM_NAME_FALLBACKS = {
 };
 
 const NL_EAST = new Set([120, 121, 143, 144, 146]);
-const NATIONAL_LEAGUE = new Set([108, 109, 112, 113, 115, 119, 120, 121, 133, 134, 135, 136, 137, 138, 143, 144, 146, 158]);
+// The 15 National League clubs by MLB team id. 108 (LAA), 133 (ATH), and
+// 136 (SEA) are American League and used to sit in this set, which stripped
+// the "interleague" tag from those series and skewed the season splits.
+const NATIONAL_LEAGUE = new Set([109, 112, 113, 115, 119, 120, 121, 134, 135, 137, 138, 143, 144, 146, 158]);
 const RIVAL_TEAM_IDS = new Set([119, 121, 144, 147]);
 const ACTIVE_STATE_CODES = new Set(["P", "S", "PW", "M", "N", "I", "IR", "DR", "CR", "TR"]);
 

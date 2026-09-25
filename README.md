@@ -43,7 +43,7 @@ phillies-wire/
 ## Pipeline
 
 ```text
-run.mjs -> crawl.mjs -> edition sync -> enrich.mjs -> render.mjs -> verify.mjs -> deliver.mjs? -> factcheck.mjs
+run.mjs -> crawl.mjs -> edition sync -> enrich.mjs -> render.mjs -> factcheck.mjs --export-accuracy -> verify.mjs -> deliver.mjs?
         -> latest index + dated issue + per-issue data.json + archive.json + archive/index.html
         -> latest.json feed + canonical schedule JSON + ICS calendar + ticker + accuracy scorecard
 ```

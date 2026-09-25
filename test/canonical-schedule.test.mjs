@@ -4,6 +4,7 @@ import {
   buildCanonicalGame,
   buildCanonicalSchedulePayload,
   buildLegacyMatchKey,
+  deriveGameTags,
   findCurrentOrNextGame,
 } from "../shared/phillies-schedule.mjs";
 
@@ -148,3 +149,24 @@ function runTest(name, fn) {
     throw error;
   }
 }
+
+runTest("deriveGameTags marks every American League opponent interleague and no NL club", () => {
+  // AL clubs that were wrongly listed as National League.
+  for (const opponentTeamId of [108, 133, 136, 147, 110]) {
+    const tags = deriveGameTags({ opponentTeamId, homeGame: true, officialDate: "2026-06-15" });
+    assert.ok(tags.includes("interleague"), `team ${opponentTeamId} should be interleague`);
+    assert.ok(!tags.includes("division"));
+  }
+  // NL clubs outside the East are neither interleague nor division.
+  for (const opponentTeamId of [112, 119, 137, 158]) {
+    const tags = deriveGameTags({ opponentTeamId, homeGame: false, officialDate: "2026-06-15" });
+    assert.ok(!tags.includes("interleague"), `team ${opponentTeamId} is National League`);
+    assert.ok(!tags.includes("division"));
+  }
+  // NL East rivals carry division, never interleague.
+  for (const opponentTeamId of [120, 121, 144, 146]) {
+    const tags = deriveGameTags({ opponentTeamId, homeGame: true, officialDate: "2026-06-15" });
+    assert.ok(tags.includes("division"));
+    assert.ok(!tags.includes("interleague"));
+  }
+});

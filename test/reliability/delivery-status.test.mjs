@@ -93,6 +93,52 @@ test("G4: deliver writes delivery-status.json after a successful send", async ()
   }
 });
 
+test("G4c: no recipients writes skipped, never sent, and keeps the reason", async () => {
+  const work = mkdtempSync(join(tmpdir(), "pw-delivery-norecipients-"));
+  const previousCwd = process.cwd();
+  const previousRecipients = process.env.DELIVERY_RECIPIENTS;
+  const previousKey = process.env.BUTTONDOWN_API_KEY;
+
+  try {
+    process.chdir(work);
+    mkdirSync("site", { recursive: true });
+    delete process.env.DELIVERY_RECIPIENTS;
+    delete process.env.BUTTONDOWN_API_KEY;
+    let transportBuilt = false;
+
+    await deliverMain({ createTransportImpl: () => { transportBuilt = true; return {}; } });
+
+    assert.equal(transportBuilt, false, "no transport when there is nobody to send to");
+    const status = JSON.parse(readFileSync("delivery-status.json", "utf8"));
+    assert.equal(status.state, "skipped");
+    assert.equal(status.required, false);
+    assert.equal(status.delivered, 0);
+    assert.match(status.reason, /no recipients/);
+    const siteStatus = JSON.parse(readFileSync("site/delivery-status.json", "utf8"));
+    assert.equal(siteStatus.state, "skipped");
+  } finally {
+    process.chdir(previousCwd);
+    if (previousRecipients == null) delete process.env.DELIVERY_RECIPIENTS; else process.env.DELIVERY_RECIPIENTS = previousRecipients;
+    if (previousKey == null) delete process.env.BUTTONDOWN_API_KEY; else process.env.BUTTONDOWN_API_KEY = previousKey;
+    rmSync(work, { recursive: true, force: true });
+  }
+});
+
+test("G4d: writeDeliveryStatus persists a supplied reason and omits an empty one", () => {
+  const work = mkdtempSync(join(tmpdir(), "pw-delivery-reason-"));
+  const previousCwd = process.cwd();
+  try {
+    process.chdir(work);
+    writeDeliveryStatus({ state: "skipped", required: false, reason: "live refresh skips email delivery" });
+    assert.equal(JSON.parse(readFileSync("delivery-status.json", "utf8")).reason, "live refresh skips email delivery");
+    writeDeliveryStatus({ state: "skipped", required: false });
+    assert.equal("reason" in JSON.parse(readFileSync("delivery-status.json", "utf8")), false);
+  } finally {
+    process.chdir(previousCwd);
+    rmSync(work, { recursive: true, force: true });
+  }
+});
+
 test("G4b: live refresh can write skipped delivery status", () => {
   const work = mkdtempSync(join(tmpdir(), "pw-delivery-skipped-"));
   const previousCwd = process.cwd();

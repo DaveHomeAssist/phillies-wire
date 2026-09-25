@@ -9,12 +9,20 @@ const DEFAULT_VOLUME = 1;
 
 // Two operating modes:
 //   daily — the morning publish. Full pipeline: crawl, enrich with Claude,
-//           export accuracy report, render, verify, deliver emails. Runs once
+//           render, export accuracy report, verify, deliver emails. Runs once
 //           per day.
 //   live  — game-window refresh. Crawl (preserving morning editorial),
-//           export accuracy report, render, verify. No enrich (would burn
+//           render, export accuracy report, verify. No enrich (would burn
 //           Anthropic tokens regenerating the same morning copy). No deliver
 //           (would spam subscribers every 15 minutes during a game).
+//
+// The accuracy export runs AFTER render so its deterministic HTML checks
+// (token leaks, duplicated weather strip, dead dashboard slots) inspect the
+// HTML this run produced. Before this ordering it read the previous run's
+// phillies-wire-output.html, or nothing at all on a fresh CI checkout, and the
+// scorecard could never carry a pipeline-integrity finding for the edition it
+// described. factcheck.mjs mirrors the report into site/ itself, and
+// verify.mjs still gates on the report before deploy.
 const ISSUE_MODE = (process.env.ISSUE_MODE || "daily").toLowerCase();
 const IS_LIVE_REFRESH = ISSUE_MODE === "live";
 
@@ -31,8 +39,8 @@ const ACCURACY_EXPORT_STAGE = {
   label: `factcheck.mjs ${ACCURACY_EXPORT_ARGS.join(" ")}`,
 };
 
-const DAILY_STAGES = ["crawl.mjs", "enrich.mjs", ACCURACY_EXPORT_STAGE, "render.mjs", "verify.mjs"];
-const LIVE_STAGES  = ["crawl.mjs", ACCURACY_EXPORT_STAGE, "render.mjs", "verify.mjs"];
+const DAILY_STAGES = ["crawl.mjs", "enrich.mjs", "render.mjs", ACCURACY_EXPORT_STAGE, "verify.mjs"];
+const LIVE_STAGES  = ["crawl.mjs", "render.mjs", ACCURACY_EXPORT_STAGE, "verify.mjs"];
 const PIPELINE_STAGES = IS_LIVE_REFRESH ? LIVE_STAGES : DAILY_STAGES;
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

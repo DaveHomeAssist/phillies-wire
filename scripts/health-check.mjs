@@ -16,13 +16,13 @@ import https from "node:https";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
+import { SITE_URL } from "../config.mjs";
 
 // GitHub Pages reports a custom domain's page_url as http:// until "Enforce
 // HTTPS" is enabled (cert provisioning). The deployed site serves HTTPS
 // regardless, and we probe with node:https, so upgrade the scheme rather than
 // hard-failing the post-deploy check on the protocol prefix.
-const BASE_URL = (process.env.PHILLIES_WIRE_BASE_URL ?? "https://phillieswire.com")
-  .replace(/^http:\/\//i, "https://");
+const BASE_URL = SITE_URL.replace(/^http:\/\//i, "https://");
 const MAX_AGE_MIN = Number(process.env.PHILLIES_WIRE_MAX_AGE_MIN ?? 240);
 const WEBHOOK = process.env.PHILLIES_WIRE_WEBHOOK;
 const HEALTH_DIR = process.env.PHILLIES_WIRE_HEALTH_DIR;

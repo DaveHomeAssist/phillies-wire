@@ -31,12 +31,12 @@ On top of that, several static surfaces ship from the repo:
 ## Pipeline
 
 ```text
-run.mjs -> crawl.mjs -> edition sync -> enrich.mjs -> render.mjs -> verify.mjs -> deliver.mjs? -> factcheck.mjs
+run.mjs -> crawl.mjs -> edition sync -> enrich.mjs -> render.mjs -> factcheck.mjs --export-accuracy -> verify.mjs -> deliver.mjs?
 ```
 
 | File | Role |
 |---|---|
-| `run.mjs` | Orchestrator, child-process spawn, edition number sync; runs `factcheck.mjs --export-accuracy` post-publish |
+| `run.mjs` | Orchestrator, child-process spawn, edition number sync; runs `factcheck.mjs --export-accuracy` after render and before the verify gate |
 | `crawl.mjs` | MLB + weather + fixture merge → data JSON; freshness gates; per-play `feed/live` pull; injury fallback via transactions feed |
 | `enrich.mjs` | Claude editorial pass (pull quote + preview narrative), retries + timeout + structured fallback |
 | `render.mjs` | Template engine + latest/issue/archive/site output + per-issue `data.json` + static-asset copy (`STATIC_ASSET_DIRS`) |
@@ -51,7 +51,7 @@ run.mjs -> crawl.mjs -> edition sync -> enrich.mjs -> render.mjs -> verify.mjs -
 Wired into the pipeline (see [`docs/FACTCHECK.md`](docs/FACTCHECK.md)):
 
 - **Pre-publish gate:** `verify.mjs` imports `runFactcheck` and blocks publish on errors / pipeline issues.
-- **Post-publish:** `run.mjs` runs `factcheck.mjs --export-accuracy`, which feeds `/dashboard/accuracy/`.
+- **Accuracy export:** `run.mjs` runs `factcheck.mjs --export-accuracy` after render (so it inspects this run's HTML) and before verify (which gates on the report); it feeds `/dashboard/accuracy/`. A claim is marked accurate only when a source or deterministic check compared it on that run; uncovered claims are listed as unverifiable.
 - Deterministic checks run offline in-process; source-verified checks (vs MLB Stats API) run on the daily scheduled run.
 - `factcheck-whitelist.json` suppresses intentional editorial accepts.
 
@@ -110,7 +110,7 @@ Without `ANTHROPIC_API_KEY`, enrich falls back to a structured message and the p
 - Game-window cron every 15 minutes (afternoon/evening windows)
 - Manual `workflow_dispatch` (mode selectable)
 
-Job shape: `npm ci` → `npm test` → `node run.mjs` (crawl→enrich→render→verify→deliver→factcheck) → deploy Pages → **then** persist archive snapshot commit (deploy-before-persist push-race fix, commit `ab0ad55`; persist step retries with `pull --rebase --autostash`).
+Job shape: `npm ci` → `npm test` → `node run.mjs` (crawl→enrich→render→factcheck export→verify→deliver) → deploy Pages → **then** persist archive snapshot commit (deploy-before-persist push-race fix, commit `ab0ad55`; persist step retries with `pull --rebase --autostash`).
 
 ## Open follow-ups
 

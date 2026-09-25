@@ -139,10 +139,17 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Every render-generated artifact the site serves must land on the
+          # branch too, or the checkout drifts from the deploy (the June 2026
+          # accuracy.json gap, then the same gap for the canonical schedule,
+          # its audit, and the season calendar, which sat months stale here
+          # while Pages served fresh copies).
           git add -A \
             index.html archive.json archive issues \
             status.json latest.json delivery-status.json \
             dashboard/accuracy/accuracy.json \
+            data/phillies-2026.json data/phillies-2026-audit.json data/phillies-2026-overrides.json \
+            calendar/phillies-2026-all.ics \
             robots.txt sitemap.xml feed.xml manifest.webmanifest favicon.svg og-default.svg
           if git diff --cached --quiet; then
             echo "No archive snapshot changes to commit."

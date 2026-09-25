@@ -32,35 +32,38 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { FETCH_TIMEOUT_MS } from "./config.mjs";
+import { FETCH_TIMEOUT_MS, MLB_API_BASE, SITE_URL, TEAM_ID } from "./config.mjs";
+import { getTeamAbbr } from "./shared/phillies-schedule.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // ---------- Config ----------
 
 const DEFAULT_DS_ID = "f67f24d7-9acf-4598-8a8b-6c74a61ae7bb";
-const DEFAULT_WIRE_ROOT = "https://davehomeassist.github.io/phillies-wire/";
-const DEFAULT_DASHBOARD = "https://davehomeassist.github.io/phillies-wire/dashboard/";
+const DEFAULT_WIRE_ROOT = `${SITE_URL}/`;
+const DEFAULT_DASHBOARD = `${SITE_URL}/dashboard/`;
 
 const DATA_FILE = join(__dirname, "phillies-wire-data.json");
 const OUTPUT_HTML = join(__dirname, "phillies-wire-output.html");
 const REPORTS_DIR = join(__dirname, "reports");
 const WHITELIST_DEFAULT = join(__dirname, "factcheck-whitelist.json");
 const ACCURACY_REPORT_FILE = join(__dirname, "dashboard", "accuracy", "accuracy.json");
+// The deployable site tree render.mjs builds. The export runs after render so
+// it can inspect the rendered HTML, so it has to refresh the site mirror of
+// the report itself (verify.mjs requires the two copies to be identical).
+const SITE_ACCURACY_REPORT_FILE = join(__dirname, "site", "dashboard", "accuracy", "accuracy.json");
 const ACCURACY_SCHEMA_VERSION = "accuracy-1.0.0";
 
-const MLB_TEAM_ID_PHI = 143;
-const MLB_API = "https://statsapi.mlb.com/api/v1";
+// Team id and API base come from config.mjs, the documented single source
+// for these constants; a second copy here drifted from it once already.
+const MLB_TEAM_ID_PHI = TEAM_ID;
+const MLB_API = MLB_API_BASE;
 const FACTCHECK_FETCH_TIMEOUT_MS = Number(process.env.FACTCHECK_FETCH_TIMEOUT_MS ?? FETCH_TIMEOUT_MS);
 
-// NL East team IDs — used for standings reconciliation
-const NL_EAST_IDS = {
-  PHI: 143,
-  ATL: 144,
-  NYM: 121,
-  MIA: 146,
-  WSH: 120,
-};
+// NL East team ids, used to pick the division rows out of the standings feed.
+// Abbreviations resolve through the shared team table so factcheck and the
+// canonical schedule cannot disagree on a code.
+const NL_EAST_IDS = new Set([143, 144, 121, 146, 120]);
 
 // ---------- Main ----------
 
@@ -102,14 +105,15 @@ async function main() {
   runDeterministicChecks({ data, html, findings, whitelist });
 
   // --- Source-verified checks (daily only) ---
+  let coverage = emptyCoverage();
   if (mode === "daily") {
-    await runSourceChecks({ data, findings, liveRefresh: isLiveRefresh });
+    coverage = await runSourceChecks({ data, findings, liveRefresh: isLiveRefresh });
   }
 
   applyWhitelist(findings, whitelist);
 
   const status = pickStatus(findings);
-  const accuracyReport = buildAccuracyReport({ data, findings, generatedAt: new Date() });
+  const accuracyReport = buildAccuracyReport({ data, findings, coverage, generatedAt: new Date() });
   if (isAccuracyExport || mode === "daily") {
     writeAccuracyReport(accuracyReport);
   }
@@ -395,7 +399,16 @@ function runDeterministicChecks({ data, html, findings, whitelist: _w }) {
 
 // ---------- Source-verified checks ----------
 
+// Which published claim groups an MLB Stats API source check actually
+// covered on this run. buildAccuracyReport only marks a claim "accurate" when
+// its group was covered; everything else stays "unverifiable" so the scorecard
+// never advertises a verification that did not happen.
+export function emptyCoverage() {
+  return { standings: false, record: false, recap: false, injuries: false };
+}
+
 async function runSourceChecks({ data, findings, liveRefresh = false }) {
+  const coverage = emptyCoverage();
   // The recap is editorial copy describing the most-recent final, which can
   // legitimately differ from factcheck's calendar-"yesterday" at game-final and
   // timezone boundaries. On a live refresh that race is expected drift, not a
@@ -407,11 +420,15 @@ async function runSourceChecks({ data, findings, liveRefresh = false }) {
   // a real wrong-data signal (e.g. a degraded crawl fallback publishing stale NL
   // East records) and MUST keep blocking in every mode.
   const recapBucket = liveRefresh ? findings.unverified : findings.errors;
-  // A. Previous-day box score reconciliation
+  // A. Most-recent final reconciliation. The crawl records the last final it
+  // saw in meta.last_final (date, game_pk, runs, opponent) and, on a final
+  // edition, the recap result in sections.recap.content.result. Check that
+  // published final against the MLB schedule for that date. Fall back to
+  // calendar-yesterday only when the payload carries no last_final.
   try {
-    const yesterdayISO = offsetDays(todayISO(), -1);
-    const sched = await fetchJSON(`${MLB_API}/schedule?sportId=1&teamId=${MLB_TEAM_ID_PHI}&date=${yesterdayISO}`);
-    const game = sched?.dates?.[0]?.games?.[0];
+    const target = resolveRecapTarget(data);
+    const sched = await fetchJSON(`${MLB_API}/schedule?sportId=1&teamId=${MLB_TEAM_ID_PHI}&date=${target.date}`);
+    const game = pickRecapGame(sched?.dates?.[0]?.games ?? [], target);
     if (game && game.status?.abstractGameState === "Final") {
       const gamePk = game.gamePk;
       const boxscore = await fetchJSON(`${MLB_API}/game/${gamePk}/boxscore`).catch((error) => {
@@ -422,7 +439,18 @@ async function runSourceChecks({ data, findings, liveRefresh = false }) {
         });
         return null;
       });
-      if (boxscore) reconcileRecap({ data, boxscore, game, findings, bucket: recapBucket });
+      if (boxscore) {
+        const compared = reconcileRecap({ data, boxscore, game, findings, bucket: recapBucket });
+        if (compared) coverage.recap = true;
+      }
+    } else if (target.source !== "calendar") {
+      findings.unverified.push({
+        id: "recap-game-not-final",
+        title: `Published last final (${target.date}) is not a Final on the MLB schedule`,
+        detail: game
+          ? `MLB reports ${game.status?.detailedState ?? "unknown"} for gamePk ${game.gamePk}.`
+          : `No game matching gamePk ${target.gamePk ?? "?"} found on ${target.date}.`,
+      });
     }
   } catch (e) {
     findings.unverified.push({
@@ -438,9 +466,11 @@ async function runSourceChecks({ data, findings, liveRefresh = false }) {
     const nle = extractNLEast(standings);
     const wireRows = getStandingsRows(data);
     if (nle && wireRows.length) {
+      let comparedRows = 0;
       for (const wireRow of wireRows) {
         const apiRow = nle[wireRow.abbr ?? wireRow.team];
         if (!apiRow) continue;
+        comparedRows += 1;
         if (apiRow.wins !== wireRow.wins || apiRow.losses !== wireRow.losses) {
           // Always blocking — standings are live-fetched, not a frozen snapshot.
           findings.errors.push({
@@ -449,6 +479,13 @@ async function runSourceChecks({ data, findings, liveRefresh = false }) {
             detail: `Wire: ${wireRow.wins}-${wireRow.losses}. API: ${apiRow.wins}-${apiRow.losses}.`,
           });
         }
+      }
+      if (comparedRows > 0) {
+        coverage.standings = true;
+        // The header record is reconciled against the Phillies standings row
+        // by the deterministic check, and that row was just compared to the
+        // API, so the record claim is covered whenever the PHI row was.
+        coverage.record = wireRows.some((row) => nle[row.abbr ?? row.team] && (row.is_phi || row.abbr === "PHI" || row.team === "PHI"));
       }
     }
   } catch (e) {
@@ -460,6 +497,9 @@ async function runSourceChecks({ data, findings, liveRefresh = false }) {
   }
 
   // C. Injury list (transactions endpoint, since team/injuries returns 404 per CLAUDE.md)
+  // This check is one directional: it flags API placements missing from the
+  // Wire, but it does not confirm the Wire's own IL entries, so it never marks
+  // injury claims covered.
   try {
     const today = todayISO();
     const start = offsetDays(today, -10);
@@ -486,22 +526,104 @@ async function runSourceChecks({ data, findings, liveRefresh = false }) {
       detail: e.message,
     });
   }
+
+  return coverage;
 }
 
+// A published score is a real number, not the null / "" placeholders the
+// fixture carries before a game goes final.
+function isScore(value) {
+  return value !== null && value !== "" && Number.isFinite(Number(value));
+}
+
+// Which MLB game the published "last final" refers to. Prefers the crawl's
+// meta.last_final (date + gamePk), then a visible recap's date, then
+// calendar-yesterday for payloads that carry neither.
+export function resolveRecapTarget(data, today = todayISO()) {
+  const lastFinal = data?.meta?.last_final;
+  if (lastFinal?.date && /^\d{4}-\d{2}-\d{2}$/.test(lastFinal.date)) {
+    return { date: lastFinal.date, gamePk: lastFinal.game_pk ?? null, source: "last_final" };
+  }
+  const recap = data?.sections?.recap;
+  if (recap?.show && /^\d{4}-\d{2}-\d{2}$/.test(recap.content?.date ?? "")) {
+    return { date: recap.content.date, gamePk: data?.meta?.game_pk ?? null, source: "recap" };
+  }
+  return { date: offsetDays(today, -1), gamePk: null, source: "calendar" };
+}
+
+// Pick the schedule entry the published final describes. A gamePk match wins;
+// otherwise a lone Final on that date; a doubleheader without a gamePk is
+// ambiguous and is left unchecked rather than guessed.
+export function pickRecapGame(games = [], target = {}) {
+  if (target.gamePk != null) {
+    return games.find((game) => String(game.gamePk) === String(target.gamePk)) ?? null;
+  }
+  const finals = games.filter((game) => game.status?.abstractGameState === "Final");
+  if (finals.length === 1) return finals[0];
+  return games.length === 1 ? games[0] : null;
+}
+
+// Returns true when at least one published value was actually compared to the
+// MLB source, so the caller can mark the recap group as covered.
 export function reconcileRecap({ data, boxscore, game, findings, bucket = findings.errors }) {
   const phiSide = boxscore.teams?.home?.team?.id === MLB_TEAM_ID_PHI ? "home" : "away";
   const phiBox = boxscore.teams?.[phiSide];
   const oppBox = boxscore.teams?.[phiSide === "home" ? "away" : "home"];
-  if (!phiBox || !oppBox) return;
+  if (!phiBox || !oppBox) return false;
 
   const phiRuns = game.teams?.[phiSide]?.score;
   const oppRuns = game.teams?.[phiSide === "home" ? "away" : "home"]?.score;
+  const gameDate = game.officialDate ?? String(game.gameDate ?? "").slice(0, 10);
+  let compared = false;
+
+  // meta.last_final is what crawl.mjs actually publishes (and what verify.mjs
+  // uses to check the streak sign), so it is the primary recap claim.
+  const lastFinal = data?.meta?.last_final;
+  if (
+    lastFinal &&
+    isScore(lastFinal.phi_runs) &&
+    isScore(lastFinal.opp_runs) &&
+    (!lastFinal.date || !gameDate || lastFinal.date === gameDate) &&
+    (lastFinal.game_pk == null || game.gamePk == null || String(lastFinal.game_pk) === String(game.gamePk))
+  ) {
+    compared = true;
+    if (Number(lastFinal.phi_runs) !== Number(phiRuns) || Number(lastFinal.opp_runs) !== Number(oppRuns)) {
+      bucket.push({
+        id: "recap-last-final-score",
+        title: "Published last final disagrees with MLB schedule",
+        detail: `Wire: PHI ${lastFinal.phi_runs}, ${lastFinal.opp_abbr ?? "OPP"} ${lastFinal.opp_runs} (${lastFinal.date ?? "?"}). API: PHI ${phiRuns}, OPP ${oppRuns}.`,
+      });
+    }
+  }
 
   const wireRecap = data?.recap ?? data?.sections?.recap?.content ?? null;
-  if (!wireRecap) return;
+  if (!wireRecap) return compared;
 
-  // Final score line
+  // Visible recap result block (sections.recap.content.result on a final
+  // edition): home_score / away_score in schedule orientation.
+  const result = wireRecap.result;
+  const recapDate = wireRecap.date;
+  if (
+    result &&
+    isScore(result.home_score) &&
+    isScore(result.away_score) &&
+    (!recapDate || !gameDate || recapDate === gameDate)
+  ) {
+    compared = true;
+    const homeRuns = game.teams?.home?.score;
+    const awayRuns = game.teams?.away?.score;
+    if (Number(result.home_score) !== Number(homeRuns) || Number(result.away_score) !== Number(awayRuns)) {
+      bucket.push({
+        id: "recap-final-score",
+        title: "Recap final score disagrees with MLB box score",
+        detail: `Wire: home ${result.home_score}, away ${result.away_score}${result.summary_line ? ` (${result.summary_line})` : ""}. API: home ${homeRuns}, away ${awayRuns}.`,
+      });
+    }
+  }
+
+  // Legacy free text fields, kept for payloads that carry them.
   if (wireRecap.final_score) {
+    compared = true;
     const rx = /(?:PHI|Phillies)\s*(\d+)[,\-–\s]+(?:[A-Z]{2,3}|[A-Za-z ]+)\s*(\d+)|(?:[A-Z]{2,3}|[A-Za-z ]+)\s*(\d+)[,\-–\s]+(?:PHI|Phillies)\s*(\d+)/;
     const m = rx.exec(wireRecap.final_score);
     if (m) {
@@ -525,6 +647,7 @@ export function reconcileRecap({ data, boxscore, game, findings, bucket = findin
     const rx = /(\d+(?:\.\d)?)\s*IP.*?(\d+)\s*H.*?(\d+)\s*ER.*?(\d+)\s*BB.*?(\d+)\s*K/is;
     const m = rx.exec(wireRecap.starter_line);
     if (m) {
+      compared = true;
       const [ , ip, h, er, bb, k ] = m;
       const disagree =
         String(starterStats.inningsPitched) !== String(ip) ||
@@ -541,6 +664,8 @@ export function reconcileRecap({ data, boxscore, game, findings, bucket = findin
       }
     }
   }
+
+  return compared;
 }
 
 function extractNLEast(standings) {
@@ -558,8 +683,7 @@ function extractNLEast(standings) {
 }
 
 function teamCode(id) {
-  const map = { 143: "PHI", 144: "ATL", 121: "NYM", 146: "MIA", 120: "WSH" };
-  return map[id] ?? null;
+  return NL_EAST_IDS.has(Number(id)) ? getTeamAbbr({ id }) : null;
 }
 
 function getStandingsRows(data) {
@@ -604,18 +728,28 @@ function buildActiveIlFromTransactions(transactions = []) {
 
 // ---------- Report assembly ----------
 
-export function buildAccuracyReport({ data, findings, generatedAt = new Date() } = {}) {
+export function buildAccuracyReport({ data, findings, coverage, generatedAt = new Date() } = {}) {
   const safeFindings = findings ?? { accurate: [], errors: [], stale: [], unverified: [], pipeline: [] };
+  const covered = { ...emptyCoverage(), ...(coverage ?? {}) };
   const meta = data?.meta ?? {};
   const editionDate = meta.date ?? todayISO();
   const editionLabel = formatEditionLabel(meta);
   const sections = [];
+  const hasFinding = (id) => [...safeFindings.errors, ...safeFindings.stale, ...safeFindings.pipeline]
+    .some((finding) => finding?.id === id);
 
+  // The edition date is checked against the run clock by the deterministic
+  // edition-date-stale check whenever the data artifact loaded.
+  const mastheadCovered = Boolean(data) && !hasFinding("data-missing");
   addSection(sections, "masthead", "Masthead", [
     claim(`${editionLabel || "Phillies Wire"}${editionLabel ? " · " : ""}${editionDate}`, {
-      note: "Edition metadata from the current pipeline artifact.",
+      covered: mastheadCovered,
+      note: mastheadCovered
+        ? "Edition date checked against the run date by the deterministic edition-date check."
+        : "Edition metadata from the current pipeline artifact.",
     }),
     meta.status?.generated_at_et ? claim(`Updated ${meta.status.generated_at_et}`, {
+      covered: mastheadCovered,
       note: "Rendered update timestamp from the current edition.",
     }) : null,
   ]);
@@ -633,10 +767,17 @@ export function buildAccuracyReport({ data, findings, generatedAt = new Date() }
     formatWeatherClaim(weather),
   ]);
 
+  // Record W-L is reconciled against the Phillies standings row (deterministic)
+  // and that row against the MLB standings API (source check), so it is
+  // covered whenever the standings check ran. Division rank and streak are only
+  // reconciled internally against the standings row, never against the API.
   const record = data?.record ?? {};
   addSection(sections, "record", "Record & Standing", [
     Number.isFinite(Number(record.wins)) && Number.isFinite(Number(record.losses))
-      ? claim(`Record: ${record.wins}-${record.losses}`)
+      ? claim(`Record: ${record.wins}-${record.losses}`, {
+        covered: covered.record && !hasFinding("record-standings-mismatch"),
+        note: covered.record ? "Reconciled with the Phillies row of the MLB standings API." : undefined,
+      })
       : null,
     record.division_rank && record.division
       ? claim(`Division standing: ${ordinal(record.division_rank)} in ${record.division}`)
@@ -645,11 +786,38 @@ export function buildAccuracyReport({ data, findings, generatedAt = new Date() }
   ]);
 
   const standingsRows = getStandingsRows(data);
-  addSection(sections, "standings", "NL East Standings", standingsRows.map((row) =>
-    claim(`${row.abbr ?? row.team ?? row.name}: ${row.wins}-${row.losses}, GB ${row.gb ?? "—"}, streak ${row.streak ?? "—"}`, {
-      note: row.is_phi ? "Phillies row also reconciles with the page header record." : undefined,
-    }),
-  ));
+  addSection(sections, "standings", "NL East Standings", standingsRows.map((row) => {
+    const abbr = row.abbr ?? row.team ?? row.name;
+    const rowCovered = covered.standings
+      && !hasFinding(`standings-record-${row.team ?? abbr}`)
+      && !hasFinding(`standings-gb-${abbr}`);
+    return claim(`${abbr}: ${row.wins}-${row.losses}, GB ${row.gb ?? "—"}, streak ${row.streak ?? "—"}`, {
+      covered: rowCovered,
+      note: [
+        rowCovered ? "W-L compared with the MLB standings API; games back reconciled against the leader; streak as published." : null,
+        row.is_phi ? "Phillies row also reconciles with the page header record." : null,
+      ].filter(Boolean).join(" ") || undefined,
+    });
+  }));
+
+  // The most recent final drives the streak sign and the recap. It is the one
+  // editorial score claim the source check actually compares to MLB.
+  const lastFinal = meta.last_final;
+  const recap = data?.sections?.recap;
+  addSection(sections, "recap", "Last Final", [
+    recap?.show && recap.content?.result?.summary_line
+      ? claim(`Recap: ${recap.content.result.summary_line}${recap.content.date ? ` (${recap.content.date})` : ""}`, {
+        covered: covered.recap && !hasFinding("recap-final-score"),
+        note: covered.recap ? "Compared with the MLB schedule and box score for that game." : undefined,
+      })
+      : null,
+    lastFinal && isScore(lastFinal.phi_runs) && isScore(lastFinal.opp_runs)
+      ? claim(`Last final: PHI ${lastFinal.phi_runs}, ${lastFinal.opp_abbr ?? "OPP"} ${lastFinal.opp_runs} (${lastFinal.date ?? "date unknown"}, ${lastFinal.outcome ?? "?"})`, {
+        covered: covered.recap && !hasFinding("recap-last-final-score"),
+        note: covered.recap ? "Compared with the MLB schedule for that game." : undefined,
+      })
+      : null,
+  ]);
 
   const lineup = data?.sections?.lineup?.content ?? {};
   addSection(sections, "lineup", "Lineup", buildLineupClaims(lineup));
@@ -679,11 +847,12 @@ export function buildAccuracyReport({ data, findings, generatedAt = new Date() }
     edition_date: editionDate,
     edition_label: editionLabel,
     generated_at: toIsoString(generatedAt),
-    method: "Generated by factcheck.mjs during the pipeline from the current Wire data artifact plus deterministic checks and MLB Stats API source checks where available. Weather forecast snapshots are marked unverifiable after the fact.",
+    method: "Generated by factcheck.mjs during the pipeline from the current Wire data artifact. A claim is marked accurate only when a deterministic check or an MLB Stats API source check compared it on this run; claims no check covers stay unverifiable and are listed as published. Weather forecast snapshots are always unverifiable after the fact.",
+    coverage: covered,
     verdict_legend: {
-      accurate: "Confirmed by the current pipeline source data and not contradicted by factcheck checks.",
+      accurate: "Compared with the MLB Stats API or a deterministic pipeline check on this run and not contradicted.",
       inaccurate: "Contradicted by a factcheck error or pipeline integrity finding.",
-      unverifiable: "Could not be confirmed or refuted from available sources.",
+      unverifiable: "No source check covers the claim on this run, or it could not be confirmed or refuted from available sources.",
     },
     relevancy_legend: {
       current: "Timely for the edition date.",
@@ -697,9 +866,17 @@ export function buildAccuracyReport({ data, findings, generatedAt = new Date() }
   };
 }
 
-function writeAccuracyReport(report, path = ACCURACY_REPORT_FILE) {
+export function writeAccuracyReport(report, path = ACCURACY_REPORT_FILE, sitePath = SITE_ACCURACY_REPORT_FILE) {
+  const text = `${JSON.stringify(report, null, 2)}\n`;
   mkdirSync(dirname(path), { recursive: true });
-  writeFileSync(path, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  writeFileSync(path, text, "utf8");
+  // Mirror into the site artifact only when render has already built it;
+  // a standalone factcheck run before render must not conjure a site tree.
+  if (sitePath && existsSync(dirname(dirname(dirname(sitePath))))) {
+    mkdirSync(dirname(sitePath), { recursive: true });
+    writeFileSync(sitePath, text, "utf8");
+  }
+  return text;
 }
 
 function addSection(sections, id, title, items) {
@@ -709,13 +886,20 @@ function addSection(sections, id, title, items) {
   }
 }
 
-function claim(text, { verdict = "accurate", relevancy = "current", note } = {}) {
+const UNCOVERED_NOTE = "No source check covers this claim on this run; shown as published, not verified.";
+
+// A claim is "accurate" only when the caller says a check covered it (or
+// passes an explicit verdict). The default is "unverifiable": the scorecard
+// must never report a verification that did not happen.
+function claim(text, { verdict, covered = false, relevancy = "current", note } = {}) {
+  const resolvedVerdict = verdict ?? (covered ? "accurate" : "unverifiable");
   const item = {
     claim: String(text),
-    verdict,
+    verdict: resolvedVerdict,
     relevancy,
   };
-  if (note) item.note = String(note);
+  const notes = [note, verdict == null && !covered ? UNCOVERED_NOTE : null].filter(Boolean);
+  if (notes.length) item.note = notes.map(String).join(" ");
   return item;
 }
 
@@ -814,7 +998,7 @@ function summarizeAccuracy(sections) {
     else summary.relevancy.current += 1;
   }
 
-  const parts = [`${summary.accurate} of ${summary.total_claims} checked claims verified accurate.`];
+  const parts = [`${summary.accurate} of ${summary.total_claims} published claims verified accurate by a source or pipeline check.`];
   parts.push(summary.inaccurate ? `${summary.inaccurate} inaccurate.` : "No inaccuracies.");
   if (summary.unverifiable) parts.push(`${summary.unverifiable} unverifiable.`);
   if (summary.relevancy.outdated) parts.push(`${summary.relevancy.outdated} outdated.`);
@@ -836,7 +1020,7 @@ function buildAccuracyHighlights(findings, summary) {
     highlights.push({
       tone: "warn",
       title: `${summary.unverifiable} unverifiable claim${summary.unverifiable === 1 ? "" : "s"}`,
-      detail: "Unverifiable items are retained on the report instead of being treated as confirmed facts.",
+      detail: "Unverifiable items are retained on the report instead of being treated as confirmed facts. Claims no check covers on this run are listed as published.",
     });
   }
   if (findings.stale.length === 0 && findings.pipeline.length === 0) {
@@ -1161,6 +1345,7 @@ export async function runFactcheck({ mode: m = "pre-publish" } = {}) {
   const { data, html } = loadLocalArtifacts();
   const findings = { accurate: [], errors: [], stale: [], unverified: [], pipeline: [] };
   runDeterministicChecks({ data, html, findings, whitelist: loadWhitelist() });
-  if (m === "daily") await runSourceChecks({ data, findings });
-  return { status: pickStatus(findings), findings };
+  let coverage = emptyCoverage();
+  if (m === "daily") coverage = await runSourceChecks({ data, findings });
+  return { status: pickStatus(findings), findings, coverage };
 }
