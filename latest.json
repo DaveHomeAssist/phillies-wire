@@ -4,7 +4,7 @@
   "edition_date": "2026-09-25",
   "volume": 1,
   "edition": 178,
-  "generated_at": "2026-09-25T23:34:03.877Z",
+  "generated_at": "2026-09-25T23:48:43.910Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, TB 2",
-    "dek": "Middle 4th · 3 outs",
-    "summary": "Bryce Harper is up against Freddy Peralta. Series: Regular Season.",
+    "dek": "Top 5th · 2 outs",
+    "summary": "Junior Caminero is up against Cristopher Sánchez. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Griffin Jax · PHI vs TB · Sat, Sep 26 · 7:15 PM"
   },
@@ -57,36 +57,31 @@
     "weather": {
       "temp_f": 67,
       "condition": "Overcast",
-      "wind": "13 mph · gusts 25",
+      "wind": "14 mph · gusts 25",
       "gusts_mph": 25
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
-        "meta": "vs Freddy Peralta"
+        "name": "Junior Caminero",
+        "meta": "vs Cristopher Sánchez"
       },
       "pitches": [
-        "S",
-        "S",
         "B",
-        "B",
-        "F",
-        "F",
-        "X"
+        "S"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 2,
-        "outs": 3
+        "balls": 1,
+        "strikes": 1,
+        "outs": 2
       },
       "bases": {
-        "first": false,
+        "first": true,
         "second": false,
         "third": false
       },
-      "status": "Middle 4th"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -94,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-25T23:34:03.962Z",
+    "updated_at": "2026-09-25T23:48:44.006Z",
     "current_game_pk": 823409,
     "next_game_pk": 823407,
     "next_game": {
