@@ -4,7 +4,7 @@
   "edition_date": "2026-09-25",
   "volume": 1,
   "edition": 178,
-  "generated_at": "2026-09-26T00:25:42.901Z",
+  "generated_at": "2026-09-26T01:06:39.660Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 0, TB 2",
-    "dek": "Top 7th · 1 out",
-    "summary": "Nick Fortes is up against Cristopher Sánchez. Series: Regular Season.",
+    "dek": "Bottom 9th · 0 outs",
+    "summary": "Alec Bohm is up against Bryan Baker. Series: Regular Season.",
     "next_label": "Tomorrow",
     "next_value": "Griffin Jax · PHI vs TB · Sat, Sep 26 · 7:15 PM"
   },
@@ -57,25 +57,20 @@
     "weather": {
       "temp_f": 67,
       "condition": "Overcast",
-      "wind": "14 mph · gusts 26",
-      "gusts_mph": 26
+      "wind": "16 mph · gusts 28",
+      "gusts_mph": 28
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Ben Williamson",
-        "meta": "vs Cristopher Sánchez"
+        "name": "Alec Bohm",
+        "meta": "vs Bryan Baker"
       },
-      "pitches": [
-        "S",
-        "B",
-        "F",
-        "B"
-      ],
+      "pitches": [],
       "count": {
-        "balls": 2,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "outs": 0
       },
       "bases": {
@@ -83,7 +78,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 7th"
+      "status": "Bottom 9th"
     },
     "recap_line": null
   },
@@ -91,7 +86,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-26T00:25:42.980Z",
+    "updated_at": "2026-09-26T01:06:39.775Z",
     "current_game_pk": 823409,
     "next_game_pk": 823407,
     "next_game": {
@@ -128,7 +123,7 @@
       "highlight": false
     },
     {
-      "text": "67° · Overcast · gusts 26 mph",
+      "text": "67° · Overcast · gusts 28 mph",
       "highlight": false
     }
   ]
