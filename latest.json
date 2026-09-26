@@ -4,21 +4,21 @@
   "edition_date": "2026-09-25",
   "volume": 1,
   "edition": 178,
-  "generated_at": "2026-09-26T01:06:39.660Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-26T01:32:38.843Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 87,
-    "losses": 72,
-    "streak": "L2",
+    "losses": 73,
+    "streak": "L3",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, TB 2",
-    "dek": "Bottom 9th · 0 outs",
-    "summary": "Alec Bohm is up against Bryan Baker. Series: Regular Season.",
+    "headline": "PHI 0, TB 2.",
+    "dek": "TB 2, PHI 0 · Cristopher Sánchez · 7.0 IP, 5 H, 2 ER, 10 K",
+    "summary": "PHI 0, TB 2. Final at Citizens Bank Park, Philadelphia. TB leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Griffin Jax · PHI vs TB · Sat, Sep 26 · 7:15 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "Regular Season"
+      "label": "TB leads 1-0"
     },
     "broadcast": {
       "tv": "NBCSP",
@@ -55,59 +55,42 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 67,
+      "temp_f": 68,
       "condition": "Overcast",
-      "wind": "16 mph · gusts 28",
-      "gusts_mph": 28
+      "wind": "17 mph · gusts 35",
+      "gusts_mph": 35
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Alec Bohm",
-        "meta": "vs Bryan Baker"
-      },
-      "pitches": [],
-      "count": {
-        "balls": 0,
-        "strikes": 0,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Bottom 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-26T01:06:39.775Z",
-    "current_game_pk": 823409,
-    "next_game_pk": 823407,
+    "updated_at": "2026-09-26T01:32:38.899Z",
+    "current_game_pk": 823407,
+    "next_game_pk": 823408,
     "next_game": {
-      "game_pk": 823407,
-      "official_date": "2026-09-26",
-      "date_label": "Sat, Sep 26, 2026",
-      "time_label": "7:15 PM",
+      "game_pk": 823408,
+      "official_date": "2026-09-27",
+      "date_label": "Sun, Sep 27, 2026",
+      "time_label": "3:05 PM",
       "title": "Tampa Bay Rays at Phillies",
       "matchup": "TB at PHI",
       "venue": "Citizens Bank Park"
     },
     "current_game": {
-      "game_pk": 823409,
-      "official_date": "2026-09-25",
+      "game_pk": 823407,
+      "official_date": "2026-09-26",
       "title": "Tampa Bay Rays at Phillies",
       "matchup": "TB at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 87-72",
+      "text": "PHI 87-73",
       "highlight": true
     },
     {
@@ -123,7 +106,7 @@
       "highlight": false
     },
     {
-      "text": "67° · Overcast · gusts 28 mph",
+      "text": "68° · Overcast · gusts 35 mph",
       "highlight": false
     }
   ]
