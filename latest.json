@@ -4,7 +4,7 @@
   "edition_date": "2026-09-27",
   "volume": 1,
   "edition": 180,
-  "generated_at": "2026-09-27T16:09:54.126Z",
+  "generated_at": "2026-09-27T16:26:36.496Z",
   "mode": "pregame",
   "mode_label": "Pregame",
   "off_day": false,
@@ -56,9 +56,9 @@
     },
     "weather": {
       "temp_f": 60,
-      "condition": "Light drizzle",
-      "wind": "19 mph · gusts 44",
-      "gusts_mph": 44
+      "condition": "Overcast",
+      "wind": "19 mph · gusts 45",
+      "gusts_mph": 45
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T16:09:54.190Z",
+    "updated_at": "2026-09-27T16:26:36.563Z",
     "current_game_pk": 823408,
     "next_game_pk": null,
     "next_game": null,
@@ -98,7 +98,15 @@
       "highlight": false
     },
     {
-      "text": "60° · Light drizzle · gusts 44 mph",
+      "text": "60° · Overcast · gusts 45 mph",
+      "highlight": false
+    },
+    {
+      "text": "activated LHP Jesús Luzardo from the 15-day injured list.",
+      "highlight": false
+    },
+    {
+      "text": "designated RHP José Urquidy for assignment.",
       "highlight": false
     }
   ]
