@@ -5,14 +5,14 @@
     "edition": 179,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-27T01:20:08.532Z",
+    "generated_at": "2026-09-27T01:52:03.881Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 26, 2026, 9:20 PM ET",
+      "generated_at_et": "Sep 26, 2026, 9:52 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 0, TB 5",
-    "dek": "Top 5th · 1 out",
-    "summary": "Jonny DeLuca is up against José Urquidy. Series: TB leads 1-0.",
+    "headline": "PHI 0, TB 10",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Trea Turner is up against Cam Booser. Series: TB leads 1-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "58° · Overcast"
+        "value": "58° · Drizzle"
       }
     ],
     "bullets": [
-      "Jonny DeLuca at the plate",
-      "José Urquidy on the mound",
+      "Trea Turner at the plate",
+      "Cam Booser on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Tomorrow",
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 58,
-          "condition": "Overcast",
-          "wind": "12 mph · gusts 34",
-          "gusts_mph": 34
+          "condition": "Drizzle",
+          "wind": "11 mph · gusts 30",
+          "gusts_mph": 30
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -373,15 +373,15 @@
           }
         },
         "linescore": {
-          "currentInning": 5,
-          "currentInningOrdinal": "5th",
-          "inningState": "Top",
-          "isTopInning": true,
+          "currentInning": 6,
+          "currentInningOrdinal": "6th",
+          "inningState": "Bottom",
+          "isTopInning": false,
           "outs": 1,
           "teams": {
             "away": {
-              "runs": 5,
-              "hits": 6,
+              "runs": 10,
+              "hits": 11,
               "errors": 0
             },
             "home": {
@@ -446,8 +446,21 @@
             {
               "num": 5,
               "away": {
-                "runs": 2,
-                "hits": 2,
+                "runs": 4,
+                "hits": 3,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 6,
+              "away": {
+                "runs": 3,
+                "hits": 4,
                 "errors": 0
               },
               "home": {
@@ -982,11 +995,221 @@
             "inning": 5,
             "half": "top",
             "team": "TB",
-            "event_type": "other",
+            "event_type": "strikeout",
             "actor": "Jonny DeLuca",
             "actor_id": 676356,
-            "detail": "Play",
+            "detail": "Jonny DeLuca strikes out swinging.",
             "score_after": "PHI 0, TB 5",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:38",
+            "inning": 5,
+            "half": "top",
+            "team": "TB",
+            "event_type": "single",
+            "actor": "Cedric Mullins",
+            "actor_id": 656775,
+            "detail": "Cedric Mullins singles on a ground ball to center fielder Justin Crawford. Junior Caminero scores. Victor Mesa Jr. scores. Richie P…",
+            "score_after": "PHI 0, TB 7",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823407:39",
+            "inning": 5,
+            "half": "top",
+            "team": "TB",
+            "event_type": "strikeout",
+            "actor": "Taylor Walls",
+            "actor_id": 670764,
+            "detail": "Taylor Walls called out on strikes.",
+            "score_after": "PHI 0, TB 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:40",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott flies out to left fielder Victor Mesa Jr.",
+            "score_after": "PHI 0, TB 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:41",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Bryan De La Cruz",
+            "actor_id": 650559,
+            "detail": "Bryan De La Cruz strikes out swinging.",
+            "score_after": "PHI 0, TB 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:42",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh walks.",
+            "score_after": "PHI 0, TB 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:43",
+            "inning": 5,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out, shortstop Taylor Walls to first baseman Jonathan Aranda.",
+            "score_after": "PHI 0, TB 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:44",
+            "inning": 6,
+            "half": "top",
+            "team": "TB",
+            "event_type": "single",
+            "actor": "Yandy Díaz",
+            "actor_id": 650490,
+            "detail": "Yandy Díaz singles on a line drive to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 0, TB 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:45",
+            "inning": 6,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Jonathan Aranda",
+            "actor_id": 666018,
+            "detail": "Jonathan Aranda flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 0, TB 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:46",
+            "inning": 6,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Liam Hicks",
+            "actor_id": 689414,
+            "detail": "Liam Hicks flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 0, TB 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:47",
+            "inning": 6,
+            "half": "top",
+            "team": "TB",
+            "event_type": "single",
+            "actor": "Junior Caminero",
+            "actor_id": 691406,
+            "detail": "Junior Caminero singles on a ground ball to left fielder Brandon Marsh. Yandy Díaz to 2nd.",
+            "score_after": "PHI 0, TB 7",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:48",
+            "inning": 6,
+            "half": "top",
+            "team": "TB",
+            "event_type": "extra_base_hit",
+            "actor": "Victor Mesa Jr.",
+            "actor_id": 683748,
+            "detail": "Victor Mesa Jr. doubles (8) on a line drive to right fielder Bryan De La Cruz. Yandy Díaz scores. Junior Caminero to 3rd.",
+            "score_after": "PHI 0, TB 8",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823407:49",
+            "inning": 6,
+            "half": "top",
+            "team": "TB",
+            "event_type": "single",
+            "actor": "Richie Palacios",
+            "actor_id": 680700,
+            "detail": "Richie Palacios singles on a line drive to right fielder Bryan De La Cruz. Junior Caminero scores. Victor Mesa Jr. scores.",
+            "score_after": "PHI 0, TB 10",
+            "runs": 2,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823407:50",
+            "inning": 6,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Jonny DeLuca",
+            "actor_id": 676356,
+            "detail": "Jonny DeLuca flies out to right fielder Bryan De La Cruz.",
+            "score_after": "PHI 0, TB 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:51",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford challenged (pitch result), call on the field was confirmed: Justin Crawford called out on strikes.",
+            "score_after": "PHI 0, TB 10",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823407:52",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Play",
+            "score_after": "PHI 0, TB 10",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
@@ -994,25 +1217,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Jonny DeLuca",
-            "meta": "vs José Urquidy"
+            "name": "Trea Turner",
+            "meta": "vs Cam Booser"
           },
           "pitches": [
-            "B",
-            "B",
-            "F"
+            "S",
+            "S"
           ],
           "count": {
-            "balls": 2,
-            "strikes": 1,
+            "balls": 0,
+            "strikes": 2,
             "outs": 1
           },
           "bases": {
-            "first": true,
-            "second": true,
-            "third": true
+            "first": false,
+            "second": false,
+            "third": false
           },
-          "status": "Top 5th"
+          "status": "Bottom 6th"
         }
       }
     },
@@ -1029,8 +1251,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T01:20:08.532Z",
-            "freshness_label": "As of Sep 26, 2026, 9:20 PM ET"
+            "last_confirmed": "2026-09-27T01:52:03.881Z",
+            "freshness_label": "As of Sep 26, 2026, 9:52 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1042,8 +1264,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T01:20:08.532Z",
-            "freshness_label": "As of Sep 26, 2026, 9:20 PM ET"
+            "last_confirmed": "2026-09-27T01:52:03.881Z",
+            "freshness_label": "As of Sep 26, 2026, 9:52 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1055,8 +1277,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T01:20:08.532Z",
-            "freshness_label": "As of Sep 26, 2026, 9:20 PM ET"
+            "last_confirmed": "2026-09-27T01:52:03.881Z",
+            "freshness_label": "As of Sep 26, 2026, 9:52 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1068,8 +1290,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T01:20:08.532Z",
-            "freshness_label": "As of Sep 26, 2026, 9:20 PM ET"
+            "last_confirmed": "2026-09-27T01:52:03.881Z",
+            "freshness_label": "As of Sep 26, 2026, 9:52 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1081,8 +1303,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T01:20:08.532Z",
-            "freshness_label": "As of Sep 26, 2026, 9:20 PM ET"
+            "last_confirmed": "2026-09-27T01:52:03.881Z",
+            "freshness_label": "As of Sep 26, 2026, 9:52 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1094,8 +1316,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T01:20:08.532Z",
-            "freshness_label": "As of Sep 26, 2026, 9:20 PM ET"
+            "last_confirmed": "2026-09-27T01:52:03.881Z",
+            "freshness_label": "As of Sep 26, 2026, 9:52 PM ET"
           },
           {
             "name": "Jesús Luzardo",
@@ -1107,8 +1329,8 @@
             "retroactive_to": "2026-09-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T01:20:08.532Z",
-            "freshness_label": "As of Sep 26, 2026, 9:20 PM ET"
+            "last_confirmed": "2026-09-27T01:52:03.881Z",
+            "freshness_label": "As of Sep 26, 2026, 9:52 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

@@ -4,7 +4,7 @@
   "edition_date": "2026-09-26",
   "volume": 1,
   "edition": 179,
-  "generated_at": "2026-09-27T01:20:08.532Z",
+  "generated_at": "2026-09-27T01:52:03.881Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, TB 5",
-    "dek": "Top 5th · 1 out",
-    "summary": "Jonny DeLuca is up against José Urquidy. Series: TB leads 1-0.",
+    "headline": "PHI 0, TB 10",
+    "dek": "Bottom 6th · 1 out",
+    "summary": "Trea Turner is up against Cam Booser. Series: TB leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 3:05 PM"
   },
@@ -56,33 +56,32 @@
     },
     "weather": {
       "temp_f": 58,
-      "condition": "Overcast",
-      "wind": "12 mph · gusts 34",
-      "gusts_mph": 34
+      "condition": "Drizzle",
+      "wind": "11 mph · gusts 30",
+      "gusts_mph": 30
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jonny DeLuca",
-        "meta": "vs José Urquidy"
+        "name": "Trea Turner",
+        "meta": "vs Cam Booser"
       },
       "pitches": [
-        "B",
-        "B",
-        "F"
+        "S",
+        "S"
       ],
       "count": {
-        "balls": 2,
-        "strikes": 1,
+        "balls": 0,
+        "strikes": 2,
         "outs": 1
       },
       "bases": {
-        "first": true,
-        "second": true,
-        "third": true
+        "first": false,
+        "second": false,
+        "third": false
       },
-      "status": "Top 5th"
+      "status": "Bottom 6th"
     },
     "recap_line": null
   },
@@ -90,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T01:20:08.666Z",
+    "updated_at": "2026-09-27T01:52:05.671Z",
     "current_game_pk": 823407,
     "next_game_pk": 823408,
     "next_game": {
@@ -127,7 +126,7 @@
       "highlight": false
     },
     {
-      "text": "58° · Overcast · gusts 34 mph",
+      "text": "58° · Drizzle · gusts 30 mph",
       "highlight": false
     }
   ]
