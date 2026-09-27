@@ -5,14 +5,14 @@
     "edition": 180,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-27T19:33:56.233Z",
+    "generated_at": "2026-09-27T19:48:55.839Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 27, 2026, 3:33 PM ET",
+      "generated_at_et": "Sep 27, 2026, 3:48 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 4, TB 0",
-    "dek": "Bottom 3rd · 1 out",
-    "summary": "Edmundo Sosa is up against Nick Martinez. Series: TB leads 2-0.",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "J.T. Realmuto is up against Jesse Scholtens. Series: TB leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "64° · Drizzle"
+        "value": "63° · Overcast"
       }
     ],
     "bullets": [
-      "Edmundo Sosa at the plate",
-      "Nick Martinez on the mound",
+      "J.T. Realmuto at the plate",
+      "Jesse Scholtens on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Next Game",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 64,
-          "condition": "Drizzle",
-          "wind": "14 mph · gusts 35",
-          "gusts_mph": 35
+          "temp_f": 63,
+          "condition": "Overcast",
+          "wind": "15 mph · gusts 33",
+          "gusts_mph": 33
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "3.00",
+            "era": "2.98",
             "record": "13-5",
             "whip": "1.04"
           },
@@ -367,21 +367,21 @@
             "team": "TB",
             "name": "Nick Martinez",
             "hand": "R",
-            "era": "3.11",
+            "era": "3.10",
             "record": "15-5",
             "whip": "1.09"
           }
         },
         "linescore": {
-          "currentInning": 3,
-          "currentInningOrdinal": "3rd",
+          "currentInning": 4,
+          "currentInningOrdinal": "4th",
           "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 1,
+          "outs": 0,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 1,
+              "hits": 2,
               "errors": 0
             },
             "home": {
@@ -425,8 +425,21 @@
                 "errors": 0
               },
               "home": {
-                "runs": null,
+                "runs": 0,
                 "hits": 1,
+                "errors": 0
+              }
+            },
+            {
+              "num": 4,
+              "away": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": null,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -788,9 +801,93 @@
             "inning": 3,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Edmundo Sosa",
             "actor_id": 624641,
+            "detail": "Edmundo Sosa flies out to second baseman Richie Palacios.",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:26",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford grounds out, first baseman Jonathan Aranda to pitcher Ian Seymour.",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:27",
+            "inning": 4,
+            "half": "top",
+            "team": "TB",
+            "event_type": "extra_base_hit",
+            "actor": "Jonathan Aranda",
+            "actor_id": 666018,
+            "detail": "Jonathan Aranda doubles (27) on a ground ball to right fielder Bryce Harper.",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823408:28",
+            "inning": 4,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Junior Caminero",
+            "actor_id": 691406,
+            "detail": "Junior Caminero lines out to shortstop Trea Turner.",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:29",
+            "inning": 4,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Liam Hicks",
+            "actor_id": 689414,
+            "detail": "Liam Hicks flies out to left fielder Brandon Marsh.",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:30",
+            "inning": 4,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Richie Palacios",
+            "actor_id": 680700,
+            "detail": "Richie Palacios pops out to second baseman Bryson Stott.",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:31",
+            "inning": 4,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
             "detail": "Play",
             "score_after": "PHI 4, TB 0",
             "runs": 0,
@@ -800,23 +897,24 @@
         ],
         "situation": {
           "batter": {
-            "name": "Edmundo Sosa",
-            "meta": "vs Nick Martinez"
+            "name": "J.T. Realmuto",
+            "meta": "vs Jesse Scholtens"
           },
           "pitches": [
-            "X"
+            "F",
+            "S"
           ],
           "count": {
             "balls": 0,
-            "strikes": 0,
-            "outs": 1
+            "strikes": 2,
+            "outs": 0
           },
           "bases": {
             "first": false,
-            "second": true,
-            "third": true
+            "second": false,
+            "third": false
           },
-          "status": "Bottom 3rd"
+          "status": "Bottom 4th"
         }
       }
     },
@@ -833,8 +931,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:33:56.233Z",
-            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
+            "last_confirmed": "2026-09-27T19:48:55.839Z",
+            "freshness_label": "As of Sep 27, 2026, 3:48 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -846,8 +944,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:33:56.233Z",
-            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
+            "last_confirmed": "2026-09-27T19:48:55.839Z",
+            "freshness_label": "As of Sep 27, 2026, 3:48 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -859,8 +957,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:33:56.233Z",
-            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
+            "last_confirmed": "2026-09-27T19:48:55.839Z",
+            "freshness_label": "As of Sep 27, 2026, 3:48 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -872,8 +970,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:33:56.233Z",
-            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
+            "last_confirmed": "2026-09-27T19:48:55.839Z",
+            "freshness_label": "As of Sep 27, 2026, 3:48 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -885,8 +983,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:33:56.233Z",
-            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
+            "last_confirmed": "2026-09-27T19:48:55.839Z",
+            "freshness_label": "As of Sep 27, 2026, 3:48 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -898,8 +996,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:33:56.233Z",
-            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
+            "last_confirmed": "2026-09-27T19:48:55.839Z",
+            "freshness_label": "As of Sep 27, 2026, 3:48 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."

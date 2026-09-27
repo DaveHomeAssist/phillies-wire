@@ -4,7 +4,7 @@
   "edition_date": "2026-09-27",
   "volume": 1,
   "edition": 180,
-  "generated_at": "2026-09-27T19:33:56.233Z",
+  "generated_at": "2026-09-27T19:48:55.839Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -17,8 +17,8 @@
   },
   "hero": {
     "headline": "PHI 4, TB 0",
-    "dek": "Bottom 3rd · 1 out",
-    "summary": "Edmundo Sosa is up against Nick Martinez. Series: TB leads 2-0.",
+    "dek": "Bottom 4th · 0 outs",
+    "summary": "J.T. Realmuto is up against Jesse Scholtens. Series: TB leads 2-0.",
     "next_label": "Next Game",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 2:30 PM"
   },
@@ -55,32 +55,33 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 64,
-      "condition": "Drizzle",
-      "wind": "14 mph · gusts 35",
-      "gusts_mph": 35
+      "temp_f": 63,
+      "condition": "Overcast",
+      "wind": "15 mph · gusts 33",
+      "gusts_mph": 33
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Edmundo Sosa",
-        "meta": "vs Nick Martinez"
+        "name": "J.T. Realmuto",
+        "meta": "vs Jesse Scholtens"
       },
       "pitches": [
-        "X"
+        "F",
+        "S"
       ],
       "count": {
         "balls": 0,
-        "strikes": 0,
-        "outs": 1
+        "strikes": 2,
+        "outs": 0
       },
       "bases": {
         "first": false,
-        "second": true,
-        "third": true
+        "second": false,
+        "third": false
       },
-      "status": "Bottom 3rd"
+      "status": "Bottom 4th"
     },
     "recap_line": null
   },
@@ -88,7 +89,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T19:33:56.390Z",
+    "updated_at": "2026-09-27T19:48:55.918Z",
     "current_game_pk": 823408,
     "next_game_pk": null,
     "next_game": null,
@@ -117,7 +118,7 @@
       "highlight": false
     },
     {
-      "text": "64° · Drizzle · gusts 35 mph",
+      "text": "63° · Overcast · gusts 33 mph",
       "highlight": false
     },
     {
