@@ -5,14 +5,14 @@
     "edition": 180,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-27T13:16:37.418Z",
+    "generated_at": "2026-09-27T16:09:54.126Z",
     "status": {
       "mode": "pregame",
       "mode_label": "Pregame",
       "crawl_state": "ok",
-      "enrich_state": "enriched",
-      "enrich_label": "Editorial copy enriched via Claude.",
-      "generated_at_et": "Sep 27, 2026, 9:16 AM ET",
+      "enrich_state": "skipped",
+      "enrich_label": "Pregame edition",
+      "generated_at_et": "Sep 27, 2026, 12:09 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -34,7 +34,7 @@
     "cards": [
       {
         "label": "First Pitch",
-        "value": "3:05 PM"
+        "value": "2:30 PM"
       },
       {
         "label": "Venue",
@@ -46,11 +46,11 @@
       }
     ],
     "bullets": [
-      "59° · Light drizzle · 15 mph · gusts 35",
-      "Regular Season"
+      "60° · Light drizzle · 19 mph · gusts 44",
+      "TB leads 2-0"
     ],
     "next_label": "Next Game",
-    "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 3:05 PM"
+    "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 2:30 PM"
   },
   "sections": {
     "lineup": {
@@ -60,7 +60,7 @@
         "mode": "pending",
         "mode_label": "Pending",
         "show_orders": false,
-        "first_pitch": "3:05 PM",
+        "first_pitch": "2:30 PM",
         "starters": {
           "home": {
             "team": "PHI",
@@ -87,57 +87,57 @@
           "home": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             }
           ],
           "away": [
@@ -199,57 +199,57 @@
           "phi": [
             {
               "slot": 1,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Trea Turner",
+              "position": "SS",
+              "bats": "R"
             },
             {
               "slot": 2,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Kyle Schwarber",
+              "position": "DH",
+              "bats": "L"
             },
             {
               "slot": 3,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryce Harper",
+              "position": "RF",
+              "bats": "L"
             },
             {
               "slot": 4,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Bryson Stott",
+              "position": "2B",
+              "bats": "L"
             },
             {
               "slot": 5,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Alec Bohm",
+              "position": "1B",
+              "bats": "R"
             },
             {
               "slot": 6,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Brandon Marsh",
+              "position": "LF",
+              "bats": "L"
             },
             {
               "slot": 7,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Edmundo Sosa",
+              "position": "3B",
+              "bats": "R"
             },
             {
               "slot": 8,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "Justin Crawford",
+              "position": "CF",
+              "bats": "L"
             },
             {
               "slot": 9,
-              "name": "Pending",
-              "position": "",
-              "bats": ""
+              "name": "J.T. Realmuto",
+              "position": "C",
+              "bats": "R"
             }
           ],
           "opp": [
@@ -314,7 +314,7 @@
     "game_status": {
       "content": {
         "matchup": "Rays @ Phillies · Game 3 of 3",
-        "first_pitch": "3:05 PM",
+        "first_pitch": "2:30 PM",
         "venue": "Citizens Bank Park, Philadelphia",
         "starters": {
           "home": {
@@ -337,7 +337,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "Regular Season"
+          "label": "TB leads 2-0"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -345,10 +345,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 59,
+          "temp_f": 60,
           "condition": "Light drizzle",
-          "wind": "15 mph · gusts 35",
-          "gusts_mph": 35
+          "wind": "19 mph · gusts 44",
+          "gusts_mph": 44
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -407,8 +407,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T13:16:37.418Z",
-            "freshness_label": "As of Sep 27, 2026, 9:16 AM ET"
+            "last_confirmed": "2026-09-27T16:09:54.126Z",
+            "freshness_label": "As of Sep 27, 2026, 12:09 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -420,8 +420,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T13:16:37.418Z",
-            "freshness_label": "As of Sep 27, 2026, 9:16 AM ET"
+            "last_confirmed": "2026-09-27T16:09:54.126Z",
+            "freshness_label": "As of Sep 27, 2026, 12:09 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -433,8 +433,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T13:16:37.418Z",
-            "freshness_label": "As of Sep 27, 2026, 9:16 AM ET"
+            "last_confirmed": "2026-09-27T16:09:54.126Z",
+            "freshness_label": "As of Sep 27, 2026, 12:09 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -446,8 +446,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T13:16:37.418Z",
-            "freshness_label": "As of Sep 27, 2026, 9:16 AM ET"
+            "last_confirmed": "2026-09-27T16:09:54.126Z",
+            "freshness_label": "As of Sep 27, 2026, 12:09 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -459,8 +459,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T13:16:37.418Z",
-            "freshness_label": "As of Sep 27, 2026, 9:16 AM ET"
+            "last_confirmed": "2026-09-27T16:09:54.126Z",
+            "freshness_label": "As of Sep 27, 2026, 12:09 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -472,8 +472,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T13:16:37.418Z",
-            "freshness_label": "As of Sep 27, 2026, 9:16 AM ET"
+            "last_confirmed": "2026-09-27T16:09:54.126Z",
+            "freshness_label": "As of Sep 27, 2026, 12:09 PM ET"
           },
           {
             "name": "Jesús Luzardo",
@@ -485,8 +485,8 @@
             "retroactive_to": "2026-09-12",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T13:16:37.418Z",
-            "freshness_label": "As of Sep 27, 2026, 9:16 AM ET"
+            "last_confirmed": "2026-09-27T16:09:54.126Z",
+            "freshness_label": "As of Sep 27, 2026, 12:09 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
@@ -497,7 +497,7 @@
     "label": "Next Game",
     "matchup": "Zack Wheeler vs Nick Martinez · PHI vs TB",
     "date": "Sun, Sep 27",
-    "time": "3:05 PM",
+    "time": "2:30 PM",
     "broadcast": "NBCSP",
     "venue": "Citizens Bank Park"
   }
