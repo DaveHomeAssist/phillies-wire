@@ -5,313 +5,56 @@
     "edition": 180,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-27T21:08:49.579Z",
+    "generated_at": "2026-09-27T21:22:56.168Z",
     "status": {
-      "mode": "live",
-      "mode_label": "Live",
+      "mode": "final",
+      "mode_label": "Final",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "Live update",
-      "generated_at_et": "Sep 27, 2026, 5:08 PM ET",
+      "enrich_label": "Final edition",
+      "generated_at_et": "Sep 27, 2026, 5:22 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
     }
   },
   "record": {
-    "wins": 87,
+    "wins": 88,
     "losses": 74,
-    "streak": "L4",
+    "streak": "W1",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "mode": "live",
-    "label": "Live",
-    "headline": "PHI 7, TB 3",
-    "dek": "Bottom 8th · 1 out",
-    "summary": "Trea Turner is up against Casey Legumina. Series: TB leads 2-0.",
+    "mode": "final",
+    "label": "Final",
+    "headline": "PHI 7, TB 3.",
+    "dek": "PHI 7, TB 3 · Zack Wheeler · 6.0 IP, 5 H, 1 ER, 5 K",
+    "summary": "PHI 7, TB 3. Final at Citizens Bank Park, Philadelphia. TB wins 2-1.",
     "cards": [
+      {
+        "label": "Winning Pitcher",
+        "value": "TBD"
+      },
       {
         "label": "Venue",
         "value": "Citizens Bank Park, Philadelphia"
       },
       {
-        "label": "Broadcast",
-        "value": "NBCSP · MLB.TV · 94 WIP"
-      },
-      {
-        "label": "Weather",
-        "value": "62° · Overcast"
+        "label": "Series",
+        "value": "TB wins 2-1"
       }
     ],
     "bullets": [
-      "Trea Turner at the plate",
-      "Casey Legumina on the mound",
-      "Citizens Bank Park, Philadelphia"
+      "Zack Wheeler: 6.0 IP, 5 H, 1 ER, 5 K",
+      "Jesse Scholtens: 3.0 IP, 3 H, 3 ER, 3 K",
+      "Jonny DeLuca: 2-for-4, 2 HR, 2 RBI, 2 R"
     ],
-    "next_label": "Next Game",
-    "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 2:30 PM"
+    "next_label": "Tomorrow",
+    "next_value": "PHI @ ATL · Tue, Sep 29 · 2:00 PM"
   },
   "sections": {
-    "lineup": {
-      "content": {
-        "status_note": "Official batting orders confirmed for today's TB at PHI game.",
-        "announced": true,
-        "mode": "official",
-        "mode_label": "Official",
-        "show_orders": true,
-        "first_pitch": "2:30 PM",
-        "starters": {
-          "home": {
-            "team": "PHI",
-            "name": "Zack Wheeler",
-            "hand": "R"
-          },
-          "away": {
-            "team": "TB",
-            "name": "Nick Martinez",
-            "hand": "R"
-          },
-          "phi": {
-            "team": "PHI",
-            "name": "Zack Wheeler",
-            "hand": "R"
-          },
-          "opp": {
-            "team": "TB",
-            "name": "Nick Martinez",
-            "hand": "R"
-          }
-        },
-        "batting_order": {
-          "home": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Edmundo Sosa",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "away": [
-            {
-              "slot": 1,
-              "name": "Victor Mesa Jr.",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Jonathan Aranda",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Junior Caminero",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Liam Hicks",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Richie Palacios",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Jonny DeLuca",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Cedric Mullins",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Nick Fortes",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Jorge Mateo",
-              "position": "SS",
-              "bats": "R"
-            }
-          ],
-          "phi": [
-            {
-              "slot": 1,
-              "name": "Trea Turner",
-              "position": "SS",
-              "bats": "R"
-            },
-            {
-              "slot": 2,
-              "name": "Kyle Schwarber",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Bryce Harper",
-              "position": "RF",
-              "bats": "L"
-            },
-            {
-              "slot": 4,
-              "name": "Bryson Stott",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Alec Bohm",
-              "position": "1B",
-              "bats": "R"
-            },
-            {
-              "slot": 6,
-              "name": "Brandon Marsh",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 7,
-              "name": "Edmundo Sosa",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 8,
-              "name": "Justin Crawford",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 9,
-              "name": "J.T. Realmuto",
-              "position": "C",
-              "bats": "R"
-            }
-          ],
-          "opp": [
-            {
-              "slot": 1,
-              "name": "Victor Mesa Jr.",
-              "position": "LF",
-              "bats": "L"
-            },
-            {
-              "slot": 2,
-              "name": "Jonathan Aranda",
-              "position": "1B",
-              "bats": "L"
-            },
-            {
-              "slot": 3,
-              "name": "Junior Caminero",
-              "position": "3B",
-              "bats": "R"
-            },
-            {
-              "slot": 4,
-              "name": "Liam Hicks",
-              "position": "DH",
-              "bats": "L"
-            },
-            {
-              "slot": 5,
-              "name": "Richie Palacios",
-              "position": "2B",
-              "bats": "L"
-            },
-            {
-              "slot": 6,
-              "name": "Jonny DeLuca",
-              "position": "RF",
-              "bats": "R"
-            },
-            {
-              "slot": 7,
-              "name": "Cedric Mullins",
-              "position": "CF",
-              "bats": "L"
-            },
-            {
-              "slot": 8,
-              "name": "Nick Fortes",
-              "position": "C",
-              "bats": "R"
-            },
-            {
-              "slot": 9,
-              "name": "Jorge Mateo",
-              "position": "SS",
-              "bats": "R"
-            }
-          ]
-        }
-      }
-    },
+    "lineup": null,
     "game_status": {
       "content": {
         "matchup": "Rays @ Phillies · Game 3 of 3",
@@ -338,7 +81,7 @@
         "series": {
           "home_wins": 0,
           "away_wins": 0,
-          "label": "TB leads 2-0"
+          "label": "TB wins 2-1"
         },
         "broadcast": {
           "tv": "NBCSP",
@@ -348,8 +91,8 @@
         "weather": {
           "temp_f": 62,
           "condition": "Overcast",
-          "wind": "11 mph · gusts 30",
-          "gusts_mph": 30
+          "wind": "12 mph · gusts 29",
+          "gusts_mph": 29
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -360,7 +103,7 @@
             "name": "Zack Wheeler",
             "hand": "R",
             "era": "3.00",
-            "record": "13-5",
+            "record": "14-5",
             "whip": "1.05"
           },
           "away": {
@@ -368,16 +111,16 @@
             "name": "Nick Martinez",
             "hand": "R",
             "era": "3.10",
-            "record": "15-5",
+            "record": "15-6",
             "whip": "1.09"
           }
         },
         "linescore": {
-          "currentInning": 8,
-          "currentInningOrdinal": "8th",
-          "inningState": "Bottom",
-          "isTopInning": false,
-          "outs": 1,
+          "currentInning": 9,
+          "currentInningOrdinal": "9th",
+          "inningState": "Top",
+          "isTopInning": true,
+          "outs": 3,
           "teams": {
             "away": {
               "runs": 3,
@@ -386,7 +129,7 @@
             },
             "home": {
               "runs": 7,
-              "hits": 11,
+              "hits": 12,
               "errors": 0
             }
           },
@@ -490,8 +233,21 @@
                 "errors": 0
               },
               "home": {
+                "runs": 0,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 9,
+              "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              },
+              "home": {
                 "runs": null,
-                "hits": 1,
+                "hits": 0,
                 "errors": 0
               }
             }
@@ -1455,49 +1211,96 @@
             "inning": 8,
             "half": "bottom",
             "team": "PHI",
-            "event_type": "other",
+            "event_type": "single",
             "actor": "Trea Turner",
             "actor_id": 607208,
-            "detail": "Play",
+            "detail": "Trea Turner singles on a line drive to right fielder Jonny DeLuca. Justin Crawford to 2nd.",
+            "score_after": "PHI 7, TB 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:69",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber grounds out to first baseman Ryan Vilade. Justin Crawford to 3rd. Trea Turner to 2nd.",
+            "score_after": "PHI 7, TB 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:70",
+            "inning": 8,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper grounds out, pitcher Casey Legumina to first baseman Ryan Vilade.",
+            "score_after": "PHI 7, TB 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:71",
+            "inning": 9,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Jonny DeLuca",
+            "actor_id": 676356,
+            "detail": "Jonny DeLuca grounds out softly, pitcher Jhoan Duran to first baseman Alec Bohm.",
+            "score_after": "PHI 7, TB 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:72",
+            "inning": 9,
+            "half": "top",
+            "team": "TB",
+            "event_type": "strikeout",
+            "actor": "Cedric Mullins",
+            "actor_id": 656775,
+            "detail": "Cedric Mullins strikes out swinging.",
+            "score_after": "PHI 7, TB 3",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:73",
+            "inning": 9,
+            "half": "top",
+            "team": "TB",
+            "event_type": "strikeout",
+            "actor": "Nick Fortes",
+            "actor_id": 663743,
+            "detail": "Nick Fortes strikes out swinging.",
             "score_after": "PHI 7, TB 3",
             "runs": 0,
             "is_scoring": false,
             "is_key": false
           }
-        ],
-        "situation": {
-          "batter": {
-            "name": "Trea Turner",
-            "meta": "vs Casey Legumina"
-          },
-          "pitches": [
-            "B",
-            "F",
-            "S",
-            "X"
-          ],
-          "count": {
-            "balls": 1,
-            "strikes": 2,
-            "outs": 1
-          },
-          "bases": {
-            "first": true,
-            "second": false,
-            "third": false
-          },
-          "status": "Bottom 8th"
-        }
+        ]
       }
     },
     "injury_report": null
   },
   "next_game": {
-    "label": "Next Game",
-    "matchup": "Zack Wheeler vs Nick Martinez · PHI vs TB",
-    "date": "Sun, Sep 27",
-    "time": "2:30 PM",
-    "broadcast": "NBCSP",
-    "venue": "Citizens Bank Park"
+    "label": "Tomorrow",
+    "matchup": "PHI @ ATL",
+    "date": "Tue, Sep 29",
+    "time": "2:00 PM",
+    "broadcast": "NBC/Peacock",
+    "venue": "Truist Park"
   }
 }

@@ -2,10 +2,10 @@
   "schema_version": "1.0.0",
   "publication": "Phillies Wire",
   "season": 2026,
-  "generated_at": "2026-09-27T21:08:49.661Z",
+  "generated_at": "2026-09-27T21:22:56.318Z",
   "source": {
     "provider": "MLB Stats API",
-    "fetched_at": "2026-09-27T21:08:49.914Z",
+    "fetched_at": "2026-09-27T21:22:56.625Z",
     "query": {
       "sportId": "1",
       "teamId": "143",
@@ -18,10 +18,10 @@
     "total_games": 162,
     "home_games": 81,
     "away_games": 81,
-    "completed_games": 161,
-    "current_game_pk": 823408,
+    "completed_games": 162,
+    "current_game_pk": null,
     "next_game_pk": null,
-    "latest_completed_game_pk": 823407
+    "latest_completed_game_pk": 823408
   },
   "games": [
     {
@@ -18099,10 +18099,10 @@
           "name": "Zack Wheeler"
         },
         "league_record": {
-          "wins": 87,
+          "wins": 88,
           "losses": 74,
           "ties": 0,
-          "pct": ".540"
+          "pct": ".543"
         }
       },
       "opponent": {
@@ -18117,9 +18117,9 @@
         },
         "league_record": {
           "wins": 98,
-          "losses": 63,
+          "losses": 64,
           "ties": 0,
-          "pct": ".609"
+          "pct": ".605"
         }
       },
       "teams": {
@@ -18128,16 +18128,16 @@
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
           "score": 7,
-          "is_winner": false,
+          "is_winner": true,
           "probable_pitcher": {
             "id": 554430,
             "name": "Zack Wheeler"
           },
           "league_record": {
-            "wins": 87,
+            "wins": 88,
             "losses": 74,
             "ties": 0,
-            "pct": ".540"
+            "pct": ".543"
           }
         },
         "away": {
@@ -18152,9 +18152,9 @@
           },
           "league_record": {
             "wins": 98,
-            "losses": 63,
+            "losses": 64,
             "ties": 0,
-            "pct": ".609"
+            "pct": ".605"
           }
         }
       },
@@ -18163,9 +18163,9 @@
         "name": "Citizens Bank Park"
       },
       "status": {
-        "abstract": "Live",
-        "detailed": "In Progress",
-        "code": "I",
+        "abstract": "Final",
+        "detailed": "Final",
+        "code": "F",
         "start_time_tbd": false
       },
       "score": {
@@ -18174,11 +18174,11 @@
         "home": 7,
         "away": 3
       },
-      "result": null,
+      "result": "W",
       "series": {
         "game_number": 3,
         "total_games": 3,
-        "label": "TB leads 2-0",
+        "label": "TB wins 2-1",
         "description": "Regular Season"
       },
       "description": null,
