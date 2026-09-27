@@ -4,7 +4,7 @@
   "edition_date": "2026-09-27",
   "volume": 1,
   "edition": 180,
-  "generated_at": "2026-09-27T20:24:59.765Z",
+  "generated_at": "2026-09-27T20:36:25.348Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 7, TB 1",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "J.T. Realmuto is up against Jesse Scholtens. Series: TB leads 2-0.",
+    "headline": "PHI 7, TB 2",
+    "dek": "Top 7th · 0 outs",
+    "summary": "Jonny DeLuca is up against Alex McFarlane. Series: TB leads 2-0.",
     "next_label": "Next Game",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 2:30 PM"
   },
@@ -55,36 +55,39 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 63,
+      "temp_f": 62,
       "condition": "Overcast",
-      "wind": "13 mph · gusts 28",
-      "gusts_mph": 28
+      "wind": "13 mph · gusts 30",
+      "gusts_mph": 30
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "J.T. Realmuto",
-        "meta": "vs Jesse Scholtens"
+        "name": "Jonny DeLuca",
+        "meta": "vs Alex McFarlane"
       },
       "pitches": [
+        "B",
+        "B",
+        "B",
         "S",
-        "B",
         "F",
-        "B",
+        "F",
+        "F",
         "X"
       ],
       "count": {
-        "balls": 2,
+        "balls": 3,
         "strikes": 2,
-        "outs": 3
+        "outs": 0
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Middle 6th"
+      "status": "Top 7th"
     },
     "recap_line": null
   },
@@ -92,7 +95,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T20:24:59.833Z",
+    "updated_at": "2026-09-27T20:36:25.429Z",
     "current_game_pk": 823408,
     "next_game_pk": null,
     "next_game": null,
@@ -121,7 +124,7 @@
       "highlight": false
     },
     {
-      "text": "63° · Overcast · gusts 28 mph",
+      "text": "62° · Overcast · gusts 30 mph",
       "highlight": false
     },
     {

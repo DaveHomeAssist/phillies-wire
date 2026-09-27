@@ -5,14 +5,14 @@
     "edition": 180,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-27T20:24:59.765Z",
+    "generated_at": "2026-09-27T20:36:25.348Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 27, 2026, 4:24 PM ET",
+      "generated_at_et": "Sep 27, 2026, 4:36 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 7, TB 1",
-    "dek": "Middle 6th · 3 outs",
-    "summary": "J.T. Realmuto is up against Jesse Scholtens. Series: TB leads 2-0.",
+    "headline": "PHI 7, TB 2",
+    "dek": "Top 7th · 0 outs",
+    "summary": "Jonny DeLuca is up against Alex McFarlane. Series: TB leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "63° · Overcast"
+        "value": "62° · Overcast"
       }
     ],
     "bullets": [
-      "J.T. Realmuto at the plate",
-      "Jesse Scholtens on the mound",
+      "Jonny DeLuca at the plate",
+      "Alex McFarlane on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Next Game",
@@ -346,10 +346,10 @@
           "radio": "94 WIP"
         },
         "weather": {
-          "temp_f": 63,
+          "temp_f": 62,
           "condition": "Overcast",
-          "wind": "13 mph · gusts 28",
-          "gusts_mph": 28
+          "wind": "13 mph · gusts 30",
+          "gusts_mph": 30
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "3.01",
+            "era": "3.00",
             "record": "13-5",
             "whip": "1.05"
           },
@@ -373,15 +373,15 @@
           }
         },
         "linescore": {
-          "currentInning": 6,
-          "currentInningOrdinal": "6th",
-          "inningState": "Middle",
+          "currentInning": 7,
+          "currentInningOrdinal": "7th",
+          "inningState": "Top",
           "isTopInning": true,
-          "outs": 3,
+          "outs": 0,
           "teams": {
             "away": {
-              "runs": 1,
-              "hits": 5,
+              "runs": 2,
+              "hits": 6,
               "errors": 0
             },
             "home": {
@@ -460,6 +460,19 @@
               "num": 6,
               "away": {
                 "runs": 0,
+                "hits": 1,
+                "errors": 0
+              },
+              "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0
+              }
+            },
+            {
+              "num": 7,
+              "away": {
+                "runs": 1,
                 "hits": 1,
                 "errors": 0
               },
@@ -1157,31 +1170,104 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823408:49",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto grounds out softly, pitcher Jesse Scholtens to first baseman Ryan Vilade.",
+            "score_after": "PHI 7, TB 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:50",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "strikeout",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Trea Turner called out on strikes.",
+            "score_after": "PHI 7, TB 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:51",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Kyle Schwarber",
+            "actor_id": 656941,
+            "detail": "Kyle Schwarber walks.",
+            "score_after": "PHI 7, TB 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:52",
+            "inning": 6,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Bryce Harper",
+            "actor_id": 547180,
+            "detail": "Bryce Harper pops out to third baseman Ben Williamson.",
+            "score_after": "PHI 7, TB 1",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:53",
+            "inning": 7,
+            "half": "top",
+            "team": "TB",
+            "event_type": "home_run",
+            "actor": "Jonny DeLuca",
+            "actor_id": 676356,
+            "detail": "Jonny DeLuca homers (11) on a fly ball to right center field.",
+            "score_after": "PHI 7, TB 2",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
           }
         ],
         "situation": {
           "batter": {
-            "name": "J.T. Realmuto",
-            "meta": "vs Jesse Scholtens"
+            "name": "Jonny DeLuca",
+            "meta": "vs Alex McFarlane"
           },
           "pitches": [
+            "B",
+            "B",
+            "B",
             "S",
-            "B",
             "F",
-            "B",
+            "F",
+            "F",
             "X"
           ],
           "count": {
-            "balls": 2,
+            "balls": 3,
             "strikes": 2,
-            "outs": 3
+            "outs": 0
           },
           "bases": {
             "first": false,
             "second": false,
             "third": false
           },
-          "status": "Middle 6th"
+          "status": "Top 7th"
         }
       }
     },
@@ -1198,8 +1284,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T20:24:59.765Z",
-            "freshness_label": "As of Sep 27, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-09-27T20:36:25.348Z",
+            "freshness_label": "As of Sep 27, 2026, 4:36 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -1211,8 +1297,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T20:24:59.765Z",
-            "freshness_label": "As of Sep 27, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-09-27T20:36:25.348Z",
+            "freshness_label": "As of Sep 27, 2026, 4:36 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -1224,8 +1310,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T20:24:59.765Z",
-            "freshness_label": "As of Sep 27, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-09-27T20:36:25.348Z",
+            "freshness_label": "As of Sep 27, 2026, 4:36 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -1237,8 +1323,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T20:24:59.765Z",
-            "freshness_label": "As of Sep 27, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-09-27T20:36:25.348Z",
+            "freshness_label": "As of Sep 27, 2026, 4:36 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -1250,8 +1336,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T20:24:59.765Z",
-            "freshness_label": "As of Sep 27, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-09-27T20:36:25.348Z",
+            "freshness_label": "As of Sep 27, 2026, 4:36 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -1263,8 +1349,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T20:24:59.765Z",
-            "freshness_label": "As of Sep 27, 2026, 4:24 PM ET"
+            "last_confirmed": "2026-09-27T20:36:25.348Z",
+            "freshness_label": "As of Sep 27, 2026, 4:36 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
