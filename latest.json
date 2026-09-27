@@ -4,7 +4,7 @@
   "edition_date": "2026-09-27",
   "volume": 1,
   "edition": 180,
-  "generated_at": "2026-09-27T20:09:48.778Z",
+  "generated_at": "2026-09-27T20:24:59.765Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 4, TB 1",
-    "dek": "Bottom 5th · 0 outs",
-    "summary": "Bryce Harper is up against Jesse Scholtens. Series: TB leads 2-0.",
+    "headline": "PHI 7, TB 1",
+    "dek": "Middle 6th · 3 outs",
+    "summary": "J.T. Realmuto is up against Jesse Scholtens. Series: TB leads 2-0.",
     "next_label": "Next Game",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 2:30 PM"
   },
@@ -56,38 +56,35 @@
     },
     "weather": {
       "temp_f": 63,
-      "condition": "Light drizzle",
-      "wind": "14 mph · gusts 31",
-      "gusts_mph": 31
+      "condition": "Overcast",
+      "wind": "13 mph · gusts 28",
+      "gusts_mph": 28
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Bryce Harper",
+        "name": "J.T. Realmuto",
         "meta": "vs Jesse Scholtens"
       },
       "pitches": [
+        "S",
         "B",
         "F",
         "B",
-        "B",
-        "F",
-        "F",
-        "F",
-        "F"
+        "X"
       ],
       "count": {
-        "balls": 3,
+        "balls": 2,
         "strikes": 2,
-        "outs": 0
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Bottom 5th"
+      "status": "Middle 6th"
     },
     "recap_line": null
   },
@@ -95,7 +92,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T20:09:48.895Z",
+    "updated_at": "2026-09-27T20:24:59.833Z",
     "current_game_pk": 823408,
     "next_game_pk": null,
     "next_game": null,
@@ -124,7 +121,7 @@
       "highlight": false
     },
     {
-      "text": "63° · Light drizzle · gusts 31 mph",
+      "text": "63° · Overcast · gusts 28 mph",
       "highlight": false
     },
     {
