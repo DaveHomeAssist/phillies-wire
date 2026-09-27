@@ -4,9 +4,9 @@
   "edition_date": "2026-09-27",
   "volume": 1,
   "edition": 180,
-  "generated_at": "2026-09-27T17:48:19.615Z",
-  "mode": "pregame",
-  "mode_label": "Pregame",
+  "generated_at": "2026-09-27T18:11:46.118Z",
+  "mode": "live",
+  "mode_label": "Live",
   "off_day": false,
   "record": {
     "wins": 87,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "Rays @ Phillies · Game 3 of 3",
-    "dek": "Zack Wheeler vs Nick Martinez",
-    "summary": "Zack Wheeler vs Nick Martinez · Rays @ Phillies · Game 3 of 3",
+    "headline": "PHI 0, TB 0",
+    "dek": "Top 1st · 0 outs",
+    "summary": "Victor Mesa Jr. is up against Zack Wheeler. Series: TB leads 2-0.",
     "next_label": "Next Game",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 2:30 PM"
   },
@@ -55,21 +55,38 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 62,
+      "temp_f": 61,
       "condition": "Overcast",
-      "wind": "16 mph · gusts 36",
-      "gusts_mph": 36
+      "wind": "17 mph · gusts 38",
+      "gusts_mph": 38
     },
     "score": null,
     "inning": null,
-    "situation": null,
+    "situation": {
+      "batter": {
+        "name": "Victor Mesa Jr.",
+        "meta": "vs Zack Wheeler"
+      },
+      "pitches": [],
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 0
+      },
+      "bases": {
+        "first": false,
+        "second": false,
+        "third": false
+      },
+      "status": "Top 1st"
+    },
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T17:48:19.677Z",
+    "updated_at": "2026-09-27T18:11:46.181Z",
     "current_game_pk": 823408,
     "next_game_pk": null,
     "next_game": null,
@@ -98,7 +115,7 @@
       "highlight": false
     },
     {
-      "text": "62° · Overcast · gusts 36 mph",
+      "text": "61° · Overcast · gusts 38 mph",
       "highlight": false
     },
     {
