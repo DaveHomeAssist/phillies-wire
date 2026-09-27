@@ -5,14 +5,14 @@
     "edition": 180,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-27T19:21:22.781Z",
+    "generated_at": "2026-09-27T19:33:56.233Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 27, 2026, 3:21 PM ET",
+      "generated_at_et": "Sep 27, 2026, 3:33 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -29,8 +29,8 @@
     "mode": "live",
     "label": "Live",
     "headline": "PHI 4, TB 0",
-    "dek": "Top 3rd · 2 outs",
-    "summary": "Victor Mesa Jr. is up against Zack Wheeler. Series: TB leads 2-0.",
+    "dek": "Bottom 3rd · 1 out",
+    "summary": "Edmundo Sosa is up against Nick Martinez. Series: TB leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -42,12 +42,12 @@
       },
       {
         "label": "Weather",
-        "value": "64° · Overcast"
+        "value": "64° · Drizzle"
       }
     ],
     "bullets": [
-      "Victor Mesa Jr. at the plate",
-      "Zack Wheeler on the mound",
+      "Edmundo Sosa at the plate",
+      "Nick Martinez on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Next Game",
@@ -347,9 +347,9 @@
         },
         "weather": {
           "temp_f": 64,
-          "condition": "Overcast",
-          "wind": "12 mph · gusts 30",
-          "gusts_mph": 30
+          "condition": "Drizzle",
+          "wind": "14 mph · gusts 35",
+          "gusts_mph": 35
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,9 +359,9 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "3.01",
+            "era": "3.00",
             "record": "13-5",
-            "whip": "1.05"
+            "whip": "1.04"
           },
           "away": {
             "team": "TB",
@@ -375,9 +375,9 @@
         "linescore": {
           "currentInning": 3,
           "currentInningOrdinal": "3rd",
-          "inningState": "Top",
-          "isTopInning": true,
-          "outs": 2,
+          "inningState": "Bottom",
+          "isTopInning": false,
+          "outs": 1,
           "teams": {
             "away": {
               "runs": 0,
@@ -386,7 +386,7 @@
             },
             "home": {
               "runs": 4,
-              "hits": 6,
+              "hits": 7,
               "errors": 0
             }
           },
@@ -420,13 +420,13 @@
             {
               "num": 3,
               "away": {
-                "runs": null,
+                "runs": 0,
                 "hits": 0,
                 "errors": 0
               },
               "home": {
                 "runs": null,
-                "hits": 0,
+                "hits": 1,
                 "errors": 0
               }
             }
@@ -732,9 +732,65 @@
             "inning": 3,
             "half": "top",
             "team": "TB",
-            "event_type": "other",
+            "event_type": "out",
             "actor": "Victor Mesa Jr.",
             "actor_id": 683748,
+            "detail": "Victor Mesa Jr. grounds out, second baseman Bryson Stott to first baseman Alec Bohm.",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:22",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "single",
+            "actor": "Bryson Stott",
+            "actor_id": 681082,
+            "detail": "Bryson Stott singles on a ground ball to left fielder Victor Mesa Jr.",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:23",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "walk_hbp",
+            "actor": "Alec Bohm",
+            "actor_id": 664761,
+            "detail": "Alec Bohm walks.",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:24",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh out on a sacrifice bunt, first baseman Jonathan Aranda to second baseman Richie Palacios. Bryson Stott to 3rd. Alec B…",
+            "score_after": "PHI 4, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:25",
+            "inning": 3,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
             "detail": "Play",
             "score_after": "PHI 4, TB 0",
             "runs": 0,
@@ -744,24 +800,23 @@
         ],
         "situation": {
           "batter": {
-            "name": "Victor Mesa Jr.",
-            "meta": "vs Zack Wheeler"
+            "name": "Edmundo Sosa",
+            "meta": "vs Nick Martinez"
           },
           "pitches": [
-            "F",
-            "F"
+            "X"
           ],
           "count": {
             "balls": 0,
-            "strikes": 2,
-            "outs": 2
+            "strikes": 0,
+            "outs": 1
           },
           "bases": {
             "first": false,
-            "second": false,
-            "third": false
+            "second": true,
+            "third": true
           },
-          "status": "Top 3rd"
+          "status": "Bottom 3rd"
         }
       }
     },
@@ -778,8 +833,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:21:22.781Z",
-            "freshness_label": "As of Sep 27, 2026, 3:21 PM ET"
+            "last_confirmed": "2026-09-27T19:33:56.233Z",
+            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -791,8 +846,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:21:22.781Z",
-            "freshness_label": "As of Sep 27, 2026, 3:21 PM ET"
+            "last_confirmed": "2026-09-27T19:33:56.233Z",
+            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -804,8 +859,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:21:22.781Z",
-            "freshness_label": "As of Sep 27, 2026, 3:21 PM ET"
+            "last_confirmed": "2026-09-27T19:33:56.233Z",
+            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -817,8 +872,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:21:22.781Z",
-            "freshness_label": "As of Sep 27, 2026, 3:21 PM ET"
+            "last_confirmed": "2026-09-27T19:33:56.233Z",
+            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -830,8 +885,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:21:22.781Z",
-            "freshness_label": "As of Sep 27, 2026, 3:21 PM ET"
+            "last_confirmed": "2026-09-27T19:33:56.233Z",
+            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -843,8 +898,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T19:21:22.781Z",
-            "freshness_label": "As of Sep 27, 2026, 3:21 PM ET"
+            "last_confirmed": "2026-09-27T19:33:56.233Z",
+            "freshness_label": "As of Sep 27, 2026, 3:33 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
