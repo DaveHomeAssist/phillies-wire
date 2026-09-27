@@ -2,10 +2,10 @@
   "schema_version": "1.0.0",
   "publication": "Phillies Wire",
   "season": 2026,
-  "generated_at": "2026-09-27T18:30:42.838Z",
+  "generated_at": "2026-09-27T18:49:58.742Z",
   "source": {
     "provider": "MLB Stats API",
-    "fetched_at": "2026-09-27T18:30:43.257Z",
+    "fetched_at": "2026-09-27T18:49:59.111Z",
     "query": {
       "sportId": "1",
       "teamId": "143",
@@ -18093,7 +18093,7 @@
       "phillies": {
         "team_id": 143,
         "side": "home",
-        "score": 0,
+        "score": 1,
         "probable_pitcher": {
           "id": 554430,
           "name": "Zack Wheeler"
@@ -18127,7 +18127,7 @@
           "team_id": 143,
           "name": "Philadelphia Phillies",
           "abbr": "PHI",
-          "score": 0,
+          "score": 1,
           "is_winner": false,
           "probable_pitcher": {
             "id": 554430,
@@ -18164,14 +18164,14 @@
       },
       "status": {
         "abstract": "Live",
-        "detailed": "Warmup",
-        "code": "PW",
+        "detailed": "In Progress",
+        "code": "I",
         "start_time_tbd": false
       },
       "score": {
-        "phillies": 0,
+        "phillies": 1,
         "opponent": 0,
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "result": null,

@@ -4,7 +4,7 @@
   "edition_date": "2026-09-27",
   "volume": 1,
   "edition": 180,
-  "generated_at": "2026-09-27T18:30:42.777Z",
+  "generated_at": "2026-09-27T18:49:58.631Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, TB 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Victor Mesa Jr. is up against Zack Wheeler. Series: TB leads 2-0.",
+    "headline": "PHI 1, TB 0",
+    "dek": "End 1st · 3 outs",
+    "summary": "Liam Hicks is up against Zack Wheeler. Series: TB leads 2-0.",
     "next_label": "Next Game",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 2:30 PM"
   },
@@ -55,30 +55,32 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 61,
-      "condition": "Overcast",
-      "wind": "12 mph · gusts 29",
-      "gusts_mph": 29
+      "temp_f": 62,
+      "condition": "Light rain",
+      "wind": "13 mph · gusts 33",
+      "gusts_mph": 33
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Victor Mesa Jr.",
+        "name": "Liam Hicks",
         "meta": "vs Zack Wheeler"
       },
-      "pitches": [],
+      "pitches": [
+        "X"
+      ],
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 0
+        "outs": 3
       },
       "bases": {
         "first": false,
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "End 1st"
     },
     "recap_line": null
   },
@@ -86,7 +88,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T18:30:42.838Z",
+    "updated_at": "2026-09-27T18:49:58.742Z",
     "current_game_pk": 823408,
     "next_game_pk": null,
     "next_game": null,
@@ -115,7 +117,7 @@
       "highlight": false
     },
     {
-      "text": "61° · Overcast · gusts 29 mph",
+      "text": "62° · Light rain · gusts 33 mph",
       "highlight": false
     },
     {
