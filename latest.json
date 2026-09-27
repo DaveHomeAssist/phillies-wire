@@ -4,7 +4,7 @@
   "edition_date": "2026-09-26",
   "volume": 1,
   "edition": 179,
-  "generated_at": "2026-09-27T00:30:35.889Z",
+  "generated_at": "2026-09-27T01:20:08.532Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, TB 3",
-    "dek": "Top 3rd · 0 outs",
-    "summary": "Jonathan Aranda is up against Tanner Banks. Series: TB leads 1-0.",
+    "headline": "PHI 0, TB 5",
+    "dek": "Top 5th · 1 out",
+    "summary": "Jonny DeLuca is up against José Urquidy. Series: TB leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 3:05 PM"
   },
@@ -55,17 +55,17 @@
       "radio": "94 WIP"
     },
     "weather": {
-      "temp_f": 59,
-      "condition": "Heavy drizzle",
-      "wind": "11 mph · gusts 29",
-      "gusts_mph": 29
+      "temp_f": 58,
+      "condition": "Overcast",
+      "wind": "12 mph · gusts 34",
+      "gusts_mph": 34
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Jonathan Aranda",
-        "meta": "vs Tanner Banks"
+        "name": "Jonny DeLuca",
+        "meta": "vs José Urquidy"
       },
       "pitches": [
         "B",
@@ -75,14 +75,14 @@
       "count": {
         "balls": 2,
         "strikes": 1,
-        "outs": 0
+        "outs": 1
       },
       "bases": {
-        "first": false,
-        "second": false,
-        "third": false
+        "first": true,
+        "second": true,
+        "third": true
       },
-      "status": "Top 3rd"
+      "status": "Top 5th"
     },
     "recap_line": null
   },
@@ -90,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T00:30:35.947Z",
+    "updated_at": "2026-09-27T01:20:08.666Z",
     "current_game_pk": 823407,
     "next_game_pk": 823408,
     "next_game": {
@@ -127,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "59° · Heavy drizzle · gusts 29 mph",
+      "text": "58° · Overcast · gusts 34 mph",
       "highlight": false
     }
   ]
