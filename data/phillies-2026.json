@@ -2,10 +2,10 @@
   "schema_version": "1.0.0",
   "publication": "Phillies Wire",
   "season": 2026,
-  "generated_at": "2026-09-27T19:48:55.918Z",
+  "generated_at": "2026-09-27T20:09:48.895Z",
   "source": {
     "provider": "MLB Stats API",
-    "fetched_at": "2026-09-27T19:48:56.259Z",
+    "fetched_at": "2026-09-27T20:09:52.727Z",
     "query": {
       "sportId": "1",
       "teamId": "143",
@@ -18110,7 +18110,7 @@
         "side": "away",
         "name": "Tampa Bay Rays",
         "abbr": "TB",
-        "score": 0,
+        "score": 1,
         "probable_pitcher": {
           "id": 607259,
           "name": "Nick Martinez"
@@ -18144,7 +18144,7 @@
           "team_id": 139,
           "name": "Tampa Bay Rays",
           "abbr": "TB",
-          "score": 0,
+          "score": 1,
           "is_winner": false,
           "probable_pitcher": {
             "id": 607259,
@@ -18170,9 +18170,9 @@
       },
       "score": {
         "phillies": 4,
-        "opponent": 0,
+        "opponent": 1,
         "home": 4,
-        "away": 0
+        "away": 1
       },
       "result": null,
       "series": {
