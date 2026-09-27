@@ -5,14 +5,14 @@
     "edition": 180,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-09-27T18:49:58.631Z",
+    "generated_at": "2026-09-27T19:07:48.101Z",
     "status": {
       "mode": "live",
       "mode_label": "Live",
       "crawl_state": "ok",
       "enrich_state": "skipped",
       "enrich_label": "Live update",
-      "generated_at_et": "Sep 27, 2026, 2:49 PM ET",
+      "generated_at_et": "Sep 27, 2026, 3:07 PM ET",
       "source_notes": [
         "Farm system notes hidden because the editorial baseline is stale."
       ]
@@ -28,9 +28,9 @@
   "hero": {
     "mode": "live",
     "label": "Live",
-    "headline": "PHI 1, TB 0",
-    "dek": "End 1st · 3 outs",
-    "summary": "Liam Hicks is up against Zack Wheeler. Series: TB leads 2-0.",
+    "headline": "PHI 2, TB 0",
+    "dek": "Bottom 2nd · 2 outs",
+    "summary": "Trea Turner is up against Nick Martinez. Series: TB leads 2-0.",
     "cards": [
       {
         "label": "Venue",
@@ -46,8 +46,8 @@
       }
     ],
     "bullets": [
-      "Liam Hicks at the plate",
-      "Zack Wheeler on the mound",
+      "Trea Turner at the plate",
+      "Nick Martinez on the mound",
       "Citizens Bank Park, Philadelphia"
     ],
     "next_label": "Next Game",
@@ -348,8 +348,8 @@
         "weather": {
           "temp_f": 62,
           "condition": "Light rain",
-          "wind": "13 mph · gusts 33",
-          "gusts_mph": 33
+          "wind": "15 mph · gusts 34",
+          "gusts_mph": 34
         },
         "giveaway": "",
         "transit": "Broad Street Line to NRG Station",
@@ -359,7 +359,7 @@
             "team": "PHI",
             "name": "Zack Wheeler",
             "hand": "R",
-            "era": "3.04",
+            "era": "3.02",
             "record": "13-5",
             "whip": "1.05"
           },
@@ -367,26 +367,26 @@
             "team": "TB",
             "name": "Nick Martinez",
             "hand": "R",
-            "era": "2.98",
+            "era": "2.97",
             "record": "15-5",
             "whip": "1.07"
           }
         },
         "linescore": {
-          "currentInning": 1,
-          "currentInningOrdinal": "1st",
-          "inningState": "End",
+          "currentInning": 2,
+          "currentInningOrdinal": "2nd",
+          "inningState": "Bottom",
           "isTopInning": false,
-          "outs": 3,
+          "outs": 2,
           "teams": {
             "away": {
               "runs": 0,
-              "hits": 0,
+              "hits": 1,
               "errors": 0
             },
             "home": {
-              "runs": 1,
-              "hits": 2,
+              "runs": 2,
+              "hits": 4,
               "errors": 0
             }
           },
@@ -396,6 +396,19 @@
               "away": {
                 "runs": 0,
                 "hits": 0,
+                "errors": 0
+              },
+              "home": {
+                "runs": 1,
+                "hits": 2,
+                "errors": 0
+              }
+            },
+            {
+              "num": 2,
+              "away": {
+                "runs": 0,
+                "hits": 1,
                 "errors": 0
               },
               "home": {
@@ -518,27 +531,151 @@
             "runs": 0,
             "is_scoring": false,
             "is_key": false
+          },
+          {
+            "id": "823408:8",
+            "inning": 2,
+            "half": "top",
+            "team": "TB",
+            "event_type": "extra_base_hit",
+            "actor": "Liam Hicks",
+            "actor_id": 689414,
+            "detail": "Liam Hicks doubles (15) on a line drive to right fielder Bryce Harper.",
+            "score_after": "PHI 1, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823408:9",
+            "inning": 2,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Richie Palacios",
+            "actor_id": 680700,
+            "detail": "Richie Palacios pops out softly to pitcher Zack Wheeler.",
+            "score_after": "PHI 1, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:10",
+            "inning": 2,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Jonny DeLuca",
+            "actor_id": 676356,
+            "detail": "Jonny DeLuca grounds out, shortstop Trea Turner to first baseman Alec Bohm. Liam Hicks to 3rd.",
+            "score_after": "PHI 1, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:11",
+            "inning": 2,
+            "half": "top",
+            "team": "TB",
+            "event_type": "out",
+            "actor": "Cedric Mullins",
+            "actor_id": 656775,
+            "detail": "Cedric Mullins flies out to center fielder Justin Crawford.",
+            "score_after": "PHI 1, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:12",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Brandon Marsh",
+            "actor_id": 669016,
+            "detail": "Brandon Marsh flies out to right fielder Jonny DeLuca.",
+            "score_after": "PHI 1, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:13",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "Edmundo Sosa",
+            "actor_id": 624641,
+            "detail": "Edmundo Sosa doubles (11) on a line drive to right fielder Jonny DeLuca.",
+            "score_after": "PHI 1, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": true
+          },
+          {
+            "id": "823408:14",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "out",
+            "actor": "Justin Crawford",
+            "actor_id": 702222,
+            "detail": "Justin Crawford flies out to left fielder Victor Mesa Jr.",
+            "score_after": "PHI 1, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
+          },
+          {
+            "id": "823408:15",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "extra_base_hit",
+            "actor": "J.T. Realmuto",
+            "actor_id": 592663,
+            "detail": "J.T. Realmuto doubles (19) on a sharp line drive to left fielder Victor Mesa Jr. Edmundo Sosa scores.",
+            "score_after": "PHI 2, TB 0",
+            "runs": 1,
+            "is_scoring": true,
+            "is_key": true
+          },
+          {
+            "id": "823408:16",
+            "inning": 2,
+            "half": "bottom",
+            "team": "PHI",
+            "event_type": "other",
+            "actor": "Trea Turner",
+            "actor_id": 607208,
+            "detail": "Mound Visit.",
+            "score_after": "PHI 2, TB 0",
+            "runs": 0,
+            "is_scoring": false,
+            "is_key": false
           }
         ],
         "situation": {
           "batter": {
-            "name": "Liam Hicks",
-            "meta": "vs Zack Wheeler"
+            "name": "Trea Turner",
+            "meta": "vs Nick Martinez"
           },
-          "pitches": [
-            "X"
-          ],
+          "pitches": [],
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 3
+            "outs": 2
           },
           "bases": {
             "first": false,
-            "second": false,
+            "second": true,
             "third": false
           },
-          "status": "End 1st"
+          "status": "Bottom 2nd"
         }
       }
     },
@@ -555,8 +692,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T18:49:58.631Z",
-            "freshness_label": "As of Sep 27, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-09-27T19:07:48.101Z",
+            "freshness_label": "As of Sep 27, 2026, 3:07 PM ET"
           },
           {
             "name": "Johan Rojas",
@@ -568,8 +705,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T18:49:58.631Z",
-            "freshness_label": "As of Sep 27, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-09-27T19:07:48.101Z",
+            "freshness_label": "As of Sep 27, 2026, 3:07 PM ET"
           },
           {
             "name": "Lou Trivino III",
@@ -581,8 +718,8 @@
             "retroactive_to": "2026-07-07",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T18:49:58.631Z",
-            "freshness_label": "As of Sep 27, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-09-27T19:07:48.101Z",
+            "freshness_label": "As of Sep 27, 2026, 3:07 PM ET"
           },
           {
             "name": "Brad Keller",
@@ -594,8 +731,8 @@
             "retroactive_to": "2026-07-13",
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T18:49:58.631Z",
-            "freshness_label": "As of Sep 27, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-09-27T19:07:48.101Z",
+            "freshness_label": "As of Sep 27, 2026, 3:07 PM ET"
           },
           {
             "name": "Caleb Kilian",
@@ -607,8 +744,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T18:49:58.631Z",
-            "freshness_label": "As of Sep 27, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-09-27T19:07:48.101Z",
+            "freshness_label": "As of Sep 27, 2026, 3:07 PM ET"
           },
           {
             "name": "Felix Reyes",
@@ -620,8 +757,8 @@
             "retroactive_to": null,
             "first_eligible": null,
             "source": "live",
-            "last_confirmed": "2026-09-27T18:49:58.631Z",
-            "freshness_label": "As of Sep 27, 2026, 2:49 PM ET"
+            "last_confirmed": "2026-09-27T19:07:48.101Z",
+            "freshness_label": "As of Sep 27, 2026, 3:07 PM ET"
           }
         ],
         "footer_note": "Injury status is rebuilt from the MLB transactions feed when the injuries endpoint is unavailable."
