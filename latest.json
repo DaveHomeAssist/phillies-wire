@@ -4,7 +4,7 @@
   "edition_date": "2026-09-26",
   "volume": 1,
   "edition": 179,
-  "generated_at": "2026-09-26T23:48:42.545Z",
+  "generated_at": "2026-09-27T00:30:35.889Z",
   "mode": "live",
   "mode_label": "Live",
   "off_day": false,
@@ -16,9 +16,9 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 0, TB 0",
-    "dek": "Top 1st · 0 outs",
-    "summary": "Yandy Díaz is up against Aaron Nola. Series: TB leads 1-0.",
+    "headline": "PHI 0, TB 3",
+    "dek": "Top 3rd · 0 outs",
+    "summary": "Jonathan Aranda is up against Tanner Banks. Series: TB leads 1-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 3:05 PM"
   },
@@ -56,21 +56,25 @@
     },
     "weather": {
       "temp_f": 59,
-      "condition": "Overcast",
-      "wind": "8 mph · gusts 22",
-      "gusts_mph": 22
+      "condition": "Heavy drizzle",
+      "wind": "11 mph · gusts 29",
+      "gusts_mph": 29
     },
     "score": null,
     "inning": null,
     "situation": {
       "batter": {
-        "name": "Yandy Díaz",
-        "meta": "vs Aaron Nola"
+        "name": "Jonathan Aranda",
+        "meta": "vs Tanner Banks"
       },
-      "pitches": [],
+      "pitches": [
+        "B",
+        "B",
+        "F"
+      ],
       "count": {
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 1,
         "outs": 0
       },
       "bases": {
@@ -78,7 +82,7 @@
         "second": false,
         "third": false
       },
-      "status": "Top 1st"
+      "status": "Top 3rd"
     },
     "recap_line": null
   },
@@ -86,7 +90,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-26T23:48:42.605Z",
+    "updated_at": "2026-09-27T00:30:35.947Z",
     "current_game_pk": 823407,
     "next_game_pk": 823408,
     "next_game": {
@@ -123,7 +127,7 @@
       "highlight": false
     },
     {
-      "text": "59° · Overcast · gusts 22 mph",
+      "text": "59° · Heavy drizzle · gusts 29 mph",
       "highlight": false
     }
   ]
