@@ -1,12 +1,12 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-26",
+  "edition_date": "2026-09-27",
   "volume": 1,
-  "edition": 179,
-  "generated_at": "2026-09-27T03:52:47.419Z",
-  "mode": "final",
-  "mode_label": "Final",
+  "edition": 180,
+  "generated_at": "2026-09-27T04:11:25.340Z",
+  "mode": "pregame",
+  "mode_label": "Pregame",
   "off_day": false,
   "record": {
     "wins": 87,
@@ -16,48 +16,48 @@
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, TB 12.",
-    "dek": "TB 12, PHI 1 · Griffin Jax · 3.0 IP, 2 H, 0 ER, 1 K",
-    "summary": "PHI 1, TB 12. Final at Citizens Bank Park, Philadelphia. TB wins 2-0.",
-    "next_label": "Tomorrow",
+    "headline": "Rays @ Phillies · Game 3 of 3",
+    "dek": "Zack Wheeler vs Nick Martinez",
+    "summary": "Zack Wheeler vs Nick Martinez · Rays @ Phillies · Game 3 of 3",
+    "next_label": "Next Game",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 3:05 PM"
   },
   "game": {
-    "matchup": "Rays @ Phillies · Game 2 of 3",
-    "first_pitch": "7:15 PM",
+    "matchup": "Rays @ Phillies · Game 3 of 3",
+    "first_pitch": "3:05 PM",
     "venue": "Citizens Bank Park, Philadelphia",
     "starters": {
       "home": {
-        "name": "Aaron Nola",
+        "name": "Zack Wheeler",
         "hand": "R"
       },
       "away": {
-        "name": "Griffin Jax",
+        "name": "Nick Martinez",
         "hand": "R"
       },
       "phi": {
-        "name": "Aaron Nola",
+        "name": "Zack Wheeler",
         "hand": "R"
       },
       "opp": {
-        "name": "Griffin Jax",
+        "name": "Nick Martinez",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "TB wins 2-0"
+      "label": "Regular Season"
     },
     "broadcast": {
-      "tv": "FOX/ FOX ONE",
+      "tv": "NBCSP",
       "stream": "MLB.TV",
       "radio": "94 WIP"
     },
     "weather": {
       "temp_f": 58,
-      "condition": "Light rain",
-      "wind": "12 mph · gusts 33",
+      "condition": "Heavy drizzle",
+      "wind": "13 mph · gusts 33",
       "gusts_mph": 33
     },
     "score": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T03:52:47.561Z",
+    "updated_at": "2026-09-27T04:11:25.651Z",
     "current_game_pk": 823408,
     "next_game_pk": null,
     "next_game": null,
@@ -86,19 +86,19 @@
       "highlight": true
     },
     {
-      "text": "Rays @ Phillies · Game 2 of 3 · 7:15 PM",
+      "text": "Rays @ Phillies · Game 3 of 3 · 3:05 PM",
       "highlight": false
     },
     {
-      "text": "Aaron Nola vs Griffin Jax",
+      "text": "Zack Wheeler vs Nick Martinez",
       "highlight": true
     },
     {
-      "text": "FOX/ FOX ONE · 94 WIP",
+      "text": "NBCSP · 94 WIP",
       "highlight": false
     },
     {
-      "text": "58° · Light rain · gusts 33 mph",
+      "text": "58° · Heavy drizzle · gusts 33 mph",
       "highlight": false
     }
   ]
