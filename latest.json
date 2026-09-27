@@ -4,21 +4,21 @@
   "edition_date": "2026-09-26",
   "volume": 1,
   "edition": 179,
-  "generated_at": "2026-09-27T02:46:39.553Z",
-  "mode": "live",
-  "mode_label": "Live",
+  "generated_at": "2026-09-27T03:12:27.990Z",
+  "mode": "final",
+  "mode_label": "Final",
   "off_day": false,
   "record": {
     "wins": 87,
-    "losses": 73,
-    "streak": "L3",
+    "losses": 74,
+    "streak": "L4",
     "division_rank": 2,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 1, TB 10",
-    "dek": "Top 9th · 0 outs",
-    "summary": "Jonny DeLuca is up against Max Lazar. Series: TB leads 1-0.",
+    "headline": "PHI 1, TB 12.",
+    "dek": "TB 12, PHI 1 · Griffin Jax · 3.0 IP, 2 H, 0 ER, 1 K",
+    "summary": "PHI 1, TB 12. Final at Citizens Bank Park, Philadelphia. TB wins 2-0.",
     "next_label": "Tomorrow",
     "next_value": "Zack Wheeler vs Nick Martinez · PHI vs TB · Sun, Sep 27 · 3:05 PM"
   },
@@ -47,7 +47,7 @@
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "TB leads 1-0"
+      "label": "TB wins 2-0"
     },
     "broadcast": {
       "tv": "FOX/ FOX ONE",
@@ -56,62 +56,33 @@
     },
     "weather": {
       "temp_f": 58,
-      "condition": "Overcast",
+      "condition": "Heavy drizzle",
       "wind": "12 mph · gusts 33",
       "gusts_mph": 33
     },
     "score": null,
     "inning": null,
-    "situation": {
-      "batter": {
-        "name": "Jonny DeLuca",
-        "meta": "vs Max Lazar"
-      },
-      "pitches": [
-        "F",
-        "S",
-        "X"
-      ],
-      "count": {
-        "balls": 0,
-        "strikes": 2,
-        "outs": 0
-      },
-      "bases": {
-        "first": false,
-        "second": false,
-        "third": false
-      },
-      "status": "Top 9th"
-    },
+    "situation": null,
     "recap_line": null
   },
   "schedule": {
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-27T02:46:39.712Z",
-    "current_game_pk": 823407,
-    "next_game_pk": 823408,
-    "next_game": {
+    "updated_at": "2026-09-27T03:12:28.099Z",
+    "current_game_pk": 823408,
+    "next_game_pk": null,
+    "next_game": null,
+    "current_game": {
       "game_pk": 823408,
       "official_date": "2026-09-27",
-      "date_label": "Sun, Sep 27, 2026",
-      "time_label": "3:05 PM",
-      "title": "Tampa Bay Rays at Phillies",
-      "matchup": "TB at PHI",
-      "venue": "Citizens Bank Park"
-    },
-    "current_game": {
-      "game_pk": 823407,
-      "official_date": "2026-09-26",
       "title": "Tampa Bay Rays at Phillies",
       "matchup": "TB at PHI"
     }
   },
   "ticker": [
     {
-      "text": "PHI 87-73",
+      "text": "PHI 87-74",
       "highlight": true
     },
     {
@@ -127,7 +98,7 @@
       "highlight": false
     },
     {
-      "text": "58° · Overcast · gusts 33 mph",
+      "text": "58° · Heavy drizzle · gusts 33 mph",
       "highlight": false
     }
   ]
