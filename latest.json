@@ -1,64 +1,64 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-27",
+  "edition_date": "2026-09-28",
   "volume": 1,
-  "edition": 180,
-  "generated_at": "2026-09-28T03:47:24.710Z",
-  "mode": "final",
-  "mode_label": "Final",
-  "off_day": false,
+  "edition": 181,
+  "generated_at": "2026-09-28T04:13:28.600Z",
+  "mode": "off_day",
+  "mode_label": "Off Day",
+  "off_day": true,
   "record": {
-    "wins": 88,
-    "losses": 74,
+    "wins": 0,
+    "losses": 0,
     "streak": "W1",
-    "division_rank": 2,
+    "division_rank": 0,
     "division": "NL East"
   },
   "hero": {
-    "headline": "PHI 7, TB 3.",
-    "dek": "PHI 7, TB 3 · Zack Wheeler · 6.0 IP, 5 H, 1 ER, 5 K",
-    "summary": "PHI 7, TB 3. Final at Citizens Bank Park, Philadelphia. TB wins 2-1.",
-    "next_label": "Tomorrow",
-    "next_value": "PHI @ ATL · Tue, Sep 29 · 2:00 PM"
+    "headline": "No Phillies game today",
+    "dek": "Next up: TBD vs TBD · PHI @ ATL",
+    "summary": "Use the archive to catch up or check the next scheduled game window.",
+    "next_label": "Next Game",
+    "next_value": "TBD vs TBD · PHI @ ATL · Tue, Sep 29 · 2:00 PM"
   },
   "game": {
-    "matchup": "Rays @ Phillies · Game 3 of 3",
-    "first_pitch": "2:30 PM",
-    "venue": "Citizens Bank Park, Philadelphia",
+    "matchup": "Schedule refresh required",
+    "first_pitch": "TBD",
+    "venue": "TBD",
     "starters": {
       "home": {
-        "name": "Zack Wheeler",
+        "name": "TBD",
         "hand": "R"
       },
       "away": {
-        "name": "Nick Martinez",
+        "name": "TBD",
         "hand": "R"
       },
       "phi": {
-        "name": "Zack Wheeler",
+        "name": "TBD",
         "hand": "R"
       },
       "opp": {
-        "name": "Nick Martinez",
+        "name": "TBD",
         "hand": "R"
       }
     },
     "series": {
       "home_wins": 0,
       "away_wins": 0,
-      "label": "TB wins 2-1"
+      "label": "Series status pending"
     },
     "broadcast": {
-      "tv": "NBCSP",
+      "tv": "TV TBD",
       "stream": "MLB.TV",
-      "radio": "94 WIP"
+      "radio": "Radio TBD"
     },
     "weather": {
-      "temp_f": 61,
-      "condition": "Drizzle",
-      "wind": "7 mph · gusts 21",
-      "gusts_mph": 21
+      "temp_f": "",
+      "condition": "Weather unavailable",
+      "wind": "Weather unavailable",
+      "gusts_mph": ""
     },
     "score": null,
     "inning": null,
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-28T03:47:24.772Z",
+    "updated_at": "2026-09-28T04:13:28.645Z",
     "current_game_pk": null,
     "next_game_pk": null,
     "next_game": null,
@@ -77,31 +77,19 @@
   },
   "ticker": [
     {
-      "text": "PHI 88-74",
+      "text": "PHI 0-0",
       "highlight": true
     },
     {
-      "text": "Rays @ Phillies · Game 3 of 3 · 2:30 PM",
+      "text": "TBD vs TBD · PHI @ ATL · Tue, Sep 29 · 2:00 PM",
       "highlight": false
     },
     {
-      "text": "Zack Wheeler vs Nick Martinez",
-      "highlight": true
-    },
-    {
-      "text": "NBCSP · 94 WIP",
+      "text": "NBC/Peacock",
       "highlight": false
     },
     {
-      "text": "61° · Drizzle · gusts 21 mph",
-      "highlight": false
-    },
-    {
-      "text": "activated LHP Jesús Luzardo from the 15-day injured list.",
-      "highlight": false
-    },
-    {
-      "text": "designated RHP José Urquidy for assignment.",
+      "text": "Off day",
       "highlight": false
     }
   ]
