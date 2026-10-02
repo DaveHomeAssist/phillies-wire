@@ -1,26 +1,26 @@
 {
   "schema_version": "latest-1.0.0",
   "publication": "Phillies Wire",
-  "edition_date": "2026-09-28",
+  "edition_date": "2026-10-02",
   "volume": 1,
-  "edition": 181,
-  "generated_at": "2026-09-29T03:53:42.475Z",
+  "edition": 182,
+  "generated_at": "2026-10-02T04:11:53.965Z",
   "mode": "off_day",
   "mode_label": "Off Day",
   "off_day": true,
   "record": {
     "wins": 0,
     "losses": 0,
-    "streak": "W1",
+    "streak": "L1",
     "division_rank": 0,
     "division": "NL East"
   },
   "hero": {
     "headline": "No Phillies game today",
-    "dek": "Next up: Jesús Luzardo vs Chris Sale · PHI @ ATL",
+    "dek": "Next matchup pending",
     "summary": "Use the archive to catch up or check the next scheduled game window.",
     "next_label": "Next Game",
-    "next_value": "Jesús Luzardo vs Chris Sale · PHI @ ATL · Tue, Sep 29 · 2:00 PM"
+    "next_value": "Schedule refresh required · TBD · TBD"
   },
   "game": {
     "matchup": "Schedule refresh required",
@@ -69,7 +69,7 @@
     "schema_version": "1.0.0",
     "path": "data/phillies-2026.json",
     "season": 2026,
-    "updated_at": "2026-09-29T03:53:42.515Z",
+    "updated_at": "2026-10-02T04:11:54.012Z",
     "current_game_pk": null,
     "next_game_pk": null,
     "next_game": null,
@@ -81,11 +81,7 @@
       "highlight": true
     },
     {
-      "text": "Jesús Luzardo vs Chris Sale · PHI @ ATL · Tue, Sep 29 · 2:00 PM",
-      "highlight": false
-    },
-    {
-      "text": "NBC/Peacock",
+      "text": "Next Phillies game pending schedule refresh",
       "highlight": false
     },
     {
