@@ -1,7 +1,8 @@
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { appendFileSync, existsSync, readFileSync, writeFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
 import { writeDeliveryStatus } from "./deliver.mjs";
+import { IS_OFFSEASON, SEASON_PHASE } from "./config.mjs";
 
 const DATA_FILE = "./phillies-wire-data.json";
 const ARCHIVE_FILE = "./archive.json";
@@ -41,14 +42,21 @@ const ACCURACY_EXPORT_STAGE = {
 
 const DAILY_STAGES = ["crawl.mjs", "enrich.mjs", "render.mjs", ACCURACY_EXPORT_STAGE, "verify.mjs"];
 const LIVE_STAGES  = ["crawl.mjs", "render.mjs", ACCURACY_EXPORT_STAGE, "verify.mjs"];
-const PIPELINE_STAGES = IS_LIVE_REFRESH ? LIVE_STAGES : DAILY_STAGES;
+// Offseason (SEASON_PHASE=offseason, see config.mjs): no Claude enrich and no
+// email delivery in any ISSUE_MODE. The weekly edition is crawl + render +
+// accuracy export + verify only.
+const OFFSEASON_STAGES = LIVE_STAGES;
+const PIPELINE_STAGES = IS_OFFSEASON ? OFFSEASON_STAGES : (IS_LIVE_REFRESH ? LIVE_STAGES : DAILY_STAGES);
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main();
 }
 
 export function main() {
-  console.log(`Pipeline mode: ${ISSUE_MODE}${IS_LIVE_REFRESH ? " (skipping enrich + deliver)" : ""}`);
+  console.log(
+    `Pipeline mode: ${ISSUE_MODE} · season phase: ${SEASON_PHASE}` +
+      (IS_OFFSEASON ? " (offseason: skipping enrich + deliver)" : IS_LIVE_REFRESH ? " (skipping enrich + deliver)" : ""),
+  );
 
   for (const stage of PIPELINE_STAGES) {
     const scriptName = getStageScriptName(stage);
@@ -64,7 +72,15 @@ export function main() {
     }
   }
 
+  if (IS_OFFSEASON) {
+    writeDeliveryStatus({ state: "skipped", required: false, reason: "offseason mode skips email delivery" });
+    setDeliveryAttemptedOutput(false);
+    console.log("Delivery skipped: offseason mode does not send email.");
+    return;
+  }
+
   if (IS_LIVE_REFRESH) {
+    setDeliveryAttemptedOutput(false);
     // A live refresh must not erase the evidence of a failed required
     // delivery: the morning run's failed/partial status stays in place
     // (re-emitted so the site copy carries it too) until the next run
@@ -81,11 +97,21 @@ export function main() {
   }
 
   if (process.env.DELIVERY_RECIPIENTS) {
+    setDeliveryAttemptedOutput(true);
     runNodeStage("deliver.mjs", buildStageEnv("deliver.mjs"));
   } else {
+    setDeliveryAttemptedOutput(false);
     writeDeliveryStatus({ state: "skipped", required: false, reason: "DELIVERY_RECIPIENTS not set" });
     console.log("Delivery skipped: DELIVERY_RECIPIENTS not set.");
   }
+}
+
+// Tells publish.yml whether this run actually attempted email delivery, so
+// the "Fail on required delivery failure" gate only runs when it did.
+function setDeliveryAttemptedOutput(attempted) {
+  const outputFile = process.env.GITHUB_OUTPUT;
+  if (!outputFile) return;
+  appendFileSync(outputFile, `delivery_attempted=${attempted ? "true" : "false"}\n`, "utf8");
 }
 
 function buildStageEnv(stage) {

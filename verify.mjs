@@ -115,7 +115,8 @@ if (!data.hero?.headline || !Array.isArray(data.hero?.cards) || !Array.isArray(d
   fail("Hero payload is incomplete.");
 }
 
-const allowedModes = new Set(["pregame", "live", "final", "off_day"]);
+const allowedModes = new Set(["pregame", "live", "final", "off_day", "offseason"]);
+const isOffseason = data.hero.mode === "offseason";
 if (!allowedModes.has(data.hero.mode)) {
   fail(`Unexpected hero mode: ${data.hero.mode}`);
 }
@@ -292,12 +293,26 @@ if (!data.meta.off_day) {
   }
 }
 
-if (!/live-feed\.js/.test(latestHtml)) {
-  fail("Latest issue page is missing the live-feed module.");
-}
+if (isOffseason) {
+  // Offseason pages must not poll MLB or show game-day chrome, and must not
+  // fall back to the fixture's 0-0 placeholder record.
+  if (/live-feed\.js/.test(latestHtml)) {
+    fail("Offseason page must not load the live-feed module.");
+  }
+  if (/Inning by inning/.test(latestHtml) || /pw-next-game/.test(latestHtml)) {
+    fail("Offseason page still shows game-day navigation or the next-game panel.");
+  }
+  if (!(Number(data.record?.wins) + Number(data.record?.losses) > 0)) {
+    fail("Offseason page must show the computed final record, not 0-0.");
+  }
+} else {
+  if (!/live-feed\.js/.test(latestHtml)) {
+    fail("Latest issue page is missing the live-feed module.");
+  }
 
-if (!/dashboard\/innings\//.test(latestHtml) || !/Inning by inning/.test(latestHtml)) {
-  fail("Latest issue page is missing the Inning by inning navigation link.");
+  if (!/dashboard\/innings\//.test(latestHtml) || !/Inning by inning/.test(latestHtml)) {
+    fail("Latest issue page is missing the Inning by inning navigation link.");
+  }
 }
 
 if (!/^<\?xml version="1\.0" encoding="UTF-8"\?>\s*<rss\b/.test(feedXml)) {

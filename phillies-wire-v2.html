@@ -33,7 +33,7 @@
 <link rel="preload" href="{{meta.assets_prefix}}fonts/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{meta.assets_prefix}}fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{meta.assets_prefix}}site.css">
-<link rel="modulepreload" href="{{meta.assets_prefix}}live-feed.js">
+{{#if meta.in_season}}<link rel="modulepreload" href="{{meta.assets_prefix}}live-feed.js">{{/if}}
 <script type="application/ld+json">{{{meta.json_ld}}}</script>
 <script>
   // Bootstrap the theme before the body renders so users don't see a
@@ -59,9 +59,14 @@
   <nav class="pw-shell-nav" aria-label="Primary">
     <a class="pw-shell-link" href="{{meta.latest_href}}">Latest</a>
     <a class="pw-shell-link" href="{{meta.archive_href}}">Archive</a>
+    {{#if meta.in_season}}
     <a class="pw-shell-link" href="{{meta.assets_prefix}}dashboard/">Dashboard</a>
     <a class="pw-shell-link" href="{{meta.assets_prefix}}schedule/">Schedule</a>
     <a class="pw-shell-link" href="{{meta.assets_prefix}}dashboard/innings/">Inning by inning</a>
+    {{/if}}
+    {{#if meta.is_offseason}}
+    <a class="pw-shell-link" href="{{meta.assets_prefix}}schedule/">2026 Results</a>
+    {{/if}}
     <a class="pw-shell-link" href="{{meta.assets_prefix}}feed.xml" rel="alternate">RSS</a>
     <a class="pw-shell-link pw-shell-link--subscribe" href="{{meta.subscribe_url}}" target="_blank" rel="noopener noreferrer">Subscribe</a>
   </nav>
@@ -81,7 +86,7 @@
       </div>
       <div class="pw-mast-record">
         <div class="pw-record-num">{{record.wins}}-{{record.losses}}</div>
-        <div class="pw-record-label">Season</div>
+        <div class="pw-record-label">{{meta.record_label}}</div>
       </div>
     </div>
 
@@ -171,10 +176,12 @@
       {{/each}}
     </div>
 
+    {{#if meta.in_season}}
     <div class="pw-hero-next">
       <div class="pw-hero-next-label">{{hero.next_label}}</div>
       <div class="pw-hero-next-value">{{hero.next_value}}</div>
     </div>
+    {{/if}}
 
     <div class="pw-hero-bullets">
       {{#each hero.bullets}}
@@ -189,7 +196,7 @@
     <div class="pw-subscribe-inner">
       <div class="pw-subscribe-copy">
         <h2 class="pw-subscribe-title" id="pw-subscribe-heading">Get the Wire in your inbox</h2>
-        <p class="pw-subscribe-dek">A fresh Phillies Wire every morning &mdash; the matchup, lineups, standings, injuries, and what&rsquo;s next.</p>
+        <p class="pw-subscribe-dek">{{meta.subscribe_dek}}</p>
       </div>
       <a class="pw-subscribe-cta" href="{{meta.subscribe_url}}" target="_blank" rel="noopener noreferrer">Subscribe &#8594;</a>
     </div>
@@ -511,6 +518,7 @@
   </section>
   {{/if}}
 
+  {{#if meta.in_season}}
   <aside class="pw-next-game" aria-label="Next scheduled game">
     <div>
       <div class="pw-next-label">{{next_game.label}}</div>
@@ -521,6 +529,7 @@
       <div>{{next_game.broadcast}} &middot; {{next_game.venue}}</div>
     </div>
   </aside>
+  {{/if}}
 
   {{#if meta.issue_nav.show}}
   <nav class="pw-issue-nav" aria-label="Issue navigation">
@@ -790,7 +799,7 @@
     };
   })();
 </script>
-<script type="module" src="{{meta.assets_prefix}}live-feed.js"></script>
+{{#if meta.in_season}}<script type="module" src="{{meta.assets_prefix}}live-feed.js"></script>{{/if}}
 
 </body>
 </html>

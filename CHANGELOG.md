@@ -2,6 +2,12 @@
 
 All material Phillies Wire changes are recorded here, newest first.
 
+## 2026-10-09 — Offseason mode
+
+- Added the `SEASON_PHASE` switch (config.mjs), currently `offseason`: weekly cron only, no enrich and no email, no game/weather/live-feed fetches, and a "2026 season complete" page with the final record computed from the canonical schedule (88-74) instead of the fixture's 0-0.
+- Workflow: removed the daily and */15 crons and added a weekly `0 14 * * 1` cron. The delivery-failure gate now runs only when delivery was attempted.
+- See HANDOFF.md "Offseason runbook" to flip back before spring training.
+
 ## 2026-08-26
 
 ### Reliability and operations (audit remediation)

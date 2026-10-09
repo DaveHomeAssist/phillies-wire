@@ -462,6 +462,10 @@ function escapeXml(value) {
     .replace(/'/g, "&apos;");
 }
 
+export function isOffseasonPayload(data) {
+  return (data?.meta?.status?.mode ?? data?.hero?.mode) === "offseason";
+}
+
 function renderIssue(templateString, data, links, context = {}) {
   const renderData = cloneJson(data);
   renderData.meta = renderData.meta ?? {};
@@ -469,6 +473,18 @@ function renderIssue(templateString, data, links, context = {}) {
   renderData.meta.latest_href = links.latestHref;
   renderData.meta.archive_href = links.archiveHref;
   renderData.meta.subscribe_url = SUBSCRIBE_URL;
+  // Season phase flags for the template (its engine only has {{#if}}).
+  // Offseason hides game-day chrome (Dashboard / Inning by inning nav, next
+  // game panels, the live-feed module) and swaps the subscribe pitch.
+  const isOffseason = isOffseasonPayload(renderData);
+  renderData.meta.is_offseason = isOffseason;
+  renderData.meta.in_season = !isOffseason;
+  renderData.meta.record_label = isOffseason
+    ? `${renderData.meta.completed_season ?? "Season"} Final`
+    : "Season";
+  renderData.meta.subscribe_dek = isOffseason
+    ? "Weekly hot-stove updates all winter \u2014 signings, trades, roster moves, and the road to Opening Day."
+    : "A fresh Phillies Wire every morning \u2014 the matchup, lineups, standings, injuries, and what\u2019s next.";
   enrichMetaForSeo(renderData, links);
   enrichMetaForNavigation(renderData, links, context);
   enrichMetaForSharing(renderData);
@@ -724,6 +740,7 @@ export function upsertArchive(archive, entry, data) {
 function renderArchivePage(archive) {
   const entries = (archive.entries ?? []).filter((entry) => hasValidIssueDate(entry.date));
   const latestEntry = entries[0];
+  const archiveOffseason = latestEntry?.mode === "offseason";
   const latestSummary = latestEntry
     ? `${formatArchiveDate(latestEntry.date)} · ${latestEntry.hero_label} · ${latestEntry.headline}`
     : "No issues published yet.";
@@ -774,10 +791,11 @@ ${itemsHtml}
   <nav class="pw-shell-nav" aria-label="Primary">
     <a class="pw-shell-link" href="../">Latest</a>
     <a class="pw-shell-link" href="./">Archive</a>
-    <a class="pw-shell-link" href="../dashboard/">Dashboard</a>
+${archiveOffseason
+    ? `    <a class="pw-shell-link" href="../schedule/">2026 Results</a>\n`
+    : `    <a class="pw-shell-link" href="../dashboard/">Dashboard</a>
     <a class="pw-shell-link" href="../schedule/">Schedule</a>
-    <a class="pw-shell-link" href="../dashboard/innings/">Inning by inning</a>
-    <a class="pw-shell-link" href="../feed.xml" rel="alternate">RSS</a>
+    <a class="pw-shell-link" href="../dashboard/innings/">Inning by inning</a>\n`}    <a class="pw-shell-link" href="../feed.xml" rel="alternate">RSS</a>
     <a class="pw-shell-link pw-shell-link--subscribe" href="https://buttondown.com/phillieswire" target="_blank" rel="noopener noreferrer">Subscribe</a>
   </nav>
 

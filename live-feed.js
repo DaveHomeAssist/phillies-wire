@@ -2,7 +2,7 @@ const PREVIEW_POLL_MS = 60 * 1000;
 const LIVE_POLL_MS = 15 * 1000;
 const GAME_WINDOW_MS = 6 * 60 * 60 * 1000;
 const MAX_CONSECUTIVE_FAILURES = 4;
-const HERO_MODES = ["pregame", "live", "final", "off_day"];
+const HERO_MODES = ["pregame", "live", "final", "off_day", "offseason"];
 const SEPARATOR = " \u00b7 ";
 
 // Shape guards for the two MLB Stats API responses we consume.
@@ -146,6 +146,12 @@ export function initLiveFeed(doc, win, fetchImpl) {
   const activeWin = win || (typeof window !== "undefined" ? window : null);
   const activeFetch = fetchImpl || (typeof fetch !== "undefined" ? fetch.bind(globalThis) : null);
   if (!activeDoc || !activeWin || !activeFetch) {
+    return;
+  }
+
+  // Offseason pages do not load this module at all; this guard keeps any
+  // cached or embedded copy from polling MLB if it is loaded anyway.
+  if (activeDoc.body?.dataset?.pageMode === "offseason") {
     return;
   }
 

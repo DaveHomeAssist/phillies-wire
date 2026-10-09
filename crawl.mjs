@@ -32,7 +32,10 @@ import {
   TEAM_ID,
   SCHEMA_VERSION,
   buildWeatherUrl,
+  IS_OFFSEASON,
+  COMPLETED_SEASON,
 } from "./config.mjs";
+import { applyOffseasonPayload, buildHotStoveItems, computeFinalRecord } from "./crawl/offseason.mjs";
 const TODAY = getIsoDate();
 const YESTERDAY = getRelativeIsoDate(-1);
 const TRANSACTION_START_DATE = TODAY;
@@ -131,6 +134,10 @@ async function main() {
   const fixture = loadFixture();
   const overrides = loadOverrides(TODAY);
   const fetchSoft = createFetchSoft();
+  if (IS_OFFSEASON) {
+    await runOffseasonCrawl({ fixture, overrides, fetchSoft });
+    return;
+  }
   const [
     {
       scheduleResponse,
@@ -228,6 +235,62 @@ async function main() {
     IS_LIVE_REFRESH
       ? "phillies-wire-data.json refreshed (editorial preserved)"
       : "phillies-wire-data.json written",
+  );
+}
+
+// Offseason crawl: no game, boxscore, feed/live, weather, or recent-finals
+// fetches. Only the daily MLB bundle runs (schedule + a two-week transaction
+// window for hot-stove items), and the final record comes from the canonical
+// season schedule on disk.
+async function runOffseasonCrawl({ fixture, overrides, fetchSoft }) {
+  // Declared inside the function: main() runs at module load, before any
+  // later top-level const would be initialized.
+  const OFFSEASON_SCHEDULE_PATH = `./data/phillies-${COMPLETED_SEASON}.json`;
+  const HOT_STOVE_LOOKBACK_DAYS = 14;
+  const {
+    scheduleResponse,
+    nextScheduleResponse,
+    rosterResponse,
+    transactionResponse,
+  } = await fetchDailyMlbData({
+    today: TODAY,
+    yesterday: YESTERDAY,
+    transactionStartDate: getRelativeIsoDate(-HOT_STOVE_LOOKBACK_DAYS),
+    endDate: getRelativeIsoDate(4),
+    teamId: TEAM_ID,
+    fetchSoft,
+  });
+
+  const schedule = existsSync(OFFSEASON_SCHEDULE_PATH)
+    ? JSON.parse(readFileSync(OFFSEASON_SCHEDULE_PATH, "utf8"))
+    : null;
+  const finalRecord = computeFinalRecord(schedule);
+  if (!finalRecord) {
+    throw new Error(`Offseason crawl could not compute a final record from ${OFFSEASON_SCHEDULE_PATH}.`);
+  }
+
+  const data = buildOffDayPayload(fixture, [], overrides, {
+    scheduleResponse,
+    nextScheduleResponse,
+    rosterResponse,
+    transactionResponse,
+    // Weather is intentionally not fetched in the offseason; mark it present
+    // so computeCrawlState does not flag the run as degraded for it.
+    weatherResponse: {},
+    // The injuries endpoint 404s upstream and the IL is not shown in the
+    // offseason, so it is not counted toward crawl health here.
+  });
+  applyOffseasonPayload(data, {
+    season: COMPLETED_SEASON,
+    finalRecord,
+    hotStoveItems: buildHotStoveItems(transactionResponse),
+  });
+  data.meta.last_final = finalRecord.last_final;
+  applyOverrides(data, overrides);
+  validateCrawlPayload(data);
+  writePayload(data);
+  console.log(
+    `Offseason payload written: ${COMPLETED_SEASON} final ${finalRecord.wins}-${finalRecord.losses} (${finalRecord.source}).`,
   );
 }
 

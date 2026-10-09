@@ -17,17 +17,13 @@ on:
         default: ""
         type: string
   schedule:
-    # Daily morning publish. 13:00 UTC = 09:00 ET (EDT) / 08:00 ET (EST).
-    - cron: "0 13 * * *"
-    # Game-window refresh every 15 minutes. A single cron covers the union
-    # of the EST and EDT windows so the site stays fresh year-round:
-    #   EDT (Mar 2nd Sunday - Nov 1st Sunday): 12:00-01:00 ET == 16:00-05:00 UTC
-    #   EST (Nov 1st Sunday - Mar 2nd Sunday): 12:00-01:00 ET == 17:00-06:00 UTC
-    #   union: 16:00-06:00 UTC.
-    # One entry, not two: separate EDT/EST crons double-fired every 15
-    # minutes across their overlapping hours, doubling Actions runs and
-    # archive commits for no extra freshness.
-    - cron: "*/15 16-23,0-6 * * *"
+    # OFFSEASON: weekly publish, Mondays 14:00 UTC (10:00 ET in EST / 09:00
+    # ET in EDT). The daily 13:00 UTC run and the */15 game-window refresh
+    # are removed for the offseason; see HANDOFF.md "Offseason runbook" for
+    # the in-season entries to restore before spring training:
+    #   - cron: "0 13 * * *"              # daily morning publish
+    #   - cron: "*/15 16-23,0-6 * * *"    # game-window refresh
+    - cron: "0 14 * * 1"
 
 permissions:
   contents: write
@@ -79,13 +75,14 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "mode=${{ github.event.inputs.issue_mode }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "0 13 * * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "0 13 * * *" ] || [ "${{ github.event.schedule }}" = "0 14 * * 1" ]; then
             echo "mode=daily" >> "$GITHUB_OUTPUT"
           else
             echo "mode=live" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Run pipeline
+        id: pipeline
         env:
           ISSUE_MODE: ${{ steps.mode.outputs.mode }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -174,8 +171,11 @@ jobs:
       # success when the newsletter did not actually go out. Only the
       # daily (delivery-attempting) mode is gated; live refreshes preserve
       # a prior failed status without re-failing every 15 minutes.
+      # Only gate when run.mjs actually attempted delivery (it writes
+      # delivery_attempted to GITHUB_OUTPUT). Offseason, live refreshes, and
+      # runs without recipients never attempt it, so they can't fail here.
       - name: Fail on required delivery failure
-        if: steps.mode.outputs.mode == 'daily'
+        if: steps.mode.outputs.mode == 'daily' && steps.pipeline.outputs.delivery_attempted == 'true'
         run: |
           node -e '
             const { existsSync, readFileSync } = require("node:fs");

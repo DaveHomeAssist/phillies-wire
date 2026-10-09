@@ -43,3 +43,15 @@ export const FETCH_TIMEOUT_MS = 10_000;
 // fallback, etc.) swap ONLY this one constant.
 export const SUBSCRIBE_ADDRESS = "subscribe@phillieswire.com";
 export const SUBSCRIBE_URL = "https://buttondown.com/phillieswire";
+
+// Season phase switch. "offseason" freezes the site on a season-complete
+// page: crawl skips game/boxscore/feed-live/weather fetches, enrich and email
+// delivery are skipped, the live-feed module is not loaded, and the hero shows
+// the final record computed from the canonical schedule. Flip back to
+// "regular" before spring training (see HANDOFF.md "Offseason runbook").
+// The SEASON_PHASE env var overrides this default (e.g. for a local test).
+export const DEFAULT_SEASON_PHASE = "offseason";
+export const SEASON_PHASE = (process.env.SEASON_PHASE?.trim() || DEFAULT_SEASON_PHASE).toLowerCase();
+export const IS_OFFSEASON = SEASON_PHASE === "offseason";
+// Season whose final record the offseason page shows.
+export const COMPLETED_SEASON = 2026;
