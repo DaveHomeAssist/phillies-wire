@@ -5,51 +5,51 @@
     "edition": 189,
     "volume": 1,
     "publication": "Phillies Wire",
-    "generated_at": "2026-10-09T21:25:27.846Z",
+    "generated_at": "2026-10-09T21:27:54.636Z",
     "status": {
-      "mode": "off_day",
-      "mode_label": "Off Day",
+      "mode": "offseason",
+      "mode_label": "Offseason",
       "crawl_state": "ok",
       "enrich_state": "skipped",
-      "enrich_label": "No game today. Archive and next-game mode published.",
-      "generated_at_et": "Oct 9, 2026, 5:25 PM ET",
+      "enrich_label": "Offseason mode. Weekly hot-stove edition published.",
+      "generated_at_et": "Oct 9, 2026, 5:27 PM ET",
       "source_notes": []
     }
   },
   "record": {
-    "wins": 0,
-    "losses": 0,
-    "streak": "L1",
+    "wins": 88,
+    "losses": 74,
+    "streak": "W1",
     "division_rank": 0,
     "division": "NL East"
   },
   "hero": {
-    "mode": "off_day",
-    "label": "Off Day",
-    "headline": "No Phillies game today",
-    "dek": "Next matchup pending",
-    "summary": "Use the archive to catch up or check the next scheduled game window.",
+    "mode": "offseason",
+    "label": "Offseason",
+    "headline": "2026 season complete",
+    "dek": "Phillies finish 88-74 (.543)",
+    "summary": "The Wire is in offseason mode: weekly hot-stove updates on signings, trades, and roster moves until spring training.",
     "cards": [
       {
-        "label": "Next Game",
-        "value": "TBD"
+        "label": "Final Record",
+        "value": "88-74"
       },
       {
-        "label": "First Pitch",
-        "value": "TBD"
+        "label": "Last Game",
+        "value": "W 7-3 vs TB · Sep 27"
       },
       {
-        "label": "Watch",
-        "value": "TBD"
+        "label": "Next Season",
+        "value": "2027 schedule TBA"
       }
     ],
     "bullets": [
-      "Schedule update pending",
-      "Venue update pending",
-      "Archive mode is active until the next issue is generated."
+      "2026 regular season: 88-74",
+      "Browse the archive for every issue of the season.",
+      "Hot-stove moves update weekly in the ticker."
     ],
-    "next_label": "Next Game",
-    "next_value": "Schedule refresh required · TBD · TBD"
+    "next_label": "Next Season",
+    "next_value": "2027 schedule to be announced"
   },
   "sections": {
     "lineup": {
@@ -142,11 +142,11 @@
     }
   },
   "next_game": {
-    "label": "Next Game",
-    "matchup": "Schedule refresh required",
-    "date": "TBD",
-    "time": "TBD",
+    "label": "Next Season",
+    "matchup": "2027 schedule to be announced",
+    "date": "TBA",
+    "time": "TBA",
     "broadcast": "TBD",
-    "venue": "TBD"
+    "venue": "TBA"
   }
 }
