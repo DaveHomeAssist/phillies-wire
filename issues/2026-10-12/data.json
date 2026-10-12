@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.4.0",
+  "meta": {
+    "date": "2026-10-12",
+    "edition": 190,
+    "volume": 1,
+    "publication": "Phillies Wire",
+    "generated_at": "2026-10-12T14:28:31.836Z",
+    "status": {
+      "mode": "offseason",
+      "mode_label": "Offseason",
+      "crawl_state": "ok",
+      "enrich_state": "skipped",
+      "enrich_label": "Offseason mode. Weekly hot-stove edition published.",
+      "generated_at_et": "Oct 12, 2026, 10:28 AM ET",
+      "source_notes": []
+    }
+  },
+  "record": {
+    "wins": 88,
+    "losses": 74,
+    "streak": "W1",
+    "division_rank": 0,
+    "division": "NL East"
+  },
+  "hero": {
+    "mode": "offseason",
+    "label": "Offseason",
+    "headline": "2026 season complete",
+    "dek": "Phillies finish 88-74 (.543)",
+    "summary": "The Wire is in offseason mode: weekly hot-stove updates on signings, trades, and roster moves until spring training.",
+    "cards": [
+      {
+        "label": "Final Record",
+        "value": "88-74"
+      },
+      {
+        "label": "Last Game",
+        "value": "W 7-3 vs TB · Sep 27"
+      },
+      {
+        "label": "Next Season",
+        "value": "2027 schedule TBA"
+      }
+    ],
+    "bullets": [
+      "2026 regular season: 88-74",
+      "Browse the archive for every issue of the season.",
+      "Hot-stove moves update weekly in the ticker."
+    ],
+    "next_label": "Next Season",
+    "next_value": "2027 schedule to be announced"
+  },
+  "sections": {
+    "lineup": {
+      "content": {
+        "status_note": "Lineups post about two hours before first pitch. Holding until MLB confirms.",
+        "announced": false,
+        "mode": "pending",
+        "mode_label": "Pending",
+        "show_orders": false,
+        "first_pitch": "TBD",
+        "starters": {
+          "home": {
+            "team": "PHI",
+            "name": "TBD",
+            "hand": "R"
+          },
+          "away": {
+            "team": "OPP",
+            "name": "TBD",
+            "hand": "R"
+          },
+          "phi": {
+            "team": "PHI",
+            "name": "TBD",
+            "hand": "R"
+          },
+          "opp": {
+            "team": "OPP",
+            "name": "TBD",
+            "hand": "R"
+          }
+        },
+        "batting_order": {
+          "home": [],
+          "away": [],
+          "phi": [],
+          "opp": []
+        }
+      }
+    },
+    "game_status": {
+      "content": {
+        "matchup": "Schedule refresh required",
+        "first_pitch": "TBD",
+        "venue": "TBD",
+        "starters": {
+          "home": {
+            "name": "TBD",
+            "hand": "R"
+          },
+          "away": {
+            "name": "TBD",
+            "hand": "R"
+          },
+          "phi": {
+            "name": "TBD",
+            "hand": "R"
+          },
+          "opp": {
+            "name": "TBD",
+            "hand": "R"
+          }
+        },
+        "series": {
+          "home_wins": 0,
+          "away_wins": 0,
+          "label": "Series status pending"
+        },
+        "broadcast": {
+          "tv": "TV TBD",
+          "stream": "MLB.TV",
+          "radio": "Radio TBD"
+        },
+        "weather": {
+          "temp_f": "",
+          "condition": "Weather unavailable",
+          "wind": "Weather unavailable",
+          "gusts_mph": ""
+        },
+        "giveaway": "",
+        "transit": "Broad Street Line to NRG Station",
+        "venue_is_home": true
+      }
+    },
+    "injury_report": {
+      "content": {
+        "il_entries": [],
+        "footer_note": "Injury status unavailable until MLB injury or transaction feeds return current data."
+      }
+    }
+  },
+  "next_game": {
+    "label": "Next Season",
+    "matchup": "2027 schedule to be announced",
+    "date": "TBA",
+    "time": "TBA",
+    "broadcast": "TBD",
+    "venue": "TBA"
+  }
+}
