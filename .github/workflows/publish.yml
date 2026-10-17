@@ -16,14 +16,6 @@ on:
         required: false
         default: ""
         type: string
-  schedule:
-    # OFFSEASON: weekly publish, Mondays 14:00 UTC (10:00 ET in EST / 09:00
-    # ET in EDT). The daily 13:00 UTC run and the */15 game-window refresh
-    # are removed for the offseason; see HANDOFF.md "Offseason runbook" for
-    # the in-season entries to restore before spring training:
-    #   - cron: "0 13 * * *"              # daily morning publish
-    #   - cron: "*/15 16-23,0-6 * * *"    # game-window refresh
-    - cron: "0 14 * * 1"
 
 permissions:
   contents: write
