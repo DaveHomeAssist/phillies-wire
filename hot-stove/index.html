@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phillies Wire — Hot Stove Edition, Nov 23, 2026</title>
+<style>
+
+  @font-face {
+    font-family: "Playfair Display";
+    src: url("fonts/PlayfairDisplay-Variable.ttf") format("truetype");
+    font-weight: 400 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Playfair Display";
+    src: url("fonts/PlayfairDisplay-Italic-Variable.ttf") format("truetype");
+    font-weight: 400 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Playfair Display SC";
+    src: url("fonts/PlayfairDisplaySC-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Playfair Display SC";
+    src: url("fonts/PlayfairDisplaySC-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Libre Caslon Text";
+    src: url("fonts/LibreCaslonText-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Libre Caslon Text";
+    src: url("fonts/LibreCaslonText-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Libre Caslon Text";
+    src: url("fonts/LibreCaslonText-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --red: #E81828;
+    --navy: #002D72;
+    --cream: #F4EFE3;
+    --ink: #1B1E24;
+    --max: 46rem;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    background: var(--cream);
+    color: var(--ink);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: "Libre Caslon Text", "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    color: var(--ink);
+    background-color: var(--cream);
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgba(232, 24, 40, 0.13) 0,
+      rgba(232, 24, 40, 0.13) 0.85px,
+      transparent 0.85px,
+      transparent 14px
+    );
+    min-height: 100vh;
+  }
+
+  .sheet {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3.5rem;
+    background: var(--cream);
+    box-shadow: 0 0 0 1px rgba(0,45,114,0.10), 0 10px 40px rgba(0,45,114,0.08);
+  }
+  @media (min-width: 721px) { .sheet { padding: 2.5rem 3rem 3.5rem; margin: 2rem auto; } }
+
+  .masthead {
+    text-align: center;
+    padding: 0 0 0.35rem;
+  }
+  .kicker {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.28em;
+    color: var(--red);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .title {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(2.15rem, 7.4vw, 3.35rem);
+    color: var(--navy);
+    letter-spacing: 0.06em;
+    line-height: 1;
+    margin: 0.35rem 0 0.2rem;
+  }
+  .edition {
+    font-family: "Playfair Display", Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.15rem, 3.5vw, 1.45rem);
+    color: var(--navy);
+  }
+  .dateline {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    color: var(--navy);
+    margin-top: 0.45rem;
+  }
+  .homage {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #3a4150;
+    margin-top: 0.3rem;
+  }
+  .double-rule {
+    border: none;
+    border-top: 2.2px solid var(--navy);
+    border-bottom: 0.6px solid var(--navy);
+    height: 4px;
+    background: transparent;
+    margin: 0.85rem 0 1.1rem;
+  }
+
+  /* Player */
+  .listen {
+    margin: 0.1rem 0 1.35rem;
+  }
+  .listen-title {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-weight: 400;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    color: var(--red);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+  }
+  .listen audio {
+    display: block;
+    width: 100%;
+    margin-top: 0.55rem;
+    height: 2.2rem;
+  }
+  .listen-shell {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    border: 0.75px solid var(--navy);
+    background: rgba(255, 252, 246, 0.78);
+    padding: 0.85rem 1rem 0.8rem 0.8rem;
+  }
+  .listen.is-enhanced .listen-shell { display: flex; }
+  .listen.is-enhanced audio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .play-btn {
+    flex: 0 0 auto;
+    width: 3.15rem;
+    height: 3.15rem;
+    border-radius: 50%;
+    border: 1.5px solid var(--red);
+    background: var(--navy);
+    color: #F7F2E8;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: background 0.15s ease, transform 0.12s ease;
+  }
+  .play-btn:hover { background: #001e50; }
+  .play-btn:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 3px;
+  }
+  .play-btn:active { transform: scale(0.97); }
+  .play-btn .icon { width: 1.2rem; height: 1.2rem; display: block; }
+  .play-btn .icon-play { margin-left: 0.12rem; }
+  .play-btn .icon-pause { display: none; }
+  .play-btn.is-playing .icon-play { display: none; }
+  .play-btn.is-playing .icon-pause { display: block; margin-left: 0; }
+
+  .listen-meta { flex: 1 1 auto; min-width: 0; }
+  .progress-row {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .time {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--navy);
+    min-width: 2.4rem;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .time:last-of-type { text-align: right; }
+
+  .seek {
+    flex: 1 1 auto;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 16px;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: linear-gradient(var(--red), var(--red)), linear-gradient(rgba(0, 45, 114, 0.22), rgba(0, 45, 114, 0.22));
+    background-size: var(--progress, 0%) 3px, 100% 3px;
+    background-position: left center, left center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0;
+    min-width: 0;
+  }
+  .seek:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+  .seek::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--navy);
+    border: 1.5px solid var(--red);
+    cursor: pointer;
+  }
+  .seek::-moz-range-thumb {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--navy);
+    border: 1.5px solid var(--red);
+    cursor: pointer;
+  }
+  .seek::-moz-range-track {
+    height: 3px;
+    background: transparent;
+    border: none;
+  }
+
+  .nobr { white-space: nowrap; }
+  .listen-credit {
+    font-style: italic;
+    font-size: 0.82rem;
+    color: #3a4150;
+    margin: 0.4rem 0 0;
+    text-align: left;
+    line-height: 1.35;
+  }
+
+  .top {
+    display: grid;
+    grid-template-columns: 1fr minmax(12rem, 15.5rem);
+    gap: 1.4rem;
+    align-items: start;
+    margin-bottom: 0.4rem;
+  }
+
+  .lede p {
+    margin: 0 0 0.85rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .lede p:first-of-type::first-letter {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    font-size: 3.15rem;
+    float: left;
+    line-height: 0.8;
+    padding: 0.08em 0.08em 0 0;
+    color: var(--navy);
+  }
+
+  aside.dates {
+    background: rgba(255, 252, 246, 0.78);
+    border: 0.75px solid var(--navy);
+    padding: 0.8rem 0.85rem;
+  }
+  aside.dates .aside-label {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--red);
+    text-align: center;
+    margin-bottom: 0.15rem;
+  }
+  aside.dates h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 0.45rem;
+    line-height: 1.15;
+  }
+  aside.dates .item {
+    border-top: 0.5px solid rgba(0, 45, 114, 0.28);
+    padding: 0.5rem 0 0.35rem;
+  }
+  aside.dates .when {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.12rem;
+  }
+  aside.dates .what {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--ink);
+  }
+  aside.dates .what strong { color: var(--navy); }
+
+  h2.section {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: var(--navy);
+    margin: 1.55rem 0 0.55rem;
+    padding-bottom: 0.28rem;
+    border-bottom: 0.75px solid var(--navy);
+    line-height: 1.2;
+  }
+  h2.section span.k {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-weight: 400;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+
+  p { margin: 0 0 0.85rem; text-align: justify; hyphens: auto; }
+  p.flourish { font-style: italic; }
+
+  .cols {
+    column-count: 2;
+    column-gap: 1.4rem;
+    column-rule: 0.4px solid rgba(0, 45, 114, 0.25);
+  }
+  .cols h2.section { column-span: all; }
+
+  .note {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: #2a3140;
+    font-style: italic;
+    margin: 0.15rem 0 0.75rem;
+  }
+
+  .rumor {
+    border: 0.75px solid var(--navy);
+    padding: 0.75rem 0.9rem 0.35rem;
+    background: rgba(255, 252, 246, 0.62);
+    margin-bottom: 0.75rem;
+  }
+  .rumor h3 {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    color: var(--red);
+    font-weight: 400;
+    margin-bottom: 0.15rem;
+  }
+  .rumor h4 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.08rem;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    line-height: 1.25;
+  }
+  .rumor p {
+    font-size: 0.98rem;
+    line-height: 1.48;
+    margin-bottom: 0.55rem;
+  }
+
+  .sources { margin-top: 0.3rem; }
+  .sources p, .sources .grid p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-align: left;
+    color: #2c3340;
+    overflow-wrap: anywhere;
+  }
+  .sources .grid {
+    column-count: 2;
+    column-gap: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  .sources .grid p {
+    break-inside: avoid;
+    margin: 0 0 0.45rem;
+  }
+  .sources a { color: var(--navy); text-decoration: underline; text-underline-offset: 2px; }
+  .sources .pub { font-weight: 700; color: var(--navy); font-style: normal; }
+
+  .colophon {
+    text-align: center;
+    font-size: 0.78rem;
+    color: #4a5160;
+    margin-top: 1.5rem;
+    font-style: italic;
+  }
+
+
+  .splash-escape {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.4rem 1.25rem;
+    margin: 0 0 1.15rem;
+  }
+  .splash-escape--bottom { margin: 1.6rem 0 0; }
+  .continue-link {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--navy);
+    text-decoration: none;
+    border-bottom: 0.75px solid rgba(0, 45, 114, 0.35);
+    padding-bottom: 0.08rem;
+  }
+  .continue-link:hover { color: var(--red); border-bottom-color: var(--red); }
+  .continue-link:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 3px;
+  }
+  .skip-hint {
+    font-family: "Playfair Display SC", "Playfair Display", Georgia, serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #4a5160;
+  }
+
+  @media (max-width: 720px) {
+    .sheet { padding: 1.35rem 1.05rem 2.6rem; }
+    body { font-size: 1.05rem; line-height: 1.55; }
+    p, .lede p { text-align: left; }
+    .top, .cols, .sources .grid {
+      grid-template-columns: 1fr;
+      column-count: 1;
+      column-rule: none;
+    }
+    .top { display: block; }
+    aside.dates { margin-top: 0.4rem; }
+    .play-btn { width: 2.9rem; height: 2.9rem; }
+    h2.section { font-size: 1.25rem; }
+  }
+
+</style>
+</head>
+<body>
+  <div class="sheet">
+  <div class="splash-escape" role="navigation" aria-label="Leave this edition">
+    <a class="continue-link" href="/" id="continueTop">Continue to Phillies Wire &#8594;</a>
+    <span class="skip-hint">Press Esc to skip</span>
+  </div>
+<header class="masthead">
+    <div class="kicker">South Philadelphia &middot; Winter Dispatch</div>
+    <div class="title">Phillies Wire</div>
+    <div class="edition">Hot Stove Edition</div>
+    <div class="dateline">Monday, November 23, 2026</div>
+    <div class="homage">Written in the spirit of Harry the K</div>
+  </header>
+  <hr class="double-rule">
+
+  <section class="listen" aria-labelledby="listen-heading">
+    <h2 id="listen-heading" class="listen-title">Listen to this edition</h2>
+    <div class="listen-shell">
+      <button type="button" class="play-btn" id="playBtn" aria-label="Play this edition" aria-pressed="false">
+        <svg class="icon icon-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <polygon points="8,5 20,12 8,19" fill="currentColor"></polygon>
+        </svg>
+        <svg class="icon icon-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="6" y="5" width="4.2" height="14" fill="currentColor"></rect>
+          <rect x="13.8" y="5" width="4.2" height="14" fill="currentColor"></rect>
+        </svg>
+      </button>
+      <div class="listen-meta">
+        <div class="progress-row">
+          <span class="time" id="elapsed" aria-hidden="true">0:00</span>
+          <input type="range" id="seek" class="seek" min="0" max="196" value="0" step="0.1" aria-label="Seek in this edition">
+          <span class="time" id="remaining" aria-hidden="true">3:16</span>
+        </div>
+        <p class="listen-credit">Read in the spirit of Harry the K &middot; <span class="nobr">AI-voiced</span></p>
+      </div>
+    </div>
+    <audio id="hotStoveAudio" controls preload="metadata" src="hot-stove-audio.mp3">
+      Your browser cannot play this audio. <a href="hot-stove-audio.mp3">Download this edition (MP3)</a>
+    </audio>
+  </section>
+
+
+  <div class="top">
+    <div class="lede">
+      <p>The grass has gone quiet now, friends, and the 2026 season is in the books. They spent the summer chasing something lasting, held on by a thread in that final week, and then Atlanta closed the door in three games in the National League Wild Card Series. Rob Thomson was let go on the 28th of April. Don Mattingly took the wheel, went 79 and 55, and on the 15th of October the club took the interim tag off and handed him a two-year contract. The bench is his now.</p>
+      <p>And yet the stove, for all the talk of winter, has not yet roared. The only major-league contract signed this offseason belongs to Tim Mayza &mdash; one year, $2.75 million, a hometown left-hander brought back in mid-October. The only trade is for a pitcher who will not throw a pitch in 2027. There is about a week of open business before the labor agreement expires on the first of December, and a lockout is widely expected. So let us take the inventory while the window is still open: the confirmed business first, and the whispers, plainly labeled, after that.</p>
+    </div>
+    <aside class="dates">
+      <div class="aside-label">The Calendar</div>
+      <h2>Key Dates</h2>
+      <div class="item">
+        <span class="when">Tuesday, Dec 1</span>
+        <div class="what"><strong>CBA expires</strong> at 11:59 p.m. ET. A lockout is widely expected and would freeze major-league transactions.</div>
+      </div>
+      <div class="item">
+        <span class="when">Dec 7&ndash;9</span>
+        <div class="what"><strong>Winter Meetings</strong> in San Diego, still scheduled, but expected to be canceled if a lockout is on. Not officially called off as of today.</div>
+      </div>
+      <div class="item">
+        <span class="when">Wednesday, Dec 9</span>
+        <div class="what"><strong>Rule 5 Draft.</strong> The major-league phase is in doubt under a lockout; the minor-league phase is expected to proceed.</div>
+      </div>
+    </aside>
+  </div>
+
+  <h2 class="section"><span class="k">Confirmed</span>Friday&rsquo;s Deadline, and a Trade for Tomorrow</h2>
+  <p>Friday afternoon, five o&rsquo;clock Eastern, the non-tender deadline arrived, and the club did its housekeeping. They tendered contracts to Bryson Stott, Brandon Marsh, closer Jhoan Duran, and Orion Kerkering &mdash; still under club control, salaries not yet agreed. They reached 2027 deals with outfielder Derek Hill, catcher Rafael March&aacute;n, and left-hander Tanner Banks, the last of those at $1.3 million, according to Jon Morosi of MLB Network. And they declined to tender contracts to outfielder Bryan De La Cruz, infielder Brett Harris, and right-handers Mois&eacute;s Chace and Andrew Hoffmann, who became free agents on the spot. De La Cruz was the only one of that group to appear for the Phillies in 2026, hitting .280 with a .762 OPS in 86 plate appearances.</p>
+  <p>That same evening they made a trade. Right-hander Jordan Leasure arrived from the White Sox for Christian Coppola, a local product, the club&rsquo;s 12th-round choice this June out of Saint Joseph&rsquo;s, who has not yet pitched as a professional. Leasure, 28, agreed to a 2027 contract at once. He is also coming off UCL surgery on August 17 and is expected to miss the entire 2027 season, with a return hoped for in the spring of 2028. A flier, then &mdash; not a bullpen piece for next year.</p>
+  <p>Around that week they also added minor-league depth: Max Kranick, Geoff Hartlieb, Josh Simpson, Jerming Rosario, Blake Hunt, Brian Navarreto, Bryan Ramos, and, on the 21st, catcher-outfielder Ricardo Olivar, a former Twins prospect, as reported by Jonathan Mayo of MLB.com.</p>
+
+  <div class="keep" style="break-inside:avoid;page-break-inside:avoid">
+  <h2 class="section"><span class="k">The Forty</span>One Name Protected, and a Jewel Kept in the Drawer</h2>
+  <p>On the 17th they added one name to the 40-man roster, and only one: Bryan Rincon, the shortstop out of Reading, twenty-two years old, the Paul Owens Award winner after a .267/.410/.517 season with 26 home runs and 30 stolen bases. Dave Dombrowski had said the young man &ldquo;might play on our big league club next year,&rdquo; and that the club would not risk losing him if a Rule 5 draft is held. Among the organization&rsquo;s top thirty prospects, Aroon Escobar, Juan Villavicencio, Wen-Hui Pan, and Mavis Graves were left unprotected. Gage Wood and Aidan Miller did not need to be. After the addition, the 40-man stood at 39.</p>
+  </div>
+
+  <div class="cols">
+    <h2 class="section"><span class="k">Free Agency</span>No Qualifying Offer, and the Market Still Open</h2>
+    <p>Seven Phillies became free agents when the market opened on October 29: Alec Bohm, Luis Arraez, Edmundo Sosa, Jos&eacute; Alvarado, Brooks Raley, Adolis Garc&iacute;a, and Nestor Cortes. Catcher Garrett Stubbs elected free agency a few days later, on November 2. The club extended no qualifying offer &mdash; not to Bohm, not to anyone. The offer this winter was a one-year, $23.15 million proposition, and the deadline was allowed to pass. Philadelphia may still bring Bohm back on a different figure, but he walks the market with no draft-pick compensation attached. Todd Zolecki wrote that a return is possible, and also that it is most likely his Phillies career has come to an end after seven seasons. As of this writing, none of those men, nor the November 20 non-tenders, has been found on a new major-league contract.</p>
+
+    <h2 class="section"><span class="k">Hardware</span>A Long Ball in November, and a Pitcher Who Came All the Way Back</h2>
+    <p class="flourish">Now and then, even in November, a ball still leaves the yard.</p>
+    <p><em>Outta here!</em> Kyle Schwarber, that long-ball presence in the middle of the order, has been named the National League&rsquo;s Silver Slugger at designated hitter &mdash; his second, after 2022. Forty-five home runs, tied for the major-league lead, and 105 walks, his fourth straight season with a hundred or more. That is a summer&rsquo;s work worth a quiet nod from the booth.</p>
+    <p>Zack Wheeler, who missed the end of 2025 after a blood clot and thoracic-outlet surgery, came back on April 25 and did not miss another start. He finished with a 3.00 ERA and 193 strikeouts in 162 innings, and he has been named the National League Comeback Player of the Year &mdash; the first Phillie so honored since Brad Lidge in 2008.</p>
+    <p>Cristopher S&aacute;nchez, who keeps knocking on that door, finished second in the Cy Young voting for the second year in a row, appearing on all thirty ballots, just ahead of Chris Sale. Jes&uacute;s Luzardo was fifth. Jhoan Duran finished second in the inaugural BBWAA National League Reliever of the Year voting, behind a unanimous Mason Miller, after a 1.82 ERA and 33 saves. S&aacute;nchez was named to the All-MLB First Team; Luzardo to the Second. In the MVP balloting, S&aacute;nchez placed eighth, Schwarber eleventh, and our own Bryce Harper fourteenth. Pete Crow-Armstrong of the Cubs won it unanimously. There were no Gold Glove finalists from this club, and no winners. The last of those was Wheeler, in 2023.</p>
+
+    <h2 class="section"><span class="k">The Dugout</span>Mattingly Puts His Stamp on the Staff</h2>
+    <p>Mattingly has begun to shape the room. Hitting coach Kevin Long and infield coach Bobby Dickerson will not return. Carlos Mendoza, once the manager of the Mets, has been hired as infield and third-base coach. On October 27, Peter Fatse, late of Boston, was named hitting coach, with Joe Cronin joining as an assistant and Edwar Gonzalez retained. Dombrowski, entering the last year of his own contract in 2027, has told Trea Turner that better shortstop defense is &ldquo;mandatory,&rdquo; and that Aidan Miller has &ldquo;a heck of a chance&rdquo; to make the club in the spring, though he has not been anointed. The president of baseball operations was plain about the shopping list: &ldquo;We have to have an outfielder.&rdquo; He added that he is &ldquo;not necessarily looking for our club to continue to get older.&rdquo; The 2026 payroll was around $330 million; he would not say whether 2027 will approach that, only that there is &ldquo;some flexibility in all things.&rdquo;</p>
+
+    <h2 class="section"><span class="k">The Training Room</span>A Quiet Winter of Recoveries</h2>
+    <p>Brandon Marsh underwent a minor, elective procedure on his left wrist on October 14 &mdash; a carpal boss excision in Scottsdale &mdash; and is expected to resume baseball work in December and be ready for spring training. Johan Rojas, after June UCL surgery, is also expected for the spring. Brad Keller, who had elbow reconstruction on July 29, may not be back until the final two months of 2027. Leasure, as noted, is a 2028 hope.</p>
+    <p>And on the Hall of Fame ballot, released last week, you will find some old friends: Chase Utley, who received 59.1 percent a year ago, with 75 percent needed; Jimmy Rollins; Cole Hamels; and Bobby Abreu; plus first-year candidates with time here in Jake Arrieta, Jay Bruce, and Asdr&uacute;bal Cabrera. The announcement comes January 19.</p>
+  </div>
+
+  <h2 class="section"><span class="k">The Market &mdash; Reported, Not Completed</span>Whispers Along the Hot Stove</h2>
+  <p class="note">These are reports of interest, not agreements. No deal has been announced on any of the names below.</p>
+
+  <div class="rumor">
+    <h3>Reported &middot; November 12 &middot; Todd Zolecki, MLB.com</h3>
+    <h4>Teruaki Sato, and a caution about age</h4>
+    <p>Zolecki, citing sources, writes that the Phillies have interest in Teruaki Sato, the posted Japanese slugger, as they hunt for an outfielder &mdash; in part because longer, costlier commitments to Seiya Suzuki or Randy Arozarena, both in their thirties, would run against Dombrowski&rsquo;s caution about getting older. Mark Feinsand has reported that the Yankees, Mets, Dodgers, and Padres also have interest in Sato.</p>
+  </div>
+  <div class="rumor">
+    <h3>Reported &middot; November 22 &middot; Cotillo &amp; McAdam, MassLive, via MLB Trade Rumors</h3>
+    <h4>Due diligence on Jarren Duran</h4>
+    <p>Chris Cotillo and Sean McAdam named the Padres, Mariners, and Phillies as clubs that have done due diligence on Boston outfielder Jarren Duran. MLB Trade Rumors called Philadelphia a dark horse. No trade has followed.</p>
+  </div>
+  <div class="rumor">
+    <h3>Reported &middot; November 9 &middot; Jim Salisbury, NBC Sports Philadelphia</h3>
+    <h4>Ha-Seong Kim as infield insurance</h4>
+    <p>Salisbury, citing sources, reported that the Phillies are eyeing free-agent infielder Ha-Seong Kim as versatile insurance if Trea Turner is moved off shortstop, and that the club prefers a shorter, bounce-back deal.</p>
+  </div>
+  <div class="rumor">
+    <h3>Reported &middot; Mid-November &middot; Morosi, Heyman, Gelb</h3>
+    <h4>The bullpen market, and one door already closed</h4>
+    <p>Jon Morosi had the Phillies among the teams involved in the market for left-hander A.J. Minter, alongside the Rangers, Nationals, and Blue Jays. They had also been connected, by Jon Heyman, to Jonathan Lo&aacute;isiga; on November 20 he agreed to return to the Yankees, pending a physical, on a two-year deal worth about $18 million. Matt Gelb of The Athletic reported trade interest in Orion Kerkering after a difficult 2026; the Phillies tendered him on the 20th, and no trade has been announced. Zolecki, only today, reminded us that a big pitching signing elsewhere has not changed the essential truth: this club still needs a bat.</p>
+  </div>
+
+  <p>So that is the ledger, friends, with a week left on the clock. The hardware is in the cabinet. The manager is in place. The big bat, and the help in the bullpen, are still out there on the winter air. We will keep a light on in the booth.</p>
+
+  <h2 class="section"><span class="k">Appendix</span>Sources</h2>
+  <div class="sources">
+    <p>Drawn from a Nov 23, 2026 news sweep. Confirmed items were checked against pages that loaded. Banks&rsquo;s $1.3 million (Morosi) and Mayza&rsquo;s $2.75 million (Gelb/ESPN) come from beat reporting, not a club salary announcement.</p>
+    <div class="grid">
+      <p><span class="pub">Transactions.</span> <a href="https://www.mlb.com/phillies/roster/transactions">mlb.com/phillies/roster/transactions</a></p>
+      <p><span class="pub">Non-tenders / Leasure.</span> <a href="https://www.mlb.com/phillies/news/bryan-de-la-cruz-among-players-non-tendered-by-phillies">mlb.com/phillies/news/bryan-de-la-cruz-among-players-non-tendered-by-phillies</a> &middot; <a href="https://www.inquirer.com/phillies/roster-moves-trade-pitcher-non-tender-deadline-contracts-20261120.html">inquirer.com/.../roster-moves-trade-pitcher-non-tender-deadline-contracts-20261120.html</a></p>
+      <p><span class="pub">Rincon / Rule 5.</span> <a href="https://www.mlb.com/news/bryan-rincon-phillies-40-man-roster-rule-5-draft2026">mlb.com/news/bryan-rincon-phillies-40-man-roster-rule-5-draft2026</a></p>
+      <p><span class="pub">Qualifying offer / Bohm.</span> <a href="https://www.nbcsportsphiladelphia.com/mlb/philadelphia-phillies/phillies-alec-bohm-qualifying-offer-free-agency/763750/">nbcsportsphiladelphia.com/.../phillies-alec-bohm-qualifying-offer-free-agency/763750/</a></p>
+      <p><span class="pub">Silver Slugger.</span> <a href="https://www.mlb.com/news/2026-silver-slugger-award-winners">mlb.com/news/2026-silver-slugger-award-winners</a></p>
+      <p><span class="pub">Cy Young / Reliever.</span> <a href="https://www.inquirer.com/phillies/cristopher-sanchez-jhoan-duran-nl-cy-young-reliever-of-the-year-awards-20261111.html">inquirer.com/.../cristopher-sanchez-jhoan-duran-nl-cy-young-reliever-of-the-year-awards-20261111.html</a></p>
+      <p><span class="pub">Wheeler Comeback.</span> <a href="https://www.inquirer.com/phillies/zack-wheeler-nl-comeback-player-award-20261111.html">inquirer.com/phillies/zack-wheeler-nl-comeback-player-award-20261111.html</a></p>
+      <p><span class="pub">Mattingly / Mayza / Mendoza.</span> <a href="https://www.espn.com/mlb/story/_/id/50191337/don-mattingly-phillies-get-work-offseason-changes">espn.com/mlb/story/_/id/50191337/don-mattingly-phillies-get-work-offseason-changes</a></p>
+      <p><span class="pub">Fatse hire.</span> <a href="https://www.mlb.com/news/phillies-hire-peter-fatse-as-new-hitting-coach">mlb.com/news/phillies-hire-peter-fatse-as-new-hitting-coach</a></p>
+      <p><span class="pub">Marsh surgery.</span> <a href="https://www.mlb.com/news/brandon-marsh-had-minor-wrist-surgery-after-season">mlb.com/news/brandon-marsh-had-minor-wrist-surgery-after-season</a></p>
+      <p><span class="pub">Mayza contract.</span> <a href="https://www.mlb.com/news/tim-mayza-re-signed-by-phillies">mlb.com/news/tim-mayza-re-signed-by-phillies</a></p>
+      <p><span class="pub">Sato (reported).</span> <a href="https://www.mlb.com/news/phillies-interest-teruaki-sato-free-agent-outfielder">mlb.com/news/phillies-interest-teruaki-sato-free-agent-outfielder</a></p>
+      <p><span class="pub">Duran (reported).</span> <a href="https://www.mlbtraderumors.com/2026/11/padres-mariners-phillies-interested-in-jarren-duran.html">mlbtraderumors.com/2026/11/padres-mariners-phillies-interested-in-jarren-duran.html</a></p>
+      <p><span class="pub">Kim (reported).</span> <a href="https://www.nbcsportsphiladelphia.com/mlb/philadelphia-phillies/phillies-ha-seong-kim-free-agency-dave-dombrowski-trea-turner/765594/">nbcsportsphiladelphia.com/.../phillies-ha-seong-kim-free-agency-dave-dombrowski-trea-turner/765594/</a></p>
+      <p><span class="pub">Minter (reported).</span> <a href="https://www.mlbtraderumors.com/2026/11/five-teams-interested-in-a-j-minter.html">mlbtraderumors.com/2026/11/five-teams-interested-in-a-j-minter.html</a></p>
+      <p><span class="pub">Lo&aacute;isiga to Yankees.</span> <a href="https://www.mlb.com/news/jonathan-loaisiga-yankees-contract-2026">mlb.com/news/jonathan-loaisiga-yankees-contract-2026</a></p>
+      <p><span class="pub">Calendar.</span> <a href="https://www.mlbtraderumors.com/2026/10/the-2026-27-offseason-begins.html">mlbtraderumors.com/2026/10/the-2026-27-offseason-begins.html</a></p>
+    </div>    </div>
+  </div>
+  <div class="colophon">Phillies Wire &middot; Hot Stove Edition &middot; November 23, 2026 &middot; An homage, not a broadcast</div>
+  <div class="splash-escape splash-escape--bottom" role="navigation" aria-label="Leave this edition">
+    <a class="continue-link" href="/" id="continueBottom">Continue to Phillies Wire &#8594;</a>
+    <span class="skip-hint">Press Esc to skip</span>
+  </div>
+  </div>
+<script>
+
+(function () {
+  var audio = document.getElementById("hotStoveAudio");
+  var btn = document.getElementById("playBtn");
+  var seek = document.getElementById("seek");
+  var elapsed = document.getElementById("elapsed");
+  var remaining = document.getElementById("remaining");
+  var player = document.querySelector(".listen");
+  if (!audio || !btn || !seek || !player) return;
+
+  var KNOWN = 196; // 3:16
+  function fmt(sec) {
+    if (!isFinite(sec) || sec < 0) sec = 0;
+    sec = Math.round(sec);
+    var m = Math.floor(sec / 60);
+    var s = sec % 60;
+    return m + ":" + (s < 10 ? "0" : "") + s;
+  }
+  function duration() {
+    var d = audio.duration;
+    if (isFinite(d) && d > 0) return d;
+    return KNOWN;
+  }
+  function setProgress() {
+    var d = duration();
+    var t = audio.currentTime || 0;
+    if (t > d) t = d;
+    seek.max = String(d);
+    if (!seek.matches(":active")) seek.value = String(t);
+    var pct = d ? (t / d) * 100 : 0;
+    seek.style.setProperty("--progress", pct + "%");
+    elapsed.textContent = fmt(t);
+    remaining.textContent = fmt(d);
+  }
+  function setPlaying(on) {
+    btn.classList.toggle("is-playing", on);
+    btn.setAttribute("aria-pressed", on ? "true" : "false");
+    btn.setAttribute("aria-label", on ? "Pause this edition" : "Play this edition");
+  }
+
+  player.classList.add("is-enhanced");
+  audio.removeAttribute("controls");
+  seek.max = String(KNOWN);
+  remaining.textContent = "3:16";
+  setProgress();
+
+  btn.addEventListener("click", function () {
+    if (audio.paused) audio.play();
+    else audio.pause();
+  });
+  btn.addEventListener("keydown", function (e) {
+    if (e.key === " " || e.key === "Enter") {
+      e.preventDefault();
+      if (audio.paused) audio.play();
+      else audio.pause();
+    }
+  });
+  audio.addEventListener("play", function () { setPlaying(true); });
+  audio.addEventListener("pause", function () { setPlaying(false); });
+  audio.addEventListener("ended", function () {
+    setPlaying(false);
+    audio.currentTime = 0;
+    setProgress();
+  });
+  audio.addEventListener("timeupdate", setProgress);
+  audio.addEventListener("loadedmetadata", setProgress);
+  audio.addEventListener("durationchange", setProgress);
+
+  function seekTo() {
+    var v = parseFloat(seek.value);
+    if (isFinite(v)) {
+      audio.currentTime = v;
+      setProgress();
+    }
+  }
+  seek.addEventListener("input", seekTo);
+  seek.addEventListener("change", seekTo);
+})();
+
+</script>
+
+<script>
+(function () {
+  function goHome(e) {
+    if (e) e.preventDefault();
+    try { sessionStorage.setItem("pw-hot-stove-seen", "1"); } catch (_err) {}
+    window.location.href = "/";
+  }
+  document.querySelectorAll(".continue-link").forEach(function (link) {
+    link.addEventListener("click", goHome);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" || e.key === "Esc") {
+      goHome(e);
+    }
+  });
+})();
+</script>
+</body>
+</html>

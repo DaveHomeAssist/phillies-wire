@@ -8,6 +8,20 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#e81828">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://statsapi.mlb.com https://api.open-meteo.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<!-- Hot Stove splash: first visit in a session goes to /hot-stove/. Remove before the Feb 2027 in-season flip; see HANDOFF.md. -->
+<script>
+  (function () {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      if (params.has("skip") || params.has("home")) {
+        sessionStorage.setItem("pw-hot-stove-seen", "1");
+        return;
+      }
+      if (sessionStorage.getItem("pw-hot-stove-seen") === "1") return;
+      location.replace("/hot-stove/");
+    } catch (_err) {}
+  })();
+</script>
 <title>Phillies Wire · 2026 season complete · Mon, Oct 12, 2026</title>
 <meta name="robots" content="index,follow">
 <meta name="description" content="Phillies finish 88-74 (.543) The Wire is in offseason mode: weekly hot-stove updates on signings, trades, and roster moves until spring training.">
@@ -98,6 +112,7 @@
     
     
     <a class="pw-shell-link" href="./schedule/">2026 Results</a>
+    <a class="pw-shell-link" href="/hot-stove/">Hot Stove Edition &#8212; listen</a>
     
     <a class="pw-shell-link" href="./feed.xml" rel="alternate">RSS</a>
     <a class="pw-shell-link pw-shell-link--subscribe" href="https://buttondown.com/phillieswire" target="_blank" rel="noopener noreferrer">Subscribe</a>

@@ -1,6 +1,6 @@
 # HANDOFF.md — Phillies Wire
 
-**Last updated:** 2026-10-09 (offseason mode on)
+**Last updated:** 2026-11-23 (Hot Stove splash on; offseason publish still paused)
 **Status:** Production, v1.6.1. Publishing on cron (daily + game-window), latest issue current. `verify.mjs` gates every publish. v1.6.1 adds the Liberty Bell / broadsheet enhancement layer, road-game correctness fixes (Issue 006), and a dedicated inline-styled HTML email (Issue 007).
 **Branch:** `main`
 **Canonical source of truth:** [`CLAUDE.md`](CLAUDE.md) — read it first. This file is the orientation companion; `CLAUDE.md` holds the live issue tracker, key decisions, and Definition-of-Done status.
@@ -152,3 +152,21 @@ Switch: `SEASON_PHASE` in `config.mjs` (`DEFAULT_SEASON_PHASE = "offseason"`; th
 6. Run `npm test`, then dispatch once with `issue_mode=live` and check that the page shows the next game, the Inning by inning nav, and loads `live-feed.js`.
 
 Optional during the offseason: put `overrides/YYYY-MM-DD.json` files in place for one-off editorial notes (e.g. a big signing) before a weekly or manual run.
+
+## Hot Stove splash (winter 2026) — how to remove
+
+**Added:** 2026-11-23. **Remove by February 1, 2027**, before the in-season flip (~mid-February).
+
+The listen page lives at `https://phillieswire.com/hot-stove/`. First visit in a browser session to `/` is sent there with `location.replace` and a `sessionStorage` key `pw-hot-stove-seen`. Continue links, Esc, and `/?skip` or `/?home` set that key and return to `/`. The scheduled data publish workflow stays paused; this splash is shipped by `.github/workflows/deploy-pages-static.yml`, which only assembles the existing published tree (plus `/hot-stove/`) and deploys Pages. It does not run crawl, render, enrich, or email.
+
+### Removal steps
+
+1. Delete the `hot-stove/` directory.
+2. In `phillies-wire-v2.html`, remove the `{{#if meta.show_hot_stove_splash}}` script in `<head>` and the "Hot Stove Edition — listen" nav link.
+3. In the current `index.html` and `archive/index.html`, remove the matching script (homepage only) and nav link.
+4. In `render.mjs`, remove `show_hot_stove_splash` / `is_latest` if unused, drop `./hot-stove` from `STATIC_ASSET_DIRS`, drop the `/hot-stove/` sitemap entry, and drop the archive-page nav link.
+5. Remove `/hot-stove/` from `sitemap.xml`.
+6. Delete `scripts/assemble-site-static.mjs` and `.github/workflows/deploy-pages-static.yml`.
+7. If `publish.yml` is still paused, dispatch **Deploy Pages (static)** one last time *before* deleting that workflow (or keep the workflow in the same commit as the content removal, then dispatch a remaining copy on a follow-up commit). If the in-season publish workflow has been re-enabled, a normal pipeline run will ship the site without the splash as long as steps 1–5 are done first.
+
+Do not re-enable the scheduled publish or email as part of this removal.

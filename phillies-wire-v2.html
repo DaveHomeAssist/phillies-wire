@@ -8,6 +8,22 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#e81828">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://statsapi.mlb.com https://api.open-meteo.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+{{#if meta.show_hot_stove_splash}}
+<!-- Hot Stove splash: first visit in a session goes to /hot-stove/. Remove before the Feb 2027 in-season flip; see HANDOFF.md. -->
+<script>
+  (function () {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      if (params.has("skip") || params.has("home")) {
+        sessionStorage.setItem("pw-hot-stove-seen", "1");
+        return;
+      }
+      if (sessionStorage.getItem("pw-hot-stove-seen") === "1") return;
+      location.replace("/hot-stove/");
+    } catch (_err) {}
+  })();
+</script>
+{{/if}}
 <title>{{meta.page_title}}</title>
 <meta name="robots" content="index,follow">
 <meta name="description" content="{{meta.page_description}}">
@@ -66,6 +82,7 @@
     {{/if}}
     {{#if meta.is_offseason}}
     <a class="pw-shell-link" href="{{meta.assets_prefix}}schedule/">2026 Results</a>
+    <a class="pw-shell-link" href="/hot-stove/">Hot Stove Edition &#8212; listen</a>
     {{/if}}
     <a class="pw-shell-link" href="{{meta.assets_prefix}}feed.xml" rel="alternate">RSS</a>
     <a class="pw-shell-link pw-shell-link--subscribe" href="{{meta.subscribe_url}}" target="_blank" rel="noopener noreferrer">Subscribe</a>

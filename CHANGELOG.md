@@ -2,6 +2,11 @@
 
 All material Phillies Wire changes are recorded here, newest first.
 
+## 2026-11-23 — Hot Stove splash
+
+- Published the November 23 Hot Stove listen page at `/hot-stove/` and made it the first-visit splash for the homepage (Esc, Continue, and `/?skip` / `/?home` return to `/`).
+- The data publish workflow stays paused. A static Pages workflow assembles the existing published tree and deploys it, without crawl, enrich, or email. Removal steps are in HANDOFF.md; take the splash down by February 1, 2027, before the in-season flip.
+
 ## 2026-10-09 — Offseason mode
 
 - Added the `SEASON_PHASE` switch (config.mjs), currently `offseason`: weekly cron only, no enrich and no email, no game/weather/live-feed fetches, and a "2026 season complete" page with the final record computed from the canonical schedule (88-74) instead of the fixture's 0-0.

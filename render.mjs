@@ -29,8 +29,8 @@ const SITE_TMP_DIR = "./site.tmp";
 const SITE_BACKUP_DIR = "./site.bak";
 const CSS_SOURCE_FILES = ["./fonts.css", "./tokens.css", "./phillies-wire.css", "./pw-enhance.css"];
 const COMPILED_CSS_FILE = "./site.css";
-const STATIC_ASSET_FILES = [...CSS_SOURCE_FILES, COMPILED_CSS_FILE, "./live-feed.js"];
-const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed", "./schedule", "./shared", "./calendar", "./data"];
+export const STATIC_ASSET_FILES = [...CSS_SOURCE_FILES, COMPILED_CSS_FILE, "./live-feed.js"];
+export const STATIC_ASSET_DIRS = ["./fonts", "./dashboard", "./embed", "./schedule", "./shared", "./calendar", "./data", "./hot-stove"];
 const ISSUE_DATA_SCHEMA_VERSION = "1.4.0";
 // Shared with verify.mjs, which enforces this as a hard publish gate. 24 KB
 // leaves headroom above the largest observed plays-less payload (20,494 bytes
@@ -479,6 +479,9 @@ function renderIssue(templateString, data, links, context = {}) {
   const isOffseason = isOffseasonPayload(renderData);
   renderData.meta.is_offseason = isOffseason;
   renderData.meta.in_season = !isOffseason;
+  renderData.meta.is_latest = links.latestHref === "./";
+  // Temporary winter 2026 splash. Remove with the /hot-stove/ page before the Feb 2027 in-season flip (HANDOFF.md).
+  renderData.meta.show_hot_stove_splash = isOffseason && renderData.meta.is_latest;
   renderData.meta.record_label = isOffseason
     ? `${renderData.meta.completed_season ?? "Season"} Final`
     : "Season";
@@ -792,7 +795,8 @@ ${itemsHtml}
     <a class="pw-shell-link" href="../">Latest</a>
     <a class="pw-shell-link" href="./">Archive</a>
 ${archiveOffseason
-    ? `    <a class="pw-shell-link" href="../schedule/">2026 Results</a>\n`
+    ? `    <a class="pw-shell-link" href="../schedule/">2026 Results</a>
+    <a class="pw-shell-link" href="/hot-stove/">Hot Stove Edition &#8212; listen</a>\n`
     : `    <a class="pw-shell-link" href="../dashboard/">Dashboard</a>
     <a class="pw-shell-link" href="../schedule/">Schedule</a>
     <a class="pw-shell-link" href="../dashboard/innings/">Inning by inning</a>\n`}    <a class="pw-shell-link" href="../feed.xml" rel="alternate">RSS</a>

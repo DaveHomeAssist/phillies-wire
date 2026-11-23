@@ -1,0 +1,47 @@
+# Temporary static Pages deploy for the winter 2026 Hot Stove splash.
+# Does not run crawl, render, enrich, or email. Remove with the splash
+# before the Feb 2027 in-season flip; see HANDOFF.md.
+name: Deploy Pages (static)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "hot-stove/**"
+      - "scripts/assemble-site-static.mjs"
+      - ".github/workflows/deploy-pages-static.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+
+concurrency:
+  group: phillies-wire-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Assemble site artifact
+        run: node scripts/assemble-site-static.mjs
+
+      - name: Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
